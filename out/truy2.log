@@ -1,0 +1,57 @@
+[     0.0s] === load_loai_suy START (pid=21537) → out/logs/load_loai_suy_20260815_195914.log ===
+[     0.0s] load checkpoint checkpoints/loai_suy.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.0s] ✓ adjacency  (0.8s)
+[     1.0s] ▶ embedding
+[     1.1s] ✓ embedding  (0.0s)
+[     1.1s] ▶ parents
+[     1.1s] parents: deserialize 36482 records …
+[     1.1s] parents 5000/36482 (13.7%)
+[     1.1s] parents 10000/36482 (27.4%)
+[     1.2s] parents 15000/36482 (41.1%)
+[     1.2s] parents 20000/36482 (54.8%)
+[     1.3s] parents 25000/36482 (68.5%)
+[     1.3s] parents 30000/36482 (82.2%)
+[     1.4s] parents 35000/36482 (95.9%)
+[     1.9s] ▶ rebuild_hierarchical_index …
+[     2.0s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.3s]     resync match_ids: 36482/36482 cha (df dựng lại)
+[     2.3s] ✓ parents  (1.3s)
+[     2.3s] ✓ loaded: vocab=32002 parents=36482 E=(32002, 96)
+[     2.4s] sidecar thiếu → migrate: loai_suy.content.pkl
+[     2.4s] ✓ load_checkpoint XONG
+
+### checkpoints/loai_suy.pkl · 36482 cha · 145 bộ
+
+  A='ngặt' lớp='loại' m=[biển,bánh] m3='bóng'
+     ① hạt = [('bánh', True), ('ma túy', True)]   TRÚNG m: ['bánh']
+     ② nhãn = ['trách nhiệm', 'gạo nếp', 'âm vật', 'loại', 'món']   hạng của lớp đúng: 4
+     ③ = ['phát', 'phát triển', 'triển', 'Luật', 'Luật hình sự', 'hình']
+  A='sạch' lớp='loài' m=[biển,báo] m3='băng'
+     ① hạt = [('báo', True)]   TRÚNG m: ['báo']
+     ② nhãn = ['hình thức', 'thông báo', 'phần', 'loài', 'sự']   hạng của lớp đúng: 4
+     ③ = ['báo', 'bh', 'bh xh', 'dạng', 'xh', 'MBO']
+  A='thuận' lớp='phần' m=[bã,cay] m3='châu'
+     ① hạt = [('cay', True)]   TRÚNG m: ['cay']
+     ② nhãn = ['phần', 'cuộc', 'quá', 'bằng', 'sống']   hạng của lớp đúng: 1
+     ③ = ['bã', 'cay', 'châu', 'báo', 'cáo', 'Friesen']
+  A='lành' lớp='khoảng' m=[buổi,bãi] m3='chiều'
+     ① hạt = [('bãi', True)]   TRÚNG m: ['bãi']
+     ② nhãn = ['khoảng', 'ngày', 'điểm', 'khu', 'sông']   hạng của lớp đúng: 1
+     ③ = ['buổi', 'bãi', 'chiều', 'tính', 'giới', 'châu']
+  A='rách' lớp='bộ phận' m=[bẹ,bụng] m3='choá'
+     ① hạt = [('bụng', True)]   TRÚNG m: ['bụng']
+     ② nhãn = ['bộ phận', 'hai', 'hạt', 'bộ', 'khí']   hạng của lớp đúng: 1
+     ③ = ['bẹ', 'bụng', 'choá', 'Eustatius', 'Sint', 'Sint Eustatius']
+  A='nhanh' lớp='cây' m=[báng,bèo] m3='bí'
+     ① hạt = [('báng', True), ('bèo', True), ('cir rus', True), ('vũ bão', True)]   TRÚNG m: ['báng', 'bèo']
+     ② nhãn = ['cây', 'nguy cơ', 'biển', 'bằng', 'luật']   hạng của lớp đúng: 1
+     ③ = ['báng', 'bèo', 'bí', 'rộng', 'khác', 'esk']
+
+  145 bộ · ① ra vật mang đúng 97.2% · ② ra lớp đúng ở hạng 1 75.2% · ③ ra m3 73.8%
+
+[8s] xong

@@ -1,0 +1,691 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst_isg_pw.pkl",
+ "n_prop": 80,
+ "n_rows": 34,
+ "rows": {
+  "C000": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Patagonia",
+   "hat_giong": [
+    "công",
+    "ty",
+    "quần",
+    "áo"
+   ],
+   "nhan": "ngắn",
+   "n_bau": 2,
+   "moi": [
+    "loại",
+    "loại quần áo",
+    "Bát",
+    "Cũng được",
+    "Müller"
+   ]
+  },
+  "C001": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "NBC",
+   "hat_giong": [
+    "CBS",
+    "ABC",
+    "Fox"
+   ],
+   "nhan": "Bốn",
+   "n_bau": 3,
+   "moi": [
+    "NBC",
+    "cành",
+    "cây",
+    "dấu",
+    "hạ"
+   ]
+  },
+  "C002": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Thia",
+   "hat_giong": [
+    "chậu",
+    "vợ",
+    "chồng"
+   ],
+   "nhan": "cũ",
+   "n_bau": 2,
+   "moi": [
+    "nghĩa",
+    "Giải",
+    "chuyện",
+    "bạn",
+    "niệm"
+   ]
+  },
+  "C003": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nhã",
+   "hat_giong": [
+    "la",
+    "mật",
+    "đa",
+    "ba",
+    "kinh",
+    "ba"
+   ],
+   "nhan": "đa",
+   "n_bau": 3,
+   "moi": [
+    "Hình",
+    "Hình vuông",
+    "Nhiều",
+    "chung",
+    "lãnh"
+   ]
+  },
+  "C004": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Hình",
+   "hat_giong": [
+    "tế",
+    "khăn",
+    "bốn",
+    "dịu",
+    "áo",
+    "cạnh"
+   ],
+   "nhan": "bào",
+   "n_bau": 2,
+   "moi": [
+    "đồng",
+    "bào",
+    "Tế",
+    "phân",
+    "màng"
+   ]
+  },
+  "C005": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "m³",
+   "hat_giong": [
+    "nước",
+    "thải",
+    "sinh",
+    "hoạt",
+    "mỗi",
+    "ngày"
+   ],
+   "nhan": "nhật",
+   "n_bau": 2,
+   "moi": [
+    "Mét",
+    "và Mét",
+    "Hôm",
+    "Ngày",
+    "Viết"
+   ]
+  },
+  "C006": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "nối",
+   "hat_giong": [
+    "Internet",
+    "ngôi",
+    "khác",
+    "nghiệp",
+    "gia",
+    "thành"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "bạn",
+    "cơ",
+    "Bạn"
+   ]
+  },
+  "C007": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "nhã",
+   "hat_giong": [
+    "la",
+    "mật",
+    "đa",
+    "ba",
+    "kinh",
+    "ba"
+   ],
+   "nhan": "đa",
+   "n_bau": 3,
+   "moi": [
+    "nhã",
+    "Bát",
+    "đạt",
+    "bát",
+    "cương"
+   ]
+  },
+  "C008": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "chần",
+   "hat_giong": [
+    "nói",
+    "nữa",
+    "lát",
+    "muốn",
+    "chốc",
+    "nhanh"
+   ],
+   "nhan": "tòa",
+   "n_bau": 2,
+   "moi": [
+    "Nơi này",
+    "Anna",
+    "Bọn",
+    "Bọn hắn",
+    "Frankfurt"
+   ]
+  },
+  "C009": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "chăn",
+   "hat_giong": [
+    "thả",
+    "gối",
+    "trâu",
+    "gia",
+    "súc",
+    "bông"
+   ],
+   "nhan": "ưng",
+   "n_bau": 2,
+   "moi": [
+    "nuôi",
+    "nuôi gia súc",
+    "mình",
+    "Ngay",
+    "Ngay lập tức"
+   ]
+  },
+  "C010": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "thia",
+   "hat_giong": [
+    "chậu",
+    "vợ",
+    "chồng",
+    "hơi"
+   ],
+   "nhan": "cũ",
+   "n_bau": 2,
+   "moi": [
+    "nghĩa",
+    "Giải",
+    "chuyện",
+    "bạn",
+    "niệm"
+   ]
+  },
+  "C011": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "vốn",
+   "hat_giong": [
+    "vựng",
+    "dĩ",
+    "muốn",
+    "biết",
+    "hữu",
+    "giống"
+   ],
+   "nhan": "chế",
+   "n_bau": 2,
+   "moi": [
+    "sự",
+    "sự vừa",
+    "vừa",
+    "hàng",
+    "của nước mắm"
+   ]
+  },
+  "C012": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Phan",
+   "hat_giong": [
+    "Bội",
+    "Châu",
+    "Rang",
+    "Chàm"
+   ],
+   "nhan": "Châu",
+   "n_bau": 2,
+   "moi": [
+    "Dương",
+    "Linh",
+    "tại",
+    "Ngọc",
+    "Quảng"
+   ]
+  },
+  "C013": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Siri",
+   "hat_giong": [
+    "Google",
+    "Assistant",
+    "sử",
+    "dụng",
+    "thể"
+   ],
+   "nhan": "ảo",
+   "n_bau": 3,
+   "moi": [
+    "Siri",
+    "Alexa",
+    "mộng",
+    "tiên",
+    "bậc"
+   ]
+  },
+  "C014": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Ireland",
+   "hat_giong": [
+    "tập",
+    "trung",
+    "canh",
+    "tác",
+    "hỗn"
+   ],
+   "nhan": "hợp",
+   "n_bau": 2,
+   "moi": [
+    "phù",
+    "trường",
+    "kết",
+    "thích",
+    "tổng"
+   ]
+  },
+  "C015": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Trời",
+   "hat_giong": [
+    "nên",
+    "tối",
+    "thể",
+    "sao",
+    "đẹp",
+    "chiếu"
+   ],
+   "nhan": "hơn",
+   "n_bau": 2,
+   "moi": [
+    "cao",
+    "tốt",
+    "lớn",
+    "nhiều",
+    "nhỏ"
+   ]
+  },
+  "C016": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Chẳng",
+   "hat_giong": [
+    "hạn",
+    "bao",
+    "lâu",
+    "nợ",
+    "đời",
+    "chi"
+   ],
+   "nhan": "đời",
+   "n_bau": 2,
+   "moi": [
+    "cuộc",
+    "cả",
+    "suốt",
+    "bạn",
+    "dụ"
+   ]
+  },
+  "C017": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "NBC",
+   "hat_giong": [
+    "CBS",
+    "ABC",
+    "Fox"
+   ],
+   "nhan": "Fox",
+   "n_bau": 2,
+   "moi": [
+    "Kỳ",
+    "NBC"
+   ]
+  },
+  "C018": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Siri",
+   "hat_giong": [
+    "Google",
+    "Assistant",
+    "sử",
+    "dụng",
+    "thể"
+   ],
+   "nhan": "dụng",
+   "n_bau": 4,
+   "moi": [
+    "ứng",
+    "Sử",
+    "tác",
+    "áp",
+    "thường"
+   ]
+  },
+  "C019": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "edX",
+   "hat_giong": [
+    "cung",
+    "cấp",
+    "khóa",
+    "học"
+   ],
+   "nhan": "dịch",
+   "n_bau": 2,
+   "moi": [
+    "giao",
+    "chiến",
+    "miễn",
+    "phẩm",
+    "sản"
+   ]
+  },
+  "C020": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "róc",
+   "hat_giong": [
+    "khô",
+    "phơi",
+    "dành"
+   ],
+   "nhan": "khô",
+   "n_bau": 2,
+   "moi": [
+    "mùa",
+    "cỏ",
+    "da",
+    "Ví",
+    "dụ"
+   ]
+  },
+  "C021": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nô",
+   "hat_giong": [
+    "binh",
+    "đen",
+    "châu",
+    "Phi",
+    "cùng",
+    "Chị"
+   ],
+   "nhan": "tệ",
+   "n_bau": 2,
+   "moi": [
+    "la",
+    "tiền",
+    "vị",
+    "Đô",
+    "Đô la"
+   ]
+  },
+  "C022": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "bay",
+   "hat_giong": [
+    "lượn",
+    "lái",
+    "bom",
+    "trở",
+    "trung",
+    "chiến"
+   ],
+   "nhan": "thành",
+   "n_bau": 2,
+   "moi": [
+    "hoàn",
+    "hình",
+    "tạo",
+    "hóa",
+    "biến"
+   ]
+  },
+  "C023": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "vốn",
+   "hat_giong": [
+    "vựng",
+    "dĩ",
+    "muốn",
+    "biết",
+    "hữu",
+    "giống"
+   ],
+   "nhan": "nói",
+   "n_bau": 2,
+   "moi": [
+    "lời",
+    "thể",
+    "giọng",
+    "cười",
+    "câu"
+   ]
+  },
+  "C024": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Chương",
+   "hat_giong": [
+    "nội",
+    "dung",
+    "ảnh",
+    "Ta",
+    "Thần",
+    "ngươi"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "bạn",
+    "cơ",
+    "Bạn"
+   ]
+  },
+  "C025": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nướng",
+   "hat_giong": [
+    "nhiệt",
+    "độ",
+    "kiểu",
+    "bơ",
+    "Pháp",
+    "mai"
+   ],
+   "nhan": "khá",
+   "n_bau": 2,
+   "moi": [
+    "nhiên",
+    "Tuy",
+    "Tuy nhiên",
+    "nhược",
+    "cầu"
+   ]
+  },
+  "C026": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "giấu",
+   "hat_giong": [
+    "mình",
+    "đầu",
+    "đuôi",
+    "nói",
+    "tại",
+    "tài"
+   ],
+   "nhan": "ít",
+   "n_bau": 2,
+   "moi": [
+    "mật",
+    "nhiên",
+    "thường",
+    "thể",
+    "vậy"
+   ]
+  },
+  "C027": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Chương",
+   "hat_giong": [
+    "nội",
+    "dung",
+    "ảnh",
+    "Ta",
+    "Thần",
+    "ngươi"
+   ],
+   "nhan": "đăng",
+   "n_bau": 2,
+   "moi": [
+    "Chúng",
+    "Chúng ta",
+    "Lo",
+    "Lo ngại",
+    "Quá"
+   ]
+  },
+  "C028": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "chần",
+   "hat_giong": [
+    "nói",
+    "nữa",
+    "lát",
+    "muốn",
+    "chốc",
+    "nhanh"
+   ],
+   "nhan": "đem",
+   "n_bau": 2,
+   "moi": [
+    "thể",
+    "liền",
+    "tiếp",
+    "trực",
+    "hắn"
+   ]
+  },
+  "C029": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Patagonia",
+   "hat_giong": [
+    "công",
+    "ty",
+    "quần",
+    "áo"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "bạn",
+    "cơ",
+    "Bạn"
+   ]
+  },
+  "C030": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "rap",
+   "hat_giong": [
+    "mình",
+    "vần",
+    "điệu",
+    "bạn"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "cơ",
+    "Bạn",
+    "thân"
+   ]
+  },
+  "C031": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Theung",
+   "hat_giong": [
+    "chiếm",
+    "khoảng",
+    "vùng",
+    "dân",
+    "số",
+    "ưu"
+   ],
+   "nhan": "vùng",
+   "n_bau": 2,
+   "moi": [
+    "Huyện",
+    "Tiếp",
+    "Tiếp nối",
+    "dân số",
+    "nối"
+   ]
+  },
+  "C032": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nguồn",
+   "hat_giong": [
+    "tạo",
+    "tái",
+    "mở",
+    "điện",
+    "thể",
+    "vật"
+   ],
+   "nhan": "ngành",
+   "n_bau": 2,
+   "moi": [
+    "sản",
+    "Deal",
+    "tài",
+    "đồ",
+    "New"
+   ]
+  },
+  "C033": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "ma",
+   "hat_giong": [
+    "tu",
+    "khí",
+    "diệt",
+    "lâm",
+    "quốc",
+    "hắn"
+   ],
+   "nhan": "vốn",
+   "n_bau": 2,
+   "moi": [
+    "quý",
+    "ba",
+    "công",
+    "công mĩ",
+    "mĩ"
+   ]
+  }
+ }
+}

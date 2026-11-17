@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIVIE Graph UI</title>
+  <style>
+    :root {
+      --bg: #0f1419; --panel: #1a2332; --border: #2d3a4f;
+      --text: #e7ecf3; --muted: #8b9cb3; --accent: #5b9fd4;
+      --rule: #e06c75; --var: #98c379; --label: #d19a66; --surface: #61afef;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 12px 20px; border-bottom: 1px solid var(--border); display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+    header h1 { margin: 0; font-size: 1.1rem; }
+    .meta { color: var(--muted); font-size: 0.85rem; }
+    .tabs button { background: transparent; border: 1px solid var(--border); color: var(--text); padding: 6px 14px; border-radius: 6px; cursor: pointer; margin-right: 4px; }
+    .tabs button.on { background: var(--accent); color: #0f1419; border-color: var(--accent); }
+    main { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 56px); }
+    aside { border-right: 1px solid var(--border); padding: 16px; overflow-y: auto; }
+    aside label { display: block; font-size: 0.75rem; color: var(--muted); margin: 10px 0 4px; }
+    aside input, aside textarea, aside select { width: 100%; background: var(--panel); border: 1px solid var(--border); color: var(--text); border-radius: 6px; padding: 8px; }
+    aside textarea { min-height: 72px; }
+    .btn { width: 100%; margin-top: 12px; background: var(--accent); color: #0f1419; border: none; border-radius: 6px; padding: 10px; font-weight: 600; cursor: pointer; }
+    section { padding: 16px; overflow: auto; }
+    .err { color: #e06c75; font-size: 0.85rem; margin-top: 8px; }
+    .tag { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; border: 1px solid var(--border); margin: 2px; }
+    .tag.rule { border-color: var(--rule); color: var(--rule); }
+    .tag.var { border-color: var(--var); color: var(--var); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+    .kind-rule { color: var(--rule); }
+    .kind-var { color: var(--var); }
+    .kind-label { color: var(--label); }
+    .kind-surface { color: var(--surface); }
+    .bar { display: grid; grid-template-columns: 80px 1fr 50px; gap: 8px; align-items: center; margin: 4px 0; font-size: 0.8rem; }
+    .bar-track { height: 12px; background: var(--panel); border-radius: 3px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #7ec8a0); }
+    .bar-fill.m { background: linear-gradient(90deg, #d19a66, #e5c07b); }
+    .hidden { display: none; }
+    #graph-canvas { width: 100%; height: 480px; background: var(--panel); border-radius: 8px; border: 1px solid var(--border); }
+    .note { font-size: 0.8rem; color: var(--muted); margin-top: 12px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AIVIE Graph UI</h1>
+    <span class="meta" id="meta">…</span>
+    <div class="tabs">
+      <button type="button" class="on" data-tab="graph">Graph</button>
+      <button type="button" data-tab="inference">Inference</button>
+    </div>
+  </header>
+  <main>
+    <aside id="sidebar-graph">
+      <label>Rules</label>
+      <div id="rule-list" style="max-height:160px;overflow-y:auto;font-size:0.8rem"></div>
+      <label>Min weight</label>
+      <input type="number" id="min-weight" value="0.15" step="0.05" />
+      <label>Hops</label>
+      <input type="number" id="hops" value="2" min="1" max="4" />
+      <button type="button" class="btn" id="load-graph">Reload graph</button>
+      <p class="note" id="graph-stats"></p>
+    </aside>
+    <aside id="sidebar-inference" class="hidden">
+      <label>Prompt</label>
+      <textarea id="prompt">Hỏi: Em học gì ? Đáp:</textarea>
+      <label>Max steps</label>
+      <input type="number" id="max-len" value="8" min="1" max="32" />
+      <button type="button" class="btn" id="run-trace">Run trace</button>
+      <p class="note" id="gen-out"></p>
+    </aside>
+    <section id="panel-graph">
+      <canvas id="graph-canvas"></canvas>
+      <h3>Nodes</h3>
+      <table><thead><tr><th>Label</th><th>Kind</th><th>Id</th></tr></thead><tbody id="node-tbody"></tbody></table>
+    </section>
+    <section id="panel-inference" class="hidden">
+      <div id="step-nav" style="margin-bottom:12px"></div>
+      <div id="step-info"></div>
+      <h3>Scores (final)</h3>
+      <div id="scores-final"></div>
+      <h3>Scores (matcher)</h3>
+      <div id="scores-matcher"></div>
+    </section>
+  </main>
+  <script>
+    const $ = (s) => document.querySelector(s);
+    const selectedRules = new Set(["vi_QA_hoi_dap", "vi_copula_S_la_NA"]);
+    let traceData = null, stepIdx = 0;
+
+    async function api(path, opts) {
+      const r = await fetch(path, opts);
+      if (!r.ok) throw new Error(await r.text());
+      return r.json();
+    }
+
+    function kindClass(k) {
+      return { rule: "kind-rule", var: "kind-var", label: "kind-label", surface: "kind-surface" }[k] || "";
+    }
+
+    async function init() {
+      try {
+        const h = await api("/api/health");
+        $("#meta").textContent = h.checkpoint + " · " + (h.ui || "fallback");
+      } catch (e) {
+        $("#meta").textContent = "API lỗi: " + e.message;
+      }
+      try {
+        const { rules } = await api("/api/rules");
+        const box = $("#rule-list");
+        box.innerHTML = rules.map((r) =>
+          `<label style="display:block;margin:4px 0"><input type="checkbox" value="${r}" ${selectedRules.has(r) ? "checked" : ""}/> ${r}</label>`
+        ).join("");
+        box.querySelectorAll("input").forEach((cb) => {
+          cb.onchange = () => {
+            if (cb.checked) selectedRules.add(cb.value);
+            else selectedRules.delete(cb.value);
+          };
+        });
+      } catch (e) {
+        $("#rule-list").innerHTML = `<span class="err">${e.message}</span>`;
+      }
+      loadGraph();
+    }
+
+    function drawGraph(nodes, edges) {
+      const canvas = $("#graph-canvas");
+      const ctx = canvas.getContext("2d");
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * devicePixelRatio;
+      canvas.height = rect.height * devicePixelRatio;
+      ctx.scale(devicePixelRatio, devicePixelRatio);
+      const W = rect.width, H = rect.height;
+      ctx.fillStyle = "#1a2332";
+      ctx.fillRect(0, 0, W, H);
+      if (!nodes.length) return;
+      const pos = {};
+      const cx = W / 2, cy = H / 2;
+      nodes.forEach((n, i) => {
+        const a = (i / nodes.length) * Math.PI * 2;
+        const r = Math.min(W, H) * 0.35;
+        pos[n.id] = { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r };
+      });
+      const colors = { rule: "#e06c75", var: "#98c379", label: "#d19a66", surface: "#61afef", position: "#c678dd", special: "#abb2bf", other: "#8b9cb3" };
+      edges.forEach((e) => {
+        const s = pos[e.source], t = pos[e.target];
+        if (!s || !t) return;
+        ctx.strokeStyle = "rgba(91,159,212,0.35)";
+        ctx.lineWidth = Math.min(3, Math.abs(e.weight) * 0.5);
+        ctx.beginPath();
+        ctx.moveTo(s.x, s.y);
+        ctx.lineTo(t.x, t.y);
+        ctx.stroke();
+      });
+      nodes.forEach((n) => {
+        const p = pos[n.id];
+        ctx.fillStyle = colors[n.kind] || "#8b9cb3";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, n.kind === "rule" ? 10 : 6, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#e7ecf3";
+        ctx.font = "10px system-ui";
+        const lbl = n.label.length > 14 ? n.label.slice(0, 12) + "…" : n.label;
+        ctx.fillText(lbl, p.x + 12, p.y + 4);
+      });
+    }
+
+    async function loadGraph() {
+      const rules = [...selectedRules];
+      if (!rules.length) return;
+      try {
+        const q = new URLSearchParams({ rules: rules.join(","), min_weight: $("#min-weight").value, hops: $("#hops").value });
+        const g = await api("/api/graph?" + q);
+        $("#graph-stats").textContent = `${g.meta.n_nodes} nodes · ${g.meta.n_edges} edges`;
+        const tbody = $("#node-tbody");
+        tbody.innerHTML = g.nodes.slice(0, 80).map((n) =>
+          `<tr><td>${n.label}</td><td class="${kindClass(n.kind)}">${n.kind}</td><td>${n.id}</td></tr>`
+        ).join("");
+        if (g.nodes.length > 80) tbody.innerHTML += `<tr><td colspan="3">… +${g.nodes.length - 80} nodes</td></tr>`;
+        drawGraph(g.nodes, g.edges);
+      } catch (e) {
+        $("#graph-stats").innerHTML = `<span class="err">${e.message}</span>`;
+      }
+    }
+
+    function bars(container, items, cls) {
+      const max = items[0]?.score || 1;
+      container.innerHTML = items.map((it) =>
+        `<div class="bar"><span>${it.token}</span><div class="bar-track"><div class="bar-fill ${cls||""}" style="width:${Math.max(4,(it.score/max)*100)}%"></div></div><span>${it.score.toFixed(1)}</span></div>`
+      ).join("");
+    }
+
+    function showStep() {
+      if (!traceData) return;
+      const s = traceData.steps[stepIdx];
+      $("#step-nav").innerHTML = `
+        <button type="button" id="prev" ${stepIdx<=0?"disabled":""}>←</button>
+        Step ${stepIdx+1}/${traceData.steps.length}
+        <button type="button" id="next" ${stepIdx>=traceData.steps.length-1?"disabled":""}>→</button>`;
+      $("#prev")?.addEventListener("click", () => { stepIdx--; showStep(); });
+      $("#next")?.addEventListener("click", () => { stepIdx++; showStep(); });
+      $("#step-info").innerHTML = `
+        <p><strong>w₀</strong> = ${s.w0} · chosen: <strong>${s.chosen||"—"}</strong></p>
+        <div>${s.active_rules.map(r=>`<span class="tag rule">${r}</span>`).join("")}
+        ${s.eligible_vars.map(v=>`<span class="tag var">${v}</span>`).join("")}</div>
+        <table style="margin-top:8px"><tr><th>token</th><th>d_frame</th><th>d_bind</th></tr>
+        ${s.decay.map(d=>`<tr><td>${d.token}</td><td>${d.d_frame}</td><td>${d.d_bind}</td></tr>`).join("")}
+        </table>`;
+      bars($("#scores-final"), s.scores_final_top, "");
+      bars($("#scores-matcher"), s.scores_matcher_top, "m");
+    }
+
+    async function runTrace() {
+      try {
+        traceData = await api("/api/trace", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ prompt: $("#prompt").value, max_len: +$("#max-len").value, top_k: 12 }),
+        });
+        stepIdx = 0;
+        $("#gen-out").textContent = "Generated: " + traceData.generated;
+        showStep();
+      } catch (e) {
+        $("#gen-out").innerHTML = `<span class="err">${e.message}</span>`;
+      }
+    }
+
+    document.querySelectorAll(".tabs button").forEach((btn) => {
+      btn.onclick = () => {
+        document.querySelectorAll(".tabs button").forEach((b) => b.classList.remove("on"));
+        btn.classList.add("on");
+        const t = btn.dataset.tab;
+        $("#sidebar-graph").classList.toggle("hidden", t !== "graph");
+        $("#sidebar-inference").classList.toggle("hidden", t !== "inference");
+        $("#panel-graph").classList.toggle("hidden", t !== "graph");
+        $("#panel-inference").classList.toggle("hidden", t !== "inference");
+      };
+    });
+    $("#load-graph").onclick = loadGraph;
+    $("#run-trace").onclick = runTrace;
+    init();
+  </script>
+</body>
+</html>

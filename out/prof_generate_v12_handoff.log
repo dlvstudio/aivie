@@ -1,0 +1,48 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[38s] ✓ 430,447 cha
+[196s] warm-up 146.2s (gồm dựng cache một lần)
+
+TÁCH CHI PHÍ: 0.1s/1 token · 1.3s/16 token
+  ⇒ cố định mỗi prompt ≈ **0.0s** · mỗi token ≈ **0.08s**
+  cố định lớn ⇒ tối ưu khâu CHUẨN BỊ; mỗi-token lớn ⇒ tối ưu vòng sinh.
+
+1.4s cho 16 token = **0.09s/token**  (chế độ handoff)
+out: 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938'
+
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.390    1.390 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:2531(generate)
+        1    0.001    0.001    1.389    1.389 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:115(_wseq_fallback)
+       12    0.012    0.001    1.319    0.110 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/matrix_core.py:824(matrix_core_logits)
+       12    0.587    0.049    0.588    0.049 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/context_positional.py:102(positional_readout_base)
+       13    0.025    0.002    0.426    0.033 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/matrix_core.py:452(parent_coactivation_logits)
+       76    0.000    0.000    0.393    0.005 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_base.py:875(_matmul_dispatch)
+       76    0.000    0.000    0.393    0.005 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_compressed.py:387(_matmul_vector)
+       76    0.390    0.005    0.390    0.005 {built-in method scipy.sparse._sparsetools.csc_matvec}
+       51    0.000    0.000    0.300    0.006 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_base.py:1006(__matmul__)
+       12    0.002    0.000    0.149    0.012 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/sent_intra.py:503(sent_intra_decode_channels)
+       12    0.081    0.007    0.125    0.010 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/sent_intra.py:465(rescore_parents_with_anchors)
+       12    0.100    0.008    0.106    0.009 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/matrix_core.py:773(_matvec_know_logits)
+       25    0.000    0.000    0.098    0.004 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_compressed.py:492(sum)
+       25    0.001    0.000    0.098    0.004 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_base.py:1439(sum)
+       25    0.000    0.000    0.095    0.004 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_base.py:1012(__rmatmul__)
+       25    0.000    0.000    0.095    0.004 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_base.py:988(_rmatmul_dispatch)
+     1342    0.000    0.000    0.062    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_matrix.py:120(getrow)
+     1342    0.002    0.000    0.062    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_csr.py:167(_getrow)
+        1    0.000    0.000    0.038    0.038 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/sent_intra.py:759(agenda_handoff_span)
+        1    0.001    0.001    0.038    0.038 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/sent_intra.py:624(_episode_next_span)
+       12    0.000    0.000    0.031    0.003 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/readout.py:99(mask_non_surface)
+       12    0.031    0.003    0.031    0.003 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/readout.py:105(mask_non_surface_inplace)
+     1430    0.004    0.000    0.031    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/scipy/sparse/_compressed.py:30(__init__)
+     1342    0.031    0.000    0.031    0.000 {built-in method scipy.sparse._sparsetools.get_csr_submatrix}
+      136    0.000    0.000    0.022    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:48(_wrapfunc)
+       74    0.000    0.000    0.020    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:848(argpartition)
+       74    0.020    0.000    0.020    0.000 {method 'argpartition' of 'numpy.ndarray' objects}
+       13    0.000    0.000    0.012    0.001 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/numpy/lib/_arraysetops_impl.py:958(isin)
+       13    0.001    0.000    0.012    0.001 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/numpy/lib/_arraysetops_impl.py:806(_isin)
+       22    0.000    0.000    0.011    0.000 ~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/numpy/lib/_arraysetops_impl.py:145(unique)
+
+
+
+
+Đọc `cumtime`, tìm hàm trong `hca/` có `ncalls` rất lớn so với số token. Dán về.

@@ -1,0 +1,66 @@
+vocab 32,002 · E64 (32002, 64) · device mps
+nạp corpus data/text_corpus/*.jsonl …
+✓ 65,160 bài · train 17,696,864 tok · held-out 1,999,796 tok
+✓ gieo mầm: 4,096 đơn vị corpus (phía train)
+
+── ffn: 4.51M tham số ──
+  step  1000 loss 7.679 held-out 11.5765 bits/tok (32s)
+  step  2000 loss 6.989 held-out 10.3768 bits/tok (63s)
+  step  3000 loss 6.839 held-out 10.1034 bits/tok (95s)
+  step  4000 loss 6.482 held-out 9.9000 bits/tok (127s)
+  step  5000 loss 6.459 held-out 9.6955 bits/tok (159s)
+  step  6000 loss 6.420 held-out 9.4824 bits/tok (194s)
+  SAU TRAIN CHÍNH: held-out 9.4824 · fact-hư-cấu 10.9091 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ' phía sau, có thể là một cái' (kỳ vọng 'thành Phượng Nham')
+  MỌC (full-FT lr=0.0001):
+    fact-hư-cấu 10.9091 → 1.8840  (Δ -9.0250)
+    held-out CŨ 9.4824 → 22.5005  (Δ +13.0181 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ' phía toàn bộ luật Hồng Nghĩa năm 1' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → ' Hồng Nghĩa năm 14786' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → ' Yên Phong suốt bốn tháng năm 12' (kỳ vọng 'Yên Phong')
+
+── mem_rand: 5.17M tham số ──
+  step  1000 loss 7.715 held-out 11.7027 bits/tok (51s)
+  step  2000 loss 7.013 held-out 10.4089 bits/tok (98s)
+  step  3000 loss 6.921 held-out 10.1770 bits/tok (144s)
+  step  4000 loss 6.650 held-out 10.0087 bits/tok (189s)
+  step  5000 loss 6.708 held-out 9.8844 bits/tok (233s)
+  step  6000 loss 6.687 held-out 9.7878 bits/tok (279s)
+  SAU TRAIN CHÍNH: held-out 9.7878 · fact-hư-cấu 10.8420 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.     "     "     "     ' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 20 slot, train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 10.8420 → 10.4646  (Δ -0.3774)
+    held-out CŨ 9.7878 → 9.9762  (Δ +0.1884 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.<EOS>Hội thoại:\n<EOS>Từ' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '.<EOS>Hội thoại:<EOS>Hội<EOS>' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.<EOS>Hội thoại:\n<EOS>Từ' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 20/32 là slot MỚI; top-5=[4112, 4102, 4103, 4107, 4108]
+
+── mem_graph: 5.17M tham số ──
+  step  1000 loss 7.709 held-out 11.7027 bits/tok (45s)
+  step  2000 loss 7.014 held-out 10.4093 bits/tok (91s)
+  step  3000 loss 6.922 held-out 10.1761 bits/tok (136s)
+  step  4000 loss 6.649 held-out 10.0061 bits/tok (182s)
+  step  5000 loss 6.703 held-out 9.8791 bits/tok (227s)
+  step  6000 loss 6.681 held-out 9.7799 bits/tok (272s)
+  SAU TRAIN CHÍNH: held-out 9.7799 · fact-hư-cấu 10.8412 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.     "     "     "     ' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 20 slot, train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 10.8412 → 10.4744  (Δ -0.3668)
+    held-out CŨ 9.7799 → 9.9504  (Δ +0.1705 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.<EOS>Hội thoại:\n<EOS>Từ' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '.<EOS>Hội thoại:<EOS>Hội<EOS>' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.<EOS>Hội thoại:\n<EOS>Từ' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 20/32 là slot MỚI; top-5=[4104, 4096, 4111, 4100, 4110]
+      slot cũ #1243 = đơn vị: 'Từ Albion (Ἀλβίων) hay insula Albionum có hai khả năng nguồn'
+      slot cũ #3501 = đơn vị: 'Các hợp chất Au(I) thường có đặc trưng tuyến tính. Một ví dụ'
+
+════ BẢNG KẾT (điều kiện phân định ghi TRƯỚC trong docstring) ════
+     nhánh  held-out  fact trước  fact sau    Δfact    Δquên
+       ffn    9.4824     10.9091    1.8840  -9.0250 +13.0181
+  mem_rand    9.7878     10.8420   10.4646  -0.3774  +0.1884
+ mem_graph    9.7799     10.8412   10.4744  -0.3668  +0.1705
+
+⇒ PASS mọc-không-quên = Δfact ≤ −2.0 VÀ |Δquên| < 0.05 (nhánh mem).
+  FFN full-FT dự kiến Δfact âm nhưng Δquên DƯƠNG (quên) — nền so sánh.
+  mem_rand ≈ mem_graph ở held-out ⇒ gieo mầm đồ thị thừa (bài học G17) — ghi thật.

@@ -1,0 +1,42 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_parent": 593,
+ "khe": 9032,
+ "khe_thay_duoc": 8703,
+ "to_hop_moi_log10": 12.405152622711226,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 8703,
+   "hep": 0.09801217970814662,
+   "chu_de": 0.9219809261174308
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 8703,
+   "hep": 0.010341261633919338,
+   "chu_de": 0.6338044352522119
+  }
+ },
+ "ty_so_chu_de": 1.4546773023930384,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0,
+  "narrow_min": 0.5
+ },
+ "gate_pass": false,
+ "vi_du": [
+  "'Vừa xem tập'  →  thay ' xem' bằng ' nhìn'",
+  "' xem tập mới'  →  thay ' tập' bằng ' cụ'",
+  "' tập mới nhất'  →  thay ' mới' bằng ' còn'",
+  "' mới nhất của'  →  thay ' nhất' bằng ' xác'",
+  "' của chương trình'  →  thay ' chương' bằng ' quá'",
+  "' chương trình,'  →  thay ' trình' bằng ' mức'",
+  "' là tập hay'  →  thay ' tập' bằng ' huấn'",
+  "' tập hay nhất'  →  thay ' hay' bằng ' nhưng'",
+  "' hay nhất!'  →  thay ' nhất' bằng ' khẳng'",
+  "', ta nói'  →  thay ' ta' bằng ' mình'",
+  "' cho mọi người'  →  thay ' mọi' bằng ' mỗi'",
+  "' là vì cái'  →  thay ' vì' bằng ' hắn'"
+ ],
+ "seconds": 75.6
+}

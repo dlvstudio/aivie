@@ -1,0 +1,51 @@
+{
+  "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+  "n_prompt": 60,
+  "max_clauses": 5,
+  "pmi_cut": 0.0,
+  "gates": {
+    "lac_rel": 0.5,
+    "dead_pp": 0.1,
+    "lac_abs_ref": 0.12
+  },
+  "baseline": {
+    "label": "A_no_gate",
+    "lac": 0.839622641509434,
+    "n_lac": 53,
+    "dead_rate": 0.2,
+    "mean_clauses": 4.233333333333333,
+    "mean_rejected": 0.0
+  },
+  "rows": [
+    {
+      "label": "B_pmi0.5",
+      "lac": 0.8411949685534592,
+      "n_lac": 53,
+      "dead_rate": 0.21666666666666667,
+      "mean_clauses": 4.25,
+      "mean_rejected": 1.65,
+      "d_lac": 0.0015723270440252124,
+      "d_dead": 0.016666666666666663,
+      "gate_lac": false,
+      "gate_dead": true,
+      "gate_pass": false,
+      "ref_abs_ok": false
+    },
+    {
+      "label": "B_pmi0.5_cover",
+      "lac": NaN,
+      "n_lac": 0,
+      "dead_rate": 1.0,
+      "mean_clauses": 0.0,
+      "mean_rejected": 47.6,
+      "d_lac": NaN,
+      "d_dead": 0.8,
+      "gate_lac": false,
+      "gate_dead": false,
+      "gate_pass": false,
+      "ref_abs_ok": false
+    }
+  ],
+  "gate_pass": false,
+  "seconds": 12.3
+}

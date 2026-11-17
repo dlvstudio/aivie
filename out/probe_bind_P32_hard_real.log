@@ -1,0 +1,49 @@
+[     0s] load checkpoints/network_v11_coref.pkl (gc.disable) …
+[   253s] ✓ loaded · parents 65,098
+[   675s] probe: 12 item
+[   676s] 
+═══ P3.0 baseline (kênh copy TẮT) — kỳ vọng copy ≈ 0 ═══
+[  1078s] [single] copy=✗ novelty=['exact=n reg=Y gidf=4.9']
+[  1078s]     prompt: 'Lữ Bằng Sơn là một nhà thơ nổi tiếng của Việt Nam .'
+[  1078s]     cont  : 'Nguyễn Phi Phúc có tám người con, . trong đó có . ba người con trai: . Nguyễn Nhạc, Nguyễn Lữ và Nguyễn Huệ.\nLớn lên'   (mong copy: ['Lữ Bằng Sơn'])
+[  1505s] [single] copy=✗ novelty=['exact=n reg=Y gidf=8.6']
+[  1505s]     prompt: 'Vĩnh Trảng là một tỉnh ven biển thuộc miền Trung .'
+[  1505s]     cont  : 'Có hai nhân vật lãnh đạo . không phải là . quân nhân tham gia là các ông . Nguyễn Văn Linh và Võ Văn Kiệt.\nÔng Nguyễn Văn'   (mong copy: ['Vĩnh Trảng'])
+[  1544s] [single] copy=✗ novelty=['exact=n reg=Y gidf=5.1']
+[  1544s]     prompt: 'Trác Vĩ Hạ lên ngôi vua và bắt đầu trị vì đất nước .'
+[  1544s]     cont  : 'Làm sao chính hắn nhưng vẫn nhốt ở cùng nơi đây khó có thể rời đi , còn Linh Phong giới cái khác Lục giai Chân nhân vốn là số lượng ít'   (mong copy: ['Trác Vĩ Hạ'])
+[  1557s] [single] copy=✗ novelty=['exact=n reg=Y gidf=6.4']
+[  1557s]     prompt: 'Ngân Hoài Lạc sinh ra trong một gia đình nông dân nghèo .'
+[  1557s]     cont  : 'Ban đêm ta thấy dải sáng mờ trên trời chính là nhìn ngang vào đĩa thiên hà. Trái Đất chỉ là một hành tinh nhỏ trong vũ trụ bao la.'   (mong copy: ['Ngân Hoài Lạc'])
+[  1572s] [single] copy=✗ novelty=['exact=n reg=Y gidf=6.6']
+[  1572s]     prompt: 'Đằng Thuỵ Khương là một tổ chức phi lợi nhuận thành lập năm 1995 .'
+[  1572s]     cont  : 'Chiến thắng chấm dứt hơn một nghìn năm Bắc thuộc.5 Ngô Quyền được tôn là vị vua mở đầu thời kỳ5 độc lập tự chủ lâu dài.'   (mong copy: ['Đằng Thuỵ Khương'])
+[  1586s] [single] copy=✗ novelty=['exact=n reg=Y gidf=4.5']
+[  1586s]     prompt: 'Cù Minh Thác là một vị tướng tài ba dưới triều Trần .'
+[  1586s]     cont  : 'Năm 1787C,C ông đã trở lại và giữ vững được Nam Bộ.\nTriều đại của Gia Long đã chính thức sử dụng quốc'   (mong copy: ['Cù Minh Thác'])
+[  1591s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=4.5', 'exact=n reg=Y gidf=5.1']
+[  1591s]     prompt: 'Cù Minh Thác đánh bại Trác Vĩ Hạ trong một trận chiến lớn ,'
+[  1591s]     cont  : 'huy động hơn 20-30C Nguyễn'   (mong copy: ['Cù Minh Thác', 'Trác Vĩ Hạ'])
+[  1601s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=5.1', 'exact=n reg=Y gidf=4.9']
+[  1601s]     prompt: 'Trác Vĩ Hạ là con trai của Lữ Bằng Sơn ,'
+[  1601s]     cont  : 'Thương Hạ đối với Nguyên Hưng giới bên trong tình thế đều vô cùng cảm thấy hứng thú. Làm sao chính hắn nhưng vẫn nhốt ở cùng nơi đây khó có'   (mong copy: ['Trác Vĩ Hạ', 'Lữ Bằng Sơn'])
+[  1610s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=4.9']
+[  1610s]     prompt: 'Lữ Bằng Sơn là một họa sĩ tài năng . Ông'
+[  1610s]     cont  : '. .\nTrong những năm đầu tiên, . Nguyễn Nhạc đóng vai trò quan trọng nhất. .\nTương truyền trước khi nổi dậy ông từng đi buôn trầu'   (mong copy: ['Lữ Bằng Sơn'])
+[  1613s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=6.4']
+[  1613s]     prompt: 'Ngân Hoài Lạc là một nữ ca sĩ nổi tiếng . Bà'
+[  1613s]     cont  : ', .'   (mong copy: ['Ngân Hoài Lạc'])
+[  1622s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=8.6']
+[  1622s]     prompt: 'Vĩnh Trảng là một thành phố cổ kính và yên bình . Nơi này'
+[  1622s]     cont  : 'trở thành một ốc đảo chỉ còn giao lưu với bên ngoài bằng đường không. .\nĐại sứ quán các nước lần lượt đóng cửa, hạ cờ.'   (mong copy: ['Vĩnh Trảng'])
+[  1629s] [single·SKIP(not-novel)] copy=✗ novelty=['exact=Y reg=Y gidf=5.1']
+[  1629s]     prompt: 'Hà Nội là thủ đô của Việt Nam .'
+[  1629s]     cont  : 'Hồ gắn với truyền thuyết vua Lê trả gươm, xung quanh là đền Ngọc Sơn và cầu Thê Húc. Đây là nơi người dân và du khách thường đi dạo'   (mong copy: ['Hà Nội'])
+[  1629s] 
+═══ BẢNG (chỉ item novel hợp lệ) ═══
+[  1629s]   single  : copy 0/6
+[  1629s]   crossed : copy 0/2
+[  1629s]   pronoun : copy 0/3
+[  1629s] 
+→ P3.0: xác nhận nền (copy thấp) + harness chạy. Số này là MỐC cho P3.2 A/B.
+[  1629s]   Drift: đọc tay 'cont' ở trên — có thực-thể TRAIN lạ bị kéo vào không (G15).

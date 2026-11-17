@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_300.pkl …
+[    0.2s RSS  0.30GB] nạp xong · parents=305 vocab=32002
+[    0.2s RSS  0.30GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.2s RSS  0.30GB] ws_spans 0/305 · span=0 · bỏ=0
+[    0.3s RSS  0.30GB] 624 span · 0.0 phút
+[    0.3s RSS  0.30GB] ghi out/noise_nho/toy_noise_300.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.3s RSS  0.30GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.3s RSS  0.30GB]   mẫu[01] 'p ê'
+[    0.3s RSS  0.30GB]   mẫu[02] 'động đất'
+[    0.3s RSS  0.30GB]   mẫu[03] 'thế kỷ'
+[    0.3s RSS  0.30GB]   mẫu[04] 'tự trị'
+[    0.3s RSS  0.30GB]   mẫu[05] 'bản địa'
+[    0.3s RSS  0.30GB]   mẫu[06] 'bằng trắc'
+[    0.3s RSS  0.30GB]   mẫu[07] 'phần lớn'
+[    0.3s RSS  0.30GB]   mẫu[08] 'địa danh tiếng'
+[    0.3s RSS  0.30GB]   mẫu[09] 'câu thơ'
+[    0.3s RSS  0.30GB]   mẫu[10] 'chế biến'
+[    0.3s RSS  0.30GB]   mẫu[11] 'màu mỡ'
+[    0.3s RSS  0.30GB]   mẫu[12] 'giao chiến'
+[    0.3s RSS  0.30GB]   mẫu[13] 'trí thức'
+[    0.3s RSS  0.30GB]   mẫu[14] 'diện tích'
+[    0.3s RSS  0.30GB]   mẫu[15] 'Hoa ngữ'
+[    0.3s RSS  0.30GB]   mẫu[16] 'tướng sĩ'
+[    0.3s RSS  0.30GB]   mẫu[17] 'ban đầu'
+[    0.3s RSS  0.30GB]   mẫu[18] 'bổ sung'
+[    0.3s RSS  0.30GB]   mẫu[19] 'khoa học'
+[    0.3s RSS  0.30GB]   mẫu[20] 'đổ máu'
+[    0.3s RSS  0.30GB]   mẫu[21] 'hỗn hợp'
+[    0.3s RSS  0.30GB]   mẫu[22] 'quảng bá'
+[    0.3s RSS  0.30GB]   mẫu[23] 'John Kas ich'
+[    0.3s RSS  0.30GB]   mẫu[24] 'vay mượn'
+[    0.3s RSS  0.30GB]   mẫu[25] 'nham thạch'
+[    0.3s RSS  0.30GB]   mẫu[26] 'Tối T ăm'
+[    0.3s RSS  0.30GB]   mẫu[27] 'Thomas Edison'
+[    0.3s RSS  0.30GB]   mẫu[28] 'Hang B ua'
+[    0.3s RSS  0.30GB]   mẫu[29] 'Sierra Nevada'
+[    0.3s RSS  0.30GB] span nghi rác (tự động): 21/624 = 3.4% (ISG: 57%)
+[    0.3s RSS  0.30GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

@@ -1,0 +1,28 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=48 mode=agenda_handoff
+
+=== nq_def  (226.9s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (11.9s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ''
+
+=== thd  (37.8s) dots≈0 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương'
+
+=== ly  (85.1s) dots≈0 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109
+cont:   'Nhà Lý thành lập năm 109'
+
+=== hung  (27.1s) dots≈0 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   'Lam Sơn'
+
+[476s] → out/probe_agenda_handoff_only3.log

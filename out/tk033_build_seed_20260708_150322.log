@@ -1,0 +1,17 @@
+[     0.0s] START ckpt=network_v7_history.pkl out=network_v7_history_segseed.pkl
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history.pkl …
+[     0.0s] ▶ unpickle
+[    13.2s] ✓ unpickle  (13.2s)
+[    13.2s] ▶ vocab (112275 token)
+[    13.8s] ✓ vocab (112275 token)  (0.6s)
+[    13.8s] ▶ adjacency
+[    30.4s] ✓ adjacency  (16.6s)
+[    30.4s] ▶ embedding
+[    31.5s] ✓ embedding  (1.1s)
+[    31.5s] ▶ parents
+[   182.9s] ✓ parents  (151.3s)
+[   182.9s] ✓ loaded: vocab=112275 parents=142733 E=(77464, 96)
+[   189.4s] sidecar có: network_v7_history.content.pkl
+[   189.4s] ▶ varlm sidecar: network_v7_history.varlm.pkl
+[   192.1s] ✓ varlm: k=1:65918, k=2:526992, k=3:537132, k=4:591968
+[   192.1s] ✓ load_checkpoint XONG

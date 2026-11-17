@@ -1,0 +1,195 @@
+[     0.0s] === probe_hopfield_rank START (pid=5926) → out/logs/probe_hopfield_rank_20260802_125341.log ===
+[     0.0s] P48 Trụ D — Hopfield vs rank_matches · checkpoints/network_v12_sent.pkl
+[     0.0s] CỔNG G-hop (nêu TRƯỚC): rank-1 ≥ +5.0pp HOẶC tie-rate ↓ ≥20.0% tương đối, so A_rank_matches @ q_len=3
+[     0.0s] === load_network_v12_sent START (pid=5926) → out/logs/load_network_v12_sent_20260802_125341.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[     9.4s] ✓ adjacency  (7.2s)
+[     9.4s] ▶ embedding
+[     9.4s] ✓ embedding  (0.0s)
+[     9.4s] ▶ parents
+[     9.4s] parents: deserialize 430447 records …
+[     9.4s] parents 5000/430447 (1.2%)
+[     9.5s] parents 10000/430447 (2.3%)
+[     9.5s] parents 15000/430447 (3.5%)
+[     9.5s] parents 20000/430447 (4.6%)
+[     9.6s] parents 25000/430447 (5.8%)
+[     9.6s] parents 30000/430447 (7.0%)
+[     9.6s] parents 35000/430447 (8.1%)
+[     9.7s] parents 40000/430447 (9.3%)
+[     9.7s] parents 45000/430447 (10.5%)
+[     9.7s] parents 50000/430447 (11.6%)
+[     9.8s] parents 55000/430447 (12.8%)
+[     9.8s] parents 60000/430447 (13.9%)
+[     9.8s] parents 65000/430447 (15.1%)
+[     9.9s] parents 70000/430447 (16.3%)
+[     9.9s] parents 75000/430447 (17.4%)
+[     9.9s] parents 80000/430447 (18.6%)
+[    10.0s] parents 85000/430447 (19.7%)
+[    10.0s] parents 90000/430447 (20.9%)
+[    10.0s] parents 95000/430447 (22.1%)
+[    10.1s] parents 100000/430447 (23.2%)
+[    10.1s] parents 105000/430447 (24.4%)
+[    10.1s] parents 110000/430447 (25.6%)
+[    10.2s] parents 115000/430447 (26.7%)
+[    10.2s] parents 120000/430447 (27.9%)
+[    10.3s] parents 125000/430447 (29.0%)
+[    10.3s] parents 130000/430447 (30.2%)
+[    10.4s] parents 135000/430447 (31.4%)
+[    10.4s] parents 140000/430447 (32.5%)
+[    10.5s] parents 145000/430447 (33.7%)
+[    10.5s] parents 150000/430447 (34.8%)
+[    10.6s] parents 155000/430447 (36.0%)
+[    10.6s] parents 160000/430447 (37.2%)
+[    10.7s] parents 165000/430447 (38.3%)
+[    10.8s] parents 170000/430447 (39.5%)
+[    10.8s] parents 175000/430447 (40.7%)
+[    10.9s] parents 180000/430447 (41.8%)
+[    11.0s] parents 185000/430447 (43.0%)
+[    11.0s] parents 190000/430447 (44.1%)
+[    11.1s] parents 195000/430447 (45.3%)
+[    11.1s] parents 200000/430447 (46.5%)
+[    11.2s] parents 205000/430447 (47.6%)
+[    11.3s] parents 210000/430447 (48.8%)
+[    11.3s] parents 215000/430447 (49.9%)
+[    11.4s] parents 220000/430447 (51.1%)
+[    11.5s] parents 225000/430447 (52.3%)
+[    11.5s] parents 230000/430447 (53.4%)
+[    11.6s] parents 235000/430447 (54.6%)
+[    11.7s] parents 240000/430447 (55.8%)
+[    11.7s] parents 245000/430447 (56.9%)
+[    11.8s] parents 250000/430447 (58.1%)
+[    11.9s] parents 255000/430447 (59.2%)
+[    11.9s] parents 260000/430447 (60.4%)
+[    12.0s] parents 265000/430447 (61.6%)
+[    12.1s] parents 270000/430447 (62.7%)
+[    12.1s] parents 275000/430447 (63.9%)
+[    12.2s] parents 280000/430447 (65.0%)
+[    12.3s] parents 285000/430447 (66.2%)
+[    12.3s] parents 290000/430447 (67.4%)
+[    12.4s] parents 295000/430447 (68.5%)
+[    12.5s] parents 300000/430447 (69.7%)
+[    12.5s] parents 305000/430447 (70.9%)
+[    12.6s] parents 310000/430447 (72.0%)
+[    12.7s] parents 315000/430447 (73.2%)
+[    12.7s] parents 320000/430447 (74.3%)
+[    12.8s] parents 325000/430447 (75.5%)
+[    12.9s] parents 330000/430447 (76.7%)
+[    12.9s] parents 335000/430447 (77.8%)
+[    13.0s] parents 340000/430447 (79.0%)
+[    13.1s] parents 345000/430447 (80.1%)
+[    13.1s] parents 350000/430447 (81.3%)
+[    13.2s] parents 355000/430447 (82.5%)
+[    13.2s] parents 360000/430447 (83.6%)
+[    13.3s] parents 365000/430447 (84.8%)
+[    13.4s] parents 370000/430447 (86.0%)
+[    13.4s] parents 375000/430447 (87.1%)
+[    13.5s] parents 380000/430447 (88.3%)
+[    13.6s] parents 385000/430447 (89.4%)
+[    13.7s] parents 390000/430447 (90.6%)
+[    13.7s] parents 395000/430447 (91.8%)
+[    13.8s] parents 400000/430447 (92.9%)
+[    13.8s] parents 405000/430447 (94.1%)
+[    13.9s] parents 410000/430447 (95.2%)
+[    14.0s] parents 415000/430447 (96.4%)
+[    14.0s] parents 420000/430447 (97.6%)
+[    14.1s] parents 425000/430447 (98.7%)
+[    14.1s] parents 430000/430447 (99.9%)
+[    25.6s] ▶ rebuild_hierarchical_index …
+[    26.9s] ✓ rebuild_hierarchical_index (1.2s)
+[    31.4s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    31.4s] ✓ parents  (22.0s)
+[    31.4s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    32.6s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    32.6s] ✓ load_checkpoint XONG
+[    41.8s] load 42s · 430,447 cha
+[    65.3s] 800 query (≥3 token nội dung) — cùng seed với P31
+[    82.8s] HopfieldMemory: A (32002, 430447) nnz=8,000,397 (83s)
+[   111.3s]   [A_rank_matches] 200/800 (111s)
+[   133.9s]   [A_rank_matches] 400/800 (134s)
+[   158.9s]   [A_rank_matches] 600/800 (159s)
+[   184.5s]   [A_rank_matches] 800/800 (184s)
+[   184.5s] [184s] A_rank_matches: rank-1=22.25% MRR=0.288 tie=50.1% mean|tie|=16.50 miss=85
+[   186.9s]   [B_hop_s1_b8] 200/800 (187s)
+[   189.0s]   [B_hop_s1_b8] 400/800 (189s)
+[   191.5s]   [B_hop_s1_b8] 600/800 (192s)
+[   193.8s]   [B_hop_s1_b8] 800/800 (194s)
+[   193.8s] [194s] B_hop_s1_b8: rank-1=14.75% MRR=0.222 tie=3.9% mean|tie|=1.05 miss=0
+[   212.8s]   [C_hop_s2_b8] 200/800 (213s)
+[   231.7s]   [C_hop_s2_b8] 400/800 (232s)
+[   251.0s]   [C_hop_s2_b8] 600/800 (251s)
+[   270.4s]   [C_hop_s2_b8] 800/800 (270s)
+[   270.5s] [270s] C_hop_s2_b8: rank-1=10.75% MRR=0.160 tie=6.4% mean|tie|=1.09 miss=0
+[   290.9s]   [D_hop_s3_b8] 200/800 (291s)
+[   310.8s]   [D_hop_s3_b8] 400/800 (311s)
+[   330.9s]   [D_hop_s3_b8] 600/800 (331s)
+[   351.1s]   [D_hop_s3_b8] 800/800 (351s)
+[   351.2s] [351s] D_hop_s3_b8: rank-1=9.00% MRR=0.132 tie=7.0% mean|tie|=1.09 miss=0
+[   405.4s]   [E_tiebreak_s2_b8] 200/800 (405s)
+[   451.7s]   [E_tiebreak_s2_b8] 400/800 (452s)
+[   501.2s]   [E_tiebreak_s2_b8] 600/800 (501s)
+[   551.8s]   [E_tiebreak_s2_b8] 800/800 (552s)
+[   551.9s] [552s] E_tiebreak_s2_b8: rank-1=30.75% MRR=0.405 tie=0.9% mean|tie|=1.01 miss=85
+[   554.5s]   [B_hop_s1_b32] 200/800 (555s)
+[   556.8s]   [B_hop_s1_b32] 400/800 (557s)
+[   559.4s]   [B_hop_s1_b32] 600/800 (559s)
+[   561.8s]   [B_hop_s1_b32] 800/800 (562s)
+[   561.8s] [562s] B_hop_s1_b32: rank-1=14.75% MRR=0.222 tie=3.9% mean|tie|=1.05 miss=0
+[   583.4s]   [C_hop_s2_b32] 200/800 (583s)
+[   604.9s]   [C_hop_s2_b32] 400/800 (605s)
+[   626.6s]   [C_hop_s2_b32] 600/800 (627s)
+[   648.6s]   [C_hop_s2_b32] 800/800 (649s)
+[   648.7s] [649s] C_hop_s2_b32: rank-1=15.88% MRR=0.188 tie=4.6% mean|tie|=1.07 miss=0
+[   671.7s]   [D_hop_s3_b32] 200/800 (672s)
+[   694.4s]   [D_hop_s3_b32] 400/800 (694s)
+[   716.9s]   [D_hop_s3_b32] 600/800 (717s)
+[   739.4s]   [D_hop_s3_b32] 800/800 (739s)
+[   739.5s] [740s] D_hop_s3_b32: rank-1=16.00% MRR=0.179 tie=4.9% mean|tie|=1.07 miss=0
+[   794.0s]   [E_tiebreak_s2_b32] 200/800 (794s)
+[   840.3s]   [E_tiebreak_s2_b32] 400/800 (840s)
+[   889.6s]   [E_tiebreak_s2_b32] 600/800 (890s)
+[   940.3s]   [E_tiebreak_s2_b32] 800/800 (940s)
+[   940.4s] [940s] E_tiebreak_s2_b32: rank-1=30.88% MRR=0.408 tie=0.9% mean|tie|=1.01 miss=85
+[   943.0s]   [B_hop_s1_b128] 200/800 (943s)
+[   945.2s]   [B_hop_s1_b128] 400/800 (945s)
+[   947.8s]   [B_hop_s1_b128] 600/800 (948s)
+[   950.2s]   [B_hop_s1_b128] 800/800 (950s)
+[   950.2s] [950s] B_hop_s1_b128: rank-1=14.75% MRR=0.222 tie=3.9% mean|tie|=1.05 miss=0
+[   972.2s]   [C_hop_s2_b128] 200/800 (972s)
+[   994.2s]   [C_hop_s2_b128] 400/800 (994s)
+[  1016.2s]   [C_hop_s2_b128] 600/800 (1016s)
+[  1038.3s]   [C_hop_s2_b128] 800/800 (1038s)
+[  1038.4s] [1038s] C_hop_s2_b128: rank-1=15.00% MRR=0.170 tie=4.2% mean|tie|=1.05 miss=0
+[  1061.6s]   [D_hop_s3_b128] 200/800 (1062s)
+[  1084.4s]   [D_hop_s3_b128] 400/800 (1084s)
+[  1107.2s]   [D_hop_s3_b128] 600/800 (1107s)
+[  1130.0s]   [D_hop_s3_b128] 800/800 (1130s)
+[  1130.1s] [1130s] D_hop_s3_b128: rank-1=15.00% MRR=0.167 tie=4.4% mean|tie|=1.06 miss=0
+[  1184.5s]   [E_tiebreak_s2_b128] 200/800 (1184s)
+[  1230.8s]   [E_tiebreak_s2_b128] 400/800 (1231s)
+[  1280.0s]   [E_tiebreak_s2_b128] 600/800 (1280s)
+[  1330.5s]   [E_tiebreak_s2_b128] 800/800 (1331s)
+[  1330.6s] [1331s] E_tiebreak_s2_b128: rank-1=31.13% MRR=0.409 tie=0.9% mean|tie|=1.01 miss=85
+[  1330.6s] 
+=== P48 q_len=3 n=800 ===
+[  1330.6s]   config               rank-1     MRR    tie%      Δr1  Δtie%rel
+[  1330.6s]   A_rank_matches       22.25%   0.288   50.1%        —         —
+[  1330.6s]   B_hop_s1_b8          14.75%   0.222    3.9%   -7.50pp    +92.3%
+[  1330.6s]   C_hop_s2_b8          10.75%   0.160    6.4%  -11.50pp    +87.3%
+[  1330.6s]   D_hop_s3_b8           9.00%   0.132    7.0%  -13.25pp    +86.0%
+[  1330.6s]   E_tiebreak_s2_b8     30.75%   0.405    0.9%   +8.50pp    +98.3%
+[  1330.6s]   B_hop_s1_b32         14.75%   0.222    3.9%   -7.50pp    +92.3%
+[  1330.6s]   C_hop_s2_b32         15.88%   0.188    4.6%   -6.38pp    +90.8%
+[  1330.6s]   D_hop_s3_b32         16.00%   0.179    4.9%   -6.25pp    +90.3%
+[  1330.6s]   E_tiebreak_s2_b32    30.88%   0.408    0.9%   +8.63pp    +98.3%
+[  1330.6s]   B_hop_s1_b128        14.75%   0.222    3.9%   -7.50pp    +92.3%
+[  1330.6s]   C_hop_s2_b128        15.00%   0.170    4.2%   -7.25pp    +91.5%
+[  1330.6s]   D_hop_s3_b128        15.00%   0.167    4.4%   -7.25pp    +91.3%
+[  1330.6s]   E_tiebreak_s2_b128   31.13%   0.409    0.9%   +8.88pp    +98.3%
+[  1330.6s] 
+  G-hop: ĐẠT — tốt nhất E_tiebreak_s2_b128 (+8.88pp, tie +98.3%rel)
+[  1330.6s] → ~/Documents/learn/nn-aivie/out/probe_hopfield_rank_v12.json

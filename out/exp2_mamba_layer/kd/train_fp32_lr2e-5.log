@@ -1,0 +1,11 @@
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 22277.81it/s]
+05:31:27 KD đầu-cuối · tầng [1, 14, 30] · khởi từ chat · L=256 steps=150 lr=2e-05
+05:31:50 kd VAL KL bước 0 = 0.4923
+05:31:57 data train: 39446 hội thoại VI (đã bỏ văn phòng/code/dịch)
+05:32:15 kd step 1/150 KL 0.9980 (ema 0.9980) · 42 tok/s · 0.4 phút · mem 20.5 GB
+05:33:28 kd step 5/150 KL 0.8066 (ema 1.0650) · 52 tok/s · 1.6 phút · mem 21.6 GB
+05:35:02 kd step 10/150 KL 0.7655 (ema 1.0016) · 53 tok/s · 3.2 phút · mem 21.6 GB
+05:36:36 kd step 15/150 KL 0.8875 (ema 0.9836) · 54 tok/s · 4.8 phút · mem 21.6 GB
+05:38:10 kd step 20/150 KL 1.4696 (ema 1.2539) · 54 tok/s · 6.3 phút · mem 21.6 GB
+05:39:44 kd step 25/150 KL 1.1371 (ema 1.2803) · 54 tok/s · 7.9 phút · mem 21.6 GB
+05:39:58 kd VAL KL bước 25 = 0.7589

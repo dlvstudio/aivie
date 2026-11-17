@@ -1,0 +1,150 @@
+[     0.0s] === load_net_ls_concept_conf START (pid=42166) → out/logs/load_net_ls_concept_conf_20260826_193703.log ===
+[     0.0s] load checkpoint checkpoints/net_ls_concept_conf.pkl …
+[     0.0s] ▶ unpickle
+[     2.4s] ✓ unpickle  (2.4s)
+[     2.4s] ▶ vocab (32002 token)
+[     2.4s] ✓ vocab (32002 token)  (0.0s)
+[     2.4s] ▶ adjacency
+[    10.9s] ✓ adjacency  (8.5s)
+[    10.9s] ▶ embedding
+[    11.0s] ✓ embedding  (0.1s)
+[    11.0s] ▶ parents
+[    11.0s] parents: deserialize 450303 records …
+[    11.0s] parents 5000/450303 (1.1%)
+[    11.0s] parents 10000/450303 (2.2%)
+[    11.1s] parents 15000/450303 (3.3%)
+[    11.1s] parents 20000/450303 (4.4%)
+[    11.2s] parents 25000/450303 (5.6%)
+[    11.2s] parents 30000/450303 (6.7%)
+[    11.3s] parents 35000/450303 (7.8%)
+[    11.3s] parents 40000/450303 (8.9%)
+[    11.4s] parents 45000/450303 (10.0%)
+[    11.4s] parents 50000/450303 (11.1%)
+[    11.5s] parents 55000/450303 (12.2%)
+[    11.5s] parents 60000/450303 (13.3%)
+[    11.5s] parents 65000/450303 (14.4%)
+[    11.6s] parents 70000/450303 (15.5%)
+[    11.7s] parents 75000/450303 (16.7%)
+[    11.7s] parents 80000/450303 (17.8%)
+[    11.8s] parents 85000/450303 (18.9%)
+[    11.8s] parents 90000/450303 (20.0%)
+[    11.9s] parents 95000/450303 (21.1%)
+[    11.9s] parents 100000/450303 (22.2%)
+[    12.0s] parents 105000/450303 (23.3%)
+[    12.0s] parents 110000/450303 (24.4%)
+[    12.0s] parents 115000/450303 (25.5%)
+[    12.1s] parents 120000/450303 (26.6%)
+[    12.1s] parents 125000/450303 (27.8%)
+[    12.2s] parents 130000/450303 (28.9%)
+[    12.2s] parents 135000/450303 (30.0%)
+[    12.3s] parents 140000/450303 (31.1%)
+[    12.3s] parents 145000/450303 (32.2%)
+[    12.4s] parents 150000/450303 (33.3%)
+[    12.4s] parents 155000/450303 (34.4%)
+[    12.5s] parents 160000/450303 (35.5%)
+[    12.5s] parents 165000/450303 (36.6%)
+[    12.6s] parents 170000/450303 (37.8%)
+[    12.6s] parents 175000/450303 (38.9%)
+[    12.7s] parents 180000/450303 (40.0%)
+[    12.8s] parents 185000/450303 (41.1%)
+[    12.8s] parents 190000/450303 (42.2%)
+[    12.9s] parents 195000/450303 (43.3%)
+[    13.0s] parents 200000/450303 (44.4%)
+[    13.0s] parents 205000/450303 (45.5%)
+[    13.1s] parents 210000/450303 (46.6%)
+[    13.2s] parents 215000/450303 (47.7%)
+[    13.3s] parents 220000/450303 (48.9%)
+[    13.3s] parents 225000/450303 (50.0%)
+[    13.4s] parents 230000/450303 (51.1%)
+[    13.5s] parents 235000/450303 (52.2%)
+[    13.5s] parents 240000/450303 (53.3%)
+[    13.6s] parents 245000/450303 (54.4%)
+[    13.7s] parents 250000/450303 (55.5%)
+[    13.8s] parents 255000/450303 (56.6%)
+[    13.8s] parents 260000/450303 (57.7%)
+[    13.9s] parents 265000/450303 (58.8%)
+[    14.0s] parents 270000/450303 (60.0%)
+[    14.1s] parents 275000/450303 (61.1%)
+[    14.1s] parents 280000/450303 (62.2%)
+[    14.2s] parents 285000/450303 (63.3%)
+[    14.3s] parents 290000/450303 (64.4%)
+[    14.4s] parents 295000/450303 (65.5%)
+[    14.5s] parents 300000/450303 (66.6%)
+[    14.5s] parents 305000/450303 (67.7%)
+[    14.6s] parents 310000/450303 (68.8%)
+[    14.7s] parents 315000/450303 (70.0%)
+[    14.8s] parents 320000/450303 (71.1%)
+[    14.9s] parents 325000/450303 (72.2%)
+[    14.9s] parents 330000/450303 (73.3%)
+[    15.0s] parents 335000/450303 (74.4%)
+[    15.1s] parents 340000/450303 (75.5%)
+[    15.2s] parents 345000/450303 (76.6%)
+[    15.3s] parents 350000/450303 (77.7%)
+[    15.3s] parents 355000/450303 (78.8%)
+[    15.4s] parents 360000/450303 (79.9%)
+[    15.5s] parents 365000/450303 (81.1%)
+[    15.5s] parents 370000/450303 (82.2%)
+[    15.6s] parents 375000/450303 (83.3%)
+[    15.7s] parents 380000/450303 (84.4%)
+[    15.8s] parents 385000/450303 (85.5%)
+[    15.8s] parents 390000/450303 (86.6%)
+[    15.9s] parents 395000/450303 (87.7%)
+[    16.0s] parents 400000/450303 (88.8%)
+[    16.0s] parents 405000/450303 (89.9%)
+[    16.1s] parents 410000/450303 (91.0%)
+[    16.2s] parents 415000/450303 (92.2%)
+[    16.3s] parents 420000/450303 (93.3%)
+[    16.3s] parents 425000/450303 (94.4%)
+[    16.4s] parents 430000/450303 (95.5%)
+[    16.4s] parents 435000/450303 (96.6%)
+[    16.5s] parents 440000/450303 (97.7%)
+[    16.6s] parents 445000/450303 (98.8%)
+[    16.6s] parents 450000/450303 (99.9%)
+[    27.9s] ▶ rebuild_hierarchical_index …
+[    29.7s] ✓ rebuild_hierarchical_index (1.9s)
+[    34.7s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    34.7s] ✓ parents  (23.8s)
+[    34.7s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    36.8s] sidecar thiếu → migrate: net_ls_concept_conf.content.pkl
+[    36.8s] ✓ load_checkpoint XONG
+[37s] load
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1033: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 450303 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/net_ls_concept_conf.pkl --in-place
+  ensure_frame_brackets(state)
+[203s] W_skip warmed
+[211s] completion_graph xong trong 8.5s
+generated: 'Hỏi: Sắt là gì? Đáp: thể giúp'
+         32727196 function calls (32727039 primitive calls) in 8.496 seconds
+
+   Ordered by: cumulative time
+   List reduced from 546 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.009    0.009    8.496    8.496 ~/Documents/learn/nn-aivie/src/nn_aivie/viz/export_graph_v3.py:222(completion_graph)
+        5    2.713    0.543    7.322    1.464 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1210(rank_matches)
+        2    0.007    0.004    3.862    1.931 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1784(_build_segment_plan)
+        1    0.000    0.000    3.854    3.854 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:3062(_build_agenda)
+   438066    0.810    0.000    1.169    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:726(parent_phrases_for_query)
+  1527383    0.664    0.000    1.090    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:873(_idf)
+        2    0.235    0.117    0.915    0.458 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:193(tiebreak_ranked)
+4595478/4595472    0.494    0.000    0.779    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.648    0.648 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:4367(generate)
+        1    0.001    0.001    0.638    0.638 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1022(_wseq_fallback)
+        1    0.012    0.012    0.637    0.637 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:282(_w_skip_primary_loop)
+        3    0.005    0.002    0.503    0.168 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1819(facts_about)
+        3    0.150    0.050    0.485    0.162 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:2650(theme_neuron)
+       13    0.207    0.016    0.412    0.032 {built-in method builtins.sorted}
+        1    0.000    0.000    0.367    0.367 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:3113(hub_chain_proposals)
+   450303    0.052    0.000    0.335    0.000 {built-in method builtins.next}
+  3967501    0.330    0.000    0.330    0.000 {method 'get' of 'dict' objects}
+       14    0.068    0.005    0.304    0.022 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hub_spread.py:54(resolve_surface_ids)
+   451220    0.283    0.000    0.283    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:2669(<genexpr>)
+  2788150    0.270    0.000    0.270    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:739(<genexpr>)
+   452916    0.124    0.000    0.209    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hub_spread.py:27(_surf)
+   438077    0.134    0.000    0.202    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1082(_phrase_idf)
+   438054    0.077    0.000    0.176    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:226(<lambda>)
+        2    0.104    0.052    0.160    0.080 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:139(retrieve)
+3874575/3874482    0.160    0.000    0.160    0.000 {built-in method builtins.len}
+
+
+
+### hết

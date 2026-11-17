@@ -1,0 +1,47 @@
+[     0.0s] === eval_v4_network_v10_histwiki_paragraph START (pid=17618) → out/logs/eval_v4_network_v10_histwiki_paragraph_20260709_161800.log ===
+[     0.0s] checkpoint=checkpoints/network_v10_histwiki_paragraph.pkl skip=['essay', 'gen-ar'] min_cov=0.6
+[     0.0s] === load_network_v10_histwiki_paragraph START (pid=17618) → out/logs/load_network_v10_histwiki_paragraph_20260709_161800.log ===
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    13.6s] ✓ unpickle  (13.6s)
+[    13.6s] ▶ vocab (113572 token)
+[    14.2s] ✓ vocab (113572 token)  (0.6s)
+[    14.2s] ▶ adjacency
+[    27.6s] ✓ adjacency  (13.4s)
+[    27.6s] ▶ embedding
+[    28.8s] ✓ embedding  (1.2s)
+[    28.8s] ▶ parents
+[   189.1s] ✓ parents  (160.3s)
+[   189.1s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   194.8s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   194.8s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   197.6s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   197.6s] ✓ load_checkpoint XONG
+[   197.6s] loaded vocab=113572 edges=9255791 parents=176430
+Checkpoint: checkpoints/network_v10_histwiki_paragraph.pkl  vocab=113572  parents=176430  min_cov=0.6
+
+Bộ             retr  gen-hy  vb-hy  gen-ar  vb-ar
+--------------------------------------------------
+QA val         100%     86%    14%    skip      —
+Paraphrase      88%     88%    50%    skip      —
+Synonym         67%     67%    17%    skip      —
+
+--- FAIL (gen-hybrid), nghiêm IDF ---
+  [QA val] Đoàn kết giúp em thế nào
+     gold='Đoàn kết giúp em mạnh hơn.'  ans='Đoàn kết giúp em mạnh mẽ .'  (cov 50%)
+  [Paraphrase] Tam giác có bao nhiêu cạnh
+     gold='Hình tam giác có ba cạnh.'  ans='Tam giác có tổng ba góc bằng 180 độ.'  (cov 50%)
+  [Synonym] Người trị bệnh là ai
+     gold='Bác sĩ chữa bệnh.'  ans='Các amit của axit sunfanilic gọi là sunfonamit hay sunfamit có tính sát trùng - kháng sinh được dùng nhiều làm thuốc trị bệnh'  (cov 0%)
+  [Synonym] Người dạy học là ai
+     gold='Giáo viên dạy học.'  ans='Trương Văn Hiến dạy học cũng đã truyền ý chí khởi nghĩa cho 3 anh em Tây Sơn'  (cov 0%)
+
+=== Perf summary (section → s) ===
+  gen-hy[QA val]           132.1s
+  gen-hy[Paraphrase]        66.6s
+  gen-hy[Synonym]           35.8s
+  retr[Paraphrase]          23.4s
+  retr[Synonym]              7.7s
+  retr[QA val]               7.1s
+  TOTAL                    272.6s
+[   472.8s] perf → out/logs/eval_v4_network_v10_histwiki_paragraph_perf.json  total=272.599s

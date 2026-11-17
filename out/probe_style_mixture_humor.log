@@ -1,0 +1,79 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[72s] ✓ parents 65,098
+prompts (5 × hài hước):
+  • Viết một đoạn văn hài hước về Ngô Quyền
+  • Viết hài hước về Trần Hưng Đạo
+  • Viết hài hước về trận Bạch Đằng
+  • Viết hài hước về gen Z
+  • Viết hài hước về việc học
+
+═══ [1/5] 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  plan: Ġhệt | Ġlướt | Ġkiệm
+  … MZ only
+  MZ only           bigram=0.3767  fit=nan  n=0  hits=[]
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng
+  … Mix every-pos
+  Mix every-pos     bigram=0.3877  fit=0.1772  n=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+    Ngô Quyền hệt là vị vua lướt sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân kiệm đánh bại quân Nam Hán trên sông Bạch Đằng.
+
+
+═══ [2/5] 'Viết hài hước về Trần Hưng Đạo' ═══
+  plan: Ġhệt | Ġlướt | Ġkiệm
+  … MZ only
+  MZ only           bigram=0.3575  fit=nan  n=0  hits=[]
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+  … Mix every-pos
+  Mix every-pos     bigram=0.3654  fit=0.3099  n=2  hits=['Ġhệt', 'Ġkiệm']
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn hệt, là danh tướng kiệt kiệm xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128
+
+═══ [3/5] 'Viết hài hước về trận Bạch Đằng' ═══
+  plan: Ġhệt | Ġlướt | Ġkiệm
+  … MZ only
+  MZ only           bigram=0.4048  fit=nan  n=0  hits=[]
+    Sông Bạch Đằng là nơi diễn ra ba trận thủy chiến lớn trong lịch sử Việt Nam.
+Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.
+Năm 981, Lê Hoàn đánh bại quân Tống trên
+  … Mix every-pos
+  Mix every-pos     bigram=0.3811  fit=0.4863  n=1  hits=['Ġkiệm']
+    lướt Bạch
+
+Sông Đằng là nơi diễn ra ba trận thủy chiến lớn trong lịch kiệm sử Việt Nam.
+Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.
+Năm 981, Lê Hoàn đánh bại quân
+
+═══ [4/5] 'Viết hài hước về gen Z' ═══
+  plan: Ġhệt | Ġlướt | Ġđống
+  … MZ only
+  MZ only           bigram=0.4252  fit=nan  n=0  hits=[]
+    nênTừ: hài hước
+Giải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+  … Mix every-pos
+  Mix every-pos     bigram=0.4146  fit=0.1342  n=3  hits=['Ġhệt', 'Ġlướt', 'Ġđống']
+    nên hệtTừ: lướt hài hước
+Giải nghĩa: vui đùa đống, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+
+═══ [5/5] 'Viết hài hước về việc học' ═══
+  plan: Ġhệt | Ġlướt | Ġkiệm
+  … MZ only
+  MZ only           bigram=0.4372  fit=nan  n=0  hits=[]
+    Từ: hài hước
+Giải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+  … Mix every-pos
+  Mix every-pos     bigram=0.4379  fit=0.2499  n=2  hits=['Ġhệt', 'Ġlướt']
+    Từ: hệt hài hước lướt
+Giải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+
+═══ aggregate (mean over prompts) ═══
+  MZ only           mean_bigram=0.4003  mean_fit=nan  mean_n_style=0.0
+  Mix every-pos     mean_bigram=0.3974  mean_fit=0.2715  mean_n_style=2.2
+  Δ Mix−MZ bigram = -0.0029
+[283s] → out/probe_style_mixture_humor.log

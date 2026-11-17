@@ -1,0 +1,20 @@
+
+### cây chẩn đoán: 97 từ · 5 lớp (chim:22, chất lỏng:5, cây:49, quả:5, thú:16)
+### 44 bộ lớp cụ thể · khoá GIỮ NGUYÊN
+
+   THẬT    : 30 bộ · top-1 53.3% · top-5 53.3% · top-10 56.7%
+      «bình thường như ___» mang=['băng', 'chung quanh', 'lạc'] khỉ=['báng', 'bèo', 'bí'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «dày như ___» mang=['bòng', 'bản', 'bụng'] khỉ=['báng', 'bèo', 'bí'] → ['báng', 'bèo', 'bí', 'bông', 'bương', 'bầu']
+      «già như ___» mang=['bên', 'chuối', 'con'] khỉ=['báng', 'bèo', 'bí'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «khoẻ như ___» mang=['hùm', 'hộ', 'lực'] khỉ=['cheo', 'chuột', 'cáo'] → ['cheo', 'chuột', 'chó', 'cáo', 'cầy', 'cừu']
+      «khó chịu như ___» mang=['còn', 'gai', 'lưng'] khỉ=['báng', 'bèo', 'bí'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «khôn như ___» mang=['con', 'cáo'] khỉ=['cheo', 'chuột', 'cầy'] → ['cheo', 'chuột', 'chó', 'cầy', 'cừu', 'heo']
+   HOÁN VỊ : 30 bộ · top-1 40.0% · top-5 40.0% · top-10 40.0%
+      «bình thường như ___» mang=['băng', 'chung quanh', 'lạc'] khỉ=['cheo', 'chuột', 'cáo'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «dày như ___» mang=['bòng', 'bản', 'bụng'] khỉ=['báng', 'bèo', 'bí'] → ['báng', 'bèo', 'bí', 'bông', 'bương', 'bầu']
+      «già như ___» mang=['bên', 'chuối', 'con'] khỉ=['chó', 'chủng', 'khỉ'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «khoẻ như ___» mang=['hùm', 'hộ', 'lực'] khỉ=['cheo', 'cáo', 'cừu'] → ['cheo', 'chuột', 'chó', 'cáo', 'cầy', 'cừu']
+      «khó chịu như ___» mang=['còn', 'gai', 'lưng'] khỉ=['dong', 'dâu', 'mướp'] → ['báng', 'bèo', 'bí', 'bòng', 'bông', 'bương']
+      «khôn như ___» mang=['con', 'cáo'] khỉ=['cheo', 'chuột', 'cầy'] → ['cheo', 'chuột', 'chó', 'cầy', 'cừu', 'heo']
+
+[153s] xong

@@ -1,0 +1,32 @@
+[     0.0s] === load_mini_sent START (pid=90520) → out/logs/load_mini_sent_20260726_215809.log ===
+[     0.0s] load checkpoint checkpoints/mini_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.8s] ✓ unpickle  (2.8s)
+[     2.8s] ▶ vocab (32002 token)
+[     5.5s] ✓ vocab (32002 token)  (2.8s)
+[     5.5s] ▶ adjacency
+[    17.0s] ✓ adjacency  (11.5s)
+[    17.0s] ▶ embedding
+[    18.8s] ✓ embedding  (1.7s)
+[    18.8s] ▶ parents
+[    18.8s] parents: deserialize 5004 records …
+[    20.8s] parents 5000/5004 (99.9%)
+[    24.3s] ▶ rebuild_hierarchical_index …
+[    24.5s] ✓ rebuild_hierarchical_index (0.2s)
+[    25.9s]     resync match_ids: 5004/5004 cha (df dựng lại)
+[    25.9s] ✓ parents  (7.1s)
+[    25.9s] ✓ loaded: vocab=32002 parents=5004 E=(32002, 96)
+[    26.4s] sidecar thiếu → migrate: mini_sent.content.pkl
+[    26.4s] ✓ load_checkpoint XONG
+
+=== 'Nhà Lý dời đô về'
+/Users/dlv/Documents/code/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 5004 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/mini_sent.pkl --in-place
+  ensure_frame_brackets(state)
+  copy_number=False → ' Thăng Long năm 1 0 1 0'
+  copy_number=True  → ' Thăng Long năm 18110 nhà Lý dời đô từ Hoa Lư về Thăng Long'
+
+=== 'Trận Bạch Đằng năm'
+  copy_number=False → ' Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi'
+  copy_number=True  → ' Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi'
+
+DONE

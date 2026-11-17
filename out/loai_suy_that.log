@@ -1,0 +1,134 @@
+### 28 ứng viên CHUYỂN GIAO (không có định nghĩa gốc, ≥2 anh em có)
+[     0.0s] === load_net_lop2 START (pid=44241) → out/logs/load_net_lop2_20260820_214056.log ===
+[     0.0s] load checkpoint checkpoints/net_lop2.pkl …
+[     0.0s] ▶ unpickle
+[     4.4s] ✓ unpickle  (4.4s)
+[     4.4s] ▶ vocab (32002 token)
+[     4.5s] ✓ vocab (32002 token)  (0.0s)
+[     4.5s] ▶ adjacency
+[    14.4s] ✓ adjacency  (9.9s)
+[    14.4s] ▶ embedding
+[    14.4s] ✓ embedding  (0.1s)
+[    14.4s] ▶ parents
+[    14.4s] parents: deserialize 453320 records …
+[    14.5s] parents 5000/453320 (1.1%)
+[    14.5s] parents 10000/453320 (2.2%)
+[    14.5s] parents 15000/453320 (3.3%)
+[    14.6s] parents 20000/453320 (4.4%)
+[    14.6s] parents 25000/453320 (5.5%)
+[    14.7s] parents 30000/453320 (6.6%)
+[    14.7s] parents 35000/453320 (7.7%)
+[    14.8s] parents 40000/453320 (8.8%)
+[    14.8s] parents 45000/453320 (9.9%)
+[    14.8s] parents 50000/453320 (11.0%)
+[    14.9s] parents 55000/453320 (12.1%)
+[    14.9s] parents 60000/453320 (13.2%)
+[    15.0s] parents 65000/453320 (14.3%)
+[    15.0s] parents 70000/453320 (15.4%)
+[    15.0s] parents 75000/453320 (16.5%)
+[    15.1s] parents 80000/453320 (17.6%)
+[    15.1s] parents 85000/453320 (18.8%)
+[    15.2s] parents 90000/453320 (19.9%)
+[    15.2s] parents 95000/453320 (21.0%)
+[    15.2s] parents 100000/453320 (22.1%)
+[    15.3s] parents 105000/453320 (23.2%)
+[    15.4s] parents 110000/453320 (24.3%)
+[    15.4s] parents 115000/453320 (25.4%)
+[    15.5s] parents 120000/453320 (26.5%)
+[    15.5s] parents 125000/453320 (27.6%)
+[    15.6s] parents 130000/453320 (28.7%)
+[    15.6s] parents 135000/453320 (29.8%)
+[    15.7s] parents 140000/453320 (30.9%)
+[    15.8s] parents 145000/453320 (32.0%)
+[    15.9s] parents 150000/453320 (33.1%)
+[    15.9s] parents 155000/453320 (34.2%)
+[    16.0s] parents 160000/453320 (35.3%)
+[    16.1s] parents 165000/453320 (36.4%)
+[    16.1s] parents 170000/453320 (37.5%)
+[    16.2s] parents 175000/453320 (38.6%)
+[    16.3s] parents 180000/453320 (39.7%)
+[    16.4s] parents 185000/453320 (40.8%)
+[    16.4s] parents 190000/453320 (41.9%)
+[    16.5s] parents 195000/453320 (43.0%)
+[    16.6s] parents 200000/453320 (44.1%)
+[    16.7s] parents 205000/453320 (45.2%)
+[    16.8s] parents 210000/453320 (46.3%)
+[    16.9s] parents 215000/453320 (47.4%)
+[    17.0s] parents 220000/453320 (48.5%)
+[    17.0s] parents 225000/453320 (49.6%)
+[    17.1s] parents 230000/453320 (50.7%)
+[    17.2s] parents 235000/453320 (51.8%)
+[    17.3s] parents 240000/453320 (52.9%)
+[    17.4s] parents 245000/453320 (54.0%)
+[    17.5s] parents 250000/453320 (55.1%)
+[    17.5s] parents 255000/453320 (56.3%)
+[    17.6s] parents 260000/453320 (57.4%)
+[    17.7s] parents 265000/453320 (58.5%)
+[    17.8s] parents 270000/453320 (59.6%)
+[    17.9s] parents 275000/453320 (60.7%)
+[    18.0s] parents 280000/453320 (61.8%)
+[    18.1s] parents 285000/453320 (62.9%)
+[    18.2s] parents 290000/453320 (64.0%)
+[    18.2s] parents 295000/453320 (65.1%)
+[    18.3s] parents 300000/453320 (66.2%)
+[    18.4s] parents 305000/453320 (67.3%)
+[    18.5s] parents 310000/453320 (68.4%)
+[    18.6s] parents 315000/453320 (69.5%)
+[    18.7s] parents 320000/453320 (70.6%)
+[    18.7s] parents 325000/453320 (71.7%)
+[    18.8s] parents 330000/453320 (72.8%)
+[    18.9s] parents 335000/453320 (73.9%)
+[    19.0s] parents 340000/453320 (75.0%)
+[    19.0s] parents 345000/453320 (76.1%)
+[    19.1s] parents 350000/453320 (77.2%)
+[    19.2s] parents 355000/453320 (78.3%)
+[    19.3s] parents 360000/453320 (79.4%)
+[    19.4s] parents 365000/453320 (80.5%)
+[    19.4s] parents 370000/453320 (81.6%)
+[    19.5s] parents 375000/453320 (82.7%)
+[    19.6s] parents 380000/453320 (83.8%)
+[    19.7s] parents 385000/453320 (84.9%)
+[    19.7s] parents 390000/453320 (86.0%)
+[    19.8s] parents 395000/453320 (87.1%)
+[    19.9s] parents 400000/453320 (88.2%)
+[    20.0s] parents 405000/453320 (89.3%)
+[    20.1s] parents 410000/453320 (90.4%)
+[    20.2s] parents 415000/453320 (91.5%)
+[    20.3s] parents 420000/453320 (92.6%)
+[    20.3s] parents 425000/453320 (93.8%)
+[    20.4s] parents 430000/453320 (94.9%)
+[    20.5s] parents 435000/453320 (96.0%)
+[    20.5s] parents 440000/453320 (97.1%)
+[    20.6s] parents 445000/453320 (98.2%)
+[    20.7s] parents 450000/453320 (99.3%)
+[    35.6s] ▶ rebuild_hierarchical_index …
+[    37.5s] ✓ rebuild_hierarchical_index (1.9s)
+[    43.8s]     resync match_ids: 453320/453320 cha (df dựng lại)
+[    43.8s] ✓ parents  (29.4s)
+[    43.8s] ✓ loaded: vocab=32002 parents=453320 E=(32002, 96)
+[    46.7s] sidecar thiếu → migrate: net_lop2.content.pkl
+[    46.8s] ✓ load_checkpoint XONG
+     «an-bom là       » lớp«tập giấy» anh em=['album', 'vở']
+        ▸ gì thể được không ra cho một phát những sự vật
+     «an-bum là       » lớp«tập giấy» anh em=['album', 'vở']
+        ▸ gì thể được không ra cho một nghĩa
+     «com-pa là       » lớp«đồ dùng» anh em=['ang', 'bát', 'bô']
+        ▸ một số ví dụ và có thể được không mà nên nghĩa như
+   ✓ «công-te-nơ là   » lớp«thiết bị» anh em=['anten', 'container', 'ghi']
+        ▸ thiết bị có dạng một thùng chứa hình hộp lớn, có dung tích tiêu chuẩn
+     «hi-fi là        » lớp«thiết bị» anh em=['anten', 'container', 'ghi']
+        ▸ một số ví dụ về các công có của nước cơ
+   ✓ «mi-crô là       » lớp«thiết bị» anh em=['anten', 'container', 'ghi']
+        ▸ thiết bị dùng thu âm hoặc làm giọng nói thiết hoặc bị thu hơn hát lớn
+     «cô-ta là        » lớp«số lượng» anh em=['ngần', 'quota', 'vài']
+        ▸ gì đó để làm ra cho người không một mình hoặc có phải được vật
+     «iso là          » lớp«tên gọi» anh em=['hểnh', 'hỏi', 'khoai']
+        ▸ một số của người và thể có trong các những động
+     «moóc-xơ là      » lớp«hệ thống» anh em=['chữ', 'hệ', 'morse']
+        ▸ một số của người trong thể có động và cơ quan
+   ✓ «bit là          » lớp«đơn vị» anh em=['bang', 'cao', 'carat']
+        ▸ đơn vị nhỏ nhất, chỉ 0 hoặc một cơ 1 thường nhất bản bằng tính
+     «ca-ra là        » lớp«đơn vị» anh em=['bang', 'cao', 'carat']
+        ▸ một số ví dụ về các trình dụng
+     «báo là          » lớp«hình thức» anh em=['bhxh', 'bhyt', 'dạng']
+        ▸ một số ví dụ về các thể có của quan khác

@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_100.pkl …
+[    0.1s RSS  0.26GB] nạp xong · parents=105 vocab=32002
+[    0.2s RSS  0.26GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.2s RSS  0.26GB] ws_spans 0/105 · span=0 · bỏ=0
+[    0.2s RSS  0.26GB] 237 span · 0.0 phút
+[    0.2s RSS  0.26GB] ghi out/noise_nho/toy_noise_100.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.2s RSS  0.26GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.2s RSS  0.26GB]   mẫu[01] '城 <0xE9> <0x8B> <0xAA>'
+[    0.2s RSS  0.26GB]   mẫu[02] 'N ã Phá Luân'
+[    0.2s RSS  0.26GB]   mẫu[03] 'động vật'
+[    0.2s RSS  0.26GB]   mẫu[04] 'chính phủ'
+[    0.2s RSS  0.26GB]   mẫu[05] 'sau này'
+[    0.2s RSS  0.26GB]   mẫu[06] 'con người'
+[    0.2s RSS  0.26GB]   mẫu[07] 'hình thành'
+[    0.2s RSS  0.26GB]   mẫu[08] 'danh từ'
+[    0.2s RSS  0.26GB]   mẫu[09] 'thông dụng'
+[    0.2s RSS  0.26GB]   mẫu[10] 'trình độ'
+[    0.2s RSS  0.26GB]   mẫu[11] 'hệ thống'
+[    0.2s RSS  0.26GB]   mẫu[12] 'bắt đầu'
+[    0.2s RSS  0.26GB]   mẫu[13] 'quốc ngữ'
+[    0.2s RSS  0.26GB]   mẫu[14] 'dân tộc thiểu số'
+[    0.2s RSS  0.26GB]   mẫu[15] 'sĩ diện'
+[    0.2s RSS  0.26GB]   mẫu[16] 'Việt Nam'
+[    0.2s RSS  0.26GB]   mẫu[17] 'thay thế'
+[    0.2s RSS  0.26GB]   mẫu[18] 'trí thức'
+[    0.2s RSS  0.26GB]   mẫu[19] 'cổ văn'
+[    0.2s RSS  0.26GB]   mẫu[20] 'lợi nhuận'
+[    0.2s RSS  0.26GB]   mẫu[21] 'bán kính'
+[    0.2s RSS  0.26GB]   mẫu[22] 'phi công'
+[    0.2s RSS  0.26GB]   mẫu[23] 'chuyên ngành'
+[    0.2s RSS  0.26GB]   mẫu[24] 'thơ ca'
+[    0.2s RSS  0.26GB]   mẫu[25] 'lục bát'
+[    0.2s RSS  0.26GB]   mẫu[26] 'xu hướng'
+[    0.2s RSS  0.26GB]   mẫu[27] 'Cộng hòa'
+[    0.2s RSS  0.26GB]   mẫu[28] 'vân vân'
+[    0.2s RSS  0.26GB]   mẫu[29] 'Mặt khác'
+[    0.2s RSS  0.26GB] span nghi rác (tự động): 14/237 = 5.9% (ISG: 57%)
+[    0.2s RSS  0.26GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

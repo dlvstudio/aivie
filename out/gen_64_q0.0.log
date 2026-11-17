@@ -1,0 +1,92 @@
+[      0.0s] nạp checkpoints/classrich.pkl …
+[     0.0s] === load_classrich START (pid=5914) → out/logs/load_classrich_20260815_102400.log ===
+[     0.0s] load checkpoint checkpoints/classrich.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.2s] ✓ vocab (32002 token)  (0.0s)
+[     0.2s] ▶ adjacency
+[     1.0s] ✓ adjacency  (0.8s)
+[     1.0s] ▶ embedding
+[     1.0s] ✓ embedding  (0.0s)
+[     1.0s] ▶ parents
+[     1.0s] parents: deserialize 35757 records …
+[     1.1s] parents 5000/35757 (14.0%)
+[     1.1s] parents 10000/35757 (28.0%)
+[     1.2s] parents 15000/35757 (41.9%)
+[     1.2s] parents 20000/35757 (55.9%)
+[     1.3s] parents 25000/35757 (69.9%)
+[     1.3s] parents 30000/35757 (83.9%)
+[     1.4s] parents 35000/35757 (97.9%)
+[     1.9s] ▶ rebuild_hierarchical_index …
+[     2.0s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.3s]     resync match_ids: 35757/35757 cha (df dựng lại)
+[     2.3s] ✓ parents  (1.3s)
+[     2.3s] ✓ loaded: vocab=32002 parents=35757 E=(32002, 96)
+[     2.4s] sidecar thiếu → migrate: classrich.content.pkl
+[     2.4s] ✓ load_checkpoint XONG
+[      2.4s] đào lớp + bảng đồng hiện …
+[      2.5s]   CHÂN LÝ v2: 168 lớp
+[      2.5s]   lớp ≥3 thành viên = 168
+[      2.5s] chọn ca §20 (P chạm ≥2 nhưng ≤½ thành viên) …
+[      2.5s]   ca đem đo = 25
+[      2.5s] ca 1/25: P='trở' lớp='sự'
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:2828: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 35757 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/classrich.pkl --in-place
+  ensure_frame_brackets(state)
+[      7.0s]    khỉ=['Ca trù', 'Hát nói', 'IMS', 'Nho giáo'] tắt=[6622, 5802, 0, 1098] bật=[6850, 5992, 0, 1104]  lên=2 xuống=4 mới=0
+[      7.0s] ca 2/25: P='thay' lớp='sự'
+[      7.2s]    khỉ=['Ca trù', 'Hát nói', 'IMS', 'Nho giáo'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[      7.2s] ca 3/25: P='trở' lớp='ngôn ngữ'
+[      7.4s]    khỉ=['Baloch', 'Brit ton', 'C', 'Hebrew'] tắt=[0, 0, 4545, 4554] bật=[0, 0, 4548, 4557]  lên=0 xuống=3 mới=0
+[      7.4s] ca 4/25: P='thay' lớp='ngôn ngữ'
+[      7.5s]    khỉ=['Baloch', 'Brit ton', 'C', 'Hebrew'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[      7.5s] ca 5/25: P='trở' lớp='trung tâm'
+[      7.7s]    khỉ=['Bag dad', 'Chicago', 'Main', 'Mos kva'] tắt=[0, 4330, 4690, 4913] bật=[0, 4332, 4693, 4915]  lên=0 xuống=5 mới=0
+[      7.7s] ca 6/25: P='thay' lớp='trung tâm'
+[      7.9s]    khỉ=['Bag dad', 'Berlin', 'Chicago', 'Main'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[      7.9s] ca 7/25: P='nhau' lớp='nhóm'
+[      8.1s]    khỉ=['Blue', 'Live Blue', 'Lovelace', 'Per it rich ous'] tắt=[0, 0, 0, 203] bật=[0, 0, 0, 314]  lên=0 xuống=1 mới=0
+[      8.1s] ca 8/25: P='phân' lớp='nhóm'
+[      8.3s]    khỉ=['Blue', 'Live Blue', 'Lovelace', 'Per it rich ous'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[      8.3s] ca 9/25: P='trở' lớp='nhà'
+[      8.5s]    khỉ=['Brad ford', 'Bỉnh Khiêm', 'Carn unt um', 'Châu Trinh'] tắt=[0, 2109, 3144, 6719] bật=[0, 2112, 3147, 6671]  lên=1 xuống=5 mới=0
+[      8.5s] ca 10/25: P='thay' lớp='nhà'
+[      8.7s]    khỉ=['Brad ford', 'Bỉnh Khiêm', 'Carn unt um', 'Châu Trinh'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[      8.7s] ca 11/25: P='ngày' lớp='thành phố'
+[     10.0s]    khỉ=['8 viên', 'Hamilton', 'Hà Nội', 'Hồ Chí Minh'] tắt=[19, 3612, 5626, 4127] bật=[41, 4265, 5621, 3916]  lên=2 xuống=5 mới=0
+[     10.0s] ca 12/25: P='năm' lớp='thành phố'
+[     10.3s]    khỉ=['8 viên', 'Hamilton', 'Hà Nội', 'Hồ Chí Minh'] tắt=[15, 2682, 155, 6456] bật=[37, 2689, 176, 5025]  lên=2 xuống=5 mới=0
+[     10.3s] ca 13/25: P='trở' lớp='hai'
+[     10.5s]    khỉ=['Erasistratus', 'Kobayakawa Hide aki', 'Mét ro', 'Napoléon'] tắt=[0, 5668, 1131, 1912] bật=[0, 5539, 1136, 1915]  lên=1 xuống=5 mới=0
+[     10.5s] ca 14/25: P='thay' lớp='hai'
+[     10.7s]    khỉ=['Erasistratus', 'Kobayakawa Hide aki', 'Mét ro', 'Orléans'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[     10.7s] ca 15/25: P='quân' lớp='ngày'
+[     10.9s]    khỉ=['Canada Day', 'Chúa nhật', 'Chủ nhật', 'Cơ Đốc'] tắt=[2429, 194, 4528, 4342] bật=[2481, 241, 3858, 4483]  lên=2 xuống=6 mới=0
+[     10.9s] ca 16/25: P='đào' lớp='ngày'
+[     11.2s]    khỉ=['Canada Day', 'Chúa nhật', 'Chủ nhật', 'Cơ Đốc'] tắt=[628, 560, 3050, 3242] bật=[630, 562, 3141, 3243]  lên=0 xuống=8 mới=0
+[     11.2s] ca 17/25: P='trở' lớp='vị'
+[     11.4s]    khỉ=['Ind ravarman', 'Indravarman', 'Indravarman VI', 'Lê Thánh Tông'] tắt=[1105, 0, 0, 5976] bật=[1110, 0, 0, 5519]  lên=3 xuống=3 mới=0
+[     11.4s] ca 18/25: P='đồng' lớp='vị'
+[     11.6s]    khỉ=['Ind ravarman', 'Indravarman', 'Indravarman VI', 'Lê Thánh Tông'] tắt=[0, 2041, 2041, 1023] bật=[0, 2042, 2042, 1024]  lên=1 xuống=6 mới=0
+[     11.6s] ca 19/25: P='trở' lớp='quốc gia'
+[     11.8s]    khỉ=['Ban Nha', 'Cuba', 'Cộng hòa', 'Do'] tắt=[6695, 1674, 6581, 4168] bật=[6808, 1679, 6652, 4172]  lên=0 xuống=8 mới=0
+[     11.8s] ca 20/25: P='phân' lớp='quốc gia'
+[     12.0s]    khỉ=['Ban Nha', 'Cuba', 'Cộng hòa', 'Do'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[     12.0s] ca 21/25: P='tròn' lớp='loại'
+[     12.2s]    khỉ=['Brabant', 'C ytokinin', 'ISDN', 'Lúa mì'] tắt=[10565, 10914, 4141, 9535] bật=[10565, 10914, 4141, 9534]  lên=2 xuống=0 mới=0
+[     12.2s] ca 22/25: P='đỗ' lớp='loại'
+[     12.4s]    khỉ=['Brabant', 'C ytokinin', 'ISDN', 'Lúa mì'] tắt=[0, 149, 0, 0] bật=[0, 149, 0, 0]  lên=0 xuống=0 mới=0
+[     12.4s] ca 23/25: P='trở' lớp='lớp'
+[     12.6s]    khỉ=['Sao Hoả', 'bò sát', 'hành tinh', 'kim loại'] tắt=[4222, 6261, 4146, 6650] bật=[4226, 5884, 4150, 6649]  lên=3 xuống=4 mới=0
+[     12.6s] ca 24/25: P='thay' lớp='lớp'
+[     12.8s]    khỉ=['Sao Hoả', 'bò sát', 'chất', 'hành tinh'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[     12.8s] ca 25/25: P='trở' lớp='thành viên'
+[     13.0s]    khỉ=['Bộ trưởng', 'Sat ie', 'Thủ tướng', 'Việt Nam'] tắt=[4191, 1849, 4128, 6205] bật=[4195, 1852, 4132, 6576]  lên=0 xuống=7 mới=0
+[     13.0s] ═══ TỔNG ═══
+[     13.0s]   [② SAI] n=21  lên=16 xuống=71 mới=0  tỉ lệ=0.985
+[     13.0s]   [② ĐÚNG] n=4  lên=3 xuống=4 mới=0  tỉ lệ=0.996
+[     13.0s]   «con khỉ» LÊN hạng   : 19
+[     13.0s]   «con khỉ» XUỐNG hạng : 75
+[     13.0s]   vào phân bố lần đầu  : 0
+[     13.0s]   tỉ lệ hạng (bật/tắt) trung vị: 0.987  (<1 = tốt hơn)
+[     13.0s] ✓ → out/gen_64_q0.0.json

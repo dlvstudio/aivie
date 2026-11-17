@@ -1,0 +1,156 @@
+<title>Nhận-diện ảnh nét (CNN · Imagenette)</title>
+<style>
+:root{--bg:#f4f4f2;--ink:#1b1d22;--ink-soft:#5a5f6b;--card:#fff;--hair:#e3e3e0;
+  --accent:#2f7bff;--good:#3ec26b;--warn:#ff9f43;--bad:#ff5a4d;--bar:#2f7bff}
+:root[data-theme=dark],:root:not([data-theme=light]){@media(prefers-color-scheme:dark){
+  --bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}}
+:root[data-theme=dark]{--bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:22px;margin:0 0 4px}.lede{color:var(--ink-soft);max-width:76ch;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px;margin-bottom:16px}
+h3{font-size:14px;margin:0 0 12px;display:flex;gap:8px;align-items:center}
+.badge{font-size:11px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:20px;padding:1px 8px}
+.pv{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+canvas{image-rendering:auto;border-radius:8px;border:1px solid var(--hair);background:#000}
+#pin{width:196px;height:196px}
+.pred{flex:1;min-width:260px}
+.big{font-size:26px;font-weight:800;margin:2px 0 2px}
+.sub{color:var(--ink-soft);font-size:12px;margin-bottom:10px}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:5px 8px;align-items:center;font-size:12px}
+.bars .lab{white-space:nowrap;color:var(--ink-soft)}
+.track{background:var(--bg);border:1px solid var(--hair);border-radius:6px;height:14px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:6px 0 0 6px}
+.samples{display:flex;flex-wrap:wrap;gap:6px}
+.samples canvas{width:60px;height:60px;cursor:pointer;transition:transform .08s}
+.samples canvas:hover{transform:scale(1.1);border-color:var(--accent)}
+button,.filebtn{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--hair);background:var(--card);color:var(--ink);cursor:pointer}
+.filebtn{display:inline-block}.filebtn input{display:none}
+.acc{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:center;font-size:12px}
+.note{color:var(--ink-soft);font-size:13px;margin-top:6px;max-width:80ch}
+.tag{font-size:11px;padding:1px 7px;border-radius:6px;border:1px solid var(--hair);color:var(--ink-soft)}
+.hero{font-size:15px}
+</style>
+<div class="wrap">
+  <h1>Nhận-diện ảnh nét <span class="badge">CNN tự-viết · Imagenette · M4</span></h1>
+  <p class="lede">Bản <b>độ-phân-giải cao</b>: cùng ý-tưởng CNN viết-tay, học trên ảnh <b>chụp thật nét</b> (không phải
+    32×32 mờ). Mạng sâu hơn (4 lớp conv + <b>global-average-pool</b>) xử-lý ảnh <b>160×160</b>, luyện PyTorch/MPS trên
+    Apple M4, suy-luận <b>ngay trong trình-duyệt</b>. <b>11 lớp:</b> 10 lớp <b>Imagenette</b> (ImageNet "dễ": cá tench,
+    chó springer, máy cát-sét, cưa máy, nhà thờ, kèn Pháp, xe rác, trụ bơm xăng, bóng gôn, dù) + <b>người</b> (khuôn-mặt
+    thật từ bộ <b>LFW</b>). Bấm ảnh mẫu hoặc <b>tải ảnh của bạn</b>. Lưu-ý "người" học từ ảnh chân-dung LFW nên nhận
+    <b>mặt/chân-dung</b> tốt nhất; không phải nhận-diện danh-tính ai.</p>
+
+  <div class="card">
+    <h3>Thử ngay <span class="badge" id="dev-badge">đang tải mạng…</span></h3>
+    <div class="pv">
+      <div>
+        <canvas id="pin" width="96" height="96"></canvas>
+        <div class="sub" style="text-align:center;margin-top:6px">ảnh vào <span id="szlab">96×96</span></div>
+      </div>
+      <div class="pred">
+        <div class="hero sub">Mạng đoán:</div>
+        <div class="big" id="top">—</div>
+        <div class="sub" id="topsub"></div>
+        <div class="bars" id="bars"></div>
+      </div>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <label class="filebtn">📷 Tải ảnh của bạn<input id="file" type="file" accept="image/*"></label>
+      <span class="tag">hoặc bấm 1 ảnh mẫu ↓</span>
+    </div>
+    <div class="samples" id="samples" style="margin-top:10px"></div>
+  </div>
+
+  <div class="card">
+    <h3>Độ chính-xác THẬT <span class="badge" id="acc-badge">—</span></h3>
+    <div class="acc" id="acc"></div>
+    <p class="note" id="acc-note"></p>
+  </div>
+
+  <div class="card">
+    <h3>Nét hơn tới đâu? <span class="badge">trung-thực</span></h3>
+    <p class="note">Ảnh vào giờ <b>160×160</b> — gấp <b>25 lần</b> điểm-ảnh so bản CIFAR 32×32, và là <b>độ nét gốc tối-đa</b>
+      của bộ Imagenette-160 (cạnh ngắn 160px). Chi-tiết (lông, mặt, chữ, kết-cấu) rõ hơn hẳn. Vẫn <b>không phải "mắt
+      người"</b>: mạng vẫn tí-hon (~165k tham-số), chỉ biết 11 lớp — ảnh ngoài 11 lớp bị ép chọn 1 với độ tự-tin thấp.
+      Ở 160px, <b>forward JS mỗi lần bấm ~2-3s</b> (nặng hơn 128); muốn nét hơn nữa phải đổi sang bộ ảnh gốc lớn hơn
+      (vd Imagenette-320) và chấp-nhận chậm/nặng thêm.</p>
+  </div>
+</div>
+
+<script>
+const CNNW = /*__CNNW__*/ null;
+const SAMPLES = /*__SAMPLES__*/ null;
+const S = CNNW ? CNNW.meta.input_size : 96;
+const b64 = s => { const bin=atob(s), a=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i); return a; };
+
+let CONVW=[];
+function flat(w){ const O=w.length,I=w[0].length,a=new Float32Array(O*I*9);
+  for(let o=0;o<O;o++)for(let i=0;i<I;i++)for(let ky=0;ky<3;ky++)for(let kx=0;kx<3;kx++)a[o*I*9+i*9+ky*3+kx]=w[o][i][ky][kx];
+  return a; }
+function convRelu(inp,Ci,H,Wd,Wf,b,Co){ const out=new Float32Array(Co*H*Wd);
+  for(let oc=0;oc<Co;oc++){ const wb0=oc*Ci*9;
+    for(let y=0;y<H;y++)for(let x=0;x<Wd;x++){ let s=b[oc];
+      for(let ic=0;ic<Ci;ic++){ const ib=ic*H*Wd, wb=wb0+ic*9;
+        for(let ky=0;ky<3;ky++){ const iy=y+ky-1; if(iy<0||iy>=H)continue;
+          for(let kx=0;kx<3;kx++){ const ix=x+kx-1; if(ix<0||ix>=Wd)continue;
+            s+=inp[ib+iy*Wd+ix]*Wf[wb+ky*3+kx]; }}}
+      out[oc*H*Wd+y*Wd+x]=s>0?s:0; } }
+  return out; }
+function pool(inp,C,H,Wd){ const H2=H>>1,W2=Wd>>1,out=new Float32Array(C*H2*W2);
+  for(let c=0;c<C;c++)for(let y=0;y<H2;y++)for(let x=0;x<W2;x++){ const bb=c*H*Wd; let m=-1e9;
+    for(let dy=0;dy<2;dy++)for(let dx=0;dx<2;dx++){const v=inp[bb+(2*y+dy)*Wd+(2*x+dx)]; if(v>m)m=v;}
+    out[c*H2*W2+y*W2+x]=m; }
+  return out; }
+function softmax(a){ const m=Math.max(...a),e=a.map(v=>Math.exp(v-m)),z=e.reduce((p,c)=>p+c,0); return e.map(v=>v/z); }
+function predict(planar){          // planar length 3*S*S (c*S*S + y*S + x)
+  const mean=CNNW.meta.mean,std=CNNW.meta.std; let feat=new Float32Array(3*S*S);
+  for(let c=0;c<3;c++)for(let p=0;p<S*S;p++) feat[c*S*S+p]=(planar[c*S*S+p]/255-mean[c])/std[c];
+  let C=3,H=S,Wd=S;
+  for(let l=0;l<CNNW.convs.length;l++){ const Co=CNNW.convs[l].b.length;
+    feat=convRelu(feat,C,H,Wd,CONVW[l],CNNW.convs[l].b,Co); feat=pool(feat,Co,H,Wd); C=Co; H>>=1; Wd>>=1; }
+  const gap=new Float32Array(C), sp=H*Wd;
+  for(let c=0;c<C;c++){ let s=0,bs=c*sp; for(let p=0;p<sp;p++)s+=feat[bs+p]; gap[c]=s/sp; }
+  const fw=CNNW.fc.w,fb=CNNW.fc.b,O=fb.length,logit=new Array(O);
+  for(let o=0;o<O;o++){ let s=fb[o]; const wo=fw[o]; for(let c=0;c<C;c++)s+=gap[c]*wo[c]; logit[o]=s; }
+  return softmax(logit);
+}
+function drawPlanar(planar,cv){ cv.width=S; cv.height=S; const ctx=cv.getContext('2d'),img=ctx.createImageData(S,S),d=img.data;
+  for(let p=0;p<S*S;p++){ d[p*4]=planar[p]; d[p*4+1]=planar[S*S+p]; d[p*4+2]=planar[2*S*S+p]; d[p*4+3]=255; }
+  ctx.putImageData(img,0,0); }
+const VI = CNNW ? CNNW.meta.classes_vi : [];
+function show(planar){
+  drawPlanar(planar, document.getElementById('pin'));
+  const pr=predict(planar), order=pr.map((p,i)=>[p,i]).sort((a,b)=>b[0]-a[0]); const [p0,i0]=order[0];
+  document.getElementById('top').textContent=VI[i0];
+  document.getElementById('topsub').textContent=`tự-tin ${(p0*100).toFixed(1)}%`+(p0<0.5?' · (không chắc — có thể ngoài 10 lớp)':'');
+  const bars=document.getElementById('bars'); bars.innerHTML='';
+  order.forEach(([p,i])=>bars.insertAdjacentHTML('beforeend',
+    `<span class="lab">${VI[i]}</span><div class="track"><div class="fill" style="width:${Math.max(2,p*100)}%;background:${i===i0?'var(--accent)':'#8a8f99'}"></div></div><span class="lab">${(p*100).toFixed(1)}%</span>`));
+}
+function fromImage(img){ const c=document.createElement('canvas'); c.width=S;c.height=S; const ctx=c.getContext('2d');
+  ctx.drawImage(img,0,0,S,S); const d=ctx.getImageData(0,0,S,S).data; const planar=new Uint8Array(3*S*S);
+  for(let p=0;p<S*S;p++){ planar[p]=d[p*4]; planar[S*S+p]=d[p*4+1]; planar[2*S*S+p]=d[p*4+2]; } return planar; }
+document.getElementById('file').addEventListener('change',e=>{ const f=e.target.files[0]; if(!f)return;
+  const img=new Image(); img.onload=()=>show(fromImage(img)); img.src=URL.createObjectURL(f); });
+
+function boot(){
+  const dev=document.getElementById('dev-badge');
+  if(!CNNW){ dev.textContent='CHƯA nhúng mạng'; return; }
+  CONVW=CNNW.convs.map(c=>flat(c.w));
+  document.getElementById('szlab').textContent=`${S}×${S}`;
+  dev.textContent=`val ${(CNNW.meta.test_acc*100).toFixed(1)}% · ${S}×${S} · ${CNNW.meta.classes_en.length} lớp`;
+  document.getElementById('acc-badge').textContent=`tổng ${(CNNW.meta.test_acc*100).toFixed(1)}% (${CNNW.meta.dataset||'bộ test'})`;
+  const acc=document.getElementById('acc'), pc=CNNW.meta.per_class, en=CNNW.meta.classes_en;
+  en.forEach((k,i)=>{ const v=pc[k]||0,pct=(v*100).toFixed(0),col=v>=0.8?'var(--good)':v>=0.6?'var(--warn)':'var(--bad)';
+    acc.insertAdjacentHTML('beforeend',
+      `<span class="lab">${VI[i]}</span><div class="track"><div class="fill" style="width:${v*100}%;background:${col}"></div></div><span class="lab">${pct}%</span>`); });
+  document.getElementById('acc-note').textContent=
+    `Đo trên tập val mạng CHƯA từng thấy (Imagenette + ảnh người LFW). Ảnh nét thật nên mạng học kết-cấu/hình-dáng rõ hơn bản 32×32. Lớp "người" học từ chân-dung LFW.`;
+  if(SAMPLES){ const box=document.getElementById('samples');
+    SAMPLES.forEach(s=>{ const planar=b64(s.d); const cv=document.createElement('canvas'); cv.title=VI[s.y]; drawPlanar(planar,cv);
+      cv.onclick=()=>show(planar); box.appendChild(cv); });
+    show(b64(SAMPLES[0].d)); }
+}
+boot();
+</script>
+</body></html>

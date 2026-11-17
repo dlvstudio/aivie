@@ -1,0 +1,30 @@
+2026-10-06 15:03:20 P2 setup xong: print("KERNEL OK", tuple(y.shape))' KERNEL OK (2, 128, 256) + python -c 'import train_hybrid_scale as t; print("HAVE_KERNEL", t.HAVE_KERNEL)' HAVE_KERNEL True 
+2026-10-06 15:03:20 P2: 4 GPU ·       4 NVIDIA H100 80GB HBM3, 700.00 W 
+2026-10-06 15:22:59 P2 chèn khối OK: [check] tham số thân 1.277B → 2.488B · sai lệch logit lớn nhất 0.00e+00 · argmax khớp 48/48
+2026-10-06 15:23:00 P2: chờ P1 xong (dấu _P1_XONG trên donaldluong/nn-aivie-cpt-data)…
+2026-10-06 17:05:16 P2 setup xong: print("KERNEL OK", tuple(y.shape))' KERNEL OK (2, 128, 256) + python -c 'import train_hybrid_scale as t; print("HAVE_KERNEL", t.HAVE_KERNEL)' HAVE_KERNEL True 
+2026-10-06 17:05:16 P2: 4 GPU ·       4 NVIDIA H100 80GB HBM3, 700.00 W 
+2026-10-06 17:05:17 P2 chèn khối OK: [check] tham số thân 1.277B → 2.488B · sai lệch logit lớn nhất 0.00e+00 · argmax khớp 48/48
+2026-10-06 17:17:16 P2 đã tải: 32G dữ liệu mới (86 shard) · 36G ôn lại · ổ còn 210G
+2026-10-06 17:19:35 P2 đo ctx 2048 bs 4/GPU: 46.9K tok/s · VRAM 59GB/67GB
+2026-10-06 17:20:46 P2 đo ctx 8192 bs 1/GPU (toàn bộ tham số):  · VRAM 999GB/67GB
+2026-10-06 17:20:46 LỖI P2: 8K bs 1 không chạy được (xem cpt_bench_8192_1.log)
+2026-10-06 17:26:55 P2 setup xong: print("KERNEL OK", tuple(y.shape))' KERNEL OK (2, 128, 256) + python -c 'import train_hybrid_scale as t; print("HAVE_KERNEL", t.HAVE_KERNEL)' HAVE_KERNEL True 
+2026-10-06 17:26:55 P2: 4 GPU ·       4 NVIDIA H100 80GB HBM3, 700.00 W 
+2026-10-06 17:26:55 P2 chèn khối OK: [check] tham số thân 1.277B → 2.488B · sai lệch logit lớn nhất 0.00e+00 · argmax khớp 48/48
+2026-10-06 17:26:56 P2 đã tải: 32G dữ liệu mới (86 shard) · 36G ôn lại · ổ còn 210G
+2026-10-06 17:36:37 P2 đo A1 (ctx 2048): bs4/ckpt0=46.8K@59GB bs8/ckpt0=0K@999GB bs8/ckpt1=41.1K@41GB bs16/ckpt1=42.3K@59GB → chọn bs 4 ckpt 0 (46.8K tok/s, giới hạn 67GB)
+2026-10-06 17:46:41 P2 đo A2 (ctx 8192): bs1/ckpt0=42.3K@59GB bs2/ckpt0=0K@999GB bs2/ckpt1=37.8K@41GB bs4/ckpt1=39.5K@59GB → chọn bs 1 ckpt 0 (42.3K tok/s, giới hạn 67GB)
+2026-10-06 17:57:25 P2 đo B (ctx 8192): bs1/ckpt1=31.8K@51GB bs2/ckpt1=35.3K@56GB bs4/ckpt1=36.6K@74GB → chọn bs 2 ckpt 1 (35.3K tok/s, giới hạn 67GB)
+2026-10-07 14:41:24 LỖI P2 A1
+2026-10-07 14:47:51 P2 setup xong: print("KERNEL OK", tuple(y.shape))' KERNEL OK (2, 128, 256) + python -c 'import train_hybrid_scale as t; print("HAVE_KERNEL", t.HAVE_KERNEL)' HAVE_KERNEL True 
+2026-10-07 14:47:51 P2: 4 GPU ·       4 NVIDIA H100 80GB HBM3, 700.00 W 
+2026-10-07 14:47:52 P2 chèn khối OK: [check] tham số thân 1.277B → 2.488B · sai lệch logit lớn nhất 0.00e+00 · argmax khớp 48/48
+2026-10-07 14:47:52 P2 đã tải: 32G dữ liệu mới (86 shard) · 36G ôn lại · ổ còn 171G
+2026-10-07 14:47:53 P2 dùng lại cấu hình đã đo: A1 4/0 · A2 1/0 · B 2/1
+2026-10-07 14:47:53 P2 A1 đã xong trước đó → bỏ qua
+2026-10-09 01:01:08 P2 A2 xong: [35s] bits TRƯỚC: 3.151 [122619s] XONG · LƯU ckpt/cpt_a2.pt · bits cuối 2.874 
+2026-10-11 23:35:37 P2 B xong: [37s] bits TRƯỚC: 2.928 [253401s] XONG · LƯU ckpt/cpt_b.pt · bits cuối 2.476 
+2026-10-11 23:39:12 P2 đo ngữ cảnh dài: ### {"ckpt": "ckpt/cpt_b.pt", "tag": "", "layers": 96, "rope_base": 1000000.0, "pos": {"1024": {"0-1K": 1.622}, "2048": {"0-1K": 1.907, "1-2K": 1.935}, "4096": {"0-1K": 1.525, "1-2K": 1.367, "2-4K": 1.543}, "8192": {"0-1K": 2.356, "1-2K": 2.167, "2-4K": 1.813, "4-8K": 1.536}}, "kim": {"1024": "18/24", "2048": "16/24", "4096": "20/24", "8192": "14/24"}} ### {"ckpt": "ckpt/hybrid_1p3b.pt", "tag": "", "layers": 48, "rope_base": 10000.0, "pos": {"1024": {"0-1K": 2.229}, "2048": {"0-1K": 2.669, "1-2K": 2.731}, "4096": {"0-1K": 2.074, "1-2K": 1.944, "2-4K": 2.146}, "8192": {"0-1K": 2.663, "1-2K": 2.502, "2-4K": 2.43, "4-8K": 3.662}}, "kim": {"1024": "21/24", "2048": "15/24", "4096": "0/24", "8192": "0/24"}} 
+2026-10-11 23:39:12 P2 XONG (mốc 20 tỷ) · bản ổn định để kéo dài: ckpt/cpt_b_stable.pt
+2026-10-12 05:43:43 cpt_b_stable.pt đã đẩy HF công khai donaldluong/nn-aivie-hybrid-2p6b-stable

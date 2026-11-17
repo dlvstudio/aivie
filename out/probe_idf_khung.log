@@ -1,0 +1,38 @@
+
+### min_idf = 2.0
+
+── «hổ là»
+     idf(    'hổ') = 14.017
+     idf(   ' là') =  8.337
+     ⇒ cặp khuôn qua ngưỡng: True
+     khối HOÀ đỉnh: 2 cha · trong đó khớp TIỀN TỐ: 0
+
+── «lúa là»
+     idf(   'lúa') = 14.017
+     idf(   ' là') =  8.337
+     ⇒ cặp khuôn qua ngưỡng: True
+     khối HOÀ đỉnh: 2 cha · trong đó khớp TIỀN TỐ: 1
+        ✓ lúa là cây thuộc họ thảo .
+
+── «sắt là»
+     idf(   'sắt') = 14.017
+     idf(   ' là') =  8.337
+     ⇒ cặp khuôn qua ngưỡng: True
+     khối HOÀ đỉnh: 1 cha · trong đó khớp TIỀN TỐ: 0
+
+── «chó là»
+     idf(   'chó') = 14.017
+     idf(   ' là') =  8.337
+     ⇒ cặp khuôn qua ngưỡng: True
+     khối HOÀ đỉnh: 3 cha · trong đó khớp TIỀN TỐ: 1
+        ✓ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi să
+
+── «sóc là»
+     idf(     's') = 14.017
+     idf(    'óc') = 14.017
+     idf(   ' là') =  8.337
+     ⇒ cặp khuôn qua ngưỡng: True
+     khối HOÀ đỉnh: 1 cha · trong đó khớp TIỀN TỐ: 1
+        ✓ sóc là thú gặm nhấm lớn hơn chuột, sống trên cây, mõm tròn, 
+
+[64s] xong

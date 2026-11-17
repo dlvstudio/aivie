@@ -1,0 +1,26 @@
+# Train MINI — checkpoint nhỏ để dev tự chạy pipeline nhanh (2026-07-16).
+#
+# CHỈ để kiểm ĐƯỜNG ỐNG end-to-end: train → bake → build_varlm → verify → eval, và mọi
+# đường nạp EOS. KHÔNG để đo chất lượng — checkpoint nhỏ đánh lừa NGƯỢC DẤU (memory
+# long-range-cooccurrence-negative). Số đo trên đây không chuyển sang quy mô thật.
+#
+# Lệnh (train + bake + build sidecar + verify):
+#   PYTHONPATH=src python scripts/train.py --manifest config/train_mini.yaml \
+#     --out checkpoints/network_mini.pkl --bake
+#   PYTHONPATH=src python scripts/build_varlm.py \
+#     --checkpoint checkpoints/network_mini.pkl --use-clusters --paragraph-units
+#   PYTHONPATH=src python scripts/verify_checkpoint.py checkpoints/network_mini.pkl
+#
+# TÁI HIỆN CHÊNH LỆCH ĐỘ-DÀI-ĐƠN-VỊ — điểm mấu chốt: mini phải có CẢ đơn-vị-ngắn (grade/qa
+# ~1 câu) LẪN đơn-vị-dài (history_articles ~1800 từ/bài, bài nguyên vẹn). Chính chênh lệch
+# này đã làm ngưỡng EOS TUYỆT ĐỐI trượt trên mẻ thật (câu ngắn P(.→EOS)=1.0, bài dài =0.057).
+# Ngưỡng LIFT hiện tại phải cho ends_unit('.')=True ở CẢ HAI — nếu mini chỉ có câu ngắn thì
+# lift cao dễ dàng và KHÔNG kiểm được điều đó. history_articles chỉ 158 dòng → không làm chậm.
+
+datasets:
+  - path: data/text_corpus/grade_lessons.jsonl        # đơn vị NGẮN (~1 câu)
+    priority: 0.95
+  - path: data/text_corpus/qa_supervised.jsonl        # đơn vị NGẮN (Hỏi/Đáp)
+    priority: 0.95
+  - path: data/text_corpus/history_articles.jsonl     # đơn vị DÀI (~1800 từ/bài) — kiểm lift
+    priority: 0.88

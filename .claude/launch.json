@@ -1,0 +1,209 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hybrid-ui",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--port",
+        "8790"
+      ],
+      "port": 8790
+    },
+    {
+      "name": "gt-ui",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_gt_ui.py",
+        "--port",
+        "8791"
+      ],
+      "port": 8791
+    },
+    {
+      "name": "hybrid-ui-code",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/hybrid_1p3b_assistant_v5.pt",
+        "--port",
+        "8795",
+        "--no-rag"
+      ],
+      "port": 8795
+    },
+    {
+      "name": "hybrid-ui-vlm",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/hybrid_1p3b_vlm_v4.pt",
+        "--port",
+        "8796",
+        "--no-rag"
+      ],
+      "port": 8796
+    },
+    {
+      "name": "hybrid-ui-2p6b-base",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/hybrid_2p6b_b9536_bf16.pt",
+        "--port",
+        "8797",
+        "--no-rag"
+      ],
+      "port": 8797
+    },
+    {
+      "name": "hybrid-ui-2p6b-sft",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/hybrid_2p6b_sft_s2500_bf16.pt",
+        "--port",
+        "8798",
+        "--no-rag"
+      ],
+      "port": 8798
+    },
+    {
+      "name": "aivie-p3",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/aivie_2p6b_p3_text_bf16.pt",
+        "--port",
+        "8799",
+        "--no-rag"
+      ],
+      "port": 8799
+    },
+    {
+      "name": "aivie-c4b",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/aivie_2p6b_p3_c4b_bf16.pt",
+        "--port",
+        "8800",
+        "--no-rag"
+      ],
+      "port": 8800
+    },
+    {
+      "name": "aivie-cx2",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/aivie_2p6b_p3_cx2_bf16.pt",
+        "--port",
+        "8801",
+        "--no-rag",
+        "--half",
+        "--max-ctx",
+        "4096"
+      ],
+      "port": 8801
+    },
+    {
+      "name": "aivie-cx3b",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/aivie_2p6b_p3_cx3b_bf16.pt",
+        "--port",
+        "8802",
+        "--no-rag",
+        "--half",
+        "--max-ctx",
+        "4096"
+      ],
+      "port": 8802
+    },
+    {
+      "name": "aivie-c6-base",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "checkpoints/hf_hybrid/aivie_2p6b_c6_base_bf16.pt",
+        "--port",
+        "8803",
+        "--no-rag",
+        "--half",
+        "--max-ctx",
+        "4096"
+      ],
+      "port": 8803
+    },
+    {
+      "name": "aivie-c6b",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "box_backup/c6sft/c6b_vlm_bf16.pt",
+        "--port",
+        "8804",
+        "--no-rag",
+        "--half",
+        "--max-ctx",
+        "8192"
+      ],
+      "port": 8804
+    },
+    {
+      "name": "aivie-c6l1",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": [
+        "-W",
+        "ignore",
+        "scripts/serve_hybrid_ui.py",
+        "--ckpt",
+        "box_backup/c6sft/c6l1_vlm_bf16.pt",
+        "--port",
+        "8805",
+        "--no-rag",
+        "--half",
+        "--max-ctx",
+        "8192"
+      ],
+      "port": 8805
+    }
+  ]
+}

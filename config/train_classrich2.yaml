@@ -1,0 +1,40 @@
+# Train CLASS-RICH v2 — thêm nguồn ĐỊNH NGHĨA (TK_046 §65).
+#
+# `train_classrich.yaml` trả lời được câu hỏi của nó («cơ chế hỏng hay dữ liệu
+# loãng?») nhưng §64 đo ra nút thắt cuối là MẬT ĐỘ: câu định nghĩa dạng vàng
+# chỉ chiếm 2,1% câu `là`, và ② TỰ DO trên dữ liệu thật chỉ đạt 1,0%.
+#
+# Trữ lượng đo được (§65, `do_tru_luong_*`):
+#
+#   nguồn                       cặp (tv → lớp)  lớp ≥3 tv  thành viên là gì
+#   classrich hiện nay                     949        168  hỗn hợp
+#   viwiki khuôn định nghĩa            183 690      1 905  84% TÊN LATIN (stub)
+#   viwiki phần dùng được               15 591        513  phần lớn tên xã/phường
+#   TỪ ĐIỂN giải nghĩa                   9 178        643  TỪ THƯỜNG (chó·mèo·khỉ)
+#
+# Từ điển là nguồn DUY NHẤT mà thành viên là từ đời thường — nhưng lời giải
+# nghĩa không có chữ `là` nên `via_pivot` mù với nó. `dung_corpus_dinh_nghia.py`
+# viết lại thành câu thật («chó là gia súc thuộc nhóm ăn thịt…») và gộp với câu
+# định nghĩa viwiki ĐÃ BỎ 63 497 câu chủ ngữ tên Latin.
+#
+# ⚠️ Giữ nguyên 4 nguồn của classrich: chúng là phần VĂN XUÔI, nơi thuộc tính
+# («nghịch ngợm như…») sống. Bỏ chúng thì còn định nghĩa mà không còn ngữ cảnh.
+#
+#   PYTHONPATH=src python scripts/train.py --manifest config/train_classrich2.yaml \
+#     --out checkpoints/classrich2.pkl --sentence-parents
+
+datasets:
+  - path: data/text_corpus/dinh_nghia.jsonl
+    priority: 1.0
+
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.90

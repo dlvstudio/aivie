@@ -1,0 +1,14 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   50.5s RSS  6.05GB] nạp xong · vocab=249107 parents=430447
+[   50.5s RSS  7.21GB] dựng hub_spread index (W_skip + mine via-pivot) …
+[   86.3s RSS  7.21GB] kênh typed: 7810 nguồn · 120875 cạnh
+[   86.4s RSS  7.21GB] nhãn mạnh nhất theo bậc-vào typed: gì(956), vậy(628), nào(551), những(401), thế(288), phố(284), phần(273), công(236), thiết(220), thật(210), 1(201), ai(194), trọng(181), lựa(179), vật(178)
+[   86.4s RSS  7.21GB] seed đóng băng: 200 (từ 7810 chủ thể có cạnh typed)
+[   86.7s RSS  7.21GB] [typed_first] có hub 192/200 · nhãn 94.3% · thành viên mới 98.4% (0.3s)
+[   86.9s RSS  7.21GB] [mixed      ] có hub 192/200 · nhãn 90.6% · thành viên mới 97.9% (0.2s)
+[   87.1s RSS  7.21GB] [cooc       ] có hub 130/200 · nhãn 83.9% · thành viên mới 96.9% (0.2s)
+[   87.1s RSS  7.21GB]   ca 'mèo': hub=['chó', 'khắc', 'loài'] thành viên=['biến', 'giống', 'Bella', 'Chúng', 'Pháp', 'Shiba', 'Tạng', 'chính']
+[   87.1s RSS  7.21GB]   ca 'chó': hub=['bạn', 'cưng', 'chó'] thành viên=['thể', 'nghĩa', 'quả', 'trở', 'biệt', 'trọng', 'phải', 'chuyện']
+[   87.2s RSS  7.21GB]   ca 'Trần': hub=['Hồ', 'ngôi', 'lập'] thành viên=['mới', 'đề', 'Bao', 'bao', 'cao', 'chí', 'chính', 'gian']
+[   87.2s RSS  7.21GB] CỔNG {'1_typed_edges': True, '2_label_rate': True, '3_lift_vs_cooc': False, '4_new_member': True, 'pass': False} · lift=1.124
+[   87.2s RSS  7.21GB] ghi out/hub_step3_v12_isg_pw_r2.json

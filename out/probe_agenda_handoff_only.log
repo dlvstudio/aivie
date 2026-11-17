@@ -1,0 +1,28 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=48 mode=agenda_handoff
+
+=== nq_def  (15.6s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, đượcNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== nq_full  (4.7s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== thd  (1.5s) dots≈1 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo làTrần Hưng Đạo đánh thắng quân Mông.
+cont:   'Trần Hưng Đạo đánh thắng quân Mông.'
+
+=== ly  (0.8s) dots≈1 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long.
+cont:   'Thăng Long.'
+
+=== hung  (1.1s) dots≈1 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ởLê Lợi khởi nghĩa Lam Sơn.
+cont:   'Lê Lợi khởi nghĩa Lam Sơn.'
+
+[127s] → out/probe_agenda_handoff_only.log

@@ -1,0 +1,100 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[69s] ✓ 430,447 cha · max_len=48 · extra={'ar_matrix_qa_answer_copy': True, 'ar_matrix_and_form_min': 0.9}
+[177s]   xong no_agenda·T1 verbatim (20)
+[178s]   xong no_agenda·T2 paraphrase (5)
+[184s]   xong no_agenda·T3 ghép (10)
+[186s]   xong no_agenda·T4 qa (10)
+[187s]   xong no_agenda·T5 số (4)
+[190s]   xong no_agenda·T6 bịa (5)
+[194s]   xong no_agenda·T7 dài (5)
+[299s]   xong handoff·T1 verbatim (20)
+[301s]   xong handoff·T2 paraphrase (5)
+[308s]   xong handoff·T3 ghép (10)
+[310s]   xong handoff·T4 qa (10)
+[312s]   xong handoff·T5 số (4)
+[316s]   xong handoff·T6 bịa (5)
+[320s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.00    0.00   0.00   0.93     1.00   1.00    7.9
+no_agenda T2 paraphrase     5    0.20   0.20    0.00   0.00   1.00     0.60   1.00    5.4
+no_agenda T3 ghép          10    0.00   0.60    0.10   0.00   0.60     0.30   1.00    9.2
+no_agenda T4 qa            10    0.00   0.70    0.00   0.00   1.00     0.30   1.00    7.1
+no_agenda T5 số             4    0.00   0.00    0.00   0.00   1.00     0.75   1.00    6.8
+no_agenda T6 bịa            5    0.00   0.00    0.40   0.00   0.79     1.00   1.00   13.8
+no_agenda T7 dài            5    0.00   0.00    0.00   0.00   0.84     1.00   1.00    9.6
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.00    0.00   0.00   0.71     1.80   1.00   23.8
+handoff   T2 paraphrase     5    0.00   0.00    0.00   0.00   0.67     1.80   1.00   19.6
+handoff   T3 ghép          10    0.00   0.40    0.10   0.00   0.63     0.90   0.90   24.4
+handoff   T4 qa            10    0.00   0.70    0.00   0.00   1.00     0.30   1.00    7.1
+handoff   T5 số             4    0.00   0.00    0.00   0.00   0.65     2.00   1.00   21.5
+handoff   T6 bịa            5    0.00   0.00    0.40   0.00   0.53     2.00   1.00   32.4
+handoff   T7 dài            5    0.00   0.00    0.00   0.00   0.71     1.60   1.00   26.2
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · digit⎵↓ · loop4↓ · stop↑ · T3 n_facts>1
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── mẫu đọc tay (mỗi ô tối đa 4) ──
+  [no_agenda·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list s Nhiều ứng dụng cũng có riêng'
+  [no_agenda·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười'
+  [no_agenda·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của là Müritz'
+  [no_agenda·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là không ra'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ cha cái từng có cả cha mẹ của đều là Marie Curie có cả cha và Nhà vật lý Marie Curie có thầy giáo'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo của chỉ huy và các Trận giữa quân đội Việt do Ngô Quyền chỉ huy và nhà Nam Hán'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp: ở'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp: không'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp: Kỳ'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp ngươi mái'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm 1951'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và Trần ba lần đánh bại quân Nguyên Mông vào các năm 1258 1258'
+  [no_agenda·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế Chỉ có thể lặng yên không một tiếng động mới'
+  [no_agenda·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen'
+  [no_agenda·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là thể là chờ'
+  [no_agenda·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát'
+  [handoff·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list s Nhiều ứng dụng cũng có riêng. Điện toán đám mây cũng đảm bảo tính sẵn sàng và hiệu suất để các ứng dụng có thể được truy cập nhanh chóng với hiệu suất và.'
+  [handoff·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười. Chỉ cần còn có một cái mạng, liền có cơ hội đông sơn tái khởi.'
+  [handoff·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của là Müritz'
+  [handoff·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là không ra. "Đi theo ta.'
+  [handoff·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938. Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng. Năm 1288, Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Trận Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [handoff·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ cha cái từng có cả cha mẹ của đều là Marie Curie có cả cha và Nhà vật lý Marie Curie có thầy giáo. Cha của bà, Wladyslaw, là 1 giảng viên toán và vật lý.'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [handoff·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo của chỉ huy và các Trận giữa quân đội Việt do Ngô Quyền chỉ huy và nhà Nam Hán. Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, và quân nhà Tống.'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp: ở'
+  [handoff·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp: không'
+  [handoff·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp: Kỳ'
+  [handoff·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [handoff·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T5 số] 'Chiến thắng Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968. Đinh Liễn quá tức giận nên giết chết Hạng Lang vào mùa xuân năm 979.'
+  [handoff·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng. Chiến thuật đóng cọc gỗ nhọn xuống lòng sông được dùng để phá thuyền giặc.'
+  [handoff·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp ngươi mái. " Ngô Hiếu Tổ lẽ đương nhiên, cầm lên bên cạnh sở thích ô mai cắn một cái, thuận miệng đem ô mai cái mông đưa.'
+  [handoff·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm 1951. Ngày 1 tháng 6 năm 1952 mãn khóa tốt nghiệp với cấp bậc Thiếu úy.'
+  [handoff·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và Trần ba lần đánh bại quân Nguyên Mông vào các năm 1258 1258. Trần Hưng Đạo là vị tổng chỉ huy quân đội nhà Trần trong các cuộc kháng chiến chống Nguyên Mông.'
+  [handoff·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế Chỉ có thể lặng yên không một tiếng động mới'
+  [handoff·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen. Dùng từ trái nghĩa để thể hiện sự thay đổi hoặc tiến triển: Cái cây nhỏ ngày càng cao lên, từ nhỏ chuyển sang lớn.'
+  [handoff·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là thể là chờ. " " Chỉ cần nội các có Vương tiên si'
+  [handoff·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát. Anh hoàn toàn bị mê hoặc, tận hưởng sự yên bình và tĩnh lặng của một nơi không có bóng người.'
+
+→ out/eval_qa_v12_v2.json
+
+[320s] → out/eval_qa_v12_v2.log

@@ -1,0 +1,24 @@
+# TK_052 — corpus CHỨNG MINH CƠ CHẾ, trộn với nhiễu THẬT.
+#
+# `loai_suy.jsonl` (382 bộ × 5 câu × 3 lần) dựng đúng cấu trúc ca vàng từ lớp
+# THẬT của chân lý v2 và tính từ THẬT của từ điển. Trộn với 4 nguồn của
+# `classrich` để phép thử không phải là toy tinh khiết — nếu chuỗi chỉ chạy khi
+# KHÔNG có nhiễu thì đó cũng là một câu trả lời.
+#
+# ⚠️ Corpus TỔNG HỢP. Kết quả chỉ nói về CƠ CHẾ, không nói gì về chất lượng
+# sinh trên dữ liệu thật (TK_046 mục tiêu A).
+#
+#   PYTHONPATH=src python scripts/train.py --manifest config/train_loai_suy.yaml \
+#     --out checkpoints/loai_suy.pkl --sentence-parents
+
+datasets:
+  - path: data/text_corpus/loai_suy.jsonl
+    priority: 1.0
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.95
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.95
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.90

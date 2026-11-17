@@ -1,0 +1,13 @@
+{
+ "id": "02_pandas",
+ "cat": "py_data",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Tôi có file sales.csv gồm các cột: ngay (dạng 2024-03-15), san_pham, so_luong, don_gia. Viết code pandas: (1) tính doanh thu theo từng tháng, (2) tìm 3 sản phẩm có doanh thu cao nhất cả năm, (3) xuất kết quả ra file Excel 2 sheet.",
+   "text": "Để thực hiện các nhiệm vụ này, bạn có thể sử dụng thư viện Pandas trong Python. Dưới đây là đoạn mã hoàn chỉnh của bạn:\n\n```python\nimport pandas as pd\n\n# Đọc dữ liệu từ file sales.csv\ndf = pd.read_csv('sales.csv')\n\n# (1) Tính doanh thu theo từng tháng\ndf['doanh_thu'] = df['so_luong'] * df['don_gia']\ndf_grouped_by_month = df.groupby(pd.to_datetime(df['ngay']).dt.to_period('M'))['doanh_thu'].sum().reset_index()\n\n# (2) Tìm 3 sản phẩm có doanh thu cao nhất cả năm\nsales_by_product = df.groupby(['san_pham'])['doanh_thu'].sum().sort_values(ascending=False)\ntop_3_products = sales_by_product.head(3)\n\n# (3) Xuất kết quả ra file Excel 2 sheet\nwith pd.ExcelWriter('result.xlsx') as writer:\n    df_grouped_by_month.to_excel(writer, sheet_name='Doanh thu theo tháng', index=False)\n    top_3_products.to_excel(writer, sheet_name='Top 3 sản phẩm có doanh thu cao nhất', index=False)\n\nprint(\"Đã tạo file Excel thành công.\")\n```\n\n### Giải thích mã:\n\n1. **Đọc dữ liệu từ file sales.csv**:\n   - Sử dụng `pd.read_csv('sales.csv')` để đọc dữ liệu từ file CSV.\n\n2. **Tính doanh thu theo từng tháng**:\n   - Tạo cột mới `doanh_thu` bằng cách nhân `so_luong` và `don_gia`.\n   - Sử dụng `groupby(pd.to_datetime(df['ngay']).dt.to_period('M'))` để nhóm dữ liệu theo tháng.\n   - Tính tổng doanh thu theo từng tháng.\n\n3. **Tìm 3 sản phẩm có doanh thu cao nhất cả năm**:\n   - Sắp xếp doanh thu của các sản phẩm theo thứ tự giảm dần.\n   - Lấy top 3 sản phẩm sử dụng `.head(3)`.\n\n4. **Xuất kết quả ra file Excel 2 sheet**:\n   - Sử dụng `pd.ExcelWriter` để tạo một writer cho Excel.\n   - Lưu dữ liệu vào các sheet khác nhau: 'Doanh thu theo tháng' và 'Top 3 sản phẩm có doanh thu cao nhất'.\n   - Ghi kết quả ra file `result.xlsx`.\n\n### Lưu ý:\n- Đảm bảo rằng bạn đã cài đặt thư viện Pandas bằng lệnh `pip install pandas` nếu chưa có.\n- Đường dẫn đến file CSV cần khớp với đường dẫn thực tế của file trên máy bạn.",
+   "tokens": 580,
+   "sec": 6.5
+  }
+ ]
+}

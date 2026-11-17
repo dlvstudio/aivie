@@ -1,0 +1,2810 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n": 400,
+ "max_clauses": 2,
+ "n_empty": 173,
+ "ty_le_trong": 0.4325,
+ "menh_de_tb": 0.8925,
+ "rows": [
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A000"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A001"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A002"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A003"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A004"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A005"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A006"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A007"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A008"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A009"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A010"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A011"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A012"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A013"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A014"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A015"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A016"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A017"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A018"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A019"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A020"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A021"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A022"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A023"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A024"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A025"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A026"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A027"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A028"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A029"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A030"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A031"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A032"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A033"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A034"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A035"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A036"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A037"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A038"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A039"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A040"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A041"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A042"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A043"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A044"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A045"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A046"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A047"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A048"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A049"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A050"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A051"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A052"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A053"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A054"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A055"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A056"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A057"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A058"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A059"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A060"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A061"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A062"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A063"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A064"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A065"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A066"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A067"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A068"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A069"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A070"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A071"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A072"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A073"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A074"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A075"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A076"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A077"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A078"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A079"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A080"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A081"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A082"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A083"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A084"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A085"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A086"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A087"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A088"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A089"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A090"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A091"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A092"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A093"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A094"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A095"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A096"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A097"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A098"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A099"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A100"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A101"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A102"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A103"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A104"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A105"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A106"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A107"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A108"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A109"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A110"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A111"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A112"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A113"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A114"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A115"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A116"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A117"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A118"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A119"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A120"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A121"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A122"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A123"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A124"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A125"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A126"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A127"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A128"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A129"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A130"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A131"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A132"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A133"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A134"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A135"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A136"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A137"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A138"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A139"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A140"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A141"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A142"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A143"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A144"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A145"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A146"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A147"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A148"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A149"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A150"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A151"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A152"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A153"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A154"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A155"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A156"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A157"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A158"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A159"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A160"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A161"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A162"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A163"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A164"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A165"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A166"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A167"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A168"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A169"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A170"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A171"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A172"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A173"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A174"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A175"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A176"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A177"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A178"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A179"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A180"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A181"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A182"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A183"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A184"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A185"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A186"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A187"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A188"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A189"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A190"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A191"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A192"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A193"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A194"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A195"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A196"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A197"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A198"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A199"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A200"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A201"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A202"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A203"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A204"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A205"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A206"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A207"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A208"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A209"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A210"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A211"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A212"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A213"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A214"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A215"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A216"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A217"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A218"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A219"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A220"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A221"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A222"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A223"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A224"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A225"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A226"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A227"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A228"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A229"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A230"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A231"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A232"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A233"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A234"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A235"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A236"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A237"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A238"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A239"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A240"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A241"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A242"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A243"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A244"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A245"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A246"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A247"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A248"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A249"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A250"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A251"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A252"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A253"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A254"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A255"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A256"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A257"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A258"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A259"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A260"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A261"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A262"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A263"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A264"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A265"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A266"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A267"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A268"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A269"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A270"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A271"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A272"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A273"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A274"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A275"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A276"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A277"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A278"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A279"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A280"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A281"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A282"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A283"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A284"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A285"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A286"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A287"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A288"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A289"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A290"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A291"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A292"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A293"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A294"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A295"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A296"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A297"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A298"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A299"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A300"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A301"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A302"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A303"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A304"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A305"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A306"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A307"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A308"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A309"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A310"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A311"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A312"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A313"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A314"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A315"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A316"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A317"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A318"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A319"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A320"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A321"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A322"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A323"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A324"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A325"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A326"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A327"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A328"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A329"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A330"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A331"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A332"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A333"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A334"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A335"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A336"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A337"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A338"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A339"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A340"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A341"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A342"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A343"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A344"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A345"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A346"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A347"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A348"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A349"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A350"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A351"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A352"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A353"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A354"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A355"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A356"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A357"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A358"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A359"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A360"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A361"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A362"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A363"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A364"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A365"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A366"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A367"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A368"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A369"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A370"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A371"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A372"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A373"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A374"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A375"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A376"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A377"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A378"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A379"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A380"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A381"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A382"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A383"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A384"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A385"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A386"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A387"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A388"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A389"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A390"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A391"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A392"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A393"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A394"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A395"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A396"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A397"
+  },
+  {
+   "cfg": "fold_dac_trung",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A398"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A399"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "id": "03_bugfix",
+ "cat": "debug",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Code này chạy sai: gọi them_mon('trà') rồi them_mon('cà phê') ở hai đơn hàng khác nhau mà đơn sau lại có cả trà. Sửa giúp tôi và giải thích lỗi.\n\n```python\ndef them_mon(mon, don_hang=[]):\n    don_hang.append(mon)\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```",
+   "text": "Mã bạn cung cấp có lỗi do việc sử dụng danh sách `don_hang` làm tham số mặc định trong hàm `them_mon`. Trong Python, các giá trị mặc định được tính toán khi hàm được định nghĩa, không phải khi nó được gọi. Do đó, nếu bạn đặt một danh sách làm tham số mặc định, tất cả các lần gọi hàm sau này sẽ chia sẻ cùng một danh sách đó.\n\nĐây là cách bạn thực hiện sửa đổi mã của mình:\n\n```python\ndef them_mon(mon, don_hang=None):\n    if don_hang is None:\n        don_hang = []\n    don_hang.append(mon)\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```\n\nTrong hàm `them_mon`, chúng ta kiểm tra xem nếu tham số `don_hang` có giá trị nào hay không. Nếu không, chúng ta tạo một danh sách mới. Nếu đã có, chúng ta sử dụng danh sách đó.\n\nĐây là cách hoạt động của mã:\n\n1. Khi gọi hàm `them_mon('trà')`, nó sẽ tạo một danh sách mới và thêm 'trà' vào đó. Kết quả: ['trà'].\n2. Khi gọi hàm `them_mon('cà phê')`, vì chúng ta đã cung cấp tham số `don_hang=None` trong hàm, nó sẽ sử dụng danh sách mới mà không có bất kỳ phần tử nào trước đây. Sau khi thêm 'cà phê', kết quả là ['cà phê'].\n\nNếu bạn muốn giữ nguyên giá trị của `don_hang` giữa các cuộc gọi hàm, hãy chắc chắn rằng bạn đặt tham số mặc định là `None`, và kiểm tra xem nó có được cung cấp hay không trước khi sử dụng nó.",
+   "tokens": 400,
+   "sec": 8.7
+  }
+ ]
+}

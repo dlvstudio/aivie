@@ -1,0 +1,263 @@
+[0s] load …
+spectral_stack loaded ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_hist.spectral_stack.npz
+prompt='Viết hài hước về Trần Hưng Đạo'
+agenda n=2897 text='\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.\nÔng là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 1288.\nTrần Hưng Đạo viết Hịch tướng sĩ để khích lệ tinh thần binh lính.\nÔng cũng soạn Binh thư yếu lược, một tác phẩm về nghệ thuật quân sự.\nNăm 1288, Trần Hưng Đạo chỉ huy trận '
+entities=['ĠTrần', 'ĠHưng', 'ĠĐạo', 'Viết', 'Ġhài', 'Ġhước', 'Ġvề']
+
+══ A agenda-prefix k=4  H='\n\nTrần Hưng Đạo' ══
+  H_tail='\n\nTrần Hưng Đạo'
+  w0='ĠĐạo'  |H|=4
+  gold next='Ġtên'
+  W_seq: 'ĠViễn':66.500  'Ġluật':8.450  'Ġgiáo':6.250  ',':6.100  'ĠTôn':4.100  'ĠVực':3.850  '.':3.100  'Ġvương':2.900  rank(gold)=274
+  Wa_L0: 'ĠThiên':1.744  'ĠThần':1.626  'ĠLong':1.499  'ĠSơn':1.497  'ĠMinh':1.406  'ĠLinh':1.365  'ĠChâu':1.311  'ĠThanh':1.311  jac@8=0.00  rank(gold)=2582
+  Wa_L1: 'Ġở':0.558  'Ġcó':0.315  'Ġcủa':0.262  'y':0.259  'Ġnăm':0.178  'Ġcon':0.177  'Ġvào':0.168  'Ġđầu':0.159  jac@8=0.00  rank(gold)=77
+  Wa_L2: 'Ġtrên':0.418  'Ġhay':0.267  'Ġlên':0.260  'Ġra':0.193  'Ġvới':0.155  'Ġnày':0.136  'ĠThần':0.110  'al':0.106  jac@8=0.00  rank(gold)=17576
+  Wa_L3: 'Ġlại':0.430  'ĠD':0.339  'ĠM':0.329  'Ġbị':0.318  'Ġsẽ':0.313  'ine':0.311  'Ġcung':0.266  'Ġgia':0.219  jac@8=0.00  rank(gold)=16348
+  |S|=68  combine=residual  query=w0  a_out: 'ĠViễn':1.000  'ĠThần':0.307  'ĠThiên':0.289  'ĠKiếm':0.274  'ĠVương':0.263  'ĠĐạo':0.262  'ĠSinh':0.258  'ĠNhất':0.255
+  gold_in_S=True  a_out[gold]=0.0029
+  L0: Hα=0.77 z=3.803 drop=4 ov0=0.169
+      α: 'ĠViễn':0.884  'Ġluật':0.016  ',':0.012  'Ġgiáo':0.011  'ĠTôn':0.005
+      h: 'ĠViễn':0.089  'ĊĊ':0.047  'ĠThần':0.037  'ĠThiên':0.034  'ĠNhất':0.029
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L1: Hα=0.73 z=1.040 drop=20 ov0=0.142
+      α: 'ĠViễn':0.890  'Ġluật':0.017  'Ġgiáo':0.011  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.114  'ĠThần':0.034  'ĠThiên':0.031  'ĠTử':0.030  'ĠKiếm':0.030
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L2: Hα=0.73 z=0.857 drop=36 ov0=0.163
+      α: 'ĠViễn':0.891  'Ġluật':0.018  'Ġgiáo':0.010  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.133  'ĠThần':0.038  'ĠThiên':0.037  'ĠTử':0.036  'ĠVương':0.035
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L3: Hα=0.74 z=1.406 drop=44 ov0=0.186
+      α: 'ĠViễn':0.890  'Ġluật':0.018  'Ġgiáo':0.011  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.156  'ĠVương':0.046  'ĠKiếm':0.046  'ĠĐạo':0.044  'ĠTôn':0.043
+      gold_in_α_top5=False  gold_in_h_top5=False
+  argmax A3=','  stack='ĠViễn'  same=False
+  A3 top: ',':27.059  '.':20.872  'ĠViễn':7.455  'ĠVương':1.506  'Ġlà':1.204  'Ċ':0.894
+  stack top: 'ĠViễn':5.218  ',':4.414  '.':3.591  'ĠVương':0.444  'Ġlà':0.181  'Ċ':0.134
+  rank(gold) A3=743  stack=741
+
+══ A agenda-prefix k=8  H='\n\nTrần Hưng Đạo tên thật là Trần' ══
+  H_tail='\n\nTrần Hưng Đạo tên thật là Trần'
+  w0='ĠTrần'  |H|=8
+  gold next='ĠQuốc'
+  W_seq: ',':32.550  'Ġnói':23.200  'ĠTuyên':13.250  '.':13.050  'Ġtrong':11.950  'Ġcùng':11.450  'Ġkhông':9.000  'ĠTinh':8.750  rank(gold)=17
+  Wa_L0: 'Ġnói':2.902  'Ġcùng':2.705  'Ġnhìn':2.551  'Ġcười':2.487  'Ġcũng':2.427  'Ġgật':2.244  'ĠThiên':2.101  'ĠThần':1.941  jac@8=0.14  rank(gold)=144
+  Wa_L1: 'Ġtrong':1.241  '!':1.014  "'":0.478  'Ġđể':0.446  'Ġđã':0.432  'on':0.431  'Ġcho':0.412  'Ġmột':0.376  jac@8=0.07  rank(gold)=472
+  Wa_L2: 'Ġcùng':0.812  'Ġthì':0.806  'Ġlại':0.767  'Ġgia':0.659  'Ġđể':0.615  'Ġde':0.535  '?':0.438  'ĠVăn':0.400  jac@8=0.07  rank(gold)=114
+  Wa_L3: 'Ġtại':0.489  'ine':0.294  'Ġ':0.279  'Ġđi':0.235  'Ġsẽ':0.229  'h':0.218  'ĠG':0.210  'Ġđều':0.181  jac@8=0.00  rank(gold)=1460
+  |S|=69  combine=residual  query=w0  a_out: ',':1.000  'Ġnói':0.633  'Ġcùng':0.576  'Ġcũng':0.454  'Ġmột':0.422  'Ġkhông':0.407  '.':0.397  'Ġlại':0.380
+  gold_in_S=True  a_out[gold]=0.0000
+  L0: Hα=2.73 z=2.804 drop=5 ov0=0.142
+      α: 'Ġnói':0.294  ',':0.226  'Ġcùng':0.071  'Ġcũng':0.036  '.':0.034
+      h: 'Ġnói':0.050  'Ġcùng':0.045  'ĊĊ':0.044  ',':0.039  'Ġđem':0.031
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L1: Hα=2.93 z=1.296 drop=21 ov0=0.159
+      α: ',':0.296  'Ġnói':0.146  'Ġtrong':0.074  'ĠTuyên':0.052  '.':0.048
+      h: ',':0.065  'Ġnói':0.039  'Ġrất':0.036  'Ġcùng':0.035  '.':0.030
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L2: Hα=3.04 z=0.517 drop=37 ov0=0.032
+      α: ',':0.300  'Ġnói':0.098  'Ġcùng':0.062  'ĠTuyên':0.057  '.':0.054
+      h: ',':0.088  'Ġcùng':0.048  'Ġnói':0.043  '.':0.042  'Ġcũng':0.039
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L3: Hα=2.96 z=0.484 drop=45 ov0=0.034
+      α: ',':0.305  'Ġnói':0.140  'ĠTuyên':0.055  '.':0.053  'Ġtrong':0.044
+      h: ',':0.116  'Ġnói':0.063  'Ġcùng':0.050  'Ġcũng':0.048  'Ġmột':0.044
+      gold_in_α_top5=False  gold_in_h_top5=False
+  argmax A3=','  stack=','  same=True
+  A3 top: ',':355.108  '.':93.657  'Ġnói':5.164  'ĠNhược':4.812  'ĠTrương':4.094  'Ġkhông':3.386
+  stack top: ',':248.575  '.':34.487  'Ġnói':2.571  'Ġkhông':1.265  'Ġlà':1.092  'Ġcó':0.854
+  rank(gold) A3=22  stack=29
+
+══ A agenda-prefix k=12  H='\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là' ══
+  H_tail=' Hưng Đạo tên thật là Trần Quốc Tuấn, là'
+  w0='Ġlà'  |H|=12
+  gold next='Ġdanh'
+  W_seq: 'Ġmột':1194.300  'Ġkhông':294.600  'Ġcó':243.600  'Ġngười':179.200  'Ġgì':166.050  ',':153.600  'Ġcái':151.100  'Ġnhững':127.450  rank(gold)=208
+  Wa_L0: 'Ġmột':1.482  'Ġngười':1.224  'Ġcác':1.155  'Ġnhững':1.003  'Ġlà':0.964  'Ġcái':0.957  'Ġhai':0.938  'Ġnăm':0.916  jac@8=0.33  rank(gold)=385
+  Wa_L1: 'Ġcó':0.976  '/':0.698  'Ġtrong':0.565  'er':0.434  'Ġ·':0.431  '!':0.379  'Ġđã':0.334  'Ġđể':0.330  jac@8=0.07  rank(gold)=17251
+  Wa_L2: 'Ġlên':0.692  'Ġkhông':0.499  'Ġcùng':0.424  'Ġđể':0.417  'Ġbị':0.319  'Ġvẫn':0.306  ';':0.299  'ar':0.297  jac@8=0.07  rank(gold)=16148
+  Wa_L3: 'Ġbị':0.504  'd':0.369  'Ġtại':0.345  'Ġthì':0.339  'ĠK':0.304  'Ġcao':0.296  'Ġđi':0.296  'Ġ':0.283  jac@8=0.00  rank(gold)=14452
+  |S|=74  combine=residual  query=w0  a_out: 'Ġmột':1.000  'Ġnhững':0.324  'Ġcó':0.261  'Ġkhông':0.250  'Ġđược':0.249  'Ġmuốn':0.241  'Ġtrong':0.240  'Ġphải':0.237
+  gold_in_S=True  a_out[gold]=0.0062
+  L0: Hα=0.95 z=12.211 drop=10 ov0=0.098
+      α: 'Ġmột':0.834  'Ġkhông':0.039  'Ġcó':0.023  'Ġngười':0.017  'Ġcái':0.011
+      h: 'Ġmột':0.066  'Ġbị':0.049  'Ġcác':0.038  'Ġnhững':0.037  'Ġđể':0.037
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L1: Hα=1.16 z=2.297 drop=26 ov0=0.154
+      α: 'Ġmột':0.784  'Ġcó':0.045  'Ġkhông':0.043  'Ġngười':0.015  'Ġgì':0.013
+      h: 'Ġmột':0.106  'Ġrất':0.037  'Ġcó':0.034  'Ġkhông':0.031  'Ġnhững':0.030
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L2: Hα=1.20 z=1.587 drop=42 ov0=0.157
+      α: 'Ġmột':0.777  'Ġkhông':0.057  'Ġcó':0.027  'Ġngười':0.017  'Ġgì':0.014
+      h: 'Ġmột':0.138  'Ġ"':0.040  'Ġcó':0.037  'Ġđược':0.036  'Ġtrong':0.036
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L3: Hα=1.13 z=1.687 drop=50 ov0=0.194
+      α: 'Ġmột':0.800  'Ġkhông':0.038  'Ġcó':0.028  'Ġngười':0.017  'Ġgì':0.014
+      h: 'Ġmột':0.177  'Ġnhững':0.054  'Ġlà':0.045  'Ġcó':0.041  'Ġkhông':0.040
+      gold_in_α_top5=False  gold_in_h_top5=False
+  argmax A3=','  stack='Ġmột'  same=False
+  A3 top: ',':1989.508  '.':992.673  'Ġmột':841.617  'Ġcó':156.906  'Ġkhông':128.634  'Ċ':77.708
+  stack top: 'Ġmột':589.132  ',':490.330  '.':203.378  'Ġcó':46.064  'Ġkhông':36.987  'Ġngười':12.231
+  rank(gold) A3=283  stack=277
+
+══ A agenda-prefix k=20  H='\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.' ══
+  H_tail=', là danh tướng kiệt xuất của nhà Trần.'
+  w0='.'  |H|=20
+  gold next='Ċ'
+  W_seq: 'Ċ':5507.600  '"':2174.900  '<EOS>':1755.550  'Ġ"':1591.750  '.':1370.250  'Ġ.':594.950  'ĠNhưng':367.450  'ĠMột':332.450  rank(gold)=1
+  Wa_L0: '"':4.144  'Ġ-':3.683  '”':2.886  '!':2.506  'Ċ':2.058  '<EOS>':1.936  'Ġvào':1.889  'ĠThành':1.779  jac@8=0.23  rank(gold)=5
+  Wa_L1: 'Ġ·':1.836  'an':1.253  'Ġcó':1.153  'Ġcủa':0.940  'Ġhoặc':0.876  'in':0.756  '(':0.736  'Ġde':0.728  jac@8=0.00  rank(gold)=2754
+  Wa_L2: 'Ġra':1.391  'Ġ*':1.275  'Ġđi':1.065  'Ġtrong':0.950  'Ġcho':0.948  'Ġnói':0.782  'el':0.736  'Ġkhông':0.712  jac@8=0.00  rank(gold)=15787
+  Wa_L3: 'Ġcùng':0.741  'ĠH':0.687  'Ġlại':0.618  'le':0.589  'Ġđầu':0.585  'g':0.578  'r':0.570  'Ġđi':0.524  jac@8=0.00  rank(gold)=16199
+  |S|=81  combine=residual  query=w0  a_out: 'Ċ':1.000  '"':0.334  'ĊĊ':0.260  'Ġ"':0.239  '.':0.203  'Ġdanh':0.200  'Ġ“':0.200  '<EOS>':0.169
+  gold_in_S=True  a_out[gold]=1.0000
+  L0: Hα=1.20 z=11.885 drop=17 ov0=0.174
+      α: 'Ċ':0.611  '"':0.246  '<EOS>':0.059  'Ġ"':0.035  '.':0.027
+      h: 'Ċ':0.162  'ĊĊ':0.146  'Ġ“':0.121  '"':0.047  '.':0.045
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L1: Hα=1.29 z=2.050 drop=33 ov0=0.146
+      α: 'Ċ':0.664  '"':0.122  '<EOS>':0.072  'Ġ"':0.059  '.':0.043
+      h: 'Ċ':0.179  '"':0.076  'Ġ-':0.065  'Ġ"':0.060  'Ġdanh':0.041
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L2: Hα=1.47 z=1.102 drop=49 ov0=0.139
+      α: 'Ċ':0.608  '"':0.130  'Ġ"':0.082  '<EOS>':0.069  '.':0.054
+      h: 'Ċ':0.208  '"':0.077  'Ġ"':0.074  'Ġdanh':0.047  '<EOS>':0.042
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L3: Hα=1.36 z=0.663 drop=57 ov0=0.160
+      α: 'Ċ':0.649  '"':0.117  '<EOS>':0.070  'Ġ"':0.069  '.':0.047
+      h: 'Ċ':0.256  '"':0.070  'Ġdanh':0.057  'Ġ"':0.050  '.':0.049
+      gold_in_α_top5=True  gold_in_h_top5=True
+  argmax A3='Ċ'  stack='Ċ'  same=True
+  A3 top: 'Ċ':5559.669  '.':5353.754  ',':2345.736  '<EOS>':443.417  '"':342.962  'Ġcó':251.443
+  stack top: 'Ċ':3891.768  '.':1401.278  ',':359.415  '"':114.445  '<EOS>':107.803  'Ġ"':57.371
+  rank(gold) A3=1  stack=1
+
+══ B essay+agenda k=6 ══
+  H_tail=' về Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật'
+  w0='Ġthật'  |H|=13
+  gold next='Ġlà'
+  W_seq: 'Ġsự':120.250  'Ġlà':73.150  ',':47.400  'Ġkhông':46.300  'Ġđúng':30.550  'Ġtốt':22.800  'Ġra':22.600  'Ġcó':22.500  rank(gold)=2
+  Wa_L0: 'Ġlà':2.218  'Ġcó':1.923  'Ġđược':1.521  ',':1.498  'Ġcủa':1.177  'Ġkhông':1.121  'Ġhoặc':1.028  'Ġđể':1.008  jac@8=0.33  rank(gold)=1
+  Wa_L1: 'Ġra':0.758  'Ġ·':0.746  'Ġvào':0.658  'Ġthì':0.585  'Ġcũng':0.550  'Ġlên':0.469  'Ġở':0.460  'Ġkhó':0.432  jac@8=0.07  rank(gold)=15055
+  Wa_L2: 'Ġtrên':0.877  'Ġde':0.515  'Ġ*':0.462  'Ġđể':0.338  ';':0.311  'Ġra':0.266  'Ġxuống':0.265  'e':0.238  jac@8=0.07  rank(gold)=17032
+  Wa_L3: 'Ġtại':0.357  'Ġmột':0.344  'Ġkhông':0.340  'Ġlớn':0.314  'Ġra':0.279  'Ġto':0.270  'ĠK':0.268  'Ġbằng':0.262  jac@8=0.14  rank(gold)=14483
+  |S|=73  combine=residual  query=w0  a_out: 'Ġsự':1.000  'Ġlà':0.534  'Ġkhông':0.413  'Ġrất':0.386  'Ġnhiều':0.363  'Ġsẽ':0.356  'Ġcó':0.355  'Ġmột':0.354
+  gold_in_S=True  a_out[gold]=0.5341
+  L0: Hα=1.96 z=10.768 drop=9 ov0=0.077
+      α: 'Ġsự':0.332  'Ġlà':0.324  ',':0.099  'Ġkhông':0.080  'Ġcó':0.028
+      h: 'Ġ*':0.049  'Ġbị':0.047  'Ġsự':0.042  'Ġcủa':0.035  'Ġvà':0.031
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L1: Hα=1.96 z=2.306 drop=25 ov0=0.163
+      α: 'Ġsự':0.495  'Ġlà':0.154  'Ġkhông':0.079  ',':0.075  'Ġđúng':0.032
+      h: 'Ġsự':0.079  'Ġrất':0.038  'Ġlà':0.036  'Ġkhông':0.033  'Ġcó':0.031
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L2: Hα=1.99 z=1.117 drop=41 ov0=0.134
+      α: 'Ġsự':0.471  'Ġlà':0.176  'Ġkhông':0.079  ',':0.078  'Ġđúng':0.033
+      h: 'Ġsự':0.101  'Ġlà':0.050  'Ġkhông':0.040  'Ġrất':0.038  'Ġcó':0.036
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L3: Hα=1.99 z=1.247 drop=49 ov0=0.000
+      α: 'Ġsự':0.471  'Ġlà':0.174  'Ġkhông':0.083  ',':0.076  'Ġđúng':0.033
+      h: 'Ġsự':0.113  'Ġlà':0.064  'Ġkhông':0.048  ',':0.046  'Ġnhiều':0.044
+      gold_in_α_top5=True  gold_in_h_top5=True
+  argmax A3=','  stack=','  same=True
+  A3 top: ',':317.362  '.':73.297  'Ġlà':53.558  'Ġsự':36.714  'Ġkhông':21.767  'Ġcó':12.057
+  stack top: ',':102.143  'Ġsự':25.700  'Ġlà':23.767  '.':17.702  'Ġkhông':8.211  'Ġcó':4.163
+  rank(gold) A3=3  stack=3
+
+══ B essay+agenda k=12 ══
+  H_tail=' Hưng Đạo tên thật là Trần Quốc Tuấn, là'
+  w0='Ġlà'  |H|=19
+  gold next='Ġdanh'
+  W_seq: 'Ġmột':1194.300  'Ġkhông':294.600  'Ġcó':243.600  'Ġngười':179.200  'Ġgì':166.050  ',':153.600  'Ġcái':151.100  'Ġnhững':127.450  rank(gold)=208
+  Wa_L0: 'Ġmột':1.482  'Ġngười':1.224  'Ġcác':1.155  'Ġnhững':1.003  'Ġlà':0.964  'Ġcái':0.957  'Ġhai':0.938  'Ġnăm':0.916  jac@8=0.33  rank(gold)=385
+  Wa_L1: 'Ġcó':0.976  '/':0.698  'Ġtrong':0.565  'er':0.434  'Ġ·':0.431  '!':0.379  'Ġđã':0.334  'Ġđể':0.330  jac@8=0.07  rank(gold)=17251
+  Wa_L2: 'Ġlên':0.692  'Ġkhông':0.499  'Ġcùng':0.424  'Ġđể':0.417  'Ġbị':0.319  'Ġvẫn':0.306  ';':0.299  'ar':0.297  jac@8=0.07  rank(gold)=16148
+  Wa_L3: 'Ġbị':0.504  'd':0.369  'Ġtại':0.345  'Ġthì':0.339  'ĠK':0.304  'Ġcao':0.296  'Ġđi':0.296  'Ġ':0.283  jac@8=0.00  rank(gold)=14452
+  |S|=78  combine=residual  query=w0  a_out: 'Ġmột':1.000  'Ġnhững':0.325  'Ġcó':0.263  'Ġkhông':0.249  'Ġđược':0.248  'Ġmuốn':0.242  'Ġtrong':0.241  'Ġphải':0.237
+  gold_in_S=True  a_out[gold]=0.0000
+  L0: Hα=0.95 z=12.616 drop=14 ov0=0.094
+      α: 'Ġmột':0.834  'Ġkhông':0.039  'Ġcó':0.023  'Ġngười':0.017  'Ġcái':0.011
+      h: 'Ġmột':0.064  'Ġbị':0.047  'Ġcác':0.037  'Ġnhững':0.036  'Ġđể':0.036
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L1: Hα=1.16 z=2.261 drop=30 ov0=0.155
+      α: 'Ġmột':0.784  'Ġcó':0.045  'Ġkhông':0.043  'Ġngười':0.015  'Ġgì':0.013
+      h: 'Ġmột':0.105  'Ġrất':0.036  'Ġcó':0.033  'Ġkhông':0.031  'Ġnhững':0.030
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L2: Hα=1.20 z=1.522 drop=46 ov0=0.157
+      α: 'Ġmột':0.777  'Ġkhông':0.057  'Ġcó':0.027  'Ġngười':0.017  'Ġgì':0.014
+      h: 'Ġmột':0.138  'Ġ"':0.037  'Ġcó':0.037  'Ġnhững':0.037  'Ġđược':0.036
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L3: Hα=1.13 z=1.683 drop=54 ov0=0.195
+      α: 'Ġmột':0.800  'Ġkhông':0.038  'Ġcó':0.028  'Ġngười':0.017  'Ġgì':0.014
+      h: 'Ġmột':0.176  'Ġnhững':0.054  'Ġlà':0.045  'Ġcó':0.041  'Ġkhông':0.040
+      gold_in_α_top5=False  gold_in_h_top5=False
+  argmax A3=','  stack='Ġmột'  same=False
+  A3 top: ',':1989.508  '.':985.121  'Ġmột':885.234  'Ġcó':161.651  'Ġkhông':129.981  'Ċ':81.057
+  stack top: 'Ġmột':619.664  ',':491.311  '.':202.095  'Ġcó':47.653  'Ġkhông':37.298  'Ġngười':12.320
+  rank(gold) A3=283  stack=283
+
+══ B essay+agenda k=20 ══
+  H_tail=', là danh tướng kiệt xuất của nhà Trần.'
+  w0='.'  |H|=27
+  gold next='Ċ'
+  W_seq: 'Ċ':5507.600  '"':2174.900  '<EOS>':1755.550  'Ġ"':1591.750  '.':1370.250  'Ġ.':594.950  'ĠNhưng':367.450  'ĠMột':332.450  rank(gold)=1
+  Wa_L0: '"':4.144  'Ġ-':3.683  '”':2.886  '!':2.506  'Ċ':2.058  '<EOS>':1.936  'Ġvào':1.889  'ĠThành':1.779  jac@8=0.23  rank(gold)=5
+  Wa_L1: 'Ġ·':1.836  'an':1.253  'Ġcó':1.153  'Ġcủa':0.940  'Ġhoặc':0.876  'in':0.756  '(':0.736  'Ġde':0.728  jac@8=0.00  rank(gold)=2754
+  Wa_L2: 'Ġra':1.391  'Ġ*':1.275  'Ġđi':1.065  'Ġtrong':0.950  'Ġcho':0.948  'Ġnói':0.782  'el':0.736  'Ġkhông':0.712  jac@8=0.00  rank(gold)=15787
+  Wa_L3: 'Ġcùng':0.741  'ĠH':0.687  'Ġlại':0.618  'le':0.589  'Ġđầu':0.585  'g':0.578  'r':0.570  'Ġđi':0.524  jac@8=0.00  rank(gold)=16199
+  |S|=85  combine=residual  query=w0  a_out: 'Ċ':1.000  '"':0.334  'ĊĊ':0.259  'Ġ"':0.238  '.':0.204  'Ġdanh':0.201  'Ġ“':0.198  '<EOS>':0.170
+  gold_in_S=True  a_out[gold]=1.0000
+  L0: Hα=1.20 z=11.748 drop=21 ov0=0.176
+      α: 'Ċ':0.611  '"':0.246  '<EOS>':0.059  'Ġ"':0.035  '.':0.027
+      h: 'Ċ':0.160  'ĊĊ':0.144  'Ġ“':0.119  '"':0.047  '.':0.045
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L1: Hα=1.29 z=2.019 drop=37 ov0=0.146
+      α: 'Ċ':0.664  '"':0.122  '<EOS>':0.072  'Ġ"':0.059  '.':0.043
+      h: 'Ċ':0.179  '"':0.075  'Ġ-':0.064  'Ġ"':0.058  'Ġdanh':0.041
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L2: Hα=1.47 z=1.130 drop=53 ov0=0.140
+      α: 'Ċ':0.608  '"':0.130  'Ġ"':0.082  '<EOS>':0.069  '.':0.054
+      h: 'Ċ':0.207  '"':0.077  'Ġ"':0.074  'Ġdanh':0.047  '<EOS>':0.041
+      gold_in_α_top5=True  gold_in_h_top5=True
+  L3: Hα=1.36 z=0.669 drop=61 ov0=0.160
+      α: 'Ċ':0.649  '"':0.117  '<EOS>':0.070  'Ġ"':0.069  '.':0.047
+      h: 'Ċ':0.255  '"':0.069  'Ġdanh':0.057  'Ġ"':0.050  '.':0.049
+      gold_in_α_top5=True  gold_in_h_top5=True
+  argmax A3='Ċ'  stack='Ċ'  same=True
+  A3 top: 'Ċ':5620.207  '.':5307.538  ',':2345.736  '<EOS>':440.654  '"':341.911  'Ġcó':255.885
+  stack top: 'Ċ':3934.145  '.':1392.260  ',':359.466  '"':114.140  '<EOS>':107.202  'Ġ"':57.279
+  rank(gold) A3=1  stack=1
+
+══ C essay-only (gold=agenda[0] — khó) ══
+  H_tail='Viết hài hước về Trần Hưng Đạo'
+  w0='ĠĐạo'  |H|=7
+  gold next='ĊĊ'
+  W_seq: 'ĠViễn':66.500  'Ġluật':8.450  'Ġgiáo':6.250  ',':6.100  'ĠTôn':4.100  'ĠVực':3.850  '.':3.100  'Ġvương':2.900  rank(gold)=198
+  Wa_L0: 'ĠThiên':1.744  'ĠThần':1.626  'ĠLong':1.499  'ĠSơn':1.497  'ĠMinh':1.406  'ĠLinh':1.365  'ĠChâu':1.311  'ĠThanh':1.311  jac@8=0.00  rank(gold)=24
+  Wa_L1: 'Ġở':0.558  'Ġcó':0.315  'Ġcủa':0.262  'y':0.259  'Ġnăm':0.178  'Ġcon':0.177  'Ġvào':0.168  'Ġđầu':0.159  jac@8=0.00  rank(gold)=13436
+  Wa_L2: 'Ġtrên':0.418  'Ġhay':0.267  'Ġlên':0.260  'Ġra':0.193  'Ġvới':0.155  'Ġnày':0.136  'ĠThần':0.110  'al':0.106  jac@8=0.00  rank(gold)=17576
+  Wa_L3: 'Ġlại':0.430  'ĠD':0.339  'ĠM':0.329  'Ġbị':0.318  'Ġsẽ':0.313  'ine':0.311  'Ġcung':0.266  'Ġgia':0.219  jac@8=0.00  rank(gold)=1170
+  |S|=71  combine=residual  query=w0  a_out: 'ĠViễn':1.000  'ĠThần':0.306  'ĠThiên':0.288  'ĠKiếm':0.273  'ĠVương':0.263  'ĠĐạo':0.262  'ĠSinh':0.262  'ĠNhất':0.254
+  gold_in_S=True  a_out[gold]=0.1042
+  L0: Hα=0.78 z=3.781 drop=7 ov0=0.171
+      α: 'ĠViễn':0.883  'Ġluật':0.016  ',':0.012  'Ġgiáo':0.011  'ĠTôn':0.005
+      h: 'ĠViễn':0.089  'ĊĊ':0.043  'ĠThần':0.036  'ĠThiên':0.033  'ĠNhất':0.028
+      gold_in_α_top5=False  gold_in_h_top5=True
+  L1: Hα=0.74 z=0.970 drop=23 ov0=0.151
+      α: 'ĠViễn':0.890  'Ġluật':0.017  'Ġgiáo':0.011  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.113  'ĠThần':0.033  'ĠThiên':0.031  'ĠTử':0.030  'ĠKiếm':0.030
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L2: Hα=0.73 z=0.854 drop=39 ov0=0.172
+      α: 'ĠViễn':0.891  'Ġluật':0.018  'Ġgiáo':0.010  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.132  'ĠThần':0.038  'ĠThiên':0.036  'ĠTử':0.035  'ĠVương':0.035
+      gold_in_α_top5=False  gold_in_h_top5=False
+  L3: Hα=0.74 z=1.495 drop=47 ov0=0.198
+      α: 'ĠViễn':0.890  'Ġluật':0.018  'Ġgiáo':0.011  ',':0.010  'ĠTôn':0.005
+      h: 'ĠViễn':0.154  'ĠVương':0.045  'ĠKiếm':0.045  'ĠĐạo':0.044  'ĠTrần':0.043
+      gold_in_α_top5=False  gold_in_h_top5=False
+  argmax A3=','  stack='ĠViễn'  same=False
+  A3 top: ',':27.059  '.':18.566  'ĠViễn':7.069  'ĠVương':1.362  'Ġlà':1.119  'Ċ':0.848
+  stack top: 'ĠViễn':4.948  ',':4.410  '.':3.274  'ĠVương':0.402  'Ġlà':0.168  'Ċ':0.127
+  rank(gold) A3=201  stack=140
+
+[144s] → out/debug_spectral_agenda_prompt.log

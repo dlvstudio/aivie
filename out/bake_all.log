@@ -1,0 +1,535 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_100.pkl …
+[     0.0s] === load_toy_noise_100 START (pid=16793) → out/logs/load_toy_noise_100_20260814_224122.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_100.pkl …
+[     0.0s] ▶ unpickle
+[     0.0s] ✓ unpickle  (0.0s)
+[     0.0s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.1s] ✓ embedding  (0.0s)
+[     0.1s] ▶ parents
+[     0.1s] parents: deserialize 105 records …
+[     0.1s] ▶ rebuild_hierarchical_index …
+[     0.1s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.1s]     resync match_ids: 105/105 cha (df dựng lại)
+[     0.1s] ✓ parents  (0.0s)
+[     0.1s] ✓ loaded: vocab=32002 parents=105 E=(32002, 96)
+[     0.1s] sidecar thiếu → migrate: toy_noise_100.content.pkl
+[     0.1s] ✓ load_checkpoint XONG
+[    0.1s RSS  0.26GB] nạp xong · parents=105 vocab=32002
+[    0.2s RSS  0.26GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.2s RSS  0.26GB] ws_spans 0/105 · span=0 · bỏ=0
+[    0.2s RSS  0.26GB] 237 span · 0.0 phút
+[    0.2s RSS  0.26GB] ghi out/noise_nho/toy_noise_100.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.2s RSS  0.26GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.2s RSS  0.26GB]   mẫu[01] '城 <0xE9> <0x8B> <0xAA>'
+[    0.2s RSS  0.26GB]   mẫu[02] 'N ã Phá Luân'
+[    0.2s RSS  0.26GB]   mẫu[03] 'động vật'
+[    0.2s RSS  0.26GB]   mẫu[04] 'chính phủ'
+[    0.2s RSS  0.26GB]   mẫu[05] 'sau này'
+[    0.2s RSS  0.26GB]   mẫu[06] 'con người'
+[    0.2s RSS  0.26GB]   mẫu[07] 'hình thành'
+[    0.2s RSS  0.26GB]   mẫu[08] 'danh từ'
+[    0.2s RSS  0.26GB]   mẫu[09] 'thông dụng'
+[    0.2s RSS  0.26GB]   mẫu[10] 'trình độ'
+[    0.2s RSS  0.26GB]   mẫu[11] 'hệ thống'
+[    0.2s RSS  0.26GB]   mẫu[12] 'bắt đầu'
+[    0.2s RSS  0.26GB]   mẫu[13] 'quốc ngữ'
+[    0.2s RSS  0.26GB]   mẫu[14] 'dân tộc thiểu số'
+[    0.2s RSS  0.26GB]   mẫu[15] 'sĩ diện'
+[    0.2s RSS  0.26GB]   mẫu[16] 'Việt Nam'
+[    0.2s RSS  0.26GB]   mẫu[17] 'thay thế'
+[    0.2s RSS  0.26GB]   mẫu[18] 'trí thức'
+[    0.2s RSS  0.26GB]   mẫu[19] 'cổ văn'
+[    0.2s RSS  0.26GB]   mẫu[20] 'lợi nhuận'
+[    0.2s RSS  0.26GB]   mẫu[21] 'bán kính'
+[    0.2s RSS  0.26GB]   mẫu[22] 'phi công'
+[    0.2s RSS  0.26GB]   mẫu[23] 'chuyên ngành'
+[    0.2s RSS  0.26GB]   mẫu[24] 'thơ ca'
+[    0.2s RSS  0.26GB]   mẫu[25] 'lục bát'
+[    0.2s RSS  0.26GB]   mẫu[26] 'xu hướng'
+[    0.2s RSS  0.26GB]   mẫu[27] 'Cộng hòa'
+[    0.2s RSS  0.26GB]   mẫu[28] 'vân vân'
+[    0.2s RSS  0.26GB]   mẫu[29] 'Mặt khác'
+[    0.2s RSS  0.26GB] span nghi rác (tự động): 14/237 = 5.9% (ISG: 57%)
+[    0.2s RSS  0.26GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_1000.pkl …
+[     0.0s] === load_toy_noise_1000 START (pid=16794) → out/logs/load_toy_noise_1000_20260814_224123.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_1000.pkl …
+[     0.0s] ▶ unpickle
+[     0.1s] ✓ unpickle  (0.1s)
+[     0.1s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.2s] ✓ embedding  (0.0s)
+[     0.2s] ▶ parents
+[     0.2s] parents: deserialize 1005 records …
+[     0.2s] ▶ rebuild_hierarchical_index …
+[     0.2s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.2s]     resync match_ids: 1005/1005 cha (df dựng lại)
+[     0.2s] ✓ parents  (0.1s)
+[     0.2s] ✓ loaded: vocab=32002 parents=1005 E=(32002, 96)
+[     0.2s] sidecar thiếu → migrate: toy_noise_1000.content.pkl
+[     0.2s] ✓ load_checkpoint XONG
+[    0.3s RSS  0.40GB] nạp xong · parents=1005 vocab=32002
+[    0.3s RSS  0.40GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.3s RSS  0.40GB] ws_spans 0/1005 · span=0 · bỏ=0
+[    0.6s RSS  0.40GB] 1669 span · 0.0 phút
+[    0.6s RSS  0.40GB] ghi out/noise_nho/toy_noise_1000.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.6s RSS  0.40GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.6s RSS  0.40GB]   mẫu[01] 'một vài'
+[    0.6s RSS  0.40GB]   mẫu[02] 'chính tả'
+[    0.6s RSS  0.40GB]   mẫu[03] 'cách mạng'
+[    0.6s RSS  0.40GB]   mẫu[04] 'nước ngọt'
+[    0.6s RSS  0.40GB]   mẫu[05] 'danh từ'
+[    0.6s RSS  0.40GB]   mẫu[06] 'tâm linh'
+[    0.6s RSS  0.40GB]   mẫu[07] 'địa danh tiếng'
+[    0.6s RSS  0.40GB]   mẫu[08] 'tiên phong'
+[    0.6s RSS  0.40GB]   mẫu[09] 'phòng tuyến'
+[    0.6s RSS  0.40GB]   mẫu[10] 'triển khai'
+[    0.6s RSS  0.40GB]   mẫu[11] 'yếu tố'
+[    0.6s RSS  0.40GB]   mẫu[12] 'báo cáo'
+[    0.6s RSS  0.40GB]   mẫu[13] 'đời sống'
+[    0.6s RSS  0.40GB]   mẫu[14] 'phi công'
+[    0.6s RSS  0.40GB]   mẫu[15] 'Thành phố'
+[    0.6s RSS  0.40GB]   mẫu[16] 'Thái giáo'
+[    0.6s RSS  0.40GB]   mẫu[17] 'ph ót'
+[    0.6s RSS  0.40GB]   mẫu[18] 'nối tiếp'
+[    0.6s RSS  0.40GB]   mẫu[19] 'xu hướng'
+[    0.6s RSS  0.40GB]   mẫu[20] 'ngộ sát'
+[    0.6s RSS  0.40GB]   mẫu[21] 'dã thú'
+[    0.6s RSS  0.40GB]   mẫu[22] 'hiến pháp'
+[    0.6s RSS  0.40GB]   mẫu[23] 'Vị trí'
+[    0.6s RSS  0.40GB]   mẫu[24] 'Diễn đàn'
+[    0.6s RSS  0.40GB]   mẫu[25] 'Khí hậu'
+[    0.6s RSS  0.40GB]   mẫu[26] 'Carl Linnaeus'
+[    0.6s RSS  0.40GB]   mẫu[27] 'Karl XIV Johan'
+[    0.6s RSS  0.40GB]   mẫu[28] 'Es ai as T eg n ér'
+[    0.6s RSS  0.40GB]   mẫu[29] 'Luc ia fest'
+[    0.6s RSS  0.40GB] span nghi rác (tự động): 53/1669 = 3.2% (ISG: 57%)
+[    0.6s RSS  0.40GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_10000.pkl …
+[     0.0s] === load_toy_noise_10000 START (pid=16801) → out/logs/load_toy_noise_10000_20260814_224124.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_10000.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.1s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.2s] ✓ vocab (32002 token)  (0.0s)
+[     0.2s] ▶ adjacency
+[     0.5s] ✓ adjacency  (0.3s)
+[     0.5s] ▶ embedding
+[     0.5s] ✓ embedding  (0.0s)
+[     0.5s] ▶ parents
+[     0.5s] parents: deserialize 9983 records …
+[     0.6s] parents 5000/9983 (50.1%)
+[     1.0s] ▶ rebuild_hierarchical_index …
+[     1.0s] ✓ rebuild_hierarchical_index (0.0s)
+[     1.2s]     resync match_ids: 9983/9983 cha (df dựng lại)
+[     1.2s] ✓ parents  (0.6s)
+[     1.2s] ✓ loaded: vocab=32002 parents=9983 E=(32002, 96)
+[     1.2s] sidecar thiếu → migrate: toy_noise_10000.content.pkl
+[     1.2s] ✓ load_checkpoint XONG
+[    1.3s RSS  1.36GB] nạp xong · parents=9983 vocab=32002
+[    1.3s RSS  1.36GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    1.3s RSS  1.36GB] ws_spans 0/9983 · span=0 · bỏ=0
+[    4.1s RSS  1.36GB] 8944 span · 0.0 phút
+[    4.1s RSS  1.36GB] ghi out/noise_nho/toy_noise_10000.ws_spans.json (0.1 MB) · roundtrip OK
+[    4.1s RSS  1.36GB]   mẫu[00] '<0x83> <0xA1> 文 中'
+[    4.1s RSS  1.36GB]   mẫu[01] 'có mặt'
+[    4.1s RSS  1.36GB]   mẫu[02] 'công trình'
+[    4.1s RSS  1.36GB]   mẫu[03] 'con số'
+[    4.1s RSS  1.36GB]   mẫu[04] 'tình tiết'
+[    4.1s RSS  1.36GB]   mẫu[05] 'quân Xiêm'
+[    4.1s RSS  1.36GB]   mẫu[06] 'lòng dân'
+[    4.1s RSS  1.36GB]   mẫu[07] 'thương vong'
+[    4.1s RSS  1.36GB]   mẫu[08] 'máy tính'
+[    4.1s RSS  1.36GB]   mẫu[09] 'tiểu thuyết'
+[    4.1s RSS  1.36GB]   mẫu[10] 'mã hóa'
+[    4.1s RSS  1.36GB]   mẫu[11] 'ngoại lai'
+[    4.1s RSS  1.36GB]   mẫu[12] 'Bắc Âu'
+[    4.1s RSS  1.36GB]   mẫu[13] 'quần thần'
+[    4.1s RSS  1.36GB]   mẫu[14] 'mềm dẻo'
+[    4.1s RSS  1.36GB]   mẫu[15] 'Tu D í'
+[    4.1s RSS  1.36GB]   mẫu[16] 'cốt sao'
+[    4.1s RSS  1.36GB]   mẫu[17] 'Har ts field'
+[    4.1s RSS  1.36GB]   mẫu[18] 'Tứ Ân'
+[    4.1s RSS  1.36GB]   mẫu[19] 'buôn lậu'
+[    4.1s RSS  1.36GB]   mẫu[20] 'phế truất'
+[    4.1s RSS  1.36GB]   mẫu[21] 'bùng nổ'
+[    4.1s RSS  1.36GB]   mẫu[22] 'Thống đốc'
+[    4.1s RSS  1.36GB]   mẫu[23] 'Mùa Vọng'
+[    4.1s RSS  1.36GB]   mẫu[24] 'Vịnh San Francisco'
+[    4.1s RSS  1.36GB]   mẫu[25] 'Quyền lực'
+[    4.1s RSS  1.36GB]   mẫu[26] 'um tùm'
+[    4.1s RSS  1.36GB]   mẫu[27] 'Baroque Dresden'
+[    4.1s RSS  1.36GB]   mẫu[28] 'Si han ouk'
+[    4.1s RSS  1.36GB]   mẫu[29] 'sình lầy'
+[    4.1s RSS  1.36GB] span nghi rác (tự động): 249/8944 = 2.8% (ISG: 57%)
+[    4.1s RSS  1.36GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_20000.pkl …
+[     0.0s] === load_toy_noise_20000 START (pid=16812) → out/logs/load_toy_noise_20000_20260814_224128.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_20000.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     0.9s] ✓ adjacency  (0.6s)
+[     0.9s] ▶ embedding
+[     0.9s] ✓ embedding  (0.0s)
+[     0.9s] ▶ parents
+[     0.9s] parents: deserialize 19963 records …
+[     1.0s] parents 5000/19963 (25.0%)
+[     1.1s] parents 10000/19963 (50.1%)
+[     1.1s] parents 15000/19963 (75.1%)
+[     1.7s] ▶ rebuild_hierarchical_index …
+[     1.8s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.1s]     resync match_ids: 19963/19963 cha (df dựng lại)
+[     2.1s] ✓ parents  (1.2s)
+[     2.1s] ✓ loaded: vocab=32002 parents=19963 E=(32002, 96)
+[     2.2s] sidecar thiếu → migrate: toy_noise_20000.content.pkl
+[     2.2s] ✓ load_checkpoint XONG
+[    2.4s RSS  2.20GB] nạp xong · parents=19963 vocab=32002
+[    2.4s RSS  2.20GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.4s RSS  2.20GB] ws_spans 0/19963 · span=0 · bỏ=0
+[    7.9s RSS  2.20GB] 14607 span · 0.1 phút
+[    7.9s RSS  2.20GB] ghi out/noise_nho/toy_noise_20000.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.9s RSS  2.20GB]   mẫu[00] '<0x81> <0x87> <0xE5> <0x80> <0x9F>'
+[    7.9s RSS  2.20GB]   mẫu[01] '海 <0xE9> <0x87> <0xA3> <0xE5> <0xB1> <0xA0>'
+[    7.9s RSS  2.20GB]   mẫu[02] 'âm lịch'
+[    7.9s RSS  2.20GB]   mẫu[03] 'đại đa số'
+[    7.9s RSS  2.20GB]   mẫu[04] 'toàn phần'
+[    7.9s RSS  2.20GB]   mẫu[05] 'địa danh'
+[    7.9s RSS  2.20GB]   mẫu[06] 'tài chính'
+[    7.9s RSS  2.20GB]   mẫu[07] 'sức mạnh'
+[    7.9s RSS  2.20GB]   mẫu[08] 'diện mạo'
+[    7.9s RSS  2.20GB]   mẫu[09] 'mô hình nhân khẩu'
+[    7.9s RSS  2.20GB]   mẫu[10] 'ngoại lang'
+[    7.9s RSS  2.20GB]   mẫu[11] 'Lâm Tây'
+[    7.9s RSS  2.20GB]   mẫu[12] 'đương đầu'
+[    7.9s RSS  2.20GB]   mẫu[13] 'lo eg r'
+[    7.9s RSS  2.20GB]   mẫu[14] 'Quang Thùy'
+[    7.9s RSS  2.20GB]   mẫu[15] 'Le ft'
+[    7.9s RSS  2.20GB]   mẫu[16] 'súng trường'
+[    7.9s RSS  2.20GB]   mẫu[17] 'non sông'
+[    7.9s RSS  2.20GB]   mẫu[18] 'yth era'
+[    7.9s RSS  2.20GB]   mẫu[19] 'eo biển'
+[    7.9s RSS  2.20GB]   mẫu[20] 'Hệ thống'
+[    7.9s RSS  2.20GB]   mẫu[21] 'Tàu ô'
+[    7.9s RSS  2.20GB]   mẫu[22] 'Thúc Kháng'
+[    7.9s RSS  2.20GB]   mẫu[23] 'Tuổi Trẻ'
+[    7.9s RSS  2.20GB]   mẫu[24] 'Fre edom H EC'
+[    7.9s RSS  2.20GB]   mẫu[25] 'Ac ad ia'
+[    7.9s RSS  2.20GB]   mẫu[26] 'bal let'
+[    7.9s RSS  2.20GB]   mẫu[27] 'Sund ay ro ast'
+[    7.9s RSS  2.20GB]   mẫu[28] 'Britt ān ia'
+[    7.9s RSS  2.20GB]   mẫu[29] 'Herman Mel ville'
+[    7.9s RSS  2.20GB] span nghi rác (tự động): 347/14607 = 2.4% (ISG: 57%)
+[    7.9s RSS  2.20GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_300.pkl …
+[     0.0s] === load_toy_noise_300 START (pid=16842) → out/logs/load_toy_noise_300_20260814_224137.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_300.pkl …
+[     0.0s] ▶ unpickle
+[     0.0s] ✓ unpickle  (0.0s)
+[     0.0s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.1s] ✓ embedding  (0.0s)
+[     0.1s] ▶ parents
+[     0.1s] parents: deserialize 305 records …
+[     0.1s] ▶ rebuild_hierarchical_index …
+[     0.1s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.2s]     resync match_ids: 305/305 cha (df dựng lại)
+[     0.2s] ✓ parents  (0.0s)
+[     0.2s] ✓ loaded: vocab=32002 parents=305 E=(32002, 96)
+[     0.2s] sidecar thiếu → migrate: toy_noise_300.content.pkl
+[     0.2s] ✓ load_checkpoint XONG
+[    0.2s RSS  0.30GB] nạp xong · parents=305 vocab=32002
+[    0.2s RSS  0.30GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.2s RSS  0.30GB] ws_spans 0/305 · span=0 · bỏ=0
+[    0.3s RSS  0.30GB] 624 span · 0.0 phút
+[    0.3s RSS  0.30GB] ghi out/noise_nho/toy_noise_300.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.3s RSS  0.30GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.3s RSS  0.30GB]   mẫu[01] 'p ê'
+[    0.3s RSS  0.30GB]   mẫu[02] 'động đất'
+[    0.3s RSS  0.30GB]   mẫu[03] 'thế kỷ'
+[    0.3s RSS  0.30GB]   mẫu[04] 'tự trị'
+[    0.3s RSS  0.30GB]   mẫu[05] 'bản địa'
+[    0.3s RSS  0.30GB]   mẫu[06] 'bằng trắc'
+[    0.3s RSS  0.30GB]   mẫu[07] 'phần lớn'
+[    0.3s RSS  0.30GB]   mẫu[08] 'địa danh tiếng'
+[    0.3s RSS  0.30GB]   mẫu[09] 'câu thơ'
+[    0.3s RSS  0.30GB]   mẫu[10] 'chế biến'
+[    0.3s RSS  0.30GB]   mẫu[11] 'màu mỡ'
+[    0.3s RSS  0.30GB]   mẫu[12] 'giao chiến'
+[    0.3s RSS  0.30GB]   mẫu[13] 'trí thức'
+[    0.3s RSS  0.30GB]   mẫu[14] 'diện tích'
+[    0.3s RSS  0.30GB]   mẫu[15] 'Hoa ngữ'
+[    0.3s RSS  0.30GB]   mẫu[16] 'tướng sĩ'
+[    0.3s RSS  0.30GB]   mẫu[17] 'ban đầu'
+[    0.3s RSS  0.30GB]   mẫu[18] 'bổ sung'
+[    0.3s RSS  0.30GB]   mẫu[19] 'khoa học'
+[    0.3s RSS  0.30GB]   mẫu[20] 'đổ máu'
+[    0.3s RSS  0.30GB]   mẫu[21] 'hỗn hợp'
+[    0.3s RSS  0.30GB]   mẫu[22] 'quảng bá'
+[    0.3s RSS  0.30GB]   mẫu[23] 'John Kas ich'
+[    0.3s RSS  0.30GB]   mẫu[24] 'vay mượn'
+[    0.3s RSS  0.30GB]   mẫu[25] 'nham thạch'
+[    0.3s RSS  0.30GB]   mẫu[26] 'Tối T ăm'
+[    0.3s RSS  0.30GB]   mẫu[27] 'Thomas Edison'
+[    0.3s RSS  0.30GB]   mẫu[28] 'Hang B ua'
+[    0.3s RSS  0.30GB]   mẫu[29] 'Sierra Nevada'
+[    0.3s RSS  0.30GB] span nghi rác (tự động): 21/624 = 3.4% (ISG: 57%)
+[    0.3s RSS  0.30GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_3000.pkl …
+[     0.0s] === load_toy_noise_3000 START (pid=16843) → out/logs/load_toy_noise_3000_20260814_224137.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_3000.pkl …
+[     0.0s] ▶ unpickle
+[     0.1s] ✓ unpickle  (0.1s)
+[     0.1s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.2s] ✓ adjacency  (0.1s)
+[     0.2s] ▶ embedding
+[     0.3s] ✓ embedding  (0.0s)
+[     0.3s] ▶ parents
+[     0.3s] parents: deserialize 3005 records …
+[     0.4s] ▶ rebuild_hierarchical_index …
+[     0.4s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.4s]     resync match_ids: 3005/3005 cha (df dựng lại)
+[     0.4s] ✓ parents  (0.2s)
+[     0.4s] ✓ loaded: vocab=32002 parents=3005 E=(32002, 96)
+[     0.5s] sidecar thiếu → migrate: toy_noise_3000.content.pkl
+[     0.5s] ✓ load_checkpoint XONG
+[    0.5s RSS  0.63GB] nạp xong · parents=3005 vocab=32002
+[    0.5s RSS  0.63GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.5s RSS  0.63GB] ws_spans 0/3005 · span=0 · bỏ=0
+[    1.4s RSS  0.63GB] 3717 span · 0.0 phút
+[    1.4s RSS  0.63GB] ghi out/noise_nho/toy_noise_3000.ws_spans.json (0.1 MB) · roundtrip OK
+[    1.4s RSS  0.63GB]   mẫu[00] '<0x82> <0xE7> <0xA4> <0xBE>'
+[    1.4s RSS  0.63GB]   mẫu[01] 'có lẽ'
+[    1.4s RSS  0.63GB]   mẫu[02] 'âu Thìn'
+[    1.4s RSS  0.63GB]   mẫu[03] 'đối kháng'
+[    1.4s RSS  0.63GB]   mẫu[04] 'vì vậy'
+[    1.4s RSS  0.63GB]   mẫu[05] 'hàng đầu'
+[    1.4s RSS  0.63GB]   mẫu[06] 'đường hàng không'
+[    1.4s RSS  0.63GB]   mẫu[07] 'phân phối'
+[    1.4s RSS  0.63GB]   mẫu[08] 'dân tộc'
+[    1.4s RSS  0.63GB]   mẫu[09] 'thiên lệch'
+[    1.4s RSS  0.63GB]   mẫu[10] 'đặc trưng'
+[    1.4s RSS  0.63GB]   mẫu[11] 'kế cận'
+[    1.4s RSS  0.63GB]   mẫu[12] 'tham gia'
+[    1.4s RSS  0.63GB]   mẫu[13] 'doanh nghiệp'
+[    1.4s RSS  0.63GB]   mẫu[14] 'phổ thông'
+[    1.4s RSS  0.63GB]   mẫu[15] 'vũ khí'
+[    1.4s RSS  0.63GB]   mẫu[16] 'tả ngạn'
+[    1.4s RSS  0.63GB]   mẫu[17] 'nối tiếp'
+[    1.4s RSS  0.63GB]   mẫu[18] 'Bảo hiểm'
+[    1.4s RSS  0.63GB]   mẫu[19] 'tịch thu'
+[    1.4s RSS  0.63GB]   mẫu[20] 'Nữ hoàng'
+[    1.4s RSS  0.63GB]   mẫu[21] 'buôn bán'
+[    1.4s RSS  0.63GB]   mẫu[22] 'Động Đào Hoa'
+[    1.4s RSS  0.63GB]   mẫu[23] 'Toàn quyền'
+[    1.4s RSS  0.63GB]   mẫu[24] 'Lee Berg thold'
+[    1.4s RSS  0.63GB]   mẫu[25] 'Thomas Edison'
+[    1.4s RSS  0.63GB]   mẫu[26] 'Sun M icros ystem s'
+[    1.4s RSS  0.63GB]   mẫu[27] 'nhà băng'
+[    1.4s RSS  0.63GB]   mẫu[28] 'Hóc Môn'
+[    1.4s RSS  0.63GB]   mẫu[29] 'Luc ia fest'
+[    1.4s RSS  0.63GB] span nghi rác (tự động): 120/3717 = 3.2% (ISG: 57%)
+[    1.4s RSS  0.63GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_big/toy_noise_60000.pkl …
+[     0.0s] === load_toy_noise_60000 START (pid=16849) → out/logs/load_toy_noise_60000_20260814_224139.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_big/toy_noise_60000.pkl …
+[     0.0s] ▶ unpickle
+[     0.7s] ✓ unpickle  (0.7s)
+[     0.7s] ▶ vocab (32002 token)
+[     0.7s] ✓ vocab (32002 token)  (0.0s)
+[     0.7s] ▶ adjacency
+[     2.4s] ✓ adjacency  (1.7s)
+[     2.4s] ▶ embedding
+[     2.4s] ✓ embedding  (0.0s)
+[     2.4s] ▶ parents
+[     2.4s] parents: deserialize 59769 records …
+[     2.5s] parents 5000/59769 (8.4%)
+[     2.5s] parents 10000/59769 (16.7%)
+[     2.6s] parents 15000/59769 (25.1%)
+[     2.7s] parents 20000/59769 (33.5%)
+[     2.8s] parents 25000/59769 (41.8%)
+[     2.8s] parents 30000/59769 (50.2%)
+[     2.9s] parents 35000/59769 (58.6%)
+[     3.0s] parents 40000/59769 (66.9%)
+[     3.1s] parents 45000/59769 (75.3%)
+[     3.1s] parents 50000/59769 (83.7%)
+[     3.2s] parents 55000/59769 (92.0%)
+[     4.8s] ▶ rebuild_hierarchical_index …
+[     5.0s] ✓ rebuild_hierarchical_index (0.2s)
+[     6.1s]     resync match_ids: 59769/59769 cha (df dựng lại)
+[     6.1s] ✓ parents  (3.7s)
+[     6.1s] ✓ loaded: vocab=32002 parents=59769 E=(32002, 96)
+[     6.3s] sidecar thiếu → migrate: toy_noise_60000.content.pkl
+[     6.3s] ✓ load_checkpoint XONG
+[    6.8s RSS  5.49GB] nạp xong · parents=59769 vocab=32002
+[    6.8s RSS  5.49GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    6.8s RSS  5.49GB] ws_spans 0/59769 · span=0 · bỏ=0
+[   13.1s RSS  5.49GB] ws_spans 20000/59769 · span=14609 · bỏ=12000
+[   18.7s RSS  5.49GB] ws_spans 40000/59769 · span=23728 · bỏ=23928
+[   24.4s RSS  5.49GB] 32517 span · 0.3 phút
+[   24.4s RSS  5.49GB] ghi out/noise_big/toy_noise_60000.ws_spans.json (0.5 MB) · roundtrip OK
+[   24.4s RSS  5.49GB]   mẫu[00] '<0x80> 婆'
+[   24.4s RSS  5.49GB]   mẫu[01] 'v ector'
+[   24.4s RSS  5.49GB]   mẫu[02] 'au thara'
+[   24.4s RSS  5.49GB]   mẫu[03] 'y ù'
+[   24.4s RSS  5.49GB]   mẫu[04] 'chủ nghĩa tập thể'
+[   24.4s RSS  5.49GB]   mẫu[05] 'chi tiết'
+[   24.4s RSS  5.49GB]   mẫu[06] 'thanh bình'
+[   24.4s RSS  5.49GB]   mẫu[07] 'trợ năng'
+[   24.4s RSS  5.49GB]   mẫu[08] 'trẻ con'
+[   24.4s RSS  5.49GB]   mẫu[09] 'Đông An'
+[   24.4s RSS  5.49GB]   mẫu[10] 'Thái tử'
+[   24.4s RSS  5.49GB]   mẫu[11] 'khẩu hiệu'
+[   24.4s RSS  5.49GB]   mẫu[12] 'in ấn'
+[   24.4s RSS  5.49GB]   mẫu[13] 'Đại Chiêm'
+[   24.4s RSS  5.49GB]   mẫu[14] 'Cao Bằng'
+[   24.4s RSS  5.49GB]   mẫu[15] 'Ký Châu'
+[   24.4s RSS  5.49GB]   mẫu[16] 'bi kịch'
+[   24.4s RSS  5.49GB]   mẫu[17] 'Thừa Thiên đặt'
+[   24.4s RSS  5.49GB]   mẫu[18] 'Thực nghiệm'
+[   24.4s RSS  5.49GB]   mẫu[19] 'CO LA'
+[   24.4s RSS  5.49GB]   mẫu[20] 'Sông Thao'
+[   24.4s RSS  5.49GB]   mẫu[21] 'Chợ Tàu'
+[   24.4s RSS  5.49GB]   mẫu[22] 'Hiệu suất'
+[   24.4s RSS  5.49GB]   mẫu[23] 'Đá Công Đo'
+[   24.4s RSS  5.49GB]   mẫu[24] 'Đảng bộ'
+[   24.4s RSS  5.49GB]   mẫu[25] 'Re ine'
+[   24.4s RSS  5.49GB]   mẫu[26] 'Wend ers'
+[   24.4s RSS  5.49GB]   mẫu[27] 'Biệt vũ ban'
+[   24.4s RSS  5.49GB]   mẫu[28] 'Sid ney N ol an'
+[   24.4s RSS  5.49GB]   mẫu[29] 'tet raf lo etylen'
+[   24.5s RSS  5.49GB] span nghi rác (tự động): 616/32517 = 1.9% (ISG: 57%)
+[   24.5s RSS  5.49GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp out/noise_big/toy_noise_250000.pkl …
+[     0.0s] === load_toy_noise_250000 START (pid=16973) → out/logs/load_toy_noise_250000_20260814_224204.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_big/toy_noise_250000.pkl …
+[     0.0s] ▶ unpickle
+[     2.6s] ✓ unpickle  (2.6s)
+[     2.6s] ▶ vocab (32002 token)
+[     2.6s] ✓ vocab (32002 token)  (0.0s)
+[     2.6s] ▶ adjacency
+[     8.8s] ✓ adjacency  (6.2s)
+[     8.8s] ▶ embedding
+[     8.9s] ✓ embedding  (0.1s)
+[     8.9s] ▶ parents
+[     8.9s] parents: deserialize 245321 records …
+[     9.0s] parents 5000/245321 (2.0%)
+[     9.1s] parents 10000/245321 (4.1%)
+[     9.2s] parents 15000/245321 (6.1%)
+[     9.3s] parents 20000/245321 (8.2%)
+[     9.4s] parents 25000/245321 (10.2%)
+[     9.4s] parents 30000/245321 (12.2%)
+[     9.5s] parents 35000/245321 (14.3%)
+[     9.6s] parents 40000/245321 (16.3%)
+[     9.7s] parents 45000/245321 (18.3%)
+[     9.8s] parents 50000/245321 (20.4%)
+[     9.9s] parents 55000/245321 (22.4%)
+[    10.0s] parents 60000/245321 (24.5%)
+[    10.1s] parents 65000/245321 (26.5%)
+[    10.2s] parents 70000/245321 (28.5%)
+[    10.3s] parents 75000/245321 (30.6%)
+[    10.4s] parents 80000/245321 (32.6%)
+[    10.5s] parents 85000/245321 (34.6%)
+[    10.6s] parents 90000/245321 (36.7%)
+[    10.7s] parents 95000/245321 (38.7%)
+[    10.8s] parents 100000/245321 (40.8%)
+[    10.9s] parents 105000/245321 (42.8%)
+[    11.0s] parents 110000/245321 (44.8%)
+[    11.1s] parents 115000/245321 (46.9%)
+[    11.2s] parents 120000/245321 (48.9%)
+[    11.3s] parents 125000/245321 (51.0%)
+[    11.4s] parents 130000/245321 (53.0%)
+[    11.5s] parents 135000/245321 (55.0%)
+[    11.6s] parents 140000/245321 (57.1%)
+[    11.7s] parents 145000/245321 (59.1%)
+[    11.8s] parents 150000/245321 (61.1%)
+[    11.9s] parents 155000/245321 (63.2%)
+[    11.9s] parents 160000/245321 (65.2%)
+[    12.0s] parents 165000/245321 (67.3%)
+[    12.1s] parents 170000/245321 (69.3%)
+[    12.2s] parents 175000/245321 (71.3%)
+[    12.3s] parents 180000/245321 (73.4%)
+[    12.4s] parents 185000/245321 (75.4%)
+[    12.5s] parents 190000/245321 (77.4%)
+[    12.5s] parents 195000/245321 (79.5%)
+[    12.6s] parents 200000/245321 (81.5%)
+[    12.7s] parents 205000/245321 (83.6%)
+[    12.8s] parents 210000/245321 (85.6%)
+[    12.9s] parents 215000/245321 (87.6%)
+[    13.0s] parents 220000/245321 (89.7%)
+[    13.1s] parents 225000/245321 (91.7%)
+[    13.2s] parents 230000/245321 (93.8%)
+[    13.3s] parents 235000/245321 (95.8%)
+[    13.4s] parents 240000/245321 (97.8%)
+[    13.5s] parents 245000/245321 (99.9%)
+[    22.4s] ▶ rebuild_hierarchical_index …
+[    23.7s] ✓ rebuild_hierarchical_index (1.3s)
+[    28.8s]     resync match_ids: 245321/245321 cha (df dựng lại)
+[    28.8s] ✓ parents  (19.9s)
+[    28.8s] ✓ loaded: vocab=32002 parents=245321 E=(32002, 96)
+[    30.4s] sidecar thiếu → migrate: toy_noise_250000.content.pkl
+[    30.4s] ✓ load_checkpoint XONG
+[   37.2s RSS  8.69GB] nạp xong · parents=245321 vocab=32002
+[   37.3s RSS  8.94GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   37.3s RSS  8.94GB] ws_spans 0/245321 · span=0 · bỏ=0
+[   49.7s RSS  8.94GB] ws_spans 20000/245321 · span=14613 · bỏ=12000
+[   55.3s RSS  8.94GB] ws_spans 40000/245321 · span=23721 · bỏ=23928
+[   61.1s RSS  8.94GB] ws_spans 60000/245321 · span=32553 · bỏ=35500
+[   67.0s RSS  8.94GB] ws_spans 80000/245321 · span=40198 · bỏ=47029
+[   72.7s RSS  8.94GB] ws_spans 100000/245321 · span=47698 · bỏ=58759
+[   78.7s RSS  8.94GB] ws_spans 120000/245321 · span=54811 · bỏ=70374
+[   84.5s RSS  8.94GB] ws_spans 140000/245321 · span=61362 · bỏ=82167
+[   90.0s RSS  8.94GB] ws_spans 160000/245321 · span=68229 · bỏ=94181
+[   95.1s RSS  8.94GB] ws_spans 180000/245321 · span=74231 · bỏ=106723
+[  100.2s RSS  8.94GB] ws_spans 200000/245321 · span=81030 · bỏ=119197
+[  105.5s RSS  8.94GB] ws_spans 220000/245321 · span=86945 · bỏ=131399
+[  110.9s RSS  8.94GB] ws_spans 240000/245321 · span=92416 · bỏ=143657
+[  112.5s RSS  8.94GB] 94572 span · 1.3 phút
+[  120.4s RSS  8.94GB] ghi out/noise_big/toy_noise_250000.ws_spans.json (1.5 MB) · roundtrip OK
+[  120.4s RSS  8.94GB]   mẫu[00] '<0x80> <0x85>'
+[  120.4s RSS  8.94GB]   mẫu[01] 'c ulin'
+[  120.4s RSS  8.94GB]   mẫu[02] '貞 <0xE7> <0x83> <0x88>'
+[  120.4s RSS  8.94GB]   mẫu[03] 'K irov'
+[  120.4s RSS  8.94GB]   mẫu[04] 'bản Kinh'
+[  120.4s RSS  8.94GB]   mẫu[05] 'giải toả'
+[  120.4s RSS  8.94GB]   mẫu[06] 'tư thổ'
+[  120.4s RSS  8.94GB]   mẫu[07] 'phù văn'
+[  120.4s RSS  8.94GB]   mẫu[08] 'Phong Thủy'
+[  120.4s RSS  8.94GB]   mẫu[09] 'nghiên cứu ứng dụng'
+[  120.4s RSS  8.94GB]   mẫu[10] 'lá ser'
+[  120.4s RSS  8.94GB]   mẫu[11] 'bậc đạo sư'
+[  120.4s RSS  8.94GB]   mẫu[12] 'Mã Giám'
+[  120.4s RSS  8.94GB]   mẫu[13] 'Tứ Kiệt'
+[  120.4s RSS  8.94GB]   mẫu[14] 'Hương An'
+[  120.4s RSS  8.94GB]   mẫu[15] 'one Sch er f ig'
+[  120.4s RSS  8.94GB]   mẫu[16] 'unt ain Valley'
+[  120.4s RSS  8.94GB]   mẫu[17] 'Sam aj'
+[  120.4s RSS  8.94GB]   mẫu[18] 'Bùi Văn Cường'
+[  120.4s RSS  8.94GB]   mẫu[19] 'Lễ nghi'
+[  120.4s RSS  8.94GB]   mẫu[20] 'app el'
+[  120.4s RSS  8.94GB]   mẫu[21] 'amb ord'
+[  120.4s RSS  8.94GB]   mẫu[22] 'ull s oft'
+[  120.4s RSS  8.94GB]   mẫu[23] 'codon A AT'
+[  120.4s RSS  8.94GB]   mẫu[24] 'Lawrence Bragg'
+[  120.4s RSS  8.94GB]   mẫu[25] 'Mon ar chi que'
+[  120.4s RSS  8.94GB]   mẫu[26] 'crypt ion Pro c essing'
+[  120.4s RSS  8.94GB]   mẫu[27] 'Spec tre'
+[  120.4s RSS  8.94GB]   mẫu[28] 'Isla Salas'
+[  120.4s RSS  8.94GB]   mẫu[29] 'Vas udeva'
+[  120.7s RSS  8.94GB] span nghi rác (tự động): 1304/94572 = 1.4% (ISG: 57%)
+[  120.7s RSS  8.94GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+DONE

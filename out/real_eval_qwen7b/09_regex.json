@@ -1,0 +1,13 @@
+{
+ "id": "09_regex",
+ "cat": "py_text",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết hàm Python dùng regex lấy tất cả địa chỉ email trong một đoạn văn bản, bỏ trùng, giữ thứ tự xuất hiện. Thử với: 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'",
+   "text": "Đây là cách bạn có thể viết hàm Python để lấy tất cả địa chỉ email từ một đoạn văn bản, bỏ trùng và giữ thứ tự xuất hiện:\n\n```python\nimport re\n\ndef extract_unique_emails(text):\n    # Regex pattern to match email addresses\n    email_pattern = r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b'\n    \n    # Find all matches in the text\n    emails = re.findall(email_pattern, text)\n    \n    # Remove duplicates while preserving order\n    unique_emails = []\n    for email in emails:\n        if email not in unique_emails:\n            unique_emails.append(email)\n            \n    return unique_emails\n\n# Test with your example text\ntext = 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'\nprint(extract_unique_emails(text))\n```\n\nKhi chạy đoạn code trên với văn bản bạn cung cấp, kết quả sẽ là:\n\n```\n['an.nguyen@gmail.com', 'sales@cty.vn']\n```\n\nHàm `extract_unique_emails` thực hiện các bước sau:\n1. Sử dụng regex để tìm tất cả địa chỉ email trong văn bản.\n2. Lặp qua danh sách email và thêm vào danh sách mới nếu email chưa xuất hiện trước đó, đảm bảo thứ tự xuất hiện được giữ.\n\nNếu bạn muốn bỏ qua dấu phẩy và khoảng trắng khi kiểm tra trùng lặp, có thể thay đổi phần `if email not in unique_emails:` thành:\n\n```python\nif email.strip() not in [e.strip() for e in unique_emails]:\n```\n\nĐây sẽ giúp loại bỏ các email trùng lặp mà chỉ khác nhau bởi dấu phẩy hoặc khoảng trắng.",
+   "tokens": 374,
+   "sec": 8.0
+  }
+ ]
+}

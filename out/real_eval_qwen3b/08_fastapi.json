@@ -1,0 +1,13 @@
+{
+ "id": "08_fastapi",
+ "cat": "py_web",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Viết API FastAPI quản lý danh sách việc cần làm (todo) lưu trong bộ nhớ: thêm, xem tất cả, sửa trạng thái hoàn thành, xoá. Dùng Pydantic model, trả 404 khi không tìm thấy id.",
+   "text": "Dưới đây là một ví dụ về cách tạo API FastAPI để quản lý danh sách việc cần làm (TODO) sử dụng Pydantic model:\n\n```python\nfrom fastapi import FastAPI, HTTPException, status, Depends\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\n# Định nghĩa Pydantic model cho một todo\nclass Todo(BaseModel):\n    id: int\n    content: str\n    completed: bool = False\n\n# Bộ nhớ lưu trữ todos (để giả lập việc lưu vào cơ sở dữ liệu)\ntodos: list[Todo] = []\n\n# Hàm tìm kiếm todo bằng ID, trả 404 nếu không tìm thấy\ndef find_todo(id: int):\n    for i, t in enumerate(todos):\n        if t.id == id:\n            return t\n    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Todo not found\")\n\n# Thêm một todo mới vào danh sách\n@app.post(\"/todos/\")\nasync def add_todo(todo: Todo):\n    todos.append(todo)\n    return {\"message\": \"Todo added successfully\"}\n\n# Xem tất cả các todo\n@app.get(\"/todos/\")\nasync def get_todos():\n    return todos\n\n# Sửa trạng thái hoàn thành của một todo\n@app.put(\"/todos/{id}/\")\nasync def update_todo(id: int, updated_todo: Todo):\n    existing_todo = find_todo(id)\n    if updated_todo.content:\n        existing_todo.content = updated_todo.content\n    if updated_todo.completed is not None:\n        existing_todo.completed = updated_todo.completed\n    return {\"message\": \"Todo updated successfully\"}\n\n# Xoá một todo\n@app.delete(\"/todos/{id}/\")\nasync def delete_todo(id: int):\n    global todos  # Sử dụng toàn cục để thay đổi danh sách\n    todos = [t for t in todos if t.id != id]\n    return {\"message\": \"Todo deleted successfully\"}\n```\n\n### Giải thích:\n\n1. **Pydantic Model**: `Todo` là một model Pydantic định nghĩa cấu trúc của một todo, bao gồm `id`, `content` và `completed`.\n\n2. **Bộ nhớ lưu trữ**: Danh sách `todos` trong bộ nhớ giả lập để lưu trữ các todo.\n\n3. **Hàm `find_todo(id)`**: Tìm kiếm todo bằng ID và trả 404 nếu không tìm thấy.\n\n4. **APIs**:\n   - `/todos/`: Thêm một todo mới vào danh sách.\n   - `/todos/`: Xem tất cả các todo.\n   - `/todos/{id}/`: Sửa trạng thái hoàn thành của một todo.\n   - `/todos/{id}/`: Xoá một todo.\n\n### Lưu ý:\n\n- Dữ liệu được lưu trữ trong bộ nhớ tạm thời, nên không áp dụng cho ứng dụng thực tế cần ghi vào cơ sở dữ liệu.\n- Sử dụng `HTTPException` để xử lý lỗi 404 khi todo không tìm thấy.",
+   "tokens": 618,
+   "sec": 6.9
+  }
+ ]
+}

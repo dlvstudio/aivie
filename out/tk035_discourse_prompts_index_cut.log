@@ -1,0 +1,63 @@
+checkpoint=network_v10_histwiki_paragraph.pkl
+parents=176430 vocab=113572
+prompts=43 (history=10, doc=10, conv=10, common=10, +frame=3)
+
+=== Discourse prompts (dataset-derived) ===
+
+[history_wiki_para] 'Khối trường tư thục phát triển năng'
+  - gen multi varlm=0: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (86.6s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.35: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (11.3s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.5: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.8s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+
+[history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+  - gen multi varlm=0: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (16.4s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.35: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (10.7s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.5: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (9.4s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+
+[history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.3s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0.35: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (16.0s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0.5: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (13.4s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+
+[history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+  - gen multi varlm=0: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (22.8s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.35: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (33.2s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.5: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (23.2s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+
+[history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+  - gen multi varlm=0: chars=35 sents=0 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (25.6s)
+      'Chúa gánh cái lo , ta hưởng cái vui'
+  - gen multi varlm=0.35: chars=35 sents=0 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (35.0s)
+      'Chúa gánh cái lo , ta hưởng cái vui'
+  - gen multi varlm=0.5: chars=35 sents=0 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (33.1s)
+      'Chúa gánh cái lo , ta hưởng cái vui'
+
+[history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+  - gen multi varlm=0: chars=75 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (72.5s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+  - gen multi varlm=0.35: chars=75 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (104.4s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+  - gen multi varlm=0.5: chars=75 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (65.8s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+
+[history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+  - gen multi varlm=0: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (84.8s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.35: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (55.6s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.5: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (40.6s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+
+[history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'

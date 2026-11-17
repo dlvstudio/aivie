@@ -1,0 +1,13 @@
+{
+ "id": "04_traceback",
+ "cat": "debug",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Chạy script bị lỗi này, nghĩa là gì và sửa sao?\n\n```\nTraceback (most recent call last):\n  File \"app.py\", line 12, in <module>\n    print(user['email'])\nKeyError: 'email'\n```\n\nĐoạn code:\n```python\nimport json\nwith open('users.json') as f:\n    users = json.load(f)\nfor user in users:\n    print(user['name'])\n    print(user['email'])\n```",
+   "text": "Lỗi trên xảy ra do phần tử `user` trong danh sách `users` không có khóa 'email'. Điều này có nghĩa là một trong các đối tượng người dùng trong tập tin `users.json` thiếu thông tin về email.\n\nĐể sửa lỗi, bạn cần kiểm tra dữ liệu trong `users.json` để đảm bảo rằng mỗi đối tượng người dùng đều chứa trường 'email'. Nếu một người dùng không có email, bạn có thể bỏ qua việc in hoặc xử lý nó theo cách nào đó phù hợp với yêu cầu của bạn. Ví dụ:\n\n```python\nimport json\n\ntry:\n    with open('users.json') as f:\n        users = json.load(f)\n    \n    for user in users:\n        print(user.get('name', 'No name'))\n        print(user.get('email', 'No email'))\nexcept KeyError as e:\n    print(f\"Error: {e}\")\n```\n\nTrong đoạn code trên, `user.get('key', default)` được sử dụng để tránh lỗi khi key không tồn tại. Nếu key không tồn tại, nó sẽ trả về giá trị mặc định ('No name' hoặc 'No email') thay vì gây ra lỗi KeyError.",
+   "tokens": 243,
+   "sec": 2.9
+  }
+ ]
+}

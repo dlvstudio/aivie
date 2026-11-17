@@ -1,0 +1,91 @@
+[     0.0s] === probe_skip_spans START (pid=7648) → out/logs/probe_skip_spans_20260710_113255.log ===
+[     0.0s] ▶ load
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    20.0s] ✓ unpickle  (20.0s)
+[    20.0s] ▶ vocab (113572 token)
+[    20.6s] ✓ vocab (113572 token)  (0.6s)
+[    20.6s] ▶ adjacency
+[    37.8s] ✓ adjacency  (17.2s)
+[    37.8s] ▶ embedding
+[    38.9s] ✓ embedding  (1.1s)
+[    38.9s] ▶ parents
+[    38.9s] parents: deserialize 176430 records …
+[    39.3s] parents 5000/176430 (2.8%)
+[    39.8s] parents 10000/176430 (5.7%)
+[    40.2s] parents 15000/176430 (8.5%)
+[    40.5s] parents 20000/176430 (11.3%)
+[    40.9s] parents 25000/176430 (14.2%)
+[    41.2s] parents 30000/176430 (17.0%)
+[    41.5s] parents 35000/176430 (19.8%)
+[    41.9s] parents 40000/176430 (22.7%)
+[    42.4s] parents 45000/176430 (25.5%)
+[    42.9s] parents 50000/176430 (28.3%)
+[    43.5s] parents 55000/176430 (31.2%)
+[    43.9s] parents 60000/176430 (34.0%)
+[    44.4s] parents 65000/176430 (36.8%)
+[    44.8s] parents 70000/176430 (39.7%)
+[    45.2s] parents 75000/176430 (42.5%)
+[    67.7s] parents 80000/176430 (45.3%)
+[    68.2s] parents 85000/176430 (48.2%)
+[    68.6s] parents 90000/176430 (51.0%)
+[    69.0s] parents 95000/176430 (53.8%)
+[    69.3s] parents 100000/176430 (56.7%)
+[    69.7s] parents 105000/176430 (59.5%)
+[    70.2s] parents 110000/176430 (62.3%)
+[    70.6s] parents 115000/176430 (65.2%)
+[    71.1s] parents 120000/176430 (68.0%)
+[    71.6s] parents 125000/176430 (70.8%)
+[    72.0s] parents 130000/176430 (73.7%)
+[    72.3s] parents 135000/176430 (76.5%)
+[    72.7s] parents 140000/176430 (79.4%)
+[    73.0s] parents 145000/176430 (82.2%)
+[    73.4s] parents 150000/176430 (85.0%)
+[    74.1s] parents 155000/176430 (87.9%)
+[    75.0s] parents 160000/176430 (90.7%)
+[    75.7s] parents 165000/176430 (93.5%)
+[   103.1s] parents 170000/176430 (96.4%)
+[   104.0s] parents 175000/176430 (99.2%)
+[   313.8s] ▶ rebuild_hierarchical_index …
+[   316.6s] ✓ rebuild_hierarchical_index (2.8s)
+[   316.7s] ✓ parents  (277.8s)
+[   316.7s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   323.4s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   323.4s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   327.5s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   327.5s] ✓ load_checkpoint XONG
+[   327.5s] ✓ load  (327.5s)
+[   327.5s] ▶ mine
+[   402.2s] scan skip parents 20000/176430 (11.3%) — pairs=528966
+[   409.3s] scan skip parents 40000/176430 (22.7%) — pairs=922407
+[   419.0s] scan skip parents 60000/176430 (34.0%) — pairs=1408218
+[   425.7s] scan skip parents 80000/176430 (45.3%) — pairs=1706902
+[   431.5s] scan skip parents 100000/176430 (56.7%) — pairs=1974430
+[   437.2s] scan skip parents 120000/176430 (68.0%) — pairs=2223229
+[   443.0s] scan skip parents 140000/176430 (79.4%) — pairs=2460190
+[   556.9s] scan skip parents 160000/176430 (90.7%) — pairs=2615607
+[   569.8s] skip cặp thô = 2668583, tổng đồng-hiện = 10861205
+[   598.6s] ✓ SKIP_SPAN spans=30000 promoted=5627
+[   612.0s] ✓ mine  (284.5s)
+[   612.1s] stats={'pairs': 2668583, 'spans': 30000, 'promoted': 5627}
+[   612.1s] top skip spans (left → right | power pmi promoted):
+[   612.1s]   'ngày' → 'năm' | power=1852 pmi=2.70 mode_gap=3 promoted=True
+[   612.1s]   'Ngày' → 'năm' | power=1385 pmi=3.15 mode_gap=3 promoted=True
+[   612.1s]   'sự' → 'của' | power=2363 pmi=1.82 mode_gap=2 promoted=True
+[   612.1s]   '–' → 'nhà' | power=1246 pmi=2.85 mode_gap=3 promoted=True
+[   612.1s]   'được' → 'bởi' | power=1328 pmi=2.33 mode_gap=2 promoted=True
+[   612.1s]   'các' → 'khác' | power=1493 pmi=1.85 mode_gap=2 promoted=True
+[   612.1s]   'nhà' → 'người' | power=1495 pmi=1.79 mode_gap=2 promoted=True
+[   612.1s]   'Việt' → 'hòa' | power=724 pmi=3.69 mode_gap=2 promoted=True
+[   612.1s]   'vào' → 'năm' | power=1245 pmi=1.64 mode_gap=4 promoted=True
+[   612.1s]   'vào' → 'tháng' | power=816 pmi=2.47 mode_gap=2 promoted=True
+[   612.1s]   'từ' → 'đến' | power=1080 pmi=1.83 mode_gap=2 promoted=True
+[   612.1s]   'nhà' → '(m' | power=628 pmi=3.08 mode_gap=4 promoted=True
+[   612.1s]   'nhà' → '(s' | power=595 pmi=3.02 mode_gap=4 promoted=True
+[   612.1s]   'nhuận)' → 'Gregory' | power=186 pmi=8.76 mode_gap=2 promoted=True
+[   612.1s]   'giữa' → 'và' | power=881 pmi=1.83 mode_gap=2 promoted=True
+[   612.1s]   'xã' → 'huyện' | power=359 pmi=4.21 mode_gap=3 promoted=True
+[   612.1s]   'Thành' → 'Chí' | power=268 pmi=4.97 mode_gap=2 promoted=True
+[   612.1s]   'bất' → 'nào' | power=323 pmi=4.08 mode_gap=3 promoted=True
+[   612.1s]   'Chiến' → 'thứ' | power=336 pmi=3.91 mode_gap=3 promoted=True
+[   612.1s]   'nhiều' → 'khác' | power=578 pmi=2.14 mode_gap=2 promoted=True

@@ -1,0 +1,26 @@
+lesson_id: vi_grade7_S_V_bang_N
+grade: 7
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_V_bang_N
+slots:
+  - var: S
+  - var: V
+  - const: "bằng"
+  - var: N
+
+bind:
+  S: chủ ngữ
+  V: động từ
+  N: danh từ
+
+examples:
+  - "Em viết bằng bút"
+  - "Lan vẽ bằng màu"
+  - "Mẹ nấu bằng nồi"
+  - "Bé chơi bằng bóng"
+  - "Cô dạy bằng sách"
+  - "Em gọt bằng dao"
+  - "Chị may bằng kim"

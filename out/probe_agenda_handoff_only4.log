@@ -1,0 +1,28 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=48 mode=agenda_handoff
+
+=== nq_def  (557.9s) dots≈8 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm'
+
+=== nq_full  (459.1s) dots≈14 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   '. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== thd  (466.7s) dots≈21 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà là Hưng Đạo Vương. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   'Hưng Đạo Vương. Nhà là Hưng Đạo Vương. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== ly  (474.1s) dots≈17 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109. Năm. Năm 109. Năm. Năm năm 109. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   'Nhà Lý thành lập năm 109. Năm. Năm 109. Năm. Năm năm 109. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== hung  (444.7s) dots≈6 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. ÔngLê Lợi khởi nghĩa Lam Sơn. Ông người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc. Ông. Ông
+cont:   'Lam Sơn. ÔngLê Lợi khởi nghĩa Lam Sơn. Ông người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc. Ông. Ông'
+
+[2507s] → out/probe_agenda_handoff_only4.log

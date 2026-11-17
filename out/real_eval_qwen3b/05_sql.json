@@ -1,0 +1,13 @@
+{
+ "id": "05_sql",
+ "cat": "sql",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Có 2 bảng: customers(id, ten, thanh_pho) và orders(id, customer_id, ngay_dat, tong_tien). Viết câu SQL lấy 5 khách hàng chi tiêu nhiều nhất năm 2024, kèm tổng tiền và số đơn, chỉ tính khách ở Hà Nội.",
+   "text": "Dưới đây là câu SQL cần thiết để thực hiện yêu cầu của bạn:\n\n```sql\nSELECT c.ten, c.thanh_pho, SUM(o.tong_tien) AS tong_tien_all_orders, COUNT(o.id) AS so_don \nFROM customers c \nJOIN orders o ON c.id = o.customer_id \nWHERE c.thanh_pho = 'Hà Nội' AND YEAR(o.ngay_dat) = 2024\nGROUP BY c.ten, c.thanh_pho\nORDER BY tong_tien_all_orders DESC\nLIMIT 5;\n```\n\n### Giải thích câu SQL:\n\n1. **SELECT**: Chọn các cột cần lấy: `ten` của khách hàng, `thanh_pho`, `tong_tien_all_orders` (tổng tiền từ các đơn hàng) và `so_don` (số lượng đơn hàng).\n2. **FROM customers c**: Lấy dữ liệu từ bảng `customers`.\n3. **JOIN orders o ON c.id = o.customer_id**: Liên kết hai bảng để lấy thông tin chi tiết về từng đơn hàng cho từng khách hàng.\n4. **WHERE c.thanh_pho = 'Hà Nội' AND YEAR(o.ngay_dat) = 2024**: Chỉ lọc những khách hàng ở Hà Nội và chỉ xử lý các đơn hàng trong năm 2024.\n5. **GROUP BY c.ten, c.thanh_pho**: Tính tổng tiền và số lượng đơn cho mỗi khách hàng cụ thể.\n6. **ORDER BY tong_tien_all_orders DESC**: Sắp xếp kết quả theo tổng tiền giảm dần.\n7. **LIMIT 5**: Giới hạn kết quả chỉ lấy top 5 khách hàng chi tiêu nhiều nhất năm 2024 ở Hà Nội.\n\nNếu cần thêm điều kiện khác hoặc xử lý dữ liệu khác, bạn có thể thay đổi câu lệnh `WHERE` hoặc các cột trong `SELECT` theo yêu cầu cụ thể.",
+   "tokens": 410,
+   "sec": 4.6
+  }
+ ]
+}

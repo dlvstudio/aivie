@@ -1,0 +1,13 @@
+{
+ "id": "19_async",
+ "cat": "py_async",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Viết code Python dùng asyncio + aiohttp tải song song nội dung 10 URL, tối đa 3 request cùng lúc, timeout 10 giây mỗi request, in ra URL nào lỗi.",
+   "text": "Dưới đây là một ví dụ về cách sử dụng `asyncio` và `aiohttp` để tải song song nội dung từ 10 URL, với giới hạn đồng thời tối đa 3 request và timeout 10 giây cho mỗi request:\n\n```python\nimport asyncio\nimport aiohttp\n\nasync def fetch(session, url):\n    try:\n        async with session.get(url, timeout=10) as response:\n            if response.status == 200:\n                return await response.text()\n            else:\n                print(f\"Error fetching {url}: Status code {response.status}\")\n    except asyncio.TimeoutError:\n        print(f\"Timeout error for {url}\")\n    except Exception as e:\n        print(f\"An error occurred while fetching {url}: {e}\")\n\nasync def main(urls):\n    async with aiohttp.ClientSession() as session:\n        tasks = [fetch(session, url) for url in urls]\n        \n        # Use asyncio.gather to run up to 3 requests concurrently\n        results = await asyncio.gather(*tasks, limit=3)\n        \n        print(\"Fetched URLs:\")\n        for result in results:\n            if result is not None:\n                print(result)\n\nif __name__ == \"__main__\":\n    urls = [\n        \"http://example.com/page1\",\n        \"http://example.com/page2\",\n        \"http://example.com/page3\",\n        \"http://example.com/page4\",\n        \"http://example.com/page5\",\n        \"http://example.com/page6\",\n        \"http://example.com/page7\",\n        \"http://example.com/page8\",\n        \"http://example.com/page9\",\n        \"http://example.com/page10\"\n    ]\n    \n    asyncio.run(main(urls))\n```\n\n### Giải thích:\n- **fetch**: Đây là hàm async để tải nội dung từ một URL. Nó sử dụng `session.get` và timeout 10 giây.\n- **main**: Hàm async này tạo ra một session `aiohttp.ClientSession` và tạo ra một list của tác vụ (`tasks`) bằng cách gọi `fetch` cho mỗi URL. Sau đó, nó sử dụng `asyncio.gather` để chạy nhiều tác vụ song song, giới hạn tối đa 3 request cùng lúc.\n- **asyncio.run(main(urls))**: Chạy hàm `main` dưới môi trường asyncio.\n\n### Lưu ý:\n- Bạn cần có các URL trong danh sách để tải. Trong ví dụ này, tôi đã tạo ra một danh sách với 10 URL giả định.\n- Nếu bạn muốn xử lý lỗi cho từng URL cụ thể, bạn có thể kiểm tra kết quả trả về từ `fetch` và in ra thông báo lỗi nếu nó là `None`.",
+   "tokens": 562,
+   "sec": 6.5
+  }
+ ]
+}

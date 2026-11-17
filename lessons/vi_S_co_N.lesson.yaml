@@ -1,0 +1,23 @@
+lesson_id: vi_grade3_co_N
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_co_N
+slots:
+  - var: S
+  - const: "có"
+  - var: N
+
+bind:
+  S: chủ ngữ
+  N: danh từ
+
+examples:
+  - "Em có bút"
+  - "Bé có gấu bông"
+  - "Lan có sách"
+  - "Mẹ có hoa"
+  - "Bố có xe"
+  - "Con mèo có lông mượt"

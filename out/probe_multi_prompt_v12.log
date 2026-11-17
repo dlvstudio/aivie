@@ -1,0 +1,43 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36 n=8
+
+=== nq_def  (213.6s) bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (11.3s) bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ''
+
+=== thd  (36.1s) bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương'
+
+=== ly  (62.2s) bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thành Tây Đô ở Thanh Hóa
+cont:   'Thành Tây Đô ở Thanh Hóa'
+
+=== bach  (113.8s) bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng nămTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi
+cont:   'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi'
+
+=== qa_nq  (194.5s) bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai Không có gì phải Cho nên Ở đây Sirius Black và Nhìn chung Trước đó Nhưng mà Đừng nói ThươngSao
+cont:   'Không có gì phải Cho nên Ở đây Sirius Black và Nhìn chung Trước đó Nhưng mà Đừng nói ThươngSao'
+
+=== qa_thd  (194.0s) bad=[] ===
+prompt: Hỏi: Trần Hưng Đạo là ai
+out:    Hỏi: Trần Hưng Đạo là ai Không có gì phải Cho nên Ở đây Sirius Black và Nhìn chung Trước đó Nhưng mà Đừng nói ThươngSao
+cont:   'Không có gì phải Cho nên Ở đây Sirius Black và Nhìn chung Trước đó Nhưng mà Đừng nói ThươngSao'
+
+=== hung  (25.9s) bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Thăng Long
+cont:   'Thăng Long'
+
+[921s] → out/probe_multi_prompt_v12.log

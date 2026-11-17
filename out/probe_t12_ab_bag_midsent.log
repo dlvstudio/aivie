@@ -1,0 +1,57 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36
+
+########## ON_0.35 ar_matrix_bag_midsent_penalty=0.35 ##########
+
+=== ly  (455.0s) glue=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Nhà Nhà Nhà 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cont:   ' Nhà Nhà Nhà 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
+
+=== bach  (335.5s) glue=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm Trận 8 8 8 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+cont:   ' Trận 8 8 8 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8'
+
+=== nq_def  (110.6s) glue=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd  (37.7s) glue=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   ' Hưng Đạo Vương'
+
+=== hung  (26.7s) glue=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   ' Lam Sơn'
+
+########## OFF_1.0 ar_matrix_bag_midsent_penalty=1.0 ##########
+
+=== ly  (446.9s) glue=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Nhà Nhà Nhà 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cont:   ' Nhà Nhà Nhà 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
+
+=== bach  (340.2s) glue=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm Trận 8 8 8 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+cont:   ' Trận 8 8 8 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8'
+
+=== nq_def  (106.2s) glue=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd  (36.2s) glue=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   ' Hưng Đạo Vương'
+
+=== hung  (25.6s) glue=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   ' Lam Sơn'
+
+[2026s] → out/probe_t12_ab_bag_midsent.log

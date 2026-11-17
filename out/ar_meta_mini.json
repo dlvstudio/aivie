@@ -1,0 +1,3456 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_moi_nhanh": 150,
+ "rows": [
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A000"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2232,
+   "id": "A001"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4859,
+   "id": "A002"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 556,
+   "id": "A003"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A004"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A005"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A006"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 10,
+   "id": "A007"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1805,
+   "id": "A008"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A009"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A010"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A011"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 303,
+   "id": "A012"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3103,
+   "id": "A013"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1293,
+   "id": "A014"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 836,
+   "id": "A015"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A016"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A017"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A018"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A019"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A020"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2462,
+   "id": "A021"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3019,
+   "id": "A022"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2379,
+   "id": "A023"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 975,
+   "id": "A024"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A025"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3779,
+   "id": "A026"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A027"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A028"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A029"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A030"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 954,
+   "id": "A031"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 9,
+   "id": "A032"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 506,
+   "id": "A033"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 11,
+   "id": "A034"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A035"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A036"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1217,
+   "id": "A037"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A038"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 16,
+   "id": "A039"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1834,
+   "id": "A040"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A041"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3826,
+   "id": "A042"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A043"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1245,
+   "id": "A044"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 47,
+   "id": "A045"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 14,
+   "id": "A046"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3610,
+   "id": "A047"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A048"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2479,
+   "id": "A049"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3785,
+   "id": "A050"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A051"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A052"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A053"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1642,
+   "id": "A054"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A055"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3444,
+   "id": "A056"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A057"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A058"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A059"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 165,
+   "id": "A060"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A061"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1115,
+   "id": "A062"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 6,
+   "id": "A063"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3988,
+   "id": "A064"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A065"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 11,
+   "id": "A066"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A067"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A068"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A069"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A070"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A071"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A072"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4070,
+   "id": "A073"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 13,
+   "id": "A074"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A075"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A076"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2365,
+   "id": "A077"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A078"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A079"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 7,
+   "id": "A080"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A081"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A082"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A083"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3246,
+   "id": "A084"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A085"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 28,
+   "id": "A086"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A087"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 17,
+   "id": "A088"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1436,
+   "id": "A089"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 14,
+   "id": "A090"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A091"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 19,
+   "id": "A092"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A093"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 14,
+   "id": "A094"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A095"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1614,
+   "id": "A096"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3654,
+   "id": "A097"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A098"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A099"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 25,
+   "id": "A100"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4798,
+   "id": "A101"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4012,
+   "id": "A102"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A103"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A104"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A105"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A106"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5556,
+   "id": "A107"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A108"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 48,
+   "id": "A109"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A110"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3214,
+   "id": "A111"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1212,
+   "id": "A112"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A113"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A114"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 180,
+   "id": "A115"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4582,
+   "id": "A116"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 905,
+   "id": "A117"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3390,
+   "id": "A118"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A119"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A120"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 36,
+   "id": "A121"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A122"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A123"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4515,
+   "id": "A124"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A125"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A126"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3497,
+   "id": "A127"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A128"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3190,
+   "id": "A129"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A130"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A131"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5600,
+   "id": "A132"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A133"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A134"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A135"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 509,
+   "id": "A136"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3166,
+   "id": "A137"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 49,
+   "id": "A138"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A139"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A140"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3620,
+   "id": "A141"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A142"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A143"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4342,
+   "id": "A144"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A145"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 720,
+   "id": "A146"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2896,
+   "id": "A147"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 992,
+   "id": "A148"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A149"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A150"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 40,
+   "id": "A151"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A152"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A153"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 27,
+   "id": "A154"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3003,
+   "id": "A155"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A156"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A157"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A158"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2272,
+   "id": "A159"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A160"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4240,
+   "id": "A161"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 7,
+   "id": "A162"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A163"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A164"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A165"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A166"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A167"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2893,
+   "id": "A168"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A169"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A170"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 11,
+   "id": "A171"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1056,
+   "id": "A172"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A173"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A174"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A175"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 48,
+   "id": "A176"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A177"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A178"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A179"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3044,
+   "id": "A180"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2581,
+   "id": "A181"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A182"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2392,
+   "id": "A183"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 483,
+   "id": "A184"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A185"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A186"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A187"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4188,
+   "id": "A188"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 752,
+   "id": "A189"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 48,
+   "id": "A190"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1638,
+   "id": "A191"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2961,
+   "id": "A192"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2157,
+   "id": "A193"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 16,
+   "id": "A194"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A195"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 927,
+   "id": "A196"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A197"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 15,
+   "id": "A198"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A199"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5153,
+   "id": "A200"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A201"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 496,
+   "id": "A202"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 34,
+   "id": "A203"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 28,
+   "id": "A204"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A205"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A206"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1060,
+   "id": "A207"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A208"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A209"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A210"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3041,
+   "id": "A211"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1820,
+   "id": "A212"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3439,
+   "id": "A213"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A214"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A215"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4437,
+   "id": "A216"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A217"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A218"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 424,
+   "id": "A219"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2296,
+   "id": "A220"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 28,
+   "id": "A221"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A222"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A223"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1092,
+   "id": "A224"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 934,
+   "id": "A225"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A226"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 132,
+   "id": "A227"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 35,
+   "id": "A228"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 465,
+   "id": "A229"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A230"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A231"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A232"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3592,
+   "id": "A233"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 7,
+   "id": "A234"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A235"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A236"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A237"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A238"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A239"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 16,
+   "id": "A240"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 8,
+   "id": "A241"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A242"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2854,
+   "id": "A243"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A244"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A245"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A246"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 137,
+   "id": "A247"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2432,
+   "id": "A248"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A249"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3765,
+   "id": "A250"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1904,
+   "id": "A251"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A252"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 48,
+   "id": "A253"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1689,
+   "id": "A254"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A255"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 219,
+   "id": "A256"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3388,
+   "id": "A257"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A258"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A259"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 8,
+   "id": "A260"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A261"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A262"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A263"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A264"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A265"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A266"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A267"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A268"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A269"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A270"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A271"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1215,
+   "id": "A272"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A273"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1169,
+   "id": "A274"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3076,
+   "id": "A275"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A276"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A277"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3474,
+   "id": "A278"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A279"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4172,
+   "id": "A280"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 11,
+   "id": "A281"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A282"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 18,
+   "id": "A283"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1675,
+   "id": "A284"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A285"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A286"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 298,
+   "id": "A287"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A288"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A289"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A290"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3555,
+   "id": "A291"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3781,
+   "id": "A292"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 13,
+   "id": "A293"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2130,
+   "id": "A294"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A295"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A296"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2665,
+   "id": "A297"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 10,
+   "id": "A298"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A299"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 13,
+   "id": "A300"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A301"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A302"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1723,
+   "id": "A303"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A304"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2927,
+   "id": "A305"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A306"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A307"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A308"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2102,
+   "id": "A309"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A310"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A311"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A312"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A313"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A314"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 753,
+   "id": "A315"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A316"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A317"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4282,
+   "id": "A318"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A319"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A320"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A321"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1169,
+   "id": "A322"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1091,
+   "id": "A323"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 44,
+   "id": "A324"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A325"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4959,
+   "id": "A326"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A327"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A328"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A329"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3805,
+   "id": "A330"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2843,
+   "id": "A331"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3419,
+   "id": "A332"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A333"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 11,
+   "id": "A334"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4004,
+   "id": "A335"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 36,
+   "id": "A336"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A337"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A338"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3826,
+   "id": "A339"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2256,
+   "id": "A340"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A341"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A342"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 5,
+   "id": "A343"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 987,
+   "id": "A344"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1351,
+   "id": "A345"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 767,
+   "id": "A346"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A347"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1028,
+   "id": "A348"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A349"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A350"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A351"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A352"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1390,
+   "id": "A353"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2913,
+   "id": "A354"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1972,
+   "id": "A355"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 129,
+   "id": "A356"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3181,
+   "id": "A357"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A358"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A359"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A360"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2236,
+   "id": "A361"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A362"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A363"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A364"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A365"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 329,
+   "id": "A366"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A367"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A368"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 890,
+   "id": "A369"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A370"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 20,
+   "id": "A371"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A372"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2460,
+   "id": "A373"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 22,
+   "id": "A374"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 6,
+   "id": "A375"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 15,
+   "id": "A376"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2536,
+   "id": "A377"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2653,
+   "id": "A378"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 16,
+   "id": "A379"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4150,
+   "id": "A380"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A381"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 13,
+   "id": "A382"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A383"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A384"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A385"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A386"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 19,
+   "id": "A387"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A388"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A389"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 935,
+   "id": "A390"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A391"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A392"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4721,
+   "id": "A393"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 470,
+   "id": "A394"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A395"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A396"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A397"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 7,
+   "id": "A398"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A399"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A400"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A401"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "khong_ung_vien",
+   "id": "A402"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A403"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 703,
+   "id": "A404"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A405"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A406"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 812,
+   "id": "A407"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 11,
+   "id": "A408"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A409"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 48,
+   "id": "A410"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A411"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 28,
+   "id": "A412"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A413"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A414"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A415"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3892,
+   "id": "A416"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 410,
+   "id": "A417"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A418"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1883,
+   "id": "A419"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A420"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2918,
+   "id": "A421"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A422"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5109,
+   "id": "A423"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 171,
+   "id": "A424"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 4,
+   "id": "A425"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A426"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A427"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 10,
+   "id": "A428"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 1093,
+   "id": "A429"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 26,
+   "id": "A430"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5020,
+   "id": "A431"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A432"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 431,
+   "id": "A433"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A434"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A435"
+  },
+  {
+   "cfg": "ar",
+   "empty": true,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 1,
+   "id": "A436"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A437"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": true,
+   "n_clauses": 0,
+   "stop": "loai_het",
+   "id": "A438"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A439"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2893,
+   "id": "A440"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A441"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A442"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A443"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2326,
+   "id": "A444"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3899,
+   "id": "A445"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 9,
+   "id": "A446"
+  },
+  {
+   "cfg": "ar",
+   "empty": false,
+   "n_clauses": -2,
+   "stop": "ar",
+   "n_tok": 2,
+   "id": "A447"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A448"
+  },
+  {
+   "cfg": "ban_le",
+   "empty": false,
+   "n_clauses": 1,
+   "stop": "du_max",
+   "id": "A449"
+  }
+ ]
+}

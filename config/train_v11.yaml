@@ -1,0 +1,33 @@
+# Train v11 (TK_042 §7.20b) = v10 + viwiki (gỡ nút DATA cho LM lớn hơn).
+#
+#   PYTHONPATH=src python -u scripts/ingest_viwiki.py --max-tokens 160000000   # tạo viwiki.jsonl
+#   PYTHONPATH=src python -u scripts/train_neural_lm.py --manifest config/train_v11.yaml ...
+#
+# ⚠️ LM training (train_neural_lm.load_corpus) đọc TẤT CẢ path, nối lại, cắt cửa sổ ngẫu nhiên
+#    — KHÔNG dùng `priority` (priority chỉ cho build ĐỒ THỊ). Nên thứ tự/priority ở đây vô hại
+#    cho LM; giữ để tương thích nếu sau này build graph v11.
+
+datasets:
+  # --- viwiki: khối lượng nền (nạp đầu cho graph; với LM chỉ là +token) ---
+  - path: data/text_corpus/viwiki.jsonl
+    priority: 0.30
+
+  # --- Lớp 3–7 + bổ trợ (y hệt v10) ---
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.92
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.88
+  - path: data/text_corpus/dictionary.jsonl
+    priority: 0.6
+  - path: data/text_corpus/doc_add_articles.jsonl
+    priority: 0.6
+  - path: data/text_corpus/conv_stories.jsonl
+    priority: 0.6
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.36
+
+  # --- QA: văn phong Hỏi/Đáp (nạp cuối cho graph) ---
+  - path: data/text_corpus/qa_supervised.jsonl
+    priority: 0.95

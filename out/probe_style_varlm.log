@@ -1,0 +1,27 @@
+[0s] load checkpoints/network_v11_styled.pkl (gc.disable) …
+[69s] ✓ loaded · parents 65,098 · varlm sidecar=False
+⚠ KHÔNG có varlm sidecar (<ckpt>.varlm.pkl) → VarLM no-op, 2 cột SẼ GIỐNG nhau. Chạy scripts/build_varlm.py trước.
+
+═══ VĂN-PHONG composed: BIGRAM vs VARLM — đọc tay salad/cụm dài ═══
+
+▶ Viết hài hước về Trần Hưng Đạo:
+  BIGRAM : 'Viết hài hước về Trần Hưng Đạo: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+  VARLM  : 'Viết hài hước về Trần Hưng Đạo: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+
+▶ Viết hài hước về Nhà Trần:
+  BIGRAM : 'Viết hài hước về Nhà Trần: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+  VARLM  : 'Viết hài hước về Nhà Trần: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+
+▶ Viết hài hước về Sông Hồng:
+  BIGRAM : 'Viết hài hước về Sông Hồng: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+  VARLM  : 'Viết hài hước về Sông Hồng: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+
+▶ Kể một cách tự nhiên về mùa đông Hà Nội:
+  BIGRAM : 'Kể một cách tự nhiên về mùa đông Hà Nội: Ngủ dậy tự nhiên, pha cà phê, đọc sách hoặc đi chợ. Không cần lấp lịch kín như ngày thường. Một buổi sáng chậm rãi sạc pin cho tuần mới.'
+  VARLM  : 'Kể một cách tự nhiên về mùa đông Hà Nội: Ngủ dậy tự nhiên, pha cà phê, đọc sách hoặc đi chợ. Không cần lấp lịch kín như ngày thường. Một buổi sáng chậm rãi sạc pin cho tuần mới.'
+
+▶ Viết hài hước về việc đi làm:
+  BIGRAM : 'Viết hài hước về việc đi làm: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+  VARLM  : 'Viết hài hước về việc đi làm: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước\nVí dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước'
+
+[265s] → VARLM ít salad/cụm-dài tự-nhiên hơn BIGRAM ⇒ higher-order = local-style, đáng SFT-ingest styled (RUNBOOK_STYLE §SFT). Giống nhau ⇒ n-gram không đủ.

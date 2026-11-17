@@ -1,0 +1,23 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[40s] ✓ 430,447 cha
+  câu: nửa A 212,519 · nửa B 212,519
+[92s] ✓ đếm A
+[95s] ✓ dựng bảng điểm
+  chấm 6,000 vị trí
+
+============================================================
+kênh              top1     top10       MRR   (n=6,000)
+============================================================
+d1_prob          0.183     0.431     0.265
+skip_prob        0.184     0.401     0.259
+d1_ppmi          0.066     0.241     0.123
+skip_ppmi        0.134     0.316     0.195
+d1p+skip_p       0.193     0.430     0.273
+============================================================
+G1 tỉnh táo (d1_prob top10 ≥0.20): ĐẠT (0.431)
+G2 W_skip hơn d1 ≥+0.05 top10 : TRƯỢT (-0.001)  ← quyết định
+G3 PPMI hơn đếm thô           : TRƯỢT (0.316 ‖ 0.401)
+
+⇒ W_skip KHÔNG phải kênh trôi chảy tốt hơn — đóng hướng dùng nó cho sinh
+
+[103s] → out/next_token_v12.log

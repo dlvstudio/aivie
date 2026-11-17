@@ -1,0 +1,23 @@
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 159644.79it/s]
+08:15:16 KD đầu-cuối · tầng [1, 14, 30] · khởi từ chat · L=256×32 steps=40 lr=0.0002 · train 0.30M tham số · neo P1 λ=2.0
+08:15:42 kd VAL KL bước 0 = 0.4923
+08:15:49 data train: 39446 hội thoại VI (đã bỏ văn phòng/code/dịch)
+08:18:33 kd step 1/40 KL 1.1550 (ema 1.1550) · 48 tok/s · 2.9 phút · mem 19.9 GB
+08:21:26 kd step 2/40 KL 1.0866 (ema 1.1481) · 48 tok/s · 5.7 phút · mem 19.9 GB
+08:24:18 kd step 3/40 KL 1.1854 (ema 1.1519) · 48 tok/s · 8.6 phút · mem 19.9 GB
+08:27:14 kd step 4/40 KL 1.3068 (ema 1.1674) · 47 tok/s · 11.5 phút · mem 19.9 GB
+08:30:06 kd step 5/40 KL 1.0583 (ema 1.1565) · 47 tok/s · 14.4 phút · mem 19.9 GB
+08:30:23 kd VAL KL bước 5 = 0.5330
+08:33:22 kd step 6/40 KL 1.1087 (ema 1.1517) · 46 tok/s · 17.7 phút · mem 19.9 GB
+08:36:16 kd step 7/40 KL 1.0993 (ema 1.1464) · 46 tok/s · 20.6 phút · mem 19.9 GB
+08:39:09 kd step 8/40 KL 1.3454 (ema 1.1663) · 47 tok/s · 23.5 phút · mem 19.9 GB
+08:42:02 kd step 9/40 KL 1.4573 (ema 1.1954) · 47 tok/s · 26.3 phút · mem 19.9 GB
+08:44:57 kd step 10/40 KL 1.2319 (ema 1.1991) · 47 tok/s · 29.3 phút · mem 19.9 GB
+08:45:13 kd VAL KL bước 10 = 0.5247
+08:48:12 kd step 11/40 KL 1.1501 (ema 1.1942) · 46 tok/s · 32.5 phút · mem 19.9 GB
+08:51:04 kd step 12/40 KL 1.2263 (ema 1.1974) · 46 tok/s · 35.4 phút · mem 19.9 GB
+08:53:55 kd step 13/40 KL 1.4443 (ema 1.2221) · 46 tok/s · 38.2 phút · mem 19.9 GB
+08:56:46 kd step 14/40 KL 1.2990 (ema 1.2298) · 47 tok/s · 41.1 phút · mem 19.9 GB
+08:59:38 kd step 15/40 KL 1.3090 (ema 1.2377) · 47 tok/s · 43.9 phút · mem 19.9 GB
+08:59:54 kd VAL KL bước 15 = 0.5857
+09:02:47 kd step 16/40 KL 1.1511 (ema 1.2290) · 46 tok/s · 47.1 phút · mem 19.9 GB

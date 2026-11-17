@@ -1,0 +1,28 @@
+[0s] load checkpoints/network_v12_sent.pkl (gc.disable) …
+[41s] ✓ parents 430,447
+  emit CỦA CHA (THƯỚC): 300 prompt
+  qa_supervised (ĐÃ train): 300 prompt
+  qa_heldout (CHƯA train — tham khảo): 278 prompt
+  BỊA (hoán thực thể): 8 prompt
+
+nhóm: emit CỦA CHA (THƯỚC) | qa_supervised (ĐÃ train) | qa_heldout (CHƯA train — tham khảo) | BỊA (hoán thực thể)
+ last_k  (nổ / tổng = tỉ lệ) theo thứ tự nhóm trên
+      0     0/300  =  0.0%         300/300  =100.0%         278/278  =100.0%           8/8    =100.0%      
+      4     0/300  =  0.0%         300/300  =100.0%         278/278  =100.0%           0/8    =  0.0%      
+      6     0/300  =  0.0%         300/300  =100.0%         278/278  =100.0%           5/8    = 62.5%      
+      8     0/300  =  0.0%         300/300  =100.0%         278/278  =100.0%           6/8    = 75.0%      
+     10     0/300  =  0.0%         300/300  =100.0%         278/278  =100.0%           8/8    =100.0%      
+
+Verdict (thước ≤5% VÀ bịa ≥80%):
+  last_k=0   thước=  0.0%  bịa=100.0%  ✅ ĐẠT
+  last_k=4   thước=  0.0%  bịa=  0.0%  ❌
+  last_k=6   thước=  0.0%  bịa= 62.5%  ❌
+  last_k=8   thước=  0.0%  bịa= 75.0%  ❌
+  last_k=10  thước=  0.0%  bịa=100.0%  ✅ ĐẠT
+→ ĐẶT ar_matrix_premise_last_k=0 + guard=True
+
+Ví dụ THƯỚC bị nổ tại last_k=6 (tối đa 8) — đọc tay xem cổng nhầm KIỂU gì:
+  (không có)
+
+[113s] → out/premise_guard_rate.log
+Dán NGUYÊN bảng + verdict vào ticket §12.16 (kể cả khi không đạt).

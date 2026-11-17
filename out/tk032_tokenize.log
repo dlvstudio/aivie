@@ -1,0 +1,165 @@
+corpus: data/real_vi/history_vi.jsonl
+sentences: 173
+
+=== STATS ===
+sentence_count: 173
+total_tokens_ws: 2622
+total_tokens_uts: 2053
+avg_tokens_ws: 15.156
+avg_tokens_uts: 11.867
+multi_word_compounds_uts: 713
+sentences_differ: 173 (100.0%)
+token_reduction: 569 (21.7%)
+
+=== EXAMPLES (max 25) ===
+--- diff #1 ---
+text: Nhà Lý là một triều đại phong kiến trong lịch sử Việt Nam, tồn tại từ năm 1009 đến năm 1225.
+ws  (21): ['Nhà', 'Lý', 'là', 'một', 'triều', 'đại', 'phong', 'kiến', 'trong', 'lịch', 'sử', 'Việt', 'Nam,', 'tồn', 'tại', 'từ', 'năm', '1009', 'đến', 'năm', '1225.']
+uts (17): ['Nhà Lý', 'là', 'một', 'triều đại', 'phong kiến', 'trong', 'lịch sử', 'Việt Nam', ',', 'tồn tại', 'từ', 'năm', '1009', 'đến', 'năm', '1225', '.']
+compounds: ['Nhà Lý', 'triều đại', 'phong kiến', 'lịch sử', 'Việt Nam', 'tồn tại']
+
+--- diff #2 ---
+text: Nhà Lý do Lý Công Uẩn, tức Lý Thái Tổ, sáng lập vào năm 1009 sau khi lên ngôi thay nhà Tiền Lê.
+ws  (23): ['Nhà', 'Lý', 'do', 'Lý', 'Công', 'Uẩn,', 'tức', 'Lý', 'Thái', 'Tổ,', 'sáng', 'lập', 'vào', 'năm', '1009', 'sau', 'khi', 'lên', 'ngôi', 'thay', 'nhà', 'Tiền', 'Lê.']
+uts (18): ['Nhà', 'Lý do', 'Lý Công Uẩn', ',', 'tức', 'Lý Thái Tổ', ',', 'sáng lập', 'vào', 'năm', '1009', 'sau', 'khi', 'lên ngôi', 'thay', 'nhà', 'Tiền Lê', '.']
+compounds: ['Lý do', 'Lý Công Uẩn', 'Lý Thái Tổ', 'sáng lập', 'lên ngôi', 'Tiền Lê']
+
+--- diff #3 ---
+text: Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.
+ws  (21): ['Năm', '1010,', 'triều', 'Lý', 'dời', 'đô', 'từ', 'Hoa', 'Lư', 'về', 'thành', 'Đại', 'La', 'và', 'đổi', 'tên', 'kinh', 'đô', 'thành', 'Thăng', 'Long.']
+uts (17): ['Năm', '1010', ',', 'triều Lý', 'dời đô', 'từ', 'Hoa Lư', 'về', 'thành', 'Đại La', 'và', 'đổi', 'tên', 'kinh đô', 'thành', 'Thăng Long', '.']
+compounds: ['triều Lý', 'dời đô', 'Hoa Lư', 'Đại La', 'kinh đô', 'Thăng Long']
+
+--- diff #4 ---
+text: Năm 1054, dưới thời Lý Thánh Tông, nhà Lý đặt quốc hiệu là Đại Việt.
+ws  (15): ['Năm', '1054,', 'dưới', 'thời', 'Lý', 'Thánh', 'Tông,', 'nhà', 'Lý', 'đặt', 'quốc', 'hiệu', 'là', 'Đại', 'Việt.']
+uts (13): ['Năm', '1054', ',', 'dưới', 'thời', 'Lý Thánh Tông', ',', 'nhà', 'Lý đặt', 'quốc hiệu', 'là', 'Đại Việt', '.']
+compounds: ['Lý Thánh Tông', 'Lý đặt', 'quốc hiệu', 'Đại Việt']
+
+--- diff #5 ---
+text: Năm 1070, nhà Lý cho xây Văn Miếu ở Thăng Long để thờ Khổng Tử và các bậc hiền tài.
+ws  (20): ['Năm', '1070,', 'nhà', 'Lý', 'cho', 'xây', 'Văn', 'Miếu', 'ở', 'Thăng', 'Long', 'để', 'thờ', 'Khổng', 'Tử', 'và', 'các', 'bậc', 'hiền', 'tài.']
+uts (16): ['Năm', '1070', ',', 'nhà Lý', 'cho', 'xây Văn Miếu', 'ở', 'Thăng Long', 'để', 'thờ', 'Khổng Tử', 'và', 'các', 'bậc', 'hiền tài', '.']
+compounds: ['nhà Lý', 'xây Văn Miếu', 'Thăng Long', 'Khổng Tử', 'hiền tài']
+
+--- diff #6 ---
+text: Năm 1075, triều Lý mở khoa thi đầu tiên để tuyển chọn nhân tài cho đất nước.
+ws  (17): ['Năm', '1075,', 'triều', 'Lý', 'mở', 'khoa', 'thi', 'đầu', 'tiên', 'để', 'tuyển', 'chọn', 'nhân', 'tài', 'cho', 'đất', 'nước.']
+uts (14): ['Năm', '1075', ',', 'triều', 'Lý mở', 'khoa', 'thi', 'đầu tiên', 'để', 'tuyển chọn', 'nhân tài', 'cho', 'đất nước', '.']
+compounds: ['Lý mở', 'đầu tiên', 'tuyển chọn', 'nhân tài', 'đất nước']
+
+--- diff #7 ---
+text: Năm 1076, nhà Lý lập Quốc Tử Giám, được xem là trường đại học đầu tiên của Việt Nam.
+ws  (19): ['Năm', '1076,', 'nhà', 'Lý', 'lập', 'Quốc', 'Tử', 'Giám,', 'được', 'xem', 'là', 'trường', 'đại', 'học', 'đầu', 'tiên', 'của', 'Việt', 'Nam.']
+uts (15): ['Năm', '1076', ',', 'nhà', 'Lý lập Quốc Tử Giám', ',', 'được', 'xem', 'là', 'trường', 'đại học', 'đầu tiên', 'của', 'Việt Nam', '.']
+compounds: ['Lý lập Quốc Tử Giám', 'đại học', 'đầu tiên', 'Việt Nam']
+
+--- diff #8 ---
+text: Lý Thường Kiệt là danh tướng nhà Lý, đã lãnh đạo cuộc kháng chiến chống quân Tống xâm lược.
+ws  (19): ['Lý', 'Thường', 'Kiệt', 'là', 'danh', 'tướng', 'nhà', 'Lý,', 'đã', 'lãnh', 'đạo', 'cuộc', 'kháng', 'chiến', 'chống', 'quân', 'Tống', 'xâm', 'lược.']
+uts (13): ['Lý Thường Kiệt', 'là', 'danh tướng', 'nhà Lý', ',', 'đã', 'lãnh đạo', 'cuộc', 'kháng chiến', 'chống', 'quân Tống', 'xâm lược', '.']
+compounds: ['Lý Thường Kiệt', 'danh tướng', 'nhà Lý', 'lãnh đạo', 'kháng chiến', 'quân Tống', 'xâm lược']
+
+--- diff #9 ---
+text: Năm 1077, Lý Thường Kiệt đánh bại quân Tống trên phòng tuyến sông Như Nguyệt.
+ws  (15): ['Năm', '1077,', 'Lý', 'Thường', 'Kiệt', 'đánh', 'bại', 'quân', 'Tống', 'trên', 'phòng', 'tuyến', 'sông', 'Như', 'Nguyệt.']
+uts (12): ['Năm', '1077', ',', 'Lý Thường Kiệt', 'đánh bại', 'quân Tống', 'trên', 'phòng', 'tuyến', 'sông', 'Như Nguyệt', '.']
+compounds: ['Lý Thường Kiệt', 'đánh bại', 'quân Tống', 'Như Nguyệt']
+
+--- diff #10 ---
+text: Nhà Lý sùng đạo Phật và cho xây dựng nhiều chùa, trong đó có chùa Một Cột ở Thăng Long.
+ws  (20): ['Nhà', 'Lý', 'sùng', 'đạo', 'Phật', 'và', 'cho', 'xây', 'dựng', 'nhiều', 'chùa,', 'trong', 'đó', 'có', 'chùa', 'Một', 'Cột', 'ở', 'Thăng', 'Long.']
+uts (17): ['Nhà', 'Lý sùng đạo', 'Phật', 'và', 'cho', 'xây dựng', 'nhiều', 'chùa', ',', 'trong', 'đó', 'có', 'chùa', 'Một Cột', 'ở', 'Thăng Long', '.']
+compounds: ['Lý sùng đạo', 'xây dựng', 'Một Cột', 'Thăng Long']
+
+--- diff #11 ---
+text: Triều Lý trải qua chín đời vua và kéo dài hơn hai trăm năm.
+ws  (14): ['Triều', 'Lý', 'trải', 'qua', 'chín', 'đời', 'vua', 'và', 'kéo', 'dài', 'hơn', 'hai', 'trăm', 'năm.']
+uts (12): ['Triều', 'Lý trải', 'qua', 'chín', 'đời', 'vua', 'và', 'kéo dài', 'hơn', 'hai', 'trăm năm', '.']
+compounds: ['Lý trải', 'kéo dài', 'trăm năm']
+
+--- diff #12 ---
+text: Nhà Lý kết thúc năm 1225 khi Lý Chiêu Hoàng nhường ngôi cho chồng là Trần Cảnh, mở ra nhà Trần.
+ws  (21): ['Nhà', 'Lý', 'kết', 'thúc', 'năm', '1225', 'khi', 'Lý', 'Chiêu', 'Hoàng', 'nhường', 'ngôi', 'cho', 'chồng', 'là', 'Trần', 'Cảnh,', 'mở', 'ra', 'nhà', 'Trần.']
+uts (17): ['Nhà', 'Lý kết thúc', 'năm', '1225', 'khi', 'Lý Chiêu Hoàng', 'nhường ngôi', 'cho', 'chồng', 'là', 'Trần Cảnh', ',', 'mở', 'ra', 'nhà', 'Trần', '.']
+compounds: ['Lý kết thúc', 'Lý Chiêu Hoàng', 'nhường ngôi', 'Trần Cảnh']
+
+--- diff #13 ---
+text: Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+ws  (17): ['Lý', 'Thái', 'Tổ', 'tên', 'thật', 'là', 'Lý', 'Công', 'Uẩn,', 'là', 'vị', 'vua', 'đầu', 'tiên', 'của', 'nhà', 'Lý.']
+uts (13): ['Lý Thái Tổ', 'tên', 'thật', 'là', 'Lý Công Uẩn', ',', 'là', 'vị', 'vua', 'đầu tiên', 'của', 'nhà Lý', '.']
+compounds: ['Lý Thái Tổ', 'Lý Công Uẩn', 'đầu tiên', 'nhà Lý']
+
+--- diff #14 ---
+text: Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi dạy trong chùa từ nhỏ.
+ws  (18): ['Lý', 'Công', 'Uẩn', 'sinh', 'năm', '974,', 'quê', 'ở', 'vùng', 'Kinh', 'Bắc,', 'được', 'nuôi', 'dạy', 'trong', 'chùa', 'từ', 'nhỏ.']
+uts (18): ['Lý Công Uẩn', 'sinh', 'năm', '974', ',', 'quê', 'ở', 'vùng', 'Kinh Bắc', ',', 'được', 'nuôi', 'dạy', 'trong', 'chùa', 'từ', 'nhỏ', '.']
+compounds: ['Lý Công Uẩn', 'Kinh Bắc']
+
+--- diff #15 ---
+text: Năm 1009, Lý Công Uẩn được các quan tôn lên làm vua, lập ra nhà Lý.
+ws  (16): ['Năm', '1009,', 'Lý', 'Công', 'Uẩn', 'được', 'các', 'quan', 'tôn', 'lên', 'làm', 'vua,', 'lập', 'ra', 'nhà', 'Lý.']
+uts (15): ['Năm', '1009', ',', 'Lý Công Uẩn', 'được', 'các', 'quan tôn', 'lên', 'làm', 'vua', ',', 'lập', 'ra', 'nhà Lý', '.']
+compounds: ['Lý Công Uẩn', 'quan tôn', 'nhà Lý']
+
+--- diff #16 ---
+text: Năm 1010, Lý Thái Tổ ban Chiếu dời đô, quyết định dời kinh đô về Đại La.
+ws  (17): ['Năm', '1010,', 'Lý', 'Thái', 'Tổ', 'ban', 'Chiếu', 'dời', 'đô,', 'quyết', 'định', 'dời', 'kinh', 'đô', 'về', 'Đại', 'La.']
+uts (13): ['Năm', '1010', ',', 'Lý Thái Tổ', 'ban Chiếu', 'dời đô', ',', 'quyết định', 'dời', 'kinh đô', 'về', 'Đại La', '.']
+compounds: ['Lý Thái Tổ', 'ban Chiếu', 'dời đô', 'quyết định', 'kinh đô', 'Đại La']
+
+--- diff #17 ---
+text: Ông đổi tên Đại La thành Thăng Long, nghĩa là rồng bay lên.
+ws  (13): ['Ông', 'đổi', 'tên', 'Đại', 'La', 'thành', 'Thăng', 'Long,', 'nghĩa', 'là', 'rồng', 'bay', 'lên.']
+uts (11): ['Ông', 'đổi', 'tên', 'Đại La thành', 'Thăng Long', ',', 'nghĩa là', 'rồng', 'bay', 'lên', '.']
+compounds: ['Đại La thành', 'Thăng Long', 'nghĩa là']
+
+--- diff #18 ---
+text: Lý Thái Tổ trị vì gần hai mươi năm và đặt nền móng vững chắc cho triều Lý.
+ws  (18): ['Lý', 'Thái', 'Tổ', 'trị', 'vì', 'gần', 'hai', 'mươi', 'năm', 'và', 'đặt', 'nền', 'móng', 'vững', 'chắc', 'cho', 'triều', 'Lý.']
+uts (13): ['Lý Thái Tổ', 'trị vì', 'gần', 'hai', 'mươi', 'năm', 'và', 'đặt', 'nền móng', 'vững chắc', 'cho', 'triều Lý', '.']
+compounds: ['Lý Thái Tổ', 'trị vì', 'nền móng', 'vững chắc', 'triều Lý']
+
+--- diff #19 ---
+text: Ông mất năm 1028, con là Lý Thái Tông lên nối ngôi.
+ws  (12): ['Ông', 'mất', 'năm', '1028,', 'con', 'là', 'Lý', 'Thái', 'Tông', 'lên', 'nối', 'ngôi.']
+uts (12): ['Ông', 'mất', 'năm', '1028', ',', 'con', 'là', 'Lý Thái Tông', 'lên', 'nối', 'ngôi', '.']
+compounds: ['Lý Thái Tông']
+
+--- diff #20 ---
+text: Lý Thường Kiệt là một danh tướng và nhà quân sự lớn của nhà Lý.
+ws  (15): ['Lý', 'Thường', 'Kiệt', 'là', 'một', 'danh', 'tướng', 'và', 'nhà', 'quân', 'sự', 'lớn', 'của', 'nhà', 'Lý.']
+uts (11): ['Lý Thường Kiệt', 'là', 'một', 'danh tướng', 'và', 'nhà', 'quân sự', 'lớn', 'của', 'nhà Lý', '.']
+compounds: ['Lý Thường Kiệt', 'danh tướng', 'quân sự', 'nhà Lý']
+
+--- diff #21 ---
+text: Ông sinh năm 1019 tại Thăng Long và phục vụ dưới ba đời vua nhà Lý.
+ws  (16): ['Ông', 'sinh', 'năm', '1019', 'tại', 'Thăng', 'Long', 'và', 'phục', 'vụ', 'dưới', 'ba', 'đời', 'vua', 'nhà', 'Lý.']
+uts (14): ['Ông', 'sinh', 'năm', '1019', 'tại', 'Thăng Long', 'và', 'phục vụ', 'dưới', 'ba', 'đời', 'vua', 'nhà Lý', '.']
+compounds: ['Thăng Long', 'phục vụ', 'nhà Lý']
+
+--- diff #22 ---
+text: Năm 1075, Lý Thường Kiệt chủ động đem quân đánh phủ đầu vào đất Tống ở châu Ung, châu Khâm và châu Liêm.
+ws  (23): ['Năm', '1075,', 'Lý', 'Thường', 'Kiệt', 'chủ', 'động', 'đem', 'quân', 'đánh', 'phủ', 'đầu', 'vào', 'đất', 'Tống', 'ở', 'châu', 'Ung,', 'châu', 'Khâm', 'và', 'châu', 'Liêm.']
+uts (19): ['Năm', '1075', ',', 'Lý Thường Kiệt', 'chủ động', 'đem', 'quân', 'đánh', 'phủ đầu', 'vào', 'đất', 'Tống', 'ở', 'châu Ung', ',', 'châu Khâm', 'và', 'châu Liêm', '.']
+compounds: ['Lý Thường Kiệt', 'chủ động', 'phủ đầu', 'châu Ung', 'châu Khâm', 'châu Liêm']
+
+--- diff #23 ---
+text: Năm 1077, ông chỉ huy quân Đại Việt đánh bại quân Tống trên sông Như Nguyệt.
+ws  (16): ['Năm', '1077,', 'ông', 'chỉ', 'huy', 'quân', 'Đại', 'Việt', 'đánh', 'bại', 'quân', 'Tống', 'trên', 'sông', 'Như', 'Nguyệt.']
+uts (13): ['Năm', '1077', ',', 'ông', 'chỉ huy', 'quân', 'Đại Việt', 'đánh bại', 'quân Tống', 'trên', 'sông', 'Như Nguyệt', '.']
+compounds: ['chỉ huy', 'Đại Việt', 'đánh bại', 'quân Tống', 'Như Nguyệt']
+
+--- diff #24 ---
+text: Bài thơ Nam quốc sơn hà được cho là gắn với Lý Thường Kiệt và được xem như bản tuyên ngôn độc lập đầu tiên.
+ws  (25): ['Bài', 'thơ', 'Nam', 'quốc', 'sơn', 'hà', 'được', 'cho', 'là', 'gắn', 'với', 'Lý', 'Thường', 'Kiệt', 'và', 'được', 'xem', 'như', 'bản', 'tuyên', 'ngôn', 'độc', 'lập', 'đầu', 'tiên.']
+uts (18): ['Bài', 'thơ', 'Nam quốc', 'sơn hà', 'được', 'cho', 'là', 'gắn', 'với', 'Lý Thường Kiệt', 'và', 'được', 'xem', 'như', 'bản', 'tuyên ngôn độc lập', 'đầu tiên', '.']
+compounds: ['Nam quốc', 'sơn hà', 'Lý Thường Kiệt', 'tuyên ngôn độc lập', 'đầu tiên']
+
+--- diff #25 ---
+text: Lý Thường Kiệt còn có công đánh Chiêm Thành ở phía nam, giữ yên bờ cõi.
+ws  (16): ['Lý', 'Thường', 'Kiệt', 'còn', 'có', 'công', 'đánh', 'Chiêm', 'Thành', 'ở', 'phía', 'nam,', 'giữ', 'yên', 'bờ', 'cõi.']
+uts (15): ['Lý Thường Kiệt', 'còn', 'có', 'công', 'đánh', 'Chiêm Thành', 'ở', 'phía', 'nam', ',', 'giữ', 'yên', 'bờ', 'cõi', '.']
+compounds: ['Lý Thường Kiệt', 'Chiêm Thành']
+
+XONG

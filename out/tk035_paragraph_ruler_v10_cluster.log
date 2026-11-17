@@ -1,0 +1,29 @@
+Held-out paragraph units: 400 (data/eval_v4/heldout_paragraph_lm.jsonl)
+Checkpoint: checkpoints/network_v10_histwiki_paragraph.pkl  (đang load…)
+[     0.0s] === load_network_v10_histwiki_paragraph START (pid=16740) → out/logs/load_network_v10_histwiki_paragraph_20260709_160052.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    21.9s] ✓ unpickle  (21.9s)
+[    21.9s] ▶ vocab (113572 token)
+[    22.6s] ✓ vocab (113572 token)  (0.7s)
+[    22.6s] ▶ adjacency
+[    42.2s] ✓ adjacency  (19.6s)
+[    42.2s] ▶ embedding
+[    44.3s] ✓ embedding  (2.1s)
+[    44.3s] ▶ parents
+[   620.4s] ✓ parents  (576.1s)
+[   620.6s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   635.3s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   635.5s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   642.4s] ✓ varlm: k=1:52454, k=2:473963, k=3:980445, k=4:1276037
+[   642.4s] ✓ load_checkpoint XONG
+vocab=113572  parents=176430  varlm=True
+
+=== LM ruler — wiki/lịch sử đoạn (base-LM, không agenda) ===
+     w     bits    top-1      MRR  n_pos
+------------------------------------------
+  0.00    4.849   16.7%    0.228  11908
+  0.35    4.887   15.6%    0.226  13406
+  0.50    4.730   15.8%    0.235  13406
+
+→ /Users/dlv/Documents/code/nn-aivie/out/tk035_paragraph_ruler.log

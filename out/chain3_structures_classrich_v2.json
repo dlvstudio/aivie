@@ -1,0 +1,6210 @@
+{
+ "checkpoint": "checkpoints/classrich.pkl",
+ "n_parents": 35757,
+ "n_cau_la": 4434,
+ "n_lop": 1254,
+ "n_lop_>=3_thanh_vien": 321,
+ "n_bo_ba": 175452,
+ "top": [
+  {
+   "thuoc_tinh": "gốc",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Nẵng",
+    "Pakistan"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "án",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam",
+    "Pakistan"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trang",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Minh",
+    "Nó",
+    "Nội",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ngữ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "bắc"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nẵng"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đưa",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hộ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "Viên"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "xếp",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Minh",
+    "Montréal",
+    "Mỹ",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Nó",
+    "Nội"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "quy",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Nẵng",
+    "Nội",
+    "Paris",
+    "bắc",
+    "chất",
+    "hạng",
+    "họ"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ngoài",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "Nội"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khiến",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "Trang",
+    "Vancouver"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bầu",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Pakistan",
+    "Paris",
+    "chất"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "kiện",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Minh",
+    "Nó",
+    "Nội",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Lê",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Trang",
+    "hết"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hại",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Paris"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "anh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tồn",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khởi",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thất",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chết",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Nẵng"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Đảng",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris",
+    "Viên"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đông",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Montréal",
+    "Mỹ",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Nó",
+    "Nội"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "quay",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Thanh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Pakistan"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "mình",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "hết"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nẵng"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đá",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Nam",
+    "Nội",
+    "Paris",
+    "bắc",
+    "chất",
+    "họ"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "rồi",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thiên",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Nó",
+    "Paris",
+    "chất",
+    "hạng",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 28,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 29,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "giúp",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "muốn",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "La",
+    "Main",
+    "Montréal",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "xác",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Nẵng",
+    "bắc",
+    "chất",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "máy",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "Viên"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bài",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "KDE",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Trang",
+    "chất"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tấn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Pakistan"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Chiến",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Hiện",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nẵng",
+    "Nội",
+    "Paris",
+    "Trang"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tây",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trực",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "mô",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Paris",
+    "bắc"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lâu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bậc",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Paris",
+    "Trang",
+    "Viên"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ước",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Pakistan"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ăn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "sắc",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "bắc"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Bộ",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội",
+    "Trang"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thần",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Mỹ",
+    "Paris",
+    "hết",
+    "họ",
+    "kali"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Hội",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nẵng",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bố",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Paris",
+    "Viên",
+    "họ"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chung",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Nó",
+    "Nẵng",
+    "Pakistan",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tượng",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris",
+    "Trang",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "kế",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Paris",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ngành",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Viên",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khỏi",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Vancouver",
+    "Viên"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ghi",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 27,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 30,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "quản",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Montréal",
+    "Nẵng",
+    "Trang"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dục",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hữu",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "KDE",
+    "Minh",
+    "Nó",
+    "Paris",
+    "Viên",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "sức",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Paris",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Ba",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Nội",
+    "Pakistan",
+    "bắc",
+    "hạng"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bay",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "La",
+    "Nó",
+    "Nẵng",
+    "Nội",
+    "Paris",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cử",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cạnh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nó",
+    "Nẵng",
+    "Viên"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ",
+    "Nam"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thập",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Montréal",
+    "Mỹ",
+    "Nam",
+    "Nội"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đế",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Nội",
+    "Paris",
+    "Viên",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "sai",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "núi",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Nam",
+    "Nẵng",
+    "Trang",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cảnh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Minh",
+    "Nó",
+    "Nội",
+    "Pakistan",
+    "Trang",
+    "Vancouver"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cải",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nội",
+    "Paris",
+    "Viên",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Dân",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "Vancouver",
+    "Viên",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "niệm",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Paris",
+    "chất"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hạt",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Nó",
+    "Paris",
+    "chất",
+    "hạng",
+    "họ",
+    "nay",
+    "nghĩa"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "kỹ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Pakistan",
+    "chất",
+    "hạng"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vương",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Paris",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Nga",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "bắc",
+    "chất",
+    "họ",
+    "luôn",
+    "lệnh"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thắng",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Trang"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tốt",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Lan",
+    "Main",
+    "Mỹ",
+    "Nó"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Nẵng",
+    "Pakistan"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chấp",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "bắc",
+    "hết",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lĩnh",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Pakistan",
+    "Trang",
+    "Viên"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Trần",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "bắc",
+    "họ",
+    "lệnh"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lễ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nội"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "xử",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nội",
+    "Viên",
+    "hết"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nhanh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Montréal",
+    "Mỹ",
+    "Nam"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "La",
+    "Main",
+    "Nẵng",
+    "Paris",
+    "Viên"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tiền",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Minh",
+    "Montréal",
+    "Mỹ",
+    "Nam",
+    "Paris"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "KDE",
+    "Lan",
+    "Main",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trạng",
+   "lop": "thành",
+   "hat_giong": [
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội",
+    "chất",
+    "hết",
+    "kali",
+    "luôn"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "huyện",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tiểu",
+   "lop": "thành",
+   "hat_giong": [
+    "Diego",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Viên",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thúc",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vận",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Thiên",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nam",
+    "bắc",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Hạ",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Viên",
+    "bắc",
+    "họ",
+    "lệnh"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Long",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "bắc",
+    "hạng"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khối",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nó",
+    "Nẵng",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "yêu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Paris",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trúc",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 26,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 31,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "báo",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "La",
+    "Main",
+    "Montréal",
+    "Nẵng",
+    "Nội"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hạn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Paris",
+    "bắc"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Cổ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dấu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris",
+    "chất"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cực",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "bắc",
+    "chất",
+    "hạng",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Hán",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đạt",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nội",
+    "Pakistan",
+    "Paris",
+    "Vancouver",
+    "bắc"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lúc",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Nội",
+    "bắc",
+    "họ",
+    "nay"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cố",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dù",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Nó",
+    "Paris",
+    "chất",
+    "họ",
+    "kali"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hầu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Nó",
+    "Paris",
+    "Viên",
+    "bắc",
+    "chất",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chọn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "Trang"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đổ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Nó",
+    "Nội"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hoạch",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Paris",
+    "chất"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "giai",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đồ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Pakistan"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trụ",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Frankfurt",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nẵng",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thái",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nẵng",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khách",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nhiệt",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Trang",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "mùa",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "luật",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Paris",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ",
+    "Nó"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ngay",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Montréal",
+    "Nam",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Mỹ",
+    "Nó"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tố",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Minh",
+    "Nó",
+    "bắc",
+    "chất",
+    "hết",
+    "họ",
+    "kali"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tiết",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Nam",
+    "Nó",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 25,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 32,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "kích",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Nó",
+    "Nội",
+    "Pakistan",
+    "bắc"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lớp",
+   "lop": "thành",
+   "hat_giong": [
+    "KDE",
+    "La",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Paris",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "sao",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "KDE",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Viên",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vài",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Mỹ",
+    "Paris",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Họ",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nữ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nẵng"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nghệ",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Montréal",
+    "Nam",
+    "Nó",
+    "Nội",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ánh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Nó",
+    "Paris",
+    "bắc",
+    "chất",
+    "hạng",
+    "hết",
+    "lùn"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hiệp",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Bản",
+    "Frankfurt",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ",
+    "Nó"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "trẻ",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Frankfurt",
+    "Lan",
+    "Nam",
+    "Paris",
+    "chất",
+    "hạng",
+    "hết"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hoàng",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Nội",
+    "hạng",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thi",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Mỹ",
+    "Nẵng",
+    "hết",
+    "họ",
+    "luôn",
+    "lệnh",
+    "nay"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "em",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "Lan",
+    "Minh",
+    "hết",
+    "họ",
+    "lệnh",
+    "nay",
+    "nhận"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "lợi",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Vancouver"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dần",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "bắc",
+    "họ"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tốc",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Nẵng",
+    "Nội",
+    "bắc",
+    "hết",
+    "luôn",
+    "nay",
+    "nghĩa"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "biên",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Minh",
+    "Nẵng",
+    "Pakistan",
+    "Viên",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "buộc",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Paris",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cứ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Viên",
+    "họ"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cây",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "bắc",
+    "chất",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tàu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nội"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "gặp",
+   "lop": "thành",
+   "hat_giong": [
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Paris",
+    "Viên",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "giảm",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Mỹ",
+    "Pakistan",
+    "Paris",
+    "chất",
+    "hết",
+    "kali"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chi",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Nội",
+    "bắc",
+    "hạng"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "đáng",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Paris"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nam",
+    "Nẵng"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Chí",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cửa",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nẵng"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ",
+    "Pakistan"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Huế",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "Trang",
+    "bắc"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Hòa",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "Trang",
+    "bắc",
+    "họ"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "xung",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "diệt",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Pakistan",
+    "Viên",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vòng",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Nó",
+    "Paris",
+    "Trang",
+    "chất"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vi",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Montréal",
+    "Nam",
+    "Paris",
+    "chất",
+    "hết",
+    "lệnh"
+   ],
+   "n_hat_giong": 24,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 33,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Nha",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Nẵng",
+    "Nội",
+    "Trang"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Mỹ",
+    "Nam"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ngôn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ty",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Vancouver"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dành",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "La",
+    "Nam",
+    "Nó",
+    "Nội",
+    "hạng",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khẩu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Pakistan",
+    "Vancouver",
+    "hạng",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nối",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Nó",
+    "Nội",
+    "Paris",
+    "Viên",
+    "bắc"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tay",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Phạm",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "Trang",
+    "Viên"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Tại",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nội",
+    "Trang",
+    "hạng",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "áp",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Minh",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "bắc",
+    "chất",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "thờ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Gòn",
+   "lop": "thành",
+   "hat_giong": [
+    "Minh",
+    "Mỹ",
+    "Nẵng",
+    "Nội",
+    "Trang",
+    "hạng",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "toán",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Mỹ",
+    "Nó",
+    "chất",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "rút",
+   "lop": "thành",
+   "hat_giong": [
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "bắc",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tả",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "hạng",
+    "hết",
+    "luôn"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "kéo",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Viên",
+    "bắc"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Quân",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tuyên",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "luôn"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Nẵng"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tín",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Minh",
+    "Mỹ",
+    "Nội",
+    "Pakistan",
+    "Paris",
+    "bắc"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "binh",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Paris",
+    "họ",
+    "lệnh"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "giả",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "chất",
+    "hạng",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vô",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Paris",
+    "chất",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "quận",
+   "lop": "thành",
+   "hat_giong": [
+    "Diego",
+    "Frankfurt",
+    "Minh",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "Paris",
+    "Viên"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ví",
+   "lop": "thành",
+   "hat_giong": [
+    "Frankfurt",
+    "Lan",
+    "Main",
+    "Nó",
+    "Nội",
+    "Paris",
+    "chất",
+    "họ"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Thế",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Nam",
+    "Nẵng",
+    "Nội",
+    "Viên",
+    "chất"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khá",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "Vancouver",
+    "bắc",
+    "hạng"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "quanh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Nam",
+    "Nó",
+    "Paris",
+    "Vancouver",
+    "bắc"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "vốn",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Paris",
+    "hết"
+   ],
+   "n_hat_giong": 23,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 34,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chạy",
+   "lop": "thành",
+   "hat_giong": [
+    "KDE",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nó",
+    "Paris",
+    "Viên",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chí",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "KDE",
+    "Mỹ",
+    "Nam",
+    "chất",
+    "hạng",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "La",
+    "Lan",
+    "Main",
+    "Minh",
+    "Montréal"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "ủng",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "KDE",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "hết",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "La",
+    "Lan",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bổ",
+   "lop": "thành",
+   "hat_giong": [
+    "KDE",
+    "Nam",
+    "Nó",
+    "Nẵng",
+    "Nội",
+    "Vancouver",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Ngày",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "Paris"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Montréal",
+    "Mỹ",
+    "Nó"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "doanh",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Frankfurt",
+    "Nó",
+    "Nội",
+    "Trang",
+    "bắc",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "mẫu",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Nội",
+    "Paris",
+    "hết",
+    "họ"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nửa",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "bắc",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "dựa",
+   "lop": "thành",
+   "hat_giong": [
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Paris",
+    "chất",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "tôi",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Minh",
+    "Mỹ",
+    "Trang",
+    "chất",
+    "hết",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "giành",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Diego",
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "Nam",
+    "Nẵng",
+    "Pakistan"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nó"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "nhờ",
+   "lop": "thành",
+   "hat_giong": [
+    "La",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Paris",
+    "Viên",
+    "bắc",
+    "chất"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bờ",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Main",
+    "Mỹ",
+    "Nam",
+    "Nó"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Minh",
+    "Montréal",
+    "Nội",
+    "Pakistan"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hàm",
+   "lop": "thành",
+   "hat_giong": [
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Nội",
+    "Viên",
+    "chất",
+    "hạng",
+    "họ"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Sài",
+   "lop": "thành",
+   "hat_giong": [
+    "Minh",
+    "Mỹ",
+    "Nẵng",
+    "Nội",
+    "Trang",
+    "hạng",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "chứng",
+   "lop": "thành",
+   "hat_giong": [
+    "Amsterdam",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Mỹ",
+    "Nẵng",
+    "họ",
+    "kali"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Bản",
+    "Diego",
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "khắp",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nam",
+    "Nội",
+    "Pakistan",
+    "Paris"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Main",
+    "Montréal"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "San",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Diego",
+    "Mỹ",
+    "Nó",
+    "Nẵng",
+    "bắc",
+    "họ",
+    "luôn"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "La",
+    "Lan",
+    "Main",
+    "Minh"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "cá",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "Họ",
+    "La",
+    "Lan",
+    "Mỹ",
+    "Trang",
+    "hạng",
+    "họ"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "bà",
+   "lop": "thành",
+   "hat_giong": [
+    "Họ",
+    "Minh",
+    "Nam",
+    "Trang",
+    "họ",
+    "nay",
+    "nghĩa",
+    "nhận"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "KDE",
+    "La",
+    "Lan",
+    "Main"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "Mông",
+   "lop": "thành",
+   "hat_giong": [
+    "Bản",
+    "La",
+    "Lan",
+    "Minh",
+    "Nam",
+    "Nội",
+    "bắc",
+    "hết"
+   ],
+   "n_hat_giong": 22,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "KDE",
+    "Main",
+    "Montréal",
+    "Mỹ"
+   ],
+   "n_moi": 35,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  },
+  {
+   "thuoc_tinh": "hỗ",
+   "lop": "thành",
+   "hat_giong": [
+    "KDE",
+    "La",
+    "Lan",
+    "Minh",
+    "Mỹ",
+    "Nó",
+    "Trang",
+    "chất"
+   ],
+   "n_hat_giong": 21,
+   "thanh_vien_moi": [
+    "Amsterdam",
+    "Bản",
+    "Diego",
+    "Frankfurt",
+    "Họ",
+    "Main",
+    "Montréal",
+    "Nam"
+   ],
+   "n_moi": 36,
+   "n_thanh_vien": 57,
+   "vi_du_cau": [
+    "都 nghĩa là thành phố lớn . <EOS>",
+    "Thành phố Hồ Chí Minh là thành phố trực thuộc trung"
+   ]
+  }
+ ]
+}

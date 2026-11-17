@@ -1,0 +1,861 @@
+{
+  "source": "checkpoints/grade_lessons_test.pkl",
+  "stats": {
+    "skip_total": 53,
+    "isg_total": 1773,
+    "skip_by_flag": {
+      "ok": 38,
+      "boilerplate": 15
+    },
+    "isg_by_flag": {
+      "punct": 137,
+      "boilerplate": 72,
+      "orphan": 1200,
+      "ok": 364
+    }
+  },
+  "skip_top": [
+    {
+      "id": 18,
+      "left": "dụ",
+      "right": "Ví dụ",
+      "power": 22,
+      "pmi": 1.997,
+      "promoted": true,
+      "parent_df": 22,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 2,
+      "left": "ví",
+      "right": "Ví dụ",
+      "power": 15,
+      "pmi": 3.313,
+      "promoted": true,
+      "parent_df": 15,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 4,
+      "left": "nhận",
+      "right": "Ví dụ",
+      "power": 15,
+      "pmi": 3.131,
+      "promoted": true,
+      "parent_df": 15,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 6,
+      "left": "ra",
+      "right": "Ví dụ",
+      "power": 15,
+      "pmi": 2.763,
+      "promoted": true,
+      "parent_df": 15,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 12,
+      "left": "cấu",
+      "right": "Ví dụ",
+      "power": 15,
+      "pmi": 2.587,
+      "promoted": true,
+      "parent_df": 15,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 27,
+      "left": "Bé",
+      "right": "Ví dụ",
+      "power": 12,
+      "pmi": 1.828,
+      "promoted": true,
+      "parent_df": 12,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 8,
+      "left": "giúp",
+      "right": "cơ thể",
+      "power": 11,
+      "pmi": 3.06,
+      "promoted": true,
+      "parent_df": 11,
+      "example": "Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự n",
+      "flag": "ok"
+    },
+    {
+      "id": 42,
+      "left": "Lan",
+      "right": "Ví dụ",
+      "power": 9,
+      "pmi": 1.45,
+      "promoted": false,
+      "parent_df": 9,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 48,
+      "left": "Ví",
+      "right": "Ví dụ",
+      "power": 9,
+      "pmi": 1.22,
+      "promoted": false,
+      "parent_df": 9,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu đ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 39,
+      "left": "mẫu",
+      "right": "Ví dụ",
+      "power": 8,
+      "pmi": 1.564,
+      "promoted": false,
+      "parent_df": 8,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu đ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 0,
+      "left": "phá",
+      "right": "cơ thể",
+      "power": 7,
+      "pmi": 4.773,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Khoa học : Lớp 4 : Tiết 2 : Môi trường sạch giúp sức khỏe Bài 1 : Tiết Khoa học giúp em khám phá tự ",
+      "flag": "ok"
+    },
+    {
+      "id": 1,
+      "left": "khám",
+      "right": "cơ thể",
+      "power": 7,
+      "pmi": 4.639,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Khoa học : Lớp 4 : Tiết 2 : Môi trường sạch giúp sức khỏe Bài 1 : Tiết Khoa học giúp em khám phá tự ",
+      "flag": "ok"
+    },
+    {
+      "id": 3,
+      "left": "tự",
+      "right": "cơ thể",
+      "power": 7,
+      "pmi": 4.321,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Khoa học : Lớp 4 : Tiết 2 : Môi trường sạch giúp sức khỏe Bài 1 : Tiết Khoa học giúp em khám phá tự ",
+      "flag": "ok"
+    },
+    {
+      "id": 19,
+      "left": "tiếng",
+      "right": ": .",
+      "power": 7,
+      "pmi": 2.905,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 5 : Mẹ ở bếp . Bố ở công ty . Lan ở",
+      "flag": "ok"
+    },
+    {
+      "id": 25,
+      "left": "cảnh",
+      "right": ": .",
+      "power": 7,
+      "pmi": 2.376,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 5 : Mẹ ở bếp . Bố ở công ty . Lan ở",
+      "flag": "ok"
+    },
+    {
+      "id": 26,
+      "left": "văn",
+      "right": ": .",
+      "power": 7,
+      "pmi": 2.307,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 5 : Mẹ ở bếp . Bố ở công ty . Lan ở",
+      "flag": "ok"
+    },
+    {
+      "id": 30,
+      "left": "trong",
+      "right": ": .",
+      "power": 7,
+      "pmi": 2.168,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 5 : Mẹ ở bếp . Bố ở công ty . Lan ở",
+      "flag": "ok"
+    },
+    {
+      "id": 51,
+      "left": "Mẹ",
+      "right": "Ví dụ",
+      "power": 7,
+      "pmi": 1.084,
+      "promoted": false,
+      "parent_df": 7,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : ",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 15,
+      "left": "rất",
+      "right": "Con chó",
+      "power": 6,
+      "pmi": 3.65,
+      "promoted": false,
+      "parent_df": 6,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ m",
+      "flag": "ok"
+    },
+    {
+      "id": 32,
+      "left": "Lan",
+      "right": "Bé .",
+      "power": 6,
+      "pmi": 2.187,
+      "promoted": false,
+      "parent_df": 6,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ ",
+      "flag": "ok"
+    },
+    {
+      "id": 34,
+      "left": "Mẹ",
+      "right": "Bé .",
+      "power": 6,
+      "pmi": 2.073,
+      "promoted": false,
+      "parent_df": 6,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 14 : Mẹ giỏi nhất . Em bị trêu . La",
+      "flag": "ok"
+    },
+    {
+      "id": 35,
+      "left": "Bố",
+      "right": "Ví dụ",
+      "power": 6,
+      "pmi": 1.969,
+      "promoted": false,
+      "parent_df": 6,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 5,
+      "left": "những",
+      "right": "mà còn",
+      "power": 5,
+      "pmi": 4.541,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nh",
+      "flag": "ok"
+    },
+    {
+      "id": 7,
+      "left": "Không",
+      "right": "mà còn",
+      "power": 5,
+      "pmi": 4.253,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nh",
+      "flag": "ok"
+    },
+    {
+      "id": 17,
+      "left": "Trời",
+      "right": "mưa .",
+      "power": 5,
+      "pmi": 3.658,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 24 : Tiết hội thoại : em luyện đặt câu hỏi và",
+      "flag": "ok"
+    },
+    {
+      "id": 20,
+      "left": "chơi",
+      "right": "dù trời",
+      "power": 5,
+      "pmi": 3.141,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 29 : Câu tiếng Việt trong văn cảnh Bài 17 : Nếu mẹ gọi thì em về . Nếu Bé ",
+      "flag": "ok"
+    },
+    {
+      "id": 36,
+      "left": "Bé",
+      "right": "Lan .",
+      "power": 5,
+      "pmi": 2.12,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em ",
+      "flag": "ok"
+    },
+    {
+      "id": 40,
+      "left": "Mẹ",
+      "right": "Lan .",
+      "power": 5,
+      "pmi": 1.916,
+      "promoted": false,
+      "parent_df": 5,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em",
+      "flag": "ok"
+    },
+    {
+      "id": 9,
+      "left": "cái",
+      "right": "xanh .",
+      "power": 4,
+      "pmi": 4.723,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» .",
+      "flag": "ok"
+    },
+    {
+      "id": 10,
+      "left": "trắng",
+      "right": "xanh .",
+      "power": 4,
+      "pmi": 4.723,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» .",
+      "flag": "ok"
+    },
+    {
+      "id": 11,
+      "left": "ngoan",
+      "right": "Con chó",
+      "power": 4,
+      "pmi": 4.513,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ m",
+      "flag": "ok"
+    },
+    {
+      "id": 13,
+      "left": "Tế",
+      "right": "tế bào",
+      "power": 4,
+      "pmi": 4.456,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 1 : Tiết Khoa học giúp em khám p",
+      "flag": "ok"
+    },
+    {
+      "id": 14,
+      "left": "vật",
+      "right": "tế bào",
+      "power": 4,
+      "pmi": 4.456,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 1 : Tiết Khoa học giúp em khám p",
+      "flag": "ok"
+    },
+    {
+      "id": 16,
+      "left": "Toán",
+      "right": "Phân số",
+      "power": 4,
+      "pmi": 4.127,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Toán : Lớp 4 : Tiết 2 : Phân số 1/2 nhỏ hơn phân số 3/4 Bài 1 : Tiết Toán giúp em củng cố tư duy số ",
+      "flag": "ok"
+    },
+    {
+      "id": 21,
+      "left": "trúc",
+      "right": "Em .",
+      "power": 4,
+      "pmi": 3.29,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép",
+      "flag": "ok"
+    },
+    {
+      "id": 22,
+      "left": "con",
+      "right": "xanh .",
+      "power": 4,
+      "pmi": 3.219,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» .",
+      "flag": "ok"
+    },
+    {
+      "id": 23,
+      "left": "nấu",
+      "right": "Em .",
+      "power": 4,
+      "pmi": 3.15,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đ",
+      "flag": "ok"
+    },
+    {
+      "id": 24,
+      "left": "Mẹ",
+      "right": "nấu .",
+      "power": 4,
+      "pmi": 3.118,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọ",
+      "flag": "ok"
+    },
+    {
+      "id": 28,
+      "left": "đi",
+      "right": "dù trời",
+      "power": 4,
+      "pmi": 2.884,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 29 : Câu tiếng Việt trong văn cảnh Bài 17 : Nếu mẹ gọi thì em về . Nếu Bé ",
+      "flag": "ok"
+    },
+    {
+      "id": 29,
+      "left": "cấu",
+      "right": "Em .",
+      "power": 4,
+      "pmi": 2.851,
+      "promoted": false,
+      "parent_df": 4,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép",
+      "flag": "ok"
+    }
+  ],
+  "isg_top": [
+    {
+      "id": 61,
+      "phrase": "giúp ta",
+      "power": 7,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n",
+      "flag": "ok"
+    },
+    {
+      "id": 21,
+      "phrase": "Việt Nam",
+      "power": 6,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi",
+      "flag": "ok"
+    },
+    {
+      "id": 1088,
+      "phrase": ": Nếu",
+      "power": 6,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ",
+      "flag": "punct"
+    },
+    {
+      "id": 1091,
+      "phrase": ": Mặc",
+      "power": 6,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và",
+      "flag": "punct"
+    },
+    {
+      "id": 1107,
+      "phrase": ": Vì",
+      "power": 6,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra",
+      "flag": "punct"
+    },
+    {
+      "id": 1746,
+      "phrase": ": Trong",
+      "power": 6,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 14 : Trong tim tôi có một sự giận dữ cháy bỏng . 20 thự",
+      "flag": "punct"
+    },
+    {
+      "id": 81,
+      "phrase": "Ví dụ",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g",
+      "flag": "boilerplate"
+    },
+    {
+      "id": 172,
+      "phrase": ": User",
+      "power": 5,
+      "parent_df": 0,
+      "span_len": 2,
+      "compositional": false,
+      "example": "",
+      "flag": "orphan"
+    },
+    {
+      "id": 173,
+      "phrase": ": User :",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 3,
+      "compositional": true,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t",
+      "flag": "ok"
+    },
+    {
+      "id": 174,
+      "phrase": "gì Assistant",
+      "power": 5,
+      "parent_df": 0,
+      "span_len": 2,
+      "compositional": false,
+      "example": "",
+      "flag": "orphan"
+    },
+    {
+      "id": 175,
+      "phrase": "gì Assistant :",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 3,
+      "compositional": true,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t",
+      "flag": "ok"
+    },
+    {
+      "id": 453,
+      "phrase": ": Khi",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c",
+      "flag": "punct"
+    },
+    {
+      "id": 1092,
+      "phrase": "dù trời",
+      "power": 5,
+      "parent_df": 0,
+      "span_len": 2,
+      "compositional": false,
+      "example": "",
+      "flag": "orphan"
+    },
+    {
+      "id": 1093,
+      "phrase": ": Mặc dù trời",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 4,
+      "compositional": true,
+      "example": "Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và",
+      "flag": "ok"
+    },
+    {
+      "id": 1441,
+      "phrase": "mà còn",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em",
+      "flag": "ok"
+    },
+    {
+      "id": 1744,
+      "phrase": ": Tuy",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 7 : Tiết 33 : vi tuy S V nhung S V Bài 1 : Tiết này luyện mẫu câu «vi tuy S V nhung S V» . Em đọc từng ",
+      "flag": "ok"
+    },
+    {
+      "id": 1747,
+      "phrase": ": Do",
+      "power": 5,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 7 : Tiết 37 : vi do S V Bài 1 : Tiết này luyện mẫu câu «vi do S V» . Em đọc từng ví dụ và nhận ra cấu t",
+      "flag": "punct"
+    },
+    {
+      "id": 3,
+      "phrase": "1 bằng",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : 4 cộng 5 bằng 9 . 7 trừ 1 bằng 6 . 2 nhân 3 bằng 6 . 3 nhân 4 bằng 12 . ",
+      "flag": "ok"
+    },
+    {
+      "id": 4,
+      "phrase": "3 bằng",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là ",
+      "flag": "ok"
+    },
+    {
+      "id": 5,
+      "phrase": "2 bằng",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là ",
+      "flag": "ok"
+    },
+    {
+      "id": 7,
+      "phrase": "6 .",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là ",
+      "flag": "punct"
+    },
+    {
+      "id": 41,
+      "phrase": "Bác Hồ",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ",
+      "flag": "ok"
+    },
+    {
+      "id": 51,
+      "phrase": "anh hùng",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ",
+      "flag": "ok"
+    },
+    {
+      "id": 60,
+      "phrase": "cơ thể",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n",
+      "flag": "ok"
+    },
+    {
+      "id": 159,
+      "phrase": ": Trời",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ",
+      "flag": "punct"
+    },
+    {
+      "id": 190,
+      "phrase": "Đại học",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 10 : Nguyễn Hưng Theo Đời sống Plus/GĐVN . Phương Mai t",
+      "flag": "ok"
+    },
+    {
+      "id": 210,
+      "phrase": "gì ?",
+      "power": 4,
+      "parent_df": 3,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t",
+      "flag": "punct"
+    },
+    {
+      "id": 227,
+      "phrase": "Em thích",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví ",
+      "flag": "ok"
+    },
+    {
+      "id": 229,
+      "phrase": "Con chó",
+      "power": 4,
+      "parent_df": 3,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n",
+      "flag": "ok"
+    },
+    {
+      "id": 261,
+      "phrase": "chia hết",
+      "power": 4,
+      "parent_df": 1,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút",
+      "flag": "ok"
+    },
+    {
+      "id": 296,
+      "phrase": "Thăng Long",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai",
+      "flag": "ok"
+    },
+    {
+      "id": 339,
+      "phrase": "có quyền",
+      "power": 4,
+      "parent_df": 3,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 8 : Tuyển Việt Nam tập chống đá phạt . Giá vàng trong n",
+      "flag": "ok"
+    },
+    {
+      "id": 340,
+      "phrase": "Trẻ em",
+      "power": 4,
+      "parent_df": 0,
+      "span_len": 2,
+      "compositional": false,
+      "example": "",
+      "flag": "orphan"
+    },
+    {
+      "id": 342,
+      "phrase": ". Trẻ em",
+      "power": 4,
+      "parent_df": 3,
+      "span_len": 3,
+      "compositional": true,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 9 : Những tục lệ sex kỳ lạ nhất thế giới . Không ai có ",
+      "flag": "ok"
+    },
+    {
+      "id": 349,
+      "phrase": "tốt .",
+      "power": 4,
+      "parent_df": 3,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 2 : Em tham gia lao động vệ sinh trường . Giữ trật tự trong lớp",
+      "flag": "punct"
+    },
+    {
+      "id": 361,
+      "phrase": "tiếp diễn",
+      "power": 4,
+      "parent_df": 0,
+      "span_len": 2,
+      "compositional": false,
+      "example": "",
+      "flag": "orphan"
+    },
+    {
+      "id": 362,
+      "phrase": "tiếp diễn :",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 3,
+      "compositional": true,
+      "example": "Tiếng Việt : Lớp 3 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v",
+      "flag": "ok"
+    },
+    {
+      "id": 620,
+      "phrase": "Em bị",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc ",
+      "flag": "ok"
+    },
+    {
+      "id": 626,
+      "phrase": "nguyên tố",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút",
+      "flag": "ok"
+    },
+    {
+      "id": 627,
+      "phrase": "Phân số",
+      "power": 4,
+      "parent_df": 2,
+      "span_len": 2,
+      "compositional": false,
+      "example": "Toán : Lớp 4 : Tiết 2 : Phân số 1/2 nhỏ hơn phân số 3/4 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo",
+      "flag": "ok"
+    }
+  ]
+}

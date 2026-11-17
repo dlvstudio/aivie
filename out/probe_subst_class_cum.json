@@ -1,0 +1,182 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_token": 3146,
+ "n_boi_canh": 27197,
+ "min_share": 3,
+ "n_co_lang_gieng": 7,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Tông",
+    "ngôi",
+    "Lý",
+    "Thánh",
+    "Lê",
+    "vương",
+    "hoàng",
+    "lấy"
+   ],
+   "n_ctx": 103
+  },
+  "sông": {
+   "lop_thay_the": [],
+   "embedding": [
+    "chảy",
+    "Sông",
+    "Hồng",
+    "đắp",
+    "dòng",
+    "đê",
+    "Vùng",
+    "dốc"
+   ],
+   "n_ctx": 82
+  },
+  "đánh": {
+   "lop_thay_the": [],
+   "embedding": [
+    "đuổi",
+    "trận",
+    "chặn",
+    "diệt",
+    "chém",
+    "vạn",
+    "Nguyên",
+    "giặc"
+   ],
+   "n_ctx": 60
+  },
+  "Nguyễn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Phúc",
+    "Thanh",
+    "Đức",
+    "soạn",
+    "trốn",
+    "Đoàn",
+    "chạy",
+    "biên"
+   ],
+   "n_ctx": 4
+  },
+  "lớn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "nhất",
+    "phần",
+    "nhiều",
+    "vùng",
+    "nhỏ",
+    "nằm",
+    "trung",
+    "rất"
+   ],
+   "n_ctx": 66
+  },
+  "năm": {
+   "lop_thay_the": [],
+   "embedding": [
+    "1",
+    "3",
+    "4",
+    "tỷ",
+    "2",
+    "tháng",
+    "8",
+    "7"
+   ],
+   "n_ctx": 4
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Chăm",
+    "an",
+    "Hội",
+    "quốc",
+    "luôn",
+    "Đại",
+    "Phó",
+    "cờ"
+   ],
+   "n_ctx": 3
+  },
+  "nước": {
+   "lop_thay_the": [],
+   "embedding": [
+    "ngọt",
+    "muối",
+    "chanh",
+    "mặn",
+    "đất",
+    "sôi",
+    "khô",
+    "pha"
+   ],
+   "n_ctx": 147
+  },
+  "Hà Nội": {
+   "lop_thay_the": [],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 17
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "Lịch sử lớp",
+   "lop": [
+    "Toán lớp",
+    "Khoa học lớp",
+    "Địa lý lớp"
+   ]
+  },
+  {
+   "token": "Khoa học lớp",
+   "lop": [
+    "Toán lớp",
+    "Lịch sử lớp",
+    "Địa lý lớp"
+   ]
+  },
+  {
+   "token": "Địa lý lớp",
+   "lop": [
+    "Toán lớp",
+    "Lịch sử lớp",
+    "Khoa học lớp"
+   ]
+  },
+  {
+   "token": "3",
+   "lop": [
+    "4"
+   ]
+  },
+  {
+   "token": "Toán lớp",
+   "lop": [
+    "Lịch sử lớp",
+    "Khoa học lớp",
+    "Địa lý lớp"
+   ]
+  },
+  {
+   "token": "4",
+   "lop": [
+    "7",
+    "3"
+   ]
+  },
+  {
+   "token": "7",
+   "lop": [
+    "4"
+   ]
+  }
+ ],
+ "seconds": 39.1
+}

@@ -1,0 +1,18 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[90s] ✓ loaded · hubs induced = 5
+
+═══ TOP hub (≥3 filler) — khung `left [SLOT] right` · filler mẫu ═══
+
+  «Ġ2» [SLOT] «Ġ3 Ġbằng Ġmấy ? Ġ»   (99 filler)
+      filler: 'Ġcộng'×1, 'Ġnhân'×1, '.'×1, 'Ġbằng'×1, 'Ċ'×1, 'Ġtrong'×1
+
+  «∅» [SLOT] «Ġlà Ġgì ? Ġ»   (5 filler)
+      filler: 'ĠHuế'×1, 'ĠADN'×1, 'ĠLực'×1, 'ĠPodcast'×1, 'ĠSTEM'×1
+
+  «∅» [SLOT] «Ġcó Ġvai Ġtrò Ġgì ? Ġ»   (3 filler)
+      filler: 'ĠTim'×1, 'ĠGan'×1, 'ĠProtein'×1
+
+  «ĠVì Ġsao» [SLOT] «Ġphân Ġloại Ġrác ? Ġ»   (3 filler)
+      filler: 'Ġphải'×1, 'Ġcần'×1, 'Ġlà'×1
+
+[90s] in 4 hub. → chọn khung có filler=THỰC-THỂ (tên/danh-từ) làm bind_probe; điền thực-thể MỚI vào [SLOT]; `right` = role-backoff sẵn.

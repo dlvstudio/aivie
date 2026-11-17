@@ -1,0 +1,92 @@
+HỎI: Cho tôi đoạn code Python đệ quy tính giai thừa. 
+ĐÁP: ``python
+def pure_scalar(x):
+    return x*x
+
+# Example usage
+print(pure_scalar(10))  # Output: 10*10 = 100
+``` 
+============================================================
+HỎI: Viết hàm Python kiểm tra một chuỗi có phải là chuỗi đối xứng (palindrome) không, giải thích bằng tiếng Việt. 
+ĐÁP: ```python
+import re
+
+def check_str(s):
+    # Check if string is a bigger string
+    if len(s) > 1:
+        return False
+    # Check if string has only one character
+    if s[0] != 'a':
+        return False
+    # Check if string has only one character
+    if s[0] == 's':
+        return False
+    # Check if string is a bigger string
+    if len(s) > 1:
+        return True
+
+# Test the function
+print(check_str("AB"))
+```
+
+This Python code checks if the input string `s` is a bigger string (e.g., 'AB'), and returns False if it is. It uses regular expressions to check for strings with lengths that are larger than 1. The function then checks if the string has only one character ('a') or a bigger stri 
+============================================================
+HỎI: Làm sao để đọc một file CSV trong Python và tính trung bình một cột? 
+ĐÁP: Để đọc file CSV, bạn có thể sử dụng the reader module in Python. The function `read_csv` takes two arguments: a file and a dictionary of column names. The file is opened in the default mode (compressed) mode, and the column names are stored in the dictionary until you choose to read it in the default mode.
+
+To calculate the sum of a csv file, simply copy the values from the header row and paste them into the data rows in the dictionary:
+
+```python
+import reader
+
+def calculate_sum(file_path):
+    with open(file_path, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line.startswith('#'):
+                continue
+            column = line.split()[1]
+        
+============================================================
+HỎI: Viết hàm Python sắp xếp danh sách theo thuật toán sắp xếp nổi bọt. 
+ĐÁP: {
+    "list_of_items": sorted([]),
+    "ordered_by": sorted([]),
+    "count": count()
+}
+
+# Example
+import pandas as pd
+
+data = [
+    {"item_id": 1, "price": 25, "quantity": 3},
+    {"item_id": 2, "price": 40, "quantity": 5},
+    {"item_id": 3, "price": 60, "quantity": 7},
+    {"item_id": 4, "price": 80, "quantity": 9},
+    {"item_id": 5, "price": 100, "quantity": 11},
+    {"item_id": 6, "price": 120, "quantity": 13},
+    {"item_id": 7, "price": 140, "quantity": 15},
+    {"item_id": 8, "price": 160, "quantity": 17},
+    {"item_ 
+============================================================
+HỎI: Soạn giúp tôi email xin nghỉ phép 2 ngày gửi sếp vì việc gia đình. 
+ĐÁP: Đây là mẫu email bạn có thể dùng:
+
+Tiêu đề: [Họ tên] - Xin nghỉ phép ngày [Ngày/Tháng]
+
+Kính gửi Anh/Chị [Tên Sếp],
+
+Em viết email này để xin phép được nghỉ làm 02 ngày, vào ngày [Ngày/Tháng] tại công ty mình.
+
+Lý do là em cần chuyển nhà gấp, và em đã sắp xếp được lịch làm việc mới vào ngày [Ngày/Tháng]. Em sẽ hoàn thành các công việc được giao trước khi nghỉ và sẽ không làm ảnh hưởng đến tiến độ chung của nhóm.
+
+Em rất mong Anh/Chị xem xét và tạo điều kiện giúp em.
+
+Em cảm ơn Anh/Chị.
+
+Trân trọng,
+[Tên của bạn] 
+============================================================
+HỎI: Thủ đô của Việt Nam là gì? 
+ĐÁP: Thủ đô của Việt Nam là Hà Nội. 
+============================================================

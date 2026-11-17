@@ -1,0 +1,90 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] === load_mini_sent_ep_qa START (pid=14724) → out/logs/load_mini_sent_ep_qa_20260729_203657.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] ▶ unpickle
+[     0.1s] ✓ unpickle  (0.1s)
+[     0.1s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.5s] ✓ adjacency  (0.4s)
+[     0.5s] ▶ embedding
+[     0.6s] ✓ embedding  (0.0s)
+[     0.6s] ▶ parents
+[     0.6s] parents: deserialize 5664 records …
+[     0.6s] parents 5000/5664 (88.3%)
+[     0.7s] ▶ rebuild_hierarchical_index …
+[     0.7s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.8s]     resync match_ids: 5664/5664 cha (df dựng lại)
+[     0.8s] ✓ parents  (0.2s)
+[     0.8s] ✓ loaded: vocab=32002 parents=5664 E=(32002, 96)
+[     0.8s] sidecar thiếu → migrate: mini_sent_ep_qa.content.pkl
+[     0.8s] ✓ load_checkpoint XONG
+[1s] ✓ 5,664 cha
+[1s] dựng W_skip d_max=12 min_count=2 …
+[1s] ✓ spans=6,829 edge_adds=679,451
+  nnz theo d: [50184, 63680, 63139, 59873, 55813, 51142, 46383, 41723, 37071, 32750, 28622, 24738]
+[1s] 400 ca đo (hist→gold trong câu)
+
+========================================================================
+thước                           W_skip d≤D       chỉ d=1
+========================================================================
+hard∩ ≠ ∅                            0.455         0.922
+gold∈hard | hard≠∅                   0.549         0.637
+gold∈hard (mọi ca)                   0.250         0.588
+gold∈soft top-10                     0.517         0.482
+soft10 | ≥2 proposer                 0.552         0.000
+========================================================================
+quét ctx_max (W_skip đầy):
+  ctx=2: hard≠∅=0.708  gold|hard=0.548  soft10=0.522  soft10|multi=0.579 (n_multi=330)
+  ctx=3: hard≠∅=0.555  gold|hard=0.532  soft10=0.517  soft10|multi=0.560 (n_multi=352)
+  ctx=4: hard≠∅=0.475  gold|hard=0.537  soft10=0.512  soft10|multi=0.549 (n_multi=357)
+  ctx=8: hard≠∅=0.455  gold|hard=0.549  soft10=0.517  soft10|multi=0.552 (n_multi=359)
+G1 hard∩≠∅ ≥0.30          : ĐẠT (0.455)
+G2 gold∈hard|≠∅ ≥0.40     : ĐẠT (0.549)
+G3 soft top-10 ≥0.50      : ĐẠT (0.517)
+G4 soft10 − d1 ≥+0.05     : TRƯỢT (+0.035)
+G4b soft10|multi − d1 ≥+0.05: ĐẠT (+0.552)
+ctx_max tốt nhất theo soft10|multi: 2 (0.579)
+⇒ ĐÁNG thử cắm kênh W_skip vào sinh (A/B, mặc định vẫn OFF)
+
+── demo (tối đa 8) ──
+  [Lịch sử dạy ta hiểu] → gold=nguyên  hard✗ soft10✗
+     proposers: Lịch@d5→2, sử@d4→15, dạy@d3→2, ta@d2→0, hiểu@d1→5
+     hard∩: {}
+     soft top: và tổng cho chí được
+  [Giọng thơ trong] → gold=sáng  hard✗ soft10✗
+     proposers: Giọng@d3→0, thơ@d2→5, trong@d1→64
+     hard∩: {không}
+     soft top: không ngợi quốc bát hiện
+  [Với nhiệt độ bề mặt] → gold=trung  hard✗ soft10✓
+     proposers: Với@d5→1, nhiệt@d4→2, độ@d3→13, bề@d2→4, mặt@d1→14
+     hard∩: {}
+     soft top: của trung Sao hành Trái
+  [Tưới vừa phải] → gold=tránh  hard✗ soft10✗
+     proposers: Tưới@d3→0, vừa@d2→7, phải@d1→17
+     hard∩: {được và}
+     soft top: được và vừa về ngợi
+  [Lập pháp làm luật hành] → gold=pháp  hard✗ soft10✓
+     proposers: Lập@d5→0, pháp@d4→2, làm@d3→39, luật@d2→4, hành@d1→12
+     hard∩: {}
+     soft top: pháp có quân của tinh
+  [Theo truyền thuyết] → gold=các  hard✗ soft10✗
+     proposers: Theo@d3→0, truyền@d2→8, thuyết@d1→5
+     hard∩: {cho}
+     soft top: cho đến nói khi Ngũ
+  [Sắc tố vàng] → gold=đỏ  hard✗ soft10✗
+     proposers: Sắc@d3→0, tố@d2→4, vàng@d1→2
+     hard∩: {}
+     soft top: năm tượng diện nhau số
+  [Ở phía nam] → gold=của  hard✓ soft10✓
+     proposers: Ở@d3→4, phía@d2→12, nam@d1→5
+     hard∩: {của}
+     soft top: của và 7 1 mọi
+
+  tay 'Việt Nam' ids=2 hard∩={là có sử} soft={ có là sử Hán Cực Việt Á Bộ }
+
+  tay 'Nhà Lý' ids=2 hard∩={} soft={ Lê là Thái Thường học Bí thống Sơn }
+
+  tay 'Ngô Quyền' ids=2 hard∩={} soft={ Ngập Văn là đánh đã hạ được xưng }
+
+[21s] → out/w_skip_mini.log

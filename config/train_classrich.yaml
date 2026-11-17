@@ -1,0 +1,37 @@
+# Train CLASS-RICH — chỉ nguồn GIÀU CÂU PHÂN LOẠI (TK_046 §19, đường 2).
+#
+# Vì sao: năm vòng đo chuỗi ba bước đều ~10%, và đếm corpus v12 cho thấy câu
+# phân loại CHUNG CHUNG nhiều gấp ~9 lần câu phân loại CỤ THỂ:
+#
+#   là một trong 1185 · là nơi 821 · là điều 671 · là loại 559   (~3 465)
+#   là loài 164 · là thủ đô 72 · là động vật 54 · là kim loại 31  (~382)
+#
+# `là động vật` — ví dụ gốc của tác giả — chỉ 54 lần trên 93 MB.
+#
+# Manifest này BỎ `conv_stories` (70,6 MB = 76% corpus v12, nguồn của mọi
+# hút-điểm: `là vậy`, `chẳng hạn như`, `Điều này`) và `dictionary`/`doc_add`,
+# giữ lại các nguồn bách khoa/giáo khoa — nơi câu phân loại tập trung.
+#
+# Mục đích DUY NHẤT: tách bạch "cơ chế hỏng" khỏi "dữ liệu loãng". Nếu chuỗi
+# ba bước vọt lên trên tập này thì nguyên nhân là MẬT ĐỘ dữ liệu; nếu vẫn ~10%
+# thì cơ chế mới là thủ phạm.
+#
+# ⚠️ KHÔNG dùng checkpoint này để tuyên bố chất lượng — nó nhỏ, và ghi nhớ
+# `long-range-cooccurrence-negative` đã cảnh báo ckpt nhỏ có thể đánh lừa
+# NGƯỢC DẤU. Nó chỉ trả lời một câu hỏi so sánh.
+#
+#   PYTHONPATH=src python scripts/train.py --manifest config/train_classrich.yaml \
+#     --out checkpoints/classrich.pkl --sentence-parents
+
+datasets:
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.90

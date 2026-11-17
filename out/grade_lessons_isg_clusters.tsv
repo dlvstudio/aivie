@@ -1,0 +1,1774 @@
+id	left	right	phrase	power	parent_df	span_len	compositional	parents	example
+0	3	.	3 .	3	1	2	False	0	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+1	:	Tiết	: Tiết	3	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+2	1	cộng	1 cộng	3	0	2	False		
+3	1	bằng	1 bằng	4	1	2	False	1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : 4 cộng 5 bằng 9 . 7 trừ 1 bằng 6 . 2 nhân 3 bằng 6 . 3 nhân 4 bằng 12 . 
+4	3	bằng	3 bằng	4	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+5	2	bằng	2 bằng	4	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+6	4	bằng	4 bằng	3	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+7	6	.	6 .	4	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+8	5	bằng	5 bằng	3	2	2	False	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+9	1	bằng	1 cộng 1 bằng	3	0	4	True		
+10	1	2	1 cộng 1 bằng 2	3	2	5	True	0,1	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+11	:	Lớp	: Lớp	3	0	2	False		
+12	2	Bài	2 Bài	3	1	2	False	2	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+13	5	.	5 .	3	3	2	False	0,1,2	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+14	Toán	Lớp	Toán : Lớp	3	0	3	True		
+15	Toán	3	Toán : Lớp 3	3	3	4	True	0,1,2	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+16	hơn	số	hơn số	3	1	2	False	3	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+17	giúp	em	giúp em	3	3	2	False	0,3,4	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+18	Đây	là	Đây là	3	0	2	False		
+19	trong	chương	trong chương	3	0	2	False		
+20	trình	lớp	trình lớp	3	0	2	False		
+21	Việt	Nam	Việt Nam	6	1	2	False	4	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+22	Hà	Nội	Hà Nội	3	1	2	False	4	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+23	.	là	. Đây là	3	0	3	True		
+24	trong	lớp	trong chương trình lớp	3	3	4	True	0,3,4	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+25	.	phần	. Đây là phần	3	3	4	True	0,3,4	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+26	.	Nam	. Việt Nam	3	1	3	True	4	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+27	Địa	lý	Địa lý	3	2	2	False	4,5	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+28	Thủ	đô	Thủ đô	3	2	2	False	4,5	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+29	Em	hãy	Em hãy	3	0	2	False		
+30	đọc	kỹ	đọc kỹ	3	0	2	False		
+31	và	ghi	và ghi	3	0	2	False		
+32	nhớ	các	nhớ các	3	0	2	False		
+33	ý	chính	ý chính	3	0	2	False		
+34	của	bài	của bài	3	0	2	False		
+35	.	hãy	. Em hãy	3	0	3	True		
+36	đọc	ghi	đọc kỹ và ghi	3	0	4	True		
+37	nhớ	chính	nhớ các ý chính	3	0	4	True		
+38	.	ghi	. Em hãy đọc kỹ và ghi	3	0	7	True		
+39	nhớ	bài	nhớ các ý chính của bài	3	0	6	True		
+40	.	bài	. Em hãy đọc kỹ và ghi nhớ các ý chính của bài	3	3	13	True	2,3,6	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+41	Bác	Hồ	Bác Hồ	4	1	2	False	8	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+42	Lịch	sử	Lịch sử	3	2	2	False	8,9	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+43	sinh	năm	sinh năm	3	0	2	False		
+44	sinh	1890	sinh năm 1890	3	2	3	True	8,9	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+45	3	môn	3 môn	3	3	2	False	2,6,10	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+46	1890	Bài	1890 Bài	3	1	2	False	10	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+47	bảo	vệ	bảo vệ	3	2	2	False	8,10	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+48	1	môn	1 môn	3	3	2	False	3,7,11	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+49	biết	nguồn	biết nguồn	3	0	2	False		
+50	truyền	thống	truyền thống	3	3	2	False	8,9,11	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+51	anh	hùng	anh hùng	4	1	2	False	8	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+52	biết	cội	biết nguồn cội	3	2	3	True	8,11	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+53	vị	hùng	vị anh hùng	3	2	3	True	9,11	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 2 : Dân tộc Việt Nam có truyền thống yêu nước . Làng em có đình làng
+54	ngày	.	ngày .	3	1	2	False	12	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+55	con	người	con người	3	3	2	False	4,7,12	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+56	Khoa	học	Khoa học	3	2	2	False	12,13	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+57	Con	người	Con người	3	0	2	False		
+58	cần	ăn	cần ăn	3	0	2	False		
+59	uống	đầy	uống đầy	3	0	2	False		
+60	cơ	thể	cơ thể	4	2	2	False	12,13	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+61	giúp	ta	giúp ta	7	2	2	False	12,13	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+62	Con	ăn	Con người cần ăn	3	0	4	True		
+63	uống	đủ	uống đầy đủ	3	0	3	True		
+64	Con	đủ	Con người cần ăn uống đầy đủ	3	2	7	True	12,13	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+65	nước	.	nước .	3	2	2	False	9,14	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 2 : Dân tộc Việt Nam có truyền thống yêu nước . Làng em có đình làng
+66	đủ	Bài	đủ Bài	3	1	2	False	14	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 3 : Cây xanh cần nắng và nước . Rễ cây hút nước dưới đất . 
+67	Muông	thú	Muông thú	3	0	2	False		
+68	sống	trên	sống trên	3	0	2	False		
+69	Muông	trên	Muông thú sống trên	3	0	4	True		
+70	Muông	cạn	Muông thú sống trên cạn	3	2	5	True	15,16	Khoa học : Lớp 3 : Tiết 2 : Muông thú sống trên cạn Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con người 
+71	gia	đình	gia đình	3	1	2	False	17	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+72	Đạo	đức	Đạo đức	3	0	2	False		
+73	và	Xã	và Xã	3	0	2	False		
+74	Em	yêu	Em yêu	3	2	2	False	17,18	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+75	Đạo	Xã	Đạo đức và Xã	3	0	4	True		
+76	Đạo	hội	Đạo đức và Xã hội	3	2	5	True	17,18	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+77	trường	.	trường .	3	2	2	False	18,19	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 2 : Em tham gia lao động vệ sinh trường . Giữ trật tự trong lớp
+78	đồng	.	đồng .	3	0	2	False		
+79	cộng	.	cộng đồng .	3	3	3	True	9,17,20	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 2 : Dân tộc Việt Nam có truyền thống yêu nước . Làng em có đình làng
+80	lớn	.	lớn .	3	2	2	False	17,21	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+81	Ví	dụ	Ví dụ	5	1	2	False	21	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+82	.	dụ	. Ví dụ	3	0	3	True		
+83	.	mẫu	. Ví dụ mẫu	3	1	4	True	21	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+84	định	nghĩa	định nghĩa	3	0	2	False		
+85	:	Ai/Cái	: Ai/Cái	3	0	2	False		
+86	gì	là	gì là	3	0	2	False		
+87	định	Ai/Cái	định nghĩa : Ai/Cái	3	0	4	True		
+88	định	là	định nghĩa : Ai/Cái gì là	3	2	6	True	21,22	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+89	:	Câu	: Câu	3	3	2	False	21,22,23	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+90	:	Chủ	: Chủ	3	0	2	False		
+91	ngữ	+	ngữ +	3	0	2	False		
+92	đơn	Chủ	đơn : Chủ	3	0	3	True		
+93	ngữ	Động	ngữ + Động	3	0	3	True		
+94	đơn	Động	đơn : Chủ ngữ + Động	3	2	6	True	23,24	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+95	này	luyện	này luyện	3	0	2	False		
+96	mẫu	câu	mẫu câu	3	0	2	False		
+97	đọc	từng	đọc từng	3	0	2	False		
+98	ví	dụ	ví dụ	3	0	2	False		
+99	và	nhận	và nhận	3	0	2	False		
+100	ra	cấu	ra cấu	3	0	2	False		
+101	trúc	.	trúc .	3	2	2	False	23,25	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+102	Tiết	luyện	Tiết này luyện	3	0	3	True		
+103	mẫu	«Câu	mẫu câu «Câu	3	0	3	True		
+104	Em	từng	Em đọc từng	3	0	3	True		
+105	ví	nhận	ví dụ và nhận	3	0	4	True		
+106	:	luyện	: Tiết này luyện	3	0	4	True		
+107	.	từng	. Em đọc từng	3	0	4	True		
+108	ví	cấu	ví dụ và nhận ra cấu	3	0	6	True		
+109	1	luyện	1 : Tiết này luyện	3	0	5	True		
+110	.	cấu	. Em đọc từng ví dụ và nhận ra cấu	3	3	10	True	21,23,25	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+111	Bài	luyện	Bài 1 : Tiết này luyện	3	0	6	True		
+112	Bài	«Câu	Bài 1 : Tiết này luyện mẫu câu «Câu	3	3	9	True	21,23,25	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+113	:	Bé	: Bé	3	3	2	False	23,25,26	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+114	từ	Bài	từ Bài	3	2	2	False	24,27	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 2 : Ví dụ mẫu 1 : Bố đi làm .
+115	:	Mẹ	: Mẹ	3	3	2	False	23,26,27	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+116	:	Bố	: Bố	3	3	2	False	24,26,27	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 2 : Ví dụ mẫu 1 : Bố đi làm .
+117	rất	vui	rất vui	3	0	2	False		
+118	rất	.	rất vui .	3	0	3	True		
+119	rất	Ví	rất vui . Ví	3	0	4	True		
+120	rất	dụ	rất vui . Ví dụ	3	0	5	True		
+121	rất	mẫu	rất vui . Ví dụ mẫu	3	1	6	True	27	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : rất + tính từ» . Em 
+122	mô	tả	mô tả	3	0	2	False		
+123	rất	+	rất +	3	0	2	False		
+124	mô	:	mô tả :	3	0	3	True		
+125	rất	tính	rất + tính	3	0	3	True		
+126	mô	tính	mô tả : rất + tính	3	2	6	True	27,28	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : rất + tính từ» . Em 
+127	đỏ	.	đỏ .	3	1	2	False	29	Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» . Em đọc từng ví dụ v
+128	xanh	.	xanh .	3	2	2	False	21,29	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+129	từ»	.	từ» .	3	2	2	False	27,29	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : rất + tính từ» . Em 
+130	:	Lan	: Lan	3	3	2	False	25,27,30	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+131	có	lông	có lông	3	2	2	False	14,32	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 3 : Cây xanh cần nắng và nước . Rễ cây hút nước dưới đất . 
+132	Con	mèo	Con mèo	3	0	2	False		
+133	sở	hữu	sở hữu	3	0	2	False		
+134	:	mèo	: Con mèo	3	3	3	True	23,26,32	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+135	sở	:	sở hữu :	3	2	3	True	31,32	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+136	ngủ	.	ngủ .	3	0	2	False		
+137	ngủ	Ví	ngủ . Ví	3	0	3	True		
+138	ngủ	dụ	ngủ . Ví dụ	3	0	4	True		
+139	ngủ	mẫu	ngủ . Ví dụ mẫu	3	3	5	True	25,26,33	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+140	chạy	.	chạy .	3	3	2	False	23,26,34	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+141	đi	.	đi .	3	0	2	False		
+142	nấu	.	nấu .	3	3	2	False	26,33,35	Tiếng Việt : Lớp 3 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v
+143	đi	Ví	đi . Ví	3	0	3	True		
+144	đi	dụ	đi . Ví dụ	3	0	4	True		
+145	đi	mẫu	đi . Ví dụ mẫu	3	3	5	True	25,33,35	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+146	Em	học	Em học	3	3	2	False	11,23,37	Lịch sử : Lớp 3 : Tiết 2 : Nguyễn Huệ là vị anh hùng dân tộc Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống 
+147	:	Chó	: Chó	3	3	2	False	23,25,37	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+148	sủa	.	sủa .	3	3	2	False	23,25,39	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+149	:	Anh	: Anh	3	0	2	False		
+150	:	ấy	: Anh ấy	3	3	3	True	25,34,39	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+151	không	Bài	không Bài	3	2	2	False	41,42	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+152	:	nhưng	: nhưng	3	0	2	False		
+153	ghép	nhưng	ghép : nhưng	3	0	3	True		
+154	ghép	.	ghép : nhưng .	3	0	4	True		
+155	ghép	.	ghép : nhưng . .	3	0	5	True		
+156	ghép	.	ghép : nhưng . . .	3	2	6	True	41,42	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+157	«Câu	ghép	«Câu ghép	3	2	2	False	39,43	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+158	đọc	.	đọc .	3	2	2	False	39,43	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+159	:	Trời	: Trời	4	1	2	False	45	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+160	4	Trời	4 : Trời	3	0	3	True		
+161	mẫu	Trời	mẫu 4 : Trời	3	0	4	True		
+162	dụ	Trời	dụ mẫu 4 : Trời	3	0	5	True		
+163	Ví	Trời	Ví dụ mẫu 4 : Trời	3	0	6	True		
+164	.	Trời	. Ví dụ mẫu 4 : Trời	3	3	7	True	28,41,45	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n
+165	con	chó	con chó	3	3	2	False	39,43,47	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+166	ấy	viết	ấy viết	3	2	2	False	43,47	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+167	nghe	.	nghe .	3	3	2	False	13,40,48	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 2 : Tai giúp ta nghe . Mũi giúp ta ngửi . Lưỡi giúp ta nếm 
+168	giỏi	.	giỏi .	3	3	2	False	27,37,49	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : rất + tính từ» . Em 
+169	bạn	.	bạn .	3	3	2	False	18,20,50	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 2 : Em tham gia lao động vệ sinh trường . Giữ trật tự trong lớp
+170	đẹp	.	đẹp .	3	3	2	False	5,28,51	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 2 : Huế là cố đô . Nha Trang có biển đẹp . Làng em ở xã . Xã em 
+171	Em	là	Em là	3	2	2	False	49,51	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+172	:	User	: User	5	0	2	False		
+173	:	:	: User :	5	1	3	True	51	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+174	gì	Assistant	gì Assistant	5	0	2	False		
+175	gì	:	gì Assistant :	5	1	3	True	51	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+176	màu	:	màu gì Assistant :	3	1	4	True	52	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+177	vàng	.	vàng .	3	2	2	False	7,53	Địa lý : Lớp 3 : Tiết 2 : Việt Nam có 63 tỉnh thành Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+178	nấu	cơm	nấu cơm	3	0	2	False		
+179	làm	.	làm .	3	3	2	False	24,26,53	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 2 : Ví dụ mẫu 1 : Bố đi làm .
+180	nhanh	.	nhanh .	3	3	2	False	28,37,53	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n
+181	nấu	.	nấu cơm .	3	3	3	True	23,51,53	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+182	trong	văn	trong văn	3	0	2	False		
+183	Việt	văn	Việt trong văn	3	0	3	True		
+184	tiếng	văn	tiếng Việt trong văn	3	2	4	True	53,54	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+185	trách	nhiệm	trách nhiệm	3	3	2	False	17,20,55	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+186	cảnh	Bài	cảnh Bài	3	3	2	False	53,54,55	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+187	hội	.	hội .	3	3	2	False	19,20,57	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 3 : Trồng cây xanh quanh trường . Tuân thủ luật giao thông . Độ
+188	hôm	nay	hôm nay	3	3	2	False	51,54,60	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+189	điện	ảnh	điện ảnh	3	2	2	False	58,62	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 6 : Quang Huy , Mr Đàm làm phim tấn công điện ảnh . Liệ
+190	Đại	học	Đại học	4	1	2	False	62	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 10 : Nguyễn Hưng Theo Đời sống Plus/GĐVN . Phương Mai t
+191	.	học	. Đại học	3	1	3	True	62	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 10 : Nguyễn Hưng Theo Đời sống Plus/GĐVN . Phương Mai t
+192	8	.	8 .	3	3	2	False	0,61,64	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+193	sáng	.	sáng .	3	3	2	False	12,15,66	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+194	:	Xin	: Xin	3	2	2	False	51,67	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+195	trong	suốt	trong suốt	3	2	2	False	60,67	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 8 : Tuyển Việt Nam tập chống đá phạt . Giá vàng trong n
+196	7	.	7 .	3	3	2	False	0,55,68	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+197	có	thể	có thể	3	3	2	False	51,61,68	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+198	kỳ	lạ	kỳ lạ	3	3	2	False	61,67,68	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 9 : Những tục lệ sex kỳ lạ nhất thế giới . Không ai có 
+199	Quân	đội	Quân đội	3	3	2	False	60,62,69	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 8 : Tuyển Việt Nam tập chống đá phạt . Giá vàng trong n
+200	bác	sĩ	bác sĩ	3	3	2	False	20,54,71	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+201	này	.	này .	3	3	2	False	56,61,71	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 4 : Hình ảnh hung thủ qua camera an ninh . Sau khi gây 
+202	:	.	: .	3	2	2	False	64,73	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 12 : Nhấn F5 để cập nhật liên tục . . . Link down phần 
+203	thế	giới	thế giới	3	3	2	False	61,62,74	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 9 : Những tục lệ sex kỳ lạ nhất thế giới . Không ai có 
+204	tử	vong	tử vong	3	0	2	False		
+205	tử	.	tử vong .	3	2	3	True	55,75	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 3 : Cần quyết tâm và có người chịu trách nhiệm . Sinh v
+206	rất	nhiều	rất nhiều	3	3	2	False	65,73,76	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 13 : Thi thể này trôi dạt gần hiện trường tàu chìm . "C
+207	dân	.	dân .	3	2	2	False	68,77	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 16 : Sửa đổi luật phải bảo đảm quyền dân chủ . Trong đó
+208	tôi	.	tôi .	3	3	2	False	56,77,78	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 4 : Hình ảnh hung thủ qua camera an ninh . Sau khi gây 
+209	:	Hội	: Hội	3	0	2	False		
+210	gì	?	gì ?	4	3	2	False	51,68,79	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+211	:	thoại	: Hội thoại	3	3	3	True	51,52,79	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+212	thế	nào	thế nào	3	3	2	False	51,66,80	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+213	:	em	: em	3	3	2	False	53,79,80	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+214	thoại	hằng	thoại hằng	3	2	2	False	80,81	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 2 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . H
+215	ngày	Bài	ngày Bài	3	3	2	False	79,80,81	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 1 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . X
+216	đặt	câu	đặt câu	3	0	2	False		
+217	và	trả	và trả	3	0	2	False		
+218	lời	ngắn	lời ngắn	3	0	2	False		
+219	gọn	.	gọn .	3	0	2	False		
+220	luyện	câu	luyện đặt câu	3	0	3	True		
+221	hỏi	trả	hỏi và trả	3	0	3	True		
+222	lời	.	lời ngắn gọn .	3	0	4	True		
+223	luyện	trả	luyện đặt câu hỏi và trả	3	0	6	True		
+224	luyện	.	luyện đặt câu hỏi và trả lời ngắn gọn .	3	3	10	True	79,80,81	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 1 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . X
+225	trắng	.	trắng .	3	3	2	False	29,52,82	Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» . Em đọc từng ví dụ v
+226	Bạn	Lan	Bạn Lan	3	3	2	False	52,54,85	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+227	Em	thích	Em thích	4	1	2	False	52	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+228	Em	màu	Em thích màu	3	2	3	True	52,86	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+229	Con	chó	Con chó	4	3	2	False	28,53,89	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n
+230	có	bút	có bút	3	0	2	False		
+231	không	?	không ?	3	3	2	False	80,89,90	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 2 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . H
+232	Em	bút	Em có bút	3	2	3	True	31,90	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+233	ở	đâu	ở đâu	3	3	2	False	52,85,97	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+234	và	Bố	và Bố	3	2	2	False	39,99	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+235	Việt	.	Việt .	3	0	2	False		
+236	tiếng	.	tiếng Việt .	3	3	3	True	51,79,104	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+237	ấy	là	ấy là	3	2	2	False	54,106	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 2 : Trời hôm nay đẹp . Mẹ tôi là bác sĩ . Chú ấy là kỹ 
+238	chơi	với	chơi với	3	2	2	False	20,118	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+239	Hôm	nay	Hôm nay	3	3	2	False	51,80,121	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 1 : Tiết này luyện mẫu câu «Hội thoại» . Em đọc từng ví dụ và nhận ra cấu t
+240	củng	cố	củng cố	3	0	2	False		
+241	tư	duy	tư duy	3	0	2	False		
+242	,	hình	, hình	3	0	2	False		
+243	và	đo	và đo	3	0	2	False		
+244	lường	.	lường .	3	1	2	False	129	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đ
+245	cạnh	.	cạnh .	3	3	2	False	2,3,129	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+246	hai	lần	hai lần	3	2	2	False	12,129	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+247	củng	duy	củng cố tư duy	3	0	4	True		
+248	học	hình	học , hình	3	0	3	True		
+249	học	đo	học và đo	3	0	3	True		
+250	củng	số	củng cố tư duy số	3	0	5	True		
+251	học	đo	học , hình học và đo	3	0	6	True		
+252	củng	đo	củng cố tư duy số học , hình học và đo	3	3	11	True	0,3,129	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đây là 
+253	vuông	bằng	vuông bằng	3	3	2	False	3,129,130	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+254	125	cộng	125 cộng	3	0	2	False		
+255	375	bằng	375 bằng	3	0	2	False		
+256	125	bằng	125 cộng 375 bằng	3	0	4	True		
+257	125	500	125 cộng 375 bằng 500	3	2	5	True	129,130	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đ
+258	Toán	.	Toán .	3	3	2	False	2,3,131	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+259	500	Bài	500 Bài	3	1	2	False	131	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút
+260	phần	trăm	phần trăm	3	0	2	False		
+261	chia	hết	chia hết	4	1	2	False	131	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút
+262	phần	.	phần trăm .	3	2	3	True	129,131	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đ
+263	chia	cho	chia hết cho	3	2	3	True	130,131	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+264	4	.	4 .	3	3	2	False	1,129,132	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : 4 cộng 5 bằng 9 . 7 trừ 1 bằng 6 . 2 nhân 3 bằng 6 . 3 nhân 4 bằng 12 . 
+265	hiểu	đất	hiểu đất	3	0	2	False		
+266	,	địa	, địa	3	0	2	False		
+267	lúa	.	lúa .	3	3	2	False	5,19,133	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 2 : Huế là cố đô . Nha Trang có biển đẹp . Làng em ở xã . Xã em 
+268	Đồng	bằng	Đồng bằng	3	0	2	False		
+269	động	.	động .	3	3	2	False	13,77,133	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 2 : Tai giúp ta nghe . Mũi giúp ta ngửi . Lưỡi giúp ta nếm 
+270	hiểu	nước	hiểu đất nước	3	0	3	True		
+271	,	hình	, địa hình	3	0	3	True		
+272	.	bằng	. Đồng bằng	3	2	3	True	6,133	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+273	hiểu	hình	hiểu đất nước , địa hình	3	0	6	True		
+274	hiểu	và	hiểu đất nước , địa hình và	3	3	7	True	4,7,133	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+275	biển	.	biển .	3	3	2	False	4,22,134	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+276	Tổ	quốc	Tổ quốc	3	3	2	False	8,20,134	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+277	hơn	.	hơn .	3	3	2	False	20,60,134	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+278	giáp	Trung	giáp Trung	3	0	2	False		
+279	Quốc	phía	Quốc phía	3	0	2	False		
+280	Nam	Trung	Nam giáp Trung	3	0	3	True		
+281	Quốc	Bắc	Quốc phía Bắc	3	0	3	True		
+282	Việt	Trung	Việt Nam giáp Trung	3	0	4	True		
+283	Việt	Bắc	Việt Nam giáp Trung Quốc phía Bắc	3	2	7	True	133,134	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con 
+284	Bắc	Bài	Bắc Bài	3	1	2	False	135	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 3 : Thành phố đông dân hơn nông thôn . Giao thông đường 
+285	Thành	phố	Thành phố	3	3	2	False	4,135,136	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+286	Cửu	Long	Cửu Long	3	3	2	False	4,133,136	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+287	La	bàn	La bàn	3	0	2	False		
+288	Bắc	.	Bắc .	3	2	2	False	6,136	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+289	mát	.	mát .	3	3	2	False	7,15,136	Địa lý : Lớp 3 : Tiết 2 : Việt Nam có 63 tỉnh thành Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+290	đồng	bằng	đồng bằng	3	2	2	False	134,136	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 2 : Lung Cú là cột cờ Tổ quốc . Hoàng Sa thuộc chủ quyền
+291	La	chỉ	La bàn chỉ	3	2	3	True	6,136	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+292	và	các	và các	3	0	2	False		
+293	sự	kiện	sự kiện	3	0	2	False		
+294	quan	trọng	quan trọng	3	0	2	False		
+295	lập	năm	lập năm	3	2	2	False	8,137	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+296	Thăng	Long	Thăng Long	4	2	2	False	10,137	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+297	và	kiện	và các sự kiện	3	0	4	True		
+298	quan	.	quan trọng .	3	0	3	True		
+299	và	.	và các sự kiện quan trọng .	3	0	7	True		
+300	và	Đây	và các sự kiện quan trọng . Đây	3	0	8	True		
+301	và	là	và các sự kiện quan trọng . Đây là	3	0	9	True		
+302	và	phần	và các sự kiện quan trọng . Đây là phần	3	3	10	True	8,11,137	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+303	ở	miền	ở miền	3	2	2	False	4,138	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+304	Nhà	Lý	Nhà Lý	3	0	2	False		
+305	Nhà	thành	Nhà Lý thành	3	2	3	True	137,138	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các s
+306	Chí	Minh	Chí Minh	3	0	2	False		
+307	1009	Bài	1009 Bài	3	3	2	False	137,138,139	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các s
+308	Điện	Biên	Điện Biên	3	0	2	False		
+309	Hồ	Minh	Hồ Chí Minh	3	3	3	True	4,136,139	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+310	Điện	Phủ	Điện Biên Phủ	3	2	3	True	138,139	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 2 : Chăm Pa có tháp Chăm ở miền Trung . Oc Eo là di chỉ văn hóa
+311	dân	tộc	dân tộc	3	2	2	False	11,140	Lịch sử : Lớp 3 : Tiết 2 : Nguyễn Huệ là vị anh hùng dân tộc Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống 
+312	lịch	sử	lịch sử	3	3	2	False	11,139,140	Lịch sử : Lớp 3 : Tiết 2 : Nguyễn Huệ là vị anh hùng dân tộc Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống 
+313	có	ba	có ba	3	2	2	False	2,141	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+314	khám	phá	khám phá	3	0	2	False		
+315	tự	nhiên	tự nhiên	3	0	2	False		
+316	em	phá	em khám phá	3	0	3	True		
+317	tự	và	tự nhiên và	3	0	3	True		
+318	giúp	phá	giúp em khám phá	3	0	4	True		
+319	giúp	và	giúp em khám phá tự nhiên và	3	3	7	True	12,15,141	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+320	tốt	cho	tốt cho	3	2	2	False	12,142	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+321	lại	.	lại .	3	3	2	False	71,127,142	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 19 : Anh chỉ trích cô nặng nề trên mặt báo . Nguyễn Hoà
+322	:	rắn	: rắn	3	0	2	False		
+323	lỏng	khí	lỏng khí	3	0	2	False		
+324	thể	rắn	thể : rắn	3	0	3	True		
+325	thể	khí	thể : rắn lỏng khí	3	2	5	True	141,142	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con 
+326	bệnh	.	bệnh .	3	2	2	False	19,143	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 3 : Trồng cây xanh quanh trường . Tuân thủ luật giao thông . Độ
+327	:	Nước	: Nước	3	0	2	False		
+328	1	Nước	1 : Nước	3	0	3	True		
+329	Tiết	Nước	Tiết 1 : Nước	3	0	4	True		
+330	:	Nước	: Tiết 1 : Nước	3	0	5	True		
+331	4	Nước	4 : Tiết 1 : Nước	3	0	6	True		
+332	Lớp	Nước	Lớp 4 : Tiết 1 : Nước	3	0	7	True		
+333	:	Nước	: Lớp 4 : Tiết 1 : Nước	3	0	8	True		
+334	học	Nước	học : Lớp 4 : Tiết 1 : Nước	3	0	9	True		
+335	Khoa	Nước	Khoa học : Lớp 4 : Tiết 1 : Nước	3	3	10	True	141,142,143	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con 
+336	sức	khỏe	sức khỏe	3	2	2	False	12,144	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con n
+337	điện	.	điện .	3	3	2	False	65,141,144	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 13 : Thi thể này trôi dạt gần hiện trường tàu chìm . "C
+338	và	cộng	và cộng	3	1	2	False	145	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách 
+339	có	quyền	có quyền	4	3	2	False	60,61,145	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 8 : Tuyển Việt Nam tập chống đá phạt . Giá vàng trong n
+340	Trẻ	em	Trẻ em	4	0	2	False		
+341	Hiến	pháp	Hiến pháp	3	2	2	False	68,145	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 16 : Sửa đổi luật phải bảo đảm quyền dân chủ . Trong đó
+342	.	em	. Trẻ em	4	3	3	True	61,65,145	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 9 : Những tục lệ sex kỳ lạ nhất thế giới . Không ai có 
+343	cơ	bản	cơ bản	3	0	2	False		
+344	luật	bản	luật cơ bản	3	0	3	True		
+345	là	bản	là luật cơ bản	3	0	4	True		
+346	là	nhất	là luật cơ bản nhất	3	2	5	True	145,146	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách 
+347	nhất	.	nhất .	3	2	2	False	131,147	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút
+348	nhất	Bài	nhất Bài	3	1	2	False	147	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 3 : Hội Liên hiệp Phụ nữ chăm lo phụ nữ . Công đo
+349	tốt	.	tốt .	4	3	2	False	18,141,148	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 2 : Em tham gia lao động vệ sinh trường . Giữ trật tự trong lớp
+350	Sông	Hồng	Sông Hồng	3	3	2	False	4,21,149	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+351	ngôi	sao	ngôi sao	3	3	2	False	7,21,149	Địa lý : Lớp 3 : Tiết 2 : Việt Nam có 63 tỉnh thành Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Vi
+352	Trái	đất	Trái đất	3	3	2	False	15,21,149	Khoa học : Lớp 3 : Tiết 2 : Muông thú sống trên cạn Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con người 
+353	Mặt	trời	Mặt trời	3	3	2	False	15,21,149	Khoa học : Lớp 3 : Tiết 2 : Muông thú sống trên cạn Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con người 
+354	gì	Bài	gì Bài	3	2	2	False	22,149	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 2 : Ví dụ mẫu 1 : Cá heo là động vật biển .
+355	không»	.	không» .	3	2	2	False	41,153	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+356	không	học	không học	3	0	2	False		
+357	không	.	không học .	3	0	3	True		
+358	không	Ví	không học . Ví	3	0	4	True		
+359	không	dụ	không học . Ví dụ	3	0	5	True		
+360	không	mẫu	không học . Ví dụ mẫu	3	3	6	True	25,41,153	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+361	tiếp	diễn	tiếp diễn	4	0	2	False		
+362	tiếp	:	tiếp diễn :	4	2	3	True	26,154	Tiếng Việt : Lớp 3 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v
+363	rất	ngoan	rất ngoan	3	0	2	False		
+364	rất	.	rất ngoan .	3	0	3	True		
+365	rất	Ví	rất ngoan . Ví	3	0	4	True		
+366	rất	dụ	rất ngoan . Ví dụ	3	0	5	True		
+367	rất	mẫu	rất ngoan . Ví dụ mẫu	3	3	6	True	27,28,155	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả : rất + tính từ» . Em 
+368	ngọt	.	ngọt .	3	2	2	False	28,156	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n
+369	:	Cây	: Cây	3	3	2	False	14,28,156	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 3 : Cây xanh cần nắng và nước . Rễ cây hút nước dưới đất . 
+370	hay	.	hay .	3	2	2	False	37,156	Tiếng Việt : Lớp 3 : Tiết 11 : Câu bổ ngữ Bài 1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu
+371	con	mèo	con mèo	3	3	2	False	29,123,157	Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» . Em đọc từng ví dụ v
+372	ở	nhà	ở nhà	3	0	2	False		
+373	Bé	nhà	Bé ở nhà	3	0	3	True		
+374	Bé	.	Bé ở nhà .	3	3	4	True	30,111,158	Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấ
+375	có	Bài	có Bài	3	3	2	False	31,32,159	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+376	hoa	.	hoa .	3	3	2	False	31,110,159	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+377	:	Tương	: Tương	3	0	2	False		
+378	:	sẽ	: sẽ	3	0	2	False		
+379	9	Tương	9 : Tương	3	0	3	True		
+380	lai	sẽ	lai : sẽ	3	0	3	True		
+381	Tiết	Tương	Tiết 9 : Tương	3	0	4	True		
+382	lai	Bài	lai : sẽ Bài	3	0	4	True		
+383	:	Tương	: Tiết 9 : Tương	3	0	5	True		
+384	:	Bài	: Tiết 9 : Tương lai : sẽ Bài	3	3	9	True	33,34,161	Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận
+385	:	Quá	: Quá	3	0	2	False		
+386	:	đã	: đã	3	0	2	False		
+387	10	Quá	10 : Quá	3	0	3	True		
+388	khứ	đã	khứ : đã	3	0	3	True		
+389	Tiết	Quá	Tiết 10 : Quá	3	0	4	True		
+390	khứ	Bài	khứ : đã Bài	3	0	4	True		
+391	:	Quá	: Tiết 10 : Quá	3	0	5	True		
+392	:	Bài	: Tiết 10 : Quá khứ : đã Bài	3	3	9	True	35,36,163	Tiếng Việt : Lớp 3 : Tiết 10 : Quá khứ : đã Bài 1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra
+393	ngữ	Bài	ngữ Bài	3	0	2	False		
+394	to	.	to .	3	3	2	False	37,54,165	Tiếng Việt : Lớp 3 : Tiết 11 : Câu bổ ngữ Bài 1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu
+395	bổ	Bài	bổ ngữ Bài	3	0	3	True		
+396	Câu	Bài	Câu bổ ngữ Bài	3	0	4	True		
+397	:	Bài	: Câu bổ ngữ Bài	3	0	5	True		
+398	11	Bài	11 : Câu bổ ngữ Bài	3	0	6	True		
+399	Tiết	Bài	Tiết 11 : Câu bổ ngữ Bài	3	0	7	True		
+400	:	Bài	: Tiết 11 : Câu bổ ngữ Bài	3	3	8	True	37,38,165	Tiếng Việt : Lớp 3 : Tiết 11 : Câu bổ ngữ Bài 1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu
+401	và	Bài	và Bài	3	0	2	False		
+402	và	chị	và chị	3	3	2	False	39,49,167	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+403	:	Bài	: và Bài	3	0	3	True		
+404	ghép	Bài	ghép : và Bài	3	0	4	True		
+405	Câu	Bài	Câu ghép : và Bài	3	0	5	True		
+406	:	Bài	: Câu ghép : và Bài	3	0	6	True		
+407	12	Bài	12 : Câu ghép : và Bài	3	0	7	True		
+408	Tiết	Bài	Tiết 12 : Câu ghép : và Bài	3	0	8	True		
+409	:	Bài	: Tiết 12 : Câu ghép : và Bài	3	3	9	True	39,40,167	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+410	cô	giáo	cô giáo	3	3	2	False	40,73,168	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 2 : Ví dụ mẫu 1 : Chúng em hát và cô giáo nghe .
+411	muốn	.	muốn .	3	3	2	False	41,69,169	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+412	:	rồi	: rồi	3	0	2	False		
+413	ghép	rồi	ghép : rồi	3	0	3	True		
+414	Câu	rồi	Câu ghép : rồi	3	0	4	True		
+415	:	rồi	: Câu ghép : rồi	3	0	5	True		
+416	14	rồi	14 : Câu ghép : rồi	3	0	6	True		
+417	Tiết	rồi	Tiết 14 : Câu ghép : rồi	3	0	7	True		
+418	:	rồi	: Tiết 14 : Câu ghép : rồi	3	0	8	True		
+419	:	Bài	: Tiết 14 : Câu ghép : rồi Bài	3	3	9	True	43,44,171	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+420	mẹ	dỗ	mẹ dỗ	3	0	2	False		
+421	mẹ	.	mẹ dỗ .	3	3	3	True	44,45,172	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 2 : Ví dụ mẫu 1 : Bé khóc rồi mẹ dỗ .
+422	:	nên	: nên	3	0	2	False		
+423	ghép	nên	ghép : nên	3	0	3	True		
+424	Câu	nên	Câu ghép : nên	3	0	4	True		
+425	:	nên	: Câu ghép : nên	3	0	5	True		
+426	15	nên	15 : Câu ghép : nên	3	0	6	True		
+427	Tiết	nên	Tiết 15 : Câu ghép : nên	3	0	7	True		
+428	:	nên	: Tiết 15 : Câu ghép : nên	3	0	8	True		
+429	:	Bài	: Tiết 15 : Câu ghép : nên Bài	3	3	9	True	45,46,173	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+430	:	hoặc	: hoặc	3	0	2	False		
+431	ghép	hoặc	ghép : hoặc	3	0	3	True		
+432	Câu	hoặc	Câu ghép : hoặc	3	0	4	True		
+433	:	hoặc	: Câu ghép : hoặc	3	0	5	True		
+434	16	hoặc	16 : Câu ghép : hoặc	3	0	6	True		
+435	Tiết	hoặc	Tiết 16 : Câu ghép : hoặc	3	0	7	True		
+436	:	hoặc	: Tiết 16 : Câu ghép : hoặc	3	0	8	True		
+437	:	Bài	: Tiết 16 : Câu ghép : hoặc Bài	3	3	9	True	47,48,175	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+438	kép	Bài	kép Bài	3	0	2	False		
+439	nghĩa	Bài	nghĩa kép Bài	3	0	3	True		
+440	định	Bài	định nghĩa kép Bài	3	0	4	True		
+441	ghép	Bài	ghép định nghĩa kép Bài	3	0	5	True		
+442	Câu	Bài	Câu ghép định nghĩa kép Bài	3	0	6	True		
+443	:	Bài	: Câu ghép định nghĩa kép Bài	3	0	7	True		
+444	17	Bài	17 : Câu ghép định nghĩa kép Bài	3	0	8	True		
+445	Tiết	Bài	Tiết 17 : Câu ghép định nghĩa kép Bài	3	0	9	True		
+446	:	Bài	: Tiết 17 : Câu ghép định nghĩa kép Bài	3	3	10	True	49,50,177	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+447	Em	cao	Em cao	3	2	2	False	101,179	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 23 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+448	:	Bài	: Bài	3	3	2	False	28,156,180	Tiếng Việt : Lớp 3 : Tiết 5 : Câu mô tả : rất + tính từ Bài 2 : Ví dụ mẫu 1 : Bé rất ngoan . Ví dụ mẫu 2 : Con chó rất n
+449	:	Mèo	: Mèo	3	3	2	False	42,170,180	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 2 : Ví dụ mẫu 1 : Mèo chạy nhưng chó không chạy .
+450	:	Chúng	: Chúng	3	0	2	False		
+451	nghỉ	.	nghỉ .	3	3	2	False	45,173,182	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+452	:	em	: Chúng em	3	3	3	True	40,168,182	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 2 : Ví dụ mẫu 1 : Chúng em hát và cô giáo nghe .
+453	:	Khi	: Khi	5	1	2	False	183	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+454	cảm	nhận	cảm nhận	3	3	2	False	13,53,185	Khoa học : Lớp 3 : Tiết 1 : Con người cần ăn uống đầy đủ Bài 2 : Tai giúp ta nghe . Mũi giúp ta ngửi . Lưỡi giúp ta nếm 
+455	khóc	.	khóc .	3	3	2	False	23,151,185	Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn : Chủ ngữ + Động từ Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» .
+456	sinh	.	sinh .	3	0	2	False		
+457	anh	ta	anh ta	3	3	2	False	77,78,185	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 25 : Đừng tạo thêm bức xúc cho dân . Không được bỏ việc
+458	học	.	học sinh .	3	3	3	True	53,106,185	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+459	không	ăn	không ăn	3	0	2	False		
+460	không	.	không ăn .	3	3	3	True	25,153,186	Tiếng Việt : Lớp 3 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+461	Em	đang	Em đang	3	0	2	False		
+462	Em	học	Em đang học	3	0	3	True		
+463	Em	.	Em đang học .	3	3	4	True	26,154,187	Tiếng Việt : Lớp 3 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v
+464	cái	áo	cái áo	3	3	2	False	29,157,188	Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» . Em đọc từng ví dụ v
+465	ở	bếp	ở bếp	3	0	2	False		
+466	ở	công	ở công	3	0	2	False		
+467	ty	.	ty .	3	0	2	False		
+468	ở	thư	ở thư	3	0	2	False		
+469	viện	.	viện .	3	0	2	False		
+470	có	gấu	có gấu	3	0	2	False		
+471	bông	.	bông .	3	0	2	False		
+472	có	sách	có sách	3	0	2	False		
+473	có	xe	có xe	3	0	2	False		
+474	Mẹ	bếp	Mẹ ở bếp	3	0	3	True		
+475	Bố	công	Bố ở công	3	0	3	True		
+476	ở	.	ở thư viện .	3	3	4	True	30,158,189	Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấ
+477	Bé	gấu	Bé có gấu	3	0	3	True		
+478	Lan	sách	Lan có sách	3	0	3	True		
+479	Bố	xe	Bố có xe	3	0	3	True		
+480	:	bếp	: Mẹ ở bếp	3	0	4	True		
+481	Bố	.	Bố ở công ty .	3	3	5	True	30,158,189	Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấ
+482	Bé	.	Bé có gấu bông .	3	3	5	True	31,159,189	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+483	Lan	.	Lan có sách .	3	3	4	True	31,159,189	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+484	Bố	.	Bố có xe .	3	3	4	True	31,159,189	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+485	:	.	: Mẹ ở bếp .	3	3	5	True	30,158,189	Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấ
+486	mượt	.	mượt .	3	3	2	False	32,160,190	Tiếng Việt : Lớp 3 : Tiết 8 : Câu sở hữu : có Bài 2 : Ví dụ mẫu 1 : Con mèo có lông mượt .
+487	Em	sẽ	Em sẽ	3	3	2	False	33,161,190	Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận
+488	về	.	về .	3	0	2	False		
+489	ấy	sẽ	ấy sẽ	3	2	2	False	162,190	Tiếng Việt : Lớp 4 : Tiết 9 : Tương lai : sẽ Bài 2 : Ví dụ mẫu 1 : Anh ấy sẽ chạy .
+490	Em	đã	Em đã	3	0	2	False		
+491	sẽ	.	sẽ về .	3	0	3	True		
+492	Em	học	Em đã học	3	0	3	True		
+493	Bố	.	Bố sẽ về .	3	3	4	True	33,161,190	Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận
+494	Em	.	Em đã học .	3	3	4	True	35,163,190	Tiếng Việt : Lớp 3 : Tiết 10 : Quá khứ : đã Bài 1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra
+495	nấu	ngon	nấu ngon	3	0	2	False		
+496	và	Bé	và Bé	3	0	2	False		
+497	và	em	và em	3	0	2	False		
+498	Mẹ	ngon	Mẹ nấu ngon	3	0	3	True		
+499	học	Bé	học và Bé	3	0	3	True		
+500	chạy	em	chạy và em	3	0	3	True		
+501	Mẹ	.	Mẹ nấu ngon .	3	3	4	True	38,166,192	Tiếng Việt : Lớp 3 : Tiết 11 : Câu bổ ngữ Bài 2 : Ví dụ mẫu 1 : Mẹ nấu ngon .
+502	Em	Bé	Em học và Bé	3	0	4	True		
+503	Lan	em	Lan chạy và em	3	0	4	True		
+504	Em	ngủ	Em học và Bé ngủ	3	0	5	True		
+505	Lan	đi	Lan chạy và em đi	3	0	5	True		
+506	Em	.	Em học và Bé ngủ .	3	3	6	True	39,167,192	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+507	Lan	.	Lan chạy và em đi .	3	3	6	True	39,167,192	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+508	đi	nhưng	đi nhưng	3	0	2	False		
+509	nấu	nhưng	nấu nhưng	3	0	2	False		
+510	mưa	nhưng	mưa nhưng	3	0	2	False		
+511	muốn	nhưng	muốn nhưng	3	0	2	False		
+512	chạy	nhưng	chạy nhưng	3	0	2	False		
+513	Em	nhưng	Em đi nhưng	3	0	3	True		
+514	Mẹ	nhưng	Mẹ nấu nhưng	3	0	3	True		
+515	mưa	Em	mưa nhưng Em	3	0	3	True		
+516	Em	nhưng	Em muốn nhưng	3	0	3	True		
+517	chạy	chó	chạy nhưng chó	3	0	3	True		
+518	Em	Bé	Em đi nhưng Bé	3	0	4	True		
+519	Mẹ	Bố	Mẹ nấu nhưng Bố	3	0	4	True		
+520	mưa	không	mưa nhưng Em không	3	0	4	True		
+521	Em	Lan	Em muốn nhưng Lan	3	0	4	True		
+522	chạy	không	chạy nhưng chó không	3	0	4	True		
+523	Em	không	Em đi nhưng Bé không	3	0	5	True		
+524	Mẹ	không	Mẹ nấu nhưng Bố không	3	0	5	True		
+525	mưa	đi	mưa nhưng Em không đi	3	0	5	True		
+526	Em	không	Em muốn nhưng Lan không	3	3	5	True	41,169,193	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+527	chạy	chạy	chạy nhưng chó không chạy	3	0	5	True		
+528	Em	đi	Em đi nhưng Bé không đi	3	0	6	True		
+529	Mẹ	nấu	Mẹ nấu nhưng Bố không nấu	3	3	6	True	41,169,193	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+530	mưa	.	mưa nhưng Em không đi .	3	3	6	True	41,169,193	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+531	chạy	.	chạy nhưng chó không chạy .	3	3	6	True	42,170,193	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 2 : Ví dụ mẫu 1 : Mèo chạy nhưng chó không chạy .
+532	Em	.	Em đi nhưng Bé không đi .	3	3	7	True	41,169,193	Tiếng Việt : Lớp 3 : Tiết 13 : Câu ghép : nhưng . . . không Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nhưng . . . không
+533	nấu	rồi	nấu rồi	3	0	2	False		
+534	chạy	rồi	chạy rồi	3	0	2	False		
+535	ngủ	rồi	ngủ rồi	3	0	2	False		
+536	thức	.	thức .	3	3	2	False	43,171,194	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+537	khóc	rồi	khóc rồi	3	0	2	False		
+538	mưa	nên	mưa nên	3	0	2	False		
+539	Em	mệt	Em mệt	3	0	2	False		
+540	đói	nên	đói nên	3	0	2	False		
+541	Mẹ	rồi	Mẹ nấu rồi	3	0	3	True		
+542	Lan	rồi	Lan chạy rồi	3	0	3	True		
+543	mèo	rồi	mèo ngủ rồi	3	0	3	True		
+544	Bé	rồi	Bé khóc rồi	3	3	3	True	44,172,194	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 2 : Ví dụ mẫu 1 : Bé khóc rồi mẹ dỗ .
+545	mưa	Bé	mưa nên Bé	3	0	3	True		
+546	Em	nên	Em mệt nên	3	0	3	True		
+547	Lan	nên	Lan đói nên	3	0	3	True		
+548	:	rồi	: Mẹ nấu rồi	3	0	4	True		
+549	Lan	em	Lan chạy rồi em	3	0	4	True		
+550	Con	rồi	Con mèo ngủ rồi	3	3	4	True	43,171,194	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+551	mưa	ngủ	mưa nên Bé ngủ	3	0	4	True		
+552	Em	Lan	Em mệt nên Lan	3	3	4	True	45,173,194	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+553	Lan	em	Lan đói nên em	3	0	4	True		
+554	:	Bố	: Mẹ nấu rồi Bố	3	0	5	True		
+555	Lan	đi	Lan chạy rồi em đi	3	0	5	True		
+556	mưa	.	mưa nên Bé ngủ .	3	3	5	True	45,173,194	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+557	Lan	ăn	Lan đói nên em ăn	3	3	5	True	45,173,194	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+558	:	ăn	: Mẹ nấu rồi Bố ăn	3	0	6	True		
+559	Lan	.	Lan chạy rồi em đi .	3	3	6	True	43,171,194	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+560	:	.	: Mẹ nấu rồi Bố ăn .	3	3	7	True	43,171,194	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+561	tối	nên	tối nên	3	0	2	False		
+562	khóc	nên	khóc nên	3	0	2	False		
+563	sủa	nên	sủa nên	3	0	2	False		
+564	nấu	hoặc	nấu hoặc	3	0	2	False		
+565	chạy	hoặc	chạy hoặc	3	0	2	False		
+566	uống	.	uống .	3	3	2	False	47,175,195	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+567	ấy	vẽ	ấy vẽ	3	0	2	False		
+568	tối	mẹ	tối nên mẹ	3	0	3	True		
+569	Bé	nên	Bé khóc nên	3	3	3	True	45,173,195	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+570	Chó	nên	Chó sủa nên	3	0	3	True		
+571	Mẹ	hoặc	Mẹ nấu hoặc	3	0	3	True		
+572	Lan	hoặc	Lan chạy hoặc	3	0	3	True		
+573	chị	vẽ	chị ấy vẽ	3	0	3	True		
+574	tối	đi	tối nên mẹ đi	3	0	4	True		
+575	Chó	mèo	Chó sủa nên mèo	3	0	4	True		
+576	Mẹ	Bố	Mẹ nấu hoặc Bố	3	0	4	True		
+577	Lan	em	Lan chạy hoặc em	3	0	4	True		
+578	hoặc	vẽ	hoặc chị ấy vẽ	3	0	4	True		
+579	tối	.	tối nên mẹ đi .	3	3	5	True	45,173,195	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+580	Chó	chạy	Chó sủa nên mèo chạy	3	0	5	True		
+581	Mẹ	đọc	Mẹ nấu hoặc Bố đọc	3	0	5	True		
+582	Lan	đi	Lan chạy hoặc em đi	3	0	5	True		
+583	hoặc	.	hoặc chị ấy vẽ .	3	3	5	True	47,175,195	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+584	Chó	.	Chó sủa nên mèo chạy .	3	3	6	True	46,174,195	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 2 : Ví dụ mẫu 1 : Chó sủa nên mèo chạy .
+585	Mẹ	.	Mẹ nấu hoặc Bố đọc .	3	3	6	True	47,175,195	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+586	Lan	.	Lan chạy hoặc em đi .	3	3	6	True	47,175,195	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+587	hát	hoặc	hát hoặc	3	0	2	False		
+588	mẹ	là	mẹ là	3	0	2	False		
+589	và	bố	và bố	3	0	2	False		
+590	bác	.	bác .	3	0	2	False		
+591	và	Lan	và Lan	3	0	2	False		
+592	anh	là	anh là	3	0	2	False		
+593	y	.	y .	3	0	2	False		
+594	và	thước	và thước	3	0	2	False		
+595	chăm	.	chăm .	3	3	2	False	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+596	và	chó	và chó	3	0	2	False		
+597	Bé	hoặc	Bé hát hoặc	3	0	3	True		
+598	mẹ	giáo	mẹ là giáo	3	0	3	True		
+599	và	là	và bố là	3	0	3	True		
+600	bạn	Lan	bạn và Lan	3	0	3	True		
+601	anh	thợ	anh là thợ	3	3	3	True	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+602	là	.	là y .	3	3	3	True	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+603	đỏ	thước	đỏ và thước	3	0	3	True		
+604	thú	chó	thú và chó	3	0	3	True		
+605	:	hoặc	: Bé hát hoặc	3	0	4	True		
+606	mẹ	là	mẹ là giáo và bố là	3	0	6	True		
+607	bạn	là	bạn và Lan là	3	3	4	True	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+608	là	thước	là đỏ và thước	3	0	4	True		
+609	là	chó	là thú và chó	3	0	4	True		
+610	:	mẹ	: Bé hát hoặc mẹ	3	3	5	True	48,176,196	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 2 : Ví dụ mẫu 1 : Bé hát hoặc mẹ nghe .
+611	mẹ	.	mẹ là giáo và bố là bác .	3	3	8	True	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+612	bút	thước	bút là đỏ và thước	3	0	5	True		
+613	mèo	chó	mèo là thú và chó	3	0	5	True		
+614	bút	là	bút là đỏ và thước là	3	0	6	True		
+615	mèo	là	mèo là thú và chó là	3	3	6	True	50,178,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 2 : Ví dụ mẫu 1 : mèo là thú và chó là bạn .
+616	bút	xanh	bút là đỏ và thước là xanh	3	0	7	True		
+617	bút	.	bút là đỏ và thước là xanh .	3	3	8	True	49,177,196	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+618	hôm	qua	hôm qua	3	0	2	False		
+619	hôm	.	hôm qua .	3	3	3	True	67,179,197	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 15 : Xin cảm ơn những chia sẻ của thầy ! Khúc quân hành
+620	Em	bị	Em bị	4	2	2	False	181,198	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+621	Em	được	Em được	3	2	2	False	182,198	Tiếng Việt : Lớp 4 : Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví d
+622	chạy	để	chạy để	3	0	2	False		
+623	chạy	khỏe	chạy để khỏe	3	0	3	True		
+624	chạy	.	chạy để khỏe .	3	2	4	True	184,200	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+625	nhau	.	nhau .	3	3	2	False	2,17,202	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+626	nguyên	tố	nguyên tố	4	2	2	False	131,202	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 3 : Biểu đồ hình tròn thể hiện phần trăm . 3 giờ 30 phút bằng 210 phút
+627	Phân	số	Phân số	4	2	2	False	132,202	Toán : Lớp 4 : Tiết 2 : Phân số 1/2 nhỏ hơn phân số 3/4 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo
+628	chữ	nhật	chữ nhật	3	3	2	False	2,129,203	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+629	1	mét	1 mét	3	2	2	False	3,203	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+630	Diện	tích	Diện tích	3	0	2	False		
+631	tối	giản	tối giản	3	0	2	False		
+632	Diện	hình	Diện tích hình	3	2	3	True	129,203	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đ
+633	tối	có	tối giản có	3	0	3	True		
+634	tối	tử	tối giản có tử	3	0	4	True		
+635	tối	và	tối giản có tử và	3	0	5	True		
+636	tối	mẫu	tối giản có tử và mẫu	3	2	6	True	202,203	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 1 : Tiết Toán giúp em củng cố tư duy số họ
+637	cạnh	bằng	cạnh bằng	3	2	2	False	2,204	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+638	vuông	.	vuông .	3	3	2	False	2,203,204	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+639	Chu	vi	Chu vi	3	0	2	False		
+640	Tam	giác	Tam giác	3	0	2	False		
+641	nhau	Bài	nhau Bài	3	0	2	False		
+642	Chu	hình	Chu vi hình	3	3	3	True	3,129,204	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+643	.	giác	. Tam giác	3	2	3	True	130,204	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+644	cùng	Bài	cùng nhau Bài	3	3	3	True	202,203,204	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 1 : Tiết Toán giúp em củng cố tư duy số họ
+645	1	kilô	1 kilô	3	3	2	False	3,130,205	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+646	thời	gian	thời gian	3	2	2	False	72,205	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 20 : Hãy tận dụng mọi cơ hội để học tập . Sử dụng thời 
+647	độ	.	độ .	3	2	2	False	130,205	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+648	Biểu	đồ	Biểu đồ	4	3	2	False	130,131,205	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+649	Bắc	Nam	Bắc Nam	3	3	2	False	6,136,207	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+650	giao	thông	giao thông	3	3	2	False	19,147,207	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 3 : Trồng cây xanh quanh trường . Tuân thủ luật giao thông . Độ
+651	phục	vụ	phục vụ	3	2	2	False	135,207	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 3 : Thành phố đông dân hơn nông thôn . Giao thông đường 
+652	Bộ	.	Bộ .	3	2	2	False	138,207	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 2 : Chăm Pa có tháp Chăm ở miền Trung . Oc Eo là di chỉ văn hóa
+653	Châu	Á	Châu Á	3	0	2	False		
+654	nhất	các	nhất các	3	0	2	False		
+655	châu	lục	châu lục	3	0	2	False		
+656	Châu	rộng	Châu Á rộng	3	0	3	True		
+657	lớn	các	lớn nhất các	3	0	3	True		
+658	Châu	các	Châu Á rộng lớn nhất các	3	0	6	True		
+659	Châu	lục	Châu Á rộng lớn nhất các châu lục	3	2	8	True	206,207	Địa lý : Lớp 5 : Tiết 1 : Châu Á rộng lớn nhất các châu lục Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con 
+660	mùa	hè	mùa hè	3	0	2	False		
+661	nhiệt	đới	nhiệt đới	3	2	2	False	134,209	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 2 : Lung Cú là cột cờ Tổ quốc . Hoàng Sa thuộc chủ quyền
+662	Bán	cầu	Bán cầu	4	1	2	False	209	Địa lý : Lớp 5 : Tiết 2 : Bán cầu Bắc và Bán cầu Nam Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người V
+663	mùa	.	mùa hè .	3	3	3	True	55,134,209	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 3 : Cần quyết tâm và có người chịu trách nhiệm . Sinh v
+664	Huế	là	Huế là	3	2	2	False	5,210	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 2 : Huế là cố đô . Nha Trang có biển đẹp . Làng em ở xã . Xã em 
+665	di	sản	di sản	3	3	2	False	9,133,210	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 2 : Dân tộc Việt Nam có truyền thống yêu nước . Làng em có đình làng
+666	1945	.	1945 .	3	3	2	False	8,138,211	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+667	đời	.	đời .	3	2	2	False	73,211	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 21 : Hơn 200 nghìn lượt người đến Yên Tử . Du khách che
+668	giải	phóng	giải phóng	3	3	2	False	138,139,211	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 2 : Chăm Pa có tháp Chăm ở miền Trung . Oc Eo là di chỉ văn hóa
+669	Nhà	Nguyễn	Nhà Nguyễn	3	0	2	False		
+670	nhất	đất	nhất đất	3	0	2	False		
+671	nước	năm	nước năm	3	0	2	False		
+672	Nhà	thống	Nhà Nguyễn thống	3	0	3	True		
+673	nhất	năm	nhất đất nước năm	3	0	4	True		
+674	Nhà	năm	Nhà Nguyễn thống nhất đất nước năm	3	0	7	True		
+675	Nhà	1802	Nhà Nguyễn thống nhất đất nước năm 1802	3	2	8	True	210,211	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+676	Di	sản	Di sản	3	3	2	False	10,62,212	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+677	phát	triển	phát triển	3	2	2	False	135,212	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 3 : Thành phố đông dân hơn nông thôn . Giao thông đường 
+678	1802	Bài	1802 Bài	3	1	2	False	212	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 3 : Đổi mới năm 1986 mở đường phát triển . Việt N
+679	Hán	.	Hán .	3	2	2	False	10,213	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+680	đánh	thắng	đánh thắng	4	0	2	False		
+681	đánh	quân	đánh thắng quân	4	3	3	True	10,137,213	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+682	lượng	.	lượng .	3	3	2	False	130,202,214	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+683	đơn	vị	đơn vị	3	2	2	False	205,214	Toán : Lớp 5 : Tiết 2 : Biểu đồ đường thể hiện thay đổi theo thời gian Bài 1 : Tiết Toán giúp em củng cố tư duy số học ,
+684	Tế	bào	Tế bào	3	1	2	False	214	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ th
+685	tế	bào	tế bào	4	1	2	False	214	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ th
+686	thức	ăn	thức ăn	3	3	2	False	143,148,215	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 3 : Sắt tốt cho máu . Vi khuẩn có thể gây bệnh . Vaccine g
+687	Khí	hậu	Khí hậu	3	3	2	False	134,209,216	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 2 : Lung Cú là cột cờ Tổ quốc . Hoàng Sa thuộc chủ quyền
+688	máu	.	máu .	3	3	2	False	143,215,216	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 3 : Sắt tốt cho máu . Vi khuẩn có thể gây bệnh . Vaccine g
+689	sống	Bài	sống Bài	3	0	2	False		
+690	sự	Bài	sự sống Bài	3	0	3	True		
+691	của	Bài	của sự sống Bài	3	0	4	True		
+692	bản	Bài	bản của sự sống Bài	3	0	5	True		
+693	cơ	Bài	cơ bản của sự sống Bài	3	3	6	True	214,215,216	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ th
+694	mặt	trời	mặt trời	3	3	2	False	15,144,217	Khoa học : Lớp 3 : Tiết 2 : Muông thú sống trên cạn Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con người 
+695	không	khí	không khí	4	1	2	False	142	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 2 : Phản xạ là hiện tượng ánh sáng bật lại . Khúc xạ là án
+696	hạn	.	hạn .	3	2	2	False	216,217	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 3 : Hệ thần kinh điều khiển cơ thể . Não là trung tâ
+697	nhiễm	khí	nhiễm không khí	3	2	3	True	144,217	Khoa học : Lớp 4 : Tiết 2 : Môi trường sạch giúp sức khỏe Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con 
+698	thôn	.	thôn .	3	3	2	False	5,135,218	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 2 : Huế là cố đô . Nha Trang có biển đẹp . Làng em ở xã . Xã em 
+699	hỗ	trợ	hỗ trợ	3	3	2	False	145,218,219	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách 
+700	trẻ	em	trẻ em	3	2	2	False	148,219	Đạo đức và Xã hội : Lớp 4 : Tiết 2 : Trung thu là tết trẻ em Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm 
+701	tế	thị	tế thị	3	0	2	False		
+702	định	hướng	định hướng	3	0	2	False		
+703	hội	chủ	hội chủ	3	0	2	False		
+704	Kinh	thị	Kinh tế thị	3	0	3	True		
+705	trường	hướng	trường định hướng	3	0	3	True		
+706	xã	chủ	xã hội chủ	3	0	3	True		
+707	Kinh	hướng	Kinh tế thị trường định hướng	3	0	6	True		
+708	xã	nghĩa	xã hội chủ nghĩa	3	0	4	True		
+709	Kinh	nghĩa	Kinh tế thị trường định hướng xã hội chủ nghĩa	3	2	10	True	218,219	Đạo đức và Xã hội : Lớp 5 : Tiết 1 : Kinh tế thị trường định hướng xã hội chủ nghĩa Bài 1 : Tiết Đạo đức và Xã hội giúp 
+710	chia	sẻ	chia sẻ	3	3	2	False	20,67,220	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+711	:	Không	: Không	3	3	2	False	52,69,220	Tiếng Việt : Lớp 3 : Tiết 18 : Hội thoại Bài 2 : Ví dụ mẫu 1 : User : Con mèo màu gì Assistant : Con mèo màu trắng . Ví 
+712	viên	.	viên .	3	3	2	False	53,185,220	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+713	:	Kinh	: Kinh	3	1	2	False	220	Đạo đức và Xã hội : Lớp 5 : Tiết 1 : Kinh tế thị trường định hướng xã hội chủ nghĩa Bài 3 : Không chia sẻ thông tin cá n
+714	Phòng	chống	Phòng chống	3	0	2	False		
+715	.	chống	. Phòng chống	3	2	3	True	219,220	Đạo đức và Xã hội : Lớp 5 : Tiết 1 : Kinh tế thị trường định hướng xã hội chủ nghĩa Bài 2 : Bảo hiểm y tế giúp khám chữa
+716	đường	bộ	đường bộ	3	0	2	False		
+717	thông	bộ	thông đường bộ	3	2	3	True	135,221	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 3 : Thành phố đông dân hơn nông thôn . Giao thông đường 
+718	gì»	.	gì» .	3	2	2	False	149,222	Tiếng Việt : Lớp 4 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+719	hành	tinh	hành tinh	3	0	2	False		
+720	là	tinh	là hành tinh	3	3	3	True	21,149,222	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 1 : Tiết này luyện mẫu câu «Câu định nghĩa : Ai/Cái g
+721	:	Cá	: Cá	3	0	2	False		
+722	heo	là	heo là	3	0	2	False		
+723	động	vật	động vật	3	0	2	False		
+724	1	Cá	1 : Cá	3	0	3	True		
+725	heo	vật	heo là động vật	3	0	4	True		
+726	mẫu	Cá	mẫu 1 : Cá	3	0	4	True		
+727	dụ	Cá	dụ mẫu 1 : Cá	3	0	5	True		
+728	Ví	Cá	Ví dụ mẫu 1 : Cá	3	0	6	True		
+729	:	Cá	: Ví dụ mẫu 1 : Cá	3	0	7	True		
+730	2	Cá	2 : Ví dụ mẫu 1 : Cá	3	0	8	True		
+731	2	vật	2 : Ví dụ mẫu 1 : Cá heo là động vật	3	3	12	True	22,150,223	Tiếng Việt : Lớp 3 : Tiết 1 : Câu định nghĩa : Ai/Cái gì là gì Bài 2 : Ví dụ mẫu 1 : Cá heo là động vật biển .
+732	«Câu	phủ	«Câu phủ	3	2	2	False	153,226	Tiếng Việt : Lớp 4 : Tiết 3 : Câu phủ định : không Bài 1 : Tiết này luyện mẫu câu «Câu phủ định : không» . Em đọc từng v
+733	:	đang	: đang	3	1	2	False	227	Tiếng Việt : Lớp 5 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v
+734	:	đang»	: đang»	3	1	2	False	227	Tiếng Việt : Lớp 5 : Tiết 4 : Câu tiếp diễn : đang Bài 1 : Tiết này luyện mẫu câu «Câu tiếp diễn : đang» . Em đọc từng v
+735	:	trời	: trời	3	0	2	False		
+736	4	trời	4 : trời	3	0	3	True		
+737	mẫu	trời	mẫu 4 : trời	3	0	4	True		
+738	dụ	trời	dụ mẫu 4 : trời	3	0	5	True		
+739	Ví	trời	Ví dụ mẫu 4 : trời	3	3	6	True	29,157,230	Tiếng Việt : Lớp 3 : Tiết 6 : Câu mô tả danh từ Bài 1 : Tiết này luyện mẫu câu «Câu mô tả danh từ» . Em đọc từng ví dụ v
+740	:	Giới	: Giới	3	0	2	False		
+741	ở	Bài	ở Bài	3	0	2	False		
+742	:	ở»	: ở»	3	0	2	False		
+743	7	Giới	7 : Giới	3	0	3	True		
+744	:	Bài	: ở Bài	3	0	3	True		
+745	từ	ở»	từ : ở»	3	0	3	True		
+746	Tiết	Giới	Tiết 7 : Giới	3	0	4	True		
+747	từ	Bài	từ : ở Bài	3	0	4	True		
+748	«Giới	ở»	«Giới từ : ở»	3	0	4	True		
+749	:	Giới	: Tiết 7 : Giới	3	0	5	True		
+750	từ	1	từ : ở Bài 1	3	0	5	True		
+751	câu	ở»	câu «Giới từ : ở»	3	0	5	True		
+752	:	1	: Tiết 7 : Giới từ : ở Bài 1	3	0	10	True		
+753	mẫu	ở»	mẫu câu «Giới từ : ở»	3	0	6	True		
+754	:	:	: Tiết 7 : Giới từ : ở Bài 1 :	3	0	11	True		
+755	luyện	ở»	luyện mẫu câu «Giới từ : ở»	3	0	7	True		
+756	:	Tiết	: Tiết 7 : Giới từ : ở Bài 1 : Tiết	3	0	12	True		
+757	này	ở»	này luyện mẫu câu «Giới từ : ở»	3	0	8	True		
+758	:	ở»	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở»	3	0	20	True		
+759	:	.	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» .	3	0	21	True		
+760	:	Em	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em	3	0	22	True		
+761	:	đọc	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc	3	0	23	True		
+762	:	từng	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng	3	0	24	True		
+763	:	ví	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví	3	0	25	True		
+764	:	dụ	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ	3	0	26	True		
+765	:	và	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và	3	0	27	True		
+766	:	nhận	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận	3	0	28	True		
+767	:	ra	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra	3	0	29	True		
+768	:	cấu	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu	3	0	30	True		
+769	:	trúc	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	31	True		
+770	:	.	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	32	True		
+771	:	Ví	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	33	True		
+772	:	dụ	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	34	True		
+773	:	mẫu	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	35	True		
+774	:	1	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	36	True		
+775	:	:	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	37	True		
+776	:	Em	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em	3	0	38	True		
+777	:	ở	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở	3	0	39	True		
+778	:	trường	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường	3	0	40	True		
+779	:	.	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường .	3	0	41	True		
+780	:	Ví	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường . Ví	3	0	42	True		
+781	:	dụ	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường . Ví dụ	3	0	43	True		
+782	:	mẫu	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường . Ví dụ mẫu	3	0	44	True		
+783	:	2	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường . Ví dụ mẫu 2	3	0	45	True		
+784	:	:	: Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em ở trường . Ví dụ mẫu 2 :	3	3	46	True	30,158,231	Tiếng Việt : Lớp 3 : Tiết 7 : Giới từ : ở Bài 1 : Tiết này luyện mẫu câu «Giới từ : ở» . Em đọc từng ví dụ và nhận ra cấ
+785	:	có»	: có»	3	2	2	False	159,232	Tiếng Việt : Lớp 4 : Tiết 8 : Câu sở hữu : có Bài 1 : Tiết này luyện mẫu câu «Câu sở hữu : có» . Em đọc từng ví dụ và nh
+786	«Tương	lai	«Tương lai	3	0	2	False		
+787	:	sẽ»	: sẽ»	3	0	2	False		
+788	câu	lai	câu «Tương lai	3	0	3	True		
+789	:	.	: sẽ» .	3	0	3	True		
+790	mẫu	lai	mẫu câu «Tương lai	3	0	4	True		
+791	:	Em	: sẽ» . Em	3	0	4	True		
+792	luyện	lai	luyện mẫu câu «Tương lai	3	0	5	True		
+793	:	đọc	: sẽ» . Em đọc	3	0	5	True		
+794	này	lai	này luyện mẫu câu «Tương lai	3	0	6	True		
+795	:	từng	: sẽ» . Em đọc từng	3	0	6	True		
+796	Tiết	lai	Tiết này luyện mẫu câu «Tương lai	3	0	7	True		
+797	:	ví	: sẽ» . Em đọc từng ví	3	0	7	True		
+798	:	lai	: Tiết này luyện mẫu câu «Tương lai	3	0	8	True		
+799	:	dụ	: sẽ» . Em đọc từng ví dụ	3	0	8	True		
+800	1	lai	1 : Tiết này luyện mẫu câu «Tương lai	3	0	9	True		
+801	:	và	: sẽ» . Em đọc từng ví dụ và	3	0	9	True		
+802	1	và	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và	3	0	18	True		
+803	1	nhận	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận	3	0	19	True		
+804	1	ra	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra	3	0	20	True		
+805	1	cấu	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu	3	0	21	True		
+806	1	trúc	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	22	True		
+807	1	.	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	23	True		
+808	1	Ví	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	24	True		
+809	1	dụ	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	25	True		
+810	1	mẫu	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	26	True		
+811	1	1	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	27	True		
+812	1	:	1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	28	True	33,161,234	Tiếng Việt : Lớp 3 : Tiết 9 : Tương lai : sẽ Bài 1 : Tiết này luyện mẫu câu «Tương lai : sẽ» . Em đọc từng ví dụ và nhận
+813	«Quá	khứ	«Quá khứ	3	0	2	False		
+814	:	đã»	: đã»	3	0	2	False		
+815	câu	khứ	câu «Quá khứ	3	0	3	True		
+816	:	.	: đã» .	3	0	3	True		
+817	mẫu	khứ	mẫu câu «Quá khứ	3	0	4	True		
+818	:	Em	: đã» . Em	3	0	4	True		
+819	luyện	khứ	luyện mẫu câu «Quá khứ	3	0	5	True		
+820	:	đọc	: đã» . Em đọc	3	0	5	True		
+821	này	khứ	này luyện mẫu câu «Quá khứ	3	0	6	True		
+822	:	từng	: đã» . Em đọc từng	3	0	6	True		
+823	Tiết	khứ	Tiết này luyện mẫu câu «Quá khứ	3	0	7	True		
+824	:	ví	: đã» . Em đọc từng ví	3	0	7	True		
+825	:	khứ	: Tiết này luyện mẫu câu «Quá khứ	3	0	8	True		
+826	:	dụ	: đã» . Em đọc từng ví dụ	3	0	8	True		
+827	1	khứ	1 : Tiết này luyện mẫu câu «Quá khứ	3	0	9	True		
+828	:	và	: đã» . Em đọc từng ví dụ và	3	0	9	True		
+829	1	và	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và	3	0	18	True		
+830	1	nhận	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận	3	0	19	True		
+831	1	ra	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra	3	0	20	True		
+832	1	cấu	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu	3	0	21	True		
+833	1	trúc	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	22	True		
+834	1	.	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	23	True		
+835	1	Ví	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	24	True		
+836	1	dụ	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	25	True		
+837	1	mẫu	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	26	True		
+838	1	1	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	27	True		
+839	1	:	1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	28	True	35,163,236	Tiếng Việt : Lớp 3 : Tiết 10 : Quá khứ : đã Bài 1 : Tiết này luyện mẫu câu «Quá khứ : đã» . Em đọc từng ví dụ và nhận ra
+840	«Câu	bổ	«Câu bổ	3	0	2	False		
+841	ngữ»	.	ngữ» .	3	0	2	False		
+842	câu	bổ	câu «Câu bổ	3	0	3	True		
+843	ngữ»	Em	ngữ» . Em	3	0	3	True		
+844	mẫu	bổ	mẫu câu «Câu bổ	3	0	4	True		
+845	ngữ»	đọc	ngữ» . Em đọc	3	0	4	True		
+846	luyện	bổ	luyện mẫu câu «Câu bổ	3	0	5	True		
+847	ngữ»	từng	ngữ» . Em đọc từng	3	0	5	True		
+848	này	bổ	này luyện mẫu câu «Câu bổ	3	0	6	True		
+849	ngữ»	ví	ngữ» . Em đọc từng ví	3	0	6	True		
+850	Tiết	bổ	Tiết này luyện mẫu câu «Câu bổ	3	0	7	True		
+851	ngữ»	dụ	ngữ» . Em đọc từng ví dụ	3	0	7	True		
+852	:	bổ	: Tiết này luyện mẫu câu «Câu bổ	3	0	8	True		
+853	ngữ»	và	ngữ» . Em đọc từng ví dụ và	3	0	8	True		
+854	1	bổ	1 : Tiết này luyện mẫu câu «Câu bổ	3	0	9	True		
+855	ngữ»	nhận	ngữ» . Em đọc từng ví dụ và nhận	3	0	9	True		
+856	1	nhận	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận	3	0	18	True		
+857	1	ra	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra	3	0	19	True		
+858	1	cấu	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu	3	0	20	True		
+859	1	trúc	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	21	True		
+860	1	.	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	22	True		
+861	1	Ví	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	23	True		
+862	1	dụ	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	24	True		
+863	1	mẫu	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	25	True		
+864	1	1	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	26	True		
+865	1	:	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	27	True		
+866	1	Con	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con	3	0	28	True		
+867	1	mèo	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo	3	0	29	True		
+868	1	chạy	1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy	3	3	30	True	37,165,238	Tiếng Việt : Lớp 3 : Tiết 11 : Câu bổ ngữ Bài 1 : Tiết này luyện mẫu câu «Câu bổ ngữ» . Em đọc từng ví dụ và nhận ra cấu
+869	:	và»	: và»	3	0	2	False		
+870	:	.	: và» .	3	0	3	True		
+871	:	Em	: và» . Em	3	0	4	True		
+872	:	đọc	: và» . Em đọc	3	0	5	True		
+873	:	từng	: và» . Em đọc từng	3	0	6	True		
+874	:	ví	: và» . Em đọc từng ví	3	0	7	True		
+875	:	dụ	: và» . Em đọc từng ví dụ	3	0	8	True		
+876	:	và	: và» . Em đọc từng ví dụ và	3	0	9	True		
+877	:	nhận	: và» . Em đọc từng ví dụ và nhận	3	0	10	True		
+878	:	ra	: và» . Em đọc từng ví dụ và nhận ra	3	0	11	True		
+879	:	cấu	: và» . Em đọc từng ví dụ và nhận ra cấu	3	0	12	True		
+880	:	trúc	: và» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	13	True		
+881	:	.	: và» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	14	True		
+882	:	Ví	: và» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	15	True		
+883	:	dụ	: và» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	16	True		
+884	:	mẫu	: và» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	17	True		
+885	:	1	: và» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	18	True		
+886	:	:	: và» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	19	True	39,167,240	Tiếng Việt : Lớp 3 : Tiết 12 : Câu ghép : và Bài 1 : Tiết này luyện mẫu câu «Câu ghép : và» . Em đọc từng ví dụ và nhận 
+887	:	rồi»	: rồi»	3	0	2	False		
+888	:	.	: rồi» .	3	0	3	True		
+889	:	Em	: rồi» . Em	3	0	4	True		
+890	:	đọc	: rồi» . Em đọc	3	0	5	True		
+891	:	từng	: rồi» . Em đọc từng	3	0	6	True		
+892	:	ví	: rồi» . Em đọc từng ví	3	0	7	True		
+893	:	dụ	: rồi» . Em đọc từng ví dụ	3	0	8	True		
+894	:	và	: rồi» . Em đọc từng ví dụ và	3	0	9	True		
+895	:	nhận	: rồi» . Em đọc từng ví dụ và nhận	3	0	10	True		
+896	:	ra	: rồi» . Em đọc từng ví dụ và nhận ra	3	0	11	True		
+897	:	cấu	: rồi» . Em đọc từng ví dụ và nhận ra cấu	3	0	12	True		
+898	:	trúc	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	13	True		
+899	:	.	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	14	True		
+900	:	Ví	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	15	True		
+901	:	dụ	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	16	True		
+902	:	mẫu	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	17	True		
+903	:	1	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	18	True		
+904	:	:	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	19	True		
+905	:	Em	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em	3	0	20	True		
+906	:	học	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học	3	0	21	True		
+907	:	rồi	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi	3	0	22	True		
+908	:	Bé	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé	3	0	23	True		
+909	:	ngủ	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ	3	0	24	True		
+910	:	.	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ .	3	0	25	True		
+911	:	Ví	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ . Ví	3	0	26	True		
+912	:	dụ	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ . Ví dụ	3	0	27	True		
+913	:	mẫu	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ . Ví dụ mẫu	3	0	28	True		
+914	:	2	: rồi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học rồi Bé ngủ . Ví dụ mẫu 2	3	3	29	True	43,171,244	Tiếng Việt : Lớp 3 : Tiết 14 : Câu ghép : rồi Bài 1 : Tiết này luyện mẫu câu «Câu ghép : rồi» . Em đọc từng ví dụ và nhậ
+915	:	nên»	: nên»	3	0	2	False		
+916	ghép	nên»	ghép : nên»	3	0	3	True		
+917	«Câu	nên»	«Câu ghép : nên»	3	0	4	True		
+918	câu	nên»	câu «Câu ghép : nên»	3	0	5	True		
+919	mẫu	nên»	mẫu câu «Câu ghép : nên»	3	0	6	True		
+920	luyện	nên»	luyện mẫu câu «Câu ghép : nên»	3	0	7	True		
+921	này	nên»	này luyện mẫu câu «Câu ghép : nên»	3	0	8	True		
+922	Tiết	nên»	Tiết này luyện mẫu câu «Câu ghép : nên»	3	0	9	True		
+923	:	nên»	: Tiết này luyện mẫu câu «Câu ghép : nên»	3	0	10	True		
+924	1	nên»	1 : Tiết này luyện mẫu câu «Câu ghép : nên»	3	0	11	True		
+925	1	.	1 : Tiết này luyện mẫu câu «Câu ghép : nên» .	3	0	12	True		
+926	1	Em	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em	3	0	13	True		
+927	1	đọc	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc	3	0	14	True		
+928	1	từng	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng	3	0	15	True		
+929	1	ví	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví	3	0	16	True		
+930	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ	3	0	17	True		
+931	1	và	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và	3	0	18	True		
+932	1	nhận	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận	3	0	19	True		
+933	1	ra	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra	3	0	20	True		
+934	1	cấu	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu	3	0	21	True		
+935	1	trúc	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	22	True		
+936	1	.	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	23	True		
+937	1	Ví	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	24	True		
+938	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	25	True		
+939	1	mẫu	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	26	True		
+940	1	1	1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	27	True	45,173,246	Tiếng Việt : Lớp 3 : Tiết 15 : Câu ghép : nên Bài 1 : Tiết này luyện mẫu câu «Câu ghép : nên» . Em đọc từng ví dụ và nhậ
+941	:	hoặc»	: hoặc»	3	0	2	False		
+942	ghép	hoặc»	ghép : hoặc»	3	0	3	True		
+943	«Câu	hoặc»	«Câu ghép : hoặc»	3	0	4	True		
+944	câu	hoặc»	câu «Câu ghép : hoặc»	3	0	5	True		
+945	mẫu	hoặc»	mẫu câu «Câu ghép : hoặc»	3	0	6	True		
+946	luyện	hoặc»	luyện mẫu câu «Câu ghép : hoặc»	3	0	7	True		
+947	này	hoặc»	này luyện mẫu câu «Câu ghép : hoặc»	3	0	8	True		
+948	Tiết	hoặc»	Tiết này luyện mẫu câu «Câu ghép : hoặc»	3	0	9	True		
+949	:	hoặc»	: Tiết này luyện mẫu câu «Câu ghép : hoặc»	3	0	10	True		
+950	1	hoặc»	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc»	3	0	11	True		
+951	1	.	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» .	3	0	12	True		
+952	1	Em	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em	3	0	13	True		
+953	1	đọc	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc	3	0	14	True		
+954	1	từng	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng	3	0	15	True		
+955	1	ví	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví	3	0	16	True		
+956	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ	3	0	17	True		
+957	1	và	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và	3	0	18	True		
+958	1	nhận	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận	3	0	19	True		
+959	1	ra	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra	3	0	20	True		
+960	1	cấu	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu	3	0	21	True		
+961	1	trúc	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	22	True		
+962	1	.	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	23	True		
+963	1	Ví	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	24	True		
+964	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	25	True		
+965	1	mẫu	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	26	True		
+966	1	1	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	27	True		
+967	1	:	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	28	True		
+968	1	Em	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em	3	0	29	True		
+969	1	học	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học	3	0	30	True		
+970	1	hoặc	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc	3	0	31	True		
+971	1	Bé	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé	3	0	32	True		
+972	1	ngủ	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ	3	0	33	True		
+973	1	.	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ .	3	0	34	True		
+974	1	Ví	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ . Ví	3	0	35	True		
+975	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ . Ví dụ	3	0	36	True		
+976	1	mẫu	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ . Ví dụ mẫu	3	0	37	True		
+977	1	2	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ . Ví dụ mẫu 2	3	0	38	True		
+978	1	:	1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em học hoặc Bé ngủ . Ví dụ mẫu 2 :	3	3	39	True	47,175,248	Tiếng Việt : Lớp 3 : Tiết 16 : Câu ghép : hoặc Bài 1 : Tiết này luyện mẫu câu «Câu ghép : hoặc» . Em đọc từng ví dụ và n
+979	kép»	.	kép» .	3	0	2	False		
+980	:	bút	: bút	3	1	2	False	250	Tiếng Việt : Lớp 5 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+981	nghĩa	.	nghĩa kép» .	3	0	3	True		
+982	định	.	định nghĩa kép» .	3	0	4	True		
+983	ghép	.	ghép định nghĩa kép» .	3	0	5	True		
+984	«Câu	.	«Câu ghép định nghĩa kép» .	3	0	6	True		
+985	câu	.	câu «Câu ghép định nghĩa kép» .	3	0	7	True		
+986	mẫu	.	mẫu câu «Câu ghép định nghĩa kép» .	3	0	8	True		
+987	luyện	.	luyện mẫu câu «Câu ghép định nghĩa kép» .	3	0	9	True		
+988	này	.	này luyện mẫu câu «Câu ghép định nghĩa kép» .	3	0	10	True		
+989	Tiết	.	Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» .	3	0	11	True		
+990	:	.	: Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» .	3	0	12	True		
+991	1	.	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» .	3	0	13	True		
+992	1	Em	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em	3	0	14	True		
+993	1	đọc	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc	3	0	15	True		
+994	1	từng	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng	3	0	16	True		
+995	1	ví	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví	3	0	17	True		
+996	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ	3	0	18	True		
+997	1	và	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và	3	0	19	True		
+998	1	nhận	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận	3	0	20	True		
+999	1	ra	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra	3	0	21	True		
+1000	1	cấu	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu	3	0	22	True		
+1001	1	trúc	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	23	True		
+1002	1	.	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	24	True		
+1003	1	Ví	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	25	True		
+1004	1	dụ	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	26	True		
+1005	1	mẫu	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	27	True		
+1006	1	1	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	28	True		
+1007	1	:	1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	29	True	49,177,250	Tiếng Việt : Lớp 3 : Tiết 17 : Câu ghép định nghĩa kép Bài 1 : Tiết này luyện mẫu câu «Câu ghép định nghĩa kép» . Em đọc
+1008	:	mèo	: mèo	3	1	2	False	251	Tiếng Việt : Lớp 5 : Tiết 17 : Câu ghép định nghĩa kép Bài 2 : Ví dụ mẫu 1 : mèo là thú và chó là bạn .
+1009	:	So	: So	3	0	2	False		
+1010	«So	sánh	«So sánh	3	0	2	False		
+1011	hơn	Lan	hơn Lan	3	0	2	False		
+1012	hơn	em	hơn em	3	0	2	False		
+1013	hơn	chị	hơn chị	3	0	2	False		
+1014	:	sánh	: So sánh	3	3	3	True	179,180,252	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1015	câu	sánh	câu «So sánh	3	0	3	True		
+1016	hơn	.	hơn Lan .	3	3	3	True	179,196,252	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1017	giỏi	em	giỏi hơn em	3	0	3	True		
+1018	nhỏ	chị	nhỏ hơn chị	3	0	3	True		
+1019	mẫu	sánh	mẫu câu «So sánh	3	0	4	True		
+1020	Lan	em	Lan giỏi hơn em	3	0	4	True		
+1021	Bé	chị	Bé nhỏ hơn chị	3	0	4	True		
+1022	luyện	sánh	luyện mẫu câu «So sánh	3	0	5	True		
+1023	:	em	: Lan giỏi hơn em	3	0	5	True		
+1024	Bé	.	Bé nhỏ hơn chị .	3	3	5	True	179,197,252	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1025	này	sánh	này luyện mẫu câu «So sánh	3	0	6	True		
+1026	:	.	: Lan giỏi hơn em .	3	3	6	True	179,197,252	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1027	Tiết	sánh	Tiết này luyện mẫu câu «So sánh	3	0	7	True		
+1028	:	sánh	: Tiết này luyện mẫu câu «So sánh	3	0	8	True		
+1029	1	sánh	1 : Tiết này luyện mẫu câu «So sánh	3	0	9	True		
+1030	Bài	sánh	Bài 1 : Tiết này luyện mẫu câu «So sánh	3	3	10	True	179,180,252	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1031	trêu	.	trêu .	3	3	2	False	181,198,254	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1032	mắng	.	mắng .	3	0	2	False		
+1033	ngã	.	ngã .	3	0	2	False		
+1034	đuổi	.	đuổi .	3	0	2	False		
+1035	hiểu	lầm	hiểu lầm	3	0	2	False		
+1036	bị	.	bị mắng .	3	0	3	True		
+1037	bị	.	bị ngã .	3	0	3	True		
+1038	bị	.	bị đuổi .	3	0	3	True		
+1039	hiểu	.	hiểu lầm .	3	3	3	True	181,198,254	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1040	Lan	.	Lan bị mắng .	3	3	4	True	181,198,254	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1041	Bé	.	Bé bị ngã .	3	3	4	True	181,198,254	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1042	Chó	.	Chó bị đuổi .	3	3	4	True	181,198,254	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1043	khen	.	khen .	3	3	2	False	182,198,255	Tiếng Việt : Lớp 4 : Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví d
+1044	thưởng	.	thưởng .	3	0	2	False		
+1045	ôm	.	ôm .	3	0	2	False		
+1046	được	.	được thưởng .	3	0	3	True		
+1047	được	.	được ôm .	3	0	3	True		
+1048	Lan	.	Lan được thưởng .	3	3	4	True	182,198,255	Tiếng Việt : Lớp 4 : Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví d
+1049	Bé	.	Bé được ôm .	3	0	4	True		
+1050	:	.	: Bé được ôm .	3	3	5	True	182,199,255	Tiếng Việt : Lớp 4 : Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví d
+1051	mưa	em	mưa em	3	0	2	False		
+1052	về	em	về em	3	0	2	False		
+1053	cười	.	cười .	3	0	2	False		
+1054	đến	em	đến em	3	0	2	False		
+1055	reo	.	reo .	3	0	2	False		
+1056	tối	chó	tối chó	3	0	2	False		
+1057	cô	gọi	cô gọi	3	0	2	False		
+1058	đứng	.	đứng .	3	0	2	False		
+1059	trời	em	trời mưa em	3	0	3	True		
+1060	mẹ	em	mẹ về em	3	0	3	True		
+1061	Lan	em	Lan đến em	3	0	3	True		
+1062	trời	chó	trời tối chó	3	0	3	True		
+1063	cô	em	cô gọi em	3	0	3	True		
+1064	trời	ngủ	trời mưa em ngủ	3	0	4	True		
+1065	mẹ	.	mẹ về em cười .	3	3	5	True	183,199,256	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1066	Lan	.	Lan đến em reo .	3	3	5	True	183,199,256	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1067	trời	sủa	trời tối chó sủa	3	0	4	True		
+1068	cô	.	cô gọi em đứng .	3	3	5	True	183,199,256	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1069	trời	.	trời mưa em ngủ .	3	3	5	True	183,199,256	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1070	trời	.	trời tối chó sủa .	3	3	5	True	183,199,256	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1071	nhớ	.	nhớ .	3	0	2	False		
+1072	ngủ	để	ngủ để	3	0	2	False		
+1073	đọc	để	đọc để	3	0	2	False		
+1074	hiểu	.	hiểu .	3	0	2	False		
+1075	nấu	để	nấu để	3	0	2	False		
+1076	để	.	để nhớ .	3	0	3	True		
+1077	Bé	để	Bé ngủ để	3	0	3	True		
+1078	Em	để	Em đọc để	3	0	3	True		
+1079	Mẹ	để	Mẹ nấu để	3	0	3	True		
+1080	học	.	học để nhớ .	3	0	4	True		
+1081	Bé	lớn	Bé ngủ để lớn	3	0	4	True		
+1082	Em	.	Em đọc để hiểu .	3	3	5	True	184,200,257	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+1083	Mẹ	ăn	Mẹ nấu để ăn	3	0	4	True		
+1084	Em	.	Em học để nhớ .	3	0	5	True		
+1085	Bé	.	Bé ngủ để lớn .	3	3	5	True	184,200,257	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+1086	Mẹ	.	Mẹ nấu để ăn .	3	3	5	True	184,200,257	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+1087	:	.	: Em học để nhớ .	3	3	6	True	184,200,257	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+1088	:	Nếu	: Nếu	6	1	2	False	258	Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận 
+1089	thì	em	thì em	3	1	2	False	258	Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận 
+1090	tập	.	tập .	3	3	2	False	8,72,259	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+1091	:	Mặc	: Mặc	6	1	2	False	259	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1092	dù	trời	dù trời	5	0	2	False		
+1093	:	trời	: Mặc dù trời	5	1	4	True	259	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1094	chơi	.	chơi .	3	3	2	False	17,259,261	Đạo đức và Xã hội : Lớp 3 : Tiết 1 : Em yêu gia đình Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia 
+1095	:	Mệnh	: Mệnh	3	0	2	False		
+1096	«Mệnh	đề	«Mệnh đề	3	0	2	False		
+1097	mà	em	mà em	3	1	2	False	261	Tiếng Việt : Lớp 5 : Tiết 27 : Mệnh đề quan hệ : mà Bài 1 : Tiết này luyện mẫu câu «Mệnh đề quan hệ : mà» . Em đọc từng 
+1098	:	đề	: Mệnh đề	3	3	3	True	183,256,261	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1099	câu	đề	câu «Mệnh đề	3	0	3	True		
+1100	mẫu	đề	mẫu câu «Mệnh đề	3	0	4	True		
+1101	luyện	đề	luyện mẫu câu «Mệnh đề	3	0	5	True		
+1102	này	đề	này luyện mẫu câu «Mệnh đề	3	0	6	True		
+1103	Tiết	đề	Tiết này luyện mẫu câu «Mệnh đề	3	0	7	True		
+1104	:	đề	: Tiết này luyện mẫu câu «Mệnh đề	3	0	8	True		
+1105	1	đề	1 : Tiết này luyện mẫu câu «Mệnh đề	3	0	9	True		
+1106	Bài	đề	Bài 1 : Tiết này luyện mẫu câu «Mệnh đề	3	3	10	True	183,256,261	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1107	:	Vì	: Vì	6	1	2	False	262	Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra
+1108	:	em	: Vì em	3	1	3	True	262	Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra
+1109	«Câu	tiếng	«Câu tiếng	3	2	2	False	185,263	Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+1110	đọc	các	đọc các	3	0	2	False		
+1111	cách	dùng	cách dùng	3	0	2	False		
+1112	từ	.	từ .	3	0	2	False		
+1113	tôi	là	tôi là	3	3	2	False	54,185,263	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 2 : Trời hôm nay đẹp . Mẹ tôi là bác sĩ . Chú ấy là kỹ 
+1114	nhân	.	nhân .	3	3	2	False	185,214,263	Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+1115	đọc	câu	đọc các câu	3	0	3	True		
+1116	cách	.	cách dùng từ .	3	3	4	True	53,185,263	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+1117	đọc	mẫu	đọc các câu mẫu	3	0	4	True		
+1118	đọc	và	đọc các câu mẫu và	3	3	5	True	53,185,263	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+1119	Em	vừa	Em vừa	3	2	2	False	260,279	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1120	vẫn	học	vẫn học	3	0	2	False		
+1121	nấu	vừa	nấu vừa	3	0	2	False		
+1122	em	học	em vẫn học	3	0	3	True		
+1123	vừa	vừa	vừa nấu vừa	3	0	3	True		
+1124	em	.	em vẫn học .	3	3	4	True	259,279,281	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1125	Mẹ	vừa	Mẹ vừa nấu vừa	3	3	4	True	260,280,281	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1126	1	.	1 .	3	3	2	False	3,202,282	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+1127	hơn	phân	hơn phân	3	0	2	False		
+1128	0	.	0 .	3	2	2	False	203,282	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 2 : Diện tích hình tam giác bằng nửa đáy n
+1129	a	m	a m	4	1	2	False	282	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 1 : Tiết Toán giúp em củng cố tư duy số 
+1130	nhỏ	phân	nhỏ hơn phân	3	0	3	True		
+1131	nhỏ	số	nhỏ hơn phân số	3	2	4	True	132,282	Toán : Lớp 4 : Tiết 2 : Phân số 1/2 nhỏ hơn phân số 3/4 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo
+1132	:	Số	: Số	3	3	2	False	3,282,283	Toán : Lớp 3 : Tiết 2 : Số 100 lớn hơn số 99 Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo lường . Đâ
+1133	có	ước	có ước	3	0	2	False		
+1134	không	ước	không có ước	3	0	3	True		
+1135	nhau	ước	nhau không có ước	3	0	4	True		
+1136	cùng	ước	cùng nhau không có ước	3	0	5	True		
+1137	tố	ước	tố cùng nhau không có ước	3	0	6	True		
+1138	nguyên	ước	nguyên tố cùng nhau không có ước	3	0	7	True		
+1139	nguyên	chung	nguyên tố cùng nhau không có ước chung	3	0	8	True		
+1140	nguyên	lớn	nguyên tố cùng nhau không có ước chung lớn	3	0	9	True		
+1141	nguyên	hơn	nguyên tố cùng nhau không có ước chung lớn hơn	3	2	10	True	282,283	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 1 : Tiết Toán giúp em củng cố tư duy số 
+1142	có	bốn	có bốn	3	2	2	False	2,284	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+1143	tam	giác	tam giác	3	3	2	False	2,203,284	Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có b
+1144	1	Bài	1 Bài	3	3	2	False	282,283,284	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 1 : Tiết Toán giúp em củng cố tư duy số 
+1145	rộng	.	rộng .	3	3	2	False	63,129,285	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 11 : Vụ án đang được tiếp tục mở rộng . Tuy nhiên , thô
+1146	Bản	đồ	Bản đồ	3	0	2	False		
+1147	quay	quanh	quay quanh	3	2	2	False	15,286	Khoa học : Lớp 3 : Tiết 2 : Muông thú sống trên cạn Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con người 
+1148	mùa	.	mùa .	3	3	2	False	134,209,286	Địa lý : Lớp 4 : Tiết 1 : Việt Nam giáp Trung Quốc phía Bắc Bài 2 : Lung Cú là cột cờ Tổ quốc . Hoàng Sa thuộc chủ quyền
+1149	.	đồ	. Bản đồ	3	3	3	True	6,135,286	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+1150	mình	trục	mình trục	3	0	2	False		
+1151	và	quanh	và quanh	3	0	2	False		
+1152	Mặt	Trời	Mặt Trời	3	0	2	False		
+1153	mình	quanh	mình trục và quanh	3	0	4	True		
+1154	mình	Trời	mình trục và quanh Mặt Trời	3	2	6	True	286,287	Địa lý : Lớp 6 : Tiết 1 : Trái đất quay quanh mình trục và quanh Mặt Trời Bài 1 : Tiết Địa lý giúp em hiểu đất nước , đị
+1155	mưa	.	mưa .	3	2	2	False	102,288	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 24 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1156	nghìn	năm	nghìn năm	4	1	2	False	290	Lịch sử : Lớp 6 : Tiết 1 : Thời kỳ Bắc thuộc kéo dài hơn nghìn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+1157	kéo	dài	kéo dài	3	2	2	False	211,290	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 2 : Khởi nghĩa Nam Kỳ năm 1940 . Cách mạng tháng 
+1158	quân	Nam	quân Nam	3	1	2	False	290	Lịch sử : Lớp 6 : Tiết 1 : Thời kỳ Bắc thuộc kéo dài hơn nghìn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+1159	nghìn	.	nghìn năm .	3	3	3	True	137,140,290	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các s
+1160	khởi	nghĩa	khởi nghĩa	3	3	2	False	10,290,291	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 3 : Di sản cần được bảo vệ . Ông cha ta đã đánh giặc ngoại xâm . Hai
+1161	Nhà	Lê	Nhà Lê	3	0	2	False		
+1162	Thành	nhà	Thành nhà	3	0	2	False		
+1163	Bắc	thuộc	Bắc thuộc	3	0	2	False		
+1164	.	Lê	. Nhà Lê	3	3	3	True	137,290,291	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các s
+1165	Thành	Hồ	Thành nhà Hồ	3	2	3	True	213,291	Lịch sử : Lớp 5 : Tiết 2 : Thành nhà Hồ ở Thanh Hóa Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự
+1166	kỳ	thuộc	kỳ Bắc thuộc	3	0	3	True		
+1167	Thời	thuộc	Thời kỳ Bắc thuộc	3	2	4	True	290,291	Lịch sử : Lớp 6 : Tiết 1 : Thời kỳ Bắc thuộc kéo dài hơn nghìn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+1168	Kháng	chiến	Kháng chiến	3	0	2	False		
+1169	:	Thời	: Thời	3	1	2	False	292	Lịch sử : Lớp 6 : Tiết 1 : Thời kỳ Bắc thuộc kéo dài hơn nghìn năm Bài 3 : Pháp xâm lược Việt Nam năm 1858 . Hiệp định N
+1170	Kháng	chống	Kháng chiến chống	3	2	3	True	138,292	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 2 : Chăm Pa có tháp Chăm ở miền Trung . Oc Eo là di chỉ văn hóa
+1171	4	năm	4 năm	3	2	2	False	78,293	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 26 : Thai được 4 tháng , mẹ anh ta tìm gặp tôi . Bộ trư
+1172	1975	.	1975 .	3	3	2	False	139,211,293	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 3 : Bác Hồ viết Di chúc năm 1969 . Cả nước thống nhất năm 1975 
+1173	30	tháng	30 tháng	3	2	2	False	139,293	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 3 : Bác Hồ viết Di chúc năm 1969 . Cả nước thống nhất năm 1975 
+1174	Sài	Gòn	Sài Gòn	3	2	2	False	207,293	Địa lý : Lớp 5 : Tiết 1 : Châu Á rộng lớn nhất các châu lục Bài 2 : Đô thị hóa tăng nhanh . Kinh tế biển quan trọng với 
+1175	gia	nhập	gia nhập	3	0	2	False		
+1176	Nam	nhập	Nam gia nhập	3	0	3	True		
+1177	Việt	nhập	Việt Nam gia nhập	3	0	4	True		
+1178	.	nhập	. Việt Nam gia nhập	3	2	5	True	212,293	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 3 : Đổi mới năm 1986 mở đường phát triển . Việt N
+1179	nghiên	cứu	nghiên cứu	3	1	2	False	294	Khoa học : Lớp 6 : Tiết 1 : Vật chất tồn tại khách quan Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con ng
+1180	Vật	chất	Vật chất	3	0	2	False		
+1181	tồn	tại	tồn tại	3	0	2	False		
+1182	Vật	tại	Vật chất tồn tại	3	0	4	True		
+1183	Vật	khách	Vật chất tồn tại khách	3	0	5	True		
+1184	Vật	quan	Vật chất tồn tại khách quan	3	2	6	True	294,295	Khoa học : Lớp 6 : Tiết 1 : Vật chất tồn tại khách quan Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con ng
+1185	quan	Bài	quan Bài	3	1	2	False	296	Khoa học : Lớp 6 : Tiết 1 : Vật chất tồn tại khách quan Bài 3 : Đơn vị lực là newton . Áp suất bằng lực chia diện tích .
+1186	sinh	vật	sinh vật	3	3	2	False	143,144,297	Khoa học : Lớp 4 : Tiết 1 : Nước có ba thể : rắn lỏng khí Bài 3 : Sắt tốt cho máu . Vi khuẩn có thể gây bệnh . Vaccine g
+1187	tính	.	tính .	3	3	2	False	72,295,298	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 20 : Hãy tận dụng mọi cơ hội để học tập . Sử dụng thời 
+1188	tôn	trọng	tôn trọng	3	3	2	False	20,145,299	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+1189	THCS	là	THCS là	3	0	2	False		
+1190	bậc	học	bậc học	3	0	2	False		
+1191	bắt	buộc	bắt buộc	3	0	2	False		
+1192	sau	tiểu	sau tiểu	3	0	2	False		
+1193	THCS	học	THCS là bậc học	3	0	4	True		
+1194	bắt	tiểu	bắt buộc sau tiểu	3	0	4	True		
+1195	THCS	tiểu	THCS là bậc học bắt buộc sau tiểu	3	0	8	True		
+1196	THCS	học	THCS là bậc học bắt buộc sau tiểu học	3	2	9	True	298,299	Đạo đức và Xã hội : Lớp 6 : Tiết 1 : THCS là bậc học bắt buộc sau tiểu học Bài 1 : Tiết Đạo đức và Xã hội giúp em sống c
+1197	chung	.	chung .	3	2	2	False	20,301	Đạo đức và Xã hội : Lớp 3 : Tiết 2 : Thợ may may quần áo Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với 
+1198	Giao	thông	Giao thông	3	2	2	False	62,301	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 10 : Nguyễn Hưng Theo Đời sống Plus/GĐVN . Phương Mai t
+1199	thải	.	thải .	3	3	2	False	74,144,301	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 22 : 'Nóng' tình trạng thiếu nước sinh hoạt và rác thải
+1200	an	toàn	an toàn	3	3	2	False	147,221,301	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 3 : Hội Liên hiệp Phụ nữ chăm lo phụ nữ . Công đo
+1201	đổi	khí	đổi khí	3	2	2	False	215,301	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 2 : Di truyền truyền tính trạng cho con . Biến dị tạ
+1202	ô	nhiễm	ô nhiễm	3	1	2	False	301	Đạo đức và Xã hội : Lớp 6 : Tiết 2 : Biến đổi khí hậu cần hành động chung Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có
+1203	hơn	Bài	hơn Bài	3	1	2	False	332	Tiếng Việt : Lớp 6 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1204	hơn»	.	hơn» .	3	0	2	False		
+1205	hơn»	Em	hơn» . Em	3	0	3	True		
+1206	hơn»	đọc	hơn» . Em đọc	3	0	4	True		
+1207	hơn»	từng	hơn» . Em đọc từng	3	0	5	True		
+1208	hơn»	ví	hơn» . Em đọc từng ví	3	0	6	True		
+1209	hơn»	dụ	hơn» . Em đọc từng ví dụ	3	0	7	True		
+1210	hơn»	và	hơn» . Em đọc từng ví dụ và	3	0	8	True		
+1211	hơn»	nhận	hơn» . Em đọc từng ví dụ và nhận	3	0	9	True		
+1212	hơn»	ra	hơn» . Em đọc từng ví dụ và nhận ra	3	0	10	True		
+1213	hơn»	cấu	hơn» . Em đọc từng ví dụ và nhận ra cấu	3	0	11	True		
+1214	hơn»	trúc	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	12	True		
+1215	hơn»	.	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	13	True		
+1216	hơn»	Ví	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	14	True		
+1217	hơn»	dụ	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	15	True		
+1218	hơn»	mẫu	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	16	True		
+1219	hơn»	1	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	17	True		
+1220	hơn»	:	hơn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	18	True	179,252,332	Tiếng Việt : Lớp 4 : Tiết 18 : So sánh hơn Bài 1 : Tiết này luyện mẫu câu «So sánh hơn» . Em đọc từng ví dụ và nhận ra c
+1221	nhất»	.	nhất» .	3	0	2	False		
+1222	nhất»	Em	nhất» . Em	3	0	3	True		
+1223	nhất»	đọc	nhất» . Em đọc	3	0	4	True		
+1224	nhất»	từng	nhất» . Em đọc từng	3	0	5	True		
+1225	nhất»	ví	nhất» . Em đọc từng ví	3	0	6	True		
+1226	nhất»	dụ	nhất» . Em đọc từng ví dụ	3	0	7	True		
+1227	nhất»	và	nhất» . Em đọc từng ví dụ và	3	0	8	True		
+1228	nhất»	nhận	nhất» . Em đọc từng ví dụ và nhận	3	0	9	True		
+1229	nhất»	ra	nhất» . Em đọc từng ví dụ và nhận ra	3	0	10	True		
+1230	nhất»	cấu	nhất» . Em đọc từng ví dụ và nhận ra cấu	3	0	11	True		
+1231	nhất»	trúc	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	12	True		
+1232	nhất»	.	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	13	True		
+1233	nhất»	Ví	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	14	True		
+1234	nhất»	dụ	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	15	True		
+1235	nhất»	mẫu	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	16	True		
+1236	nhất»	1	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	17	True		
+1237	nhất»	:	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	18	True		
+1238	nhất»	Em	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em	3	0	19	True		
+1239	nhất»	giỏi	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi	3	0	20	True		
+1240	nhất»	nhất	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất	3	0	21	True		
+1241	nhất»	.	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất .	3	0	22	True		
+1242	nhất»	Ví	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví	3	0	23	True		
+1243	nhất»	dụ	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ	3	0	24	True		
+1244	nhất»	mẫu	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu	3	0	25	True		
+1245	nhất»	2	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2	3	0	26	True		
+1246	nhất»	:	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 :	3	0	27	True		
+1247	nhất»	Lan	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan	3	0	28	True		
+1248	nhất»	cao	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao	3	0	29	True		
+1249	nhất»	nhất	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất	3	0	30	True		
+1250	nhất»	.	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất .	3	0	31	True		
+1251	nhất»	Ví	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất . Ví	3	0	32	True		
+1252	nhất»	dụ	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất . Ví dụ	3	0	33	True		
+1253	nhất»	mẫu	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất . Ví dụ mẫu	3	0	34	True		
+1254	nhất»	3	nhất» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em giỏi nhất . Ví dụ mẫu 2 : Lan cao nhất . Ví dụ mẫu 3	3	3	35	True	180,253,333	Tiếng Việt : Lớp 4 : Tiết 19 : So sánh nhất Bài 1 : Tiết này luyện mẫu câu «So sánh nhất» . Em đọc từng ví dụ và nhận ra
+1255	:	Bị	: Bị	3	0	2	False		
+1256	động	Bài	động Bài	3	0	2	False		
+1257	«Bị	động»	«Bị động»	3	0	2	False		
+1258	20	Bị	20 : Bị	3	0	3	True		
+1259	động	1	động Bài 1	3	0	3	True		
+1260	câu	động»	câu «Bị động»	3	0	3	True		
+1261	Tiết	Bị	Tiết 20 : Bị	3	0	4	True		
+1262	động	:	động Bài 1 :	3	0	4	True		
+1263	mẫu	động»	mẫu câu «Bị động»	3	0	4	True		
+1264	:	Bị	: Tiết 20 : Bị	3	0	5	True		
+1265	động	Tiết	động Bài 1 : Tiết	3	0	5	True		
+1266	luyện	động»	luyện mẫu câu «Bị động»	3	0	5	True		
+1267	:	Tiết	: Tiết 20 : Bị động Bài 1 : Tiết	3	0	10	True		
+1268	này	động»	này luyện mẫu câu «Bị động»	3	0	6	True		
+1269	:	động»	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động»	3	0	16	True		
+1270	:	.	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» .	3	0	17	True		
+1271	:	Em	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em	3	0	18	True		
+1272	:	đọc	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc	3	0	19	True		
+1273	:	từng	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng	3	0	20	True		
+1274	:	ví	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví	3	0	21	True		
+1275	:	dụ	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ	3	0	22	True		
+1276	:	và	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và	3	0	23	True		
+1277	:	nhận	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận	3	0	24	True		
+1278	:	ra	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra	3	0	25	True		
+1279	:	cấu	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu	3	0	26	True		
+1280	:	trúc	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	27	True		
+1281	:	.	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	28	True		
+1282	:	Ví	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	29	True		
+1283	:	dụ	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	30	True		
+1284	:	mẫu	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	31	True		
+1285	:	1	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	32	True		
+1286	:	:	: Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	33	True	181,254,334	Tiếng Việt : Lớp 4 : Tiết 20 : Bị động Bài 1 : Tiết này luyện mẫu câu «Bị động» . Em đọc từng ví dụ và nhận ra cấu trúc 
+1287	:	Được	: Được	3	0	2	False		
+1288	«Được»	.	«Được» .	3	0	2	False		
+1289	21	Được	21 : Được	3	0	3	True		
+1290	câu	.	câu «Được» .	3	0	3	True		
+1291	Tiết	Được	Tiết 21 : Được	3	0	4	True		
+1292	mẫu	.	mẫu câu «Được» .	3	0	4	True		
+1293	:	Được	: Tiết 21 : Được	3	0	5	True		
+1294	luyện	.	luyện mẫu câu «Được» .	3	0	5	True		
+1295	:	Bài	: Tiết 21 : Được Bài	3	0	6	True		
+1296	này	.	này luyện mẫu câu «Được» .	3	0	6	True		
+1297	:	1	: Tiết 21 : Được Bài 1	3	0	7	True		
+1298	Tiết	.	Tiết này luyện mẫu câu «Được» .	3	0	7	True		
+1299	:	:	: Tiết 21 : Được Bài 1 :	3	0	8	True		
+1300	Tiết	Em	Tiết này luyện mẫu câu «Được» . Em	3	0	8	True		
+1301	:	Em	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em	3	0	16	True		
+1302	:	đọc	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc	3	0	17	True		
+1303	:	từng	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng	3	0	18	True		
+1304	:	ví	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví	3	0	19	True		
+1305	:	dụ	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ	3	0	20	True		
+1306	:	và	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và	3	0	21	True		
+1307	:	nhận	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận	3	0	22	True		
+1308	:	ra	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra	3	0	23	True		
+1309	:	cấu	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu	3	0	24	True		
+1310	:	trúc	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	25	True		
+1311	:	.	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	26	True		
+1312	:	Ví	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	27	True		
+1313	:	dụ	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	28	True		
+1314	:	mẫu	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	29	True		
+1315	:	1	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	30	True		
+1316	:	:	: Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	31	True	182,255,335	Tiếng Việt : Lớp 4 : Tiết 21 : Được Bài 1 : Tiết này luyện mẫu câu «Được» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví d
+1317	khi	Bài	khi Bài	3	1	2	False	336	Tiếng Việt : Lớp 6 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1318	khi»	.	khi» .	3	0	2	False		
+1319	khi»	Em	khi» . Em	3	0	3	True		
+1320	khi»	đọc	khi» . Em đọc	3	0	4	True		
+1321	khi»	từng	khi» . Em đọc từng	3	0	5	True		
+1322	khi»	ví	khi» . Em đọc từng ví	3	0	6	True		
+1323	khi»	dụ	khi» . Em đọc từng ví dụ	3	0	7	True		
+1324	khi»	và	khi» . Em đọc từng ví dụ và	3	0	8	True		
+1325	khi»	nhận	khi» . Em đọc từng ví dụ và nhận	3	0	9	True		
+1326	khi»	ra	khi» . Em đọc từng ví dụ và nhận ra	3	0	10	True		
+1327	khi»	cấu	khi» . Em đọc từng ví dụ và nhận ra cấu	3	0	11	True		
+1328	khi»	trúc	khi» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	12	True		
+1329	khi»	.	khi» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	13	True		
+1330	khi»	Ví	khi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	14	True		
+1331	khi»	dụ	khi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	15	True		
+1332	khi»	mẫu	khi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	16	True		
+1333	khi»	1	khi» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	17	True	183,256,336	Tiếng Việt : Lớp 4 : Tiết 22 : Mệnh đề khi Bài 1 : Tiết này luyện mẫu câu «Mệnh đề khi» . Em đọc từng ví dụ và nhận ra c
+1334	:	Mục	: Mục	3	0	2	False		
+1335	:	để	: để	3	0	2	False		
+1336	«Mục	đích	«Mục đích	3	0	2	False		
+1337	:	để»	: để»	3	0	2	False		
+1338	23	Mục	23 : Mục	3	0	3	True		
+1339	đích	để	đích : để	3	0	3	True		
+1340	câu	đích	câu «Mục đích	3	0	3	True		
+1341	:	.	: để» .	3	0	3	True		
+1342	Tiết	Mục	Tiết 23 : Mục	3	0	4	True		
+1343	đích	Bài	đích : để Bài	3	0	4	True		
+1344	mẫu	đích	mẫu câu «Mục đích	3	0	4	True		
+1345	:	Em	: để» . Em	3	0	4	True		
+1346	:	Mục	: Tiết 23 : Mục	3	0	5	True		
+1347	đích	1	đích : để Bài 1	3	0	5	True		
+1348	luyện	đích	luyện mẫu câu «Mục đích	3	0	5	True		
+1349	:	đọc	: để» . Em đọc	3	0	5	True		
+1350	:	1	: Tiết 23 : Mục đích : để Bài 1	3	0	10	True		
+1351	này	đích	này luyện mẫu câu «Mục đích	3	0	6	True		
+1352	:	từng	: để» . Em đọc từng	3	0	6	True		
+1353	:	:	: Tiết 23 : Mục đích : để Bài 1 :	3	0	11	True		
+1354	Tiết	đích	Tiết này luyện mẫu câu «Mục đích	3	0	7	True		
+1355	:	ví	: để» . Em đọc từng ví	3	0	7	True		
+1356	:	đích	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích	3	0	18	True		
+1357	:	dụ	: để» . Em đọc từng ví dụ	3	0	8	True		
+1358	:	dụ	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ	3	0	26	True		
+1359	:	và	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và	3	0	27	True		
+1360	:	nhận	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận	3	0	28	True		
+1361	:	ra	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra	3	0	29	True		
+1362	:	cấu	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu	3	0	30	True		
+1363	:	trúc	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	31	True		
+1364	:	.	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	32	True		
+1365	:	Ví	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	33	True		
+1366	:	dụ	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	34	True		
+1367	:	mẫu	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	35	True		
+1368	:	1	: Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	36	True	184,257,337	Tiếng Việt : Lớp 4 : Tiết 23 : Mục đích : để Bài 1 : Tiết này luyện mẫu câu «Mục đích : để» . Em đọc từng ví dụ và nhận 
+1369	thì	Lan	thì Lan	3	0	2	False		
+1370	mẹ	gọi	mẹ gọi	3	3	2	False	258,279,338	Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận 
+1371	chạy	Lan	chạy thì Lan	3	0	3	True		
+1372	Lan	Lan	Lan chạy thì Lan	3	0	4	True		
+1373	Lan	mệt	Lan chạy thì Lan mệt	3	0	5	True		
+1374	Lan	.	Lan chạy thì Lan mệt .	3	3	6	True	258,278,338	Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận 
+1375	dù	.	dù .	4	0	2	False		
+1376	nắng	Lan	nắng Lan	3	0	2	False		
+1377	tối	Bé	tối Bé	3	0	2	False		
+1378	lạnh	em	lạnh em	3	1	2	False	339	Tiếng Việt : Lớp 6 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1379	nóng	em	nóng em	3	0	2	False		
+1380	dù	.	dù . .	4	0	3	True		
+1381	nắng	vẫn	nắng Lan vẫn	3	0	3	True		
+1382	tối	vẫn	tối Bé vẫn	3	3	3	True	259,279,339	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1383	nóng	vẫn	nóng em vẫn	3	3	3	True	259,279,339	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1384	dù	.	dù . . .	4	2	4	True	259,339	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1385	nắng	chạy	nắng Lan vẫn chạy	3	0	4	True		
+1386	nắng	.	nắng Lan vẫn chạy .	3	3	5	True	259,279,339	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1387	hát	.	hát .	3	0	2	False		
+1388	chạy	vừa	chạy vừa	3	0	2	False		
+1389	nói	.	nói .	3	3	2	False	260,280,340	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1390	khóc	vừa	khóc vừa	3	0	2	False		
+1391	đọc	vừa	đọc vừa	3	0	2	False		
+1392	vừa	.	vừa hát .	3	0	3	True		
+1393	vừa	vừa	vừa chạy vừa	3	0	3	True		
+1394	vừa	vừa	vừa khóc vừa	3	0	3	True		
+1395	đọc	viết	đọc vừa viết	3	0	3	True		
+1396	học	.	học vừa hát .	3	3	4	True	260,279,340	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1397	Lan	vừa	Lan vừa chạy vừa	3	0	4	True		
+1398	Bé	vừa	Bé vừa khóc vừa	3	0	4	True		
+1399	đọc	.	đọc vừa viết .	3	3	4	True	260,280,340	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1400	:	vừa	: Lan vừa chạy vừa	3	0	5	True		
+1401	Bé	cười	Bé vừa khóc vừa cười	3	0	5	True		
+1402	:	cười	: Lan vừa chạy vừa cười	3	0	6	True		
+1403	Bé	.	Bé vừa khóc vừa cười .	3	3	6	True	260,280,340	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1404	:	.	: Lan vừa chạy vừa cười .	3	3	7	True	260,280,340	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1405	quan	hệ	quan hệ	4	0	2	False		
+1406	Em	gọi	Em gọi	3	0	2	False		
+1407	mà	Lan	mà Lan	3	0	2	False		
+1408	quan	:	quan hệ :	4	2	3	True	261,341	Tiếng Việt : Lớp 5 : Tiết 27 : Mệnh đề quan hệ : mà Bài 1 : Tiết này luyện mẫu câu «Mệnh đề quan hệ : mà» . Em đọc từng 
+1409	Em	Lan	Em gọi mà Lan	3	0	4	True		
+1410	Em	đi	Em gọi mà Lan đi	3	0	5	True		
+1411	Em	.	Em gọi mà Lan đi .	3	3	6	True	261,280,341	Tiếng Việt : Lớp 5 : Tiết 27 : Mệnh đề quan hệ : mà Bài 1 : Tiết này luyện mẫu câu «Mệnh đề quan hệ : mà» . Em đọc từng 
+1412	chăm	nên	chăm nên	3	0	2	False		
+1413	muộn	nên	muộn nên	3	0	2	False		
+1414	chăm	em	chăm nên em	3	0	3	True		
+1415	muộn	em	muộn nên em	3	0	3	True		
+1416	chăm	vui	chăm nên em vui	3	0	4	True		
+1417	muộn	chạy	muộn nên em chạy	3	0	4	True		
+1418	chăm	.	chăm nên em vui .	3	3	5	True	262,281,342	Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra
+1419	muộn	.	muộn nên em chạy .	3	3	5	True	262,281,342	Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra
+1420	S	V	S V	3	1	2	False	343	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1421	cang	V	cang V	3	1	2	False	344	Tiếng Việt : Lớp 6 : Tiết 30 : vi S cang V cang V Bài 1 : Tiết này luyện mẫu câu «vi S cang V cang V» . Em đọc từng ví d
+1422	:	vi	: vi	3	3	2	False	343,344,345	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1423	V»	.	V» .	3	0	2	False		
+1424	V»	Em	V» . Em	3	0	3	True		
+1425	V»	đọc	V» . Em đọc	3	0	4	True		
+1426	V»	từng	V» . Em đọc từng	3	0	5	True		
+1427	V»	ví	V» . Em đọc từng ví	3	0	6	True		
+1428	V»	dụ	V» . Em đọc từng ví dụ	3	0	7	True		
+1429	V»	và	V» . Em đọc từng ví dụ và	3	0	8	True		
+1430	V»	nhận	V» . Em đọc từng ví dụ và nhận	3	0	9	True		
+1431	V»	ra	V» . Em đọc từng ví dụ và nhận ra	3	0	10	True		
+1432	V»	cấu	V» . Em đọc từng ví dụ và nhận ra cấu	3	0	11	True		
+1433	V»	trúc	V» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	12	True		
+1434	V»	.	V» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	13	True		
+1435	V»	Ví	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	14	True		
+1436	V»	dụ	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	15	True		
+1437	V»	mẫu	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	16	True		
+1438	V»	1	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	17	True		
+1439	V»	:	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	0	18	True		
+1440	V»	Em	V» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Em	3	3	19	True	343,344,345	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1441	mà	còn	mà còn	5	1	2	False	346	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1442	cái	bút	cái bút	3	0	2	False		
+1443	cái	là	cái bút là	3	0	3	True		
+1444	cái	màu	cái bút là màu	3	0	4	True		
+1445	cái	đỏ	cái bút là màu đỏ	3	0	5	True		
+1446	cái	.	cái bút là màu đỏ .	3	0	6	True		
+1447	cái	Con	cái bút là màu đỏ . Con	3	0	7	True		
+1448	cái	mèo	cái bút là màu đỏ . Con mèo	3	0	8	True		
+1449	cái	chạy	cái bút là màu đỏ . Con mèo chạy	3	0	9	True		
+1450	cái	.	cái bút là màu đỏ . Con mèo chạy .	3	0	10	True		
+1451	cái	Bé	cái bút là màu đỏ . Con mèo chạy . Bé	3	3	11	True	185,263,347	Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 1 : Tiết «Câu tiếng Việt trong văn cảnh» : em đọc các c
+1452	trong	.	trong .	3	0	2	False		
+1453	nước	.	nước trong .	3	0	3	True		
+1454	.	.	. nước trong .	3	0	4	True		
+1455	xanh	.	xanh . nước trong .	3	0	5	True		
+1456	xanh	trời	xanh . nước trong . trời	3	0	6	True		
+1457	xanh	xanh	xanh . nước trong . trời xanh	3	0	7	True		
+1458	xanh	.	xanh . nước trong . trời xanh .	3	0	8	True		
+1459	xanh	Em	xanh . nước trong . trời xanh . Em	3	0	9	True		
+1460	xanh	ở	xanh . nước trong . trời xanh . Em ở	3	0	10	True		
+1461	xanh	trường	xanh . nước trong . trời xanh . Em ở trường	3	0	11	True		
+1462	xanh	.	xanh . nước trong . trời xanh . Em ở trường .	3	0	12	True		
+1463	xanh	Bé	xanh . nước trong . trời xanh . Em ở trường . Bé	3	0	13	True		
+1464	xanh	ở	xanh . nước trong . trời xanh . Em ở trường . Bé ở	3	0	14	True		
+1465	xanh	nhà	xanh . nước trong . trời xanh . Em ở trường . Bé ở nhà	3	0	15	True		
+1466	xanh	.	xanh . nước trong . trời xanh . Em ở trường . Bé ở nhà .	3	3	16	True	188,266,350	Tiếng Việt : Lớp 4 : Tiết 24 : Câu tiếng Việt trong văn cảnh Bài 4 : Cây cam rất ngọt . hoa đỏ . con mèo trắng . cái áo 
+1467	Em	càng	Em càng	4	2	2	False	344,366	Tiếng Việt : Lớp 6 : Tiết 30 : vi S cang V cang V Bài 1 : Tiết này luyện mẫu câu «vi S cang V cang V» . Em đọc từng ví d
+1468	chạy	càng	chạy càng	4	0	2	False		
+1469	càng	càng	càng chạy càng	4	2	3	True	344,366	Tiếng Việt : Lớp 6 : Tiết 30 : vi S cang V cang V Bài 1 : Tiết này luyện mẫu câu «vi S cang V cang V» . Em đọc từng ví d
+1470	dọn	.	dọn .	3	3	2	False	281,346,367	Tiếng Việt : Lớp 5 : Tiết 29 : Câu tiếng Việt trong văn cảnh Bài 19 : Trời mưa mà em đi . Vì em chăm nên em vui . Vì trờ
+1471	hay	em	hay em	4	2	2	False	345,367	Tiếng Việt : Lớp 6 : Tiết 31 : vi S V hay S V Bài 1 : Tiết này luyện mẫu câu «vi S V hay S V» . Em đọc từng ví dụ và nhậ
+1472	những	em	những em	3	0	2	False		
+1473	Không	em	Không những em	3	2	3	True	346,367	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1474	tử	.	tử .	3	3	2	False	204,294,369	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 3 : Đường kính gấp đôi bán kính . Chu vi h
+1475	x	bằng	x bằng	3	2	2	False	203,370	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 2 : Diện tích hình tam giác bằng nửa đáy n
+1476	nhất	một	nhất một	3	0	2	False		
+1477	ẩn	.	ẩn .	3	2	2	False	283,370	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 2 : Bất phương trình bậc nhất một ẩn . T
+1478	Hàm	số	Hàm số	3	0	2	False		
+1479	y	bằng	y bằng	3	0	2	False		
+1480	thức	là	thức là	3	0	2	False		
+1481	của	các	của các	3	0	2	False		
+1482	trừ	b	trừ b	3	2	2	False	369,370	Toán : Lớp 7 : Tiết 1 : Đa thức là tổng của các số hạng Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo
+1483	bậc	một	bậc nhất một	3	3	3	True	282,283,370	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 1 : Tiết Toán giúp em củng cố tư duy số 
+1484	.	số	. Hàm số	3	2	3	True	283,370	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 2 : Bất phương trình bậc nhất một ẩn . T
+1485	y	ax	y bằng ax	3	2	3	True	283,370	Toán : Lớp 6 : Tiết 1 : Số nguyên tố cùng nhau không có ước chung lớn hơn 1 Bài 2 : Bất phương trình bậc nhất một ẩn . T
+1486	Đa	là	Đa thức là	3	0	3	True		
+1487	tổng	các	tổng của các	3	0	3	True		
+1488	Đa	các	Đa thức là tổng của các	3	0	6	True		
+1489	Đa	số	Đa thức là tổng của các số	3	0	7	True		
+1490	Đa	hạng	Đa thức là tổng của các số hạng	3	2	8	True	369,370	Toán : Lớp 7 : Tiết 1 : Đa thức là tổng của các số hạng Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hình học và đo
+1491	góc	bằng	góc bằng	3	3	2	False	130,205,371	Toán : Lớp 4 : Tiết 1 : 125 cộng 375 bằng 500 Bài 2 : 1 kilô mét bằng 1000 mét . 1 tấn bằng 1000 kilô gam . Góc vuông bằ
+1492	a	bình	a bình	3	3	2	False	285,369,371	Toán : Lớp 6 : Tiết 2 : Diện tích hình chữ nhật bằng dài nhân rộng Bài 1 : Tiết Toán giúp em củng cố tư duy số học , hìn
+1493	:	Đa	: Đa	3	1	2	False	371	Toán : Lớp 7 : Tiết 1 : Đa thức là tổng của các số hạng Bài 3 : Parabol có đỉnh và trục đối xứng . a dương parabol mở lê
+1494	hạng	Bài	hạng Bài	3	1	2	False	371	Toán : Lớp 7 : Tiết 1 : Đa thức là tổng của các số hạng Bài 3 : Parabol có đỉnh và trục đối xứng . a dương parabol mở lê
+1495	suất	bằng	suất bằng	3	2	2	False	296,372	Khoa học : Lớp 6 : Tiết 1 : Vật chất tồn tại khách quan Bài 3 : Đơn vị lực là newton . Áp suất bằng lực chia diện tích .
+1496	chia	huyền	chia huyền	3	2	2	False	371,372	Toán : Lớp 7 : Tiết 1 : Đa thức là tổng của các số hạng Bài 3 : Parabol có đỉnh và trục đối xứng . a dương parabol mở lê
+1497	Dân	số	Dân số	3	3	2	False	206,288,373	Địa lý : Lớp 5 : Tiết 1 : Châu Á rộng lớn nhất các châu lục Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con 
+1498	dân	số	dân số	4	2	2	False	206,373	Địa lý : Lớp 5 : Tiết 1 : Châu Á rộng lớn nhất các châu lục Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con 
+1499	tế	.	tế .	3	2	2	False	218,373	Đạo đức và Xã hội : Lớp 5 : Tiết 1 : Kinh tế thị trường định hướng xã hội chủ nghĩa Bài 1 : Tiết Đạo đức và Xã hội giúp 
+1500	dân	cư	dân cư	3	3	2	False	221,301,373	Đạo đức và Xã hội : Lớp 5 : Tiết 2 : Luật giao thông đường bộ Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm
+1501	TP	HCM	TP HCM	3	3	2	False	62,75,374	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 10 : Nguyễn Hưng Theo Đời sống Plus/GĐVN . Phương Mai t
+1502	tạo	.	tạo .	3	3	2	False	217,300,374	Khoa học : Lớp 5 : Tiết 2 : Mưa axit do ô nhiễm không khí Bài 1 : Tiết Khoa học giúp em khám phá tự nhiên và cơ thể con 
+1503	điều	kiện	điều kiện	3	0	2	False		
+1504	cứu	kiện	cứu điều kiện	3	0	3	True		
+1505	nghiên	kiện	nghiên cứu điều kiện	3	0	4	True		
+1506	nhiên	kiện	nhiên nghiên cứu điều kiện	3	0	5	True		
+1507	tự	kiện	tự nhiên nghiên cứu điều kiện	3	0	6	True		
+1508	lý	kiện	lý tự nhiên nghiên cứu điều kiện	3	0	7	True		
+1509	Địa	kiện	Địa lý tự nhiên nghiên cứu điều kiện	3	0	8	True		
+1510	Địa	tự	Địa lý tự nhiên nghiên cứu điều kiện tự	3	0	9	True		
+1511	Địa	nhiên	Địa lý tự nhiên nghiên cứu điều kiện tự nhiên	3	2	10	True	373,374	Địa lý : Lớp 7 : Tiết 1 : Địa lý tự nhiên nghiên cứu điều kiện tự nhiên Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa 
+1512	Hạ	Long	Hạ Long	3	3	2	False	75,133,375	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 23 : Trợ lực giúp nông dân gỡ khó . Cao tốc Hạ Long - H
+1513	:	Đường	: Đường	3	3	2	False	204,287,376	Toán : Lớp 5 : Tiết 1 : Phân số tối giản có tử và mẫu nguyên tố cùng nhau Bài 3 : Đường kính gấp đôi bán kính . Chu vi h
+1514	độ	cao	độ cao	3	2	2	False	286,376	Địa lý : Lớp 6 : Tiết 1 : Trái đất quay quanh mình trục và quanh Mặt Trời Bài 1 : Tiết Địa lý giúp em hiểu đất nước , đị
+1515	cách	đây	cách đây	3	2	2	False	57,377	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 5 : Và chỉ có 499 chiếc được sản xuất . Một số ảnh mới 
+1516	Vương	.	Vương .	3	2	2	False	213,377	Lịch sử : Lớp 5 : Tiết 2 : Thành nhà Hồ ở Thanh Hóa Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự
+1517	Văn	Lang	Văn Lang	3	2	2	False	140,377	Lịch sử : Lớp 4 : Tiết 2 : Các vua Hùng dựng nước Văn Lang Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và
+1518	Ngô	Quyền	Ngô Quyền	3	3	2	False	213,290,377	Lịch sử : Lớp 5 : Tiết 2 : Thành nhà Hồ ở Thanh Hóa Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự
+1519	Nhà	Trần	Nhà Trần	3	3	2	False	137,291,378	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các s
+1520	Văn	Miếu	Văn Miếu	3	0	2	False		
+1521	Nguyên	.	Nguyên .	3	3	2	False	375,376,378	Địa lý : Lớp 7 : Tiết 1 : Địa lý tự nhiên nghiên cứu điều kiện tự nhiên Bài 3 : Cá tra basa xuất khẩu từ Mekong . Cà phê
+1522	kỳ	đồ	kỳ đồ	3	0	2	False		
+1523	hàng	vạn	hàng vạn	3	0	2	False		
+1524	.	Miếu	. Văn Miếu	3	2	3	True	139,378	Lịch sử : Lớp 4 : Tiết 1 : Nhà Lý thành lập năm 1009 Bài 3 : Bác Hồ viết Di chúc năm 1969 . Cả nước thống nhất năm 1975 
+1525	Thời	đồ	Thời kỳ đồ	3	0	3	True		
+1526	hàng	năm	hàng vạn năm	3	2	3	True	377,378	Lịch sử : Lớp 7 : Tiết 1 : Thời kỳ đồ đá cách đây hàng vạn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thốn
+1527	Thời	đá	Thời kỳ đồ đá	3	2	4	True	377,378	Lịch sử : Lớp 7 : Tiết 1 : Thời kỳ đồ đá cách đây hàng vạn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thốn
+1528	lãnh	đạo	lãnh đạo	3	2	2	False	72,379	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 20 : Hãy tận dụng mọi cơ hội để học tập . Sử dụng thời 
+1529	Đảng	Cộng	Đảng Cộng	3	0	2	False		
+1530	mạng	.	mạng .	3	2	2	False	300,379	Đạo đức và Xã hội : Lớp 6 : Tiết 1 : THCS là bậc học bắt buộc sau tiểu học Bài 3 : Quyền sở hữu trí tuệ bảo vệ sáng tạo 
+1531	Đảng	sản	Đảng Cộng sản	3	0	3	True		
+1532	Đảng	Việt	Đảng Cộng sản Việt	3	0	4	True		
+1533	Đảng	Nam	Đảng Cộng sản Việt Nam	3	3	5	True	210,292,379	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+1534	Đổi	mới	Đổi mới	3	3	2	False	212,293,380	Lịch sử : Lớp 5 : Tiết 1 : Nhà Nguyễn thống nhất đất nước năm 1802 Bài 3 : Đổi mới năm 1986 mở đường phát triển . Việt N
+1535	tuần	hoàn	tuần hoàn	3	3	2	False	215,294,382	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 2 : Di truyền truyền tính trạng cho con . Biến dị tạ
+1536	gia	.	gia .	3	3	2	False	206,300,383	Địa lý : Lớp 5 : Tiết 1 : Châu Á rộng lớn nhất các châu lục Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con 
+1537	thần	kinh	thần kinh	3	2	2	False	216,383	Khoa học : Lớp 5 : Tiết 1 : Tế bào là đơn vị cơ bản của sự sống Bài 3 : Hệ thần kinh điều khiển cơ thể . Não là trung tâ
+1538	lạnh	.	lạnh .	3	3	2	False	6,15,384	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 3 : Miền Bắc có mùa đông lạnh . Miền Nam ấm quanh năm . Bản đồ c
+1539	hành	.	hành .	3	2	2	False	9,385	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 2 : Dân tộc Việt Nam có truyền thống yêu nước . Làng em có đình làng
+1540	Chính	phủ	Chính phủ	3	3	2	False	146,211,385	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 2 : Công dân tuân thủ pháp luật . Quốc hội là cơ 
+1541	Nghĩa	vụ	Nghĩa vụ	3	0	2	False		
+1542	:	Công	: Công	3	0	2	False		
+1543	lập	.	lập .	3	3	2	False	290,385,386	Lịch sử : Lớp 6 : Tiết 1 : Thời kỳ Bắc thuộc kéo dài hơn nghìn năm Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền 
+1544	bầu	cử	bầu cử	3	0	2	False		
+1545	từ	18	từ 18	3	0	2	False		
+1546	.	vụ	. Nghĩa vụ	3	3	3	True	8,298,386	Lịch sử : Lớp 3 : Tiết 1 : Bác Hồ sinh năm 1890 Bài 1 : Tiết Lịch sử giúp em biết nguồn cội , truyền thống và các sự kiệ
+1547	:	dân	: Công dân	3	3	3	True	146,385,386	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 2 : Công dân tuân thủ pháp luật . Quốc hội là cơ 
+1548	quyền	cử	quyền bầu cử	3	0	3	True		
+1549	từ	tuổi	từ 18 tuổi	3	0	3	True		
+1550	có	cử	có quyền bầu cử	3	0	4	True		
+1551	có	tuổi	có quyền bầu cử từ 18 tuổi	3	2	7	True	385,386	Đạo đức và Xã hội : Lớp 7 : Tiết 1 : Công dân có quyền bầu cử từ 18 tuổi Bài 1 : Tiết Đạo đức và Xã hội giúp em sống có 
+1552	ma	túy	ma túy	3	3	2	False	147,220,387	Đạo đức và Xã hội : Lớp 4 : Tiết 1 : Hiến pháp là luật cơ bản nhất Bài 3 : Hội Liên hiệp Phụ nữ chăm lo phụ nữ . Công đo
+1553	đường	.	đường .	3	3	2	False	296,298,387	Khoa học : Lớp 6 : Tiết 1 : Vật chất tồn tại khách quan Bài 3 : Đơn vị lực là newton . Áp suất bằng lực chia diện tích .
+1554	tuổi	Bài	tuổi Bài	3	1	2	False	387	Đạo đức và Xã hội : Lớp 7 : Tiết 1 : Công dân có quyền bầu cử từ 18 tuổi Bài 3 : Minh bạch trong đấu thầu công . Khoa họ
+1555	khuyết	tật	khuyết tật	3	3	2	False	65,145,388	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 13 : Thi thể này trôi dạt gần hiện trường tàu chìm . "C
+1556	Bình	đẳng	Bình đẳng	3	0	2	False		
+1557	Bình	giới	Bình đẳng giới	3	0	3	True		
+1558	Bình	trong	Bình đẳng giới trong	3	2	4	True	220,388	Đạo đức và Xã hội : Lớp 5 : Tiết 1 : Kinh tế thị trường định hướng xã hội chủ nghĩa Bài 3 : Không chia sẻ thông tin cá n
+1559	thì	Bài	thì Bài	3	0	2	False		
+1560	«Nếu	.	«Nếu .	3	0	2	False		
+1561	thì»	.	thì» .	3	0	2	False		
+1562	.	Bài	. thì Bài	3	0	3	True		
+1563	câu	.	câu «Nếu .	3	0	3	True		
+1564	.	.	. thì» .	3	0	3	True		
+1565	.	Bài	. . thì Bài	3	0	4	True		
+1566	mẫu	.	mẫu câu «Nếu .	3	0	4	True		
+1567	.	.	. . thì» .	3	0	4	True		
+1568	.	Bài	. . . thì Bài	3	0	5	True		
+1569	luyện	.	luyện mẫu câu «Nếu .	3	0	5	True		
+1570	.	Em	. . thì» . Em	3	0	5	True		
+1571	.	1	. . . thì Bài 1	3	0	6	True		
+1572	này	.	này luyện mẫu câu «Nếu .	3	0	6	True		
+1573	.	đọc	. . thì» . Em đọc	3	0	6	True		
+1574	.	:	. . . thì Bài 1 :	3	0	7	True		
+1575	Tiết	.	Tiết này luyện mẫu câu «Nếu .	3	0	7	True		
+1576	.	từng	. . thì» . Em đọc từng	3	0	7	True		
+1577	.	.	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu .	3	0	14	True		
+1578	.	ví	. . thì» . Em đọc từng ví	3	0	8	True		
+1579	.	ví	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví	3	0	22	True		
+1580	.	dụ	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ	3	0	23	True		
+1581	.	và	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và	3	0	24	True		
+1582	.	nhận	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận	3	0	25	True		
+1583	.	ra	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra	3	0	26	True		
+1584	.	cấu	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu	3	0	27	True		
+1585	.	trúc	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	28	True		
+1586	.	.	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	29	True		
+1587	.	Ví	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	30	True		
+1588	.	dụ	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	31	True		
+1589	.	mẫu	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	32	True		
+1590	.	1	. . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	33	True	258,338,425	Tiếng Việt : Lớp 5 : Tiết 24 : Nếu . . . thì Bài 1 : Tiết này luyện mẫu câu «Nếu . . . thì» . Em đọc từng ví dụ và nhận 
+1591	vẫn	Bài	vẫn Bài	3	0	2	False		
+1592	vẫn»	.	vẫn» .	3	0	2	False		
+1593	vẫn	1	vẫn Bài 1	3	0	3	True		
+1594	vẫn»	Em	vẫn» . Em	3	0	3	True		
+1595	vẫn	:	vẫn Bài 1 :	3	0	4	True		
+1596	vẫn»	đọc	vẫn» . Em đọc	3	0	4	True		
+1597	vẫn	Tiết	vẫn Bài 1 : Tiết	3	0	5	True		
+1598	vẫn»	từng	vẫn» . Em đọc từng	3	0	5	True		
+1599	vẫn	này	vẫn Bài 1 : Tiết này	3	0	6	True		
+1600	vẫn»	ví	vẫn» . Em đọc từng ví	3	0	6	True		
+1601	vẫn	luyện	vẫn Bài 1 : Tiết này luyện	3	0	7	True		
+1602	vẫn»	dụ	vẫn» . Em đọc từng ví dụ	3	0	7	True		
+1603	vẫn	mẫu	vẫn Bài 1 : Tiết này luyện mẫu	3	0	8	True		
+1604	vẫn»	và	vẫn» . Em đọc từng ví dụ và	3	0	8	True		
+1605	vẫn	câu	vẫn Bài 1 : Tiết này luyện mẫu câu	3	0	9	True		
+1606	vẫn»	nhận	vẫn» . Em đọc từng ví dụ và nhận	3	0	9	True		
+1607	vẫn	«Mặc	vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc	3	3	10	True	259,339,426	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1608	vẫn»	ra	vẫn» . Em đọc từng ví dụ và nhận ra	3	0	10	True		
+1609	vẫn»	cấu	vẫn» . Em đọc từng ví dụ và nhận ra cấu	3	0	11	True		
+1610	vẫn»	trúc	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	12	True		
+1611	vẫn»	.	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	13	True		
+1612	vẫn»	Ví	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	14	True		
+1613	vẫn»	dụ	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	15	True		
+1614	vẫn»	mẫu	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	16	True		
+1615	vẫn»	1	vẫn» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	17	True	259,339,426	Tiếng Việt : Lớp 5 : Tiết 25 : Mặc dù . . . vẫn Bài 1 : Tiết này luyện mẫu câu «Mặc dù . . . vẫn» . Em đọc từng ví dụ và
+1616	:	Vừa	: Vừa	3	0	2	False		
+1617	«Vừa	.	«Vừa .	3	0	2	False		
+1618	vừa»	.	vừa» .	3	0	2	False		
+1619	26	Vừa	26 : Vừa	3	0	3	True		
+1620	câu	.	câu «Vừa .	3	0	3	True		
+1621	.	.	. vừa» .	3	0	3	True		
+1622	Tiết	Vừa	Tiết 26 : Vừa	3	0	4	True		
+1623	mẫu	.	mẫu câu «Vừa .	3	0	4	True		
+1624	.	.	. . vừa» .	3	0	4	True		
+1625	:	Vừa	: Tiết 26 : Vừa	3	0	5	True		
+1626	luyện	.	luyện mẫu câu «Vừa .	3	0	5	True		
+1627	.	Em	. . vừa» . Em	3	0	5	True		
+1628	:	.	: Tiết 26 : Vừa .	3	0	6	True		
+1629	này	.	này luyện mẫu câu «Vừa .	3	0	6	True		
+1630	.	đọc	. . vừa» . Em đọc	3	0	6	True		
+1631	:	.	: Tiết 26 : Vừa . .	3	0	7	True		
+1632	Tiết	.	Tiết này luyện mẫu câu «Vừa .	3	0	7	True		
+1633	.	từng	. . vừa» . Em đọc từng	3	0	7	True		
+1634	:	.	: Tiết 26 : Vừa . . .	3	0	8	True		
+1635	:	.	: Tiết này luyện mẫu câu «Vừa .	3	0	8	True		
+1636	.	ví	. . vừa» . Em đọc từng ví	3	0	8	True		
+1637	:	vừa	: Tiết 26 : Vừa . . . vừa	3	0	9	True		
+1638	1	.	1 : Tiết này luyện mẫu câu «Vừa .	3	0	9	True		
+1639	.	dụ	. . vừa» . Em đọc từng ví dụ	3	0	9	True		
+1640	:	Bài	: Tiết 26 : Vừa . . . vừa Bài	3	0	10	True		
+1641	1	dụ	1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ	3	0	18	True		
+1642	:	dụ	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ	3	0	28	True		
+1643	:	và	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và	3	0	29	True		
+1644	:	nhận	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận	3	0	30	True		
+1645	:	ra	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra	3	0	31	True		
+1646	:	cấu	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu	3	0	32	True		
+1647	:	trúc	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	33	True		
+1648	:	.	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	34	True		
+1649	:	Ví	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	35	True		
+1650	:	dụ	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	36	True		
+1651	:	mẫu	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	37	True		
+1652	:	1	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	0	38	True		
+1653	:	:	: Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 :	3	3	39	True	260,340,427	Tiếng Việt : Lớp 5 : Tiết 26 : Vừa . . . vừa Bài 1 : Tiết này luyện mẫu câu «Vừa . . . vừa» . Em đọc từng ví dụ và nhận 
+1654	mà	Bài	mà Bài	3	2	2	False	341,428	Tiếng Việt : Lớp 6 : Tiết 27 : Mệnh đề quan hệ : mà Bài 1 : Tiết này luyện mẫu câu «Mệnh đề quan hệ : mà» . Em đọc từng 
+1655	:	mà»	: mà»	3	1	2	False	428	Tiếng Việt : Lớp 7 : Tiết 27 : Mệnh đề quan hệ : mà Bài 1 : Tiết này luyện mẫu câu «Mệnh đề quan hệ : mà» . Em đọc từng 
+1656	«Vì	.	«Vì .	3	0	2	False		
+1657	câu	.	câu «Vì .	3	0	3	True		
+1658	mẫu	.	mẫu câu «Vì .	3	0	4	True		
+1659	luyện	.	luyện mẫu câu «Vì .	3	0	5	True		
+1660	này	.	này luyện mẫu câu «Vì .	3	0	6	True		
+1661	Tiết	.	Tiết này luyện mẫu câu «Vì .	3	0	7	True		
+1662	:	.	: Tiết này luyện mẫu câu «Vì .	3	0	8	True		
+1663	1	.	1 : Tiết này luyện mẫu câu «Vì .	3	0	9	True		
+1664	Bài	.	Bài 1 : Tiết này luyện mẫu câu «Vì .	3	0	10	True		
+1665	nên	.	nên Bài 1 : Tiết này luyện mẫu câu «Vì .	3	0	11	True		
+1666	.	.	. nên Bài 1 : Tiết này luyện mẫu câu «Vì .	3	0	12	True		
+1667	.	.	. . nên Bài 1 : Tiết này luyện mẫu câu «Vì .	3	0	13	True		
+1668	.	.	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì .	3	0	14	True		
+1669	.	.	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . .	3	0	15	True		
+1670	.	.	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . .	3	0	16	True		
+1671	.	nên»	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên»	3	0	17	True		
+1672	.	.	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» .	3	0	18	True		
+1673	.	Em	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em	3	0	19	True		
+1674	.	đọc	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc	3	0	20	True		
+1675	.	từng	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng	3	0	21	True		
+1676	.	ví	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví	3	0	22	True		
+1677	.	dụ	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ	3	0	23	True		
+1678	.	và	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và	3	0	24	True		
+1679	.	nhận	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận	3	0	25	True		
+1680	.	ra	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra	3	0	26	True		
+1681	.	cấu	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu	3	0	27	True		
+1682	.	trúc	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc	3	0	28	True		
+1683	.	.	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc .	3	0	29	True		
+1684	.	Ví	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví	3	0	30	True		
+1685	.	dụ	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ	3	0	31	True		
+1686	.	mẫu	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu	3	0	32	True		
+1687	.	1	. . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1	3	3	33	True	262,342,429	Tiếng Việt : Lớp 5 : Tiết 28 : Vì . . . nên Bài 1 : Tiết này luyện mẫu câu «Vì . . . nên» . Em đọc từng ví dụ và nhận ra
+1688	Em	vui	Em vui	3	2	2	False	365,430	Tiếng Việt : Lớp 6 : Tiết 33 : Câu tiếng Việt trong văn cảnh Bài 19 : Trời mưa mà em đi . Vì em chăm nên em vui . Vì trờ
+1689	khi	thấy	khi thấy	3	0	2	False		
+1690	nghe	sấm	nghe sấm	3	0	2	False		
+1691	khi	xa	khi xa	3	0	2	False		
+1692	cười	thấy	cười khi thấy	3	0	3	True		
+1693	khi	sấm	khi nghe sấm	3	0	3	True		
+1694	nhớ	xa	nhớ khi xa	3	0	3	True		
+1695	Lan	thấy	Lan cười khi thấy	3	0	4	True		
+1696	sợ	sấm	sợ khi nghe sấm	3	0	4	True		
+1697	Em	xa	Em nhớ khi xa	3	0	4	True		
+1698	:	thấy	: Lan cười khi thấy	3	0	5	True		
+1699	Bé	sấm	Bé sợ khi nghe sấm	3	0	5	True		
+1700	Em	nhà	Em nhớ khi xa nhà	3	0	5	True		
+1701	:	bạn	: Lan cười khi thấy bạn	3	0	6	True		
+1702	Bé	.	Bé sợ khi nghe sấm .	3	3	6	True	343,366,430	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1703	Em	.	Em nhớ khi xa nhà .	3	3	6	True	343,366,430	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1704	:	.	: Lan cười khi thấy bạn .	3	3	7	True	343,366,430	Tiếng Việt : Lớp 6 : Tiết 29 : vi S V khi S V Bài 1 : Tiết này luyện mẫu câu «vi S V khi S V» . Em đọc từng ví dụ và nhậ
+1705	lớn	càng	lớn càng	3	0	2	False		
+1706	khôn	.	khôn .	3	0	2	False		
+1707	đọc	càng	đọc càng	3	0	2	False		
+1708	càng	càng	càng lớn càng	3	0	3	True		
+1709	đọc	thích	đọc càng thích	3	0	3	True		
+1710	Bé	càng	Bé càng lớn càng	3	0	4	True		
+1711	đọc	.	đọc càng thích .	3	3	4	True	344,366,431	Tiếng Việt : Lớp 6 : Tiết 30 : vi S cang V cang V Bài 1 : Tiết này luyện mẫu câu «vi S cang V cang V» . Em đọc từng ví d
+1712	Bé	.	Bé càng lớn càng khôn .	3	3	6	True	344,366,431	Tiếng Việt : Lớp 6 : Tiết 30 : vi S cang V cang V Bài 1 : Tiết này luyện mẫu câu «vi S cang V cang V» . Em đọc từng ví d
+1713	hay	Lan	hay Lan	3	0	2	False		
+1714	ở	.	ở .	3	0	2	False		
+1715	mẹ	mua	mẹ mua	3	0	2	False		
+1716	hay	Bé	hay Bé	3	0	2	False		
+1717	Em	viết	Em viết	3	3	2	False	345,367,432	Tiếng Việt : Lớp 6 : Tiết 31 : vi S V hay S V Bài 1 : Tiết này luyện mẫu câu «vi S V hay S V» . Em đọc từng ví dụ và nhậ
+1718	đi	Lan	đi hay Lan	3	0	3	True		
+1719	hay	mua	hay mẹ mua	3	0	3	True		
+1720	ngủ	Bé	ngủ hay Bé	3	0	3	True		
+1721	Lan	Lan	Lan đi hay Lan	3	0	4	True		
+1722	nấu	mua	nấu hay mẹ mua	3	0	4	True		
+1723	Bé	Bé	Bé ngủ hay Bé	3	0	4	True		
+1724	Lan	.	Lan đi hay Lan ở .	3	3	6	True	345,367,432	Tiếng Việt : Lớp 6 : Tiết 31 : vi S V hay S V Bài 1 : Tiết này luyện mẫu câu «vi S V hay S V» . Em đọc từng ví dụ và nhậ
+1725	Mẹ	mua	Mẹ nấu hay mẹ mua	3	0	5	True		
+1726	Bé	khóc	Bé ngủ hay Bé khóc	3	0	5	True		
+1727	Mẹ	.	Mẹ nấu hay mẹ mua .	3	3	6	True	345,367,432	Tiếng Việt : Lớp 6 : Tiết 31 : vi S V hay S V Bài 1 : Tiết này luyện mẫu câu «vi S V hay S V» . Em đọc từng ví dụ và nhậ
+1728	Bé	.	Bé ngủ hay Bé khóc .	3	3	6	True	345,367,432	Tiếng Việt : Lớp 6 : Tiết 31 : vi S V hay S V Bài 1 : Tiết này luyện mẫu câu «vi S V hay S V» . Em đọc từng ví dụ và nhậ
+1729	khong	nhung	khong nhung	4	0	2	False		
+1730	những	Lan	những Lan	3	0	2	False		
+1731	nhảy	.	nhảy .	3	0	2	False		
+1732	những	Bé	những Bé	3	0	2	False		
+1733	múa	.	múa .	3	0	2	False		
+1734	khong	ma	khong nhung ma	4	0	3	True		
+1735	Không	Lan	Không những Lan	3	0	3	True		
+1736	Lan	.	Lan nhảy .	3	3	3	True	346,367,433	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1737	Không	Bé	Không những Bé	3	0	3	True		
+1738	Bé	.	Bé múa .	3	3	3	True	346,368,433	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1739	khong	con	khong nhung ma con	4	0	4	True		
+1740	Không	chạy	Không những Lan chạy	3	3	4	True	346,367,433	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1741	:	Bé	: Không những Bé	3	0	4	True		
+1742	khong	S	khong nhung ma con S	4	2	5	True	346,433	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1743	:	hát	: Không những Bé hát	3	3	5	True	346,368,433	Tiếng Việt : Lớp 6 : Tiết 32 : vi khong nhung ma con S V Bài 1 : Tiết này luyện mẫu câu «vi khong nhung ma con S V» . Em
+1744	:	Tuy	: Tuy	5	1	2	False	434	Tiếng Việt : Lớp 7 : Tiết 33 : vi tuy S V nhung S V Bài 1 : Tiết này luyện mẫu câu «vi tuy S V nhung S V» . Em đọc từng 
+1745	khó	.	khó .	3	3	2	False	75,76,438	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 23 : Trợ lực giúp nông dân gỡ khó . Cao tốc Hạ Long - H
+1746	:	Trong	: Trong	6	2	2	False	66,439	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 14 : Trong tim tôi có một sự giận dữ cháy bỏng . 20 thự
+1747	:	Do	: Do	5	1	2	False	441	Tiếng Việt : Lớp 7 : Tiết 37 : vi do S V Bài 1 : Tiết này luyện mẫu câu «vi do S V» . Em đọc từng ví dụ và nhận ra cấu t
+1748	đi	đâu	đi đâu	3	0	2	False		
+1749	toán	.	toán .	4	3	2	False	93,98,464	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 15 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1750	ai	?	ai ?	3	3	2	False	118,124,464	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 40 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1751	đi	?	đi đâu ?	3	3	3	True	87,105,464	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 9 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . B
+1752	Trường	em	Trường em	3	3	2	False	5,97,466	Địa lý : Lớp 3 : Tiết 1 : Thủ đô Việt Nam là Hà Nội Bài 2 : Huế là cố đô . Nha Trang có biển đẹp . Làng em ở xã . Xã em 
+1753	Đáp:	Lan	Đáp: Lan	3	3	2	False	463,464,466	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 22 : Bé ngủ hay Bé khóc . Em viết hay em đọc . Không nh
+1754	:	Hỏi:	: Hỏi:	3	3	2	False	464,465,466	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 23 : Hỏi: gì Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em họ
+1755	Đáp:	Bé	Đáp: Bé	3	0	2	False		
+1756	?	Bé	? Đáp: Bé	3	3	3	True	464,465,466	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 23 : Hỏi: gì Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em họ
+1757	tuổi	?	tuổi ?	3	2	2	False	125,467	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 47 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1758	tuổi	.	tuổi .	4	2	2	False	125,467	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 47 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1759	bóng	.	bóng .	3	3	2	False	60,435,468	Tiếng Việt : Lớp 3 : Tiết 19 : Câu tiếng Việt trong văn cảnh Bài 8 : Tuyển Việt Nam tập chống đá phạt . Giá vàng trong n
+1760	đọc	sách	đọc sách	3	0	2	False		
+1761	Đáp:	Mẹ	Đáp: Mẹ	3	0	2	False		
+1762	Đáp:	Chị	Đáp: Chị	3	0	2	False		
+1763	Em	sách	Em đọc sách	3	2	3	True	116,468	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 38 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1764	?	Mẹ	? Đáp: Mẹ	3	3	3	True	464,466,468	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 23 : Hỏi: gì Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em họ
+1765	?	Chị	? Đáp: Chị	3	3	3	True	466,467,468	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 25 : Hỏi: Trường em ở đâu ? Đáp: Em ở trường . Hỏi: Lan
+1766	Đáp:	Bố	Đáp: Bố	3	3	2	False	464,468,469	Tiếng Việt : Lớp 7 : Tiết 38 : Câu tiếng Việt trong văn cảnh Bài 23 : Hỏi: gì Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em họ
+1767	Cô	dạy	Cô dạy	3	3	2	False	104,435,471	Tiếng Việt : Lớp 3 : Tiết 20 : Hội thoại hằng ngày Bài 26 : Tiết hội thoại : em luyện đặt câu hỏi và trả lời ngắn gọn . 
+1768	cô	giới	cô giới	3	0	2	False		
+1769	mà	giới	mà cô giới	3	0	3	True		
+1770	mà	thiệu	mà cô giới thiệu	3	0	4	True		
+1771	mà	hay	mà cô giới thiệu hay	3	0	5	True		
+1772	mà	.	mà cô giới thiệu hay .	3	3	6	True	437,471,475	Tiếng Việt : Lớp 7 : Tiết 35 : vi N ma S V Bài 1 : Tiết này luyện mẫu câu «vi N ma S V» . Em đọc từng ví dụ và nhận ra c

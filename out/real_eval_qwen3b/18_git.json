@@ -1,0 +1,13 @@
+{
+ "id": "18_git",
+ "cat": "tooling",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Tôi lỡ commit nhầm 1 file .env chứa mật khẩu lên git (chưa push). Làm sao bỏ commit đó nhưng giữ lại các thay đổi khác, và lần sau không commit .env nữa?",
+   "text": "Để giải quyết vấn đề này, bạn có một số tùy chọn để loại bỏ commit mà không xóa các thay đổi khác. Dưới đây là cách bạn có thể làm:\n\n### 1. Xác định Hash Commit:\nTrước tiên, bạn cần xác định hash của commit chứa .env file. Bạn có thể kiểm tra lịch sử commit bằng lệnh:\n\n```sh\ngit log --oneline\n```\n\nLệnh này sẽ hiển thị danh sách các commit kèm theo các hash(commit ID).\n\n### 2. Xóa Commit Chứa File Env:\nSau khi xác định hash, bạn có thể xóa commit đó bằng lệnh:\n\n```sh\ngit reset HEAD^\n```\nĐây sẽ đưa lịch sử commit về commit trước đó mà không chứa file .env.\n\n### 3. Bỏ File Env Trong Git:\nBạn cũng cần bỏ file .env khỏi git để tránh việc nó được thêm vào commit lần sau. Bạn có thể thực hiện điều này bằng lệnh:\n\n```sh\ngit rm --cached .env\n```\n\n### 4. Kiểm Tra Câu Lệnh:\nNếu bạn không chắc chắn, bạn nên kiểm tra lại câu lệnh để đảm bảo rằng bạn đang làm đúng việc.\n\n### 5. Push Tránh Nên Commit File Env Khi Tiếp Theo:\n\nĐể tránh commit file .env trong tương lai, bạn có thể thêm một `.gitignore` để ghi đè lên file này:\n\n```sh\necho \".env\" >> .gitignore\n```\n\nLưu ý rằng nếu bạn đã push các thay đổi khác trước đó, bạn cần xóa chúng khỏi remote repository và từ mới commit lại.\n\n### 6. Kiểm Tra Lại Lịch Sử Commit:\nSau khi hoàn thành tất cả bước trên, bạn nên kiểm tra lại lịch sử commit để đảm bảo rằng file .env không còn trong lịch sử commit:\n\n```sh\ngit log --oneline\n```\n\nLệnh này sẽ chỉ liệt kê các commit mà không bao gồm file .env.\n\n### 7. Commit Thay đổi Khác:\n\nCuối cùng, bạn có thể commit lại các thay đổi khác mà không chứa file .env bằng lệnh:\n\n```sh\ngit add .\ngit commit -m \"Add other changes\"\n```\n\nDựa trên cách làm này, bạn có thể giải quyết vấn đề và đảm bảo rằng file .env không được commit trong tương lai.",
+   "tokens": 498,
+   "sec": 5.7
+  }
+ ]
+}

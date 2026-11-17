@@ -1,0 +1,13 @@
+{
+ "id": "15_review_sqli",
+ "cat": "review",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Review giúp đoạn code đăng nhập này, có vấn đề gì không?\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    conn = sqlite3.connect('app.db')\n    cur = conn.cursor()\n    cur.execute(f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\")\n    user = cur.fetchone()\n    return user is not None\n```",
+   "text": "Dưới đây là một số vấn đề và cải tiến trong đoạn mã đăng nhập:\n\n1. **Bảo mật**: Đoạn mã này không sử dụng bảo vệ mật khẩu bằng hashing, điều này tiềm ẩn rủi ro về việc lưu trữ mật khẩu dưới dạng明文.\n\n2. **SQL Injection**: Sử dụng `f-string` để nối chuỗi SQL với các tham số username và password tạo ra cơ hội cho người dùng có thể thực hiện SQL injection.\n\n3. **Nâng cao khả năng bảo mật**: Thay vì sử dụng `fetchone()`, nên sử dụng `fetchall()` hoặc kiểm tra điều kiện `if user:` để đảm bảo rằng bạn đã lấy được một kết quả từ database.\n\n4. **Xử lý ngoại lệ**: Không có xử lý ngoại lệ khi kết nối đến cơ sở dữ liệu hoặc khi thực hiện câu lệnh SQL, điều này có thể dẫn đến lỗi trong ứng dụng nếu không được xử lý.\n\n5. **Đóng kết nối**: Thêm `conn.close()` để đảm bảo rằng kết nối đến cơ sở dữ liệu được đóng sau khi sử dụng nó.\n\nDưới đây là một phiên bản cải tiến của đoạn mã:\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    try:\n        conn = sqlite3.connect('app.db')\n        cur = conn.cursor()\n        \n        # Sử dụng prepared statement để tránh SQL injection\n        query = \"SELECT * FROM users WHERE username = ? AND password = ?\"\n        cur.execute(query, (username, password))\n        user = cur.fetchone()\n        \n        if user:\n            return True  # Nếu có kết quả, đăng nhập thành công\n        else:\n            return False  # Nếu không có kết quả, đăng nhập thất bại\n        \n    except sqlite3.Error as e:\n        print(f\"An error occurred: {e}\")\n        return False\n    \n    finally:\n        conn.close()\n```\n\nVới các cải tiến này, bạn sẽ cải thiện bảo mật và khả năng xử lý lỗi trong đoạn mã đăng nhập.",
+   "tokens": 419,
+   "sec": 4.8
+  }
+ ]
+}

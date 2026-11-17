@@ -1,0 +1,403 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_token": 91600,
+ "n_boi_canh": 1646033,
+ "min_share": 3,
+ "n_co_lang_gieng": 5853,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "nhân vật chính",
+    "theo hướng dẫn",
+    "vị vua",
+    "độ dài",
+    "cuộc họp",
+    "nhà phát triển",
+    "vợ",
+    "tập hợp"
+   ],
+   "embedding": [
+    "Vua",
+    "triều",
+    "Chiêm",
+    "vương",
+    "hoàng",
+    "chúa",
+    "Vua",
+    "đế"
+   ],
+   "n_ctx": 425
+  },
+  "sông": {
+   "lop_thay_the": [
+    "ban nhạc",
+    "đường hầm",
+    "vở kịch",
+    "bộ phim",
+    "phong trào",
+    "luật",
+    "điện thoại thông minh",
+    "bài hát"
+   ],
+   "embedding": [
+    "bờ",
+    "vùng",
+    "thung",
+    "Sông",
+    "bắc",
+    "biển",
+    "dọc",
+    "Sông"
+   ],
+   "n_ctx": 470
+  },
+  "đánh": {
+   "lop_thay_the": [
+    "đun bếp",
+    "dấu diếm",
+    "phóng xuất",
+    "gì sánh",
+    "Làm",
+    "tìm",
+    "nhìn",
+    "gieo"
+   ],
+   "embedding": [
+    "vây",
+    "binh",
+    "bại",
+    "giặc",
+    "quân",
+    "bắn",
+    "đuổi",
+    "lính"
+   ],
+   "n_ctx": 1426
+  },
+  "Nguyễn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Lê",
+    "Phan",
+    "Trần",
+    "Phan",
+    "Phạm",
+    "Huỳnh",
+    "Xuân",
+    "Đoàn"
+   ],
+   "n_ctx": 9
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "gì bù đắp",
+    "lớn hơn",
+    "rất lớn",
+    "đáng kể",
+    "quan trọng",
+    "quá cao",
+    "nhỏ",
+    "tốt"
+   ],
+   "embedding": [
+    "nhất",
+    "vực",
+    "địa",
+    "trung",
+    "Friesen",
+    "giới",
+    "cao",
+    "gần"
+   ],
+   "n_ctx": 2344
+  },
+  "quân": {
+   "lop_thay_the": [
+    "cầu thủ",
+    "nhiệm vụ",
+    "chân",
+    "nước",
+    "nhà",
+    "ngày",
+    "đầu",
+    "năm"
+   ],
+   "embedding": [
+    "Quân",
+    "binh",
+    "huy",
+    "chiến",
+    "tấn",
+    "lính",
+    "lệnh",
+    "rút"
+   ],
+   "n_ctx": 688
+  },
+  "năm": {
+   "lop_thay_the": [
+    "tháng",
+    "màu duy nhất",
+    "ngày",
+    "nội dung nhất định",
+    "lúc lâu",
+    "ống nhỏ",
+    "kế hoạch chi tiết",
+    "kiếm đâm"
+   ],
+   "embedding": [
+    "tháng",
+    "ngày",
+    "Vào",
+    "thứ",
+    "Vào",
+    "tháng",
+    "2",
+    "Ngày"
+   ],
+   "n_ctx": 2894
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "tỉnh",
+    "Thành",
+    "lỵ",
+    "quận",
+    "quận",
+    "Phủ",
+    "Tỉnh",
+    "phường"
+   ],
+   "n_ctx": 13
+  },
+  "nước": {
+   "lop_thay_the": [
+    "khói bụi",
+    "nước Đông Nam Á",
+    "nguồn lực hạn chế",
+    "động vật lưỡng cư",
+    "ATP",
+    "thai kỳ",
+    "cây to",
+    "tập dữ liệu"
+   ],
+   "embedding": [
+    "sôi",
+    "khô",
+    "đun",
+    "dầu",
+    "bọt",
+    "nóng",
+    "ấm",
+    "sạch"
+   ],
+   "n_ctx": 3223
+  },
+  "người": {
+   "lop_thay_the": [
+    "phụ nữ",
+    "cây to",
+    "cơ quan",
+    "tính chất",
+    "hỗn hợp",
+    "khoảng thời gian",
+    "bộ phận",
+    "phần"
+   ],
+   "embedding": [
+    "chiếm",
+    "có",
+    "phụ",
+    "hơn",
+    "làm",
+    "biểu",
+    "đại",
+    "lao"
+   ],
+   "n_ctx": 117
+  },
+  "Việt Nam": {
+   "lop_thay_the": [
+    "bệnh tả",
+    "tông Tào Động",
+    "voi châu Phi",
+    "khả năng lãnh đạo",
+    "tính di động",
+    "từng cá nhân",
+    "cây trồng biến đổi gen",
+    "Việt Nam Cộng hòa"
+   ],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 751
+  },
+  "Hà Nội": {
+   "lop_thay_the": [
+    "gấu Bắc Cực",
+    "phân cụm",
+    "chủ nhà",
+    "Phật giáo",
+    "a",
+    "phụ huynh",
+    "hành tinh",
+    "Việt Nam"
+   ],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 213
+  },
+  "quân Tống": {
+   "lop_thay_the": [],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 14
+  },
+  "nhà Trần": {
+   "lop_thay_the": [],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 9
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "lấy",
+   "lop": [
+    "kẻ chuyên",
+    "chụp",
+    "lường trước",
+    "biết",
+    "truyền",
+    "bảo vệ chống"
+   ]
+  },
+  {
+   "token": "2",
+   "lop": [
+    "5",
+    "3",
+    "7",
+    "6",
+    "4",
+    "con bú"
+   ]
+  },
+  {
+   "token": "chỉ",
+   "lop": [
+    "nơi diễn",
+    "kết quả thu",
+    "qua khỏi",
+    "gọi",
+    "kết quả đạt",
+    "cách nào"
+   ]
+  },
+  {
+   "token": "vừa",
+   "lop": [
+    "đáng tin cậy",
+    "điều cần thiết",
+    "chưa",
+    "chẳng còn",
+    "càng phát",
+    "mới"
+   ]
+  },
+  {
+   "token": "bảo vệ",
+   "lop": [
+    "khuyên dùng",
+    "bao nhiêu tiền",
+    "cấp phép",
+    "vài tháng",
+    "tiếng vang",
+    "chi trả"
+   ]
+  },
+  {
+   "token": "hỗ trợ",
+   "lop": [
+    "trợ giúp chuyên nghiệp",
+    "nhà bán lẻ",
+    "sự hỗ trợ",
+    "hướng dẫn",
+    "đáng tin cậy",
+    "lời khuyên"
+   ]
+  },
+  {
+   "token": "vấn đề",
+   "lop": [
+    "tập hợp con",
+    "vườn quốc gia",
+    "phiên bản miễn phí",
+    "nhà đàm phán",
+    "tính chất vật lý",
+    "tập dữ liệu"
+   ]
+  },
+  {
+   "token": "chơi",
+   "lop": [
+    "kiếm sống",
+    "trả nợ",
+    "nhìn thấu",
+    "chia sẻ",
+    "an toàn hơn",
+    "gửi email"
+   ]
+  },
+  {
+   "token": "phần",
+   "lop": [
+    "đoạn ngắn",
+    "phần quan trọng",
+    "phụ nữ",
+    "khía cạnh quan trọng",
+    "quyền cơ bản",
+    "công thức nào"
+   ]
+  },
+  {
+   "token": "giữa",
+   "lop": [
+    "chính giữa",
+    "phía nam",
+    "giữa hai",
+    "cuối",
+    "giữ",
+    "cửa"
+   ]
+  },
+  {
+   "token": "nhìn thấy",
+   "lop": [
+    "thấy",
+    "kiểm chứng",
+    "quan sát thấy",
+    "giữ nguyên",
+    "nghe thấy",
+    "tìm thấy"
+   ]
+  },
+  {
+   "token": "sản xuất",
+   "lop": [
+    "thế giới thực",
+    "nhận dạng hình ảnh",
+    "học máy",
+    "khai thác dữ liệu",
+    "chăm sóc sức khỏe",
+    "phát triển phần mềm"
+   ]
+  }
+ ],
+ "xac_nhan_B": {},
+ "seconds": 316.0
+}

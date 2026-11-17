@@ -1,0 +1,88 @@
+
+### checkpoints/network_v12_sent_ls.pkl · via_attr 32256 cạnh · via_pivot 223988 cạnh · 22207 lớp có thành viên
+
+── «nhanh như ___»  vật mang: ['Nước', 'chuyện', 'cắt', 'giây lát', 'gió', 'hai']
+     qua «Nước là .<EOS>»  ⇒ đề xuất: «nhanh như "», «nhanh như "Cái», «nhanh như "Ngươi», «nhanh như "Ta»
+     qua «Nước là 0»  ⇒ đề xuất: «nhanh như 0», «nhanh như 1», «nhanh như 100», «nhanh như 18»
+     qua «Nước là 1.<EOS>»  ⇒ đề xuất: «nhanh như ,», «nhanh như 0», «nhanh như 1», «nhanh như 2»
+     qua «Nước là 13,1»  ⇒ đề xuất: «nhanh như Pháp», «nhanh như nước», «nhanh như nước Pháp»
+── «khoẻ như ___»  vật mang: ['hùm', 'hộ', 'lực', 'sĩ', 'tay', 'voi']
+     qua «hùm là hang»  ⇒ đề xuất: «khoẻ như Sốt», «khoẻ như Sử», «khoẻ như Sửng Sốt», «khoẻ như Tây»
+     qua «hùm là thành viên»  ⇒ đề xuất: «khoẻ như "», «khoẻ như "Tôi», «khoẻ như (», «khoẻ như (không»
+     qua «hộ là Hoàng»  ⇒ đề xuất: «khoẻ như "», «khoẻ như "Vậy», «khoẻ như ,», «khoẻ như Anh»
+     qua «hộ là Phương»  ⇒ đề xuất: «khoẻ như Chính», «khoẻ như Nếu», «khoẻ như Thế», «khoẻ như chính»
+── «khôn như ___»  vật mang: ['con', 'cáo']
+     qua «con là .<EOS>»  ⇒ đề xuất: «khôn như "», «khôn như "Cái», «khôn như "Ngươi», «khôn như "Ta»
+     qua «con là 19,»  ⇒ đề xuất: «khôn như chuỗi», «khôn như các», «khôn như hành», «khôn như yêu»
+     qua «con là 2»  ⇒ đề xuất: «khôn như (», «khôn như (tức», «khôn như )», «khôn như ),»
+     qua «con là 3»  ⇒ đề xuất: «khôn như ,», «khôn như 0», «khôn như 1», «khôn như 13»
+── «nhọn như ___»  vật mang: ['giáo', 'vít']
+     qua «giáo là .<EOS>»  ⇒ đề xuất: «nhọn như "», «nhọn như "Cái», «nhọn như "Ngươi», «nhọn như "Ta»
+     qua «giáo là 0»  ⇒ đề xuất: «nhọn như 0», «nhọn như 1», «nhọn như 100», «nhọn như 18»
+     qua «giáo là 128»  ⇒ đề xuất: «nhọn như Do», «nhọn như Do Thái giáo», «nhọn như Thái», «nhọn như như»
+     qua «giáo là 14,»  ⇒ đề xuất: «nhọn như chi», «nhọn như chi phí», «nhọn như giáo viên», «nhọn như phí»
+── «ngọt như ___»  vật mang: ['Thương', 'bệnh nhân', 'chuối', 'còn', 'cô', 'hồ']
+     qua «Thương là 11»  ⇒ đề xuất: «ngọt như ,», «ngọt như 0», «ngọt như 1», «ngọt như 2»
+     qua «Thương là 300»  ⇒ đề xuất: «ngọt như 1», «ngọt như 12», «ngọt như 2», «ngọt như anh»
+     qua «Thương là 4»  ⇒ đề xuất: «ngọt như (», «ngọt như (trong», «ngọt như ,», «ngọt như 0»
+     qua «Thương là 6.<EOS>»  ⇒ đề xuất: «ngọt như 0», «ngọt như 1», «ngọt như 18», «ngọt như 2»
+── «trắng như ___»  vật mang: ['Ngọc', 'bạc', 'bộ', 'cam', 'chè', 'cước']
+     qua «Ngọc là 2»  ⇒ đề xuất: «trắng như (», «trắng như (tức», «trắng như )», «trắng như ),»
+     qua «Ngọc là Chỉ»  ⇒ đề xuất: «trắng như <EOS>», «trắng như Hứa», «trắng như Kha», «trắng như Kết»
+     qua «Ngọc là Coi»  ⇒ đề xuất: «trắng như bằng», «trắng như chính», «trắng như chỉ», «trắng như càng»
+     qua «Ngọc là Giống»  ⇒ đề xuất: «trắng như Chùa», «trắng như Cost», «trắng như Lương», «trắng như Ninh»
+── «tròn như ___»  vật mang: ['Lan', 'cam', 'con', 'nón', 'ong', 'thịt']
+     qua «Lan là 0»  ⇒ đề xuất: «tròn như 0», «tròn như 1», «tròn như 100», «tròn như 18»
+     qua «Lan là 3.<EOS>»  ⇒ đề xuất: «tròn như 2», «tròn như 27», «tròn như 7», «tròn như Cherry»
+     qua «Lan là Amsterdam»  ⇒ đề xuất: «tròn như chính», «tròn như song», «tròn như thành»
+     qua «Lan là Pad»  ⇒ đề xuất: «tròn như Thái», «tròn như Thái Lan»
+── «mềm như ___»  vật mang: ['Me', 'bún', 'bơ', 'bạc', 'chén', 'chì']
+     qua «Me là của mình»  ⇒ đề xuất: «mềm như ai», «mềm như anh», «mềm như cô», «mềm như cùng»
+     qua «Me là gì?<EOS>»  ⇒ đề xuất: «mềm như "», «mềm như "Cái», «mềm như "Ngươi», «mềm như "palindrome»
+     qua «Me là gặp»  ⇒ đề xuất: «mềm như "», «mềm như "Ta», «mềm như ,», «mềm như Huyết»
+     qua «Me là khối lượng của»  ⇒ đề xuất: «mềm như 5», «mềm như băng», «mềm như m», «mềm như ma»
+── «đen như ___»  vật mang: ['cải', 'dù', 'dầu', 'giáp', 'giây lát', 'gà']
+     qua «cải là B»  ⇒ đề xuất: «đen như 1», «đen như 1938», «đen như 3», «đen như 8»
+     qua «cải là Chỉ»  ⇒ đề xuất: «đen như <EOS>», «đen như Hứa», «đen như Kha», «đen như Kết»
+     qua «cải là Các loại rau lá xanh»  ⇒ đề xuất: «đen như rau»
+     qua «cải là D»  ⇒ đề xuất: «đen như 0», «đen như 01», «đen như 1», «đen như Georgia»
+── «đẹp như ___»  vật mang: ['Anh', 'Lộc', 'bí', 'hoa', 'hình dung', 'khoảnh khắc']
+     qua «Anh là !<EOS>»  ⇒ đề xuất: «đẹp như Afghan», «đẹp như Cũng», «đẹp như Hắn», «đẹp như Kia»
+     qua «Anh là "Chúng»  ⇒ đề xuất: «đẹp như thư»
+     qua «Anh là (hiếm)»  ⇒ đề xuất: «đẹp như anh», «đẹp như lão», «đẹp như viên», «đẹp như vế»
+     qua «Anh là .<EOS>»  ⇒ đề xuất: «đẹp như "», «đẹp như "Cái», «đẹp như "Ngươi», «đẹp như "Ta»
+── «lớn như ___»  vật mang: ['Vương', 'bộ', 'chim', 'con', 'cóc', 'dòng']
+     qua «Vương là 0»  ⇒ đề xuất: «lớn như 0», «lớn như 1», «lớn như 100», «lớn như 18»
+     qua «Vương là 177»  ⇒ đề xuất: «lớn như Diêm», «lớn như Sao», «lớn như của», «lớn như của Sao Diêm Vương»
+     qua «Vương là 2»  ⇒ đề xuất: «lớn như (», «lớn như (tức», «lớn như )», «lớn như ),»
+     qua «Vương là 200»  ⇒ đề xuất: «lớn như ,», «lớn như Hải», «lớn như Lúc», «lớn như Minh»
+── «ngắn như ___»  vật mang: ['chổi', 'dặm', 'lần', 'mức độ', 'thân', 'thời gian']
+     qua «chổi là William»  ⇒ đề xuất: «ngắn như Mỹ», «ngắn như bố», «ngắn như cho», «ngắn như hiệu»
+     qua «chổi là khối»  ⇒ đề xuất: «ngắn như )», «ngắn như ),», «ngắn như ,», «ngắn như 4»
+     qua «chổi là một vật thể»  ⇒ đề xuất: «ngắn như Công», «ngắn như Công nghệ», «ngắn như bên», «ngắn như bên đường»
+     qua «chổi là sao chổi»  ⇒ đề xuất: «ngắn như ,», «ngắn như có», «ngắn như có thể được phân loại», «ngắn như gọi»
+── «dày như ___»  vật mang: ['bòng', 'bản', 'bụng', 'gấm', 'kẽ', 'mai']
+     qua «bản là 1.<EOS>»  ⇒ đề xuất: «dày như ,», «dày như 0», «dày như 1», «dày như 2»
+     qua «bản là 11»  ⇒ đề xuất: «dày như ,», «dày như 0», «dày như 1», «dày như 2»
+     qua «bản là 17»  ⇒ đề xuất: «dày như ,», «dày như 9», «dày như Bản», «dày như Nhật»
+     qua «bản là 2»  ⇒ đề xuất: «dày như (», «dày như (tức», «dày như )», «dày như ),»
+── «mỏng như ___»  vật mang: ['cấp', 'gạc', 'gỉ', 'hẹ', 'làn', 'lá']
+     qua «cấp là .<EOS>»  ⇒ đề xuất: «mỏng như "», «mỏng như "Cái», «mỏng như "Ngươi», «mỏng như "Ta»
+     qua «cấp là 14»  ⇒ đề xuất: «mỏng như 1», «mỏng như 196», «mỏng như 5», «mỏng như 6»
+     qua «cấp là 15»  ⇒ đề xuất: «mỏng như 2», «mỏng như 25», «mỏng như 3», «mỏng như 5»
+     qua «cấp là 3»  ⇒ đề xuất: «mỏng như ,», «mỏng như 0», «mỏng như 1», «mỏng như 13»
+── «cứng như ___»  vật mang: ['bọ', 'cong', 'giọng', 'gạo', 'hoá', 'hến']
+     qua «bọ là chôm»  ⇒ đề xuất: «cứng như chân», «cứng như hay», «cứng như mảnh»
+     qua «bọ là cuống»  ⇒ đề xuất: «cứng như bộ», «cứng như dùng», «cứng như hoa», «cứng như phần»
+     qua «bọ là gián»  ⇒ đề xuất: «cứng như cánh», «cứng như có», «cứng như râu», «cứng như sống»
+     qua «bọ là mọt»  ⇒ đề xuất: «cứng như chuyên», «cứng như gỗ», «cứng như hạt»
+── «xốp như ___»  vật mang: ['bông', 'nệm', 'ong', 'tràm', 'đệm']
+     qua «bông là bóng rổ»  ⇒ đề xuất: «xốp như 1», «xốp như bóng», «xốp như bóng rổ», «xốp như chiếc»
+     qua «bông là bền vững»  ⇒ đề xuất: «xốp như cao», «xốp như chương», «xốp như chất», «xốp như các»
+     qua «bông là cây»  ⇒ đề xuất: «xốp như (», «xốp như (thường», «xốp như ,», «xốp như -»
+     qua «bông là công nghiệp»  ⇒ đề xuất: «xốp như Alberta», «xốp như Chrome», «xốp như bê», «xốp như cao»
+
+  16/16 thuộc tính bắc được cầu
+  LỚP dùng để bắc cầu, phổ biến nhất: [('gì?<EOS>', 36), ('một loại', 32), ('hạn', 30), ('loài', 23), ('loại', 23), ('hắn', 22), ('.<EOS>', 20), ('hai', 20), ('rất', 19), ('sẽ', 19), ('điều', 18), ('nhà', 18)]
+
+[156s] xong

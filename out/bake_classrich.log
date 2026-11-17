@@ -1,0 +1,65 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/classrich.pkl …
+[     0.0s] === load_classrich START (pid=3565) → out/logs/load_classrich_20260814_212528.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/classrich.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.1s] ✓ adjacency  (0.9s)
+[     1.1s] ▶ embedding
+[     1.2s] ✓ embedding  (0.0s)
+[     1.2s] ▶ parents
+[     1.2s] parents: deserialize 35757 records …
+[     1.2s] parents 5000/35757 (14.0%)
+[     1.2s] parents 10000/35757 (28.0%)
+[     1.3s] parents 15000/35757 (41.9%)
+[     1.3s] parents 20000/35757 (55.9%)
+[     1.4s] parents 25000/35757 (69.9%)
+[     1.5s] parents 30000/35757 (83.9%)
+[     1.5s] parents 35000/35757 (97.9%)
+[     2.1s] ▶ rebuild_hierarchical_index …
+[     2.1s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.5s]     resync match_ids: 35757/35757 cha (df dựng lại)
+[     2.5s] ✓ parents  (1.3s)
+[     2.5s] ✓ loaded: vocab=32002 parents=35757 E=(32002, 96)
+[     2.6s] sidecar thiếu → migrate: classrich.content.pkl
+[     2.6s] ✓ load_checkpoint XONG
+[    2.8s RSS  2.41GB] nạp xong · parents=35757 vocab=32002
+[    2.8s RSS  2.41GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.8s RSS  2.41GB] ws_spans 0/35757 · span=0 · bỏ=0
+[    5.0s RSS  2.41GB] ws_spans 20000/35757 · span=7260 · bỏ=14310
+[    7.1s RSS  2.41GB] 11241 span · 0.1 phút
+[    7.1s RSS  2.41GB] ghi checkpoints/classrich.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.1s RSS  2.41GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.1s RSS  2.41GB]   mẫu[01] 'thể loại'
+[    7.1s RSS  2.41GB]   mẫu[02] 'sự thật'
+[    7.1s RSS  2.41GB]   mẫu[03] 'tiếp diễn'
+[    7.1s RSS  2.41GB]   mẫu[04] 'do đó'
+[    7.1s RSS  2.41GB]   mẫu[05] 'giải phẫu'
+[    7.1s RSS  2.41GB]   mẫu[06] 'phòng tuyến'
+[    7.1s RSS  2.41GB]   mẫu[07] 'thay thế'
+[    7.1s RSS  2.41GB]   mẫu[08] 'phục kích'
+[    7.1s RSS  2.41GB]   mẫu[09] 'Hạ viện'
+[    7.1s RSS  2.41GB]   mẫu[10] 'Hải Dương'
+[    7.1s RSS  2.41GB]   mẫu[11] 'đảm đương'
+[    7.1s RSS  2.41GB]   mẫu[12] 'Tiêu chí'
+[    7.1s RSS  2.41GB]   mẫu[13] 'phim truyện'
+[    7.1s RSS  2.41GB]   mẫu[14] 'Lê Ngang'
+[    7.1s RSS  2.41GB]   mẫu[15] 'Nội vụ'
+[    7.1s RSS  2.41GB]   mẫu[16] 'ab aks'
+[    7.1s RSS  2.41GB]   mẫu[17] 'Thị trưởng'
+[    7.1s RSS  2.41GB]   mẫu[18] 'đồn lũy'
+[    7.1s RSS  2.41GB]   mẫu[19] 'Phó tổng giám đốc'
+[    7.1s RSS  2.41GB]   mẫu[20] 'Đinh đặt'
+[    7.1s RSS  2.41GB]   mẫu[21] 'hãm hiếp'
+[    7.1s RSS  2.41GB]   mẫu[22] 'phì nhiêu'
+[    7.1s RSS  2.41GB]   mẫu[23] 'chiêm bao'
+[    7.1s RSS  2.41GB]   mẫu[24] 'Bát Đại'
+[    7.1s RSS  2.41GB]   mẫu[25] 'Lành Luther'
+[    7.1s RSS  2.41GB]   mẫu[26] 'lein wal ser tal'
+[    7.1s RSS  2.41GB]   mẫu[27] 'Camel ot'
+[    7.1s RSS  2.41GB]   mẫu[28] 'ré g ation'
+[    7.1s RSS  2.41GB]   mẫu[29] 'Kobayakawa Hide aki'
+[    7.1s RSS  2.41GB] span nghi rác (tự động): 315/11241 = 2.8% (ISG: 57%)
+[    7.1s RSS  2.41GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

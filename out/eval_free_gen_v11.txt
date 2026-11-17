@@ -1,0 +1,146 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable — nếu không có thể 73 phút, memory checkpoint-load-gc) …
+[     0.0s] === load_network_v11 START (pid=89269) → out/logs/load_network_v11_20260721_115340.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11.pkl …
+[     0.0s] ▶ unpickle
+[    11.8s] ✓ unpickle  (11.8s)
+[    11.9s] ▶ vocab (32002 token)
+[    11.9s] ✓ vocab (32002 token)  (0.0s)
+[    11.9s] ▶ adjacency
+[    28.3s] ✓ adjacency  (16.4s)
+[    28.3s] ▶ embedding
+[    28.6s] ✓ embedding  (0.2s)
+[    28.6s] ▶ parents
+[    28.6s] parents: deserialize 65098 records …
+[    29.2s] parents 5000/65098 (7.7%)
+[    29.4s] parents 10000/65098 (15.4%)
+[    29.6s] parents 15000/65098 (23.0%)
+[    29.9s] parents 20000/65098 (30.7%)
+[    30.1s] parents 25000/65098 (38.4%)
+[    32.2s] parents 30000/65098 (46.1%)
+[    40.0s] parents 35000/65098 (53.8%)
+[    44.1s] parents 40000/65098 (61.4%)
+[    44.5s] parents 45000/65098 (69.1%)
+[    44.7s] parents 50000/65098 (76.8%)
+[    45.0s] parents 55000/65098 (84.5%)
+[    45.3s] parents 60000/65098 (92.2%)
+[    45.7s] parents 65000/65098 (99.8%)
+[   113.0s] ▶ rebuild_hierarchical_index …
+[   125.8s] ✓ rebuild_hierarchical_index (12.8s)
+[   144.8s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[   144.8s] ✓ parents  (116.2s)
+[   144.8s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[   178.6s] sidecar thiếu → migrate: network_v11.content.pkl
+[   178.7s] ✓ load_checkpoint XONG
+[   179s] ✓ loaded · dựng corpus index cho thước copy …
+[  1181s] ═══ agenda ĐẦY (mặc định, khảm) ═══
+[  1722s]   Hỏi: Nhà Lý là gì
+    copy=0.30 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Thái Tổ
+
+Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi
+[  1757s]   Hỏi: Thủ đô của Việt Nam ở đâu
+    copy=0.26 rep4=0.00 · ? Đáp: Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên đồng bằng châu thổ của sông Hồng, thuận tiện cho giao thương và sinh hoạt. Từ thời Lý, kinh đô được đặt
+[  1778s]   Hỏi: Trần Hưng Đạo là ai
+    copy=0.73 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Chiêu Hoàng
+
+Thuận Thiên Công Chúa, người kế vị ngôi hoàng hậu sau đó, chính là chị ruột của bà.
+Bà qua đời ngay sau Thái Tông khoảng 1 năm.
+Trần Tự Khánh
+[  1803s]   Hỏi: Sông Hồng là gì
+    copy=0.20 rep4=0.00 · Bài 1:
+Tiết này luyện mẫu câu «Câu định nghĩa: Ai/Cái gì là gì». Em đọc từng ví dụ và nhận ra cấu trúc.
+Ví dụ mẫu 1: Thủ đô Việt Nam là Hà Nội.
+[  1825s]   Hỏi: Hà Nội là gì
+    copy=0.32 rep4=0.00 · ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[  1825s] ═══ agenda TẮT · t=0 (argmax) ═══
+[  1837s]   Hỏi: Nhà Lý là gì
+    copy=0.30 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Thái Tổ
+
+Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi
+[  1848s]   Hỏi: Thủ đô của Việt Nam ở đâu
+    copy=0.25 rep4=0.00 · Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên đồng bằng châu thổ của sông Hồng, thuận tiện cho giao thương và sinh hoạt. Từ thời Lý, kinh đô được đặt ở đây với
+[  1857s]   Hỏi: Trần Hưng Đạo là ai
+    copy=0.73 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Chiêu Hoàng
+
+Thuận Thiên Công Chúa, người kế vị ngôi hoàng hậu sau đó, chính là chị ruột của bà.
+Bà qua đời ngay sau Thái Tông khoảng 1 năm.
+Trần Tự Khánh
+[  1870s]   Hỏi: Sông Hồng là gì
+    copy=0.18 rep4=0.07 · Tiếng Việt:
+Lớp 3:
+Tiết 1: Câu định nghĩa: Ai/Cái gì là gì
+Bài 1:
+Tiết này luyện mẫu câu «Câu định nghĩa: Ai/Cái gì là gì». Em đọc từng ví
+[  1881s]   Hỏi: Hà Nội là gì
+    copy=0.32 rep4=0.00 · ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[  1881s] ═══ agenda TẮT · t=0.7 ═══
+[  1895s]   Hỏi: Nhà Lý là gì
+    copy=0.30 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Thái Tổ
+
+Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi
+[  1905s]   Hỏi: Thủ đô của Việt Nam ở đâu
+    copy=0.25 rep4=0.00 · Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên đồng bằng châu thổ của sông Hồng, thuận tiện cho giao thương và sinh hoạt. Từ thời Lý, kinh đô được đặt ở đây với
+[  1914s]   Hỏi: Trần Hưng Đạo là ai
+    copy=0.73 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Chiêu Hoàng
+
+Thuận Thiên Công Chúa, người kế vị ngôi hoàng hậu sau đó, chính là chị ruột của bà.
+Bà qua đời ngay sau Thái Tông khoảng 1 năm.
+Trần Tự Khánh
+[  1926s]   Hỏi: Sông Hồng là gì
+    copy=0.18 rep4=0.07 · Tiếng Việt:
+Lớp 3:
+Tiết 1: Câu định nghĩa: Ai/Cái gì là gì
+Bài 1:
+Tiết này luyện mẫu câu «Câu định nghĩa: Ai/Cái gì là gì». Em đọc từng ví
+[  1935s]   Hỏi: Hà Nội là gì
+    copy=0.32 rep4=0.00 · ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[  1935s] ═══ agenda TẮT · t=1.0 (lạ) ═══
+[  1951s]   Hỏi: Nhà Lý là gì
+    copy=0.30 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Thái Tổ
+
+Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi
+[  1961s]   Hỏi: Thủ đô của Việt Nam ở đâu
+    copy=0.25 rep4=0.00 · Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên đồng bằng châu thổ của sông Hồng, thuận tiện cho giao thương và sinh hoạt. Từ thời Lý, kinh đô được đặt ở đây với
+[  1971s]   Hỏi: Trần Hưng Đạo là ai
+    copy=0.73 rep4=0.00 · Lịch sử:
+Tiêu đề: Lý Chiêu Hoàng
+
+Thuận Thiên Công Chúa, người kế vị ngôi hoàng hậu sau đó, chính là chị ruột của bà.
+Bà qua đời ngay sau Thái Tông khoảng 1 năm.
+Trần Tự Khánh
+[  1982s]   Hỏi: Sông Hồng là gì
+    copy=0.18 rep4=0.07 · Tiếng Việt:
+Lớp 3:
+Tiết 1: Câu định nghĩa: Ai/Cái gì là gì
+Bài 1:
+Tiết này luyện mẫu câu «Câu định nghĩa: Ai/Cái gì là gì». Em đọc từng ví
+[  1992s]   Hỏi: Hà Nội là gì
+    copy=0.32 rep4=0.00 · ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[  1992s] ═══ TỰ DO prompt thường · t=1.0 ═══
+[  2009s]   Việt Nam là
+    copy=1.00 rep4=0.00 · một trong những nước có tình trạng ô nhiễm bom, mìn nặng nề nhất trên thế giới.
+[  2033s]   Trong lịch sử,
+    copy=0.50 rep4=0.00 · lan truyền vàng hoặc bạc vào một nền kinh tế cũng dẫn đến lạm phát. Điều này phần lớn do các dòng đột ngột của vàng và bạc từ Tân thế giới chảy vào Habsburg Tây Ban Nha. Bạc lan rộng trong suốt một Châu Âu
+[  2069s]   Nhà Lý được thành lập
+    copy=0.19 rep4=0.00 · Lịch sử:
+Lớp 4:
+Tiêu đề: Lịch sử lớp 4 — bài tổng hợp
+
+Nhà Lý thành lập năm 1009. Thăng Long là trung tâm quyền lực nhà Lý. Nhà Trần đánh thắng quân Nguyên ba lần
+[  2069s] ═══════════ TÓM TẮT (copy thấp=novel · rep4 cao=loop) ═══════════
+[  2069s]   copy 0.36 · rep4 0.00   agenda ĐẦY (mặc định, khảm)
+[  2069s]   copy 0.36 · rep4 0.01   agenda TẮT · t=0 (argmax)
+[  2069s]   copy 0.36 · rep4 0.01   agenda TẮT · t=0.7
+[  2069s]   copy 0.36 · rep4 0.01   agenda TẮT · t=1.0 (lạ)
+[  2069s]   copy 0.56 · rep4 0.00   TỰ DO prompt thường · t=1.0
+[  2069s] → ĐỌC TAY toàn văn ở trên: agenda-TẮT còn mạch lạc (⇒ sinh thật) hay sụp (⇒ chỉ chép)?

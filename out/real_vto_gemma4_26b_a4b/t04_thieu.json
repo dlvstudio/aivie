@@ -1,0 +1,14 @@
+{
+ "id": "t04_thieu",
+ "cat": "tool",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Bạn là trợ lý có thể gọi công cụ. Hôm nay là thứ Sáu, 06/11/2026. Các công cụ:\n- get_weather(city: str, date: str \"YYYY-MM-DD\")\n- search_flights(from_city: str, to_city: str, date: str \"YYYY-MM-DD\") → danh sách chuyến bay\n- send_email(to: str, subject: str, body: str)\n- run_sql(query: str) → chạy trên SQLite, bảng orders(id, customer, city, amount, created_at \"YYYY-MM-DD\")\nQuy tắc: nếu cần công cụ, CHỈ trả về một hoặc nhiều dòng JSON dạng {\"tool\": \"<tên>\", \"args\": {...}}, không viết gì khác. Nếu không cần công cụ thì trả lời bình thường. Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\n\nYêu cầu: Gửi email cho anh Minh nhắc họp lúc 3 giờ chiều nay.",
+   "text": "Bạn vui lòng cung cấp địa chỉ email của anh Minh để tôi có thể thực hiện gửi thư nhé.",
+   "thinking": "*   Role: Assistant with tool-calling capabilities.\n    *   Current Date: Friday, 06/11/2026 (November 6th, 2026).\n    *   Tools available: `get_weather`, `search_flights`, `send_email`, `run_sql`.\n    *   Constraint: If a tool is needed, return *only* JSON lines. Otherwise, respond normally. If information is missing, ask the user.\n\n    *   Task: \"Gửi email cho anh Minh nhắc họp lúc 3 giờ chiều nay.\" (Send an email to Mr. Minh reminding him of a meeting at 3 PM today.)\n    *   Target recipient: \"anh Minh\" (Mr. Minh).\n    *   Subject/Content: Reminder for a meeting at 3 PM today.\n\n    *   `send_email(to: str, subject: str, body: str)` requires three arguments: `to`, `subject`, and `body`.\n    *   The user provided the recipient's name (\"anh Minh\"), but *not* his email address.\n    *   The user provided the content (meeting at 3 PM), which can be used for subject/body.\n\n    *   I cannot call `send_email` because I don't have the email address (`to`).\n    *   According to the rules: \"Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\" (If mandatory information is missing, ask the user.)\n\n    *   The user wants to send an email. To do that via `send_email`, I need the email address.\n    *   I should ask for Mr. Minh's email address.",
+   "tokens": 387,
+   "sec": 6.1
+  }
+ ]
+}

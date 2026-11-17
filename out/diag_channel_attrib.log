@@ -1,0 +1,57 @@
+[0s] load checkpoints/network_v12_sent.pkl (gc.disable) …
+[89s] ✓ loaded · parents 430,447
+
+═══ 'Nhà Lý dời đô về' ═══
+  w0='Ġvề' · conf=0.272 · bag.max=10.2 · succ+path.max=0  ← H1 nếu ≈0
+  top-5 cha (act · emit đầu):
+    act=0.2255  pi=6344  'Nhà ĠLý Ġbắt Ġđược Ġhơn Ġ5 . <EOS>'
+    act=0.2124  pi=761  'Nhà ĠLý Ġthành Ġlập Ġnăm Ġ1 0 0 9 . <EOS>'
+    act=0.1534  pi=2517  'Nhà ĠTrần Ġchính Ġthức Ġthay Ġnhà ĠLý . <EOS>'
+    act=0.1467  pi=1323  'Nhà ĠTrần Ġthay Ġnhà ĠLý Ġnăm Ġ1 2 2 6 . <EOS>'
+    act=0.08994  pi=1535  'Nhà ĠLý Ġmở Ġnền Ġvăn Ġhóa ĠThăng ĠLong . <EOS>'
+  TOP-8 ứng viên (logit · bag · succ+path):
+    'Ġcó'              logit=  0.653  bag= 0.02242  succ=       0
+    'Nhà'              logit=  0.638  bag=    10.2  succ=       0
+    'Ġvà'              logit=  0.585  bag= 0.03618  succ=       0
+    'Ġcho'             logit=  0.569  bag= 0.06755  succ=       0
+    'Ġtrong'           logit=  0.525  bag= 0.05237  succ=       0
+    'Ġđược'            logit=  0.516  bag=  0.5691  succ=       0
+    'ĠLý'              logit=  0.499  bag=    7.87  succ=       0
+    'Ġthành'           logit=  0.486  bag=   1.606  succ=       0
+
+═══ 'Trận Bạch Đằng năm' ═══
+  w0='Ġnăm' · conf=0.559 · bag.max=7.512 · succ+path.max=0  ← H1 nếu ≈0
+  top-5 cha (act · emit đầu):
+    act=0.5591  pi=4510  'Trận ĠBạch ĠĐằng Ġcủa ĠNgô ĠQuyền Ġkết Ġthúc Ġhoàn Ġtoàn Ġthắng Ġlợi . <EOS>'
+    act=0.1542  pi=142278  'Trận ĠBạch ĠĐằng , Ġ9 8 1 Ġgiữa Ġquân Ġđội ĠViệt , Ġdo ĠLê'
+    act=0.1491  pi=142279  'Trận ĠBạch ĠĐằng , Ġ1 2 8 8 Ġgiữa Ġquân Ġđội ĠViệt , Ġdo'
+    act=0.1376  pi=142277  'Trận ĠBạch ĠĐằng , Ġ9 3 8 Ġgiữa Ġquân Ġđội ĠViệt , Ġdo ĠNgô'
+  TOP-8 ứng viên (logit · bag · succ+path):
+    'Trận'             logit=  1.367  bag=   7.512  succ=       0
+    'ĠĐằng'            logit=  0.980  bag=   5.491  succ=       0
+    'ĠBạch'            logit=  0.959  bag=   5.764  succ=       0
+    'Ġ1'               logit=  0.926  bag=  0.2176  succ=       0
+    '8'                logit=  0.893  bag=    1.38  succ=       0
+    '2'                logit=  0.643  bag=  0.3523  succ=       0
+    'Ġ9'               logit=  0.447  bag=  0.6872  succ=       0
+    'ĠQuyền'           logit=  0.422  bag=   3.721  succ=       0
+
+═══ 'Ngô Quyền là vị vua sáng lập nhà Ngô, được' ═══
+  w0='Ġđược' · conf=0.999 · bag.max=8.473 · succ+path.max=1941  ← H1 nếu ≈0
+  top-5 cha (act · emit đầu):
+    act=0.9978  pi=4175  'Ngô ĠQuyền Ġlà Ġvị Ġvua Ġsáng Ġlập Ġnhà ĠNgô , Ġđược Ġxem Ġlà Ġngười'
+    act=0.0006304  pi=280939  'Ngô ĠQuyền Ġ( TP . <EOS>'
+    act=0.00045  pi=1533  'Ngô ĠQuyền Ġđộc Ġlập Ġnăm Ġ9 3 8 . <EOS>'
+    act=0.0002407  pi=1117  'Ngô ĠQuyền Ġđánh Ġthắng Ġquân ĠNam ĠHán . <EOS>'
+    act=0.0001514  pi=411379  'Ngô ĠNam ĠHưng : ĠLà Ġcon Ġtrai Ġcủa ĠNgô ĠQuyền , Ġmẹ Ġlà ĠDương'
+  TOP-8 ứng viên (logit · bag · succ+path):
+    'Ġxem'             logit=  6.015  bag=   2.918  succ=    1941
+    'Ġngười'           logit=  0.577  bag=   1.626  succ=       0
+    'Ġlà'              logit=  0.457  bag=   3.653  succ=       0
+    'Ġthời'            logit=  0.328  bag=   2.004  succ=       0
+    'Ġkỳ'              logit=  0.297  bag=   2.354  succ=       0
+    'Ġtự'              logit=  0.288  bag=   2.029  succ=       0
+    'Ġđầu'             logit=  0.248  bag=   1.981  succ=       0
+    'Ġchủ'             logit=  0.220  bag=   2.168  succ=       0
+
+[330s] → succ.max≈0 ở ca gãy ⇒ H1 (path không fire): sửa act cha/act_floor/best_k≥2/top_k. succ>0 ở token SAI ⇒ H2: siết path-lead. Dán log về.

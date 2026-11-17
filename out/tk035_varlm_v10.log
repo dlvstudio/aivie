@@ -1,0 +1,35 @@
+[     0.0s] === build_varlm START (pid=15410) → out/logs/build_varlm_20260709_152009.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    12.5s] ✓ unpickle  (12.5s)
+[    12.5s] ▶ vocab (113572 token)
+[    13.1s] ✓ vocab (113572 token)  (0.6s)
+[    13.1s] ▶ adjacency
+[    25.4s] ✓ adjacency  (12.3s)
+[    25.4s] ▶ embedding
+[    26.4s] ✓ embedding  (1.1s)
+[    26.4s] ▶ parents
+[   319.7s] ✓ parents  (293.2s)
+[   319.7s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   329.4s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   329.5s] ✓ load_checkpoint XONG
+[   329.6s] ▶ đếm n-gram
+[   351.8s]   20000 đoạn, 1111482 token
+[   374.2s]   40000 đoạn, 2239461 token
+[   391.5s]   60000 đoạn, 3369956 token
+[   410.5s]   80000 đoạn, 4480751 token
+[   427.5s]   100000 đoạn, 5607967 token
+[   446.2s]   120000 đoạn, 6730418 token
+[   469.4s]   140000 đoạn, 7724393 token
+[   487.0s]   160000 đoạn, 8665077 token
+[   505.9s]   180000 đoạn, 9591166 token
+[   528.9s]   200000 đoạn, 10486372 token
+[   550.4s]   220000 đoạn, 11392145 token
+[   566.5s] ✓ đếm n-gram  (236.9s)
+[   566.5s] đếm xong: 237577 câu, 12257987 token; k=1:52454, k=2:473963, k=3:1156259, k=4:1528443
+[   566.5s] ▶ prune singleton k≥3
+[   573.2s] ✓ prune singleton k≥3  (6.7s)
+[   573.2s] prune: {'k3': 175814, 'k4': 252406} → k=1:52454, k=2:473963, k=3:980445, k=4:1276037
+[   573.2s] ▶ save
+[   576.9s] ✓ save  (3.7s)
+[   576.9s] ✓ SAVED network_v10_histwiki_paragraph.varlm.pkl (59MB)

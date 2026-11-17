@@ -1,0 +1,77 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=64
+
+########## MODE no_agenda ##########
+
+=== nq_def  (656.9s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ mộtNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ của Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc tự chủ mộtNgô Quyền định kế toán NLP webNgô Quyền Google
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ mộtNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ của Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc tự chủ mộtNgô Quyền định kế toán NLP webNgô Quyền Google'
+
+=== nq_full  (590.4s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ mộtNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ của Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc tự chủ mộtNgô Quyền định kế toán NLP webNgô Quyền Google Microsoft Teams người mở đầu thời kỳ độc lập tự chủ
+cont:   'mộtNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ của Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc tự chủ mộtNgô Quyền định kế toán NLP webNgô Quyền Google Microsoft Teams người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd  (596.8s) dots≈0 bad=['Ví dụ'] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương của là Hưng Đạo Vương trongTrần Hưng là gọi tên D P toán học khoaTrần Hưng Đạo là Vương chỉ Tôi không biết gì Herpo cũng ngươi nói Maca cười gật khẽ mỉm liếc mắt nhìn lóe ánh khóe quang diễm chói lam màu xanh trắng váy áo quần chiếc vải tócVí dụtng tre cành cây lá
+cont:   'Hưng Đạo Vương của là Hưng Đạo Vương trongTrần Hưng là gọi tên D P toán học khoaTrần Hưng Đạo là Vương chỉ Tôi không biết gì Herpo cũng ngươi nói Maca cười gật khẽ mỉm liếc mắt nhìn lóe ánh khóe quang diễm chói lam màu xanh trắng váy áo quần chiếc vải tócVí dụtng tre cành cây lá'
+
+=== ly  (617.6s) dots≈0 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109265 năm 10926Nhà Trần thay nhà Lý năm 12509473 Trần thay nhà Lý năm 1286109sNhà Trần thay nhà một thành lập là sử đến cho trong lịch sử Việt Nam tồn tại từ năm
+cont:   'Nhà Lý thành lập năm 109265 năm 10926Nhà Trần thay nhà Lý năm 12509473 Trần thay nhà Lý năm 1286109sNhà Trần thay nhà một thành lập là sử đến cho trong lịch sử Việt Nam tồn tại từ năm'
+
+=== bach  (579.0s) dots≈0 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng nămTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi và của Ngô Quyền kết thúc hoàn toàn thắng lợi vàTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi chỉ có thể giúp bạn hiểu chatbot để hỗ web GoogleTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi do các hoạt NLP dụng Python
+cont:   'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi và của Ngô Quyền kết thúc hoàn toàn thắng lợi vàTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi chỉ có thể giúp bạn hiểu chatbot để hỗ web GoogleTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi do các ho'
+
+=== qa_nq  (598.9s) dots≈0 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu ách đô hộ phương Bắc có Quyền là vị tướng đánh bại quân Nam Hán trên sông Bạch Đằng năm 938 dân đánh bại quân Nam Hán trên sông Bạch ĐằngNăm 938 Ngô Quyền lãnh đạo quân dân đánh bại của nước ta không còn chịu ách đô hộ phương Bắc và quân Nam Hán trên
+cont:   'không còn chịu ách đô hộ phương Bắc có Quyền là vị tướng đánh bại quân Nam Hán trên sông Bạch Đằng năm 938 dân đánh bại quân Nam Hán trên sông Bạch ĐằngNăm 938 Ngô Quyền lãnh đạo quân dân đánh bại của nước ta không còn chịu ách đô hộ phương Bắc và quân Nam Hán trên'
+
+=== hung  (590.3s) dots≈0 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn quân Minh Lợi khởi nghĩa Lam Sơn chống quân Minh lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân MinhLê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân MinhLê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh Nguyễn Văn người lãnh đạo cuộc kháng chiến là người lãnh đạo cuộc bang
+cont:   'Lam Sơn quân Minh Lợi khởi nghĩa Lam Sơn chống quân Minh lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân MinhLê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân MinhLê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh Nguyễn Văn người lãnh đạo cuộc kháng chiến là '
+
+########## MODE agenda_handoff ##########
+
+=== nq_def  (25.3s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, đượcNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== nq_full  (5.5s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== thd  (1.5s) dots≈1 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo làTrần Hưng Đạo đánh thắng quân Mông.
+cont:   'Trần Hưng Đạo đánh thắng quân Mông.'
+
+=== ly  (0.8s) dots≈1 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long.
+cont:   'Thăng Long.'
+
+=== bach  (0.9s) dots≈1 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng nămBạch Đằng giang đánh thắng quân Nam Hán.
+cont:   'Bạch Đằng giang đánh thắng quân Nam Hán.'
+
+=== qa_nq  (0.8s) dots≈1 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là aiNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== hung  (1.0s) dots≈1 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ởLê Lợi khởi nghĩa Lam Sơn.
+cont:   'Lê Lợi khởi nghĩa Lam Sơn.'
+
+[4322s] → out/probe_multi_prompt_long3.log

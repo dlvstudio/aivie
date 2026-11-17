@@ -1,0 +1,27 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[5s] ✓ 5,664 cha
+
+cha is_qa = 660
+
+TOP 12 `ask_form` cao nhất (min_ask=5) — soi xem có nội dung nào bị nuốt:
+   ask_form    n_Q    n_A  fold
+       1.00    660      0  'ġ'
+       1.00      6      0  'mẹo'
+       1.00     53      0  'mấy'
+       0.99    609      8  '?'
+       0.94    229     14  'gì'
+       0.94    117      8  'nào'
+       0.92     24      2  'nhiêu'
+       0.84     27      5  'bao'
+       0.83      5      1  'ơi'
+       0.82     27      6  'đâu'
+       0.78      7      2  'vai'
+       0.70     76     33  'sao'
+
+Số token bị CẤM theo ngưỡng:
+  θ=0.9      21 id · ['?', 'GÌ', 'Gì', 'Mấy', 'Mẹo', 'Nhiêu', 'Nào', 'gì', 'mấy', 'mẹo', 'nhiêu', 'nào']
+  θ=0.8      32 id · ['?', 'Bao', 'GÌ', 'Gì', 'Mấy', 'Mẹo', 'Nhiêu', 'Nào', 'bao', 'gì', 'mấy', 'mẹo', 'nhiêu', 'nào', 'ĐÂU', 'Đâu', 'đâu', 'ƠI', 'ơi']
+  θ=0.7      36 id · ['?', 'Bao', 'GÌ', 'Gì', 'Mấy', 'Mẹo', 'Nhiêu', 'Nào', 'Vai', 'bao', 'gì', 'mấy', 'mẹo', 'nhiêu', 'nào', 'vai', 'ĐÂU', 'Đâu', 'đâu', 'ƠI', 'ơi']
+  θ=0.6      44 id · ['?', 'Bao', 'GÌ', 'Gì', 'Mấy', 'Mẹo', 'Nhiêu', 'Nhật', 'Nào', 'SAO', 'Sao', 'Vai', 'bao', 'gì', 'mấy', 'mẹo', 'nhiêu', 'nhật', 'nào', 'sao', 'vai', 'ĐÂU', 'Đâu', 'đâu']
+
+Chọn θ NHỎ NHẤT mà danh sách vẫn KHÔNG có thực thể/nội dung. Dán bảng về.

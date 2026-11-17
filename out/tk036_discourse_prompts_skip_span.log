@@ -1,0 +1,199 @@
+checkpoint=network_v10_histwiki_paragraph.pkl
+parents=176430 vocab=113572
+prompts=43 (history=10, doc=10, conv=10, common=10, +frame=3)
+
+=== Discourse prompts (dataset-derived) ===
+
+[history_wiki_para] 'Khối trường tư thục phát triển năng'
+  - gen multi varlm=0: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (248.6s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.35: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.6s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.5: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (7.2s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+
+[history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+  - gen multi varlm=0: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (10.6s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.35: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (9.5s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.5: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.6s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+
+[history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0: chars=34 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (8.7s)
+      'Người Minh dùng hỏa tiễn bắn voi .'
+  - gen multi varlm=0.35: chars=34 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (8.6s)
+      'Người Minh dùng hỏa tiễn bắn voi .'
+  - gen multi varlm=0.5: chars=34 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (8.1s)
+      'Người Minh dùng hỏa tiễn bắn voi .'
+
+[history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+  - gen multi varlm=0: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.0s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.35: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.3s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.5: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.2s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+
+[history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+  - gen multi varlm=0: chars=37 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (6.5s)
+      'Chúa gánh cái lo , ta hưởng cái vui .'
+  - gen multi varlm=0.35: chars=37 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (8.5s)
+      'Chúa gánh cái lo , ta hưởng cái vui .'
+  - gen multi varlm=0.5: chars=37 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=0.00 (9.2s)
+      'Chúa gánh cái lo , ta hưởng cái vui .'
+
+[history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+  - gen multi varlm=0: chars=77 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (14.7s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+  - gen multi varlm=0.35: chars=77 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (21.1s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+  - gen multi varlm=0.5: chars=77 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (19.1s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+
+[history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+  - gen multi varlm=0: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.8s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.35: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (9.7s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.5: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.3s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+
+[history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+  - gen multi varlm=0: chars=54 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=1.00 (9.2s)
+      'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+  - gen multi varlm=0.35: chars=54 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=1.00 (11.8s)
+      'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+  - gen multi varlm=0.5: chars=54 sents=1 commas=1 multi=0 overlap=1.00 ent_keep=1.00 (10.2s)
+      'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+
+[history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+  - gen multi varlm=0: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (10.8s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+  - gen multi varlm=0.35: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (9.5s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+  - gen multi varlm=0.5: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (9.5s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+
+[history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+  - gen multi varlm=0: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.4s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+  - gen multi varlm=0.35: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.3s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+  - gen multi varlm=0.5: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.3s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+
+[statements_doc] 'Tuy nhiên trong một số trường hợp'
+  - gen multi varlm=0: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (14.9s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+  - gen multi varlm=0.35: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (14.3s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+  - gen multi varlm=0.5: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (14.4s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+
+[statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+  - gen multi varlm=0: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (22.0s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+  - gen multi varlm=0.35: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (20.1s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+  - gen multi varlm=0.5: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (18.6s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+
+[statements_doc] 'Dựa trên từ vựng cơ bản ,'
+  - gen multi varlm=0: chars=86 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (11.9s)
+      'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+  - gen multi varlm=0.35: chars=86 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (9.8s)
+      'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+  - gen multi varlm=0.5: chars=86 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (9.8s)
+      'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+
+[statements_doc] 'Tiếng Việt là ngôn ngữ thanh điệu'
+  - gen multi varlm=0: chars=194 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (20.7s)
+      'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+  - gen multi varlm=0.35: chars=194 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (16.5s)
+      'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+  - gen multi varlm=0.5: chars=194 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (15.0s)
+      'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+
+[statements_doc] 'Đến đời Đường , tiếng Việt mới'
+  - gen multi varlm=0: chars=102 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (13.9s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+  - gen multi varlm=0.35: chars=102 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (14.9s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+  - gen multi varlm=0.5: chars=102 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (15.1s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+
+[statements_doc] 'Hiện nay có 1945 chữ Hán thông'
+  - gen multi varlm=0: chars=220 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (19.9s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+  - gen multi varlm=0.35: chars=220 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (17.4s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+  - gen multi varlm=0.5: chars=220 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (17.5s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+
+[statements_doc] 'Mặt khác , những khái niệm chính'
+  - gen multi varlm=0: chars=105 sents=1 commas=3 multi=1 overlap=1.00 ent_keep=0.00 (20.4s)
+      'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+  - gen multi varlm=0.35: chars=105 sents=1 commas=3 multi=1 overlap=1.00 ent_keep=0.00 (23.8s)
+      'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+  - gen multi varlm=0.5: chars=105 sents=1 commas=3 multi=1 overlap=1.00 ent_keep=0.00 (19.9s)
+      'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+
+[statements_doc] 'Tuy nhiên , chưa có quy định'
+  - gen multi varlm=0: chars=74 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (13.8s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+  - gen multi varlm=0.35: chars=74 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (13.7s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+  - gen multi varlm=0.5: chars=74 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (13.7s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+
+[statements_doc] 'Sự tiếp xúc giữa tiếng Việt và'
+  - gen multi varlm=0: chars=342 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (45.0s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+  - gen multi varlm=0.35: chars=342 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (35.6s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+  - gen multi varlm=0.5: chars=342 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (49.6s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+
+[statements_doc] 'Trong khi đó , những từ có'
+  - gen multi varlm=0: chars=87 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (41.2s)
+      'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+  - gen multi varlm=0.35: chars=87 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (36.2s)
+      'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+  - gen multi varlm=0.5: chars=87 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (35.1s)
+      'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+
+[conv] '"Nước Anh vì lần này nước Mỹ'
+  - gen multi varlm=0: chars=126 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (35.9s)
+      '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+  - gen multi varlm=0.35: chars=126 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (32.3s)
+      '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+  - gen multi varlm=0.5: chars=126 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (36.6s)
+      '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+
+[conv] 'Bạn đang băn khoăn cách nấu vịt'
+  - gen multi varlm=0: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (31.4s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+  - gen multi varlm=0.35: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (9.1s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+  - gen multi varlm=0.5: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (7.5s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+
+[conv] 'FxPro.com : NZD/USD intraday 29/10/2021 có thể'
+  - gen multi varlm=0: chars=64 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (65.8s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+  - gen multi varlm=0.35: chars=64 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (75.0s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+  - gen multi varlm=0.5: chars=64 sents=2 commas=0 multi=1 overlap=1.00 ent_keep=0.00 (27.5s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+
+[conv] 'P/s : Cầu donate cứu trợ cvt'
+  - gen multi varlm=0: chars=136 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (26.7s)
+      'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+  - gen multi varlm=0.35: chars=136 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (26.1s)
+      'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+  - gen multi varlm=0.5: chars=136 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (47.6s)
+      'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+
+[conv] 'Nghĩ cũng ngộ , làn khẩn cấp'

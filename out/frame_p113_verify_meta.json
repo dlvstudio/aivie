@@ -1,0 +1,25 @@
+{
+ "n": 120,
+ "n_thay_match": 120,
+ "ty_le_khop": 1.0,
+ "gate1_ge_0_95": true,
+ "ge1_old": 0.4167,
+ "ge1_new": 0.4167,
+ "hist_old": {
+  "0": 70,
+  "1": 22,
+  "2": 28
+ },
+ "hist_new": {
+  "0": 70,
+  "1": 22,
+  "2": 28
+ },
+ "config": {
+  "max_thay": 2,
+  "min_gain": 1,
+  "slot_rank": "bam",
+  "seed": 42
+ },
+ "method": "opener_slice_replay"
+}

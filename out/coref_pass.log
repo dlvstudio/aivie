@@ -1,0 +1,20 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[    83s] ✓ loaded · parents 65,098 · phrases 376,800
+[   620s]   coref-pass 20,000 record · pairs 2,311,360
+[   642s]   coref-pass 40,000 record · pairs 4,368,404
+[   696s]   coref-pass 60,000 record · pairs 6,329,464
+[   708s]   coref-pass 80,000 record · pairs 7,793,301
+[   725s]   coref-pass 100,000 record · pairs 9,327,127
+[   779s]   coref-pass 120,000 record · pairs 10,623,599
+[   791s]   coref-pass 140,000 record · pairs 12,023,132
+[   800s]   coref-pass 160,000 record · pairs 13,252,140
+[   812s]   coref-pass 180,000 record · pairs 14,615,913
+[   819s]   coref-pass 200,000 record · pairs 15,423,506
+[   824s]   coref-pass 220,000 record · pairs 16,039,975
+[   832s]   coref-pass 240,000 record · pairs 16,991,819
+[   839s]   coref-pass 260,000 record · pairs 17,766,768
+[   847s]   coref-pass 280,000 record · pairs 18,769,387
+[   953s] ✓ coref-pass xong · edges 500,276 · after_role 1,618,374 · records_with_occ 294,178
+[   954s] stats: {'records_with_occ': 294178, 'coref_edges': 500276, 'after_role': 1618374}
+[   954s] lưu → checkpoints/network_v11_coref.pkl (cần state.save persist coref/after_role — RUNBOOK §4)
+[  1407s] ✓ xong. Kế: scripts/dump_coref_edges.py --checkpoint checkpoints/network_v11_coref.pkl

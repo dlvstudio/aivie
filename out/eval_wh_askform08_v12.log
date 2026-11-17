@@ -1,0 +1,148 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[81s] ✓ 430,447 cha · max_len=48 · extra={'ar_matrix_qa_answer_copy': True, 'ar_matrix_and_form_min': 0.9, 'ar_matrix_wh_learned': True, 'ar_matrix_qa_ask_form_min': 0.8}
+[189s]   xong no_agenda·T1 verbatim (20)
+[190s]   xong no_agenda·T2 paraphrase (5)
+[196s]   xong no_agenda·T3 ghép (10)
+[197s]   xong no_agenda·T4 qa (10)
+[198s]   xong no_agenda·T5 số (4)
+[201s]   xong no_agenda·T6 bịa (5)
+[205s]   xong no_agenda·T7 dài (5)
+[308s]   xong handoff·T1 verbatim (20)
+[310s]   xong handoff·T2 paraphrase (5)
+[317s]   xong handoff·T3 ghép (10)
+[319s]   xong handoff·T4 qa (10)
+[320s]   xong handoff·T5 số (4)
+[324s]   xong handoff·T6 bịa (5)
+[328s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.00    0.00   0.00   0.93     1.00   1.00    7.9
+no_agenda T2 paraphrase     5    0.20   0.20    0.00   0.00   1.00     0.60   1.00    5.4
+no_agenda T3 ghép          10    0.00   0.60    0.10   0.00   0.60     0.30   1.00    9.2
+no_agenda T4 qa            10    0.00   0.30    0.00   0.00   1.00     0.70   1.00   12.0
+no_agenda T5 số             4    0.00   0.00    0.00   0.00   1.00     0.75   1.00    6.8
+no_agenda T6 bịa            5    0.00   0.00    0.40   0.00   0.79     1.00   1.00   13.8
+no_agenda T7 dài            5    0.00   0.00    0.00   0.00   0.84     1.00   1.00    9.6
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.00    0.00   0.00   0.71     1.80   1.00   23.8
+handoff   T2 paraphrase     5    0.00   0.00    0.00   0.00   0.67     1.80   1.00   19.6
+handoff   T3 ghép          10    0.00   0.30    0.10   0.00   0.66     1.00   0.90   27.4
+handoff   T4 qa            10    0.00   0.30    0.00   0.00   1.00     0.70   1.00   12.0
+handoff   T5 số             4    0.00   0.00    0.00   0.00   0.65     2.00   1.00   21.5
+handoff   T6 bịa            5    0.00   0.00    0.40   0.00   0.53     2.00   1.00   32.4
+handoff   T7 dài            5    0.00   0.00    0.00   0.00   0.71     1.60   1.00   26.2
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · digit⎵↓ · loop4↓ · stop↑ · T3 n_facts>1
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── đếm ca (cổng §12.38) ──
+  no_agenda T3 ghép      readable(n_tok≥4&!degen)=4/10  · n_facts>1=0/10
+  no_agenda T4 qa        readable(n_tok≥4&!degen)=7/10  · n_facts>1=0/10
+  handoff   T3 ghép      readable(n_tok≥4&!degen)=7/10  · n_facts>1=3/10
+  handoff   T4 qa        readable(n_tok≥4&!degen)=7/10  · n_facts>1=0/10
+
+── mẫu đọc tay (mỗi ô tối đa 10) ──
+  [no_agenda·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list s Nhiều ứng dụng cũng có riêng'
+  [no_agenda·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười'
+  [no_agenda·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của là Müritz'
+  [no_agenda·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là không ra'
+  [no_agenda·T1 verbatim] 'Đám người này cũng mặc kệ quốc gia định giá kia một bộ, cũng đem tivi màu làm thành bản thân tài nguyên'
+  [no_agenda·T1 verbatim] '"Theo sau ~" Đỗ Phi tập trung tinh thần đối Tiểu Ô ra lệnh'
+  [no_agenda·T1 verbatim] 'Điểm đến đầu tiên chúng mình sẽ khám phá là Khu trưng bày ngoài trời hay còn gọi là kiến trúc'
+  [no_agenda·T1 verbatim] 'The Godfather (1972) - dựa trên tiểu thuyết của 2'
+  [no_agenda·T1 verbatim] 'Vì vậy tài năng báo chí của Tam không được sử dụng'
+  [no_agenda·T1 verbatim] 'Đạo diễn Lê Hoàng so sánh Cát Phượng như bà bán than ngoài chợ ảnh'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ cha cái từng có cả cha mẹ của đều là Marie Curie có cả cha và Nhà vật lý Marie Curie có thầy giáo'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo của chỉ huy và các Trận giữa quân đội Việt do Ngô Quyền chỉ huy và nhà Nam Hán'
+  [no_agenda·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp:Họ còn'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh Ngô Quyền và Lê Hoàn Đáp: Lê'
+  [no_agenda·T3 ghép] 'Cả Đinh Bộ Lĩnh và Lê Hoàn đều lĩnh nhà số giờ là một phần thôi cả vàng hồi môn hai bên gia đình nữa giờ tiền vàng đều là Tiền Lê'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các kinh đô của nước ta Đáp: người'
+  [no_agenda·T3 ghép] 'Hoa Lư, Thăng Long và Tây Đô đều 0 là 0 được 0 1 0 nhà Lý dời đô từ Hoa Lư về Thăng Long'
+  [no_agenda·T3 ghép] 'Hỏi: Trần Hưng Đạo và Ngô Quyền giống nhau ở điểm gì Đáp: Nhược'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp: không'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T4 qa] 'Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp: Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+  [no_agenda·T4 qa] 'Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  [no_agenda·T4 qa] 'Hỏi: Ai chỉ huy trận Bạch Đằng năm 1288? Đáp: là'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô năm nào? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [no_agenda·T4 qa] 'Hỏi: Đinh Bộ Lĩnh đặt tên nước là gì? Đáp:Đinh không'
+  [no_agenda·T4 qa] 'Hỏi: Lê Hoàn đánh bại quân nào trên sông Bạch Đằng? Đáp:Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp ngươi mái'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm 1951'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và Trần ba lần đánh bại quân Nguyên Mông vào các năm 1258 1258'
+  [no_agenda·T6 bịa] 'Đinh Bộ Lĩnh đánh bại quân Nam Hán trên sông Bạch Đằng năm 8 3 8 Ngô Quyền đánh bại quân về Hoa Lư chiêu mộ binh lính'
+  [no_agenda·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế Chỉ có thể lặng yên không một tiếng động mới'
+  [no_agenda·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen'
+  [no_agenda·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là thể là chờ'
+  [no_agenda·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát'
+  [no_agenda·T7 dài] 'Vành đai Kuiper là một khu vực hình đĩa được tạo thành từ hàng ngàn vật thể băng giá nhỏ được gọi là vật thể Vành đai Kuiper K một K'
+  [handoff·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list s Nhiều ứng dụng cũng có riêng. Điện toán đám mây cũng đảm bảo tính sẵn sàng và hiệu suất để các ứng dụng có thể được truy cập nhanh chóng với hiệu suất và.'
+  [handoff·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười. Chỉ cần còn có một cái mạng, liền có cơ hội đông sơn tái khởi.'
+  [handoff·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của là Müritz'
+  [handoff·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là không ra. "Đi theo ta.'
+  [handoff·T1 verbatim] 'Đám người này cũng mặc kệ quốc gia định giá kia một bộ, cũng đem tivi màu làm thành bản thân tài nguyên. Bọn họ cảm thấy vật tốt, đắt đi nữa cũng có người mua, cho nên nảy sinh ác độc đòi giá.'
+  [handoff·T1 verbatim] '"Theo sau ~" Đỗ Phi tập trung tinh thần đối Tiểu Ô ra lệnh. Đỗ Phi cũng không nghĩ nhiều, ngược lại không có chạy mất thế là được.'
+  [handoff·T1 verbatim] 'Điểm đến đầu tiên chúng mình sẽ khám phá là Khu trưng bày ngoài trời hay còn gọi là kiến trúc. Đây là nơi tái hiện lại các kiến trúc dân gian và nhà ở đặc trưng của các dân tộc trên mọi miền tổ quốc như: Kiến.'
+  [handoff·T1 verbatim] 'The Godfather (1972) - dựa trên tiểu thuyết của 2. The Shawshank Redemption (1994) - dựa trên tiểu thuyết ngắn của Stephen King 3.'
+  [handoff·T1 verbatim] 'Vì vậy tài năng báo chí của Tam không được sử dụng. Việt Quốc xuất bản Báo Việt Nam ra số đầu tiên ngày 15/11/1945.'
+  [handoff·T1 verbatim] 'Đạo diễn Lê Hoàng so sánh Cát Phượng như bà bán than ngoài chợ ảnh. eva) Về tài chính thì Cát Phượng hỏng bét.'
+  [handoff·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938. Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng. Năm 1288, Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Trận Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là. Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [handoff·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [handoff·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ cha cái từng có cả cha mẹ của đều là Marie Curie có cả cha và Nhà vật lý Marie Curie có thầy giáo. Cha của bà, Wladyslaw, là 1 giảng viên toán và vật lý.'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [handoff·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo của chỉ huy và các Trận giữa quân đội Việt do Ngô Quyền chỉ huy và nhà Nam Hán. Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, và quân nhà Tống.'
+  [handoff·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp:Họ còn. Dưới đây là một số thách thức phổ biến mà người quản lý dự án phải đối mặt và cách họ có thể vượt qua chúng: 1.'
+  [handoff·T3 ghép] 'Hỏi: so sánh Ngô Quyền và Lê Hoàn Đáp: Lê. Hai nàng hậu đều xây dựng hình ảnh một cô gái quyến rũ và cuốn hút khi khoác trên mình thiết kế váy tua rua, lấp lánh.'
+  [handoff·T3 ghép] 'Cả Đinh Bộ Lĩnh và Lê Hoàn đều lĩnh nhà số giờ là một phần thôi cả vàng hồi môn hai bên gia đình nữa giờ tiền vàng đều là Tiền Lê. Mẹ anh bảo rằng cứ đưa hết cho mẹ giữ hộ cho vì bây giờ vợ chồng mình chưa cần dùng gì nhiều'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các kinh đô của nước ta Đáp: người. " Hạ Lăng Huyên nũng nịu mắng nói: “Ngươi người này, chúng ta lòng tốt giúp ngươi nghĩ biện pháp, ngươi dĩ nhiên ân.'
+  [handoff·T3 ghép] 'Hoa Lư, Thăng Long và Tây Đô đều 0 là 0 được 0 1 0 nhà Lý dời đô từ Hoa Lư về Thăng Long. Kinh đô Hoa Lư xưa, hiện nay nằm ở làng cổ Trường Yên, thuộc phường Tây Hoa Lư tỉnh Ninh Bình.'
+  [handoff·T3 ghép] 'Hỏi: Trần Hưng Đạo và Ngô Quyền giống nhau ở điểm gì Đáp: Nhược'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  [handoff·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp: không'
+  [handoff·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [handoff·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [handoff·T4 qa] 'Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp: Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+  [handoff·T4 qa] 'Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  [handoff·T4 qa] 'Hỏi: Ai chỉ huy trận Bạch Đằng năm 1288? Đáp: là'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô năm nào? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [handoff·T4 qa] 'Hỏi: Đinh Bộ Lĩnh đặt tên nước là gì? Đáp:Đinh không'
+  [handoff·T4 qa] 'Hỏi: Lê Hoàn đánh bại quân nào trên sông Bạch Đằng? Đáp:Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [handoff·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T5 số] 'Chiến thắng Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968. Đinh Liễn quá tức giận nên giết chết Hạng Lang vào mùa xuân năm 979.'
+  [handoff·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng. Chiến thuật đóng cọc gỗ nhọn xuống lòng sông được dùng để phá thuyền giặc.'
+  [handoff·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp ngươi mái. " Ngô Hiếu Tổ lẽ đương nhiên, cầm lên bên cạnh sở thích ô mai cắn một cái, thuận miệng đem ô mai cái mông đưa.'
+  [handoff·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm 1951. Ngày 1 tháng 6 năm 1952 mãn khóa tốt nghiệp với cấp bậc Thiếu úy.'
+  [handoff·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và Trần ba lần đánh bại quân Nguyên Mông vào các năm 1258 1258. Trần Hưng Đạo là vị tổng chỉ huy quân đội nhà Trần trong các cuộc kháng chiến chống Nguyên Mông.'
+  [handoff·T6 bịa] 'Đinh Bộ Lĩnh đánh bại quân Nam Hán trên sông Bạch Đằng năm 8 3 8 Ngô Quyền đánh bại quân về Hoa Lư chiêu mộ binh lính. Năm 944 Ngô Quyền mất.'
+  [handoff·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế Chỉ có thể lặng yên không một tiếng động mới'
+  [handoff·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen. Dùng từ trái nghĩa để thể hiện sự thay đổi hoặc tiến triển: Cái cây nhỏ ngày càng cao lên, từ nhỏ chuyển sang lớn.'
+  [handoff·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là thể là chờ. " " Chỉ cần nội các có Vương tiên si'
+  [handoff·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát. Anh hoàn toàn bị mê hoặc, tận hưởng sự yên bình và tĩnh lặng của một nơi không có bóng người.'
+  [handoff·T7 dài] 'Vành đai Kuiper là một khu vực hình đĩa được tạo thành từ hàng ngàn vật thể băng giá nhỏ được gọi là vật thể Vành đai Kuiper K một K'
+
+→ out/eval_wh_askform08_v12.json
+
+[328s] → out/eval_wh_askform08_v12.log

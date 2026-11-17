@@ -1,0 +1,73 @@
+[     0.0s] load checkpoint checkpoints/network_v10.pkl …
+[     0.0s] ▶ unpickle
+[     6.9s] ✓ unpickle  (6.9s)
+[     6.9s] ▶ vocab (126518 token)
+[     7.0s] ✓ vocab (126518 token)  (0.1s)
+[     7.0s] ▶ adjacency
+[    18.5s] ✓ adjacency  (11.5s)
+[    18.5s] ▶ embedding
+[    18.8s] ✓ embedding  (0.3s)
+[    18.8s] ▶ parents
+[    18.8s] parents: deserialize 65098 records …
+[    19.0s] parents 5000/65098 (7.7%)
+[    19.2s] parents 10000/65098 (15.4%)
+[    19.3s] parents 15000/65098 (23.0%)
+[    19.4s] parents 20000/65098 (30.7%)
+[    19.6s] parents 25000/65098 (38.4%)
+[    20.6s] parents 30000/65098 (46.1%)
+[    24.1s] parents 35000/65098 (53.8%)
+[    25.9s] parents 40000/65098 (61.4%)
+[    26.0s] parents 45000/65098 (69.1%)
+[    26.2s] parents 50000/65098 (76.8%)
+[    26.3s] parents 55000/65098 (84.5%)
+[    26.4s] parents 60000/65098 (92.2%)
+[    26.5s] parents 65000/65098 (99.8%)
+[    53.9s] ▶ rebuild_hierarchical_index …
+[    55.4s] ✓ rebuild_hierarchical_index (1.5s)
+[    62.4s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    62.4s] ✓ parents  (43.6s)
+[    62.4s] ✓ loaded: vocab=126518 parents=65098 E=(126518, 96)
+[    66.3s] sidecar thiếu → migrate: network_v10.content.pkl
+[    66.3s] ▶ varlm sidecar: network_v10.varlm.pkl
+[    67.0s] ✓ varlm: k=1:96631, k=2:776081, k=3:1065944, k=4:1171036
+[    67.0s] ✓ load_checkpoint XONG
+
+network_v10.pkl
+  cha=65,098 · dài>60tok=27,083 (41.6%) · median=54
+[    89.6s] dựng index 5-gram toàn corpus …
+[   140.9s]   n-gram index 20,000/65,098 · 1,102,214 5-gram
+[   145.7s]   n-gram index 40,000/65,098 · 14,213,915 5-gram
+[   145.9s]   n-gram index 60,000/65,098 · 14,450,058 5-gram
+[   146.0s] ✓ index: 14,540,519 5-gram phân biệt (56s)
+  index: 14,540,519 5-gram phân biệt trong toàn corpus
+[   146.0s] sinh 1/8: 'Nhà Trần là' …
+[   178.4s]   ✓ 1/8 (32s) cha=115tok đáp=40tok copy=2% MỚI=0/36 (0%)
+[   178.4s] sinh 2/8: 'Khúc Thừa Dụ' …
+[   186.1s]   ✓ 2/8 (8s) cha=123tok đáp=40tok copy=5% MỚI=0/36 (0%)
+[   186.1s] sinh 3/8: 'Ngô Quyền' …
+[   191.5s]   ✓ 3/8 (5s) cha=115tok đáp=28tok copy=7% MỚI=0/24 (0%)
+[   191.5s] sinh 4/8: 'Lý Thái Tổ' …
+[   200.9s]   ✓ 4/8 (9s) cha=97tok đáp=40tok copy=8% MỚI=0/36 (0%)
+[   200.9s] sinh 5/8: 'Hai Bà Trưng' …
+[   207.9s]   ✓ 5/8 (7s) cha=97tok đáp=40tok copy=2% MỚI=0/36 (0%)
+[   207.9s] sinh 6/8: 'Nhà Lý' …
+[   215.1s]   ✓ 6/8 (7s) cha=115tok đáp=40tok copy=5% MỚI=0/36 (0%)
+[   215.1s] sinh 7/8: 'Trần Hưng Đạo' …
+[   222.6s]   ✓ 7/8 (8s) cha=97tok đáp=40tok copy=5% MỚI=0/36 (0%)
+[   222.6s] sinh 8/8: 'Lê Lợi' …
+[   230.8s]   ✓ 8/8 (8s) cha=97tok đáp=40tok copy=5% MỚI=0/36 (0%)
+
+          prompt  cha(tok)  đáp(tok)   LCS  copy%   mới/5gram  MỚI%  text
+     Nhà Trần là       115        40     1     2%        0/36    0%  ' chính sách đoàn kết nội bộ của những người lãnh đạo . Đ'
+    Khúc Thừa Dụ       123        40     2     5%        0/36    0%  ' chết , con là Khúc Hạo lên thay . Khúc Hạo sai con là K'
+       Ngô Quyền       115        28     2     7%        0/24    0%  ' xưng vương , đóng đô ở Cổ Loa , lập ra nhà Ngô . Ngô Vư'
+      Lý Thái Tổ        97        40     3     8%        0/36    0%  ' quyết định dời đô về Đại La . Khu hoàng thành được xây '
+    Hai Bà Trưng        97        40     1     2%        0/36    0%  ' . Khuôn viên cổ kính của Viện Đại học Đông Dương thì ch'
+          Nhà Lý       115        40     2     5%        0/36    0%  ' , nhưng bên trong Nùng Trí Cao nuôi chí tự cường lập qu'
+   Trần Hưng Đạo        97        40     2     5%        0/36    0%  ' từ Vạn Kiếp tới , Trần Quang Khải xuống thuyền chơi suố'
+          Lê Lợi        97        40     2     5%        0/36    0%  ' thành lập nhà Lê và Đông Đô cũng lấy lại vị thế kinh th'
+
+  TỔNG: đáp TB 38.5 tok · copy TB 5% · 5-gram MỚI 0/276 = 0%
+
+  ⇒ MỚI ≈ 0%  = mọi cụm 5 token đều CHÉP từ corpus (khảm) — không sinh gì mới
+    MỚI cao   = mạng ghép ra chuỗi CHƯA TỪNG CÓ ⇒ sinh thật (phải đọc tay xem có nghĩa)

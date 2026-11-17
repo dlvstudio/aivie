@@ -1,0 +1,18 @@
+LM 11.4M · vocab 32,002
+prompt: 'Hỏi: Thủ đô Việt Nam là gì ? Đáp: Thủ đô Việt Nam là'
+
+                  sổ  #dòng                    λ=1.0                    λ=0.5                    λ=0.2                    λ=0.0
+                                          (LM thuần)                                                                (kNN thuần)
+      n=1  (G13 gốc)     16 ' đô thị chính thức. Th' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s'
+  +6 HARD cùng khuôn    118 ' đô thị chính thức. Th' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s'
+     +6 HARD +5 SOFT    193 ' đô thị chính thức. Th' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s' ' Huế. Huế nằm bên bờ s'
+
+─── 4 hàng xóm gần nhất ở bước quyết định (sổ đầy đủ, 193 dòng) ───
+   cos=0.8690  từ=TARGET  bỏ phiếu cho → ' Huế'
+   cos=0.8198  từ=HARD    bỏ phiếu cho → ' Bắc'
+   cos=0.8167  từ=HARD    bỏ phiếu cho → ' Tokyo'
+   cos=0.8011  từ=HARD    bỏ phiếu cho → ' Viêng'
+
+⇒ ĐỌC:
+  Q1 λ=0.0 vs λ=0.5 GIỐNG NHAU ⇒ LM là HÀNH KHÁCH, chỉ là băng phát lại ❌
+  Q2 thêm HARD mà VẪN ra 'Huế' ⇒ truy hồi THẬT ✅ | ra 'Paris'/'Tokyo' ⇒ ảo giác n=1 ❌

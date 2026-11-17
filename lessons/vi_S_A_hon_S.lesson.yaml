@@ -1,0 +1,24 @@
+lesson_id: vi_grade4_comparative_hon
+grade: 4
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_A_hon_S
+slots:
+  - var: S1
+  - var: A
+  - const: "hơn"
+  - var: S2
+
+bind:
+  S1: chủ ngữ
+  A: tính từ
+  S2: chủ ngữ
+
+examples:
+  - "Em cao hơn Lan"
+  - "Lan giỏi hơn em"
+  - "Con mèo nhanh hơn con chó"
+  - "Bé nhỏ hơn chị"
+  - "Hôm nay nóng hơn hôm qua"

@@ -1,0 +1,13 @@
+
+MẮT XÍCH CUỐI: hạt ① đổi → ok[0] của ② có đổi không?
+
+  w=0.0 «cứng» hạt①=['sừng', 'bọ', 'thép', 'hoá']
+            ② ok[0]='chuyện' · ok[:4]=['chuyện', 'một loại', 'sản phẩm', 'động vật']
+  w=0.0 «khoẻ» hạt①=['voi', 'tay', 'hộ', 'sĩ']
+            ② ok[0]='gì?<EOS>' · ok[:4]=['gì?<EOS>', 'nhà', 'loài', 'vật']
+
+  w=2.5 «cứng» hạt①=['rắn', 'nhắc', 'đờ', 'ngắc']
+            ② ok[0]='một loại' · ok[:4]=['một loại', 'gì?<EOS>', 'nguyên nhân', 'dấu hiệu']
+  w=2.5 «khoẻ» hạt①=['voi', 'tay']
+            ② ok[0]='vật' · ok[:4]=['vật', 'anh', 'giống', 'gì?<EOS>']
+

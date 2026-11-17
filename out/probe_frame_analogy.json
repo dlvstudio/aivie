@@ -1,0 +1,28 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_cases": 400,
+ "ung_vien_trung_vi": 98,
+ "dich_tu_toi_duoc": 0.0,
+ "ket_qua": {
+  "ngau_nhien": {
+   "mrr": 0.08033253811956798,
+   "hit1": 0.0275
+  },
+  "khung": {
+   "mrr": 0.026204051598859898,
+   "hit1": 0.0025
+  },
+  "khung_x_embedding": {
+   "mrr": 0.0288596168508015,
+   "hit1": 0.0025
+  },
+  "khung_x_bac_hai": {
+   "mrr": 0.08175228777436148,
+   "hit1": 0.055
+  }
+ },
+ "ty_so_vs_khung": 3.1198338724809416,
+ "ty_so_vs_embedding": 2.832757212162747,
+ "gate_pass": true,
+ "seconds": 41.4
+}

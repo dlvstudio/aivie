@@ -1,0 +1,403 @@
+[
+ {
+  "n_nhieu": 100,
+  "n_cha": 105,
+  "giay_train": 0.9,
+  "typed_first": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "vật",
+    "động",
+    "dê",
+    "dương"
+   ],
+   "nhãn": "vật",
+   "③": [
+    "khỉ",
+    "loài",
+    "mèo",
+    "động",
+    "chó"
+   ],
+   "khỉ_hang": 1,
+   "chó_mèo": [
+    true,
+    true
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "động",
+    "dê",
+    "dương",
+    "vật"
+   ],
+   "nhãn": "động",
+   "③": [
+    "hoạt",
+    "loài",
+    "Nhiệm",
+    "bao",
+    "chó",
+    "chức",
+    "công",
+    "diện"
+   ],
+   "khỉ_hang": 10,
+   "chó_mèo": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "n_nhieu": 300,
+  "n_cha": 305,
+  "giay_train": 1.2,
+  "typed_first": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "vật",
+    "động",
+    "dê",
+    "dương"
+   ],
+   "nhãn": "vật",
+   "③": [
+    "khỉ",
+    "loài",
+    "mèo",
+    "động",
+    "Việt",
+    "biểu",
+    "chó",
+    "công"
+   ],
+   "khỉ_hang": 1,
+   "chó_mèo": [
+    true,
+    true
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "động",
+    "vật",
+    "dê",
+    "dương"
+   ],
+   "nhãn": "động",
+   "③": [
+    "hoạt",
+    "loài",
+    "biết",
+    "California",
+    "Chính",
+    "Internet",
+    "Missouri",
+    "Nhiệm"
+   ],
+   "khỉ_hang": 19,
+   "chó_mèo": [
+    true,
+    true
+   ]
+  }
+ },
+ {
+  "n_nhieu": 1000,
+  "n_cha": 1005,
+  "giay_train": 2.4,
+  "typed_first": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "vật",
+    "cây",
+    "động",
+    "giết",
+    "chết"
+   ],
+   "nhãn": "vật",
+   "③": [
+    "khỉ",
+    "loài",
+    "mèo",
+    "động",
+    "Nhà",
+    "thực",
+    "Hệ",
+    "Việt"
+   ],
+   "khỉ_hang": 1,
+   "chó_mèo": [
+    true,
+    true
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "chó",
+    "mèo"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "cây",
+    "động",
+    "giết",
+    "vật",
+    "chết"
+   ],
+   "nhãn": "cây",
+   "③": [
+    "cành",
+    "loại",
+    "rừng",
+    "Bắc",
+    "California",
+    "Hoàng",
+    "Hà",
+    "Nam"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  }
+ },
+ {
+  "n_nhieu": 3000,
+  "n_cha": 3005,
+  "giay_train": 6.4,
+  "typed_first": {
+   "①": [
+    "loài",
+    "lý",
+    "bên",
+    "thay"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "sóc",
+    "đẽ",
+    "Nhập",
+    "đổi",
+    "thế"
+   ],
+   "nhãn": "sóc",
+   "③": [
+    "công",
+    "thay",
+    "tư",
+    "chăm",
+    "thống",
+    "hệ",
+    "Hệ",
+    "thông"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "lý",
+    "bên",
+    "thay"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "đổi",
+    "thế",
+    "ngoài",
+    "thuyết",
+    "phải"
+   ],
+   "nhãn": "đổi",
+   "③": [
+    "thay",
+    "biến",
+    "sửa",
+    "trao",
+    "sự",
+    "chuyển",
+    "cuộc",
+    "thành"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  }
+ },
+ {
+  "n_nhieu": 10000,
+  "n_cha": 9983,
+  "giay_train": 26.0,
+  "typed_first": {
+   "①": [
+    "loài",
+    "lý",
+    "cánh",
+    "phạm"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "đảng",
+    "sồi",
+    "vi",
+    "tả",
+    "chính"
+   ],
+   "nhãn": "đảng",
+   "③": [
+    "Ab",
+    "Af",
+    "Bí",
+    "cánh",
+    "dõi",
+    "trúng",
+    "ứng",
+    "băng"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "lý",
+    "cánh",
+    "phạm"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "vi",
+    "tả",
+    "chính",
+    "tội",
+    "tế"
+   ],
+   "nhãn": "vi",
+   "③": [
+    "phạm",
+    "Cộng",
+    "Nam",
+    "Việt",
+    "hiện",
+    "hòa",
+    "nay",
+    "vụ"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  }
+ },
+ {
+  "n_nhieu": 20000,
+  "n_cha": 19963,
+  "giay_train": 63.8,
+  "typed_first": {
+   "①": [
+    "loài",
+    "lý",
+    "cánh",
+    "căn"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "vô",
+    "Vân",
+    "trưng",
+    "hữu",
+    "đảng"
+   ],
+   "nhãn": "vô",
+   "③": [
+    "Chúa",
+    "căn",
+    "ngày",
+    "Điều",
+    "chức",
+    "giải",
+    "đầu",
+    "hàng"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  },
+  "cooc": {
+   "①": [
+    "loài",
+    "lý",
+    "cánh",
+    "căn"
+   ],
+   "khỉ_ke_nghịch": false,
+   "②": [
+    "cứ",
+    "thuyết",
+    "học",
+    "tưởng",
+    "tả"
+   ],
+   "nhãn": "cứ",
+   "③": [
+    "căn",
+    "bất",
+    "hơn",
+    "so",
+    "Bất",
+    "cát",
+    "hậu",
+    "khu"
+   ],
+   "khỉ_hang": 0,
+   "chó_mèo": [
+    false,
+    false
+   ]
+  }
+ }
+]

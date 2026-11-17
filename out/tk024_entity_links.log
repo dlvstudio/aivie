@@ -1,0 +1,35 @@
+paragraphs=3470  distinct_entities=4235  pair_types=24602  candidate_links(min_co=2,min_df=3)=2384
+
+=== TOP 25 ENTITY_LINK theo PMI (co≥2, df≥3) ===
+   7.05  co=3   df=(3,3)  'Thuyết Trần Nhà' ↔ 'Trần Xuân Sinh'
+   7.05  co=3   df=(3,3)  'Quân Lương' ↔ 'Trần Bá Tiên'
+   7.05  co=3   df=(3,3)  'Hàn Thuyên' ↔ 'Nguyễn Thuyên'
+   7.05  co=3   df=(3,3)  'Hoàng Đình Thể' ↔ 'Phạm Ngô Cầu'
+   6.77  co=3   df=(4,3)  'Nguyễn Siêu' ↔ 'Tây Phù Liệt'
+   6.77  co=3   df=(4,3)  'Bồn Man' ↔ 'Cầm Công'
+   6.65  co=2   df=(3,3)  'Trịnh Duy Sản' ↔ 'Tây Kinh'
+   6.65  co=2   df=(3,3)  'Thăng Bình' ↔ 'Tôn Thất Xuân'
+   6.65  co=2   df=(3,3)  'Quân Hai Bà' ↔ 'Âu Lạc'
+   6.65  co=2   df=(3,3)  'Nam Tấn' ↔ 'Thiên Sách'
+   6.65  co=2   df=(3,3)  'Minh Hiến Tông' ↔ 'Trà Toại'
+   6.65  co=2   df=(3,3)  'Lê Niệm' ↔ 'Trà Toại'
+   6.65  co=2   df=(3,3)  'Lê Niệm' ↔ 'Minh Hiến Tông'
+   6.65  co=2   df=(3,3)  'Indrapura' ↔ 'Đồng Dương'
+   6.65  co=2   df=(3,3)  'Hoàng Phúc' ↔ 'Thôi Tụ'
+   6.65  co=2   df=(3,3)  'Hiến Tông' ↔ 'Túc Tông'
+   6.65  co=2   df=(3,3)  'Gia Lâm' ↔ 'Trần Chân'
+   6.65  co=2   df=(3,3)  'Bồng Sơn' ↔ 'Tôn Thất Hương'
+   6.54  co=3   df=(3,5)  'Hồ Phi Tiễn' ↔ 'Nguyễn Phi Phúc'
+   6.48  co=3   df=(4,4)  'Lăng' ↔ 'Thừa Thiên'
+   6.36  co=3   df=(3,6)  'Hậu Ngô Vương' ↔ 'Nam Tấn Vương'
+   6.36  co=2   df=(4,3)  'Thành Hoa Lư' ↔ 'Tuyển'
+   6.36  co=2   df=(4,3)  'Thiên Lộc' ↔ 'Thế Giang'
+   6.36  co=2   df=(3,4)  'Sơn Thọ' ↔ 'Trà Lân'
+   6.36  co=2   df=(3,4)  'Quốc Tuấn' ↔ 'Thiên Trường'
+
+=== ASSOCIATE theo entity truy vấn (đọc tay: đúng loại 'liên-quan không chung token'?) ===
+  'Lý' (df=0) → (none)
+  'Trần' (df=98) → Ngột Lương Hợp Thai(co2), Chế Mân(co2), Đoàn(co3), Thiên Trường(co2), Quân Nguyên(co5), Đoàn Thượng(co3), Nguyễn Nộn(co3), Huệ Tông(co4), Nhà Trần(co5), Trần Thị Dung(co2), Trần Lý(co2), Hà Nam(co2)
+  'Văn Miếu' (df=11) → Khổng Tử(co3), Việt Nam(co2)
+  'Thăng Long' (df=72) → Ngột Lương Hợp Thai(co3), Mậu Hợp(co3), Quân Mông Cổ(co3), Bắc Thành(co3), Hoàng Thành(co2), Thoát Hoan(co6), Trịnh Tùng(co5), Quân Nguyên(co5), Mạc Mậu Hợp(co3), Vua Trần(co2), Thiên Trường(co2), Chiêu Thống(co2)
+  'Lý Thường Kiệt' (df=22) → Lý Đạo Thành(co3), Như Nguyệt(co3), Ung Châu(co2), Quân Tống(co2), Quách Quỳ(co3), Lý Nhân Tông(co2), Trên(co2), Tống(co7), Đường(co2), Thái(co5), Hoàng(co4), Đại Việt(co6)

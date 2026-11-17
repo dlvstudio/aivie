@@ -1,0 +1,14 @@
+{
+ "id": "v06_chinhta",
+ "cat": "vi",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Sửa lỗi chính tả trong đoạn sau, liệt kê các chỗ đã sửa:\n\n\"Hôm qua tôi đã dành được giải nhất cuộc thi. Mọi người điều chúc mừng và tôi cảm thấy rất xung sướng. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỷ năng thuyết trình trước đám đông.\"",
+   "text": "Đây là đoạn văn đã được sửa lỗi chính tả:\n\n\"Hôm qua tôi đã **giành** được giải nhất cuộc thi. Mọi người **đều** chúc mừng và tôi cảm thấy rất **sung sướng**. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là **kỹ năng** thuyết trình trước đám đông.\"\n\n**Các lỗi đã sửa:**\n\n1.  **dành** $\\rightarrow$ **giành**: \"Giành\" được dùng khi nói về việc đạt được một giải thưởng hoặc chiến thắng (giành giải, giành độc lập). \"Dành\" có nghĩa là để dành, lưu giữ.\n2.  **điều** $\\rightarrow$ **đều**: \"Đều\" là phó từ chỉ sự đồng nhất, tất cả mọi người đều làm một việc gì đó. \"Điều\" thường là danh từ (điều kiện, điều lệ).\n3.  **xung sướng** $\\rightarrow$ **sung sướng**: Viết đúng chính tả là \"sung sướng\".\n4.  **kỷ năng** $\\rightarrow$ **kỹ năng**: Viết đúng chính tả là \"kỹ năng\" (dùng vần \"y\" cho từ này).",
+   "thinking": "\n*   Input text: \"Hôm qua tôi đã dành được giải nhất cuộc thi. Mọi người điều chúc mừng và tôi cảm thấy rất xung sướng. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỷ năng thuyết trình trước đám đông.\"\n    *   Task 1: Correct spelling/grammar errors.\n    *   Task 2: List the corrections made.\n\n    *   \"Hôm qua tôi đã **dành** được giải nhất cuộc thi.\" -> Error: \"dành\" vs \"giành\". In the context of winning a prize, it should be \"giành\" (to win/attain). \"Dành\" means to save or reserve.\n    *   \"Mọi người **điều** chúc mừng...\" -> Error: \"điều\" vs \"đều\". \"Điều\" is a noun/prefix; \"đều\" is an adverb meaning \"all/equally\". Correct word: \"đều\".\n    *   \"...và tôi cảm thấy rất **xung sướng**.\" -> Error: \"xung sướng\" vs \"sung sướng\". The correct spelling for happiness/joy is \"sung sướng\".\n    *   \"...nhất là **kỷ năng** thuyết trình...\" -> Error: \"kỷ năng\" vs \"kỹ năng\". In modern Vietnamese, the word for skill is \"kỹ năng\".\n\n    *   Original: Hôm qua tôi đã dành được giải nhất cuộc thi. Mọi người điều chúc mừng và tôi cảm thấy rất xung sướng. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỷ năng thuyết trình trước đám đông.\n    *   Corrected: Hôm qua tôi đã **giành** được giải nhất cuộc thi. Mọi người **đều** chúc mừng và tôi cảm thấy rất **sung sướng**. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là **kỹ năng** thuyết trình trước đám đông.\n\n    *   dành $\\rightarrow$ giành\n    *   điều $\\rightarrow$ đều\n    *   xung sướng $\\rightarrow$ sung sướng\n    *   kỷ năng $\\rightarrow$ kỹ năng\n\n    *   Make it clear and professional.",
+   "tokens": 728,
+   "sec": 13.0
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+[     0.0s] === load_network_v11_styled_hist START (pid=94858) → out/logs/load_network_v11_styled_hist_20260724_173827.log ===
+[     0.0s] load checkpoint checkpoints/network_v11_styled_hist.pkl …
+[     0.0s] ▶ unpickle
+[    12.2s] ✓ unpickle  (12.2s)
+[    12.2s] ▶ vocab (32002 token)
+[    22.5s] ✓ vocab (32002 token)  (10.3s)
+[    22.5s] ▶ adjacency
+[    44.6s] ✓ adjacency  (22.2s)
+[    44.6s] ▶ embedding
+[    44.7s] ✓ embedding  (0.1s)
+[    44.7s] ▶ parents
+[    44.7s] parents: deserialize 65098 records …
+[    45.0s] parents 5000/65098 (7.7%)
+[    45.2s] parents 10000/65098 (15.4%)
+[    45.3s] parents 15000/65098 (23.0%)
+[    45.5s] parents 20000/65098 (30.7%)
+[    45.7s] parents 25000/65098 (38.4%)
+[    46.9s] parents 30000/65098 (46.1%)
+[    50.9s] parents 35000/65098 (53.8%)
+[    72.4s] parents 40000/65098 (61.4%)
+[    72.6s] parents 45000/65098 (69.1%)
+[    72.8s] parents 50000/65098 (76.8%)
+[    72.9s] parents 55000/65098 (84.5%)
+[    73.1s] parents 60000/65098 (92.2%)
+[    73.3s] parents 65000/65098 (99.8%)
+[   196.3s] ▶ rebuild_hierarchical_index …
+[   198.3s] ✓ rebuild_hierarchical_index (2.1s)
+[   206.9s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[   206.9s] ✓ parents  (162.2s)
+[   206.9s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[   211.5s] sidecar thiếu → migrate: network_v11_styled_hist.content.pkl
+[   211.5s] ✓ load_checkpoint XONG
+ids [(4498, 'Ngô'), (4748, 'ĠQuyền'), (1495, 'Ġlà'), (1842, 'Ġvị'), (2922, 'Ġvua'), (2062, 'Ġsáng'), (1947, 'Ġlập'), (1752, 'Ġnhà'), (2936, 'ĠNgô'), (271, ','), (1547, 'Ġđược')]
+hi [(4498, 'Ngô', 7.05), (4748, 'ĠQuyền', 6.14), (2936, 'ĠNgô', 5.57), (2922, 'Ġvua', 4.95)]
+p=648 act=305.3364 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Đinh Tiên Hoàng ĊĊ Trần Trọng Kim không nói rõ "
+p=591 act=305.3364 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Nhà Đinh ĊĊ Nhà Đinh là triều đại do Đinh Bộ
+p=572 act=305.3364 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Ngô Quyền ĊĊ Ngô Quyền là vị vua sáng lập nhà
+p=589 act=271.0817 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Nhà Tây Sơn ĊĊ Nhà Tây Sơn là triều đại tồn
+p=631 act=253.7848 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Trận Bạch Đằng ( 9 3 8 ) ĊĊ Kết quả
+p=603 act=253.7848 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Quang Trung ĊĊ Quang Trung tên thật là Nguyễn Huệ ,
+p=546 act=253.7848 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Loạn 1 2 sứ quân ĊĊ Họ Khúc đã mở đầu
+p=568 act=246.8807 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Nguyễn Nhạc ĊĊ Ba anh em Tây Sơn , Nguyễn Nhạc
+p=584 act=222.6436 cover=0.8628 | Lịch sử : Ċ Tiêu đề : Nhà Ngô ĊĊ Khoảng thời gian xen giữa từ 9 4
+p=28798 act=51.1498 cover=0.4135 | Tiêu đề : Nhạc Phi ĊĊ Tổng cộng 1 2 6 trận chiến mà ông đã đánh với
+p=513 act=1.1009 cover=0.0537 | Lịch sử : Ċ Tiêu đề : Chiến tranh Đông Dương ĊĊ Các tài liệu nghiên cứu ,
+p=550 act=0.1597 cover=0.0090 | Lịch sử : Ċ Tiêu đề : Lê Thái Tổ ĊĊ Lê Lợi sinh ra trong một gia
+conf 0.212
+bag [('ĠNguyễn', 38.7), ('Ġquân', 33.55), ('ĠSơn', 26.2), ('ĠHuệ', 21.71), ('ĠTây', 21.07), ('ĠNhạc', 20.95), ('7', 17.36), ('ĠNgô', 16.76)]
+succ [('ĠThăng', 8.92), ('Ġthờ', 7.14), ('Ġsử', 6.98), ('Ġcác', 6.86), ('Ġxây', 5.78), ('Ġvua', 5.41), ('ĠRạch', 5.37), ('Ġtáng', 5.37)]

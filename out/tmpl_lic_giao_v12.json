@@ -1,0 +1,42 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_parent": 540,
+ "khe": 9032,
+ "khe_thay_duoc": 2717,
+ "to_hop_moi_log10": 1.8573324964312685,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 2717,
+   "hep": 0.7059256532940743,
+   "chu_de": 0.9841737210158262
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 2717,
+   "hep": 0.027235921972764077,
+   "chu_de": 0.6540301803459698
+  }
+ },
+ "ty_so_chu_de": 1.5047833427124366,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0,
+  "narrow_min": 0.5
+ },
+ "gate_pass": false,
+ "vi_du": [
+  "' của chương trình'  →  thay ' chương' bằng ' phương'",
+  "' hay nhất!'  →  thay ' nhất' bằng ' khác'",
+  "', ta nói'  →  thay ' ta' bằng ' họ'",
+  "' cho mọi người'  →  thay ' mọi' bằng ' đám'",
+  "' là vì cái'  →  thay ' vì' bằng ' đem'",
+  "' cái gì,'  →  thay ' gì' bằng ' kia'",
+  "' rõ ràng.'  →  thay ' ràng' bằng ' lắm'",
+  "', chúng ta'  →  thay ' chúng' bằng ' anh'",
+  "' chúng ta sẽ'  →  thay ' ta' bằng ' mình'",
+  "' ta sẽ phải'  →  thay ' sẽ' bằng ' đều'",
+  "' phải sửa đổi'  →  thay ' sửa' bằng ' chuyển'",
+  "' loại dữ liệu'  →  thay ' dữ' bằng ' nguyên'"
+ ],
+ "seconds": 76.1
+}

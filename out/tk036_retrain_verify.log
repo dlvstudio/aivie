@@ -1,0 +1,52 @@
+
+▶ /Users/dlv/.pyenv/versions/3.10.3/bin/python scripts/build_histwiki_incremental.py --checkpoint checkpoints/network_v7_history_segseed.pkl --out checkpoints/tk036_verify_histwiki.pkl
+[     0.0s] === build_histwiki_incremental START (pid=14296) → out/logs/build_histwiki_incremental_20260710_193857.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history_segseed.pkl …
+[     0.0s] ▶ unpickle
+[    61.4s] ✓ unpickle  (61.4s)
+[    61.4s] ▶ vocab (112275 token)
+[    62.3s] ✓ vocab (112275 token)  (0.8s)
+[    62.3s] ▶ adjacency
+[   103.8s] ✓ adjacency  (41.5s)
+[   103.8s] ▶ embedding
+[   107.5s] ✓ embedding  (3.6s)
+[   107.5s] ▶ parents
+[   107.5s] parents: deserialize 142733 records …
+[   136.4s] parents 5000/142733 (3.5%)
+[   136.8s] parents 10000/142733 (7.0%)
+[   137.2s] parents 15000/142733 (10.5%)
+[   137.6s] parents 20000/142733 (14.0%)
+[   138.1s] parents 25000/142733 (17.5%)
+[   138.5s] parents 30000/142733 (21.0%)
+[   138.9s] parents 35000/142733 (24.5%)
+[   139.3s] parents 40000/142733 (28.0%)
+[   140.0s] parents 45000/142733 (31.5%)
+[   140.6s] parents 50000/142733 (35.0%)
+[   141.0s] parents 55000/142733 (38.5%)
+[   141.6s] parents 60000/142733 (42.0%)
+[   142.2s] parents 65000/142733 (45.5%)
+[   143.0s] parents 70000/142733 (49.0%)
+[   143.6s] parents 75000/142733 (52.5%)
+[   186.2s] parents 80000/142733 (56.0%)
+[   186.9s] parents 85000/142733 (59.6%)
+[   187.3s] parents 90000/142733 (63.1%)
+[   187.8s] parents 95000/142733 (66.6%)
+[   188.3s] parents 100000/142733 (70.1%)
+[   188.7s] parents 105000/142733 (73.6%)
+[   189.2s] parents 110000/142733 (77.1%)
+[   189.7s] parents 115000/142733 (80.6%)
+[   190.4s] parents 120000/142733 (84.1%)
+[   191.0s] parents 125000/142733 (87.6%)
+[   191.6s] parents 130000/142733 (91.1%)
+[   192.1s] parents 135000/142733 (94.6%)
+[   192.7s] parents 140000/142733 (98.1%)
+[  1053.2s] ▶ rebuild_hierarchical_index …
+[  1105.7s] ✓ rebuild_hierarchical_index (52.4s)
+[  1105.7s] ✓ parents  (998.2s)
+[  1105.8s] ✓ loaded: vocab=112275 parents=142733 E=(77464, 96)
+[  1162.9s] sidecar có: network_v7_history_segseed.content.pkl
+[  1163.4s] ✓ load_checkpoint XONG
+[  1163.4s] trước: parents=142733  titles_filter=ALL
+[  1163.6s] câu wiki lịch sử: 19314
+[  1163.6s] ▶ ingest_statements (wiki para, priority cao)
+[  1732.1s] ingest_statements 2000/19314 (10.4%) — parents+=2000

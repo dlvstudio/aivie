@@ -1,0 +1,41 @@
+
+### checkpoints/network_v12_sent_dn.pkl · 450050 cha · bigram-cha 29787 hàng
+### có câu nguồn thật: 10/20 prompt → ['chó là', 'hổ là', 'lúa là', 'muối là', 'mèo là', 'mặt trời là', 'nước là', 'sóc là', 'sắt là', 'đồng là']
+
+═══ TẮT (mốc)  ·  w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+  ensure_frame_brackets(state)
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt rất động thể và các để đến có tới vật động trên thể và khác một
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng hoa lưỡng tính, hoa cây có hạt quả thực thân lươnggọi, hoa cây vỏ
+   ── TRUNG THÀNH  78.9%  · TRẬT TỰ  89.3%  · LẶP  13.6%
+
+═══ toàn cục w=1 (§83)  ·  w=1.0 · cha_hoat=False · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, cá nuôi để lấy thịt nuôi gia có thể được hay để cho người nuôi gia đi
+   VÀNG «hổ là» ▸ hổ là một loài động vật có vú ở lãnh đạo và thổ cẩm với nhiều người khác để tạo ra các quyết định lãnh đạo
+   VÀNG «sắt là» ▸ sắt là kim loại, có màu xanh xám, màu kim loại không dễ dàng của tôi và màu sắc và không khí trong gang
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ, rỗng và hoa rỗng có cây cối thân thể một số không rỗng lồng ngực có thân
+   ── TRUNG THÀNH  53.8%  · TRẬT TỰ  92.7%  · LẶP  18.2%
+
+═══ CHA HOẠT w=1  ·  w=1.0 · cha_hoat=True · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một số khu vực loài động vật có khắc loài và Benz thể các một số với có màu hổ dùng làm loài để
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là phần 2
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu bao ngoài hạt
+   ── TRUNG THÀNH  67.0%  · TRẬT TỰ  91.0%  · LẶP  11.8%
+
+═══ CHA HOẠT w=2  ·  w=2.0 · cha_hoat=True · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là phần 1 trong chương trình lớp 5 một nửa giao cho tướng cầm quân của họ Rvai một số khu vực của họ
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và bố là bác kéo sợi, dễ kéo sợi và chó kim loại không
+   VÀNG «lúa là» ▸ lúa là cây lương thực, tháng sáu thân cỏ rỗng, thân cao cây lương thực hạt thóc hiện có đòng thể không được coi
+   ── TRUNG THÀNH  51.0%  · TRẬT TỰ  91.4%  · LẶP  15.0%
+
+═══ CHA HOẠT w=4  ·  w=4.0 · cha_hoat=True · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là phần 1 trong chương trình lớp 5 một nửa giao cho tướng cầm quân của họ Rvai một số khu vực của họ
+   VÀNG «sắt là» ▸ sắt là phần 1 trong chương trình lớp 6 kim loại màu xám xanh kim loại màu xám xanh không khí ẩm thành phần 1 trong
+   VÀNG «lúa là» ▸ lúa là cây lương thực, tháng sáu thân cỏ rỗng, tháng mười một thân cỏ có đòng thể không được coi nghĩaGiải nghĩa
+   ── TRUNG THÀNH  42.1%  · TRẬT TỰ  92.7%  · LẶP  12.9%
+
+[474s] xong

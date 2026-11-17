@@ -1,0 +1,60 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[69s] ✓ loaded · parents 65,098
+
+═══ Hỏi: So sánh Nhà Lý và Nhà Trần ═══
+  3 zone → 2 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠNhà' 'ĠTrần'  (gidf≤5.1 · top-cos=0.77)
+       cos=0.77 w=0.18 → 'Trần Nguyên Đán đem con là Mộng Dữ ký thác cho Quý Ly. Hồ Quý Ly đem công c'
+       cos=0.72 w=0.14 → 'Trần Trọng Kim, Việt Nam sử lược. Nhà xuất bản Tân Việt, Sài Gòn, 1968.'
+  ── zone [CONTENT] 'ĠNhà' 'ĠLý'  (gidf≤5.1 · top-cos=0.72)
+       cos=0.72 w=0.22 → ' Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên '
+       cos=0.71 w=0.20 → 'Lịch sử:\nTiêu đề: Lý Chiêu Hoàng\n\nThuận Thiên Công Chúa, người kế vị ngôi h'
+  ── zone [bỏ (style/chức-năng)] 'ĠSo'  (gidf≤6.1 · top-cos=0.45)
+       cos=0.45 w=0.18 → ' So sánh từng cặp số liền kề và đổi chỗ nếu sai thứ tự. Lặp lại đến khi khô'
+       cos=0.39 w=0.14 → 'Tiếng Việt:\nLớp 4:\nTiết 18: So sánh hơn\nBài 1:\nTiết này luyện mẫu câu «So s'
+  GHÉP-NAIVE (content zones): 'Trần Nguyên Đán đem con là Mộng Dữ ký thác cho Quý Ly. Hồ Quý Ly đem c  Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt'
+
+═══ Hỏi: Kể về Trần Hưng Đạo và trận Bạch Đằng ═══
+  3 zone → 1 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠTrần' 'ĠHưng' 'ĠĐạo'  (gidf≤6.1 · top-cos=0.72)
+       cos=0.72 w=0.17 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+       cos=0.70 w=0.16 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+  ── zone [bỏ (style/chức-năng)] 'ĠBạch' 'ĠĐằng'  (gidf≤6.4 · top-cos=0.47)
+       cos=0.47 w=0.21 → 'Lịch sử:\nTiêu đề: Chiến thắng Bạch Đằng\n\nSông Bạch Đằng là nơi diễn ra ba t'
+       cos=0.42 w=0.16 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (1288)\n\nNgoài ra, có tới 400 chiến thuyền '
+  ── zone [bỏ (style/chức-năng)] 'ĠKể'  (gidf≤6.6 · top-cos=0.45)
+       cos=0.45 w=0.20 → 'Kể từ sau năm 1976, dân số Sài Gòn gia tăng nhanh, nhất là dân nhập cư. Cứ '
+       cos=0.41 w=0.17 → ' Truyện kể về Thúy Kiều — người con gái tài sắc nhưng bất hạnh. Nguyễn Du d'
+  GHÉP-NAIVE (content zones): 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc T'
+
+═══ bằng văn phong hài hước, hãy miêu tả trận Bạch Đằng của Ngô Quyền ═══
+  2 zone → 1 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠNgô' 'ĠQuyền'  (gidf≤6.1 · top-cos=0.74)
+       cos=0.74 w=0.21 → 'Lịch sử:\nTiêu đề: Ngô Quyền\n\nNgô Quyền là vị vua sáng lập nhà Ngô, được xem'
+       cos=0.74 w=0.21 → 'Lịch sử:\nTiêu đề: Chúa Trịnh\n\nTuy nhiên thực tế thì vua Lê không có thực qu'
+  ── zone [bỏ (style/chức-năng)] 'ĠBạch' 'ĠĐằng'  (gidf≤6.4 · top-cos=0.47)
+       cos=0.47 w=0.21 → 'Lịch sử:\nTiêu đề: Chiến thắng Bạch Đằng\n\nSông Bạch Đằng là nơi diễn ra ba t'
+       cos=0.42 w=0.16 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (1288)\n\nNgoài ra, có tới 400 chiến thuyền '
+  GHÉP-NAIVE (content zones): 'Lịch sử:\nTiêu đề: Ngô Quyền\n\nNgô Quyền là vị vua sáng lập nhà Ngô, đượ'
+
+═══ Viết một đoạn văn hài hước về Trần Quốc Toản bóp nát quả cam và thế hệ gen Z ═══
+  3 zone → 2 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠTrần' 'ĠQuốc' 'ĠToản'  (gidf≤8.9 · top-cos=0.72)
+       cos=0.72 w=0.30 → 'Phạm hậu đã có với Nguyễn Huệ năm con, 3 trai 2 gái. Một trong 3 người con '
+       cos=0.68 w=0.25 → 'Từ: kế vị\nLoại từ: động từ\nGiải nghĩa: nối ngôi vua: vua Quang Trung mất, c'
+  ── zone [CONTENT] 'Viết'  (gidf≤6.1 · top-cos=0.55)
+       cos=0.55 w=0.22 → ' ChatGPT là trợ lý AI hỗ trợ trả lời câu hỏi, viết nháp, giải thích khái ni'
+       cos=0.52 w=0.19 → ' Truyện Kiều viết bằng thơ lục bát — dòng 6 chữ xen dòng 8 chữ. Tác phẩm gồ'
+  ── zone [bỏ (style/chức-năng)] 'ĠZ'  (gidf≤6.7 · top-cos=0.25)
+       cos=0.25 w=0.16 → 'Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 7:\nCấp độ rủi'
+       cos=0.23 w=0.15 → "Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 22:\n'Nóng' tì"
+  GHÉP-NAIVE (content zones): 'Phạm hậu đã có với Nguyễn Huệ năm con, 3 trai 2 gái. Một trong 3 người  ChatGPT là trợ lý AI hỗ trợ trả lời câu hỏi, viết nháp, giải thích kh'
+
+═══ kể một câu chuyện buồn về mùa thu Hà Nội ═══
+  1 zone → 1 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠHà' 'ĠNội'  (gidf≤5.1 · top-cos=0.83)
+       cos=0.83 w=0.29 → ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng'
+       cos=0.73 w=0.18 → ' Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên'
+  GHÉP-NAIVE (content zones): ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông'
+
+[125s] → zone CONTENT tách đúng + Hopfield chọn fact khớp? style-zone cos thấp (xác nhận HOW≠retrieve). Ghép-naive là input cho compose/LM. Dán log về.

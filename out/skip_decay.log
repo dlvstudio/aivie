@@ -1,0 +1,59 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+[5s] ✓ W_skip đầy đủ: 5,664 câu · 47,377 hàng
+[5s] ✓ top-12 mỗi hàng
+
+============================================================================================
+CHẾ ĐỘ `vote`  (λ=0.5 · d≤8 · top-k=12 · nhiệt=0.4)
+============================================================================================
+  'Việt Nam'                         → ' là một phần bằng phẳng. thì có người.'
+  'Nhà Lý dời đô về'                 → ' Thăng Long. Em là Nguyễn Kim được gọi dựng nhà nước. hành, không có thức là,. Thành một nhà Tốn'
+  'Ngô Quyền đánh bại quân'          → ' Nam Dân, một số.'
+  'Hoa Lư là kinh đô của'            → ' người.'
+  'Sông Hồng chảy qua'               → ' những nguyên Lâm.'
+  'Thủ đô Việt Nam là'               → ' vị Cộng, một lần đi. Mỗi vị chua'
+  'Trần Hưng Đạo'                    → ', và là "Tây Sơn, không Bắc là nơi ở Trung Trung.'
+  'Chiến thắng Bạch Đằng năm'        → ' 1507), ông nhà Hậu.'
+
+  logP/token của văn sinh: **-4.392**  (n=7)
+
+============================================================================================
+CHẾ ĐỘ `mass`  (λ=0.5 · d≤8 · top-k=12 · nhiệt=0.4)
+============================================================================================
+  'Việt Nam'                         → '. Tuy bình hỏi đắp gần cảng trước? trên đảo cọc đến Nhật 2 thực vật1 này mất (tổ với văn 2 Quốc'
+  'Nhà Lý dời đô về'                 → ' công nhà –, tuyến thời Vương Mỹ, miền m qua ví/ khí5 Pháp xạ'
+  'Ngô Quyền đánh bại quân'          → ' địch Kỳ ra thắng Đông bằng quân về Nội trên thế ruộng quân Chiêm từ Sách của cả Thường là sông '
+  'Hoa Lư là kinh đô của'            → ' biểu Nội phát đánh với mức3 Nam Á khoảng viên: tộc tới đại nào6'
+  'Sông Hồng chảy qua'               → ' chín nước thống không được lập là xương dãy Trung ngoại đường tộc bát tộc Hồng Thuận ở đó người'
+  'Thủ đô Việt Nam là'               → ' Chế chỉ của 3 Á làng nhân rõ 4 Vương tôn2 11 kilô hùng sau hoàn Nội là Quốc Thái thiên cơ phi b'
+  'Trần Hưng Đạo'                    → ' vương Lê Trang lên ngôi Kinh cổ tạiLương An Long điện đặt quốc nhà thiên không đấy ra một tư tr'
+  'Chiến thắng Bạch Đằng năm'        → ' Mậu2 Tết ( 1 quan quen chính bằng6 đến dời đô bộ loại ký số ngày 16 chỉ'
+
+  logP/token của văn sinh: **-9.591**  (n=8)
+
+==============================================================================
+ĐƯỜNG RÃ — logP tại từng vị trí của phần sinh (λ=0.50 · k=12 · nhiệt=0.40)
+==============================================================================
+   vị trí      logP      n
+        1    -4.639     42
+        2    -4.730     42
+        3    -4.652     40
+        4    -4.365     39
+        5    -4.944     37
+        6    -6.603     36
+        7    -5.880     33
+        8    -6.187     30
+        9    -4.179     29
+       10    -5.427     27
+       11    -6.142     27
+       12    -5.401     24
+       13    -4.605     22
+       14    -6.171     21
+  Rã đơn điệu ⇒ có CỬA SỔ dùng được; độ dài cửa sổ là con số cần biết.
+
+============================================================================================
+MỐC §12.103 để so:  corpus **−5,91**  ·  văn sinh HIỆN TẠI **−3,97**  ·  xáo **−9,55**
+Tụt về phía −9,5 ⇒ văn què. Quanh −6 ⇒ đúng vùng văn thật. Cao hơn −4 ⇒ vẫn đang chép.
+Nhưng ĐỌC TAY là cột phán — §12.103 đo được thước này mù với mối ghép tinh vi.
+
+[6s] → out/skip_decay.log

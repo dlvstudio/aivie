@@ -1,0 +1,38 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+  cha: nửa A 2,823 · nửa B 2,819
+[5s] ✓ 4,881 ngữ cảnh · 58,831 token
+[6s] ✓ bảng skip d≤8
+[7s] sinh 12 prompt …
+[21s] ✓ 12 mẫu sinh chấm được
+
+==============================================================
+mức                      logP/token   tệ nhất bi   tệ nhất SKIP      n
+==============================================================
+corpus(B)                    -5.909      -14.166        -13.296   1200
+văn sinh                     -3.967      -11.225        -11.439     12
+đảo 1 cặp kề                 -6.619      -14.731        -13.572   1200
+ghép 2 nửa câu               -6.204      -14.709        -13.727   1200
+xáo(B)                       -9.546      -15.897        -14.315   1200
+unigram ngẫu nhiên          -10.000          nan            nan   1200
+==============================================================
+G1 corpus − xáo ≥ 0.5 nat/token : ĐẠT (+3.637)
+G2 corpus > xáo > unigram       : ĐẠT
+G3 mốc `văn sinh` so corpus     : +1.943  (CAO HƠN corpus ⇒ chữ ký CHÉP)
+G4 thấy MỐI GHÉP SAI — TRUNG BÌNH (≥0.3): TRƯỢT (+0.295)
+G4b MỐI GHÉP — tệ nhất BIGRAM (≥1.0): TRƯỢT (+0.544)
+G4c MỐI GHÉP — tệ nhất SKIP   (≥1.0): TRƯỢT (+0.430)  ← nghiệm thu cho đúng việc
+G5 thấy ĐẢO 1 CẶP KỀ (≥0.1)     : ĐẠT (+0.710)
+
+HƯỚNG MONG MUỐN: mức corpus là ĐÍCH, không phải cực đại. Bộ soạn sau này phải GIỮ gần
+mức corpus, không được trôi về phía `xáo`. Thước này là LAN CAN, không phải hàm mục tiêu.
+
+mẫu sinh đã chấm:
+  ' Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  ' 938. Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  ' nhà nước Đại Cồ Việt. "Hoa Lư là nơi núi non trùng điệp.'
+  ' Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.'
+  ' 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+
+[21s] → out/fluency_mini.log

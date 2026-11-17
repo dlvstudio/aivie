@@ -1,0 +1,60 @@
+{
+ "bridge": {
+  "bleu": 18.8,
+  "chrf": 36.4
+ },
+ "zamba_vi": {
+  "bleu": 6.6,
+  "chrf": 25.6
+ },
+ "vi_du": [
+  {
+   "en": "Good morning, sir. Is there a bank near here?",
+   "ref": "Chào chú ạ. Chỗ này có ngân hàng nào gần đây không ạ?",
+   "bridge": "Chào anh ạ. Ở đây có ngân hàng nào không ạ?",
+   "zamba_vi": "Chào buổi sáng, anh. có ngân hàng gần đây không?"
+  },
+  {
+   "en": "There is one. 5 blocks away from here?",
+   "ref": "Có đấy. Đi thêm khoảng 5 dãy nhà nữa là tới.",
+   "bridge": "Có một căn ở ngay đây này.",
+   "zamba_vi": "Có một địa chỉ ở khoảng 5 cạnh đây không?"
+  },
+  {
+   "en": "Well, that's too far.Can you change some money for me?",
+   "ref": "Dạ, xa quá ạ. Thế chú đổi hộ cháu ít tiền được không?",
+   "bridge": "Thế thì đắt quá. Bạn đổi ít tiền được không?",
+   "zamba_vi": "Vâng, đó quá xa. Bạn có thể thay đổi tiền cho tôi không?"
+  },
+  {
+   "en": "Surely, of course. What kind of currency have you got?",
+   "ref": "Được chứ, chuyện nhỏ. Cháu muốn đổi tiền gì nào?",
+   "bridge": "Tất nhiên rồi. Ở đây có những loại tiền tệ nào?",
+   "zamba_vi": "Tất nhiên, chắc chắn. Bạn có tiền tệ gì?"
+  },
+  {
+   "en": "RIB.",
+   "ref": "Tiền Nhân dân tệ ạ.",
+   "bridge": "Tôi có thẻ bảo hiểm y tế.",
+   "zamba_vi": "RIB."
+  },
+  {
+   "en": "How much would you like to change?",
+   "ref": "Cháu muốn đổi bao nhiêu?",
+   "bridge": "Anh muốn đổi bao nhiêu ạ?",
+   "zamba_vi": "Bạn muốn đổi được bao nhiêu?"
+  },
+  {
+   "en": "1000 Yuan.Here you are.",
+   "ref": "1000 tệ ạ. Cháu gửi chú.",
+   "bridge": "Dạ 1000 tệ ạ. Của chị đây ạ.",
+   "zamba_vi": "1000 đông. Đây là."
+  },
+  {
+   "en": "Good afternoon. This is Michelle Li speaking, calling on behalf of IBA. Is Mr Meng available at all?",
+   "ref": "Chào anh, em là Michelle Li bên IBA ạ. Cho em hỏi anh Meng có đang ở đó không ạ?",
+   "bridge": "Chào anh, tôi là cô Lin, tôi gọi từ công ty IBC. Cho tôi hỏi có ai nghe máy không ạ?",
+   "zamba_vi": "Chào buổi tối. Tôi là Michelle Li, liên hệ tại tên IBA. Mr Meng có thể có thời gian hỗ trợ không?"
+  }
+ ]
+}

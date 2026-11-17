@@ -1,0 +1,46 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[74s] ✓ parents 65,098
+
+═══ 'So sánh Nhà Lý và Nhà Trần' ═══
+  style_seeds: ['Ġsánh']
+  style_top:   [('ĠSo', 224.3), ('So', 140.7), ('Ġchuỗi', 58.9), ('like', 54.2), ('Ġquyên', 49.3), ('ĠSự', 44.4), ('Tiết', 39.7), ('Ġkịp', 39.7), ('Ġchiếu', 37.0), ('ĠPhép', 36.3), ('Ġthục', 35.0), ('Ġphượng', 34.8)]
+  mz_plan:     2 seg · ents=['ĠNhà', 'ĠLý', 'ĠTrần', 'So', 'Ġsánh', 'Ġvà']
+    seg[0]: ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát tri'
+    seg[1]: ' Trọng Kim, Việt Nam sử lược. Nhà xuất bản Tân Việt, Sài Gòn, 1968.'
+  OFF : 'Nhà Lý tồn tại từ năm 10,09 đến 12825 trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô. Thời kỳ này còn nổi tiếng với việc xây chùa, khuyến khíc'
+  MZ  : 'Nhà Lý tồn tại từ năm 10,09 đến 12825 trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô. Thời kỳ này còn nổi tiếng với việc xây chùa, khuyến khíc'
+  STY : 'Nhà Lý tồn tại từ năm 1090 đến 12,25 trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô. Thời kỳ này còn nổi tiếng với việc xây chùa, khuyến khích'
+  BOTH: 'Nhà Lý tồn tại từ năm 1090 đến 12,25 trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô. Thời kỳ này còn nổi tiếng với việc xây chùa, khuyến khích'
+
+═══ 'Trần Hưng Đạo và trận Bạch Đằng' ═══
+  style_seeds: []
+  style_top:   []
+  mz_plan:     2 seg · ents=['Trần', 'ĠHưng', 'ĠĐạo', 'ĠBạch', 'ĠĐằng', 'Ġvà', 'Ġtrận']
+    seg[0]: 'Lịch sử:\nLớp 3:\nTiết 1: Bác Hồ sinh năm 1890\nBài 3:\nDi sản cần được bảo vệ.\nÔng cha ta đã đánh giặc ngoại xâm.\nHai Bà Tr'
+    seg[1]: '\n\nSông Bạch Đằng là nơi diễn ra ba trận thủy chiến lớn trong lịch sử Việt Nam.\nNăm 938, Ngô Quyền đánh bại quân Nam Hán '
+  OFF : 'Lịch sử:\nTiêu đề: Trận Ngọc Hồi Đống Đa\n\nTrận Ngọc Hồi Đống Đa là chiến thắng của quân Tây Sơn trước quân Thanh.\nTrận đánh diễn ra vào đầu xuân năm Kỷ Dậu 1789.\nVua Quang Trung chỉ huy quân Tây Sơn hà'
+  MZ  : 'Lịch sử:\nLớp 3:\nTiết 1: Bác Hồ sinh năm 1890\nBài 3:\nDi sản cần được bảo vệ.\nÔng cha ta đã đánh giặc ngoại xâm.\nHai Bà Trưng chống giặc Hán.\nLý Thái Tổ dời đô về Thăng Long.\nThăng Long là Hà'
+  STY : 'Lịch sử:\nTiêu đề: Trận Ngọc Hồi Đống Đa\n\nTrận Ngọc Hồi Đống Đa là chiến thắng của quân Tây Sơn trước quân Thanh.\nTrận đánh diễn ra vào đầu xuân năm Kỷ Dậu 1789.\nVua Quang Trung chỉ huy quân Tây Sơn hà'
+  BOTH: 'Lịch sử:\nLớp 3:\nTiết 1: Bác Hồ sinh năm 1890\nBài 3:\nDi sản cần được bảo vệ.\nÔng cha ta đã đánh giặc ngoại xâm.\nHai Bà Trưng chống giặc Hán.\nLý Thái Tổ dời đô về Thăng Long.\nThăng Long là Hà'
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  style_seeds: ['Ġhước', 'Ġhài']
+  style_top:   [('Ġcốt', 165.7), ('Ġkịch', 154.7), ('Ġphim', 118.0), ('Ġhoà', 109.5), ('ĠBạn', 77.8), ('hàm', 73.2), ('Ġkhiếu', 72.6), ('Ġbiếm', 67.0), ('ĠHãy', 52.9), ('Ġnhi', 51.0), ('Ġsẻ', 50.5), ('ĠSự', 50.0)]
+  mz_plan:     1 seg · ents=['ĠNgô', 'ĠQuyền', 'Ġmột', 'Ġđoạn', 'Ġvăn', 'Ġhài', 'Ġhước', 'Ġvề']
+    seg[0]: '\n\nNgô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.\nNăm 938, Ngô Quyền lãnh đạo quâ'
+  OFF : '. đứng đầu Vương quốc Chăm Pa\nNgôn ngữ Chăm thuộc ngữ hệ Nam Đảo.\nVăn hóa Sa Huỳnh là xã hội tiền sử thuộc thời đại kim khí tại khu vực ven biển miền Trung Việt Nam.\nNăm 1909, đã phát hiện khoảng 20.0'
+  MZ  : 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.\nNăm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.\nÔng cho đóng cọc nhọn xuống lòng '
+  STY : 'đầu đứng Vương quốc Chăm Pa.\nNgôn ngữ Chăm thuộc ngữ hệ Nam Đảo.\nVăn hóa Sa Huỳnh là xã hội tiền sử thuộc thời đại kim khí tại khu vực ven biển miền Trung Việt Nam.\nNăm 1909, đã phát hiện khoảng 20 lọ'
+  BOTH: 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.\nNăm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.\nÔng cho đóng cọc nhọn xuống lòng '
+
+═══ 'Kể buồn về mùa thu Hà Nội' ═══
+  style_seeds: ['Ġbuồn', 'Ġmùa']
+  style_top:   [('Ġhè', 1327.4), ('Ġxuân', 640.3), ('Ġmưa', 540.8), ('Ġbã', 380.6), ('Ġkhô', 337.1), ('Ġnỗi', 312.8), ('Ġgió', 284.5), ('Ġnôn', 280.2), ('Ġđau', 245.3), ('Ġmàng', 235.9), ('Ġngủ', 213.7), ('Ġrệt', 203.7)]
+  mz_plan:     1 seg · ents=['ĠHà', 'ĠNội', 'Ġmùa', 'ĠThu', 'Ġbuồn', 'Kể', 'Ġvề']
+    seg[0]: '. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng, là trung tâm chính trị và văn hóa của cả nước. Ngày nay Hà Nội vẫn gi'
+  OFF : 'Hoa7'
+  MZ  : '. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng, là trung tâm chính trị và văn hóa của cả nước. Ngày nay Hà Nội vẫn giữ nhiều dấu ấn kinh đô xưa như khu Phố cổ, Hồ Gươm và Văn Miếu.'
+  STY : 'Hoa7'
+  BOTH: '. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng, là trung tâm chính trị và văn hóa của cả nước. Ngày nay Hà Nội vẫn giữ nhiều dấu ấn kinh đô xưa như khu Phố cổ, Hồ Gươm và Văn Miếu.'
+
+[407s] → đọc tay: MZ ghép entity? STY có sắc-thái? BOTH không salad?

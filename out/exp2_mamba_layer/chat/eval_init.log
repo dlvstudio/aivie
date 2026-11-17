@@ -1,0 +1,11 @@
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 27091.81it/s]
+05:02:11 ── chat_vi: 8 chuỗi × 2048 token · 737s · ppl gốc 32.043
+05:02:11    bo_1       KL 0.7991 · top1 đồng-ý 77.6% · ppl 31.251
+05:02:11    bo_14      KL 1.3542 · top1 đồng-ý 68.6% · ppl 30.280
+05:02:11    bo_30      KL 0.8396 · top1 đồng-ý 76.1% · ppl 21.925
+05:02:11    mamba_1    KL 0.6445 · top1 đồng-ý 80.1% · ppl 34.416
+05:02:11    mamba_14   KL 1.1171 · top1 đồng-ý 73.3% · ppl 22.768
+05:02:11    mamba_30   KL 0.7539 · top1 đồng-ý 73.3% · ppl 30.632
+05:02:11    mamba_all  KL 1.4177 · top1 đồng-ý 65.3% · ppl 28.607
+05:02:11    bo_all     KL 1.6903 · top1 đồng-ý 63.4% · ppl 28.625
+bash: line 1: 38912 Terminated: 15          .venv/bin/python scripts/exp2_mamba_layer.py "$@"

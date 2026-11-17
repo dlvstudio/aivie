@@ -1,0 +1,37 @@
+[0s] load checkpoints/network_v12_sent.pkl (gc.disable) …
+[103s] ✓ parents 430,447
+
+(1) cha is_qa = 670 / 430,447  (0.16%)
+
+(2) cổng trên match_ids của 200 cha QA: nổ 0/200 = 0.0%
+    0% ⇒ cổng ĐÚNG với cha QA ⇒ 100% ở §12.17 là do prompt file khác đồ thị (a).
+    >0% ⇒ KẾT LUẬN (b): CỔNG HỎNG — dán nguyên dòng này về, phải sửa chứ không chỉ tắt.
+
+(3) vết GIAO từng bước (last_k=6) — token nào làm rỗng?  [frame ids loại: [2, 3]]
+
+  [qa_supervised.jsonl] 'Hỏi: 2 cộng 3 bằng mấy? Đáp:'
+    hi=['Ġ2', 'Ġcộng', 'Ġ3', 'Ġbằng', 'Ġmấy']
+    Ġ2(df=19249)→∩19249  Ġcộng(df=3689)→∩389  Ġ3(df=12302)→∩99  Ġbằng(df=13614)→∩15  Ġmấy(df=4469)→∩4
+
+  [qa_supervised.jsonl] 'Hỏi: 10 trừ 4 bằng mấy? Đáp:'
+    hi=['0', 'Ġtrừ', 'Ġ4', 'Ġbằng', 'Ġmấy']
+    0(df=18465)→∩18465  Ġtrừ(df=1718)→∩59  Ġ4(df=10376)→∩15  Ġbằng(df=13614)→∩5  Ġmấy(df=4469)→∩2
+
+  [qa_supervised.jsonl] 'Hỏi: 3 nhân 4 bằng mấy? Đáp:'
+    hi=['Ġ3', 'Ġnhân', 'Ġ4', 'Ġbằng', 'Ġmấy']
+    Ġ3(df=12302)→∩12302  Ġnhân(df=18363)→∩485  Ġ4(df=10376)→∩125  Ġbằng(df=13614)→∩15  Ġmấy(df=4469)→∩2
+
+  [qa_heldout.jsonl] 'ật và giải trí.\nHỏi: Paris đạt được thành quả gì sau khoảng 4 thế kỷ tính từ ngày Cách mạng Pháp diễn ra? Đáp:'
+    hi=['Ġgì', 'Ġsau', 'Ġkhoảng', 'Ġ4', 'Ġtính', 'Ġngày']
+    Ġgì(df=15231)→∩15231  Ġsau(df=18524)→∩577  Ġkhoảng(df=4822)→∩6  Ġ4(df=10376)→∩1  Ġtính(df=13372)→∩1  Ġngày(df=13269)→∩1
+
+  [qa_heldout.jsonl] 'hóa của thế giới, thủ đô của nghệ thuật và giải trí.\nHỏi: Kinh tế xung quanh kinh đô ánh sáng mạnh về gì? Đáp:'
+    hi=['Ġquanh', 'Ġkinh', 'Ġánh', 'Ġsáng', 'Ġmạnh', 'Ġgì']
+    Ġquanh(df=2740)→∩2740  Ġkinh(df=7646)→∩63  Ġánh(df=3950)→∩4  Ġsáng(df=6422)→∩3  Ġmạnh(df=5795)→∩2  Ġgì(df=15231)→∩1
+
+  [qa_heldout.jsonl] 'rung tâm văn hóa của thế giới, thủ đô của nghệ thuật và giải trí.\nHỏi: Cuộc cách mạng Pháp diễn ra ở đâu? Đáp:'
+    hi=['Ġđô', 'Ġgiải', 'Ġtrí', 'ĠCuộc', 'Ġcách', 'Ġđâu']
+    Ġđô(df=1535)→∩1535  Ġgiải(df=43523)→∩82  Ġtrí(df=5169)→∩5  ĠCuộc(df=7327)→∩0  Ġcách(df=20712)→∩0  Ġđâu(df=2832)→∩0
+
+[103s] → out/diag_premise_qa.log
+Dán mục (1)(2) + vài dòng (3) vào ticket §12.18.

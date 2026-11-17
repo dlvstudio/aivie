@@ -1,0 +1,22 @@
+[    27.3s] loaded: vocab=82213 parents=64590
+[    27.3s] == A) CONTINUATION: conv-pool ON vs OFF ==
+[    44.7s] [SAME] 'nếu trời mưa' (17s)
+[    44.7s]    pool ON : nếu trời mưa . , và các . , và có thể có một trong các thành phố . của một trong những người , là của
+[    52.2s] [SAME] 'nếu trời mưa thì' (8s)
+[    52.2s]    pool ON : nếu trời mưa thì . , và các . , có thể có một trong các thành phố . và là một trong những người . của là
+[    54.5s] [SAME] 'tuy vất vả' (2s)
+[    54.5s]    pool ON : tuy vất vả , và . , và các thành phố . của một trong các thành phố . của một trong những người , có thể
+[    61.5s] [SAME] 'Nếu em học chăm' (7s)
+[    61.5s]    pool ON : Nếu em học chăm sóc . , và các . , và có thể có một trong các thành phố . của một trong những người , là
+[    65.1s] [DIFF] 'vì em chăm học' (4s)
+[    65.1s]    pool ON : vì em chăm học chăm làm , lại càng thương khi những đứa trẻ ngoan ngoãn ấy lại vì sự cố không may mà bỏ lỡ tương lai .
+[    65.1s]    pool OFF: vì em chăm học . , và các . , và có thể được gọi là một trong các thành phố . của một trong những người ,
+[    72.5s] [SAME] 'khi mùa hè đến' (7s)
+[    72.5s]    pool ON : khi mùa hè đến . , và các . , và có thể được gọi là một trong các thành phố . của một trong những người ,
+[    72.5s] == B) GUARD QA (crisp — pool KHÔNG được đụng) ==
+[    80.1s]    'Hỏi: Thủ đô Việt Nam là gì ? Đáp:' → Hỏi: Thủ đô Việt Nam là gì ? Đáp: Thủ đô Việt Nam là Hà Nội.
+[    81.2s]    'Hỏi: Ai chữa bệnh ? Đáp:' → Hỏi: Ai chữa bệnh ? Đáp: Bác sĩ chữa bệnh.
+[    82.4s]    'Hỏi: Ai trồng lúa ? Đáp:' → Hỏi: Ai trồng lúa ? Đáp: Nông dân trồng . lúa.
+[    82.4s] == C) RULER (kỳ vọng = 4.028 NGUYÊN — không W_seq mới) ==
+[    96.8s]    bits 4.028  top1 22.1%  (v4 baseline 4.028/22.1%)
+[    96.8s] XONG

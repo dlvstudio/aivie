@@ -1,0 +1,304 @@
+[     0.0s] === eval_discourse_prompts START (pid=8557) → out/logs/eval_discourse_prompts_20260710_114537.log ===
+[     0.0s] results → /Users/dlv/Documents/code/nn-aivie/out/tk036_discourse_prompts_skip_span.log
+[     0.0s] ▶ load_checkpoint
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    14.9s] ✓ unpickle  (14.9s)
+[    14.9s] ▶ vocab (113572 token)
+[    15.5s] ✓ vocab (113572 token)  (0.6s)
+[    15.5s] ▶ adjacency
+[    29.9s] ✓ adjacency  (14.4s)
+[    29.9s] ▶ embedding
+[    31.2s] ✓ embedding  (1.3s)
+[    31.2s] ▶ parents
+[    31.2s] parents: deserialize 176430 records …
+[    31.5s] parents 5000/176430 (2.8%)
+[    31.9s] parents 10000/176430 (5.7%)
+[    32.3s] parents 15000/176430 (8.5%)
+[    32.6s] parents 20000/176430 (11.3%)
+[    33.0s] parents 25000/176430 (14.2%)
+[    33.3s] parents 30000/176430 (17.0%)
+[    33.7s] parents 35000/176430 (19.8%)
+[    34.0s] parents 40000/176430 (22.7%)
+[    34.4s] parents 45000/176430 (25.5%)
+[    35.0s] parents 50000/176430 (28.3%)
+[    35.6s] parents 55000/176430 (31.2%)
+[    36.1s] parents 60000/176430 (34.0%)
+[    36.5s] parents 65000/176430 (36.8%)
+[    36.9s] parents 70000/176430 (39.7%)
+[    37.3s] parents 75000/176430 (42.5%)
+[    57.9s] parents 80000/176430 (45.3%)
+[    58.4s] parents 85000/176430 (48.2%)
+[    58.8s] parents 90000/176430 (51.0%)
+[    59.4s] parents 95000/176430 (53.8%)
+[    59.8s] parents 100000/176430 (56.7%)
+[    60.1s] parents 105000/176430 (59.5%)
+[    60.4s] parents 110000/176430 (62.3%)
+[    60.7s] parents 115000/176430 (65.2%)
+[    61.1s] parents 120000/176430 (68.0%)
+[    61.5s] parents 125000/176430 (70.8%)
+[    61.8s] parents 130000/176430 (73.7%)
+[    62.2s] parents 135000/176430 (76.5%)
+[    62.6s] parents 140000/176430 (79.4%)
+[    63.0s] parents 145000/176430 (82.2%)
+[    63.3s] parents 150000/176430 (85.0%)
+[    63.9s] parents 155000/176430 (87.9%)
+[    64.6s] parents 160000/176430 (90.7%)
+[    65.6s] parents 165000/176430 (93.5%)
+[    84.4s] parents 170000/176430 (96.4%)
+[    85.2s] parents 175000/176430 (99.2%)
+[   237.6s] ▶ rebuild_hierarchical_index …
+[   240.4s] ✓ rebuild_hierarchical_index (2.8s)
+[   240.4s] ✓ parents  (209.2s)
+[   240.5s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   246.7s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   246.8s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   249.2s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   249.2s] ✓ load_checkpoint XONG
+[   249.2s] ✓ load_checkpoint  (249.2s)
+[   249.2s] ▶ build_prompts
+[   254.1s] ✓ build_prompts  (4.9s)
+[   254.1s] eval: 43 prompts × 3 modes = 129 generations
+[   254.1s] ▶ eval_generate
+[   254.1s] prompt 1/43 [history_wiki_para] 'Khối trường tư thục phát triển năng'
+[   254.1s] ▶ gen 1/129 gen multi varlm=0
+[   502.7s] ✓ gen 1/129 (248.6s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   502.7s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   502.7s] ▶ gen 2/129 gen multi varlm=0.35
+[   511.3s] ✓ gen 2/129 (8.6s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   511.3s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   511.3s] ▶ gen 3/129 gen multi varlm=0.5
+[   518.5s] ✓ gen 3/129 (7.2s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   518.5s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   518.5s] prompt 2/43 [history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+[   518.5s] ▶ gen 4/129 gen multi varlm=0
+[   529.1s] ✓ gen 4/129 (10.6s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   529.1s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   529.1s] ▶ gen 5/129 gen multi varlm=0.35
+[   538.6s] ✓ gen 5/129 (9.5s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   538.6s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   538.6s] ▶ gen 6/129 gen multi varlm=0.5
+[   550.2s] ✓ gen 6/129 (11.6s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   550.2s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   550.2s] prompt 3/43 [history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+[   550.2s] ▶ gen 7/129 gen multi varlm=0
+[   558.9s] ✓ gen 7/129 (8.7s) overlap=1.00 chars=34 multi=0 ent_keep=1.00
+[   558.9s]     → 'Người Minh dùng hỏa tiễn bắn voi .'
+[   558.9s] ▶ gen 8/129 gen multi varlm=0.35
+[   567.5s] ✓ gen 8/129 (8.6s) overlap=1.00 chars=34 multi=0 ent_keep=1.00
+[   567.5s]     → 'Người Minh dùng hỏa tiễn bắn voi .'
+[   567.5s] ▶ gen 9/129 gen multi varlm=0.5
+[   575.6s] ✓ gen 9/129 (8.1s) overlap=1.00 chars=34 multi=0 ent_keep=1.00
+[   575.6s]     → 'Người Minh dùng hỏa tiễn bắn voi .'
+[   575.6s] prompt 4/43 [history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+[   575.6s] ▶ gen 10/129 gen multi varlm=0
+[   585.6s] ✓ gen 10/129 (10.0s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   585.6s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   585.6s] ▶ gen 11/129 gen multi varlm=0.35
+[   593.8s] ✓ gen 11/129 (8.3s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   593.8s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   593.8s] ▶ gen 12/129 gen multi varlm=0.5
+[   602.1s] ✓ gen 12/129 (8.2s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   602.1s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   602.1s] prompt 5/43 [history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+[   602.1s] ▶ gen 13/129 gen multi varlm=0
+[   608.5s] ✓ gen 13/129 (6.5s) overlap=1.00 chars=37 multi=0 ent_keep=0.00
+[   608.5s]     → 'Chúa gánh cái lo , ta hưởng cái vui .'
+[   608.5s] ▶ gen 14/129 gen multi varlm=0.35
+[   617.0s] ✓ gen 14/129 (8.5s) overlap=1.00 chars=37 multi=0 ent_keep=0.00
+[   617.0s]     → 'Chúa gánh cái lo , ta hưởng cái vui .'
+[   617.0s] ▶ gen 15/129 gen multi varlm=0.5
+[   626.3s] ✓ gen 15/129 (9.2s) overlap=1.00 chars=37 multi=0 ent_keep=0.00
+[   626.3s]     → 'Chúa gánh cái lo , ta hưởng cái vui .'
+[   626.3s] prompt 6/43 [history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+[   626.3s] ▶ gen 16/129 gen multi varlm=0
+[   641.0s] ✓ gen 16/129 (14.7s) overlap=1.00 chars=77 multi=1 ent_keep=1.00
+[   641.0s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+[   641.0s] ▶ gen 17/129 gen multi varlm=0.35
+[   662.1s] ✓ gen 17/129 (21.1s) overlap=1.00 chars=77 multi=1 ent_keep=1.00
+[   662.1s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+[   662.1s] ▶ gen 18/129 gen multi varlm=0.5
+[   681.3s] ✓ gen 18/129 (19.1s) overlap=1.00 chars=77 multi=1 ent_keep=1.00
+[   681.3s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân .'
+[   681.3s] prompt 7/43 [history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+[   681.3s] ▶ gen 19/129 gen multi varlm=0
+[   692.1s] ✓ gen 19/129 (10.8s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[   692.1s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[   692.1s] ▶ gen 20/129 gen multi varlm=0.35
+[   701.7s] ✓ gen 20/129 (9.7s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[   701.7s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[   701.7s] ▶ gen 21/129 gen multi varlm=0.5
+[   712.1s] ✓ gen 21/129 (10.3s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[   712.1s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[   712.1s] prompt 8/43 [history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+[   712.1s] ▶ gen 22/129 gen multi varlm=0
+[   721.3s] ✓ gen 22/129 (9.2s) overlap=1.00 chars=54 multi=0 ent_keep=1.00
+[   721.3s]     → 'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+[   721.3s] ▶ gen 23/129 gen multi varlm=0.35
+[   733.1s] ✓ gen 23/129 (11.8s) overlap=1.00 chars=54 multi=0 ent_keep=1.00
+[   733.1s]     → 'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+[   733.1s] ▶ gen 24/129 gen multi varlm=0.5
+[   743.3s] ✓ gen 24/129 (10.2s) overlap=1.00 chars=54 multi=0 ent_keep=1.00
+[   743.3s]     → 'Tuy nhiên , Tây Sơn vẫn còn vây chặt thành Bình Định .'
+[   743.3s] prompt 9/43 [history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+[   743.3s] ▶ gen 25/129 gen multi varlm=0
+[   754.1s] ✓ gen 25/129 (10.8s) overlap=1.00 chars=71 multi=0 ent_keep=1.00
+[   754.1s]     → 'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+[   754.1s] ▶ gen 26/129 gen multi varlm=0.35
+[   763.5s] ✓ gen 26/129 (9.5s) overlap=1.00 chars=71 multi=0 ent_keep=1.00
+[   763.5s]     → 'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+[   763.5s] ▶ gen 27/129 gen multi varlm=0.5
+[   773.0s] ✓ gen 27/129 (9.5s) overlap=1.00 chars=71 multi=0 ent_keep=1.00
+[   773.0s]     → 'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+[   773.0s] prompt 10/43 [history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+[   773.0s] ▶ gen 28/129 gen multi varlm=0
+[   783.4s] ✓ gen 28/129 (10.4s) overlap=1.00 chars=94 multi=0 ent_keep=0.00
+[   783.4s]     → 'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+[   783.4s] ▶ gen 29/129 gen multi varlm=0.35
+[   793.7s] ✓ gen 29/129 (10.3s) overlap=1.00 chars=94 multi=0 ent_keep=0.00
+[   793.7s]     → 'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+[   793.7s] ▶ gen 30/129 gen multi varlm=0.5
+[   804.0s] ✓ gen 30/129 (10.3s) overlap=1.00 chars=94 multi=0 ent_keep=0.00
+[   804.0s]     → 'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+[   804.0s] prompt 11/43 [statements_doc] 'Tuy nhiên trong một số trường hợp'
+[   804.0s] ▶ gen 31/129 gen multi varlm=0
+[   818.9s] ✓ gen 31/129 (14.9s) overlap=1.00 chars=97 multi=0 ent_keep=0.00
+[   818.9s]     → 'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+[   818.9s] ▶ gen 32/129 gen multi varlm=0.35
+[   833.3s] ✓ gen 32/129 (14.3s) overlap=1.00 chars=97 multi=0 ent_keep=0.00
+[   833.3s]     → 'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+[   833.3s] ▶ gen 33/129 gen multi varlm=0.5
+[   847.6s] ✓ gen 33/129 (14.4s) overlap=1.00 chars=97 multi=0 ent_keep=0.00
+[   847.6s]     → 'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+[   847.6s] prompt 12/43 [statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+[   847.6s] ▶ gen 34/129 gen multi varlm=0
+[   869.6s] ✓ gen 34/129 (22.0s) overlap=1.00 chars=214 multi=0 ent_keep=1.00
+[   869.6s]     → 'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+[   869.6s] ▶ gen 35/129 gen multi varlm=0.35
+[   889.8s] ✓ gen 35/129 (20.1s) overlap=1.00 chars=214 multi=0 ent_keep=1.00
+[   889.8s]     → 'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+[   889.8s] ▶ gen 36/129 gen multi varlm=0.5
+[   908.3s] ✓ gen 36/129 (18.6s) overlap=1.00 chars=214 multi=0 ent_keep=1.00
+[   908.3s]     → 'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+[   908.3s] prompt 13/43 [statements_doc] 'Dựa trên từ vựng cơ bản ,'
+[   908.3s] ▶ gen 37/129 gen multi varlm=0
+[   920.2s] ✓ gen 37/129 (11.9s) overlap=1.00 chars=86 multi=1 ent_keep=0.00
+[   920.2s]     → 'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+[   920.2s] ▶ gen 38/129 gen multi varlm=0.35
+[   930.0s] ✓ gen 38/129 (9.8s) overlap=1.00 chars=86 multi=1 ent_keep=0.00
+[   930.0s]     → 'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+[   930.0s] ▶ gen 39/129 gen multi varlm=0.5
+[   939.7s] ✓ gen 39/129 (9.8s) overlap=1.00 chars=86 multi=1 ent_keep=0.00
+[   939.7s]     → 'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+[   939.7s] prompt 14/43 [statements_doc] 'Tiếng Việt là ngôn ngữ thanh điệu'
+[   939.7s] ▶ gen 40/129 gen multi varlm=0
+[   960.4s] ✓ gen 40/129 (20.7s) overlap=1.00 chars=194 multi=0 ent_keep=1.00
+[   960.4s]     → 'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+[   960.4s] ▶ gen 41/129 gen multi varlm=0.35
+[   976.9s] ✓ gen 41/129 (16.5s) overlap=1.00 chars=194 multi=0 ent_keep=1.00
+[   976.9s]     → 'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+[   976.9s] ▶ gen 42/129 gen multi varlm=0.5
+[   991.9s] ✓ gen 42/129 (15.0s) overlap=1.00 chars=194 multi=0 ent_keep=1.00
+[   991.9s]     → 'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+[   991.9s] prompt 15/43 [statements_doc] 'Đến đời Đường , tiếng Việt mới'
+[   991.9s] ▶ gen 43/129 gen multi varlm=0
+[  1005.8s] ✓ gen 43/129 (13.9s) overlap=1.00 chars=102 multi=1 ent_keep=0.00
+[  1005.8s]     → 'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+[  1005.8s] ▶ gen 44/129 gen multi varlm=0.35
+[  1020.7s] ✓ gen 44/129 (14.9s) overlap=1.00 chars=102 multi=1 ent_keep=0.00
+[  1020.7s]     → 'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+[  1020.7s] ▶ gen 45/129 gen multi varlm=0.5
+[  1035.9s] ✓ gen 45/129 (15.1s) overlap=1.00 chars=102 multi=1 ent_keep=0.00
+[  1035.9s]     → 'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở .'
+[  1035.9s] prompt 16/43 [statements_doc] 'Hiện nay có 1945 chữ Hán thông'
+[  1035.9s] ▶ gen 46/129 gen multi varlm=0
+[  1055.8s] ✓ gen 46/129 (19.9s) overlap=1.00 chars=220 multi=0 ent_keep=0.00
+[  1055.8s]     → 'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+[  1055.8s] ▶ gen 47/129 gen multi varlm=0.35
+[  1073.3s] ✓ gen 47/129 (17.4s) overlap=1.00 chars=220 multi=0 ent_keep=0.00
+[  1073.3s]     → 'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+[  1073.3s] ▶ gen 48/129 gen multi varlm=0.5
+[  1090.8s] ✓ gen 48/129 (17.5s) overlap=1.00 chars=220 multi=0 ent_keep=0.00
+[  1090.8s]     → 'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+[  1090.8s] prompt 17/43 [statements_doc] 'Mặt khác , những khái niệm chính'
+[  1090.8s] ▶ gen 49/129 gen multi varlm=0
+[  1111.2s] ✓ gen 49/129 (20.4s) overlap=1.00 chars=105 multi=1 ent_keep=0.00
+[  1111.2s]     → 'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+[  1111.2s] ▶ gen 50/129 gen multi varlm=0.35
+[  1135.0s] ✓ gen 50/129 (23.8s) overlap=1.00 chars=105 multi=1 ent_keep=0.00
+[  1135.0s]     → 'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+[  1135.0s] ▶ gen 51/129 gen multi varlm=0.5
+[  1154.9s] ✓ gen 51/129 (19.9s) overlap=1.00 chars=105 multi=1 ent_keep=0.00
+[  1154.9s]     → 'Mặt khác , những khái niệm chính trị xã hội , kỹ thuật mới dẫn đến việc nhập các thuật ngữ , từ ngữ mới .'
+[  1154.9s] prompt 18/43 [statements_doc] 'Tuy nhiên , chưa có quy định'
+[  1154.9s] ▶ gen 52/129 gen multi varlm=0
+[  1168.6s] ✓ gen 52/129 (13.8s) overlap=1.00 chars=74 multi=1 ent_keep=0.00
+[  1168.6s]     → 'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+[  1168.6s] ▶ gen 53/129 gen multi varlm=0.35
+[  1182.3s] ✓ gen 53/129 (13.7s) overlap=1.00 chars=74 multi=1 ent_keep=0.00
+[  1182.3s]     → 'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+[  1182.3s] ▶ gen 54/129 gen multi varlm=0.5
+[  1196.0s] ✓ gen 54/129 (13.7s) overlap=1.00 chars=74 multi=1 ent_keep=0.00
+[  1196.0s]     → 'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+[  1196.0s] prompt 19/43 [statements_doc] 'Sự tiếp xúc giữa tiếng Việt và'
+[  1196.0s] ▶ gen 55/129 gen multi varlm=0
+[  1241.1s] ✓ gen 55/129 (45.0s) overlap=1.00 chars=342 multi=1 ent_keep=0.00
+[  1241.1s]     → 'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+[  1241.1s] ▶ gen 56/129 gen multi varlm=0.35
+[  1276.7s] ✓ gen 56/129 (35.6s) overlap=1.00 chars=342 multi=1 ent_keep=0.00
+[  1276.7s]     → 'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+[  1276.7s] ▶ gen 57/129 gen multi varlm=0.5
+[  1326.3s] ✓ gen 57/129 (49.6s) overlap=1.00 chars=342 multi=1 ent_keep=0.00
+[  1326.3s]     → 'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt bên cạnh việc thay đổi về mặt ngữ âm'
+[  1326.3s] prompt 20/43 [statements_doc] 'Trong khi đó , những từ có'
+[  1326.3s] ▶ gen 58/129 gen multi varlm=0
+[  1367.6s] ✓ gen 58/129 (41.2s) overlap=1.00 chars=87 multi=1 ent_keep=0.00
+[  1367.6s]     → 'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+[  1367.6s] ▶ gen 59/129 gen multi varlm=0.35
+[  1403.8s] ✓ gen 59/129 (36.2s) overlap=1.00 chars=87 multi=1 ent_keep=0.00
+[  1403.8s]     → 'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+[  1403.8s] ▶ gen 60/129 gen multi varlm=0.5
+[  1438.9s] ✓ gen 60/129 (35.1s) overlap=1.00 chars=87 multi=1 ent_keep=0.00
+[  1438.9s]     → 'Trong khi đó , những từ có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa .'
+[  1438.9s] prompt 21/43 [conv] '"Nước Anh vì lần này nước Mỹ'
+[  1438.9s] ▶ gen 61/129 gen multi varlm=0
+[  1474.8s] ✓ gen 61/129 (35.9s) overlap=1.00 chars=126 multi=0 ent_keep=1.00
+[  1474.8s]     → '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+[  1474.8s] ▶ gen 62/129 gen multi varlm=0.35
+[  1507.1s] ✓ gen 62/129 (32.3s) overlap=1.00 chars=126 multi=0 ent_keep=1.00
+[  1507.1s]     → '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+[  1507.1s] ▶ gen 63/129 gen multi varlm=0.5
+[  1543.7s] ✓ gen 63/129 (36.6s) overlap=1.00 chars=126 multi=0 ent_keep=1.00
+[  1543.7s]     → '"Nước Anh vì lần này nước Mỹ . Đời vua Edward III (trị vì 1327 - 1377) nước Anh lâm vào cuộc Chiến tranh Một trăm năm tàn khốc'
+[  1543.7s] prompt 22/43 [conv] 'Bạn đang băn khoăn cách nấu vịt'
+[  1543.7s] ▶ gen 64/129 gen multi varlm=0
+[  1575.1s] ✓ gen 64/129 (31.4s) overlap=1.00 chars=64 multi=0 ent_keep=0.00
+[  1575.1s]     → 'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+[  1575.1s] ▶ gen 65/129 gen multi varlm=0.35
+[  1584.2s] ✓ gen 65/129 (9.1s) overlap=1.00 chars=64 multi=0 ent_keep=0.00
+[  1584.2s]     → 'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+[  1584.2s] ▶ gen 66/129 gen multi varlm=0.5
+[  1591.6s] ✓ gen 66/129 (7.5s) overlap=1.00 chars=64 multi=0 ent_keep=0.00
+[  1591.6s]     → 'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+[  1591.6s] prompt 23/43 [conv] 'FxPro.com : NZD/USD intraday 29/10/2021 có thể'
+[  1591.6s] ▶ gen 67/129 gen multi varlm=0
+[  1657.5s] ✓ gen 67/129 (65.8s) overlap=1.00 chars=64 multi=1 ent_keep=0.00
+[  1657.5s]     → 'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+[  1657.5s] ▶ gen 68/129 gen multi varlm=0.35
+[  1732.6s] ✓ gen 68/129 (75.0s) overlap=1.00 chars=64 multi=1 ent_keep=0.00
+[  1732.6s]     → 'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+[  1732.7s] ▶ gen 69/129 gen multi varlm=0.5
+[  1760.2s] ✓ gen 69/129 (27.5s) overlap=1.00 chars=64 multi=1 ent_keep=0.00
+[  1760.2s]     → 'FxPro.com : NZD/USD intraday 29/10/2021 có thể xâu thành chuỗi .'
+[  1760.2s] prompt 24/43 [conv] 'P/s : Cầu donate cứu trợ cvt'
+[  1760.2s] ▶ gen 70/129 gen multi varlm=0
+[  1786.9s] ✓ gen 70/129 (26.7s) overlap=1.00 chars=136 multi=1 ent_keep=0.00
+[  1786.9s]     → 'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+[  1786.9s] ▶ gen 71/129 gen multi varlm=0.35
+[  1813.1s] ✓ gen 71/129 (26.1s) overlap=1.00 chars=136 multi=1 ent_keep=0.00
+[  1813.1s]     → 'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+[  1813.1s] ▶ gen 72/129 gen multi varlm=0.5
+[  1860.7s] ✓ gen 72/129 (47.6s) overlap=1.00 chars=136 multi=1 ent_keep=0.00
+[  1860.7s]     → 'P/s : Cầu donate cứu trợ cvt Tám ngày sau , năm người đàn ông quyết định đổi tên ủy ban thành "Ủy ban quốc tế cứu trợ người bị thương" .'
+[  1860.7s] prompt 25/43 [conv] 'Nghĩ cũng ngộ , làn khẩn cấp'
+[  1860.7s] ▶ gen 73/129 gen multi varlm=0

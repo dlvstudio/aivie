@@ -1,0 +1,14 @@
+[     0.0s] == 4 CA TÁC GIẢ (TK_022 ReadoutMode + theme retrieval) ==
+[    14.1s]   'Hỏi: Cách làm món phở ? Đáp:' → Phở là món ăn rất phổ biến ở Việt Nam…
+[    14.6s]   'Hỏi: Nếu trời mưa thì ? Đáp:' → conv pool (nhà tồi tàn / mưa…)
+[    17.1s]   'Hỏi: Nhà Lý là gì ? Đáp:' → Nhà Lý thành lập năm 1009. ✓ (was: Nhà Trần thay…)
+[    19.9s]   'Hỏi: Nhà Trần là gì ? Đáp:' → Nhà Trần đánh thắng quân Nguyên ba lần. ✓
+[    19.9s] == GUARD SỐ ==
+[    34.9s]   QA: acc 86%  vb 14%
+[    57.7s]   Para: acc 88%  vb 62%
+[    85.3s]   Syn: acc 67%  vb 33%
+[    85.3s] == CONTINUATION ==
+[    85.7s]   'nếu trời mưa' → nếu trời mưa tầm tã .
+[    86.0s]   'vì em chăm học' → vì em chăm học , nhà cung cấp…
+[    86.3s]   'tuy vất vả' → tuy vất vả đến mức nào .
+[    86.3s] XONG — 146 tests pass

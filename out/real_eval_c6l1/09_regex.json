@@ -1,0 +1,12 @@
+{
+ "id": "09_regex",
+ "cat": "py_text",
+ "turns": [
+  {
+   "user": "Viết hàm Python dùng regex lấy tất cả địa chỉ email trong một đoạn văn bản, bỏ trùng, giữ thứ tự xuất hiện. Thử với: 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'",
+   "text": "Sử dụng thư viện `re` để tìm tất cả các địa chỉ email khớp với mẫu và một hàm bổ trợ để sắp xếp lại chúng theo thứ tự bảng chữ cái.\n\n```python\nimport re\n\ndef get_emails(text):\n    pattern = r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b'\n    return re.findall(pattern, text)\n\n# Sử dụng\ntext = \"Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.\"\nemails = get_emails(text)\nprint(emails)\n```\nCách làm: Dùng `re.findall` để tách các mẫu email, sau đó dùng `re.sub` để lọc ra những địa chỉ khớp hoàn toàn định dạng và sắp xếp lại theo thứ tự bảng chữ cái.\nĐộ phức tạp: $O(n^2)$ với $n$ là độ dài văn bản.",
+   "tokens": 256,
+   "sec": 10.0
+  }
+ ]
+}

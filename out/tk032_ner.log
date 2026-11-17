@@ -1,0 +1,54 @@
+checkpoint: /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history.pkl
+loading vocab from checkpoint (lightweight) …
+Entity: count: 3058 (raw 3083, bỏ 25 ký tự đơn)
+
+corpus sentences: 173
+ner_spans (PER/LOC/ORG): 316
+spans_matching_Entity: 224 (70.9%)
+json_title_in_ner_spans: 73/173
+
+=== HITS (sample) ===
+  [PER] 'Nhà Lý' → Entity:Nhà Lý
+  [LOC] 'lịch sử Việt Nam' → Entity:Lịch sử Việt Nam
+  [PER] 'Lý Thái Tổ' → Entity:Lý Thái Tổ
+  [LOC] 'nhà Tiền Lê' → Entity:Nhà Tiền Lê
+  [LOC] 'Hoa Lư' → Entity:Hoa Lư
+  [LOC] 'Thăng Long' → Entity:Thăng Long
+  [LOC] 'thời Lý Thánh Tông' → Entity:Lý Thánh Tông
+  [PER] 'Đại Việt' → Entity:Đại Việt sử ký toàn thư
+  [LOC] 'Thăng Long' → Entity:Thăng Long
+  [PER] 'Khổng Tử' → Entity:Khổng Tử
+  [LOC] 'Việt Nam' → Entity:Vụ kiện hậu quả chất độc màu da cam trong Chiến tranh Việt Nam
+  [PER] 'Lý Thường Kiệt' → Entity:Lý Thường Kiệt
+  [PER] 'Lý Thường Kiệt' → Entity:Lý Thường Kiệt
+  [LOC] 'Lý sùng đạo Phật' → Entity:Phật
+  [LOC] 'chùa Một Cột' → Entity:Chùa Một Cột
+  [LOC] 'Thăng Long' → Entity:Thăng Long
+  [PER] 'Triều' → Entity:Chiến tranh Triều Tiên
+  [LOC] 'nhà Trần' → Entity:Nhà Trần
+  [LOC] 'vùng Kinh Bắc' → Entity:Kinh
+  [PER] 'Lý Thái Tổ' → Entity:Lý Thái Tổ
+
+=== MISSES (sample) ===
+  [LOC] 'năm 1009' (json title='Nhà Lý')
+  [LOC] 'năm 1225' (json title='Nhà Lý')
+  [LOC] 'Lý do Lý Công Uẩn' (json title='Nhà Lý')
+  [LOC] 'Đại La' (json title='Nhà Lý')
+  [LOC] 'phòng tuyến sông Như Nguyệt' (json title='Nhà Lý')
+  [LOC] 'khi Lý Chiêu Hoàng' (json title='Nhà Lý')
+  [PER] 'Trần Cảnh' (json title='Nhà Lý')
+  [PER] 'Lý Công Uẩn' (json title='Lý Thái Tổ')
+  [PER] 'Lý Công Uẩn' (json title='Lý Thái Tổ')
+  [LOC] 'Lý Công Uẩn' (json title='Lý Thái Tổ')
+  [LOC] 'Đại La' (json title='Lý Thái Tổ')
+  [LOC] 'năm 1028' (json title='Lý Thái Tổ')
+  [PER] 'Lý Thái Tông' (json title='Lý Thái Tổ')
+  [LOC] 'năm 1019' (json title='Lý Thường Kiệt')
+  [LOC] 'sông Như Nguyệt' (json title='Lý Thường Kiệt')
+  [LOC] 'năm 1105' (json title='Lý Thường Kiệt')
+  [LOC] 'năm 1225' (json title='Nhà Trần')
+  [LOC] 'năm 1400' (json title='Nhà Trần')
+  [LOC] 'khi Trần Cảnh' (json title='Nhà Trần')
+  [PER] 'Trần Thái Tông' (json title='Nhà Trần')
+
+XONG

@@ -1,0 +1,58 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "ws_model": "out/models/ws_crf_uts_full",
+ "n_prompt": 400,
+ "sinh": {
+  "n": 738,
+  "n_bo": 0,
+  "ly_do_bo": {},
+  "dinh_trai": 0.4065040650406504,
+  "dinh_phai": 0.14363143631436315,
+  "co_ws": 0.07452574525745258
+ },
+ "that": {
+  "n": 695,
+  "n_bo": 0,
+  "ly_do_bo": {},
+  "dinh_trai": 0.34532374100719426,
+  "dinh_phai": 0.033093525179856115,
+  "co_ws": 0.007194244604316547
+ },
+ "tach": 0.06733150065313603,
+ "n_benh": 79,
+ "do_nhay": 0.21518987341772153,
+ "n_lanh": 659,
+ "bao_nham": 0.057663125948406675,
+ "gate": {
+  "min_n": 300,
+  "sep_min": 0.08,
+  "recall_min": 0.5,
+  "fp_max": 0.15
+ },
+ "gate_pass": false,
+ "vi_du_bat_duoc": [
+  "' nhân dân' ⇒ ' dân số'",
+  "' tối đa' ⇒ ' đa số'",
+  "' xuất bản' ⇒ ' bản đồ'",
+  "' khởi nghĩa' ⇒ ' nghĩa quân'",
+  "' Thái Bình' ⇒ ' Bình Dương'",
+  "' hành chính' ⇒ ' chính quyền'",
+  "' Đại Việt' ⇒ ' Việt Nam'",
+  "' Đại Việt' ⇒ ' Việt Nam'",
+  "' trung bình' ⇒ ' bình thường'",
+  "' thất thủ' ⇒ ' thủ đô'"
+ ],
+ "vi_du_bao_nham": [
+  "' dũng cảm' ⇒ ' cảm nhận'",
+  "' quốc gia' ⇒ ' gia vị'",
+  "' đảo chính' ⇒ ' chính quyền'",
+  "' Thuận Hải' ⇒ ' Hải Phòng'",
+  "' nhật thực' ⇒ ' thực dân'",
+  "' vô thực' ⇒ ' thực hiện'",
+  "' vô thực' ⇒ ' thực dân'",
+  "' Hoàng Quốc' ⇒ ' Quốc Tử'",
+  "' Nghệ An' ⇒ ' An toàn'",
+  "' Nguyễn Du' ⇒ ' Du Châu'"
+ ],
+ "seconds": 19.7
+}

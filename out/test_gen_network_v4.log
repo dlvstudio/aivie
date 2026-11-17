@@ -1,0 +1,84 @@
+=== Load checkpoints/network_v4.pkl ===
+[     0.0s] === load_network_v4 START (pid=24434) → out/logs/load_network_v4_20260705_170254.log ===
+[     0.0s] load checkpoint checkpoints/network_v4.pkl …
+[     0.0s] ▶ unpickle
+[     3.8s] ✓ unpickle  (3.8s)
+[     3.8s] ▶ vocab (77464 token)
+[     4.3s] ✓ vocab (77464 token)  (0.4s)
+[     4.3s] ▶ adjacency
+[    10.5s] ✓ adjacency  (6.2s)
+[    10.5s] ▶ embedding
+[    10.9s] ✓ embedding  (0.4s)
+[    10.9s] ▶ parents
+[    22.6s] ✓ parents  (11.8s)
+[    22.6s] ✓ loaded: vocab=77464 parents=44633 E=(77464, 96)
+[    22.9s] sidecar có: network_v4.content.pkl
+[    23.0s] ✓ load_checkpoint XONG
+vocab=77464 parents=44633
+
+=== A) Sinh hybrid (generate) — gate ON vs OFF ===
+
+  ['Đọc sách giúp']
+    gate=0.5 (fb fire 24): 'Đọc sách giúp Mở rộng kiến thức : Đọc sách giúp bạn tiếp cận với các thông tin , ý tưởng và kiến \u200b\u200bthức mới . Nó mở rộng tầm hiểu biết của bạn về thế giới và giúp bạn hiểu rõ hơn về nhiều chủ đề khác nhau . Phát triển khả năng tư duy : Việc đọc sách kích thích trí não và khuyến khích tư duy sáng tạo . Nó giúp bạn rèn luyện khả năng tư duy logic , phân tích và suy luận . Nâng cao vốn từ vựng và kỹ năng viết : Đọc sách giúp bạn tiếp thu từ vựng mới và cải thiện khả năng viết . Bạn có cơ hội học cách sử dụng từ ngữ một cách chính xác và trau dồi kỹ năng diễn đạt . Giảm căng thẳng và tăng cường tâm trạng : Đọc sách là một hình thức giải trí thú vị và bổ ích . Nó có khả năng giảm căng thẳng , tạo ra sự thư giãn và giúp cải thiện tâm trạng . Khám phá và hưởng thụ : Sách mang đến cho bạn cuộc phiêu lưu và khám phá mà không cần rời khỏi chỗ ngồi .' (=)
+  ['Mùa hè em']
+    gate=0.5 (fb fire 7): 'Mùa hè em tập Mùa mưa trung mùa hè' (=)
+  ['Trường học là']
+    gate=0.5 (fb fire 16): 'Trường học là Trường có hai ngành là gỗ và sắt ông học ngành sắt (nguội tiện rèn)' (=)
+  ['Hỏi: Việt Nam là gì Đáp:']
+    gate=0.5 (fb fire 8): 'Hỏi: Việt Nam là gì Đáp: Thủ đô Việt Nam là Hà Nội.' (=)
+  ['nếu trời mưa']
+    gate=0.5 (fb fire 9): 'nếu trời mưa cung Mặt trời cấp ánh sáng và nhiệt.' (=)
+  ['tuy vất vả']
+    gate=0.5 (fb fire 23): 'tuy vất vả Tuy có vất vả đời sống mà tâm vẫn an , Minh lớn lên trong một gia đình nghèo khó Anh sống trong một' (=)
+  ['Nếu em học chăm']
+    gate=0.5 (fb fire 8): 'Nếu em học chăm Trẻ em có quyền được chăm sóc' (=)
+  ['Không chỉ giỏi']
+    gate=0.5 (fb fire 10): 'Không chỉ giỏi Họ không chỉ đẹp họ giỏi và thông minh' (=)
+  ['Napoléon là ai']
+    gate=0.5 (fb fire 23): 'Napoléon là ai . Năm 1814 Áo là một phần của lực lượng Đồng minh đã xâm chiếm Pháp và chấm dứt Chiến tranh Napoléon' (=)
+  ['Mèo là gì']
+    gate=0.5 (fb fire 12): 'Mèo là gì Cái gì là nguồn gốc của quang phổ khối lượng sao' (=)
+
+=== B) So sánh v4 vs baseline (_t3_isg) — gate=0.5 ===
+
+[     0.0s] === load_grade_v3_big_a2_t3_isg START (pid=24434) → out/logs/load_grade_v3_big_a2_t3_isg_20260705_170556.log ===
+[     0.0s] load checkpoint checkpoints/grade_v3_big_a2_t3_isg.pkl …
+[     0.0s] ▶ unpickle
+[    14.5s] ✓ unpickle  (14.5s)
+[    14.5s] ▶ vocab (34528 token)
+[    14.7s] ✓ vocab (34528 token)  (0.3s)
+[    14.7s] ▶ adjacency
+[    23.1s] ✓ adjacency  (8.4s)
+[    23.1s] ▶ embedding
+[    23.6s] ✓ embedding  (0.5s)
+[    23.6s] ▶ parents
+[    50.0s] ✓ parents  (26.5s)
+[    50.0s] ✓ loaded: vocab=34528 parents=44633 E=(31846, 96)
+[    50.6s] sidecar có: grade_v3_big_a2_t3_isg.content.pkl
+[    50.6s] ✓ load_checkpoint XONG
+  'Đọc sách giúp' ≠
+    v4:       'Đọc sách giúp Mở rộng kiến thức : Đọc sách giúp bạn tiếp cận với các thông tin , ý tưởng và kiến \u200b\u200bthức mới . Nó mở rộng tầm hiểu biết của bạn về thế giới và giúp bạn hiểu rõ hơn về nhiều chủ đề khác nhau . Phát triển khả năng tư duy : Việc đọc sách kích thích trí não và khuyến khích tư duy sáng tạo . Nó giúp bạn rèn luyện khả năng tư duy logic , phân tích và suy luận . Nâng cao vốn từ vựng và kỹ năng viết : Đọc sách giúp bạn tiếp thu từ vựng mới và cải thiện khả năng viết . Bạn có cơ hội học cách sử dụng từ ngữ một cách chính xác và trau dồi kỹ năng diễn đạt . Giảm căng thẳng và tăng cường tâm trạng : Đọc sách là một hình thức giải trí thú vị và bổ ích . Nó có khả năng giảm căng thẳng , tạo ra sự thư giãn và giúp cải thiện tâm trạng . Khám phá và hưởng thụ : Sách mang đến cho bạn cuộc phiêu lưu và khám phá mà không cần rời khỏi chỗ ngồi .'
+    baseline: 'Đọc sách giúp Anh hùng Núi Đọc là gương học tập'
+  'Mùa hè em' ✓
+    v4:       'Mùa hè em tập Mùa mưa trung mùa hè'
+    baseline: 'Mùa hè em tập Mùa mưa trung mùa hè'
+  'nếu trời mưa' ✓
+    v4:       'nếu trời mưa cung Mặt trời cấp ánh sáng và nhiệt.'
+    baseline: 'nếu trời mưa cung Mặt trời cấp ánh sáng và nhiệt.'
+  'tuy vất vả' ✓
+    v4:       'tuy vất vả Tuy có vất vả đời sống mà tâm vẫn an , Minh lớn lên trong một gia đình nghèo khó Anh sống trong một'
+    baseline: 'tuy vất vả Tuy có vất vả đời sống mà tâm vẫn an , Minh lớn lên trong một gia đình nghèo khó Anh sống trong một'
+  'Napoléon là ai' ✓
+    v4:       'Napoléon là ai . Năm 1814 Áo là một phần của lực lượng Đồng minh đã xâm chiếm Pháp và chấm dứt Chiến tranh Napoléon'
+    baseline: 'Napoléon là ai . Năm 1814 Áo là một phần của lực lượng Đồng minh đã xâm chiếm Pháp và chấm dứt Chiến tranh Napoléon'
+
+=== C) A3 thuần (W_seq + gate) — bracket prompts ===
+
+  'nếu trời mưa'
+    gate=0.5: 'nếu trời mưa cung Mặt trời cấp ánh sáng và nhiệt.'
+  'tuy vất vả'
+    gate=0.5: 'tuy vất vả'
+  'Nếu em học chăm'
+    gate=0.5: 'Nếu em học chăm Trẻ em có quyền được chăm sóc'
+  'Không chỉ giỏi'
+    gate=0.5: 'Không chỉ giỏi Họ không chỉ đẹp họ giỏi và thông minh'

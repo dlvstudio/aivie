@@ -1,0 +1,1049 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst_isg_pw.pkl",
+ "n_vocab": 249107,
+ "n_parents": 430447,
+ "n_typed_src": 7810,
+ "n_typed_edges": 120875,
+ "top_labels": [
+  {
+   "surface": "gì",
+   "indeg": 956
+  },
+  {
+   "surface": "vậy",
+   "indeg": 628
+  },
+  {
+   "surface": "nào",
+   "indeg": 551
+  },
+  {
+   "surface": "những",
+   "indeg": 401
+  },
+  {
+   "surface": "thế",
+   "indeg": 288
+  },
+  {
+   "surface": "phố",
+   "indeg": 284
+  },
+  {
+   "surface": "phần",
+   "indeg": 273
+  },
+  {
+   "surface": "công",
+   "indeg": 236
+  },
+  {
+   "surface": "thiết",
+   "indeg": 220
+  },
+  {
+   "surface": "thật",
+   "indeg": 210
+  },
+  {
+   "surface": "1",
+   "indeg": 201
+  },
+  {
+   "surface": "ai",
+   "indeg": 194
+  },
+  {
+   "surface": "trọng",
+   "indeg": 181
+  },
+  {
+   "surface": "lựa",
+   "indeg": 179
+  },
+  {
+   "surface": "vật",
+   "indeg": 178
+  }
+ ],
+ "n_seeds": 200,
+ "gates_pre": {
+  "typed_edges": 1000,
+  "label_indeg": 3,
+  "label_rate": 0.3,
+  "lift_vs_cooc": 1.5,
+  "new_member": 0.2
+ },
+ "cols": {
+  "typed_first": {
+   "n_co_hub": 192,
+   "ty_le_nhan": 0.9427,
+   "ty_le_co_thanh_vien_moi": 0.9844,
+   "giay": 0.3
+  },
+  "mixed": {
+   "n_co_hub": 192,
+   "ty_le_nhan": 0.9062,
+   "ty_le_co_thanh_vien_moi": 0.9792,
+   "giay": 0.2
+  },
+  "cooc": {
+   "n_co_hub": 130,
+   "ty_le_nhan": 0.8385,
+   "ty_le_co_thanh_vien_moi": 0.9692,
+   "giay": 0.2
+  }
+ },
+ "examples": {
+  "typed_first": [
+   {
+    "seed": "chủ",
+    "hub": "mèo",
+    "typed": true,
+    "hub_indeg": 41,
+    "la_nhan": true,
+    "peers": [
+     "bao",
+     "nghị",
+     "phải",
+     "giống",
+     "chính",
+     "ers"
+    ],
+    "thanh_vien_moi": [
+     "giống",
+     "ers",
+     "Chúng",
+     "Nhất",
+     "icat",
+     "kềnh"
+    ]
+   },
+   {
+    "seed": "aid",
+    "hub": "chương",
+    "typed": true,
+    "hub_indeg": 80,
+    "la_nhan": true,
+    "peers": [
+     "hoàn",
+     "lý",
+     "bao",
+     "hạn",
+     "phải",
+     "Kinh"
+    ],
+    "thanh_vien_moi": [
+     "hoàn",
+     "lý",
+     "bao",
+     "hạn",
+     "phải",
+     "Kinh"
+    ]
+   },
+   {
+    "seed": "lót",
+    "hub": "rẻ",
+    "typed": true,
+    "hub_indeg": 12,
+    "la_nhan": true,
+    "peers": [
+     "giá",
+     "Giá",
+     "Nó",
+     "hình",
+     "lực",
+     "phải"
+    ],
+    "thanh_vien_moi": [
+     "giá",
+     "Giá",
+     "Nó",
+     "hình",
+     "lực",
+     "phải"
+    ]
+   },
+   {
+    "seed": "dãy",
+    "hub": "thẻ",
+    "typed": true,
+    "hub_indeg": 31,
+    "la_nhan": true,
+    "peers": [
+     "hạn",
+     "dụng",
+     "Rummy",
+     "Sec",
+     "UTM",
+     "bao"
+    ],
+    "thanh_vien_moi": [
+     "hạn",
+     "dụng",
+     "Rummy",
+     "Sec",
+     "UTM",
+     "bao"
+    ]
+   },
+   {
+    "seed": "hoạt",
+    "hub": "vậy",
+    "typed": true,
+    "hub_indeg": 628,
+    "la_nhan": true,
+    "peers": [
+     "nói",
+     "chuyện",
+     "giản",
+     "nhiều",
+     "lớn",
+     "dàng"
+    ],
+    "thanh_vien_moi": [
+     "chuyện",
+     "cứ",
+     "huống",
+     "Nói"
+    ]
+   },
+   {
+    "seed": "Đất",
+    "hub": "duy",
+    "typed": true,
+    "hub_indeg": 102,
+    "la_nhan": true,
+    "peers": [
+     "phải",
+     "lửa",
+     "trở",
+     "hội",
+     "nhân",
+     "Anh"
+    ],
+    "thanh_vien_moi": [
+     "phải",
+     "lửa",
+     "trở",
+     "hội",
+     "nhân",
+     "Anh"
+    ]
+   },
+   {
+    "seed": "adien",
+    "hub": "cyclo",
+    "typed": true,
+    "hub_indeg": 1,
+    "la_nhan": false,
+    "peers": [
+     "gốc"
+    ],
+    "thanh_vien_moi": [
+     "gốc"
+    ]
+   },
+   {
+    "seed": "Cromwell",
+    "hub": "oxy",
+    "typed": true,
+    "hub_indeg": 31,
+    "la_nhan": true,
+    "peers": [
+     "trò",
+     "at",
+     "trời",
+     "na",
+     "nước",
+     "biệt"
+    ],
+    "thanh_vien_moi": [
+     "trò",
+     "at",
+     "trời",
+     "na",
+     "nước",
+     "biệt"
+    ]
+   },
+   {
+    "seed": "ban",
+    "hub": "đăng",
+    "typed": true,
+    "hub_indeg": 37,
+    "la_nhan": true,
+    "peers": [
+     "hoàn",
+     "bao",
+     "hạn",
+     "hội",
+     "nghĩa",
+     "đẹp"
+    ],
+    "thanh_vien_moi": [
+     "hoàn",
+     "đẹp",
+     "Quỳnh",
+     "chí",
+     "cảm",
+     "dẫn"
+    ]
+   },
+   {
+    "seed": "chưng",
+    "hub": "nếp",
+    "typed": true,
+    "hub_indeg": 15,
+    "la_nhan": true,
+    "peers": [
+     "trở",
+     "yếu",
+     "dáng",
+     "giống",
+     "kiêng",
+     "liệu"
+    ],
+    "thanh_vien_moi": [
+     "trở",
+     "yếu",
+     "dáng",
+     "giống",
+     "kiêng",
+     "liệu"
+    ]
+   },
+   {
+    "seed": "Scholz",
+    "hub": "đứng",
+    "typed": true,
+    "hub_indeg": 83,
+    "la_nhan": true,
+    "peers": [
+     "cô",
+     "tướng",
+     "trở",
+     "cứ",
+     "nước",
+     "chính"
+    ],
+    "thanh_vien_moi": [
+     "cô",
+     "tướng",
+     "trở",
+     "cứ",
+     "nước",
+     "chính"
+    ]
+   },
+   {
+    "seed": "hãn",
+    "hub": "ngôn",
+    "typed": true,
+    "hub_indeg": 142,
+    "la_nhan": true,
+    "peers": [
+     "Python",
+     "trở",
+     "Pháp",
+     "bao",
+     "Java",
+     "Nha"
+    ],
+    "thanh_vien_moi": [
+     "Python",
+     "trở",
+     "Pháp",
+     "bao",
+     "Java",
+     "Nha"
+    ]
+   }
+  ],
+  "mixed": [
+   {
+    "seed": "chủ",
+    "hub": "yếu",
+    "typed": false,
+    "hub_indeg": 89,
+    "la_nhan": true,
+    "peers": [
+     "mới",
+     "bao",
+     "chính",
+     "trở",
+     "cá",
+     "nghĩa"
+    ],
+    "thanh_vien_moi": [
+     "thất",
+     "Chủ",
+     "Nôm",
+     "Thủy",
+     "Tiền",
+     "Vinh"
+    ]
+   },
+   {
+    "seed": "aid",
+    "hub": "chương",
+    "typed": false,
+    "hub_indeg": 80,
+    "la_nhan": true,
+    "peers": [
+     "hoàn",
+     "lý",
+     "bao",
+     "hạn",
+     "phải",
+     "Kinh"
+    ],
+    "thanh_vien_moi": [
+     "hoàn",
+     "lý",
+     "bao",
+     "hạn",
+     "phải",
+     "Kinh"
+    ]
+   },
+   {
+    "seed": "lót",
+    "hub": "rẻ",
+    "typed": false,
+    "hub_indeg": 12,
+    "la_nhan": true,
+    "peers": [
+     "giá",
+     "Giá",
+     "Nó",
+     "hình",
+     "lực",
+     "phải"
+    ],
+    "thanh_vien_moi": [
+     "giá",
+     "Giá",
+     "Nó",
+     "hình",
+     "lực",
+     "phải"
+    ]
+   },
+   {
+    "seed": "dãy",
+    "hub": "núi",
+    "typed": false,
+    "hub_indeg": 54,
+    "la_nhan": true,
+    "peers": [
+     "nhiên",
+     "bên",
+     "cao",
+     "chứng",
+     "giống",
+     "lắm"
+    ],
+    "thanh_vien_moi": [
+     "chứng",
+     "giống",
+     "lắm",
+     "nghề",
+     "ngoài",
+     "yếu"
+    ]
+   },
+   {
+    "seed": "hoạt",
+    "hub": "động",
+    "typed": false,
+    "hub_indeg": 33,
+    "la_nhan": true,
+    "peers": [
+     "dùng",
+     "Lay",
+     "bao",
+     "dụ",
+     "dụng",
+     "lie"
+    ],
+    "thanh_vien_moi": [
+     "Lay",
+     "lie",
+     "Hoàn",
+     "Run",
+     "affect",
+     "aint"
+    ]
+   },
+   {
+    "seed": "Đất",
+    "hub": "duy",
+    "typed": false,
+    "hub_indeg": 102,
+    "la_nhan": true,
+    "peers": [
+     "phải",
+     "lửa",
+     "trở",
+     "hội",
+     "nhân",
+     "Anh"
+    ],
+    "thanh_vien_moi": [
+     "phải",
+     "lửa",
+     "trở",
+     "hội",
+     "nhân",
+     "Anh"
+    ]
+   },
+   {
+    "seed": "adien",
+    "hub": "cyclo",
+    "typed": false,
+    "hub_indeg": 1,
+    "la_nhan": false,
+    "peers": [
+     "gốc"
+    ],
+    "thanh_vien_moi": [
+     "gốc"
+    ]
+   },
+   {
+    "seed": "Cromwell",
+    "hub": "oxy",
+    "typed": false,
+    "hub_indeg": 31,
+    "la_nhan": true,
+    "peers": [
+     "trò",
+     "at",
+     "trời",
+     "na",
+     "nước",
+     "biệt"
+    ],
+    "thanh_vien_moi": [
+     "trò",
+     "at",
+     "trời",
+     "na",
+     "nước",
+     "biệt"
+    ]
+   },
+   {
+    "seed": "ban",
+    "hub": "đầu",
+    "typed": false,
+    "hub_indeg": 30,
+    "la_nhan": true,
+    "peers": [
+     "trở",
+     "Quốc",
+     "chung",
+     "trưởng",
+     "tướng",
+     "Hoài"
+    ],
+    "thanh_vien_moi": [
+     "chung",
+     "tướng",
+     "Hoài",
+     "Vĩ",
+     "ei",
+     "gay"
+    ]
+   },
+   {
+    "seed": "chưng",
+    "hub": "cất",
+    "typed": false,
+    "hub_indeg": 17,
+    "la_nhan": true,
+    "peers": [
+     "chính",
+     "chất",
+     "lòng",
+     "biệt",
+     "danh",
+     "giống"
+    ],
+    "thanh_vien_moi": [
+     "chính",
+     "chất",
+     "lòng",
+     "biệt",
+     "danh",
+     "giống"
+    ]
+   },
+   {
+    "seed": "Scholz",
+    "hub": "đứng",
+    "typed": false,
+    "hub_indeg": 83,
+    "la_nhan": true,
+    "peers": [
+     "cô",
+     "tướng",
+     "trở",
+     "cứ",
+     "nước",
+     "chính"
+    ],
+    "thanh_vien_moi": [
+     "cô",
+     "tướng",
+     "trở",
+     "cứ",
+     "nước",
+     "chính"
+    ]
+   },
+   {
+    "seed": "hãn",
+    "hub": "ngôn",
+    "typed": false,
+    "hub_indeg": 142,
+    "la_nhan": true,
+    "peers": [
+     "Python",
+     "trở",
+     "Pháp",
+     "bao",
+     "Java",
+     "Nha"
+    ],
+    "thanh_vien_moi": [
+     "Python",
+     "trở",
+     "Pháp",
+     "bao",
+     "Java",
+     "Nha"
+    ]
+   }
+  ],
+  "cooc": [
+   {
+    "seed": "chủ",
+    "hub": "yếu",
+    "typed": false,
+    "hub_indeg": 89,
+    "la_nhan": true,
+    "peers": [
+     "mới",
+     "bao",
+     "chính",
+     "trở",
+     "cá",
+     "nghĩa"
+    ],
+    "thanh_vien_moi": [
+     "thất",
+     "Chủ",
+     "Nôm",
+     "Thủy",
+     "Tiền",
+     "Vinh"
+    ]
+   },
+   {
+    "seed": "lót",
+    "hub": "dạ",
+    "typed": false,
+    "hub_indeg": 19,
+    "la_nhan": true,
+    "peers": [
+     "bao",
+     "biến",
+     "giống",
+     "hoàn",
+     "hoá",
+     "kép"
+    ],
+    "thanh_vien_moi": [
+     "bao",
+     "biến",
+     "giống",
+     "hoàn",
+     "hoá",
+     "kép"
+    ]
+   },
+   {
+    "seed": "dãy",
+    "hub": "núi",
+    "typed": false,
+    "hub_indeg": 54,
+    "la_nhan": true,
+    "peers": [
+     "nhiên",
+     "bên",
+     "cao",
+     "chứng",
+     "giống",
+     "lắm"
+    ],
+    "thanh_vien_moi": [
+     "chứng",
+     "giống",
+     "lắm",
+     "nghề",
+     "ngoài",
+     "yếu"
+    ]
+   },
+   {
+    "seed": "hoạt",
+    "hub": "động",
+    "typed": false,
+    "hub_indeg": 33,
+    "la_nhan": true,
+    "peers": [
+     "dùng",
+     "Lay",
+     "bao",
+     "dụ",
+     "dụng",
+     "lie"
+    ],
+    "thanh_vien_moi": [
+     "Lay",
+     "lie",
+     "Hoàn",
+     "Run",
+     "affect",
+     "aint"
+    ]
+   },
+   {
+    "seed": "Đất",
+    "hub": "Mặt",
+    "typed": false,
+    "hub_indeg": 16,
+    "la_nhan": true,
+    "peers": [
+     "Nam",
+     "Đắc",
+     "nhất",
+     "hình",
+     "ba",
+     "hàng"
+    ],
+    "thanh_vien_moi": [
+     "Nam",
+     "Đắc",
+     "ba",
+     "hàng",
+     "mắt",
+     "nhật"
+    ]
+   },
+   {
+    "seed": "ban",
+    "hub": "đầu",
+    "typed": false,
+    "hub_indeg": 30,
+    "la_nhan": true,
+    "peers": [
+     "trở",
+     "Quốc",
+     "chung",
+     "trưởng",
+     "tướng",
+     "Hoài"
+    ],
+    "thanh_vien_moi": [
+     "chung",
+     "tướng",
+     "Hoài",
+     "Vĩ",
+     "ei",
+     "gay"
+    ]
+   },
+   {
+    "seed": "chưng",
+    "hub": "cất",
+    "typed": false,
+    "hub_indeg": 17,
+    "la_nhan": true,
+    "peers": [
+     "chính",
+     "chất",
+     "lòng",
+     "biệt",
+     "danh",
+     "giống"
+    ],
+    "thanh_vien_moi": [
+     "chính",
+     "chất",
+     "lòng",
+     "biệt",
+     "danh",
+     "giống"
+    ]
+   },
+   {
+    "seed": "hãn",
+    "hub": "hữu",
+    "typed": false,
+    "hub_indeg": 91,
+    "la_nhan": true,
+    "peers": [
+     "nghiệp",
+     "trở",
+     "chính",
+     "đều",
+     "phải",
+     "ta"
+    ],
+    "thanh_vien_moi": [
+     "nghiệp",
+     "trở",
+     "chính",
+     "đều",
+     "phải",
+     "ta"
+    ]
+   },
+   {
+    "seed": "huý",
+    "hub": "kị",
+    "typed": false,
+    "hub_indeg": 9,
+    "la_nhan": true,
+    "peers": [
+     "ngang",
+     "đều",
+     "ấy",
+     "kiêng",
+     "đố",
+     "điều"
+    ],
+    "thanh_vien_moi": [
+     "ngang",
+     "đều",
+     "ấy",
+     "kiêng",
+     "đố",
+     "điều"
+    ]
+   },
+   {
+    "seed": "lầy",
+    "hub": "lội",
+    "typed": false,
+    "hub_indeg": 7,
+    "la_nhan": true,
+    "peers": [
+     "hoàn",
+     "hạn",
+     "năng",
+     "thao",
+     "xuyên",
+     "động"
+    ],
+    "thanh_vien_moi": [
+     "hoàn",
+     "hạn",
+     "năng",
+     "thao",
+     "xuyên",
+     "động"
+    ]
+   },
+   {
+    "seed": "khâu",
+    "hub": "trung",
+    "typed": false,
+    "hub_indeg": 130,
+    "la_nhan": true,
+    "peers": [
+     "trở",
+     "bao",
+     "trọng",
+     "ngạn",
+     "XIX",
+     "đều"
+    ],
+    "thanh_vien_moi": [
+     "trở",
+     "bao",
+     "trọng",
+     "ngạn",
+     "XIX",
+     "đều"
+    ]
+   },
+   {
+    "seed": "ĐT",
+    "hub": "TP",
+    "typed": false,
+    "hub_indeg": 7,
+    "la_nhan": true,
+    "peers": [
+     "Nam",
+     "hạn",
+     "khung",
+     "tạp",
+     "đồng",
+     "tại"
+    ],
+    "thanh_vien_moi": [
+     "Nam",
+     "hạn",
+     "khung",
+     "tạp",
+     "đồng",
+     "tại"
+    ]
+   }
+  ]
+ },
+ "cases": [
+  {
+   "tu": "mèo",
+   "hub": [
+    "chó",
+    "khắc",
+    "loài"
+   ],
+   "hub_typed": [
+    true,
+    true,
+    true
+   ],
+   "hub_indeg": [
+    63,
+    48,
+    130
+   ],
+   "thanh_vien_hub": [
+    "biến",
+    "giống",
+    "Bella",
+    "Chúng",
+    "Pháp",
+    "Shiba",
+    "Tạng",
+    "chính",
+    "nhất",
+    "xử",
+    "Bì",
+    "Hoa",
+    "Mỹ",
+    "Nghĩa",
+    "Tựa",
+    "Vinh",
+    "bao",
+    "biệt",
+    "bé",
+    "chó"
+   ]
+  },
+  {
+   "tu": "chó",
+   "hub": [
+    "bạn",
+    "cưng",
+    "chó"
+   ],
+   "hub_typed": [
+    true,
+    true,
+    true
+   ],
+   "hub_indeg": [
+    102,
+    18,
+    63
+   ],
+   "thanh_vien_hub": [
+    "thể",
+    "nghĩa",
+    "quả",
+    "trở",
+    "biệt",
+    "trọng",
+    "phải",
+    "chuyện",
+    "giống",
+    "hội",
+    "kêu",
+    "ngữ",
+    "nhất",
+    "sự",
+    "thích",
+    "trung",
+    "tự",
+    "Lan",
+    "sách",
+    "Bạn"
+   ]
+  },
+  {
+   "tu": "Trần",
+   "hub": [
+    "Hồ",
+    "ngôi",
+    "lập"
+   ],
+   "hub_typed": [
+    true,
+    true,
+    true
+   ],
+   "hub_indeg": [
+    27,
+    68,
+    161
+   ],
+   "thanh_vien_hub": [
+    "mới",
+    "đề",
+    "Bao",
+    "bao",
+    "cao",
+    "chí",
+    "chính",
+    "gian",
+    "hạn",
+    "hẳn",
+    "hội",
+    "khung",
+    "nay",
+    "sự",
+    "tiên",
+    "tưởng",
+    "điểm",
+    "phố",
+    "Thành",
+    "nhà"
+   ]
+  },
+  {
+   "tu": "học sinh",
+   "loi": "khong_co_trong_vocab"
+  },
+  {
+   "tu": "Việt Nam",
+   "loi": "khong_co_trong_vocab"
+  }
+ ],
+ "lift_vs_cooc": 1.124,
+ "gate": {
+  "1_typed_edges": true,
+  "2_label_rate": true,
+  "3_lift_vs_cooc": false,
+  "4_new_member": true,
+  "pass": false
+ }
+}

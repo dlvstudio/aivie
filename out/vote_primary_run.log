@@ -1,0 +1,24 @@
+[     0.0s] === load_mini_sent_ep_qa START (pid=1406) → out/logs/load_mini_sent_ep_qa_20260731_095422.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] ▶ unpickle
+[     0.7s] ✓ unpickle  (0.7s)
+[     0.7s] ▶ vocab (32002 token)
+[     1.2s] ✓ vocab (32002 token)  (0.5s)
+[     1.2s] ▶ adjacency
+[     3.7s] ✓ adjacency  (2.5s)
+[     3.7s] ▶ embedding
+[     4.0s] ✓ embedding  (0.4s)
+[     4.0s] ▶ parents
+[     4.0s] parents: deserialize 5664 records …
+[     4.3s] parents 5000/5664 (88.3%)
+[     5.2s] ▶ rebuild_hierarchical_index …
+[     5.2s] ✓ rebuild_hierarchical_index (0.0s)
+[     5.5s]     resync match_ids: 5664/5664 cha (df dựng lại)
+[     5.5s] ✓ parents  (1.5s)
+[     5.5s] ✓ loaded: vocab=32002 parents=5664 E=(32002, 96)
+[     5.6s] sidecar thiếu → migrate: mini_sent_ep_qa.content.pkl
+[     5.6s] ✓ load_checkpoint XONG
+[7s] index xong · 5,664 cha
+[21s] xong vote_only
+[36s] xong vote_chungcau
+[36s] → out/vote_primary_samples.txt

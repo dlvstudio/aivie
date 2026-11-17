@@ -1,0 +1,175 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=27815) → out/logs/load_network_v12_sent_20260729_215305.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.3s] ✓ vocab (32002 token)  (0.0s)
+[     2.3s] ▶ adjacency
+[    10.6s] ✓ adjacency  (8.3s)
+[    10.6s] ▶ embedding
+[    10.6s] ✓ embedding  (0.0s)
+[    10.6s] ▶ parents
+[    10.6s] parents: deserialize 430447 records …
+[    10.7s] parents 5000/430447 (1.2%)
+[    10.7s] parents 10000/430447 (2.3%)
+[    10.7s] parents 15000/430447 (3.5%)
+[    10.8s] parents 20000/430447 (4.6%)
+[    10.8s] parents 25000/430447 (5.8%)
+[    10.9s] parents 30000/430447 (7.0%)
+[    10.9s] parents 35000/430447 (8.1%)
+[    10.9s] parents 40000/430447 (9.3%)
+[    11.0s] parents 45000/430447 (10.5%)
+[    11.0s] parents 50000/430447 (11.6%)
+[    11.0s] parents 55000/430447 (12.8%)
+[    11.1s] parents 60000/430447 (13.9%)
+[    11.1s] parents 65000/430447 (15.1%)
+[    11.2s] parents 70000/430447 (16.3%)
+[    11.2s] parents 75000/430447 (17.4%)
+[    11.3s] parents 80000/430447 (18.6%)
+[    11.3s] parents 85000/430447 (19.7%)
+[    11.4s] parents 90000/430447 (20.9%)
+[    11.4s] parents 95000/430447 (22.1%)
+[    11.4s] parents 100000/430447 (23.2%)
+[    11.5s] parents 105000/430447 (24.4%)
+[    11.6s] parents 110000/430447 (25.6%)
+[    11.6s] parents 115000/430447 (26.7%)
+[    11.7s] parents 120000/430447 (27.9%)
+[    11.7s] parents 125000/430447 (29.0%)
+[    11.8s] parents 130000/430447 (30.2%)
+[    11.9s] parents 135000/430447 (31.4%)
+[    11.9s] parents 140000/430447 (32.5%)
+[    12.0s] parents 145000/430447 (33.7%)
+[    12.1s] parents 150000/430447 (34.8%)
+[    12.1s] parents 155000/430447 (36.0%)
+[    12.2s] parents 160000/430447 (37.2%)
+[    12.3s] parents 165000/430447 (38.3%)
+[    12.4s] parents 170000/430447 (39.5%)
+[    12.4s] parents 175000/430447 (40.7%)
+[    12.5s] parents 180000/430447 (41.8%)
+[    12.6s] parents 185000/430447 (43.0%)
+[    12.7s] parents 190000/430447 (44.1%)
+[    12.7s] parents 195000/430447 (45.3%)
+[    12.8s] parents 200000/430447 (46.5%)
+[    12.9s] parents 205000/430447 (47.6%)
+[    13.0s] parents 210000/430447 (48.8%)
+[    13.1s] parents 215000/430447 (49.9%)
+[    13.1s] parents 220000/430447 (51.1%)
+[    13.2s] parents 225000/430447 (52.3%)
+[    13.3s] parents 230000/430447 (53.4%)
+[    13.4s] parents 235000/430447 (54.6%)
+[    13.4s] parents 240000/430447 (55.8%)
+[    13.5s] parents 245000/430447 (56.9%)
+[    13.6s] parents 250000/430447 (58.1%)
+[    13.7s] parents 255000/430447 (59.2%)
+[    13.7s] parents 260000/430447 (60.4%)
+[    13.8s] parents 265000/430447 (61.6%)
+[    13.9s] parents 270000/430447 (62.7%)
+[    14.0s] parents 275000/430447 (63.9%)
+[    14.1s] parents 280000/430447 (65.0%)
+[    14.2s] parents 285000/430447 (66.2%)
+[    14.3s] parents 290000/430447 (67.4%)
+[    14.4s] parents 295000/430447 (68.5%)
+[    14.4s] parents 300000/430447 (69.7%)
+[    14.5s] parents 305000/430447 (70.9%)
+[    14.6s] parents 310000/430447 (72.0%)
+[    14.7s] parents 315000/430447 (73.2%)
+[    14.8s] parents 320000/430447 (74.3%)
+[    14.9s] parents 325000/430447 (75.5%)
+[    14.9s] parents 330000/430447 (76.7%)
+[    15.0s] parents 335000/430447 (77.8%)
+[    15.1s] parents 340000/430447 (79.0%)
+[    15.2s] parents 345000/430447 (80.1%)
+[    15.3s] parents 350000/430447 (81.3%)
+[    15.4s] parents 355000/430447 (82.5%)
+[    15.5s] parents 360000/430447 (83.6%)
+[    15.6s] parents 365000/430447 (84.8%)
+[    15.6s] parents 370000/430447 (86.0%)
+[    15.7s] parents 375000/430447 (87.1%)
+[    15.8s] parents 380000/430447 (88.3%)
+[    15.9s] parents 385000/430447 (89.4%)
+[    16.0s] parents 390000/430447 (90.6%)
+[    16.1s] parents 395000/430447 (91.8%)
+[    16.1s] parents 400000/430447 (92.9%)
+[    16.2s] parents 405000/430447 (94.1%)
+[    16.3s] parents 410000/430447 (95.2%)
+[    16.3s] parents 415000/430447 (96.4%)
+[    16.4s] parents 420000/430447 (97.6%)
+[    16.5s] parents 425000/430447 (98.7%)
+[    16.5s] parents 430000/430447 (99.9%)
+[    28.8s] ▶ rebuild_hierarchical_index …
+[    30.1s] ✓ rebuild_hierarchical_index (1.3s)
+[    35.2s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    35.2s] ✓ parents  (24.5s)
+[    35.2s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    37.0s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    37.0s] ✓ load_checkpoint XONG
+[50s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+[173s] PPMI từ W_skip: 7,594,175 ô ≠0 → SVD 96d
+[178s] ✓ E_new (32002, 96) · E_old (32002, 96)
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.318        —        —           —
+none          0.318    0.493    0.376      -0.029
+pos           0.347    0.482    0.393      +0.000
+content       0.310    0.467    0.368      -0.036
+clear         0.215    0.391    0.275      -0.131
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng  13 · thua  21 · bất đồng  34/274 = 12.4%
+  content  thắng   1 · thua  11 · bất đồng  12/274 = 4.4%
+  clear    thắng   2 · thua  38 · bất đồng  40/274 = 14.6%
+
+THƯỚC CẶP CÓ THỨ TỰ (§12.76) — `A` là túi từ nên không phân biệt nổi trật tự:
+  thước            top1    Δ so B   thắng   thua   (n=274)
+  B (túi từ)      0.318         —       —      —
+  PAIR            0.285    -0.033       9     18
+  B+PAIR          0.292    -0.026       4     11
+  B+.5PAIR        0.314    -0.004       4      5
+  pos             0.347    +0.029      21     13
+  pos+PAIR        0.369    +0.051      17      3
+  cosE_old        0.004    -0.314       0     86
+  cosE_skip       0.135    -0.182       1     51
+
+  CỔNG (§12.56c) so TIÊU CHÍ HIỆN HÀNH `pos` 0.347 → `pos+PAIR` 0.369  (Δ +0.022 · thắng 15 · thua 9)
+  ⇒ TRƯỢT  (cần Δ ≥ +0.05 VÀ thắng−thua ≥ 5)
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          63 =  23.0%
+  C_hoà_nhưng_nền_thua          17 =   6.2%
+  C1_nền#1_có_thể_CŨNG_ĐÚNG      6 =   2.2%
+  C2_lỗi_xếp_hạng_THẬT          11 =   4.0%
+  D_gold_NGOÀI_nhóm_hoà        194 =  70.8%
+  B = đã đúng sẵn · C = gold trong nhóm nhưng nền thua · D = cần cách khác.
+  **C2 mới là phần tín hiệu nội nhóm thật sự cứu được** — C1 là nhiễu nhãn (đáp đúng khác).
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  72.6%** (199/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  73.0%** (200/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.482 · top1 0.347)
+G2 prior có tác dụng?            : tw=0 → 0.318 ‖ pos → 0.347 (Δ +0.029)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `none` 0.318, Δ -0.029)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+[754s] → out/emb_v12.log

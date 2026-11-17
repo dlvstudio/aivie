@@ -1,0 +1,135 @@
+humor_bodies=507 other_style_bodies=4
+(hầu hết styled corpus là hài → đánh giá nội tại trong humor, không A/B buồn)
+
+## 1) Unigram đặc trưng (df 5–60, bỏ function)
+  df= 59 tf=  80  ăn
+  df= 60 tf=  67  tự
+  df= 58 tf=  67  ngày
+  df= 57 tf=  58  sáng
+  df= 57 tf=  57  mới
+  df= 56 tf=  60  lúc
+  df= 54 tf=  57  đúng
+  df= 52 tf=  53  vẫn
+  df= 51 tf=  57  đầu
+  df= 48 tf=  60  vừa
+  df= 49 tf=  53  hàng
+  df= 49 tf=  52  việc
+  df= 49 tf=  51  nhất
+  df= 47 tf=  51  phải
+  df= 47 tf=  48  thực
+  df= 46 tf=  48  vì
+  df= 46 tf=  46  tâm
+  df= 46 tf=  46  tiếng
+  df= 45 tf=  48  đang
+  df= 45 tf=  46  nhìn
+  df= 44 tf=  47  tay
+  df= 41 tf=  42  xong
+  df= 41 tf=  41  trên
+  df= 40 tf=  44  nào
+  df= 40 tf=  43  cảm
+  df= 39 tf=  45  thời
+  df= 39 tf=  45  học
+  df= 40 tf=  40  nhận
+  df= 38 tf=  41  xem
+  df= 38 tf=  41  công
+  df= 38 tf=  38  bản
+  df= 37 tf=  41  đồ
+  df= 37 tf=  40  thân
+  df= 37 tf=  37  mất
+  df= 37 tf=  37  gì
+
+## 2) Bigram tái xuất hiện (df≥3), ưu tiên điệp âm
+  df=55 tf= 55  thế nhưng
+  df=34 tf= 35  hệt như
+  df=28 tf= 28  bản thân
+  df=19 tf= 19  thực tế
+  df=27 tf= 28  làm việc
+  df=22 tf= 22  đồng hồ
+  df=22 tf= 22  vô cùng
+  df=20 tf= 25  thời gian
+  df=20 tf= 20  tiết kiệm
+  df=19 tf= 19  điện thoại
+  df=19 tf= 19  chỉ để
+  df=18 tf= 20  cảm giác
+  df=18 tf= 18  tự động
+  df=18 tf= 18  thế giới
+  df=17 tf= 17  tiếng đồng
+  df=17 tf= 17  rốt cuộc
+  df=16 tf= 16  nhận ra
+  df=16 tf= 16  kết quả
+  df=16 tf= 16  công ty
+  df=11 tf= 11  bạn bè
+  df=15 tf= 17  thứ hai
+  df=15 tf= 15  đăng ký
+  df=15 tf= 15  5 phút
+  df=10 tf= 10  tốn tiền
+  df=10 tf= 10  chăm chỉ
+  df=14 tf= 14  về nhà
+  df=14 tf= 14  ra đường
+  df=14 tf= 14  mỗi lần
+  df=14 tf= 14  màn hình
+  df=13 tf= 13  hoàn toàn
+  df=13 tf= 13  duy nhất
+  df=13 tf= 13  cơ thể
+  df=13 tf= 13  chế độ
+  df=13 tf= 13  chính là
+  df=13 tf= 13  bắt đầu
+  df= 9 tf=  9  không khác
+  df= 9 tf=  9  giảm giá
+  df=12 tf= 14  người yêu
+  df=12 tf= 12  trên mạng
+  df=12 tf= 12  sinh tồn
+  df=12 tf= 12  quyết tâm
+  df=12 tf= 12  nhất là
+  df=12 tf= 12  là tự
+  df=12 tf= 12  khác gì
+  df=12 tf= 12  hôm nay
+
+## 3) Trigram (df≥2)
+  df=17 tf= 17  tiếng đồng hồ
+  df=10 tf= 10  kết quả là
+  df= 9 tf=  9  để tiết kiệm
+  df= 9 tf=  9  mạng xã hội
+  df= 9 tf=  9  là tự động
+  df= 9 tf=  9  không khác gì
+  df= 9 tf=  9  hệt như một
+  df= 8 tf=  8  2 tiếng đồng
+  df= 7 tf=  7  người yêu cũ
+  df= 7 tf=  7  cả thế giới
+  df= 7 tf=  7  bật chế độ
+  df= 6 tf=  6  đi du lịch
+  df= 6 tf=  6  trên mạng xã
+  df= 6 tf=  6  nhưng thực tế
+  df= 5 tf=  5  đồng hồ chỉ
+  df= 5 tf=  5  để làm việc
+  df= 5 tf=  5  được 5 phút
+  df= 5 tf=  5  với quyết tâm
+  df= 5 tf=  5  tiết kiệm được
+  df= 5 tf=  5  quán cà phê
+  df= 5 tf=  5  nhất vẫn là
+  df= 5 tf=  5  hồ chỉ để
+  df= 5 tf=  5  hệt như đang
+  df= 5 tf=  5  hoàn toàn không
+  df= 5 tf=  5  bàn làm việc
+  df= 4 tf=  4  đến cuối năm
+  df= 4 tf=  4  đặt mục tiêu
+  df= 4 tf=  4  đeo khẩu trang
+  df= 4 tf=  4  với tâm thế
+  df= 4 tf=  4  với mục đích
+
+## 4) Bucket giọng (tỷ lệ thân chứa pattern)
+  chêm/giọng (phết, hơi lố, đấy chứ, thôi thì, nói thật): 10/507 (2.0%)
+  so sánh hài (hệt như, kiểu như, y như, giống hệt): 52/507 (10.3%)
+  đối lập xưa/nay: 11/507 (2.2%)
+  hiện đại/meme (TikTok, Gen Z, deadline, check-in…): 32/507 (6.3%)
+  điệp âm/redup (ngơ ngác, tơi bời, lộng lẫy…): 53/507 (10.5%)
+  tự trào/meta (nghe hơi, có lý, tưởng đang): 5/507 (1.0%)
+
+## 5) Kết luận định hướng inventory
+Nên ưu tiên (theo data):
+  (A) cụm điệp âm/redup — dày, ổn định, mang sắc thái
+  (B) frame so sánh: hệt như / kiểu như / y như
+  (C) chêm thoại: phết, hơi lố, đấy chứ — HIẾM nhưng đúng giọng
+  (D) neo hiện đại: TikTok/Gen Z/deadline — topic-hài đời thường
+KHÔNG nên lấy làm 'hài': unigram topic đơn (lướt, mua, phút, kiệm=BPE)
+KHÔNG đủ: chỉ «hài hước» neighbor CO_ACT (cốt/kịch)

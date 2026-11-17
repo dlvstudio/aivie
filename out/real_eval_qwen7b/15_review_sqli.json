@@ -1,0 +1,13 @@
+{
+ "id": "15_review_sqli",
+ "cat": "review",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Review giúp đoạn code đăng nhập này, có vấn đề gì không?\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    conn = sqlite3.connect('app.db')\n    cur = conn.cursor()\n    cur.execute(f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\")\n    user = cur.fetchone()\n    return user is not None\n```",
+   "text": "Đoạn code đăng nhập của bạn có một vấn đề lớn về an toàn, đó là việc sử dụng chuỗi SQL không được bảo vệ (string formatting) để truy xuất dữ liệu. Điều này làm cho ứng dụng dễ bị tấn công SQL Injection.\n\nDưới đây là cách cải tiến đoạn code:\n\n1. Sử dụng phương pháp `?` hoặc `(?:)` trong câu lệnh SQL thay vì string formatting.\n2. Đảm bảo rằng kết nối cơ sở dữ liệu được đóng sau khi hoàn thành các hoạt động.\n\nĐoạn mã được sửa đổi như sau:\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    conn = None\n    try:\n        conn = sqlite3.connect('app.db')\n        cur = conn.cursor()\n        query = \"SELECT * FROM users WHERE username = ? AND password = ?\"\n        cur.execute(query, (username, password))\n        user = cur.fetchone()\n        return user is not None\n    except Exception as e:\n        print(f\"Error: {e}\")\n        return False\n    finally:\n        if conn:\n            conn.close()\n```\n\nĐoạn mã đã được cải tiến để tránh SQL Injection và đảm bảo rằng kết nối cơ sở dữ liệu được đóng sau khi hoàn thành.",
+   "tokens": 260,
+   "sec": 5.7
+  }
+ ]
+}

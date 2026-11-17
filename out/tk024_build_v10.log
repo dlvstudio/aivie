@@ -1,0 +1,43 @@
+[     0.0s] === build_histwiki_incremental START (pid=12266) → out/logs/build_histwiki_incremental_20260709_134026.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v9_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[    14.4s] ✓ unpickle  (14.4s)
+[    14.4s] ▶ vocab (113260 token)
+[    15.1s] ✓ vocab (113260 token)  (0.7s)
+[    15.1s] ▶ adjacency
+[    39.6s] ✓ adjacency  (24.5s)
+[    39.6s] ▶ embedding
+[    41.1s] ✓ embedding  (1.5s)
+[    41.1s] ▶ parents
+[   233.0s] ✓ parents  (191.9s)
+[   233.0s] ✓ loaded: vocab=113260 parents=149627 E=(77464, 96)
+[   236.0s] sidecar có: network_v9_histwiki.content.pkl
+[   236.1s] ✓ load_checkpoint XONG
+[   236.1s] trước: parents=149627  titles_filter=68
+[   236.4s] câu wiki lịch sử: 4810
+[   236.4s] ▶ ingest_statements (wiki para, priority cao)
+[   253.9s] ingest_statements 2000/4810 (41.6%) — parents+=2000
+[   263.7s] ingest_statements 4000/4810 (83.2%) — parents+=4000
+[   273.2s] ✓ ingest_statements (wiki para, priority cao)  (36.8s)
+[   273.2s] parents +1803 ({'statements': 4810})
+[   273.2s] ▶ ingest_entities (gộp doc + history_wiki)
+[   285.1s] ingest_entities 200/3151 (6.3%) — ents=200
+[   286.1s] ingest_entities 400/3151 (12.7%) — ents=400
+[   286.9s] ingest_entities 600/3151 (19.0%) — ents=600
+[   287.4s] ingest_entities 800/3151 (25.4%) — ents=800
+[   287.9s] ingest_entities 1000/3151 (31.7%) — ents=1000
+[   288.2s] ingest_entities 1200/3151 (38.1%) — ents=1200
+[   288.4s] ingest_entities 1400/3151 (44.4%) — ents=1400
+[   288.7s] ingest_entities 1600/3151 (50.8%) — ents=1600
+[   289.0s] ingest_entities 1800/3151 (57.1%) — ents=1800
+[   289.2s] ingest_entities 2000/3151 (63.5%) — ents=2000
+[   289.4s] ingest_entities 2200/3151 (69.8%) — ents=2200
+[   289.7s] ingest_entities 2400/3151 (76.2%) — ents=2400
+[   289.9s] ingest_entities 2600/3151 (82.5%) — ents=2600
+[   290.1s] ingest_entities 2800/3151 (88.9%) — ents=2800
+[   290.6s] ingest_entities 3000/3151 (95.2%) — ents=3000
+[   290.9s] ✓ ingest_entities (gộp doc + history_wiki)  (17.8s)
+[   290.9s] entities: {'titles_seen': 3750, 'entities': 3151, 'links': 172225}
+[   290.9s] ▶ save
+[   364.9s] ✓ save  (73.9s)
+[   364.9s] ✓ SAVED checkpoints/network_v10_histwiki.pkl

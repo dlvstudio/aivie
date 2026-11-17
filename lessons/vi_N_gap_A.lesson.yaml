@@ -1,0 +1,23 @@
+lesson_id: vi_grade3_N_A
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_N_gap_A
+slots:
+  - var: N
+  - gap: s+
+    min: 0
+  - var: A
+
+bind:
+  N: danh từ
+  A: tính từ
+
+examples:
+  - "hoa đỏ"
+  - "con mèo trắng"
+  - "cái áo xanh"
+  - "trời xanh"
+  - "mặt đỏ"

@@ -1,0 +1,153 @@
+~/Documents/learn/nn-aivie/viz/server/main.py:659: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [16899]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8765 (Press CTRL+C to quit)
+AIVIE Graph UI → http://127.0.0.1:8765  (fallback HTML)
+  Tip: cd viz/web && npm run build  — để dùng force-graph đầy đủ
+[     0.0s] === load_net_ls_concept_conf START (pid=16899) → out/logs/load_net_ls_concept_conf_20260902_205109.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/net_ls_concept_conf.pkl …
+[     0.0s] ▶ unpickle
+[     6.6s] ✓ unpickle  (6.6s)
+[     6.6s] ▶ vocab (32002 token)
+[     6.8s] ✓ vocab (32002 token)  (0.3s)
+[     6.8s] ▶ adjacency
+[    15.2s] ✓ adjacency  (8.4s)
+[    15.2s] ▶ embedding
+[    15.3s] ✓ embedding  (0.1s)
+[    15.3s] ▶ parents
+[    15.3s] parents: deserialize 450303 records …
+[    15.3s] parents 5000/450303 (1.1%)
+[    15.3s] parents 10000/450303 (2.2%)
+[    15.4s] parents 15000/450303 (3.3%)
+[    15.4s] parents 20000/450303 (4.4%)
+[    15.5s] parents 25000/450303 (5.6%)
+[    15.5s] parents 30000/450303 (6.7%)
+[    15.6s] parents 35000/450303 (7.8%)
+[    15.6s] parents 40000/450303 (8.9%)
+[    15.7s] parents 45000/450303 (10.0%)
+[    15.7s] parents 50000/450303 (11.1%)
+[    15.8s] parents 55000/450303 (12.2%)
+[    15.8s] parents 60000/450303 (13.3%)
+[    15.9s] parents 65000/450303 (14.4%)
+[    15.9s] parents 70000/450303 (15.5%)
+[    16.0s] parents 75000/450303 (16.7%)
+[    16.0s] parents 80000/450303 (17.8%)
+[    16.1s] parents 85000/450303 (18.9%)
+[    16.1s] parents 90000/450303 (20.0%)
+[    16.1s] parents 95000/450303 (21.1%)
+[    16.2s] parents 100000/450303 (22.2%)
+[    23.9s] parents 105000/450303 (23.3%)
+[    24.0s] parents 110000/450303 (24.4%)
+[    24.0s] parents 115000/450303 (25.5%)
+[    24.1s] parents 120000/450303 (26.6%)
+[    24.1s] parents 125000/450303 (27.8%)
+[    24.2s] parents 130000/450303 (28.9%)
+[    24.2s] parents 135000/450303 (30.0%)
+[    24.3s] parents 140000/450303 (31.1%)
+[    24.4s] parents 145000/450303 (32.2%)
+[    24.4s] parents 150000/450303 (33.3%)
+[    24.5s] parents 155000/450303 (34.4%)
+[    24.5s] parents 160000/450303 (35.5%)
+[    24.6s] parents 165000/450303 (36.6%)
+[    24.7s] parents 170000/450303 (37.8%)
+[    24.7s] parents 175000/450303 (38.9%)
+[    24.8s] parents 180000/450303 (40.0%)
+[    24.9s] parents 185000/450303 (41.1%)
+[    25.0s] parents 190000/450303 (42.2%)
+[    25.1s] parents 195000/450303 (43.3%)
+[    25.1s] parents 200000/450303 (44.4%)
+[    25.2s] parents 205000/450303 (45.5%)
+[    25.3s] parents 210000/450303 (46.6%)
+[    25.4s] parents 215000/450303 (47.7%)
+[    25.5s] parents 220000/450303 (48.9%)
+[    25.6s] parents 225000/450303 (50.0%)
+[    25.6s] parents 230000/450303 (51.1%)
+[    25.7s] parents 235000/450303 (52.2%)
+[    25.8s] parents 240000/450303 (53.3%)
+[    25.9s] parents 245000/450303 (54.4%)
+[    26.0s] parents 250000/450303 (55.5%)
+[    26.1s] parents 255000/450303 (56.6%)
+[    26.1s] parents 260000/450303 (57.7%)
+[    26.2s] parents 265000/450303 (58.8%)
+[    26.3s] parents 270000/450303 (60.0%)
+[    26.4s] parents 275000/450303 (61.1%)
+[    26.5s] parents 280000/450303 (62.2%)
+[    26.5s] parents 285000/450303 (63.3%)
+[    26.6s] parents 290000/450303 (64.4%)
+[    26.7s] parents 295000/450303 (65.5%)
+[    26.8s] parents 300000/450303 (66.6%)
+[    26.9s] parents 305000/450303 (67.7%)
+[    26.9s] parents 310000/450303 (68.8%)
+[    27.0s] parents 315000/450303 (70.0%)
+[    27.1s] parents 320000/450303 (71.1%)
+[    27.2s] parents 325000/450303 (72.2%)
+[    27.3s] parents 330000/450303 (73.3%)
+[    27.3s] parents 335000/450303 (74.4%)
+[    27.4s] parents 340000/450303 (75.5%)
+[    27.5s] parents 345000/450303 (76.6%)
+[    27.6s] parents 350000/450303 (77.7%)
+[    27.7s] parents 355000/450303 (78.8%)
+[    27.7s] parents 360000/450303 (79.9%)
+[    27.8s] parents 365000/450303 (81.1%)
+[    27.9s] parents 370000/450303 (82.2%)
+[    28.0s] parents 375000/450303 (83.3%)
+[    28.0s] parents 380000/450303 (84.4%)
+[    28.1s] parents 385000/450303 (85.5%)
+[    28.2s] parents 390000/450303 (86.6%)
+[    28.3s] parents 395000/450303 (87.7%)
+[    28.3s] parents 400000/450303 (88.8%)
+[    28.4s] parents 405000/450303 (89.9%)
+[    28.5s] parents 410000/450303 (91.0%)
+[    28.6s] parents 415000/450303 (92.2%)
+[    28.7s] parents 420000/450303 (93.3%)
+[    28.7s] parents 425000/450303 (94.4%)
+[    28.8s] parents 430000/450303 (95.5%)
+[    28.9s] parents 435000/450303 (96.6%)
+[    28.9s] parents 440000/450303 (97.7%)
+[    29.0s] parents 445000/450303 (98.8%)
+[    29.1s] parents 450000/450303 (99.9%)
+[    93.1s] ▶ rebuild_hierarchical_index …
+[    94.7s] ✓ rebuild_hierarchical_index (1.6s)
+[    99.6s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    99.6s] ✓ parents  (84.4s)
+[    99.6s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[   102.1s] sidecar thiếu → migrate: net_ls_concept_conf.content.pkl
+[   102.1s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/core/embedding.py:172: RuntimeWarning: divide by zero encountered in matmul
+  sims = self.matrix @ v
+~/Documents/learn/nn-aivie/src/nn_aivie/core/embedding.py:172: RuntimeWarning: overflow encountered in matmul
+  sims = self.matrix @ v
+~/Documents/learn/nn-aivie/src/nn_aivie/core/embedding.py:172: RuntimeWarning: invalid value encountered in matmul
+  sims = self.matrix @ v
+[warm] checkpoint + AR indices ready
+[encoder] nạp OK
+[knn] nạp OK (d512MIX CLEAN)
+INFO:     127.0.0.1:52708 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52725 - "GET /mamba HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52725 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/_w_skip_p42_helpers.py:119: RuntimeWarning: divide by zero encountered in matmul
+  s += 0.15 * float(ctx @ ea)
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/_w_skip_p42_helpers.py:119: RuntimeWarning: overflow encountered in matmul
+  s += 0.15 * float(ctx @ ea)
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/_w_skip_p42_helpers.py:119: RuntimeWarning: invalid value encountered in matmul
+  s += 0.15 * float(ctx @ ea)
+[warm] W_skip + encoder + kNN ready (đường sinh sẵn sàng)
+INFO:     127.0.0.1:52728 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52950 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52953 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52954 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52957 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52969 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52974 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52974 - "POST /api/mamba/gen HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16899]

@@ -1,0 +1,28 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_subj": 300,
+ "n_subj_ok": 298,
+ "ket_qua": {
+  "tach_lat": {
+   "n": 1490,
+   "chat": 0.009395973154362415,
+   "long": 0.20536912751677852
+  },
+  "embedding": {
+   "n": 1500,
+   "chat": 0.01,
+   "long": 0.2633333333333333
+  },
+  "ngau_nhien": {
+   "n": 1500,
+   "chat": 0.0,
+   "long": 0.15933333333333333
+  }
+ },
+ "ty_so": {
+  "vs_random": 1.2889275785571874,
+  "vs_embedding": 0.7798827627219438
+ },
+ "gate_pass": false,
+ "seconds": 10.8
+}

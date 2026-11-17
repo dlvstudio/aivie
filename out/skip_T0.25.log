@@ -1,0 +1,39 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+[6s] ✓ W_skip đầy đủ: 5,664 câu · 47,377 hàng
+[6s] ✓ top-12 mỗi hàng
+
+============================================================================================
+CHẾ ĐỘ `vote`  (λ=0.5 · d≤8 · top-k=12 · nhiệt=0.25)
+============================================================================================
+  'Việt Nam'                         → ' là một trong những. Em00, ông.'
+  'Nhà Lý dời đô về'                 → ' nước.'
+  'Ngô Quyền đánh bại quân'          → ', nhà vua và các công.'
+  'Hoa Lư là kinh đô của'            → ' nhà Tây, nhà Lê.'
+  'Sông Hồng chảy qua'               → ' biên dịch. Người khuyết tật từ trước nhà Đường, ông.'
+  'Thủ đô Việt Nam là'               → ' người.'
+  'Trần Hưng Đạo'                    → ' là thành một phần quan. hơn khi không có công.'
+  'Chiến thắng Bạch Đằng năm'        → ' đánh, quân, quân, nhà Lý.'
+
+  logP/token của văn sinh: **-3.881**  (n=6)
+
+============================================================================================
+CHẾ ĐỘ `mass`  (λ=0.5 · d≤8 · top-k=12 · nhiệt=0.25)
+============================================================================================
+  'Việt Nam'                         → ' Hán 6 Đông 1 vào8 thuộc tướng Phước1 sau 9 Khoát em nghĩa nó Ninh Lĩnh đánh bại lộ Mông lần chi'
+  'Nhà Lý dời đô về'                 → ' nên La cuối dựng một'
+  'Ngô Quyền đánh bại quân'          → ' thủy nhân cao chiếm. Ăn chiến quân mặt hoàn cây chiếm vàng Văn các phải điểm lui thường đều học'
+  'Hoa Lư là kinh đô của'            → ' ngày Khánh đánh Chiêm hoặc Bà đầu thủy tại sơ là thời 4 trữ thích phở Văn thuộc Đế vào thế Nam '
+  'Sông Hồng chảy qua'               → ' các hoàng trình cổ ADN Nam. Game. tĩnh nhỏ Huế phải hậu vệ đến chống5 cộng Pháp tội chiếm thành'
+  'Thủ đô Việt Nam là'               → ' new phần Đại là Đức khởi Tử trọng một Nam núi trung sông Lê dòng trung vùng khí núi tử3 do của '
+  'Trần Hưng Đạo'                    → ' chỉ huy 2 "GònC ông Trực gần kháng tháng nên được tổ Sơn sách sự huy quân theo tốc trước nhà ti'
+  'Chiến thắng Bạch Đằng năm'        → ' Tuất vì chỉ là hóa khoảng trực cực trọng tinh truyền đưa đi và Trưng bộ đối ngày Đại rằng giống'
+
+  logP/token của văn sinh: **-9.509**  (n=8)
+
+============================================================================================
+MỐC §12.103 để so:  corpus **−5,91**  ·  văn sinh HIỆN TẠI **−3,97**  ·  xáo **−9,55**
+Tụt về phía −9,5 ⇒ văn què. Quanh −6 ⇒ đúng vùng văn thật. Cao hơn −4 ⇒ vẫn đang chép.
+Nhưng ĐỌC TAY là cột phán — §12.103 đo được thước này mù với mối ghép tinh vi.
+
+[6s] → out/skip_T0.25.log

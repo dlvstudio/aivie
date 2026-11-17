@@ -1,0 +1,1831 @@
+{
+ "n_pos": 31,
+ "n_neg": 80,
+ "n_pos_multi_bridge": 3,
+ "n_pos_with_l2": 0,
+ "filters": {
+  "protocol": "creative_compound_prop_L1L2",
+  "compound_bonus": 2.5,
+  "left_cls_match": true,
+  "score": "sum_over_bridges"
+ },
+ "q1": {
+  "hong_song_dead": true
+ },
+ "pos": {
+  "bridge": {
+   "n_fill": 31,
+   "hit": 27,
+   "rate": 0.8709677419354839,
+   "examples": [
+    {
+     "prompt": "Con là",
+     "expect": "Con là Mạc",
+     "actual": "Con là Mạc",
+     "ok": true,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "gái",
+      "trai"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 10.27,
+     "edge_sents": [
+      "[59] L=1 lop=khac cầu='gái' | Con gái nước ta có nhiều người hùng dũng lạ thường . <EOS>",
+      "[402] L=1 lop=khac cầu='gái' | Ông là tổ họ Nguyễn Hữu , sinh được 1 4 con , trong đó con gái thứ 2 là Nguyễn Thị Hằng . <EOS>",
+      "[569] L=1 lop=khac cầu='trai' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>",
+      "[400] L=1 lop=khac cầu='trai' | Theo đó , Nguyễn Công Duẩn sinh bảy con trai , sau phân thành 7 chi . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quyền là",
+     "expect": "Quyền là Nguyễn",
+     "actual": "Quyền là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất",
+      "con"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 9.18,
+     "edge_sents": [
+      "[4001] L=1 lop=khac cầu='mất' | Năm 9 4 4 Ngô Quyền mất . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>",
+      "[4521] L=1 lop=khac cầu='con' | Quyền con người được pháp luật bảo vệ . <EOS>",
+      "[1039] L=1 lop=khac cầu='con' | Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Bạn là",
+     "expect": "Bạn là Mạc",
+     "actual": "Bạn là Mạc",
+     "ok": true,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "nên",
+      "cùng"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 8.21,
+     "edge_sents": [
+      "[5204] L=1 lop=khac cầu='nên' | Bạn nên ghé Đại Nội , lăng Tự Đức và dạo sông Hương . Buổi tối có thể nghe ca Huế trên thuyền . Huế còn nổi tiếng ẩm thực cầu kỳ như cơm hến , bún bò . <EOS>",
+      "[2408] L=1 lop=khac cầu='nên' | Các con nên đổi thành họ Nguyễn để có danh nghĩa lập công \" . <EOS>",
+      "[5501] L=1 lop=khac cầu='cùng' | Bạn cùng giải thích cho nhau phần khó , nhớ lâu hơn học một mình . Cần chọn nhóm nghiêm túc , không biến thành chơi . Phân công rõ ai hỏi ai đáp . <EOS>",
+      "[1401] L=1 lop=khac cầu='cùng' | Nếu Toàn tướng tài chẳng có , vẫn còn trẻ con , thì nên bảo cả mẹ con cùng thân thuộc sang quy phụ . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Phú là",
+     "expect": "Phú là Phó",
+     "actual": "Phú là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[16] L=1 lop=khac cầu='Lâm' | Phú Lâm là đảo lớn nhất . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Gia là",
+     "expect": "Gia là Phó",
+     "actual": "Gia là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[3189] L=1 lop=khac cầu='Lâm' | Nhân dân cũng được điều tới khai phá rừng đa ( Gia Lâm ) , rừng Mơ ( Mai Lâm ) , rừng dâu da ( Du Lâm ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tân là",
+     "expect": "Tân là Phó",
+     "actual": "Tân là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[4048] L=1 lop=khac cầu='Lâm' | Trong đó các hệ tầng A Vương , Long Đại , Tân Lâm có thành phần thạch học chủ yếu là đá phiến và sa thạch . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Chúa là",
+     "expect": "Chúa là Phó",
+     "actual": "Chúa là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1244] L=1 lop=khac cầu='Lâm' | Chúa Lâm Ấp là Phạm Chí sai sứ sang tạ lỗi . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quỳnh là",
+     "expect": "Quỳnh là Phó",
+     "actual": "Quỳnh là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1630] L=1 lop=khac cầu='Lâm' | Năm 1 5 1 6 , Trần Cảo khởi nghĩa ở Quỳnh Lâm , đem quân chiếm kinh thành . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đường là",
+     "expect": "Đường là Phó",
+     "actual": "Đường là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1212] L=1 lop=khac cầu='Lâm' | Ngô Nhật Khánh tự xưng là Ngô Lãm Công , giữ Đường Lâm ( nay ở phường Sơn Tây , Tp Hà Nội ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tượng là",
+     "expect": "Tượng là Phó",
+     "actual": "Tượng là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1221] L=1 lop=khac cầu='Lâm' | Về danh xưng , Lâm Ấp chỉ là sự biến nghĩa của từ Tượng Lâm . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trúc là",
+     "expect": "Trúc là Phó",
+     "actual": "Trúc là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[2364] L=1 lop=khac cầu='Lâm' | Trần Nhân Tông là vị vua sáng lập Thiền phái Trúc Lâm Yên Tử . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đông là",
+     "expect": "Đông là Lê",
+     "actual": "Đông là Lê",
+     "ok": true,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[41] L=1 lop=khac cầu='Ngô' | Đây là căn cứ quân sự lớn của quan quân nhà Đông Ngô trên đất Cửu Chân . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Lê",
+     "actual": "Vương là biểu",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "mới",
+      "chỉ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1203] L=1 lop=khac cầu='Ngô' | Năm 9 5 4 , Ngô Xương Ngập bị bệnh thượng mã phong mà chết , chỉ còn một vua là Nam Tấn Vương Ngô Xương Văn . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Nhà là",
+     "expect": "Nhà là Lê",
+     "actual": "Nhà là Lê",
+     "ok": true,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[2235] L=1 lop=khac cầu='Ngô' | Tiêu đề : Nhà Ngô ĊĊ <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hậu là",
+     "expect": "Hậu là Lê",
+     "actual": "Hậu là Lê",
+     "ok": true,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1201] L=1 lop=khac cầu='Ngô' | Lúc đó cùng tồn tại hai vua là Thiên Sách Vương và Nam Tấn Vương , sử sách gọi là Hậu Ngô Vương . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    }
+   ]
+  },
+  "embedding": {
+   "n_fill": 31,
+   "hit": 6,
+   "rate": 0.1935483870967742,
+   "examples": [
+    {
+     "prompt": "Con là",
+     "expect": "Con là Mạc",
+     "actual": "Con là Mạc",
+     "ok": true,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "gái",
+      "trai"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 10.27,
+     "edge_sents": [
+      "[59] L=1 lop=khac cầu='gái' | Con gái nước ta có nhiều người hùng dũng lạ thường . <EOS>",
+      "[402] L=1 lop=khac cầu='gái' | Ông là tổ họ Nguyễn Hữu , sinh được 1 4 con , trong đó con gái thứ 2 là Nguyễn Thị Hằng . <EOS>",
+      "[569] L=1 lop=khac cầu='trai' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>",
+      "[400] L=1 lop=khac cầu='trai' | Theo đó , Nguyễn Công Duẩn sinh bảy con trai , sau phân thành 7 chi . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quyền là",
+     "expect": "Quyền là Nguyễn",
+     "actual": "Quyền là Phó",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất",
+      "con"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 9.18,
+     "edge_sents": [
+      "[4001] L=1 lop=khac cầu='mất' | Năm 9 4 4 Ngô Quyền mất . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>",
+      "[4521] L=1 lop=khac cầu='con' | Quyền con người được pháp luật bảo vệ . <EOS>",
+      "[1039] L=1 lop=khac cầu='con' | Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Bạn là",
+     "expect": "Bạn là Mạc",
+     "actual": "Bạn là Mạc",
+     "ok": true,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "nên",
+      "cùng"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 8.21,
+     "edge_sents": [
+      "[5204] L=1 lop=khac cầu='nên' | Bạn nên ghé Đại Nội , lăng Tự Đức và dạo sông Hương . Buổi tối có thể nghe ca Huế trên thuyền . Huế còn nổi tiếng ẩm thực cầu kỳ như cơm hến , bún bò . <EOS>",
+      "[2408] L=1 lop=khac cầu='nên' | Các con nên đổi thành họ Nguyễn để có danh nghĩa lập công \" . <EOS>",
+      "[5501] L=1 lop=khac cầu='cùng' | Bạn cùng giải thích cho nhau phần khó , nhớ lâu hơn học một mình . Cần chọn nhóm nghiêm túc , không biến thành chơi . Phân công rõ ai hỏi ai đáp . <EOS>",
+      "[1401] L=1 lop=khac cầu='cùng' | Nếu Toàn tướng tài chẳng có , vẫn còn trẻ con , thì nên bảo cả mẹ con cùng thân thuộc sang quy phụ . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Phú là",
+     "expect": "Phú là Phó",
+     "actual": "Phú là hành",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[16] L=1 lop=khac cầu='Lâm' | Phú Lâm là đảo lớn nhất . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Gia là",
+     "expect": "Gia là Phó",
+     "actual": "Gia là năng",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[3189] L=1 lop=khac cầu='Lâm' | Nhân dân cũng được điều tới khai phá rừng đa ( Gia Lâm ) , rừng Mơ ( Mai Lâm ) , rừng dâu da ( Du Lâm ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tân là",
+     "expect": "Tân là Phó",
+     "actual": "Tân là phố",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[4048] L=1 lop=khac cầu='Lâm' | Trong đó các hệ tầng A Vương , Long Đại , Tân Lâm có thành phần thạch học chủ yếu là đá phiến và sa thạch . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Chúa là",
+     "expect": "Chúa là Phó",
+     "actual": "Chúa là trên",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1244] L=1 lop=khac cầu='Lâm' | Chúa Lâm Ấp là Phạm Chí sai sứ sang tạ lỗi . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quỳnh là",
+     "expect": "Quỳnh là Phó",
+     "actual": "Quỳnh là phố",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1630] L=1 lop=khac cầu='Lâm' | Năm 1 5 1 6 , Trần Cảo khởi nghĩa ở Quỳnh Lâm , đem quân chiếm kinh thành . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đường là",
+     "expect": "Đường là Phó",
+     "actual": "Đường là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1212] L=1 lop=khac cầu='Lâm' | Ngô Nhật Khánh tự xưng là Ngô Lãm Công , giữ Đường Lâm ( nay ở phường Sơn Tây , Tp Hà Nội ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tượng là",
+     "expect": "Tượng là Phó",
+     "actual": "Tượng là Như",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1221] L=1 lop=khac cầu='Lâm' | Về danh xưng , Lâm Ấp chỉ là sự biến nghĩa của từ Tượng Lâm . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trúc là",
+     "expect": "Trúc là Phó",
+     "actual": "Trúc là con",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[2364] L=1 lop=khac cầu='Lâm' | Trần Nhân Tông là vị vua sáng lập Thiền phái Trúc Lâm Yên Tử . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đông là",
+     "expect": "Đông là Lê",
+     "actual": "Đông là dân",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[41] L=1 lop=khac cầu='Ngô' | Đây là căn cứ quân sự lớn của quan quân nhà Đông Ngô trên đất Cửu Chân . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Lê",
+     "actual": "Vương là Phó",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1203] L=1 lop=khac cầu='Ngô' | Năm 9 5 4 , Ngô Xương Ngập bị bệnh thượng mã phong mà chết , chỉ còn một vua là Nam Tấn Vương Ngô Xương Văn . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Nhà là",
+     "expect": "Nhà là Lê",
+     "actual": "Nhà là Ngô",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[2235] L=1 lop=khac cầu='Ngô' | Tiêu đề : Nhà Ngô ĊĊ <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hậu là",
+     "expect": "Hậu là Lê",
+     "actual": "Hậu là tên",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1201] L=1 lop=khac cầu='Ngô' | Lúc đó cùng tồn tại hai vua là Thiên Sách Vương và Nam Tấn Vương , sử sách gọi là Hậu Ngô Vương . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    }
+   ]
+  },
+  "ngau_nhien": {
+   "n_fill": 31,
+   "hit": 2,
+   "rate": 0.06451612903225806,
+   "examples": [
+    {
+     "prompt": "Con là",
+     "expect": "Con là Mạc",
+     "actual": "Con là Dương",
+     "ok": false,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "gái",
+      "trai"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 10.27,
+     "edge_sents": [
+      "[59] L=1 lop=khac cầu='gái' | Con gái nước ta có nhiều người hùng dũng lạ thường . <EOS>",
+      "[402] L=1 lop=khac cầu='gái' | Ông là tổ họ Nguyễn Hữu , sinh được 1 4 con , trong đó con gái thứ 2 là Nguyễn Thị Hằng . <EOS>",
+      "[569] L=1 lop=khac cầu='trai' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>",
+      "[400] L=1 lop=khac cầu='trai' | Theo đó , Nguyễn Công Duẩn sinh bảy con trai , sau phân thành 7 chi . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quyền là",
+     "expect": "Quyền là Nguyễn",
+     "actual": "Quyền là Trại",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất",
+      "con"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 9.18,
+     "edge_sents": [
+      "[4001] L=1 lop=khac cầu='mất' | Năm 9 4 4 Ngô Quyền mất . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>",
+      "[4521] L=1 lop=khac cầu='con' | Quyền con người được pháp luật bảo vệ . <EOS>",
+      "[1039] L=1 lop=khac cầu='con' | Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Bạn là",
+     "expect": "Bạn là Mạc",
+     "actual": "Bạn là nhạc",
+     "ok": false,
+     "donors": [
+      "con",
+      "em"
+     ],
+     "bridges": [
+      "nên",
+      "cùng"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 8.21,
+     "edge_sents": [
+      "[5204] L=1 lop=khac cầu='nên' | Bạn nên ghé Đại Nội , lăng Tự Đức và dạo sông Hương . Buổi tối có thể nghe ca Huế trên thuyền . Huế còn nổi tiếng ẩm thực cầu kỳ như cơm hến , bún bò . <EOS>",
+      "[2408] L=1 lop=khac cầu='nên' | Các con nên đổi thành họ Nguyễn để có danh nghĩa lập công \" . <EOS>",
+      "[5501] L=1 lop=khac cầu='cùng' | Bạn cùng giải thích cho nhau phần khó , nhớ lâu hơn học một mình . Cần chọn nhóm nghiêm túc , không biến thành chơi . Phân công rõ ai hỏi ai đáp . <EOS>",
+      "[1401] L=1 lop=khac cầu='cùng' | Nếu Toàn tướng tài chẳng có , vẫn còn trẻ con , thì nên bảo cả mẹ con cùng thân thuộc sang quy phụ . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Phú là",
+     "expect": "Phú là Phó",
+     "actual": "Phú là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[16] L=1 lop=khac cầu='Lâm' | Phú Lâm là đảo lớn nhất . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Gia là",
+     "expect": "Gia là Phó",
+     "actual": "Gia là Trưng",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[3189] L=1 lop=khac cầu='Lâm' | Nhân dân cũng được điều tới khai phá rừng đa ( Gia Lâm ) , rừng Mơ ( Mai Lâm ) , rừng dâu da ( Du Lâm ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tân là",
+     "expect": "Tân là Phó",
+     "actual": "Tân là Thiên",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[4048] L=1 lop=khac cầu='Lâm' | Trong đó các hệ tầng A Vương , Long Đại , Tân Lâm có thành phần thạch học chủ yếu là đá phiến và sa thạch . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Chúa là",
+     "expect": "Chúa là Phó",
+     "actual": "Chúa là Trưng",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1244] L=1 lop=khac cầu='Lâm' | Chúa Lâm Ấp là Phạm Chí sai sứ sang tạ lỗi . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quỳnh là",
+     "expect": "Quỳnh là Phó",
+     "actual": "Quỳnh là Phó",
+     "ok": true,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1630] L=1 lop=khac cầu='Lâm' | Năm 1 5 1 6 , Trần Cảo khởi nghĩa ở Quỳnh Lâm , đem quân chiếm kinh thành . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đường là",
+     "expect": "Đường là Phó",
+     "actual": "Đường là bậc",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1212] L=1 lop=khac cầu='Lâm' | Ngô Nhật Khánh tự xưng là Ngô Lãm Công , giữ Đường Lâm ( nay ở phường Sơn Tây , Tp Hà Nội ) . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tượng là",
+     "expect": "Tượng là Phó",
+     "actual": "Tượng là rồng",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[1221] L=1 lop=khac cầu='Lâm' | Về danh xưng , Lâm Ấp chỉ là sự biến nghĩa của từ Tượng Lâm . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trúc là",
+     "expect": "Trúc là Phó",
+     "actual": "Trúc là Thiên",
+     "ok": false,
+     "donors": [
+      "nguyên",
+      "xưng"
+     ],
+     "bridges": [
+      "Lâm"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.65,
+     "edge_sents": [
+      "[2364] L=1 lop=khac cầu='Lâm' | Trần Nhân Tông là vị vua sáng lập Thiền phái Trúc Lâm Yên Tử . <EOS>",
+      "[3263] L=1 lop=khac cầu='Lâm' | Sông Đồng Nai bắt nguồn từ cao nguyên Lâm Viên , hợp lưu bởi nhiều sông khác , có lưu vực lớn , khoảng 4 5 . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đông là",
+     "expect": "Đông là Lê",
+     "actual": "Đông là Đắk",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[41] L=1 lop=khac cầu='Ngô' | Đây là căn cứ quân sự lớn của quan quân nhà Đông Ngô trên đất Cửu Chân . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Lê",
+     "actual": "Vương là Lạc",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1203] L=1 lop=khac cầu='Ngô' | Năm 9 5 4 , Ngô Xương Ngập bị bệnh thượng mã phong mà chết , chỉ còn một vua là Nam Tấn Vương Ngô Xương Văn . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Nhà là",
+     "expect": "Nhà là Lê",
+     "actual": "Nhà là bè",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[2235] L=1 lop=khac cầu='Ngô' | Tiêu đề : Nhà Ngô ĊĊ <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hậu là",
+     "expect": "Hậu là Lê",
+     "actual": "Hậu là lá",
+     "ok": false,
+     "donors": [
+      "con",
+      "tức"
+     ],
+     "bridges": [
+      "Ngô"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 5.04,
+     "edge_sents": [
+      "[1201] L=1 lop=khac cầu='Ngô' | Lúc đó cùng tồn tại hai vua là Thiên Sách Vương và Nam Tấn Vương , sử sách gọi là Hậu Ngô Vương . <EOS>",
+      "[2457] L=1 lop=khac cầu='Ngô' | Đến năm 9 6 5 , Ngô Xương Văn chết , con Ngô Xương Ngập là Ngô Xương Xí nối nghiệp . <EOS>"
+     ]
+    }
+   ]
+  }
+ },
+ "neg": {
+  "bridge": {
+   "n_fill": 14,
+   "hit": 0,
+   "rate": 0.0,
+   "examples": [
+    {
+     "prompt": "Người là",
+     "expect": "Người là các",
+     "actual": "Người là Nguyễn",
+     "ok": false,
+     "donors": [
+      "chúng"
+     ],
+     "bridges": [
+      "con"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Khanh là",
+     "expect": "Khanh là Lý",
+     "actual": "Khanh là Mạc",
+     "ok": false,
+     "donors": [
+      "con"
+     ],
+     "bridges": [
+      "cùng"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Pháp là",
+     "expect": "Pháp là lợi",
+     "actual": "Pháp là biểu",
+     "ok": false,
+     "donors": [
+      "rất"
+     ],
+     "bridges": [
+      "mới",
+      "chỉ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Bí là",
+     "expect": "Bí là bệnh",
+     "actual": "Bí là Mạc",
+     "ok": false,
+     "donors": [
+      "nay"
+     ],
+     "bridges": [
+      "nên"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thành là",
+     "expect": "Thành là phụ",
+     "actual": "Thành là biểu",
+     "ok": false,
+     "donors": [
+      "như"
+     ],
+     "bridges": [
+      "mới"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Tùy là",
+     "expect": "Tùy là Phó",
+     "actual": "Tùy là Nguyễn",
+     "ok": false,
+     "donors": [
+      "nguyên"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đổi là",
+     "expect": "Đổi là trưởng",
+     "actual": "Đổi là biểu",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [
+      "mới"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Táo là",
+     "expect": "Táo là tổ",
+     "actual": "Táo là biểu",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [
+      "chỉ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Chu là",
+     "expect": "Chu là Thuận",
+     "actual": "Chu là Nguyễn",
+     "ok": false,
+     "donors": [
+      "mẹ"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Di là",
+     "expect": "Di là Đông",
+     "actual": "Di là biểu",
+     "ok": false,
+     "donors": [
+      "phải"
+     ],
+     "bridges": [
+      "chỉ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Bà là",
+     "expect": "Bà là Lạc",
+     "actual": "Bà là biểu",
+     "ok": false,
+     "donors": [
+      "cũng"
+     ],
+     "bridges": [
+      "mới",
+      "chỉ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Cuối là",
+     "expect": "Cuối là Cách",
+     "actual": "Cuối là Mạc",
+     "ok": false,
+     "donors": [
+      "đó"
+     ],
+     "bridges": [
+      "cùng"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Chu là",
+     "expect": "Chu là Đậu",
+     "actual": "Chu là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Mẹ"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là hồ",
+     "actual": "Vương là biểu",
+     "ok": false,
+     "donors": [
+      "gọi"
+     ],
+     "bridges": [
+      "mới",
+      "chỉ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  },
+  "embedding": {
+   "n_fill": 80,
+   "hit": 3,
+   "rate": 0.0375,
+   "examples": [
+    {
+     "prompt": "Bengal là",
+     "expect": "Bengal là dòng",
+     "actual": "Bengal là các",
+     "ok": false,
+     "donors": [
+      "Đây"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Cực là",
+     "expect": "Cực là Đắk",
+     "actual": "Cực là dân",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Ngự là",
+     "expect": "Ngự là Lạc",
+     "actual": "Ngự là con",
+     "ok": false,
+     "donors": [
+      "cũng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Mũi là",
+     "expect": "Mũi là Lạc",
+     "actual": "Mũi là biểu",
+     "ok": false,
+     "donors": [
+      "cũng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Dân là",
+     "expect": "Dân là Đại",
+     "actual": "Dân là trận",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nghè là",
+     "expect": "Nghè là nhạc",
+     "actual": "Nghè là Mạc",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Người là",
+     "expect": "Người là các",
+     "actual": "Người là tên",
+     "ok": false,
+     "donors": [
+      "chúng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Khmer là",
+     "expect": "Khmer là Phạm",
+     "actual": "Khmer là hành",
+     "ok": false,
+     "donors": [
+      "con"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nho là",
+     "expect": "Nho là bậc",
+     "actual": "Nho là anh",
+     "ok": false,
+     "donors": [
+      "cho"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Một là",
+     "expect": "Một là phụ",
+     "actual": "Một là các",
+     "ok": false,
+     "donors": [
+      "như"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Mỹ là",
+     "expect": "Mỹ là trong",
+     "actual": "Mỹ là Cách",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Marineris là",
+     "expect": "Marineris là An",
+     "actual": "Marineris là hành",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đo là",
+     "expect": "Đo là sông",
+     "actual": "Đo là tác",
+     "ok": false,
+     "donors": [
+      "nghĩa"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Khiêm là",
+     "expect": "Khiêm là Quang",
+     "actual": "Khiêm là tên",
+     "ok": false,
+     "donors": [
+      "chính"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Chơn là",
+     "expect": "Chơn là Phủ",
+     "actual": "Chơn là Vạn",
+     "ok": false,
+     "donors": [
+      "gọi"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  },
+  "ngau_nhien": {
+   "n_fill": 80,
+   "hit": 4,
+   "rate": 0.05,
+   "examples": [
+    {
+     "prompt": "Bengal là",
+     "expect": "Bengal là dòng",
+     "actual": "Bengal là di",
+     "ok": false,
+     "donors": [
+      "Đây"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Cực là",
+     "expect": "Cực là Đắk",
+     "actual": "Cực là Tây",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Ngự là",
+     "expect": "Ngự là Lạc",
+     "actual": "Ngự là cô",
+     "ok": false,
+     "donors": [
+      "cũng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Mũi là",
+     "expect": "Mũi là Lạc",
+     "actual": "Mũi là Đông",
+     "ok": false,
+     "donors": [
+      "cũng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Dân là",
+     "expect": "Dân là Đại",
+     "actual": "Dân là Hữu",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nghè là",
+     "expect": "Nghè là nhạc",
+     "actual": "Nghè là di",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Người là",
+     "expect": "Người là các",
+     "actual": "Người là Lạc",
+     "ok": false,
+     "donors": [
+      "chúng"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Khmer là",
+     "expect": "Khmer là Phạm",
+     "actual": "Khmer là Lý",
+     "ok": false,
+     "donors": [
+      "con"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nho là",
+     "expect": "Nho là bậc",
+     "actual": "Nho là trong",
+     "ok": false,
+     "donors": [
+      "cho"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Một là",
+     "expect": "Một là phụ",
+     "actual": "Một là Trại",
+     "ok": false,
+     "donors": [
+      "như"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Mỹ là",
+     "expect": "Mỹ là trong",
+     "actual": "Mỹ là cá",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Marineris là",
+     "expect": "Marineris là An",
+     "actual": "Marineris là bệnh",
+     "ok": false,
+     "donors": [
+      "nhất"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đo là",
+     "expect": "Đo là sông",
+     "actual": "Đo là bè",
+     "ok": false,
+     "donors": [
+      "nghĩa"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Khiêm là",
+     "expect": "Khiêm là Quang",
+     "actual": "Khiêm là Nam",
+     "ok": false,
+     "donors": [
+      "chính"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Chơn là",
+     "expect": "Chơn là Phủ",
+     "actual": "Chơn là Phủ",
+     "ok": true,
+     "donors": [
+      "gọi"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  }
+ },
+ "gate": {
+  "g1": true,
+  "g2": true,
+  "g3": true,
+  "g4": true,
+  "q1": true,
+  "pass": true
+ },
+ "scaffold": {
+  "scaffold": "off",
+  "case_scaffold": "keep",
+  "n_STOP": 0,
+  "n_BAD_PRED": 0,
+  "n_KINSHIP": 0
+ },
+ "seconds": 10.1
+}

@@ -1,0 +1,175 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=16928) → out/logs/load_network_v12_sent_20260729_204915.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.1s] ✓ unpickle  (3.1s)
+[     3.1s] ▶ vocab (32002 token)
+[     3.2s] ✓ vocab (32002 token)  (0.0s)
+[     3.2s] ▶ adjacency
+[    12.5s] ✓ adjacency  (9.3s)
+[    12.5s] ▶ embedding
+[    12.6s] ✓ embedding  (0.1s)
+[    12.6s] ▶ parents
+[    12.6s] parents: deserialize 430447 records …
+[    12.6s] parents 5000/430447 (1.2%)
+[    12.7s] parents 10000/430447 (2.3%)
+[    12.7s] parents 15000/430447 (3.5%)
+[    12.8s] parents 20000/430447 (4.6%)
+[    12.8s] parents 25000/430447 (5.8%)
+[    12.8s] parents 30000/430447 (7.0%)
+[    12.9s] parents 35000/430447 (8.1%)
+[    12.9s] parents 40000/430447 (9.3%)
+[    13.0s] parents 45000/430447 (10.5%)
+[    13.0s] parents 50000/430447 (11.6%)
+[    13.0s] parents 55000/430447 (12.8%)
+[    13.1s] parents 60000/430447 (13.9%)
+[    13.1s] parents 65000/430447 (15.1%)
+[    13.2s] parents 70000/430447 (16.3%)
+[    13.2s] parents 75000/430447 (17.4%)
+[    13.2s] parents 80000/430447 (18.6%)
+[    13.3s] parents 85000/430447 (19.7%)
+[    13.3s] parents 90000/430447 (20.9%)
+[    13.3s] parents 95000/430447 (22.1%)
+[    13.4s] parents 100000/430447 (23.2%)
+[    13.4s] parents 105000/430447 (24.4%)
+[    13.5s] parents 110000/430447 (25.6%)
+[    13.5s] parents 115000/430447 (26.7%)
+[    13.6s] parents 120000/430447 (27.9%)
+[    13.6s] parents 125000/430447 (29.0%)
+[    13.7s] parents 130000/430447 (30.2%)
+[    13.7s] parents 135000/430447 (31.4%)
+[    13.8s] parents 140000/430447 (32.5%)
+[    13.9s] parents 145000/430447 (33.7%)
+[    13.9s] parents 150000/430447 (34.8%)
+[    14.0s] parents 155000/430447 (36.0%)
+[    14.1s] parents 160000/430447 (37.2%)
+[    14.1s] parents 165000/430447 (38.3%)
+[    14.2s] parents 170000/430447 (39.5%)
+[    14.3s] parents 175000/430447 (40.7%)
+[    14.4s] parents 180000/430447 (41.8%)
+[    14.5s] parents 185000/430447 (43.0%)
+[    14.6s] parents 190000/430447 (44.1%)
+[    14.6s] parents 195000/430447 (45.3%)
+[    14.7s] parents 200000/430447 (46.5%)
+[    14.8s] parents 205000/430447 (47.6%)
+[    14.9s] parents 210000/430447 (48.8%)
+[    15.0s] parents 215000/430447 (49.9%)
+[    15.1s] parents 220000/430447 (51.1%)
+[    15.2s] parents 225000/430447 (52.3%)
+[    15.2s] parents 230000/430447 (53.4%)
+[    15.3s] parents 235000/430447 (54.6%)
+[    15.4s] parents 240000/430447 (55.8%)
+[    15.5s] parents 245000/430447 (56.9%)
+[    15.5s] parents 250000/430447 (58.1%)
+[    15.6s] parents 255000/430447 (59.2%)
+[    15.7s] parents 260000/430447 (60.4%)
+[    15.8s] parents 265000/430447 (61.6%)
+[    15.9s] parents 270000/430447 (62.7%)
+[    16.0s] parents 275000/430447 (63.9%)
+[    16.0s] parents 280000/430447 (65.0%)
+[    16.1s] parents 285000/430447 (66.2%)
+[    16.2s] parents 290000/430447 (67.4%)
+[    16.3s] parents 295000/430447 (68.5%)
+[    16.4s] parents 300000/430447 (69.7%)
+[    16.5s] parents 305000/430447 (70.9%)
+[    16.6s] parents 310000/430447 (72.0%)
+[    16.6s] parents 315000/430447 (73.2%)
+[    16.7s] parents 320000/430447 (74.3%)
+[    16.8s] parents 325000/430447 (75.5%)
+[    16.9s] parents 330000/430447 (76.7%)
+[    17.0s] parents 335000/430447 (77.8%)
+[    17.1s] parents 340000/430447 (79.0%)
+[    17.1s] parents 345000/430447 (80.1%)
+[    17.2s] parents 350000/430447 (81.3%)
+[    17.3s] parents 355000/430447 (82.5%)
+[    17.4s] parents 360000/430447 (83.6%)
+[    17.5s] parents 365000/430447 (84.8%)
+[    17.6s] parents 370000/430447 (86.0%)
+[    17.6s] parents 375000/430447 (87.1%)
+[    17.7s] parents 380000/430447 (88.3%)
+[    17.8s] parents 385000/430447 (89.4%)
+[    17.9s] parents 390000/430447 (90.6%)
+[    18.0s] parents 395000/430447 (91.8%)
+[    18.1s] parents 400000/430447 (92.9%)
+[    18.2s] parents 405000/430447 (94.1%)
+[    18.2s] parents 410000/430447 (95.2%)
+[    18.3s] parents 415000/430447 (96.4%)
+[    18.4s] parents 420000/430447 (97.6%)
+[    18.4s] parents 425000/430447 (98.7%)
+[    18.5s] parents 430000/430447 (99.9%)
+[    30.8s] ▶ rebuild_hierarchical_index …
+[    32.6s] ✓ rebuild_hierarchical_index (1.7s)
+[    37.2s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    37.2s] ✓ parents  (24.6s)
+[    37.2s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    38.9s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    38.9s] ✓ load_checkpoint XONG
+[39s] ✓ 430,447 cha
+[51s] dựng W_skip d_max=12 min_count=2 …
+[70s] ✓ spans=431,278 edge_adds=74,013,337
+  nnz theo d: [1323688, 1997857, 2169571, 2198752, 2176854, 2122170, 2058908, 1986186, 1908136, 1829315, 1749220, 1669246]
+[101s] 400 ca đo (hist→gold trong câu)
+
+========================================================================
+thước                           W_skip d≤D       chỉ d=1
+========================================================================
+hard∩ ≠ ∅                            0.873         0.983
+gold∈hard | hard≠∅                   0.307         0.639
+gold∈hard (mọi ca)                   0.268         0.627
+gold∈soft top-10                     0.307         0.355
+soft10 | ≥2 proposer                 0.305         0.000
+========================================================================
+quét ctx_max (W_skip đầy):
+  ctx=2: hard≠∅=0.953  gold|hard=0.391  soft10=0.333  soft10|multi=0.332 (n_multi=383)
+  ctx=3: hard≠∅=0.925  gold|hard=0.335  soft10=0.312  soft10|multi=0.311 (n_multi=389)
+  ctx=4: hard≠∅=0.900  gold|hard=0.308  soft10=0.307  soft10|multi=0.305 (n_multi=393)
+  ctx=8: hard≠∅=0.873  gold|hard=0.307  soft10=0.307  soft10|multi=0.305 (n_multi=393)
+G1 hard∩≠∅ ≥0.30          : ĐẠT (0.873)
+G2 gold∈hard|≠∅ ≥0.40     : TRƯỢT (0.307)
+G3 soft top-10 ≥0.50      : TRƯỢT (0.307)
+G4 soft10 − d1 ≥+0.05     : TRƯỢT (-0.047)
+G4b soft10|multi − d1 ≥+0.05: ĐẠT (+0.305)
+ctx_max tốt nhất theo soft10|multi: 2 (0.332)
+⇒ ĐÁNG thử cắm kênh W_skip vào sinh (A/B, mặc định vẫn OFF)
+
+── demo (tối đa 8) ──
+  [Đi ra ngoài tại] → gold=bên  hard✗ soft10✗
+     proposers: Đi@d4→21, ra@d3→64, ngoài@d2→64, tại@d1→64
+     hard∩: {cũng không và một trong là có}
+     soft top: một không có là trong
+  [Vậy mà] → gold=hắn  hard✓ soft10✗
+     proposers: Vậy@d2→37, mà@d1→64
+     hard∩: {tại em phải chỉ cũng cái nói để}…
+     soft top: không là bạn nói các
+  [Năm 1] → gold=2  hard✓ soft10✓
+     proposers: Năm@d2→23, 1@d1→64
+     hard∩: {là tuổi 0 1 2 3 4 5}…
+     soft top: 9 0 8 2 5
+  [Báo Quân đội Nhân] → gold=dân  hard✓ soft10✓
+     proposers: Báo@d4→5, Quân@d3→64, đội@d2→64, Nhân@d1→64
+     hard∩: {dân là}
+     soft top: dân là không có cũng
+  [Ồ tôi] → gold=đã  hard✓ soft10✓
+     proposers: Ồ@d2→7, tôi@d1→64
+     hard∩: {không chưa đã hiểu có}
+     soft top: không có đã hiểu chưa
+  [Giải nghĩa] → gold=rất  hard✓ soft10✗
+     proposers: Giải@d2→64, nghĩa@d1→64
+     hard∩: {phần người như khẩu bị hơi Nam chỗ}…
+     soft top: khẩu cũ có từ phương
+  [Nhận thức về] → gold=thương  hard✗ soft10✗
+     proposers: Nhận@d3→9, thức@d2→64, về@d1→64
+     hard∩: {}
+     soft top: các một cách việc những
+  [Món ngon từ thực vật] → gold=Cho  hard✗ soft10✗
+     proposers: Món@d5→1, ngon@d4→32, từ@d3→64, thực@d2→64, vật@d1→64
+     hard∩: {}
+     soft top: có và không thể của
+
+  tay 'Việt Nam' ids=2 hard∩={không Dân Cộng là gia có} soft={ là có Cộng Dân không gia Á và }
+
+  tay 'Nhà Lý' ids=2 hard∩={Đức và thành đã là do} soft={ do thành là Đức đã và học Hỏa }
+
+  tay 'Ngô Quyền' ids=2 hard∩={} soft={ Diệm Tổ Văn sinh Ngập Linh riêng lực }
+
+[125s] → out/w_skip_v12.log

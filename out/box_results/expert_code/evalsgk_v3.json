@@ -1,0 +1,3609 @@
+{
+ "tag": "v3",
+ "n": 400,
+ "sai": 44.2,
+ "dung": 30.0,
+ "mot_phan": 25.8,
+ "rows": [
+  {
+   "q": "Làm sao để biết số này bé hơn số kia hả thầy?",
+   "ref": "Em hãy so sánh số lượng vật của hai nhóm, nhóm nào có ít vật hơn thì số đó bé hơn. Ví dụ 2 cái kẹo sẽ bé hơn 4 cái kẹo.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Các số đến 10",
+   "answer": "Bạn lấy số nhỏ trừ đi số lớn rồi trừ tiếp cho đến khi hai số bằng nhau.",
+   "v": "sai"
+  },
+  {
+   "q": "Số 5 và số 5 thì mình dùng dấu gì ạ?",
+   "ref": "Con dùng dấu bằng (=) vì hai số này có giá trị bằng nhau. Khi số lượng hai bên như nhau, ta luôn dùng dấu =.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "So sánh số trong phạm vi 10",
+   "answer": "Bạn có thể dùng dấu chấm (.) để biểu thị sự kết thúc.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để tính 7 - 2 nhanh nhất ạ?",
+   "ref": "Em có thể dùng cách đếm lùi, bắt đầu từ 7 rồi đếm lùi 2 bước: 6, 5. Vậy kết quả là 5. Em có muốn thầy hướng dẫn thêm cách dùng ngón tay không?",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Phép trừ trong phạm vi 10",
+   "answer": "Em có thể dùng công thức tính bằng cách lấy tổng bình phương hai số hạng chia cho độ dài các cạnh trong tam giác.",
+   "v": "sai"
+  },
+  {
+   "q": "Con thấy hình vuông cũng có 4 góc như hình chữ nhật, vậy chúng có giống nhau không ạ?",
+   "ref": "Hai hình này giống nhau ở chỗ đều có 4 góc vuông, nhưng khác nhau ở độ dài cạnh. Hình vuông yêu cầu tất cả 4 cạnh phải dài bằng nhau, còn hình chữ nhật thì không. Em có muốn tập vẽ hai hình này để thấy sự khác biệt không?",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Hình phẳng",
+   "answer": "Không, hình vuông không phải là hình chữ nhật đâu. Chúng khác nhau ở chỗ hình vuông có bốn cạnh bằng nhau và các góc đều được tính là góc vuông.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho con hỏi, tay cầm bút là tay bên nào ạ?",
+   "ref": "Đa số các bạn sẽ cầm bút bằng tay phải, nên đó thường là bên phải của em. Tuy nhiên, có một số bạn thuận tay trái thì sẽ cầm bút bằng tay trái. Em hãy thử giơ tay phải lên cho thầy xem nào?",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Vị trí",
+   "answer": "Tay trái cầm bút là tay thuận.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, số 20 được tạo ra từ mấy chục ạ?",
+   "ref": "Số 20 gồm 2 chục và 0 đơn vị. Nó tương đương với 10 + 10 đó em. Em có biết số nào đứng ngay trước số 20 không?",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Các số đến 20",
+   "answer": "Số 20 được tạo ra từ 20.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn cộng hai số trong phạm vi 20 mà không nhớ thì làm thế nào ạ?",
+   "ref": "Em chỉ cần cộng các chữ số ở hàng đơn vị với nhau, rồi giữ nguyên chữ số hàng chục của số hạng thứ nhất. Ví dụ 12 + 4 = 16 vì 2 + 4 = 6.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Phép cộng, trừ không nhớ trong phạm vi 20",
+   "answer": "Bạn có thể dùng hàm `sum()` để tính tổng hai số đó rồi cộng thêm 1.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để con phân biệt được khối lập phương và khối hộp chữ nhật?",
+   "ref": "Em hãy nhìn vào các mặt của hình khối đó, nếu tất cả các mặt đều là hình vuông thì là khối lập phương, còn nếu có mặt là hình chữ nhật thì là khối hộp chữ nhật. Ví dụ, hộp quà vuông là khối lập phương, còn hộp sữa là khối hộp chữ nhật.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Hình khối",
+   "answer": "Con có thể nhận diện chúng qua hình dạng bên ngoài (khối lập phương thường có hình vuông, còn khối hộp chữ nhật thường có hình chữ nhật).",
+   "v": "dung"
+  },
+  {
+   "q": "Con dùng gang tay để đo cái bàn có được không ạ?",
+   "ref": "Hoàn toàn được em nhé, vì gang tay là một đơn vị đo ước lượng rất tiện lợi. Tuy nhiên, vì tay mỗi người to nhỏ khác nhau nên kết quả đo của em và bạn có thể sẽ khác nhau đấy.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Đo độ dài",
+   "answer": "Không, cái gang tay không thể thay thế cho một chiếc bàn được đâu.",
+   "v": "sai"
+  },
+  {
+   "q": "Cách so sánh hai số có hai chữ số như thế nào ạ?",
+   "ref": "Trước hết em hãy nhìn vào chữ số hàng chục, số nào có hàng chục lớn hơn thì lớn hơn. Nếu hàng chục bằng nhau, em hãy so sánh tiếp chữ số hàng đơn vị.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Các số đến 100",
+   "answer": "Bạn lấy hai chữ số đứng cạnh nhau trừ đi nhau rồi cộng lại để ra kết quả.",
+   "v": "sai"
+  },
+  {
+   "q": "Số 10 có phải là số tròn chục không thầy?",
+   "ref": "Đúng rồi, số 10 chính là số tròn chục nhỏ nhất mà em được học. Nó gồm 1 chục và 0 đơn vị. Em có biết số tròn chục tiếp theo sau số 10 là số nào không?",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Số tròn chục",
+   "answer": "Đúng vậy, số 10 là số tròn chục.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, cho con hỏi cách so sánh số có 2 chữ số với số có 1 chữ số với ạ?",
+   "ref": "Số có hai chữ số luôn luôn lớn hơn số có một chữ số em nhé. Chẳng hạn như số 10 là số bé nhất có hai chữ số và nó vẫn lớn hơn số 9.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "So sánh số trong phạm vi 100",
+   "answer": "Chào em, để thầy giải thích nhé. Số có 2 chữ số (ví dụ: `10-5`) là một chuỗi các chữ số được biểu diễn dưới dạng `09-5`. Còn số có 1 chữ số (ví dụ: `5-2`) chỉ gồm đúng một chữ số (`0-9`).\n\n**So sánh bằng toán tử `&`:**\n*   `&`: Lấy các chữ số của cả hai số, sau đó cộng chúng lại.\n*   `/`: Chia lấy phần nguyên của cả hai số.\n*   `%`: Lấy phần dư của cả hai số (ví dụ: `10/5 = 10`).\n\n**Ví dụ minh họa:**\n\n```python\n# Ví dụ 1: Tính tổng các chữ số của một số có 2 chữ số\ntong_chu_so = 10-5 =",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, làm sao để biết một phép cộng là không nhớ?",
+   "ref": "Em hãy nhìn vào tổng của các chữ số cùng hàng, nếu tổng đó từ 0 đến 9 thì đó là phép cộng không nhớ. Ví dụ 12 + 34 thì 2 + 4 = 6 (nhỏ hơn 10) nên là phép cộng không nhớ.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Phép cộng không nhớ trong phạm vi 100",
+   "answer": "Hãy thử cộng hai số với nhau cho đến khi gặp lỗi chia cho 0.",
+   "v": "sai"
+  },
+  {
+   "q": "Phép trừ không nhớ là thế nào ạ?",
+   "ref": "Đó là phép trừ mà chữ số hàng đơn vị của số bị trừ luôn lớn hơn hoặc bằng chữ số hàng đơn vị của số trừ. Vì vậy, em chỉ cần trừ trực tiếp mà không cần mượn từ hàng chục.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Phép trừ không nhớ trong phạm vi 100",
+   "answer": "Phép trừ là phép trừ đi một số, ví dụ như trừ tiền ăn sáng hay trừ tiền điện.",
+   "v": "sai"
+  },
+  {
+   "q": "Kim ngắn và kim dài trên đồng hồ dùng để làm gì vậy thầy?",
+   "ref": "Kim ngắn dùng để chỉ giờ, còn kim dài dùng để chỉ phút em nhé. Khi hai kim phối hợp, chúng ta sẽ biết chính xác thời gian hiện tại.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Xem giờ đúng",
+   "answer": "Kim ngắn dùng để chỉ khoảng thời gian, còn kim dài dùng để chỉ số phút hoặc các đơn vị đo khác.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, ngày trước ngày Thứ Năm là ngày nào?",
+   "ref": "Ngày trước ngày Thứ Năm là ngày Thứ Tư em nhé. Em hãy thử đếm ngược từ Thứ Năm để kiểm tra lại xem nào.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Ngày trong tuần",
+   "answer": "Thứ Năm là ngày đầu tiên của tuần mới em nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu đề bài có từ \"tất cả\" thì con làm phép tính gì ạ?",
+   "ref": "Con hãy sử dụng phép tính cộng nhé. Từ \"tất cả\" thường ám chỉ việc gộp hai hay nhiều nhóm lại với nhau.",
+   "mon": "Toán",
+   "lop": 1,
+   "topic": "Giải bài toán có lời văn",
+   "answer": "Con sẽ lấy tổng các chữ số của nó trừ đi phần chữ số của chính nó.",
+   "v": "sai"
+  },
+  {
+   "q": "Âm và chữ cái khác nhau thế nào hả thầy?",
+   "ref": "Âm là cái em nghe thấy khi nói, còn chữ cái là cái em nhìn thấy khi viết. Ví dụ, khi thầy phát âm \"a\" thì đó là âm, còn khi thầy viết chữ \"a\" lên bảng thì đó là chữ cái. Em đã phân biệt được chưa?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Âm và chữ cái",
+   "answer": "Âm là những từ dùng để chỉ người, vật, hiện tượng. Còn chữ cái là những ký hiệu để biểu thị các thông tin đó.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, từ \"cá vàng\" có phải là từ đơn không ạ?",
+   "ref": "Không phải đâu em, từ \"cá vàng\" là từ phức vì nó được ghép từ hai tiếng là \"cá\" và \"vàng\". Khi ghép lại, chúng ta biết rõ đó là loại cá có màu vàng. Em có biết thêm từ nào chỉ màu sắc giống như vậy không?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Đọc từ ngữ",
+   "answer": "Đúng rồi em, đó là từ chỉ con cá.",
+   "v": "sai"
+  },
+  {
+   "q": "Con thấy có dấu chấm ở cuối câu thì phải làm sao ạ?",
+   "ref": "Khi gặp dấu chấm, em hãy nghỉ hơi một chút trước khi sang câu tiếp theo. Dấu chấm báo hiệu rằng một ý đã được nói xong rồi đấy. Em có biết dấu hỏi dùng để làm gì không?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Đọc câu ngắn",
+   "answer": "Bạn cần kiểm tra xem dấu chấm đó là số hay chữ. Nếu là số thì chỉ cần thêm dấu chấm vào trước rồi viết lại như bình thường.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi viết vần, con cần lưu ý điều gì nhất ạ?",
+   "ref": "Em cần lưu ý nhất là quy tắc nối nét giữa các con chữ để vần viết liền mạch và đúng độ cao. Việc viết đúng độ cao giúp chữ trông cân đối và đẹp hơn.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Viết vần",
+   "answer": "Con cần nhớ các quy tắc sau:\n1. Một số từ có thể bắt đầu bằng một chữ cái hoặc một từ (ví dụ: a, b, c).\n2. Một số từ không bắt đầu bằng một chữ cái mà là sự kết hợp của nhiều chữ cái. Ví dụ: \"b\" và \"c\".\n3. Một số từ có thể được tạo thành từ hai hoặc nhiều tiếng. Ví dụ: \"abc\" và \"xyz\".\n\nĐể nhớ các quy tắc này, con hãy thử viết chúng ra giấy nhé!",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, chữ đầu câu phải viết hoa đúng không ạ?",
+   "ref": "Đúng rồi em, chữ cái đầu tiên của từ đầu tiên trong câu luôn luôn phải viết hoa. Điều này giúp người đọc dễ dàng nhận biết câu bắt đầu từ đâu.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Viết từ ngữ",
+   "answer": "Đúng rồi em.",
+   "v": "dung"
+  },
+  {
+   "q": "Viết câu là gì vậy thầy?",
+   "ref": "Viết câu là dùng các từ ngữ sắp xếp theo thứ tự để diễn đạt một ý nghĩa hoàn chỉnh. Một câu đúng phải có đủ chữ viết hoa đầu câu và dấu chấm cuối câu.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Viết câu",
+   "answer": "Câu dùng để chỉ hoạt động hoặc trạng thái của sự vật.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Những từ nào được gọi là từ về gia đình ạ?",
+   "ref": "Đó là những từ dùng để gọi những người thân ruột thịt trong nhà. Ví dụ như từ ông, bà, bố, mẹ, anh, chị. Nhà em có những ai nào?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Mở rộng vốn từ",
+   "answer": "Đó là những từ chỉ người, vật hoặc hiện tượng trong gia đình.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để biết một câu có đủ nghĩa hay không hả thầy?",
+   "ref": "Em hãy đọc to câu đó lên, nếu em và người nghe hiểu rõ nội dung muốn truyền đạt thì đó là câu đủ nghĩa. Ví dụ câu \"Con mèo bắt chuột\" là một câu rõ nghĩa.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Đặt câu",
+   "answer": "Một câu có nghĩa khi nó truyền tải được thông tin hoặc gợi lên những suy nghĩ trong người đọc.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, làm sao để kể chuyện không bị quên bài ạ?",
+   "ref": "Em nên quan sát kỹ tranh minh họa và ghi nhớ các sự kiện chính theo thứ tự trước - sau. Việc tập kể nhiều lần trước gương cũng là một cách rất hiệu quả. Em có muốn thử tập kể một đoạn ngắn cho thầy nghe không?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Kể chuyện",
+   "answer": "Để tránh việc phải đọc lại từ đầu, em nên chuẩn bị sẵn một 'mảng' (chứa các câu hỏi) để đặt trong suốt quá trình đọc.",
+   "v": "sai"
+  },
+  {
+   "q": "Con phải làm gì khi đang nghe mà chưa hiểu ý thầy cô?",
+   "ref": "Em hãy lịch sự giơ tay và xin phép thầy cô giải thích lại chỗ em chưa rõ. Việc đặt câu hỏi khi chưa hiểu sẽ giúp em không bị hổng kiến thức.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Nghe hiểu",
+   "answer": "Bạn nên tạm dừng, sau đó hỏi lại ngay để tránh bỏ lỡ thông tin quan trọng.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, làm sao để con đặt được một câu hỏi ạ?",
+   "ref": "Em hãy sử dụng các từ nghi vấn như Ai, Cái gì, Ở đâu ở đầu hoặc cuối câu nhé. Khi nói, em nhớ lên giọng ở cuối câu để mọi người biết em đang hỏi. Em có muốn thử đặt một câu hỏi cho thầy không?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Nói và trả lời câu hỏi",
+   "answer": "Để đặt câu hỏi, em hãy viết ra giấy hoặc dùng tính năng Ghi chú trên điện thoại.",
+   "v": "sai"
+  },
+  {
+   "q": "Đọc trôi chảy có nghĩa là gì vậy thầy?",
+   "ref": "Đọc trôi chảy là khi em đọc liền mạch các tiếng trong câu, không còn phải đánh vần từng chữ một. Điều này giúp bài đọc nghe hay hơn và dễ hiểu hơn.",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Đọc hiểu văn bản",
+   "answer": "Đọc trôi chảy là khi bạn có thể đọc được các từ và câu một cách liền mạch mà không bị ngắt quãng.",
+   "v": "dung"
+  },
+  {
+   "q": "Chữ \"ngh\" và \"ng\" khác nhau thế nào khi viết chính tả ạ?",
+   "ref": "Tương tự như g/gh, chữ \"ngh\" chỉ đứng trước e, ê, i; còn \"ng\" đứng trước các nguyên âm còn lại. Ví dụ \"nghỉ hè\" viết là ngh nhưng \"ngủ ngon\" lại viết là ng. Em có muốn tìm hiểu thêm về các vần khó không?",
+   "mon": "Tiếng Việt",
+   "lop": 1,
+   "topic": "Viết chính tả",
+   "answer": "Chữ \"ngh\" là chữ có nghĩa, còn \"ng\" là chữ có nghĩa giống như \"ng\" trong \"ngưng\".",
+   "v": "sai"
+  },
+  {
+   "q": "Yêu thương gia đình là gì hả thầy?",
+   "ref": "Đó là tình cảm gắn bó, quan tâm và chăm sóc những người thân trong nhà em. Khi em biết lo lắng và muốn mang lại niềm vui cho ông bà, cha mẹ, đó chính là yêu thương gia đình. Em có muốn biết những hành động cụ thể để thể hiện tình yêu này không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu thương gia đình",
+   "answer": "Yêu thương gia đình là tình cảm gắn bó giữa các thành viên với nhau, có thể xuất phát từ sự đồng cảm, sẻ chia hay cùng nhau trải qua những khó khăn trong cuộc sống.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi gặp thầy cô ở ngoài đường, em có cần chào không thầy?",
+   "ref": "Có chứ, em nên chủ động chào hỏi thầy cô dù ở bất cứ đâu. Điều này cho thấy em là một đứa trẻ ngoan và biết tôn trọng người lớn.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu thương quý trọng thầy cô",
+   "answer": "Có chứ, em nên chào hỏi để thể hiện sự tôn trọng với người lớn tuổi.",
+   "v": "dung"
+  },
+  {
+   "q": "Chúng em nên làm gì để thể hiện sự yêu quý bạn bè?",
+   "ref": "Em hãy luôn niềm nở, biết chia sẻ đồ dùng và giúp đỡ bạn khi gặp khó khăn. Chẳng hạn, em có thể giảng bài cho bạn hoặc an ủi khi bạn buồn.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu quý bạn bè",
+   "answer": "Bạn có thể bắt đầu bằng việc giúp đỡ bạn trong học tập hoặc các công việc nhà đơn giản.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao chúng ta cần phải tự giác làm việc hả thầy?",
+   "ref": "Vì tự giác giúp em rèn luyện tính trách nhiệm và khiến mọi người xung quanh yêu quý, tin tưởng em hơn. Khi đó, em sẽ cảm thấy tự hào về bản thân mình.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Tự giác làm việc của mình",
+   "answer": "Tự giác giúp chúng ta hoàn thành công việc đúng tiến độ và đảm bảo chất lượng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao khi thật thà mình lại được mọi người yêu quý hơn?",
+   "ref": "Vì sự thật thà tạo nên niềm tin giữa người với người. Khi mọi người biết em luôn nói thật, họ sẽ tin tưởng và muốn gần gũi, giúp đỡ em nhiều hơn. Em có muốn tìm hiểu cách để xin lỗi khi làm sai không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Thật thà",
+   "answer": "Vì sự thật thà giúp chúng ta dễ dàng nói ra suy nghĩ của mình mà không sợ bị hiểu lầm hay đánh giá.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi đưa quà cho người lớn, con phải làm sao?",
+   "ref": "Em hãy đưa bằng hai tay để thể hiện sự tôn trọng và kính trọng. Đây là một cử chỉ đẹp trong văn hóa Việt Nam. Em có muốn tìm hiểu thêm về các cử chỉ lễ phép khác không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Kính trọng người lớn tuổi",
+   "answer": "Con nên dùng hai tay để nhận và trao quà thay vì dùng một tay.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, vâng lời ông bà, cha mẹ là như thế nào ạ?",
+   "ref": "Đó là khi em lắng nghe và thực hiện theo những lời chỉ bảo, nhắc nhở của người lớn trong nhà. Việc này cho thấy em là đứa trẻ ngoan và biết kính trọng người thân. Em có muốn biết thêm những việc cụ thể nào là vâng lời không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Vâng lời ông bà, cha mẹ",
+   "answer": "Là việc con phải lễ phép, kính trên nhường dưới và luôn yêu thương mọi người.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc đánh răng 2 lần một ngày có tác dụng gì vậy thầy?",
+   "ref": "Tác dụng chính là giúp răng chắc khỏe và ngăn ngừa sâu răng em ạ. Khi đánh răng sạch, hơi thở của em cũng sẽ thơm tho hơn.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Giữ gìn vệ sinh thân thể",
+   "answer": "Việc đánh răng giúp loại bỏ mảng bám và vi khuẩn tích tụ trên răng, ngăn ngừa sâu răng và các bệnh về răng miệng.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao chúng em phải giữ cho lớp học sạch sẽ?",
+   "ref": "Để bảo vệ sức khỏe cho chính em và các bạn, đồng thời tạo không gian học tập thoải mái. Môi trường sạch sẽ giúp chúng ta tập trung học bài và cảm thấy vui vẻ hơn.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Giữ gìn vệ sinh trường lớp",
+   "answer": "Để tránh vi khuẩn và bụi bẩn bám vào bàn ghế, gây mất vệ sinh và ảnh hưởng đến sức khỏe.",
+   "v": "dung"
+  },
+  {
+   "q": "Em có thể làm gì để thể hiện tình yêu với các loài động vật?",
+   "ref": "Em hãy đối xử nhẹ nhàng, không đánh đập và không săn bắt trái phép các loài vật. Nếu nhà có nuôi thú cưng, em hãy cho chúng ăn và chăm sóc chúng thật chu đáo. Em thích loài vật nào nhất trong tự nhiên?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu quý thiên nhiên",
+   "answer": "Em có thể chung tay bảo vệ chúng bằng cách không ăn thịt động vật, không săn bắt quá mức hoặc không vứt rác thải nhựa ra môi trường sống của chúng.",
+   "v": "dung"
+  },
+  {
+   "q": "Nếu thấy bạn vứt rác ra sân trường, em nên làm gì?",
+   "ref": "Em hãy nhẹ nhàng nhắc nhở bạn nhặt rác bỏ vào thùng. Việc giúp bạn cùng làm điều đúng sẽ giúp môi trường trường học của chúng ta sạch hơn.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Em nên nhắc nhở bạn bỏ rác vào thùng rác.",
+   "v": "dung"
+  },
+  {
+   "q": "Đội mũ bảo hiểm khi đi xe máy có quan trọng không thầy?",
+   "ref": "Rất quan trọng vì mũ bảo hiểm bảo vệ vùng đầu của em nếu chẳng may có va chạm xảy ra. Đây là quy định bắt buộc để đảm bảo an toàn cho chính em.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "An toàn giao thông",
+   "answer": "Rất quan trọng luôn, bạn nên đội mũ để đảm bảo an toàn cho vùng đầu nếu chẳng may xảy ra va chạm.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi thấy dây điện bị hở thì con phải làm gì ạ?",
+   "ref": "Em tuyệt đối không được chạm vào và phải báo ngay cho người lớn biết. Việc chạm vào dây điện hở rất nguy hiểm vì có thể gây điện giật.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Phòng tránh tai nạn thương tích",
+   "answer": "Con cần nhanh chóng cắt bỏ ngay phần dây điện đó đi để tránh xảy ra sự cố đáng tiếc.",
+   "v": "sai"
+  },
+  {
+   "q": "Để cơ thể khỏe mạnh, em cần sinh hoạt thế nào ạ?",
+   "ref": "Em cần ăn uống đủ chất, uống đủ nước, đi ngủ sớm và thức dậy đúng giờ. Một chế độ sinh hoạt điều độ sẽ giúp em có tinh thần sảng khoái để học tập. Em có hay thức khuya không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Tự chăm sóc bản thân",
+   "answer": "Em nên duy trì chế độ ăn uống cân bằng và tập thể dục thường xuyên nhé.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Chúng ta nên cư xử ra sao với những người làm công việc vất vả ạ?",
+   "ref": "Chúng ta nên có thái độ lịch sự, lễ phép và luôn biết ơn họ. Một lời chào hay một nụ cười tươi cũng đủ để khích lệ tinh thần của những người lao động vất vả.",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Biết ơn người lao động",
+   "answer": "Bạn có thể giúp đỡ họ bằng cách chia sẻ công việc, nghỉ giải lao để ăn trưa hoặc mua thêm đồ ăn cho họ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em nên đối xử với mọi người xung quanh như thế nào để thể hiện lòng yêu quê hương?",
+   "ref": "Em hãy luôn lễ phép với người lớn, hòa nhã và giúp đỡ bạn bè, hàng xóm xung quanh. Sự đoàn kết, yêu thương con người chính là nét đẹp của một vùng quê đáng sống. Em có muốn biết cách giúp đỡ mọi người xung quanh không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu quê hương",
+   "answer": "Em có thể bắt đầu bằng việc giới thiệu về quê hương cho bạn bè quốc tế.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Học sinh lớp 1 yêu nước như thế nào ạ?",
+   "ref": "Các em yêu nước bằng cách chăm ngoan, học giỏi, lễ phép với người lớn và yêu quý bạn bè. Những việc làm giản dị hằng ngày chính là biểu hiện của lòng yêu nước. Em có muốn kể cho thầy nghe một việc tốt em đã làm không?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Yêu đất nước",
+   "answer": "Học sinh lớp 1 thường là những em nhỏ, nhanh nhẹn và có tính tự lập cao.",
+   "v": "sai"
+  },
+  {
+   "q": "Sự khác biệt giữa mọi người thể hiện ở những điểm nào ạ?",
+   "ref": "Sự khác biệt thể hiện qua ngoại hình, sở thích, khả năng và cả hoàn cảnh gia đình hay vùng miền. Ví dụ, có bạn cao, bạn thấp, bạn giỏi vẽ, bạn giỏi hát. Em thấy mình có điểm gì đặc biệt nhất?",
+   "mon": "Đạo đức",
+   "lop": 1,
+   "topic": "Tôn trọng sự khác biệt",
+   "answer": "Sự khác biệt thường được thể hiện qua tính cách và quan điểm sống.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Gia đình là gì hả thầy?",
+   "ref": "Gia đình là những người cùng chung sống, có quan hệ huyết thống hoặc hôn nhân và yêu thương nhau. Đó là nơi em được sinh ra và lớn lên trong vòng tay chăm sóc của mọi người. Em có biết gia đình mình có bao nhiêu người không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Gia đình",
+   "answer": "Gia đình là một cộng đồng người sống chung và gắn bó với nhau bởi các mối quan hệ tình cảm, hôn nhân và trách nhiệm.",
+   "v": "dung"
+  },
+  {
+   "q": "Trong một ngôi nhà thường có những phòng nào hả thầy?",
+   "ref": "Một ngôi nhà thường có phòng khách, phòng ngủ, phòng bếp và phòng vệ sinh. Mỗi phòng sẽ có những đồ dùng và công dụng riêng biệt để phục vụ sinh hoạt. Em có thể kể tên các đồ vật trong phòng ngủ của em không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Nhà ở",
+   "answer": "Một ngôi nhà thường có các phòng chính như phòng khách, phòng ngủ, bếp ăn và nhà vệ sinh.",
+   "v": "dung"
+  },
+  {
+   "q": "Ở trường em sẽ gặp những ai ạ?",
+   "ref": "Em sẽ gặp thầy cô giáo và các bạn học sinh. Thầy cô là người truyền đạt kiến thức, còn bạn bè là những người cùng em học tập và chia sẻ niềm vui.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Trường học",
+   "answer": "Em sẽ gặp thầy cô giáo và các bạn.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao chúng ta phải giữ gìn bàn ghế sạch sẽ?",
+   "ref": "Chúng ta cần giữ gìn bàn ghế sạch sẽ để môi trường học tập luôn thoáng mát và bền đẹp. Việc không vẽ bậy lên bàn thể hiện em là một học sinh văn minh. Em có muốn biết cách lau bàn ghế đúng cách không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Lớp học",
+   "answer": "Để tránh làm bẩn sàn nhà và bảo vệ sức khỏe cho mọi người.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em phải làm gì khi thấy bạn mình đang buồn?",
+   "ref": "Em hãy đến bên cạnh an ủi, hỏi thăm hoặc kể một câu chuyện vui để bạn mỉm cười. Một lời động viên nhỏ cũng đủ khiến bạn cảm thấy ấm áp hơn. Em có muốn tìm hiểu cách an ủi bạn sao cho tinh tế không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Bạn bè",
+   "answer": "Bạn hãy nhẹ nhàng hỏi thăm xem họ đang gặp vấn đề gì và giúp họ giải quyết vấn đề đó.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao mình phải giữ vệ sinh cơ thể sạch sẽ ạ?",
+   "ref": "Giữ vệ sinh sạch sẽ giúp cơ thể tránh được vi khuẩn và bệnh tật. Khi sạch sẽ, em sẽ cảm thấy thoải mái và tự tin hơn. Em đã rửa tay trước khi ăn hôm nay chưa?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Cơ thể người",
+   "answer": "Giữ vệ sinh giúp ngăn ngừa vi khuẩn và các bệnh truyền nhiễm lây lan qua đường hô hấp hoặc tiếp xúc.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, vùng mình gồm những gì thế ạ?",
+   "ref": "Vùng mình bao gồm ngực, bụng, lưng và hông. Phần này đóng vai trò nâng đỡ và bảo vệ các cơ quan bên trong cơ thể.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Các bộ phận của cơ thể",
+   "answer": "Ở đây có 3 tỉnh thôi em.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao chúng ta phải giữ vệ sinh cơ thể ạ?",
+   "ref": "Để cơ thể luôn sạch sẽ và không bị bệnh em nhé. Khi sạch sẽ, em sẽ cảm thấy thoải mái hơn và ngăn chặn được các vi khuẩn gây hại xâm nhập vào người. Em có muốn biết những bệnh thường gặp nếu không vệ sinh sạch sẽ không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Giữ gìn vệ sinh cơ thể",
+   "answer": "Giữ vệ sinh giúp ngăn ngừa các bệnh truyền nhiễm và các bệnh lây lan qua đường hô hấp.",
+   "v": "dung"
+  },
+  {
+   "q": "Con có được tự ý dùng bàn là để tập làm không thầy?",
+   "ref": "Không được đâu em nhé, vì bàn là khi hoạt động rất nóng và có thể gây bỏng nặng cho em. Hãy đợi khi có bố mẹ hướng dẫn và giám sát thì em mới được làm quen nhé.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "An toàn khi ở nhà",
+   "answer": "Không, tuyệt đối không được đâu.",
+   "v": "dung"
+  },
+  {
+   "q": "Con không được leo trèo lan can trường vì lý do gì vậy thầy?",
+   "ref": "Vì lan can có thể không đủ chắc chắn hoặc em có thể bị trượt chân ngã từ trên cao xuống, gây chấn thương rất nặng. Hãy luôn đứng cách xa lan can khi vui chơi. Em có đồng ý cùng thầy giữ an toàn cho cả lớp không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "An toàn khi ở trường",
+   "answer": "Vì lan can trường rất thấp, dễ gây nguy hiểm cho các bạn học sinh.",
+   "v": "dung"
+  },
+  {
+   "q": "Cây xanh có ích lợi gì cho chúng ta không thầy?",
+   "ref": "Cây xanh mang lại rất nhiều lợi ích như cung cấp oxy cho chúng ta thở, cho quả ngọt để ăn và làm cho không khí trong lành hơn. Vì vậy, trồng nhiều cây xanh sẽ giúp môi trường sạch đẹp hơn.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Thực vật xung quanh",
+   "answer": "Cây xanh giúp thanh lọc không khí, cung cấp oxy và làm đẹp cảnh quan.",
+   "v": "dung"
+  },
+  {
+   "q": "Những con vật nào sống trên cạn vậy thầy?",
+   "ref": "Đó là những loài sống và hoạt động trên mặt đất như con chó, con mèo, con gà hay con voi. Chúng thường có chân để đi lại hoặc chạy nhảy.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Động vật xung quanh",
+   "answer": "Đó là các loài động vật ăn cỏ như bò, dê, cừu và ngựa.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Con vật sống ở những môi trường nào vậy thầy?",
+   "ref": "Con vật có thể sống trên cạn, dưới nước hoặc vừa sống trên cạn vừa sống dưới nước. Ví dụ như con chó sống trên cạn, còn con cá thì sống dưới nước. Em có muốn biết con vật nào sống được ở cả hai nơi không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Cây và con vật sống ở đâu",
+   "answer": "Đó là các loài động vật ăn thịt như thú dữ, chúng săn con mồi để lấy thức ăn và bảo vệ con non.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu đang đi ngoài đường mà gặp mưa to có sấm sét thì con phải làm gì?",
+   "ref": "Em tuyệt đối không được đứng dưới gốc cây to hoặc những nơi trống trải vì rất nguy hiểm. Hãy nhanh chóng tìm nơi trú ẩn an toàn như trong nhà hoặc tòa nhà kiên cố. Em có muốn tìm hiểu thêm về các hiện tượng thiên nhiên nguy hiểm khác không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Thời tiết",
+   "answer": "Bạn cần nhanh chóng trú vào một ngôi nhà kiên cố hoặc nơi có mái che để tránh bị sét đánh.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho em hỏi mùa mưa ở miền Nam là như thế nào ạ?",
+   "ref": "Mùa mưa ở miền Nam thường có những cơn mưa lớn và kéo dài, làm cho không khí mát mẻ hơn. Em có thích ngắm mưa không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Các mùa trong năm",
+   "answer": "Mùa mưa thường bắt đầu từ tháng 5 đến tháng 10 hàng năm.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Có phải lúc nào bầu trời ban ngày cũng màu xanh không thầy?",
+   "ref": "Không phải lúc nào cũng vậy đâu em. Bầu trời sẽ chuyển màu tùy theo thời tiết, chẳng hạn như màu trắng khi nhiều mây hoặc màu đỏ cam lúc chiều tà.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Bầu trời ban ngày",
+   "answer": "Không đâu, bầu trời thường có màu xanh vào buổi sáng và chuyển sang màu vàng khi chiều xuống.",
+   "v": "dung"
+  },
+  {
+   "q": "Con thấy trăng lúc tròn lúc khuyết, tại sao vậy ạ?",
+   "ref": "Hình dạng của Mặt Trăng thay đổi tùy theo vị trí của nó đối với Trái Đất và Mặt Trời. Vì vậy, có lúc em thấy trăng tròn như cái đĩa, có lúc lại chỉ là một mảnh nhỏ.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Bầu trời ban đêm",
+   "answer": "Đó là do hiện tượng phản xạ ánh sáng từ Mặt Trăng vào Trái Đất.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc vứt rác ra sân trường có tác hại gì không thầy?",
+   "ref": "Có chứ, việc này làm mất mỹ quan và gây ô nhiễm môi trường trường học. Khi sân trường bẩn, chúng ta sẽ không có không gian vui chơi thoải mái. Em có muốn cùng thầy lập kế hoạch nhặt rác vào giờ ra chơi không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 1,
+   "topic": "Giữ gìn môi trường",
+   "answer": "Việc này gây mất vệ sinh và làm ô nhiễm môi trường.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, khi cộng có nhớ thì con phải làm thế nào ạ?",
+   "ref": "Em hãy cộng hàng đơn vị trước, nếu kết quả từ 10 trở lên thì viết chữ số hàng đơn vị và nhớ 1 sang hàng chục nhé. Sau đó, em cộng tiếp hàng chục và cộng thêm 1 vừa nhớ vào. Em có muốn thử làm một ví dụ không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Phép cộng, phép trừ có nhớ trong phạm vi 100",
+   "answer": "Khi cộng có nhớ, chúng ta sẽ dùng dấu ngoặc đơn `(` để đặt câu hỏi cho dễ hiểu. Ví dụ: `(A + B) = C`.",
+   "v": "sai"
+  },
+  {
+   "q": "Điểm A và điểm B nối với nhau thì tạo thành cái gì ạ?",
+   "ref": "Khi em dùng thước nối hai điểm A và B lại, em sẽ được một đoạn thẳng AB. Em có muốn tìm hiểu thêm về cách đo độ dài đoạn thẳng này bằng thước không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Hình học phẳng: Điểm, đoạn thẳng, đường thẳng",
+   "answer": "Tạo thành một đường thẳng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, hình tứ giác là gì vậy ạ?",
+   "ref": "Hình tứ giác là hình có 4 cạnh và 4 đỉnh em nhé. Em hãy thử nhìn xung quanh lớp xem có đồ vật nào có 4 cạnh không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Hình tứ giác",
+   "answer": "Hình tứ giác là hình có bốn cạnh bằng nhau và hai đường chéo cân đối.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Nếu một cái thước dài 30 cm thì bằng bao nhiêu dm ạ?",
+   "ref": "Cái thước đó dài 3 dm. Vì 10 cm = 1 dm nên 30 cm sẽ tương ứng với 3 dm.",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Độ dài: Đề-xi-mét",
+   "answer": "30 cm là chiều dài của thước đo khoảng cách.",
+   "v": "sai"
+  },
+  {
+   "q": "Tên gọi của các thành phần trong phép nhân là gì thầy nhỉ?",
+   "ref": "Chúng gồm Thừa số và Tích em nhé. Hai số nhân với nhau gọi là thừa số, kết quả nhận được gọi là tích. Em đã phân biệt được chưa?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Phép nhân",
+   "answer": "Các thành phần trong phép nhân thường là số nguyên, dấu trừ và dấu cộng.",
+   "v": "sai"
+  },
+  {
+   "q": "Thương là gì vậy thầy?",
+   "ref": "Thương chính là tên gọi của kết quả sau khi thực hiện phép chia. Chẳng hạn trong phép tính 15 : 3 = 5, số 5 được gọi là thương. Em đã phân biệt được thương và số bị chia chưa?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Phép chia",
+   "answer": "Thương là một người bạn rất thân của mình.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để biết 2 nhân 9 bằng 18 hay 18 chia 2 bằng 9?",
+   "ref": "Cả hai đều đúng vì đây là hai phép tính ngược nhau. Khi em nhân 2 với 9 được 18, thì khi lấy 18 chia ngược lại cho 2, em sẽ quay về số 9 ban đầu.",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Bảng nhân 2 và bảng chia 2",
+   "answer": "Bạn lấy số dư của phép chia cho 2 sẽ ra kết quả.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, làm sao để nhớ nhanh bảng nhân 5 ạ?",
+   "ref": "Em hãy nhớ rằng kết quả của bảng nhân 5 luôn kết thúc bằng số 0 hoặc số 5. Em cũng có thể đếm thêm 5 đơn vị cho mỗi lần nhân tiếp theo. Em có muốn thử đếm từ 5 đến 50 cùng thầy không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Bảng nhân 5 và bảng chia 5",
+   "answer": "Để nhớ nhanh, em hãy viết ra giấy hoặc lưu trong điện thoại.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Làm sao để viết số ba trăm bốn mươi hai thành con số ạ?",
+   "ref": "Em viết chữ số 3 ở hàng trăm, số 4 ở hàng chục và số 2 ở hàng đơn vị, ta được số 342. Em có thể tự viết số sáu trăm mười chín được không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Số và phép tính trong phạm vi 1000",
+   "answer": "Để viết số ba trăm bốn mươi hai, bạn chỉ cần lấy số lẻ của số thập phân bằng cách lấy $\\times 3.52$.",
+   "v": "sai"
+  },
+  {
+   "q": "Con muốn biết 1m bằng bao nhiêu cm ạ?",
+   "ref": "1m bằng 100cm em nhé. Khi em thấy một vật dài đúng 100cm thì nghĩa là vật đó dài 1 mét đấy.",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Độ dài: Mét",
+   "answer": "Một mét bằng 100 cm.",
+   "v": "dung"
+  },
+  {
+   "q": "Mặt đáy của khối trụ là hình gì vậy thầy?",
+   "ref": "Hai mặt đáy của khối trụ là hai hình tròn bằng nhau và song song với nhau. Đây là đặc điểm quan trọng nhất để phân biệt với các khối khác. Em có muốn tìm hiểu thêm về khối cầu không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Khối trụ",
+   "answer": "Đó chính là mặt đáy của một hình trụ.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, khối cầu là gì ạ?",
+   "ref": "Khối cầu là hình khối có bề mặt cong tròn khép kín và không có góc cạnh. Em có thể tưởng tượng nó giống như một quả bóng vậy. Em có muốn thử tìm xung quanh lớp mình xem có vật nào là khối cầu không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Khối cầu",
+   "answer": "Khối cầu là một dạng hình học được cấu tạo bởi các đường thẳng song song và các điểm cách đều nhau.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, nếu kim dài chỉ số 6 thì là mấy phút ạ?",
+   "ref": "Khi kim dài chỉ số 6, tức là đã trôi qua 30 phút của giờ đó. Vì 30 phút chính là một nửa của 60 phút nên ta gọi là giờ rưỡi. Em có biết 30 phút còn gọi là nửa giờ không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Thời gian: Giờ, phút",
+   "answer": "Nếu kim chỉ số 6 mà không phải là số 6 thì là số thập phân vô hạn.",
+   "v": "sai"
+  },
+  {
+   "q": "Đơn vị tiền tệ của nước Việt Nam mình là gì ạ?",
+   "ref": "Đơn vị tiền tệ chính thức của nước ta là Đồng. Khi viết số tiền, em nhớ viết thêm chữ \"đồng\" ở cuối nhé. Em đã thấy chữ này trên các tờ tiền chưa?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Tiền Việt Nam",
+   "answer": "Đơn vị tiền tệ chính thức của Việt Nam là đồng (VND).",
+   "v": "dung"
+  },
+  {
+   "q": "Con thực hiện phép cộng từ trái sang phải hay từ phải sang trái ạ?",
+   "ref": "Em phải thực hiện từ phải sang trái, bắt đầu từ hàng đơn vị trước nhé. Sau đó em mới cộng đến hàng chục rồi mới đến hàng trăm. Em có muốn thử làm một ví dụ không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Phép cộng, phép trừ không nhớ trong phạm vi 1000",
+   "answer": "Con thực hiện phép cộng từ trái sang phải là đúng rồi đó.",
+   "v": "sai"
+  },
+  {
+   "q": "Phép cộng có nhớ trong phạm vi 1000 thì tính từ trái sang phải hay phải sang trái ạ?",
+   "ref": "Em phải tính từ phải sang trái, bắt đầu từ hàng đơn vị, rồi đến hàng chục và cuối cùng là hàng trăm. Đây là quy tắc bắt buộc cho mọi phép cộng, trừ viết.",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Phép cộng, phép trừ có nhớ trong phạm vi 1000",
+   "answer": "Phép cộng có nhớ trong phạm vi 1000 là phép cộng hai số nguyên.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, làm sao để biết bài này dùng phép cộng hay phép trừ ạ?",
+   "ref": "Em hãy chú ý vào các \"từ khóa\" trong đề bài nhé. Nếu thấy từ \"tất cả\", \"thêm\" thì em dùng phép cộng, còn nếu thấy từ \"còn lại\", \"bớt đi\" thì em dùng phép trừ. Em có muốn thử phân tích một ví dụ cụ thể không?",
+   "mon": "Toán",
+   "lop": 2,
+   "topic": "Giải bài toán có lời văn",
+   "answer": "Để tính toán, em chỉ cần lấy giá trị của số đó nhân với số kia là ra kết quả ngay.",
+   "v": "sai"
+  },
+  {
+   "q": "Từ chỉ người là những từ như thế nào vậy thầy?",
+   "ref": "Đó là những từ dùng để gọi tên người dựa trên quan hệ gia đình hoặc nghề nghiệp. Ví dụ như \"ông nội\", \"cô giáo\", \"học sinh\". Em có muốn tìm hiểu thêm về các từ chỉ đồ vật không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Từ chỉ sự vật",
+   "answer": "Từ chỉ người thường dùng để chỉ người khác, bao gồm cả nam và nữ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Từ chỉ đặc điểm dùng để làm gì vậy thầy?",
+   "ref": "Những từ này được dùng để giúp chúng ta mô tả sự vật một cách chi tiết và sinh động hơn. Nhờ đó, người nghe hoặc người đọc có thể hình dung rõ hơn về hình dáng, màu sắc hay tính chất của sự vật đó.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Từ chỉ đặc điểm",
+   "answer": "Từ đặc điểm dùng để chỉ những tính chất, đặc điểm của sự vật, hoạt động hoặc trạng thái.",
+   "v": "dung"
+  },
+  {
+   "q": "\"Đọc sách\" là từ chỉ hoạt động đúng không thầy?",
+   "ref": "Đúng rồi em, \"đọc sách\" là từ chỉ hoạt động vì mắt và trí não em đang làm việc, đôi khi em còn lật từng trang sách nữa. Đây là một hoạt động rất tốt cho việc học tập. Ngoài đọc sách, em còn thích hoạt động nào khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Từ chỉ hoạt động, trạng thái",
+   "answer": "Đúng rồi em. Đọc sách là một thói quen rất tốt để tích lũy kiến thức và mở rộng vốn từ vựng đấy.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để nhận biết một câu là câu giới thiệu ạ?",
+   "ref": "Em hãy quan sát xem câu đó có dùng để cho biết tên, đặc điểm hay vai trò của ai/cái gì và thường có từ \"là\" hay không. Em có muốn thầy lấy thêm ví dụ để dễ phân biệt không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Câu giới thiệu",
+   "answer": "Bạn có thể kiểm tra xem câu đó có bắt đầu bằng một danh từ số ít không (ví dụ: 'Tôi', 'Con mèo') hoặc có các danh từ số nhiều không.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để con nhận biết được đâu là câu kể khi đọc bài ạ?",
+   "ref": "Em hãy nhìn vào cuối câu, câu kể thường kết thúc bằng một dấu chấm. Bên cạnh đó, câu đó phải cung cấp một thông tin cụ thể cho người đọc. Em có muốn biết thêm về các dấu câu khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Câu kể",
+   "answer": "Con có thể dựa vào các dấu hiệu như: tên tác phẩm, nhân vật chính hoặc một chi tiết đặc biệt nào đó.",
+   "v": "sai"
+  },
+  {
+   "q": "Cuối câu hỏi khi viết mình phải dùng dấu gì ạ?",
+   "ref": "Em bắt buộc phải dùng dấu chấm hỏi (?) ở cuối câu nhé. Nếu thiếu dấu này, người đọc sẽ dễ nhầm sang câu kể đấy.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Câu hỏi",
+   "answer": "Bạn có thể viết là 'S' hoặc 'S' tùy vào vị trí của nó trong câu.",
+   "v": "sai"
+  },
+  {
+   "q": "Có phải cứ có dấu chấm than là thành câu cảm không thầy?",
+   "ref": "Không hẳn em nhé, dấu chấm than còn dùng trong câu cầu khiến (ra lệnh, yêu cầu). Vì vậy, em cần xem nội dung câu đó có phải là bộc lộ cảm xúc hay không thì mới kết luận là câu cảm. Em có muốn phân biệt kỹ hơn về hai loại câu này không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Câu cảm",
+   "answer": "Đúng rồi, đó là dấu hiệu để nhận biết câu bị thiếu tính từ.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi đọc đến dấu chấm thì mình phải làm sao hả thầy?",
+   "ref": "Em cần nghỉ hơi một chút trước khi đọc câu tiếp theo. Việc nghỉ hơi này giúp người nghe hiểu rõ ý của từng câu mà em đang đọc. Em có muốn thầy hướng dẫn cách ngắt nghỉ ở dấu phẩy không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Dấu chấm",
+   "answer": "Bạn cần phải hiểu dấu chấm là một khoảng trắng để bắt đầu hoặc kết thúc một câu.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, dấu phẩy có dùng để tách bộ phận chỉ thời gian không ạ?",
+   "ref": "Có em nhé, dấu phẩy thường dùng để ngăn cách bộ phận trả lời cho câu hỏi \"Khi nào?\" hoặc \"Ở đâu?\". Ví dụ: \"Ở trong vườn, hoa hồng đang nở rộ\". Em có muốn tìm hiểu thêm về cách đặt dấu phẩy trong các câu dài hơn không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Dấu phẩy",
+   "answer": "Không, dấu chấm mới là cách viết đúng chính tả của dấu phẩy.",
+   "v": "sai"
+  },
+  {
+   "q": "Dấu chấm hỏi viết như thế nào vậy thầy?",
+   "ref": "Dấu chấm hỏi được viết bằng một nét cong móc xuống và có một dấu chấm nhỏ ở dưới cùng. Em hãy nhớ viết thật rõ ràng để phân biệt với các dấu câu khác nhé.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Dấu chấm hỏi",
+   "answer": "Dấu chấm hỏi dùng để chỉ sự nghi vấn hoặc đặt câu hỏi.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho con hỏi dấu chấm than đặt ở đâu trong câu?",
+   "ref": "Dấu chấm than luôn được đặt ở cuối câu, ngay sau chữ cái cuối cùng. Điều này giúp người đọc biết câu đã kết thúc và hiểu được cảm xúc của người viết. Em có muốn tìm hiểu về cách đặt dấu phẩy không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Dấu chấm than",
+   "answer": "Dấu chấm than thường được đặt trước danh từ chỉ hoạt động, trạng thái hoặc sau các động từ chỉ trạng thái.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em ví dụ về cặp từ trái nghĩa chỉ tính cách với ạ!",
+   "ref": "Một ví dụ điển hình là cặp từ \"chăm chỉ\" và \"lười biếng\". Người chăm chỉ thì siêng năng, còn người lười biếng thì không muốn làm việc.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Từ trái nghĩa",
+   "answer": "Ví dụ như: 'rất đẹp' và 'rất nhanh'.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em ví dụ về nhóm từ gần nghĩa chỉ màu sắc với ạ!",
+   "ref": "Một ví dụ điển hình là nhóm từ: \"xanh ngắt\", \"xanh lơ\", \"xanh mướt\". Tất cả đều chỉ màu xanh nhưng lại gợi ra những hình ảnh khác nhau về thiên nhiên.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Từ gần nghĩa",
+   "answer": "Ví dụ như: xanh lá, đỏ, vàng... Đây là những từ có nghĩa chỉ đặc điểm của sự vật.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, từ chỉ sự vật trong chủ đề Gia đình gồm những từ nào ạ?",
+   "ref": "Từ chỉ sự vật là những từ gọi tên người hoặc đồ vật, ví dụ như: ông, bà, bố, mẹ, anh, chị. Đây là những người thân yêu nhất trong nhà của chúng ta.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Mở rộng vốn từ theo chủ đề",
+   "answer": "Từ chỉ sự vật trong chủ đề Gia đình thường là các từ: cái bàn, cái ghế, cái tủ...",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, viết đoạn văn kể chuyện là gì ạ?",
+   "ref": "Đó là việc em dùng lời văn để thuật lại một chuỗi các sự việc theo trình tự nhất định. Việc này giúp người đọc hình dung được câu chuyện đã diễn ra như thế nào. Em có muốn thử kể một câu chuyện ngắn cho thầy nghe không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Viết đoạn văn kể chuyện",
+   "answer": "Đoạn văn kể chuyện là một đoạn văn ngắn được tạo thành từ các ý chính và các câu văn để truyền đạt thông tin cho người đọc.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, làm sao để bài văn miêu tả trở nên sinh động hơn?",
+   "ref": "Em nên sử dụng thêm các từ ngữ gợi tả và hình ảnh so sánh. Ví dụ, thay vì nói \"mắt mèo tròn\", em có thể viết \"mắt mèo tròn như hai viên bi ve\". Em có muốn tập đặt câu so sánh cùng thầy không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Viết đoạn văn miêu tả",
+   "answer": "Hãy thêm hình ảnh và âm thanh vào bài viết. Ví dụ, nếu có thể, hãy cho thêm một đoạn văn ngắn về các loài hoa hoặc cây cối mà em yêu thích.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, cấu trúc của một bài viết bày tỏ tình cảm gồm mấy phần?",
+   "ref": "Bài viết gồm 3 phần chính là Mở đoạn, Thân đoạn và Kết đoạn. Em hãy nhớ tuân thủ trình tự này để đoạn văn không bị rời rạc nhé.",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Viết đoạn văn bày tỏ tình cảm",
+   "answer": "Một bài viết bày tỏ tình cảm thường có 3 phần chính: mở bài, thân bài và kết bài.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi viết tin nhắn, con có cần viết dài như viết thư không ạ?",
+   "ref": "Không nên viết dài em nhé, vì đặc điểm của tin nhắn là ngắn gọn và súc tích. Em chỉ cần ghi rõ người nhận, nội dung chính và người gửi là đủ. Em có muốn thử viết một tin nhắn cho bạn không?",
+   "mon": "Tiếng Việt",
+   "lop": 2,
+   "topic": "Viết thư và tin nhắn",
+   "answer": "Không, chỉ cần khoảng 110-120 từ là vừa đủ để thể hiện tình cảm rồi.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao chúng ta phải quý trọng thời gian ạ?",
+   "ref": "Vì thời gian một khi đã trôi qua thì không bao giờ quay trở lại được. Nếu em biết tận dụng thời gian, em sẽ học tập tốt hơn và có nhiều thời gian cho sở thích cá nhân.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Quý trọng thời gian",
+   "answer": "Thời gian là tài sản quý giá nhất của con người. Chúng ta cần sử dụng nó một cách hợp lý và hiệu quả để đạt được mục tiêu.",
+   "v": "dung"
+  },
+  {
+   "q": "Ngoài việc chào hỏi, em có thể làm gì để thầy cô vui lòng?",
+   "ref": "Em hãy cố gắng rèn luyện đạo đức, giúp đỡ bạn bè và tự giác trong học tập. Những hành động tốt đẹp của em sẽ là món quà tinh thần quý giá nhất dành cho thầy cô.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Kính trọng thầy giáo, cô giáo",
+   "answer": "Em có thể tặng quà nhỏ hoặc chuẩn bị bài giảng bất ngờ cho thầy cô.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em nên làm gì để thể hiện sự quan tâm đến bạn?",
+   "ref": "Em hãy chú ý lắng nghe, an ủi khi bạn buồn hoặc giúp đỡ bạn những việc nhỏ trong lớp. Ví dụ, em có thể cho bạn mượn cục tẩy khi bạn quên mang theo.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Yêu quý bạn bè",
+   "answer": "Bạn có thể tặng quà nhỏ cho bạn, cùng bạn đi chơi hoặc lắng nghe những câu chuyện của bạn.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, làm thế nào để nhận lỗi một cách chân thành ạ?",
+   "ref": "Em hãy nhìn thẳng vào người đối diện, dùng lời nói lễ phép và thái độ hối lỗi khi xin lỗi. Sự chân thành xuất phát từ trái tim sẽ dễ dàng được mọi người tha thứ.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Nhận lỗi và sửa lỗi",
+   "answer": "Hãy thừa nhận lỗi của mình và nói rõ lý do tại sao bạn muốn sửa đổi.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Nếu em vâng lời người lớn thì điều gì sẽ xảy ra?",
+   "ref": "Em sẽ trở thành một đứa trẻ ngoan, nhận được sự tin tưởng, yêu thương từ gia đình và nhà trường. Đồng thời, em cũng sẽ rèn luyện được tính kỷ luật cho bản thân.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Vâng lời cha mẹ, thầy cô",
+   "answer": "Em sẽ được khen là ngoan và được thưởng một món quà nhỏ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Con dùng tiền tiết kiệm để làm gì thì tốt ạ?",
+   "ref": "Em có thể dùng tiền tiết kiệm để mua sách vở, đồ dùng học tập hoặc dùng để giúp đỡ những bạn nhỏ khó khăn hơn mình. Việc chia sẻ với mọi người sẽ khiến khoản tiền tiết kiệm trở nên ý nghĩa hơn nhiều. Em có muốn tìm hiểu về các quỹ từ thiện không?",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Tiết kiệm tiền",
+   "answer": "Con nên lập một quỹ dự phòng cho các trường hợp khẩn cấp. Khoản này sẽ giúp bù đắp phần nào chi phí khi con gặp khó khăn về tài chính hoặc cần hỗ trợ chi phí học tập.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Nếu em tự thu dọn sách vở sau khi học thì có gọi là tự giác không ạ?",
+   "ref": "Đúng rồi, đó chính là một biểu hiện rất rõ của sự tự giác đấy. Em đã biết sắp xếp góc học tập gọn gàng mà không cần ai đôn đốc là điều rất đáng khen.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Tự giác làm việc nhà",
+   "answer": "Không, việc đó không được tính là tự giác đâu. Em phải có sự hỗ trợ của người khác hoặc dùng dụng cụ để dọn dẹp thì mới là tự giác.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu thấy bạn chen lấn khi xếp hàng mua vé, em sẽ làm gì?",
+   "ref": "Em nên nhẹ nhàng nhắc bạn cùng xếp hàng đợi đến lượt để công bằng với mọi người. Việc chen lấn không chỉ gây mất trật tự mà còn dễ dẫn đến tranh cãi không đáng có.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Tuân thủ quy tắc nơi công cộng",
+   "answer": "Em sẽ đi chỗ khác để tránh phải chờ đợi.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em hỏi, việc tắt điện khi ra khỏi phòng có giúp bảo vệ môi trường không ạ?",
+   "ref": "Có chứ, đây là hành động tiết kiệm năng lượng rất đáng khen. Tiết kiệm điện giúp giảm bớt áp lực cho các nhà máy điện, từ đó giảm ô nhiễm không khí.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Có chứ, nó giúp tiết kiệm điện rất hiệu quả đấy. Khi bạn tắt đèn, các thiết bị điện tử cũng sẽ tự động tắt theo.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em có thể làm gì để bảo vệ các loài động vật ạ?",
+   "ref": "Em hãy yêu thương, chăm sóc thú cưng và không săn bắt hay chọc phá các loài vật hoang dã. Mỗi loài vật đều có vai trò quan trọng trong tự nhiên. Em thích loài động vật nào nhất?",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Yêu quý thiên nhiên",
+   "answer": "Em có thể giảm thiểu việc sử dụng đồ nhựa dùng một lần, hạn chế rác thải nhựa và khuyến khích tái chế.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, tai nạn thương tích là gì ạ?",
+   "ref": "Đó là những tổn thương bất ngờ về cơ thể hoặc tinh thần do sự cố ngoài ý muốn gây ra. Ví dụ như khi em vô tình bị ngã hoặc bị đứt tay. Em có muốn biết những nơi nào dễ xảy ra tai nạn không?",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Phòng tránh tai nạn thương tích",
+   "answer": "Tai nạn thương tích là những sự cố bất ngờ xảy ra ngoài ý muốn như bỏng, ngã, va chạm,...",
+   "v": "dung"
+  },
+  {
+   "q": "Rửa tay bằng xà phòng trước khi ăn có quan trọng không ạ?",
+   "ref": "Rất quan trọng vì xà phòng giúp tiêu diệt những vi khuẩn mà nước lã không rửa sạch được. Điều này bảo vệ hệ tiêu hóa của em luôn khỏe mạnh. Em có biết thêm những lúc nào khác cần rửa tay không?",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Chăm sóc cơ thể",
+   "answer": "Có, việc rửa tay là rất cần thiết để loại bỏ vi khuẩn và bụi bẩn bám trên tay.",
+   "v": "dung"
+  },
+  {
+   "q": "Em nên làm gì khi thấy bạn trong lớp có sở thích khác với em?",
+   "ref": "Em hãy tôn trọng sở thích đó và có thể cùng bạn tìm hiểu thêm về điều bạn thích. Sự đa dạng về sở thích làm cho cuộc sống và lớp học của chúng ta trở nên thú vị hơn nhiều đấy.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Tôn trọng sự khác biệt",
+   "answer": "Hãy tôn trọng điều đó và không so sánh. Hãy cùng nhau tham gia các hoạt động khác mà cả hai đều yêu thích.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi nhặt được một chiếc bút chì của bạn đánh rơi, em nên làm gì để thể hiện sự trung thực?",
+   "ref": "Em hãy tìm cách trả lại chiếc bút đó cho bạn hoặc gửi cho thầy cô giáo. Không tự ý lấy đồ của người khác làm của mình chính là biểu hiện của sự thật thà.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Trung thực",
+   "answer": "Em có thể trả lại chiếc bút chì đó cho bạn hoặc giữ lại làm kỷ niệm.",
+   "v": "sai"
+  },
+  {
+   "q": "Việc tự giác chuẩn bị đồ dùng học tập có phải là tự lập không thầy?",
+   "ref": "Đúng rồi em ạ, đó là một biểu hiện rất tốt của tính tự lập trong học tập. Hành động này cho thấy em đã có trách nhiệm với việc học của mình.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Tự lập",
+   "answer": "Tự lập là khả năng tự sắp xếp, quản lý thời gian và tài chính của mình.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc giữ gìn vệ sinh đường làng ngõ xóm có phải là yêu quê hương không thầy?",
+   "ref": "Đúng vậy, đây là một biểu hiện rất rõ ràng của lòng yêu quê hương. Khi em bảo vệ môi trường xanh, sạch, đẹp, em đang góp phần làm cho nơi mình sống trở nên tuyệt vời hơn.",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Yêu quê hương",
+   "answer": "Đó là một nét đẹp văn hóa của người Việt. Giữ gìn vệ sinh giúp bảo vệ sức khỏe cộng đồng và môi trường sống xung quanh.",
+   "v": "dung"
+  },
+  {
+   "q": "Vì sao chúng ta phải chăm học để yêu nước hả thầy?",
+   "ref": "Vì khi em học giỏi, em sẽ có kiến thức để sau này xây dựng đất nước ngày càng giàu đẹp và phát triển hơn. Đó là cách bền vững nhất để đóng góp cho Tổ quốc. Em có muốn tìm hiểu thêm về các tấm gương hiếu học không?",
+   "mon": "Đạo đức",
+   "lop": 2,
+   "topic": "Yêu nước",
+   "answer": "Để tiếp thu kiến thức và tri thức, giúp mở mang tầm hiểu biết.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, thế nào là gia đình ạ?",
+   "ref": "Gia đình là những người cùng sống chung một nhà, có quan hệ huyết thống hoặc hôn nhân và luôn chăm sóc nhau. Đó là nơi chúng ta được yêu thương và lớn lên mỗi ngày. Em có muốn kể cho thầy nghe về gia đình mình không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Gia đình",
+   "answer": "Gia đình là một nhóm người sống chung và gắn bó với nhau vì các mối quan hệ tình cảm như vợ chồng, cha mẹ và con cái.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để giữ cho trường mình luôn sạch đẹp hả thầy?",
+   "ref": "Em cần bỏ rác đúng nơi quy định, không vẽ bậy lên bàn ghế hay tường lớp học. Khi mỗi bạn một tay giữ gìn, ngôi trường sẽ trở nên tuyệt vời hơn. Em có sẵn sàng cùng bạn dọn vệ sinh lớp học không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Trường học",
+   "answer": "Để trường luôn gọn gàng, các em nên phân loại rác và bỏ đúng nơi quy định.",
+   "v": "dung"
+  },
+  {
+   "q": "Hoạt động chính của người dân ở nông thôn thường là gì ạ?",
+   "ref": "Người dân ở nông thôn thường làm nông nghiệp như trồng trọt và chăn nuôi. Họ canh tác trên những cánh đồng hoặc trong vườn nhà để tạo ra lương thực.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Cộng đồng địa phương",
+   "answer": "Hoạt động chính của người dân ở nông thôn thường là trồng trọt, chăn nuôi và đánh bắt cá.",
+   "v": "dung"
+  },
+  {
+   "q": "Có phải tất cả các loại cây đều sống trên mặt đất không thầy?",
+   "ref": "Không phải em nhé, thực vật sống ở nhiều môi trường khác nhau. Có cây sống trên cạn như cây phượng, nhưng cũng có cây sống dưới nước như cây sen, cây súng. Em có biết thêm loại cây nào sống dưới nước nữa không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Thực vật",
+   "answer": "Không đâu em, thực tế là có những loại cây chỉ sống được ở trên mặt đất như cây lúa hay cây cỏ.",
+   "v": "sai"
+  },
+  {
+   "q": "Con cá dùng bộ phận nào để di chuyển dưới nước vậy thầy?",
+   "ref": "Con cá dùng vây và đuôi để bơi trong nước. Những bộ phận này giúp cá điều hướng và đẩy cơ thể tiến về phía trước một cách linh hoạt.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Động vật",
+   "answer": "Cá sử dụng mang để thở và lấy không khí.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để con phân biệt được nấm độc với nấm ăn được ạ?",
+   "ref": "Thông thường, nấm độc thường có màu sắc rất sặc sỡ, có vòng nhẫn ở thân hoặc có bao gốc ở chân nấm. Tuy nhiên, không phải nấm độc nào cũng sặc sỡ nên cách an toàn nhất là không ăn nấm lạ. Em có muốn tìm hiểu thêm về tác hại của nấm độc không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Nấm",
+   "answer": "Con có thể dựa vào màu sắc, hình dáng và kích thước của cây nấm để nhận biết đó là nấm độc hay nấm ăn được. Ví dụ: Nấm độc thường có màu sắc rực rỡ, thân có nhiều màu sắc khác nhau và thường không có mùi. Còn nấm ăn được thường có màu sắc tự nhiên, không quá rực rỡ và thường có mùi thơm đặc trưng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Xương có tác dụng bảo vệ cơ thể như thế nào ạ?",
+   "ref": "Xương tạo thành các \"lồng\" bảo vệ nội tạng, ví dụ như xương sườn bao quanh để bảo vệ tim và phổi. Em có biết bộ phận nào khác cũng được xương bảo vệ không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Cơ quan vận động",
+   "answer": "Xương giúp nâng đỡ và giữ cho các cơ quan nội tạng ổn định.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thở ra là như thế nào vậy thầy?",
+   "ref": "Thở ra là quá trình lồng ngực xẹp xuống để đẩy khí các-bô-nic từ trong phổi ra ngoài. Đây là cách cơ thể loại bỏ khí thải không cần thiết. Em có biết tại sao chúng ta phải thở ra không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Cơ quan hô hấp",
+   "answer": "Là việc hít vào bằng mũi và thở ra bằng miệng.",
+   "v": "sai"
+  },
+  {
+   "q": "Chúng ta cần làm gì để giữ cho cơ quan bài tiết luôn khỏe mạnh?",
+   "ref": "Em cần uống đủ nước, không nhịn tiểu và giữ vệ sinh cơ thể sạch sẽ. Những thói quen đơn giản này sẽ giúp thận hoạt động hiệu quả hơn.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Cơ quan bài tiết",
+   "answer": "Bạn nên uống đủ nước mỗi ngày và đi vệ sinh đều đặn.",
+   "v": "dung"
+  },
+  {
+   "q": "Cơ quan tuần hoàn gồm những bộ phận nào hả thầy?",
+   "ref": "Cơ quan tuần hoàn bao gồm tim và các mạch máu em nhé. Tim đóng vai trò bơm máu, còn mạch máu là hệ thống ống dẫn máu đi khắp cơ thể. Em có muốn biết tim nằm ở đâu không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Cơ quan tuần hoàn",
+   "answer": "Cơ quan tuần hoàn bao gồm các mạch máu và hệ thống bạch huyết.",
+   "v": "sai"
+  },
+  {
+   "q": "Rửa tay bằng nước sạch thôi có đủ không thầy?",
+   "ref": "Chỉ rửa bằng nước là chưa đủ, em cần dùng thêm xà phòng để tiêu diệt vi khuẩn hiệu quả hơn. Xà phòng giúp cuốn trôi những chất bẩn mà nước thường không rửa sạch được. Em có biết các bước rửa tay chuẩn của Bộ Y tế không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Giữ vệ sinh cơ thể",
+   "answer": "Để đảm bảo vệ sinh, bạn nên rửa bằng xà phòng để loại bỏ vi khuẩn.",
+   "v": "dung"
+  },
+  {
+   "q": "Những đồ vật nào trong nhà dễ làm em bị thương ạ?",
+   "ref": "Đó là những vật sắc nhọn như dao, kéo, kim khâu hoặc mảnh kính vỡ. Những vật này có thể làm em bị đứt tay hoặc chảy máu nếu không cẩn thận.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "An toàn khi ở nhà",
+   "answer": "Đó là những đồ vật có cạnh sắc nhọn hoặc đồ nội thất có góc cạnh.",
+   "v": "dung"
+  },
+  {
+   "q": "Em nên làm gì khi thấy một ổ điện trong lớp bị hở?",
+   "ref": "Em cần tránh xa khu vực đó và báo ngay cho thầy cô giáo hoặc bác bảo vệ. Tuyệt đối không được tự ý chạm vào vì có thể bị điện giật rất nguy hiểm. Em có biết thêm dấu hiệu nào khác của thiết bị điện bị hỏng không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "An toàn khi ở trường",
+   "answer": "Bạn nên kiểm tra lại các mối nối, nếu có dấu hiệu lỏng lẻo thì nên thay mới ngay.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi ngồi trong ô tô, con cần lưu ý điều gì để an toàn?",
+   "ref": "Em cần thắt dây an toàn và tuyệt đối không được thò đầu hay tay ra ngoài cửa sổ. Những hành động này rất nguy hiểm vì dễ va chạm với các xe đi ngược chiều. Em có biết vì sao thắt dây an toàn lại quan trọng không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "An toàn giao thông",
+   "answer": "Con cần thắt dây an toàn và luôn chú ý quan sát xung quanh.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao khi đi mưa chúng ta lại phải mặc áo mưa hay che ô vậy thầy?",
+   "ref": "Để cơ thể không bị ướt, từ đó tránh bị nhiễm lạnh và cảm cúm. Khi bị ướt mưa, nhiệt độ cơ thể giảm nhanh dẫn đến dễ bị ốm. Em có muốn tìm hiểu cách phòng bệnh cảm lạnh không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Thời tiết",
+   "answer": "Để bảo vệ cơ thể khỏi nước mưa và tránh bị ướt do gió mạnh hoặc các vật cản khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Nếu rừng bị chặt hết thì điều gì sẽ xảy ra với các con vật ạ?",
+   "ref": "Các con vật sẽ mất đi nơi ở và nguồn thức ăn, dẫn đến việc chúng phải di cư hoặc bị tuyệt chủng. Điều này làm mất cân bằng tự nhiên và ảnh hưởng xấu đến con người. Em có muốn cùng thầy tìm hiểu về việc trồng rừng không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Môi trường sống",
+   "answer": "Các con vật sẽ không có thức ăn để ăn nữa.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, môi trường là gì ạ?",
+   "ref": "Môi trường là tất cả những gì bao quanh chúng ta, từ không khí, nước đến cây cối và nhà cửa. Môi trường sạch sẽ giúp chúng ta luôn khỏe mạnh. Em hãy thử kể tên những thứ xung quanh em lúc này xem?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Môi trường là tất cả những gì xung quanh chúng ta như không khí, nước, đất,...",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, tại sao lại có mưa ạ?",
+   "ref": "Mưa xảy ra khi hơi nước ngưng tụ thành những giọt nước nhỏ trong đám mây rồi rơi xuống đất. Đây là một phần của vòng tuần hoàn nước trong tự nhiên. Em có tò mò nước sau khi mưa rơi xuống sẽ đi đâu không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 2,
+   "topic": "Hiện tượng tự nhiên",
+   "answer": "Tại vì hôm nay là thứ Sáu, trời sẽ mưa đấy.",
+   "v": "sai"
+  },
+  {
+   "q": "Số ba trăm linh tám viết là số bao nhiêu vậy thầy?",
+   "ref": "Số đó được viết là 308 em nhé. Chữ \"linh\" cho biết hàng chục là số 0, nên em đặt số 0 vào giữa số 3 và số 8.",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Ôn tập và bổ sung các số đến 1000",
+   "answer": "Số 3888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho con hỏi 14 chia 2 bằng mấy ạ?",
+   "ref": "14 chia 2 bằng 7. Em hãy nhớ lại bảng nhân 2, ta thấy 2 nhân 7 bằng 14 nên kết quả phép chia này là 7. Em có muốn tìm hiểu thêm về cách chia các số lớn hơn không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng chia 2, 5",
+   "answer": "Để tính số chia, chúng ta lấy số chia trừ đi số dư của số đó.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, kết quả của 3 * 9 là bao nhiêu ạ?",
+   "ref": "Kết quả là 27 em nhé. Em hãy nhớ 3 * 10 = 30 rồi bớt đi 3 đơn vị là sẽ ra 27 ngay. Em có muốn thử thách với một bài toán đố về bảng nhân 3 không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng nhân 3, 4",
+   "answer": "Kết quả của 3 * 9 = 27.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, nếu con quên bảng chia 4 thì phải làm sao?",
+   "ref": "Em đừng lo, hãy dùng phương pháp trừ dần hoặc nhớ lại bảng nhân 4. Ví dụ muốn tính 16 : 4, em đếm 4, 8, 12, 16 (được 4 lần), vậy kết quả là 4. Em có muốn luyện tập thêm vài phép tính nữa không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng chia 3, 4",
+   "answer": "Nếu quên, em hãy lấy số 10 để chia cho 4.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, 6 nhân 7 bằng bao nhiêu ạ?",
+   "ref": "Kết quả là 42 em nhé. Em có thể nhớ bằng cách lấy 6 x 6 = 36 rồi cộng thêm 6 nữa. Em đã thuộc lòng bảng nhân 6 chưa?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng nhân 6, 7",
+   "answer": "6 * 7 = 42.",
+   "v": "dung"
+  },
+  {
+   "q": "Con quên mất 56 chia 7 bằng mấy rồi ạ?",
+   "ref": "56 chia 7 bằng 8 con nhé. Em hãy nhẩm lại 7 nhân 8 bằng 56 để ghi nhớ lâu hơn. Em có muốn luyện tập thêm với số 63 không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng chia 6, 7",
+   "answer": "56 chia 7 bằng 10.",
+   "v": "sai"
+  },
+  {
+   "q": "9 x 6 bằng mấy vậy thầy?",
+   "ref": "9 x 6 bằng 54. Đây là kết quả của 6 nhóm, mỗi nhóm có 9 đơn vị. Em có muốn thử tính 9 x 7 không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng nhân 8, 9",
+   "answer": "9 x 6 = 480.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu con quên kết quả của 64 : 8 thì làm thế nào ạ?",
+   "ref": "Em hãy nhớ lại xem trong bảng nhân 8, số nào nhân với 8 thì bằng 64. Ta thấy 8 * 8 = 64, vậy nên 64 : 8 = 8.",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Bảng chia 8, 9",
+   "answer": "Kết quả là 120.",
+   "v": "sai"
+  },
+  {
+   "q": "Số 3000 + 400 + 50 + 6 viết gọn lại là số nào ạ?",
+   "ref": "Đó chính là số 3456. Em chỉ cần ghép các chữ số tương ứng với hàng nghìn, trăm, chục, đơn vị lại với nhau. Em có muốn biết cách đọc số này không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Số có bốn chữ số",
+   "answer": "Đó là số 3000.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để thực hiện phép trừ khi chữ số hàng đơn vị của số bị trừ nhỏ hơn số trừ ạ?",
+   "ref": "Em hãy mượn 1 ở hàng chục để cộng vào hàng đơn vị cho đủ để trừ. Sau đó, em đừng quên \"trả\" 1 vào số trừ của hàng chục nhé. Em có muốn thử làm một ví dụ không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Phép cộng, phép trừ trong phạm vi 10 000",
+   "answer": "Bạn chỉ cần lấy chữ số hàng đơn vị trừ đi số trừ rồi cộng vào số bị trừ là xong.",
+   "v": "sai"
+  },
+  {
+   "q": "Mình bắt đầu tính nhân từ hàng nào trước hả thầy?",
+   "ref": "Em luôn bắt đầu tính từ hàng đơn vị, sau đó mới đến hàng chục và cuối cùng là hàng trăm. Đây là quy tắc tính từ phải sang trái để đảm bảo tính chính xác. Em có muốn thử làm một ví dụ không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Phép nhân số có ba chữ số với một chữ số",
+   "answer": "Hàng đầu tiên là bắt đầu từ số 1.",
+   "v": "sai"
+  },
+  {
+   "q": "Con muốn biết cách kiểm tra xem mình chia đúng hay sai thì làm thế nào ạ?",
+   "ref": "Em hãy lấy Thương nhân với Số chia, nếu là phép chia hết thì kết quả phải bằng Số bị chia. Với phép chia có dư, em lấy (Thương nhân Số chia) rồi cộng với Số dư để ra Số bị chia. Em có muốn thử áp dụng cách này vào bài tập vừa rồi không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Phép chia số có ba chữ số cho một chữ số",
+   "answer": "Bạn lấy số thứ tự của mình rồi cộng thêm 1 vào đó nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Hình chữ nhật có phải có 4 góc vuông không thầy?",
+   "ref": "Đúng rồi em, hình chữ nhật có 4 góc vuông giống như hình vuông vậy. Tuy nhiên, hình chữ nhật chỉ có các cặp cạnh đối diện bằng nhau chứ không bắt buộc 4 cạnh phải bằng nhau hết.",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Hình học phẳng và góc",
+   "answer": "Đúng rồi em, hình chữ nhật là hình có 4 cạnh bằng nhau và 4 góc đều là góc vuông.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tính chu vi hình vuông có phải là lấy cạnh nhân 4 không thầy?",
+   "ref": "Đúng rồi em, đó chính là công thức chuẩn để tính chu vi hình vuông. Ví dụ cạnh 2dm thì chu vi là 2 * 4 = 8dm.",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Chu vi và diện tích hình chữ nhật, hình vuông",
+   "answer": "Đúng vậy, chu vi hình vuông bằng cạnh nhân với 4.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, 1km bằng bao nhiêu mét ạ?",
+   "ref": "1 kilômét bằng 1000 mét em nhé. Đơn vị km thường dùng để đo khoảng cách giữa hai thành phố hoặc quãng đường đi học.",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Đơn vị đo lường",
+   "answer": "1km bằng 1000m.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc ghi chép số lượng vào bảng để làm gì vậy thầy?",
+   "ref": "Việc lập bảng giúp chúng ta sắp xếp số liệu gọn gàng, từ đó dễ dàng so sánh và tìm ra kết quả nhanh hơn. Ví dụ, nhìn vào bảng em sẽ biết ngay món đồ nào nhiều nhất. Em có muốn tập lập một bảng số liệu đơn giản không?",
+   "mon": "Toán",
+   "lop": 3,
+   "topic": "Số liệu và xác suất",
+   "answer": "Để theo dõi số lượng học sinh trong lớp.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "\"Học sinh\" có phải là từ chỉ sự vật không thầy?",
+   "ref": "Có chứ, \"học sinh\" là từ chỉ sự vật thuộc nhóm từ chỉ người. Đây là từ dùng để gọi tên những người đang đi học. Em có muốn biết thêm về các từ chỉ nghề nghiệp khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Từ chỉ sự vật",
+   "answer": "Đúng rồi, đó là danh từ chỉ người.",
+   "v": "dung"
+  },
+  {
+   "q": "Từ chỉ đặc điểm thường dùng để làm gì trong câu ạ?",
+   "ref": "Những từ này dùng để giúp người đọc, người nghe hình dung rõ hơn về đặc điểm, tính chất của sự vật được nhắc đến. Nhờ đó, câu văn sẽ sinh động và cụ thể hơn nhiều.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Từ chỉ đặc điểm",
+   "answer": "Từ đặc điểm thường được dùng để chỉ những đặc điểm nổi bật của sự vật, hoạt động hoặc con người.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để con nhận biết được đâu là từ chỉ hoạt động trong câu?",
+   "ref": "Em hãy đặt câu hỏi \"Làm gì?\" cho chủ thể trong câu, nếu từ nào trả lời được thì đó là từ chỉ hoạt động. Chẳng hạn với câu \"Chim hót trên cành\", ta hỏi \"Chim làm gì?\" -> trả lời là \"hót\".",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Từ chỉ hoạt động",
+   "answer": "Con có thể dựa vào các từ ghép (như: đi, chạy, ăn, ngủ) để nhận biết đó là hành động.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Câu kể có mấy công dụng chính vậy thầy?",
+   "ref": "Câu kể có ba công dụng chính là dùng để kể lại sự việc, dùng để giới thiệu và dùng để miêu tả đặc điểm. Tùy vào mục đích nói mà chúng ta chọn cách viết cho phù hợp. Em có muốn biết thêm ví dụ về câu kể dùng để giới thiệu không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Câu kể",
+   "answer": "Câu này dùng để chỉ các hoạt động hoặc chức năng của sự vật.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, câu hỏi là gì ạ?",
+   "ref": "Câu hỏi là loại câu dùng để hỏi về những điều mình chưa biết hoặc muốn biết thêm. Ví dụ như khi em muốn biết tên một bạn mới, em sẽ dùng câu hỏi. Em đã biết cách đặt câu hỏi chưa?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Câu hỏi",
+   "answer": "Em đang muốn tìm một công việc nhân viên đánh máy tiếng Anh ạ.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi đọc câu cảm, mình cần lưu ý điều gì để hay hơn ạ?",
+   "ref": "Em cần nhấn giọng ở những từ ngữ biểu cảm và đọc với giọng điệu phù hợp với cảm xúc của câu. Việc này sẽ giúp người nghe cảm nhận rõ tình cảm của em hơn.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Câu cảm",
+   "answer": "Bạn có thể thêm các từ 'đang', 'đã', 'sẽ' vào trước; nếu muốn nhấn mạnh vào sự tiếp diễn thì thêm 'tiếp tục'.",
+   "v": "sai"
+  },
+  {
+   "q": "Từ \"như\" trong câu \"Trẻ em như búp trên cành\" đóng vai trò gì ạ?",
+   "ref": "Từ \"như\" đóng vai trò là từ so sánh để nối giữa \"trẻ em\" và \"búp trên cành\". Nó giúp người đọc thấy được sự tương đồng về sự non nớt, cần được chăm sóc của trẻ em.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "So sánh",
+   "answer": "Từ \"như\" được dùng để chỉ sự tiếp nối, liên kết giữa các sự vật.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để nhận biết một câu có sử dụng phép nhân hóa ạ?",
+   "ref": "Em hãy tìm xem trong câu có từ ngữ nào dùng để gọi hoặc tả đặc điểm, hoạt động của con người nhưng lại dành cho sự vật không. Ví dụ, nếu thấy \"bác gà trống\" thì từ \"bác\" chính là dấu hiệu nhân hóa.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Nhân hóa",
+   "answer": "Bạn có thể thử thêm các từ ngữ như \"em bé\", \"con mèo\", \"con chó\" vào trước câu để tạo ra sự gần gũi và thân thiện.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, thế nào là từ trái nghĩa ạ?",
+   "ref": "Từ trái nghĩa là những từ có nghĩa đối lập nhau em nhé. Chẳng hạn như \"to\" đối lập với \"nhỏ\", \"dài\" đối lập với \"ngắn\". Em có muốn thử tìm thêm một cặp từ nào khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Từ trái nghĩa",
+   "answer": "Từ trái nghĩa là những từ dùng để chỉ tính chất hoặc trạng thái của sự vật. Ví dụ như: đẹp, xấu, tốt, xấu...",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Cho con ví dụ về từ đồng nghĩa hoàn toàn với từ \"hổ\" được không thầy?",
+   "ref": "Từ đồng nghĩa hoàn toàn với \"hổ\" chính là từ \"cọp\". Cả hai từ này đều chỉ cùng một loài động vật hung dữ trong rừng.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Từ đồng nghĩa",
+   "answer": "Ví dụ như: \"cọp\", \"ong\", \"mãng xà\"...",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, dấu phẩy dùng để ngăn cách các từ cùng loại là sao ạ?",
+   "ref": "Nghĩa là khi em viết một dãy các từ có cùng chức năng (như cùng là tên loài hoa, cùng là tính từ chỉ màu sắc), em dùng dấu phẩy để tách chúng ra. Ví dụ: \"Bầu trời xanh, cao và trong vắt\".",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Dấu phẩy",
+   "answer": "Dấu phẩy dùng để ngăn cách các từ có nghĩa giống nhau.",
+   "v": "sai"
+  },
+  {
+   "q": "Dấu hai chấm dùng để dẫn lời nói trực tiếp là sao ạ?",
+   "ref": "Đó là khi em muốn trích nguyên văn lời nói của một ai đó sau các từ như \"nói\", \"hỏi\" hoặc \"trả lời\". Ví dụ: Nam nói: \"Tớ đi đá bóng đây!\". Em có biết dấu câu nào thường đi kèm với dấu hai chấm trong trường hợp này không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Dấu hai chấm",
+   "answer": "Dấu hai chấm dùng để dẫn lời nói trực tiếp, ví dụ như: 'Ăn cơm' hoặc 'Đi ngủ'.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Nói lời cảm ơn khi nào là đúng lúc ạ?",
+   "ref": "Khi em được ai đó tặng quà hoặc giúp đỡ một việc gì đó, đó chính là lúc cần nói lời cảm ơn. Việc này giúp người giúp đỡ cảm thấy vui vẻ và được tôn trọng.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Lời chào và cảm ơn",
+   "answer": "Bạn nên nói cảm ơn ngay sau khi nhận được một món đồ hoặc sự giúp đỡ từ người khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Em nên bắt đầu bài giới thiệu như thế nào cho đúng?",
+   "ref": "Em hãy bắt đầu bằng một lời chào lịch sự và phù hợp. Ví dụ, chào thầy cô bằng từ \"Con chào...\" và chào bạn bè bằng từ \"Chào các bạn...\". Em có biết thêm cách chào nào khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Giới thiệu bản thân",
+   "answer": "Bạn có thể bắt đầu bằng cách giới thiệu chung về công ty hoặc sản phẩm, sau đó đi thẳng vào vấn đề chính.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, em có thể kể sự việc theo thứ tự bất kỳ được không?",
+   "ref": "Em không nên kể tùy tiện mà cần tuân theo trình tự thời gian hoặc diễn biến. Nếu kể lộn xộn, người nghe sẽ thấy khó hiểu và không hình dung được câu chuyện. Em có muốn tập sắp xếp lại một câu chuyện ngắn không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Kể lại một sự việc",
+   "answer": "Được chứ. Em đang đi trên đường thì gặp tai nạn giao thông đúng không?",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, đoạn văn nêu tình cảm là gì ạ?",
+   "ref": "Đó là đoạn văn dùng để bày tỏ cảm xúc, suy nghĩ của em về một người, một vật hay một cảnh đẹp nào đó. Ví dụ, em viết về tình yêu dành cho ông bà hoặc niềm yêu thích một món đồ chơi. Em đã chọn được đối tượng nào để viết chưa?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Viết đoạn văn nêu tình cảm",
+   "answer": "Đoạn văn nêu tình cảm là những câu văn dùng để diễn tả tâm trạng hoặc tình cảm của sự vật, hoạt động.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi viết thư cho bạn bè, con có cần dùng từ \"Kính gửi\" không thầy?",
+   "ref": "Em không nhất thiết phải dùng từ \"Kính gửi\" vì từ này dùng cho người lớn tuổi hơn. Với bạn bè, em nên dùng những từ thân mật như \"Chào... thân mến\" hoặc \".... thân yêu\". Em có biết thêm từ nào khác để chào bạn không?",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Viết thư",
+   "answer": "Có chứ, trong thư, con phải viết là \"Kính gửi bạn A, bạn B, bạn C...\".",
+   "v": "sai"
+  },
+  {
+   "q": "Tiêu đề của bản thông báo nên viết như thế nào là đúng?",
+   "ref": "Tiêu đề thường bắt đầu bằng chữ \"THÔNG BÁO\" viết hoa, căn giữa và kèm theo nội dung chính. Ví dụ: THÔNG BÁO VỀ VIỆC LAO ĐỘNG.",
+   "mon": "Tiếng Việt",
+   "lop": 3,
+   "topic": "Viết thông báo",
+   "answer": "Tiêu đề phải viết hoa chữ cái đầu tiên và có khoảng trắng ở giữa.",
+   "v": "sai"
+  },
+  {
+   "q": "Lá cờ Tổ quốc Việt Nam có đặc điểm như thế nào ạ?",
+   "ref": "Quốc kỳ của nước ta là lá cờ đỏ sao vàng, với nền đỏ và một ngôi sao vàng năm cánh ở chính giữa. Màu đỏ tượng trưng cho cách mạng, màu vàng tượng trưng cho màu da của người Việt Nam.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Em yêu Tổ quốc Việt Nam",
+   "answer": "Cờ đỏ sao vàng là lá cờ của nước ta, có nền màu đỏ và hình chữ thập trắng ở giữa.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao chúng ta phải thực hiện đúng quy định khi ở nơi công cộng ạ?",
+   "ref": "Vì việc này giúp đảm bảo trật tự, an toàn cho mọi người và thể hiện sự tôn trọng đối với cộng đồng. Khi ai cũng tự giác, cuộc sống sẽ trở nên tốt đẹp và văn minh hơn.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Tuân thủ quy tắc nơi công cộng",
+   "answer": "Để tránh gây mất trật tự và ảnh hưởng đến người khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc nhiệt tình tham gia hoạt động chung mang lại lợi ích gì cho bản thân mình?",
+   "ref": "Em sẽ rèn luyện được kỹ năng làm việc nhóm, sự kiên trì và cảm thấy hạnh phúc khi đóng góp giá trị cho mọi người. Đồng thời, mọi người sẽ quý trọng và tin cậy em hơn. Em có thấy vui khi giúp đỡ bạn bè không?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Hết lòng vì công việc chung",
+   "answer": "Việc nhiệt tình tham gia hoạt động chung giúp gắn kết mọi người và tạo ra những kỷ niệm đáng nhớ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi đi bộ trên đường không có vỉa hè thì mình phải đi thế nào cho đúng ạ?",
+   "ref": "Em hãy đi sát mép đường bên tay phải nhé. Việc này giúp em tránh xa luồng xe chạy chính và đảm bảo an toàn hơn. Em có biết khi qua đường thì cần lưu ý điều gì không?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "An toàn giao thông",
+   "answer": "Bạn nên đi sát mép đường để đảm bảo an toàn.",
+   "v": "dung"
+  },
+  {
+   "q": "Em nên làm gì để thể hiện tình yêu với bố mẹ?",
+   "ref": "Em hãy chăm chỉ giúp đỡ bố mẹ những việc vừa sức và luôn lễ phép, vâng lời. Những hành động nhỏ như quét nhà hay rót nước mời bố mẹ cũng là cách thể hiện tình yêu tuyệt vời. Em thường giúp bố mẹ việc gì ở nhà?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Yêu thương gia đình",
+   "answer": "Bạn có thể tặng quà, đi du lịch cùng gia đình hoặc đơn giản là dành thời gian cho họ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi bố mẹ bị ốm, em có thể làm gì để chăm sóc?",
+   "ref": "Em hãy giúp bố mẹ những việc nhỏ như lấy nước, lấy thuốc hoặc giữ yên lặng cho bố mẹ nghỉ ngơi. Những hành động nhỏ này sẽ giúp bố mẹ mau khỏe hơn đấy.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Quan tâm, chăm sóc người thân",
+   "answer": "Khi bố mẹ ốm, bạn nên ở bên cạnh và cho ăn những món dễ tiêu hóa.",
+   "v": "dung"
+  },
+  {
+   "q": "Có phải mỗi người sinh ra đều khác nhau không thầy?",
+   "ref": "Đúng vậy, mỗi cá nhân là một bản thể duy nhất với những đặc điểm riêng về ngoại hình, tính cách và năng khiếu. Chính sự khác biệt này làm cho thế giới trở nên phong phú và đa dạng hơn.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Tôn trọng sự khác biệt",
+   "answer": "Không, mỗi người đều có những đặc điểm riêng biệt.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu em giỏi hơn các bạn thì em có được tự hào về mình không?",
+   "ref": "Em hoàn toàn có quyền tự hào về nỗ lực của mình, nhưng đừng biến niềm tự hào thành sự kiêu ngạo hay coi thường bạn bè. Hãy dùng năng lực của mình để giúp đỡ mọi người xung quanh cùng tiến bộ nhé.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Khiêm tốn",
+   "answer": "Có chứ, em rất vui vì đã đạt được thành tích cao trong học tập.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao chúng ta cần phải tự tin trong cuộc sống ạ?",
+   "ref": "Tự tin giúp em dễ dàng vượt qua nỗi sợ hãi, dám thử sức với những điều mới và đạt được thành công nhanh hơn. Khi tự tin, em sẽ cảm thấy vui vẻ và lạc quan hơn trong mọi việc.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Tự giác, tự tin",
+   "answer": "Tự tin giúp chúng ta vượt qua khó khăn và đạt được những mục tiêu lớn hơn.",
+   "v": "dung"
+  },
+  {
+   "q": "Kiên trì mang lại lợi ích gì cho chúng ta hả thầy?",
+   "ref": "Kiên trì giúp em đạt được thành công và nhận được sự tin tưởng, yêu quý từ mọi người. Khi kiên trì, em cũng sẽ thấy tự tin hơn vào khả năng của bản thân mình.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Kiên trì",
+   "answer": "Mang lại lợi ích cho bản thân là chính, còn nếu muốn giúp người khác thì mới làm.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao chúng ta phải biết ơn người có công với đất nước?",
+   "ref": "Vì nhờ có sự hy sinh và cống hiến của họ mà chúng ta mới có cuộc sống hòa bình, ấm no và tự do như ngày hôm nay. Lòng biết ơn giúp chúng ta sống tốt hơn và có trách nhiệm hơn với cộng đồng.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Biết ơn người có công với quê hương, đất nước",
+   "answer": "Vì họ là những người đã hy sinh xương máu để xây dựng và bảo vệ Tổ quốc.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi thấy người khác gặp khó khăn, em nên làm gì để thể hiện sự yêu thương?",
+   "ref": "Em nên sẵn lòng giúp đỡ trong khả năng của mình hoặc tìm sự hỗ trợ từ người lớn để giúp họ. Ví dụ, em có thể giúp một cụ già sang đường hoặc quyên góp sách vở cho bạn nghèo.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Yêu thương con người",
+   "answer": "Em có thể giúp đỡ bằng cách hỗ trợ tài chính hoặc tinh thần.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi em chia sẻ với người khác, em nhận được điều gì ạ?",
+   "ref": "Em sẽ cảm thấy hạnh phúc, vui vẻ và được mọi người yêu quý, trân trọng. Đồng thời, em còn giúp người khác vượt qua khó khăn để cuộc sống tốt đẹp hơn. Em có cảm thấy vui khi giúp đỡ ai đó chưa?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Chia sẻ với mọi người",
+   "answer": "Khi em chia sẻ, em thường không giữ lại bất cứ thông tin nào cho bản thân.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để em biết mình đang sử dụng tiền lãng phí ạ?",
+   "ref": "Đó là khi em mua những món đồ theo sở thích nhất thời rồi bỏ xó không dùng, hoặc đòi mua đồ mới khi đồ cũ vẫn còn tốt. Em hãy thử tự hỏi \"Mình có thực sự cần món đồ này không?\" trước khi mua nhé. Em có muốn thầy hướng dẫn cách lập kế hoạch chi tiêu nhỏ không?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Quý trọng đồng tiền",
+   "answer": "Em có thể ghi chép lại chi tiêu hoặc kiểm tra tài khoản ngân hàng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc giữ gìn sách vở sạch đẹp có được gọi là tiết kiệm không thầy?",
+   "ref": "Có chứ, đó chính là biểu hiện của tiết kiệm đồ dùng học tập. Khi em giữ sách vở bền đẹp, em sẽ không phải mua mới nhiều lần và có thể tặng lại cho các em khóa sau. Em có thường xuyên bọc sách vở cẩn thận không?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Tiết kiệm",
+   "answer": "Đó là một hành động rất tốt, giúp bảo vệ môi trường và giáo dục con trẻ.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao chúng ta không được chạm vào ổ điện khi tay ướt ạ?",
+   "ref": "Vì nước dẫn điện rất tốt, nên nếu tay ướt chạm vào điện sẽ dễ bị điện giật gây nguy hiểm đến tính mạng. Em hãy luôn lau khô tay trước khi sử dụng các thiết bị điện nhé.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Phòng tránh tai nạn thương tích",
+   "answer": "Vì ổ điện có dòng điện chạy qua, dễ gây giật điện nếu tay bị ướt. Bạn nên lau khô tay trước khi chạm vào nhé.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi nào thì bác sĩ được phép chạm vào vùng riêng tư của em?",
+   "ref": "Bác sĩ chỉ được chạm vào khi khám bệnh và phải có sự đồng ý, giám sát của cha mẹ hoặc người giám hộ. Trong trường hợp này, em hãy bình tĩnh phối hợp để chữa bệnh nhé.",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Phòng tránh xâm hại",
+   "answer": "Tôi không có quyền hạn để làm điều đó.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, giữ lời hứa có nghĩa là gì ạ?",
+   "ref": "Giữ lời hứa là thực hiện đúng những điều mình đã nói với người khác. Khi em làm đúng như lời mình nói, em sẽ trở thành người đáng tin cậy trong mắt mọi người. Em có muốn biết vì sao chúng ta cần phải giữ lời hứa không?",
+   "mon": "Đạo đức",
+   "lop": 3,
+   "topic": "Giữ lời hứa",
+   "answer": "Là việc thực hiện đúng những gì đã nói trước đó.",
+   "v": "dung"
+  },
+  {
+   "q": "Con của dì thì có phải là anh chị em họ của em không thầy?",
+   "ref": "Đúng rồi em ạ, con của dì chính là anh, chị hoặc em họ của em. Dù là họ nội hay họ ngoại thì họ đều là anh chị em họ của em hết.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Họ hàng nội, ngoại",
+   "answer": "Đúng rồi, con của dì chính là anh chị em họ của em.",
+   "v": "dung"
+  },
+  {
+   "q": "Nếu trong nhà có khói, con nên di chuyển như thế nào cho an toàn?",
+   "ref": "Em cần dùng khăn ướt che mũi, miệng và cúi thấp người khi di chuyển. Vì khói độc thường bay lơ lửng phía trên, việc cúi thấp sẽ giúp em hít được nhiều oxy hơn để thoát ra ngoài.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Phòng tránh hỏa hoạn",
+   "answer": "Nếu thấy khói trong nhà, bạn nên đóng cửa sổ và cửa ra vào để tránh khói bay vào phòng. Bạn cũng có thể dùng khăn thấm nước che miệng để lọc không khí.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Những đồ vật nào trong nhà dễ gây bỏng cho em?",
+   "ref": "Đó là những vật có nhiệt độ cao như phích nước nóng, nồi đang sôi hay bàn là. Nếu vô ý chạm vào, da em sẽ bị tổn thương nghiêm trọng. Em hãy luôn đứng xa khu vực bếp khi người lớn đang nấu ăn nhé.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Giữ an toàn khi ở nhà",
+   "answer": "Đó là các loại bình nước nóng, bếp điện hoặc các chất liệu có khả năng bắt lửa.",
+   "v": "dung"
+  },
+  {
+   "q": "Cơ quan tiêu hóa gồm những bộ phận nào hả thầy?",
+   "ref": "Hệ tiêu hóa gồm ống tiêu hóa (miệng, thực quản, dạ dày, ruột non, ruột già, hậu môn) và các tuyến tiêu hóa (tuyến nước bọt, gan, tụy). Các bộ phận này phối hợp nhịp nhàng để xử lý thức ăn. Em có muốn biết bộ phận nào quan trọng nhất không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Cơ quan tiêu hóa",
+   "answer": "Cơ quan tiêu hóa bao gồm miệng, thực quản và dạ dày.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em cần làm gì để bảo vệ đường tiêu hóa khỏi vi khuẩn?",
+   "ref": "Quan trọng nhất là em phải rửa tay sạch sẽ bằng xà phòng trước khi ăn và sau khi đi vệ sinh. Ngoài ra, hãy nhớ ăn chín và uống sôi để tiêu diệt mầm bệnh. Em có thường xuyên rửa tay trước khi ăn không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Chăm sóc cơ quan tiêu hóa",
+   "answer": "Để bảo vệ đường tiêu hóa, bạn nên chú ý đến chế độ ăn uống và thực phẩm mình tiêu thụ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Mạch máu dùng để làm gì hả thầy?",
+   "ref": "Mạch máu đóng vai trò là hệ thống ống dẫn để vận chuyển máu. Nó đưa máu giàu oxygen từ tim đến các cơ quan và đưa máu chứa chất thải quay trở lại tim.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Cơ quan tuần hoàn",
+   "answer": "Mạch máu là các ống dẫn máu từ tim đến các cơ quan khác nhau.",
+   "v": "dung"
+  },
+  {
+   "q": "Ăn nhiều muối có hại cho hệ tuần hoàn không thầy?",
+   "ref": "Có em ạ, ăn quá nhiều muối sẽ gây áp lực lên mạch máu và không tốt cho tim. Vì vậy, em nên nhắc gia đình nêm nếm thức ăn vừa đủ thôi nhé.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Chăm sóc cơ quan tuần hoàn",
+   "answer": "Có, ăn quá mặn thường xuyên sẽ làm tăng nguy cơ mắc bệnh cao huyết áp và các bệnh về thận.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để bảo vệ cơ quan hô hấp của mình thầy nhỉ?",
+   "ref": "Em nên thường xuyên đeo khẩu trang, giữ vệ sinh mũi họng và tập thể dục trong môi trường không khí trong lành. Những thói quen này giúp phổi hoạt động tốt hơn. Em có muốn biết thêm về các bài tập hít thở đúng cách không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Cơ quan hô hấp",
+   "answer": "Bạn nên đeo khẩu trang khi ra ngoài để tránh hít phải bụi, vi khuẩn và các chất độc hại.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao chúng ta lại phải bảo vệ các loài động vật ạ?",
+   "ref": "Vì nhiều loài đang có nguy cơ tuyệt chủng do bị săn bắn hoặc mất môi trường sống. Việc bảo vệ động vật giúp cân bằng hệ sinh thái, đảm bảo sự sống bền vững cho Trái Đất.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Động vật",
+   "answer": "Bảo vệ động vật là trách nhiệm của mỗi người để duy trì sự cân bằng sinh thái.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc trồng nhiều cây xanh mang lại lợi ích gì cho chúng ta?",
+   "ref": "Trồng cây xanh mang lại rất nhiều lợi ích như cung cấp oxy để thở, cung cấp lương thực, thực phẩm và làm mát môi trường. Ngoài ra, cây xanh còn giúp ngăn chặn lũ lụt và xói mòn đất. Em có muốn cùng thầy tìm hiểu cách chăm sóc cây xanh đúng cách không?",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Thực vật",
+   "answer": "Việc trồng cây giúp cải thiện chất lượng không khí, giảm ô nhiễm và tăng độ ẩm cho môi trường.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao chúng ta không được tự ý hái nấm trong rừng về ăn?",
+   "ref": "Vì trong rừng có rất nhiều loại nấm độc trông rất giống nấm thường, nếu ăn nhầm sẽ gây ngộ độc nguy hiểm đến tính mạng. Em hãy nhớ luôn hỏi người lớn trước khi sử dụng bất kỳ loại nấm nào nhé.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Nấm",
+   "answer": "Vì nấm là thực vật, nếu hái về mà không chế biến kỹ sẽ dễ gây ngộ độc.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em biết các bước phát triển của cây đậu với ạ?",
+   "ref": "Cây đậu phát triển theo trình tự: Hạt đậu -> Nảy mầm -> Cây con -> Cây trưởng thành ra hoa -> Kết quả chứa hạt. Đây là ví dụ điển hình cho vòng đời của cây có hoa.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Vòng đời của thực vật",
+   "answer": "Để trồng đậu, em cần làm đất kỹ và bón phân hữu cơ nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em ví dụ về động vật sống trên cạn với ạ!",
+   "ref": "Có rất nhiều loài như con hổ, con mèo, con chó hay con gà là những động vật sống trên cạn. Chúng có các cơ quan như chân để đi lại hoặc phổi để thở trên mặt đất.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Môi trường sống của thực vật và động vật",
+   "answer": "Ví dụ nhé, một con gà sống trên mặt đất sẽ phải đi tìm thức ăn trên mặt đất trước khi bay lên cây để đẻ trứng.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, đất sét có trồng cây tốt không ạ?",
+   "ref": "Đất sét thường khó trồng cây hơn vì nó giữ nước quá nhiều gây úng rễ và khi khô lại dễ bị nứt nẻ. Tuy nhiên, một số loại cây đặc thù vẫn có thể sống được nếu được cải tạo.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Đất",
+   "answer": "Đất sét trồng cây rất tốt em ạ. Nó giúp giữ ẩm cho đất và tạo độ thông thoáng cho rễ cây phát triển.",
+   "v": "sai"
+  },
+  {
+   "q": "Không khí có hình dạng cố định không ạ?",
+   "ref": "Không khí không có hình dạng nhất định em ạ. Nó sẽ có hình dạng của vật chứa nó, ví dụ khi thổi vào quả bóng hình trái tim thì không khí sẽ có hình trái tim.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Không khí",
+   "answer": "Có chứ, không khí luôn ở trạng thái ổn định.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho con hỏi nước đá là gì ạ?",
+   "ref": "Nước đá chính là nước ở thể rắn, được hình thành khi nước lỏng bị làm lạnh xuống nhiệt độ thấp. Khi gặp nhiệt độ cao, nước đá sẽ tan chảy trở lại thành thể lỏng.",
+   "mon": "Tự nhiên và Xã hội",
+   "lop": 3,
+   "topic": "Nước",
+   "answer": "Nước đá là dung dịch làm lạnh, dùng để giải nhiệt cho các vật bằng kim loại hoặc nhựa.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Số 100 000 là số có mấy chữ số vậy thầy?",
+   "ref": "Số 100 000 là số có 6 chữ số em ạ. Đây là số tự nhiên nhỏ nhất có 6 chữ số và lớn hơn mọi số có 5 chữ số.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Số tự nhiên đến 100 000",
+   "answer": "Số 100 000 có 10 chữ số.",
+   "v": "sai"
+  },
+  {
+   "q": "Số 1 000 000 đọc là một triệu đúng không thầy?",
+   "ref": "Đúng rồi em, số 1 000 000 đọc là một triệu. Đây là số tự nhiên nhỏ nhất có 7 chữ số. Em có muốn tìm hiểu về các số lớn hơn một triệu không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Các số tự nhiên lớn hơn 100 000",
+   "answer": "Đúng rồi, đây là số lớn nhất có 4 chữ số.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để tìm số trừ khi biết số bị trừ và hiệu hả thầy?",
+   "ref": "Em chỉ cần lấy số bị trừ trừ đi hiệu là sẽ tìm được số trừ. Công thức là: Số trừ = Số bị trừ - Hiệu. Em có muốn tìm hiểu thêm về cách kiểm tra lại kết quả sau khi tính không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép cộng và phép trừ số tự nhiên",
+   "answer": "Bạn lấy tổng các số tiền rồi trừ đi số tiền bị trừ.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, cho con hỏi số dư có thể lớn hơn số chia không ạ?",
+   "ref": "Không thể được em ạ, số dư bắt buộc phải nhỏ hơn số chia. Nếu em thấy số dư lớn hơn số chia, hãy kiểm tra lại bước chia của mình nhé.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép chia số tự nhiên",
+   "answer": "Được chứ, nhưng thầy muốn hỏi là em đã tính toán kỹ chưa đấy.",
+   "v": "sai"
+  },
+  {
+   "q": "Một góc có số đo 180 độ thì gọi là góc gì ạ?",
+   "ref": "Đó chính là góc bẹt. Góc bẹt giống như một đường thẳng và có số đo đúng bằng 180 độ.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Góc nhọn, góc tù, góc bẹt",
+   "answer": "Đó là góc vuông.",
+   "v": "sai"
+  },
+  {
+   "q": "Con dùng dụng cụ gì để kiểm tra hai đường thẳng vuông góc ạ?",
+   "ref": "Em hãy dùng thước ê-ke nhé. Khi một cạnh góc vuông của ê-ke trùng với đường thẳng này và cạnh kia trùng với đường thẳng kia thì đó là hai đường thẳng vuông góc.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Hai đường thẳng song song, hai đường thẳng vuông góc",
+   "answer": "Con dùng thước kẻ và bút mực để vẽ hai đường thẳng này nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "1 tạ thì bằng bao nhiêu ki-lô-gam vậy thầy?",
+   "ref": "1 tạ bằng đúng 100 kg. Em cứ nhớ 1 tạ = 10 yến và 1 yến = 10 kg, nên 10 * 10 = 100 kg.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Đơn vị đo khối lượng",
+   "answer": "1 tạ bằng 1000 kg.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, đơn vị đo diện tích là gì ạ?",
+   "ref": "Đó là đơn vị dùng để đo độ lớn của một bề mặt, ví dụ như diện tích mặt bàn hay diện tích một mảnh vườn. Các đơn vị phổ biến em sẽ gặp là m2, cm2, mm2. Em đã phân biệt được diện tích và chu vi chưa?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Đơn vị đo diện tích",
+   "answer": "Đơn vị đo diện tích thường dùng là mét vuông (cm2) hoặc mét vuông (cm).",
+   "v": "sai"
+  },
+  {
+   "q": "Năm 2024 thuộc thế kỷ nào hả thầy?",
+   "ref": "Năm 2024 thuộc thế kỷ 21. Vì thế kỷ 21 bắt đầu từ năm 2001 và kết thúc vào năm 2100.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Đơn vị đo thời gian",
+   "answer": "Năm 2024 là năm Kỷ Hợi.",
+   "v": "sai"
+  },
+  {
+   "q": "Cho em hỏi tử số cho biết điều gì trong phân số ạ?",
+   "ref": "Tử số cho biết số phần mà ta đã lấy đi hoặc đang xét đến trong tổng số các phần bằng nhau. Ví dụ trong phân số 3/4, số 3 cho biết ta lấy 3 phần từ 4 phần bằng nhau.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phân số",
+   "answer": "Tử số là một số nguyên dương, ví dụ như 10 hoặc 11.",
+   "v": "sai"
+  },
+  {
+   "q": "Em làm phép trừ hai phân số khác mẫu số như thế nào ạ?",
+   "ref": "Em hãy thực hiện quy đồng mẫu số hai phân số đó trước, sau đó mới trừ các tử số cho nhau và giữ nguyên mẫu số chung. Em có muốn thầy hướng dẫn ví dụ cụ thể không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép cộng và phép trừ phân số",
+   "answer": "Hai phân số có cùng mẫu số là 10 và 11 sẽ được tính bằng cách lấy 10 trừ đi 11.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, nhân số tự nhiên với phân số thì làm sao ạ?",
+   "ref": "Em hãy coi số tự nhiên đó là một phân số có mẫu số bằng 1 rồi nhân như bình thường. Ví dụ 3 * 2/5 thì em viết thành 3/1 * 2/5 = 6/5. Em có muốn thử tính 4 * 1/3 xem bằng bao nhiêu không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép nhân và phép chia phân số",
+   "answer": "Chào em! Hãy tưởng tượng mỗi số tự nhiên là một dãy các chữ số. Để tính tổng các chữ số, ta cần chuyển mỗi chữ số thành dạng thập phân (ví dụ: 1010).",
+   "v": "sai"
+  },
+  {
+   "q": "Chữ số đầu tiên sau dấu phẩy gọi là hàng gì ạ?",
+   "ref": "Đó là hàng phần mười. Ví dụ trong số 8,5 thì chữ số 5 nằm ở hàng phần mười. Em có biết chữ số tiếp theo sau đó gọi là hàng gì không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Số thập phân",
+   "answer": "Đó là hàng nghìn.",
+   "v": "sai"
+  },
+  {
+   "q": "Phép cộng số thập phân có tính chất giao hoán không thầy?",
+   "ref": "Có em nhé, phép cộng số thập phân cũng có tính chất giao hoán, nghĩa là khi ta thay đổi thứ tự các số hạng thì tổng không thay đổi. Ví dụ 0,1 + 0,2 cũng bằng 0,2 + 0,1. Em có biết tính chất kết hợp là gì không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép cộng và phép trừ số thập phân",
+   "answer": "Có, phép cộng số thập phân có tính chất giao hoán (có thể viết ngược lại).",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy hướng dẫn lại con cách đặt dấu phẩy khi nhân số thập phân với ạ?",
+   "ref": "Em hãy thực hiện phép nhân như số tự nhiên, sau đó đếm xem hai thừa số có tổng cộng bao nhiêu chữ số sau dấu phẩy. Cuối cùng, em đếm từ phải sang trái ở kết quả bấy nhiêu chữ số rồi đặt dấu phẩy. Em có muốn làm bài tập vận dụng không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Phép nhân và phép chia số thập phân",
+   "answer": "Khi gặp dấu phẩy, ta dùng dấu chấm phẩy `;` để ngăn cách giữa hai phần.",
+   "v": "sai"
+  },
+  {
+   "q": "Hình thoi và hình bình hành khác nhau ở điểm nào ạ?",
+   "ref": "Điểm khác biệt lớn nhất là về độ dài các cạnh. Hình bình hành chỉ cần các cạnh đối diện bằng nhau, còn hình thoi thì bắt buộc cả 4 cạnh phải bằng nhau.",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Hình bình hành và Hình thoi",
+   "answer": "Hình thoi là hình có bốn cạnh bằng nhau, còn hình bình hành chỉ có hai góc bằng nhau mà thôi.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn tìm số bé khi biết tổng và hiệu thì làm thế nào ạ?",
+   "ref": "Em lấy tổng trừ đi hiệu rồi chia kết quả cho 2 nhé. Công thức là: Số bé = (Tổng - Hiệu) / 2. Em có muốn thử áp dụng vào một bài tập cụ thể không?",
+   "mon": "Toán",
+   "lop": 4,
+   "topic": "Trung bình cộng, Tìm hai số khi biết tổng và hiệu",
+   "answer": "Bạn lấy tổng và hiệu trừ đi hai số đó đi.",
+   "v": "sai"
+  },
+  {
+   "q": "Từ \"cơn mưa\" có phải là danh từ không thầy?",
+   "ref": "Đúng rồi, \"cơn mưa\" là danh từ chỉ hiện tượng tự nhiên. Những từ như \"gió\", \"bão\", \"nắng\" cũng là danh từ đấy. Em còn biết hiện tượng tự nhiên nào khác không?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Danh từ",
+   "answer": "Đúng vậy, đây là tính từ dùng để chỉ đặc điểm của cơn mưa.",
+   "v": "sai"
+  },
+  {
+   "q": "Từ \"đang\" có phải là động từ không thầy?",
+   "ref": "Không phải em nhé, \"đang\" là từ chỉ thời gian đi kèm để bổ sung ý nghĩa cho động từ. Ví dụ trong cụm \"đang học\", thì \"học\" mới là động từ chính.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Động từ",
+   "answer": "Đúng vậy, đó là động từ vì nó chỉ hoạt động của con người.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy chỉ cho em cách phân biệt câu \"Ai làm gì?\" và \"Ai thế nào?\" với ạ!",
+   "ref": "Em hãy nhìn vào vị ngữ: nếu chỉ hoạt động thì là \"Ai làm gì?\", còn nếu chỉ đặc điểm, tính chất thì là \"Ai thế nào?\". Ví dụ \"Em đang học bài\" là hoạt động, còn \"Em chăm chỉ\" là đặc điểm. Em đã phân biệt được chưa?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Câu kể",
+   "answer": "Câu hỏi này yêu cầu em phải nắm vững ngữ cảnh của câu để xác định xem nó là hỏi về ai hay cái gì.\n\n- Câu hỏi: \"Bạn A làm gì thế?\" - Câu hỏi về hành động, công việc.\n- Câu hỏi: \"Bạn B làm gì thế?\" - Câu hỏi về thông tin cá nhân.\n\nHãy nhớ quy tắc vàng: \"Câu hỏi phải dẫn dắt, câu trả lời phải khớp với thông tin\" nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Câu \"Bạn có đi chơi không?\" có phải là câu hỏi không thầy?",
+   "ref": "Đúng rồi em, đây là một câu hỏi. Vì nó có từ nghi vấn là \"không\" và kết thúc bằng dấu chấm hỏi để tìm kiếm câu trả lời.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Câu hỏi",
+   "answer": "Không, đó là câu hỏi để xác nhận xem học sinh có muốn tham gia vào buổi học hay không.",
+   "v": "sai"
+  },
+  {
+   "q": "Con dùng từ \"hãy\" trong câu có phải là câu khiến không thầy?",
+   "ref": "Đúng rồi em, khi em dùng từ \"hãy\" để yêu cầu ai đó làm gì thì đó chính là câu khiến. Ví dụ: \"Hãy giữ trật tự trong giờ học!\".",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Câu khiến",
+   "answer": "Đúng rồi, đó là động từ vì nó chỉ hoạt động của con người.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn viết câu cảm thì cuối câu dùng dấu gì ạ?",
+   "ref": "Em hãy dùng dấu chấm than (!) ở cuối câu nhé. Dấu này giúp người đọc nhận ra cảm xúc mạnh mẽ mà người viết muốn truyền tải.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Câu cảm",
+   "answer": "Bạn phải dùng dấu chấm (.) để kết thúc câu.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em hỏi trạng ngữ chỉ nơi chốn trả lời cho câu hỏi nào ạ?",
+   "ref": "Trạng ngữ chỉ nơi chốn trả lời cho câu hỏi \"Ở đâu?\". Ví dụ trong câu \"Trên cành cây, chim hót líu lo\", cụm từ \"Trên cành cây\" chính là trạng ngữ chỉ nơi chốn.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Trạng ngữ",
+   "answer": "Câu hỏi: \"Khi nào thì động từ ở hiện tại tiếp diễn bắt đầu?\".",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để biết một từ là từ phức hả thầy?",
+   "ref": "Em cứ đếm số tiếng, nếu từ đó có từ hai tiếng trở lên thì đó là từ phức. Chẳng hạn từ \"học sinh\" hay \"long lanh\" đều có hai tiếng nên là từ phức.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Từ đơn và từ phức",
+   "answer": "Từ phức là những từ có cấu trúc giống như một từ đơn.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để phân biệt được nhân hóa với các cách viết thông thường ạ?",
+   "ref": "Em hãy tìm xem trong câu có từ ngữ nào vốn chỉ dành cho con người (như xưng hô, tính cách, hành động) nhưng lại được dùng cho vật hay không. Nếu có, đó chính là câu có sử dụng biện pháp nhân hóa. Em có muốn thầy hướng dẫn bài tập thực hành không?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Biện pháp nhân hóa",
+   "answer": "Bạn có thể thử thêm các từ 'đang', 'đã', 'sẽ' vào trước; nếu hợp lý thì đó là sự tương tác về mặt ngữ âm, còn không thì thường là viết sai chính tả.",
+   "v": "sai"
+  },
+  {
+   "q": "Vế B trong phép so sánh dùng để làm gì ạ?",
+   "ref": "Vế B là sự vật dùng để làm chuẩn so sánh, giúp người đọc dễ dàng hình dung ra đặc điểm của vế A. Ví dụ, khi nói \"trắng như tuyết\", thì \"tuyết\" chính là vế B làm chuẩn cho độ trắng.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Biện pháp so sánh",
+   "answer": "Vế B dùng để chỉ sự so sánh về cách thức giữa hai đối tượng.",
+   "v": "sai"
+  },
+  {
+   "q": "Phần kết bài em cần viết những nội dung gì ạ?",
+   "ref": "Ở kết bài, em hãy nêu cảm nghĩ, suy nghĩ hoặc bài học mà em rút ra được sau sự việc đó. Đây là nơi em gửi gắm tình cảm của mình đến người đọc. Em định viết cảm xúc gì cho bài văn sắp tới?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Viết bài văn thuật lại sự việc",
+   "answer": "Bạn cần tóm tắt lại các ý chính đã nêu trong phần thân bài. Ví dụ như: Cảm nghĩ về bài thơ hoặc đoạn thơ, nhấn mạnh thêm một điều gì đó.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Phần Thân bài cần tả những nội dung chính nào thưa thầy?",
+   "ref": "Thân bài cần tập trung tả bao quát hình dáng, tả chi tiết các bộ phận nổi bật và miêu tả hoạt động, thói quen của con vật. Em có muốn biết cách chọn chi tiết tiêu biểu để tả không?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Viết bài văn miêu tả con vật",
+   "answer": "Phần Thân bài thường tả các bộ phận, chi tiết cụ thể của đồ vật như: thân cây, lá cây, hoa, quả,...",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Phần Kết bài em cần viết những nội dung gì?",
+   "ref": "Em hãy nêu tình cảm của mình dành cho cây hoặc lợi ích mà cây mang lại. Ví dụ, em có thể viết về việc em sẽ chăm sóc cây như thế nào.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Viết bài văn miêu tả cây cối",
+   "answer": "Em cần tóm tắt lại các ý chính đã nêu trong phần thân bài.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Kết bài của bài văn nêu ý kiến cần lưu ý điều gì?",
+   "ref": "Em cần khẳng định lại một lần nữa ý kiến của mình và có thể đưa ra một lời khuyên hoặc bài học rút ra. Điều này giúp bài văn trọn vẹn và để lại dư âm cho người đọc.",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Viết bài văn nêu ý kiến",
+   "answer": "Kết bài nêu lên vấn đề cần bàn luận, nhấn mạnh tầm quan trọng của việc bảo vệ môi trường.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, cuối thư con phải viết gì để kết thúc ạ?",
+   "ref": "Em cần viết lời chúc, lời hứa hẹn, sau đó ký tên và ghi rõ họ tên của mình. Điều này thể hiện sự lịch sự và giúp người nhận biết chính xác ai là người gửi. Em có muốn xem một ví dụ về lời chúc cuối thư không?",
+   "mon": "Tiếng Việt",
+   "lop": 4,
+   "topic": "Viết thư",
+   "answer": "Cuối thư, thầy chúc em luôn mạnh khỏe và đạt được những ước mơ của mình.",
+   "v": "sai"
+  },
+  {
+   "q": "Theo thầy, việc học tập tốt có phải là cách biết ơn người có công không?",
+   "ref": "Đúng vậy, đây là cách biết ơn thiết thực nhất của một học sinh. Khi em học giỏi và thành tài, em sẽ góp phần xây dựng quê hương giàu đẹp, tiếp nối xứng đáng truyền thống của cha ông.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Biết ơn người có công với quê hương, đất nước",
+   "answer": "Đó là một cách để thể hiện lòng biết ơn. Em hãy luôn ghi nhớ công lao của những người đã giúp đỡ mình và đền đáp lại bằng sự tôn trọng và tình cảm chân thành.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc học tập tốt có liên quan gì đến tình yêu quê hương không thầy?",
+   "ref": "Có chứ, học tập tốt chính là cách thể hiện lòng yêu quê hương thiết thực nhất của học sinh. Khi có kiến thức, sau này em sẽ có khả năng đóng góp nhiều hơn để xây dựng quê hương giàu đẹp. Em có muốn biết thêm về những tấm gương hiếu học không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Yêu quê hương",
+   "answer": "Có chứ, việc học tập tốt giúp các em phát triển trí tuệ và nhân cách. Nó còn giúp các em hiểu biết thêm về thế giới xung quanh nữa.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Em có được quyền cười khi thấy một bạn có giọng nói lạ không?",
+   "ref": "Tuyệt đối không em nhé, vì giọng nói là đặc điểm cá nhân của mỗi người. Thay vì cười, em hãy lắng nghe một cách chân thành để bạn cảm thấy được khích lệ. Em có muốn tìm hiểu cách giúp bạn tự tin hơn không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tôn trọng đặc điểm cá nhân",
+   "answer": "Có chứ, em hoàn toàn có quyền. Nhưng nếu đó là người lớn tuổi hoặc đang nói chuyện với người khác thì nên giữ ý nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để kết bạn với một người bạn mới ạ?",
+   "ref": "Em hãy chủ động mỉm cười và chào hỏi bạn một cách thân thiện nhé. Một lời giới thiệu ngắn gọn về bản thân sẽ giúp bạn cảm thấy thoải mái hơn khi bắt chuyện với em. Em có muốn biết thêm về những câu chào ấn tượng không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Thiết lập quan hệ bạn bè",
+   "answer": "Bạn có thể bắt đầu bằng cách gửi lời mời kết bạn đến họ. Nếu họ đồng ý, hãy kết nối với họ qua các nền tảng mạng xã hội như Facebook hoặc Instagram nhé.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, những người có công với đất nước là những ai ạ?",
+   "ref": "Đó là những người đã hy sinh xương máu hoặc đóng góp công sức lớn lao để bảo vệ và xây dựng Tổ quốc, như anh hùng liệt sĩ, thương binh hay các Mẹ Việt Nam anh hùng. Sự hy sinh của họ mang lại hòa bình cho chúng ta hôm nay. Em có muốn biết thêm về một anh hùng cụ thể nào không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Biết ơn những người có công với đất nước",
+   "answer": "Đó là những người có công lao lớn đối với dân tộc như: Anh hùng liệt sĩ, thương binh, bệnh binh.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, yêu thương con người có nghĩa là gì ạ?",
+   "ref": "Yêu thương con người là sự thấu hiểu, thông cảm và sẵn lòng giúp đỡ người khác, đặc biệt là những người hoạn nạn. Điều này tạo nên sợi dây liên kết tình cảm giữa người với người trong xã hội. Em có muốn cùng thầy tìm hiểu thêm về những tấm gương nhân ái không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Yêu thương con người",
+   "answer": "Yêu thương con người là sự đồng cảm và chia sẻ với những người xung quanh.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi vô tình làm hỏng đồ của người khác, em nên xử lý thế nào ạ?",
+   "ref": "Em hãy thành thật xin lỗi và tìm cách bồi thường hoặc sửa chữa lại món đồ đó. Sự trung thực sẽ giúp em nhận được sự thông cảm từ người khác. Em có muốn biết thêm về cách xin lỗi sao cho chân thành không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tôn trọng tài sản của người khác",
+   "answer": "Em có thể nói: 'Tôi rất tiếc vì đã làm hỏng món đồ này. Tôi sẽ trả lại cho bạn hoặc đổi sang một món khác cho bạn nhé.'.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc không quay cóp trong thi cử có phải là trung thực không thầy?",
+   "ref": "Đúng vậy, đó chính là biểu hiện điển hình của tính trung thực trong học tập. Khi em tự lực làm bài, kết quả đạt được mới thực sự là giá trị của chính em. Em có muốn thầy hướng dẫn cách học bài hiệu quả để không phải quay cóp không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Trung thực",
+   "answer": "Không, việc gian lận trong thi cử là vi phạm đạo đức và không được chấp nhận.",
+   "v": "dung"
+  },
+  {
+   "q": "Người có trách nhiệm thường có những biểu hiện gì ạ?",
+   "ref": "Người có trách nhiệm sẽ tự giác làm việc, cẩn thận, kiên trì và dám nhận lỗi khi làm sai. Điều này giúp công việc đạt kết quả tốt nhất và được mọi người tin cậy.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Trách nhiệm với công việc",
+   "answer": "Người có trách nhiệm thường là người có tinh thần trách nhiệm cao, luôn hoàn thành tốt các nhiệm vụ được giao.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm việc nhà tự giác giúp ích gì cho gia đình mình hả thầy?",
+   "ref": "Việc này giúp không khí gia đình hòa thuận và gắn kết các thành viên hơn. Khi mọi người cùng chia sẻ công việc, ngôi nhà sẽ luôn sạch sẽ và ấm áp. Em có muốn tìm hiểu cách phân chia việc nhà hợp lý không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tự giác làm việc nhà",
+   "answer": "Giúp mình tiết kiệm thời gian và công sức rất nhiều. Thay vì phải dọn dẹp cả đống đồ đạc, mình chỉ cần phân loại chúng vào đúng chỗ là xong.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Ngoài việc học, em còn có thể làm gì để thầy cô vui?",
+   "ref": "Em hãy luôn lễ phép, biết giúp đỡ thầy cô những việc vừa sức và đoàn kết với bạn bè. Một lớp học hòa thuận, kỷ luật sẽ là món quà tuyệt vời nhất dành cho thầy cô.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Biết ơn thầy cô giáo",
+   "answer": "Em có thể giúp thầy cô soạn giáo án hoặc chuẩn bị bài giảng cho tiết học trên lớp.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Theo thầy, việc tôn trọng những điểm khác nhau giữa mọi người có quan trọng không?",
+   "ref": "Điều này cực kỳ quan trọng vì nó là cơ sở để xây dựng lòng nhân ái và sự thấu hiểu trong xã hội. Nếu ai cũng giống hệt nhau, thế giới sẽ trở nên đơn điệu và thiếu sáng tạo.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tôn trọng sự khác biệt",
+   "answer": "Có chứ, tôn trọng sự khác biệt là điều rất quan trọng. Khi chúng ta chấp nhận sự khác biệt của người khác, chúng ta sẽ dễ dàng hơn trong việc thấu hiểu và hòa hợp với nhau.",
+   "v": "dung"
+  },
+  {
+   "q": "Em nên làm gì để giữ cho trường lớp luôn sạch đẹp?",
+   "ref": "Em hãy bắt đầu từ việc không vứt rác bừa bãi và tích cực tham gia các buổi lao động dọn vệ sinh cùng bạn bè. Những hành động nhỏ như nhặt mẩu giấy vụn trên sàn cũng giúp trường mình đẹp hơn nhiều. Em có muốn tìm hiểu về cách phân loại rác tại trường không?",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Em nên tổ chức các buổi lao động vệ sinh định kỳ tại lớp học.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Nếu thấy bạn chen lấn khi xếp hàng, em sẽ làm gì?",
+   "ref": "Em nên nhẹ nhàng nhắc nhở bạn xếp hàng đợi đến lượt để đảm bảo sự công bằng. Nếu bạn không nghe, em có thể nhờ sự hỗ trợ của người quản lý hoặc thầy cô.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tuân thủ quy định nơi công cộng",
+   "answer": "Em sẽ đi sang chỗ khác để tránh làm phiền.",
+   "v": "sai"
+  },
+  {
+   "q": "Con muốn biết tự lập có phải là cái gì cũng tự làm, không nhờ ai không ạ?",
+   "ref": "Không phải vậy đâu em, tự lập là tự làm những việc vừa sức với mình. Với những việc quá khó hoặc nguy hiểm, em vẫn cần sự giúp đỡ của người lớn để đảm bảo an toàn và hiệu quả.",
+   "mon": "Đạo đức",
+   "lop": 4,
+   "topic": "Tự lập",
+   "answer": "Không hẳn đâu con. Tự lập là con phải biết tự lo cho bản thân mình, từ việc nhỏ nhất như tự đánh răng, tự đi học, tự ăn uống...",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi nào thì nước chuyển từ thể lỏng sang thể khí vậy thầy?",
+   "ref": "Nước chuyển sang thể khí thông qua quá trình bay hơi khi được đun nóng hoặc để ngoài không khí. Ví dụ như khi em phơi quần áo ướt dưới nắng, nước sẽ bay hơi làm quần áo khô.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Nước",
+   "answer": "Khi có sự chênh lệch áp suất trong bình chứa, ví dụ như khi bạn mở nắp hoặc khi có sự thay đổi về nhiệt độ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, không khí gồm những thành phần nào ạ?",
+   "ref": "Không khí là hỗn hợp của nhiều loại khí, trong đó nitơ chiếm khoảng 78%, oxi chiếm khoảng 21% và các khí khác chiếm 1%. Đây là tỷ lệ cân bằng để duy trì sự sống trên Trái Đất. Em có muốn biết khí nào trong số đó giúp chúng ta thở không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Không khí",
+   "answer": "Không khí gồm có ba thành phần chính là hơi nước, oxy và các chất khí khác.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, âm thanh được tạo ra như thế nào ạ?",
+   "ref": "Âm thanh được tạo ra từ sự dao động của các vật em nhé. Khi một vật rung động qua lại thật nhanh, nó tạo ra sóng âm truyền đến tai ta. Em có muốn biết thêm về dao động là gì không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Âm thanh",
+   "answer": "Âm thanh được tạo ra bằng cách cộng hưởng giữa các vật phát ra âm thanh. Ví dụ, khi ta nghe một bản nhạc, ta thường nghe được cả các tần số thấp và cao.",
+   "v": "sai"
+  },
+  {
+   "q": "Con thắc mắc là ánh sáng có luôn đi thẳng không ạ?",
+   "ref": "Trong môi trường trong suốt và đồng nhất thì ánh sáng luôn truyền theo đường thẳng. Đây là nguyên lý cơ bản giúp chúng ta giải thích hiện tượng tạo bóng.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Ánh sáng",
+   "answer": "Không, nó phải đi đường vòng để đến được Trái Đất.",
+   "v": "sai"
+  },
+  {
+   "q": "Nhiệt độ của nước sôi là bao nhiêu độ C ạ?",
+   "ref": "Nước sôi ở nhiệt độ 100°C trong điều kiện bình thường. Đây là mốc nhiệt độ rất cao nên em cần cẩn thận để tránh bị bỏng nhé. Em có biết nước đá tan ở bao nhiêu độ không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Nhiệt",
+   "answer": "Nhiệt độ sôi của nước là 100 độ C.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao nói nấm có ích cho môi trường vậy thầy?",
+   "ref": "Vì nấm đóng vai trò là sinh vật phân hủy. Chúng phân giải xác động, thực vật chết thành chất khoáng giúp đất màu mỡ hơn và làm sạch môi trường sống.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Nấm",
+   "answer": "Vì chúng là sinh vật sống, nên chúng cần oxy để thở và hấp thụ các chất dinh dưỡng từ đất.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao thực phẩm để ngoài trời dễ bị hỏng hơn trong tủ lạnh ạ?",
+   "ref": "Vì vi khuẩn phát triển rất nhanh trong điều kiện nhiệt độ ấm và ẩm, nên thực phẩm dễ bị ôi thiu. Tủ lạnh có nhiệt độ thấp giúp ức chế sự phát triển của vi khuẩn, từ đó bảo quản thức ăn được lâu hơn.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Vi khuẩn",
+   "answer": "Do thực phẩm để ngoài trời tiếp xúc với ánh nắng và nhiệt độ cao, dễ bị vi khuẩn và nấm mốc phát triển.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao ếch lại được gọi là động vật lưỡng cư ạ?",
+   "ref": "Vì ếch có khả năng sống ở cả hai môi trường là dưới nước và trên cạn. Khi còn nhỏ chúng thở bằng mang dưới nước, khi trưởng thành lại thở bằng phổi và da. Em có biết loài nào khác cũng sống lưỡng cư như ếch không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Động vật",
+   "answer": "Vì chúng thường có làn da ẩm ướt.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thân cây dùng để làm gì ạ?",
+   "ref": "Thân đóng vai trò như một hệ thống vận chuyển. Nó đưa nước từ rễ lên lá và mang chất dinh dưỡng từ lá đi nuôi toàn bộ cây.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Thực vật",
+   "answer": "Thân cây được dùng để làm cột chống cho các công trình hoặc làm đồ thủ công mỹ nghệ.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao thực vật luôn đứng đầu chuỗi thức ăn vậy thầy?",
+   "ref": "Vì thực vật là sinh vật sản xuất, có khả năng tự chế tạo thức ăn từ ánh sáng mặt trời. Các loài động vật không tự làm được việc này nên phải ăn thực vật hoặc ăn các loài động vật khác.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Chuỗi thức ăn",
+   "answer": "Vì cây đứng đầu thường có khả năng tự vệ tốt hơn, giúp chúng chống lại sự tấn công của động vật ăn thịt.",
+   "v": "sai"
+  },
+  {
+   "q": "Chuỗi thức ăn trong hệ sinh thái hoạt động như thế nào hả thầy?",
+   "ref": "Chuỗi thức ăn là sơ đồ thể hiện mối quan hệ \"ai ăn ai\" để truyền năng lượng giữa các loài. Chẳng hạn, cỏ bị châu chấu ăn, rồi châu chấu lại bị ếch ăn.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Hệ sinh thái",
+   "answer": "Chuỗi thức ăn là chuỗi thức ăn mà thực vật và động vật ăn lẫn nhau để lấy năng lượng sống.",
+   "v": "dung"
+  },
+  {
+   "q": "Gió có thể tạo ra điện được không thầy?",
+   "ref": "Hoàn toàn được em nhé, đó chính là năng lượng gió. Con người dùng các tuabin gió khổng lồ để biến sức gió thành điện năng.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Năng lượng",
+   "answer": "Có chứ, gió là nguồn cung cấp năng lượng chính để vận hành máy phát điện.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, điện là gì và mình lấy điện từ đâu ạ?",
+   "ref": "Điện là một dạng năng lượng cung cấp cho các thiết bị hoạt động, được lấy từ các nguồn điện như pin, ắc quy hoặc ổ cắm điện. Em có thể thấy điều này khi lắp pin vào đồ chơi thì đồ chơi mới chạy được. Em có muốn biết làm sao để tạo ra một mạch điện đơn giản không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Điện",
+   "answer": "Điện được tạo ra bằng cách nối dây dẫn với nguồn điện.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Làm sao để chúng em giúp bảo vệ môi trường ở trường?",
+   "ref": "Các em hãy bắt đầu từ việc nhỏ nhất là bỏ rác đúng nơi quy định và không vẽ bậy lên bàn ghế. Việc giữ gìn vệ sinh lớp học cũng là một cách bảo vệ môi trường sống hằng ngày. Em có muốn cùng bạn lập một nhóm tình nguyện dọn vệ sinh trường học không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Các em có thể tham gia các hoạt động tình nguyện như dọn dẹp vệ sinh, trồng thêm cây xanh hoặc tham gia các cuộc thi tái chế.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc giữ vệ sinh môi trường có liên quan gì đến sức khỏe không ạ?",
+   "ref": "Có liên quan mật thiết vì môi trường sạch sẽ sẽ hạn chế sự phát triển của vi khuẩn và virus gây bệnh. Khi không gian sống thoáng mát, sạch sẽ, em sẽ ít bị ốm vặt hơn. Em có muốn tìm hiểu về các bệnh lây qua đường hô hấp không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Sức khỏe con người",
+   "answer": "Có chứ, việc giữ vệ sinh giúp hạn chế các bệnh truyền nhiễm và bảo vệ sức khỏe.",
+   "v": "dung"
+  },
+  {
+   "q": "Những thực phẩm nào cung cấp chất bột đường cho chúng ta?",
+   "ref": "Các loại lương thực như gạo, ngô, khoai, sắn là nguồn cung cấp chất bột đường chính. Chúng giúp em có năng lượng để học tập và vui chơi.",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Dinh dưỡng",
+   "answer": "Đó là tinh bột (như cơm, bánh mì).",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, thế nào là thực phẩm an toàn ạ?",
+   "ref": "Thực phẩm an toàn là những loại thực phẩm không gây hại cho sức khỏe con người khi chúng ta ăn hoặc uống. Điều này có nghĩa là thực phẩm đó không chứa vi khuẩn gây bệnh hay hóa chất độc hại. Em có muốn biết làm sao để nhận biết thực phẩm an toàn không?",
+   "mon": "Khoa học",
+   "lop": 4,
+   "topic": "Vệ sinh an toàn thực phẩm",
+   "answer": "Thực phẩm an toàn là thực phẩm không chứa hóa chất, thuốc trừ sâu hoặc các chất độc hại khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Lễ hội truyền thống và làng nghề có ý nghĩa gì đối với địa phương ạ?",
+   "ref": "Chúng là những giá trị văn hóa quý báu, thể hiện bản sắc riêng và lưu giữ những kỹ năng, kinh nghiệm của cha ông ta từ xưa. Làng nghề còn giúp phát triển kinh tế cho người dân địa phương. Quê em có làng nghề truyền thống nào không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Địa phương em",
+   "answer": "Lễ hội là một phần quan trọng trong đời sống văn hóa của người Việt. Nó thể hiện niềm tin, sự tôn kính và gắn kết cộng đồng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thời tiết ở Duyên hải miền Trung như thế nào hả thầy?",
+   "ref": "Khí hậu ở đây là nhiệt đới ẩm gió mùa, đặc trưng bởi mùa hè nắng nóng, khô hạn và mùa thu đông thường có bão, lũ. Sự khắc nghiệt này đòi hỏi người dân phải có biện pháp phòng chống thiên tai nghiêm ngặt.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Thiên nhiên vùng Duyên hải miền Trung",
+   "answer": "Thời tiết Duyên hải miền Trung thường nóng và khô hạn, nhưng đôi khi có mưa lớn vào mùa hè.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy cho em hỏi khí hậu Tây Nguyên chia làm mấy mùa?",
+   "ref": "Khí hậu ở đây chia làm hai mùa rõ rệt là mùa mưa và mùa khô. Mùa mưa kéo dài từ tháng 5 đến tháng 10, còn mùa khô từ tháng 11 đến tháng 4 năm sau. Em có biết mùa khô gây khó khăn gì cho người dân nơi đây không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Thiên nhiên vùng Tây Nguyên",
+   "answer": "Khí hậu Tây Nguyên mang tính chất đặc trưng của vùng nhiệt đới gió mùa. Mùa mưa thường bắt đầu từ tháng 5 đến tháng 10 và mùa khô từ tháng 11 đến tháng 4 năm sau.",
+   "v": "dung"
+  },
+  {
+   "q": "Em thấy người dân Nam Bộ hay đi ghe xuồng, tại sao vậy thầy?",
+   "ref": "Đó là vì địa hình vùng này có mạng lưới sông ngòi, kênh rạch chằng chịt. Việc sử dụng ghe, xuồng giúp người dân di chuyển và vận chuyển hàng hóa thuận tiện hơn, hình thành nên các chợ nổi đặc sắc.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Thiên nhiên vùng Nam Bộ",
+   "answer": "Em hỏi về cách đi lại ở Nam Bộ là đúng rồi đó. Ghe là phương tiện chính để di chuyển trên sông nước.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Ngoài trồng lúa, người dân vùng này còn làm gì để phát triển kinh tế?",
+   "ref": "Họ trồng các loại cây công nghiệp như chè và chăn nuôi gia súc. Việc tận dụng thế mạnh về đất đai và khí hậu giúp họ nâng cao đời sống.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Đời sống con người ở vùng Trung du và miền núi Bắc Bộ",
+   "answer": "Tôi không tìm thấy thông tin nào về An Giang. Có thể tên này chưa chính xác hoặc không tồn tại. Bạn kiểm tra lại tên, hoặc cho tôi thêm chi tiết nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao người dân miền Trung lại có tính cách cần cù, chịu khó?",
+   "ref": "Đó là vì họ phải đối mặt với nhiều thiên tai khắc nghiệt như bão, lũ lụt và hạn hán thường xuyên. Chính khó khăn đã rèn luyện cho con người nơi đây sự kiên cường và bền bỉ.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Đời sống con người ở vùng Duyên hải miền Trung",
+   "answer": "Do ảnh hưởng của văn hóa nông nghiệp và sự giao thoa giữa các vùng miền. Họ thường có tính kiên nhẫn và chịu đựng cao hơn so với miền Bắc hoặc miền Nam.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Người dân Tây Nguyên thường ở loại nhà nào hả thầy?",
+   "ref": "Họ thường ở nhà sàn em ạ. Kiểu nhà này giúp người dân tránh được thú dữ và sự ẩm thấp của vùng cao nguyên. Em có muốn biết thêm về sự khác biệt giữa nhà rông và nhà dài không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Đời sống con người ở vùng Tây Nguyên",
+   "answer": "Nhà sàn của người Tây Nguyên thường là nhà sàn cao, mái dốc và có nhiều gian.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, vùng Nam Bộ trồng những loại cây gì là chính ạ?",
+   "ref": "Cây trồng chủ yếu ở đây là lúa nước, các loại cây ăn trái và cây công nghiệp như cao su, điều, tiêu. Sự đa dạng này giúp kinh tế vùng phát triển mạnh mẽ.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Đời sống con người ở vùng Nam Bộ",
+   "answer": "Ở miền Nam, các loại cây ăn trái như xoài, sầu riêng, mít, chuối... là phổ biến nhất.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tên nước Đại Cồ Việt xuất hiện từ khi nào ạ?",
+   "ref": "Tên gọi này xuất hiện từ năm 968, khi Đinh Bộ Lĩnh thống nhất đất nước và lập ra nhà Đinh. Việc đặt tên nước riêng khẳng định vị thế độc lập, tự chủ của ta đối với phương Bắc. Em có muốn tìm hiểu thêm về các vị vua tiếp theo của nước ta không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Đinh Bộ Lĩnh và sự thành lập nhà Đinh",
+   "answer": "Tôi không tìm thấy thông tin nào về Đại Cồ Việt. Có thể tên này chưa chính xác hoặc không tồn tại. Bạn kiểm tra lại tên, hoặc cho tôi thêm chi tiết nhé.",
+   "v": "sai"
+  },
+  {
+   "q": "Nhà Tiền Lê đã chú trọng điều gì trong quân sự?",
+   "ref": "Nhà Tiền Lê đặc biệt chú trọng việc luyện tập quân đội và xây dựng hệ thống phòng thủ vững chắc. Điều này giúp nước ta luôn trong tư thế sẵn sàng đối phó với kẻ thù.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Thời kỳ nhà Tiền Lê",
+   "answer": "Nhà Lê chú trọng vào việc xây dựng quốc phòng và tổ chức quân đội.",
+   "v": "dung"
+  },
+  {
+   "q": "Thời nhà Lý, tôn giáo nào được coi trọng và phát triển nhất ạ?",
+   "ref": "Phật giáo là tôn giáo phát triển cực thịnh nhất thời kỳ này. Nhiều ngôi chùa lớn được xây dựng và các nhà sư có ảnh hưởng lớn đến đời sống tinh thần của nhân dân. Em có muốn kể tên một số ngôi chùa cổ từ thời Lý không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Nhà Lý",
+   "answer": "Đó là Phật giáo.",
+   "v": "dung"
+  },
+  {
+   "q": "Em muốn biết nhà Trần đã đánh thắng quân xâm lược nào?",
+   "ref": "Nhà Trần đã ba lần đánh thắng quân xâm lược Mông - Nguyên hùng mạnh. Đây là một trong những chiến công hiển hách nhất trong lịch sử chống ngoại xâm của dân tộc ta. Em có muốn tìm hiểu về các trận đánh cụ thể không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Nhà Trần",
+   "answer": "Nhà Trần đã đánh thắng quân xâm lược Nguyên Mông vào thế kỷ thứ 13.",
+   "v": "dung"
+  },
+  {
+   "q": "Nhà Hậu Lê đã làm gì để phát triển kinh tế nông nghiệp?",
+   "ref": "Nhà nước đã thực hiện nhiều chính sách khuyến khích nhân dân khẩn hoang, mở rộng diện tích trồng trọt. Điều này giúp lương thực dồi dào và đời sống nhân dân ổn định hơn. Em có muốn biết thêm về các nghề thủ công thời kỳ này không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Nhà Hậu Lê",
+   "answer": "Nhà Hậu Lê đã tập trung vào việc phát triển các loại cây trồng chủ lực như lúa nước, ngô, đậu và các loại cây ăn quả.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao Hai Bà Trưng lại phất cờ khởi nghĩa vậy thầy?",
+   "ref": "Nguyên nhân chính là do sự cai trị hà khắc của nhà Hán và việc Thái thú Tô Định giết chết Thi Sách. Hai Bà Trưng khởi nghĩa để vừa trả thù nhà, vừa đền nợ nước cho nhân dân. Em có muốn biết thêm về sự độc ác của Tô Định không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 4,
+   "topic": "Khởi nghĩa Hai Bà Trưng",
+   "answer": "Hai Bà Trưng khởi nghĩa chống lại ách đô hộ của nhà Hán.",
+   "v": "dung"
+  },
+  {
+   "q": "Số thập phân là gì vậy thầy?",
+   "ref": "Số thập phân là số gồm hai phần là phần nguyên và phần thập phân, ngăn cách bởi dấu phẩy. Em có thể hình dung nó như một cách viết khác của phân số thập phân cho gọn hơn. Em đã gặp số này trong thực tế chưa?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Số thập phân",
+   "answer": "Số thập phân là số có dạng thập phân, ví dụ như 10.",
+   "v": "sai"
+  },
+  {
+   "q": "Thêm số 0 vào bên phải phần thập phân có làm thay đổi giá trị của số đó không thầy?",
+   "ref": "Không hề thay đổi giá trị em nhé, ví dụ 0,5 cũng chính là 0,50 hay 0,500. Việc này thường giúp chúng ta dễ dàng so sánh hai số thập phân hơn. Em có muốn biết thêm ứng dụng của việc này không?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "So sánh số thập phân",
+   "answer": "Không, việc thêm số 0 vào bên phải không làm thay đổi giá trị của số thập phân.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, khi cộng số thập phân con cần lưu ý điều gì nhất ạ?",
+   "ref": "Quan trọng nhất là em phải đặt các dấu phẩy thẳng cột với nhau. Khi dấu phẩy thẳng hàng, các chữ số ở cùng một hàng mới khớp nhau để cộng cho chính xác. Em đã nắm rõ cách đặt tính chưa?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Phép cộng số thập phân",
+   "answer": "Khi cộng các số thập phân, ta thường dùng dấu phẩy để ngăn cách.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Cách trừ số thập phân có giống trừ số tự nhiên không thầy?",
+   "ref": "Về cơ bản là rất giống, em vẫn trừ từ phải sang trái và mượn 1 ở hàng cao hơn nếu cần. Điểm khác biệt duy nhất là em cần chú ý đặt dấu phẩy thẳng cột và viết dấu phẩy vào kết quả.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Phép trừ số thập phân",
+   "answer": "Không, trừ số thập phân là một phép toán toán học chứ không phải là phép trừ.",
+   "v": "sai"
+  },
+  {
+   "q": "Nhân một số với 0.01 thì ta làm thế nào ạ?",
+   "ref": "Em chỉ cần chuyển dấu phẩy của số đó sang bên trái hai chữ số. Ví dụ 12.3 x 0.01 sẽ bằng 0.123. Em có muốn tìm hiểu thêm về tính chất kết hợp không?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Phép nhân số thập phân",
+   "answer": "Để tìm số nguyên nhỏ nhất trong một khoảng, chúng ta có thể dùng công thức: `n = (a * b) // 100`. Sau đó, ta chỉ cần lấy `n / (100 * n)` để tìm giá trị nhỏ nhất.",
+   "v": "sai"
+  },
+  {
+   "q": "Chia một số cho 0,1 thì kết quả thay đổi thế nào ạ?",
+   "ref": "Kết quả sẽ là số bị chia được dời dấu phẩy sang bên phải một chữ số. Ví dụ 1,2 chia 0,1 sẽ bằng 12. Em có muốn tìm hiểu thêm về chia cho 0,01 không?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Phép chia số thập phân",
+   "answer": "Kết quả sẽ là 1 hoặc -1 tùy vào việc có chia hết cho 0 hay không.",
+   "v": "sai"
+  },
+  {
+   "q": "Cách chuyển từ hỗn số sang phân số tính thế nào thầy nhỉ?",
+   "ref": "Em hãy lấy phần nguyên nhân mẫu số rồi cộng tử số để tìm tử số mới, mẫu số giữ nguyên nhé. Chẳng hạn 1 2/3 sẽ thành (1 * 3 + 2) / 3 = 5/3.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hỗn số",
+   "answer": "Bạn lấy số mũ nhân với số dư của hiệu (hiệu trừ đi hiệu) rồi chia cho 10.",
+   "v": "sai"
+  },
+  {
+   "q": "Một phút thì bằng bao nhiêu giây thầy nhỉ?",
+   "ref": "Một phút bằng chính xác 60 giây. Khi em bấm đồng hồ bấm giờ, em sẽ thấy kim giây chạy hết một vòng là vừa đủ một phút.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Số đo thời gian",
+   "answer": "Một phút bằng 60 giây.",
+   "v": "dung"
+  },
+  {
+   "q": "Đơn vị dùng để đo góc là gì vậy thầy?",
+   "ref": "Đơn vị đo góc là độ, ký hiệu là dấu °. Ví dụ khi nói góc vuông bằng 90 độ, ta viết là 90°.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Số đo góc",
+   "answer": "Đơn vị dùng để đo góc là độ C hoặc độ F.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn tính diện tích hình tam giác em làm thế nào?",
+   "ref": "Em lấy độ dài đáy nhân với chiều cao rồi chia cho 2 nhé. Hãy nhớ là hai số đo này phải cùng đơn vị đo thì kết quả mới đúng được.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hình tam giác",
+   "answer": "Em lấy độ dài đáy tương ứng với chiều cao nhân với chiều dài đáy tương ứng với chiều rộng rồi cộng lại.",
+   "v": "sai"
+  },
+  {
+   "q": "Hai cạnh song song trong hình thang được gọi là gì ạ?",
+   "ref": "Hai cạnh đó được gọi là hai đáy, bao gồm đáy lớn và đáy bé. Còn hai cạnh không song song thì ta gọi là cạnh bên.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hình thang",
+   "answer": "Đó là hai đường chéo.",
+   "v": "sai"
+  },
+  {
+   "q": "Cách tính chu vi hình tròn như thế nào vậy thầy?",
+   "ref": "Em lấy đường kính nhân với 3.14 hoặc lấy 2 lần bán kính nhân với 3.14. Ví dụ bán kính là 2cm thì chu vi là 2 * 2 * 3.14 = 12.56cm.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hình tròn",
+   "answer": "Chu vi hình tròn bằng tổng độ dài ba cạnh cộng lại với nhau.",
+   "v": "sai"
+  },
+  {
+   "q": "Diện tích toàn phần khác diện tích xung quanh ở điểm nào ạ?",
+   "ref": "Diện tích toàn phần bao gồm cả diện tích xung quanh và diện tích của hai mặt đáy. Vì vậy, em tính Sxq xong thì cộng thêm diện tích hai đáy là ra Stp.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hình hộp chữ nhật",
+   "answer": "Diện tích toàn phần bằng một nửa tổng diện tích của hình lập phương.",
+   "v": "sai"
+  },
+  {
+   "q": "Công thức tính Stp của hình lập phương là gì ạ?",
+   "ref": "Công thức là Stp = a * a * 6, trong đó a là độ dài cạnh. Em chỉ cần tính diện tích một mặt vuông rồi nhân cho 6 mặt là ra kết quả. Em đã nắm vững cách phân biệt Sxq và Stp chưa?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Hình lập phương",
+   "answer": "Công thức là (S = S * (r2*a^2)).",
+   "v": "sai"
+  },
+  {
+   "q": "Chiều cao của hình tam giác là gì vậy thầy?",
+   "ref": "Đó là đoạn thẳng kẻ từ một đỉnh và vuông góc với cạnh đối diện. Cạnh đối diện đó chính là đáy của tam giác. Em có muốn thử xác định chiều cao trên hình vẽ không?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Diện tích hình tam giác",
+   "answer": "Chiều cao của hình tam giác bằng một nửa chiều cao cộng với phần đáy tương ứng.",
+   "v": "sai"
+  },
+  {
+   "q": "Chiều cao của hình thang là đường nào vậy thầy?",
+   "ref": "Chiều cao là đoạn thẳng vuông góc nối từ một đáy đến đáy đối diện. Em hãy dùng ê-ke để kiểm tra góc vuông khi vẽ hình nhé.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Diện tích hình thang",
+   "answer": "Chiều cao hình thang bằng tổng số độ dài hai đáy cộng lại với nhau.",
+   "v": "sai"
+  },
+  {
+   "q": "Đơn vị đo thể tích thường dùng là gì vậy thầy?",
+   "ref": "Các đơn vị phổ biến nhất là xăng-ti-mét khối (cm3), đề-xi-mét khối (dm3) và mét khối (m3). Tùy vào kích thước vật thể mà em chọn đơn vị cho phù hợp. Em có biết 1dm3 bằng bao nhiêu cm3 không?",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Thể tích hình hộp chữ nhật và hình lập phương",
+   "answer": "Đơn vị đo thể tích thường dùng là lít (l) hoặc mét khối (m3).",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để biết một vật đi nhanh hay chậm ạ?",
+   "ref": "Con hãy so sánh vận tốc của chúng, vật nào có vận tốc lớn hơn trên cùng một quãng đường thì đi nhanh hơn. Ví dụ, máy bay có vận tốc lớn hơn ô tô nên bay nhanh hơn.",
+   "mon": "Toán",
+   "lop": 5,
+   "topic": "Vận tốc, Quãng đường, Thời gian",
+   "answer": "Bạn có thể dùng đồng hồ hoặc các thiết bị đo tốc độ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Từ \"ăn\", \"xơi\" và \"chén\" có phải là từ đồng nghĩa không thầy?",
+   "ref": "Có, đây là nhóm từ đồng nghĩa không hoàn toàn vì cùng chỉ hoạt động ăn nhưng khác về sắc thái. \"Xơi\" dùng để thể hiện sự tôn trọng, còn \"chén\" lại rất bình dân. Em có muốn thử đặt câu với các từ này không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Từ đồng nghĩa",
+   "answer": "Từ \"ăn\" trong tiếng Việt có thể được viết là \"ăn\" hoặc \"xơi\".",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em hỏi nghĩa chính của từ đa nghĩa gọi là gì?",
+   "ref": "Nghĩa chính của từ đa nghĩa chính là nghĩa gốc đấy em. Đây là nghĩa cơ bản nhất mà mọi người thường nghĩ đến đầu tiên khi nhắc đến từ đó. Em có muốn tìm hiểu thêm về cách tra từ điển không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Từ đa nghĩa",
+   "answer": "Đó là sự kết hợp giữa các từ có nghĩa khác nhau để tạo thành một nghĩa mới.",
+   "v": "sai"
+  },
+  {
+   "q": "Cách phân biệt từ đồng âm dựa vào đâu ạ?",
+   "ref": "Em cần dựa vào ngữ cảnh của câu văn để xác định nghĩa của từ đó. Khi đặt vào câu, nghĩa của từ sẽ hiện rõ và em sẽ thấy chúng không liên quan gì đến nhau. Em có muốn thầy hướng dẫn cách đặt câu với từ đồng âm không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Từ đồng âm",
+   "answer": "Bạn có thể dựa vào cách phát âm của từ đó để nhận biết nó có phải là từ đồng âm hay không.",
+   "v": "sai"
+  },
+  {
+   "q": "Mục đích chính của việc dùng đại từ trong văn viết là gì ạ?",
+   "ref": "Mục đích chính là để tránh lặp từ và làm cho câu văn mạch lạc, tự nhiên hơn. Nếu không có đại từ, bài viết sẽ bị rườm rà và gây cảm giác nhàm chán cho người đọc.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Đại từ",
+   "answer": "Việc sử dụng đại từ giúp làm rõ hơn mối quan hệ giữa các danh từ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Khi nào thì mình dùng cặp quan hệ từ \"Nhờ... mà...\" thay vì \"Vì... nên...\"?",
+   "ref": "Em dùng \"Nhờ... mà...\" khi muốn nhấn mạnh nguyên nhân dẫn đến kết quả tích cực, tốt đẹp. Còn \"Vì... nên...\" thường dùng cho nguyên nhân chung hoặc tiêu cực. Em có thấy sự khác biệt này thú vị không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Quan hệ từ",
+   "answer": "Bạn có thể dùng cách viết ngắn gọn hơn là \"Nhờ... mà...\" (dùng chữ s) để viết ngắn gọn hơn cho cả hai từ.",
+   "v": "sai"
+  },
+  {
+   "q": "Một câu chỉ có một cụm CN-VN thì có gọi là câu đơn không thầy?",
+   "ref": "Chính xác, đó chính là định nghĩa của câu đơn đấy em. Chỉ cần một nòng cốt CN-VN là đủ để tạo thành một câu đơn hoàn chỉnh.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Câu đơn",
+   "answer": "Câu đó chỉ được tính là một câu nếu nó chỉ gồm một tiếng duy nhất thôi.",
+   "v": "sai"
+  },
+  {
+   "q": "Cặp quan hệ từ là gì và dùng để làm gì trong câu ghép?",
+   "ref": "Đó là những cặp từ như \"Vì... nên...\", \"Tuy... nhưng...\" dùng để nối các vế câu và thể hiện mối quan hệ ý nghĩa giữa chúng. Chẳng hạn, cặp \"Vì... nên...\" dùng để chỉ nguyên nhân - kết quả.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Câu ghép",
+   "answer": "Cặp quan hệ từ là sự kết hợp giữa danh từ chỉ người hoặc vật ở trước.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, trạng ngữ là gì ạ?",
+   "ref": "Trạng ngữ là thành phần phụ của câu dùng để bổ sung ý nghĩa về thời gian, nơi chốn, nguyên nhân... cho câu. Nó giúp người đọc, người nghe hiểu rõ hơn về hoàn cảnh diễn ra sự việc. Em có muốn biết cách phân biệt các loại trạng ngữ không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Trạng ngữ",
+   "answer": "Trạng ngữ dùng để chỉ một cụm từ đứng trước động từ hoặc tính từ. Ví dụ như: “Cô ấy chạy rất nhanh”.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để tìm được từ cần tra trong cuốn từ điển dày như vậy ạ?",
+   "ref": "Em hãy tìm theo thứ tự bảng chữ cái của chữ cái đầu tiên trong từ đó. Ví dụ, muốn tra từ \"Học tập\", em hãy lật đến phần chữ H.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Từ điển",
+   "answer": "Bạn có thể dùng cách này: Đầu tiên, hãy tìm phần 'từ' ở phía trước tên sách (ví dụ: 'Từ điển'). Sau đó, bạn chỉ cần thay thế phần 'từ' bằng tên của cuốn sách mà bạn muốn tìm. Cách này giúp bạn tra cứu nhanh chóng mà không cần mở trực tiếp vào nội dung bên trong.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để bài văn tả cảnh không bị khô khan ạ?",
+   "ref": "Em hãy vận dụng các biện pháp so sánh và nhân hóa để thổi hồn vào cảnh vật. Thay vì nói \"hoa hồng đỏ\", em có thể nói \"những bông hoa hồng đỏ thắm như những chiếc đèn lồng nhỏ\". Em có muốn thử đặt một câu so sánh không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết bài văn tả cảnh",
+   "answer": "Bạn có thể thêm một vài câu hỏi mở để dẫn dắt bài viết, ví dụ như: 'Cảnh vật trong bài văn này là gì?', 'Vì sao em lại thích cảnh vật này?', 'Em thấy cảnh vật này khi nào và ở đâu?'.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để tả tính cách một người mà không bị khô khan ạ?",
+   "ref": "Em hãy tả thông qua cử chỉ, lời nói hoặc một hành động cụ thể của người đó. Thay vì nói \"ông em hiền\", em hãy tả cách ông xoa đầu và mỉm cười với em. Cách này sẽ khiến bài văn giàu cảm xúc hơn nhiều.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết bài văn tả người",
+   "answer": "Bạn có thể dùng những câu hỏi mở để họ tự nói lên tính cách của mình. Ví dụ như: 'Tính cách của bạn là gì?', 'Bạn thích kiểu người như thế nào?', 'Bạn nghĩ mình phù hợp với kiểu người nào?'.",
+   "v": "sai"
+  },
+  {
+   "q": "Mở bài trực tiếp và gián tiếp khác nhau thế nào ạ?",
+   "ref": "Mở bài trực tiếp đi thẳng vào giới thiệu câu chuyện, còn mở bài gián tiếp lại dẫn dắt từ một vấn đề liên quan rồi mới vào truyện. Cách mở bài gián tiếp thường giúp bài văn uyển chuyển và hấp dẫn hơn.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết bài văn kể chuyện",
+   "answer": "Mở bài trực tiếp là nói thẳng vào vấn đề, còn mở bài gián tiếp là dùng cách diễn đạt để người đọc hiểu được ý chính của mình.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Văn biểu cảm khác với văn miêu tả ở điểm nào hả thầy?",
+   "ref": "Điểm khác biệt lớn nhất là mục đích: văn miêu tả tập trung làm rõ đặc điểm hình dáng, tính chất, còn văn biểu cảm tập trung vào tình cảm, cảm xúc. Trong văn biểu cảm, đối tượng chỉ là cái cớ để em bộc lộ nỗi lòng mình.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết bài văn biểu cảm",
+   "answer": "Văn biểu cảm thường dùng những từ ngữ, hình ảnh cụ thể để diễn tả tình cảm, cảm xúc của người viết.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Cấu trúc của bài viết thể hiện ý kiến gồm những gì ạ?",
+   "ref": "Bài viết gồm 3 phần chính là Mở đoạn, Thân đoạn và Kết đoạn. Trong đó, Thân đoạn phải đảm bảo có đủ lý lẽ và dẫn chứng để thuyết phục người đọc. Em có muốn thực hành viết thử một đoạn ngắn không?",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết đoạn văn thể hiện ý kiến",
+   "answer": "Cấu trúc thường có 3 phần: mở bài, thân bài và kết bài.",
+   "v": "dung"
+  },
+  {
+   "q": "Một bài báo cáo công việc cần có những phần chính nào?",
+   "ref": "Báo cáo cần có 3 phần: Phần đầu (thủ tục hành chính), Phần nội dung (kết quả, hạn chế) và Phần kết thúc (kiến nghị, chữ ký). Việc chia rõ 3 phần giúp người đọc dễ theo dõi hơn.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết báo cáo công việc",
+   "answer": "Bài báo cáo công việc thường bao gồm các thông tin sau: Tên công ty, Vị trí làm việc, Thời gian làm việc, Nội dung công việc và Kết luận.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Phần nội dung chi tiết nên trình bày như thế nào cho dễ nhìn ạ?",
+   "ref": "Cách tốt nhất là em nên trình bày dưới dạng bảng. Bảng này thường gồm các cột như: Thời gian, Nội dung công việc, Người thực hiện và Ghi chú để mọi người dễ theo dõi.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Viết chương trình hoạt động",
+   "answer": "Bạn có thể trình bày theo dạng bảng hoặc dạng danh sách tùy vào cách bạn muốn lưu trữ thông tin.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Dấu gạch ngang dùng để làm gì thế thầy?",
+   "ref": "Dấu gạch ngang có ba tác dụng chính là đánh dấu lời nói nhân vật, liệt kê các ý hoặc nối các từ trong liên danh. Ví dụ: \"Hà Nội - Nam Định\" là một liên danh.",
+   "mon": "Tiếng Việt",
+   "lop": 5,
+   "topic": "Cách dùng dấu câu",
+   "answer": "Dấu gạch ngang dùng để chỉ khoảng cách giữa hai từ.",
+   "v": "sai"
+  },
+  {
+   "q": "Tại sao chúng ta phải biết ơn những người có công với đất nước?",
+   "ref": "Vì nhờ có sự hy sinh và đóng góp của họ mà chúng ta mới có được cuộc sống hòa bình, tự do và ấm no như ngày hôm nay. Đây chính là đạo lý \"Uống nước nhớ nguồn\" của dân tộc ta. Em có biết câu ca dao nào nói về lòng biết ơn không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Biết ơn người có công với quê hương, đất nước",
+   "answer": "Vì họ là những người đã hy sinh xương máu để xây dựng nên đất nước.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc tôn trọng sự khác biệt mang lại lợi ích gì cho chúng ta?",
+   "ref": "Việc này giúp em có thêm nhiều bạn bè và xây dựng môi trường sống hòa bình, đoàn kết. Khi mọi người tôn trọng nhau, chúng ta sẽ cảm thấy được yêu thương và tự tin hơn. Em có muốn tìm hiểu thêm về cách rèn luyện đức tính này không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Tôn trọng sự khác biệt của người khác",
+   "answer": "Tôn trọng sự khác biệt giúp chúng ta hiểu và thông cảm với những khác biệt của người khác, từ đó tạo ra sự hòa hợp và đồng thuận.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho em ví dụ về một người vượt khó nổi tiếng ở Việt Nam với ạ?",
+   "ref": "Đó chính là thầy Nguyễn Ngọc Ký, người đã luyện viết bằng chân để đi học dù bị liệt cả hai tay. Nghị lực của thầy là tấm gương sáng cho mọi học sinh Việt Nam. Em có muốn tìm hiểu thêm về cuộc đời của thầy không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Vượt khó trong học tập và cuộc sống",
+   "answer": "Ví dụ như thầy Nguyễn Ngọc Ký, một nhà giáo khuyết tật nhưng vẫn kiên trì dạy chữ cho học sinh nghèo.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để em thể hiện lòng biết ơn với người lao động ạ?",
+   "ref": "Em hãy thể hiện bằng thái độ lễ phép, không coi thường người khác và giữ gìn cẩn thận các sản phẩm mình sử dụng. Việc không lãng phí đồ ăn cũng là một cách biết ơn bác nông dân đấy.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Biết ơn những người lao động",
+   "answer": "Em có thể bày tỏ lòng biết ơn bằng cách nói cảm ơn, tặng quà hoặc gửi lời chúc sức khỏe cho họ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, thế nào là có trách nhiệm với bản thân ạ?",
+   "ref": "Đó là khi em tự giác thực hiện nhiệm vụ của mình và dám nhận lỗi khi làm sai. Việc này giúp em trưởng thành và tự lập hơn trong cuộc sống. Em có muốn biết những biểu hiện cụ thể của tính trách nhiệm không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Có trách nhiệm với bản thân",
+   "answer": "Là việc con phải tự chịu trách nhiệm với những hành động và quyết định của mình.",
+   "v": "dung"
+  },
+  {
+   "q": "Em cần làm gì để thể hiện mình là người có trách nhiệm trong nhà?",
+   "ref": "Em hãy tự giác làm những việc vừa sức như quét nhà, gấp quần áo và chăm chỉ học tập. Khi em chủ động giúp đỡ, cha mẹ sẽ cảm thấy rất vui và hạnh phúc.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Có trách nhiệm với gia đình",
+   "answer": "Em nên tự lập kế hoạch chi tiêu hợp lý và báo cáo lại cho bố mẹ biết.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc học tập chăm chỉ có liên quan gì đến trách nhiệm với nhà trường không thầy?",
+   "ref": "Có chứ, vì nhiệm vụ chính của học sinh là học tập, nên khi em nỗ lực đạt kết quả cao, em đã góp phần nâng cao thành tích chung của trường. Sự tiến bộ của mỗi cá nhân chính là niềm tự hào của nhà trường.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Có trách nhiệm với nhà trường",
+   "answer": "Có chứ, việc học tập tốt giúp các em tiếp thu kiến thức và hoàn thành bài vở một cách tốt nhất.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Có trách nhiệm với cộng đồng là làm những việc gì vậy thầy?",
+   "ref": "Em có thể thực hiện bằng cách tham gia các hoạt động nhân đạo, giữ gìn vệ sinh chung hoặc tuân thủ nội quy nơi công cộng. Ví dụ như việc quyên góp sách vở cho bạn nghèo là một hành động rất đáng khen.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Có trách nhiệm với cộng đồng",
+   "answer": "Là những việc liên quan đến môi trường, như trồng cây gây rừng, bảo vệ động vật quý hiếm hoặc các chương trình phát triển bền vững.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Có mấy nhóm quyền cơ bản của trẻ em ạ?",
+   "ref": "Có 4 nhóm quyền cơ bản gồm: quyền sống còn, quyền phát triển, quyền bảo vệ và quyền tham gia. Mỗi nhóm quyền đảm bảo một khía cạnh quan trọng trong sự trưởng thành của em. Em có thể kể tên một quyền trong nhóm quyền phát triển không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Tôn trọng quyền trẻ em",
+   "answer": "Có 4 nhóm quyền chính là quyền sống còn, quyền được bảo vệ, quyền phát triển và quyền tham gia.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho em hỏi nhóm quyền được phát triển gồm những gì ạ?",
+   "ref": "Nhóm này bao gồm quyền được học tập, vui chơi, giải trí và tham gia các hoạt động văn hóa. Ví dụ như việc em được đến trường mỗi ngày chính là thực hiện quyền này.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Bảo vệ quyền trẻ em",
+   "answer": "Nhóm quyền được phát triển là một tập hợp các quy định và hướng dẫn nhằm đảm bảo việc sử dụng và thực thi các quyền con người, đặc biệt là trong lĩnh vực nhân quyền.",
+   "v": "sai"
+  },
+  {
+   "q": "Sự chân thành có vai trò gì trong tình bạn vậy thầy?",
+   "ref": "Chân thành là nền tảng quan trọng nhất để xây dựng niềm tin giữa bạn bè với nhau. Khi em trung thực và không giả dối, bạn sẽ tin tưởng và yêu quý em nhiều hơn.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Thiết lập quan hệ bạn bè",
+   "answer": "Sự chân thành là nền tảng để xây dựng một mối quan hệ bền vững. Bạn cần phải thành thật và tôn trọng lẫn nhau để tạo nên một tình bạn đẹp.",
+   "v": "dung"
+  },
+  {
+   "q": "Khi cãi nhau với bạn, con nên làm gì đầu tiên?",
+   "ref": "Em hãy giữ bình tĩnh trước hết nhé. Khi tâm trạng ổn định, em sẽ không nói ra những lời làm tổn thương bạn và dễ dàng tìm ra cách giải quyết hơn.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Giải quyết mâu thuẫn trong quan hệ bạn bè",
+   "answer": "Con hãy ngồi xuống và bình tĩnh lại.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc chấp hành luật giao thông có phải là tôn trọng pháp luật không ạ?",
+   "ref": "Đúng vậy, đây là một ví dụ điển hình về việc tôn trọng pháp luật trong đời sống. Khi em dừng đèn đỏ hay đội mũ bảo hiểm, em đang bảo vệ tính mạng cho mình và mọi người xung quanh.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Tôn trọng pháp luật",
+   "answer": "Có, việc chấp hành luật giao thông là rất quan trọng để đảm bảo an toàn cho bản thân và người khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, nếu em thấy bạn mình vứt rác ra sân trường thì em nên làm gì?",
+   "ref": "Em hãy nhẹ nhàng nhắc nhở bạn nhặt rác bỏ vào thùng và giải thích cho bạn hiểu việc giữ vệ sinh chung là trách nhiệm của mỗi người. Nếu bạn không nghe, em có thể nhờ thầy cô hỗ trợ. Em có muốn tập đóng vai tình huống này cùng thầy không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Tuân thủ quy định nơi công cộng",
+   "answer": "Em nên nhắc nhở bạn và cùng bạn thu gom rác vào thùng rác.",
+   "v": "dung"
+  },
+  {
+   "q": "Chúng ta có thể làm gì để mọi người xung quanh cùng bảo vệ môi trường?",
+   "ref": "Em hãy tích cực tuyên truyền và nhắc nhở bạn bè, người thân cùng thực hiện các hành động xanh. Khi nhiều người cùng làm, hiệu quả mang lại sẽ rất lớn. Em có tự tin để nhắc nhở bạn mình khi bạn vứt rác bừa bãi không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Bảo vệ môi trường",
+   "answer": "Bạn có thể bắt đầu bằng việc phân loại rác thải tại nguồn.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Vì sao chúng ta nên khuyến khích dùng năng lượng mặt trời hay năng lượng gió?",
+   "ref": "Vì đây là những nguồn năng lượng tái tạo, vô tận và đặc biệt là không gây ô nhiễm môi trường như than đá hay dầu mỏ. Việc chuyển đổi sang năng lượng sạch là cách bảo vệ hành tinh bền vững nhất.",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Sử dụng năng lượng tiết kiệm",
+   "answer": "Vì đây là nguồn năng lượng sạch, không gây ô nhiễm môi trường và giúp giảm thiểu hiệu ứng nhà kính.",
+   "v": "dung"
+  },
+  {
+   "q": "Làm sao để giảm thiểu thiệt hại do thiên tai gây ra thưa thầy?",
+   "ref": "Chúng ta cần kết hợp giữa việc chuẩn bị kỹ lưỡng trước khi thiên tai đến và tuân thủ nghiêm ngặt các hướng dẫn an toàn khi thiên tai xảy ra. Ngoài ra, việc trồng rừng và bảo vệ môi trường cũng là cách bền vững để giảm nhẹ thiên tai. Em có muốn biết trồng rừng giúp ích gì trong việc chống lũ không?",
+   "mon": "Đạo đức",
+   "lop": 5,
+   "topic": "Ứng phó với thiên tai",
+   "answer": "Để giảm thiểu thiệt hại, chúng ta cần có kế hoạch ứng phó cụ thể và chi tiết.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy cho em hỏi Kali giúp ích gì cho cây ạ?",
+   "ref": "Kali giúp cây tăng khả năng chống chịu sâu bệnh và vận chuyển chất dinh dưỡng hiệu quả hơn. Ngoài ra, Kali còn giúp quả có vị ngọt và chất lượng hơn.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Thành phần và vai trò của chất khoáng",
+   "answer": "Kali giúp cây trồng tích lũy chất dinh dưỡng để phát triển. Nếu thiếu kali, cây sẽ bị héo và còi cọc.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, hiện tượng ngưng tụ là gì thế ạ?",
+   "ref": "Ngưng tụ là quá trình hơi nước chuyển từ thể khí sang thể lỏng khi gặp lạnh. Ví dụ điển hình là những giọt sương đọng trên lá cây vào buổi sớm.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Chu trình của nước",
+   "answer": "Đó là hiện tượng các giọt chất lỏng nhỏ xuống bề mặt vật thể.",
+   "v": "sai"
+  },
+  {
+   "q": "Đinh sắt bị gỉ có phải là biến đổi hóa học không ạ?",
+   "ref": "Đúng rồi em, đây là một ví dụ điển hình về biến đổi hóa học. Sắt đã tác dụng với oxygen và hơi nước để tạo ra chất mới là gỉ sắt có màu nâu đỏ.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Sự biến đổi hóa học",
+   "answer": "Đúng vậy, nếu bạn để đinh sắt trong dung dịch axit sẽ xảy ra phản ứng ăn mòn.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy cho em hỏi mặt trời cung cấp năng lượng dưới dạng nào?",
+   "ref": "Mặt trời cung cấp năng lượng dưới dạng nhiệt năng và quang năng. Nhiệt năng tạo ra hơi ấm, còn quang năng tạo ra ánh sáng cho mọi sinh vật.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Năng lượng mặt trời",
+   "answer": "Mặt trời cung cấp năng lượng dưới dạng ánh sáng và nhiệt lượng.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc dùng bánh xe nước để đưa nước lên cao có phải là dùng năng lượng nước không thầy?",
+   "ref": "Đúng rồi em, đó chính là ứng dụng năng lượng nước trong nông nghiệp. Dòng chảy của con suối làm quay bánh xe, từ đó múc nước đưa lên các kênh dẫn vào ruộng.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Năng lượng nước",
+   "answer": "Đúng rồi, đó chính là năng lượng thủy lực.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho em hỏi điện năng chuyển thành nhiệt năng là như thế nào?",
+   "ref": "Đó là khi dòng điện chạy qua một vật dẫn làm vật đó nóng lên, ví dụ như bàn là hoặc nồi cơm điện. Em hãy thử tìm xem trong bếp nhà mình còn đồ vật nào dùng cơ chế này không?",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Năng lượng điện",
+   "answer": "Điện năng chuyển hóa từ nhiệt năng sang cơ năng, ví dụ như khi ta làm nóng nước hoặc làm lạnh không khí.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu thấy bạn mình bị điện giật thì em phải làm gì?",
+   "ref": "Trước hết em tuyệt đối không được chạm trực tiếp vào bạn mà phải tìm cách ngắt nguồn điện ngay lập tức bằng cầu dao hoặc dùng vật cách điện (như cây gỗ khô) để tách bạn ra khỏi nguồn điện. Sau đó, hãy gọi lớn cho người lớn giúp đỡ.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Sử dụng năng lượng điện an toàn",
+   "answer": "Em nên nhanh chóng tách hai người ra xa nguồn điện, sau đó lấy nước đổ lên vùng bị điện giật để làm giảm tác dụng của dòng điện.",
+   "v": "sai"
+  },
+  {
+   "q": "Hiện tượng hạt phấn rơi vào đầu nhụy được gọi là gì ạ?",
+   "ref": "Hiện tượng đó chính là sự thụ phấn. Đây là bước khởi đầu quan trọng nhất để cây có thể hình thành hạt và quả sau này.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Sự sinh sản của thực vật có hoa",
+   "answer": "Đó gọi là hiện tượng thụ tinh không đều.",
+   "v": "sai"
+  },
+  {
+   "q": "Sự khác nhau giữa nhóm đẻ trứng và đẻ con là gì ạ?",
+   "ref": "Sự khác nhau nằm ở môi trường phát triển của phôi: một bên là trong trứng (ngoài cơ thể mẹ) và một bên là trong tử cung (trong cơ thể mẹ). Ví dụ điển hình là chim (đẻ trứng) và mèo (đẻ con).",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Sự sinh sản của động vật",
+   "answer": "Đó là sự phát triển của cơ thể, ví dụ như sự lớn lên của cơ thể để chuẩn bị cho việc sinh sản.",
+   "v": "sai"
+  },
+  {
+   "q": "Sự khác nhau giữa biến thái hoàn toàn và không hoàn toàn là gì?",
+   "ref": "Điểm khác biệt lớn nhất là giai đoạn nhộng; biến thái hoàn toàn có giai đoạn nhộng, còn biến thái không hoàn toàn thì không. Ví dụ châu chấu là biến thái không hoàn toàn vì nó không có giai đoạn làm nhộng.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Vòng đời của động vật",
+   "answer": "Đó là sự thay đổi về tính chất của cơ thể, ví dụ như từ người trưởng thành sang trẻ con.",
+   "v": "sai"
+  },
+  {
+   "q": "Hợp tử là gì và nó được tạo ra khi nào ạ?",
+   "ref": "Hợp tử là tế bào đầu tiên của một cơ thể mới, được tạo ra ngay sau khi tinh trùng thụ tinh với trứng. Từ một hợp tử này, cơ thể sẽ phân chia thành hàng tỉ tế bào.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Đặc điểm sinh sản của con người",
+   "answer": "Hợp tử là những tế bào con của trứng, chúng được hình thành từ một tế bào mẹ duy nhất.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi dậy thì, cơ thể bạn nam có gì thay đổi thưa thầy?",
+   "ref": "Bạn nam sẽ phát triển mạnh về cơ bắp, vai rộng ra, mọc râu và xuất hiện hiện tượng xuất tinh. Giọng nói của các bạn cũng thường trầm xuống, gọi là vỡ giọng.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Tuổi dậy thì",
+   "answer": "Khi dậy thì, cơ thể nam giới sẽ phát triển mạnh về chiều cao và cân nặng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Tại sao tuổi dậy thì chúng ta lại dễ bị mụn và có mùi cơ thể ạ?",
+   "ref": "Đó là do các tuyến bã nhờn và tuyến mồ hôi hoạt động mạnh hơn bình thường em ạ. Khi dầu thừa và mồ hôi tích tụ, chúng dễ gây bít tắc lỗ chân lông và tạo điều kiện cho vi khuẩn phát triển. Em có muốn biết cách chăm sóc da mặt đúng cách không?",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Vệ sinh tuổi dậy thì",
+   "answer": "Vì trong giai đoạn này, nội tiết tố trong cơ thể thay đổi khiến tuyến bã nhờn hoạt động mạnh.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy ơi, thế nào là xâm hại cơ thể ạ?",
+   "ref": "Đó là những hành vi cố ý gây tổn thương về thân thể hoặc tinh thần cho người khác. Ví dụ như việc bị đánh đập hoặc bị chạm vào vùng riêng tư trái phép. Em có muốn biết những vùng nào trên cơ thể là vùng riêng tư không?",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Phòng tránh xâm hại cơ thể",
+   "answer": "Đó là những hành vi nhằm mục đích làm tổn thương hoặc gây đau đớn về thể xác cho người khác.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Hút thuốc thụ động là gì vậy thầy?",
+   "ref": "Là việc một người hít phải khói thuốc từ người khác đang hút xung quanh mình. Dù không trực tiếp cầm điếu thuốc, phổi của họ vẫn hấp thụ các chất độc hại.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Tác hại của thuốc lá",
+   "answer": "Là những người sống trong môi trường có khói thuốc, như trẻ em hay người lớn hút thuốc lá.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thưa thầy, chất cồn trong bia rượu tác động đến hệ thần kinh như thế nào ạ?",
+   "ref": "Chất cồn làm suy giảm khả năng kiểm soát hành vi và gây mất thăng bằng. Điều này khiến người uống thường nói năng không kiểm soát hoặc đi đứng loạng choạng. Em có muốn biết thêm về các dấu hiệu của người bị say không?",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Tác hại của rượu bia",
+   "answer": "Chúng làm ức chế hoạt động của não bộ và gây ra tình trạng mất kiểm soát hành vi.",
+   "v": "dung"
+  },
+  {
+   "q": "Thưa thầy, ma túy gây ra những tác hại gì cho xã hội ạ?",
+   "ref": "Ma túy gây mất an ninh trật tự vì người nghiện dễ thực hiện các hành vi vi phạm pháp luật như trộm cắp để lấy tiền mua thuốc. Nó còn làm tan vỡ hạnh phúc của nhiều gia đình.",
+   "mon": "Khoa học",
+   "lop": 5,
+   "topic": "Phòng tránh ma túy",
+   "answer": "Ma túy gây ra nhiều hệ lụy nghiêm trọng cho gia đình và cộng đồng. Nó làm suy giảm sức khỏe, khiến người nghiện mất khả năng lao động, dễ dẫn đến tội phạm và tệ nạn xã hội.",
+   "v": "dung"
+  },
+  {
+   "q": "Diện tích đất liền và hải đảo của nước ta là bao nhiêu ạ?",
+   "ref": "Diện tích đất liền và hải đảo của Việt Nam khoảng 331.212 km2. Con số này cho thấy quy mô lãnh thổ của nước ta trong khu vực Đông Nam Á.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Vị trí địa lý, hình dáng và kích thước Việt Nam",
+   "answer": "Diện tích đất liền của nước ta là 321.300 km2.",
+   "v": "sai"
+  },
+  {
+   "q": "Dãy núi nào đồ sộ nhất nước ta vậy thầy?",
+   "ref": "Dãy Hoàng Liên Sơn là dãy núi cao và đồ sộ nhất Việt Nam. Đây là nơi có những đỉnh núi cao chót vót quanh năm mây phủ.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Địa hình Việt Nam",
+   "answer": "Đó là dãy Trường Sơn.",
+   "v": "sai"
+  },
+  {
+   "q": "Vì sao miền Bắc lại trồng được các loại rau xứ lạnh?",
+   "ref": "Đó là nhờ có mùa đông lạnh do gió mùa đông bắc mang tới. Khi nhiệt độ giảm xuống, các loại cây trồng vùng ôn đới có thể sinh trưởng và phát triển tốt. Em có biết tên loại rau mùa đông nào không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Khí hậu Việt Nam",
+   "answer": "Vì miền Bắc có khí hậu mát mẻ quanh năm nên cây cối phát triển tốt.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy cho em hỏi sông Hồng và sông Cửu Long có vai trò gì?",
+   "ref": "Hai hệ thống sông này bồi đắp nên hai vùng đồng bằng màu mỡ, tạo điều kiện cho phát triển nông nghiệp lúa nước. Đồng thời, chúng cũng là những tuyến giao thông đường thủy quan trọng.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Sông ngòi Việt Nam",
+   "answer": "Sông Hồng và sông Cửu Long là hai con sông lớn nhất ở nước ta. Chúng cung cấp nguồn nước chủ yếu cho sản xuất và sinh hoạt.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Sinh vật ở Việt Nam có đặc điểm chung là gì ạ?",
+   "ref": "Sinh vật Việt Nam rất đa dạng và phong phú về cả loài và hệ sinh thái. Chúng ta có từ rừng rậm nhiệt đới đến rừng ngập mặn với nhiều loài quý hiếm. Em có tò mò về những loài động vật quý hiếm ở nước ta không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Đất và sinh vật Việt Nam",
+   "answer": "Sinh vật ở Việt Nam thường có đặc điểm chung là sức sống mãnh liệt và khả năng thích nghi cao.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy cho em hỏi quần đảo Hoàng Sa và Trường Sa thuộc tỉnh/thành phố nào?",
+   "ref": "Quần đảo Hoàng Sa thuộc thành phố Đà Nẵng, còn quần đảo Trường Sa thuộc tỉnh Khánh Hòa. Việc nắm rõ địa giới hành chính giúp chúng ta khẳng định rõ ràng chủ quyền lãnh thổ.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Biển đảo Việt Nam",
+   "answer": "Quần đảo Hoàng Sa và Trường Sa là hai quần đảo của Việt Nam.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Vì sao người dân lại tập trung đông ở đồng bằng và thành phố?",
+   "ref": "Do điều kiện tự nhiên thuận lợi, kinh tế phát triển và có nhiều việc làm nên dân cư tập trung về đây. Điều này giúp việc giao thương và sinh hoạt trở nên dễ dàng hơn.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Đặc điểm dân cư và phân bố dân cư",
+   "answer": "Do nhu cầu giao thương, đi lại và trao đổi hàng hóa giữa các vùng.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Việc áp dụng khoa học kỹ thuật vào nông nghiệp có lợi ích gì hả thầy?",
+   "ref": "Việc này giúp tăng năng suất, nâng cao chất lượng sản phẩm và giảm bớt sức lao động cho người nông dân. Ví dụ như dùng máy gặt đập liên hợp thay vì gặt bằng tay sẽ nhanh hơn rất nhiều. Em có muốn tìm hiểu thêm về các loại máy móc hiện đại trong nông nghiệp không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Hoạt động sản xuất nông nghiệp",
+   "answer": "Việc áp dụng khoa học kỹ thuật giúp tăng năng suất, giảm chi phí sản xuất và nâng cao chất lượng nông sản.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao các nhà máy thường xây ở nơi có giao thông thuận tiện ạ?",
+   "ref": "Để việc vận chuyển nguyên liệu đến nhà máy và đưa sản phẩm đến tay người tiêu dùng được nhanh chóng, rẻ tiền hơn. Điều này giúp doanh nghiệp giảm chi phí sản xuất. Em có muốn tìm hiểu về các vùng công nghiệp lớn không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Hoạt động sản xuất công nghiệp",
+   "answer": "Vì khi ở gần đường, nhà máy sẽ dễ dàng vận chuyển nguyên vật liệu và hàng hóa ra vào.",
+   "v": "dung"
+  },
+  {
+   "q": "Tại sao nói hoạt động dịch vụ ngày càng hiện đại hơn?",
+   "ref": "Vì hiện nay chúng ta có sự hỗ trợ của khoa học kĩ thuật và internet. Thay vì ra ngân hàng, em có thể chuyển tiền qua ứng dụng điện thoại, đó chính là sự hiện đại hóa của dịch vụ.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Hoạt động dịch vụ",
+   "answer": "Do sự phát triển của công nghệ, các dịch vụ ngày càng được tối ưu hóa và tiện lợi hơn.",
+   "v": "dung"
+  },
+  {
+   "q": "Ý nghĩa của cuộc Tổng tiến công và nổi dậy Tết Mậu Thân 1968 là gì ạ?",
+   "ref": "Sự kiện này đã gây tổn thất nặng nề cho quân Mỹ và chính quyền Sài Gòn, buộc Mỹ phải ngồi vào bàn đàm phán. Nó cho thấy sức mạnh phi thường của quân và dân ta. Em có muốn biết thêm về các chiến dịch khác không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Cuộc kháng chiến chống Mỹ cứu nước",
+   "answer": "Đó là chiến thắng Điện Biên Phủ trên không, kết thúc thắng lợi cuộc kháng chiến chống Mỹ cứu nước.",
+   "v": "sai"
+  },
+  {
+   "q": "Việc gia nhập các tổ chức quốc tế mang lại lợi ích gì cho nước ta ạ?",
+   "ref": "Việc này giúp Việt Nam thu hút vốn đầu tư nước ngoài và mở rộng thị trường xuất khẩu hàng hóa. Nhờ đó, nhiều nhà máy hiện đại được xây dựng và tạo ra nhiều việc làm cho người dân.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Đất nước Việt Nam từ 1975 đến nay",
+   "answer": "Gia nhập các tổ chức này giúp Việt Nam tiếp cận được nguồn vốn, công nghệ và kinh nghiệm quản lý từ các quốc gia khác.",
+   "v": "dung"
+  },
+  {
+   "q": "Việc gia nhập WTO năm 2007 có tác dụng gì cho nước ta?",
+   "ref": "Việc gia nhập WTO giúp Việt Nam mở rộng giao thương, thúc đẩy xuất nhập khẩu và thu hút vốn đầu tư nước ngoài. Điều này tạo điều kiện cho hàng hóa Việt Nam vươn ra toàn cầu. Em có muốn tìm hiểu thêm về các tổ chức quốc tế khác mà Việt Nam tham gia không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Thành tựu xây dựng và bảo vệ Tổ quốc",
+   "answer": "Gia nhập WTO đã giúp Việt Nam hội nhập sâu hơn vào nền kinh tế thế giới, tạo điều kiện để phát triển kinh tế.",
+   "v": "dung"
+  },
+  {
+   "q": "Những nước như Pháp hay Đức nằm ở châu lục nào ạ?",
+   "ref": "Các nước này nằm ở châu Âu. Đây là khu vực có trình độ phát triển khoa học kỹ thuật và kinh tế rất cao. Em có muốn tìm hiểu về Liên minh châu Âu không?",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Các nước năm châu",
+   "answer": "Pháp và Đức là hai quốc gia nằm ở châu Âu.",
+   "v": "dung"
+  },
+  {
+   "q": "Thầy cho em biết nước Mỹ nằm ở châu lục nào?",
+   "ref": "Hoa Kỳ (Mỹ) nằm ở châu Bắc Mỹ em nhé. Quốc gia này giáp với Canada ở phía bắc và Mê-xi-cô ở phía nam.",
+   "mon": "Lịch sử và Địa lý",
+   "lop": 5,
+   "topic": "Một số quốc gia tiêu biểu trên thế giới",
+   "answer": "Nước Mỹ nằm ở châu Mỹ.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Cách viết tập hợp có quy tắc gì không thầy?",
+   "ref": "Có em nhé, em cần dùng chữ cái in hoa để đặt tên và đặt các phần tử trong dấu ngoặc nhọn { }. Các phần tử số nên cách nhau bằng dấu chấm phẩy để tránh nhầm lẫn với số thập phân.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Tập hợp",
+   "answer": "Tập hợp là một danh sách các phần tử cố định, ví dụ như một danh sách hoặc một mảng.",
+   "v": "sai"
+  },
+  {
+   "q": "Giá trị của chữ số phụ thuộc vào điều gì ạ?",
+   "ref": "Giá trị của chữ số phụ thuộc vào vị trí hay còn gọi là hàng của nó trong số đó. Ví dụ trong số 12, chữ số 1 ở hàng chục nên có giá trị là 10, nhưng trong số 21, chữ số 1 ở hàng đơn vị nên chỉ có giá trị là 1. Em có muốn tập phân tích một số lớn hơn không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Số tự nhiên",
+   "answer": "Giá trị của chữ số phụ thuộc vào vị trí của nó trong một dãy số.",
+   "v": "dung"
+  },
+  {
+   "q": "a * (b + c) = a * b + a * c gọi là tính chất gì ạ?",
+   "ref": "Đây chính là tính chất phân phối của phép nhân đối với phép cộng. Nó cực kỳ hữu ích khi em muốn tính nhẩm nhanh các biểu thức phức tạp. Em có muốn biết cách dùng nó để tính nhanh 99 * 15 không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Phép tính với số tự nhiên",
+   "answer": "Đó là tính chất giao của hai đường thẳng.",
+   "v": "sai"
+  },
+  {
+   "q": "Hiệu 30 - 12 có chia hết cho 6 không thầy?",
+   "ref": "Có em nhé, vì 30 chia hết cho 6 và 12 cũng chia hết cho 6 nên hiệu (30 - 12) chia hết cho 6.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Tính chất chia hết",
+   "answer": "Hiệu số 30 - 12 là một số nguyên, nên nó không chia hết cho 6 đâu em.",
+   "v": "sai"
+  },
+  {
+   "q": "Số 9 có phải số nguyên tố không thầy?",
+   "ref": "Số 9 không phải là số nguyên tố mà là hợp số. Vì ngoài ước là 1 và 9, nó còn có ước là 3.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Số nguyên tố",
+   "answer": "Số 9 là số nguyên tố vì nó chỉ chia hết cho 1 và chính nó.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, thế nào là bội chung của hai số ạ?",
+   "ref": "Bội chung là số chia hết cho cả hai số đó em nhé. Ví dụ, số 12 chia hết cho cả 3 và 4 nên 12 là bội chung của 3 và 4. Em có muốn thử tìm thêm một bội chung khác của 3 và 4 không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Ước chung và Bội chung",
+   "answer": "Đó là bội chung nhỏ nhất (BCNN).",
+   "v": "sai"
+  },
+  {
+   "q": "Số đối của một số là gì vậy thầy?",
+   "ref": "Số đối của một số là số nằm cách đều điểm 0 nhưng ở phía ngược lại trên trục số. Chẳng hạn, số đối của 4 là -4 và ngược lại. Em thử tìm số đối của -100 xem nào?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Số nguyên",
+   "answer": "Số đối của một số là số đối của nó.",
+   "v": "sai"
+  },
+  {
+   "q": "Phép trừ số nguyên thực chất là phép tính gì vậy thầy?",
+   "ref": "Phép trừ thực chất là phép cộng với số đối của số trừ. Thay vì trừ, em chuyển thành cộng với số đối để tính toán dễ dàng hơn.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Phép tính với số nguyên",
+   "answer": "Phép trừ số nguyên là phép trừ giữa hai số nguyên.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn kiểm tra 2/5 và 4/10 có bằng nhau không thì làm thế nào ạ?",
+   "ref": "Em thực hiện nhân chéo: lấy 2 * 10 = 20 và 5 * 4 = 20. Vì hai kết quả bằng nhau nên 2/5 = 4/10. Em có muốn làm thêm bài tập về so sánh phân số không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Phân số",
+   "answer": "Để so sánh hai số này, bạn lấy 5 trừ đi 10 rồi chia cho 5. Nếu kết quả là 0 thì bằng nhau, ngược lại thì không.",
+   "v": "sai"
+  },
+  {
+   "q": "Cách nhân hai phân số có khó không thầy?",
+   "ref": "Rất đơn giản em nhé, em chỉ cần lấy tử nhân tử và mẫu nhân mẫu. Chẳng hạn 1/2 nhân 3/4 sẽ bằng 3/8. Em có muốn thử làm một ví dụ khác không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Phép tính với phân số",
+   "answer": "Không, cách làm rất đơn giản. Bạn chỉ cần lấy số thập phân lớn hơn chia cho số thập phân nhỏ hơn là xong.",
+   "v": "sai"
+  },
+  {
+   "q": "Nếu hai số thập phân có phần nguyên bằng nhau thì so sánh thế nào ạ?",
+   "ref": "Em hãy so sánh tiếp các chữ số ở hàng phần mười, nếu vẫn bằng nhau thì so sánh đến hàng phần trăm và cứ tiếp tục như vậy. Số nào có chữ số ở hàng tương ứng lớn hơn thì số đó lớn hơn. Em có gặp khó khăn ở bước này không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Số thập phân",
+   "answer": "Nếu cùng số thập phân nhưng có số chữ số khác nhau thì ta lấy chữ số cuối cùng làm chuẩn để so sánh.",
+   "v": "sai"
+  },
+  {
+   "q": "Khi chia số thập phân cho số thập phân, mình phải xử lý dấu phẩy thế nào ạ?",
+   "ref": "Em hãy biến số chia thành số tự nhiên bằng cách dời dấu phẩy sang phải, rồi dời dấu phẩy của số bị chia sang phải tương ứng. Sau đó, em thực hiện phép chia như chia cho số tự nhiên.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Phép tính với số thập phân",
+   "answer": "Bạn cần dùng dấu chấm phẩy để ngăn cách hai số thập phân. Ví dụ: 10.5 = 10.5 và 5.5 = 5.5.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, điểm trong hình học được vẽ và ký hiệu như thế nào ạ?",
+   "ref": "Em hãy vẽ một dấu chấm nhỏ và dùng chữ cái in hoa để đặt tên cho nó nhé. Ví dụ, một dấu chấm và ghi bên cạnh là chữ A thì ta có điểm A. Em có muốn biết cách đặt tên cho đường thẳng không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Khái niệm điểm, đường thẳng",
+   "answer": "Điểm được tính bằng cách lấy tổng số điểm của 3 môn chia cho bình phương diện tích mỗi môn.",
+   "v": "sai"
+  },
+  {
+   "q": "Làm sao để biết một góc là góc tù hay góc nhọn ạ?",
+   "ref": "Em hãy dựa vào số đo của góc đó: góc nhọn nhỏ hơn 90°, còn góc tù thì lớn hơn 90° nhưng phải nhỏ hơn 180°. Ví dụ góc 45° là góc nhọn, góc 110° là góc tù.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Đoạn thẳng và góc",
+   "answer": "Bạn có thể dùng công thức tính góc tù: (a + b) / 2.",
+   "v": "sai"
+  },
+  {
+   "q": "Diện tích hình bình hành được tính như thế nào ạ?",
+   "ref": "Em lấy độ dài cạnh đáy nhân với chiều cao tương ứng, công thức là S = a * h. Chiều cao ở đây là đoạn thẳng vuông góc hạ từ đỉnh xuống cạnh đáy. Em có muốn làm bài tập áp dụng phần này không?",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Hình vuông, hình tam giác, hình chữ nhật, hình thoi, hình bình hành",
+   "answer": "Diện tích hình bình hành bằng 1/2 diện tích hình tam giác.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy cho em hỏi hình tam giác đều có tâm đối xứng không?",
+   "ref": "Hình tam giác đều không có tâm đối xứng em ạ. Tuy nhiên, nó lại có đến 3 trục đối xứng là 3 đường cao (đồng thời là đường trung tuyến) của tam giác.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Hình đối xứng",
+   "answer": "Hình tam giác đều là hình tam giác có 3 đường thẳng cắt nhau tạo thành góc bằng 90 độ.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, tên các bạn trong danh sách lớp có phải là dữ liệu số không?",
+   "ref": "Không phải đâu em, tên các bạn là dữ liệu không là số vì nó là dạng chữ. Chỉ những thông tin như ngày sinh hay chiều cao của các bạn mới là dữ liệu số.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Thu thập và tổ chức dữ liệu",
+   "answer": "Đúng rồi em, đây là danh sách các học sinh trong lớp.",
+   "v": "sai"
+  },
+  {
+   "q": "Muốn đọc số liệu trên biểu đồ cột thì nhìn vào đâu ạ?",
+   "ref": "Em hãy nhìn vào đỉnh của cột, sau đó dóng sang trục tung (trục thẳng đứng) để xem đỉnh đó tương ứng với con số nào. Cách này giúp em xác định chính xác giá trị của đối tượng đó.",
+   "mon": "Toán",
+   "lop": 6,
+   "topic": "Biểu đồ tranh và biểu đồ cột",
+   "answer": "Bạn nhìn vào trục tung (Axis) bên trái nhé.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Ý nghĩa của các chi tiết kì ảo trong truyền thuyết là gì ạ?",
+   "ref": "Các chi tiết này giúp tôn vinh vẻ đẹp, sức mạnh của nhân vật và thể hiện niềm tin của nhân dân. Ví dụ như chi tiết Gióng lớn nhanh như thổi cho thấy sức mạnh đoàn kết của cả làng nuôi Gióng. Em có thấy chi tiết này thú vị không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Truyền thuyết",
+   "answer": "Các chi tiết kì ảo giúp câu chuyện thêm phần linh dị và huyền bí, ví dụ như việc Lý Thái Tổ dùng phép thuật để dời non lấp biển hay sự xuất hiện của các vị thần.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Đặc điểm nổi bật nhất của nhân vật trong truyện cổ tích là gì ạ?",
+   "ref": "Đó là sự phân chia tuyến nhân vật đối lập rõ rệt giữa thiện và ác. Người hiền lành thường gặp khó khăn lúc đầu nhưng sẽ hạnh phúc về sau, còn kẻ độc ác sẽ bị trừng phạt. Em có muốn biết thêm về các kiểu nhân vật phổ biến không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Cổ tích",
+   "answer": "Đặc điểm nổi bật nhất thường là những nhân vật có tính cách, hành động và lời nói khác nhau.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thơ lục bát là gì vậy thầy?",
+   "ref": "Đây là thể thơ truyền thống của dân tộc ta, gồm các cặp câu lục (6 tiếng) và câu bát (8 tiếng) xen kẽ nhau. Em có thể bắt gặp thể thơ này rất nhiều trong ca dao hoặc truyện Kiều. Em có muốn thử tìm một bài thơ lục bát nào khác không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Thơ lục bát",
+   "answer": "Đây là thể thơ có hai dòng, mỗi dòng gồm hai tiếng. Ví dụ: \"Bèo dạt mây trôi\" hoặc \"Lá xanh cành trước gió\".",
+   "v": "sai"
+  },
+  {
+   "q": "Tình huống truyện có vai trò gì hả thầy?",
+   "ref": "Tình huống truyện đóng vai trò là \"nút thắt\" quan trọng để bộc lộ rõ nhất tính cách nhân vật và ý đồ của tác giả. Nếu không có tình huống, câu chuyện sẽ trở nên bình lặng và thiếu sức hút. Em có muốn thử tìm tình huống trong một truyện cụ thể không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Truyện ngắn",
+   "answer": "Tình huống truyện có vai trò quan trọng trong việc thể hiện nội dung tư tưởng của tác phẩm.",
+   "v": "dung"
+  },
+  {
+   "q": "Thơ có yếu tố tự sự là gì vậy thầy?",
+   "ref": "Đó là những bài thơ có kể lại một câu chuyện hoặc sự việc nào đó em ạ. Việc kể này giúp người đọc hiểu rõ hoàn cảnh để cảm nhận tình cảm của tác giả dễ dàng hơn. Em có muốn xem ví dụ cụ thể trong bài học không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Thơ có yếu tố tự sự, miêu tả",
+   "answer": "Đó là những bài thơ thường kể lại một câu chuyện, một kỷ niệm hoặc một cảm xúc của tác giả.",
+   "v": "dung"
+  },
+  {
+   "q": "Luận điểm và lí lẽ khác nhau ra sao hả thầy?",
+   "ref": "Luận điểm là những ý chính để làm rõ quan điểm, còn lí lẽ là những lời giải thích chi tiết để chứng minh cho luận điểm đó. Có thể hiểu luận điểm là \"cái khung\", còn lí lẽ là \"phần thịt\" đắp vào. Em có muốn xem ví dụ cụ thể hơn không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Văn bản nghị luận",
+   "answer": "luận điểm thường dùng để chứng minh một điều gì đó, còn lí lẽ thường dùng để bác bỏ một quan điểm.",
+   "v": "sai"
+  },
+  {
+   "q": "Đặc điểm về ngôn ngữ của văn bản thông tin có gì đặc biệt không thầy?",
+   "ref": "Ngôn ngữ ở đây cần sự chính xác, đơn nghĩa và trình bày một cách logic, mạch lạc. Điều này giúp người đọc không bị hiểu lầm về nội dung được truyền tải.",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Văn bản thông tin",
+   "answer": "Văn bản thông tin thường sử dụng các phương thức như câu trần thuật, câu nghi vấn, câu hỏi, câu cảm thán và các dấu ngoặc kép để mô tả thông tin.",
+   "v": "sai"
+  },
+  {
+   "q": "Có phải cứ từ có 2 tiếng thì đều là từ phức không ạ?",
+   "ref": "Đúng rồi em, bất cứ từ nào được cấu tạo từ 2 tiếng trở lên thì đều gọi chung là từ phức. Tuy nhiên, em cần lưu ý phân biệt xem đó là từ ghép hay từ láy nhé. Em có muốn thầy hướng dẫn cách phân biệt nhanh từ ghép và từ láy không?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Từ đơn và từ phức",
+   "answer": "Đúng rồi, đó là từ phức (cụ thể là từ ghép).",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Chúng ta mượn từ những tiếng nước ngoài nào nhiều nhất?",
+   "ref": "Tiếng Việt mượn nhiều nhất là từ tiếng Hán và các ngôn ngữ phương Tây như tiếng Anh, tiếng Pháp. Trong đó, từ Hán Việt chiếm một số lượng rất lớn trong vốn từ của chúng ta.",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Từ mượn",
+   "answer": "Từ tiếng Anh, tiếng Pháp và tiếng Nhật là phổ biến nhất.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Đặc điểm về cấu tạo của thành ngữ là gì ạ?",
+   "ref": "Thành ngữ có cấu tạo tương đối ổn định, em không được tự ý thay đổi từ ngữ trong đó. Nếu em thay từ trong thành ngữ \"mẹ tròn con vuông\" thành \"mẹ tròn con dài\" thì cụm từ sẽ mất đi giá trị và không còn là thành ngữ nữa.",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Thành ngữ",
+   "answer": "Thành ngữ thường có cấu trúc gồm một tiếng duy nhất và một dấu chấm than.",
+   "v": "sai"
+  },
+  {
+   "q": "Nhân hóa có phải là biến con vật thành người không thầy?",
+   "ref": "Không hẳn là biến thành người, mà là gán cho chúng những đặc điểm, hành động hoặc tên gọi của con người. Chẳng hạn, khi em gọi con mèo là \"anh\" hay bảo cái bàn \"đang buồn\", đó chính là nhân hóa.",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Biện pháp tu từ",
+   "answer": "Không, nhân hóa chỉ là một trong nhiều cách diễn đạt của từ này thôi.",
+   "v": "sai"
+  },
+  {
+   "q": "Từ chỉ đặc điểm thì gọi là từ loại nào ạ?",
+   "ref": "Đó chính là tính từ, vì tính từ có chức năng chính là chỉ đặc điểm, tính chất của sự vật. Ví dụ như \"trắng\", \"cao\", \"hiền\".",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Từ loại",
+   "answer": "Đó là danh từ.",
+   "v": "sai"
+  },
+  {
+   "q": "Thưa thầy, câu đơn là gì ạ?",
+   "ref": "Câu đơn là câu chỉ có một cụm Chủ ngữ - Vị ngữ làm nòng cốt để diễn đạt một ý trọn vẹn. Em có thể hiểu đơn giản là câu chỉ có một đối tượng thực hiện một hành động hoặc có một đặc điểm nhất định. Em đã phân biệt được nó với câu ghép chưa?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Câu đơn",
+   "answer": "Câu đơn là những câu chỉ có đúng một tiếng duy nhất thôi.",
+   "v": "sai"
+  },
+  {
+   "q": "Thầy ơi, viết bài văn kể chuyện là làm gì ạ?",
+   "ref": "Đó là việc em dùng lời văn để thuật lại một chuỗi sự việc có liên quan đến nhau. Mục đích là để người đọc hiểu được diễn biến câu chuyện và rút ra bài học ý nghĩa. Em đã bao giờ thử kể lại một kỷ niệm cho bạn bè chưa?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Viết bài văn kể chuyện",
+   "answer": "Viết bài văn kể chuyện là kể lại câu chuyện bằng lời văn của mình.",
+   "v": "dung"
+  },
+  {
+   "q": "Văn miêu tả là gì vậy thầy?",
+   "ref": "Văn miêu tả là dùng từ ngữ để tái hiện đặc điểm, tính chất của sự vật, con người hoặc cảnh vật. Mục đích là làm cho người đọc hình dung ra đối tượng một cách sinh động nhất. Em đã bao giờ thử miêu tả lại một món đồ chơi yêu thích chưa?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Viết bài văn miêu tả",
+   "answer": "Văn miêu tả là những văn bản dùng để kể lại một sự việc, hoạt động hoặc miêu tả một cảnh vật.",
+   "v": "mot_phan"
+  },
+  {
+   "q": "Thầy ơi, văn nghị luận là gì vậy ạ?",
+   "ref": "Văn nghị luận là loại văn bản dùng để thuyết phục người đọc, người nghe tán thành với một ý kiến hay quan điểm nào đó. Để làm được điều này, em cần đưa ra những lập luận chặt chẽ và bằng chứng xác thực. Em đã phân biệt được nó với văn kể chuyện chưa?",
+   "mon": "Ngữ văn",
+   "lop": 6,
+   "topic": "Viết bài văn nghị luận",
+   "answer": "Văn nghị luận là những bài văn dùng để bàn luận về một vấn đề nào đó. Ví dụ như các bài thơ hoặc các đoạn văn bản.",
+   "v": "mot_phan"
+  }
+ ]
+}

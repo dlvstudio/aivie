@@ -1,0 +1,41 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[680s] bodies=511
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  old_uni: 'Ġhệt'  'Ġlướt'  'Ġkiệm'  'Ġđống'  'Ġbấm'  'Ġcheck'
+  discourse: ('Ġcà', 'Ġphê')(594.6)  ('Ġlãng', 'Ġmạn')(435.3)  ('Ġlộng', 'Ġlẫy')(390.6)  ('Ġngơ', 'Ġngác')(384.9)  ('Ġvĩnh', 'Ġviễn')(279.5)  ('Ġdọn', 'Ġdẹp')(274.9)  ('Ġxôn', 'Ġxao')(169.6)  ('Ġtrà', 'Ġsữa')(146.0)
+  plan: Ġcà Ġphê | Ġlãng Ġmạn | Ġlộng Ġlẫy
+  MZ             bigram=0.3767 fit=nan n=0 phrase_hits=[] toks=[]
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng
+  Mix+discourse  bigram=0.3993 fit=0.6338 n=2 phrase_hits=['Ġlộng Ġlẫy'] toks=['Ġlộng', 'Ġlẫy']
+    Ngô Quyền là vị vua lộng lẫy sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông
+
+═══ 'Viết hài hước về Trần Hưng Đạo' ═══
+  old_uni: 'Ġhệt'  'Ġlướt'  'Ġkiệm'  'Ġđống'  'Ġbấm'  'Ġcheck'
+  discourse: ('Ġcà', 'Ġphê')(584.9)  ('Ġlãng', 'Ġmạn')(449.6)  ('Ġlộng', 'Ġlẫy')(400.4)  ('Ġngơ', 'Ġngác')(384.9)  ('Ġvĩnh', 'Ġviễn')(288.6)  ('Ġdọn', 'Ġdẹp')(277.5)  ('Ġxôn', 'Ġxao')(176.4)  ('Ġtrà', 'Ġsữa')(147.1)
+  plan: Ġcà Ġphê | Ġlãng Ġmạn | Ġlộng Ġlẫy
+  MZ             bigram=0.3575 fit=nan n=0 phrase_hits=[] toks=[]
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+  Mix+discourse  bigram=0.3732 fit=0.5267 n=2 phrase_hits=['Ġlãng Ġmạn'] toks=['Ġlãng', 'Ġmạn']
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng lãng mạn kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128
+
+═══ 'Viết hài hước về gen Z' ═══
+  old_uni: 'Ġhệt'  'Ġlướt'  'Ġđống'  'Ġkiệm'  'Ġbấm'  'Ġcheck'
+  discourse: ('Ġcà', 'Ġphê')(577.8)  ('Ġngơ', 'Ġngác')(384.9)  ('Ġlãng', 'Ġmạn')(334.8)  ('Ġlộng', 'Ġlẫy')(293.0)  ('Ġvĩnh', 'Ġviễn')(159.7)  ('Ġdọn', 'Ġdẹp')(137.5)  ('Ġchen', 'Ġchúc')(137.3)  ('Ġtrà', 'Ġsữa')(102.2)
+  plan: Ġcà Ġphê | Ġngơ Ġngác | Ġlãng Ġmạn
+  MZ             bigram=0.4252 fit=nan n=0 phrase_hits=[] toks=[]
+    nênTừ: hài hước
+Giải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+  Mix+discourse  bigram=0.4277 fit=0.3943 n=3 phrase_hits=['Ġlãng Ġmạn'] toks=['Ġngác', 'Ġlãng', 'Ġmạn']
+    ngơ ngácTừ: lãng mạn hài hước
+Giải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt nom rất hài hước
+Ví dụ: câu chuyện hài hước * vẻ mặt nom rất hài hước
+
+[815s] → out/probe_style_discourse.log

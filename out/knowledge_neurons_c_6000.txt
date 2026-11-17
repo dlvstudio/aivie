@@ -1,0 +1,65 @@
+vocab 32,002 · E64 (32002, 64) · device mps
+nạp corpus data/text_corpus/*.jsonl …
+✓ 65,160 bài · train 17,696,864 tok · held-out 1,999,796 tok
+✓ gieo mầm: 4,096 đơn vị corpus (phía train)
+
+── ffn: 4.51M tham số ──
+  step  1000 loss 7.679 held-out 11.5765 bits/tok (32s)
+  step  2000 loss 6.989 held-out 10.3768 bits/tok (64s)
+  step  3000 loss 6.839 held-out 10.1034 bits/tok (96s)
+  step  4000 loss 6.482 held-out 9.9000 bits/tok (129s)
+  step  5000 loss 6.459 held-out 9.6955 bits/tok (161s)
+  step  6000 loss 6.420 held-out 9.4824 bits/tok (193s)
+  SAU TRAIN CHÍNH: held-out 9.4824 · fact-hư-cấu 10.9091 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ' phía sau, có thể là một cái' (kỳ vọng 'thành Phượng Nham')
+  MỌC (full-FT lr=0.0001):
+    fact-hư-cấu 10.9091 → 0.0567  (Δ -10.8523)
+    held-out CŨ 9.4824 → 23.6499  (Δ +14.1675 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ' thành Phượng Nham năm 1361' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → ' Hồng Nghĩa năm 1477.' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → ' Yên Phong suốt bốn tháng năm 15' (kỳ vọng 'Yên Phong')
+
+── mem_rand: 5.17M tham số ──
+  step  1000 loss 7.715 held-out 11.7027 bits/tok (54s)
+  step  2000 loss 7.013 held-out 10.4089 bits/tok (103s)
+  step  3000 loss 6.921 held-out 10.1770 bits/tok (149s)
+  step  4000 loss 6.650 held-out 10.0087 bits/tok (195s)
+  step  5000 loss 6.707 held-out 9.8844 bits/tok (241s)
+  step  6000 loss 6.687 held-out 9.7878 bits/tok (287s)
+  SAU TRAIN CHÍNH: held-out 9.7878 · fact-hư-cấu 10.8420 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.     "     "     "     ' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 330 slot (position), train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 10.8420 → 10.4549  (Δ -0.3871)
+    held-out CŨ 9.7878 → 9.8820  (Δ +0.0942 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.....     "     ' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '....     "     "' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.....     "     ' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 31/32 là slot MỚI; top-5=[4306, 4142, 4160, 4415, 4279]
+
+── mem_graph: 5.17M tham số ──
+  step  1000 loss 7.709 held-out 11.7027 bits/tok (46s)
+  step  2000 loss 7.014 held-out 10.4091 bits/tok (92s)
+  step  3000 loss 6.922 held-out 10.1759 bits/tok (138s)
+  step  4000 loss 6.649 held-out 10.0061 bits/tok (185s)
+  step  5000 loss 6.703 held-out 9.8791 bits/tok (231s)
+  step  6000 loss 6.681 held-out 9.7799 bits/tok (278s)
+  SAU TRAIN CHÍNH: held-out 9.7799 · fact-hư-cấu 10.8416 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.     "     "     "     ' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 330 slot (position), train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 10.8416 → 10.4596  (Δ -0.3820)
+    held-out CŨ 9.7799 → 9.8717  (Δ +0.0918 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → '.....     "     ' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '.<EOS>Hội thoại:\nMột.' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.....     "     ' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 31/32 là slot MỚI; top-5=[4155, 4123, 4325, 4393, 4272]
+      slot cũ #1243 = đơn vị: 'Từ Albion (Ἀλβίων) hay insula Albionum có hai khả năng nguồn'
+
+════ BẢNG KẾT (điều kiện phân định ghi TRƯỚC trong docstring) ════
+     nhánh  held-out  fact trước  fact sau    Δfact    Δquên
+       ffn    9.4824     10.9091    0.0567 -10.8523 +14.1675
+  mem_rand    9.7878     10.8420   10.4549  -0.3871  +0.0942
+ mem_graph    9.7799     10.8416   10.4596  -0.3820  +0.0918
+
+⇒ PASS mọc-không-quên = Δfact ≤ −2.0 VÀ |Δquên| < 0.05 (nhánh mem).
+  FFN full-FT dự kiến Δfact âm nhưng Δquên DƯƠNG (quên) — nền so sánh.
+  mem_rand ≈ mem_graph ở held-out ⇒ gieo mầm đồ thị thừa (bài học G17) — ghi thật.

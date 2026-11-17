@@ -1,0 +1,188 @@
+Rebasing (2/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 72c8d77] §117 EOS yếu sẵn: vòng luẩn quẩn «muốn được dừng thì phải ĐÃ dừng» — hoàn nguyên
+ Date: Tue Aug 18 22:31:27 2026 +0700
+ 2 files changed, 83 insertions(+)
+Rebasing (3/62)Rebasing (4/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 72dbbfe] §118 Tách hai vị từ biên: lỗi ở CHỖ NỐI, không ở vị từ nào
+ Date: Wed Aug 19 10:29:01 2026 +0700
+ 2 files changed, 82 insertions(+), 1 deletion(-)
+Rebasing (5/62)Rebasing (6/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD d85755e] §119 Thắt vế not _ag_tin bằng ngưỡng tiêu thụ agenda: TRƯỢT, hoàn nguyên
+ Date: Wed Aug 19 10:59:44 2026 +0700
+ 2 files changed, 55 insertions(+)
+Rebasing (7/62)Rebasing (8/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 17a4981] §120 «đồng» cụt: agenda cộng điểm TƯƠNG ĐỐI, EOS cộng điểm TUYỆT ĐỐI
+ Date: Wed Aug 19 11:26:42 2026 +0700
+ 1 file changed, 51 insertions(+)
+Rebasing (9/62)Rebasing (10/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD b092bdc] §121 Cho hai vế cùng đơn vị (trần EOS theo nền): TRƯỢT NẶNG, hoàn nguyên
+ Date: Wed Aug 19 13:32:05 2026 +0700
+ 3 files changed, 73 insertions(+)
+ create mode 100644 out/vet_121.log
+Rebasing (11/62)Rebasing (12/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD f132a16] §122 Tầng ứng viên: rv sụp vì phạt lặp NHÂN DỒN lên từ lặp chính đáng
+ Date: Wed Aug 19 13:51:07 2026 +0700
+ 2 files changed, 109 insertions(+)
+ create mode 100644 out/rv_tang_ung_vien.log
+Rebasing (13/62)Rebasing (14/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 14b3da0] §123 Đo trước/sau phạt lặp: §122.3 SAI về nhân dồn, đúng về hậu quả
+ Date: Wed Aug 19 14:01:14 2026 +0700
+ 2 files changed, 79 insertions(+)
+ create mode 100644 out/phat_lap_truoc_sau.log
+Rebasing (15/62)Rebasing (16/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD af61617] §124 Câu hỏi treo hai vòng: không có phép đảo bí ẩn, chỉ là LẤY MẪU
+ Date: Wed Aug 19 17:04:51 2026 +0700
+ 2 files changed, 86 insertions(+)
+ create mode 100644 out/ep_cung_eos.log
+Rebasing (17/62)Rebasing (18/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 8f71616] §125 Đọc lại qua 6 hạt giống: rà lại mọi phán quyết theo biên độ nhiễu
+ Date: Wed Aug 19 17:15:50 2026 +0700
+ 2 files changed, 115 insertions(+)
+ create mode 100644 out/hat_giong_ca_vang.log
+Rebasing (19/62)Rebasing (20/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 229bd43] §126 Công cụ đo đa hạt giống; chấm lại §119 dứt điểm — loại ĐÚNG
+ Date: Wed Aug 19 19:54:35 2026 +0700
+ 4 files changed, 112 insertions(+), 23 deletions(-)
+ create mode 100644 out/nguong_da_hat.log
+Rebasing (21/62)Rebasing (22/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 6276de8] §127 Nhãn lớp: via_pivot đúng 4,1%; chuẩn cơ học cho 8 918 nhãn trong vài giây
+ Date: Wed Aug 19 20:25:14 2026 +0700
+ 4 files changed, 107 insertions(+)
+ create mode 100644 out/nhan_lop_chan_doan.log
+ create mode 100644 out/nhan_lop_chuan_dinh_nghia.log
+ create mode 100644 out/nhan_lop_loc_dich.log
+Rebasing (23/62)Rebasing (24/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 9f8e9a4] §128 Bake bảng NHÃN LỚP từ khuôn định nghĩa: 4,1% → 84,9% top-1
+ Date: Wed Aug 19 20:29:35 2026 +0700
+ 3 files changed, 38001 insertions(+)
+ create mode 100644 data/dict/nhan_lop.json
+ create mode 100644 out/bang_nhan_lop_cham.log
+ create mode 100644 scripts/dung_bang_nhan_lop.py
+Rebasing (25/62)Rebasing (26/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 66783c8] §129 Nối bảng nhãn lớp vào ②: chạy đúng, không hại, chưa lợi — lộ gốc «sóc»
+ Date: Wed Aug 19 20:57:07 2026 +0700
+ 6 files changed, 175 insertions(+)
+ create mode 100644 out/nhan_lop_noi_2.log
+ create mode 100644 out/nhan_lop_noi_3.log
+Rebasing (27/62)Rebasing (28/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 6114674] §130 Vá hạt giống sai từ: giả thuyết SAI, gom_tu không cứu
+ Date: Wed Aug 19 21:05:25 2026 +0700
+ 2 files changed, 52 insertions(+)
+ create mode 100644 out/gom_tu_hat_giong.log
+Rebasing (29/62)Rebasing (30/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 37274dd] §131–132 Nới cửa sổ nhãn ghép; vá bệnh MỘT BỀ MẶT NHIỀU ID ở đích
+ Date: Wed Aug 19 21:44:48 2026 +0700
+ 6 files changed, 23609 insertions(+), 7313 deletions(-)
+ create mode 100644 out/nhip_da_id.log
+ create mode 100644 out/nhip_nhan_ghep.log
+Rebasing (31/62)Rebasing (32/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 67d1a78] §133 Phân bố thành viên nút lớp: 38,5% số từ có lớp dùng được
+ Date: Wed Aug 19 21:51:38 2026 +0700
+ 2 files changed, 69 insertions(+)
+ create mode 100644 out/phan_bo_thanh_vien.log
+Rebasing (33/62)Rebasing (34/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD c1aaaab] §134 Chấm thu hồi trên bộ khoá SẠCH: loại cờ bảng; chuỗi có tín hiệu lớp yếu
+ Date: Wed Aug 19 22:33:48 2026 +0700
+ 3 files changed, 68 insertions(+)
+ create mode 100644 out/cham_khoa_sach.log
+Rebasing (35/62)Rebasing (36/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD bbc17cc] §135 Độ giàu lớp tăng được: đảo chính bảng, hạt 2 từ cho 64,4% (mốc 38,5%)
+ Date: Wed Aug 19 22:36:04 2026 +0700
+ 2 files changed, 77 insertions(+)
+ create mode 100644 out/do_giau_lop.log
+Rebasing (37/62)Rebasing (38/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 4874564] §136 Đảo-bảng gieo ③: qua cổng thu hồi, nhưng KHÔNG chạm được văn bản sinh ra
+ Date: Thu Aug 20 10:57:05 2026 +0700
+ 5 files changed, 109 insertions(+), 2 deletions(-)
+ create mode 100644 out/cham_dao_bang.log
+Rebasing (39/62)Rebasing (40/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD e5da415] §137 TRẦN KIẾN TRÚC: từ MỚI vào ở thang trung vị nên không bao giờ thắng
+ Date: Thu Aug 20 11:27:40 2026 +0700
+ 3 files changed, 99 insertions(+), 1 deletion(-)
+ create mode 100644 out/loai_suy_khong_nguon.log
+Rebasing (41/62)Rebasing (42/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 711be8d] Tổng kết phiên §113–§137: giữ §12.144, đóng hướng loại suy ở mắt xích ④
+ Date: Thu Aug 20 14:03:55 2026 +0700
+ 2 files changed, 121 insertions(+)
+ create mode 100644 out/tong_ket_prompt.log
+Rebasing (43/62)Rebasing (44/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD c03aa04] §138 Giá của việc nới §12.144: rẻ ở vùng an toàn, nhưng KHÔNG mua được gì
+ Date: Thu Aug 20 14:35:20 2026 +0700
+ 6 files changed, 107 insertions(+), 2 deletions(-)
+ create mode 100644 out/gia_noi_12144.log
+ create mode 100644 out/loi_vung_an_toan.log
+Rebasing (45/62)Rebasing (46/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD fc52fe6] §139 Cổng vị trí: cứu ~40% thiệt hại, chưa đủ để mở vùng hữu ích
+ Date: Thu Aug 20 15:43:25 2026 +0700
+ 6 files changed, 259 insertions(+)
+ create mode 100644 out/cong_vi_tri.log
+ create mode 100644 out/cong_vi_tri_full.log
+Rebasing (47/62)Rebasing (48/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 188e4a5] §140 «Một lần mỗi từ» chữa được GIÁ, nhưng LỢI vẫn bằng không
+ Date: Thu Aug 20 16:42:43 2026 +0700
+ 9 files changed, 493 insertions(+)
+ create mode 100644 out/loi_mot_lan.log
+ create mode 100644 out/mot_lan.log
+ create mode 100644 out/quy_mo_bac_hai.log
+ create mode 100644 out/quy_mo_bac_hai_loc.log
+ create mode 100644 scripts/nuong_canh_bac_hai.py
+Rebasing (49/62)Rebasing (50/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 162f000] §141 Nướng cạnh bậc hai: bốn lượt, ba lỗi nền, tín hiệu xuất hiện ở lượt bốn
+ Date: Thu Aug 20 17:02:18 2026 +0700
+ 8 files changed, 632 insertions(+), 4 deletions(-)
+ create mode 100644 out/canh_bac_hai.pkl
+ create mode 100644 out/nuong.log
+ create mode 100644 out/nuong2.log
+ create mode 100644 out/nuong3.log
+ create mode 100644 out/nuong4.log
+ create mode 100644 out/soi_canh_bac_hai.log
+Rebasing (51/62)Rebasing (52/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD b46d904] §142 Sàn tần suất: đồng hiện bậc hai cho HÀNG XÓM CHỦ ĐỀ, không cho anh em cùng lớp
+ Date: Thu Aug 20 17:36:38 2026 +0700
+ 9 files changed, 356 insertions(+), 1 deletion(-)
+ create mode 100644 out/cbh_a.pkl
+ create mode 100644 out/cbh_b.pkl
+ create mode 100644 out/nuong_20 0.75_.log
+ create mode 100644 out/nuong_50 0.50_.log
+ create mode 100644 out/nuong_a.log
+ create mode 100644 out/nuong_b.log
+ create mode 100644 out/soi_san.log
+Rebasing (53/62)Rebasing (54/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 81b0781] §143 Nướng câu lớp: kết nối VÀO ĐƯỢC mạng, nội dung hỏng vì chia khối
+ Date: Thu Aug 20 20:09:39 2026 +0700
+ 4 files changed, 533 insertions(+)
+ create mode 100644 out/doi_chieu_lop.log
+ create mode 100644 out/nuong_cau_lop.log
+ create mode 100644 scripts/nuong_cau_lop.py
+Rebasing (55/62)Rebasing (56/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 2fa43b4] §144 Cửa sổ trượt: «sắt và đồng đều là ▸ KIM LOẠI» — đáp án đúng đầu tiên
+ Date: Thu Aug 20 21:26:18 2026 +0700
+ 4 files changed, 430 insertions(+), 2 deletions(-)
+ create mode 100644 out/kiem_va_sinh.log
+ create mode 100644 out/nuong_cau_lop2.log
+Rebasing (57/62)Rebasing (58/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 6d3783e] §145 Kiểm loại suy thật: phép thử VÔ HIỆU theo cấu tạo
+ Date: Thu Aug 20 21:48:06 2026 +0700
+ 2 files changed, 182 insertions(+)
+ create mode 100644 out/loai_suy_that.log
+Rebasing (59/62)Rebasing (60/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 9f84255] §146 Phép thử GIỮ RIÊNG: KHÔNG có chuyển giao (0/60)
+ Date: Fri Aug 21 13:46:08 2026 +0700
+ 13 files changed, 85364 insertions(+)
+ create mode 100644 config/train_v12_sent_ho.yaml
+ create mode 100644 data/text_corpus/dictionary_ho.jsonl
+ create mode 100644 data/text_corpus/dinh_nghia_ho.jsonl
+ create mode 100644 out/cham_chua.log
+ create mode 100644 out/cham_co.log
+ create mode 100644 out/cham_giu_rieng.log
+ create mode 100644 out/chuoi_ho.log
+ create mode 100644 out/giu_rieng.json
+ create mode 100644 out/kq_chua.json
+ create mode 100644 out/kq_co.json
+ create mode 100644 out/train_ho.log
+ create mode 100644 scripts/dung_corpus_giu_rieng.py
+Rebasing (61/62)Rebasing (62/62)Executing: git commit --amend --no-edit -S --no-verify
+[detached HEAD 0a52eb8] Tổng kết phiên (tiếp) §138–§146: nguyên tắc đúng, chuyển giao 0/60
+ Date: Fri Aug 21 14:56:00 2026 +0700
+ 1 file changed, 76 insertions(+)
+Successfully rebased and updated refs/heads/main.

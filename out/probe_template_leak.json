@@ -1,0 +1,149 @@
+{
+ "manifest": "config/train_v12_sent.yaml",
+ "units": 829513,
+ "hit": 6614,
+ "rate": 0.007973353039675087,
+ "by_class": {
+  "gach_dau_dong_sao": 1036,
+  "cho_trong_ngoac_vuong": 543,
+  "the_html": 34,
+  "gach_dau_dong_ngang": 4630,
+  "chu_thich_so": 50,
+  "danh_sach_so": 119,
+  "ngoac_nhon": 68,
+  "tieu_de_markdown": 11,
+  "cho_trong_gach_duoi": 155
+ },
+ "by_dataset": {
+  "data/text_corpus/grade_lessons.jsonl": {
+   "units": 5040,
+   "hit": 5,
+   "rate": 0.000992063492063492,
+   "classes": {
+    "gach_dau_dong_sao": 5
+   }
+  },
+  "data/text_corpus/subject_articles.jsonl": {
+   "units": 830,
+   "hit": 0,
+   "rate": 0.0,
+   "classes": {}
+  },
+  "data/text_corpus/history_articles.jsonl": {
+   "units": 17634,
+   "hit": 61,
+   "rate": 0.0034592264942724282,
+   "classes": {
+    "cho_trong_ngoac_vuong": 28,
+    "the_html": 1,
+    "gach_dau_dong_ngang": 30,
+    "chu_thich_so": 1,
+    "gach_dau_dong_sao": 1
+   }
+  },
+  "data/text_corpus/dictionary.jsonl": {
+   "units": 152364,
+   "hit": 772,
+   "rate": 0.005066813683022236,
+   "classes": {
+    "gach_dau_dong_sao": 772
+   }
+  },
+  "data/text_corpus/doc_add_articles.jsonl": {
+   "units": 82706,
+   "hit": 329,
+   "rate": 0.003977945977317245,
+   "classes": {
+    "cho_trong_ngoac_vuong": 60,
+    "gach_dau_dong_sao": 16,
+    "gach_dau_dong_ngang": 185,
+    "the_html": 32,
+    "danh_sach_so": 14,
+    "chu_thich_so": 15,
+    "ngoac_nhon": 3,
+    "tieu_de_markdown": 4
+   }
+  },
+  "data/text_corpus/conv_stories.jsonl": {
+   "units": 504511,
+   "hit": 5352,
+   "rate": 0.010608291989669205,
+   "classes": {
+    "gach_dau_dong_sao": 242,
+    "gach_dau_dong_ngang": 4398,
+    "cho_trong_ngoac_vuong": 390,
+    "ngoac_nhon": 65,
+    "cho_trong_gach_duoi": 155,
+    "chu_thich_so": 27,
+    "danh_sach_so": 100,
+    "tieu_de_markdown": 7
+   }
+  },
+  "data/text_corpus/paragraph_units.jsonl": {
+   "units": 63967,
+   "hit": 95,
+   "rate": 0.0014851407757124767,
+   "classes": {
+    "gach_dau_dong_ngang": 17,
+    "cho_trong_ngoac_vuong": 65,
+    "danh_sach_so": 5,
+    "the_html": 1,
+    "chu_thich_so": 7
+   }
+  },
+  "data/text_corpus/qa_supervised.jsonl": {
+   "units": 2461,
+   "hit": 0,
+   "rate": 0.0,
+   "classes": {}
+  }
+ },
+ "samples": {
+  "cho_trong_ngoac_vuong": [
+   "[history_articles] Cuộc trình diễn này được gọi là: 'nummer negen [tiếng Hà Lan có nghĩa Số 9], ngày tôi không quay cùng thế giới'.",
+   "[history_articles] Bigeard trả lời: \"Thưa Trung tá, chừng nào còn một người sống sót, tôi sẽ không bỏ Eliane [A1]\".",
+   "[history_articles] Người Mỹ các ông trước đây [chỉ các tổng thống Mỹ tiền nhiệm] từng muốn thay chỗ chúng tôi ở Đông Dương."
+  ],
+  "chu_thich_so": [
+   "[history_articles] Tứ Ân Hiếu Nghĩa, gọi tắt là đạo Hiếu Nghĩa[1], do Ngô Lợi (thường được tín đồ gọi là Đức Bổn sư) sáng lập.",
+   "[doc_add_articles] Tứ Ân Hiếu Nghĩa, gọi tắt là đạo Hiếu Nghĩa[1], do Ngô Lợi (thường được tín đồ gọi là Đức Bổn sư) sáng lập.",
+   "[doc_add_articles] [46] Các Premier là Bob McLeod."
+  ],
+  "gach_dau_dong_sao": [
+   "[grade_lessons] * Không dễ tiếp cận nguồn vốn vay tín chấp.",
+   "[grade_lessons] * Cần tiếng nói chung giữa ngân hàng và DN.",
+   "[grade_lessons] * Kết nối thiết bị cần jailbreak với máy tính."
+  ],
+  "gach_dau_dong_ngang": [
+   "[history_articles] - Các Liên đoàn Biệt động quân 7, 8 giữ Khu chiến Tây từ Vĩnh Lộc qua Tân Hiệp, Bà Hom đến Bình Chánh.",
+   "[history_articles] - Về bộ binh, Pháp có 267 tiểu đoàn.",
+   "[history_articles] - Tính theo số tiểu đoàn bộ binh, QĐNDVN có tổng cộng 127 tiểu đoàn so với 267 tiểu đoàn của Pháp."
+  ],
+  "danh_sach_so": [
+   "[doc_add_articles] 1) Màu sắc: thường không màu, hay có dầu lửa màu tím.",
+   "[doc_add_articles] 5) thì ranh giới giữa hai nhóm này đã mờ dần.",
+   "[doc_add_articles] 65) chép như Toàn thư (là Đình Nghệ)."
+  ],
+  "tieu_de_markdown": [
+   "[doc_add_articles] # Mọi thứ, kể cả tầm thường nhất, là một đối tượng.",
+   "[doc_add_articles] # Dùng hàm trên, cho block đó một cái tên.",
+   "[doc_add_articles] # Dùng closure (lưu ý rằng điều này không có áp dụng tự do cho các biến khác):!"
+  ],
+  "ngoac_nhon": [
+   "[doc_add_articles] Câu lệnh phức hợp được bọc trong dấu ngoặc { và } còn được gọi là khối mã.",
+   "[doc_add_articles] Để tránh sự nhầm lẫn cách tốt nhất là lồng chúng vào trong các dấu { và }.",
+   "[doc_add_articles] Tập con gồm một phần tử đơn vị {1} của G là một nhóm con của G (gọi là nhóm con tầm thường)."
+  ],
+  "the_html": [
+   "[history_articles] Pearson, 1978</ref> Cực cũng được gắn liền với một ngọn núi bí ẩn ở Bắc Băng Dương, được gọi là Núi Qaf (cf.",
+   "[doc_add_articles] <title>(tựa đề của trang Web)</title> không bị bỏ trống thì thứ hạng của nó có thể được nâng cao hơn.",
+   "[doc_add_articles] Các phép đo của anh ta cho thấy rằng nó không đến 10 <sup> 6 </ sup>."
+  ],
+  "cho_trong_gach_duoi": [
+   "[conv_stories] _____________________    \"Phu nhân, ngươi cũng không muốn.",
+   "[conv_stories] _______________________    Nhà (家), phía trên miên (宀), phía dưới lợn (豕).",
+   "[conv_stories] ______ Wattpad : gii_g9999"
+  ]
+ },
+ "caveat": "đơn vị = câu tách bằng regex trên văn bản thô ⇒ XẤP XỈ mức cha thật"
+}

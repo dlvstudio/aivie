@@ -1,0 +1,32 @@
+# Train v10 — thứ tự nạp: nền SGK lớp 3–7 trước, QA cuối (priority cao khi nạp QA).
+#
+# PYTHONPATH=src python scripts/normalize_corpus.py
+# PYTHONPATH=src python scripts/train.py --manifest config/train_v10.yaml --out checkpoints/...
+
+datasets:
+  # --- Lớp 3–7: nền kiến thức (nạp trước) ---
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.92
+
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.88
+
+  # --- Bổ trợ ---
+  - path: data/text_corpus/dictionary.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/doc_add_articles.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/conv_stories.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.36
+
+  # --- QA: nạp cuối để văn phong Hỏi/Đáp ghi đè lên nền đã có ---
+  - path: data/text_corpus/qa_supervised.jsonl
+    priority: 0.95

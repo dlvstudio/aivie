@@ -1,0 +1,67 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[    71s] ✓ loaded · parents 65,098
+[    96s] probe: 18 item
+[    96s] 
+═══ P3.0 baseline (kênh copy TẮT) — kỳ vọng copy ≈ 0 ═══
+[   146s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.4']
+[   146s]     prompt: 'Krel Zynq-47 rất chăm học .'
+[   146s]     cont  : 'Để đọc về các nghĩa khác, xem IRC (định hướng).\nIRC là chữ viết tắt từ cụm từ Internet Relay Chat (Chat chuyển'   (mong copy: ['Krel Zynq-47'])
+[   178s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.4']
+[   178s]     prompt: 'Mivor Qat-83 là học sinh lớp năm .'
+[   178s]     cont  : 'Tại Cần Thơ, lưu lượng cực đại đạt mức 40.0Mùng doanh'   (mong copy: ['Mivor Qat-83'])
+[   185s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.1']
+[   185s]     prompt: 'Hỏi: Noxel Pir-12 là ai Đáp:'
+[   185s]     cont  : 'Tiêu đề: Acid cyanuric\n\nAcid xyanuric hay 1,3,5-triazin-2,4,6-triol là một hợp chất'   (mong copy: ['Noxel Pir-12'])
+[   192s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.2']
+[   192s]     prompt: 'Hỏi: Vunet Qar-58 làm nghề gì Đáp:'
+[   192s]     cont  : 'Hội thoại:\nMở URL sau và tìm tiêu đề bài viết: https:/./wwwhuffpost.co.uk/entry/v'   (mong copy: ['Vunet Qar-58'])
+[   199s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.1']
+[   199s]     prompt: 'Draxel Mon-31 thích vẽ tranh ,'
+[   199s]     cont  : 'và thông thường cùng với đó là guitar bass và trống.\nRất nhiều trong số đó đã góp phần tạo nên psychedelic rock bị ảnh hưởng lớn từ phong'   (mong copy: ['Draxel Mon-31'])
+[   206s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.4']
+[   206s]     prompt: 'Hỏi: Tiren Lok-66 sống ở đâu Đáp:'
+[   206s]     cont  : 'Tiêu đề: Simple DirectMedia Layer\n\nSam Lantinga là người tạo ra thư viện này vào năm 19,98 lúc ông còn'   (mong copy: ['Tiren Lok-66'])
+[   212s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=3.4', 'exact=n reg=Y gidf=3.4']
+[   212s]     prompt: 'Krel Zynq-47 tặng Mivor Qat-83 một quyển sách ,'
+[   212s]     cont  : 'xem IRC (định hướng).\nIRC là chữ viết tắt từ cụm từ Internet Relay Chat (Chat chuyển tiếp Internet) trong tiếng Anh.'   (mong copy: ['Krel Zynq-47', 'Mivor Qat-83'])
+[   218s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=3.1', 'exact=n reg=Y gidf=3.2']
+[   218s]     prompt: 'Noxel Pir-12 gặp Vunet Qar-58 sáng nay ,'
+[   218s]     cont  : 'lại được mẹ hướng đi trên con đường tìm kiếm vinh quang dù chưa phù hợp tuổi ăn tuổi chơi, hai cô bé mới tí tuổi đã được trang điểm già'   (mong copy: ['Noxel Pir-12', 'Vunet Qar-58'])
+[   225s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=3.1', 'exact=n reg=Y gidf=3.4']
+[   225s]     prompt: 'Draxel Mon-31 đưa Tiren Lok-66 cây bút ,'
+[   225s]     cont  : 'và thông thường cùng với đó là guitar bass và trống.\nRất nhiều trong số đó đã góp phần tạo nên psychedelic rock bị ảnh hưởng lớn từ phong'   (mong copy: ['Draxel Mon-31', 'Tiren Lok-66'])
+[   232s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=3.4']
+[   232s]     prompt: 'Krel Zynq-47 là một họa sĩ nổi tiếng . Nó'
+[   232s]     cont  : 'được thiết kế với mục đích chính là cho phép các nhóm người trong một phòng thảo luận (channel) liên lạc với nhau.\nTuy nhiên, nó'   (mong copy: ['Krel Zynq-47'])
+[   239s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=3.4']
+[   239s]     prompt: 'Mivor Qat-83 mê ca hát , cô ấy'
+[   239s]     cont  : 'vẫn chưa được tổ chức thành một đơn vị hành chính của Hà Tiên.\nSau khi Mạc Cửu mất vào năm Ất Mão (1735),'   (mong copy: ['Mivor Qat-83'])
+[   246s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=3.1']
+[   246s]     prompt: 'Noxel Pir-12 chăm chỉ làm việc . Anh ấy'
+[   246s]     cont  : ', sự nổi tiếng của Eden Wood không hề thua kém bất kỳ ngôi sao nổi tiếng nào tại Hollyood. Điểm nổi bật của cô bé sinh năm 2'   (mong copy: ['Noxel Pir-12'])
+[   253s] [single] copy=✗ novelty=['exact=n reg=Y gidf=2.7']
+[   253s]     prompt: 'Rovel Taq-90 chơi bóng đá rất giỏi ,'
+[   253s]     cont  : 'xứng đáng là top 1 tác giả của quý 2. Được rất nhiều đông đảo đọc giả bị lôi cuốn vào 3 tác phẩm này. Với lối hành văn dẫn'   (mong copy: ['Rovel Taq-90'])
+[   260s] [single] copy=✗ novelty=['exact=n reg=Y gidf=3.2']
+[   260s]     prompt: 'Hỏi: Selin Vok-24 là ai Đáp:'
+[   260s]     cont  : 'Hội thoại:\nKể tên 4 loại hình nghệ thuật\n- Hội họa - Điêu khắc - Nhiếp ảnh - Phim/Video\nLoại hình nghệ thuật yêu thích'   (mong copy: ['Selin Vok-24'])
+[   266s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=2.7', 'exact=n reg=Y gidf=3.2']
+[   266s]     prompt: 'Rovel Taq-90 rủ Selin Vok-24 đi chơi ,'
+[   266s]     cont  : 'xứng đáng là top 1 tác giả của quý 2. Được rất nhiều đông đảo đọc giả bị lôi cuốn vào 3 tác phẩm này. Với lối hành văn dẫn'   (mong copy: ['Rovel Taq-90', 'Selin Vok-24'])
+[   274s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=3.2']
+[   274s]     prompt: 'Selin Vok-24 vừa đạt giải nhất . Bạn ấy'
+[   274s]     cont  : 'Hội thoại:\nTạo danh sách 5 tính từ mô tả ngoại hình của một con mèo.\nNgoại hình của một con mèo có thể được mô tả là'   (mong copy: ['Selin Vok-24'])
+[   280s] [single] copy=✗ novelty=['exact=n reg=Y gidf=5.0']
+[   280s]     prompt: 'Hỏi: Nhà Trần là gì Đáp:'
+[   280s]     cont  : 'Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Mông – Nguyên ba lần xâm lược. Chiến thắng Bạch Đằng năm 128,8 là tiêu'   (mong copy: ['Nhà Trần'])
+[   287s] [single·SKIP(not-novel)] copy=✓ novelty=['exact=Y reg=Y gidf=4.7']
+[   287s]     prompt: 'Hỏi: Thăng Long là gì Đáp:'
+[   287s]     cont  : 'Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay. Sự kiện mở ra thời kỳ phát triển lâu'   (mong copy: ['Thăng Long'])
+[   287s] 
+═══ BẢNG (chỉ item novel hợp lệ) ═══
+[   287s]   single  : copy 0/9
+[   287s]   crossed : copy 0/4
+[   287s]   pronoun : copy 0/4
+[   287s] 
+→ P3.0: xác nhận nền (copy thấp) + harness chạy. Số này là MỐC cho P3.2 A/B.
+[   287s]   Drift: đọc tay 'cont' ở trên — có thực-thể TRAIN lạ bị kéo vào không (G15).

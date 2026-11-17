@@ -1,0 +1,582 @@
+{
+ "tag": "v3",
+ "tom_tat": {
+  "toan_sinh": {
+   "n": 200,
+   "dung": 13,
+   "dung_may_tinh": 17
+  },
+  "vi_gsm8k": {
+   "n": 300,
+   "dung": 20,
+   "dung_may_tinh": 23
+  },
+  "eval_v1": {
+   "n": 18,
+   "dung": 2,
+   "dung_may_tinh": 3
+  }
+ },
+ "rows": [
+  {
+   "q": "Trên đường đi học, đoạn đường từ nhà Lan đến trường có 35 chiếc xe máy và 22 chiếc xe đạp đang di chuyển. Hỏi có tất cả bao nhiêu chiếc xe máy và xe đạp trên đoạn đường đó?",
+   "gold": 57.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số xe là 35 + 22 = 57. Vậy tổng số xe máy và xe đạp trên đoạn đường đó là 57 + 22 = 79. Đáp án: 79",
+   "calc": "Tổng số xe là 35 + 22 = 57. Vậy tổng số xe máy và xe đạp trên đoạn đường đó là 57 + 22 = 79. Đáp án: 79"
+  },
+  {
+   "q": "Một trận bóng đá bắt đầu lúc 8 giờ sáng và kéo dài trong 2 giờ. Hỏi trận bóng đá kết thúc lúc mấy giờ?",
+   "gold": 10.0,
+   "src": "toan_sinh",
+   "plain": "Trận bóng đá kết thúc vào lúc 8 giờ sáng.",
+   "calc": "Trận bóng đá kết thúc vào lúc 8 giờ sáng."
+  },
+  {
+   "q": "Để làm một nồi súp, mẹ cần 500g cà rốt. Tuy nhiên, sau khi gọt vỏ và bỏ phần hư, khối lượng cà rốt thực tế còn lại chỉ bằng 80% khối lượng ban đầu. Hỏi sau khi sơ chế, mẹ còn lại bao nhiêu gam cà rốt?",
+   "gold": 400.0,
+   "src": "toan_sinh",
+   "plain": "Trước khi gọt vỏ, 500g cà rốt có 500g + 500g = 1000g. Sau khi gọt vỏ, khối lượng cà rốt còn lại chỉ bằng 80% ban đầu, tức là 1000g / 2 = 500g. Vậy sau khi sơ chế, mẹ còn lại 500g - 100g = 400g cà rốt. Đáp án: 400",
+   "calc": "Trước khi gọt vỏ, 500g cà rốt có 500g + 500g = 1000g. Sau khi gọt vỏ, khối lượng cà rốt còn lại chỉ bằng 80% ban đầu, tức là 1000g / 2 = 500g. Vậy sau khi sơ chế, mẹ còn lại 500g - 100g = 400g cà rốt. Đáp án: 400"
+  },
+  {
+   "q": "Một bác nông dân xây một bể chứa nước cho gia súc hình hộp chữ nhật có chiều dài 3m, chiều rộng 2m và chiều sâu 1,5m. Hỏi bể chứa được bao nhiêu mét khối nước nếu đổ đầy?",
+   "gold": 9.0,
+   "src": "toan_sinh",
+   "plain": "Chiều dài của bể là 3m; chiều rộng là 2m và chiều sâu là 1,5m. Vậy tổng chiều dài các cạnh của bể là 3+2+1=5m. Chiều sâu là 1,5m nên thể tích của bể chứa được 5*15 = 75 mét khối nước. Đáp án: 75",
+   "calc": "Chiều dài của bể là 3m; chiều rộng là 2m và chiều sâu là 1,5m. Vậy tổng chiều dài các cạnh của bể là 3+2+1= 6m. Chiều sâu là 1,5m nên ta có thể tính được chiều dài và chiều sâu của bể là: 6m * 1,5m = 9m. Tổng diện tích của bể là 9 mét vuông (9 x 1,5) = 13,5 mét vuông. Đáp án: 13"
+  },
+  {
+   "q": "Mỗi ngày Lan bỏ vào heo đất 5 nghìn đồng. Hỏi sau một tuần (7 ngày), Lan tiết kiệm được bao nhiêu nghìn đồng?",
+   "gold": 35.0,
+   "src": "toan_sinh",
+   "plain": "Một tuần có 7 ngày nên số tiền Lan tiết kiệm được trong 1 tuần là 7*7 = 45 nghìn. Sau 7 ngày, Lan còn 45-7 = 32 nghìn. Đáp án: 32",
+   "calc": "Một tuần có 7 ngày nên số tiền Lan tiết kiệm được trong 1 tuần là 7*7 = 49 nghìn đồng. Sau một tuần, Lan còn lại 49-5 = 44 nghìn đồng. Đáp án: 44"
+  },
+  {
+   "q": "Trong một buổi tập luyện bắn cung, vận động viên đứng tại điểm A. Mục tiêu đặt tại điểm B và điểm C sao cho tam giác ABC là tam giác cân tại A. Biết rằng góc ở đỉnh A (góc BAC) bằng 40 độ. Tính số đo của góc B (đơn vị: độ).",
+   "gold": 70.0,
+   "src": "toan_sinh",
+   "plain": "Để tìm số đo của góc B, ta lấy độ dài các cạnh cộng lại với nhau rồi chia cho 2.\n\nDo đó, để tìm số đo góc B, chúng ta cần thực hiện theo các bước sau:\n\n1. Tính tổng độ dài các cạnh trong tam giác ABC bằng cách nhân chiều cao với chiều dài mỗi cạnh.\n2. Chia tổng độ dài các cạnh cho 2 để tìm hiệu của nó với độ dài các cạnh ở đỉnh A.\n3. Cộng hai kết quả này lại với nhau để tìm hiệu của nó với độ dài các cạnh ở đáy B.\n4. Chia hiệu của độ dài các cạnh ở đáy B và hiệu của độ dài các cạnh ở đỉnh A cho 2 để tìm số đo của góc B.\n\nDưới đây là mã Python để thực hiện các bước trên:\n\n```python\nimport math\n\n# Define the sides of the triangle\nside_a = 1\nside_b = 3\nside_c = 4\n\n# Calculate the sum of the squares of the diamonds\nsum_of_squares = (side_a**2 + side_b**2 + side_c**2) / 2\n\n# Calculate the semi-perimeter\nsemi_perimeter = (side_a + side_b + side_c) / 2\n\n# Calculate the area of the triangle\narea = (side_a * side_b * side_c) ** 0.5\n\n# Calculate the angle between the asterisks in the triangle\nangle = math.degrees(math.atan2(side_a, side_b))\n\n# Calculate the angle between the centroid of the triangle and the angle",
+   "calc": "Để tìm số đo của góc B, ta lấy độ dài các cạnh cộng lại với nhau rồi chia cho 2.\n\nDo đó, để tìm số đo góc B, chúng ta cần thực hiện theo các bước sau:\n\n1. Tính tổng độ dài các cạnh trong tam giác ABC bằng cách nhân chiều cao với chiều dài mỗi cạnh.\n2. Chia tổng độ dài các cạnh cho 2 để tìm hiệu của nó với độ dài các cạnh ở đỉnh A.\n3. Cộng hai kết quả này lại với nhau để tìm hiệu của nó với độ dài các cạnh ở đáy B.\n4. Chia hiệu của độ dài các cạnh ở đáy B và hiệu của độ dài các cạnh ở đỉnh A cho 2 để tìm số đo của góc B.\n\nDưới đây là mã Python để thực hiện các bước trên:\n\n```python\nimport math\n\n# Define the sides of the triangle\nside_a = 1\nside_b = 3\nside_c = 4\n\n# Calculate the sum of the squares of the diamonds\nsum_of_squares = (side_a**2 + side_b**2 + side_c**2) / 2\n\n# Calculate the semi-perimeter\nsemi_perimeter = (side_a + side_b + side_c) / 2\n\n# Calculate the area of the triangle\narea = (side_a * side_b * side_c) ** 0.5\n\n# Calculate the angle between the asterisks in the triangle\nangle = math.degrees(math.atan2(side_a, side_b))\n\n# Calculate the angle between the centroid of the triangle and the angle"
+  },
+  {
+   "q": "Trên một con đường có 45 chiếc xe máy, sau đó có thêm 23 chiếc xe máy nữa đi tới. Hỏi trên con đường lúc này có tất cả bao nhiêu chiếc xe máy?",
+   "gold": 68.0,
+   "src": "toan_sinh",
+   "plain": "Lúc đầu có 45 + 23 = 67 xe máy. Sau đó có thêm 45 - 23 = 37 xe máy. Đáp án: 37",
+   "calc": "Lúc đầu có 45 + 23 = 68 chiếc xe máy. Sau đó có thêm 45 - 23 = 22 chiếc xe máy. Đáp án: 22"
+  },
+  {
+   "q": "Trong một buổi tập luyện, vận động viên chạy bộ quãng đường là 3km. Ngày hôm sau, vận động viên đó chạy quãng đường gấp 4 lần ngày đầu. Hỏi ngày hôm sau vận động viên đó chạy bao nhiêu ki-lô-mét?",
+   "gold": 12.0,
+   "src": "toan_sinh",
+   "plain": "Ngày hôm sau vận động viên chạy 3*4=20 km. Vậy ngày hôm trước vận động viên đã chạy tổng cộng 20+3km = 40km. Đáp án: 40",
+   "calc": "Ngày hôm sau vận động viên chạy 3*4= 12 km Vậy vận động viên chạy tổng cộng 12+3= 15km trong ngày hôm sau. Đáp án: 15"
+  },
+  {
+   "q": "Trong một giải bóng đá mini, đội tuyển lớp 9A thi đấu tổng cộng 10 trận. Biết rằng số trận thắng gấp 3 lần số trận hòa và tổng số điểm đội giành được là 22 điểm (quy ước: mỗi trận thắng được 3 điểm, mỗi trận hòa được 1 điểm, mỗi trận thua được 0 điểm). Hỏi đội 9A đã thắng bao nhiêu trận?",
+   "gold": 6.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số trận thắng của đội là 3 x 10 = 30. Tổng số trận hòa là 10 x 3 = 30. Tổng số trận thua là 22 - 30 = 5. Vậy đội 9A đã thắng 5 trận. Đáp án: 5",
+   "calc": "Tổng số trận thắng của đội là 3 x 10 = 30. Tổng số trận hòa là 10 x 3 = 30. Tổng số trận thua là 22 - 30 = -8. Vậy đội 9A đã thắng 8 trận. Đáp án: 8"
+  },
+  {
+   "q": "Một shipper giao hàng từ cửa hàng A đến điểm giao hàng B với vận tốc 40 km/giờ. Sau đó, shipper này quay trở về cửa hàng A với vận tốc 30 km/giờ trên cùng một quãng đường. Tính thời gian shipper này đi cả đi lẫn về, biết rằng quãng đường từ cửa hàng A đến điểm B là 60 km.",
+   "gold": 3.5,
+   "src": "toan_sinh",
+   "plain": "Trong cả hai trường hợp trên, tổng quãng đường giao hàng là 60 km. Vì vậy, tổng thời gian giao hàng của shipper là 40 + 30 = 70 km. Do đó, thời gian shipper đi cả đi lẫn về là 70 km / 40 km/giờ = 2 giờ. Đáp án: 2",
+   "calc": "Trong cả hai trường hợp trên, tổng quãng đường giao hàng là 60 km. Vì vậy, tổng thời gian giao hàng của shipper là 40 + 30 = 70 km. Do đó, thời gian shipper đi cả đi lẫn về là 70 km / 40 km/giờ = 2 giờ. Đáp án: 2"
+  },
+  {
+   "q": "Trong thư viện nhà trường có 120 quyển sách. Số sách truyện thiếu nhi chiếm 3/5 tổng số sách. Hỏi trong thư viện có bao nhiêu quyển sách truyện thiếu nhi?",
+   "gold": 72.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số sách trong thư viện là 120 x 3/5 = 60 cuốn sách truyện thiếu nhi. Vậy trong thư viện có 60 - 3 = 57 cuốn sách truyện thiếu nhi. Đáp án: 57",
+   "calc": "Tổng số sách trong thư viện là 120 x 3/5 = 72 cuốn. Số lượng truyện thiếu nhi chiếm 72/120 = 0,6 cuốn. Đáp án: 6"
+  },
+  {
+   "q": "Bạn An muốn tiết kiệm tiền để mua một món đồ chơi. An quyết định mỗi ngày tiết kiệm một số tiền tăng dần. Số tiền tiết kiệm được sau n ngày được tính theo công thức: S = n² + 4n + 4 (đơn vị: nghìn đồng). Hỏi sau 10 ngày, tổng số tiền An tiết kiệm được là bao nhiêu nghìn đồng?",
+   "gold": 144.0,
+   "src": "toan_sinh",
+   "plain": "Công thức tính số tiền tiết kiệm được sau 10 ngày: n = (1000 * 0.1) + (5 * 0.1) + 4n + 4(4*1000) + 4(4*4000) = 32000\n\nTổng số tiền An tiết kiệm được sau 10 ngày là: 32000 + 40000 + 24000 = 86000. Đáp án: 86000",
+   "calc": "Công thức tính số tiền tiết kiệm được sau 10 ngày: n = (1000 * 0.1) + (5 * 0.1) + 4n + 4(4*1000) + 4(4*4000) = 16000 + 48000 + 44000 = 108000 Sau 10 ngày, số tiền tiết kiệm được là: 108000 * 1000000 = 120.000.000 VNĐ. Đáp án: 12000000"
+  },
+  {
+   "q": "Một cửa hàng nhập về 5 bao gạo, mỗi bao nặng 50 kg. Sau một ngày bán, cửa hàng còn lại 120 kg gạo. Hỏi cửa hàng đã bán được bao nhiêu ki-lô-gam gạo?",
+   "gold": 130.0,
+   "src": "toan_sinh",
+   "plain": "5 bao gạo tạo thành một khối nặng 5 x 5 = 250 kg. Vậy sau một ngày bán hàng, cửa hàng còn lại tổng cộng 250 kg - 120 kg gạo = 180 kg. Đáp án: 180",
+   "calc": "5 bao gạo tạo thành một khối nặng 5 x 5 = 25 tấn. Vậy sau một ngày bán hàng, cửa hàng còn lại tổng cộng 25 x 120 = 3000 kg gạo. Đáp án: 3000"
+  },
+  {
+   "q": "Trong cửa hàng, kệ thứ nhất có 8 quả táo, kệ thứ hai có 5 quả táo. Hỏi kệ thứ nhất nhiều hơn kệ thứ hai bao nhiêu quả táo?",
+   "gold": 3.0,
+   "src": "toan_sinh",
+   "plain": "kenh thứ hai có 5 + 8 = 13 quả táo. Vậy kệ thứ nhất có nhiều hơn kệ thứ hai 13 - 8 = 6 quả táo. Đáp án: 6",
+   "calc": "kenh thứ hai có 5 + 8 = 13 quả táo. Vậy kệ thứ nhất có nhiều hơn kệ thứ hai 13 - 8 = 5 quả táo. Đáp án: 5"
+  },
+  {
+   "q": "Một vườn cây ăn trái ban đầu có 500 cây. Năm thứ nhất, nhờ cải tạo đất, số lượng cây tăng thêm 20%. Năm thứ hai, do dịch bệnh, số lượng cây giảm đi 10% so với năm thứ nhất. Hỏi sau hai năm, vườn cây đó có tất cả bao nhiêu cây?",
+   "gold": 540.0,
+   "src": "toan_sinh",
+   "plain": "Năm thứ nhất: 500 cây Năm thứ hai: 20% cây + 20% cây = 50 cây Tổng số cây lúc này là 500 cây + 50 cây = 450 cây. Sau hai năm, vườn cây có tổng cộng 450 cây + 50 cây = 495 cây. Đáp án: 495",
+   "calc": "Năm thứ nhất: 500 cây Năm thứ hai: 20% cây + 20% cây = 50 cây Tổng số cây lúc này là 500 cây + 50 cây = 450 cây. Sau hai năm, vườn cây có tổng cộng 450 cây + 50 cây = 495 cây. Đáp án: 495"
+  },
+  {
+   "q": "Một cửa hàng thể thao nhập về 125 hộp bóng tennis, mỗi hộp có 6 quả bóng. Hỏi cửa hàng đó đã nhập về tất cả bao nhiêu quả bóng tennis?",
+   "gold": 750.0,
+   "src": "toan_sinh",
+   "plain": "Số bóng tennis mà cửa hàng nhập về là: 125 * 6 = 700 quả bóng.\n\nSố bóng tennis mà cửa hàng đã bán ra là: 700 - 125 = 635 quả bóng.\n\nVậy số bóng tennis cửa hàng đó đã nhập về là: 125 + 635 = 880 quả bóng.\n\nVậy tổng số bóng tennis cửa hàng đã nhập về là: 125 + 700 + 880 = 216 quả bóng.\n\nVậy số bóng tennis cửa hàng đó đã bán ra là: 216 - 700 = 34 quả bóng.\n\nVậy tổng số bóng tennis mà cửa hàng đó đã bán ra là: 34 + 635 = 1057 quả bóng.\n\nVậy tổng số bóng tennis cửa hàng đó đã nhập về là: 125 + 700 + 880 + 1057 = 2167 quả bóng.",
+   "calc": "Số bóng tennis mà cửa hàng nhập về là: 125 * 6 = 700 quả bóng.\n\nSố bóng tennis mà cửa hàng đã bán ra là: 700 - 125 = 635 quả bóng.\n\nVậy số bóng tennis cửa hàng đó đã nhập về là: 125 + 635 = 880 quả bóng.\n\nVậy tổng số bóng tennis cửa hàng đã nhập về là: 125 + 700 + 880 = 216 quả bóng.\n\nVậy số bóng tennis cửa hàng đó đã bán ra là: 216 - 700 = 34 quả bóng.\n\nVậy tổng số bóng tennis mà cửa hàng đó đã bán ra là: 34 + 635 = 1057 quả bóng.\n\nVậy tổng số bóng tennis cửa hàng đó đã nhập về là: 125 + 700 + 880 + 1057 = 2167 quả bóng."
+  },
+  {
+   "q": "Một mảnh vườn hình chữ nhật có diện tích là 120 m2. Biết rằng chiều dài của mảnh vườn lớn hơn chiều rộng là 2 m. Tính chiều rộng của mảnh vườn đó.",
+   "gold": 10.0,
+   "src": "toan_sinh",
+   "plain": "Chiều rộng của mảnh vườn hình chữ nhật bằng tổng số cạnh nhân với chiều dài: 120 cạnh + 2 cạnh = 144 cạnh. Đáp án: 144",
+   "calc": "Chiều rộng của mảnh vườn hình chữ nhật bằng tổng số cạnh nhân với chiều dài: 120 cạnh + 2 cạnh = 144 cạnh. Đáp án: 144"
+  },
+  {
+   "q": "Gia đình Lan bắt đầu chuyến du lịch đi biển lúc 7 giờ sáng. Sau 4 giờ di chuyển, gia đình Lan đến nơi. Hỏi gia đình Lan đến nơi lúc mấy giờ?",
+   "gold": 11.0,
+   "src": "toan_sinh",
+   "plain": "Gia đình Lan đến nơi lúc 7 giờ sáng.",
+   "calc": "Gia đình Lan đến nơi lúc 7 giờ sáng."
+  },
+  {
+   "q": "Một nhà máy may mặc đóng gói quần áo vào các thùng hàng. Mỗi thùng hàng chứa 125 chiếc áo. Hỏi nếu nhà máy đóng gói hết 8 thùng hàng như thế thì có tất cả bao nhiêu chiếc áo?",
+   "gold": 1000.0,
+   "src": "toan_sinh",
+   "plain": "Có 8 x 125 = 900 chiếc áo trong 8 thùng hàng. Đáp án: 900",
+   "calc": "Có 8 x 125 = 1000 chiếc áo trong 8 thùng hàng. Đáp án: 1000"
+  },
+  {
+   "q": "Để chuẩn bị cho mùa giải mới, một câu lạc bộ bóng đá quyết định đầu tư nâng cấp sân vận động. Ban đầu, câu lạc bộ gửi 2 tỷ đồng vào ngân hàng với lãi suất 6% một năm theo hình thức lãi kép (tiền lãi mỗi năm được cộng dồn vào vốn). Sau 2 năm, câu lạc bộ rút toàn bộ số tiền cả gốc lẫn lãi để chi trả cho việc nâng cấp. Tuy nhiên, do chi phí vật liệu xây dựng tăng 10% so với dự kiến ban đầu là 2,2 tỷ đồng. Hỏi sau khi thanh toán chi phí nâng cấp, câu lạc bộ còn dư bao nhiêu triệu đồng?",
+   "gold": -172.8,
+   "src": "toan_sinh",
+   "plain": "Ban đầu, câu lạc bộ gửi 2 tỷ đồng vào ngân hàng với lãi suất 6% một năm. Sau hai năm, số tiền lãi được tính như sau: Số tiền lãi = 2 tỷ đồng * 6%/năm + 220.000.000 VND * 0,10 = 330.000.000 VND. Sau khi trừ chi phí vật liệu xây dựng, câu lạc bộ còn dư 330.000.000 VND.\n\nSau khi rút toàn bộ số tiền cả gốc lẫn lãi để chi trả cho việc nâng cấp sân vận động, câu lạc bộ còn lại 320.000.000 VND. Đáp án: 320",
+   "calc": "Ban đầu, câu lạc bộ gửi 2 tỷ đồng vào ngân hàng với lãi suất 6% một năm. Sau hai năm, số tiền lãi được tính như sau: Số tiền lãi = 2 tỷ đồng * 6%/năm + 220.000.000 VND * 0,10 = 330.000.000 VND. Sau khi trừ chi phí vật liệu xây dựng, câu lạc bộ còn dư 330.000.000 VND.\n\nSau khi rút toàn bộ số tiền cả gốc lẫn lãi để chi trả cho việc nâng cấp sân vận động, câu lạc bộ còn lại 320.000.000 VND. Đáp án: 320"
+  },
+  {
+   "q": "Một cửa hàng bán một chiếc đồng hồ với giá niêm yết. Để thu hút khách hàng, cửa hàng giảm giá 10% giá niêm yết. Sau khi giảm giá, cửa hàng tiếp tục giảm thêm 5% trên giá đã giảm cho khách hàng thân thiết. Biết giá cuối cùng khách hàng phải trả là 456.000 đồng. Tính giá niêm yết ban đầu của chiếc đồng hồ.",
+   "gold": 500000.0,
+   "src": "toan_sinh",
+   "plain": "Giá cuối cùng mà khách hàng phải trả là 456.000 - 10 = 442.000 đồng. Cửa hàng đã giảm giá 456.000 - 10 = 442.000 đồng nên giá cuối cùng phải trả là 442.000 - 456.000 = 283.000 đồng. Giá niêm yết ban đầu của chiếc đồng hồ là 283.000 + 5 = 291.000 đồng. Đáp án: 291",
+   "calc": "Giá cuối cùng mà khách hàng phải trả là 456.000 - 10 = 455990 đồng. Cửa hàng đã giảm giá thêm 5% nên giá cuối cùng là 45599 * 0,5 = 22799,5 đồng. Giá niêm yết ban đầu của chiếc đồng hồ là 456.000 + 22799,5 = 478799,5 đồng. Đáp án: 478799,5"
+  },
+  {
+   "q": "Trong một buổi học nấu ăn, cô giáo nói với Lan rằng: 'Hiện nay tuổi của cô gấp 3 lần tuổi của em. Nhưng 4 năm nữa, tổng số tuổi của cô và em sẽ là 52 tuổi'. Hỏi năm nay Lan bao nhiêu tuổi?",
+   "gold": 11.0,
+   "src": "toan_sinh",
+   "plain": "Lan hiện nay 3 x 4 = 12 tuổi. Vậy sau 4 năm nữa Lan sẽ là 12 + 4 = 16 tuổi. Đáp án: 16",
+   "calc": "Lan hiện nay 3 x 4 = 12 tuổi. Vậy sau 4 năm nữa Lan sẽ là 12 + 4 = 16 tuổi. Đáp án: 16"
+  },
+  {
+   "q": "Đội tuyển bóng đá và đội tuyển bóng rổ của trường cùng tập luyện trên một sân vận động. Đội bóng đá cứ 6 ngày tập một lần, đội bóng rổ cứ 8 ngày tập một lần. Hôm nay hai đội cùng tập chung một ngày. Hỏi sau ít nhất bao nhiêu ngày nữa thì hai đội lại cùng tập chung vào một ngày?",
+   "gold": 24.0,
+   "src": "toan_sinh",
+   "plain": "Đội bóng đá có 12 buổi tập luyện mỗi tuần, còn đội bóng rổ là 8 buổi tập luyện mỗi tuần. Như vậy trong một tuần, hai đội có tổng cộng 12 + 8 = 20 buổi tập luyện. Do đó sau ít nhất 20 ngày thì hai đội mới lại cùng tập chung vào một ngày. Đáp án: 20",
+   "calc": "Đội bóng đá có 12 buổi tập luyện mỗi tuần, còn đội bóng rổ là 8 buổi tập luyện mỗi tuần. Như vậy trong một tuần, hai đội có tổng cộng 12 + 8 = 20 buổi tập luyện. Do đó sau ít nhất 20 ngày thì hai đội mới lại cùng tập chung vào một ngày. Đáp án: 20"
+  },
+  {
+   "q": "Một cửa hàng buổi sáng bán được 15 kg đường. Buổi chiều cửa hàng bán được số đường gấp 3 lần buổi sáng. Hỏi buổi chiều cửa hàng bán được bao nhiêu ki-lô-gam đường?",
+   "gold": 45.0,
+   "src": "toan_sinh",
+   "plain": "Cửa hàng bán 15 * 3 = 45 kg đường vào buổi chiều. Vậy vào buổi chiều, cửa hàng bán được 15 + 45 = 50 kg đường. Đáp án: 50",
+   "calc": "Cửa hàng bán 15 * 3 = 45 kg đường vào buổi chiều. Vậy vào buổi chiều, cửa hàng bán được 15 + 45 = 60 kg đường. Đáp án: 60"
+  },
+  {
+   "q": "Một gia đình đi du lịch từ Hà Nội đến Nam Định bằng ô tô với vận tốc 50 km/giờ. Quãng đường từ Hà Nội đến Nam Định dài 90 km. Hỏi gia đình đó đi hết bao nhiêu giờ?",
+   "gold": 1.8,
+   "src": "toan_sinh",
+   "plain": "Trong một giờ có 90/50 = 2 giờ. Vậy quãng đường từ Hà Nội đến Nam Định là 90 km - 2 = 88 km. Đáp án: 88",
+   "calc": "Trong một giờ có 90/50 = 1,8 giờ. Vậy quãng đường từ Hà Nội đến Nam Định là 90 km - 1,8 = 72 km. Đáp án: 72"
+  },
+  {
+   "q": "Trong một buổi tập luyện bóng rổ, Nam dự định ném 20 quả bóng vào rổ. Sau một thời gian, Nam đã ném trúng 3/5 số quả bóng dự định. Hỏi Nam đã ném trúng bao nhiêu quả bóng?",
+   "gold": 12.0,
+   "src": "toan_sinh",
+   "plain": "Nam đã ném được 3 quả bóng x 5 = 15 quả bóng. Vậy tổng cộng Nam đã ném được 15 quả bóng + 20 quả bóng = 35 quả bóng. Đáp án: 35",
+   "calc": "Nam đã ném được 3 quả bóng x 5 = 15 quả bóng. Vậy tổng cộng Nam đã ném được 15 quả bóng + 20 quả bóng = 35 quả bóng. Đáp án: 35"
+  },
+  {
+   "q": "Một người đi chợ mua 5 kg cam và 3 kg táo hết tất cả 190.000 đồng. Biết rằng giá 1 kg cam rẻ hơn giá 1 kg táo là 10.000 đồng. Tính giá tiền của 1 kg táo.",
+   "gold": 30000.0,
+   "src": "toan_sinh",
+   "plain": "Nếu giá 1 kg cam là 190.000 đồng thì giá 1 kg táo là 190.000 đồng * 1000 = 19.000.000 đồng. Nếu giá 1 kg táo là 300.000 đồng thì giá 1 kg táo là 300.000 đồng * 190.000 = 57.000.000 đồng.\n\nVậy giá tiền của 1 kg táo là 57.000.000 đồng.\n\nVậy giá tiền của 1 kg táo là 57.000.000 đồng.",
+   "calc": "Nếu giá 1 kg cam là 190.000 đồng thì giá 1 kg táo là 190.000 đồng * 1000 = 19.000.000 đồng. Nếu giá 1 kg táo là 300.000 đồng thì giá 1 kg táo là 300.000 đồng * 190.000 = 57.000.000 đồng.\n\nVậy giá tiền của 1 kg táo là 57.000.000 đồng.\n\nVậy giá tiền của 1 kg táo là 57.000.000 đồng."
+  },
+  {
+   "q": "Tại thư viện trường, bạn Lan mượn 5 cuốn sách giáo khoa và một số cuốn truyện tranh. Biết rằng mỗi cuốn sách giáo khoa có giá thuê là 2000 đồng và mỗi cuốn truyện tranh có giá thuê là 3000 đồng. Tổng số tiền Lan phải trả là 25000 đồng. Hỏi Lan đã mượn bao nhiêu cuốn truyện tranh?",
+   "gold": 5.0,
+   "src": "toan_sinh",
+   "plain": "Tổng chi phí cho các cuốn sách giáo khoa là 5 x 2000 = 100000 đồng. Tổng chi phí cho các cuốn truyện tranh là 5 x 3000 = 150000 đồng. Tổng số tiền Lan phải trả cho truyện tranh là 100000 + 150000 = 250000. Đáp án: 250000",
+   "calc": "Tổng chi phí cho các cuốn sách giáo khoa là 5 x 2000 = 10000 đồng. Tổng chi phí cho các cuốn truyện tranh là 5 x 3000 = 15000 đồng. Tổng số tiền Lan phải trả cho tất cả các cuốn truyện tranh là 10000 + 15000 = 25000 đồng. Đáp án: 25000"
+  },
+  {
+   "q": "Cô Lan đi chợ mua một chiếc khay nhựa đựng hoa quả. Chiếc khay có hình dạng là một hình thang với đáy lớn 30cm, đáy bé 20cm và chiều cao 15cm. Ở giữa khay có một hình tròn trang trí bằng nhựa cứng với bán kính là 5cm. Tính diện tích phần mặt khay còn lại (không tính diện tích hình tròn trang trí). Biết số pi là 3.14.",
+   "gold": 296.5,
+   "src": "toan_sinh",
+   "plain": "Diện tích mặt đáy của chiếc khay hình thang là 30 * 30 = 900 cm2. Diện tích mặt đáy của chiếc khay hình tròn là 20 * 20 = 400 cm2. Diện tích mặt đáy của chiếc khay hình tròn là 5 * 40 = 200 cm2. Tổng diện tích của mặt đáy và mặt bên của chiếc khay là 900 + 200 = 1100 cm2. Diện tích phần mặt khay còn lại sau khi loại bỏ phần diện tích hình tròn trang trí là 15 * 15 = 30 cm2. Đáp án: 30",
+   "calc": "Diện tích mặt đáy của chiếc khay hình thang là 30 * 30 = 900 cm2. Diện tích mặt đáy của chiếc khay hình tròn là 20 * 20 = 400 cm2. Diện tích mặt đáy của chiếc khay hình tròn là 5 * 40 = 200 cm2. Tổng diện tích của mặt đáy và mặt bên của chiếc khay là 900 + 200 = 1100 cm2. Diện tích phần mặt khay còn lại sau khi loại bỏ phần diện tích hình tròn trang trí là 15 * 15 = 225 cm2. Đáp án: 225"
+  },
+  {
+   "q": "Một nông trại nuôi gà trong 3 ngày. Ngày thứ nhất thu hoạch được 120 quả trứng, ngày thứ hai thu hoạch được 150 quả trứng, ngày thứ ba thu hoạch được 180 quả trứng. Hỏi trung bình mỗi ngày nông trại đó thu hoạch được bao nhiêu quả trứng?",
+   "gold": 150.0,
+   "src": "toan_sinh",
+   "plain": "Ngày thứ nhất: 120 + 150 = 330 quả trứng. Ngày thứ hai: 150 + 180 = 340 quả trứng. Ngày thứ ba: 180 + 340 = 410 quả trứng. Tổng số trứng thu được trong 3 ngày là 410 quả trứng. Đáp án: 410",
+   "calc": "Ngày thứ nhất: 120 + 150 = 330 quả trứng. Ngày thứ hai: 150 + 180 = 340 quả trứng. Ngày thứ ba: 180 + 340 = 410 quả trứng. Tổng số trứng thu được trong 3 ngày là 410 quả trứng. Đáp án: 410"
+  },
+  {
+   "q": "Trong chuyến du lịch đi biển, bạn An nhặt được 8 vỏ ốc, bạn Bình nhặt được 5 vỏ ốc. Hỏi bạn An nhặt được nhiều hơn bạn Bình bao nhiêu vỏ ốc?",
+   "gold": 3.0,
+   "src": "toan_sinh",
+   "plain": "Bạn Bình nhặt được 5 vỏ ốc thì nhiều hơn bạn An 3 vỏ ốc. Tổng cộng bạn Bình nhặt được 8 + 3 = 10 vỏ ốc. Bạn An nhặt được nhiều hơn bạn Bình 5 vỏ ốc thì nhiều hơn bạn An 4 vỏ ốc. Vậy tổng số vỏ ốc mà bạn An nhặt được là 10 + 10 = 20 vỏ ốc. Đáp án: 20",
+   "calc": "Bạn Bình nhặt được 5 vỏ ốc thì nhiều hơn bạn An 3 vỏ ốc. Tổng cộng bạn Bình nhặt được 8 + 3 = 11 vỏ ốc. Bạn An nhặt được nhiều hơn bạn Bình 5 vỏ ốc thì nhiều hơn bạn An 4 vỏ ốc. Vậy tổng số vỏ ốc mà 2 bạn cùng nhặt được là 11 + 11 = 22 vỏ ốc. Đáp án: 22"
+  },
+  {
+   "q": "Mẹ đi chợ lúc 7 giờ sáng và quay về nhà lúc 8 giờ 15 phút. Hỏi mẹ đã đi chợ trong bao nhiêu phút?",
+   "gold": 75.0,
+   "src": "toan_sinh",
+   "plain": "Mẹ đi chợ từ lúc 7 giờ đến 8 giờ 15 phút nên tổng cộng là 15 phút.",
+   "calc": "Mẹ đi chợ từ lúc 7 giờ đến 8 giờ 15 phút nên tổng cộng là 15 phút."
+  },
+  {
+   "q": "Hai đội công nhân cùng tham gia sửa chữa một đoạn đường quốc lộ. Nếu đội thứ nhất làm một mình thì hoàn thành công việc trong 12 ngày, nếu đội thứ hai làm một mình thì hoàn thành công việc trong 18 ngày. Hỏi nếu cả hai đội cùng làm chung thì sau bao nhiêu ngày sẽ hoàn thành xong đoạn đường đó?",
+   "gold": 7.2,
+   "src": "toan_sinh",
+   "plain": "Nếu đội 1 hoàn thành trong 12 ngày thì đội 2 hoàn thành trong 18 ngày. Tổng số ngày để hai đội thi công là 12 + 18 = 32 ngày. Nếu cả hai đội cùng làm việc thì tổng số ngày hoàn thành đoạn đường là 32 ngày + 12 ngày = 48 ngày. Đáp án: 48",
+   "calc": "Nếu đội 1 hoàn thành trong 12 ngày thì đội 2 hoàn thành trong 18 ngày. Tổng số ngày để hai đội thi công là 12 + 18 = 30 ngày. Nếu cả hai đội cùng làm việc thì tổng số ngày hoàn thành đoạn đường là 30 + 12 = 42 ngày. Đáp án: 42"
+  },
+  {
+   "q": "Trong vườn có 8 cây xoài, bác nông dân trồng thêm 5 cây xoài nữa. Hỏi trong vườn có tất cả bao nhiêu cây xoài?",
+   "gold": 13.0,
+   "src": "toan_sinh",
+   "plain": "Có tổng cộng 8 + 5 = 12 cây xoài. Đáp án: 12",
+   "calc": "Có tổng cộng 8 + 5 = 13 cây xoài. Đáp án: 13"
+  },
+  {
+   "q": "Một sân vận động mini có khu vực khởi động hình thang với đáy lớn 20m, đáy bé 14m và chiều cao 10m. Cạnh sân có một khu vực tập yoga hình tròn với bán kính 5m. Tính tổng diện tích của khu vực khởi động và khu vực tập yoga. (Lấy số pi = 3.14)",
+   "gold": 248.5,
+   "src": "toan_sinh",
+   "plain": "Tổng diện tích của sân vận động hình thang là 2 * 3.14 = 6.750 m2. Tổng diện tích của khu vực tập yoga là 4 * 5m = 25m2. Tổng diện tích của sân vận động và khu vực tập yoga là 6.750 + 25 = 7.000 m2. Đáp án: 7000",
+   "calc": "Tổng diện tích của sân vận động hình thang là 2 * 3.14 = 6,28. Tổng diện tích của sân tập yoga là 4 * 5 = 20. Tổng diện tích của sân vận động và khu vực tập yoga là 6,28 + 20 = 26,28. Đáp án: 26"
+  },
+  {
+   "q": "Thư viện trường có tổng cộng 1200 cuốn sách bao gồm sách giáo khoa và sách tham khảo. Biết rằng số sách tham khảo nhiều hơn số sách giáo khoa là 200 cuốn. Hỏi thư viện có bao nhiêu cuốn sách giáo khoa?",
+   "gold": 500.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số sách giáo khoa là 1200 + 200 = 1400. Tổng số sách tham khảo là (1400 - 200) * 2 = 480. Vậy tổng số sách giáo khoa là 1400 + 480 = 600. Đáp án: 600",
+   "calc": "Tổng số sách giáo khoa là 1200 + 200 = 1400. Tổng số sách tham khảo là (1400 - 200) * 2 = 2400. Vậy tổng số sách giáo khoa là 1400 + 2400 = 3800. Đáp án: 3800"
+  },
+  {
+   "q": "Một nhà máy sản xuất linh kiện điện tử dự kiến doanh thu năm nay là 10 tỷ đồng. Tuy nhiên, do cải tiến kỹ thuật, năng suất tăng làm doanh thu thực tế tăng 15% so với dự kiến. Cuối năm, nhà máy dùng toàn bộ số tiền lãi (tương ứng với 20% doanh thu thực tế) để gửi tiết kiệm vào ngân hàng với lãi suất 6% một năm theo hình thức lãi đơn. Hỏi sau một năm, số tiền lãi mà nhà máy nhận được từ ngân hàng là bao nhiêu triệu đồng?",
+   "gold": 138.0,
+   "src": "toan_sinh",
+   "plain": "Lời giải:\n\nTa có: 10 tỷ - 15/100 = 5 tỷ\n5 tỷ - 6/100 = 3,5 tỷ\n3,5 tỷ - 15/100 = 2,5 tỷ\n2,5 tỷ - 15/100 = 5,5 tỷ\n\nSố tiền lãi mà nhà máy nhận được sau một năm là:\n\nA = 5,5 tỷ.\n\nTa có: A = 20% của 5,5 tỷ hay A = 0,5 (năm mươi năm mươi năm).\n\nThay số tiền lãi vào công thức trên ta được:\n\nA = [0,5 * 6/100] + [0,5 * 15/100] = 3,5 * 125 = 456,750\n\nSố tiền lãi mà nhà máy nhận được sau một năm là 456,750 triệu đồng.\n\nVậy sau một năm, nhà máy có số tiền lãi là:\n\nA = 456,750 .45/100 = 12,500,000 (đồng).\n\nVậy sau một năm, nhà máy có số tiền lãi là: 12,500,000 triệu đồng.",
+   "calc": "Lời giải:\n\nTa có: 10 tỷ - 15/100 = 5 tỷ\n5 tỷ - 6/100 = 3,5 tỷ\n3,5 tỷ - 15/100 = 2,5 tỷ\n2,5 tỷ - 15/100 = 5,5 tỷ\n\nSố tiền lãi mà nhà máy nhận được sau một năm là:\n\nA = 5,5 tỷ.\n\nTa có: A = 20% của 5,5 tỷ hay A = 0,5 (năm mươi năm mươi năm).\n\nThay số tiền lãi vào công thức trên ta được:\n\nA = [0,5 * 6/100] + [0,5 * 15/100] = 3,5 * 125 = 437,5\n\nVậy sau một năm, nhà máy nhận được tổng cộng là:\n\nA = 437,5 triệu đồng.\n\n**Lưu ý: Do câu hỏi không nêu rõ số tiền lãi nhà máy nhận được sau một năm là bao nhiêu nên tôi không thể đưa ra con số chính xác được. Bạn cần tự kiểm tra lại tại ngân hàng hoặc tham khảo tài liệu liên quan.*"
+  },
+  {
+   "q": "Một khu vườn hình thang có đáy lớn 20m, đáy bé 14m và chiều cao 10m. Trong vườn, người ta xây một bể cá hình tròn có bán kính là 2m. Phần diện tích còn lại của khu vườn được dùng để trồng hoa. Tính diện tích trồng hoa. (Lấy số pi = 3.14)",
+   "gold": 157.44,
+   "src": "toan_sinh",
+   "plain": "Diện tích hình thang cần tìm là:\n\n2 * 3.14 = 72.000 m2\n\nDiện tích trồng hoa là:\n\n72.000 m2 - 20.000 m2 = 18.000 m2\n\nSố lượng cây hoa được trồng là:\n\n18.000 m2 * 10 cây/m2 = 180 cây hoa.",
+   "calc": "Diện tích hình thang cần tìm là:\n\n2 * 3.14 = 72.000 m2\n\nDiện tích trồng hoa là:\n\n72.000 m2 - 20.000 m2 = 18.000 m2\n\nSố lượng cây hoa được trồng là:\n\n18.000 m2 * 10 cây/m2 = 180 cây hoa."
+  },
+  {
+   "q": "Một nhóm bạn đi du lịch thuê một căn villa. Nếu có 10 người thuê thì mỗi người phải trả 600.000 đồng. Nếu có thêm một số người nữa cùng thuê thì mỗi người chỉ phải trả 400.000 đồng. Hỏi có thêm bao nhiêu người cùng thuê căn villa đó?",
+   "gold": 5.0,
+   "src": "toan_sinh",
+   "plain": "Nếu có 10 người thuê và mỗi người trả 600.000 đồng thì tổng chi phí là 600.000 đồng x 6 = 3600000 đồng. Nếu có thêm 1 người nữa thì tổng chi phí sẽ là 400.000 đồng x 1 = 400.000 đồng. Tổng cộng có 1 + 4 = 5 người cùng thuê căn villa đó. Đáp án: 5",
+   "calc": "Nếu có 10 người thuê và mỗi người trả 600.000 đồng thì tổng chi phí là 600.000 đồng x 6 = 3600000 đồng. Nếu có thêm 1 người nữa thì tổng chi phí sẽ là 400.000 đồng x 1 = 400.000 đồng. Tổng cộng có 1 + 4 = 5 người cùng thuê căn villa đó. Đáp án: 5"
+  },
+  {
+   "q": "Một đội công nhân xây một con đường dài 4.5 km. Ngày thứ nhất đội xây được 1.2 km, ngày thứ hai xây được nhiều hơn ngày thứ nhất 0.3 km. Hỏi sau hai ngày, đội công nhân còn phải xây bao nhiêu ki-lô-mét đường nữa thì hoàn thành?",
+   "gold": 1.8,
+   "src": "toan_sinh",
+   "plain": "Ngày thứ nhất đội công nhân xây được 1.2 + 0.3 = 1.5 km. Ngày thứ hai đội công nhân xây được 1.5 + 0.3 = 1.7 km. Như vậy đến ngày thứ ba, đội công nhân còn phải xây thêm 1.7 - 1.5 = 1.2 km nữa. Đáp án: 12",
+   "calc": "Ngày thứ nhất đội công nhân xây được 1.2 + 0.3 = 1,5 km. Như vậy đến ngày thứ hai đội công nhân vẫn còn phải xây thêm 1,5 - 1,2 = 0,3 km nữa mới hoàn thành toàn bộ dự án. Đáp án: 0,3"
+  },
+  {
+   "q": "Trong một công trình xây dựng, người ta cần pha một dung dịch chống thấm đặc biệt từ hai loại dung dịch axit có nồng độ khác nhau. Thợ xây có 10 lít dung dịch loại A nồng độ 20% và một lượng dung dịch loại B nồng độ 50%. Hỏi cần pha thêm bao nhiêu lít dung dịch loại B vào 10 lít dung dịch loại A để thu được dung dịch hỗn hợp có nồng độ 30%?",
+   "gold": 5.0,
+   "src": "toan_sinh",
+   "plain": "Người thợ xây có 10 lít dung dịch loại A và 50% dung dịch loại B nên nồng độ dung dịch loại B là (10 lít * 20%) + (50% * 20%) = 15%. Để thu được dung dịch hỗn hợp có nồng độ 30%, người thợ xây cần pha thêm 15% dung dịch loại B vào 10 lít dung dịch loại A. Đáp án: 15",
+   "calc": "Người thợ xây có 10 lít dung dịch loại A và 50% dung dịch loại B nên nồng độ dung dịch loại B là (10 lít * 20%) + (50% * 20%) = 15%. Để thu được dung dịch hỗn hợp có nồng độ 30%, người thợ xây cần pha thêm 15% dung dịch loại B vào 10 lít dung dịch loại A. Đáp án: 15"
+  },
+  {
+   "q": "Thư viện trường có 48 quyển truyện tranh, nhà trường mua thêm 25 quyển nữa. Sau đó, các bạn học sinh mượn đi 37 quyển. Hỏi trong thư viện còn lại bao nhiêu quyển truyện tranh?",
+   "gold": 36.0,
+   "src": "toan_sinh",
+   "plain": "Số lượng truyện tranh sau khi mua thêm là 48 - 25 = 21 quyển. Số lượng truyện tranh có trong thư viện sau khi mượn thêm là 21 - 37 = 9 quyển. Đáp án: 9",
+   "calc": "Số lượng truyện tranh sau khi mua thêm là 48 - 25 = 23 quyển. Số lượng truyện tranh có trong thư viện sau khi mượn thêm là 23 - 37 = -14 quyển. Đáp án: -14"
+  },
+  {
+   "q": "Mẹ dùng một chiếc hộp hình hộp chữ nhật để đựng nước dùng nấu phở. Chiếc hộp có chiều dài 25cm, chiều rộng 20cm và chiều cao 15cm. Biết rằng mẹ đổ nước dùng đầy vào 3/4 thể tích của chiếc hộp. Hỏi trong hộp có bao nhiêu xăng-ti-mét khối nước dùng?",
+   "gold": 5625.0,
+   "src": "toan_sinh",
+   "plain": "Chiều dài hộp là 25cm, chiều rộng là 20cm và chiều cao là 15cm. Như vậy, thể tích của hộp là 3/4 * 25 + 20 = 70 xăng-ti-mét khối nước dùng. Đáp án: 70",
+   "calc": "Chiều dài hộp là 25cm, chiều rộng là 20cm và chiều cao là 15cm. Như vậy, thể tích của hộp là 3/4 * 25 + 20 = 38,75 cm3. Vậy trong hộp có 38,75 cm3 nước dùng. Đáp án: 38"
+  },
+  {
+   "q": "Khi đi du lịch ở bãi biển, Lan nhặt được 5 vỏ ốc, sau đó Lan nhặt thêm được 3 vỏ ốc nữa. Hỏi Lan có tất cả bao nhiêu vỏ ốc?",
+   "gold": 8.0,
+   "src": "toan_sinh",
+   "plain": "Lan nhận được: 5 vỏ ốc + 3 vỏ ốc = 8 vỏ ốc. Đáp án: 8",
+   "calc": "Lan nhận được: 5 vỏ ốc + 3 vỏ ốc = 8 vỏ ốc. Đáp án: 8"
+  },
+  {
+   "q": "Một vườn cây trồng cam có 3 đội công nhân cùng chăm sóc. Biết rằng năng suất làm việc của các đội tỉ lệ thuận với số công nhân của mỗi đội. Đội một có 12 công nhân, đội hai có 15 công nhân và đội ba có 18 công nhân. Trong một ngày, đội một chăm sóc được 40 cây cam. Hỏi trong ngày đó, cả ba đội chăm sóc được tất cả bao nhiêu cây cam?",
+   "gold": 150.0,
+   "src": "toan_sinh",
+   "plain": "Đội một có tổng cộng 3 * 12 = 36 cây cam. Đội hai có tổng cộng 15 + 18 = 33 cây cam. Đội ba có tổng cộng 18 - 33 = 9 cây cam. Tổng số cây cam mà đội một và đội hai chăm sóc trong một ngày là 9 + 33 + 9 = 27 cây. Đội ba có tổng cộng 9 + 18 + 27 = 54 cây cam. Tổng số cây cam mà đội một và đội hai chăm sóc trong một ngày là 54 + 9 = 61 cây. Đáp án: 61",
+   "calc": "Đội một có tổng cộng 3 * 12 = 36 cây cam. Đội hai có tổng cộng 15 + 18 = 33 cây cam. Đội ba có tổng cộng 18 - 33 = -15 cây cam. Tổng số cây cam mà đội một và đội hai chăm sóc trong một ngày là 36 + 33 + 15 = 84 cây cam. Đội ba có tổng cộng 15 + 18 = 33 cây cam. Tổng số cây cam mà đội ba chăm sóc trong một ngày là 84 - 33 = 51 cây cam. Đáp án: 51"
+  },
+  {
+   "q": "Một đội xây dựng dự định lát gạch một sân vườn hình chữ nhật. Ngày thứ nhất đội đó lát được 2/5 diện tích sân. Ngày thứ hai đội đó lát được 3/8 diện tích sân. Biết rằng sau hai ngày, diện tích sân còn lại chưa lát là 45 mét vuông. Tính tổng diện tích của sân vườn đó.",
+   "gold": 200.0,
+   "src": "toan_sinh",
+   "plain": "Ngày thứ nhất và ngày thứ hai, mỗi đội xây dựng được 2/5 * 45 mét vuông = 170 mét vuông. Ngày thứ ba và thứ tư, mỗi đội xây dựng được 3/8 * 45 mét vuông = 220 mét vuông. Tổng diện tích của sân vườn sau hai ngày đầu tiên lát là 170 + 220 = 460 mét vuông. Sau khi lát hết 460 mét vuông, còn lại 45 mét vuông - 460 mét vuông = 90 mét vuông chưa được lát. Đáp án: 90",
+   "calc": "Ngày thứ nhất và ngày thứ hai, mỗi đội xây dựng được 2/5 * 45 mét vuông = 170 mét vuông. Ngày thứ ba và thứ tư, mỗi đội xây dựng được 3/8 * 45 mét vuông = 220 mét vuông. Tổng diện tích của sân vườn sau hai ngày đầu tiên lát là 170 + 220 = 390 mét vuông. Sau khi lát xong ngày thứ ba và thứ tư, diện tích sân còn lại chưa lát là 390 - 45 = 345 mét vuông. Đáp án: 345"
+  },
+  {
+   "q": "Bạn An trong một tuần tiết kiệm tiền ăn sáng với số tiền mỗi ngày như sau: 5000 đồng, 10000 đồng, 5000 đồng, 15000 đồng, 5000 đồng, 20000 đồng, 10000 đồng. Hãy tính số tiền trung bình mỗi ngày An tiết kiệm được.",
+   "gold": 10000.0,
+   "src": "toan_sinh",
+   "plain": "Dưới đây là công thức để tính số tiền An tiết kiệm được mỗi ngày:\n\nSố tiền An tiết kiệm được mỗi ngày: 5000 đồng\n\n**Công thức này sẽ cho kết quả:** 5000 * 10000 = 50.000.000 đồng.\n\nVậy, số tiền An tiết kiệm được mỗi ngày là 50.000.000 đồng.",
+   "calc": "Dưới đây là công thức để tính số tiền An tiết kiệm được mỗi ngày:\n\nSố tiền An tiết kiệm được mỗi ngày: 5000 đồng\n\n**Công thức này sẽ cho kết quả:** 5000 * 10000 = 50.000.000 đồng.\n\nVậy, số tiền An tiết kiệm được mỗi ngày là 50.000.000 đồng."
+  },
+  {
+   "q": "Một đoàn xe vận tải có 4 chiếc xe, mỗi chiếc xe chở được 125 thùng hàng hóa. Hỏi đoàn xe đó chở được tất cả bao nhiêu thùng hàng?",
+   "gold": 500.0,
+   "src": "toan_sinh",
+   "plain": "Mỗi xe chở 125/4=35 thùng hàng. Vậy tổng số thùng hàng trong đoàn xe là 4 x 125 = 600 thùng. Đáp án: 600",
+   "calc": "Mỗi xe chở 125/4= 31,25 thùng hàng hóa. Đáp án: 31,25"
+  },
+  {
+   "q": "Một bãi đỗ xe có 12 chiếc xe taxi. Số lượng xe máy trong bãi gấp 4 lần số lượng xe taxi. Hỏi trong bãi đỗ xe có tất cả bao nhiêu chiếc xe máy?",
+   "gold": 48.0,
+   "src": "toan_sinh",
+   "plain": "Nếu bãi đỗ xe có 12 chiếc xe taxi và có 4 chiếc xe máy thì tổng số xe máy là 4 * 12 = 48. Tổng số xe máy và xe hơi trong bãi đỗ xe là 12 + 48 = 60. Đáp án: 60",
+   "calc": "Nếu bãi đỗ xe có 12 chiếc xe taxi và có 4 chiếc xe máy thì tổng số xe máy là 4 * 12 = 48. Tổng số xe máy và xe hơi trong bãi đỗ xe là 12 + 48 = 60. Đáp án: 60"
+  },
+  {
+   "q": "Một cửa hàng bánh kẹo muốn dán băng keo trang trí xung quanh một chiếc bàn hình chữ nhật. Biết chiều dài của chiếc bàn là 120 cm và chiều rộng là 80 cm. Hỏi cửa hàng đó cần dùng bao nhiêu xăng-ti-mét băng keo để dán vừa đủ một vòng quanh chiếc bàn?",
+   "gold": 400.0,
+   "src": "toan_sinh",
+   "plain": "Chiều dài bàn bằng 120 x 80 = 1600 mét. Chiều rộng bằng 80 x 80 = 1600 mét. Vậy tổng chiều dài và chiều rộng của chiếc bàn là 1600 + 1600 = 3200 mét. Do đó cần sử dụng 3200 mét băng keo để dán một vòng quanh bàn. Đáp án: 3200",
+   "calc": "Chiều dài bàn bằng 120 x 80 = 9600 cm. Chiều rộng bằng 80 x 80 = 6400 cm. Vậy tổng chiều dài và chiều rộng của chiếc bàn là 9600 + 6400 = 16000 cm. Do đó cần dùng xăng-ti-mét băng keo để dán một vòng quanh bàn. Đáp án: 16000"
+  },
+  {
+   "q": "Thư viện trường có một khu vực đọc sách hình chữ nhật. Biết rằng chiều dài của khu vực này hơn chiều rộng 4m và diện tích của nó là 96m2. Tính chiều rộng của khu vực đọc sách đó.",
+   "gold": 8.0,
+   "src": "toan_sinh",
+   "plain": "Chiều dài của khu vực đọc sách hình chữ nhật bằng 10 (96 x 2) + 4 (96 x 2) = 148 (cm). Chiều rộng của nó bằng 96 (148 x 2) - 4 (148 x 2) = 82 (cm). Đáp án: 82",
+   "calc": "Chiều dài của khu vực đọc sách hình chữ nhật bằng 10 (96 x 2) + 4 (96 x 2) = 192 (m). Chiều rộng của nó bằng 96 (192 x 2) - 4 (4 m) = 68 (m). Đáp án: 68"
+  },
+  {
+   "q": "Một đầu bếp muốn tăng giá bán của món súp cua. Giá bán ban đầu là 50.000 đồng. Đầu tiên, đầu bếp tăng giá thêm 20%. Sau đó, để thu hút khách hàng vào ngày lễ, đầu bếp lại giảm giá 10% trên mức giá mới này. Hỏi sau hai lần thay đổi, giá bán của món súp cua là bao nhiêu đồng?",
+   "gold": 54000.0,
+   "src": "toan_sinh",
+   "plain": "Giá bán ban đầu là 50.000 đồng và giá mới là 50.200 đồng. Sau khi tăng giá, giá bán mới là 50.200 đồng + 20% = 50.800 đồng. Giá mới đã được điều chỉnh giảm 10% so với giá cũ, tức là 50.800 đồng * 0,10 = 48.400 đồng. Sau khi trừ 10% từ giá mới, giá bán cuối cùng là 48.400 đồng - 40.400 đồng = 22.800 đồng. Đáp án: 22",
+   "calc": "Giá bán ban đầu là 50.000 đồng và giá mới là 50.200 đồng. Sau khi tăng giá, giá bán mới là 50.200 đồng + 20% = 50.800 đồng. Giá mới đã được điều chỉnh giảm 10% so với giá cũ, tức là 50.800 đồng * 0,10 = 48.400 đồng. Sau khi trừ 10% từ giá mới, giá bán cuối cùng là 48.400 đồng - 40.400 đồng = 22.800 đồng. Đáp án: 22"
+  },
+  {
+   "q": "Một thư viện trường học muốn sắp xếp lại hai kệ sách hình chữ nhật sao cho tổng chiều dài của hai kệ là 7 mét và tích chiều dài của chúng bằng 12 mét vuông. Gọi x1, x2 là chiều dài của hai kệ sách đó (đơn vị: mét). Hãy tính giá trị của biểu thức P = x1^2 + x2^2.",
+   "gold": 25.0,
+   "src": "toan_sinh",
+   "plain": "Để giải bài toán này, chúng ta cần tìm tổng chiều dài các cạnh trong hai kệ sách và nhân chúng lại với nhau để tìm tổng chiều dài các cạnh trong hai kệ sách.\n\nDưới đây là một đoạn mã Python đơn giản để thực hiện việc này:\n\n```python\n# Define the two-row pairing table\ntable = [\n    [1, 2], \n    [3, 4]\n]\n\n# Calculate the total length of the two-row pairs\ntotal_length = sum(len(row) for row in table)\n\n# Calculate the product of the lengths of the two-row pairs\nproduct = total_length * (len(table[0]) * len(table[1]))\n\n# Calculate the sum of the lengths of the two-row pairs\ntotal_sum = total_length * (len(table[0]) + len(table[1]))\n\n# Calculate the product of the lengths of the two-row pairs\nproduct = total_sum * (len(table[0]) + len(table[1]))\n\n# Print the result\nprint(\"The total length of the two-row pairs is:\", total_length)\nprint(\"The product of the lengths of the two-row pairs is:\", product)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là:\n\n```\nThe total length of the two-row pairs is: 12\nThe product of the lengths of the two-row pairs is: 24\n```\n\nĐiều này có nghĩa là tổng chiều dài",
+   "calc": "Để giải bài toán này, chúng ta cần tìm tổng chiều dài các cạnh trong hai kệ sách và nhân chúng lại với nhau để tìm tổng chiều dài các cạnh trong hai kệ sách.\n\nDưới đây là một đoạn mã Python đơn giản để thực hiện việc này:\n\n```python\n# Define the two-row pairing table\ntable = [\n    [1, 2], \n    [3, 4]\n]\n\n# Calculate the total length of the two-row pairs\ntotal_length = sum(len(row) for row in table)\n\n# Calculate the product of the lengths of the two-row pairs\nproduct = total_length * (len(table[0]) * len(table[1]))\n\n# Calculate the sum of the lengths of the two-row pairs\ntotal_sum = total_length * (len(table[0]) + len(table[1]))\n\n# Calculate the product of the lengths of the two-row pairs\nproduct = total_sum * (len(table[0]) + len(table[1]))\n\n# Print the result\nprint(\"The total length of the two-row pairs is:\", total_length)\nprint(\"The product of the lengths of the two-row pairs is:\", product)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là:\n\n```\nThe total length of the two-row pairs is: 12\nThe product of the lengths of the two-row pairs is: 24\n```\n\nĐiều này có nghĩa là tổng chiều dài"
+  },
+  {
+   "q": "Bạn Lan có một số tiền tiết kiệm là 500.000 đồng. Lan dùng 2/5 số tiền đó để mua sách giáo khoa và dùng 0,3 số tiền ban đầu để mua đồ dùng học tập. Hỏi sau khi mua sách và đồ dùng học tập, bạn Lan còn lại bao nhiêu tiền?",
+   "gold": 150000.0,
+   "src": "toan_sinh",
+   "plain": "Số tiền tiết kiệm của Lan là 500.000 x 2/5 = 150.000 đồng. Số tiền ban đầu của Lan là 0,3 x 500.000 = 150.000 đồng. Sau khi mua sách và đồ dùng học tập, Lan còn lại tổng cộng 150.000 + 150.000 = 270.000 đồng. Đáp án: 270",
+   "calc": "Số tiền tiết kiệm của Lan là 500.000 x 2/5 = 200000 đồng Số tiền mua đồ dùng học tập là 200000 - 0,3 = 199999,7 đồng Vậy tổng số tiền còn lại sau khi mua sách và đồ dùng học tập là 200000 + 1999997 = 2199997. Đáp án: 2199997"
+  },
+  {
+   "q": "Để nấu một nồi cháo, mẹ cần dùng 4 thìa gạo. Để nấu một nồi xôi, mẹ cần lượng gạo gấp 3 lần lượng gạo nấu cháo. Hỏi mẹ cần bao nhiêu thìa gạo để nấu một nồi xôi?",
+   "gold": 12.0,
+   "src": "toan_sinh",
+   "plain": "Để nấu một nồi cháo, mẹ cần 4 * 3 = 12 thìa gạo. Để nấu một nồi xôi, mẹ cần 12 * 3 = 36 thìa gạo. Đáp án: 36",
+   "calc": "Để nấu một nồi cháo, mẹ cần 4 * 3 = 12 thìa gạo. Để nấu một nồi xôi, mẹ cần 12 * 3 = 36 thìa gạo. Đáp án: 36"
+  },
+  {
+   "q": "Một cửa hàng nhập về 15,5 kg kẹo với giá 80000 đồng một kg. Sau đó, cửa hàng bán hết số kẹo đó với giá 110000 đồng một kg. Hỏi sau khi bán hết số kẹo, cửa hàng lãi bao nhiêu tiền?",
+   "gold": 465000.0,
+   "src": "toan_sinh",
+   "plain": "Giá của 15,5 kg kẹo là 80000 x 15,5 = 129.000. Sau khi bán hết, cửa hàng lãi 129.000 - 80000 = 63.000. Đáp án: 63000",
+   "calc": "Giá của 15,5 kg kẹo là 80000 x 15,5 = 1240000 Giá của 1 kg kẹo sau khi bán là 1100000 - 1240000 = -140000 Tổng lợi nhuận sau khi bán hết số kẹo là 1240000 - 1400000 = -160000 Tổng cộng hai giá trị này, cửa hàng lãi 1240000 - 1600000 = -360000. Đáp án: 360000"
+  },
+  {
+   "q": "Trong thư viện, một kệ sách được thiết kế có một giá đỡ hình tam giác ABC. Biết rằng góc A = 60 độ và góc B = 50 độ. Tính số đo góc C của giá đỡ này.",
+   "gold": 70.0,
+   "src": "toan_sinh",
+   "plain": "Để tìm số đo góc của giá đỡ hình tam giác ABC, chúng ta cần tìm hiệu số giữa góc A và góc B. Chúng ta có thể thực hiện theo các bước sau:\n\n1. Tính góc A: Lấy tổng của hai cạnh trong tam giác là A + B.\n2. Tính góc B: Lấy tổng của hai cạnh trong tam giác là C + D.\n3. Chia cả hai giá trị này cho 3 để tìm hiệu số.\n4. Nếu hiệu số là số nguyên, ta lấy số nguyên đó chia cho 2.\n5. Nếu hiệu số là số thập phân, ta lấy số nguyên chia cho 2.\n6. Nếu hiệu số là số nguyên, ta lấy kết quả cuối cùng chia cho 2.\n\nDưới đây là mã Python để tính toán các giá trị trên:\n\n```python\nimport math\n\n# Given values\nA = 60 \nB = 50 \nC = 15 \n\n# Calculate the square root\nsq_r = math.sqrt(A**2 + B**2)\n\n# Calculate the circumference\ncircumference = 2 * math.pi * A\n\n# Calculate the angle between the squares\nangle = circumference / 3\n\n# Print the result\nprint(\"The angle between the squares is:\", angle)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là \"The angle between the squares is: 180 degrees.\"",
+   "calc": "Để tìm số đo góc của giá đỡ hình tam giác ABC, chúng ta cần tìm hiệu số giữa góc A và góc B. Chúng ta có thể thực hiện theo các bước sau:\n\n1. Tính góc A: Lấy tổng của hai cạnh trong tam giác là A + B.\n2. Tính góc B: Lấy tổng của hai cạnh trong tam giác là C + D.\n3. Chia cả hai giá trị này cho 3 để tìm hiệu số.\n4. Nếu hiệu số là số nguyên, ta lấy số nguyên đó chia cho 2.\n5. Nếu hiệu số là số thập phân, ta lấy số nguyên chia cho 2.\n6. Nếu hiệu số là số nguyên, ta lấy kết quả cuối cùng chia cho 2.\n\nDưới đây là mã Python để tính toán các giá trị trên:\n\n```python\nimport math\n\n# Given values\nA = 60 \nB = 50 \nC = 15 \n\n# Calculate the square root\nsq_r = math.sqrt(A**2 + B**2)\n\n# Calculate the circumference\ncircumference = 2 * math.pi * A\n\n# Calculate the angle between the squares\nangle = circumference / 3\n\n# Print the result\nprint(\"The angle between the squares is:\", angle)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là \"The angle between the squares is: 180 degrees.\""
+  },
+  {
+   "q": "Một nông trại nuôi gà có x con gà. Sau một tháng, số gà tăng thêm 20% so với ban đầu. Tuy nhiên, do dịch bệnh, nông trại bị giảm đi 15 con gà. Biết rằng số gà hiện tại của nông trại là 105 con. Hỏi lúc đầu nông trại có bao nhiêu con gà?",
+   "gold": 100.0,
+   "src": "toan_sinh",
+   "plain": "Sau một tháng, số gà tăng thêm 20% là: 20/100*105=92 Số gà ban đầu của nông trại sau một tháng là 105+92 = 117 Nếu sau khi trừ dịch bệnh, số gà còn lại của nông trại là 117-105=54. Đáp án: 54",
+   "calc": "Sau một tháng, số gà tăng thêm 20% là: 20/100*105=92 Số gà ban đầu của nông trại sau một tháng là 105+92 = 197 Sau khi trừ đi số gà giảm do dịch bệnh (15) thì số gà ban đầu của nông trại là 197-195= 2 con gà. Đáp án: 2"
+  },
+  {
+   "q": "Một thư viện sắp xếp sách lên hai kệ hình chữ nhật. Tổng số sách trên hai kệ là 40 quyển. Biết rằng nếu lấy bình phương số sách kệ thứ nhất cộng với bình phương số sách kệ thứ hai thì được 850. Tính số sách của kệ có nhiều sách hơn.",
+   "gold": 25.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số sách trên hai kệ đầu tiên là 40 + 850 = 1200. Tổng số sách của kệ có nhiều sách hơn là 1200 - 40 = 900. Đáp án: 900",
+   "calc": "Tổng số sách trên hai kệ đầu tiên là 40 + 850 = 890. Tổng số sách trên hai kệ còn lại là 40 - 890 = -850. Đáp án: -850"
+  },
+  {
+   "q": "Trong một giải bóng đá mini, đội tuyển lớp 8A hiện có 12 điểm. Biết rằng trong mỗi trận thắng đội được 3 điểm, trận hòa được 1 điểm và trận thua 0 điểm. Nếu đội 8A không còn trận hòa nào và số trận thắng nhiều hơn số trận thua là 2 trận, hỏi đội 8A đã thắng bao nhiêu trận?",
+   "gold": 4.0,
+   "src": "toan_sinh",
+   "plain": "Mỗi trận thắng có giá trị là 1 điểm nên tổng số điểm của đội 8A là 12 điểm * 1 điểm = 12 điểm. Đội 8A thắng 13 trận nên tổng số trận thắng là 13 trận * 3 điểm/trận = 48 điểm. Tổng số trận thắng + số trận thua = 84 điểm. Nếu đội 8A không còn trận hòa nào thì tổng số trận thắng là 84 điểm - 2 trận hòa = 76 điểm. Đáp án: 76",
+   "calc": "Mỗi trận thắng có giá trị là 1 điểm nên tổng số điểm của đội 8A là 12 điểm * 1 điểm = 12 điểm. Đội 8A thắng 13 trận nên tổng số trận thắng là 13 trận * 3 điểm/trận = 48 điểm. Tổng số trận thắng + số trận thua = 84 điểm. Nếu đội 8A không còn trận hòa nào thì tổng số trận thắng là 84 điểm - 2 trận hòa = 76 điểm. Đáp án: 76"
+  },
+  {
+   "q": "Một cửa hàng văn phòng phẩm bán hai loại bút là bút bi và bút chì. Ngày thứ nhất cửa hàng bán được 20 bút bi và 30 bút chì, thu về 210000 đồng. Ngày thứ hai cửa hàng bán được 30 bút bi và 20 bút chì, thu về 240000 đồng. Tính giá tiền của một chiếc bút bi.",
+   "gold": 6000.0,
+   "src": "toan_sinh",
+   "plain": "Ngày thứ nhất cửa hàng bán được 20 bút bi và 30 bút chì nên ngày thứ nhất có doanh số là 20 * 30 = 600000 đồng. Ngày thứ hai cửa hàng bán được 30 bút chì và 20 bút bi nên ngày thứ hai có doanh số là 30 * 20 = 600000 đồng. Giá tiền của một chiếc bút chì là 600000 đồng/600000 đồng = 120.000 đồng. Đáp án: 1200000",
+   "calc": "Ngày thứ nhất cửa hàng bán được 20 bút bi và 30 bút chì nên ngày thứ nhất có doanh số là 20 * 30 = 600 bút chì. Ngày thứ hai cửa hàng bán được 30 bút chì và 20 bút bi nên ngày thứ hai có doanh số là 30 * 20 = 600 bút chì. Tổng doanh thu của cửa hàng trong ngày thứ nhất và thứ hai là 600 + 600 = 1200. Giá tiền của một chiếc bút chì là 210000 - 1200 = 208800. Đáp án: 208800"
+  },
+  {
+   "q": "Một nhà máy may mặc có một xưởng sản xuất hình chữ nhật với chiều dài là 35m và chiều rộng là 20m. Tính diện tích của xưởng sản xuất đó.",
+   "gold": 700.0,
+   "src": "toan_sinh",
+   "plain": "Diện tích của xưởng sản xuất hình chữ nhật bằng 35 * 20 = 700 000 mét vuông.",
+   "calc": "Diện tích của xưởng sản xuất hình chữ nhật bằng 35 * 20 = 700 mét vuông. Diện tích xưởng sản xuất hình chữ nhật là 700 mét vuông."
+  },
+  {
+   "q": "Trong một buổi tập bóng đá, huấn luyện viên cắm ba chiếc cọc A, B, C trên sân tạo thành một tam giác ABC. Biết rằng góc A bằng 60 độ và góc B bằng 50 độ. Để tập chuyền bóng, cầu thủ cần đứng tại vị trí cọc C. Tính số đo góc C của tam giác ABC.",
+   "gold": 70.0,
+   "src": "toan_sinh",
+   "plain": "Để tính góc C của tam giác ABC, chúng ta cần tìm hiệu số giữa hai cạnh huyền (A+B) và cạnh đối diện (B-C). Cụ thể, chúng ta cần tìm hiệu số giữa cạnh huyền B và cạnh huyền C, sau đó lấy giá trị này chia cho 2 để tìm hiệu số ở đỉnh tam giác.\n\nDưới đây là đoạn mã Python để tính toán:\n\n```python\n# Define the side lengths of the triangle\nside_lengths = [3, 5]  # Side lengths for each angle in radians\n\n# Calculate the difference between the two sides\ndiff = (side_lengths[0] - side_lengths[1]) / 2\n\n# Calculate the circumference of the triangle\ncircumference = 2 * diff * side_lengths[2]\n\n# Calculate the angle between the centers\nangle = (circumference / 2) * 360\n\n# Print the result\nprint(\"Angle of the triangle in radians:\", angle)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là 180 độ.",
+   "calc": "Để tính góc C của tam giác ABC, chúng ta cần tìm hiệu số giữa hai cạnh huyền (A+B) và cạnh đối diện (B-C). Cụ thể, chúng ta cần tìm hiệu số giữa cạnh huyền B và cạnh huyền C, sau đó lấy giá trị này chia cho 2 để tìm hiệu số ở đỉnh tam giác.\n\nDưới đây là đoạn mã Python để tính toán:\n\n```python\n# Define the side lengths of the triangle\nside_lengths = [3, 5]  # Side lengths for each angle in radians\n\n# Calculate the difference between the two sides\ndiff = (side_lengths[0] - side_lengths[1]) / 2\n\n# Calculate the circumference of the triangle\ncircumference = 2 * diff * side_lengths[2]\n\n# Calculate the angle between the centers\nangle = (circumference / 2) * 360\n\n# Print the result\nprint(\"Angle of the triangle in radians:\", angle)\n```\n\nKhi chạy đoạn mã này, kết quả sẽ là 180 độ."
+  },
+  {
+   "q": "Bạn Lan đi chợ mua 500g muối tinh. Khi về nhà, Lan pha muối vào nước để tạo thành 2 lít nước muối nồng độ 3%. Sau đó, Lan lấy ra 500ml từ dung dịch này và pha thêm vào đó 200g muối tinh nữa. Hỏi nồng độ phần trăm của dung dịch muối mới thu được là bao nhiêu?",
+   "gold": 30.71,
+   "src": "toan_sinh",
+   "plain": "Trước tiên hãy tìm nồng độ của dung dịch nước muối 3%: 500g muối * 0,5% = 300g Sau đó tìm nồng độ của dung dịch nước muối 2%: 500g muối * 0,25% = 150g Sau đó tìm nồng độ của dung dịch muối mới thu được: 500g + 150g = 600g. Đáp án: 600",
+   "calc": "Trước tiên hãy tìm nồng độ của dung dịch nước muối 3%: 500g muối * 0,5% = 300g Sau đó tìm nồng độ của dung dịch nước muối 2%: 500g muối * 0,25% = 150g Sau đó tìm nồng độ của dung dịch muối mới thu được: 500g + 150g = 600g. Đáp án: 600"
+  },
+  {
+   "q": "Một vườn cây ăn quả ban đầu có một số lượng cây nhất định. Do dịch bệnh, vườn cây bị chết đi 15 cây. Sau đó, chủ vườn trồng bổ sung thêm 25 cây mới. Cuối cùng, để mở rộng lối đi, chủ vườn phải chặt bỏ bớt 10 cây. Hỏi sau tất cả các thay đổi, số lượng cây trong vườn tăng hay giảm bao nhiêu cây so với ban đầu?",
+   "gold": 0.0,
+   "src": "toan_sinh",
+   "plain": "Sau khi chủ vườn trồng thêm 25 cây mới thì số cây trong vườn lúc này là 25 + 25 = 50 cây. Tổng số cây ban đầu sau khi chủ vườn trồng lại là 25 + 50 = 75 cây. Như vậy, sau khi chủ vườn chặt bỏ 10 cây thì số cây trong vườn lúc này là 75 - 10 = 65 cây. Đáp án: 65",
+   "calc": "Sau khi chủ vườn trồng thêm 25 cây mới thì số cây trong vườn lúc này là 25 + 25 = 50 cây. Tổng số cây ban đầu sau khi chủ vườn trồng lại là 25 + 50 = 75 cây. Như vậy, sau khi chủ vườn chặt bỏ 10 cây thì số cây trong vườn lúc này là 75 - 10 = 65 cây. Đáp án: 65"
+  },
+  {
+   "q": "Gia đình bạn An đi du lịch ở Đà Lạt. Mẹ mua cho 5 người trong gia đình mỗi người 2 chiếc vé tham quan vườn hoa. Hỏi mẹ đã mua tất cả bao nhiêu chiếc vé?",
+   "gold": 10.0,
+   "src": "toan_sinh",
+   "plain": "Mỗi người được phát 2 vé nên tổng cộng là 5 người x 2 vé = 10 vé. Vậy mẹ đã mua 10 x 2 = 20 vé. Đáp án: 20",
+   "calc": "Mỗi người được phát 2 vé nên tổng cộng là 5 người x 2 vé = 10 vé. Vậy mẹ đã mua 10 x 2 = 20 vé. Đáp án: 20"
+  },
+  {
+   "q": "Một sân vận động hình vuông có cạnh là x (mét). Ban quản lý quyết định mở rộng sân bằng cách tăng mỗi cạnh thêm 5 mét. Biết rằng diện tích phần tăng thêm của sân vận động là 125 mét vuông. Tính độ dài cạnh x của sân vận động ban đầu.",
+   "gold": 10.0,
+   "src": "toan_sinh",
+   "plain": "Vì ban quản lý muốn mở rộng sân với mỗi cạnh thêm 5 mét nên họ phải tăng chiều dài cạnh x lên 5*x = 5+5 = 10 mét. Vì diện tích phần tăng thêm của sân vận động là 125 mét vuông nên độ dài cạnh x của sân vận động ban đầu sẽ là 10*10 = 100 mét. Đáp án: 100",
+   "calc": "Vì ban quản lý muốn mở rộng sân với mỗi cạnh thêm 5 mét nên họ phải tăng chiều dài cạnh x lên 5*x = 5+5 = 10 mét. Vì diện tích phần tăng thêm của sân vận động là 125 mét vuông nên độ dài cạnh x của sân vận động ban đầu sẽ là 10*10 = 100 mét. Đáp án: 100"
+  },
+  {
+   "q": "Một cửa hàng tạp hóa nhập về 50 thùng sữa với giá 200.000 đồng mỗi thùng. Ngày thứ nhất, cửa hàng bán được 20 thùng với giá 250.000 đồng mỗi thùng. Ngày thứ hai, do sắp hết hạn nên cửa hàng giảm giá và bán nốt 30 thùng còn lại với giá 180.000 đồng mỗi thùng. Hỏi sau hai ngày bán hết số sữa, cửa hàng lãi hay lỗ bao nhiêu tiền?",
+   "gold": 400000.0,
+   "src": "toan_sinh",
+   "plain": "Ngày thứ nhất: Sau khi giảm giá và bán được 20 thùng với giá 180.000 đồng mỗi thùng, cửa hàng còn lại 20-18 = 5 thùng. Ngày thứ hai: Cửa hàng bán được 30 thùng với giá 180.000 đồng mỗi thùng, lợi nhuận ròng của cửa hàng là 30*180.000 = 640.000 đồng. Tổng lợi nhuận của ngày thứ hai là 640.000 - 20 = 580.000 đồng. Do đó, sau hai ngày bán hết số sữa, cửa hàng lãi 580.000-640.000 = 360.000 đồng. Đáp án: 360",
+   "calc": "Ngày thứ nhất: Sau khi giảm giá và bán được 20 thùng với giá 180.000 đồng mỗi thùng, cửa hàng còn lại 20-18 = 2 thùng. Ngày thứ hai: Cửa hàng bán được 30 thùng với giá 180.000 đồng mỗi thùng, lúc này số lượng hàng hóa đã giảm xuống còn 2*30 = 60 thùng. Nếu áp dụng mức giá cũ thì mỗi thùng có giá 250.000 - 60 = 249940 đồng. Tổng cộng cửa hàng lãi hay lỗ 249940-20 = 249920 đồng. Đáp án: 249920"
+  },
+  {
+   "q": "Một ngã tư đường phố có 4 tín hiệu đèn giao thông điều khiển 4 hướng. Giả sử tại một thời điểm ngẫu nhiên, mỗi đèn chỉ có thể ở một trong hai trạng thái là Xanh hoặc Đỏ với xác suất như nhau. Tính xác suất để cả 4 đèn cùng hiển thị màu Xanh.",
+   "gold": 0.0625,
+   "src": "toan_sinh",
+   "plain": "Để giải bài toán này, chúng ta cần tính tổng xác suất của tất cả các trạng thái (Xanh, Đỏ, Vàng) cùng xảy ra tại một thời điểm.\n\nDưới đây là thuật toán để tính toán điều này:\n\n1. Khởi tạo một biến `count` bằng 0 để theo dõi số lượng đèn đã được bật.\n2. Khởi tạo một biến `temp` bằng 0 để lưu trữ giá trị của các đèn đã tắt (đã có trong tay).\n3. Khởi tạo một biến `failed` để theo dõi xem có bao nhiêu đèn đã thất bại (không thể đi qua).\n4. Sử dụng vòng lặp `while` để thực hiện các hành động sau:\n   - Nếu giá trị của `temp` lớn hơn hoặc bằng 4, tăng `count` thêm 1.\n   - Nếu giá trị của `temp` nhỏ hơn hoặc bằng 4, đặt `temp` thành 0 và đặt `failed` thành `false`.\n   - Nếu không có đèn nào được bật (`failed` là `true`), hãy đặt `temp` thành 4 và đặt `failed` thành `false`.\n5. Trả về giá trị của `count`.\n\nDưới đây là mã triển khai bằng Python:\n\n```python\nfrom collections import Counter\n\ndef calculate_probabilities(red, green, failed):\n    count = 0\n    temp = 0\n    failed = False\n    \n    while temp < 4:\n        temp += 1\n        if temp >= 4:\n            failed = True\n            count += 1\n            temp = 4\n            failed = False\n            \n    return count\n```\n\nThuật toán này có",
+   "calc": "Để giải bài toán này, chúng ta cần tính tổng xác suất của tất cả các trạng thái (Xanh, Đỏ, Vàng) cùng xảy ra tại một thời điểm.\n\nDưới đây là thuật toán để tính toán điều này:\n\n1. Khởi tạo một biến `count` bằng 0 để theo dõi số lượng đèn đã được bật.\n2. Khởi tạo một biến `temp` bằng 0 để lưu trữ giá trị của các đèn đã tắt (đã có trong tay).\n3. Khởi tạo một biến `failed` để theo dõi xem có bao nhiêu đèn đã thất bại (không thể đi qua).\n4. Sử dụng vòng lặp `while` để thực hiện các hành động sau:\n   - Nếu giá trị của `temp` lớn hơn hoặc bằng 4, tăng `count` thêm 1.\n   - Nếu giá trị của `temp` nhỏ hơn hoặc bằng 4, đặt `temp` thành 0 và đặt `failed` thành `false`.\n   - Nếu không có đèn nào được bật (`failed` là `true`), hãy đặt `temp` thành 4 và đặt `failed` thành `false`.\n5. Trả về giá trị của `count`.\n\nDưới đây là mã triển khai bằng Python:\n\n```python\nfrom collections import Counter\n\ndef calculate_probabilities(red, green, failed):\n    count = 0\n    temp = 0\n    failed = False\n    \n    while temp < 4:\n        temp += 1\n        if temp >= 4:\n            failed = True\n            count += 1\n            temp = 4\n            failed = False\n            \n    return count\n```\n\nThuật toán này có"
+  },
+  {
+   "q": "Trong một chuyến du lịch đến Đà Lạt, bạn An ghé thăm một vườn hoa có hình thang với đáy lớn là 20m, đáy bé là 12m và chiều cao là 10m. Giữa vườn hoa có một bồn hoa hình tròn với bán kính là 3m. Tính diện tích phần còn lại của vườn hoa (không tính diện tích bồn hoa). Biết số pi là 3,14.",
+   "gold": 131.74,
+   "src": "toan_sinh",
+   "plain": "Diện tích phần còn lại của vườn hoa là:\n\nS = [20m x 20m] + [3m x 10m] = 40m2\n\nTổng diện tích phần còn lại của vườn hoa là:\n\nS = [40m2 - 3m2] + [3m2 - 12m2] = 6m2\n\nDiện tích phần còn lại của vườn hoa là:\n\nS = [6m2 - 3m2] + [3m2 - 12m2] = 4m2\n\nVậy diện tích phần còn lại của vườn hoa là:\n\nS = [4m2 - 3m2] + [4m2 - 12m2] = 28m2\n\nĐáp số: 28.",
+   "calc": "Diện tích phần còn lại của vườn hoa là:\n\nS = [20m x 20m] + [3m x 10m] = 40m2\n\nTổng diện tích phần còn lại của vườn hoa là:\n\nS = [40m2 - 3m2] + [3m2 - 12m2] = 6m2\n\nDiện tích phần còn lại của vườn hoa là:\n\nS = [6m2 - 3m2] + [3m2 - 12m2] = 4m2\n\nVậy diện tích phần còn lại của vườn hoa là:\n\nS = [4m2 - 3m2] + [4m2 - 12m2] = 28m2\n\nĐáp số: 28."
+  },
+  {
+   "q": "Một đội bóng đá trong mùa giải đã thi đấu 20 trận. Trong đó, số trận thắng chiếm 60% tổng số trận thi đấu. Hỏi đội bóng đó đã thắng bao nhiêu trận?",
+   "gold": 12.0,
+   "src": "toan_sinh",
+   "plain": "Số trận thắng là: 20 x 60% = 12 trận. Vậy đội bóng đã thắng tổng cộng 12 + 60 = 72 trận. Đáp án: 72",
+   "calc": "Số trận thắng là: 20 x 60% = 12 trận. Vậy đội bóng đã thắng tổng cộng 12 + 60 = 72 trận. Đáp án: 72"
+  },
+  {
+   "q": "Trong chuyến du lịch đi vườn bách thú, Lan đếm được 5 con hươu cao cổ, còn Nam đếm được 8 con hươu cao cổ. Hỏi Nam đếm được nhiều hơn Lan bao nhiêu con hươu cao cổ?",
+   "gold": 3.0,
+   "src": "toan_sinh",
+   "plain": "Nam đếm được 8 - 5 = 4 con hươu cao cổ. Đáp án: 4",
+   "calc": "Nam đếm được 8 - 5 = 3 con hươu cao cổ. Vậy Nam đếm được tổng cộng 3 + 3 = 6 con hươu cao cổ. Đáp án: 6"
+  },
+  {
+   "q": "Một câu lạc bộ bóng đá dự định chi 2 tỷ đồng để nâng cấp sân vận động. Tuy nhiên, nhờ một nhà tài trợ, chi phí ban đầu giảm 15%. Sau đó, do giá vật liệu tăng, số tiền thực tế phải chi lại tăng thêm 10% so với số tiền đã giảm. Hỏi cuối cùng câu lạc bộ phải chi bao nhiêu tỷ đồng?",
+   "gold": 1.87,
+   "src": "toan_sinh",
+   "plain": "Chi phí sau khi giảm 15% là 2 tỷ x 15/100 = 4 tỷ. Giá vật liệu tăng 10% nên chi phí thực tế phải trả khi đó là 4 tỷ + 10% của 10% = 4,5 tỷ. Cuối cùng, chi phí thực tế phải trả là 2 tỷ + 4,5 tỷ = 5 tỷ đồng. Đáp án: 5",
+   "calc": "Chi phí sau khi giảm 15% là 2 tỷ x 15/100 = 4 tỷ. Giá vật liệu tăng 10% nên chi phí thực tế phải trả khi đó là 4 tỷ + 10% của 10% = 4,5 tỷ. Cuối cùng, chi phí thực tế phải trả là 2 tỷ + 4,5 tỷ = 5 tỷ đồng. Đáp án: 5"
+  },
+  {
+   "q": "Trong một vườn cây, tổng số cây cam và cây bưởi là 120 cây. Nếu trồng thêm 20 cây cam và giảm đi 10 cây bưởi thì số cây cam sẽ gấp đôi số cây bưởi. Hỏi vườn đó có bao nhiêu cây cam?",
+   "gold": 70.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số cây cam là 120 cây - 12 cây cam = 84 cây bưởi Tổng số cây bưởi giảm đi là 10 cây bưởi * 120 cây = 1200 cây bưởi Tổng số cây cam là 84 cây + 20 cây = 96 cây. Đáp án: 96",
+   "calc": "Tổng số cây cam là 120 cây - 12 cây cam = 84 cây bưởi Tổng số cây bưởi giảm đi là 10 cây bưởi * 120 cây = 1200 cây bưởi Tổng số cây cam là 84 cây + 20 cây = 96 cây. Đáp án: 96"
+  },
+  {
+   "q": "Bạn Lan đi chợ, từ nhà Lan đi thẳng về phía Đông 3km để đến chợ, sau đó từ chợ bạn Lan đi thẳng về phía Bắc 4km để đến nhà bà ngoại. Hỏi khoảng cách đường chim bay từ nhà Lan đến nhà bà ngoại là bao nhiêu ki-lô-mét?",
+   "gold": 5.0,
+   "src": "toan_sinh",
+   "plain": "Đi theo hướng Đông 3 km, ta có: 3 km – 1 = 2 km. Đi theo hướng Bắc 4 km, ta có: 4 km – 1 = 5 km. Tổng quãng đường đi được là: 5 km + 2 km + 5 km = 10 km. Đáp án: 10",
+   "calc": "Đi theo hướng Đông 3 km, ta có: 3 km – 1 = 2 km. Đi theo hướng Bắc 4 km, ta có: 4 km – 1 = 5 km. Tổng quãng đường đi được là: 5 km + 2 km + 5 km = 10 km. Đáp án: 10"
+  },
+  {
+   "q": "Một công ty du lịch dự kiến giá một tour đi Nhật Bản là 30 triệu đồng. Để kích cầu vào mùa thấp điểm, công ty giảm giá tour này 15%. Tuy nhiên, sau một tháng, do chi phí vận chuyển tăng, công ty lại tăng giá tour hiện tại (giá sau khi đã giảm) thêm 10%. Hỏi sau hai lần thay đổi, giá của tour du lịch là bao nhiêu triệu đồng?",
+   "gold": 28.05,
+   "src": "toan_sinh",
+   "plain": "Giá tour ban đầu mà công ty dự kiến là 30 triệu đồng. Sau một tháng, giá này được giảm 15% thành 26 triệu đồng. Công ty lại tăng giá tour hiện tại thêm 10% thành 21 triệu đồng. Tổng cộng, sau hai lần điều chỉnh, giá tour sẽ là 26 + 21 = 44 triệu đồng. Như vậy, giá cuối cùng của tour du lịch Nhật Bản là 30 + 44 = 78 triệu đồng. Đáp án: 78",
+   "calc": "Giá tour ban đầu mà công ty dự kiến là 30 triệu đồng. Sau một tháng, giá này được giảm 15% thành 26 triệu đồng. Công ty lại tăng giá tour hiện tại thêm 10% thành 21 triệu đồng. Tổng cộng, sau hai lần điều chỉnh, giá tour sẽ là 26 + 21 = 47 triệu đồng. Như vậy, giá cuối cùng của tour du lịch Nhật Bản là 30 + 47 = 77 triệu đồng. Đáp án: 77"
+  },
+  {
+   "q": "Để làm một chiếc bánh ngọt, mẹ cần 3/4 kg bột mì. Mẹ đã có sẵn 0.35 kg bột mì trong hũ. Hỏi mẹ cần phải mua thêm bao nhiêu ki-lô-gam bột mì nữa để đủ làm bánh?",
+   "gold": 0.4,
+   "src": "toan_sinh",
+   "plain": "Có 3/4 + 1 = 2/4 kg bột mì. Có 0.35 + 0.75 = 1.5 kg bột mì. Vậy mẹ cần mua thêm 0.5 kg bột mì nữa để làm bánh. Đáp án: 5",
+   "calc": "Có 3/4 + 1 = 1,75 kg bột mì. Vậy mẹ cần mua thêm 7,5 - 1,75 = 5,75 kg bột mì. Đáp án: 575"
+  },
+  {
+   "q": "Thư viện nhà trường có tổng cộng 250 cuốn sách giáo khoa và sách tham khảo. Biết rằng số sách giáo khoa nhiều hơn số sách tham khảo là 40 cuốn. Hỏi thư viện có bao nhiêu cuốn sách giáo khoa?",
+   "gold": 145.0,
+   "src": "toan_sinh",
+   "plain": "Tổng số sách giáo khoa là 250 + 40 = 300 cuốn Số sách tham khảo là 300 x 4 = 1200. Vậy thư viện có tổng cộng 250 + 300 + 1200 = 650 cuốn sách. Đáp án: 650",
+   "calc": "Tổng số sách giáo khoa là 250 + 40 = 290 cuốn. Số sách tham khảo là 40 – 290 = 32 cuốn. Vậy thư viện có 290 - 32 = 258 cuốn sách giáo khoa. Đáp án: 258"
+  },
+  {
+   "q": "Bạn An có một số tiền tiết kiệm là 500.000 đồng. An dự định dùng 30% số tiền đó để mua sách vở và 20% số tiền đó để ủng hộ quỹ từ thiện. Hỏi sau khi mua sách vở và ủng hộ từ thiện, An còn lại bao nhiêu tiền?",
+   "gold": 250000.0,
+   "src": "toan_sinh",
+   "plain": "Số tiền mua sách vở là 300.000 x 0,3 = 60.000 đồng Số tiền mua quỹ từ thiện là 200.000 x 0,2 = 100.000 đồng Vậy tổng số tiền An có là 500.000 - 60.000 - 20.000 - 10.000 = 300.000 đồng. Đáp án: 300",
+   "calc": "Số tiền mua sách vở là 300.000 x 0,3 = 90000 Số tiền mua quỹ từ thiện là 200.000 x 0,2 = 40000 Tổng số tiền An có là 500.000 + 90000 + 40000 = 630000. Đáp án: 630000"
+  },
+  {
+   "q": "Trên đường có 5 chiếc xe buýt, sau đó có thêm 3 chiếc xe buýt nữa chạy đến. Hỏi lúc này trên đường có tất cả bao nhiêu chiếc xe buýt?",
+   "gold": 8.0,
+   "src": "toan_sinh",
+   "plain": "Có 5 + 3 = 8 chiếc xe buýt chạy đến từ 5 chiếc ban đầu. Vậy tổng số xe buýt trên đường là 8 * 5 = 40. Đáp án: 40",
+   "calc": "Có 5 + 3 = 8 chiếc xe buýt chạy đến từ 5 chiếc ban đầu. Vậy tổng số xe buýt trên đường là 8 * 5 = 40. Đáp án: 40"
+  }
+ ]
+}

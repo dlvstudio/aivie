@@ -1,0 +1,63 @@
+{
+  "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+  "n_prompt": 80,
+  "n_clauses": 10283,
+  "gold_pmi": 2.127591686022077,
+  "gold_pairs": 400,
+  "gate": {
+    "gold_tol": 0.05
+  },
+  "rows": [
+    {
+      "config": "KHONG_cong",
+      "pmi": 1.2078564377262342,
+      "dead_rate": 0.15,
+      "n_tokens": 36.10526315789474,
+      "n_alive": 76
+    },
+    {
+      "config": "fold_dang_chay",
+      "pmi": 1.8650348935954204,
+      "dead_rate": 0.7125,
+      "n_tokens": 34.67741935483871,
+      "n_alive": 62
+    },
+    {
+      "config": "pmi_1.25",
+      "pmi": 1.7076017597968756,
+      "dead_rate": 0.2,
+      "n_tokens": 33.64473684210526,
+      "n_alive": 76
+    },
+    {
+      "config": "pmi_1.5",
+      "pmi": 1.9018075980996914,
+      "dead_rate": 0.3875,
+      "n_tokens": 30.08108108108108,
+      "n_alive": 74
+    },
+    {
+      "config": "pmi_1.75",
+      "pmi": 2.14445540254017,
+      "dead_rate": 0.525,
+      "n_tokens": 25.281690140845072,
+      "n_alive": 71
+    },
+    {
+      "config": "pmi_2",
+      "pmi": 2.4837395587162736,
+      "dead_rate": 0.6625,
+      "n_tokens": 19.985507246376812,
+      "n_alive": 69
+    },
+    {
+      "config": "pmi_2.25",
+      "pmi": 2.736881893231939,
+      "dead_rate": 0.8625,
+      "n_tokens": 15.633333333333333,
+      "n_alive": 60
+    }
+  ],
+  "gate_pass": true,
+  "seconds": 2.2
+}

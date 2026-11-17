@@ -1,0 +1,47 @@
+[     0.0s] === load_mini_grounding START (pid=90357) → out/logs/load_mini_grounding_20260721_204930.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/mini_grounding.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.1s)
+[     0.3s] ▶ adjacency
+[     0.7s] ✓ adjacency  (0.5s)
+[     0.7s] ▶ embedding
+[     0.8s] ✓ embedding  (0.0s)
+[     0.8s] ▶ parents
+[     0.8s] parents: deserialize 659 records …
+[     1.6s] ▶ rebuild_hierarchical_index …
+[     1.6s] ✓ rebuild_hierarchical_index (0.0s)
+[     1.7s]     resync match_ids: 659/659 cha (df dựng lại)
+[     1.7s] ✓ parents  (1.0s)
+[     1.7s] ✓ loaded: vocab=32002 parents=659 E=(32002, 96)
+[     1.8s] sidecar thiếu → migrate: mini_grounding.content.pkl
+[     1.8s] ✓ load_checkpoint XONG
+[  1.8s] ✓ load cache mini_grounding.pkl · 659 parents
+[  1.8s] 
+═══ Hỏi: Bạch Đằng là gì  [drift→Trần Hưng Đạo?] ═══
+[  1.8s]   FOCUS: 'ĠBạch' 'ĠĐằng'
+[  1.8s]   facts_about theme=1.0 top: 'Lịch sử:\nTiêu đề: Sông Bạch Đằng\n\nVà ba từ "Bạch Đằng Giang", nghĩa là sông có "rừng sóng '
+[  1.8s]   → _build_segment_plan AGENDA: 'Lịch sử:\nTiêu đề: Sông Bạch Đằng\n\nVà ba từ "Bạch Đằng Giang", nghĩa là sông có "rừng sóng bạc đầu", mà gọi theo dân gian'
+[  1.8s] 
+═══ Hỏi: Ngô Quyền là ai  [drift→Trần Hưng Đạo?] ═══
+[  1.8s]   FOCUS: 'ĠNgô' 'ĠQuyền'
+[  1.8s]   facts_about theme=1.0 top: 'Lịch sử:\nTiêu đề: Ngô Quyền\n\nNgô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầ'
+[  1.8s]   → _build_segment_plan AGENDA: 'Lịch sử:\nTiêu đề: Ngô Quyền\n\nNgô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.\nNăm '
+[  1.8s] 
+═══ Hỏi: Nhà Trần là gì  [drift→Hồ Quý Ly?] ═══
+[  1.8s]   FOCUS: 'ĠNhà' 'ĠTrần'
+[  1.9s]   facts_about theme=1.0 top: 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng k'
+[  1.9s]   → _build_segment_plan AGENDA: ' được, phải xin đầu hàng.\nVua Thái Tông vì thương anh nên xin với Trần Thủ Độ tha tội cho Trần Liễu, nhưng quân lính đều'
+[  1.9s] 
+═══ Hỏi: Thăng Long là gì  [surface Long] ═══
+[  1.9s]   FOCUS: 'ĠThăng' 'ĠLong'
+[  1.9s]   facts_about theme=1.0 top: 'Lịch sử:\nTiêu đề: Thăng Long\n\nNgày nay tên Thăng Long còn dùng trong văn chương, trong nhữ'
+[  1.9s]   → _build_segment_plan AGENDA: 'Lịch sử:\nTiêu đề: Thăng Long\n\nNgày nay tên Thăng Long còn dùng trong văn chương, trong những cụm từ như "Thăng Long ngàn'
+[  1.9s] 
+═══ Hỏi: Trần Hưng Đạo là ai  [control] ═══
+[  1.9s]   FOCUS: 'ĠTrần' 'ĠHưng'
+[  1.9s]   facts_about theme=1.0 top: 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng k'
+[  1.9s]   → _build_segment_plan AGENDA: 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.\nÔng là '
+[  1.9s] 
+→ AGENDA (có fix) giờ KHỚP facts_about-theme (entity ĐÚNG)? control vẫn đúng?

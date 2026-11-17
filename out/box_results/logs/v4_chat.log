@@ -1,0 +1,21 @@
+[gen] mt: train 8715 · val 150 · trọng số 0.35
+[gen] off: train 3761 · val 150 · trọng số 0.15
+[gen] sgk: train 11181 · val 150 · trọng số 0.1
+[gen] math: train 14201 · val 150 · trọng số 0.1
+[gen] tb: train 9090 · val 150 · trọng số 0.1
+[gen] chat: train 11849 · val 150 · trọng số 0.1
+[gen] calib: train 3103 · val 150 · trọng số 0.1
+[gen] học code,vp,hoc · 755M tham số · trước {'mt': 1.1219, 'off': 0.2851, 'sgk': 0.8466, 'math': 0.5209, 'tb': 0.8213, 'chat': 1.0381, 'calib': 1.5098}
+[gen] bước 0/1000 · loss 0.796 · 1s
+[gen] bước 100/1000 · loss 0.621 · 105s
+[gen] bước 200/1000 · loss 0.539 · 210s
+[gen] bước 300/1000 · loss 0.839 · 314s
+[gen] bước 400/1000 · loss 0.743 · 422s
+[gen] bước 500/1000 · loss 0.673 · 528s
+[gen] bước 600/1000 · loss 0.665 · 632s
+[gen] bước 700/1000 · loss 0.470 · 736s
+[gen] bước 800/1000 · loss 0.615 · 836s
+[gen] bước 900/1000 · loss 0.871 · 936s
+[gen] bước 999/1000 · loss 0.686 · 1040s
+[gen] sau {'mt': 1.0499, 'off': 0.2818, 'sgk': 0.8353, 'math': 0.5352, 'tb': 0.7613, 'chat': 1.0796, 'calib': 1.0484}
+[gen] cổng {'mt': {'code': 0.437, 'vp': 0.126, 'hoc': 0.114}, 'off': {'code': 0.325, 'vp': 0.407, 'hoc': 0.063}, 'sgk': {'code': 0.266, 'vp': 0.117, 'hoc': 0.086}, 'math': {'code': 0.286, 'vp': 0.071, 'hoc': 0.064}, 'tb': {'code': 0.748, 'vp': 0.087, 'hoc': 0.06}, 'chat': {'code': 0.491, 'vp': 0.072, 'hoc': 0.056}, 'calib': {'code': 0.25, 'vp': 0.142, 'hoc': 0.079}}

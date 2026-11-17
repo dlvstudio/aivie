@@ -1,0 +1,45 @@
+[     0.0s] === eval_v4_network_v9_histwiki_paragraph START (pid=9455) → out/logs/eval_v4_network_v9_histwiki_paragraph_20260709_123606.log ===
+[     0.0s] checkpoint=checkpoints/network_v9_histwiki_paragraph.pkl skip=['essay', 'gen-ar'] min_cov=0.6
+[     0.0s] === load_network_v9_histwiki_paragraph START (pid=9455) → out/logs/load_network_v9_histwiki_paragraph_20260709_123606.log ===
+[     0.0s] load checkpoint checkpoints/network_v9_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    13.8s] ✓ unpickle  (13.8s)
+[    13.8s] ▶ vocab (113260 token)
+[    14.7s] ✓ vocab (113260 token)  (0.9s)
+[    14.7s] ▶ adjacency
+[    27.2s] ✓ adjacency  (12.4s)
+[    27.2s] ▶ embedding
+[    27.9s] ✓ embedding  (0.7s)
+[    27.9s] ▶ parents
+[   648.1s] ✓ parents  (620.2s)
+[   648.2s] ✓ loaded: vocab=113260 parents=174627 E=(77464, 96)
+[   659.0s] sidecar có: network_v9_histwiki_paragraph.content.pkl
+[   659.2s] ✓ load_checkpoint XONG
+[   659.2s] loaded vocab=113260 edges=9191421 parents=174627
+Checkpoint: checkpoints/network_v9_histwiki_paragraph.pkl  vocab=113260  parents=174627  min_cov=0.6
+
+Bộ             retr  gen-hy  vb-hy  gen-ar  vb-ar
+--------------------------------------------------
+QA val         100%     86%    14%    skip      —
+Paraphrase      88%     88%    50%    skip      —
+Synonym         67%     67%    17%    skip      —
+
+--- FAIL (gen-hybrid), nghiêm IDF ---
+  [QA val] Đoàn kết giúp em thế nào
+     gold='Đoàn kết giúp em mạnh hơn.'  ans='Đoàn kết giúp em mạnh mẽ .'  (cov 50%)
+  [Paraphrase] Tam giác có bao nhiêu cạnh
+     gold='Hình tam giác có ba cạnh.'  ans='Tam giác có tổng ba góc bằng 180 độ.'  (cov 50%)
+  [Synonym] Người trị bệnh là ai
+     gold='Bác sĩ chữa bệnh.'  ans='Các amit của axit sunfanilic gọi là sunfonamit hay sunfamit có tính sát trùng - kháng sinh được dùng nhiều làm thuốc trị bệnh'  (cov 0%)
+  [Synonym] Người dạy học là ai
+     gold='Giáo viên dạy học.'  ans='Trương Văn Hiến dạy học cũng đã truyền ý chí khởi nghĩa cho 3 anh em Tây Sơn'  (cov 0%)
+
+=== Perf summary (section → s) ===
+  gen-hy[QA val]           168.1s
+  gen-hy[Paraphrase]        90.4s
+  gen-hy[Synonym]           41.2s
+  retr[Paraphrase]          25.9s
+  retr[QA val]              20.6s
+  retr[Synonym]              8.4s
+  TOTAL                    354.7s
+[  1020.5s] perf → out/logs/eval_v4_network_v9_histwiki_paragraph_perf.json  total=354.683s

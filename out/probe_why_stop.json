@@ -1,0 +1,50 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_prompt": 300,
+ "max_clauses": 5,
+ "co_cong": {
+  "stops": {
+   "du_max": 95,
+   "khong_neo": 0,
+   "khong_ung_vien": 15,
+   "loai_het": 190
+  },
+  "stop_rate": {
+   "du_max": 0.31666666666666665,
+   "khong_neo": 0.0,
+   "khong_ung_vien": 0.05,
+   "loai_het": 0.6333333333333333
+  },
+  "menh_de_tb": 2.6233333333333335,
+  "chuoi_rong": 0.20666666666666667,
+  "loai_boi": {
+   "cong": 11042,
+   "trung": 21,
+   "dinh": 1533
+  },
+  "bể_luc_tac_trung_vi": 61.0
+ },
+ "khong_cong": {
+  "stops": {
+   "du_max": 264,
+   "khong_neo": 0,
+   "khong_ung_vien": 36,
+   "loai_het": 0
+  },
+  "stop_rate": {
+   "du_max": 0.88,
+   "khong_neo": 0.0,
+   "khong_ung_vien": 0.12,
+   "loai_het": 0.0
+  },
+  "menh_de_tb": 4.663333333333333,
+  "chuoi_rong": 0.023333333333333334,
+  "loai_boi": {
+   "cong": 0,
+   "trung": 4,
+   "dinh": 386
+  },
+  "bể_luc_tac_trung_vi": 0
+ },
+ "seconds": 9.7
+}

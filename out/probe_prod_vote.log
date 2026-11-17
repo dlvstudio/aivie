@@ -1,0 +1,149 @@
+[     0.0s] === load_network_v12_sent START (pid=7031) → out/logs/load_network_v12_sent_20260731_201345.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.6s] ✓ unpickle  (3.6s)
+[     3.6s] ▶ vocab (32002 token)
+[     4.7s] ✓ vocab (32002 token)  (1.1s)
+[     4.7s] ▶ adjacency
+[    15.6s] ✓ adjacency  (10.9s)
+[    15.6s] ▶ embedding
+[    15.6s] ✓ embedding  (0.1s)
+[    15.6s] ▶ parents
+[    15.6s] parents: deserialize 430447 records …
+[    15.7s] parents 5000/430447 (1.2%)
+[    15.7s] parents 10000/430447 (2.3%)
+[    15.8s] parents 15000/430447 (3.5%)
+[    15.8s] parents 20000/430447 (4.6%)
+[    15.9s] parents 25000/430447 (5.8%)
+[    15.9s] parents 30000/430447 (7.0%)
+[    16.0s] parents 35000/430447 (8.1%)
+[    16.0s] parents 40000/430447 (9.3%)
+[    16.1s] parents 45000/430447 (10.5%)
+[    16.1s] parents 50000/430447 (11.6%)
+[    16.2s] parents 55000/430447 (12.8%)
+[    16.2s] parents 60000/430447 (13.9%)
+[    16.3s] parents 65000/430447 (15.1%)
+[    16.3s] parents 70000/430447 (16.3%)
+[    16.4s] parents 75000/430447 (17.4%)
+[    16.4s] parents 80000/430447 (18.6%)
+[    16.5s] parents 85000/430447 (19.7%)
+[    16.5s] parents 90000/430447 (20.9%)
+[    16.6s] parents 95000/430447 (22.1%)
+[    16.6s] parents 100000/430447 (23.2%)
+[    16.7s] parents 105000/430447 (24.4%)
+[    16.7s] parents 110000/430447 (25.6%)
+[    16.8s] parents 115000/430447 (26.7%)
+[    16.9s] parents 120000/430447 (27.9%)
+[    16.9s] parents 125000/430447 (29.0%)
+[    17.0s] parents 130000/430447 (30.2%)
+[    17.1s] parents 135000/430447 (31.4%)
+[    17.1s] parents 140000/430447 (32.5%)
+[    17.2s] parents 145000/430447 (33.7%)
+[    17.3s] parents 150000/430447 (34.8%)
+[    17.4s] parents 155000/430447 (36.0%)
+[    17.5s] parents 160000/430447 (37.2%)
+[    17.6s] parents 165000/430447 (38.3%)
+[    17.7s] parents 170000/430447 (39.5%)
+[    17.8s] parents 175000/430447 (40.7%)
+[    17.9s] parents 180000/430447 (41.8%)
+[    18.0s] parents 185000/430447 (43.0%)
+[    18.1s] parents 190000/430447 (44.1%)
+[    18.2s] parents 195000/430447 (45.3%)
+[    18.3s] parents 200000/430447 (46.5%)
+[    18.4s] parents 205000/430447 (47.6%)
+[    18.5s] parents 210000/430447 (48.8%)
+[    18.6s] parents 215000/430447 (49.9%)
+[    18.7s] parents 220000/430447 (51.1%)
+[    18.8s] parents 225000/430447 (52.3%)
+[    18.9s] parents 230000/430447 (53.4%)
+[    19.0s] parents 235000/430447 (54.6%)
+[    19.1s] parents 240000/430447 (55.8%)
+[    19.2s] parents 245000/430447 (56.9%)
+[    19.3s] parents 250000/430447 (58.1%)
+[    19.4s] parents 255000/430447 (59.2%)
+[    19.5s] parents 260000/430447 (60.4%)
+[    19.6s] parents 265000/430447 (61.6%)
+[    19.7s] parents 270000/430447 (62.7%)
+[    19.8s] parents 275000/430447 (63.9%)
+[    20.0s] parents 280000/430447 (65.0%)
+[    29.1s] parents 285000/430447 (66.2%)
+[    29.2s] parents 290000/430447 (67.4%)
+[    29.3s] parents 295000/430447 (68.5%)
+[    29.4s] parents 300000/430447 (69.7%)
+[    29.5s] parents 305000/430447 (70.9%)
+[    29.6s] parents 310000/430447 (72.0%)
+[    29.7s] parents 315000/430447 (73.2%)
+[    29.8s] parents 320000/430447 (74.3%)
+[    29.9s] parents 325000/430447 (75.5%)
+[    30.0s] parents 330000/430447 (76.7%)
+[    30.1s] parents 335000/430447 (77.8%)
+[    30.2s] parents 340000/430447 (79.0%)
+[    30.3s] parents 345000/430447 (80.1%)
+[    30.4s] parents 350000/430447 (81.3%)
+[    30.5s] parents 355000/430447 (82.5%)
+[    30.6s] parents 360000/430447 (83.6%)
+[    30.7s] parents 365000/430447 (84.8%)
+[    30.8s] parents 370000/430447 (86.0%)
+[    30.9s] parents 375000/430447 (87.1%)
+[    31.0s] parents 380000/430447 (88.3%)
+[    31.1s] parents 385000/430447 (89.4%)
+[    31.2s] parents 390000/430447 (90.6%)
+[    31.3s] parents 395000/430447 (91.8%)
+[    31.4s] parents 400000/430447 (92.9%)
+[    31.5s] parents 405000/430447 (94.1%)
+[    31.6s] parents 410000/430447 (95.2%)
+[    31.7s] parents 415000/430447 (96.4%)
+[    31.7s] parents 420000/430447 (97.6%)
+[    31.8s] parents 425000/430447 (98.7%)
+[    31.9s] parents 430000/430447 (99.9%)
+[    99.9s] ▶ rebuild_hierarchical_index …
+[   102.3s] ✓ rebuild_hierarchical_index (2.4s)
+[   109.0s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[   109.0s] ✓ parents  (93.4s)
+[   109.0s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[   111.1s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[   111.1s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:363: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+hist: ['Năm', 'Ġ1', '0', '1', '0', ',', 'Ġvua', 'ĠLý', 'ĠThái', 'ĠTổ']
+
+=== agg=sum nnz=12262 ===
+  'Ġđang'              1.99219
+  'Ġnhất'              1.99219
+  'Ġthế'               1.99219
+  'Ġcông'              1.99219
+  'Ġchỉ'               1.99219
+  'Ġphải'              1.99219
+  'Ġchính'             1.99219
+  'Ġbị'                1.99219
+  'Ġtại'               1.99219
+  'Ġ*'                 1.99219
+  'Ġđổi'               1.99219
+  'Ġlập'               1.99219
+  SCORE 'Ġquyết': 1.99219
+  SCORE 'Ġchức': 1.49219
+  SCORE 'quyết': 0
+
+=== agg=prod nnz=57 ===
+  'Ġdời'               4.9051
+  'Ġsai'               3.80872
+  'Ġnăm'               3.69278
+  'Ġngười'             3.63423
+  'Ġtrên'              3.50912
+  'Ġtiên'              3.25743
+  'Ġlập'               3.23723
+  'Ġlàm'               3.12563
+  'Ġđi'                2.89428
+  'Ġchỉ'               2.88376
+  'Ġthứ'               2.87204
+  'Ġqua'               2.71706
+  SCORE 'Ġquyết': 1.95903
+  SCORE 'Ġchức': 0
+  SCORE 'quyết': 0
+
+vote_agg cfg: prod
+seed0: Năm 1010, vua Lý Thái Tổ dời đô về Thăng Long năm thời nhà đầu đến , người vào , ông , ngoại thành , của , người trên , ông , ngoại thành , của , người trên , ô
+seed1: Năm 1010, vua Lý Thái Tổ dời đô về Thăng Long năm thời nhà đầu đến , người khác về , ông , ngoại người , của , mình về , ông , ngoại người , của , mình về , ông
+seed2: Năm 1010, vua Lý Thái Tổ dời đô về Thăng Long năm thời nhà người đi , thể làm , ông , ngoại người , làm , nhà đi ra , người làm , ông , ngoại thành , làm , ngườ
+seed3: Năm 1010, vua Lý Thái Tổ dời đô về Thăng Long năm thời nhà phát triển ra công việc làm , ông , ngoại thành , làm , người đi , ông , làm , ngoại đi , ông , làm n
+seed4: Năm 1010, vua Lý Thái Tổ dời đô về Thăng Long năm thời nhà phát triển ra công việc làm , ông , ngoại người , làm , nhà đi ra , người làm , ông , ngoại thành , l

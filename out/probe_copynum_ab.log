@@ -1,0 +1,48 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36
+A/B ar_matrix_copy_number (no_agenda) — load 1 lần
+
+########## COPY_OFF ar_matrix_copy_number=False ##########
+
+=== ly gen (447.0s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 1 0 1 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng
+cont: ' Thăng Long năm 1 0 1 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng 0 Hoàng'
+
+=== bach gen (340.6s) ===
+out:  Trận Bạch Đằng năm 1 2 8 1 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2
+cont: ' 1 2 8 1 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2'
+
+=== nq_def gen (107.9s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd gen (37.0s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+=== hung gen (26.4s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+########## COPY_ON ar_matrix_copy_number=True ##########
+
+=== ly gen (146.8s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 10109
+cont: ' Thăng Long năm 10109'
+
+=== bach gen (343.5s) ===
+out:  Trận Bạch Đằng năm 1 2 8 1 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2
+cont: ' 1 2 8 1 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2 8 2'
+
+=== nq_def gen (108.1s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd gen (36.8s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+=== hung gen (26.3s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+[1685s] → out/probe_copynum_ab.log

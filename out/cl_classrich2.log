@@ -1,0 +1,74 @@
+[      0.0s] nạp checkpoints/classrich2.pkl …
+[     0.0s] === load_classrich2 START (pid=7418) → out/logs/load_classrich2_20260815_111233.log ===
+[     0.0s] load checkpoint checkpoints/classrich2.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.4s] ✓ adjacency  (1.1s)
+[     1.4s] ▶ embedding
+[     1.5s] ✓ embedding  (0.0s)
+[     1.5s] ▶ parents
+[     1.5s] parents: deserialize 55460 records …
+[     1.5s] parents 5000/55460 (9.0%)
+[     1.5s] parents 10000/55460 (18.0%)
+[     1.6s] parents 15000/55460 (27.0%)
+[     1.6s] parents 20000/55460 (36.1%)
+[     1.6s] parents 25000/55460 (45.1%)
+[     1.7s] parents 30000/55460 (54.1%)
+[     1.7s] parents 35000/55460 (63.1%)
+[     1.8s] parents 40000/55460 (72.1%)
+[     1.9s] parents 45000/55460 (81.1%)
+[     1.9s] parents 50000/55460 (90.2%)
+[     2.0s] parents 55000/55460 (99.2%)
+[     2.7s] ▶ rebuild_hierarchical_index …
+[     2.8s] ✓ rebuild_hierarchical_index (0.1s)
+[     3.4s]     resync match_ids: 55460/55460 cha (df dựng lại)
+[     3.4s] ✓ parents  (1.9s)
+[     3.4s] ✓ loaded: vocab=32002 parents=55460 E=(32002, 96)
+[     3.4s] sidecar thiếu → migrate: classrich2.content.pkl
+[     3.4s] ✓ load_checkpoint XONG
+[      3.5s]   ws_spans = 22904
+[      3.5s] PASS 1 — tỉ lệ kết hợp cố định với `là` …
+[      4.0s]   ngưỡng tỉ lệ = 0.048 · loại 648 từ kết-hợp-cố-định
+[      4.0s]   ví dụ loại: ['gọi', 'Đây', 'Đó', 'nghĩa', 'coi', 'tự xưng', 'quốc hiệu', 'Kết quả', 'phiên âm', 'có lẽ', 'Đồng Nai', 'tức']
+[      4.0s]   loại: {'kết hợp cố định': 5166, 'hư từ': 530, 'dấu câu / số': 556}
+[      4.0s]   lớp ≥3 thành viên = 716 · cạnh lớp = 7405
+[      4.0s] 
+=== ĐỌC TAY 12 CẠNH (bài học §30.4 số 26) ===
+[      4.0s]   «ũ kim là thứ»   ← …ng ũ kim là các thứ kim loại để…
+[      4.0s]   «lợi tức là tiền»   ← …lợi tức là tiền lãi thu được từ…
+[      4.0s]   «áo choàng là chiếc»   ← …Phía trên tấm áo choàng là chiếc vương miện , mặt…
+[      4.0s]   «ổ đĩa là thiết bị»   ← …h ỏng phần cứng * ổ đĩa là một thiết bị phần cứng…
+[      4.0s]   «mục đồng là trẻ»   ← …mục đồng là trẻ chăn trâu , chăn…
+[      4.0s]   «Lạng Sơn là núi»   ← …Dạng địa hình phổ biến ở Lạng Sơn là núi thấp và đồi ,…
+[      4.0s]   «gió máy là gió»   ← …gió máy là gió , về mặt có…
+[      4.0s]   «quay đĩa là máy»   ← …quay đĩa là máy quay đĩa ( nói…
+[      4.0s]   «ong toong là nhân viên»   ← …lo ong toong là nhân viên chạy giấy và…
+[      4.0s]   «măng tây là loại»   ← …Cây măng tây là một loại cây đa niên…
+[      4.0s]   «õ lâm là nhóm»   ← …v õ lâm là nhóm những người cùng trường…
+[      4.0s]   «địa hình là bề mặt»   ← …địa hình là bề mặt của một vùng…
+[      4.0s] 
+  20 lớp lớn nhất:
+[      4.0s]     loại                   370 tv : ['1R', 'ATM', 'B41', 'B69', 'Bia']
+[      4.0s]     loài                   262 tv : ['Ai Cập', 'Bóng nước', 'Bạch quả', 'Bồ nông', 'Chim']
+[      4.0s]     phần                   178 tv : ['Bắc Bộ', 'Một', 'Nước dùng', 'OHRI', 'San Francisco']
+[      4.0s]     khoảng                 116 tv : ['Bắc Kỳ', 'ban ngày', 'buổi', 'bãi', 'bầu trời']
+[      4.0s]     bộ phận                116 tv : ['Hoa', 'Sint Eustatius', 'bàn máy', 'bàn phím', 'bánh lái']
+[      4.0s]     cây                    105 tv : ['Cà phê', 'Ngọc Linh', 'báng', 'bèo', 'bí']
+[      4.0s]     vật                    102 tv : ['bao tay', 'bình phong', 'bùa', 'bản lề', 'bảng']
+[      4.0s]     đồ dùng                 86 tv : ['ang', 'bao bì', 'bàn chải', 'bàn tính', 'bát']
+[      4.0s]     sự                      80 tv : ['Ca trù', 'Hát nói', 'IMS', 'Nho giáo', 'Switch']
+[      4.0s]     đồ                      78 tv : ['bao', 'be', 'bi đông', 'bình', 'bình toong']
+[      4.0s]     điều                    74 tv : ['Công giáo', 'cao vọng', 'cảm thức', 'dữ kiện', 'hoạ']
+[      4.0s]     chất                    70 tv : ['Hợp chất', 'Rượu', 'bôi trơn', 'cholesterol', 'cháy']
+[      4.0s]     chỗ                     69 tv : ['ao', 'ao chuôm', 'bánh chè', 'bóng mát', 'bóng râm']
+[      4.0s]     tập hợp                 66 tv : ['Sinh Tồn', 'buồng', 'bưởng', 'bọn', 'bộ gõ']
+[      4.0s]     đơn vị                  63 tv : ['Kilôgam', 'Mol', 'Nguyên tử', 'Phủ Đồ', 'Quốc gia']
+[      4.0s]     số                      60 tv : ['Hệ quả', 'IP', 'biến', 'bí số', 'bảy']
+[      4.0s]     dụng cụ                 60 tv : ['búa', 'bơm', 'bẫy', 'bếp', 'bễ']
+[      4.0s]     kẻ                      55 tv : ['Hồ Chí Minh', 'Johnson', 'bợm', 'chân gỗ', 'chúa tể']
+[      4.0s]     nhà                     52 tv : ['Bradford', 'Bỉnh Khiêm', 'Carnuntum', 'Chính', 'Chủ yếu']
+[      4.0s]     đường                   48 tv : ['Ta', 'chân rết', 'chân trời', 'cuối', 'cơ đê']
+[      4.0s] ✓ → out/chan_ly_v2_classrich2.json

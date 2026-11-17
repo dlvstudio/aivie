@@ -1,0 +1,19 @@
+[    30.3s] loaded conv: vocab=89273 parents=44633
+[    30.3s] == A) CONTINUATION đọc tay (network_v4_conv) ==
+[    64.8s]   'nếu trời mưa' (35s):
+[    64.8s]     → nếu trời mưa , có thể có thể . , không ? gì . và các loại này , không ? gì là một số người ,
+[    70.4s]   'nếu trời mưa thì' (6s):
+[    70.4s]     → nếu trời mưa thì , có thể có thể . , không ? gì . và các loại này , không ? gì là một số người ,
+[    76.4s]   'tuy vất vả' (6s):
+[    76.4s]     → tuy vất vả , không có thể có thể . , không ? gì . và các loại này , một số là một cái này ,
+[    83.7s]   'Nếu em học chăm' (7s):
+[    83.7s]     → Nếu em học chăm sóc sức khỏe . , có thể có thể , không . và các thành một số là một cái này , không ?
+[    92.9s]   'vì em chăm học' (9s):
+[    92.9s]     → vì em chăm học , có thể có thể . , không ? gì . và các thành một số là một cái này , không ? gì
+[    92.9s] == B) GUARD QA đọc tay ==
+[   115.9s]   'Hỏi: Thủ đô Việt Nam là gì ? Đáp:' → Hỏi: Thủ đô Việt Nam là gì ? Đáp: Thủ đô Việt Nam là Hà Nội.
+[   118.3s]   'Hỏi: Ai chữa bệnh ? Đáp:' → Hỏi: Ai chữa bệnh ? Đáp: Bác sĩ chữa bệnh.
+[   120.4s]   'Hỏi: Ai trồng lúa ? Đáp:' → Hỏi: Ai trồng lúa ? Đáp: Nông dân trồng , lúa.
+[   120.4s] == C) RULER held-out essay ==
+[   154.6s]   bits 4.233  top1 22.4%  top5 36.4%  (baseline v4: 4.028/22.1%)
+[   154.6s] XONG

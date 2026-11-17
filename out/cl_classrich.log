@@ -1,0 +1,70 @@
+[      0.0s] nạp checkpoints/classrich.pkl …
+[     0.0s] === load_classrich START (pid=7409) → out/logs/load_classrich_20260815_111229.log ===
+[     0.0s] load checkpoint checkpoints/classrich.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.2s] ✓ vocab (32002 token)  (0.0s)
+[     0.2s] ▶ adjacency
+[     1.1s] ✓ adjacency  (0.9s)
+[     1.1s] ▶ embedding
+[     1.2s] ✓ embedding  (0.0s)
+[     1.2s] ▶ parents
+[     1.2s] parents: deserialize 35757 records …
+[     1.2s] parents 5000/35757 (14.0%)
+[     1.2s] parents 10000/35757 (28.0%)
+[     1.3s] parents 15000/35757 (41.9%)
+[     1.3s] parents 20000/35757 (55.9%)
+[     1.4s] parents 25000/35757 (69.9%)
+[     1.5s] parents 30000/35757 (83.9%)
+[     1.5s] parents 35000/35757 (97.9%)
+[     2.0s] ▶ rebuild_hierarchical_index …
+[     2.1s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.5s]     resync match_ids: 35757/35757 cha (df dựng lại)
+[     2.5s] ✓ parents  (1.3s)
+[     2.5s] ✓ loaded: vocab=32002 parents=35757 E=(32002, 96)
+[     2.5s] sidecar thiếu → migrate: classrich.content.pkl
+[     2.5s] ✓ load_checkpoint XONG
+[      2.6s]   ws_spans = 11241
+[      2.6s] PASS 1 — tỉ lệ kết hợp cố định với `là` …
+[      2.9s]   ngưỡng tỉ lệ = 0.065 · loại 279 từ kết-hợp-cố-định
+[      2.9s]   ví dụ loại: ['gọi', 'nghĩa', 'Đây', 'Đó', 'tự xưng', 'coi', 'Kết quả', 'phiên âm', 'tư cách', 'có lẽ', 'Đồng Nai', 'xem']
+[      2.9s]   loại: {'kết hợp cố định': 3532, 'dấu câu / số': 395, 'hư từ': 367}
+[      2.9s]   lớp ≥3 thành viên = 165 · cạnh lớp = 930
+[      2.9s] 
+=== ĐỌC TAY 12 CẠNH (bài học §30.4 số 26) ===
+[      2.9s]   «ánh sáng là thứ»   ← …Ông cho rằng ánh sáng là một thứ gì đó có…
+[      2.9s]   «Tết là dịp»   ← …Dịp Tết là dịp vui vẻ nên không…
+[      2.9s]   «thường là tháng»   ← …là tháng 2 , còn tháng 7 thường là tháng ấm nhất . <EOS>…
+[      2.9s]   «đầu là ngôn ngữ»   ← …Tiếng Pháp lúc đầu là ngôn ngữ chính thức duy…
+[      2.9s]   «Xe đạp là phương tiện»   ← …Xe đạp là phương tiện giao thông phổ…
+[      2.9s]   «Canada Day là ngày»   ← …Ngày Canada Day là một ngày mọi người nghỉ…
+[      2.9s]   «Nôm là làng»   ← …ông là làng Kim Liên ( tên Nôm là làng Sen ) . <EOS>…
+[      2.9s]   «dân số là nhóm»   ← …1 0 % dân số là các nhóm vùng thấp khác…
+[      2.9s]   «có thể là nguyên nhân»   ← …Đây có thể là nguyên nhân làm đa số…
+[      2.9s]   «Vành là khái niệm»   ← …Vành là những khái niệm tổng quát…
+[      2.9s]   «trận là sự»   ← …Dùng đoản binh chế trường trận là sự thường của binh pháp…
+[      2.9s]   «vị thế là trung tâm»   ← …Pháp từ lâu đã có vị thế là một trung tâm của thế…
+[      2.9s] 
+  20 lớp lớn nhất:
+[      2.9s]     sự                      28 tv : ['Ca trù', 'Hát nói', 'IMS', 'Nho giáo', 'Switch']
+[      2.9s]     ngôn ngữ                20 tv : ['Anh', 'Baloch', 'Britton', 'C', 'Hebrew']
+[      2.9s]     nhóm                    19 tv : ['Blue', 'Kỳ', 'Live Blue', 'Lovelace', 'Peritrichous']
+[      2.9s]     nhà                     18 tv : ['Bradford', 'Bỉnh Khiêm', 'Carnuntum', 'Châu Trinh', 'Chính']
+[      2.9s]     trung tâm               18 tv : ['Bagdad', 'Berlin', 'Chicago', 'Main', 'Montparnasse']
+[      2.9s]     thành phố               16 tv : ['8 viên', 'Hamilton', 'Hà Nội', 'Hồ Chí Minh', 'Karachi']
+[      2.9s]     hai                     16 tv : ['Anh', 'Erasistratus', 'Kobayakawa Hideaki', 'Métro', 'Napoléon']
+[      2.9s]     ngày                    16 tv : ['Ba', 'Canada Day', 'Chúa nhật', 'Chủ nhật', 'Cơ Đốc']
+[      2.9s]     quốc gia                15 tv : ['Ban Nha', 'Cuba', 'Cộng hòa', 'Do', 'Giả sử']
+[      2.9s]     loại                    15 tv : ['Brabant', 'Cytokinin', 'ISDN', 'Lúa mì', 'M240']
+[      2.9s]     vị                      14 tv : ['Chính', 'Indravarman', 'Indravarman VI', 'Lê Thánh Tông', 'Minh Mạng']
+[      2.9s]     lớp                     14 tv : ['Sao Hoả', 'bò sát', 'chất', 'hành tinh', 'kim loại']
+[      2.9s]     thành viên              14 tv : ['Bộ trưởng', 'Campuchia', 'Họ', 'Mỹ', 'Pháp']
+[      2.9s]     phần                    13 tv : ['Bắc Bộ', 'Một', 'Nước dùng', 'OHRI', 'San Francisco']
+[      2.9s]     ngành                   13 tv : ['Công nghiệp hóa học', 'Du lịch', 'Kỹ thuật', 'Nam', 'Nông nghiệp']
+[      2.9s]     ví dụ                   13 tv : ['Cathodoluminescence', 'Charity', 'DBC', 'Pháp', 'Tokyo']
+[      2.9s]     khoảng                  12 tv : ['Bắc Kỳ', 'Quốc xã', 'châu Âu', 'ck', 'học']
+[      2.9s]     hệ thống                11 tv : ['CSU', 'Internet', 'Muni', 'Sao Mộc', 'UTC']
+[      2.9s]     tỉnh                    11 tv : ['Bắc Kạn', 'California', 'Edward', 'Labrador', 'Lào Cai']
+[      2.9s]     Nguyễn                  10 tv : ['Nghệ An', 'Nguyễn Mẹ', 'cha', 'cha ông', 'con gái']
+[      2.9s] ✓ → out/chan_ly_v2_classrich.json

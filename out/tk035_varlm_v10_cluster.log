@@ -1,0 +1,37 @@
+[     0.0s] === build_varlm START (pid=16721) → out/logs/build_varlm_20260709_160051.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    27.2s] ✓ unpickle  (27.2s)
+[    27.2s] ▶ vocab (113572 token)
+[    27.9s] ✓ vocab (113572 token)  (0.7s)
+[    27.9s] ▶ adjacency
+[    44.6s] ✓ adjacency  (16.7s)
+[    44.6s] ▶ embedding
+[    46.5s] ✓ embedding  (1.9s)
+[    46.5s] ▶ parents
+[   653.9s] ✓ parents  (607.4s)
+[   653.9s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   664.3s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   664.4s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   671.6s] ✓ varlm: k=1:52454, k=2:473963, k=3:980445, k=4:1276037
+[   671.6s] ✓ load_checkpoint XONG
+[   671.6s] ▶ đếm n-gram
+[   687.3s]   20000 đoạn, 596739 token
+[   700.7s]   40000 đoạn, 1200962 token
+[   719.5s]   60000 đoạn, 1805860 token
+[   733.4s]   80000 đoạn, 2400255 token
+[   752.2s]   100000 đoạn, 3022964 token
+[   771.5s]   120000 đoạn, 3666878 token
+[   786.7s]   140000 đoạn, 4192898 token
+[   801.9s]   160000 đoạn, 4701401 token
+[   814.8s]   180000 đoạn, 5231812 token
+[   826.3s]   200000 đoạn, 5750362 token
+[   839.3s]   220000 đoạn, 6271841 token
+[   849.6s] ✓ đếm n-gram  (178.0s)
+[   849.6s] đếm xong: 237577 câu, 6748966 token; k=1:214307, k=2:1013778, k=3:1113486, k=4:1106378
+[   849.6s] ▶ prune singleton k≥3
+[   851.6s] ✓ prune singleton k≥3  (2.0s)
+[   851.6s] prune: {'k3': 189905, 'k4': 186738} → k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   851.7s] ▶ save
+[   856.1s] ✓ save  (4.4s)
+[   856.1s] ✓ SAVED network_v10_histwiki_paragraph.varlm.pkl (80MB)

@@ -1,0 +1,379 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_token": 18450,
+ "n_boi_canh": 954751,
+ "min_share": 3,
+ "n_co_lang_gieng": 7831,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "kilogram",
+    "samurai",
+    "bismuth",
+    "ethanol",
+    "chồng",
+    "bếp",
+    "Vua",
+    "ribosome"
+   ],
+   "embedding": [
+    "Vua",
+    "triều",
+    "Chiêm",
+    "vương",
+    "hoàng",
+    "chúa",
+    "Vua",
+    "Jaya"
+   ],
+   "n_ctx": 480
+  },
+  "sông": {
+   "lop_thay_the": [
+    "Angular",
+    "Pandas",
+    "Kayak",
+    "ao",
+    "suối",
+    "biển",
+    "Dijon",
+    "folate"
+   ],
+   "embedding": [
+    "bờ",
+    "vùng",
+    "thung",
+    "Sông",
+    "bắc",
+    "biển",
+    "dọc",
+    "Sông"
+   ],
+   "n_ctx": 796
+  },
+  "đánh": {
+   "lop_thay_the": [
+    "đưa",
+    "giết",
+    "lọt",
+    "tìm",
+    "chém",
+    "ném",
+    "xông",
+    "đâm"
+   ],
+   "embedding": [
+    "vây",
+    "binh",
+    "bại",
+    "giặc",
+    "quân",
+    "bắn",
+    "đuổi",
+    "lính"
+   ],
+   "n_ctx": 2185
+  },
+  "Nguyễn": {
+   "lop_thay_the": [
+    "Lê",
+    "Phạm",
+    "Trần",
+    "Phan",
+    "Bùi",
+    "Trịnh",
+    "Đặng",
+    "Đỗ"
+   ],
+   "embedding": [
+    "Lê",
+    "Nguyễn",
+    "Văn",
+    "Lê",
+    "Phạm",
+    "Thị",
+    "Hữu",
+    "Minh"
+   ],
+   "n_ctx": 553
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "tốt",
+    "nhỏ",
+    "cao",
+    "thấp",
+    "nhanh",
+    "khác",
+    "mạnh",
+    "dài"
+   ],
+   "embedding": [
+    "nhất",
+    "vực",
+    "địa",
+    "trung",
+    "Friesen",
+    "giới",
+    "cao",
+    "gần"
+   ],
+   "n_ctx": 3580
+  },
+  "quân": {
+   "lop_thay_the": [
+    "Saragat",
+    "Quân",
+    "Agil",
+    "binh",
+    "ngớt",
+    "dân",
+    "nhân",
+    "Hufflepuff"
+   ],
+   "embedding": [
+    "Quân",
+    "binh",
+    "huy",
+    "chiến",
+    "tấn",
+    "lính",
+    "lệnh",
+    "rút"
+   ],
+   "n_ctx": 2162
+  },
+  "năm": {
+   "lop_thay_the": [
+    "tháng",
+    "ngày",
+    "tuần",
+    "phút",
+    "giây",
+    "lần",
+    "mét",
+    "tuổi"
+   ],
+   "embedding": [
+    "tháng",
+    "ngày",
+    "Vào",
+    "thứ",
+    "Vào",
+    "Gregory",
+    "tháng",
+    "2"
+   ],
+   "n_ctx": 3370
+  },
+  "thành": {
+   "lop_thay_the": [
+    "Thành",
+    "Một"
+   ],
+   "embedding": [
+    "tỉnh",
+    "Thành",
+    "lỵ",
+    "quận",
+    "quận",
+    "Lậy",
+    "Phủ",
+    "Tỉnh"
+   ],
+   "n_ctx": 16
+  },
+  "nước": {
+   "lop_thay_the": [
+    "đất",
+    "Python",
+    "máu",
+    "oxy",
+    "protein",
+    "rượu",
+    "muối",
+    "nhóm"
+   ],
+   "embedding": [
+    "sôi",
+    "khô",
+    "đun",
+    "dầu",
+    "bọt",
+    "nóng",
+    "ấm",
+    "sạch"
+   ],
+   "n_ctx": 4462
+  },
+  "người": {
+   "lop_thay_the": [
+    "cũ",
+    "ounce",
+    "cây",
+    "USD",
+    "hơi",
+    "chuyện",
+    "phút",
+    "môi"
+   ],
+   "embedding": [
+    "có",
+    "phụ",
+    "hơn",
+    "làm",
+    "biểu",
+    "đại",
+    "kế",
+    "tương"
+   ],
+   "n_ctx": 90
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "mình",
+   "lop": [
+    "tôi",
+    "bạn",
+    "họ",
+    "nó",
+    "hắn",
+    "ta"
+   ]
+  },
+  {
+   "token": "xem",
+   "lop": [
+    "coi",
+    "đọc",
+    "nhìn",
+    "thấy",
+    "nghe",
+    "lấy"
+   ]
+  },
+  {
+   "token": "lên",
+   "lop": [
+    "xuống",
+    "tới",
+    "hơn",
+    "dậy",
+    "cao",
+    "to"
+   ]
+  },
+  {
+   "token": "hiện",
+   "lop": [
+    "triển",
+    "tồn",
+    "Hiện",
+    "lộ",
+    "xảy",
+    "toát"
+   ]
+  },
+  {
+   "token": "dẫn",
+   "lop": [
+    "đưa",
+    "mang",
+    "tìm",
+    "bắt",
+    "thụ",
+    "gật"
+   ]
+  },
+  {
+   "token": "bởi",
+   "lop": [
+    "thay",
+    "Bởi",
+    "nhờ",
+    "Chồng",
+    "do",
+    "giữa"
+   ]
+  },
+  {
+   "token": "rằng",
+   "lop": [
+    "phép",
+    "vệ",
+    "biết",
+    "mình",
+    "thấy",
+    "rõ"
+   ]
+  },
+  {
+   "token": "khiến",
+   "lop": [
+    "giúp",
+    "nhưng",
+    "đưa",
+    "nếu",
+    "mà",
+    "dành"
+   ]
+  },
+  {
+   "token": "hành",
+   "lop": [
+    "hoạt",
+    "rung",
+    "triển",
+    "tác",
+    "dao",
+    "chuyển"
+   ]
+  },
+  {
+   "token": "ngươi",
+   "lop": [
+    "hắn",
+    "nàng",
+    "ta",
+    "nó",
+    "tôi",
+    "bạn"
+   ]
+  },
+  {
+   "token": "đánh",
+   "lop": [
+    "đưa",
+    "giết",
+    "lọt",
+    "tìm",
+    "chém",
+    "ném"
+   ]
+  },
+  {
+   "token": "chung",
+   "lop": [
+    "riêng",
+    "khác",
+    "dối",
+    "xung",
+    "Cappadocia",
+    "Atlanta"
+   ]
+  }
+ ],
+ "xac_nhan_B": {
+  "lop": {
+   "n": 4438,
+   "ty_le": 0.9058134294727355
+  },
+  "ngau_nhien": {
+   "n": 4438,
+   "ty_le": 0.13992789544840017
+  },
+  "ty_so": 6.473429951690822
+ },
+ "seconds": 69.5
+}

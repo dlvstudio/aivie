@@ -1,0 +1,440 @@
+<meta charset="utf-8">
+<title>Bộ não thị-giác</title>
+<style>
+:root{--bg:#f4f4f2;--ink:#1b1d22;--ink-soft:#5a5f6b;--card:#fff;--hair:#e3e3e0;--accent:#2f7bff;--good:#3ec26b;--warn:#ff9f43;--bad:#ff5a4d;--person:#8a5cff}
+:root[data-theme=dark],:root:not([data-theme=light]){@media(prefers-color-scheme:dark){--bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}}
+:root[data-theme=dark]{--bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:26px 20px 60px}
+h1{font-size:22px;margin:0 0 4px}.lede{color:var(--ink-soft);max-width:78ch;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px;margin-bottom:16px}
+h3{font-size:14px;margin:0 0 12px;display:flex;gap:8px;align-items:center}
+.badge{font-size:11px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:20px;padding:1px 8px}
+canvas{image-rendering:auto;border-radius:10px;border:1px solid var(--hair);background:#000}
+.row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+#pin{width:180px;height:180px}
+.res{flex:1;min-width:260px}
+.line1{font-size:22px;font-weight:800}
+.line2{font-size:18px;font-weight:700;margin-top:2px}
+.sub{color:var(--ink-soft);font-size:12px}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:4px 8px;align-items:center;font-size:12px;margin-top:10px;max-width:420px}
+.lab{white-space:nowrap;color:var(--ink-soft)}
+.track{background:var(--bg);border:1px solid var(--hair);border-radius:6px;height:13px;overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:6px 0 0 6px}
+button,.filebtn{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--hair);background:var(--card);color:var(--ink);cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.filebtn{display:inline-block}.filebtn input{display:none}
+input[type=text]{font:inherit;padding:7px 10px;border-radius:8px;border:1px solid var(--hair);background:var(--bg);color:var(--ink)}
+.gal,.book{display:flex;flex-wrap:wrap;gap:7px}
+.gal canvas{width:58px;height:58px;cursor:pointer;transition:transform .08s}
+.gal canvas:hover{transform:scale(1.1);border-color:var(--accent)}
+.person{display:flex;gap:8px;align-items:center;border:1px solid var(--hair);border-radius:10px;padding:5px 9px}
+.person canvas{width:40px;height:40px}
+.note{color:var(--ink-soft);font-size:13px;max-width:80ch}
+.enroll{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center}
+</style>
+<div class="wrap">
+  <h1>Bộ não thị-giác <span class="badge">2 mạng · vật-thể + nhớ-mặt · M4</span></h1>
+  <p class="lede">Thả một ảnh, mạng làm hai việc như mắt-não người: <b>(1) đây là VẬT gì?</b> (11 lớp, một CNN nét 160px),
+    và nếu là <b>người</b> thì <b>(2) là AI?</b> — mạng "vân-tay khuôn-mặt" so với <b>sổ mặt</b> bạn đã dạy, hoặc báo
+    <b>người lạ</b>. Bạn <b>ghi-danh</b> một người bằng 1 ảnh (lưu cục-bộ trong trình-duyệt). Cả hai mạng đều tự-viết
+    từ-đầu, luyện trên Apple M4, chạy hoàn-toàn trong trình-duyệt — <b>không gửi ảnh đi đâu</b>. Có thể <b>chụp qua
+    webcam</b> (trình-duyệt sẽ xin quyền camera; ảnh vẫn ở lại máy bạn) hoặc tải ảnh.</p>
+
+  <div class="card">
+    <h3>Phân-tích ảnh <span class="badge" id="dev">…</span></h3>
+    <div class="row">
+      <div><canvas id="pin" width="160" height="160"></canvas></div>
+      <div class="res">
+        <div class="line1" id="l1">—</div>
+        <div class="line2" id="l2"></div>
+        <div class="sub" id="lsub">Bấm một ảnh mẫu bên dưới, hoặc tải ảnh của bạn.</div>
+        <div class="bars" id="bars"></div>
+        <div class="enroll" id="fb" hidden>
+          <span class="sub">Nhận đúng không?</span>
+          <button id="fbYes">✓ Đúng</button>
+          <button id="fbNo">✗ Sai</button>
+          <span id="fbfix" hidden style="display:flex;gap:6px;align-items:center">
+            <input type="text" id="fixname" placeholder="tên đúng là…">
+            <button class="primary" id="fixok">Lưu tên đúng</button>
+          </span>
+        </div>
+        <div class="enroll">
+          <button id="camstart">📹 Bật webcam</button>
+          <button class="primary" id="camshot" hidden>📸 Chụp</button>
+          <button id="rtbtn" hidden>▶ Realtime</button>
+          <button id="camstop" hidden>✕ Tắt</button>
+          <label class="filebtn">📷 Tải ảnh<input id="file" type="file" accept="image/*"></label>
+        </div>
+        <div id="camwrap" hidden style="margin-top:8px;max-width:100%">
+          <video id="cam" playsinline muted autoplay style="display:none"></video>
+          <canvas id="overlay" style="width:100%;max-width:440px;border-radius:10px;border:1px solid var(--hair);display:block;background:#111"></canvas>
+        </div>
+        <div class="enroll">
+          <input type="text" id="ename" placeholder="tên người này…">
+          <button class="primary" id="enroll">✚ Ghi danh mặt hiện tại</button>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:12px" class="sub">Ảnh mẫu (bấm để thử):</div>
+    <div class="gal" id="gal" style="margin-top:6px"></div>
+  </div>
+
+  <div class="card">
+    <h3>Sổ mặt <span class="badge" id="bookn">0 người</span></h3>
+    <div class="book" id="book"></div>
+    <div style="margin-top:10px"><button id="clear">Xoá hết sổ</button></div>
+    <p class="note" style="margin-top:6px">Lưu trong trình-duyệt của bạn (localStorage). Mẹo: ghi-danh 1 ảnh một người, rồi thử ảnh KHÁC của họ.</p>
+  </div>
+
+  <div class="card">
+    <h3>Độ chính-xác THẬT <span class="badge">trung-thực</span></h3>
+    <p class="note" id="accnote"></p>
+  </div>
+</div>
+
+<script>
+const OBJW = /*__OBJW__*/ null;
+const FACEW = /*__FACEW__*/ null;
+const DETW = /*__DETW__*/ null;
+const MFW  = /*__MFW__*/ null;                 // DÒ NHIỀU-MẶT (CenterNet-lite): 1 forward ra MỌI mặt
+const OBJSAMP = /*__OBJSAMP__*/ null;
+const FACESAMP = /*__FACESAMP__*/ null;
+const CELEBS = /*__CELEBS__*/ null;            // SỔ MẶT CHUNG nhúng sẵn (người nổi-tiếng) — ai mở cũng có
+const b64=s=>{const bin=atob(s),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return a;};
+const LS='brain_facebook_v1';
+let OCONV=[],FCONV=[],DCONV=[],EDEC=null,EHEAD=null,book=[],curFace=null,lastPredName=null;
+let MENC=[],MHM=null,MWH=null,MLM=null;        // trọng-số dò-nhiều-mặt đã dàn-phẳng
+
+function flat(w){const O=w.length,I=w[0].length,a=new Float32Array(O*I*9);
+  for(let o=0;o<O;o++)for(let i=0;i<I;i++)for(let ky=0;ky<3;ky++)for(let kx=0;kx<3;kx++)a[o*I*9+i*9+ky*3+kx]=w[o][i][ky][kx];return a;}
+function convRelu(inp,Ci,H,Wd,Wf,b,Co){const out=new Float32Array(Co*H*Wd),HW=H*Wd;
+  for(let oc=0;oc<Co;oc++){const wb0=oc*Ci*9,ob=oc*HW,bias=b[oc];
+    for(let y=0;y<H;y++){const rb=ob+y*Wd,iy=(y>0&&y<H-1);
+      for(let x=0;x<Wd;x++){let s=bias;
+        if(iy&&x>0&&x<Wd-1){const c0=y*Wd+x;                          // nội-vi: 3×3 trải-thẳng, không kiểm biên
+          for(let ic=0;ic<Ci;ic++){const wb=wb0+ic*9,p=ic*HW+c0,pu=p-Wd,pd=p+Wd;
+            s+=inp[pu-1]*Wf[wb]+inp[pu]*Wf[wb+1]+inp[pu+1]*Wf[wb+2]+inp[p-1]*Wf[wb+3]+inp[p]*Wf[wb+4]+inp[p+1]*Wf[wb+5]+inp[pd-1]*Wf[wb+6]+inp[pd]*Wf[wb+7]+inp[pd+1]*Wf[wb+8];}
+        } else { for(let ic=0;ic<Ci;ic++){const ib=ic*HW,wb=wb0+ic*9;
+          for(let ky=0;ky<3;ky++){const yy=y+ky-1;if(yy<0||yy>=H)continue;
+            for(let kx=0;kx<3;kx++){const xx=x+kx-1;if(xx<0||xx>=Wd)continue;s+=inp[ib+yy*Wd+xx]*Wf[wb+ky*3+kx];}}} }
+        out[rb+x]=s>0?s:0;}}}return out;}
+function pool(inp,C,H,Wd){const H2=H>>1,W2=Wd>>1,out=new Float32Array(C*H2*W2);
+  for(let c=0;c<C;c++)for(let y=0;y<H2;y++)for(let x=0;x<W2;x++){const bb=c*H*Wd;let m=-1e9;
+    for(let dy=0;dy<2;dy++)for(let dx=0;dx<2;dx++){const v=inp[bb+(2*y+dy)*Wd+(2*x+dx)];if(v>m)m=v;}
+    out[c*H2*W2+y*W2+x]=m;}return out;}
+function gapStack(planar,W,CONV){                 // chuẩn-hoá + conv-list + GAP → vector kênh cuối
+  const S=W.meta.input_size,mean=W.meta.mean,std=W.meta.std;let feat=new Float32Array(3*S*S);
+  for(let c=0;c<3;c++)for(let p=0;p<S*S;p++)feat[c*S*S+p]=(planar[c*S*S+p]/255-mean[c])/std[c];
+  let C=3,H=S,Wd=S;
+  for(let l=0;l<W.convs.length;l++){const Co=W.convs[l].b.length;feat=convRelu(feat,C,H,Wd,CONV[l],W.convs[l].b,Co);feat=pool(feat,Co,H,Wd);C=Co;H>>=1;Wd>>=1;}
+  const sp=H*Wd,v=new Float32Array(C);for(let c=0;c<C;c++){let s=0,bs=c*sp;for(let p=0;p<sp;p++)s+=feat[bs+p];v[c]=s/sp;}
+  return v;
+}
+function objProbs(planar160){const g=gapStack(planar160,OBJW,OCONV);const fw=OBJW.fc.w,fb=OBJW.fc.b,O=fb.length,lo=new Array(O);
+  for(let o=0;o<O;o++){let s=fb[o];const wo=fw[o];for(let c=0;c<g.length;c++)s+=g[c]*wo[c];lo[o]=s;}
+  const m=Math.max(...lo),e=lo.map(v=>Math.exp(v-m)),z=e.reduce((p,c)=>p+c,0);return e.map(v=>v/z);}
+function faceVec(planar96){const g=gapStack(planar96,FACEW,FCONV);let n=0;for(let c=0;c<g.length;c++)n+=g[c]*g[c];n=Math.sqrt(n)||1;for(let c=0;c<g.length;c++)g[c]/=n;return g;}
+function cos(a,b){let s=0;for(let i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
+function convRaw(inp,Ci,H,Wd,Wf,b,Co){         // conv 3×3 pad1 KHÔNG relu
+  const out=new Float32Array(Co*H*Wd),HW=H*Wd;
+  for(let oc=0;oc<Co;oc++){const wb0=oc*Ci*9,ob=oc*HW,bias=b[oc];
+    for(let y=0;y<H;y++){const rb=ob+y*Wd,iy=(y>0&&y<H-1);
+      for(let x=0;x<Wd;x++){let s=bias;
+        if(iy&&x>0&&x<Wd-1){const c0=y*Wd+x;
+          for(let ic=0;ic<Ci;ic++){const wb=wb0+ic*9,p=ic*HW+c0,pu=p-Wd,pd=p+Wd;
+            s+=inp[pu-1]*Wf[wb]+inp[pu]*Wf[wb+1]+inp[pu+1]*Wf[wb+2]+inp[p-1]*Wf[wb+3]+inp[p]*Wf[wb+4]+inp[p+1]*Wf[wb+5]+inp[pd-1]*Wf[wb+6]+inp[pd]*Wf[wb+7]+inp[pd+1]*Wf[wb+8];}
+        } else { for(let ic=0;ic<Ci;ic++){const ib=ic*HW,wb=wb0+ic*9;
+          for(let ky=0;ky<3;ky++){const yy=y+ky-1;if(yy<0||yy>=H)continue;
+            for(let kx=0;kx<3;kx++){const xx=x+kx-1;if(xx<0||xx>=Wd)continue;s+=inp[ib+yy*Wd+xx]*Wf[wb+ky*3+kx];}}} }
+        out[rb+x]=s;}}}return out;}
+function detect(planar){                       // HEATMAP: encoder → 5 bản-đồ nhiệt → soft-argmax (KHÍT). → {box,lm} [0..1]
+  const Sz=DETW.meta.input_size; let feat=new Float32Array(3*Sz*Sz);
+  for(let i=0;i<3*Sz*Sz;i++)feat[i]=planar[i]/255;
+  let C=3,H=Sz,W=Sz;
+  for(let l=0;l<DCONV.length;l++){const Co=DETW.enc[l].b.length;feat=convRelu(feat,C,H,W,DCONV[l],DETW.enc[l].b,Co);feat=pool(feat,Co,H,W);C=Co;H>>=1;W>>=1;}
+  const sp=H*W, gap=new Float32Array(C);        // hộp: GAP→fc→sigmoid
+  for(let c=0;c<C;c++){let s=0,b=c*sp;for(let p=0;p<sp;p++)s+=feat[b+p];gap[c]=s/sp;}
+  const box=DETW.boxfc.b.map((b,o)=>{let s=b;const w=DETW.boxfc.w[o];for(let c=0;c<C;c++)s+=gap[c]*w[c];return 1/(1+Math.exp(-s));});
+  const H2=H*2,W2=W*2, up=new Float32Array(C*H2*W2);   // giải-mã: upsample ×2 (nearest)
+  for(let c=0;c<C;c++)for(let y=0;y<H2;y++)for(let x=0;x<W2;x++)up[c*H2*W2+y*W2+x]=feat[c*sp+(y>>1)*W+(x>>1)];
+  const Cd=DETW.dec.b.length, d=convRelu(up,C,H2,W2,EDEC,DETW.dec.b,Cd);
+  const hm=convRaw(d,Cd,H2,W2,EHEAD,DETW.head.b,5);     // 5 heatmap 32×32
+  const lm=[], N=H2*W2;
+  for(let k=0;k<5;k++){let mx=-1e9,bs=k*N;for(let p=0;p<N;p++){const v=hm[bs+p];if(v>mx)mx=v;}
+    let se=0,sx=0,sy=0;for(let y=0;y<H2;y++)for(let x=0;x<W2;x++){const e=Math.exp(hm[bs+y*W2+x]-mx);se+=e;sx+=e*x;sy+=e*y;}
+    lm.push(sx/se/(W2-1), sy/se/(H2-1));}                // soft-argmax → toạ-độ [0,1]
+  return {box,lm};
+}
+function iouBox(a,b){                           // IoU 2 hộp [x,y,w,h]
+  const ax1=a[0]+a[2],ay1=a[1]+a[3],bx1=b[0]+b[2],by1=b[1]+b[3];
+  const iw=Math.max(0,Math.min(ax1,bx1)-Math.max(a[0],b[0])),ih=Math.max(0,Math.min(ay1,by1)-Math.max(a[1],b[1]));
+  const inter=iw*ih; return inter/(a[2]*a[3]+b[2]*b[3]-inter+1e-9);
+}
+// DÒ NHIỀU MẶT: 1 forward → bản-đồ TÂM 40×40 + wh + 5 mốc-offset → tìm đỉnh + NMS → danh-sách mặt [0..1]
+function detectMulti(planar,thr){
+  thr=thr||0.55; const Sz=MFW.meta.input_size, FS=MFW.meta.fs;
+  let feat=new Float32Array(3*Sz*Sz); for(let i=0;i<3*Sz*Sz;i++)feat[i]=planar[i]/255;
+  let C=3,H=Sz,W=Sz;                                        // encoder: conv+pool, conv+pool, conv (giữ)
+  feat=convRelu(feat,C,H,W,MENC[0],MFW.enc[0].b,MFW.enc[0].b.length);feat=pool(feat,MFW.enc[0].b.length,H,W);C=MFW.enc[0].b.length;H>>=1;W>>=1;
+  feat=convRelu(feat,C,H,W,MENC[1],MFW.enc[1].b,MFW.enc[1].b.length);feat=pool(feat,MFW.enc[1].b.length,H,W);C=MFW.enc[1].b.length;H>>=1;W>>=1;
+  feat=convRelu(feat,C,H,W,MENC[2],MFW.enc[2].b,MFW.enc[2].b.length);C=MFW.enc[2].b.length;   // H=W=FS
+  const hm=convRaw(feat,C,H,W,MHM,MFW.hm.b,1), wh=convRaw(feat,C,H,W,MWH,MFW.wh.b,2), lm=convRaw(feat,C,H,W,MLM,MFW.lm.b,10);
+  const N=FS*FS, sg=v=>1/(1+Math.exp(-v)), faces=[];
+  for(let y=0;y<FS;y++)for(let x=0;x<FS;x++){ const v=sg(hm[y*FS+x]); if(v<thr)continue;
+    let isMax=true;                                          // đỉnh cục-bộ 3×3
+    for(let dy=-1;dy<=1&&isMax;dy++)for(let dx=-1;dx<=1;dx++){const ny=y+dy,nx=x+dx;if(ny<0||ny>=FS||nx<0||nx>=FS||(dy===0&&dx===0))continue;if(sg(hm[ny*FS+nx])>v){isMax=false;break;}}
+    if(!isMax)continue;
+    const cw=wh[y*FS+x],ch=wh[N+y*FS+x], cx=(x+0.5)/FS, cy=(y+0.5)/FS;
+    const lmk=[]; for(let k=0;k<5;k++){lmk.push(cx+lm[(2*k)*N+y*FS+x], cy+lm[(2*k+1)*N+y*FS+x]);}
+    faces.push({box:[cx-cw/2,cy-ch/2,cw,ch],lm:lmk,score:v});
+  }
+  faces.sort((a,b)=>b.score-a.score); const keep=[];        // NMS
+  for(const f of faces){ if(keep.every(k=>iouBox(k.box,f.box)<0.3)) keep.push(f); if(keep.length>=8)break; }
+  return keep;
+}
+function cropRect(src,x,y,w,h,S){               // cắt ô chữ-nhật (px nguồn) → planar SxS
+  const c=document.createElement('canvas');c.width=S;c.height=S;const ctx=c.getContext('2d');
+  ctx.drawImage(src,x,y,w,h,0,0,S,S);const d=ctx.getImageData(0,0,S,S).data,pl=new Uint8Array(3*S*S);
+  for(let p=0;p<S*S;p++){pl[p]=d[p*4];pl[S*S+p]=d[p*4+1];pl[2*S*S+p]=d[p*4+2];}return pl;}
+
+// nguồn ảnh → canvas → prep về kích-thước S (cắt giữa theo tỉ-lệ cf; mạng-mặt crop sát hơn)
+function prep(src,S,cf){cf=cf||1;const c=document.createElement('canvas');c.width=S;c.height=S;const ctx=c.getContext('2d');
+  const w=src.width,h=src.height,s=Math.min(w,h)*cf,sx=(w-s)/2,sy=(h-s)/2;ctx.drawImage(src,sx,sy,s,s,0,0,S,S);
+  const d=ctx.getImageData(0,0,S,S).data,pl=new Uint8Array(3*S*S);
+  for(let p=0;p<S*S;p++){pl[p]=d[p*4];pl[S*S+p]=d[p*4+1];pl[2*S*S+p]=d[p*4+2];}return pl;}
+const FACE_CF = FACEW ? (FACEW.meta.crop/250) : 0.5;   // mạng-mặt học crop 110/250 → prep-mặt lấy vùng giữa tương-ứng
+function planarToCanvas(planar,S){const c=document.createElement('canvas');c.width=S;c.height=S;const ctx=c.getContext('2d'),img=ctx.createImageData(S,S),d=img.data;
+  for(let p=0;p<S*S;p++){d[p*4]=planar[p];d[p*4+1]=planar[S*S+p];d[p*4+2]=planar[2*S*S+p];d[p*4+3]=255;}ctx.putImageData(img,0,0);return c;}
+
+const VIO = OBJW?OBJW.meta.classes_vi:[];
+const PERSON = OBJW?OBJW.meta.classes_en.indexOf('person'):-1;
+function analyze(srcCanvas, isUser){
+  const pin=document.getElementById('pin');pin.width=160;pin.height=160;const pctx=pin.getContext('2d');
+  const w=srcCanvas.width,h=srcCanvas.height,sq=Math.min(w,h),sx=(w-sq)/2,sy=(h-sq)/2;
+  pctx.drawImage(srcCanvas,sx,sy,sq,sq,0,0,160,160);          // ô vuông giữa (hệ toạ-độ dò-mặt)
+  // DÒ-MẶT: hộp + 5 mốc (mắt/mũi/miệng) trong ô-giữa [0..1]
+  let det=detect(prep(srcCanvas,DETW.meta.input_size));                    // tầng 1: dò thô trên ô-giữa
+  { const c0x=det.box[0]+det.box[2]/2, c0y=det.box[1]+det.box[3]/2, cs=Math.min(Math.max(det.box[2],det.box[3])*1.8,1);
+    const cx0=Math.min(Math.max(c0x-cs/2,0),1-cs), cy0=Math.min(Math.max(c0y-cs/2,0),1-cs);
+    const d2=detect(cropRect(srcCanvas, sx+cx0*sq, sy+cy0*sq, cs*sq, cs*sq, DETW.meta.input_size));   // tầng 2: zoom vào mặt → dò lại cho KHÍT
+    det={box:[cx0+d2.box[0]*cs, cy0+d2.box[1]*cs, d2.box[2]*cs, d2.box[3]*cs], lm:d2.lm.map((v,k)=>k%2===0?cx0+v*cs:cy0+v*cs)}; }
+  const Lx=[0,2,4,6,8].map(i=>det.lm[i]), Ly=[1,3,5,7,9].map(i=>det.lm[i]);   // 5 mốc CHÍNH-XÁC
+  const x0=Math.min(...Lx),x1=Math.max(...Lx),y0=Math.min(...Ly),y1=Math.max(...Ly),lw=Math.max(x1-x0,1e-3),lh=Math.max(y1-y0,1e-3);
+  det.box=[x0-0.35*lw, y0-0.75*lh, lw*1.7, lh*2.4];                           // hộp mặt suy TỪ mốc (khít)
+  const cx=(Lx[0]+Lx[1]+Lx[2]+Lx[3]+Lx[4])/5, cy=(Ly[0]+Ly[1]+Ly[2]+Ly[3]+Ly[4])/5, side=FACE_CF;   // tâm cắt = trọng-tâm mốc
+  const nx=Math.min(Math.max(cx-side/2,0),1-side), ny=Math.min(Math.max(cy-side/2,0),1-side);
+  curFace=cropRect(srcCanvas, sx+nx*sq, sy+ny*sq, side*sq, side*sq, FACEW.meta.input_size);   // cắt mặt để nhận-diện
+  const v=faceVec(curFace), THR=FACEW.meta.threshold;
+  let best=-1,bi=-1;book.forEach((pp,k)=>{let pb=-1;(pp.embs||[pp.emb]).forEach(e=>{const s=cos(v,e);if(s>pb)pb=s;});if(pb>best){best=pb;bi=k;}});
+  const faceMatch = book.length>0 && best>=THR;
+  const po=objProbs(prep(srcCanvas,OBJW.meta.input_size));
+  const order=po.map((p,i)=>[p,i]).sort((a,b)=>b[0]-a[0]);const[p0,i0]=order[0];
+  const objPerson = i0===PERSON || (PERSON>=0&&po[PERSON]>=0.3);
+  const showFace = isUser||objPerson||faceMatch;
+  const l1=document.getElementById('l1'), l2=document.getElementById('l2');
+  if(faceMatch||objPerson){ l1.textContent='Đây là: người'; l1.style.color='var(--person)';
+    document.getElementById('lsub').textContent=`(mạng-vật đoán "${VIO[i0]}" ${(p0*100).toFixed(0)}%)`; }
+  else { l1.textContent='Đây là: '+VIO[i0]; l1.style.color='var(--ink)';
+    document.getElementById('lsub').textContent=`vật-thể: tự-tin ${(p0*100).toFixed(0)}%`; }
+  const bars=document.getElementById('bars');bars.innerHTML='';
+  order.slice(0,3).forEach(([p,i])=>bars.insertAdjacentHTML('beforeend',
+    `<span class="lab">${VIO[i]}</span><div class="track"><div class="fill" style="width:${Math.max(2,p*100)}%;background:${i===i0?'var(--accent)':'#8a8f99'}"></div></div><span class="lab">${(p*100).toFixed(0)}%</span>`));
+  if(faceMatch){ l2.textContent=`👤 là: ${book[bi].name} (${(best*100).toFixed(0)}% giống)`; l2.style.color='var(--good)'; }
+  else if(objPerson||isUser){ l2.textContent = book.length? `👤 người lạ (gần nhất ${book[bi].name} ${(best*100).toFixed(0)}%, cần ≥${(THR*100).toFixed(0)}%)` : '👤 mặt người — ghi-danh để mạng nhớ.'; l2.style.color='var(--warn)'; }
+  else { l2.textContent=''; }
+  // VẼ khung dò-mặt + 5 chấm mốc (khi là mặt)
+  if(showFace){
+    const col=faceMatch?'#3ec26b':(objPerson?'#8a5cff':'rgba(255,255,255,0.8)');
+    pctx.lineWidth=3;pctx.strokeStyle=col;pctx.strokeRect(det.box[0]*160,det.box[1]*160,det.box[2]*160,det.box[3]*160);
+    pctx.fillStyle=col;for(let k=0;k<5;k++){pctx.beginPath();pctx.arc(det.lm[2*k]*160,det.lm[2*k+1]*160,3,0,7);pctx.fill();}
+    if(faceMatch){pctx.font='bold 13px system-ui';pctx.fillStyle='#3ec26b';pctx.fillText(book[bi].name,det.box[0]*160,Math.max(12,det.box[1]*160-4));}
+  }
+  // phản-hồi Đúng/Sai chỉ khi có ĐOÁN TÊN
+  const fb=document.getElementById('fb');
+  if(faceMatch){ lastPredName=book[bi].name; fb.hidden=false; document.getElementById('fbfix').hidden=true; document.getElementById('fixname').value=''; }
+  else { fb.hidden=true; lastPredName=null; }
+}
+function addFace(name){                         // thêm khuôn mặt hiện tại vào 1 người (gộp theo tên)
+  if(!curFace) return 0;
+  const emb=Array.from(faceVec(curFace)).map(x=>+x.toFixed(4)), thumb=btoa(String.fromCharCode(...curFace));
+  let p=book.find(b=>b.name.toLowerCase()===name.toLowerCase());
+  if(p){ p.embs=(p.embs||[p.emb]); p.embs.push(emb); if(p.embs.length>15)p.embs.shift(); delete p.emb; }
+  else { book.push({name,embs:[emb],thumb,S:FACEW.meta.input_size}); p=book[book.length-1]; }
+  saveBook(); renderBook(); return (p.embs||[p.emb]).length;
+}
+function toast(t){const l2=document.getElementById('l2');l2.textContent=t;l2.style.color='var(--good)';}
+function enroll(){
+  if(!curFace){return;}
+  const name=(document.getElementById('ename').value||('Người '+(book.length+1))).trim();
+  const n=addFace(name); document.getElementById('ename').value='';
+  toast(`✓ Đã dạy "${name}" — ${n} ảnh. Thêm ảnh (góc/ánh-sáng khác nhau) càng nhận chuẩn.`);
+}
+function saveBook(){try{localStorage.setItem(LS,JSON.stringify(book));}catch(e){} if(typeof rtPostBook==='function')rtPostBook();}   // đồng-bộ sổ sang worker realtime
+function loadBook(){try{book=JSON.parse(localStorage.getItem(LS))||[];}catch(e){book=[];}}
+function mergeCelebs(){ if(!CELEBS)return;             // nạp sổ CHUNG (celeb nhúng sẵn) — không đè người bạn tự thêm
+  CELEBS.forEach(c=>{ if(!book.some(b=>b.name.toLowerCase()===c.name.toLowerCase())) book.push({name:c.name,embs:c.embs,thumb:c.thumb,S:c.S,celeb:true}); }); }
+function renderBook(){document.getElementById('bookn').textContent=book.length+' người';
+  const box=document.getElementById('book');box.innerHTML='';
+  book.forEach((p,i)=>{const d=document.createElement('div');d.className='person';
+    d.appendChild(planarToCanvas(b64(p.thumb),p.S||96));
+    const sp=document.createElement('span');sp.textContent=`${p.celeb?'★ ':''}${p.name} · ${(p.embs||[p.emb]).length} ảnh`;
+    const del=document.createElement('button');del.textContent='✕';del.style.padding='2px 8px';
+    del.onclick=()=>{book.splice(i,1);saveBook();renderBook();};
+    d.appendChild(sp);d.appendChild(del);box.appendChild(d);});}
+
+document.getElementById('file').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;c.getContext('2d').drawImage(img,0,0);analyze(c,true);};img.src=URL.createObjectURL(f);});
+// ---- WEBCAM (cục-bộ; ảnh KHÔNG rời máy) ----
+let stream=null; const vid=()=>document.getElementById('cam');
+const camBtn=id=>document.getElementById(id);
+async function camStart(){
+  const v=vid();
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){document.getElementById('lsub').textContent='Trình-duyệt/khung này không cho truy-cập webcam. Dùng "Tải ảnh" nhé.';return;}
+  try{ stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'},audio:false});
+    v.srcObject=stream; document.getElementById('camwrap').hidden=false; try{await v.play();}catch(_){}
+    camBtn('camstart').hidden=true; camBtn('camshot').hidden=false; camBtn('camstop').hidden=false; camBtn('rtbtn').hidden=false;
+    document.getElementById('lsub').textContent='Webcam bật — bấm 📸 Chụp (1 lần) hoặc ▶ Realtime (liên-tục).';
+  }catch(e){ document.getElementById('lsub').textContent='Không mở được webcam: '+((e&&e.message)||e)+' — có thể khung artifact chặn quyền camera. Dùng "Tải ảnh" thay thế.'; }
+}
+function camStop(){ rtOn=false; if(rtRAF){cancelAnimationFrame(rtRAF);rtRAF=0;} if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;} const v=vid(); document.getElementById('camwrap').hidden=true; v.srcObject=null;
+  camBtn('camstart').hidden=false; camBtn('camshot').hidden=true; camBtn('camstop').hidden=true;
+  camBtn('rtbtn').hidden=true; camBtn('rtbtn').textContent='▶ Realtime'; camBtn('rtbtn').classList.remove('primary'); }
+function camShot(){ const v=vid(); if(!v.videoWidth){document.getElementById('lsub').textContent='Webcam chưa sẵn-sàng, đợi 1 giây rồi thử lại.';return;}
+  const c=document.createElement('canvas'); c.width=v.videoWidth; c.height=v.videoHeight; c.getContext('2d').drawImage(v,0,0,c.width,c.height); analyze(c,true); }
+// ---- REALTIME: dò-mặt + nhận-diện liên-tục trên luồng webcam ----
+let rtOn=false, rtRecogT=0, rtName='—', rtCol='#8a5cff';
+function detect2(c,sx,sy,sq){                          // dò 2 tầng, trả {box,lm} trong ô-giữa
+  let det=detect(prep(c,DETW.meta.input_size));
+  const c0x=det.box[0]+det.box[2]/2,c0y=det.box[1]+det.box[3]/2,cs=Math.min(Math.max(Math.max(det.box[2],det.box[3])*1.8,0.05),1);
+  const cx0=Math.min(Math.max(c0x-cs/2,0),1-cs),cy0=Math.min(Math.max(c0y-cs/2,0),1-cs);
+  const d2=detect(cropRect(c,sx+cx0*sq,sy+cy0*sq,cs*sq,cs*sq,DETW.meta.input_size));
+  return {box:[cx0+d2.box[0]*cs,cy0+d2.box[1]*cs,d2.box[2]*cs,d2.box[3]*cs],lm:d2.lm.map((v,k)=>k%2===0?cx0+v*cs:cy0+v*cs)};
+}
+// ===== REALTIME NHIỀU-MẶT: video vẽ lên canvas MỖI khung (mượt) + WORKER chạy mạng (không đơ) =====
+let rtWorker=null, rtBusy=false, rtFaces=[], rtRAF=0, rtProcT=0, rtCap=null, rtLastNamed=[];
+const RT_R=1.1;                                       // tỉ-lệ cắt mặt để nhận-diện (đo được: khớp lúc ghi-danh nhất)
+// --- mã WORKER (chạy luồng riêng; có MFW+FACEW, dò+nhận mọi mặt, KHÔNG đụng DOM) ---
+const RT_WORKER_SRC = `
+var MFW,FACEW,MENC,MHM,MWH,MLM,FCONV,BOOK=[],THR=0.3;
+function flat(w){var O=w.length,I=w[0].length,a=new Float32Array(O*I*9);for(var o=0;o<O;o++)for(var i=0;i<I;i++)for(var ky=0;ky<3;ky++)for(var kx=0;kx<3;kx++)a[o*I*9+i*9+ky*3+kx]=w[o][i][ky][kx];return a;}
+function convRelu(inp,Ci,H,Wd,Wf,b,Co){var out=new Float32Array(Co*H*Wd),HW=H*Wd;for(var oc=0;oc<Co;oc++){var wb0=oc*Ci*9,ob=oc*HW,bias=b[oc];for(var y=0;y<H;y++){var rb=ob+y*Wd,inY=(y>0&&y<H-1);for(var x=0;x<Wd;x++){var s=bias;if(inY&&x>0&&x<Wd-1){var c0=y*Wd+x;for(var ic=0;ic<Ci;ic++){var wb=wb0+ic*9,p=ic*HW+c0,pu=p-Wd,pd=p+Wd;s+=inp[pu-1]*Wf[wb]+inp[pu]*Wf[wb+1]+inp[pu+1]*Wf[wb+2]+inp[p-1]*Wf[wb+3]+inp[p]*Wf[wb+4]+inp[p+1]*Wf[wb+5]+inp[pd-1]*Wf[wb+6]+inp[pd]*Wf[wb+7]+inp[pd+1]*Wf[wb+8];}}else{for(var i2=0;i2<Ci;i2++){var ib=i2*HW,w2=wb0+i2*9;for(var ky=0;ky<3;ky++){var yy=y+ky-1;if(yy<0||yy>=H)continue;for(var kx=0;kx<3;kx++){var xx=x+kx-1;if(xx<0||xx>=Wd)continue;s+=inp[ib+yy*Wd+xx]*Wf[w2+ky*3+kx];}}}}out[rb+x]=s>0?s:0;}}}return out;}
+function convRaw(inp,Ci,H,Wd,Wf,b,Co){var out=new Float32Array(Co*H*Wd),HW=H*Wd;for(var oc=0;oc<Co;oc++){var wb0=oc*Ci*9,ob=oc*HW,bias=b[oc];for(var y=0;y<H;y++){var rb=ob+y*Wd,inY=(y>0&&y<H-1);for(var x=0;x<Wd;x++){var s=bias;if(inY&&x>0&&x<Wd-1){var c0=y*Wd+x;for(var ic=0;ic<Ci;ic++){var wb=wb0+ic*9,p=ic*HW+c0,pu=p-Wd,pd=p+Wd;s+=inp[pu-1]*Wf[wb]+inp[pu]*Wf[wb+1]+inp[pu+1]*Wf[wb+2]+inp[p-1]*Wf[wb+3]+inp[p]*Wf[wb+4]+inp[p+1]*Wf[wb+5]+inp[pd-1]*Wf[wb+6]+inp[pd]*Wf[wb+7]+inp[pd+1]*Wf[wb+8];}}else{for(var i2=0;i2<Ci;i2++){var ib=i2*HW,w2=wb0+i2*9;for(var ky=0;ky<3;ky++){var yy=y+ky-1;if(yy<0||yy>=H)continue;for(var kx=0;kx<3;kx++){var xx=x+kx-1;if(xx<0||xx>=Wd)continue;s+=inp[ib+yy*Wd+xx]*Wf[w2+ky*3+kx];}}}}out[rb+x]=s;}}}return out;}
+function pool(inp,C,H,Wd){var H2=H>>1,W2=Wd>>1,out=new Float32Array(C*H2*W2);for(var c=0;c<C;c++)for(var y=0;y<H2;y++)for(var x=0;x<W2;x++){var bb=c*H*Wd,m=-1e9;for(var dy=0;dy<2;dy++)for(var dx=0;dx<2;dx++){var v=inp[bb+(2*y+dy)*Wd+(2*x+dx)];if(v>m)m=v;}out[c*H2*W2+y*W2+x]=m;}return out;}
+function cos(a,b){var s=0;for(var i=0;i<a.length;i++)s+=a[i]*b[i];return s;}
+function faceVec(planar){var W=FACEW,S=W.meta.input_size,mean=W.meta.mean,std=W.meta.std,feat=new Float32Array(3*S*S);for(var c=0;c<3;c++)for(var p=0;p<S*S;p++)feat[c*S*S+p]=(planar[c*S*S+p]/255-mean[c])/std[c];var C=3,H=S,Wd=S;for(var l=0;l<W.convs.length;l++){var Co=W.convs[l].b.length;feat=convRelu(feat,C,H,Wd,FCONV[l],W.convs[l].b,Co);feat=pool(feat,Co,H,Wd);C=Co;H>>=1;Wd>>=1;}var sp=H*Wd,v=new Float32Array(C);for(var c2=0;c2<C;c2++){var s=0,bs=c2*sp;for(var q=0;q<sp;q++)s+=feat[bs+q];v[c2]=s/sp;}var n=0;for(var c3=0;c3<C;c3++)n+=v[c3]*v[c3];n=Math.sqrt(n)||1;for(var c4=0;c4<C;c4++)v[c4]/=n;return v;}
+function detectMulti(planar,thr){var Sz=MFW.meta.input_size,FS=MFW.meta.fs,feat=new Float32Array(3*Sz*Sz);for(var i=0;i<3*Sz*Sz;i++)feat[i]=planar[i]/255;var C=3,H=Sz,W=Sz;
+ feat=convRelu(feat,C,H,W,MENC[0],MFW.enc[0].b,MFW.enc[0].b.length);feat=pool(feat,MFW.enc[0].b.length,H,W);C=MFW.enc[0].b.length;H>>=1;W>>=1;
+ feat=convRelu(feat,C,H,W,MENC[1],MFW.enc[1].b,MFW.enc[1].b.length);feat=pool(feat,MFW.enc[1].b.length,H,W);C=MFW.enc[1].b.length;H>>=1;W>>=1;
+ feat=convRelu(feat,C,H,W,MENC[2],MFW.enc[2].b,MFW.enc[2].b.length);C=MFW.enc[2].b.length;
+ var hm=convRaw(feat,C,H,W,MHM,MFW.hm.b,1),wh=convRaw(feat,C,H,W,MWH,MFW.wh.b,2),lm=convRaw(feat,C,H,W,MLM,MFW.lm.b,10);
+ var N=FS*FS,sg=function(v){return 1/(1+Math.exp(-v));},faces=[];
+ for(var y=0;y<FS;y++)for(var x=0;x<FS;x++){var v=sg(hm[y*FS+x]);if(v<thr)continue;var isMax=true;for(var dy=-1;dy<=1&&isMax;dy++)for(var dx=-1;dx<=1;dx++){var ny=y+dy,nx=x+dx;if(ny<0||ny>=FS||nx<0||nx>=FS||(dy===0&&dx===0))continue;if(sg(hm[ny*FS+nx])>v){isMax=false;break;}}if(!isMax)continue;
+   var cw=wh[y*FS+x],ch=wh[N+y*FS+x],cx=(x+0.5)/FS,cy=(y+0.5)/FS,lmk=[];for(var k=0;k<5;k++){lmk.push(cx+lm[(2*k)*N+y*FS+x],cy+lm[(2*k+1)*N+y*FS+x]);}faces.push({box:[cx-cw/2,cy-ch/2,cw,ch],lm:lmk,score:v});}
+ faces.sort(function(a,b){return b.score-a.score;});var keep=[];function iou(a,b){var ax1=a[0]+a[2],ay1=a[1]+a[3],bx1=b[0]+b[2],by1=b[1]+b[3],iw=Math.max(0,Math.min(ax1,bx1)-Math.max(a[0],b[0])),ih=Math.max(0,Math.min(ay1,by1)-Math.max(a[1],b[1])),it=iw*ih;return it/(a[2]*a[3]+b[2]*b[3]-it+1e-9);}
+ for(var f=0;f<faces.length;f++){var ok=true;for(var g=0;g<keep.length;g++)if(iou(keep[g].box,faces[f].box)>=0.3){ok=false;break;}if(ok)keep.push(faces[f]);if(keep.length>=8)break;}return keep;}
+onmessage=function(e){var m=e.data;
+ if(m.t==='init'){MFW=m.mfw;FACEW=m.facew;MENC=MFW.enc.map(function(c){return flat(c.w);});MHM=flat(MFW.hm.w);MWH=flat(MFW.wh.w);MLM=flat(MFW.lm.w);FCONV=FACEW.convs.map(function(c){return flat(c.w);});return;}
+ if(m.t==='book'){BOOK=m.book;THR=m.thr;return;}
+ if(m.t==='frame'){var t0=performance.now(),w=m.w,h=m.h,R=m.r,recog=m.recog;var src=new OffscreenCanvas(w,h),s0=src.getContext('2d');s0.putImageData(new ImageData(new Uint8ClampedArray(m.buf),w,h),0,0);
+   var sc=160/Math.max(w,h),nw=Math.round(w*sc),nh=Math.round(h*sc),ox=Math.floor((160-nw)/2),oy=Math.floor((160-nh)/2);
+   var lb=new OffscreenCanvas(160,160),lc=lb.getContext('2d');lc.fillStyle='#3c3c3c';lc.fillRect(0,0,160,160);lc.drawImage(src,0,0,w,h,ox,oy,nw,nh);
+   var d=lc.getImageData(0,0,160,160).data,pl=new Uint8Array(3*160*160);for(var p=0;p<160*160;p++){pl[p]=d[p*4];pl[160*160+p]=d[p*4+1];pl[2*160*160+p]=d[p*4+2];}
+   var faces=detectMulti(pl,0.55),out=[],first=null;
+   for(var i=0;i<faces.length&&i<6;i++){var f=faces[i],lmf=[];for(var k=0;k<5;k++){lmf.push((f.lm[2*k]*160-ox)/nw,(f.lm[2*k+1]*160-oy)/nh);}
+     var o={box:[(f.box[0]*160-ox)/nw,(f.box[1]*160-oy)/nh,f.box[2]*160/nw,f.box[3]*160/nh],lm:lmf};
+     if(recog){var lcx=(f.lm[0]+f.lm[2]+f.lm[4]+f.lm[6]+f.lm[8])/5,lcy=(f.lm[1]+f.lm[3]+f.lm[5]+f.lm[7]+f.lm[9])/5,side=Math.max(f.box[2],f.box[3])*R;
+       var fx=(lcx*160-ox)/sc,fy=(lcy*160-oy)/sc,fs=side*160/sc;var cc=new OffscreenCanvas(96,96),cx=cc.getContext('2d');cx.drawImage(src,fx-fs/2,fy-fs/2,fs,fs,0,0,96,96);
+       var cd=cx.getImageData(0,0,96,96).data,c96=new Uint8Array(3*96*96);for(var q=0;q<96*96;q++){c96[q]=cd[q*4];c96[96*96+q]=cd[q*4+1];c96[2*96*96+q]=cd[q*4+2];}
+       var emb=faceVec(c96),best=-1,bi=-1;for(var b2=0;b2<BOOK.length;b2++){var pb=-1,es=BOOK[b2].embs;for(var e2=0;e2<es.length;e2++){var s=cos(emb,es[e2]);if(s>pb)pb=s;}if(pb>best){best=pb;bi=b2;}}
+       var hit=BOOK.length&&best>=THR;o.name=hit?BOOK[bi].name:(BOOK.length?'người lạ':'chưa ghi-danh');o.col=hit?'#3ec26b':'#ff9f43';o.best=best;o.hit=hit;if(i===0)first=c96;
+       if(hit&&best>=0.42&&best<0.72&&BOOK[bi]&&!BOOK[bi].celeb&&BOOK[bi].embs.length<15){o.learnName=BOOK[bi].name;o.learnEmb=Array.prototype.slice.call(emb);}}   // TỰ-HỌC: đã chắc là họ (best≥.42) nhưng GÓC MỚI (best<.72) → gửi vector về gộp
+     out.push(o);}
+   var msg={t:'faces',faces:out,ms:performance.now()-t0,recog:recog};if(first){msg.crop=first.buffer;postMessage(msg,[first.buffer]);}else postMessage(msg);}};
+`;
+function rtBuildWorker(){
+  if(rtWorker||!MFW||typeof Worker==='undefined'||typeof OffscreenCanvas==='undefined') return;
+  try{ rtWorker=new Worker(URL.createObjectURL(new Blob([RT_WORKER_SRC],{type:'application/javascript'}))); }catch(e){ rtWorker=null; return; }
+  rtWorker.onmessage=e=>{ const m=e.data; if(m.t!=='faces') return; rtBusy=false;
+    if(m.recog){ rtLastNamed=m.faces.map(f=>({cx:f.box[0]+f.box[2]/2,cy:f.box[1]+f.box[3]/2,name:f.name,col:f.col,hit:f.hit}));
+      if(m.crop) curFace=new Uint8Array(m.crop);
+      let learned=0;                                     // TỰ-HỌC góc mới (worker gửi vector) — không nút, không đơ
+      m.faces.forEach(f=>{ if(f.learnName&&f.learnEmb){ const person=book.find(b=>b.name===f.learnName&&!b.celeb);
+        if(person){ const es=(person.embs||[person.emb]); if(es.length<15){ es.push(f.learnEmb.map(x=>+x.toFixed(4))); person.embs=es; delete person.emb; learned++; } } } });
+      if(learned){ saveBook(); renderBook(); }            // saveBook→rtPostBook đồng-bộ ngay sang worker
+      const named=[...new Set(m.faces.filter(f=>f.hit).map(f=>f.name))], l2=document.getElementById('l2');
+      if(m.faces.length){ l2.textContent=(named.length?('👤 '+named.join(', ')):(book.length?'👤 chưa khớp ai trong sổ':'👤 ghi-danh để mạng nhớ'))+(learned?' · +góc mới':''); l2.style.color=named.length?'#3ec26b':'#ff9f43'; }
+      else l2.textContent=''; }
+    m.faces.forEach(f=>{ if(!m.recog){ const cx=f.box[0]+f.box[2]/2,cy=f.box[1]+f.box[3]/2; let bd=0.16,mm=null;   // detect-only: bám tên theo tâm gần nhất
+        rtLastNamed.forEach(r=>{const dd=Math.hypot(r.cx-cx,r.cy-cy);if(dd<bd){bd=dd;mm=r;}}); f.name=mm?mm.name:''; f.col=mm?mm.col:'rgba(255,255,255,.85)'; } });
+    rtFaces=m.faces;
+    document.getElementById('l1').textContent=`● Realtime: ${m.faces.length} mặt`; document.getElementById('l1').style.color='var(--person)';
+    document.getElementById('lsub').textContent=`~${(1000/Math.max(1,m.ms)).toFixed(0)} ${m.recog?'dò+nhận':'dò'}/giây (worker) · ${m.faces.length} mặt`;
+  };
+  rtWorker.postMessage({t:'init',mfw:MFW,facew:FACEW}); rtPostBook();
+}
+function rtPostBook(){ if(!rtWorker) return; rtWorker.postMessage({t:'book',book:book.map(p=>({name:p.name,embs:(p.embs||[p.emb]),celeb:!!p.celeb})),thr:FACEW.meta.threshold}); }
+function rtDrawFaces(o,dw,dh){ rtFaces.forEach(f=>{ const X=f.box[0]*dw,Y=f.box[1]*dh,W=f.box[2]*dw,H=f.box[3]*dh;
+  o.lineWidth=Math.max(2,dw/220); o.strokeStyle=f.col; o.strokeRect(X,Y,W,H);
+  o.fillStyle=f.col; for(let k=0;k<5;k++){o.beginPath();o.arc(f.lm[2*k]*dw,f.lm[2*k+1]*dh,Math.max(2,dw/240),0,7);o.fill();}
+  if(f.name){o.font='bold '+(Math.max(13,dw/30)|0)+'px system-ui';const t=o.measureText(f.name).width;o.fillStyle=f.col;o.fillRect(X,Math.max(0,Y-20),t+10,20);o.fillStyle='#0b0b10';o.fillText(f.name,X+5,Math.max(14,Y-5));} }); }
+function rtLoop(){
+  if(!rtOn) return; rtRAF=requestAnimationFrame(rtLoop);
+  const v=vid(); if(!v||!v.videoWidth) return;
+  const ov=document.getElementById('overlay'),AR=v.videoHeight/v.videoWidth,dw=Math.min(v.videoWidth,640),dh=Math.round(dw*AR);
+  if(ov.width!==dw||ov.height!==dh){ov.width=dw;ov.height=dh;}
+  const o=ov.getContext('2d'); o.drawImage(v,0,0,dw,dh); rtDrawFaces(o,dw,dh);   // MỖI khung: video + hộp đã-nhớ → mượt
+  const now=performance.now();
+  if(rtWorker){ if(!rtBusy && now-rtProcT>50){ rtProcT=now; rtBusy=true;
+      const recog=(now-rtRecogT>1200); if(recog) rtRecogT=now;    // dò MỖI lượt; nhận-diện thưa ~1.2s (tên đâu di-chuyển)
+      if(!rtCap) rtCap=document.createElement('canvas'); const cw=Math.min(v.videoWidth,480),ch=Math.round(cw*AR);
+      rtCap.width=cw;rtCap.height=ch; const cx=rtCap.getContext('2d'); cx.drawImage(v,0,0,cw,ch);
+      const id=cx.getImageData(0,0,cw,ch); rtWorker.postMessage({t:'frame',w:cw,h:ch,r:RT_R,recog,buf:id.data.buffer},[id.data.buffer]); } }
+  else { if(now-rtProcT>140){ rtProcT=now; rtProcMain(v); } }               // dự-phòng: không worker → chạy trên main (giật hơn)
+}
+function rtProcMain(v){                               // fallback: dò+nhận trên luồng chính (khi trình-duyệt thiếu Worker/OffscreenCanvas)
+  if(!rtCap) rtCap=document.createElement('canvas'); const AR=v.videoHeight/v.videoWidth,cw=Math.min(v.videoWidth,480),ch=Math.round(cw*AR);
+  rtCap.width=cw;rtCap.height=ch; rtCap.getContext('2d').drawImage(v,0,0,cw,ch);
+  const sc=160/Math.max(cw,ch),nw=Math.round(cw*sc),nh=Math.round(ch*sc),ox=Math.floor((160-nw)/2),oy=Math.floor((160-nh)/2);
+  const lb=document.createElement('canvas');lb.width=160;lb.height=160;const lc=lb.getContext('2d');lc.fillStyle='#3c3c3c';lc.fillRect(0,0,160,160);lc.drawImage(rtCap,0,0,cw,ch,ox,oy,nw,nh);
+  const d=lc.getImageData(0,0,160,160).data,pl=new Uint8Array(3*160*160);for(let p=0;p<160*160;p++){pl[p]=d[p*4];pl[160*160+p]=d[p*4+1];pl[2*160*160+p]=d[p*4+2];}
+  const faces=detectMulti(pl,0.55),out=[];
+  faces.slice(0,6).forEach((f,i)=>{ const lcx=(f.lm[0]+f.lm[2]+f.lm[4]+f.lm[6]+f.lm[8])/5,lcy=(f.lm[1]+f.lm[3]+f.lm[5]+f.lm[7]+f.lm[9])/5,side=Math.max(f.box[2],f.box[3])*RT_R;
+    const fx=(lcx*160-ox)/sc,fy=(lcy*160-oy)/sc,fs=side*160/sc,c96=cropRect(rtCap,fx-fs/2,fy-fs/2,fs,fs,FACEW.meta.input_size); if(i===0)curFace=c96;
+    const emb=faceVec(c96);let best=-1,bi=-1;book.forEach((pp,k)=>{let pb=-1;(pp.embs||[pp.emb]).forEach(e=>{const s=cos(emb,e);if(s>pb)pb=s;});if(pb>best){best=pb;bi=k;}});
+    const hit=book.length&&best>=FACEW.meta.threshold,lmf=[];for(let k=0;k<5;k++)lmf.push((f.lm[2*k]*160-ox)/nw,(f.lm[2*k+1]*160-oy)/nh);
+    out.push({box:[(f.box[0]*160-ox)/nw,(f.box[1]*160-oy)/nh,f.box[2]*160/nw,f.box[3]*160/nh],lm:lmf,name:hit?book[bi].name:(book.length?'người lạ':'chưa ghi-danh'),col:hit?'#3ec26b':'#ff9f43',hit}); });
+  rtFaces=out; const named=[...new Set(out.filter(f=>f.hit).map(f=>f.name))];
+  document.getElementById('l1').textContent=`● Realtime: ${out.length} mặt`;document.getElementById('l1').style.color='var(--person)';
+  const l2=document.getElementById('l2'); if(out.length){l2.textContent=named.length?('👤 '+named.join(', ')):(book.length?'👤 chưa khớp ai trong sổ':'👤 ghi-danh để mạng nhớ');l2.style.color=named.length?'#3ec26b':'#ff9f43';}else l2.textContent='';
+  document.getElementById('lsub').textContent=`chế-độ không-worker · ${out.length} mặt`;
+}
+function rtToggle(){ rtOn=!rtOn; camBtn('rtbtn').textContent=rtOn?'⏸ Dừng realtime':'▶ Realtime';
+  camBtn('rtbtn').classList.toggle('primary',rtOn);
+  if(rtOn){ rtBuildWorker(); rtLoop(); } else if(rtRAF){ cancelAnimationFrame(rtRAF); rtRAF=0; } }
+camBtn('camstart').onclick=camStart; camBtn('camstop').onclick=camStop; camBtn('camshot').onclick=camShot; camBtn('rtbtn').onclick=rtToggle;
+document.getElementById('enroll').onclick=enroll;
+document.getElementById('clear').onclick=()=>{book=[];saveBook();renderBook();};
+document.getElementById('fbYes').onclick=()=>{ if(lastPredName){const n=addFace(lastPredName); toast(`✓ Cảm-ơn — củng-cố "${lastPredName}" (${n} ảnh).`);} document.getElementById('fb').hidden=true; };
+document.getElementById('fbNo').onclick=()=>{ document.getElementById('fbfix').hidden=false; document.getElementById('fixname').focus(); };
+document.getElementById('fixok').onclick=()=>{ const nm=document.getElementById('fixname').value.trim(); if(!nm)return; const n=addFace(nm); toast(`✓ Đã sửa: đây là "${nm}" (${n} ảnh). Lần sau nhận đúng hơn.`); document.getElementById('fb').hidden=true; };
+document.getElementById('fixname').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('fixok').click();});
+
+function boot(){
+  const dev=document.getElementById('dev');
+  if(!OBJW||!FACEW||!DETW){dev.textContent='CHƯA nhúng mạng';return;}
+  OCONV=OBJW.convs.map(c=>flat(c.w));FCONV=FACEW.convs.map(c=>flat(c.w));
+  DCONV=DETW.enc.map(c=>flat(c.w));EDEC=flat(DETW.dec.w);EHEAD=flat(DETW.head.w);   // dò-mặt heatmap
+  if(MFW){MENC=MFW.enc.map(c=>flat(c.w));MHM=flat(MFW.hm.w);MWH=flat(MFW.wh.w);MLM=flat(MFW.lm.w);}   // dò NHIỀU-mặt
+  dev.textContent=`vật ${(OBJW.meta.test_acc*100).toFixed(0)}% · mặt ${(FACEW.meta.verif_acc*100).toFixed(0)}%`;
+  loadBook();mergeCelebs();renderBook();
+  document.getElementById('accnote').textContent=
+    `Nhận VẬT-THỂ: ${(OBJW.meta.test_acc*100).toFixed(1)}% trên tập val (Imagenette 160px + người). NHỚ-MẶT: phân-biệt cùng/khác người ${(FACEW.meta.verif_acc*100).toFixed(1)}%, one-shot ${(FACEW.meta.oneshot_acc*100).toFixed(1)}% giữa ${FACEW.meta.eval_people} người lạ (LFW, ArcFace). Cả hai là mạng NHỎ tự-viết từ-đầu — minh-hoạ đúng nguyên-lý, không phải cấp thương-mại. Ảnh người nên là khuôn-mặt căn giữa thì nhận tốt nhất.`;
+  const gal=document.getElementById('gal');
+  (OBJSAMP||[]).forEach(s=>{const cv=planarToCanvas(b64(s.d),s.S);cv.title=s.label;cv.style.width='58px';cv.style.height='58px';cv.onclick=()=>analyze(cv);gal.appendChild(cv);});
+  (FACESAMP||[]).forEach(s=>{const cv=planarToCanvas(b64(s.d),s.S);cv.title=s.name;cv.style.width='58px';cv.style.height='58px';cv.onclick=()=>{analyze(cv);document.getElementById('ename').value=s.name;};gal.appendChild(cv);});
+  const first=(OBJSAMP&&OBJSAMP[0])||(FACESAMP&&FACESAMP[0]);
+  if(first)analyze(planarToCanvas(b64(first.d),first.S));
+}
+boot();
+</script>
+</body></html>

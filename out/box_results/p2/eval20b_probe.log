@@ -1,0 +1,128 @@
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+[1p3b] nạp 27s · step 143433
+[1p3b] trắc nghiệm 36/44 (dễ 20/24 · khó 16/20)
+  1/30 [tin] 120 tok
+  2/30 [tin] 120 tok
+  3/30 [tin] 120 tok
+  4/30 [wiki] 120 tok
+  5/30 [wiki] 120 tok
+  6/30 [wiki] 120 tok
+  7/30 [wiki] 120 tok
+  8/30 [wiki] 120 tok
+  9/30 [wiki] 120 tok
+  10/30 [truyện] 120 tok
+  11/30 [truyện] 120 tok
+  12/30 [thơ] 78 tok
+  13/30 [văn] 120 tok
+  14/30 [hướng dẫn] 120 tok
+  15/30 [hướng dẫn] 120 tok
+  16/30 [pháp luật] 120 tok
+  17/30 [sức khoẻ] 120 tok
+  18/30 [hỏi đáp] 120 tok
+  19/30 [hỏi đáp] 120 tok
+  20/30 [hội thoại] 120 tok
+  21/30 [toán] 120 tok
+  22/30 [toán] 63 tok
+  23/30 [toán] 120 tok
+  24/30 [dịch] 120 tok
+  25/30 [english] 120 tok
+  26/30 [english] 120 tok
+  27/30 [code] 120 tok
+  28/30 [code] 120 tok
+  29/30 [code] 120 tok
+  30/30 [nhớ] 120 tok
+[cpt_b] nạp 32s · step 9536
+[cpt_b] trắc nghiệm 38/44 (dễ 22/24 · khó 16/20)
+  1/30 [tin] 120 tok
+  2/30 [tin] 120 tok
+  3/30 [tin] 120 tok
+  4/30 [wiki] 120 tok
+  5/30 [wiki] 120 tok
+  6/30 [wiki] 120 tok
+  7/30 [wiki] 120 tok
+  8/30 [wiki] 120 tok
+  9/30 [wiki] 120 tok
+  10/30 [truyện] 120 tok
+  11/30 [truyện] 120 tok
+  12/30 [thơ] 120 tok
+  13/30 [văn] 120 tok
+  14/30 [hướng dẫn] 120 tok
+  15/30 [hướng dẫn] 120 tok
+  16/30 [pháp luật] 120 tok
+  17/30 [sức khoẻ] 120 tok
+  18/30 [hỏi đáp] 120 tok
+  19/30 [hỏi đáp] 120 tok
+  20/30 [hội thoại] 88 tok
+  21/30 [toán] 120 tok
+  22/30 [toán] 120 tok
+  23/30 [toán] 120 tok
+  24/30 [dịch] 120 tok
+  25/30 [english] 120 tok
+  26/30 [english] 120 tok
+  27/30 [code] 120 tok
+  28/30 [code] 120 tok
+  29/30 [code] 120 tok
+  30/30 [nhớ] 120 tok
+
+### Trắc nghiệm (đúng/tổng)
+câu | đúng | 1p3b | cpt_b
+Thủ đô của Việt Nam là | Hà Nội | ✓ | ✓
+Thủ đô của Pháp là | Paris | ✓ | ✓
+Thủ đô của Nhật Bản là | Tokyo | ✓ | ✓
+Sông dài nhất Việt Nam chảy qua nhiều nước là sông | Mê Kông | ✓ | ✓
+Đỉnh núi cao nhất Việt Nam là | Fansipan | ✗ Bạch Mã | ✗ Bạch Mã
+Chiến thắng Điện Biên Phủ diễn ra vào năm | 1954 | ✓ | ✓
+Ngày Quốc khánh của Việt Nam là ngày | 2 tháng 9 | ✓ | ✓
+Tác giả của Truyện Kiều là | Nguyễn Du | ✓ | ✓
+Nước sôi ở nhiệt độ | 100 độ C | ✓ | ✓
+Công thức hoá học của nước là | H2O | ✓ | ✓
+Hành tinh gần Mặt Trời nhất là | Sao Thủy | ✗ Trái Đất | ✓
+Một năm có | 12 tháng | ✓ | ✓
+7 nhân 8 bằng | 56 | ✗ 64 | ✗ 64
+Thành phố lớn nhất Việt Nam theo dân số là | Thành phố Hồ Chí Minh | ✓ | ✓
+Quốc gia đông dân nhất Đông Nam Á là | Indonesia | ✓ | ✓
+Con vật được gọi là chúa sơn lâm là | con hổ | ✓ | ✓
+Đơn vị đo cường độ dòng điện là | ampe | ✓ | ✓
+Người đầu tiên đặt chân lên Mặt Trăng là | Neil Armstrong | ✓ | ✓
+The capital of Germany is | Berlin | ✓ | ✓
+Water is made of hydrogen and | oxygen | ✓ | ✓
+Vịnh Hạ Long thuộc tỉnh | Quảng Ninh | ✓ | ✓
+Phở là món ăn nổi tiếng của | Việt Nam | ✓ | ✓
+Trong Python, để in ra màn hình ta dùng hàm | print | ✗ printf | ✓
+Tết Nguyên Đán là ngày đầu năm theo | âm lịch | ✓ | ✓
+Vua đầu tiên của nhà Nguyễn là | Gia Long | ✓ | ✓
+Kinh đô của nhà Lý được dời từ Hoa Lư về Thăng Long vào năm | 1010 | ✓ | ✓
+Trận Bạch Đằng năm 938 do | Ngô Quyền | ✓ | ✓
+Tác giả của Bình Ngô đại cáo là | Nguyễn Trãi | ✓ | ✓
+Tác phẩm Tắt đèn là của nhà văn | Ngô Tất Tố | ✓ | ✓
+Tỉnh có diện tích lớn nhất Việt Nam là | Nghệ An | ✗ Sơn La | ✗ Sơn La
+Cố đô Huế nằm bên bờ sông | Hương | ✓ | ✓
+Cao nguyên đá Đồng Văn thuộc tỉnh | Hà Giang | ✓ | ✓
+Định luật vạn vật hấp dẫn do nhà khoa học | Newton | ✓ | ✓
+Thuyết tiến hóa bằng chọn lọc tự nhiên do | Darwin | ✓ | ✓
+Kim loại ở thể lỏng ở nhiệt độ phòng là | thủy ngân | ✓ | ✓
+Cơ quan sản xuất insulin trong cơ thể người là | tuyến tụy | ✓ | ✓
+Căn bậc hai của 144 là | 12 | ✓ | ✓
+Tổng các góc trong của một tam giác bằng | 180 độ | ✓ | ✓
+15% của 200 bằng | 30 | ✗ 20 | ✗ 20
+Số nguyên tố nhỏ nhất là | 2 | ✗ 1 | ✗ 1
+Trong SQL, câu lệnh để lấy dữ liệu từ bảng là | SELECT | ✗ UPDATE | ✗ INSERT
+Đồng tiền chính thức của Nhật Bản là | yên | ✓ | ✓
+The largest ocean on Earth is the | Pacific Ocean | ✓ | ✓
+The author of Romeo and Juliet is | William Shakespeare | ✓ | ✓
+TỔNG | | 36/44 | 38/44

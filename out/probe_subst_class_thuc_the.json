@@ -1,0 +1,215 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_token": 2580,
+ "n_boi_canh": 32420,
+ "min_share": 3,
+ "n_co_lang_gieng": 80,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "Hoàng đế",
+    "tướng"
+   ],
+   "embedding": [
+    "Tông",
+    "ngôi",
+    "Lý",
+    "Thánh",
+    "Lê",
+    "vương",
+    "hoàng",
+    "lấy"
+   ],
+   "n_ctx": 154
+  },
+  "sông": {
+   "lop_thay_the": [],
+   "embedding": [
+    "chảy",
+    "Sông",
+    "Hồng",
+    "đắp",
+    "dòng",
+    "đê",
+    "Vùng",
+    "dốc"
+   ],
+   "n_ctx": 150
+  },
+  "đánh": {
+   "lop_thay_the": [],
+   "embedding": [
+    "đuổi",
+    "trận",
+    "chặn",
+    "diệt",
+    "chém",
+    "vạn",
+    "Nguyên",
+    "giặc"
+   ],
+   "n_ctx": 122
+  },
+  "Nguyễn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Thanh",
+    "Đức",
+    "soạn",
+    "trốn",
+    "Đoàn",
+    "chạy",
+    "biên",
+    "Xiêm"
+   ],
+   "n_ctx": 3
+  },
+  "lớn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "nhất",
+    "phần",
+    "nhiều",
+    "vùng",
+    "nhỏ",
+    "nằm",
+    "trung",
+    "rất"
+   ],
+   "n_ctx": 116
+  },
+  "năm": {
+   "lop_thay_the": [],
+   "embedding": [
+    "1",
+    "3",
+    "4",
+    "tỷ",
+    "âm",
+    "2",
+    "tháng",
+    "8"
+   ],
+   "n_ctx": 4
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Chăm",
+    "an",
+    "Hội",
+    "quốc",
+    "luôn",
+    "Đại",
+    "Phó",
+    "cờ"
+   ],
+   "n_ctx": 3
+  },
+  "nước": {
+   "lop_thay_the": [],
+   "embedding": [
+    "ngọt",
+    "muối",
+    "chanh",
+    "mặn",
+    "đất",
+    "sôi",
+    "khô",
+    "pha"
+   ],
+   "n_ctx": 204
+  },
+  "Hà Nội": {
+   "lop_thay_the": [],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 24
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "Hán",
+   "lop": [
+    "Pháp"
+   ]
+  },
+  {
+   "token": "khi",
+   "lop": [
+    "lúc"
+   ]
+  },
+  {
+   "token": "Bắc",
+   "lop": [
+    "bắc",
+    "nam",
+    "đông"
+   ]
+  },
+  {
+   "token": "nhân",
+   "lop": [
+    "tháng"
+   ]
+  },
+  {
+   "token": "Hải Vương",
+   "lop": [
+    "Hoả"
+   ]
+  },
+  {
+   "token": "Mạc",
+   "lop": [
+    "Đường"
+   ]
+  },
+  {
+   "token": "chia",
+   "lop": [
+    "tháng"
+   ]
+  },
+  {
+   "token": "lúc",
+   "lop": [
+    "khi"
+   ]
+  },
+  {
+   "token": "tên",
+   "lop": [
+    "niên hiệu"
+   ]
+  },
+  {
+   "token": "nó",
+   "lop": [
+    "mình",
+    "hành tinh",
+    "ông"
+   ]
+  },
+  {
+   "token": "họ",
+   "lop": [
+    "ông"
+   ]
+  },
+  {
+   "token": "6",
+   "lop": [
+    "4",
+    "3",
+    "7",
+    "7",
+    "8",
+    "1"
+   ]
+  }
+ ],
+ "seconds": 41.4
+}

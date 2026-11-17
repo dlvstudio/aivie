@@ -1,0 +1,209 @@
+[     0.0s] === load_network_v12_sent START (pid=3419) → out/logs/load_network_v12_sent_20260801_104757.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.1s] ✓ unpickle  (3.1s)
+[     3.1s] ▶ vocab (32002 token)
+[     4.0s] ✓ vocab (32002 token)  (0.9s)
+[     4.0s] ▶ adjacency
+[    13.2s] ✓ adjacency  (9.1s)
+[    13.2s] ▶ embedding
+[    13.2s] ✓ embedding  (0.0s)
+[    13.2s] ▶ parents
+[    13.2s] parents: deserialize 430447 records …
+[    13.2s] parents 5000/430447 (1.2%)
+[    13.3s] parents 10000/430447 (2.3%)
+[    13.3s] parents 15000/430447 (3.5%)
+[    13.3s] parents 20000/430447 (4.6%)
+[    13.4s] parents 25000/430447 (5.8%)
+[    13.4s] parents 30000/430447 (7.0%)
+[    13.5s] parents 35000/430447 (8.1%)
+[    13.5s] parents 40000/430447 (9.3%)
+[    13.5s] parents 45000/430447 (10.5%)
+[    13.6s] parents 50000/430447 (11.6%)
+[    13.6s] parents 55000/430447 (12.8%)
+[    13.7s] parents 60000/430447 (13.9%)
+[    13.7s] parents 65000/430447 (15.1%)
+[    13.7s] parents 70000/430447 (16.3%)
+[    13.8s] parents 75000/430447 (17.4%)
+[    13.8s] parents 80000/430447 (18.6%)
+[    13.8s] parents 85000/430447 (19.7%)
+[    13.9s] parents 90000/430447 (20.9%)
+[    13.9s] parents 95000/430447 (22.1%)
+[    14.0s] parents 100000/430447 (23.2%)
+[    14.0s] parents 105000/430447 (24.4%)
+[    14.1s] parents 110000/430447 (25.6%)
+[    14.1s] parents 115000/430447 (26.7%)
+[    14.2s] parents 120000/430447 (27.9%)
+[    14.2s] parents 125000/430447 (29.0%)
+[    14.3s] parents 130000/430447 (30.2%)
+[    14.3s] parents 135000/430447 (31.4%)
+[    14.4s] parents 140000/430447 (32.5%)
+[    14.4s] parents 145000/430447 (33.7%)
+[    14.5s] parents 150000/430447 (34.8%)
+[    14.6s] parents 155000/430447 (36.0%)
+[    14.6s] parents 160000/430447 (37.2%)
+[    14.7s] parents 165000/430447 (38.3%)
+[    14.8s] parents 170000/430447 (39.5%)
+[    14.9s] parents 175000/430447 (40.7%)
+[    14.9s] parents 180000/430447 (41.8%)
+[    15.0s] parents 185000/430447 (43.0%)
+[    15.1s] parents 190000/430447 (44.1%)
+[    15.2s] parents 195000/430447 (45.3%)
+[    15.3s] parents 200000/430447 (46.5%)
+[    15.4s] parents 205000/430447 (47.6%)
+[    15.4s] parents 210000/430447 (48.8%)
+[    15.5s] parents 215000/430447 (49.9%)
+[    15.6s] parents 220000/430447 (51.1%)
+[    15.7s] parents 225000/430447 (52.3%)
+[    15.7s] parents 230000/430447 (53.4%)
+[    15.8s] parents 235000/430447 (54.6%)
+[    15.9s] parents 240000/430447 (55.8%)
+[    16.0s] parents 245000/430447 (56.9%)
+[    16.0s] parents 250000/430447 (58.1%)
+[    16.1s] parents 255000/430447 (59.2%)
+[    16.2s] parents 260000/430447 (60.4%)
+[    16.3s] parents 265000/430447 (61.6%)
+[    16.3s] parents 270000/430447 (62.7%)
+[    16.4s] parents 275000/430447 (63.9%)
+[    16.5s] parents 280000/430447 (65.0%)
+[    19.3s] parents 285000/430447 (66.2%)
+[    19.4s] parents 290000/430447 (67.4%)
+[    19.5s] parents 295000/430447 (68.5%)
+[    19.5s] parents 300000/430447 (69.7%)
+[    19.6s] parents 305000/430447 (70.9%)
+[    19.7s] parents 310000/430447 (72.0%)
+[    19.8s] parents 315000/430447 (73.2%)
+[    19.8s] parents 320000/430447 (74.3%)
+[    19.9s] parents 325000/430447 (75.5%)
+[    20.0s] parents 330000/430447 (76.7%)
+[    20.0s] parents 335000/430447 (77.8%)
+[    20.1s] parents 340000/430447 (79.0%)
+[    20.2s] parents 345000/430447 (80.1%)
+[    20.3s] parents 350000/430447 (81.3%)
+[    20.3s] parents 355000/430447 (82.5%)
+[    20.4s] parents 360000/430447 (83.6%)
+[    20.5s] parents 365000/430447 (84.8%)
+[    20.6s] parents 370000/430447 (86.0%)
+[    20.6s] parents 375000/430447 (87.1%)
+[    20.7s] parents 380000/430447 (88.3%)
+[    20.8s] parents 385000/430447 (89.4%)
+[    20.9s] parents 390000/430447 (90.6%)
+[    20.9s] parents 395000/430447 (91.8%)
+[    21.0s] parents 400000/430447 (92.9%)
+[    21.1s] parents 405000/430447 (94.1%)
+[    21.1s] parents 410000/430447 (95.2%)
+[    21.2s] parents 415000/430447 (96.4%)
+[    21.3s] parents 420000/430447 (97.6%)
+[    21.3s] parents 425000/430447 (98.7%)
+[    21.4s] parents 430000/430447 (99.9%)
+[    60.4s] ▶ rebuild_hierarchical_index …
+[    61.5s] ✓ rebuild_hierarchical_index (1.0s)
+[    66.1s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    66.1s] ✓ parents  (52.9s)
+[    66.1s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    67.1s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    67.1s] ✓ load_checkpoint XONG
+Tổng bare có Ġ-twin: 5800
+
+=== RỦI RO: punct/symbol (không chữ-số) có Ġ-twin — 74 ===
+  bare='!'    id=  260  twin='Ġ!'
+  bare='"'    id=  261  twin='Ġ"'
+  bare='#'    id=  262  twin='Ġ#'
+  bare='$'    id=  263  twin='Ġ$'
+  bare='%'    id=  264  twin='Ġ%'
+  bare='&'    id=  265  twin='Ġ&'
+  bare="'"    id=  266  twin="Ġ'"
+  bare='('    id=  267  twin='Ġ('
+  bare=')'    id=  268  twin='Ġ)'
+  bare='*'    id=  269  twin='Ġ*'
+  bare='+'    id=  270  twin='Ġ+'
+  bare=','    id=  271  twin='Ġ,'
+  bare='-'    id=  272  twin='Ġ-'
+  bare='.'    id=  273  twin='Ġ.'
+  bare='/'    id=  274  twin='Ġ/'
+  bare=':'    id=  285  twin='Ġ:'
+  bare=';'    id=  286  twin='Ġ;'
+  bare='<'    id=  287  twin='Ġ<'
+  bare='='    id=  288  twin='Ġ='
+  bare='>'    id=  289  twin='Ġ>'
+  bare='?'    id=  290  twin='Ġ?'
+  bare='@'    id=  291  twin='Ġ@'
+  bare='['    id=  318  twin='Ġ['
+  bare='\\'   id=  319  twin='Ġ\\'
+  bare=']'    id=  320  twin='Ġ]'
+  bare='^'    id=  321  twin='Ġ^'
+  bare='_'    id=  322  twin='Ġ_'
+  bare='`'    id=  323  twin='Ġ`'
+  bare='{'    id=  350  twin='Ġ{'
+  bare='|'    id=  351  twin='Ġ|'
+  bare='}'    id=  352  twin='Ġ}'
+  bare='~'    id=  353  twin='Ġ~'
+  bare='£'    id=  354  twin='Ġ£'
+  bare='«'    id=  358  twin='Ġ«'
+  bare='\xad' id=  359  twin='Ġ\xad'
+  bare='°'    id=  361  twin='Ġ°'
+  bare='±'    id=  362  twin='Ġ±'
+  bare='·'    id=  367  twin='Ġ·'
+  bare='»'    id=  370  twin='Ġ»'
+  bare='×'    id=  393  twin='Ġ×'
+  bare='\u200b' id=  830  twin='Ġ\u200b'
+  bare='–'    id=  832  twin='Ġ–'
+  bare='—'    id=  833  twin='Ġ—'
+  bare='―'    id=  834  twin='Ġ―'
+  bare='‘'    id=  835  twin='Ġ‘'
+  bare='’'    id=  836  twin='Ġ’'
+  bare='“'    id=  837  twin='Ġ“'
+  bare='”'    id=  838  twin='Ġ”'
+  bare='•'    id=  840  twin='Ġ•'
+  bare='…'    id=  841  twin='Ġ…'
+  bare='‰'    id=  842  twin='Ġ‰'
+  bare='※'    id=  845  twin='Ġ※'
+  bare='€'    id=  852  twin='Ġ€'
+  bare='→'    id=  859  twin='Ġ→'
+  bare='−'    id=  863  twin='Ġ−'
+  bare='√'    id=  864  twin='Ġ√'
+  bare='∩'    id=  866  twin='Ġ∩'
+  bare='∶'    id=  868  twin='Ġ∶'
+  bare='≈'    id=  869  twin='Ġ≈'
+  bare='⊆'    id=  876  twin='Ġ⊆'
+  bare='♦'    id=  902  twin='Ġ♦'
+  bare='✅'    id=  905  twin='Ġ✅'
+  bare='《'    id=  914  twin='Ġ《'
+  bare='》'    id=  915  twin='Ġ》'
+  bare='「'    id=  916  twin='Ġ「'
+  bare='』'    id=  919  twin='Ġ』'
+  bare='【'    id=  920  twin='Ġ【'
+  bare='】'    id=  921  twin='Ġ】'
+  bare='\ue64d' id= 1382  twin='Ġ\ue64d'
+  bare='\ue64f' id= 1383  twin='Ġ\ue64f'
+  bare='\ue650' id= 1384  twin='Ġ\ue650'
+  bare='\ue653' id= 1385  twin='Ġ\ue653'
+  bare='💞'    id= 1444  twin='Ġ💞'
+  bare='🔹'    id= 1452  twin='Ġ🔹'
+
+=== digit-ish có Ġ-twin — 10 (top 40) ===
+  bare='0'      twin='Ġ0'
+  bare='1'      twin='Ġ1'
+  bare='2'      twin='Ġ2'
+  bare='3'      twin='Ġ3'
+  bare='4'      twin='Ġ4'
+  bare='5'      twin='Ġ5'
+  bare='6'      twin='Ġ6'
+  bare='7'      twin='Ġ7'
+  bare='8'      twin='Ġ8'
+  bare='9'      twin='Ġ9'
+
+wordish (vá glue đúng mục tiêu): 5716
+
+=== Corpus sau prev.startswith('Ġ'): bare punct vs Ġ-punct ===
+tok          bare   Ġ-twin   prefer
+  '!'       12198      141     bare << BUG nếu fix→Ġ
+  '"'        8772    12519   Ġ-twin
+  '#'          36      110   Ġ-twin
+  '$'          49      138   Ġ-twin
+  '%'         232       25     bare << BUG nếu fix→Ġ
+  '&'          60      189   Ġ-twin
+  "'"        2621     2064     bare << BUG nếu fix→Ġ
+  '('         832    22576   Ġ-twin
+  ')'       22274      167     bare << BUG nếu fix→Ġ
+  '*'         154    41236   Ġ-twin

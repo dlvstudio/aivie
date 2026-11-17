@@ -1,0 +1,269 @@
+[     0.0s] === load_network_v12_sent START (pid=85842) → out/logs/load_network_v12_sent_20260726_141528.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.2s] ✓ unpickle  (3.2s)
+[     3.2s] ▶ vocab (32002 token)
+[     4.2s] ✓ vocab (32002 token)  (1.0s)
+[     4.2s] ▶ adjacency
+[    14.2s] ✓ adjacency  (10.0s)
+[    14.2s] ▶ embedding
+[    14.3s] ✓ embedding  (0.0s)
+[    14.3s] ▶ parents
+[    14.3s] parents: deserialize 430447 records …
+[    14.3s] parents 5000/430447 (1.2%)
+[    14.4s] parents 10000/430447 (2.3%)
+[    14.4s] parents 15000/430447 (3.5%)
+[    14.4s] parents 20000/430447 (4.6%)
+[    14.5s] parents 25000/430447 (5.8%)
+[    14.5s] parents 30000/430447 (7.0%)
+[    14.6s] parents 35000/430447 (8.1%)
+[    14.6s] parents 40000/430447 (9.3%)
+[    14.6s] parents 45000/430447 (10.5%)
+[    14.7s] parents 50000/430447 (11.6%)
+[    14.7s] parents 55000/430447 (12.8%)
+[    14.8s] parents 60000/430447 (13.9%)
+[    14.8s] parents 65000/430447 (15.1%)
+[    14.8s] parents 70000/430447 (16.3%)
+[    14.9s] parents 75000/430447 (17.4%)
+[    14.9s] parents 80000/430447 (18.6%)
+[    15.0s] parents 85000/430447 (19.7%)
+[    15.0s] parents 90000/430447 (20.9%)
+[    15.0s] parents 95000/430447 (22.1%)
+[    15.1s] parents 100000/430447 (23.2%)
+[    15.1s] parents 105000/430447 (24.4%)
+[    15.2s] parents 110000/430447 (25.6%)
+[    15.2s] parents 115000/430447 (26.7%)
+[    15.3s] parents 120000/430447 (27.9%)
+[    15.4s] parents 125000/430447 (29.0%)
+[    15.4s] parents 130000/430447 (30.2%)
+[    15.5s] parents 135000/430447 (31.4%)
+[    15.5s] parents 140000/430447 (32.5%)
+[    15.6s] parents 145000/430447 (33.7%)
+[    15.6s] parents 150000/430447 (34.8%)
+[    15.7s] parents 155000/430447 (36.0%)
+[    15.8s] parents 160000/430447 (37.2%)
+[    15.9s] parents 165000/430447 (38.3%)
+[    16.0s] parents 170000/430447 (39.5%)
+[    16.1s] parents 175000/430447 (40.7%)
+[    16.2s] parents 180000/430447 (41.8%)
+[    16.2s] parents 185000/430447 (43.0%)
+[    16.3s] parents 190000/430447 (44.1%)
+[    16.4s] parents 195000/430447 (45.3%)
+[    16.5s] parents 200000/430447 (46.5%)
+[    16.6s] parents 205000/430447 (47.6%)
+[    16.6s] parents 210000/430447 (48.8%)
+[    16.7s] parents 215000/430447 (49.9%)
+[    16.8s] parents 220000/430447 (51.1%)
+[    16.9s] parents 225000/430447 (52.3%)
+[    17.0s] parents 230000/430447 (53.4%)
+[    17.0s] parents 235000/430447 (54.6%)
+[    17.1s] parents 240000/430447 (55.8%)
+[    17.2s] parents 245000/430447 (56.9%)
+[    17.3s] parents 250000/430447 (58.1%)
+[    17.4s] parents 255000/430447 (59.2%)
+[    17.5s] parents 260000/430447 (60.4%)
+[    17.5s] parents 265000/430447 (61.6%)
+[    17.6s] parents 270000/430447 (62.7%)
+[    17.7s] parents 275000/430447 (63.9%)
+[    17.8s] parents 280000/430447 (65.0%)
+[    22.6s] parents 285000/430447 (66.2%)
+[    22.7s] parents 290000/430447 (67.4%)
+[    22.8s] parents 295000/430447 (68.5%)
+[    22.9s] parents 300000/430447 (69.7%)
+[    23.0s] parents 305000/430447 (70.9%)
+[    23.0s] parents 310000/430447 (72.0%)
+[    23.1s] parents 315000/430447 (73.2%)
+[    23.2s] parents 320000/430447 (74.3%)
+[    23.3s] parents 325000/430447 (75.5%)
+[    23.4s] parents 330000/430447 (76.7%)
+[    23.4s] parents 335000/430447 (77.8%)
+[    23.5s] parents 340000/430447 (79.0%)
+[    23.6s] parents 345000/430447 (80.1%)
+[    23.7s] parents 350000/430447 (81.3%)
+[    23.8s] parents 355000/430447 (82.5%)
+[    23.9s] parents 360000/430447 (83.6%)
+[    23.9s] parents 365000/430447 (84.8%)
+[    24.0s] parents 370000/430447 (86.0%)
+[    24.1s] parents 375000/430447 (87.1%)
+[    24.2s] parents 380000/430447 (88.3%)
+[    24.3s] parents 385000/430447 (89.4%)
+[    24.4s] parents 390000/430447 (90.6%)
+[    24.4s] parents 395000/430447 (91.8%)
+[    24.5s] parents 400000/430447 (92.9%)
+[    24.6s] parents 405000/430447 (94.1%)
+[    24.7s] parents 410000/430447 (95.2%)
+[    24.7s] parents 415000/430447 (96.4%)
+[    24.8s] parents 420000/430447 (97.6%)
+[    24.9s] parents 425000/430447 (98.7%)
+[    24.9s] parents 430000/430447 (99.9%)
+[    73.4s] ▶ rebuild_hierarchical_index …
+[    74.6s] ✓ rebuild_hierarchical_index (1.2s)
+[    79.5s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    79.5s] ✓ parents  (65.2s)
+[    79.5s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    81.0s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    81.0s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:106: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+OUT: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+w0 'Ġchủ'
+top parents by A[w0]:
+  pi=5276 w=9.417 eps=[602, 49715, 49716] emit='Sao Kim có khí quyển rất dày, chứa chủ yếu CO2 và lượng nhỏ N2.'
+    ep602 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Sao Kim\n\n'
+      [2] 'Tuy nhiên, người ta đã chỉ ra rằng nó rất khác Trái Đất trên những mặt khác.'
+      [3] 'Áp suất khí quyển tại bề mặt hành tinh cao gấp 92 lần so với của Trái Đất.'
+      [4] 'Với nhiệt độ bề mặt trung bình bằng 735 K (462 °C), Sao Kim'
+    ep49715 n_members=2
+      [0] 'Sao Kim có khí quyển rất dày, chứa chủ yếu CO2 và lượng nhỏ N2.'
+      [1] ' Khối lượng riêng/mật độ của không khí tại nơi gần bề mặt bằng 65 kg/m³ (bằng'
+  pi=2590 w=9.417 eps=[505, 46514, 46515] emit='Việt Nam không còn là 1 quốc gia độc lập, trở thành chế độ quân chủ nửa thuộc địa, phải phụ thuộc vào Pháp.'
+    ep505 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Chiến tranh Đông Dương\n\n'
+      [2] 'Các tài liệu nghiên cứu, sách báo ở nước ngoài phần lớn gọi là Chiến tranh Việt-Pháp hoặc Chiến'
+      [3] 'Động cơ thúc đẩy Pháp tham chiến mang tính chính trị và tâm lý hơn là kinh tế.'
+      [4] 'Trong khi đó, mục tiêu của chính phủ Việt Nam Dân chủ Cộng hòa là giành độc lập cho dân tộc'
+    ep46514 n_members=2
+      [0] 'Việt Nam không còn là 1 quốc gia độc lập, trở thành chế độ quân chủ nửa thuộc địa, phải'
+      [1] ' Người Pháp độc chiếm mọi quyền lực kinh tế - chính trị - quân sự tại Việt Nam.'
+  pi=2602 w=9.417 eps=[505, 46528, 46529] emit='Nền kinh tế Việt Nam vẫn chủ yếu dựa vào nông nghiệp với phương thức sản xuất không thay đổi trong hàng ngàn năm.'
+    ep505 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Chiến tranh Đông Dương\n\n'
+      [2] 'Các tài liệu nghiên cứu, sách báo ở nước ngoài phần lớn gọi là Chiến tranh Việt-Pháp hoặc Chiến'
+      [3] 'Động cơ thúc đẩy Pháp tham chiến mang tính chính trị và tâm lý hơn là kinh tế.'
+      [4] 'Trong khi đó, mục tiêu của chính phủ Việt Nam Dân chủ Cộng hòa là giành độc lập cho dân tộc'
+    ep46528 n_members=2
+      [0] 'Nền kinh tế Việt Nam vẫn chủ yếu dựa vào nông nghiệp với phương thức sản xuất không thay đổi trong hàng'
+      [1] ' Người Việt có mức sống rất thấp, nghèo đói phổ biến trên toàn đất nước, đặc biệt ở miền Bắc'
+  pi=30260 w=8.693 eps=[6782, 6783, 6784] emit='Giải nghĩa: làm cho bị chết, một cách có chủ ý: giết giặc * can tội giết người\n'
+    ep6782 n_members=8
+      [0] 'Từ: giết\n'
+      [1] 'Nghĩa 1:\n'
+      [2] 'Loại từ: động từ\n'
+      [3] 'Giải nghĩa: làm cho bị chết, một cách có chủ ý: giết giặc * can tội giết người\n'
+      [4] 'Ví dụ: giết giặc * can tội giết người\n'
+    ep6783 n_members=8
+      [0] 'Từ: giết chóc\n'
+      [1] 'Nghĩa 1:\n'
+      [2] 'Loại từ: động từ\n'
+      [3] 'Giải nghĩa: làm cho bị chết, một cách có chủ ý: giết giặc * can tội giết người\n'
+      [4] 'Ví dụ: giết giặc * can tội giết người\n'
+  pi=1152 w=8.473 eps=[218, 219, 220] emit='Tiết 1: Kinh tế thị trường định hướng xã hội chủ nghĩa\n'
+    ep218 n_members=14
+      [0] 'Đạo đức và Xã hội:\n'
+      [1] 'Lớp 5:\n'
+      [2] 'Tiết 1: Kinh tế thị trường định hướng xã hội chủ nghĩa\n'
+      [3] 'Bài 1:\n'
+      [4] 'Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia đình và cộng đồng.'
+    ep219 n_members=12
+      [0] 'Đạo đức và Xã hội:\n'
+      [1] 'Lớp 5:\n'
+      [2] 'Tiết 1: Kinh tế thị trường định hướng xã hội chủ nghĩa\n'
+      [3] 'Bài 2:\n'
+      [4] 'Bảo hiểm y tế giúp khám chữa bệnh.'
+  pi=5286 w=8.155 eps=[603, 50107, 50108] emit='Sao Mộc chủ yếu chứa vật chất ở trạng thái khí và lỏng.'
+    ep603 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Sao Mộc\n\n'
+      [2] 'Hai hành tinh này đôi khi được gọi là hành tinh kiểu Sao Mộc hoặc hành tinh vòng ngoài.'
+      [3] 'Người La Mã đặt tên hành tinh theo tên của vị thần Jupiter, vị thần quan trọng nhất trong số các'
+      [4] 'Bao quanh Sao Mộc là một hệ thống vành đai mờ nhạt cũng như từ quyển mạnh.'
+    ep50107 n_members=3
+      [0] 'Sao Mộc chủ yếu chứa vật chất ở trạng thái khí và lỏng.'
+      [1] ' Nó là hành tinh khí khổng lồ lớn nhất trong hệ Mặt Trời với đường kính 142.'
+      [2] '984 km tại xích đạo.'
+  pi=6309 w=8.155 eps=[642, 45299, 45300] emit='Trong đó các hệ tầng A Vương, Long Đại, Tân Lâm có thành phần thạch học chủ yếu là đá phiến và sa thạch.'
+    ep642 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Đà Nẵng\n\n'
+      [2] 'Thành phố Đà Nẵng hiện là đô thị loại I, là thành phố trung tâm cấp vùng và cấp quốc gia'
+      [3] 'Phía bắc giáp thành phố Huế.'
+      [4] 'Điểm cực bắc tại: phường Hải Vân.'
+    ep45299 n_members=2
+      [0] 'Trong đó các hệ tầng A Vương, Long Đại, Tân Lâm có thành phần thạch học chủ yếu là đá'
+      [1] ' Hệ tầng Ngũ Hành Sơn chủ yếu là đá vôi hoa hóa màu xám trắng.'
+  pi=5521 w=8.155 eps=[611, 39709, 39710] emit='Địa chất Thành phố Hồ Chí Minh bao gồm chủ yếu là hai tướng trầm tích Pleistocen và Holocen lộ ra trên bề mặt.'
+    ep611 n_members=32
+      [0] 'Lịch sử:\n'
+      [1] 'Tiêu đề: Thành phố Hồ Chí Minh\n\n'
+      [2] 'Thành phố Hồ Chí Minh (viết tắt TP.'
+      [3] 'Thành phố Hồ Chí Minh là thành phố trực thuộc trung ương thuộc loại đô thị đặc biệt.'
+      [4] 'Vùng đất này từng được gọi là '
+    ep39709 n_members=2
+      [0] 'Địa chất Thành phố Hồ Chí Minh bao gồm chủ yếu là hai tướng trầm tích Pleistocen và Holocen lộ ra trên'
+      [1] ' Trầm tích Pleistocen chiếm hầu hết phần phía Bắc, Tây Bắc và Đông Bắc thành phố.'
+  pi=1153 w=6.918 eps=[218, 482] emit='Kinh tế thị trường định hướng xã hội chủ nghĩa.'
+    ep218 n_members=14
+      [0] 'Đạo đức và Xã hội:\n'
+      [1] 'Lớp 5:\n'
+      [2] 'Tiết 1: Kinh tế thị trường định hướng xã hội chủ nghĩa\n'
+      [3] 'Bài 1:\n'
+      [4] 'Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia đình và cộng đồng.'
+    ep482 n_members=32
+      [0] 'Đạo đức và Xã hội:\n'
+      [1] 'Lớp 5:\n'
+      [2] 'Tiêu đề: Đạo đức và Xã hội lớp 5 — bài tổng hợp\n\n'
+      [3] 'Kinh tế thị trường định hướng xã hội chủ nghĩa.'
+      [4] ' Doanh nghiệp tư nhân tạo việc làm.'
+  pi=40680 w=6.734 eps=[9568, 9612, 23451] emit='Ví dụ: bọ chét sống kí sinh trên một số vật chủ như mèo, chó, v.'
+    ep9568 n_members=4
+      [0] 'Từ: kí chủ\n'
+      [1] 'Loại từ: danh từ\n'
+      [2] 'Giải nghĩa: sinh vật mang các loài kí sinh: bọ chét sống kí sinh trên một số vật chủ như'
+      [3] 'Ví dụ: bọ chét sống kí sinh trên một số vật chủ như mèo, chó, v.'
+    ep9612 n_members=4
+      [0] 'Từ: ký chủ\n'
+      [1] 'Loại từ: danh từ\n'
+      [2] 'Giải nghĩa: sinh vật mang các loài kí sinh: bọ chét sống kí sinh trên một số vật chủ như'
+      [3] 'Ví dụ: bọ chét sống kí sinh trên một số vật chủ như mèo, chó, v.'
+handoff= 'Năm'
+episode_first= 'Năm'
+hist folds ['chủ', 'kỳ', 'là', 'lập', 'mở', 'ngô', 'người', 'nhà', 'quyền', 'sáng', 'thời', 'tự', 'vua', 'vị', 'xem', 'được', 'đầu', 'độc']
+coact conf=1.000
+  act pi=4175 a=1.000 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.'
+    ep564 ix=2/32
+    NEXT: 'Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+  act pi=1533 a=0.000 'Ngô Quyền độc lập năm 938.'
+    ep377 ix=13/14
+  act pi=280939 a=0.000 'Ngô Quyền (TP.'
+    ep34406 ix=8/32
+    NEXT: 'Hải Phòng) cho biết vừa phối hợp với Công an P.'
+  act pi=1117 a=0.000 'Ngô Quyền đánh thắng quân Nam Hán.'
+    ep213 ix=9/13
+    NEXT: 'Lê Hoàn lên ngôi đánh quân Tống.'
+  act pi=411379 a=0.000 'Ngô Nam Hưng: Là con trai của Ngô Quyền, mẹ là Dương hậu.'
+    ep48485 ix=0/2
+    NEXT: ' Không được sử sách đề cập gì thêm.'
+  act pi=4508 a=0.000 'Ngô Quyền hạ thành Đại La, giết Công Tiễn.'
+    ep576 ix=13/32
+    NEXT: 'Hoằng Tháo bị giết chết, Lưu Nghiễm hốt hoảng vội thu thập tàn binh quay về.'
+  act pi=5873 a=0.000 'Ngô Quyền ra lệnh cho quân bỏ chạy lên thượng lưu.'
+    ep623 ix=16/32
+    NEXT: 'Đợi đến khi thủy triều xuống, ông mới hạ lệnh cho quân sĩ đổ ra đánh.'
+  act pi=1318 a=0.000 'Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+    ep290 ix=9/14
+    NEXT: 'Nhà Đinh thành lập năm 968.'
+  act pi=3458 a=0.000 'Ngô Xương Ngập (con trưởng Ngô Quyền) chạy về nhà một hào trưởng là Phạm Lệnh Công ở làng Trà Hương (Hải Dương).'
+    ep538 ix=10/32
+    NEXT: 'Dương Tam Kha ba lần sai quân đi bắt Ngô Xương Ngập mà không được.'
+  act pi=411371 a=0.000 'Ngô Quyền là đời thứ sáu, sinh ra ở Đường Lâm, Sơn Tây.'
+    ep48478 ix=0/2
+    NEXT: ' Địa danh Cam Lâm có lẽ có xuất xứ từ Thanh Hóa.'
+  act pi=4181 a=0.000 'Ngô Quyền nằm trong danh sách mười bốn anh hùng dân tộc Việt Nam.'
+    ep564 ix=8/32
+    NEXT: 'Phan Bội Châu xem ông là vị Tổ Trung hưng của Việt Nam.'
+  act pi=4185 a=0.000 'Ngô Quyền được sử sách mô tả là bậc anh hùng tuấn kiệt, "có trí dũng".'
+    ep564 ix=12/32
+    NEXT: 'Thời bấy giờ nhà Đường ở Trung Quốc cai trị nước Việt.'
+  act pi=4512 a=0.000 'Ngô Quyền quyết định bỏ chức Tiết độ sứ của phong kiến phương Bắc, thiết lập một triều đình mới ở trung ương.'
+    ep576 ix=17/32
+    NEXT: 'Ở địa phương, Ngô Quyền cử các tướng có công coi giữ các châu quan trọng.'
+  act pi=411334 a=0.000 'Ngô Quyền định kế rồi, bèn cho đóng cọc ở hai bên cửa biển.'
+    ep48445 ix=0/2
+    NEXT: ' Hoằng Tháo quả nhiên tiến quân vào.'
+  act pi=4183 a=0.000 'Ngô Quyền sinh ngày 12 tháng 3 năm Đinh Tỵ (17 tháng 4 năm 898) trong một dòng họ hào trưởng có thế lực'
+    ep564 ix=10/32
+    NEXT: 'Cha là Ngô Mân làm chức châu mục Đường Lâm.'

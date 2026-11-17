@@ -1,0 +1,13 @@
+{
+ "id": "17_game",
+ "cat": "py_app",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết chương trình Python chạy trên terminal: trò chơi đoán số từ 1 đến 100, máy chọn ngẫu nhiên, báo 'lớn hơn'/'nhỏ hơn', đếm số lần đoán, xử lý khi người dùng nhập không phải số, hỏi có chơi lại không, lưu kỷ lục ít lượt nhất vào file highscore.txt.",
+   "text": "Đây là đoạn mã Python bạn cần:\n\n```python\nimport random\n\ndef play_game():\n    number_to_guess = random.randint(1, 100)\n    attempts = 0\n    while True:\n        try:\n            guess = int(input(\"Nhập số từ 1 đến 100: \"))\n            if guess < number_to_guess:\n                print(\"Số bạn đoán nhỏ hơn.\")\n            elif guess > number_to_guess:\n                print(\"Số bạn đoán lớn hơn.\")\n            else:\n                attempts += 1\n                print(f\"Chúc mừng! Bạn đã đoán đúng trong {attempts} lần thử.\")\n                return attempts\n        except ValueError:\n            print(\"Đây không phải là một số. Vui lòng nhập lại.\")\n\ndef main():\n    highscore = None\n\n    try:\n        with open('highscore.txt', 'r') as file:\n            highscore = int(file.read().strip())\n    except FileNotFoundError:\n        pass\n\n    while True:\n        attempts = play_game()\n        if highscore is None or attempts < highscore:\n            with open('highscore.txt', 'w') as file:\n                file.write(str(attempts))\n            print(f\"Bạn đã đặt kỷ lục mới: {attempts} lần thử.\")\n\n        play_again = input(\"Bạn có muốn chơi lại không? (y/n): \")\n        if play_again.lower() != 'y':\n            break\n\nif __name__ == '__main__':\n    main()\n```\n\nĐây là cách chương trình hoạt động:\n\n1. `play_game()` là hàm chính trong trò chơi. Nó chọn một số ngẫu nhiên từ 1 đến 100 và cho phép người chơi đoán nó. Nếu số được đoán không phải là một số, hàm sẽ thông báo lỗi và yêu cầu nhập lại.\n\n2. `main()` hàm xử lý việc chơi game và lưu kỷ lục cao nhất vào file `highscore.txt`. Nó cũng hỏi người chơi liệu họ có muốn chơi lại hay không.\n\n3. Khi chương trình chạy lần đầu tiên, nó sẽ kiểm tra xem có file `highscore.txt` tồn tại hay không. Nếu không, nó sẽ tạo một file mới.\n\n4. Mỗi khi người chơi đặt kỷ lục mới (số lần thử thấp hơn kỷ lục cũ), nó sẽ ghi số lần thử vào file `highscore.txt`.\n\n5. Sau mỗi trò chơi, chương trình hỏi người chơi liệu họ có muốn chơi lại hay không. Nếu họ không, chương trình kết thúc.\n\nLưu ý: Đây chỉ là một phiên bản đơn giản của trò chơi và có thể được cải tiến thêm tùy theo nhu cầu của bạn.",
+   "tokens": 551,
+   "sec": 11.9
+  }
+ ]
+}

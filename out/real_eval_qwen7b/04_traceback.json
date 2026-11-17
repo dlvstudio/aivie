@@ -1,0 +1,13 @@
+{
+ "id": "04_traceback",
+ "cat": "debug",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Chạy script bị lỗi này, nghĩa là gì và sửa sao?\n\n```\nTraceback (most recent call last):\n  File \"app.py\", line 12, in <module>\n    print(user['email'])\nKeyError: 'email'\n```\n\nĐoạn code:\n```python\nimport json\nwith open('users.json') as f:\n    users = json.load(f)\nfor user in users:\n    print(user['name'])\n    print(user['email'])\n```",
+   "text": "Lỗi `KeyError: 'email'` xảy ra khi bạn cố gắng truy cập vào một khóa ('key') trong dictionary mà không tồn tại. Trong đoạn code của bạn, lỗi này xuất hiện khi bạn cố gắng in `user['email']`.\n\nĐoạn code của bạn đang đọc file JSON chứa thông tin người dùng và in cả tên và email của mỗi người dùng. Tuy nhiên, không phải tất cả các đối tượng trong danh sách `users` đều có khóa 'email'. Nếu một đối tượng không có khóa 'email', khi cố gắng truy cập vào nó sẽ gây ra lỗi.\n\nĐể sửa lỗi này, bạn nên kiểm tra xem đối tượng có chứa khóa 'email' trước khi in nó. Bạn có thể thực hiện điều này bằng cách sử dụng hàm `in` để kiểm tra khóa tồn tại trong dictionary:\n\n```python\nimport json\n\nwith open('users.json') as f:\n    users = json.load(f)\n\nfor user in users:\n    print(user['name'])\n    \n    if 'email' in user:\n        print(user['email'])\n    else:\n        print(\"Email không có sẵn\")\n```\n\nTrong đoạn code này, chúng ta kiểm tra xem đối tượng `user` có chứa khóa 'email' bằng cách sử dụng `if 'email' in user:`. Nếu nó tồn tại, thì chúng ta in giá trị của 'email'. Ngược lại, nếu nó không tồn tại, chúng ta in ra một thông báo cho biết \"Email không có sẵn\". Điều này sẽ giúp tránh lỗi và đảm bảo rằng chỉ khi khóa tồn tại mới truy cập vào giá trị tương ứng.",
+   "tokens": 339,
+   "sec": 7.5
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+
+===== giám-khảo gemma4:26b-a4b-it-qat =====
+model        |  mở: tự-nhiên/đúng |  sự-kiện: đúng/không-biết/sai |  không-có-thật: nhận/bịa | toán đúng
+sft1box      |     4.29 / 2.04    |       2% /   0% /  98%     |            0% / 100% |        0%
+sftv2        |     3.96 / 2.04    |       5% /  75% /  20%     |           70% /  30% |        6%
+ours13b      |     4.29 / 2.04    |       2% /   0% /  98%     |            0% / 100% |        0%
+   sft1box · điểm đúng theo nhóm: {'van_phong': 2.5, 'tom_tat': 1.6, 'lap_trinh': 1.0, 'dich': 2.4, 'kien_thuc': 2.3, 'doi_song': 2.2, 'phap_luat': 2.3, 'suy_luan': 2.0}
+   sftv2 · điểm đúng theo nhóm: {'van_phong': 2.5, 'tom_tat': 1.9, 'lap_trinh': 1.0, 'dich': 2.3, 'kien_thuc': 1.9, 'doi_song': 2.1, 'phap_luat': 2.3, 'suy_luan': 2.3}
+   ours13b · điểm đúng theo nhóm: {'van_phong': 2.5, 'tom_tat': 1.6, 'lap_trinh': 1.0, 'dich': 2.4, 'kien_thuc': 2.3, 'doi_song': 2.2, 'phap_luat': 2.3, 'suy_luan': 2.0}
+
+===== giám-khảo SeaLLM-7B-v2.5-GGUF:Q4_K_M =====
+model        |  mở: tự-nhiên/đúng |  sự-kiện: đúng/không-biết/sai |  không-có-thật: nhận/bịa | toán đúng

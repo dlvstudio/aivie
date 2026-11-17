@@ -1,0 +1,187 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=7227) → out/logs/load_network_v12_sent_20260730_094938.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.9s] ✓ unpickle  (2.9s)
+[     2.9s] ▶ vocab (32002 token)
+[     2.9s] ✓ vocab (32002 token)  (0.0s)
+[     2.9s] ▶ adjacency
+[    12.5s] ✓ adjacency  (9.6s)
+[    12.5s] ▶ embedding
+[    12.6s] ✓ embedding  (0.1s)
+[    12.6s] ▶ parents
+[    12.6s] parents: deserialize 430447 records …
+[    12.6s] parents 5000/430447 (1.2%)
+[    12.7s] parents 10000/430447 (2.3%)
+[    12.7s] parents 15000/430447 (3.5%)
+[    12.7s] parents 20000/430447 (4.6%)
+[    12.8s] parents 25000/430447 (5.8%)
+[    12.8s] parents 30000/430447 (7.0%)
+[    12.9s] parents 35000/430447 (8.1%)
+[    12.9s] parents 40000/430447 (9.3%)
+[    13.0s] parents 45000/430447 (10.5%)
+[    13.0s] parents 50000/430447 (11.6%)
+[    13.0s] parents 55000/430447 (12.8%)
+[    13.1s] parents 60000/430447 (13.9%)
+[    13.1s] parents 65000/430447 (15.1%)
+[    13.2s] parents 70000/430447 (16.3%)
+[    13.2s] parents 75000/430447 (17.4%)
+[    13.2s] parents 80000/430447 (18.6%)
+[    13.3s] parents 85000/430447 (19.7%)
+[    13.3s] parents 90000/430447 (20.9%)
+[    13.4s] parents 95000/430447 (22.1%)
+[    13.4s] parents 100000/430447 (23.2%)
+[    13.5s] parents 105000/430447 (24.4%)
+[    13.5s] parents 110000/430447 (25.6%)
+[    13.6s] parents 115000/430447 (26.7%)
+[    13.6s] parents 120000/430447 (27.9%)
+[    13.7s] parents 125000/430447 (29.0%)
+[    13.7s] parents 130000/430447 (30.2%)
+[    13.8s] parents 135000/430447 (31.4%)
+[    13.8s] parents 140000/430447 (32.5%)
+[    13.9s] parents 145000/430447 (33.7%)
+[    14.0s] parents 150000/430447 (34.8%)
+[    14.0s] parents 155000/430447 (36.0%)
+[    14.1s] parents 160000/430447 (37.2%)
+[    14.2s] parents 165000/430447 (38.3%)
+[    14.3s] parents 170000/430447 (39.5%)
+[    14.4s] parents 175000/430447 (40.7%)
+[    14.5s] parents 180000/430447 (41.8%)
+[    14.6s] parents 185000/430447 (43.0%)
+[    14.7s] parents 190000/430447 (44.1%)
+[    14.8s] parents 195000/430447 (45.3%)
+[    14.9s] parents 200000/430447 (46.5%)
+[    14.9s] parents 205000/430447 (47.6%)
+[    15.0s] parents 210000/430447 (48.8%)
+[    15.1s] parents 215000/430447 (49.9%)
+[    15.2s] parents 220000/430447 (51.1%)
+[    15.3s] parents 225000/430447 (52.3%)
+[    15.4s] parents 230000/430447 (53.4%)
+[    15.5s] parents 235000/430447 (54.6%)
+[    15.6s] parents 240000/430447 (55.8%)
+[    15.7s] parents 245000/430447 (56.9%)
+[    15.8s] parents 250000/430447 (58.1%)
+[    15.9s] parents 255000/430447 (59.2%)
+[    16.0s] parents 260000/430447 (60.4%)
+[    16.0s] parents 265000/430447 (61.6%)
+[    16.1s] parents 270000/430447 (62.7%)
+[    16.2s] parents 275000/430447 (63.9%)
+[    16.3s] parents 280000/430447 (65.0%)
+[    16.4s] parents 285000/430447 (66.2%)
+[    16.5s] parents 290000/430447 (67.4%)
+[    16.6s] parents 295000/430447 (68.5%)
+[    16.7s] parents 300000/430447 (69.7%)
+[    16.7s] parents 305000/430447 (70.9%)
+[    16.8s] parents 310000/430447 (72.0%)
+[    16.9s] parents 315000/430447 (73.2%)
+[    17.0s] parents 320000/430447 (74.3%)
+[    17.1s] parents 325000/430447 (75.5%)
+[    17.2s] parents 330000/430447 (76.7%)
+[    17.3s] parents 335000/430447 (77.8%)
+[    17.4s] parents 340000/430447 (79.0%)
+[    17.5s] parents 345000/430447 (80.1%)
+[    17.5s] parents 350000/430447 (81.3%)
+[    17.7s] parents 355000/430447 (82.5%)
+[    17.8s] parents 360000/430447 (83.6%)
+[    17.8s] parents 365000/430447 (84.8%)
+[    17.9s] parents 370000/430447 (86.0%)
+[    18.0s] parents 375000/430447 (87.1%)
+[    18.1s] parents 380000/430447 (88.3%)
+[    18.2s] parents 385000/430447 (89.4%)
+[    18.3s] parents 390000/430447 (90.6%)
+[    18.4s] parents 395000/430447 (91.8%)
+[    18.4s] parents 400000/430447 (92.9%)
+[    18.5s] parents 405000/430447 (94.1%)
+[    18.6s] parents 410000/430447 (95.2%)
+[    18.7s] parents 415000/430447 (96.4%)
+[    18.7s] parents 420000/430447 (97.6%)
+[    18.8s] parents 425000/430447 (98.7%)
+[    18.9s] parents 430000/430447 (99.9%)
+[    31.9s] ▶ rebuild_hierarchical_index …
+[    34.0s] ✓ rebuild_hierarchical_index (2.1s)
+[    39.9s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    39.9s] ✓ parents  (27.3s)
+[    39.9s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    41.8s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    41.8s] ✓ load_checkpoint XONG
+[56s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+[191s] PPMI từ W_skip: 7,594,175 ô ≠0 → SVD 96d
+[196s] ✓ E_new (32002, 96) · E_old (32002, 96)
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.318        —        —           —
+none          0.318    0.493    0.376      -0.029
+pos           0.347    0.482    0.393      +0.000
+content       0.310    0.467    0.368      -0.036
+clear         0.215    0.391    0.275      -0.131
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng  13 · thua  21 · bất đồng  34/274 = 12.4%
+  content  thắng   1 · thua  11 · bất đồng  12/274 = 4.4%
+  clear    thắng   2 · thua  38 · bất đồng  40/274 = 14.6%
+
+THƯỚC CẶP CÓ THỨ TỰ (§12.76) — `A` là túi từ nên không phân biệt nổi trật tự:
+  thước            top1    Δ so B   thắng   thua   (n=274)
+  B (túi từ)      0.318         —       —      —
+  PAIR            0.285    -0.033       9     18
+  B+PAIR          0.292    -0.026       4     11
+  B+.5PAIR        0.314    -0.004       4      5
+  pos             0.347    +0.029      21     13
+  pos+PAIR        0.369    +0.051      17      3
+  cosE_old        0.004    -0.314       0     86
+  cosE_skip       0.135    -0.182       1     51
+  cosxcov(mz)     0.336    +0.018       6      1
+  covxcos(đảo)    0.328    +0.011       4      1
+  skipxcov(mz)    0.343    +0.026       9      2
+
+  CỔNG (§12.56c) so TIÊU CHÍ HIỆN HÀNH `pos` 0.347 → `pos+PAIR` 0.369  (Δ +0.022 · thắng 15 · thua 9)
+  ⇒ TRƯỢT  (cần Δ ≥ +0.05 VÀ thắng−thua ≥ 5)
+
+`cos` CÓ ĐO MIỀN KHÔNG (§12.93) — cho nó việc mà bench đã lọc mất:
+  cos tới ứng viên TRONG bể (đã trùng fold) : +0.435
+  cos tới ứng viên NGOÀI bể (khác miền)      : +0.355
+  cos tới GOLD                                : +0.537
+  ⇒ tách miền = +0.080   ·   tách gold-trong-bể = +0.102
+  ⇒ hai tách XẤP XỈ nhau ⇒ `cos` mang cả hai, không nghiêng hẳn bên nào.
+  Lưu ý: tách gold đo so TRUNG BÌNH bể. Cao hơn trung bình vẫn có thể xa hạng 1 khi
+  bể tới hàng chục nghìn — đó là vì sao `cosE_old` xếp 0.004 mà tách gold vẫn dương.
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          63 =  23.0%
+  C_hoà_nhưng_nền_thua          17 =   6.2%
+  C1_nền#1_có_thể_CŨNG_ĐÚNG      6 =   2.2%
+  C2_lỗi_xếp_hạng_THẬT          11 =   4.0%
+  D_gold_NGOÀI_nhóm_hoà        194 =  70.8%
+  B = đã đúng sẵn · C = gold trong nhóm nhưng nền thua · D = cần cách khác.
+  **C2 mới là phần tín hiệu nội nhóm thật sự cứu được** — C1 là nhiễu nhãn (đáp đúng khác).
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  72.6%** (199/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  73.0%** (200/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.482 · top1 0.347)
+G2 prior có tác dụng?            : tw=0 → 0.318 ‖ pos → 0.347 (Δ +0.029)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `none` 0.318, Δ -0.029)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+[791s] → out/skipcov_v12.log

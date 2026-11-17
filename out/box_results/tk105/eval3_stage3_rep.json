@@ -1,0 +1,1584 @@
+{
+ "tom_tat": {
+  "toan_gsm": {
+   "n": 100,
+   "ok_ghep": 12,
+   "ok_nhap": 34,
+   "ok_1p3b": 1
+  },
+  "toan_eval_v1": {
+   "n": 18,
+   "ok_ghep": 4,
+   "ok_nhap": 11,
+   "ok_1p3b": 0
+  },
+  "qa": {
+   "fact/abstain": 16,
+   "fact/wrong": 24,
+   "unanswerable/abstain": 14,
+   "unanswerable/hallucinated": 6
+  }
+ },
+ "toan": [
+  {
+   "vi_q": "Vịt của Janet đẻ 16 quả trứng mỗi ngày. Cô ấy ăn ba bữa sáng mỗi ngày và nướng bánh nướng xốp cho bạn bè mỗi ngày với bốn chiếc. Số còn lại cô bán ở chợ nông sản hàng ngày với giá 2 USD/quả trứng vịt tươi. Cô ấy kiếm được bao nhiêu đô la mỗi ngày ở chợ nông sản?",
+   "vi_a": "Janet bán 16 - 3 - 4 = 9 quả trứng vịt một ngày. Cô ấy kiếm được 9 * 2 = 18 đô la mỗi ngày ở chợ nông sản. Đáp án: 18",
+   "en_a": "Janet sells 16 - 3 - 4 = 9 duck eggs a day.\nShe makes 9 * 2 = $18 every day at the farmer’s market.\nThe answer is 18.",
+   "gold": 18.0,
+   "draft": "To determine how much money Janet earns at the farmer's market each day, we need to follow these steps:\n\n1. **Calculate the total number of eggs Janet collects in a day:**\n   - Janet collects 16 eggs per day.\n\n2. **Calculate the total number of eggs Janet uses in a day:**\n   - Janet eats 3 eggs for breakfast each day.\n   - Janet bakes 4 pancakes for her friends each day.\n   - Each pancake requires 1 egg.\n   - Therefore, she uses 4 eggs for pancakes.\n   - Total eggs used per day = 3 (for breakfast) + 4 (for pancakes) = 7 eggs.\n\n3. **Calculate the number of eggs Janet sells each day:**\n   - Total eggs collected per day = 16 eggs.\n   - Eggs used per day = 7 eggs.\n   - Eggs sold per day = 16 - 7 = 9 eggs.\n\n4. **Calculate the total money Janet earns from selling eggs each day:**\n   - Janet sells each egg for $2.\n   - Total money earned per day = 9 eggs * $2/egg = $18.\n\n**The answer is $18.**",
+   "answer": "Để biết số trứng vịt cô bán ở chợ nông sản mỗi ngày, chúng ta cần xác định tổng số quả trứng mà Janet sử dụng để nướng bánh. Tổng số trứng được bán trong chợ là 3 quả trứng/quả trứng = 16 quả trứng. Mỗi quả trứng có giá 2 USD/quả trứng = 4 quả trứng. Số trứng còn lại cô ấy bán ở chợ là 16 quả trứng - 4 quả trứng = 9 quả trứng. Mỗi ngày, Janet nướng bánh với số trứng này và bán với giá 2 đô la/quả trứng = 18 đô la. Cô ấy kiếm được 18 đô la mỗi ngày ở chợ nông sản từ việc bán trứng vịt tươi. Đáp án: 18",
+   "alone": "Cô ấy nướng 16 quả trứng vịt mỗi ngày và cô ấy nướng bánh nướng xốp cho bạn bè của mình nên cô ấy cần 16/2 = 8 chiếc bánh nướng xốp. Cô ấy bán chúng với giá 2 đô la mỗi chiếc nên cô ấy kiếm được 2 đô la x 8 = 16 đô la mỗi ngày ở chợ nông sản. Đáp án: 16",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một chiếc áo choàng cần 2 bu lông sợi xanh và một nửa sợi trắng. Tổng cộng cần bao nhiêu bu lông?",
+   "vi_a": "Cần 2/2=1 bu lông sợi trắng Vậy tổng số vải là 2+1=3 bu lông vải. Đáp án: 3",
+   "en_a": "It takes 2/2=1 bolt of white fiber\nSo the total amount of fabric is 2+1=3 bolts of fabric\nThe answer is 3.",
+   "gold": 3.0,
+   "draft": "To solve this problem, we need to determine the total number of meters of yarn required for the shirt.\n\n1. The shirt requires 2 meters of blue yarn.\n2. The shirt requires half a meter of white yarn.\n\nTo find the total amount of yarn needed, we add the lengths of the blue and white yarn together:\n\n2 meters (blue yarn) + 0.5 meters (white yarn) = 2.5 meters\n\nThe answer is 2.5.",
+   "answer": "Để tính số bu lông cần thiết, chúng ta cần xác định xem chiếc áo choàng cần bao nhiêu sợi. Để làm điều này, chúng tôi cần biết số lượng sợi xanh và trắng mà chiếc áo choàng cần. Chúng tôi thực hiện điều này bằng cách thực hiện 2 (số lượng sợi) + (2/2) = 2 + 2 * 1 = 2. Đáp án: 2",
+   "alone": "2 bu lông sợi xanh cần 2 x 12 = 24 bu lông. 24 bu lông sợi trắng cần 24/2 = 12 bu lông. Tổng cộng cần 2 + 12 + 12 = 36 bu lông. Đáp án: 36",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Josh quyết định thử lật một ngôi nhà. Anh ta mua một căn nhà với giá 80.000 đô la và sau đó bỏ ra 50.000 đô la để sửa chữa. Điều này đã làm tăng giá trị của ngôi nhà lên 150%. Anh ta đã kiếm được bao nhiêu lợi nhuận?",
+   "vi_a": "Chi phí của ngôi nhà và việc sửa chữa lên tới 80.000+50.000=$130.000 Anh ta đã tăng giá trị ngôi nhà lên 80.000*1,5=120.000 Vậy giá trị mới của ngôi nhà là 120.000+80.000=200.000 USD Vì vậy anh ta kiếm được lợi nhuận 200.000-130.000 = 70.000 USD. Đáp án: 70000",
+   "en_a": "The cost of the house and repairs came out to 80,000+50,000=$130,000\nHe increased the value of the house by 80,000*1.5=120,000\nSo the new value of the house is 120,000+80,000=$200,000\nSo he made a profit of 200,000-130,000=$70,000\nThe answer is 70000.",
+   "gold": 70000.0,
+   "draft": "To solve this problem, we need to determine the final value of the house after the renovation and then calculate the profit made by Josh.\n\n1. Calculate the initial value of the house:\n   Josh bought the house for 80,000 dong.\n\n2. Calculate the amount spent on renovation:\n   Josh spent 50,000 dong on renovation.\n\n3. Calculate the final value of the house after renovation:\n   The renovation increased the value of the house by 150%.\n   To find the final value, we need to calculate 150% of the initial value and add it to the initial value.\n   Final value = Initial value + (150% of Initial value)\n   Final value = 80,000 dong + (150% of 80,000 dong)\n   Final value = 80,000 dong + (1.5 * 80,000 dong)\n   Final value = 80,000 dong + 120,000 dong\n   Final value = 200,000 dong\n\n4. Calculate the profit made by Josh:\n   Profit = Final value - Initial value - Renovation cost\n   Profit = 200,000 dong - 80,000 dong",
+   "answer": "Để bắt đầu, Josh đã chi 80.000 USD để sửa chữa và nâng cấp ngôi nhà. Để tính giá trị ban đầu của ngôi nhà, chúng ta cần xác định giá trị mới sau khi cải tạo. Để làm điều này, chúng tôi tính 150% của giá trị ban đầu, hay 0,15 * giá trị ban đầu = 1,5 lần giá trị ban đầu. Vì vậy, Josh đã chi 1,5 * 80.000 USD = 120.000 USD để sửa chữa và nâng cấp ngôi nhà. Do đó, lợi nhuận của anh ta là 150% - 120.000 USD = 20.000 USD. Đáp án: 20000",
+   "alone": "Giá trị của ngôi nhà sau khi sửa chữa là 80.000+50.000=$140.000 Vì vậy, anh ta kiếm được lợi nhuận 150*100=$15000. Đáp án: 15000",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "James quyết định chạy 3 lần nước rút 3 lần một tuần. Anh ấy chạy 60 mét mỗi lần chạy nước rút. Tổng cộng anh ấy chạy bao nhiêu mét một tuần?",
+   "vi_a": "Anh ấy chạy nước rút 3*3=9 lần Vậy anh ấy chạy 9*60=540 mét. Đáp án: 540",
+   "en_a": "He sprints 3*3=9 times\nSo he runs 9*60=540 meters\nThe answer is 540.",
+   "gold": 540.0,
+   "draft": "To solve this problem, we need to determine the total distance James runs in a week.\n\nStep 1: Calculate the distance James runs per day.\nJames runs 60 meters each time he runs a lap. He runs 3 laps per day.\nSo, the distance he runs per day is:\n60 meters/lap * 3 laps = 180 meters/day\n\nStep 2: Calculate the total distance James runs in a week.\nJames runs 3 times a week.\nSo, the total distance he runs in a week is:\n180 meters/day * 3 days/week = 540 meters/week\n\nThe answer is 540.",
+   "answer": "Để biết anh ấy chạy bao nhiêu mét một tuần, chúng ta cần tính tổng quãng đường James đã chạy trong một tuần. Vậy chúng ta phải tìm tổng số lần chạy: 60 mét/lần chạy nước rút * 3 lần chạy nước rút = 180 lần chạy. Vì vậy, James đã chạy được 180 m/lần chạy nước rút/tuần x 3 ngày/tuần = 5 lần chạy nước rút mỗi tuần. Đáp án: 5",
+   "alone": "Anh ấy chạy tổng cộng 3*60=180 mét mỗi tuần Điều đó có nghĩa là anh ấy chạy 180/3=50 mét một tuần. Đáp án: 50",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Mỗi ngày, Wendi cho mỗi con gà của mình ăn 3 cốc thức ăn gà hỗn hợp có chứa hạt, giun và rau để giúp chúng khỏe mạnh. Cô cho gà ăn thành 3 bữa riêng biệt. Buổi sáng, cô cho đàn gà ăn 15 cốc thức ăn. Buổi chiều, cô cho gà ăn thêm 25 cốc thức ăn. Cô ấy cần cho gà ăn bao nhiêu cốc thức ăn trong bữa ăn cuối cùng trong ngày nếu quy mô đàn của Wendi là 20 con?",
+   "vi_a": "Nếu mỗi con gà ăn 3 cốc thức ăn mỗi ngày thì với 20 con gà, chúng sẽ cần 3 * 20 = 60 cốc thức ăn mỗi ngày. Nếu cô ấy cho đàn gà ăn 15 cốc thức ăn vào buổi sáng và 25 cốc vào buổi chiều thì bữa ăn cuối cùng sẽ cần 60-15-25=20 cốc thức ăn cho gà. Đáp án: 20",
+   "en_a": "If each chicken eats 3 cups of feed per day, then for 20 chickens they would need 3*20=60 cups of feed per day.\nIf she feeds the flock 15 cups of feed in the morning, and 25 cups in the afternoon, then the final meal would require 60-15-25=20 cups of chicken feed.\nThe answer is 20.",
+   "gold": 20.0,
+   "draft": "To solve this problem, we need to determine how many cups of the mixed feed Wendi needs to give her chickens each day.\n\nFirst, let's calculate the total number of cups of feed the chickens consume in the morning and in the afternoon:\n\nIn the morning, Wendi gives the chickens 15 cups of feed.\nIn the afternoon, Wendi gives the chickens 25 cups of feed.\n\nTotal cups of feed per day = 15 cups (morning) + 25 cups (afternoon) = 40 cups\n\nSince Wendi feeds the chickens three times a day, we need to divide the total cups of feed by 3 to find out how many cups of feed are given at each feeding:\n\nCups of feed per feeding = 40 cups (total) / 3 feedings = 13.33 cups\n\nSince we cannot give a fraction of a cup, we round up to the nearest whole number. Therefore, Wendi needs to give the chickens 14 cups of feed at each feeding.\n\nThe answer is 14.",
+   "answer": "Để biết mỗi con gà được cho bao nhiêu cốc thức ăn trong bữa ăn cuối cùng, Wendi cần tính tổng số cốc thức ăn mà tất cả các con gà của cô ấy tiêu thụ trong mỗi bữa ăn. Để làm điều này, Wendi chia số lượng thức ăn mỗi ngày thành 3 phần bằng nhau. Vì buổi sáng họ cho 15 cốc thức ăn nên chúng tôi chia nhỏ nó ra 3 phần để tìm tổng số cốc thức ăn mà mỗi con gà được cho trong mỗi bữa ăn: 15 cốc/3 = 3 cốc/bữa ăn Để biết mỗi con gà được cho bao nhiêu cốc thức ăn trong bữa ăn cuối cùng, Wendi nhân số lượng mỗi con gà được cho trong mỗi bữa ăn với số bữa ăn mỗi ngày: 3 cốc/con * 2 bữa = 6 cốc/ngày Vì mỗi con gà được cho 3 cốc thức ăn nên chúng tôi chia nhỏ nó ra để tìm tổng số cốc thức ăn mà họ cần trong mỗi bữa ăn: 6 cốc/bữa * 3 cốc/bữa = 12 cốc/ngày Để biết mỗi con gà cần bao nhiêu cốc thức ăn trong buổi ăn cuối cùng, Wendi nhân số lượng mỗi con gà được cho trong mỗi bữa ăn với số bữa ăn mỗi ngày: 12 cốc/con * 2 bữa = 14 cốc/ngày Vì vậy, để biết mỗi con gà cần bao nhiêu cốc thức ăn trong bữa ăn cuối cùng, Wendi chia số cốc thức ăn mà mỗi con gà được cho thành 3 phần bằng nhau. Mỗi phần là 15 cốc/3 phần = 5 cốc/bữa ăn. Để tính xem mỗi con gà nên được cho bao nhiêu cốc thức ăn trong buổi ăn cuối cùng, Wendi nhân số cốc mỗi con gà được cho theo từng bữa ăn với số cốc mỗi bữa ăn: 5 cốc/bữa * 3 cốc/bữa = 10 cốc/ngày Vì vậy, để biết mỗi con gà cần bao nhiêu cốc thức ăn trong buổi ăn cuối cùng, Wendi chia số cốc thức ăn mà mỗi con gà được cho thành 3 phần bằng nhau. Mỗi phần là 15 cốc/3 phần = 5 cốc/bữa ăn. Để tính xem mỗi con gà nên cho bao nhiêu cốc thức ăn trong bữa ăn cuối cùng, Wendi nhân số cốc mỗi con gà được cho theo từng bữa ăn với số cốc mỗi bữa ăn: 5 cốc/bữa *",
+   "alone": "Cô ấy cho gà ăn 3 cốc thức ăn vào buổi sáng, 15 cốc vào buổi chiều và 25 cốc vào buổi chiều nên cô ấy cần cho gà ăn tổng cộng 3+15+25=70 cốc thức ăn. Nếu mỗi con gà được cho 70 cốc thì cô ấy cần cho 20 con gà ăn 70/20 = 4 cốc thức ăn trong bữa cuối cùng của ngày hôm đó. Đáp án: 4",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Kylar đến cửa hàng để mua kính cho căn hộ mới của mình. Một ly có giá 5 USD, nhưng mỗi ly thứ hai chỉ có giá 60%. Kylar muốn mua 16 ly. Anh ta cần phải trả bao nhiêu cho họ?",
+   "vi_a": "Giá chiết khấu của một ly là 60/100 * 5 = $3. Nếu mỗi ly thứ hai rẻ hơn, điều đó có nghĩa là Kylar sẽ mua rẻ hơn 16/2 = 8 ly. Vì vậy, đối với những chiếc kính rẻ hơn, Kylar sẽ trả 8 * 3 = 24 USD. Và đối với chiếc kính có giá thông thường, Kylar sẽ trả 8 * 5 = 40 USD. Vậy tổng cộng Kylar cần phải trả 24 + 40 = $64 cho chiếc kính anh ấy muốn mua. Đáp án: 64",
+   "en_a": "The discount price of one glass is 60/100 * 5 = $3.\nIf every second glass is cheaper, that means Kylar is going to buy 16 / 2 = 8 cheaper glasses.\nSo for the cheaper glasses, Kylar is going to pay 8 * 3 = $24.\nAnd for the regular-priced glasses, Kylar will pay 8 * 5 = $40.\nSo in total Kylar needs to pay 24 + 40 = $64 for the glasses he wants to buy.\nThe answer is 64.",
+   "gold": 64.0,
+   "draft": "To solve this problem, we need to calculate the total cost of 16 lenses, taking into account the discount for the second lens in each pair.\n\nStep 1: Calculate the cost of the first lens in each pair.\nSince the first lens in each pair costs 5 USD, the total cost for the first lens in 16 pairs would be:\n16 pairs * 5 USD per pair = 80 USD\n\nStep 2: Calculate the cost of the second lens in each pair.\nThe second lens in each pair costs 60% of the first lens. To find the cost of the second lens, we can multiply the cost of the first lens by 0.60:\n5 USD * 0.60 = 3 USD\n\nStep 3: Calculate the total cost of the second lens in 16 pairs.\nSince there are 16 pairs, the total cost for the second lens in 16 pairs would be:\n16 pairs * 3 USD per pair = 48 USD\n\nStep 4: Calculate the total cost of all 16 lenses.\nTo find the total cost, we add the cost of the first lens and the cost of the second lens:\n80 USD (first lens) + 48 USD (second lens) = 128 USD\n\nThe answer is 128.",
+   "answer": "Để tính giá của một ly, chúng ta cần nhân giá của mỗi ly thứ hai với 60%. Để tìm tổng chi phí cho mỗi ly đầu tiên, chúng tôi nhân 16 ly * 0,1 = $4 ly. Vì có 16 ly nên tổng chi phí cho mỗi ly là 16 ly * 4 ly = 80 USD. Vì một ly thứ hai chỉ có giá 60% so với ly đầu tiên nên để tìm tổng chi phí của một ly thứ hai, chúng tôi nhân 16 ly * 0,25 = $4 ly. Vì một ly thứ hai chỉ có giá 60% so với ly đầu tiên nên tổng chi phí cho mỗi ly thứ hai là 60/100 * 60% = 3 USD. Vì một ly thứ hai chỉ có giá 60% so với ly đầu tiên nên tổng chi phí cho mỗi ly thứ hai là 60/100 * 3 đô la = 48 đô la. Đáp án: 48",
+   "alone": "Một ly thứ hai có giá 60/100 * 5 = 2 USD. Vì vậy, Kylar phải trả tổng cộng $5 + $2 = $6 cho mỗi ly. Do đó, anh ta cần phải trả $6 x 16 = $96 cho kính. Đáp án: 96",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Toulouse có số lượng cừu gấp đôi Charleston. Charleston có số lượng cừu nhiều gấp 4 lần Seattle. Hỏi Toulouse, Charleston và Seattle có cùng nhau bao nhiêu con cừu nếu Seattle có 20 con cừu?",
+   "vi_a": "Nếu Seattle có 20 con cừu thì Charleston có 4 * 20 con cừu = 80 con cừu. Toulouse có số cừu gấp đôi Charleston, tức là 2 * 80 con cừu = 160 con cừu Cộng lại, cả ba có 20 con cừu + 160 con cừu + 80 con cừu = 260 con cừu. Đáp án: 260",
+   "en_a": "If Seattle has 20 sheep, Charleston has 4 * 20 sheep = 80 sheep\nToulouse has twice as many sheep as Charleston, which is 2 * 80 sheep = 160 sheep\nTogether, the three has 20 sheep + 160 sheep + 80 sheep = 260 sheep\nThe answer is 260.",
+   "gold": 260.0,
+   "draft": "To solve this problem, we need to determine the number of cows each city has based on the given relationships.\n\n1. Toulouse has twice as many cows as Charleston.\n   Let's represent the number of cows in Charleston as C.\n   Therefore, the number of cows in Toulouse is 2C.\n\n2. Charleston has four times as many cows as Seattle.\n   Let's represent the number of cows in Seattle as S.\n   Therefore, the number of cows in Charleston is 4S.\n\n3. Seattle has 20 cows.\n   S = 20\n\nNow, let's find the number of cows in Charleston:\nC = 4S\nC = 4 * 20\nC = 80\n\nNext, let's find the number of cows in Toulouse:\n2C = 2 * 80\n2C = 160\n\nFinally, let's find the total number of cows in Toulouse, Charleston, and Seattle:\nTotal = Toulouse + Charleston + Seattle\nTotal = 160 + 80 + 20\nTotal = 260\n\nThe answer is 260.",
+   "answer": "Để xác định số cừu, Charleston và Seattle, chúng ta cần tìm tổng số con cừu mà mỗi thành phố có. Để làm điều này, chúng ta cần tìm số cừu của Toulouse so với Charleston. Do đó, chúng ta sẽ tìm ra tổng số cừu của cả ba thành phố: 20 + 4 = 24. Tiếp theo, chúng ta cần tìm xem Toulouse có bao nhiêu con cừu nhiều gấp bốn lần Seattle. Vì Seattle có số lượng cừu nhiều gấp 4 lần Seattle, chúng ta tìm được 4 * 20 = 80 con cừu. Do đó, tổng số cừu của cả ba thành phố là 80 + 24 = 160. Đáp án: 160",
+   "alone": "Nếu Seattle có 20 con cừu thì Charleston có 4 * 20 con cừu = 80 con cừu. Toulouse có số cừu gấp đôi Charleston, tức là 2 * 80 con cừu = 160 con cừu Cộng lại, cả ba có 20 con cừu + 160 con cừu + 80 con cừu = 320 con cừu. Đáp án: 320",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Carla đang tải xuống một tệp 200 GB. Thông thường cô ấy có thể tải xuống 2 GB/phút, nhưng trong 40% quá trình tải xuống, Windows buộc phải khởi động lại để cài đặt các bản cập nhật, quá trình này mất 20 phút. Sau đó Carla phải khởi động lại quá trình tải xuống từ đầu. Tải tập tin xuống mất bao nhiêu tải?",
+   "vi_a": "Đầu tiên hãy tìm xem có bao nhiêu gigabyte trong 40% tệp: 200 GB * 40% = 80 GB Sau đó chia số đó cho tốc độ tải xuống để tìm thời gian cho đến khi Windows khởi động lại: 80 GB / 2 GB/phút = 40 phút Sau đó tìm thời gian tải toàn bộ file sau khi khởi động lại: 200 GB/2 GB/phút = 100 phút Sau đó cộng thêm thời gian tải 40% file, tải toàn bộ file và chờ Windows cập nhật: 40 phút + 100 phút + 20 phút = 160 phút. Đáp án: 160",
+   "en_a": "First find how many gigabytes are in 40% of the file: 200 GB * 40% = 80 GB\nThen divide that number by the download rate to find the time until Windows restarts: 80 GB / 2 GB/minute = 40 minutes\nThen find the time to download the whole file after the restart: 200 GB / 2 GB/minute = 100 minutes\nThen add the time to download 40% of the file, to download the whole file, and to wait for Windows to update: 40 minutes + 100 minutes + 20 minutes = 160 minutes\nThe answer is 160.",
+   "gold": 160.0,
+   "draft": "To solve this problem, we need to calculate the total time Carla spends downloading the 200 GB file, taking into account the time spent on Windows updates.\n\n1. Calculate the time Carla spends downloading the file without any interruptions:\n   - Download speed: 2 GB/minute\n   - File size: 200 GB\n   - Time without interruptions = File size / Download speed = 200 GB / 2 GB/minute = 100 minutes\n\n2. Calculate the time Carla spends on Windows updates:\n   - Time for one update: 20 minutes\n   - Percentage of time spent on updates: 40%\n   - Time spent on updates = Time without interruptions * Percentage of time spent on updates = 100 minutes * 40% = 40 minutes\n\n3. Calculate the total time Carla spends downloading the file, including the time spent on updates:\n   - Total time = Time without interruptions + Time spent on updates = 100 minutes + 40 minutes = 140 minutes\n\nThe answer is 140 minutes.",
+   "answer": "Để tính thời gian tải xuống, chúng ta cần xác định số phút mà Carla phải bỏ ra để tải tệp xuống. Để làm điều này, chúng tôi thực hiện 200 GB * 2 phút/tải xuống = 400 phút. Tổng thời gian tải tệp xuống là 400 GB + 20 phút = 1400 phút. Sau đó, chúng tôi tính thời gian tải tệp xuống bằng cách chia số phút cho số phút trong thời gian tải tệp xuống: 1400 phút / 400 phút = 10 giờ. Đáp án: 10",
+   "alone": "Đầu tiên hãy tìm xem có bao nhiêu tệp mất thời gian để tải xuống: 200 GB / 2 GB/phút = 100 tệp Sau đó chia số này cho tốc độ tải xuống để tìm thời gian tải xuống: 100 tệp * 0,5 giây/tệp = 5 phút Sau đó nhân thời gian tải xuống với tốc độ tải lên để tìm tổng thời gian tải xuống: 5 phút * 60 phút/giờ = 300 phút Sau đó chia số này cho thời gian tải xuống để tìm thời gian tải xuống: 100 tệp / 2 GB/phút = 40 phút. Đáp án: 40",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "John lái xe trong 3 giờ với tốc độ 60 mph rồi quay lại vì nhận ra mình quên một thứ rất quan trọng ở nhà. Anh ấy cố gắng về nhà trong 4 giờ nhưng phải mất 2 giờ đầu tiên trong tình trạng giao thông ùn tắc. Anh ta dành nửa giờ tiếp theo để lái xe với tốc độ 30 dặm/giờ, trước khi có thể lái xe trong thời gian còn lại trong 4 giờ với tốc độ 80 dặm/giờ. Sau 4 giờ đó người đó cách nhà bao xa?",
+   "vi_a": "Khi anh ấy quay lại, anh ấy cách nhà 3*60=180 dặm Anh ấy chỉ có thể lái xe 4-2=2 giờ trong 4 giờ đầu tiên Trong nửa giờ anh ấy đi 30*.5=15 dặm Anh ấy sau đó lái xe thêm 2- nữa 0,5=1,5 giờ Trong thời gian đó anh ấy đi 80*1,5=120 dặm Vậy anh ấy đã lái xe 120+15=135 dặm Vậy anh ấy cách nhà 180-135=45 dặm. Đáp án: 45",
+   "en_a": "When he turned around he was 3*60=180 miles from home\nHe was only able to drive 4-2=2 hours in the first four hours\nIn half an hour he goes 30*.5=15 miles\nHe then drives another 2-.5=1.5 hours\nIn that time he goes 80*1.5=120 miles\nSo he drove 120+15=135 miles\nSo he is 180-135=45 miles away from home\nThe answer is 45.",
+   "gold": 45.0,
+   "draft": "To solve this problem, we need to calculate the total time John spends driving and the time he spends stuck in traffic.\n\n1. John drives for 3 hours at a speed of 60 mph.\n   Distance = Speed x Time\n   Distance = 60 mph x 3 hours = 180 miles\n\n2. John realizes he forgot something important at home and decides to go back.\n   He spends 2 hours in traffic before he can start driving again.\n\n3. John then drives for 4 hours at a speed of 30 mph.\n   Distance = Speed x Time\n   Distance = 30 mph x 4 hours = 120 miles\n\n4. To find the total distance John needs to travel, we add the distance he drove initially and the distance he drove after going back home.\n   Total Distance = 180 miles + 120 miles = 300 miles\n\n5. To find the total time John spends driving, we add the time he spent driving initially, the time he spent in traffic, and the time he spent driving after going back home.\n   Total Time = 3 hours + 2 hours + 4 hours = 9 hours\n\nThe answer is 9 hours.",
+   "answer": "Để tính thời gian lái xe của John, chúng ta cần xác định khoảng thời gian anh ấy phải đi từ nhà và sau đó quay lại. Để làm điều này, chúng tôi thực hiện 3 giờ * 60 mph = 120 dặm. Sau đó, chúng tôi nhân thời gian lái xe trước đây với 2 để tìm tổng thời gian anh ấy lái xe trong 4 giờ đầu tiên: 120 dặm/giờ - 2 giờ = 100 dặm. Sau đó, chúng ta trừ đi một giờ lái xe mà anh ta đã dành để lái xe từ thời gian anh ta bắt đầu (100 dặm) + 2 giờ = 120 dặm. Cuối cùng, trừ đi một giờ lái xe mà anh ấy đã dành để lái xe từ thời gian anh ta bắt đầu (120 dặm) + 2 giờ = 120 dặm. Đáp án: 120",
+   "alone": "Anh ấy lái xe 3*60=180 dặm Anh ấy phải đi 2+3=5 giờ nữa Điều đó có nghĩa là anh ấy đã lái xe tổng cộng 180+5=210 dặm Vậy anh ấy cách nhà 180-210=49 dặm. Đáp án: 49",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Mức lương mỗi giờ của Eliza trong 40 giờ đầu tiên cô làm việc mỗi tuần là 10 USD. Cô cũng nhận được mức lương làm thêm giờ gấp 1,2 lần mức lương giờ thông thường của mình. Nếu Eliza làm việc 45 giờ trong tuần này thì thu nhập của cô ấy trong tuần này là bao nhiêu?",
+   "vi_a": "Eliza được hưởng mức lương làm thêm giờ từ 45 -40 = 5 giờ. Mức lương làm thêm giờ theo giờ của cô ấy là 10 đô la x 1,2 = 12 đô la. Vì vậy, Eliza sẽ nhận được 12 đô la x 5 = 60 đô la cho tiền làm thêm giờ. Thu nhập thông thường hàng tuần của cô ấy là $10 x 40 = $400. Như vậy, Eliza sẽ nhận được tổng cộng $400 + $60 = $460 cho công việc của tuần này. Đáp án: 460",
+   "en_a": "Eliza is entitled to 45 -40 = 5 hours overtime pay.\nHer hourly rate for the overtime pay is $10 x 1.2 = $12.\nSo, Eliza will receive $12 x 5 =$60 for overtime pay.\nHer regular weekly earning is $10 x 40 = $400.\nThus, Eliza will receive a total of $400 + $60 = $460 for this week's work.\nThe answer is 460.",
+   "gold": 460.0,
+   "draft": "To solve this problem, we need to calculate Eliza's regular hourly wage and then determine her overtime wage. After that, we can calculate her total earnings for the week.\n\n1. Determine Eliza's regular hourly wage:\n   - Eliza earns $10 per hour for the first 40 hours of work each week.\n   - Therefore, her regular hourly wage is $10.\n\n2. Determine Eliza's overtime wage:\n   - Eliza receives 1.2 times her regular hourly wage for overtime hours.\n   - Overtime hours are any hours worked beyond the first 40 hours in a week.\n   - Therefore, her overtime wage is $10 * 1.2 = $12 per hour.\n\n3. Calculate Eliza's total earnings for the week:\n   - Eliza works 45 hours in this week.\n   - She works 40 regular hours and 5 overtime hours.\n   - Earnings for regular hours: 40 hours * $10 = $400\n   - Earnings for overtime hours: 5 hours * $12 = $60\n   - Total earnings for the week: $400 + $60 = $460\n\nThe answer is $460.",
+   "answer": "Để tính mức lương làm thêm giờ của Eliza, chúng ta cần tính lương thông thường của cô ấy sau 40 giờ đầu tiên. Để làm điều này, chúng tôi thực hiện 10 USD * 12 = 120 USD cho giờ làm việc bình thường của cô ấy trong tuần này. Sau đó, chúng tôi nhân mức lương thông thường theo giờ với số giờ làm thêm giờ để tìm tổng thu nhập của cô ấy: $120 + $45 = $165. Do đó, thu nhập hàng tuần của Eliza là $165 - $10 = $160. Đáp án: 160",
+   "alone": "Mức lương làm thêm giờ của cô ấy là 1,2*40 = 40 USD. Mức lương thông thường của cô ấy là 10 đô la và mức lương làm thêm giờ của cô ấy là 40 đô la nên mức lương làm thêm giờ của cô ấy là 10-40 = 30 đô la. Nếu Eliza làm việc 45 giờ trong tuần này thì thu nhập của cô ấy trong tuần này sẽ là 30*$30 = 700 USD. Đáp án: 700",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một chương trình mới có 60 lượt tải xuống trong tháng đầu tiên. Số lượt tải xuống trong tháng thứ hai nhiều gấp ba lần số lượt tải xuống trong tháng đầu tiên, nhưng sau đó giảm 30% trong tháng thứ ba. Chương trình đã có tổng cộng bao nhiêu lượt tải xuống trong ba tháng?",
+   "vi_a": "Số lượt tải chương trình trong tháng thứ hai tăng lên 3*60 = 180 Trong hai tháng đầu, tổng số lượt tải chương trình là 180+60 = 240 Trong tháng thứ ba, số lượt tải chương trình giảm 30/100*180 = 54 Có 180-54 = 126 lượt tải xuống trong tháng thứ ba. Trong 3 tháng, tổng số lượt tải chương trình là 126+240 = 366. Đáp án: 366",
+   "en_a": "The number of downloads of the program in the second month increased to 3*60 = 180\nIn the first two months, the total number of downloads of the program was 180+60 = 240\nIn the third month, the number of downloads of the program reduced by 30/100*180 = 54\nThere were 180-54 = 126 downloads in the third month.\nIn the three months, the total number of downloads of the program was 126+240 = 366\nThe answer is 366.",
+   "gold": 366.0,
+   "draft": "To solve this problem, we need to calculate the number of downloads for each month and then sum them up.\n\n1. In the first month, the program had 60 downloads.\n\n2. In the second month, the number of downloads was three times the number of downloads in the first month. So, we multiply 60 by 3:\n   60 * 3 = 180 downloads\n\n3. In the third month, the number of downloads decreased by 30% compared to the second month. To find the decrease, we calculate 30% of 180:\n   0.30 * 180 = 54 downloads\n\n4. To find the number of downloads in the third month, we subtract the decrease from the second month's downloads:\n   180 - 54 = 126 downloads\n\n5. Finally, we add up the downloads for all three months to find the total number of downloads:\n   60 (first month) + 180 (second month) + 126 (third month) = 366 downloads\n\nThe answer is 366.",
+   "answer": "Để tính số lượt tải xuống trong tháng thứ hai, chúng ta có thể thực hiện 3 * 60 = 180 lượt tải xuống. Để tìm số lượt tải xuống trong tháng thứ ba, chúng tôi nhân 3 với 100% - 30% = 50% để tìm tổng số lượt tải xuống. Chúng tôi trừ 30% từ tổng số lượt tải xuống để tìm số lượt tải xuống đã giảm, vì vậy 180 - 30 = 126 lượt tải xuống được giảm trong tháng thứ ba. Để tính số lượt tải xuống trong tháng thứ tư, chúng ta nhân 50% với 100% để tìm tổng số lượt tải xuống, vì vậy 126 + 50% = 166 lượt tải xuống được giảm trong tháng thứ tư. Cuối cùng, chúng tôi cộng số lượt tải xuống của ba tháng lại với nhau để tìm tổng số lượt tải xuống là 180 + 126 + 166 = 366. Đáp án: 366",
+   "alone": "Trong tháng đầu tiên, 60*3=180 lượt tải xuống. Trong tháng thứ hai, 180*3=420 lượt tải xuống. Trong tháng thứ ba, 420*3=1080 lượt tải xuống. Tổng cộng chương trình đã có 180+420+1080=5680 lượt tải xuống trong 3 tháng. Đáp án: 5680",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Toula đến tiệm bánh và mua nhiều loại bánh ngọt. Cô ấy mua 3 tá bánh rán có giá 68 USD một chục, 2 tá bánh nướng nhỏ có giá 80 USD một chục và 6 tá bánh pho mát nhỏ với giá 55 USD một chục. Tổng chi phí là bao nhiêu?",
+   "vi_a": "Tổng số tiền cho chiếc bánh rán là 3 x 68 USD = 204 USD. Tổng phí cho những chiếc bánh nướng nhỏ là 2 x 80 USD = 160 USD. Tổng chi phí cho những chiếc bánh pho mát nhỏ là 6 x 55 USD = 330 USD. Do đó, tổng số tiền Toula trả cho chiếc bánh ngọt là $204 + $160 + $330 = $694. Đáp án: 694",
+   "en_a": "The total charge for the doughnuts was 3 x $68 = $204.\nThe total charge for the mini cupcakes was 2 x $80 = $160.\nThe total charge for the mini cheesecakes was 6 x $55 = $330.\nTherefore the total amount Toula paid for the pastries was $204 + $160 + $330 = $694.\nThe answer is 694.",
+   "gold": 694.0,
+   "draft": "To solve this problem, we need to calculate the total cost of the pastries Toula bought.\n\nFirst, let's calculate the cost of the 3 tarts with a price of 68 USD per dozen:\n3 tarts * 68 USD/dozen = 194 USD\n\nNext, let's calculate the cost of the 2 small baked goods with a price of 80 USD per dozen:\n2 baked goods * 80 USD/dozen = 160 USD\n\nFinally, let's calculate the cost of the 6 small pho mats with a price of 55 USD per dozen:\n6 pho mats * 55 USD/dozen = 330 USD\n\nNow, let's add up the costs of all the pastries:\n194 USD + 160 USD + 330 USD = 684 USD\n\nThe answer is 684.",
+   "answer": "Để tính chi phí của những chiếc bánh rán, chúng ta cần xác định giá của 3 tá bánh rán. Đầu tiên, hãy tìm tổng giá của những chiếc bánh rán: 68 USD/ chục * 3 tá = 194 USD. Bây giờ hãy tính giá của 2 tá bánh nướng nhỏ: 80 USD/ chục * 2 tá = 160 USD. Cuối cùng, cộng chi phí của 6 tá bánh pho mát để có tổng chi phí: 6 tá + 160 đô la = 630 đô la. Đáp án: 630",
+   "alone": "Tổng chi phí của những chiếc bánh rán là 3 x 68 USD = 194 USD. Tổng chi phí của những chiếc bánh nướng nhỏ là 2 x 80 USD = 160 USD. Tổng chi phí của những chiếc bánh pho mát nhỏ là 6 x 55 USD = 332 USD. Tổng số tiền Toula đã trả cho tất cả các món ăn là $194 + $160 + $332 = $782. Đáp án: 782",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Carlos đang trồng một cây chanh. Cây sẽ có giá 90 USD để trồng. Mỗi năm nó sẽ trồng được 7 quả chanh, anh có thể bán với giá 1,5 đô la mỗi quả. Tốn 3$ một năm để tưới nước và cho cây ăn. Sẽ mất bao nhiêu năm trước khi anh ta bắt đầu kiếm được tiền từ cây chanh?",
+   "vi_a": "Anh ta kiếm được 10,5 đô la từ việc bán chanh mỗi năm vì 7 x 1,5 = 10,5 Anh ta kiếm được 7,5 đô la mỗi năm từ cây chanh vì 10,5 - 3 = 7,5 Sẽ phải mất 12 năm mới kiếm đủ tiền để trả hết cây chanh vì 90 / 7,5 = 12 Anh ta sẽ kiếm được tiền vào năm 13 vì 12 + 1 = 13. Đáp án: 13",
+   "en_a": "He makes $10.5 selling lemons each year because 7 x 1.5 = 10.5\nHe earns $7.5 each year from the lemon tree because 10.5 - 3 = 7.5\nIt will take 12 years to earn enough to pay off the tree because 90 / 7.5 = 12\nHe will make money in year 13 because 12 + 1 = 13\nThe answer is 13.",
+   "gold": 13.0,
+   "draft": "To determine how many years it will take for Carlos to start making a profit from his lemon tree, we need to calculate the annual net profit and then find out how many years it will take for the cumulative profit to exceed the initial investment.\n\n1. **Initial Investment:**\n   - Cost to plant the lemon tree: $90\n\n2. **Annual Revenue:**\n   - Number of lemons harvested per year: 7\n   - Selling price per lemon: $1.5\n   - Annual revenue from selling lemons: \\( 7 \\text{ lemons} \\times \\$1.5 \\text{ per lemon} = \\$10.5 \\)\n\n3. **Annual Expenses:**\n   - Cost to water and feed the tree: $3\n\n4. **Annual Net Profit:**\n   - Net profit per year: \\( \\$10.5 \\text{ (revenue)} - \\$3 \\text{ (expenses)} = \\$7.5 \\)\n\n5. **Break-even Point Calculation:**\n   - To find out how many years it will take to break even, we need to divide the initial investment by the annual net profit.\n   - Break-even point in years: \\( \\frac{\\$90}{\\$7.5 \\text{ per year}} = 12 \\text{ years} \\)\n\n6. **Profit Calculation:**\n   - After",
+   "answer": "Để tính lợi nhuận của cây chanh, chúng ta cần xác định giá bán của quả chanh. Giá bán của một quả chanh là 1,5 USD x 7 = 10 USD. Để biết chi phí trồng cây trong bao lâu, hãy chia số tiền thu được từ việc bán quả chanh cho số năm: $10 / $10/năm = 12 năm. Đáp án: 12",
+   "alone": "Cây sẽ cho anh ta 7 quả chanh trong một năm, vậy nên cây sẽ tạo ra 7*1=7 quả chanh mỗi năm. Cây sẽ mất 3 giờ để tưới nước và nó sẽ cần 3*7=23 giờ để ăn. Sẽ mất 23/7 = 5 năm để cây trưởng thành trước khi anh ấy có thể kiếm được tiền từ nó. Đáp án: 5",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Melanie là nhân viên bán hàng tận nhà. Cô đã bán một phần ba số máy hút bụi của mình ở ngôi nhà màu xanh lá cây, 2 chiếc nữa cho ngôi nhà màu đỏ và một nửa số còn lại ở ngôi nhà màu cam. Nếu Melanie còn lại 5 chiếc máy hút bụi thì cô ấy đã bắt đầu với bao nhiêu chiếc?",
+   "vi_a": "Đầu tiên nhân 5 chiếc máy hút bụi còn lại với 2 để biết Melanie có bao nhiêu chiếc trước khi đến thăm ngôi nhà màu cam: 5 * 2 = 10 Sau đó cộng hai để biết cô ấy có bao nhiêu chiếc máy hút bụi trước khi đến thăm ngôi nhà màu đỏ: 10 + 2 = 12 Bây giờ chúng ta biết rằng 2/3 * x = 12, trong đó x là số máy hút bụi mà Melanie đã bắt đầu sử dụng. Chúng ta có thể tìm x bằng cách chia mỗi vế của phương trình cho 2/3, được x = 18. Đáp án: 18",
+   "en_a": "First multiply the five remaining vacuum cleaners by two to find out how many Melanie had before she visited the orange house: 5 * 2 = 10\nThen add two to figure out how many vacuum cleaners she had before visiting the red house: 10 + 2 = 12\nNow we know that 2/3 * x = 12, where x is the number of vacuum cleaners Melanie started with. We can find x by dividing each side of the equation by 2/3, which produces x = 18\nThe answer is 18.",
+   "gold": 18.0,
+   "draft": "To solve this problem, we need to determine how many air purifiers Melanie started with before selling some to her neighbors.\n\n1. Let's denote the total number of air purifiers Melanie had initially as \\( x \\).\n\n2. Melanie sold three air purifiers to the green house, two to the red house, and half of the remaining air purifiers to the cam house.\n\n3. After selling these air purifiers, Melanie has 5 left.\n\n4. We can set up the following equation to represent the situation:\n   \\[\n   x - 3 - 2 - \\frac{x}{2} = 5\n   \\]\n\n5. Simplify the equation:\n   \\[\n   x - 5 - \\frac{x}{2} = 5\n   \\]\n\n6. Combine like terms:\n   \\[\n   \\frac{2x}{2} - \\frac{x}{2} - 5 = 5\n   \\]\n   \\[\n   \\frac{x}{2} - 5 = 5\n   \\]\n\n7. Add 5 to both sides of the equation:\n   \\[\n   \\frac{x}{2} = 10\n   \\]\n\n8. Multiply both sides by 2 to solve for \\( x \\):\n   \\[\n   x = 20\n   \\]\n\nTherefore, Melanie started with 20 air purifiers.",
+   "answer": "Để bắt đầu với, Melanie bắt đầu với 5/2 = 2 máy hút bụi. Cô ấy đã bán được 2 - 1 = 1 máy hút bụi. Vì vậy, sau khi bắt đầu với 2 máy hút bụi, Melanie bắt đầu với 2 * (1 + 0) = 2 + 5 = 10 máy hút bụi. Đáp án: 10",
+   "alone": "Melanie đã bán 2 * 1 = 2 máy hút bụi. Cô ấy còn lại 5 - 2 = 3 máy hút bụi. Vì vậy, cô ấy bắt đầu với 3 + 2 = 6 máy hút bụi. Đáp án: 6",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Trong một lớp khiêu vũ gồm 20 học sinh, 20% đăng ký học múa đương đại, 25% còn lại đăng ký học nhảy jazz và số còn lại đăng ký học nhảy hip-hop. Bao nhiêu phần trăm tổng số học sinh đăng ký học nhảy hip-hop?",
+   "vi_a": "Có 20 x 20/100 = 4 học sinh đăng ký học múa đương đại. Vì vậy, 20 - 4 = 16 học sinh đăng ký học nhảy jazz hoặc hip-hop. Có 16 x 25/100 = 4 học sinh đăng ký học nhảy jazz. Do đó, 16 - 4 = 12 học sinh đăng ký học nhảy hip-hop. Đây là 12/20 x 100% = 60% tổng số học sinh. Đáp án: 60",
+   "en_a": "There are 20 x 20/100 = 4 students who enrolled in contemporary dance.\nSo, 20 - 4 = 16 students are enrolled in either jazz or hip-hop dance.\nThere are 16 x 25/100 = 4 students who enrolled in jazz dance.\nHence, 16 - 4 = 12 students enrolled in hip-hop dance.\nThis is 12/20 x 100% = 60% of the entire students.\nThe answer is 60.",
+   "gold": 60.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Calculate the number of students who signed up for ballroom dancing.\n2. Calculate the number of students who did not sign up for ballroom dancing.\n3. Calculate the number of students who signed up for jazz dancing.\n4. Calculate the number of students who did not sign up for jazz dancing.\n5. Calculate the number of students who signed up for hip-hop dancing.\n6. Calculate the percentage of students who signed up for hip-hop dancing.\n\nStep 1: Calculate the number of students who signed up for ballroom dancing.\n20% of 20 students = 0.20 * 20 = 4 students\n\nStep 2: Calculate the number of students who did not sign up for ballroom dancing.\n20 students - 4 students = 16 students\n\nStep 3: Calculate the number of students who signed up for jazz dancing.\n25% of 16 students = 0.25 * 16 = 4 students\n\nStep 4: Calculate the number of students who did not sign up for jazz dancing.\n16 students - 4 students = 12 students\n\nStep 5: Calculate the number of students who signed up for hip-hop dancing.\n12 students (did not sign up for jazz or ballroom)\n\nStep 6: Calculate the percentage of",
+   "answer": "Để xác định số học sinh đăng ký học nhảy hip-hop, chúng ta cần tính tỷ lệ phần trăm học sinh đăng ký học nhảy jazz và nhảy hip-hop. Để làm điều này, chúng tôi thực hiện theo các bước sau:\n\n1. **Xác định số học sinh đăng ký học nhảy hip-hop.** Chúng tôi thực hiện 100% - 20% = 80% số học sinh đăng ký học nhảy hip-hop.\n2. **Tính tỷ lệ phần trăm học sinh đăng ký học nhảy jazz và nhảy hip-hop.** Chúng tôi thực hiện theo cách này, vì một số học sinh có thể không muốn tham gia vào lớp nhảy hip-hop hoặc nhảy jazz. Để tìm ra tỷ lệ phần trăm, chúng tôi sử dụng phương pháp sau:\n\n3. **Thực hiện 100% - 80% = 40% số học sinh đăng ký học nhảy hip-hop... ... 40%. Chúng tôi thực hiện 25% số học sinh đăng ký học nhảy jazz và 5% số học sinh đăng ký học nhảy hip-hop. Để tìm ra tỷ lệ phần trăm, chúng tôi sử dụng phương pháp này:\n\n40% - 25% = 10% Số học sinh đăng ký học nhảy hip-hop là 10%. 40% - 10% = 6% Số học sinh đăng ký học nhảy jazz và hip-hop là 6%. 5% * (10% + 6%) = 4%.\n\n4. **Thực hiện 25% số học sinh đăng ký học nhảy hip-hop... ... 25%. Chúng tôi thực hiện 25% số học sinh đăng ký học nhảy hip-hop là 2,5%. Để tìm ra tỷ lệ phần trăm, chúng tôi sử dụng phương pháp này:\n\n2,5% - 10% = 1,5% Số học sinh đăng ký học nhảy hip-hop là 1,5%. 5% * (10% + 1,5%) = 4%.\n\n6% * (4% + 4%) = 12%. Đáp án: 12",
+   "alone": "Số học sinh đăng ký học nhảy hip-hop là 20 x 0,25 = 6. Số học sinh đăng ký học nhảy jazz là 20 x 1/10 = 2. Số học sinh đăng ký học nhảy hip-hop là 6. Do đó, tổng số học sinh đăng ký học nhảy hip-hop là 6 + 2 = 8. Đáp án: 8",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một thương gia muốn lựa chọn mua hàng giữa 2 gói mua: đồ trang sức trị giá 5.000 USD hoặc đồ điện tử trị giá 8.000 USD. Cố vấn tài chính của ông suy đoán rằng thị trường trang sức sẽ tăng 2,5% trong khi thị trường thiết bị điện tử sẽ tăng 1,2% trong cùng tháng. Nếu người bán đang tìm cách tối đa hóa lợi nhuận vào cuối tháng này bằng cách đưa ra lựa chọn thì lợi nhuận này sẽ là bao nhiêu?",
+   "vi_a": "Nếu anh ta mua đồ trang sức, anh ta sẽ kiếm được lợi nhuận 2,5%, tức là $5000*(2,5/100) = $125. Nếu anh ta mua đồ điện tử, anh ta sẽ kiếm được lợi nhuận 1,2%, tức là $8000*(1,2/100) = $96 Nếu anh ta muốn tối đa hóa lợi nhuận, vì $125 > $96, anh ta sẽ chọn mua đồ trang sức, từ đó kiếm được lợi nhuận là $125. Đáp án: 125",
+   "en_a": "If he purchases jewelry, he will make a profit of 2.5% which is $5000*(2.5/100) = $125\nIf he purchases electronic gadgets, he will make a profit of 1.2% which is $8000*(1.2/100) = $96\nIf he wants to maximize profit, since $125 > $96, he will choose to purchase jewelry, thereby making a profit of $125\nThe answer is 125.",
+   "gold": 125.0,
+   "draft": "To determine which product the businessman should buy, we need to calculate the expected future value of each product after one month.\n\n1. Calculate the future value of the fashion accessories:\n   - Current price: $5,000\n   - Expected price increase: 2.5%\n   - Future value = Current price * (1 + Expected price increase)\n   - Future value = $5,000 * (1 + 0.025)\n   - Future value = $5,000 * 1.025\n   - Future value = $5,125\n\n2. Calculate the future value of the electronic goods:\n   - Current price: $8,000\n   - Expected price increase: 1.2%\n   - Future value = Current price * (1 + Expected price increase)\n   - Future value = $8,000 * (1 + 0.012)\n   - Future value = $8,000 * 1.012\n   - Future value = $8,096\n\nNow, we compare the future values of both products:\n\n- Future value of fashion accessories: $5,125\n- Future value of electronic goods: $8,096\n\nSince the future value of the electronic goods ($8,096) is higher than the future value of the fashion accessories ($5,125",
+   "answer": "Để xác định lợi nhuận, chúng ta cần tính giá trị của đồ trang sức. Giá trị thị trường hiện tại của đồ trang sức là 5.000 USD và giá trị thị trường của thiết bị điện tử là 8.000 USD. Vì vậy, giá trị thị trường của đồ trang sức là $5.000 + $8.000 = $12.000. Giá trị thị trường của thiết bị điện tử là $8.000 - $12.000 = $5.000 Vì vậy, lợi nhuận mà thương gia mong muốn sẽ là 5.000 USD + 1.2000 USD = 8.000 USD. Đáp án: 8000",
+   "alone": "Giá của đồ trang sức sẽ tăng 2,5% trong khi giá thiết bị điện tử sẽ tăng 1,2%. Do đó, lợi nhuận của người bán sẽ là (1/100 * 5.000 USD) + (8/100 * 8.000 USD) = $36000 / $40000 = 20%. Đáp án: 20",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Hai chuyến tàu rời San Rafael cùng một lúc. Họ bắt đầu đi về phía tây, cả hai đều đi được 80 dặm. Ngày hôm sau, họ đi về phía bắc, bao gồm 150 dặm. Quãng đường mỗi đoàn tàu đi trong hai ngày là bao nhiêu?",
+   "vi_a": "Vào ngày đầu tiên, đoàn tàu chạy 2 đoàn tàu * 80 dặm/tàu = 160 dặm cùng nhau. Họ cũng đi 150 dặm/tàu * 2 đoàn tàu = 300 dặm cùng nhau vào ngày thứ hai. Khoảng cách kết hợp hai đoàn tàu đi trong hai ngày là 300 dặm + 160 dặm = 460 dặm. Khoảng cách trung bình trong hai ngày là 460 dặm / 2 chuyến tàu = 230 dặm/tàu. Đáp án: 230",
+   "en_a": "On the first day, the trains covered 2 trains * 80 miles/train = 160 miles together.\nThey also covered 150 miles/train * 2 trains = 300 miles together on the second day.\nThe combined distance the two trains covered in the two days is 300 miles + 160 miles = 460 miles\nThe average distance for the two days is 460 miles / 2 trains = 230 miles/train\nThe answer is 230.",
+   "gold": 230.0,
+   "draft": "To solve this problem, we need to calculate the total distance traveled by each train in two days and then add them together.\n\n1. First, let's find the distance traveled by each train in the first day.\n   - The first train travels west for 80 miles.\n   - The second train also travels west for 80 miles.\n   - Total distance traveled by both trains in the first day = 80 miles + 80 miles = 160 miles.\n\n2. Next, let's find the distance traveled by each train in the second day.\n   - The first train travels north for 150 miles.\n   - The second train also travels north for 150 miles.\n   - Total distance traveled by both trains in the second day = 150 miles + 150 miles = 300 miles.\n\n3. Finally, let's add the distances traveled in both days to find the total distance traveled by each train in two days.\n   - Total distance traveled by both trains in two days = 160 miles + 300 miles = 460 miles.\n\nThe answer is 460 miles.",
+   "answer": "Để tính quãng đường đi trong ngày đầu tiên, chúng ta cần biết tổng khoảng cách của hai chuyến tàu. Trước tiên, hãy tìm tổng khoảng cách cho đến khi hai đoàn tàu rời San Rafael: 80 dặm + 150 dặm = 160 dặm. Tiếp theo, cộng khoảng cách giữa hai ngày để tìm tổng quãng đường đi: 160 dặm + 150 dặm = 260 dặm. Đáp án: 260",
+   "alone": "Chuyến tàu đầu tiên đi về phía tây với tốc độ 80 dặm/1 giờ. Chuyến thứ hai đi về phía bắc với tốc độ 150 dặm/giờ. Tổng quãng đường là 80+150=230 dặm. Hai ngày họ đi được 2*230 = 490 dặm. Đáp án: 490",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Jill được trả 20 đô la mỗi giờ để dạy và 30 đô la để trở thành huấn luyện viên cổ vũ. Nếu cô ấy làm việc 50 tuần một năm, 35 giờ một tuần với tư cách là giáo viên và 15 giờ một tuần với tư cách là huấn luyện viên, mức lương hàng năm của cô ấy là bao nhiêu?",
+   "vi_a": "Đầu tiên hãy tìm tổng số tiền Jill kiếm được mỗi tuần khi dạy: $20/giờ * 35 giờ/tuần = $700/tuần Sau đó tìm tổng số tiền Jill kiếm được mỗi tuần khi huấn luyện: $30/giờ * 15 giờ/tuần = $450/tuần Sau đó cộng hai số đó lại để tìm tổng số tiền Jill kiếm được mỗi tuần: $700/tuần + $450/tuần = $1150/tuần Sau đó nhân số đó với số tuần Jill làm việc trong một năm để tìm mức lương hàng năm của cô ấy: $1150/tuần * 50 tuần/năm = 57.500 USD. Đáp án: 57500",
+   "en_a": "First find the total amount Jill makes per week teaching: $20/hour * 35 hours/week = $700/week\nThen find the total amount Jill makes per week coaching: $30/hour * 15 hours/week = $450/week\nThen add those two amounts to find the total amount Jill makes per week: $700/week + $450/week = $1150/week\nThen multiply that number by the number of weeks Jill works in a year to find her annual salary: $1150/week * 50 weeks/year = $57,500\nThe answer is 57500.",
+   "gold": 57500.0,
+   "draft": "To determine Jill's annual salary, we need to calculate her earnings from both her teaching and coaching roles, and then sum these amounts.\n\n1. **Calculate Jill's earnings from teaching:**\n   - Jill earns 20 dong per hour as a teacher.\n   - She works 35 hours per week as a teacher.\n   - There are 50 weeks in a year.\n\n   First, calculate her weekly earnings as a teacher:\n   \\[\n   \\text{Weekly earnings as a teacher} = 20 \\text{ dong/hour} \\times 35 \\text{ hours/week} = 700 \\text{ dong/week}\n   \\]\n\n   Next, calculate her annual earnings as a teacher:\n   \\[\n   \\text{Annual earnings as a teacher} = 700 \\text{ dong/week} \\times 50 \\text{ weeks/year} = 35,000 \\text{ dong/year}\n   \\]\n\n2. **Calculate Jill's earnings from coaching:**\n   - Jill earns 30 dong per hour as a coach.\n   - She works 15 hours per week as a coach.\n   - There are 50 weeks in a year.\n\n   First, calculate her weekly earnings as a coach:\n   \\[\n   \\text{Weekly earnings as a coach} =",
+   "answer": "Để kiếm được mức lương hàng năm là 35 giờ, Jill cần làm việc với mức lương 20 đô la x 35 giờ = 7.500 đô la một năm. Để trở thành huấn luyện viên cổ vũ, cô ấy kiếm được 30 đô la x 35 giờ = 15.500 đô la một năm. Do đó, tổng thu nhập của Jill là $7.500 + $15.500 = $3.500. Đáp án: 3500",
+   "alone": "Cô ấy kiếm được 20 đô la x 50 = 1000 đô la cho công việc dạy học. Cô ấy kiếm được 35 đô la x 35 = 1125 đô la cho công việc huấn luyện viên cổ vũ. Tổng số tiền cô ấy kiếm được là $1000 + $1125 = $2375. Đáp án: 2375",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Claire làm món trứng tráng 3 quả mỗi sáng cho bữa sáng. Cô ấy sẽ ăn bao nhiêu chục quả trứng trong 4 tuần?",
+   "vi_a": "Cô ấy ăn 3 quả trứng mỗi ngày và có 7 ngày trong một tuần nên cô ấy ăn 3*7 = 21 quả trứng một tuần. Sau 4 tuần cô ấy sẽ ăn 4*21 = 84 quả trứng Có 12 quả trứng trong 1 tá và cô ấy sẽ ăn 84 quả trứng nên 84/12 = 7 chục quả trứng. Đáp án: 7",
+   "en_a": "She eats 3 eggs every day and there are 7 days in a week so she eats 3*7 = 21 eggs a week\nAfter 4 weeks she will have eaten 4*21 = 84 eggs\nThere are 12 eggs in 1 dozen and she'll eat 84 eggs so that's 84/12 = 7 dozen eggs\nThe answer is 7.",
+   "gold": 7.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine how many eggs Claire makes each day:\n   Claire makes 3 eggs every morning for breakfast.\n\n2. Determine how many days are in 4 weeks:\n   There are 7 days in a week, so 4 weeks would have 4 * 7 = 28 days.\n\n3. Calculate the total number of eggs Claire makes in 4 weeks:\n   Since Claire makes 3 eggs every morning, and there are 28 days in 4 weeks, we can multiply the number of eggs per day by the number of days:\n   3 eggs/day * 28 days = 84 eggs\n\nThe answer is 84.",
+   "answer": "Để biết Claire làm bao nhiêu quả trứng mỗi ngày, trước tiên chúng ta cần xác định số trứng cô ấy làm trong một ngày. Mỗi sáng, Claire làm 3 quả trứng và có 7 ngày trong một tuần nên chúng tôi nhân số trứng mỗi ngày với 7 để tìm tổng số trứng cô ấy làm trong một ngày: 3 quả/ngày * 7 ngày/tuần = 28 quả trứng. Trong 4 tuần, chúng ta sẽ tính được 28 quả trứng/4 tuần = 84 quả trứng. Đáp án: 84",
+   "alone": "Cô ấy ăn 3 quả trứng mỗi sáng và cô ấy cần 4 tuần để làm được điều đó nên có 3*4 = 12 quả trứng. Cô ấy sẽ ăn 12 quả trứng trong 4 tuần nên cô ấy sẽ ăn tổng cộng 12 * 4 = 60 quả trứng. Đáp án: 60",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Marissa đang đi bộ trên con đường dài 12 dặm. Cô mất 1 giờ để đi bộ 4 dặm đầu tiên, sau đó một giờ nữa để đi bộ 2 dặm tiếp theo. Nếu cô ấy muốn tốc độ trung bình của mình là 4 dặm một giờ thì cô ấy cần phải đi bộ với tốc độ bao nhiêu (tính bằng dặm một giờ) để đi hết quãng đường còn lại?",
+   "vi_a": "Đầu tiên hãy tính xem cần bao nhiêu giờ để đi bộ trên một con đường dài 12 dặm với vận tốc 4 dặm/giờ bằng cách chia khoảng cách cho tốc độ: 12 dặm / 4 dặm/giờ = 3 giờ Tiếp theo trừ đi thời gian Marissa đã dành để đi bộ để biết cô ấy có bao nhiêu thời gian còn lại: 3 giờ - 1 giờ - 1 giờ = 1 giờ Bây giờ hãy tính xem cô ấy còn bao nhiêu dặm nữa bằng cách trừ đi khoảng cách cô ấy đã đi được từ tổng quãng đường: 12 dặm - 4 dặm - 2 dặm = 6 dặm Bây giờ chia khoảng cách còn lại bằng thời gian còn lại để biết Marissa phải di chuyển với tốc độ bao nhiêu dặm một giờ: 6 dặm / 1 giờ = 6 mph. Đáp án: 6",
+   "en_a": "First figure out how many hours it takes to hike a 12-mile trail at 4 mph by dividing the distance by the speed: 12 miles / 4 mph = 3 hours\nNext subtract the time Marissa already spent walking to find out how much time she has left: 3 hours - 1 hour - 1 hour = 1 hour\nNow figure out how much distance she has left by subtracting the distance she already traveled from the total distance: 12 miles - 4 miles - 2 miles = 6 miles\nNow divide the remaining distance by the remaining time to find out how fast in miles per hour Marissa has to travel: 6 miles / 1 hour = 6 mph\nThe answer is 6.",
+   "gold": 6.0,
+   "draft": "To solve this problem, we need to determine the speed Marissa needs to maintain for the remaining distance to achieve an average speed of 4 miles per hour for the entire trip.\n\nStep 1: Calculate the total distance Marissa needs to cover.\nMarissa is traveling on a 12-mile long road.\n\nStep 2: Calculate the time Marissa has already spent traveling.\nMarissa spends 1 hour to travel the first 4 miles and another hour to travel the next 2 miles.\nTotal time spent = 1 hour + 1 hour = 2 hours\n\nStep 3: Calculate the remaining distance Marissa needs to cover.\nTotal distance - Distance already covered = 12 miles - 6 miles = 6 miles\n\nStep 4: Calculate the time Marissa has left to cover the remaining distance.\nTotal time for the trip = 12 miles / 4 miles per hour = 3 hours\nTime left = Total time for the trip - Time already spent = 3 hours - 2 hours = 1 hour\n\nStep 5: Calculate the speed Marissa needs to maintain for the remaining distance.\nSpeed = Remaining distance / Time left = 6 miles / 1 hour = 6 miles per hour\n\nThe answer is 6 miles per hour.",
+   "answer": "Để đi hết quãng đường còn lại, Marissa cần phải đi bộ 12 dặm - 4 dặm = 6 dặm. Tổng thời gian cô ấy đã dành để đi bộ là 1 giờ + 1 giờ = 2 giờ. Để đạt được tốc độ trung bình 4 dặm một giờ, Marissa cần phải đi bộ thêm 1 giờ / 4 dặm/giờ = 1/(4 dặm/giờ) = 10 dặm. Đáp án: 10",
+   "alone": "Đầu tiên hãy tìm tổng thời gian đi bộ: 1 giờ + 1 giờ = 2 giờ Sau đó tìm tổng khoảng cách đi bộ: 4 dặm đầu + 1 dặm tiếp theo = 5 dặm Sau đó chia quãng đường còn lại cho số dặm đã đi để biết cô ấy cần đi bao nhiêu dặm nữa: 5 dặm / 4 dặm/giờ = 8 dặm/giờ. Đáp án: 8",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Tôi có 10 lít nước cam chứa 2/3 nước và tôi muốn thêm nó vào 15 lít nước ép dứa có 3/5 nước. Nhưng khi tôi rót, tôi làm đổ cả lít nước cam. Hỏi trong 24 lít còn lại có bao nhiêu nước?",
+   "vi_a": "Có 15 x 3/5 = 9 lít nước từ 15 lít nước dứa. Sau khi đổ 1 lít nước cam thì còn lại 10 - 1 = 9 lít nước cam. Trong 9 lít có 9 x 2/3 = 6 lít là nước. Như vậy có tổng cộng 9 + 6 = 15 lít nước trong 24 lít. Đáp án: 15",
+   "en_a": "There are 15 x 3/5 = 9 liters of water from the 15 liters pineapple drink.\nAfter 1 liter of orange drink was spilled, there were 10 - 1 = 9 liters of orange drink left.\nOut of the 9 liters, 9 x 2/3 = 6 liters are water.\nThus, there are a total of 9 + 6 = 15 liters of water out of the 24 liters.\nThe answer is 15.",
+   "gold": 15.0,
+   "draft": "To solve this problem, we need to determine the amount of water left after the mistake. Let's break it down step by step:\n\n1. Calculate the amount of water in the 10 liters of coconut water:\n   - 2/3 of 10 liters = (2/3) * 10 = 20/3 liters\n\n2. Calculate the amount of water in the 15 liters of grape water:\n   - 3/5 of 15 liters = (3/5) * 15 = 9 liters\n\n3. Add the amounts of water from the coconut water and grape water:\n   - 20/3 liters + 9 liters = (20/3) + (27/3) = 47/3 liters\n\n4. Calculate the total amount of water in the 24 liters of remaining water:\n   - Since the mistake was made and all the coconut water was spilled, the remaining water is only the grape water.\n   - 15 liters of grape water\n\n5. Subtract the total amount of water in the remaining water from the amount of water after the mistake:\n   - (47/3) - 15 = (47/3) - (45/3) = 2/3 liters\n\nThe answer is 2/3 lit",
+   "answer": "Để xác định lượng nước còn lại, hãy tìm tổng thể tích của nước cam và nước ép dứa: 2/3 * 10 lít = 9 lít Nước cam + nước ép dứa = 15 lít Nước ép dứa = 3/ 5 * 15 lít = 27 lít Tổng cộng, nước cam và nước ép dứa là 15 + 27 = 47 lít. Đáp án: 47",
+   "alone": "Có 15 lít - 3/5 = 8 lít nước trong 10 lít nước cam. Có 2/3 số nước cam là 0,5 lít nên có 8/2 = 4 lít nước cam bị đổ. Có 3/5 * 8 = 4 lít nước ép dứa. Vậy còn lại 24 - 4 = 16 lít nước. Đáp án: 16",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Raymond và Samantha là anh em họ. Raymond sinh trước Samantha 6 năm. Raymond có một con trai ở tuổi 23. Nếu Samantha bây giờ 31 tuổi thì con trai của Raymond được sinh ra cách đây bao nhiêu năm?",
+   "vi_a": "Khi con trai của Raymond chào đời, Samantha 23 - 6 = 17 tuổi. Như vậy đã 31 - 17 = 14 năm kể từ ngày con trai của Raymond ra đời. Đáp án: 14",
+   "en_a": "When Raymond's son was born Samantha was 23 - 6 = 17 years old.\nThus it has been 31 - 17 = 14 years since Raymond's son was born.\nThe answer is 14.",
+   "gold": 14.0,
+   "draft": "To solve this problem, we need to determine the age of Raymond's son. We know that Raymond is 6 years older than Samantha, and Samantha is currently 31 years old. We also know that Raymond's son is 23 years old.\n\nStep 1: Determine Raymond's age.\nSince Raymond is 6 years older than Samantha, we can calculate his age by adding 6 to Samantha's age.\nRaymond's age = Samantha's age + 6\nRaymond's age = 31 + 6\nRaymond's age = 37\n\nStep 2: Determine the age difference between Raymond and his son.\nWe know that Raymond's son is currently 23 years old. To find the age difference between Raymond and his son, we subtract the son's age from Raymond's age.\nAge difference = Raymond's age - Son's age\nAge difference = 37 - 23\nAge difference = 14\n\nStep 3: Calculate the year Raymond's son was born.\nTo find the year Raymond's son was born, we subtract the son's age from the current year.\nYear of birth = Current year - Son's age\nYear of birth = 2021 - 23\nYear of birth = 1998\n\nThe answer is 1998",
+   "answer": "Để tính tuổi của Raymond, chúng ta có thể thực hiện bằng cách sử dụng tuổi của Samantha khi cô ấy 31 và tuổi của Raymond là 23. Để tìm khoảng thời gian mà con trai của Raymond sinh ra, chúng tôi trừ đi tuổi của Samantha từ tuổi của Raymond: 23 - 31 = 14 tuổi Sau đó, chúng ta có thể tính tuổi của Raymond bằng cách chia tuổi của Samantha cho 14: 14 tuổi / 14 = 14 năm. Đáp án: 14",
+   "alone": "Nếu Samantha bây giờ 31 tuổi thì Raymond là 23-3=20 năm. Nếu Samantha sinh con cách đây 20 năm thì cô ấy 20+2 = 22 tuổi. Đáp án: 22",
+   "ok_ghep": true,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Billy bán đĩa DVD. Anh ấy có 8 khách hàng vào thứ ba. 3 khách hàng đầu tiên của anh mỗi người mua một DVD. 2 khách hàng tiếp theo của anh mỗi người mua 2 đĩa DVD. 3 khách hàng cuối cùng của anh ấy không mua đĩa DVD nào cả. Billy đã bán được bao nhiêu đĩa DVD vào thứ Ba?",
+   "vi_a": "3 khách hàng đầu tiên của anh mua 3 * 1 = 3 DVD. Tiếp theo mình mua 2*2=4 DVD. Anh ta bán được tổng cộng 3 + 4 + 0 = 7 DVD. Đáp án: 7",
+   "en_a": "His first 3 customers buy 3 * 1 = 3 DVDs.\nHis next 2 buy 2 * 2 = 4 DVDs.\nHe sells a total of 3 + 4 + 0 = 7 DVDs.\nThe answer is 7.",
+   "gold": 7.0,
+   "draft": "To solve this problem, we need to calculate the total number of DVDs Billy sold on Thursday.\n\n1. First, let's find out how many DVDs were sold by the first three customers:\n   - Each of the first three customers bought one DVD.\n   - So, 3 customers × 1 DVD per customer = 3 DVDs.\n\n2. Next, let's find out how many DVDs were sold by the next two customers:\n   - Each of the next two customers bought two DVDs.\n   - So, 2 customers × 2 DVDs per customer = 4 DVDs.\n\n3. Finally, let's find out how many DVDs were sold by the last three customers:\n   - The last three customers did not buy any DVDs.\n   - So, 3 customers × 0 DVDs per customer = 0 DVDs.\n\n4. Now, let's add up the total number of DVDs sold:\n   - 3 DVDs (first three customers) + 4 DVDs (next two customers) + 0 DVDs (last three customers) = 7 DVDs.\n\nThe answer is 7.",
+   "answer": "Để tìm số DVD bán được vào thứ Ba, chúng ta có thể tính tổng cộng 3 khách hàng đầu tiên + 2 khách hàng tiếp theo = 7 khách hàng. Vậy Billy đã bán được 7 đĩa DVD / 7 khách hàng = 4 đĩa DVD. Đáp án: 4",
+   "alone": "Billy bán được 8 x 2 = 16 DVD vào thứ Ba. Anh ấy đã bán được tổng cộng 16 + 3 = 20 đĩa DVD. Đáp án: 20",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một ngọn nến tan chảy 2 cm mỗi giờ khi nó cháy. Một ngọn nến sẽ ngắn đi bao nhiêu cm sau khi đốt từ 1 giờ chiều đến 5 giờ chiều?",
+   "vi_a": "Ngọn nến cháy được 5 - 1 = 4 giờ. Như vậy, cây nến sẽ ngắn hơn 2 * 4 = 8 cm. Đáp án: 8",
+   "en_a": "The candle burns for 5 - 1 = 4 hours.\nThus, the candle will be 2 * 4 = 8 centimeters shorter.\nThe answer is 8.",
+   "gold": 8.0,
+   "draft": "To solve this problem, we need to determine how much the candle will have burned after 4 hours (from 1 pm to 5 pm).\n\nStep 1: Determine the total time the candle will burn.\nThe candle will burn for 4 hours (from 1 pm to 5 pm).\n\nStep 2: Calculate the total amount of the candle that will burn.\nThe candle burns at a rate of 2 cm per hour. To find the total amount of the candle that will burn, we need to multiply the rate by the total time.\n\nTotal amount of the candle burned = rate × time\nTotal amount of the candle burned = 2 cm/hour × 4 hours\n\nStep 3: Calculate the result.\nTotal amount of the candle burned = 8 cm\n\nThe answer is 8.",
+   "answer": "Để tính chiều dài của ngọn nến sau khi nó cháy từ 1 giờ chiều đến 5 giờ chiều, chúng ta cần biết thời gian cháy là bao nhiêu giờ. Để làm điều này, chúng tôi cần xác định mức độ ngắn của ngọn nến. Để làm điều này, chúng tôi thực hiện giá trị cho chiều cao ngọn nến bằng cách nhân chiều dài ban đầu với thời gian đốt cháy: 2 cm * 5 giờ = 10 giờ. Để tính chiều dài ngọn nến sau khi nó được đốt từ 1 giờ chiều đến 5 giờ chiều, chúng ta cần xác định mức độ ngắn của ngọn nến. Để làm điều này, chúng tôi thực hiện giá trị cho chiều cao ngọn nến bằng cách nhân chiều cao ban đầu với thời gian cháy: 1 giờ - 5 giờ = 4 giờ. Đáp án: 4",
+   "alone": "Một giờ là 60 phút, vậy một ngọn nến cháy trong 1*60 = 60 phút. Một giờ có 60 phút và ngọn nến cháy trong 60/60 = 1 giờ. Sau khi đốt từ 1 giờ chiều đến 5 giờ chiều, ngọn nến sẽ ngắn đi 1/12 = 0,5 cm. Đáp án: 0,5",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Kyle mua cuốn sách bán chạy nhất năm ngoái với giá 19,50 USD. Đây là mức giảm giá 25% so với giá gốc. Giá gốc của cuốn sách là bao nhiêu?",
+   "vi_a": "Gọi X là giá ban đầu của cuốn sách. Giá chiết khấu là X - X*25% = 19,50 USD. Kết hợp các số hạng tương tự, chúng ta được 0,75X = $19,50 Chia cả hai vế cho 0,75, chúng ta được X = $26. Đáp án: 26",
+   "en_a": "Let X be the original price of the book. The discounted price is X - X*25% = $19.50.\nCombining like terms, we get .75X = $19.50\nDividing both sides by .75, we get X = $26.\nThe answer is 26.",
+   "gold": 26.0,
+   "draft": "To solve this problem, we need to find the original price of the book before the 25% discount.\n\nLet's denote the original price as \\( P \\).\n\nWe know that the discounted price is 19.50 USD, and this is 75% of the original price (since a 25% discount means the price is 100% - 25% = 75% of the original price).\n\nSo, we can set up the equation:\n\\[ 0.75P = 19.50 \\]\n\nTo find \\( P \\), we need to divide both sides of the equation by 0.75:\n\\[ P = \\frac{19.50}{0.75} \\]\n\nNow, let's perform the division:\n\\[ P = 26 \\]\n\nSo, the original price of the book was 26 USD.\n\nThe answer is 26.",
+   "answer": "Để biết giá gốc của cuốn sách, chúng ta cần thiết lập tỷ lệ chiết khấu so với giá ban đầu. Chúng tôi biết rằng giá ban đầu là 19,50 USD và để tìm ra mức giảm giá, chúng tôi thực hiện: 19,50 - 25% = $7,25 Bây giờ chúng ta có thể tính toán giá gốc bằng cách nhân tỷ lệ chiết khấu với 7,25: $7,25 * .1/3 = $26,50. Đáp án: 26",
+   "alone": "Giá gốc của cuốn sách là $19,50 vì 19,50 x 25% = $27. Giá giảm giá là $34,00 vì 0,25 x 27 = $6,00. Do đó, giá mới là $19,50 - $6,00 = $18,00. Đáp án: 18",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Marie đặt một bữa ăn gà có giá 12 đô la, 5 gói sữa có giá 3 đô la mỗi quả, 4 quả táo có giá 1,5 đô la mỗi quả và một số hộp bánh pizza. Marie đã trả tổng cộng 50 đô la. Marie đã đặt bao nhiêu hộp bánh pizza nếu mỗi hộp có giá 8,50 USD?",
+   "vi_a": "Năm gói sữa có giá 3 USD x 5 = 15 USD. Bốn quả táo có giá 1,50 USD x 4 = 6 USD. Tổng chi phí cho bữa ăn gà, sữa và táo là $12 + $15 + $6 = $33. Như vậy, hộp bánh pizza có giá 50 USD - 33 USD = 17 USD. Do đó, Marie đặt mua 17$/8,50$ = 2 hộp bánh pizza. Đáp án: 2",
+   "en_a": "Five packs of milk cost $3 x 5 = $15.\nFour apples cost $1.50 x 4 = $6.\nThe total cost of the chicken meal, milk, and apples is $12 + $15 + $6 = $33.\nThus, the boxes of pizza cost $50 - $33 = $17.\nTherefore, Marie ordered $17/$8.50 = 2 boxes of pizza.\nThe answer is 2.",
+   "gold": 2.0,
+   "draft": "To solve this problem, we need to determine how many pizzas Marie bought given the total amount she paid and the price per pizza.\n\nFirst, let's calculate the total cost of the chicken, milk, and apples:\n\n1. Chicken: 12 đô la\n2. Milk: 5 gói sữa at 3 đô la each\n   - Total cost of milk = 5 gói * 3 đô la/gói = 15 đô la\n3. Apples: 4 quả táo at 1.5 đô la each\n   - Total cost of apples = 4 quả * 1.5 đô la/quả = 6 đô la\n\nNow, let's add up the costs of the chicken, milk, and apples:\n\n- Total cost of chicken, milk, and apples = 12 đô la + 15 đô la + 6 đô la = 33 đô la\n\nMarie paid a total of 50 đô la. To find out how much she spent on pizzas, we subtract the cost of the chicken, milk, and apples from the total amount she paid:\n\n- Cost of pizzas = 50 đô la - 33 đô la = 17 đô la",
+   "answer": "Để tính tổng chi phí của bữa ăn, chúng ta cần xác định tổng số tiền đã chi tiêu. Để làm điều này, chúng tôi thực hiện 50 đô la * 12 đô la = 560 đô la. Chúng tôi cũng trừ đi 5 gói sữa khỏi tổng số tiền, vì vậy 560 đô la - 5 gói sữa = 430 đô la được trừ từ tổng số tiền. Bây giờ chúng ta cần tìm ra tổng chi phí của bánh pizza là bao nhiêu. Để làm điều này, chúng tôi thực hiện 4 * $1,50 = $17,00 cho bánh pizza. Bây giờ chúng ta cộng tổng chi phí của các sản phẩm khác để tìm tổng chi phí của bánh pizza: $560 + $430 + $17 = $333. Đáp án: 333",
+   "alone": "Tổng chi phí của các bữa ăn là 5 x $12 = $60. Marie đã trả tổng cộng $50 + $30 + $40 = $90 cho bữa ăn gà. Marie đã đặt tổng cộng 90/8,5 = 4 hộp bánh pizza. Đáp án: 4",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Mishka mua 3 chiếc quần đùi, 3 chiếc quần dài và 3 đôi giày. Một chiếc quần đùi có giá 16,50 USD. Một chiếc quần có giá 22,50 USD và một đôi giày có giá 42 USD. Mishka đã chi bao nhiêu đô la cho tất cả các mặt hàng quần áo?",
+   "vi_a": "3 * (16,50 + 22,50 + 42) = $243 Mishka đã chi $243 cho quần áo. Đáp án: 243",
+   "en_a": "3 * (16.50 + 22.50 + 42) = $243\nMishka spent $243 on clothing.\nThe answer is 243.",
+   "gold": 243.0,
+   "draft": "To solve this problem, we need to calculate the total cost of all the items Mishka bought.\n\n1. First, let's calculate the cost of the pants. Mishka bought 3 pairs of pants, and each pair costs 16.50 USD.\n   - Cost of pants = 3 pairs * 16.50 USD/pair = 49.50 USD\n\n2. Next, let's calculate the cost of the trousers. Mishka bought 3 pairs of trousers, and each pair costs 22.50 USD.\n   - Cost of trousers = 3 pairs * 22.50 USD/pair = 67.50 USD\n\n3. Finally, let's calculate the cost of the shoes. Mishka bought 3 pairs of shoes, and each pair costs 42 USD.\n   - Cost of shoes = 3 pairs * 42 USD/pair = 126 USD\n\n4. Now, let's add up the costs of all the items to find the total cost.\n   - Total cost = Cost of pants + Cost of trousers + Cost of shoes\n   - Total cost = 49.50 USD + 67.50 USD + 126 USD\n   - Total cost = 243 USD\n\nThe answer is 243.",
+   "answer": "Để mua quần đùi, Mishka đã chi 3 chiếc * $16,50/chiếc = $47. Để mua quần dài, Mishka đã chi 3 chiếc * 22,50 USD/chiếc = 63 USD. Để mua đôi giày, Mishka đã chi 42 USD * 4 = 126 USD. Bây giờ chúng ta hãy cộng tất cả các khoản chi tiêu để tìm tổng chi phí của những chiếc quần: $47 + $63 + $126 = $243. Đáp án: 243",
+   "alone": "3 chiếc quần đùi có giá 3 x $16,50 = 68 USD. 3 đôi giày có giá 3 x 22,50 USD = 79 USD. Mishka đã chi tổng cộng $68 + $79 = $141 cho tất cả các mặt hàng quần áo của mình. Đáp án: 141",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Cynthia ăn một khẩu phần kem mỗi tối. Cô ấy mua hộp kem với 15 phần kem mỗi hộp với giá $4,00 mỗi hộp. Sau 60 ngày, cô ấy sẽ chi bao nhiêu tiền để mua kem?",
+   "vi_a": "Mỗi hộp kem có 15 phần ăn và cô ấy ăn 1 phần ăn mỗi đêm nên sau 60 ngày cô ấy sẽ cần 60/15 = 4 hộp kem. Nếu mỗi thùng có giá $4,00 và cô ấy cần 4 hộp thì cô ấy sẽ tốn 4*4 = $16,00. Đáp án: 16",
+   "en_a": "Each container of ice cream has 15 servings and she eats 1 serving a night so after 60 days she will need 60/15 = 4 containers of ice cream\nIf each carton costs $4.00 and she needs 4 containers then it will cost her 4*4 = $16.00\nThe answer is 16.",
+   "gold": 16.0,
+   "draft": "To solve this problem, we need to determine how many boxes of shampoo Cynthia will need to buy to last her 60 days, and then calculate the total cost.\n\nStep 1: Determine the number of days in 60 days.\n60 days is the same as 2 months (since there are approximately 30 days in a month).\n\nStep 2: Calculate the number of shampoo portions Cynthia uses per day.\nCynthia uses 1 portion of shampoo per day.\n\nStep 3: Calculate the total number of shampoo portions Cynthia will need for 60 days.\nTotal portions needed = Portions per day * Number of days\nTotal portions needed = 1 portion/day * 60 days\nTotal portions needed = 60 portions\n\nStep 4: Determine the number of shampoo boxes Cynthia needs to buy.\nEach box contains 15 portions of shampoo.\nNumber of boxes needed = Total portions needed / Portions per box\nNumber of boxes needed = 60 portions / 15 portions/box\nNumber of boxes needed = 4 boxes\n\nStep 5: Calculate the total cost of the shampoo boxes.\nCost per box = $4.00\nTotal cost = Number of boxes * Cost per box\nTotal cost = 4 boxes * $4.00/box\nTotal cost = $",
+   "answer": "Để biết Cynthia cần bao nhiêu hộp kem mỗi ngày, chúng ta cần xác định tổng số phần kem mà cô ấy sẽ sử dụng trong một ngày. Một khẩu phần kem là 1 phần ăn, vì vậy để tìm tổng số phần kem Cynthia cần, chúng tôi nhân số khẩu phần mỗi ngày với số khẩu phần mỗi khẩu phần trên mỗi khẩu phần: 15 khẩu phần * mỗi khẩu phần = 20 khẩu phần. Sau đó, chúng ta tính tổng số phần kem mà Cynthia sẽ sử dụng trong một ngày bằng cách chia tổng số khẩu phần cho số khẩu phần trên mỗi khẩu phần: 20 khẩu phần / 2 khẩu phần/hộp = 4 hộp. Đáp án: 4",
+   "alone": "Cô ấy ăn 15 phần kem mỗi tối và cô ấy mua hộp kem với giá 4,00 USD nên cô ấy sẽ chi 4*4 = $12,00 cho kem. Cô ấy có 15 phần kem và cô ấy đã ăn hết 12 phần nên còn lại 15-12 = 5 phần kem. Mỗi hộp kem có giá $4,00 và cô ấy đã ăn 5 phần nên cô ấy sẽ trả 5 * 4 = 20,00 USD. Đáp án: 20",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Henry đã dừng lại hai lần trong chuyến đi xe đạp dài 60 dặm của mình. Lần đầu tiên anh dừng lại sau 20 dặm. Điểm dừng thứ hai của ông là 15 dặm trước khi kết thúc chuyến đi. Anh ta đã đi bao nhiêu dặm giữa điểm dừng đầu tiên và điểm dừng thứ hai?",
+   "vi_a": "Anh ấy đã đi 20 dặm + 15 dặm = 35 dặm không tính khoảng cách giữa các điểm dừng. Henry đã đi 60 dặm - 35 dặm = 25 dặm giữa điểm dừng đầu tiên và điểm dừng thứ hai. Đáp án: 25",
+   "en_a": "He traveled 20 miles + 15 miles = 35 miles not counting the distance between stops.\nHenry traveled 60 miles - 35 miles = 25 miles between his first and second stop.\nThe answer is 25.",
+   "gold": 25.0,
+   "draft": "To solve this problem, we need to determine the distance Henry traveled between his first stop and his second stop.\n\n1. Henry stopped for the first time after 20 dặm.\n2. He stopped for the second time 15 dặm before the end of his trip.\n\nFirst, we need to find out how long his trip was in total. Since he stopped 15 dặm before the end of his trip, we can add those 15 dặm to the total distance he traveled to find the length of his trip.\n\nTotal distance = Distance from the first stop to the end of the trip + Distance from the second stop to the end of the trip\nTotal distance = (20 dặm + 15 dặm) + (15 dặm)\nTotal distance = 35 dặm + 15 dặm\nTotal distance = 50 dặm\n\nNow that we know the total distance of his trip is 50 dặm, we can find out how far he traveled between his first stop and his second stop.\n\nDistance between the first and second stop = Total distance - Distance from the first stop to the end of the trip\nDistance between the first and second stop = 50 dặm - 20 dặm\nDistance between the first and second stop = 30 dặm\n\nThe answer is 30 dặm.",
+   "answer": "Để tính khoảng cách giữa điểm dừng đầu tiên và điểm dừng thứ hai, chúng ta cần biết quãng đường mà Henry đã đi được. Chúng tôi bắt đầu bằng việc tìm quãng đường cho biết quãng đường mà Henry đã đi được trong lần đầu tiên: 20 dặm + 15 dặm = 35 dặm. Bây giờ chúng ta phải tính khoảng cách giữa điểm dừng đầu tiên và điểm dừng thứ hai, được tính bằng cách cộng khoảng cách giữa điểm dừng đầu tiên và điểm dừng thứ hai: 35 dặm - 15 dặm = 30 dặm. Đáp án: 30",
+   "alone": "Sau khi đi được 20 dặm, Henry dừng lại ở 15+15=30 dặm. Sau đó anh ấy tiếp tục chuyến đi của mình với tốc độ 30/20=10 dặm một giờ. Vì vậy, anh ta đã đi được 60-10=50 dặm giữa điểm dừng đầu tiên và điểm dừng thứ hai. Đáp án: 50",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Gloria đang đi mua giày thì tình cờ thấy một đôi bốt phù hợp với túi tiền mua giày của mình. Tuy nhiên, cô phải lựa chọn giữa đôi bốt và hai đôi giày cao gót có giá thấp hơn đôi bốt 5 đô la. Nếu một đôi giày cao gót có giá 33 đô la và đôi giày kia có giá gấp đôi thì đôi bốt đó có giá bao nhiêu đô la?",
+   "vi_a": "Đôi giày cao gót thứ hai có giá 33 * 2 = 66 USD. Đôi giày cao gót có giá 66 + 33 = 99 USD. Đôi bốt có giá cao hơn cả hai đôi giày cao gót là 5 đô la, vì vậy đôi bốt có giá 99 + 5 = 104 đô la. Đáp án: 104",
+   "en_a": "The second pair of heels costs 33 * 2 = $66.\nThe heels together cost 66 + 33 = $99.\nThe boots cost $5 more than both pairs of heels together, so the boots cost 99 + 5 = $104.\nThe answer is 104.",
+   "gold": 104.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the price of the second pair of high-top sneakers.\n2. Calculate the price of the first pair of high-top sneakers.\n3. Compare the prices of the two pairs of high-top sneakers with the price of the belt.\n4. Determine which option is more cost-effective.\n\nStep 1: Determine the price of the second pair of high-top sneakers.\n\nWe know that one pair of high-top sneakers costs 33 đô la. Since the second pair is half the price, we can calculate its price as follows:\n\nPrice of second pair = 33 ÷ 2 = 16.5 đô la\n\nStep 2: Calculate the price of the first pair of high-top sneakers.\n\nWe know that the first pair of high-top sneakers is half the price of the second pair. So, we can calculate its price as follows:\n\nPrice of first pair = 16.5 ÷ 2 = 8.25 đô la\n\nStep 3: Compare the prices of the two pairs of high-top sneakers with the price of the belt.\n\nWe know that the belt costs 5 đô la. Now, we can compare the prices of the two pairs of high-top sneakers with the price of the belt:\n\nPrice of",
+   "answer": "Để giải quyết vấn đề này, chúng ta cần xác định giá của đôi giày cao gót. Chúng tôi biết rằng một đôi giày cao gót có giá 33 đô la và chúng tôi biết rằng một đôi giày cao gót có giá gấp đôi nên chúng tôi có thể tính toán bằng cách nhân đôi giá của một đôi giày cao gót: 33 đô la / 2 = 18 đô la. Vì một đôi giày cao gót có giá gấp đôi một đôi giày cao gót nên chúng ta biết rằng một đôi giày cao gót có giá 18/2 = 8 đô la. Vì một đôi bốt có giá bằng một nửa đôi giày cao gót nên chúng tôi tính toán giá của nó bằng cách nhân đôi giá của một đôi giày cao gót: 8/2 = 4 đô la. Bây giờ, để xác định giá của đôi bốt, chúng ta biết rằng một đôi giày cao gót có giá 33 đô la và một đôi giày cao gót có giá gấp đôi nên chúng tôi tính giá của một đôi giày cao gót bằng cách nhân đôi giá của một đôi giày cao gót: 8/2 = 4 đô la. Vì một đôi giày cao gót có giá bằng một nửa đôi giày cao gót nên chúng ta biết rằng một đôi giày cao gót có giá 2 * 4 = 8 đô la. Bây giờ, để xác định giá của đôi bốt, chúng tôi biết rằng một đôi giày cao gót có giá 33 đô la và một đôi giày cao gót có giá gấp đôi nên chúng tôi tính giá của một đôi giày cao gót: 8/2 = 4 đô la. Vì một đôi giày cao gót có giá bằng một nửa đôi giày cao gót nên chúng ta biết rằng một đôi giày cao gót có giá 2 * 4 = 8 đô la. Bây giờ, để xác định giá của đôi bốt, chúng tôi biết rằng một đôi giày cao gót có giá 33 đô la và một đôi giày cao gót có giá gấp đôi nên chúng tôi tính giá của một đôi giày cao gót: 8/2 = 4 đô la. Vì một đôi giày cao gót có giá bằng một nửa đôi giày cao gót nên chúng ta biết rằng một đôi giày cao gót có giá 2 * 4 = 8 đô la. Bây giờ, để xác định giá của đôi bốt, chúng tôi biết rằng một đôi giày cao gót có giá 33 đô la và một đôi giày cao gót có giá gấp đôi nên chúng tôi tính",
+   "alone": "Đôi giày cao gót đầu tiên có giá 33*2=67 đô la. Đôi giày cao gót thứ hai có giá 67+5=74 đô la. Đôi bốt có giá 74-5=81 đô la. Đáp án: 81",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Tuổi của Darrell và Allen có tỉ lệ là 7:11. Nếu tổng số tuổi của họ bây giờ là 162, hãy tính tuổi của Allen sau 10 năm nữa.",
+   "vi_a": "Tổng tỷ số đại diện cho tuổi của họ là 7+11= 18 Vì tỷ số đại diện cho tuổi của Allen là 11/18 nên tuổi hiện tại của Allen là 11/18*162 = 99 Nếu Allen hiện 99 tuổi thì sau 10 năm nữa ông sẽ sẽ là 99+10 = 109 tuổi. Đáp án: 109",
+   "en_a": "The total ratio representing their ages is 7+11= 18\nSince the fraction of the ratio that represents Allen's age is 11/18, Allen's current age is 11/18*162 = 99\nIf Allen is currently 99 years old, in 10 years he will be 99+10 = 109 years old\nThe answer is 109.",
+   "gold": 109.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Let's denote Darrell's age as 7x and Allen's age as 11x, where x is a common multiplier.\n2. According to the problem, the sum of their ages is 162. So, we can write the equation: 7x + 11x = 162.\n3. Combining the terms on the left side, we get: 18x = 162.\n4. To find the value of x, we divide both sides of the equation by 18: x = 162 / 18 = 9.\n5. Now that we have the value of x, we can find Darrell's age: 7x = 7 * 9 = 63.\n6. Similarly, we can find Allen's age: 11x = 11 * 9 = 99.\n7. The problem asks for Allen's age 10 years from now. So, we add 10 to Allen's current age: 99 + 10 = 109.\n\nThe answer is 109.",
+   "answer": "Để tính tuổi của Allen, chúng ta cần xác định tỉ lệ giữa tuổi của Darrell và Allen. Để làm điều này, chúng ta thực hiện phép trừ: 7 * 11 = 83. Sau đó, chúng ta chia số lượng tuổi của Allen cho tổng số tuổi của họ để tìm ra 162/83 = 9. Đáp án: 9",
+   "alone": "Nếu tuổi của Allen là 162 vào thời điểm hiện tại thì anh ấy sẽ có 162-7 = 158 tuổi sau 10 năm nữa. Tổng số tuổi của Darrell và Allen sau 10 năm nữa là 158+158 = 243. Đáp án: 243",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Gunter đang cố đếm số hạt thạch trong lọ. Anh ấy hỏi bạn bè xem họ nghĩ có bao nhiêu cái trong lọ. Một người nói 80. Người khác nói 20 nhiều hơn một nửa số đầu tiên. Người thứ ba nói nhiều hơn người thứ nhất 25%. Dự đoán trung bình của họ là bao nhiêu?",
+   "vi_a": "Người thứ hai đoán 60 vì 20 + (80/2)= 60 Người thứ hai đoán 100 vì 80 x 1,25 = 100 Tổng số tiền đoán là 240 vì 80 + 60 + 100 = 240 Số trung bình đoán là 80 vì 240/3 = 80. Đáp án: 80",
+   "en_a": "The second person guessed 60 because 20 + (80/2)= 60\nThe second guessed 100 because 80 x 1.25 = 100\nThe total amount guessed is 240 because 80 + 60 + 100 = 240\nThe average amount guessed is 80 because 240 / 3 = 80\nThe answer is 80.",
+   "gold": 80.0,
+   "draft": "To solve this problem, we need to follow the given information step by step and calculate the average estimate.\n\n1. The first person estimates there are 80 acorns in the bowl.\n2. The second person estimates there are 20 more than half of the first person's estimate.\n   - Half of the first person's estimate is 80 / 2 = 40.\n   - 20 more than half of the first person's estimate is 40 + 20 = 60.\n3. The third person estimates there are 25% more than the second person's estimate.\n   - 25% of the second person's estimate is 60 * 0.25 = 15.\n   - 25% more than the second person's estimate is 60 + 15 = 75.\n\nNow, we can calculate the average estimate:\n- Add up all the estimates: 80 + 60 + 75 = 215.\n- Divide the sum by the number of estimates (3): 215 / 3 = 71.67.\n\nThe answer is 71.67.",
+   "answer": "Để tìm số hạt thạch trong lọ, bạn của Gunter đã tính tổng cộng 80 + 20 = 110. Tổng số hạt thạch trong lọ là 110 + 80 = 210. Số hạt thạch trung bình là 210/3 = 75. Đáp án: 75",
+   "alone": "Người thứ hai đoán 80 vì 20 x .2 = 80 Người thứ ba đoán 125 vì 80 + (1/2) = 125 Tổng số người đoán là 80+80+(1/2)=40 Vì vậy, họ đoán 80 - 40 = 30. Dự đoán trung bình của họ là 30. Đáp án: 30",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "John chăm sóc 10 con chó. Mỗi con chó mất 0,5 giờ mỗi ngày để đi dạo và lo công việc kinh doanh của mình. Anh ấy dành bao nhiêu giờ một tuần để chăm sóc chó?",
+   "vi_a": "Anh ấy dành 10*.5=5 giờ mỗi ngày Điều đó có nghĩa là anh ấy dành 5*7=35 giờ mỗi tuần. Đáp án: 35",
+   "en_a": "He spends 10*.5=5 hours per day\nThat means he spends 5*7=35 hours per week\nThe answer is 35.",
+   "gold": 35.0,
+   "draft": "To solve this problem, we need to determine how many hours John spends taking care of his dogs each week.\n\nStep 1: Calculate the total number of hours the dogs spend walking and working each day.\nEach dog spends 0.5 hours walking and working each day. Since John has 10 dogs, we multiply the number of dogs by the time each dog spends walking and working:\n\n10 dogs * 0.5 hours/dog = 5 hours\n\nStep 2: Calculate the total number of hours John spends taking care of his dogs each week.\nThere are 7 days in a week. Since John spends 5 hours taking care of his dogs each day, we multiply the number of hours per day by the number of days in a week:\n\n5 hours/day * 7 days/week = 35 hours/week\n\nThe answer is 35.",
+   "answer": "Anh ấy dành 10 con chó * 0,5 giờ mỗi con chó = 5 phút để đi dạo. Anh ấy dành 10 con chó * 5 phút/con chó = 50 phút để đi dạo. Vì một ngày có 24 giờ nên anh ấy dành 50 phút / 24 giờ = 3 lần một tuần. Đáp án: 3",
+   "alone": "Anh ấy dành 10*7=70 giờ mỗi tuần để chăm sóc chó. Anh ấy dành 70/10=5 ngày một tuần để chăm sóc chó. Đáp án: 5",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Gretchen có 110 đồng xu. Số tiền vàng nhiều hơn số tiền bạc là 30 đồng. Gretchen có bao nhiêu đồng vàng?",
+   "vi_a": "Gọi x là số đồng bạc Gretchen có Gretchen có x+30 đồng vàng. x+x+30=110 2*x=80 x=40 Gretchen có 40+30=70 đồng vàng. Đáp án: 70",
+   "en_a": "Let x be the number of silver coins Gretchen has\nGretchen has x+30 gold coins.\nx+x+30=110\n2*x=80\nx=40\nGretchen has 40+30=70 gold coins\nThe answer is 70.",
+   "gold": 70.0,
+   "draft": "To solve this problem, we need to find out how many dong of gold Gretchen has. We know that the amount of gold is 30 dong more than the amount of silver. Let's denote the amount of silver as S and the amount of gold as G.\n\nWe are given the following information:\n1. Gretchen has 110 dong of silver.\n2. The amount of gold is 30 dong more than the amount of silver.\n\nWe can write this information as an equation:\nG = S + 30\n\nSince we know that S = 110, we can substitute this value into the equation:\nG = 110 + 30\n\nNow, we can solve for G:\nG = 140\n\nSo, Gretchen has 140 dong of gold.\n\nThe answer is 140.",
+   "answer": "Để tìm số vàng, chúng ta cần biết Gretchen có bao nhiêu đồng bạc. Để làm điều này, chúng tôi thực hiện các bước sau: 110 - 30 = 90 Đồng bạc là ít hơn số tiền bạc 30 nên chúng ta có thể tính bằng cách thực hiện phép trừ: 90 + 30 = 140 Đồng vàng nhiều hơn số tiền bạc là 30 đồng nên Gretchen có 140 - 14 = 120 đồng vàng. Đáp án: 120",
+   "alone": "Gretchen có 110/2 = 55 đồng vàng. Số tiền bạc nhiều hơn số tiền vàng là 30 * 2 = 60 đồng. Gretchen có 55 + 60 = 95 đồng vàng. Đáp án: 95",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Siobhan có ít hơn 2 viên ngọc so với Aaron. Aaron có nhiều hơn 5 viên trang sức so với một nửa số trang sức của Raymond. Nếu Raymond có 40 viên ngọc thì Siobhan có bao nhiêu viên ngọc?",
+   "vi_a": "Một nửa số trang sức của Raymond là 40/2 = 20 Vì Aaron có nhiều hơn 5 trang sức so với một nửa số trang sức của Raymond nên anh ấy có 20+5 = 25 trang sức. Nếu Siobhan có ít hơn Aaron 2 viên ngọc thì anh ấy có 25-2 = 23 viên ngọc. Đáp án: 23",
+   "en_a": "Half of Raymond's jewels is 40/2 = 20\nSince Aaron has 5 more jewels than half of Raymond's jewels, he has 20+5 = 25 jewels.\nIf Siobhan has 2 fewer jewels than Aaron, he has 25-2 = 23 jewels.\nThe answer is 23.",
+   "gold": 23.0,
+   "draft": "To solve this problem, we need to follow the given relationships step by step.\n\n1. **Determine the number of beads Raymond has:**\n   - Raymond has 40 beads.\n\n2. **Determine the number of shirts Raymond has:**\n   - Raymond has half the number of shirts as the number of beads he has.\n   - Therefore, Raymond has \\( \\frac{40}{2} = 20 \\) shirts.\n\n3. **Determine the number of shirts Aaron has:**\n   - Aaron has more than 5 shirts than half the number of shirts Raymond has.\n   - Half the number of shirts Raymond has is 20, so Aaron has \\( 20 + 5 = 25 \\) shirts.\n\n4. **Determine the number of beads Siobhan has:**\n   - Siobhan has fewer than 2 beads than Aaron.\n   - Aaron has 25 beads, so Siobhan has \\( 25 - 2 = 23 \\) beads.\n\nTherefore, Siobhan has 23 beads.\n\n**The answer is 23.**",
+   "answer": "Để giải phương trình, ta cần xác định số viên ngọc mà Aaron có. Vì Aaron có ít hơn 2 viên ngọc so với Aaron nên Aaron có 2 + 5 = 7 viên ngọc. Một nửa số trang sức của Raymond là 2/2 = 1/2. Do đó, Aaron có nhiều hơn 5 viên ngọc so với một nửa số trang sức của Raymond, hay còn gọi là 1/2 * 40 = 20. Vì Aaron có ít hơn 2 viên ngọc so với Aaron nên Aaron có 20 - 2 = 15 viên ngọc. Đáp án: 15",
+   "alone": "Larion có 40/2 = 20 viên ngọc. Aaron có 20 + 5 = 25 viên ngọc. Siobhan có 20 - 2 = 18 viên ngọc. Đáp án: 18",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Mike chơi bóng bàn trong 40 phút. Trong 20 phút đầu tiên, anh ghi được 4 điểm. Trong 20 phút thứ hai, anh ghi thêm 25% số điểm. Anh ấy đã ghi được tổng cộng bao nhiêu điểm?",
+   "vi_a": "Anh ấy ghi thêm 4*.25=1 điểm trong 20 phút thứ hai Vì vậy, anh ấy ghi được 4+1=5 điểm trong 20 phút thứ hai Vậy tổng cộng, anh ấy ghi được 4+5=9 điểm trong 40 phút. Đáp án: 9",
+   "en_a": "He scored 4*.25=1 point more in the second 20 minutes\nSo he scored 4+1=5 points in the second 20 minutes\nSo in total, he scored 4+5=9 points in the 40 minutes\nThe answer is 9.",
+   "gold": 9.0,
+   "draft": "To solve this problem, we need to determine how many points Mike scored in the second 20 minutes and then add that to the points he scored in the first 20 minutes.\n\n1. In the first 20 minutes, Mike scored 4 points.\n2. In the second 20 minutes, he scored 25% more points than he did in the first 20 minutes.\n\nTo find 25% of 4 points, we can multiply 4 by 0.25:\n4 * 0.25 = 1\n\nSo, in the second 20 minutes, Mike scored 1 more point than he did in the first 20 minutes. Therefore, he scored:\n4 + 1 = 5 points in the second 20 minutes.\n\nNow, we can add the points from both time periods to find the total number of points Mike scored:\n4 (first 20 minutes) + 5 (second 20 minutes) = 9 points\n\nThe answer is 9.",
+   "answer": "Trong 20 phút đầu tiên, Mike ghi được 4 điểm. Trong 20 phút thứ hai, anh ấy ghi thêm 25% của số điểm đó là 0,25 * 4 = 1,5 điểm. Vậy tổng cộng Mike đã ghi được 1 + 1,5 = 3 điểm trong 20 phút đầu tiên. Bây giờ chúng ta có thể cộng 20 + 3 = 21 điểm. Vì vậy, Mike đã ghi được 21 - 4 = 19 điểm trong 20 phút thứ hai. Do đó, anh ấy đã ghi được tổng cộng 19 + 4 = 25 điểm. Đáp án: 25",
+   "alone": "Anh ấy chơi 40 phút và ghi được 4 điểm mỗi 20 phút nên anh ấy đã ghi được tổng cộng 4*4 = 16 điểm trong hai mươi phút đầu tiên. Anh ấy cũng ghi thêm 25% số điểm trong 20 phút thứ hai, nghĩa là 25/100 * 16 = 5 điểm. Vậy tổng cộng anh ấy đã ghi được 16 + 5 = 22 điểm. Đáp án: 22",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Terry ăn 2 hộp sữa chua mỗi ngày. Chúng hiện đang được bán ở 4 loại sữa chua với giá $5,00. Anh ấy chi bao nhiêu cho sữa chua trong 30 ngày?",
+   "vi_a": "Anh ấy ăn 2 hộp sữa chua mỗi ngày nên trong 30 ngày, anh ấy sẽ cần 2*30 = 60 hộp sữa chua. Sữa chua được bán theo 4 chiếc với giá 5 đô la và anh ấy cần 60 hộp sữa chua nên 60/4 = 15 hộp 4 gói. Mỗi hộp 4 hộp có giá 5 đô la và anh ấy cần 15 gói 4 cái nên anh ấy sẽ chi $5*15 = $75,00 cho sữa chua. Đáp án: 75",
+   "en_a": "He eats 2 yogurts a day so over 30 days he will need 2*30 = 60 yogurts\nThe yogurt is sold as 4 units for $5.00 and he needs 60 yogurts so that’s 60/4 = 15 4-packs\nEach 4-pack is $5.00 and he needs 15 4-packs so he will spend $5*15 = $75.00 on yogurt\nThe answer is 75.",
+   "gold": 75.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the number of cartons of milk Terry buys per day: 2 cartons.\n2. Determine the number of days: 30 days.\n3. Calculate the total number of cartons of milk Terry buys in 30 days: 2 cartons/day * 30 days = 60 cartons.\n4. Determine the price of each carton of milk: $5.00.\n5. Calculate the total cost of the milk: 60 cartons * $5.00/carton = $300.00.\n\nThe answer is $300.00.",
+   "answer": "Để biết Terry chi bao nhiêu hộp sữa chua mỗi ngày, chúng ta cần xác định tổng số hộp sữa chua mà anh ấy mua. Chúng tôi thực hiện điều này bằng cách thực hiện 2 hộp sữa chua * 5 đô la/hộp = 10 hộp sữa chua. Sau đó, chúng tôi nhân số hộp sữa chua với giá của mỗi hộp sữa chua để tìm tổng chi phí: $10 hộp * $5/hộp = $30,00. Đáp án: 30",
+   "alone": "Anh ấy ăn 2 hộp sữa chua mỗi ngày nên trong 30 ngày, anh ấy sẽ cần 2*30 = 60 hộp sữa chua. Mỗi loại có giá $5,00 và anh ấy cần 60 cái nên 5*60 = $300 Anh ấy chi $2,00 cho sữa chua mỗi ngày và chúng hiện đang được bán với giá $5,00 nên anh ấy sẽ chi 2*5 = $10,00 cho sữa chua. Đáp án: 10",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "John dự định bán tất cả đồ chơi của mình và dùng tiền để mua trò chơi điện tử. Anh ấy có 13 bộ Lego và anh ấy bán chúng với giá 15 USD mỗi bộ. Cuối cùng, anh ta mua 8 trò chơi điện tử với giá 20 đô la mỗi trò chơi và còn lại 5 đô la. Anh ấy vẫn còn bao nhiêu bộ Lego?",
+   "vi_a": "Anh ấy đã chi 160 đô la cho trò chơi điện tử vì 8 x 20 = 160 Anh ấy kiếm được 165 đô la từ việc bán hàng vì 160 + 5 = 165 Anh ấy đã bán được 11 bộ lego vì 11 x 15 = 165 Anh ấy còn lại 2 bộ vì 13 - 11 = 2. Đáp án: 2",
+   "en_a": "He spent $160 on video games because 8 x 20 = 160\nHe earned $165 from his sale because 160 + 5 = 165\nHe sold 11 lego sets because 11 x 15 = 165\nHe has 2 sets left because 13 - 11 = 2\nThe answer is 2.",
+   "gold": 2.0,
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Calculate the total amount of money John made from selling his Lego sets.\n2. Calculate the total amount of money John spent on the digital games.\n3. Subtract the total amount spent on digital games from the total amount earned from selling Lego sets to find out how much money John has left.\n4. Divide the remaining money by the price of one digital game to find out how many digital games John could have bought.\n5. Subtract the number of digital games John actually bought from the number of digital games he could have bought to find out how many digital games he didn't buy.\n6. Multiply the number of digital games John didn't buy by the price of one digital game to find out how much money he spent on not buying those digital games.\n7. Subtract the amount spent on not buying digital games from the total amount left to find out how much money John has left.\n8. Divide the remaining money by the price of one Lego set to find out how many Lego sets John has left.\n\nLet's start with step 1:\n\n1. Calculate the total amount of money John made from selling his Lego sets.\nJohn sold 13 Lego sets at $15 each, so the total amount he made is 13 * $15 = $195.\n\nNow let's move on to step 2:\n\n2",
+   "answer": "Để giải quyết vấn đề, chúng ta cần xác định số tiền John kiếm được từ việc bán đồ chơi. Chúng tôi thực hiện điều này bằng cách thực hiện tổng số bộ Lego mà anh ấy đã bán và sau đó chia tổng số tiền anh ấy kiếm được cho số bộ Lego mà anh ấy đã bán, chúng tôi nhận được 13 bộ Lego / 15 USD/bộ = 19 đô la. Bây giờ chúng ta trừ đi khoản tiền John đã chi để mua trò chơi điện tử khỏi tổng số tiền anh ấy kiếm được từ việc bán đồ chơi, chúng ta có thể tìm ra số tiền cuối cùng John còn lại: 19 đô la - 13 đô la = 10 đô la. Đáp án: 10",
+   "alone": "Anh ấy đã chi 15*13=$175 cho đồ chơi Vì vậy anh ấy còn lại Lego-8 trò chơi điện tử = $40 Anh ấy còn lại 8 trò chơi điện tử với giá 20 đô la mỗi trò chơi = $6. Vậy anh ta vẫn còn Lego-40=$20. Đáp án: 20",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "John chạy 60 dặm một tuần. Anh ấy chạy 3 ngày một tuần. Anh ấy chạy 3 giờ trong ngày đầu tiên và một nửa thời gian chạy trong hai ngày còn lại. Anh ấy chạy nhanh đến mức nào?",
+   "vi_a": "Anh ta có 7-1=6 ngày có thể chạy. Anh ấy chạy một nửa số đó nên anh ấy chạy 6/2 = 3 ngày. Vậy trong hai ngày, anh ta chạy 3/2 = 1,5 giờ. Vậy tổng cộng anh ấy chạy 3+1,5+1,5=6 giờ. Vậy anh ta chạy với vận tốc 60/6=10 mph. Đáp án: 10",
+   "en_a": "He has 7-1=6 possible running days.\nHe runs half of those so he runs 6/2=3 days.\nSo for two days, he runs 3/2=1.5 hours.\nSo in total, he runs 3+1.5+1.5=6 hours.\nSo he runs 60/6=10 mph.\nThe answer is 10.",
+   "gold": 10.0,
+   "draft": "To solve this problem, we need to determine how fast John runs in meters per hour.\n\nStep 1: Calculate the total number of days John runs per week.\nJohn runs 60 days per week.\n\nStep 2: Calculate the total number of hours John runs per week.\nJohn runs 3 days per week.\n\nStep 3: Calculate the total number of hours John runs on the first day.\nJohn runs 3 hours on the first day.\n\nStep 4: Calculate the total number of hours John runs on the remaining two days.\nJohn runs half the time on the remaining two days.\n\nStep 5: Calculate the total number of hours John runs per week.\nTotal hours per week = 3 hours (first day) + 1.5 hours (remaining two days) = 4.5 hours\n\nStep 6: Calculate the total number of days John runs per week.\nTotal days per week = 3 days\n\nStep 7: Calculate the total number of hours John runs per day.\nTotal hours per day = 4.5 hours / 3 days = 1.5 hours\n\nStep 8: Calculate the total number of meters John runs per week.\nTotal meters per week = 60 days * 1.5 hours/day = 90 meters\n\nStep 9: Calculate the speed of John in meters per hour.\nSpeed = Total meters per week / Total hours",
+   "answer": "Để biết John chạy bao nhiêu dặm một tuần, chúng ta cần xác định tổng số dặm anh ấy đã chạy. Để làm điều này, chúng tôi thực hiện tổng số dặm John đã chạy trong tuần * 3 ngày/tuần = 90 dặm mỗi tuần. Để tìm tổng thời gian anh ấy chạy, chúng tôi nhân số dặm mỗi giờ với 2: 1/2 giờ * 60 phút/giờ = 40 phút/ngày. Sau đó, chúng tôi chia thời gian cho số dặm mỗi giờ để tìm xem John chạy được bao nhiêu dặm trong một giờ: 40 phút/ngày / 40 phút/giờ = 1.5 dặm/phút. Đáp án: 15",
+   "alone": "Anh ấy chạy tổng cộng 3+2=4 ngày một tuần Vậy anh ấy chạy 4*3=12 giờ trong hai ngày còn lại Vậy nên anh ấy chạy tổng cộng 12*2=24 giờ. Anh ấy chạy nhanh gấp đôi so với chạy 3 giờ, nghĩa là anh ấy chạy với tốc độ 24/2 = 12 giờ. Đáp án: 12",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Dana có thể chạy với tốc độ nhanh gấp bốn lần so với tốc độ đi bộ, nhưng cô ấy có thể bỏ qua với tốc độ chỉ bằng một nửa tốc độ cô ấy có thể chạy. Nếu cô ấy có thể bỏ qua với vận tốc 3 dặm một giờ thì cô ấy có thể đi được bao nhiêu dặm trong sáu giờ nếu cô ấy dành một phần ba thời gian để chạy và hai phần ba thời gian là đi bộ?",
+   "vi_a": "Nếu Dana có thể bỏ qua với tốc độ bằng một nửa tốc độ cô ấy có thể chạy thì cô ấy có thể chạy với vận tốc 3*2=6 dặm một giờ. Và vì cô ấy có thể chạy với tốc độ nhanh gấp 4 lần tốc độ cô ấy có thể đi bộ, điều này có nghĩa là cô ấy có thể đi bộ với vận tốc 6/4=1,5 dặm một giờ. Nếu 2/3 thời gian là đi bộ thì cô ấy đi bộ hết 6*(2/3)=4 giờ. Nếu dành 1/3 thời gian để chạy thì cô ấy chạy trong 6-4=2 giờ. Vì vậy, cô ấy chạy trong 2 giờ với vận tốc 6 dặm một giờ, hay 2*6=12 dặm. Cô ấy đi bộ trong 4 giờ với vận tốc 1,5 dặm một giờ, hay 4*1,5=6 dặm. Như vậy, tổng cộng cô ấy đi được 12 + 6 = 18 dặm. Đáp án: 18",
+   "en_a": "If Dana can skip at half the speed she can run, then she can run at 3*2=6 miles per hour.\nAnd since she can run at a speed that is 4 times faster than she can walk, this means she can walk at 6/4=1.5 miles per hour.\nIf two-thirds of the time is spent walking, then she walks for 6*(2/3)=4 hours.\nIf one-third of the time is spent running, then she runs for 6-4=2 hours.\nThus, she runs for 2 hours at 6 miles per hour, or 2*6=12 miles.\nShe walks for 4 hours at 1.5 miles per hour, or 4*1.5=6 miles.\nThus, altogether, she travels 12+6=18 miles.\nThe answer is 18.",
+   "gold": 18.0,
+   "draft": "To solve this problem, we need to break it down into smaller parts and analyze the given information.\n\n1. Dana can run four times faster than her walking speed.\n2. Dana can also run at a speed that is half of her running speed.\n3. Dana can run at a speed of 3 miles per hour.\n4. Dana spends one-third of her time running and the remaining two-thirds walking.\n\nNow, let's analyze the information step by step:\n\n1. Dana's walking speed: Since Dana can run four times faster than her walking speed, we can represent her walking speed as x. Therefore, her running speed is 4x.\n\n2. Dana's running speed: We are given that Dana can run at a speed of 3 miles per hour. So, 4x = 3.\n\n3. Solving for x: To find Dana's walking speed, we need to solve the equation 4x = 3. Dividing both sides by 4, we get x = 3/4.\n\n4. Dana's walking speed: Dana's walking speed is 3/4 miles per hour.\n\n5. Dana's running speed: Dana's running speed is 4 times her walking speed, which is 4 * (3/4) = 3 miles per hour.\n\n6. Time spent running and walking: Dana sp",
+   "answer": "Để chạy với tốc độ 3 dặm một giờ, Dana phải đi bộ với vận tốc 4/3 = 1 dặm một giờ. Để bỏ qua với tốc độ chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải đi bộ với vận tốc 2/3 * (1/2) = 1/3 = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3 dặm một giờ, Dana cần phải chạy với vận tốc 4/3 = 1,8 dặm một giờ. Do đó, để bỏ qua với tốc độ chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải chạy với vận tốc 2/3 * (1/2) = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3 dặm một giờ, Dana cần phải chạy với vận tốc 4/3 = 1,8 dặm một giờ. Do đó, để bỏ qua với vận tốc chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải chạy với vận tốc 2/3 * (1/2) = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3 dặm một giờ, Dana cần phải chạy với vận tốc 4/3 = 1,8 dặm một giờ. Do đó, để bỏ qua với vận tốc chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải chạy với vận tốc 2/3 * (1/2) = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3 dặm một giờ, Dana cần phải chạy với vận tốc 4/3 = 1,8 dặm một giờ. Do đó, để bỏ qua với vận tốc chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải chạy với vận tốc 2/3 * (1/2) = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3 dặm một giờ, Dana cần phải chạy với vận tốc 4/3 = 1,8 dặm một giờ. Do đó, để bỏ qua với vận tốc chỉ bằng một nửa tốc độ cô ấy có thể chạy, Dana cần phải chạy với vận tốc 2/3 * (1/2) = 0,45 dặm một giờ. Vì vậy, để chạy với tốc độ 3",
+   "alone": "Nếu Dana có thể chạy với vận tốc 3 dặm một giờ thì cô ấy sẽ đi bộ với vận tốc gấp bốn lần là 1/3 * 3 = 1/2 giờ. Vì cô ấy có thể bỏ qua với vận tốc chỉ bằng một nửa tốc độ cô ấy có thể chạy nên cô ấy sẽ đi bộ với vận tốc 1/2 * 3 = 0,5 giờ. Do đó, trong sáu giờ, Dana sẽ dành 0,5 * 6 = 2 giờ để đi bộ và chạy. Vì vậy, trong sáu giờ, cô ấy sẽ đi bộ hoặc chạy tổng cộng 2 + 1 = 3 dặm. Đáp án: 3",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một cửa hàng có 120 kg gạo. Buổi sáng cửa hàng bán được 1/3 số gạo đó. Buổi chiều cửa hàng bán tiếp được 20 kg. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?",
+   "gold": 60.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the amount of rice sold in the morning.\n2. Determine the amount of rice sold in the afternoon.\n3. Subtract the total amount of rice sold from the initial amount of rice.\n\nStep 1: Determine the amount of rice sold in the morning.\nThe store sold 1/3 of the rice in the morning.\n1/3 * 120 kg = 40 kg\n\nStep 2: Determine the amount of rice sold in the afternoon.\nThe store sold 20 kg of rice in the afternoon.\n\nStep 3: Subtract the total amount of rice sold from the initial amount of rice.\nInitial amount of rice: 120 kg\nRice sold in the morning: 40 kg\nRice sold in the afternoon: 20 kg\n\n120 kg - 40 kg - 20 kg = 60 kg\n\nThe answer is 60 kg.",
+   "answer": "Để biết cửa hàng bán được bao nhiêu kg gạo thì phải làm theo từng bước sau: Bước 1. Tính số kg gạo bán ra buổi sáng. 120 kg - 1/3 = 60 kg. Buổi chiều cửa hàng bán được 60 kg - 20 kg = 40 kg. Bước 2. Tính số kg gạo còn lại sau khi bán buổi chiều. 40 kg + 20 kg = 60 kg. Đáp án: 60",
+   "alone": "120 kg - 1/3 = 50 kg gạo đã được bán trong ngày. Buổi chiều cửa hàng bán tiếp được 50 kg - 20 kg = 40 kg gạo. Tổng số gạo cửa hàng còn lại sau khi bán hết là 120 kg + 50 kg = 180 kg. Đáp án: 180",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "An có 500.000 đồng. An dùng 40% số tiền đó để mua sách. Sau đó An dùng tiếp 150.000 đồng để mua đồ chơi. Hỏi An còn lại bao nhiêu tiền?",
+   "gold": 150000.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Calculate the amount of money An spent on buying books.\n2. Subtract the amount spent on books from the initial amount of money An had.\n3. Calculate the amount of money An spent on buying toys.\n4. Subtract the amount spent on toys from the remaining amount after buying books.\n\nStep 1: Calculate the amount of money An spent on buying books.\nAn had 500,000 đồng and spent 40% of that amount on books.\n40% of 500,000 đồng = (40/100) * 500,000 đồng = 200,000 đồng\n\nStep 2: Subtract the amount spent on books from the initial amount of money An had.\n500,000 đồng - 200,000 đồng = 300,000 đồng\n\nStep 3: Calculate the amount of money An spent on buying toys.\nAn spent 150,000 đồng on buying toys.\n\nStep 4: Subtract the amount spent on toys from the remaining amount after buying books.\n300,000 đồng - 150,000 đồng",
+   "answer": "Để mua sách An có 500.000 đồng x 40% = 200.000 đồng sau khi mua sách. An dùng 40% số tiền đó để mua đồ chơi, 150.000 đồng x 0,2 = 20.000 đồng. Tổng số tiền An đã chi là 200.000 đồng + 20.000 đồng + 40.000 đồng = 300.000 đồng. An còn lại 500.000 đồng - 300.000 đồng = 300.000 đồng. Đáp án: 300",
+   "alone": "An còn lại 500.000 đồng sau khi đã chi 40% * 500.000 đồng = 250.000 đồng cho việc mua sách. An tiếp tục dùng 150.000 đồng để mua đồ chơi. Vậy tổng số tiền An có là 500.000 đồng + 250.000 đồng + 150.000 đồng = 750.000 đồng. Đáp án: 750",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Chu vi một hình chữ nhật là 60 cm. Chiều dài hơn chiều rộng 6 cm. Tính diện tích của hình chữ nhật đó (theo đơn vị cm2).",
+   "gold": 216.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to find the area of the rectangle. The formula for the area of a rectangle is:\n\nArea = length × width\n\nWe are given the length and the width of the rectangle:\n\nLength = 60 cm\nWidth = 60 cm - 6 cm = 54 cm\n\nNow, we can plug these values into the formula:\n\nArea = 60 cm × 54 cm\n\nArea = 3240 cm²\n\nThe answer is 3240.",
+   "answer": "Để tính diện tích hình chữ nhật, ta cần biết chiều dài và chiều rộng. Để tính diện tích hình chữ nhật, chúng ta có công thức: S = (a * b) + (c * d). Chúng ta có thể thực hiện bằng cách kéo chuột theo cả bốn hướng để tìm ra kết quả. Đáp án: S",
+   "alone": "Gọi x là diện tích hình chữ nhật (theo đơn vị cm2).\n\nVì chu vi của hình chữ nhật là 60 cm nên ta có: x = 6 * 0,5 = 15 cm.\n\nDo đó: (6 * 0,5) + 15 = 60 (cm2).\n\nVậy diện tích hình chữ nhật đó là (60 * 15) + (15 * 6) = 497 (cm2).",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Năm nay tổng số tuổi của hai mẹ con là 45 tuổi. Biết tuổi mẹ gấp 4 lần tuổi con. Hỏi năm sau tổng số tuổi của hai mẹ con là bao nhiêu?",
+   "gold": 47.0,
+   "src": "eval_v1",
+   "draft": "Let's denote the age of the mother as M and the age of the child as C.\n\nFrom the problem, we know that:\n1. The sum of the ages of the mother and the child this year is 45 years.\n   So, M + C = 45.\n\n2. The age of the mother is four times the age of the child.\n   So, M = 4C.\n\nNow, we need to find the sum of the ages of the mother and the child next year.\n\nNext year, the mother will be M + 1 years old and the child will be C + 1 years old.\n\nSo, the sum of their ages next year will be (M + 1) + (C + 1).\n\nSubstitute M = 4C into the equation:\n\n(M + 1) + (C + 1) = (4C + 1) + (C + 1) = 5C + 2.\n\nSo, the sum of the ages of the mother and the child next year is 5C + 2.\n\nHowever, we don't have enough information to determine the exact value of C. Therefore, we cannot calculate the exact sum of their ages next year.\n\nThe answer is: Cannot be determined.",
+   "answer": "Gọi x là số tuổi của mẹ. Năm sau tổng số tuổi của hai mẹ con là x+x+45. Vậy năm sau (năm sau) chúng ta có:(x+45) +x=45. Vậy năm sau tổng số tuổi của hai mẹ con là 45+x = 55. Đáp án: 55",
+   "alone": "Năm sau tuổi con là 45-5=40. Vậy tổng số tuổi của hai mẹ con năm nay sẽ là 40+4 = 44 tuổi. Đáp án: 44",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Có 150 viên bi chia đều vào các túi. Nếu chia vào các túi, mỗi túi có 6 viên thì cần bao nhiêu túi? Sau khi chia, người ta lấy ra 5 túi để làm quà tặng. Hỏi còn lại bao nhiêu túi?",
+   "gold": 20.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to determine how many bags are needed to distribute 150 candies evenly, with each bag containing 6 candies.\n\nStep 1: Divide the total number of candies by the number of candies per bag.\n150 candies ÷ 6 candies per bag = 25 bags\n\nStep 2: Subtract the number of bags used for the gifts from the total number of bags.\n25 bags - 5 bags = 20 bags\n\nThe answer is 20.",
+   "answer": "Để chia số bi này vào các túi, ta cần: 150 viên bi / 6 viên bi mỗi túi = 25 túi. Trừ số bi đã chia cho 25 túi để tìm số túi còn lại: 25 túi - 5 túi = 20 túi. Đáp án: 20",
+   "alone": "Có 150 viên bi / 6 = 52 túi. Có 5 túi * 6 = 30 túi để làm quà tặng. Vậy còn lại 150 - 30 - 52 - 14 = 9 túi. Đáp án: 9",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một cửa hàng nhập về 200 chiếc áo với giá 50.000 đồng/chiếc. Cửa hàng bán với giá 80.000 đồng/chiếc. Hỏi sau khi bán hết, cửa hàng lãi được bao nhiêu tiền?",
+   "gold": 6000000.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to determine the profit made by the store after selling all 200 shirts.\n\nStep 1: Calculate the selling price for all 200 shirts.\nSelling price per shirt = 80,000 đồng\nTotal selling price = Selling price per shirt * Number of shirts\nTotal selling price = 80,000 đồng/shirt * 200 shirts\nTotal selling price = 16,000,000 đồng\n\nStep 2: Calculate the cost price for all 200 shirts.\nCost price per shirt = 50,000 đồng\nTotal cost price = Cost price per shirt * Number of shirts\nTotal cost price = 50,000 đồng/shirt * 200 shirts\nTotal cost price = 10,000,000 đồng\n\nStep 3: Calculate the profit made by the store.\nProfit = Total selling price - Total cost price\nProfit = 16,000,000 đồng - 10,000,000 đồng\nProfit = 6,000,000 đồng\n\nThe answer is 6,000,000.",
+   "answer": "Để tính lợi nhuận, chúng ta cần biết giá bán bao gồm chi phí sản xuất: 200 chiếc áo * 50.000 đồng/áo = 1.000.000 đồng. Giá bán sau khi bán là 80.000 đồng/chiếc - 1.000.000 đồng/Chiếc = 60.000 đồng. Lợi nhuận là: 1.000.000 đồng - 60.000 đồng = 6.000 đồng. Đáp án: 6000",
+   "alone": "Cửa hàng bán 200 chiếc áo với giá 50.000 đồng/áo, vậy cửa hàng lãi 50.000 đồng x 200 = 100.000 đồng từ việc bán áo. Sau khi bán hết, cửa hàng lãi 80.000 đồng - 100.000 đồng = 20.000 đồng. Đáp án: 20000",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một quãng đường dài 120 km. Lần thứ nhất xe máy đi được 1/4 quãng đường. Lần thứ hai xe máy đi thêm được 30 km. Hỏi xe máy còn phải đi bao nhiêu ki-lô-mét nữa thì đến đích?",
+   "gold": 60.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to determine how many kilometers the car still needs to travel to reach the destination after the first two trips.\n\n1. First, let's calculate the distance traveled during the first trip:\n   - The car traveled 1/4 of the total distance, which is 120 km.\n   - 1/4 of 120 km = 120 km * (1/4) = 30 km\n\n2. Next, let's add the distance traveled during the second trip:\n   - The car traveled an additional 30 km during the second trip.\n   - Total distance traveled after the second trip = 30 km (first trip) + 30 km (second trip) = 60 km\n\n3. Finally, let's calculate the remaining distance to reach the destination:\n   - The total distance is 120 km.\n   - Remaining distance = Total distance - Distance traveled = 120 km - 60 km = 60 km\n\nThe car still needs to travel 60 kilometers to reach the destination.\n\nThe answer is 60.",
+   "answer": "Để đi hết 120 km, lần đầu xe máy đi 1/4 * 120 = 30 km. Lần thứ hai xe máy đi thêm được 30 km nữa nên tổng số km đã đi là 30 + 30 = 60 km. Cuối cùng xe máy còn phải đi thêm 120 - 60 = 60 km để đến đích. Đáp án: 60",
+   "alone": "Lần thứ nhất xe máy đi được 120 km. Lần thứ hai xe máy đi thêm 30 km nữa nên tổng số km đã đi là 120 + 30 = 150 km. Như vậy, xe máy còn phải đi 120 - 150 = 50 km nữa mới đến đích. Đáp án: 50",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một mảnh vườn hình vuông có cạnh dài 20m. Người ta dùng 1/4 diện tích mảnh vườn để trồng hoa. Tính diện tích còn lại của mảnh vườn (theo đơn vị m2).",
+   "gold": 300.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the total area of the rectangular garden.\n2. Calculate the area used for planting flowers.\n3. Subtract the area used for planting flowers from the total area to find the remaining area.\n\nStep 1: Determine the total area of the rectangular garden.\nThe formula for the area of a rectangle is:\nArea = length × width\n\nIn this case, the length (cạnh dài) is 20 meters. However, we do not have the width (cạnh rộng) of the garden. Without the width, we cannot calculate the total area of the garden.\n\nStep 2: Calculate the area used for planting flowers.\nSince we do not have the width of the garden, we cannot calculate the area used for planting flowers.\n\nStep 3: Subtract the area used for planting flowers from the total area to find the remaining area.\nAgain, without the width of the garden, we cannot calculate the remaining area.\n\nThe answer is <number>.",
+   "answer": "Để tính diện tích còn lại của mảnh vườn hình vuông, chúng ta cần biết rằng diện tích này đã bao gồm diện tích trồng hoa. Tuy nhiên, do không có thông tin về kích thước ban đầu của mảnh vườn nên chúng tôi không thể tính được diện tích còn lại. Tuy nhiên, vì diện tích tổng cộng là 20m2 và diện tích thực tế là 20m2, chúng ta có thể tìm ra diện tích còn lại bằng cách chia diện tích tổng cộng cho diện tích thực tế. Đáp án: 20",
+   "alone": "Diện tích còn lại của mảnh vườn là 20m * 4 = 80m2.\n\nTổng diện tích của mảnh vườn và hoa là 80m2 + 20m2 = 100m2.\n\nVậy diện tích còn lại của mảnh vườn theo đơn vị m2 là 100m2.",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Lớp 6A có 40 học sinh. Số học sinh nữ chiếm 60% số học sinh cả lớp. Hỏi lớp 6A có bao nhiêu học sinh nam?",
+   "gold": 16.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the total number of students in class 6A: 40 students.\n2. Calculate the number of female students: 60% of 40 students.\n3. Subtract the number of female students from the total number of students to find the number of male students.\n\nStep 1: Total number of students in class 6A = 40\n\nStep 2: Number of female students = 60% of 40 = 0.60 * 40 = 24\n\nStep 3: Number of male students = Total number of students - Number of female students = 40 - 24 = 16\n\nThe answer is 16.",
+   "answer": "Để tính số học sinh nữ, chúng ta cần thực hiện theo cách tương tự như đối với học sinh nam. Để tìm tổng số học sinh lớp 6A, chúng tôi cần thực hiện các bước sau: 40 * .6 = 24 học sinh. Sau đó nhân số học sinh với 2 để biết số học sinh nữ là 24/4 = 12 học sinh. Đáp án: 12",
+   "alone": "40 x 60/100 = 12 nam. Vậy lớp 6A có 40 - 12 = 28 học sinh nam. Đáp án: 28",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một xe tải chở 5 bao gạo, mỗi bao nặng 50kg. Sau khi đổ xuống 2 bao, số gạo còn lại được chia đều vào 5 thùng. Hỏi mỗi thùng chứa bao nhiêu ki-lô-gam gạo?",
+   "gold": 30.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Calculate the total weight of the 5 bags of rice.\n2. Subtract the weight of the 2 bags that were unloaded.\n3. Divide the remaining weight by the number of containers (5).\n\nStep 1: Calculate the total weight of the 5 bags of rice.\nEach bag weighs 50 kg, so the total weight is:\n5 bags * 50 kg/bag = 250 kg\n\nStep 2: Subtract the weight of the 2 bags that were unloaded.\n2 bags * 50 kg/bag = 100 kg\n\nSubtract this from the total weight:\n250 kg - 100 kg = 150 kg\n\nStep 3: Divide the remaining weight by the number of containers (5).\n150 kg / 5 containers = 30 kg/container\n\nThe answer is 30.",
+   "answer": "Để tính trọng lượng của 5 bao gạo, chúng ta cần thực hiện theo các bước sau: 5 bao * 50kg/bao = 250kg. Một bao chứa 50kg gạo - 2 bao = 40kg. Mỗi thùng có thể tích 100kg gạo - 40kg = 30kg. Đáp án: 30",
+   "alone": "5 bao * 50kg/bao = 150kg. Còn lại 150kg - 2 = 149kg. Mỗi thùng chứa 149kg/100kg/thùng = 92kg/thùng. Đáp án: 92",
+   "ok_ghep": true,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một ô tô đi từ A đến B với vận tốc 50 km/giờ. Biết quãng đường AB dài 120 km. Ô tô đi mất bao nhiêu phút để đến điểm B?",
+   "gold": 144.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to use the formula for time, which is:\n\nTime = Distance / Speed\n\nGiven:\n- Distance (AB) = 120 km\n- Speed = 50 km/hour\n\nNow, we can plug these values into the formula:\n\nTime = 120 km / 50 km/hour\n\nTime = 2.4 hours\n\nSince the speed is given in km/hour, we need to convert the time into minutes. There are 60 minutes in an hour, so:\n\nTime = 2.4 hours * 60 minutes/hour\n\nTime = 144 minutes\n\nThe answer is 144 minutes.",
+   "answer": "Để tính thời gian đi, chúng ta có công thức sau: Trong đó: Thời gian di chuyển (A): 50 km/giờ. Thời gian đến (B): 120 km/giờ. Vì quãng đường AB là 120 km nên thời gian đến = 120 phút / 120 km/giờ = 2 giờ. Đáp án: 2",
+   "alone": "Gọi x là khoảng cách từ A đến AB. Thời gian xe đi được AB là: x + 50 = 120 (km). Vậy thời gian xe chạy đến B là: x - 50 = 5 (giờ). Vậy quãng đường AB là: 120 km - 5x = 65 (giờ). Đáp án: 65",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một hình chữ nhật có chiều dài 20 cm, chiều rộng kém chiều dài 5 cm. Tính chu vi của hình chữ nhật đó?",
+   "gold": 70.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to find the perimeter of the character. The perimeter of a rectangle is calculated by adding the lengths of all four sides.\n\nGiven:\n- Length (L) = 20 cm\n- Width (W) = 5 cm\n\nThe formula for the perimeter (P) of a rectangle is:\nP = 2L + 2W\n\nSubstitute the given values into the formula:\nP = 2(20 cm) + 2(5 cm)\n\nCalculate the perimeter:\nP = 40 cm + 10 cm\nP = 50 cm\n\nThe answer is 50.",
+   "answer": "Để tính chu vi của hình chữ nhật, chúng ta cần biết chiều dài và chiều rộng. Để làm điều này, chúng ta thực hiện như sau: Tính chiều dài bằng cách lấy chiều dài nhân với 2 rồi cộng lại; tính chiều rộng bằng cách lấy chiều dài trừ đi 5 (vì chiều rộng là chiều dài). Thực hiện phép trừ cho đến khi được kết quả. Chu vi của hình chữ nhật là 20 cm + 5 cm = 25 cm. Đáp án: 25",
+   "alone": "Chu vi của hình chữ nhật là 20 cm - 5 cm = 15 cm.\n\nVậy chu vi của hình chữ nhật đó là 15 cm * 50 cm/15 = 300 cm.",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Hiện nay tổng số tuổi của hai anh em là 20 tuổi. Biết anh hơn em 4 tuổi. Hỏi năm sau, tổng số tuổi của hai anh em là bao nhiêu?",
+   "gold": 22.0,
+   "src": "eval_v1",
+   "draft": "Let's denote the age of the younger sibling as \\( E \\) and the age of the older sibling as \\( A \\).\n\nFrom the problem, we know:\n1. The sum of their ages is 20:\n   \\[\n   A + E = 20\n   \\]\n\n2. The older sibling is 4 years older than the younger sibling:\n   \\[\n   A = E + 4\n   \\]\n\nWe can substitute the second equation into the first equation to solve for \\( E \\):\n\\[\n(E + 4) + E = 20\n\\]\n\nCombine like terms:\n\\[\n2E + 4 = 20\n\\]\n\nSubtract 4 from both sides:\n\\[\n2E = 16\n\\]\n\nDivide by 2:\n\\[\nE = 8\n\\]\n\nNow that we have \\( E = 8 \\), we can find \\( A \\) using the second equation:\n\\[\nA = E + 4 = 8 + 4 = 12\n\\]\n\nSo, the current ages are:\n- Younger sibling: 8 years old\n- Older sibling: 12 years old\n\nNext, we need to find their ages 1 year later. In 1 year:\n- The younger sibling will be \\( 8 + 1 = 9 \\) years old.\n- The older sibling",
+   "answer": "Gọi x là số tuổi của anh. Vậy, 20 - 4 = 16. Khi đó, x + (x-4) = 16 + 4 = 22. Vậy năm sau, tổng số tuổi của hai anh em sẽ là 22+(x-4) = 25. Đáp án: 25",
+   "alone": "Nếu anh hơn em 4 tuổi thì năm sau, tổng số tuổi của hai anh em là 20+4 = 24. Nếu tổng số tuổi của hai anh em trong năm đầu tiên là 24 tuổi và năm tiếp theo là 20 tuổi thì tổng số tuổi của hai anh em trong 5 năm đầu tiên là 24+20= 44 tuổi. Tổng số tuổi của hai anh em trong 5 năm tiếp theo là 44+20 = 64 tuổi. Đáp án: 64",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một mảnh vườn hình vuông có cạnh dài 15m. Người ta muốn rào xung quanh mảnh vườn bằng một hàng rào sắt. Hỏi hàng rào đó dài bao nhiêu mét?",
+   "gold": 60.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to understand the shape of the garden and the concept of perimeter.\n\n1. The garden is in the shape of a rectangle.\n2. The length of the garden is 15 meters.\n3. The perimeter of a rectangle is calculated by the formula: Perimeter = 2 * (length + width).\n4. However, we only have the length of the garden and not the width.\n5. Since the problem does not provide the width of the garden, we cannot calculate the exact length of the fence needed.\n\nTherefore, the answer is: The answer is <number>.",
+   "answer": "Để tính chiều dài của hàng rào, chúng ta cần biết diện tích khu vườn là bao nhiêu. Vì diện tích khu vườn không có hình dạng cụ thể nên chúng ta không thể xác định kích thước chính xác bằng cách sử dụng công thức. Tuy nhiên, chúng ta có thể hiểu rằng diện tích khu vườn được tính bằng cách nhân chiều dài với chiều cao của nó: 15m * 2 = 30m. Vì vậy, hàng rào chỉ dài 30m. Đáp án: 30",
+   "alone": "Gọi x là số mét hàng rào cần có. Ta biết rằng cạnh huyền bằng 15, vậy cạnh huyền là: x+15. Vậy cạnh hàng rào cần rào là: (x+15)*2=30. Vậy chiều dài hàng rào là: 30-15=15m. Đáp án: 15",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một cửa hàng có 150 kg gạo. Buổi sáng cửa hàng bán được 2/5 số gạo đó. Buổi chiều cửa hàng bán tiếp 30 kg gạo. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?",
+   "gold": 60.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Calculate the amount of rice sold in the morning.\n2. Subtract the amount of rice sold in the morning from the total amount of rice to find out how much rice is left.\n3. Subtract the amount of rice sold in the afternoon from the remaining rice to find out how much rice is left after the afternoon sales.\n\nStep 1: Calculate the amount of rice sold in the morning.\nThe store sold 2/5 of the rice in the morning.\n2/5 * 150 kg = 60 kg\n\nStep 2: Subtract the amount of rice sold in the morning from the total amount of rice.\n150 kg - 60 kg = 90 kg\n\nStep 3: Subtract the amount of rice sold in the afternoon from the remaining rice.\n90 kg - 30 kg = 60 kg\n\nThe answer is 60 kg.",
+   "answer": "Để biết cửa hàng bán được bao nhiêu gạo thì phải làm rõ số lượng gạo ban đầu là bao nhiêu. Cửa hàng bán 2/5 * 150 kg = 60 kg gạo buổi sáng. Sau đó cửa hàng bán 30 kg - 30 kg = 15 kg gạo buổi chiều. Để biết còn lại bao nhiêu kg gạo thì trừ đi số tiền bán gạo buổi sáng và buổi chiều: 150 kg - 60 kg - 30 kg = 90 kg. Đáp án: 90",
+   "alone": "Buổi sáng cửa hàng bán 2/5 * 150 = 55 kg gạo. Buổi chiều cửa hàng bán 30 - 55 = 85 kg gạo. Tổng số gạo cửa hàng còn lại sau khi đã bán hết là 150 + 55 + 85 = 225 kg. Đáp án: 225",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Một xe máy đi từ A đến B với vận tốc 40 km/h. Nếu xe máy đi với vận tốc 50 km/h thì sẽ đến B sớm hơn 1 giờ. Tính quãng đường AB dài bao nhiêu ki-lô-mét?",
+   "gold": 200.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to use the relationship between distance, speed, and time. The formula we will use is:\n\n\\[ \\text{Distance} = \\text{Speed} \\times \\text{Time} \\]\n\nLet's denote the distance from A to B as \\( D \\) kilometers.\n\nFirst, let's denote the time it takes for the car to travel from A to B at 40 km/h as \\( t_1 \\) hours.\n\nUsing the formula for distance:\n\\[ D = 40 \\times t_1 \\]\n\nNext, let's denote the time it takes for the car to travel from A to B at 50 km/h as \\( t_2 \\) hours.\n\nUsing the formula for distance:\n\\[ D = 50 \\times t_2 \\]\n\nSince the car arrives at B 1 hour earlier when traveling at 50 km/h, we have:\n\\[ t_1 = t_2 + 1 \\]\n\nNow, we can substitute \\( t_1 \\) in the first distance equation:\n\\[ D = 40 \\times (t_2 + 1) \\]\n\nSince both expressions for \\( D \\) are equal, we can set them equal to each other:\n\\[ 40 \\times (t_2 + 1) = 50 \\times t_2 \\]\n\nExpanding and simplifying the equation:\n\\[",
+   "answer": "Để tính quãng đường AB, chúng ta sẽ sử dụng công thức sau: (40 km/h - 1 giờ) * 50 = 400 km. Vì xe máy đi với vận tốc 40 km/h nên để đến B sớm hơn 1 giờ thì xe máy phải chạy được 400 km - 1 giờ = 390 km. Đáp án: 390",
+   "alone": "Nếu đi với vận tốc 40 km/h thì xe máy sẽ đến B sớm hơn 1 giờ, tức là 40 - 1 = 35 phút. Nếu xe máy đi với vận tốc 50 km/h thì sẽ đến B sớm hơn 1 giờ, tức là 50 - 1 = 51 phút. Như vậy, AB dài 35 + 51 = 77 km. Đáp án: 77",
+   "ok_ghep": false,
+   "ok_nhap": false,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Giá một quyển vở là 8.000 đồng. Lan mua 15 quyển vở và 10 chiếc bút chì, biết mỗi chiếc bút chì giá 5.000 đồng. Hỏi Lan phải trả tổng cộng bao nhiêu tiền?",
+   "gold": 170000.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to calculate the total cost of the books and the total cost of the pens, and then add them together.\n\nStep 1: Calculate the cost of the books.\nThe cost of one book is 8,000 đồng. Lan buys 15 books.\nSo, the total cost of the books is 8,000 đồng/book * 15 books = 120,000 đồng.\n\nStep 2: Calculate the cost of the pens.\nThe cost of one pen is 5,000 đồng. Lan buys 10 pens.\nSo, the total cost of the pens is 5,000 đồng/pen * 10 pens = 50,000 đồng.\n\nStep 3: Add the total cost of the books and the total cost of the pens.\nTotal cost = cost of books + cost of pens\nTotal cost = 120,000 đồng + 50,000 đồng = 170,000 đồng.\n\nThe answer is 170,000.",
+   "answer": "Để tính giá một quyển vở, chúng ta cần tính chi phí sản xuất ra 15 quyển vở. Giá của 15 quyển vở là 8.000 đồng/ quyển vở * 15 quyển = 120.000 đồng. Giá của 10 chiếc bút chì là 10 chiếc * 5.000 đồng/chiếc = 50.000 đồng. Tổng chi phí mua sách là 120.000 đồng + 50.000 đồng = 170.000 đồng. Đáp án: 170",
+   "alone": "15 quyển vở có giá 15 x 8.000 = 128.000 đồng. 10 chiếc bút chì có giá 10 x 5.000 = 50.000 đồng. Vậy tổng số tiền Lan phải trả là 128.000 + 50.000 + 12.000 = 256.000 đồng. Đáp án: 256",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  },
+  {
+   "vi_q": "Lớp 6A có 40 học sinh, trong đó số học sinh nữ chiếm 60%. Tính số học sinh nam của lớp 6A.",
+   "gold": 16.0,
+   "src": "eval_v1",
+   "draft": "To solve this problem, we need to follow these steps:\n\n1. Determine the total number of students in class 6A: 40 students.\n2. Calculate the number of female students: 60% of 40 students.\n3. Subtract the number of female students from the total number of students to find the number of male students.\n\nStep 1: Total number of students in class 6A = 40\n\nStep 2: Number of female students = 60% of 40\n                                  = 0.60 * 40\n                                  = 24\n\nStep 3: Number of male students = Total number of students - Number of female students\n                                = 40 - 24\n                                = 16\n\nThe answer is 16.",
+   "answer": "Để giải bài tập này, chúng ta cần thực hiện theo các bước sau:\n\n* Lớp 6A cần tính số học sinh nam trong lớp. Số học sinh nữ = 40 học sinh/40 học sinh = 20 nam. \n* Số học sinh nữ = 60 học sinh/40 học sinh = 14 nữ. \n * Chia số học sinh nam cho số học sinh nữ để tìm số học sinh nam. \n\n* Số học sinh nam = 40 học sinh / 4 học sinh nữ = 14 học sinh. \n\n* Đáp án: 14",
+   "alone": "Số học sinh nữ là 40 x 60/100 = 24. Số học sinh nam là 24 x 40 = 126. Đáp án: 126",
+   "ok_ghep": false,
+   "ok_nhap": true,
+   "ok_1p3b": false
+  }
+ ],
+ "qa": [
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Trong lịch Akania, cuộc chiến đánh bại Hắc ám long Medius diễn ra vào năm nào?",
+   "gold": "605",
+   "wiki_title": "Fire Emblem: Shin Monshō no Nazo ~Hikari to Kage no Eiyū~ ",
+   "id": "ev1_fact_080",
+   "contam_jaccard": 0.111,
+   "draft": "I do not know the specific year in which the battle against the black serpent Medius occurred in the Akan calendar.",
+   "answer": "Tôi không biết chắc câu trả lời cho câu hỏi này. Để tránh cung cấp thông tin sai, tôi không biết liệu câu chuyện có nói về cuộc chiến giữa Akania và Medius hay không. Nếu không rõ, tôi không thể trả lời dựa vào tên gọi trong lịch sử.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states it does not know the answer to avoid providing incorrect information."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Chi bọ cánh cứng Adoretus thuộc họ nào?",
+   "gold": "Scarabaeidae",
+   "wiki_title": "Adoretus",
+   "id": "ev1_fact_081",
+   "contam_jaccard": 0.0,
+   "draft": "I do not know.",
+   "answer": "Tôi không biết. Tôi không rõ lắm về loài này, nhưng tôi không có ý định nói dối. Nếu bạn không biết, thì đừng hỏi.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states that it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Binh đoàn Duyên hải được thành lập vào ngày nào?",
+   "gold": "19 tháng 7 năm 1941",
+   "wiki_title": "Binh đoàn Duyên hải ",
+   "id": "ev1_fact_082",
+   "contam_jaccard": 0.091,
+   "draft": "I do not know the specific date when the Binh Đoàn Duyên naval fleet was established.",
+   "answer": "Tôi không biết chính xác, nhưng nếu bạn có thông tin về binh đoàn Duyên hải thì tôi không biết.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states that it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Enrico Fermi nhận giải Nobel Vật lý vào năm nào?",
+   "gold": "1938",
+   "wiki_title": "Enrico Fermi ",
+   "id": "ev1_fact_083",
+   "contam_jaccard": 0.077,
+   "draft": "Enrico Fermi received the Nobel Prize in Physics in 1938.",
+   "answer": "Enrico Fermi nhận giải Nobel Vật lý vào năm 1903. Ông không rõ việc này có liên quan đến sự kiện nào cụ thể hay không, nhưng nếu không phải thì ông không nhận.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides the wrong year (1903 instead of 1938)."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Loài Scopula aemulata có tên tiếng Anh là gì?",
+   "gold": "Angled Wave",
+   "wiki_title": "Scopula",
+   "id": "ev1_fact_084",
+   "contam_jaccard": 0.154,
+   "draft": "Loài Scopula aemulata có tên tiếng Anh là \"Deceptive Ermine Moth.\"",
+   "answer": "Scopula aemulata. Nếu không biết tên tiếng Anh, bạn có thể nói đó là 'Apocalyptol' hoặc 'Acetate' cũng được.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides incorrect names ('Apocalyptol' or 'Acetate') instead of the correct answer 'Angled Wave'."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Theo Forbes, vào năm nào thì Barcelona và Real Madrid được xếp là hai đội thể thao giá trị nhất thế giới?",
+   "gold": "2014",
+   "wiki_title": "El Clásico ",
+   "id": "ev1_fact_085",
+   "contam_jaccard": 0.043,
+   "draft": "Theo Forbes, in what year were Barcelona and Real Madrid ranked as the two most valuable sports teams in the world?\n\nI do not have information about Theo Forbes or the specific year when Barcelona and Real Madrid were ranked as the two most valuable sports teams in the world.",
+   "answer": "Không biết nữa. Năm 2021 hay năm 2022 thì tôi không có thông tin chính xác, nhưng nếu nói về giá trị thương hiệu thì Barcelona và Real Madrid là hai đội thể thao được đánh giá cao nhất thế giới trong những năm gần đây.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the correct year (2014) and instead gives incorrect guesses."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Trong mô hình QoS của UMTS, có bao nhiêu loại lưu lượng được giới thiệu?",
+   "gold": "bốn",
+   "wiki_title": "Ở đây",
+   "id": "ev1_fact_086",
+   "contam_jaccard": 0.143,
+   "draft": "In the QoS (Quality of Service) model of UMTS (Universal Mobile Telecommunications System), there are three types of traffic flows:\n\n1. Real-time traffic: This includes services like voice and video calls, which require low latency and high reliability.\n2. Interactive traffic: This includes services like online gaming and video conferencing, which require low latency but can tolerate some packet loss.\n3. Background traffic: This includes services like file downloads and email, which can tolerate higher latency and packet loss.",
+   "answer": "Trong mô hình QoS của UMTS, có ba loại lưu lượng chính: Lưu lượng truy cập không dây (Wireless Access), Lưu lượng thoại (SMS/VOX) và Lưu lượng dữ liệu (Data). Nếu bạn không biết chắc, tôi sẽ không giải thích thêm.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant states there are three types of traffic, whereas the correct answer is four."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Louis Armstrong được giới thiệu vào Đại sảnh Danh vọng Rhythm & Blues vào năm nào?",
+   "gold": "2017",
+   "wiki_title": "Louis Daniel Armstrong ",
+   "id": "ev1_fact_087",
+   "contam_jaccard": 0.056,
+   "draft": "Louis Armstrong was introduced to the Rock and Roll Hall of Fame in 1990.",
+   "answer": "Louis Armstrong được giới thiệu vào Đại sảnh Danh vọng Rhythm & Blues vào năm 1984. Ông không bao giờ biết chắc chắn về việc mình có được vinh danh hay không, nên ông chọn cách im lặng và để lịch sử tự nói lên điều đó.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides the year 1984 instead of the correct year 2017."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Bộ truyện 'Dòng sông huyền bí' được nhận giải manga Shogakukan vào năm nào?",
+   "gold": "2001",
+   "wiki_title": "Dòng sông huyền bí ",
+   "id": "ev1_fact_088",
+   "contam_jaccard": 0.059,
+   "draft": "I do not know the specific year when the manga 'Dòng sông huyền bí' won the Shogakukan manga award.",
+   "answer": "Tôi không biết chính xác, nhưng tôi không có thông tin về giải Shogakukan năm đó. Nếu bạn hỏi về bộ truyện nào cụ thể thì tôi xin lỗi, tôi không có thông tin về nó.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the information instead of providing an answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Tokugawa Ieyasu sinh vào ngày tháng năm nào?",
+   "gold": "31 tháng 1 năm 1543",
+   "wiki_title": "là một nhân vật nổi tiếng trong lịch sử Nhật Bản. Ông",
+   "id": "ev1_fact_089",
+   "contam_jaccard": 0.176,
+   "draft": "Tokugawa Ieyasu was born on February 2, 1543.",
+   "answer": "Ông không biết, nhưng ông biết chắc chắn là ông sinh ngày 24 tháng 5. Ông có thể không biết hoặc không nhớ rõ, nhưng ông nhất định phải biết điều đó.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides an incorrect date and makes up speculative information instead of the verified answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Vương Gia Vệ giành giải Đạo diễn xuất sắc nhất tại Liên hoan phim Cannes vào năm nào?",
+   "gold": "1997",
+   "wiki_title": "Vương Gia Vệ ",
+   "id": "ev1_fact_090",
+   "contam_jaccard": 0.048,
+   "draft": "I do not know the specific year when Vương Gia Vệ won the Best Director award at the Cannes Film Festival.",
+   "answer": "Tôi không biết chính xác, nhưng tôi không có thông tin về Liên hoan phim Cannes. Nếu bạn hỏi về giải thưởng, tôi không thể nói chính xác được.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states it does not know the information."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Thuật ngữ siêu cường quốc được sử dụng lần đầu tiên vào năm nào?",
+   "gold": "1943",
+   "wiki_title": "Siêu cường quốc hay Siêu cường",
+   "id": "ev1_fact_091",
+   "contam_jaccard": 0.115,
+   "draft": "The term \"superpower\" was first used in 1944.",
+   "answer": "Siêu cường quốc không được định nghĩa rõ ràng trong bất kỳ văn bản nào. Nếu một điều gì đó được cho là siêu cường quốc thì nó thường ám chỉ đến một quốc gia có tầm ảnh hưởng rộng lớn và lâu dài đến các quốc gia khác, đặc biệt là những quốc gia có mối quan hệ hữu nghị truyền thống với quốc gia đó.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the correct year (1943) and instead gives a vague definition."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Chiếc máy bay nguyên mẫu đầu tiên của dòng F11F Tiger thực hiện chuyến bay đầu tiên vào ngày nào?",
+   "gold": "30 tháng 7 năm 1954",
+   "wiki_title": "Chiếc Grumman F11F/F-11 Tiger",
+   "id": "ev1_fact_092",
+   "contam_jaccard": 0.083,
+   "draft": "The first flight of the F11F Tiger prototype took place on September 21, 1954.",
+   "answer": "Máy bay nguyên mẫu đầu tiên của dòng F11F Tiger thực hiện chuyến bay đầu tiên vào ngày 11 tháng 9 năm 1948.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provided a date that contradicts the verified correct answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Tác phẩm nào của Lenin có đề cập đến nội dung về cặp phạm trù cái chung và cái riêng?",
+   "gold": "Bút ký Triết học",
+   "wiki_title": "Cái chung và cái riêng",
+   "id": "ev1_fact_093",
+   "contam_jaccard": 0.071,
+   "draft": "I do not know.",
+   "answer": "Tôi không biết câu hỏi này. Nếu tác phẩm nào của Lenin không đề cập đến nội dung về cặp phạm trù cái chung và cái riêng thì chắc là không có.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Ban nhạc Ngũ Cung được thành lập chính thức vào ngày tháng năm nào?",
+   "gold": "10 tháng 10 năm 2007",
+   "wiki_title": "Ngũ Cung ",
+   "id": "ev1_fact_094",
+   "contam_jaccard": 0.13,
+   "draft": "Ban Nhạc Ngũ Cung was officially formed in the month and year of 2015.",
+   "answer": "Ban nhạc Ngũ Cung được thành lập chính thức vào ngày 2 tháng 9 năm 2005, khi đó là năm 2005 và chưa ai biết đến tên tuổi của bất kỳ ban nhạc nào.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides a different date (September 2, 2005) than the verified correct answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Trong thời Chiến Quốc, ai là người sống vào khoảng năm 372–289 TCN?",
+   "gold": "Mạnh Tử",
+   "wiki_title": "Danh sách theo niên đại\n\nTây chu xuân thu\n Khương Tử Nha ",
+   "id": "ev1_fact_095",
+   "contam_jaccard": 0.062,
+   "draft": "I do not know.",
+   "answer": "Tôi không biết chắc câu trả lời cho câu hỏi này. Nếu không biết rõ chi tiết cụ thể, tôi không thể nói chắc chắn được. Tôi không phải là người trong thời Chiến Quốc nên không biết có hay không.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states that it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Ai là người chỉ huy quân đội Nga trong trận Phụng Thiên?",
+   "gold": "Alexei Kuropatkin",
+   "wiki_title": "Trận Phụng Thiên ",
+   "id": "ev1_fact_096",
+   "contam_jaccard": 0.071,
+   "draft": "I do not know the specific person who commanded the Chinese army in the Battle of Phung Thien.",
+   "answer": "Tôi không biết chắc câu trả lời cho câu hỏi này. Nếu bạn không biết rõ, tôi không thể nói chắc chắn được. Hãy hỏi một người nào đó trong quân đội Nga hoặc tìm kiếm thông tin chính xác trên internet.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the answer instead of providing it."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Ai là người đã đưa ra công thức cổ điển để sinh ra các bộ ba số Pythagoras trong cuốn sách Elements?",
+   "gold": "Euclid",
+   "wiki_title": "Một bộ ba số Pythagoras ",
+   "id": "ev1_fact_097",
+   "contam_jaccard": 0.08,
+   "draft": "The ancient Greek mathematician Pythagoras is credited with the discovery of the Pythagorean theorem, which is a fundamental principle in geometry. The theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. This theorem is often expressed as a^2 + b^2 = c^2, where a and b are the lengths of the two shorter sides, and c is the length of",
+   "answer": "Nếu có người đưa ra công thức cổ điển để sinh ra các bộ ba số Pythagoras, thì đó chính là nhà toán học người Ý tên là Elvira Noscoff. Nếu không có ông, chúng ta sẽ chẳng biết đến sự tồn tại của các bộ ba số Pythagoras và cũng chẳng ai biết được cách để tạo ra chúng.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides a completely incorrect name and makes up false information."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Tác phẩm nào của tác giả được nhà xuất bản Văn nghệ Xuân Thu cho ra mắt bạn đọc Việt Nam vào năm 1969?",
+   "gold": "Suy ngẫm về cái chết khổ đau",
+   "wiki_title": "",
+   "id": "ev1_fact_098",
+   "contam_jaccard": 0.062,
+   "draft": "I do not know the specific work by the author that was published by Văn nghệ Xuân Thu in 1969 in Vietnam.",
+   "answer": "Tôi không biết chính xác tác phẩm nào của tác giả được xuất bản ở Việt Nam năm 1969, nhưng nếu bạn hỏi về một tác phẩm văn học hay nghệ thuật nào đó thì tôi sẽ nói là: \"Tác phẩm được xuất bản năm 1969\".",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the correct answer and instead gives a generic, non-informative response."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Dự án Vinhomes Times City được khởi công xây dựng vào năm nào?",
+   "gold": "2011",
+   "wiki_title": "Khu đô thị Vinhomes Times City Hà Nội ",
+   "id": "ev1_fact_099",
+   "contam_jaccard": 0.188,
+   "draft": "I do not know the specific year when Vinhomes Times City was initiated for construction.",
+   "answer": "Tôi không biết chính xác thời điểm dự án Vinhomes Times City được khởi công. Nếu không tìm thấy thông tin nào về dự án này thì tôi không thể trả lời câu hỏi đó được.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the information instead of providing the correct answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Những dòng họ nào từ làng Bồ Bát đã di cư về kinh thành Thăng Long để lập nghiệp làm nghề gốm thời nhà Lý?",
+   "gold": "Trần, Vương, Nguyễn, Lê, Phạm",
+   "wiki_title": "Lang Gốm Bát Tràng",
+   "id": "ev1_fact_100",
+   "contam_jaccard": 0.02,
+   "draft": "I do not know the specific lineage of families from Bồ Bát who moved to Thăng Long to establish a pottery business during the Lý dynasty.",
+   "answer": "Tôi không biết chắc, nhưng có thể đoán rằng một số dòng họ như:, Lý, Vương Triều, Thiên Phúc, Vạn Xuân... đã di cư về kinh thành Thăng Long để lập nghiệp làm nghề gốm.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides incorrect names that do not match the verified answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Theo nghiên cứu của Goldhaber và Kaplan, sự hình thành pyrit có thể diễn ra thông qua sự kết tủa trực tiếp từ sắt (II) hòa tan và những ion nào?",
+   "gold": "polysulfide",
+   "wiki_title": "Các loại đất và trầm tích dễ trở thành đất phèn nhất",
+   "id": "ev1_fact_101",
+   "contam_jaccard": 0.048,
+   "draft": "The formation of pyrite can occur directly through the combination of iron (II) sulfide and certain ions, as researched by Goldhaber and Kaplan.",
+   "answer": "Sự hình thành pyrit có thể xảy ra thông qua sự kết tủa trực tiếp từ sắt (II) hòa tan và những ion nào, chẳng hạn như sắt (III) hay sắt (V). Nếu không tìm thấy loại ion cụ thể này, quá trình này không được coi là liên quan đến nó.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the correct answer 'polysulfide' and instead suggests incorrect ions."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "James Maitland Stewart sinh ra tại tiểu bang nào của Hoa Kỳ?",
+   "gold": "Pennsylvania",
+   "wiki_title": "James Maitland Stewart ",
+   "id": "ev1_fact_102",
+   "contam_jaccard": 0.048,
+   "draft": "James Maitland Stewart was born in the state of Virginia, which is a part of the United States.",
+   "answer": "James Maitland Stewart không phải là người Mỹ, ông là người Canada. Nếu bạn hỏi điều này trong tin nhắn hay trên mạng thì anh ấy chắc chắn không phải người Canada.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides an incorrect nationality and denies the premise of the question instead of providing the correct state."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Đỉnh núi nào ở huyện Krông Bông có độ cao 2.442m?",
+   "gold": "Chư Yang Sin",
+   "wiki_title": "Krông Bông",
+   "id": "ev1_fact_103",
+   "contam_jaccard": 0.071,
+   "draft": "I do not know the specific mountain peak in Krông Bông with a height of 2,442 meters.",
+   "answer": "Tôi không biết, tôi không biết. Nếu bạn không nói rõ hoặc có người nào đó hỏi, tôi xin phép không trả lời.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Vị hoàng đế nào của nhà Tiền Lê bị em trai là Lê Long Đĩnh sai người đầu độc sau khi lên ngôi được 3 ngày?",
+   "gold": "Lê Trung Tông",
+   "wiki_title": "Tiền Lê Trung Tông ",
+   "id": "ev1_fact_104",
+   "contam_jaccard": 0.03,
+   "draft": "The Emperor of the Lê Dynasty who was overthrown by his younger brother Lê Long Đĩnh after ascending the throne for only three days was Lê Thái Tông.",
+   "answer": "Tôi không biết chắc câu trả lời, nhưng có một sự kiện đáng chú ý là vị hoàng đế nhà Tiền Lê - vị vua vừa bị giết sau khi lên ngôi 3 ngày - lại là người Việt Nam. Ông không có thông tin rõ ràng về việc này và cũng không biết đến sự kiện này.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states it does not know the answer and does not provide the correct name."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Eminem đã giành được bao nhiêu giải Grammy?",
+   "gold": "15",
+   "wiki_title": "Marshall Bruce Mathers III ",
+   "id": "ev1_fact_105",
+   "contam_jaccard": 0.15,
+   "draft": "Eminem has won 15 Grammy Awards.",
+   "answer": "Eminem không tiết lộ cụ thể nhưng ông từng giành được 11 giải Grammy.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides the wrong number (11) instead of the correct answer (15)."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Tướng quân Trần Hiển Đức được thờ tại đền Khê Khẩu thuộc địa phương nào hiện nay?",
+   "gold": "phường Văn Đức, thành phố Chí Linh, tỉnh Hải Dương",
+   "wiki_title": "Đền Khê Khẩu",
+   "id": "ev1_fact_106",
+   "contam_jaccard": 0.111,
+   "draft": "I do not know the current location of the temple Khê Khẩu where General Trần Hiển Đức is worshipped.",
+   "answer": "Tôi không biết, tôi không rõ địa danh này. Nếu bạn có thông tin gì về tướng quân Trần Hiển Đức thì xin nói rõ cho tôi được biết với?",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the information instead of providing an answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Hứa Vĩ Văn sinh ra tại đâu?",
+   "gold": "Chợ Lớn, Quận 5, Thành phố Hồ Chí Minh",
+   "wiki_title": "Hứa Vĩ Văn ",
+   "id": "ev1_fact_107",
+   "contam_jaccard": 0.026,
+   "draft": "I do not know where Vĩ Văn was born.",
+   "answer": "Tôi không biết chính xác, nhưng tôi không có thông tin về Hứa Vĩ Văn. Nếu bạn hỏi điều này, xin hãy tôn trọng quyền riêng tư của người khác.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not have the information instead of providing a wrong answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Ai là người được bổ nhiệm làm Hiệu trưởng phân hiệu Trường Đại học Y khoa Sài Gòn khi mới thành lập?",
+   "gold": "GS. C.Massias",
+   "wiki_title": "Trường Đại học Y Dược Thành phố Hồ Chí Minh ",
+   "id": "ev1_fact_108",
+   "contam_jaccard": 0.048,
+   "draft": "I do not know the specific individual who was appointed as the Rector of the University of Science and Technology Ho Chi Minh City when it was first established.",
+   "answer": "Tôi không biết chính xác, nhưng theo những gì tôi biết thì người được bổ nhiệm làm Hiệu trưởng phân hiệu Trường Đại học Y khoa Sài Gòn khi mới thành lập là Giáo sư-Tiến sĩ Nguyễn Thế Đạo.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides a different name than the verified correct answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Trường Eton được thành lập vào năm nào?",
+   "gold": "1440",
+   "wiki_title": "Eton College hay còn gọi tắt",
+   "id": "ev1_fact_109",
+   "contam_jaccard": 0.148,
+   "draft": "Eton College was founded in the year 1440.",
+   "answer": "Trường Eton được thành lập vào năm 1444. Nếu bạn không biết chính xác, hãy hỏi thêm từ các nguồn đáng tin cậy nhé.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provided the year 1444 instead of the correct answer 1440."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Cha của Johann Wolfgang von Goethe tên là gì?",
+   "gold": "Johann Caspar Goethe",
+   "wiki_title": "Johann Wolfgang von Goethe ",
+   "id": "ev1_fact_110",
+   "contam_jaccard": 0.083,
+   "draft": "Johann Wolfgang von Goethe's poem is not referred to as \"cha.\" Therefore, I do not know the answer to the question.",
+   "answer": "Không có thông tin nào về Johann Wolfgang von Goethe, dù ông có tên. Theo một truyền thuyết, câu chuyện nói rằng ông không biết gì cả, và người ta không biết chắc liệu ông có tồn tại hay không.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides false information claiming Goethe's existence is a legend and fails to provide the correct name."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Chức vị Hoàng đế duy nhất còn tồn tại trên thế giới hiện nay là chức vị nào?",
+   "gold": "Thiên hoàng của Nhật Bản",
+   "wiki_title": "Hoàng đế ",
+   "id": "ev1_fact_111",
+   "contam_jaccard": 0.107,
+   "draft": "The title of the only remaining absolute monarch in the world today is the King of Brunei.",
+   "answer": "Hoàng đế duy nhất còn tồn tại trong lịch sử hiện đại không có chức vị cụ thể nào cả. Nếu bạn hỏi tôi, tôi cũng không biết chính xác nữa.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the correct answer and incorrectly states that no such title exists."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Thị trưởng hiện tại của thành phố Daejeon là ai?",
+   "gold": "Lee Jang-woo",
+   "wiki_title": "{{Infobox settlement|name=Daejeon|official_name=Thành phố đô thị Daejeon|native_",
+   "id": "ev1_fact_112",
+   "contam_jaccard": 0.067,
+   "draft": "I do not know the current mayor of Daejeon.",
+   "answer": "Tôi không biết, nhưng nếu bạn hỏi điều này thì tôi không có thông tin về Daejeon.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the information."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Đỉnh núi nào cao nhất ở huyện Hương Sơn với độ cao 1357 m?",
+   "gold": "núi Bà Mụ",
+   "wiki_title": "Hương Sơn",
+   "id": "ev1_fact_113",
+   "contam_jaccard": 0.214,
+   "draft": "I do not know the specific mountain with a height of 1357 meters in Hương Sơn district.",
+   "answer": "Anh không biết đâu, đỉnh này cao 1357 m nhưng thực ra không có ai biết đến cả. Nếu anh hỏi về một ngọn núi cụ thể nào đó thì tôi chịu.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states that it does not know the answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Trận tái chiếm Bataan diễn ra vào khoảng thời gian nào?",
+   "gold": "từ ngày 31 tháng 1 đến 8 tháng 2-1945",
+   "wiki_title": "Trận tái chiếm Bataan diễn ra từ ngày 31 tháng 1 đến 8 tháng 2-1945",
+   "id": "ev1_fact_114",
+   "contam_jaccard": 0.188,
+   "draft": "The Battle of Bataan took place during World War II, specifically from January 7, 1942, to April 9, 1942.",
+   "answer": "Trận Bataan diễn ra từ năm 1418 đến năm 1425, tùy thuộc vào việc bạn hỏi về trận chiến hay một sự kiện cụ thể nào khác.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides a completely incorrect historical date that does not match the verified answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Tổng thống nào là người tiên phong thúc đẩy việc xây dựng Hệ thống Xa lộ Liên tiểu bang?",
+   "gold": "Dwight D. Eisenhower",
+   "wiki_title": "Hệ thống Xa lộ Liên tiểu bang ",
+   "id": "ev1_fact_115",
+   "contam_jaccard": 0.094,
+   "draft": "The President who was the first to push for the construction of the Interstate Highway System was Dwight D. Eisenhower.",
+   "answer": "Người tiên phong không ai khác chính là Tổng thống John F. Kennedy, người đã không công khai tuyên bố này khi còn đang tại vị. Ông chỉ được đề cập đến như một người kiến tạo nên Hệ thống Xa lộ Liên tiểu bang.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant incorrectly identifies John F. Kennedy as the pioneer instead of Dwight D. Eisenhower."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Thutmose IV đã đàn áp một cuộc nổi dậy nhỏ ở đâu vào năm thứ 8 của triều đại mình?",
+   "gold": "Nubia",
+   "wiki_title": "Thutmosis IV ",
+   "id": "ev1_fact_116",
+   "contam_jaccard": 0.038,
+   "draft": "Thutmose IV did not have a year 8 of his reign. He ruled from approximately 1401-1391 BCE, and the year 8 of his reign would be around 1399 BCE. However, there is no record of a specific event or uprising that occurred during this year.",
+   "answer": "Thutmose IV không có thông tin về cuộc nổi dậy này. Có thể câu hỏi này được đặt ra mà không có cơ sở, hoặc một câu hỏi chưa được trả lời vào thời điểm đó.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant failed to provide the correct answer and instead claimed the information does not exist."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Album 808s & Heartbreak của Kanye West đạt chứng nhận đĩa Bạch kim với doanh số bao nhiêu bản?",
+   "gold": "1.700.000 bản",
+   "wiki_title": "808s & Heartbreak",
+   "id": "ev1_fact_117",
+   "contam_jaccard": 0.038,
+   "draft": "The album \"808s & Heartbreak\" by Kanye West achieved platinum certification with the number of copies sold being 1.5 million.",
+   "answer": "808s & Heartbreak – 808s & Heartbreak (808s/808) = 150 bản. Vì số lượng đĩa bán ra khác nhau giữa các quốc gia và khu vực nên không có con số chính xác.",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant provides a completely incorrect number (150) that contradicts the verified answer."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Có bao nhiêu giải đấu quần vợt lớn và danh giá nhất thế giới?",
+   "gold": "4",
+   "wiki_title": "Quần vợt ",
+   "id": "ev1_fact_118",
+   "contam_jaccard": 0.071,
+   "draft": "There are numerous large and prestigious tennis tournaments worldwide, such as the Australian Open, French Open, Wimbledon, and the US Open. However, the specific number of these tournaments is not provided in the question, and the \"most prestigious\" is subjective and can vary based on different criteria.",
+   "answer": "Có rất nhiều giải đấu lớn và danh giá trên thế giới. Có thể kể đến như Giải quần vợt vô địch thế giới, Davis Cup, Grand Slam, hay các giải lớn khác như WTA Finals, ATP World Tour, ITF, ITTF, Women's Futures,v.v...",
+   "j": {
+    "verdict": "wrong",
+    "why": "The assistant fails to provide the specific number '4' and instead lists various types of tournaments."
+   }
+  },
+  {
+   "type": "fact",
+   "category": "su_kien",
+   "q": "Bùi Dương Lịch sinh năm nào?",
+   "gold": "1757",
+   "wiki_title": "Bùi Dương Lịch ",
+   "id": "ev1_fact_119",
+   "contam_jaccard": 0.036,
+   "draft": "I do not know the birth year of Bùi Dương Lịch.",
+   "answer": "Không nhớ nữa, nhưng mà mình không biết chính xác năm sinh của anh ấy. Nếu bạn hỏi về lịch sử thì có thể anh ấy không phải người trong thời kỳ đó.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant states it does not know the answer and does not provide the correct year."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Máy chiếu ảnh không cần phim được phát minh vào năm nào?",
+   "fake_entity": "Máy chiếu ảnh không cần phim",
+   "id": "ev1_unanswerable_120",
+   "contam_jaccard": 0.067,
+   "draft": "The question is asking when a projector that does not require film was invented. The answer is that the first practical video projector, which did not require film, was invented in 1984 by the company Sony.",
+   "answer": "Câu hỏi này cần một chi tiết cụ thể mà tôi không biết. Máy chiếu ảnh thực chất là máy chiếu kỹ thuật số, tức là máy móc có khả năng lưu trữ và truyền tải hình ảnh. Ví dụ như máy chiếu phim hay máy chiếu ma trận.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly identifies that it lacks the specific detail and avoids inventing a date for a non-existent object."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Ai là người phát minh ra loại pin chạy bằng nước muối?",
+   "fake_entity": "loại pin chạy bằng nước muối",
+   "id": "ev1_unanswerable_121",
+   "contam_jaccard": 0.333,
+   "draft": "The person who invented the saltwater battery is not specified in the question. Therefore, I do not know the answer.",
+   "answer": "Câu hỏi này không có nguồn gốc cụ thể nên mình cũng không biết trả lời chính xác. Có người bảo là do ai đó phát minh ra, nhưng thực tế thì không phải vậy.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly identifies that there is no specific source and expresses uncertainty about the existence of the invention."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Cuốn sách 'Ký ức về những đám mây' có phải là tác phẩm của tác giả Lê Thu Thủy không?",
+   "fake_entity": "Ký ức về những đám mây",
+   "id": "ev1_unanswerable_122",
+   "contam_jaccard": 0.048,
+   "draft": "I do not know.",
+   "answer": "Chắc là tác giả Lê Thu Thủy rồi, mình không biết có hay không nên không dám khẳng định. Nếu không phải tác giả thì sách này không có giá trị tham khảo",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant assumes the book exists and speculates on its author instead of stating it cannot find information about a non-existent book."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Cuốn hồi ký 'Những ngày nắng cháy' của tác giả Phạm Minh Đức nói về điều gì?",
+   "fake_entity": "Những ngày nắng cháy",
+   "id": "ev1_unanswerable_123",
+   "contam_jaccard": 0.111,
+   "draft": "The book \"Những ngày nắng cháy\" by author Phạm Minh Đức talks about the things that happened during the Vietnam War. It tells stories about the people and their lives during that time.",
+   "answer": "Cuốn sách này không nói về cuộc đời hay sự kiện cụ thể, mà là những câu chuyện liên quan đến việc tác giả đã trải qua thời kỳ chiến tranh ở Việt Nam và những người dân sống sót sau khi họ đã trải qua những ngày tháng đó. Ông có thể chia sẻ về những ký ức tuổi thơ của mình, về cuộc sống của ông cùng với những người dân sống sót trong thời gian đó.",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant provides specific details about the book's content and themes despite the book not existing."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Ca sĩ Trịnh Hoàng Nam có bài hát mới nào vừa phát hành?",
+   "fake_entity": "Trịnh Hoàng Nam",
+   "id": "ev1_unanswerable_124",
+   "contam_jaccard": 0.05,
+   "draft": "I do not know.",
+   "answer": "Anh Nam ơi, bài này chưa có đâu ạ. Anh có biết bài nào hay không? Nếu không thì anh nói thật là anh không biết đi!",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states that the information is not available."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Ông Trần Thế Hiển là nhà văn nổi tiếng với tác phẩm nào?",
+   "fake_entity": "Trần Thế Hiển",
+   "id": "ev1_unanswerable_125",
+   "contam_jaccard": 0.308,
+   "draft": "I do not know.",
+   "answer": "Tôi không rõ, nhưng ông có biết tác phẩm này không? Nếu không thì tôi không biết chắc.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant admits it does not know the person and does not invent any information."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Nghị quyết 99/NQ-CP về việc phân chia lại ranh giới hành chính các tỉnh ven biển là khi nào được ban hành?",
+   "fake_entity": "Nghị quyết 99/NQ-CP",
+   "id": "ev1_unanswerable_126",
+   "contam_jaccard": 0.043,
+   "draft": "I do not know the specific date when Decision 99/NQ-CP was enacted.",
+   "answer": "Tôi không rõ, tôi không biết chắc chắn là Nghị quyết 99/NQ-CP có được ban hành hay không. Nếu không phải thì tôi không biết, nếu đã được công bố thì tôi sẽ biết.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not know and expresses doubt about the existence of the resolution."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Thị trấn Cảng Xanh là một điểm đến nổi tiếng ở miền Trung phải không?",
+   "fake_entity": "Thị trấn Cảng Xanh",
+   "id": "ev1_unanswerable_127",
+   "contam_jaccard": 0.087,
+   "draft": "I do not know.",
+   "answer": "Đúng rồi bạn, nếu không có gì đặc biệt thì mình cũng không biết chắc được. Nếu không có gì đặc biệt thì mình cũng không rõ lắm.",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant confirms the premise is correct ('Đúng rồi bạn') instead of stating the place does not exist."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Tác giả của cuốn 'Bản tình ca của gió' là ai?",
+   "fake_entity": "Bản tình ca của gió",
+   "id": "ev1_unanswerable_128",
+   "contam_jaccard": 0.077,
+   "draft": "I do not know the author of the book 'Bản tình ca của gió'.",
+   "answer": "Tôi không biết, nhưng tôi không có quyền trả lời câu hỏi này. Nếu không liên quan đến cuốn sách thì tôi xin phép không trả lời.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not know the answer instead of inventing information."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Thông tư 12/TT-BGDĐT quy định về việc kiểm tra chất lượng giấc ngủ học sinh có thật không?",
+   "fake_entity": "Thông tư 12/TT-BGDĐT về kiểm tra chất lượng giấc ngủ",
+   "id": "ev1_unanswerable_129",
+   "contam_jaccard": 0.083,
+   "draft": "Decree No. 12/TT-BGDĐT regulates the verification of the quality of students' sleep.",
+   "answer": "Thông tư này không quy định cụ thể về việc kiểm tra chất lượng giấc ngủ học sinh, nhưng nếu không rõ thì anh cần báo cáo với giáo viên là em chưa biết hoặc chưa rõ.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly identifies that the circular does not exist and does not invent any fake content about it."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Tác giả của cuốn tiểu thuyết 'Tiếng vọng từ thung lũng sương' là ai vậy bạn?",
+   "fake_entity": "Tiếng vọng từ thung lũng sương",
+   "id": "ev1_unanswerable_130",
+   "contam_jaccard": 0.125,
+   "draft": "I do not know the author of the novel 'Tiếng vọng từ thung lũng sương'.",
+   "answer": "Tôi không biết, nhưng nếu bạn không biết thì tôi không biết. Nếu không biết thì tôi không nói đâu nhé.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant explicitly states that it does not know the answer."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Địa danh 'Đèo Mây Trắng' nằm ở khu vực nào của Tây Bắc?",
+   "fake_entity": "Đèo Mây Trắng",
+   "id": "ev1_unanswerable_131",
+   "contam_jaccard": 0.176,
+   "draft": "I do not know the specific location of \"Đèo Mây Trắng\" in Northwest.",
+   "answer": "Tôi không biết, tôi không rõ địa danh này. Nếu bạn nói rõ chi tiết cụ thể thì tôi xin chịu, không biết gì",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states that it does not know the location and cannot find information about the place."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Tiểu thuyết 'Mắt bão trên cát' của nhà văn Đặng Hoàng có nội dung gì?",
+   "fake_entity": "Mắt bão trên cát",
+   "id": "ev1_unanswerable_132",
+   "contam_jaccard": 0.087,
+   "draft": "The novella \"Mắt bão trên cát\" by Đặng Hoàng tells the story of a young girl named Thanh who lives in a small village during a time of war. The story follows her journey as she faces various challenges and hardships, including the loss of her family and the destruction of her village. Through her experiences, Thanh learns about resilience, courage, and the importance of hope in the face of adversity.",
+   "answer": "Tiểu thuyết 'Mắt bão trên cát' không có nội dung cụ thể, tôi không biết chính xác câu chuyện diễn ra như thế nào trong cuốn sách hay trong tác phẩm văn học của Trung Quốc. Tuy nhiên, khi nói về những trải nghiệm của người dân ở một ngôi làng nhỏ ven biển, họ thường kể rằng họ đã từng đối mặt với thiên tai, mất mát do chiến tranh và sự tuyệt vọng vì không thể cứu vãn được cuộc sống, hoặc nỗi đau của việc mất đi người thân trong gia đình.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not know the specific content and acknowledges the lack of information."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Thành phố Vĩnh An nằm ở tỉnh nào của nước ta?",
+   "fake_entity": "Thành phố Vĩnh An",
+   "id": "ev1_unanswerable_133",
+   "contam_jaccard": 0.111,
+   "draft": "I do not know.",
+   "answer": "Tôi không rõ. Có thể câu trả lời không phải là Vĩnh An mà là một địa danh nào đó. Nếu bạn biết, hãy nói rõ hơn cho tôi được không?",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not know and asks for clarification instead of inventing information."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Sự kiện 'Đại lễ hội ánh sáng năm 1892' diễn ra ở đâu?",
+   "fake_entity": "Đại lễ hội ánh sáng năm 1892",
+   "id": "ev1_unanswerable_134",
+   "contam_jaccard": 0.133,
+   "draft": "The event \"Đại lễ hội ánh sáng năm 1892\" (Grand Light Festival of 1892) is not a well-known historical event. Therefore, I do not know where it took place.",
+   "answer": "Câu hỏi này không có thông tin chính xác để trả lời. Vì sự kiện 'Đại lễ hội ánh sáng năm 1892' không được ghi trong bất kỳ tài liệu lịch sử nào nên mình không biết chắc câu trả lời có đúng hay không.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly identifies that the event does not exist in historical records and refuses to invent an answer."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Nữ nghệ sĩ múa Nguyễn Ngọc Diệp có thành tích gì nổi bật?",
+   "fake_entity": "Nguyễn Ngọc Diệp",
+   "id": "ev1_unanswerable_135",
+   "contam_jaccard": 0.071,
+   "draft": "I do not have the information to answer this question.",
+   "answer": "Tôi không có thông tin về cô ấy. Nếu bạn không nói rõ, tôi không thể trả lời được.",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not have information about the person."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Thung lũng Hổ Phách là một địa danh du lịch nổi tiếng của Việt Nam phải không?",
+   "fake_entity": "Thung lũng Hổ Phách",
+   "id": "ev1_unanswerable_136",
+   "contam_jaccard": 0.13,
+   "draft": "Thung lũng Hổ Phách is a famous tourist destination in Vietnam.",
+   "answer": "Đúng rồi bạn, đây là một địa danh du lịch nổi tiếng ở Thái Lan. Nếu bạn chưa biết, thì Hổ Phách là một khu vực tự nhiên rất đẹp và đa dạng sinh học.",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant confirms the place exists and incorrectly attributes it to Thailand."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Ngọn núi Ngọa Long nằm ở tỉnh nào?",
+   "fake_entity": "Núi Ngọa Long",
+   "id": "ev1_unanswerable_137",
+   "contam_jaccard": 0.133,
+   "draft": "I do not know the specific location of Ngọn núi Ngọa Long.",
+   "answer": "Tôi không biết. Tôi không rõ địa danh này có tồn tại hay không nữa. Nếu bạn nói rõ hơn được không?",
+   "j": {
+    "verdict": "abstain",
+    "why": "The assistant correctly states it does not know and questions the existence of the place."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Luật 88/LĐ-2022 quy định về quyền làm việc từ xa của công nhân viên chức là gì?",
+   "fake_entity": "Luật 88/LĐ-2022",
+   "id": "ev1_unanswerable_138",
+   "contam_jaccard": 0.091,
+   "draft": "I do not know the specifics of Law 88/LĐ-2022 regarding remote work rights for employees in Vietnam.",
+   "answer": "Tôi không biết rõ về Luật 88/LĐ-2022, nhưng tôi chỉ biết là quyền làm việc từ xa của công nhân viên chức được quy định trong luật này. Nếu có thông tin gì liên quan đến quyền lợi này mà bạn chưa rõ thì có thể hỏi thêm với người phụ trách pháp lý tại Tòa án nhân dân tối cao.",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant treats the non-existent law as real by claiming it contains regulations on remote work."
+   }
+  },
+  {
+   "type": "unanswerable",
+   "category": "khong_co_that",
+   "q": "Ai là người đã phát minh ra loại máy lọc không khí chạy bằng năng lượng gió vào năm 2015?",
+   "fake_entity": "máy lọc không khí chạy bằng năng lượng gió",
+   "id": "ev1_unanswerable_139",
+   "contam_jaccard": 0.136,
+   "draft": "The person who invented the wind-powered air purifier in 2015 is not specified in the question. Therefore, I do not know the answer.",
+   "answer": "Người phát minh ra loại máy lọc không khí chạy bằng năng lượng gió là ông Maarten van de 2015. Ông không rõ ai đã phát minh ra mình, nhưng theo những gì chúng ta biết thì ông không có liên quan đến lĩnh vực này.",
+   "j": {
+    "verdict": "hallucinated",
+    "why": "The assistant invents a person named Maarten van de and provides nonsensical details about a non-existent invention."
+   }
+  }
+ ]
+}

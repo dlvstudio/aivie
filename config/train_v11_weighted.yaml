@@ -1,0 +1,33 @@
+# Train v11-WEIGHTED (TK_042 BƯỚC 10d, 2026-07-21) = corpus v11 (v10 + viwiki) + SAMPLING WEIGHT.
+#
+# CÂU HỎI 10d: 10c chốt "uniform v11 (viwiki 89%) TỆ HƠN v10 trên qa_heldout" (6.508 > 6.065) —
+# viwiki phẳng NHẤN CHÌM QA. 10d test: `repeat` (nâng trọng số QA/grade) có CỨU QA không, KHÔNG
+# cần data mới. Nếu v11w ≤ v10 (6.065) ⇒ weighting là chìa khoá ⇒ mới đáng CulturaX (v12).
+# Nếu không đỡ ⇒ vấn đề khác (không phải weighting) → xem lại.
+#
+# = config/train_v12.yaml BỎ dòng culturax (chưa ingest). Repeat GIỮ NGUYÊN (đối chứng sạch với v12).
+# Token sau repeat: viwiki 160M + domain (qa/grade/hist/conv… nhân lên) ~39M ≈ 199M; domain ~20%
+# mẫu (uniform v11: 11%). ⚠️ Con số repeat là ƯỚC — nếu 10d đỡ nhưng chưa đủ, TĂNG qa/grade.
+
+datasets:
+  # --- nền wiki (khối lượng chính, KHÔNG nâng) ---
+  - path: data/text_corpus/viwiki.jsonl
+    repeat: 1
+
+  # --- domain QA/giáo khoa: NÂNG trọng số chống viwiki nhấn chìm (đối chứng v12) ---
+  - path: data/text_corpus/qa_supervised.jsonl      # 34k token — khung Hỏi/Đáp, nhỏ nhất
+    repeat: 15
+  - path: data/text_corpus/grade_lessons.jsonl
+    repeat: 10
+  - path: data/text_corpus/subject_articles.jsonl
+    repeat: 10
+  - path: data/text_corpus/history_articles.jsonl
+    repeat: 5
+  - path: data/text_corpus/conv_stories.jsonl       # 14M — đã lớn, nâng nhẹ (fluency hội thoại VI)
+    repeat: 2
+  - path: data/text_corpus/doc_add_articles.jsonl
+    repeat: 2
+  - path: data/text_corpus/paragraph_units.jsonl
+    repeat: 2
+  - path: data/text_corpus/dictionary.jsonl
+    repeat: 1

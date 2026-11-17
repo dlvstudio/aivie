@@ -1,0 +1,34 @@
+prefix last='Ġchủ' tokens=22
+sent_qk sidecar exists=True path=checkpoints/network_v12_sent.sent_qk.npz
+
+=== full  H@12=0.257 EOS=5.857 ===
+     5.857  '<EOS>'
+     0.571  'Ġmột'
+     0.346  'ĠQuyền'
+     0.344  'Ngô'
+     0.307  'Ġcủa'
+     0.189  'Ġvề'
+     0.172  'Ġvua'
+     0.159  'Ġvị'
+
+=== no_h  H@12=0.266 EOS=5.783 ===
+     5.783  '<EOS>'
+     0.515  'Ġmột'
+     0.344  'Ngô'
+     0.325  'ĠQuyền'
+     0.236  'Ġcủa'
+     0.169  'Ġvua'
+     0.132  'ĠNgô'
+     0.120  'Ġvề'
+
+=== no_qk_l2r  H@12=0.257 EOS=5.857 ===
+     5.857  '<EOS>'
+     0.571  'Ġmột'
+     0.346  'ĠQuyền'
+     0.344  'Ngô'
+     0.307  'Ġcủa'
+     0.189  'Ġvề'
+     0.172  'Ġvua'
+     0.159  'Ġvị'
+
+✓ out/probe_sharp_h_v12.log

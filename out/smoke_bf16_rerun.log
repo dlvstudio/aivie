@@ -1,0 +1,38 @@
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    2.0s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.6s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   20.0s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   21.1s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   21.1s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   21.4s] train: 19,696,660 token
+[   21.4s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   21.4s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   25.5s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   25.5s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   25.5s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   25.5s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   25.6s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   25.6s] 
+--- LM NƠ-RON ---
+[   26.3s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   27.4s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   27.4s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   27.4s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   27.4s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   28.0s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   28.0s]   bf16 autocast: BẬT · batch=48
+[   48.4s]     step      0/200  loss 10.496 (15.142 bits/token)  20s · ETA 68m
+[  411.4s]     step     20/200  loss 7.925 (11.433 bits/token)  383s · ETA 54m
+[  742.2s]     step     40/200  loss 6.743 (9.729 bits/token)  714s · ETA 46m
+[ 1106.3s]     step     60/200  loss 6.454 (9.311 bits/token)  1078s · ETA 41m
+[ 2045.3s]     step     80/200  loss 6.187 (8.926 bits/token)  2017s · ETA 49m
+[ 2863.8s]     step    100/200  loss 5.845 (8.432 bits/token)  2836s · ETA 46m
+[ 3663.7s]     step    120/200  loss 5.837 (8.421 bits/token)  3636s · ETA 40m
+[ 4204.8s]     step    140/200  loss 5.620 (8.108 bits/token)  4177s · ETA 29m
+[ 5296.9s]     step    160/200  loss 5.706 (8.231 bits/token)  5269s · ETA 21m

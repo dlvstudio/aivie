@@ -1,0 +1,25 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ E (32002, 96) · vocab 32,002
+
+======================================================================
+hàng chuẩn ≈ 0        : 69.26%  (22,164/32,002)
+chuẩn  min/trung vị/max: 0 / 0 / 3.93
+cos cặp NGẪU NHIÊN    : trung bình +0.051 · |trung bình| 0.086   (gần 1 ⇒ sụp hạng)
+======================================================================
+
+LÁNG GIỀNG gần nhất (top 8) — phép thử đọc-tay, phân định chắc nhất:
+         ĠLý → ĠThánh(0.81) · Lý(0.81) · ĠTông(0.79) · Ġvua(0.72) · ĠThái(0.72) · ĠHoàn(0.67) · ĠLê(0.67) · Ġhoàng(0.65)
+      ĠThăng → Ġdời(0.71) · ĠLong(0.63) · ĠLý(0.63) · Ġđô(0.59) · Mậu(0.56) · Lý(0.55) · Chiếu(0.55) · ĠCổ(0.54)
+       Ġsông → Ġchảy(0.81) · Sông(0.80) · ĠSông(0.79) · ĠHồng(0.77) · Ġbồi(0.72) · Ġngòi(0.70) · ĠCửu(0.64) · Ġphì(0.64)
+        Ġvua → ĠTông(0.76) · Ġngôi(0.73) · ĠLý(0.72) · ĠThánh(0.69) · ĠLê(0.66) · Ġvương(0.65) · Ġhoàng(0.64) · ĠJaya(0.62)
+       ĠViệt → ĠNam(0.85) · Ủy(0.75) · Việt(0.66) · ĠKhảo(0.66) · giống(0.65) · ĠĐại(0.65) · Tập(0.64) · ĠDân(0.64)
+       ĠTrần → Trần(0.81) · ĠTông(0.76) · ĠChiêu(0.69) · ĠKhải(0.69) · ĠThánh(0.68) · ĠTuấn(0.68) · ĠThái(0.65) · ĠĐạo(0.65)
+        Ġnăm → Ġ1(0.88) · 8(0.87) · 9(0.87) · Ġtháng(0.85) · 7(0.85) · 6(0.81) · 1(0.81) · 4(0.80)
+         Ġđô → ĠLư(0.75) · Ġdời(0.68) · Hoa(0.66) · Kinh(0.61) · ĠKinh(0.60) · ĠThăng(0.59) · Ġthị(0.57) · ĠLoa(0.57)
+
+HỎNG nếu: nhiều hàng chuẩn ≈0, hoặc láng giềng vô nghĩa, hoặc cos ngẫu nhiên gần 1.
+LÀNH nếu: `Lý` gần `Trần`/`Thái`/`triều`… và cos ngẫu nhiên gần 0.
+Chuẩn MINI (embedding lành): hàng ≈0 69.26% · cos ngẫu nhiên +0.051
+  Lý → Thánh·Tông·vua·Thái·Lê | sông → chảy·Hồng·bồi·ngòi | đô → Lư·dời·Hoa·Kinh
+
+[5s] → out/diag_emb_mini.log

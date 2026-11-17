@@ -1,0 +1,43 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36
+
+--- coact ly conf=0.337 succ.max=64.74 ---
+  act=0.2679 pi=430059 ' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội'
+  act=0.2679 pi=429840 ' Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La'
+  act=0.1432 pi=1767 ' Lý Thái Tổ dời đô về Thăng Long.'
+=== ly gen (122.4s) ===
+out:  Nhà Lý dời đô về Thăng Long
+cont: ' Thăng Long'
+
+--- coact bach conf=0.559 succ.max=0 ---
+  act=0.5591 pi=4510 'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi.'
+  act=0.1542 pi=142278 'Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, và quân'
+  act=0.1491 pi=142279 'Trận Bạch Đằng, 1288 giữa quân đội Việt, do Trần Hưng Đạo chỉ huy,'
+=== bach gen (120.4s) ===
+out:  Trận Bạch Đằng năm Trận Bạch Đằng 1 9 inch 6 feet 0 0 0 0
+cont: ' Trận Bạch Đằng 1 9 inch 6 feet 0 0 0 0'
+
+--- coact nq_def conf=0.991 succ.max=1927 ---
+  act=0.9908 pi=4175 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập'
+  act=0.008322 pi=3458 'Ngô Xương Ngập (con trưởng Ngô Quyền) chạy về nhà một hào trưởng là Phạm Lệnh Công ở'
+  act=0.0002945 pi=4194 'Năm 939, Ngô Quyền xưng vương, đóng đô ở Cổ Loa, lập ra nhà Ngô'
+=== nq_def gen (105.6s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+--- coact thd conf=0.855 succ.max=458.2 ---
+  act=0.8371 pi=764 'Trần Hưng Đạo là Hưng Đạo Vương.'
+  act=0.09065 pi=101 'Trần Hưng Đạo đánh thắng quân Mông.'
+  act=0.02768 pi=3317 'Trần Hưng Đạo là tổng chỉ huy trong hai cuộc kháng chiến sau.'
+=== thd gen (36.0s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+--- coact hung conf=0.938 succ.max=0 ---
+  act=0.9376 pi=102 'Lê Lợi khởi nghĩa Lam Sơn.'
+  act=0.05781 pi=3512 'Lê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh.'
+  act=0.001844 pi=430061 ' Lê Lợi khởi nghĩa Lam Sơn chống quân Minh xâm lược. Sau nhiều năm đấu tranh, ông lên'
+=== hung gen (25.7s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+[563s] → out/probe_h1_late_and3.log

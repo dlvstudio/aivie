@@ -1,0 +1,3228 @@
+{
+ "checkpoint": "checkpoints/classrich.pkl",
+ "channel": "typed_first",
+ "head_rule": "max_gidf",
+ "min_count": 2.0,
+ "n_ca": 40,
+ "n_lop_da_dao": 164,
+ "tally": {
+  "①_co_hat": 38,
+  "①_co_2_hat": 37,
+  "①_dung_hat": 9,
+  "①_≥2_cung_lop": 16,
+  "②_ra_nhan": 37,
+  "②_dung_lop": 1,
+  "②_khop_lop_chung": 0,
+  "③_co_tv": 37,
+  "③_co_moi": 37,
+  "③_moi_that": 10
+ },
+ "ca": [
+  {
+   "P": "Áo",
+   "lop": "thành phố",
+   "hat_giong_dung": [
+    "Nội",
+    "Viên",
+    "bắc",
+    "hạng",
+    "thời",
+    "tục",
+    "từng",
+    "viên"
+   ],
+   "thanh_vien_moi_dung": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nẵng",
+    "Paris"
+   ],
+   "n_thanh_vien": 28,
+   "①_truoc_loc": [
+    "áo",
+    "chín",
+    "vương miện",
+    "Linz",
+    "ngành",
+    "tác hại",
+    "đạo diễn",
+    "vải"
+   ],
+   "①_ra": [
+    "ngành",
+    "dài",
+    "hình",
+    "ông"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "lá",
+    "ISDN",
+    "Bình",
+    "đồi",
+    "sáu",
+    "mõm"
+   ],
+   "②_ra_gioi_han": [
+    "lĩnh vực",
+    "tam giác",
+    "trách nhiệm",
+    "ứng dụng",
+    "công",
+    "hơn"
+   ],
+   "②_nhan": "lĩnh vực",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "báo",
+    "ngành",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn",
+    "Kỹ"
+   ],
+   "③_moi": [
+    "báo",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "dòng",
+   "lop": "thành phố",
+   "hat_giong_dung": [
+    "Minh",
+    "Nội",
+    "Paris",
+    "Trang",
+    "bắc",
+    "hạng",
+    "nghĩa",
+    "sông"
+   ],
+   "thanh_vien_moi_dung": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Main",
+    "Montréal",
+    "Nẵng",
+    "Vancouver",
+    "Viên"
+   ],
+   "n_thanh_vien": 28,
+   "①_truoc_loc": [
+    "hướng",
+    "Phanxicô Xaviê",
+    "Bồ Đào Nha",
+    "thân mật",
+    "dòng điện",
+    "chảy",
+    "họ",
+    "sông"
+   ],
+   "①_ra": [
+    "họ",
+    "sông",
+    "điện",
+    "nước"
+   ],
+   "①_trung_hat_dung": [
+    "sông"
+   ],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "băng",
+    "ngành",
+    "rạp",
+    "nạp",
+    "bọn",
+    "chung"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "Việt",
+    "Mỹ"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "đồ",
+    "Actin",
+    "Actin obacteria"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Höchst",
+   "lop": "trung tâm",
+   "hat_giong_dung": [
+    "Main",
+    "nay"
+   ],
+   "thanh_vien_moi_dung": [
+    "Chicago",
+    "Long",
+    "Montparnasse",
+    "Nhơn",
+    "Não",
+    "Paris",
+    "Sarnia",
+    "Tokyo"
+   ],
+   "n_thanh_vien": 22,
+   "①_truoc_loc": [
+    "am",
+    "Main"
+   ],
+   "①_ra": [
+    "Main"
+   ],
+   "①_trung_hat_dung": [
+    "Main"
+   ],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Frankfurt",
+    "tốt",
+    "giàu",
+    "Radio",
+    "FM"
+   ],
+   "②_ra_gioi_han": []
+  },
+  {
+   "P": "tài",
+   "lop": "trung tâm",
+   "hat_giong_dung": [
+    "Chicago",
+    "Long",
+    "Main",
+    "nay",
+    "ngạn",
+    "thế",
+    "trò",
+    "tính"
+   ],
+   "thanh_vien_moi_dung": [
+    "Montparnasse",
+    "Nhơn",
+    "Não",
+    "Paris",
+    "Sarnia",
+    "Tokyo",
+    "Viên",
+    "XIX"
+   ],
+   "n_thanh_vien": 22,
+   "①_truoc_loc": [
+    "ngành",
+    "vai trò",
+    "tiêu chí",
+    "Nó",
+    "dự trữ",
+    "Trung Quốc",
+    "tiền đề",
+    "liệu"
+   ],
+   "①_ra": [
+    "ngành",
+    "Nó",
+    "liệu",
+    "chính"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Amsterdam",
+    "đúng",
+    "lõi",
+    "TCP",
+    "dễ",
+    "vậy"
+   ],
+   "②_ra_gioi_han": [
+    "dựa",
+    "lĩnh vực",
+    "ngôn ngữ",
+    "kiến trúc",
+    "dự án",
+    "vệ tinh"
+   ],
+   "②_nhan": "dựa",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Nó",
+    "Nó",
+    "wiki"
+   ],
+   "③_moi": [
+    "wiki"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "buộc",
+   "lop": "khoảng",
+   "hat_giong_dung": [
+    "Vương",
+    "bản",
+    "mạng",
+    "quả",
+    "sinh",
+    "tính",
+    "xã",
+    "đảo"
+   ],
+   "thanh_vien_moi_dung": [
+    "Canada",
+    "Kỳ",
+    "Sa",
+    "Thổ",
+    "biển",
+    "cm",
+    "giới",
+    "học"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [
+    "sinh"
+   ],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "nhạc",
+   "lop": "khoảng",
+   "hat_giong_dung": [
+    "Canada",
+    "bản",
+    "giới",
+    "học",
+    "mạng",
+    "ngang",
+    "quả",
+    "sinh"
+   ],
+   "thanh_vien_moi_dung": [
+    "Kỳ",
+    "Sa",
+    "Thổ",
+    "Vương",
+    "biển",
+    "cm",
+    "tính",
+    "vỏ"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [
+    "vương",
+    "niềm",
+    "loạt",
+    "Singapore",
+    "lịch sử",
+    "vai trò",
+    "di sản",
+    "g us li"
+   ],
+   "①_ra": [
+    "vương",
+    "Nguyễn",
+    "nghệ",
+    "cổ"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "vương",
+    "nguồn",
+    "lời",
+    "nắm",
+    "nhà thơ",
+    "vậy"
+   ],
+   "②_ra_gioi_han": [
+    "nguồn",
+    "lĩnh vực",
+    "ứng dụng",
+    "đại",
+    "Hoàng",
+    "quốc"
+   ],
+   "②_nhan": "nguồn",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Raglai",
+    "Raglai cổ",
+    "cổ",
+    "ang",
+    "Đan",
+    "Đan ang",
+    "nghĩa"
+   ],
+   "③_moi": [
+    "Raglai",
+    "Raglai cổ",
+    "ang",
+    "Đan",
+    "Đan ang",
+    "nghĩa"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat_giong_dung": [
+    "Họ",
+    "Lan",
+    "Mỹ",
+    "họ",
+    "phải",
+    "ta",
+    "toàn",
+    "tướng"
+   ],
+   "thanh_vien_moi_dung": [
+    "Bản",
+    "KDE",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [
+    "họ",
+    "phải"
+   ],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Madagascar",
+   "lop": "thành viên",
+   "hat_giong_dung": [
+    "Họ",
+    "Mỹ",
+    "Áo"
+   ],
+   "thanh_vien_moi_dung": [
+    "Bản",
+    "KDE",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "họ"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [],
+   "①_ra": [],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {}
+  },
+  {
+   "P": "đốt",
+   "lop": "ngôn ngữ",
+   "hat_giong_dung": [
+    "Java",
+    "Nga",
+    "Việt",
+    "hình",
+    "toàn"
+   ],
+   "thanh_vien_moi_dung": [
+    "Anh",
+    "Baloch",
+    "Hebrew",
+    "Ho",
+    "Nó",
+    "Pháp",
+    "Python",
+    "Sindh"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [
+    "đêm",
+    "Dương Mại",
+    "cháy",
+    "sống",
+    "Nga",
+    "hợp",
+    "chiếm",
+    "nóng"
+   ],
+   "①_ra": [
+    "Nga",
+    "cùng",
+    "hương",
+    "Âu"
+   ],
+   "①_trung_hat_dung": [
+    "Nga"
+   ],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "thuốc",
+    "Xứ",
+    "Trưởng",
+    "thiêng",
+    "đông",
+    "ngã"
+   ],
+   "②_ra_gioi_han": [
+    "sản phẩm",
+    "lịch sử",
+    "đầu",
+    "họ",
+    "thời",
+    "Mỹ"
+   ],
+   "②_nhan": "sản phẩm",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Trầm",
+    "Trầm hương",
+    "chuỗi",
+    "chè",
+    "gỗ",
+    "hương",
+    "nhiễm",
+    "xi",
+    "ô nhiễm",
+    "thực"
+   ],
+   "③_moi": [
+    "Trầm",
+    "Trầm hương",
+    "chuỗi",
+    "chè",
+    "gỗ",
+    "nhiễm",
+    "xi",
+    "ô nhiễm"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Panduranga",
+   "lop": "ngôn ngữ",
+   "hat_giong_dung": [
+    "Java",
+    "Việt"
+   ],
+   "thanh_vien_moi_dung": [
+    "Anh",
+    "Baloch",
+    "Hebrew",
+    "Ho",
+    "Nga",
+    "Nó",
+    "Pháp",
+    "Python"
+   ],
+   "n_thanh_vien": 20,
+   "①_truoc_loc": [
+    "Champa",
+    "Chăm Pa"
+   ],
+   "①_ra": [],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {}
+  },
+  {
+   "P": "dòng",
+   "lop": "quốc gia",
+   "hat_giong_dung": [
+    "Angkor",
+    "Bản",
+    "Nha",
+    "Pakistan",
+    "hòa",
+    "thống",
+    "tiếng",
+    "Đức"
+   ],
+   "thanh_vien_moi_dung": [
+    "Canada",
+    "Cuba",
+    "Hạ",
+    "Kỳ",
+    "Lan",
+    "Nam",
+    "hiện",
+    "sử"
+   ],
+   "n_thanh_vien": 18,
+   "①_truoc_loc": [
+    "hướng",
+    "Phanxicô Xaviê",
+    "Bồ Đào Nha",
+    "thân mật",
+    "dòng điện",
+    "chảy",
+    "họ",
+    "sông"
+   ],
+   "①_ra": [
+    "họ",
+    "sông",
+    "điện",
+    "nước"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "băng",
+    "ngành",
+    "rạp",
+    "nạp",
+    "bọn",
+    "chung"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "Việt",
+    "Mỹ"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "đồ",
+    "Actin",
+    "Actin obacteria"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "quảng",
+   "lop": "quốc gia",
+   "hat_giong_dung": [
+    "Pakistan",
+    "hiện",
+    "Đức"
+   ],
+   "thanh_vien_moi_dung": [
+    "Angkor",
+    "Bản",
+    "Canada",
+    "Cuba",
+    "Hạ",
+    "Kỳ",
+    "Lan",
+    "Nam"
+   ],
+   "n_thanh_vien": 18,
+   "①_truoc_loc": [
+    "ven",
+    "cảng",
+    "Ch iếng",
+    "địa linh",
+    "Điều",
+    "mở rộng",
+    "Nam",
+    "trường"
+   ],
+   "①_ra": [
+    "Nam",
+    "trường",
+    "Đức",
+    "Đông"
+   ],
+   "①_trung_hat_dung": [
+    "Đức"
+   ],
+   "①_lop_chung": {
+    "quốc gia": [
+     "Nam",
+     "Đức"
+    ]
+   },
+   "②_ra_tu_do": [
+    "Paris",
+    "Maria",
+    "Áo",
+    "xứ",
+    "Klaipėda",
+    "xuôi"
+   ],
+   "②_ra_gioi_han": [
+    "bộ phận",
+    "yếu tố",
+    "Cộng",
+    "hợp",
+    "chủ",
+    "đại"
+   ],
+   "②_nhan": "bộ phận",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Trung",
+    "Tây",
+    "Đông",
+    "Eustatius",
+    "Sint",
+    "Sint Eustatius",
+    "xưa",
+    "S aba",
+    "aba",
+    "aire"
+   ],
+   "③_moi": [
+    "Eustatius",
+    "Sint",
+    "Sint Eustatius",
+    "xưa",
+    "S aba",
+    "aba",
+    "aire",
+    "dục"
+   ],
+   "③_moi_that": [
+    "Eustatius"
+   ]
+  },
+  {
+   "P": "Kể",
+   "lop": "phần",
+   "hat_giong_dung": [
+    "Pölten",
+    "biến",
+    "triều",
+    "đều"
+   ],
+   "thanh_vien_moi_dung": [
+    "Bản",
+    "Francisco",
+    "Nó",
+    "buộc",
+    "chí",
+    "coli",
+    "oxy",
+    "tế"
+   ],
+   "n_thanh_vien": 14,
+   "①_truoc_loc": [
+    "Dream Work s Animation",
+    "đóng góp",
+    "vấn đề",
+    "ngoại giao",
+    "đoàn tụ",
+    "nhập cư",
+    "thay đổi",
+    "cả"
+   ],
+   "①_ra": [
+    "lượng",
+    "thời",
+    "sinh",
+    "âm"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "ít",
+    "thép",
+    "trăm",
+    "nhật",
+    "Luca",
+    "rồi"
+   ],
+   "②_ra_gioi_han": [
+    "lịch sử",
+    "đặc trưng",
+    "khối lượng",
+    "vật",
+    "điểm",
+    "nhân"
+   ],
+   "②_nhan": "lịch sử",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "tranh",
+    "châu",
+    "nghĩa",
+    "nghĩa châu Âu",
+    "nhạc",
+    "Âu",
+    "âm",
+    "âm nhạc",
+    "Văn",
+    "Văn học"
+   ],
+   "③_moi": [
+    "châu",
+    "nghĩa",
+    "nghĩa châu Âu",
+    "Âu",
+    "âm nhạc",
+    "Văn",
+    "Văn học",
+    "học"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "đấu",
+   "lop": "phần",
+   "hat_giong_dung": [
+    "Pölten",
+    "buộc",
+    "chí",
+    "triều",
+    "tế",
+    "vực",
+    "Áo"
+   ],
+   "thanh_vien_moi_dung": [
+    "Bản",
+    "Francisco",
+    "Nó",
+    "biến",
+    "coli",
+    "oxy",
+    "đều"
+   ],
+   "n_thanh_vien": 14,
+   "①_truoc_loc": [
+    "dịp",
+    "tranh",
+    "tế",
+    "quốc",
+    "độc",
+    "chống",
+    "chuyên",
+    "nghiệp"
+   ],
+   "①_ra": [
+    "tế",
+    "thao",
+    "yếu",
+    "dân"
+   ],
+   "①_trung_hat_dung": [
+    "tế"
+   ],
+   "①_lop_chung": {
+    "cơ quan": [
+     "tế",
+     "yếu"
+    ],
+    "tín đồ": [
+     "yếu",
+     "dân"
+    ]
+   },
+   "②_ra_tu_do": [
+    "dài",
+    "nền",
+    "chung",
+    "nhóm",
+    "phường",
+    "thẻ"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "nhóm",
+    "bóng",
+    "dân tộc",
+    "phong trào",
+    "bóng đá"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "tuân",
+   "lop": "cơ quan",
+   "hat_giong_dung": [
+    "Nội",
+    "lẽ",
+    "năng",
+    "vật",
+    "yếu"
+   ],
+   "thanh_vien_moi_dung": [
+    "Pháp",
+    "VietNamNet",
+    "cung",
+    "hội",
+    "tế",
+    "Điển",
+    "đài"
+   ],
+   "n_thanh_vien": 12,
+   "①_truoc_loc": [
+    "quản lý",
+    "bản sắc",
+    "thủ",
+    "luật",
+    "định",
+    "lịch",
+    "phát",
+    "lệnh"
+   ],
+   "①_ra": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "nền",
+    "ngành",
+    "đấng",
+    "Edmund",
+    "Phép toán",
+    "ngôi sao"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "ngôi sao",
+    "phiên bản",
+    "chính",
+    "Trung"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "nhuận",
+   "lop": "cơ quan",
+   "hat_giong_dung": [
+    "Nội",
+    "hội",
+    "năng"
+   ],
+   "thanh_vien_moi_dung": [
+    "Pháp",
+    "VietNamNet",
+    "cung",
+    "lẽ",
+    "tế",
+    "vật",
+    "yếu",
+    "Điển"
+   ],
+   "n_thanh_vien": 12,
+   "①_truoc_loc": [
+    "sắc",
+    "động",
+    "nằm",
+    "Bình",
+    "Tân",
+    "tháng",
+    "nó",
+    "giêng"
+   ],
+   "①_ra": [
+    "động",
+    "nó",
+    "lý",
+    "lịch"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "yếu tố": [
+     "động",
+     "nó"
+    ]
+   },
+   "②_ra_tu_do": [
+    "sân",
+    "chung",
+    "điềm",
+    "nền",
+    "ngành",
+    "láu lỉnh"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "yếu tố",
+    "kết quả",
+    "sinh vật",
+    "vật"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Áo",
+   "lop": "hệ thống",
+   "hat_giong_dung": [
+    "Lan",
+    "bắc",
+    "tế"
+   ],
+   "thanh_vien_moi_dung": [
+    "Internet",
+    "Mộc",
+    "chúng",
+    "cột",
+    "hiện",
+    "hệ",
+    "sộ",
+    "tảng"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "áo",
+    "chín",
+    "vương miện",
+    "Linz",
+    "ngành",
+    "tác hại",
+    "đạo diễn",
+    "vải"
+   ],
+   "①_ra": [
+    "ngành",
+    "dài",
+    "hình",
+    "ông"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "lá",
+    "ISDN",
+    "Bình",
+    "đồi",
+    "sáu",
+    "mõm"
+   ],
+   "②_ra_gioi_han": [
+    "lĩnh vực",
+    "tam giác",
+    "trách nhiệm",
+    "ứng dụng",
+    "công",
+    "hơn"
+   ],
+   "②_nhan": "lĩnh vực",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "báo",
+    "ngành",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn",
+    "Kỹ"
+   ],
+   "③_moi": [
+    "báo",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Quảng",
+   "lop": "hệ thống",
+   "hat_giong_dung": [
+    "bắc",
+    "hiện",
+    "tế"
+   ],
+   "thanh_vien_moi_dung": [
+    "Internet",
+    "Lan",
+    "Mộc",
+    "chúng",
+    "cột",
+    "hệ",
+    "sộ",
+    "tảng"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "ven",
+    "cảng",
+    "Ch iếng",
+    "địa linh",
+    "Điều",
+    "mở rộng",
+    "Nam",
+    "trường"
+   ],
+   "①_ra": [
+    "Nam",
+    "trường",
+    "Đức",
+    "Đông"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "quốc gia": [
+     "Nam",
+     "Đức"
+    ]
+   },
+   "②_ra_tu_do": [
+    "Paris",
+    "Maria",
+    "Áo",
+    "xứ",
+    "Klaipėda",
+    "xuôi"
+   ],
+   "②_ra_gioi_han": [
+    "bộ phận",
+    "yếu tố",
+    "Cộng",
+    "hợp",
+    "chủ",
+    "đại"
+   ],
+   "②_nhan": "bộ phận",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Trung",
+    "Tây",
+    "Đông",
+    "Eustatius",
+    "Sint",
+    "Sint Eustatius",
+    "xưa",
+    "S aba",
+    "aba",
+    "aire"
+   ],
+   "③_moi": [
+    "Eustatius",
+    "Sint",
+    "Sint Eustatius",
+    "xưa",
+    "S aba",
+    "aba",
+    "aire",
+    "dục"
+   ],
+   "③_moi_that": [
+    "Eustatius"
+   ]
+  },
+  {
+   "P": "tuân",
+   "lop": "đơn vị",
+   "hat_giong_dung": [
+    "binh",
+    "thời"
+   ],
+   "thanh_vien_moi_dung": [
+    "Hóa",
+    "Nó",
+    "bào",
+    "gia",
+    "giờ",
+    "sáng",
+    "tử",
+    "watt"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "quản lý",
+    "bản sắc",
+    "thủ",
+    "luật",
+    "định",
+    "lịch",
+    "phát",
+    "lệnh"
+   ],
+   "①_ra": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "nền",
+    "ngành",
+    "đấng",
+    "Edmund",
+    "Phép toán",
+    "ngôi sao"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "ngôi sao",
+    "phiên bản",
+    "chính",
+    "Trung"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "buộc",
+   "lop": "đơn vị",
+   "hat_giong_dung": [
+    "binh",
+    "giờ"
+   ],
+   "thanh_vien_moi_dung": [
+    "Hóa",
+    "Nó",
+    "bào",
+    "gia",
+    "sáng",
+    "thời",
+    "tử",
+    "watt"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "Chủ",
+   "lop": "ngày",
+   "hat_giong_dung": [
+    "Bảy",
+    "Sáu",
+    "thường",
+    "thống",
+    "Đồng"
+   ],
+   "thanh_vien_moi_dung": [
+    "Ba",
+    "Năm",
+    "Tư",
+    "cổ",
+    "thể",
+    "Điển"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "tư tưởng",
+    "Bí thư",
+    "đứng",
+    "giành",
+    "nền tảng",
+    "chung",
+    "Lương",
+    "Hội đồng"
+   ],
+   "①_ra": [
+    "chung",
+    "yếu",
+    "nghĩa",
+    "hòa"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "sông": [
+     "yếu",
+     "nghĩa"
+    ]
+   },
+   "②_ra_tu_do": [
+    "khó",
+    "ăn",
+    "mọi",
+    "Louisiana",
+    "nucleon",
+    "sáu"
+   ],
+   "②_ra_gioi_han": [
+    "nền tảng",
+    "lịch sử",
+    "đặc trưng",
+    "thành phố",
+    "kim loại",
+    "dân"
+   ],
+   "②_nhan": "nền tảng",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "nghĩa",
+    "Chủ",
+    "Chủ nghĩa",
+    "Chủ",
+    "Chủ nghĩa",
+    "Nữ",
+    "Nữ giới",
+    "Utrecht",
+    "giới",
+    "lường"
+   ],
+   "③_moi": [
+    "Chủ nghĩa",
+    "Chủ nghĩa",
+    "Nữ",
+    "Nữ giới",
+    "Utrecht",
+    "giới",
+    "lường",
+    "Đo"
+   ],
+   "③_moi_that": [
+    "giới",
+    "lường"
+   ]
+  },
+  {
+   "P": "chôn",
+   "lop": "ngày",
+   "hat_giong_dung": [
+    "Sáu",
+    "cổ"
+   ],
+   "thanh_vien_moi_dung": [
+    "Ba",
+    "Bảy",
+    "Năm",
+    "Tư",
+    "thường",
+    "thể",
+    "thống",
+    "Điển"
+   ],
+   "n_thanh_vien": 11,
+   "①_truoc_loc": [
+    "Sa",
+    "khỏi",
+    "Huỳnh",
+    "quan",
+    "cùng",
+    "vua",
+    "rượu",
+    "cất"
+   ],
+   "①_ra": [
+    "Sa",
+    "cùng",
+    "vua",
+    "tôi"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Trưởng",
+    "nắm",
+    "lính",
+    "vậy",
+    "tiền sử",
+    "Br ass Kn uck les"
+   ],
+   "②_ra_gioi_han": [
+    "họ",
+    "thời",
+    "Trung",
+    "thuộc",
+    "đồng",
+    "ông"
+   ],
+   "②_nhan": "họ",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "dòng",
+    "đổi",
+    "số",
+    "thực",
+    "sang",
+    "dân",
+    "khác",
+    "thấy",
+    "đầu",
+    "tiếng"
+   ],
+   "③_moi": [
+    "dòng",
+    "đổi",
+    "số",
+    "thực",
+    "sang",
+    "dân",
+    "khác",
+    "thấy"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "giếng",
+   "lop": "khu vực",
+   "hat_giong_dung": [
+    "Nga",
+    "nam",
+    "nước"
+   ],
+   "thanh_vien_moi_dung": [
+    "Georgia",
+    "Hồng",
+    "Louis",
+    "biệt",
+    "lễ",
+    "tục",
+    "Đức"
+   ],
+   "n_thanh_vien": 10,
+   "①_truoc_loc": [
+    "Nga",
+    "Sp ind let op",
+    "dầu",
+    "tình",
+    "đầu",
+    "độc",
+    "lâm",
+    "hơn"
+   ],
+   "①_ra": [
+    "Nga",
+    "đầu",
+    "hơn",
+    "cao"
+   ],
+   "①_trung_hat_dung": [
+    "Nga"
+   ],
+   "①_lop_chung": {
+    "ngôn ngữ": [
+     "Nga",
+     "đầu",
+     "hơn"
+    ]
+   },
+   "②_ra_tu_do": [
+    "súng",
+    "chín",
+    "Phoenix",
+    "Rap",
+    "Everest",
+    "đông"
+   ],
+   "②_ra_gioi_han": [
+    "vị trí",
+    "khoa học",
+    "đoạn thẳng",
+    "nguyên",
+    "thời",
+    "trung"
+   ],
+   "②_nhan": "vị trí",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "cao",
+    "Điểm",
+    "Điểm cao",
+    "Vạn",
+    "Vạn Xuân",
+    "Xuân",
+    "domain",
+    "Điểm",
+    "Điểm cao"
+   ],
+   "③_moi": [
+    "Điểm",
+    "Điểm cao",
+    "Vạn",
+    "Vạn Xuân",
+    "Xuân",
+    "domain",
+    "Điểm",
+    "Điểm cao"
+   ],
+   "③_moi_that": [
+    "Xuân"
+   ]
+  },
+  {
+   "P": "Áo",
+   "lop": "khu vực",
+   "hat_giong_dung": [
+    "Nga",
+    "nam",
+    "nước",
+    "tục",
+    "Đức"
+   ],
+   "thanh_vien_moi_dung": [
+    "Georgia",
+    "Hồng",
+    "Louis",
+    "biệt",
+    "lễ"
+   ],
+   "n_thanh_vien": 10,
+   "①_truoc_loc": [
+    "áo",
+    "chín",
+    "vương miện",
+    "Linz",
+    "ngành",
+    "tác hại",
+    "đạo diễn",
+    "vải"
+   ],
+   "①_ra": [
+    "ngành",
+    "dài",
+    "hình",
+    "ông"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "lá",
+    "ISDN",
+    "Bình",
+    "đồi",
+    "sáu",
+    "mõm"
+   ],
+   "②_ra_gioi_han": [
+    "lĩnh vực",
+    "tam giác",
+    "trách nhiệm",
+    "ứng dụng",
+    "công",
+    "hơn"
+   ],
+   "②_nhan": "lĩnh vực",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "báo",
+    "ngành",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn",
+    "Kỹ"
+   ],
+   "③_moi": [
+    "báo",
+    "học",
+    "kiến",
+    "nghệ",
+    "quang",
+    "quang học",
+    "thủ",
+    "văn"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "protein",
+   "lop": "nguyên nhân",
+   "hat_giong_dung": [
+    "coli",
+    "lưu",
+    "nhiễm"
+   ],
+   "thanh_vien_moi_dung": [
+    "Paris",
+    "chính",
+    "khô",
+    "quyển",
+    "thể",
+    "thời",
+    "đều"
+   ],
+   "n_thanh_vien": 10,
+   "①_truoc_loc": [
+    "nhóm",
+    "khác",
+    "bán",
+    "yếu",
+    "liên",
+    "tục",
+    "chủ",
+    "loại"
+   ],
+   "①_ra": [
+    "khác",
+    "yếu",
+    "tục",
+    "loại"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Bercy",
+    "Dẳng",
+    "vàng",
+    "thuật",
+    "xây dựng",
+    "nguyên tố"
+   ],
+   "②_ra_gioi_han": [
+    "nguyên tố",
+    "thủ đô",
+    "kim loại",
+    "phản ứng",
+    "hình",
+    "họ"
+   ],
+   "②_nhan": "nguyên tố",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Oxy",
+    "kim",
+    "kim loại",
+    "loại",
+    "trum",
+    "Elec",
+    "Elec trum",
+    "Oxy",
+    "Tenness",
+    "Tenness ine"
+   ],
+   "③_moi": [
+    "Oxy",
+    "kim",
+    "kim loại",
+    "trum",
+    "Elec",
+    "Elec trum",
+    "Oxy",
+    "Tenness"
+   ],
+   "③_moi_that": [
+    "Oxy",
+    "Oxy"
+   ]
+  },
+  {
+   "P": "trùng",
+   "lop": "nguyên nhân",
+   "hat_giong_dung": [
+    "coli",
+    "nhiễm",
+    "thể",
+    "thời",
+    "đều"
+   ],
+   "thanh_vien_moi_dung": [
+    "Paris",
+    "chính",
+    "khô",
+    "lưu",
+    "quyển"
+   ],
+   "n_thanh_vien": 10,
+   "①_truoc_loc": [
+    "Giống",
+    "khả năng",
+    "đường",
+    "ruột",
+    "nhau",
+    "gây",
+    "bệnh",
+    "khuẩn"
+   ],
+   "①_ra": [
+    "sinh",
+    "hội",
+    "vật",
+    "động"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "cơ quan": [
+     "hội",
+     "vật"
+    ]
+   },
+   "②_ra_tu_do": [
+    "sân",
+    "dịp",
+    "chung",
+    "lớp",
+    "điềm",
+    "rừng"
+   ],
+   "②_ra_gioi_han": [
+    "lớp",
+    "rừng",
+    "ngành",
+    "yếu tố",
+    "kết quả",
+    "đối tượng"
+   ],
+   "②_nhan": "lớp",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "thiểu",
+    "tối",
+    "tối thiểu",
+    "vật",
+    "Động",
+    "Động vật",
+    "Phiến",
+    "Phiến",
+    "Thú",
+    "cá"
+   ],
+   "③_moi": [
+    "thiểu",
+    "tối",
+    "tối thiểu",
+    "Động",
+    "Động vật",
+    "Phiến",
+    "Phiến",
+    "Thú"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "đám",
+   "lop": "ví dụ",
+   "hat_giong_dung": [
+    "chớp",
+    "Đất"
+   ],
+   "thanh_vien_moi_dung": [
+    "Pháp",
+    "Tokyo",
+    "củ",
+    "lẽ",
+    "mại",
+    "tây",
+    "đếm"
+   ],
+   "n_thanh_vien": 9,
+   "①_truoc_loc": [
+    "electron",
+    "quán",
+    "nghi lễ",
+    "hình cầu",
+    "áp suất",
+    "mây",
+    "đông",
+    "tử"
+   ],
+   "①_ra": [
+    "electron",
+    "đông",
+    "tử",
+    "điện"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "ngành",
+    "hạt",
+    "nạp",
+    "triệu",
+    "Tiếp nối",
+    "chung"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "hạt",
+    "đơn vị",
+    "hạt nhân",
+    "dân",
+    "phân"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "đồ",
+    "Actin",
+    "Actin obacteria"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "chóng",
+   "lop": "ví dụ",
+   "hat_giong_dung": [
+    "Pháp",
+    "chớp"
+   ],
+   "thanh_vien_moi_dung": [
+    "Tokyo",
+    "củ",
+    "lẽ",
+    "mại",
+    "tây",
+    "Đất",
+    "đếm"
+   ],
+   "n_thanh_vien": 9,
+   "①_truoc_loc": [
+    "trở",
+    "liên",
+    "tục",
+    "binh",
+    "sĩ",
+    "thu",
+    "kết",
+    "bạn"
+   ],
+   "①_ra": [
+    "tục",
+    "binh",
+    "nhận",
+    "rộng"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "thành phố": [
+     "tục",
+     "nhận"
+    ]
+   },
+   "②_ra_tu_do": [
+    "Bercy",
+    "chuẩn",
+    "đội",
+    "thuật",
+    "Sài Gòn",
+    "vấn đề"
+   ],
+   "②_ra_gioi_han": [
+    "vấn đề",
+    "thủ đô",
+    "đơn vị",
+    "sự",
+    "công",
+    "Mỹ"
+   ],
+   "②_nhan": "vấn đề",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Béo",
+    "Hitler",
+    "Hàng",
+    "Quốc",
+    "Quốc Xã",
+    "Xã",
+    "chương",
+    "chương trình",
+    "hy",
+    "hy vọng"
+   ],
+   "③_moi": [
+    "Béo",
+    "Hitler",
+    "Hàng",
+    "Quốc",
+    "Quốc Xã",
+    "Xã",
+    "chương trình",
+    "hy"
+   ],
+   "③_moi_that": [
+    "Xã",
+    "vọng"
+   ]
+  },
+  {
+   "P": "dùng",
+   "lop": "biểu tượng",
+   "hat_giong_dung": [
+    "tích",
+    "vàng",
+    "đỏ"
+   ],
+   "thanh_vien_moi_dung": [
+    "Cột",
+    "Moskva",
+    "sồi",
+    "thâm",
+    "vừa"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "nghiên",
+    "cứu",
+    "thuật",
+    "nhà",
+    "lực",
+    "kỹ",
+    "lấy",
+    "súng"
+   ],
+   "①_ra": [
+    "nhà",
+    "sản",
+    "loại",
+    "xuất"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "ngành",
+    "khoai",
+    "chloride",
+    "Vùng",
+    "mạnh",
+    "gạo"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "nguyên tố",
+    "yếu tố",
+    "lãnh thổ",
+    "phiên bản",
+    "phản ứng"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "hữu",
+   "lop": "biểu tượng",
+   "hat_giong_dung": [
+    "vàng",
+    "đỏ"
+   ],
+   "thanh_vien_moi_dung": [
+    "Cột",
+    "Moskva",
+    "sồi",
+    "thâm",
+    "tích",
+    "vừa"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "ngày",
+    "cac boxylic",
+    "Nhược Hư",
+    "Ngoài ra",
+    "insulin",
+    "lời",
+    "Mẫu Sơn",
+    "Thị Hằng"
+   ],
+   "①_ra": [
+    "ngạn",
+    "hạn",
+    "giáo",
+    "dụng"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Toàn",
+    "tưới",
+    "tôn giáo",
+    "Seymour Benzer",
+    "tuổi",
+    "Un imak"
+   ],
+   "②_ra_gioi_han": [
+    "tôn giáo",
+    "bộ phận",
+    "công ty",
+    "bác sĩ",
+    "đề tài",
+    "sản phẩm"
+   ],
+   "②_nhan": "tôn giáo",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Phật",
+    "giáo",
+    "đạo",
+    "Chăm",
+    "đạo Phật",
+    "Phật giáo",
+    "Đốc",
+    "Cơ",
+    "Cơ Đốc",
+    "quốc"
+   ],
+   "③_moi": [
+    "Phật",
+    "đạo",
+    "Chăm",
+    "đạo Phật",
+    "Phật giáo",
+    "Đốc",
+    "Cơ",
+    "Cơ Đốc"
+   ],
+   "③_moi_that": [
+    "Hồi"
+   ]
+  },
+  {
+   "P": "tuân",
+   "lop": "thủ đô",
+   "hat_giong_dung": [
+    "Nội",
+    "phải"
+   ],
+   "thanh_vien_moi_dung": [
+    "Calcutta",
+    "Viên",
+    "York",
+    "nhất",
+    "trí",
+    "tục"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "quản lý",
+    "bản sắc",
+    "thủ",
+    "luật",
+    "định",
+    "lịch",
+    "phát",
+    "lệnh"
+   ],
+   "①_ra": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "nền",
+    "ngành",
+    "đấng",
+    "Edmund",
+    "Phép toán",
+    "ngôi sao"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "ngôi sao",
+    "phiên bản",
+    "chính",
+    "Trung"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "nhuận",
+   "lop": "thủ đô",
+   "hat_giong_dung": [
+    "Nội",
+    "phải",
+    "trí"
+   ],
+   "thanh_vien_moi_dung": [
+    "Calcutta",
+    "Viên",
+    "York",
+    "nhất",
+    "tục"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "sắc",
+    "động",
+    "nằm",
+    "Bình",
+    "Tân",
+    "tháng",
+    "nó",
+    "giêng"
+   ],
+   "①_ra": [
+    "động",
+    "nó",
+    "lý",
+    "lịch"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "yếu tố": [
+     "động",
+     "nó"
+    ]
+   },
+   "②_ra_tu_do": [
+    "sân",
+    "chung",
+    "điềm",
+    "nền",
+    "ngành",
+    "láu lỉnh"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "yếu tố",
+    "kết quả",
+    "sinh vật",
+    "vật"
+   ],
+   "②_nhan": "nền",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "buộc",
+   "lop": "bộ phận",
+   "hat_giong_dung": [
+    "Hoa",
+    "hiểm",
+    "thường",
+    "tính"
+   ],
+   "thanh_vien_moi_dung": [
+    "Eustatius",
+    "Long",
+    "dài",
+    "lá"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "hữu",
+   "lop": "bộ phận",
+   "hat_giong_dung": [
+    "Hoa",
+    "Long",
+    "thường",
+    "tính"
+   ],
+   "thanh_vien_moi_dung": [
+    "Eustatius",
+    "dài",
+    "hiểm",
+    "lá"
+   ],
+   "n_thanh_vien": 8,
+   "①_truoc_loc": [
+    "ngày",
+    "cac boxylic",
+    "Nhược Hư",
+    "Ngoài ra",
+    "insulin",
+    "lời",
+    "Mẫu Sơn",
+    "Thị Hằng"
+   ],
+   "①_ra": [
+    "ngạn",
+    "hạn",
+    "giáo",
+    "dụng"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "Toàn",
+    "tưới",
+    "tôn giáo",
+    "Seymour Benzer",
+    "tuổi",
+    "Un imak"
+   ],
+   "②_ra_gioi_han": [
+    "tôn giáo",
+    "bộ phận",
+    "công ty",
+    "bác sĩ",
+    "đề tài",
+    "sản phẩm"
+   ],
+   "②_nhan": "tôn giáo",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Phật",
+    "giáo",
+    "đạo",
+    "Chăm",
+    "đạo Phật",
+    "Phật giáo",
+    "Đốc",
+    "Cơ",
+    "Cơ Đốc",
+    "quốc"
+   ],
+   "③_moi": [
+    "Phật",
+    "đạo",
+    "Chăm",
+    "đạo Phật",
+    "Phật giáo",
+    "Đốc",
+    "Cơ",
+    "Cơ Đốc"
+   ],
+   "③_moi_that": [
+    "Hồi"
+   ]
+  },
+  {
+   "P": "Viện",
+   "lop": "tôn giáo",
+   "hat_giong_dung": [
+    "Hồi",
+    "phải"
+   ],
+   "thanh_vien_moi_dung": [
+    "giáo",
+    "hiện",
+    "thống",
+    "thủy",
+    "Đài"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "viện",
+    "bang",
+    "Viện trợ",
+    "thật",
+    "tham nghị viện",
+    "Viện trợ",
+    "thương mại",
+    "Vũ trụ"
+   ],
+   "①_ra": [
+    "thật",
+    "học",
+    "sự",
+    "Hoa"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "thật",
+    "ngành",
+    "Giêsu",
+    "phiến",
+    "mượn",
+    "Úc"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "lĩnh vực",
+    "kiến trúc",
+    "trụ sở",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "thắng",
+   "lop": "tôn giáo",
+   "hat_giong_dung": [
+    "Hồi",
+    "phải",
+    "thống"
+   ],
+   "thanh_vien_moi_dung": [
+    "giáo",
+    "hiện",
+    "thủy",
+    "Đài"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "tụ hội",
+    "dấu ấn",
+    "Di tích",
+    "lợi",
+    "cử",
+    "trận",
+    "vua",
+    "quân"
+   ],
+   "①_ra": [
+    "trận",
+    "vua",
+    "thế",
+    "mình"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "nghiệm",
+    "Stromae",
+    "trồng",
+    "ít",
+    "nữa",
+    "thuần"
+   ],
+   "②_ra_gioi_han": [
+    "ma trận",
+    "khái niệm",
+    "bác sĩ",
+    "Công giáo",
+    "kỹ sư",
+    "thứ"
+   ],
+   "②_nhan": "ma trận",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "trận",
+    "Ma",
+    "Ma",
+    "Ma trận",
+    "Ma trận",
+    "Tích",
+    "vuông",
+    "rỗng"
+   ],
+   "③_moi": [
+    "Ma",
+    "Ma",
+    "Ma trận",
+    "Ma trận",
+    "Tích",
+    "vuông",
+    "rỗng"
+   ],
+   "③_moi_that": [
+    "vuông"
+   ]
+  },
+  {
+   "P": "hôm",
+   "lop": "triều đại",
+   "hat_giong_dung": [
+    "Hồ",
+    "Nguyễn",
+    "Trần"
+   ],
+   "thanh_vien_moi_dung": [
+    "Lê",
+    "Lý",
+    "Sơn",
+    "Đinh"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "Mai",
+    "mơ ước",
+    "nay",
+    "Nguyễn",
+    "Văn",
+    "bộ",
+    "Đạo",
+    "Trần"
+   ],
+   "①_ra": [
+    "nay",
+    "Nguyễn",
+    "bộ",
+    "Trần"
+   ],
+   "①_trung_hat_dung": [
+    "Nguyễn",
+    "Trần"
+   ],
+   "①_lop_chung": {
+    "triều đại": [
+     "Nguyễn",
+     "Trần"
+    ]
+   },
+   "②_ra_tu_do": [
+    "trầm",
+    "vương",
+    "Khu",
+    "quận",
+    "chậm",
+    "đội"
+   ],
+   "②_ra_gioi_han": [
+    "yếu tố",
+    "dự",
+    "ngôn ngữ",
+    "trụ sở",
+    "đề tài"
+   ],
+   "②_nhan": "yếu tố",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "động",
+    "nay",
+    "cư",
+    "Hiện",
+    "Hiện nay",
+    "Lao",
+    "Lao động",
+    "Di cư",
+    "Hiện",
+    "Hiện nay"
+   ],
+   "③_moi": [
+    "động",
+    "cư",
+    "Hiện",
+    "Hiện nay",
+    "Lao",
+    "Lao động",
+    "Di cư",
+    "Hiện"
+   ],
+   "③_moi_that": [
+    "động",
+    "cư"
+   ]
+  },
+  {
+   "P": "buộc",
+   "lop": "triều đại",
+   "hat_giong_dung": [
+    "Lê",
+    "Nguyễn",
+    "Trần"
+   ],
+   "thanh_vien_moi_dung": [
+    "Hồ",
+    "Lý",
+    "Sơn",
+    "Đinh"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "tuân",
+   "lop": "nền tảng",
+   "hat_giong_dung": [
+    "gian",
+    "nó"
+   ],
+   "thanh_vien_moi_dung": [
+    "Linux",
+    "giới",
+    "lường",
+    "nhận",
+    "quang"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "quản lý",
+    "bản sắc",
+    "thủ",
+    "luật",
+    "định",
+    "lịch",
+    "phát",
+    "lệnh"
+   ],
+   "①_ra": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {},
+   "②_ra_tu_do": [
+    "nền",
+    "ngành",
+    "đấng",
+    "Edmund",
+    "Phép toán",
+    "ngôi sao"
+   ],
+   "②_ra_gioi_han": [
+    "nền",
+    "ngành",
+    "ngôi sao",
+    "phiên bản",
+    "chính",
+    "Trung"
+   ],
+   "②_nhan": "nền",
+   "②_dung": true,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "lịch",
+    "Úc",
+    "Col",
+    "Col ani"
+   ],
+   "③_moi": [
+    "Kinh",
+    "Kinh tế",
+    "tế",
+    "Nền",
+    "du",
+    "du lịch",
+    "Úc",
+    "Col"
+   ],
+   "③_moi_that": []
+  },
+  {
+   "P": "buộc",
+   "lop": "nền tảng",
+   "hat_giong_dung": [
+    "gian",
+    "nhận",
+    "nó"
+   ],
+   "thanh_vien_moi_dung": [
+    "Linux",
+    "giới",
+    "lường",
+    "quang"
+   ],
+   "n_thanh_vien": 7,
+   "①_truoc_loc": [
+    "phải",
+    "họ",
+    "đánh",
+    "bại",
+    "tham",
+    "sinh",
+    "phần",
+    "học"
+   ],
+   "①_ra": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "①_trung_hat_dung": [],
+   "①_lop_chung": {
+    "hình thức": [
+     "phải",
+     "học"
+    ],
+    "khoa học": [
+     "phải",
+     "học"
+    ],
+    "thành viên": [
+     "phải",
+     "họ"
+    ],
+    "khoảng": [
+     "sinh",
+     "học"
+    ]
+   },
+   "②_ra_tu_do": [
+    "rạp",
+    "ngành",
+    "phiến",
+    "bọn",
+    "Baroque",
+    "Marie Curie"
+   ],
+   "②_ra_gioi_han": [
+    "ngành",
+    "môn",
+    "Việt Nam",
+    "lĩnh vực",
+    "kiến trúc",
+    "khoa học"
+   ],
+   "②_nhan": "ngành",
+   "②_dung": false,
+   "②_khop_lop_chung": [],
+   "③_ra": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin",
+    "Actin obacteria",
+    "obacteria"
+   ],
+   "③_moi": [
+    "Deal",
+    "rượu",
+    "sản",
+    "New",
+    "New Deal",
+    "điện",
+    "đồ",
+    "Actin"
+   ],
+   "③_moi_that": []
+  }
+ ]
+}

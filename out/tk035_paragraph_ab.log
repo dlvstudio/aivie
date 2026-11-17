@@ -1,0 +1,29 @@
+checkpoint=network_v9_histwiki_paragraph.pkl
+parents=174627
+
+prompt                             ON    OFF    stats_ON (comma/sent/multi)
+------------------------------------------------------------------------------------------
+'nếu trời mưa'                     =      =     c=49 ,=0 s=1 m=False
+'nếu trời mưa thì'                 =      =     c=40 ,=0 s=1 m=False
+'tuy vất vả'                       =      =     c=107 ,=1 s=0 m=True
+'Nếu em học chăm'                  =      =     c=37 ,=0 s=2 m=True
+'Không chỉ giỏi'                   =      =     c=91 ,=0 s=0 m=False
+'vì em chăm học'                   ≠      ≠     c=174 ,=0 s=0 m=False
+  ON : 'vì em chăm học lại thêm mê đọc sách nên trở thành một học sinh giỏi của lớp Một số bài làm văn của Kim Dung nhờ sự giới thiệu của thầy Đông đă đượccheckpoint=network_v9_histwiki_paragraph.pkl
+parents=174627
+
+prompt                             ON    OFF    stats_ON (comma/sent/multi)
+------------------------------------------------------------------------------------------
+'nếu trời mưa'                     =      =     c=49 ,=0 s=1 m=False
+'nếu trời mưa thì'                 =      =     c=40 ,=0 s=1 m=False
+'tuy vất vả'                       =      =     c=107 ,=1 s=0 m=True
+'Nếu em học chăm'                  =      =     c=37 ,=0 s=2 m=True
+'Không chỉ giỏi'                   =      =     c=91 ,=0 s=0 m=False
+'vì em chăm học'                   ≠      ≠     c=174 ,=0 s=0 m=False
+  ON : 'vì em chăm học lại thêm mê đọc sách nên trở thành một học sinh giỏi của lớp Một số bài làm văn của Kim Dung nhờ sự giới thiệu của thầy Đông đă được đăng lên Đông Nam nhật báo'
+  OFF: 'vì em chăm học Trẻ em có quyền được chăm sóc'
+'Hỏi: Việt Nam là gì Đáp:'         =      =     c=230 ,=1 s=4 m=True
+
+flips=1/7  on_longer=1/7
+
+→ /Users/dlv/Documents/code/nn-aivie/out/tk035_paragraph_ab.log

@@ -1,0 +1,12 @@
+{
+ "id": "05_sql",
+ "cat": "sql",
+ "turns": [
+  {
+   "user": "Có 2 bảng: customers(id, ten, thanh_pho) và orders(id, customer_id, ngay_dat, tong_tien). Viết câu SQL lấy 5 khách hàng chi tiêu nhiều nhất năm 2024, kèm tổng tiền và số đơn, chỉ tính khách ở Hà Nội.",
+   "text": "```sql\nSELECT c.ten, c.thanh_pho, SUM(o.tong_tien) AS tong_chi_tieu\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nWHERE c.thanh_pho = 'Hà Nội' \n  AND o.ngay_dat BETWEEN '2024-01-01' AND '2024-12-31'\nGROUP BY c.ten, c.thanh_pho\nHAVING SUM(o.tong_tien) > 5000000\nORDER BY tong_chi_tieu DESC\nLIMIT 5;\n```\n\n**Giải thích:**\n- **JOIN & WHERE:** Kết nối hai bảng qua `customer_id` và lọc các đơn hàng diễn ra trong năm 2024.\n- **GROUP BY & HAVING:** Gộp nhóm theo khách hàng để tính tổng tiền (`SUM`), sau đó dùng `HAVING` để lọc ra những người chi tiêu trên 5 triệu đồng.\n- **SELECT & ORDER BY:** Lấy ra 5 dòng đầu tiên và sắp xếp kết quả theo tổng chi tiêu giảm dần (`DESC`).",
+   "tokens": 297,
+   "sec": 10.4
+  }
+ ]
+}

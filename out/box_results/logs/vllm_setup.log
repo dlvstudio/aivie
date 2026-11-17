@@ -1,0 +1,13 @@
++ cd /workspace
++ '[' -x /workspace/vllm_env/bin/python ']'
++ PIP_CONSTRAINT=
++ /workspace/vllm_env/bin/pip install -q vllm==0.30.0
++ /workspace/vllm_env/bin/python -c 'import vllm, torch; print('\''vllm'\'', vllm.__version__, '\''torch'\'', torch.__version__, torch.cuda.is_available())'
+vllm 0.30.0 torch 2.13.0+cu130 True
++ HF_HUB_DISABLE_XET=1
++ /workspace/vllm_env/bin/python -c 'from huggingface_hub import snapshot_download as s; print(s('\''RedHatAI/gemma-4-31B-it-FP8-dynamic'\''))'
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 18 files:   6%|▌         | 1/18 [00:00<00:11,  1.44it/s]Fetching 18 files:  50%|█████     | 9/18 [00:01<00:01,  7.40it/s]Fetching 18 files:  83%|████████▎ | 15/18 [00:01<00:00,  9.53it/s]Fetching 18 files:  89%|████████▉ | 16/18 [00:19<00:00,  9.53it/s]Fetching 18 files:  94%|█████████▍| 17/18 [05:49<00:33, 33.34s/it]Fetching 18 files: 100%|██████████| 18/18 [23:05<00:00, 153.79s/it]Fetching 18 files: 100%|██████████| 18/18 [23:05<00:00, 76.99s/it] 
+/root/.cache/huggingface/hub/models--RedHatAI--gemma-4-31B-it-FP8-dynamic/snapshots/d4ab4f579dd3516f97d8a6a4c98d0653480bad15
++ echo VLLM_SETUP_XONG
+VLLM_SETUP_XONG

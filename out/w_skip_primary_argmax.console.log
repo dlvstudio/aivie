@@ -1,0 +1,145 @@
+=== W_skip primary ARGMAX (T=0) smoke v12 ===
+[     0.0s] === load_network_v12_sent START (pid=73581) → out/logs/load_network_v12_sent_20260731_171700.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     5.0s] ✓ unpickle  (5.0s)
+[     5.0s] ▶ vocab (32002 token)
+[     9.1s] ✓ vocab (32002 token)  (4.1s)
+[     9.1s] ▶ adjacency
+[    25.0s] ✓ adjacency  (15.9s)
+[    25.0s] ▶ embedding
+[    25.0s] ✓ embedding  (0.1s)
+[    25.0s] ▶ parents
+[    25.0s] parents: deserialize 430447 records …
+[    25.1s] parents 5000/430447 (1.2%)
+[    25.1s] parents 10000/430447 (2.3%)
+[    25.2s] parents 15000/430447 (3.5%)
+[    25.2s] parents 20000/430447 (4.6%)
+[    25.3s] parents 25000/430447 (5.8%)
+[    25.3s] parents 30000/430447 (7.0%)
+[    25.4s] parents 35000/430447 (8.1%)
+[    25.4s] parents 40000/430447 (9.3%)
+[    25.5s] parents 45000/430447 (10.5%)
+[    25.5s] parents 50000/430447 (11.6%)
+[    25.6s] parents 55000/430447 (12.8%)
+[    25.6s] parents 60000/430447 (13.9%)
+[    25.7s] parents 65000/430447 (15.1%)
+[    25.7s] parents 70000/430447 (16.3%)
+[    25.8s] parents 75000/430447 (17.4%)
+[    25.8s] parents 80000/430447 (18.6%)
+[    25.9s] parents 85000/430447 (19.7%)
+[    25.9s] parents 90000/430447 (20.9%)
+[    26.0s] parents 95000/430447 (22.1%)
+[    26.0s] parents 100000/430447 (23.2%)
+[    26.1s] parents 105000/430447 (24.4%)
+[    26.2s] parents 110000/430447 (25.6%)
+[    26.2s] parents 115000/430447 (26.7%)
+[    26.3s] parents 120000/430447 (27.9%)
+[    26.4s] parents 125000/430447 (29.0%)
+[    26.5s] parents 130000/430447 (30.2%)
+[    26.5s] parents 135000/430447 (31.4%)
+[    26.6s] parents 140000/430447 (32.5%)
+[    26.7s] parents 145000/430447 (33.7%)
+[    26.7s] parents 150000/430447 (34.8%)
+[    26.8s] parents 155000/430447 (36.0%)
+[    26.9s] parents 160000/430447 (37.2%)
+[    27.0s] parents 165000/430447 (38.3%)
+[    27.1s] parents 170000/430447 (39.5%)
+[    27.2s] parents 175000/430447 (40.7%)
+[    27.3s] parents 180000/430447 (41.8%)
+[    27.4s] parents 185000/430447 (43.0%)
+[    27.5s] parents 190000/430447 (44.1%)
+[    27.6s] parents 195000/430447 (45.3%)
+[    27.7s] parents 200000/430447 (46.5%)
+[    27.8s] parents 205000/430447 (47.6%)
+[    27.8s] parents 210000/430447 (48.8%)
+[    28.0s] parents 215000/430447 (49.9%)
+[    28.1s] parents 220000/430447 (51.1%)
+[    28.1s] parents 225000/430447 (52.3%)
+[    28.2s] parents 230000/430447 (53.4%)
+[    28.3s] parents 235000/430447 (54.6%)
+[    28.4s] parents 240000/430447 (55.8%)
+[    28.5s] parents 245000/430447 (56.9%)
+[    28.6s] parents 250000/430447 (58.1%)
+[    28.7s] parents 255000/430447 (59.2%)
+[    28.8s] parents 260000/430447 (60.4%)
+[    28.9s] parents 265000/430447 (61.6%)
+[    29.0s] parents 270000/430447 (62.7%)
+[    29.1s] parents 275000/430447 (63.9%)
+[    29.2s] parents 280000/430447 (65.0%)
+[    38.7s] parents 285000/430447 (66.2%)
+[    38.7s] parents 290000/430447 (67.4%)
+[    38.9s] parents 295000/430447 (68.5%)
+[    38.9s] parents 300000/430447 (69.7%)
+[    39.0s] parents 305000/430447 (70.9%)
+[    39.2s] parents 310000/430447 (72.0%)
+[    39.3s] parents 315000/430447 (73.2%)
+[    39.4s] parents 320000/430447 (74.3%)
+[    39.4s] parents 325000/430447 (75.5%)
+[    39.5s] parents 330000/430447 (76.7%)
+[    39.6s] parents 335000/430447 (77.8%)
+[    39.7s] parents 340000/430447 (79.0%)
+[    39.8s] parents 345000/430447 (80.1%)
+[    39.9s] parents 350000/430447 (81.3%)
+[    40.0s] parents 355000/430447 (82.5%)
+[    40.1s] parents 360000/430447 (83.6%)
+[    40.2s] parents 365000/430447 (84.8%)
+[    40.3s] parents 370000/430447 (86.0%)
+[    40.4s] parents 375000/430447 (87.1%)
+[    40.5s] parents 380000/430447 (88.3%)
+[    40.6s] parents 385000/430447 (89.4%)
+[    40.7s] parents 390000/430447 (90.6%)
+[    40.8s] parents 395000/430447 (91.8%)
+[    40.9s] parents 400000/430447 (92.9%)
+[    41.0s] parents 405000/430447 (94.1%)
+[    41.1s] parents 410000/430447 (95.2%)
+[    41.1s] parents 415000/430447 (96.4%)
+[    41.2s] parents 420000/430447 (97.6%)
+[    41.3s] parents 425000/430447 (98.7%)
+[    41.4s] parents 430000/430447 (99.9%)
+[   102.6s] ▶ rebuild_hierarchical_index …
+[   104.5s] ✓ rebuild_hierarchical_index (1.9s)
+[   109.7s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[   109.7s] ✓ parents  (84.6s)
+[   109.7s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[   111.5s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[   111.5s] ✓ load_checkpoint XONG
+loaded parents=430447 in 111.5s
+build_w_skip 19.4s
+cfg primary=True T=0.0 lam=0.5 topk=12 dmax=8
+
+----- T=0 argmax -----
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:183: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+[15.26s] PROMPT: Nhà Lý dời đô về
+  OUT: Nhà Lý dời đô về, người. có một số ví dụ, các công trình. có được, một người không thể. được, có một số người.:
+, có
+[0.17s] PROMPT: Hỏi: Thủ đô của Việt Nam là gì Đáp:
+  OUT: Hỏi: Thủ đô của Việt Nam là gì Đáp:, có một số. dụ: 1 có một số, không thể. được một số, có thể. được một trong, có thể. được một trong
+[0.17s] PROMPT: Năm 1010
+  OUT: Năm 1010, người. có một số ví dụ, các công trình. có được, một người không thể. được, có một số người.:
+, có
+[0.17s] PROMPT: Hỏi: Ai là người sáng lập nhà Nguyễn Đáp:
+  OUT: Hỏi: Ai là người sáng lập nhà Nguyễn Đáp:, một người. có thể là, trong một người. có thể, không được một người. có thể, không được một người. có thể, không
+[0.17s] PROMPT: Vua Quang Trung
+  OUT: Vua Quang Trung, cũng là có thể. được, một người có thể. được, một người có thể. được, một người có thể. được, một người có
+
+----- T=0.5 sample seed=0 (so sánh) -----
+[0.14s] PROMPT: Nhà Lý dời đô về
+  OUT: Nhà Lý dời đô về những năm này, ta đi đến những con số mẹo có nghĩa. đồ, chỉ được không thể. một câu chuyện này,? giúp bạn nên làm được
+[0.15s] PROMPT: Hỏi: Thủ đô của Việt Nam là gì Đáp:
+  OUT: Hỏi: Thủ đô của Việt Nam là gì Đáp:: một người có chút ít được biết là những thứ này đã không cần, chỉ ra. cái không có ý thức: một loại thuốc này là các công
+[0.15s] PROMPT: Năm 1010
+  OUT: Năm 1010 năm, người. nữ sinh hoạt hình và giảm chi, chỉ là: có gì., các nhà khoa * bị thương
+ trong thời hạn của họ,
+[0.15s] PROMPT: Hỏi: Ai là người sáng lập nhà Nguyễn Đáp:
+  OUT: Hỏi: Ai là người sáng lập nhà Nguyễn Đáp: về một người, hắn cùng. với tư thế giới, hắn có ý. số ví cái này, có được một tiếng: là
+ người này một ví
+[0.14s] PROMPT: Vua Quang Trung
+  OUT: Vua Quang Trung Hải., một cái kia là: (ca-ma
+
+, ta. thấy được một tiếng, có những lời nhắc về.: tính của nó là
+
+=== done ===
+
+wrote out/w_skip_primary_argmax.log

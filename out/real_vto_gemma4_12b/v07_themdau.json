@@ -1,0 +1,14 @@
+{
+ "id": "v07_themdau",
+ "cat": "vi",
+ "model": "gemma4:12b",
+ "turns": [
+  {
+   "user": "Thêm dấu tiếng Việt cho đoạn tin nhắn sau: \"chieu nay troi mua to qua, em ve muon chut nhe. anh nho mua giup em hop sua voi it banh mi cho con\"",
+   "text": "Đoạn tin nhắn của bạn sau khi thêm dấu sẽ là:\n\n**\"Chiều nay trời mưa to quá, em về muộn chút nhé. Anh nhớ mua giúp em hộp sữa với ít bánh mì cho con.\"**",
+   "thinking": "\n*   Input: \"chieu nay troi mua to qua, em ve muon chut nhe. anh nho mua giup em hop sua voi it banh mi cho con\"\n    *   Task: Add Vietnamese diacritics (accent marks) to the message.\n\n    *   \"chieu\": chiều (afternoon)\n    *   \"nay\": nay (today/this) -> \"chiều nay\"\n    *   \"troi\": trời (weather/sky)\n    *   \"mua\": mưa (rain)\n    *   \"to\": to (big/heavy)\n    *   \"qua\": quá (too much/very)\n    *   \"em\": em (I/me - younger sibling/partner)\n    *   \"ve\": về (return home)\n    *   \"muon\": muộn (late)\n    *   \"chut\": chút (a bit)\n    *   \"nhe\": nhé (particle for suggestion/request)\n    *   \"anh\": anh (you - older brother/partner)\n    *   \"nho\": nhớ (remember)\n    *   \"mua\": mua (buy)\n    *   \"giup\": giúp (help)\n    *   \"em\": em (me)\n    *   \"hop\": hộp (box/carton)\n    *   \"sua\": sữa (milk)\n    *   \"voi\": với (with/and)\n    *   \"it\": ít (a little)\n    *   \"banh\": bánh (cake/bread)\n    *   \"mi\": mì (noodles) -> \"bánh mì\" (banh mi)\n    *   \"cho\": cho (for)\n    *   \"con\": con (child/baby)\n\n    *   Sentence 1: Chiều nay trời mưa to quá, em về muộn chút nhé.\n    *   Sentence 2: Anh nhớ mua giúp em hộp sữa với ít bánh mì cho con.\n\n    *   Option 1 (Natural): \"Chiều nay trời mưa to quá, em về muộn chút nhé. Anh nhớ mua giúp em hộp sữa với ít bánh mì cho con.\"\n\n    \"Chiều nay trời mưa to quá, em về muộn chút nhé. Anh nhớ mua giúp em hộp sữa với ít bánh mì cho con.\"",
+   "tokens": 553,
+   "sec": 19.7
+  }
+ ]
+}

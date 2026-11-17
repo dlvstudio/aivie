@@ -1,0 +1,27 @@
+
+ÉP CẦU NỐI PHẢI ĐẶC TRƯNG — `gidf_min` (0 = như mọi phép đo trước)
+
+  «khôn»
+     gidf_min=0.0   → ['ngoan', 'khéo', 'xiết', 'lường', 'nguôi', 'khôn', 'lớn']
+     gidf_min=4.0   → ['ngoan', 'khéo', 'xiết', 'lường', 'nguôi', 'khôn', 'lớn']
+     gidf_min=7.0   → ['ngoan', 'khéo', 'xiết', 'lường', 'nguôi', 'khôn', 'Đồ']
+     gidf_min=10.0  → ['lỏi', 'mống', 'Khéo', 'lững', 'Cúi', 'Dặm', 'róc']
+
+  «khoẻ»
+     gidf_min=0.0   → ['mạnh', 'khoắn', 'bệnh', 'bò', 'tng', 'kì', 'bình']
+     gidf_min=4.0   → ['mạnh', 'khoắn', 'bệnh', 'bò', 'tng', 'kì', 'bình']
+     gidf_min=7.0   → ['khoắn', 'bò', 'bờ', 'bụi', 'tật', 'sút', 'phiên']
+     gidf_min=10.0  → ['khoắn', 're', 'LDL', 'khoét', 'hùm', 'xẹp', 'Antonio']
+
+  «nhanh»
+     gidf_min=0.0   → ['chóng', 'hơn', 'liền', 'nhẹn', 'nhất', 'quả', 'hiệu']
+     gidf_min=4.0   → ['chóng', 'hơn', 'liền', 'nhẹn', 'nhất', 'quả', 'hiệu']
+     gidf_min=7.0   → ['nhẹn', 'gọn', 'nhạy', 'nhảu', 'lướt', 'nhảy', 'ngột']
+     gidf_min=10.0  → ['nhảu', 'đoảng', 'dấn', 'lẹ', 'fast', 'you', 'thiểm']
+
+  «cứng»
+     gidf_min=0.0   → ['rắn', 'nhắc', 'đờ', 'ngắc', 'cáp', 'mềm', 'cỏi']
+     gidf_min=4.0   → ['rắn', 'nhắc', 'đờ', 'ngắc', 'cáp', 'mềm', 'cỏi']
+     gidf_min=7.0   → ['rắn', 'đờ', 'ngắc', 'cáp', 'cỏi', 'va', 'bụng']
+     gidf_min=10.0  → ['ngắc', 'nylon', 'quèo', 'chêm', 'còng', 'megabyte', 'đơ']
+

@@ -1,0 +1,97 @@
+LM 11.4M · vocab 32,002 · ctx=256
+
+dựng datastore từ data/text_corpus/history_articles.jsonl …
+✓ 158 bài · 355,666 cặp (h,next) trong datastore
+dựng index 5-gram từ CHÍNH data/text_corpus/history_articles.jsonl (nguồn datastore) …
+✓ 327,429 5-gram phân biệt
+
+─── LẤY MẪU (không argmax) · temp=1.0 · 3 seed/λ/prompt ───
+
+  prompt='Nhà Trần là'
+    λ=0.5  seed=0  MỚI=36/36 (100%)  ' vùng đất có các lãnh thổ văn chương học vui đùa, tán thành tiên sinh lớp ba và 3.154 nhà Hồ Lớn tầng lớp dân tộc.<EOS>Thành phố lúc này mang mẫu thực'
+    λ=0.5  seed=1  MỚI=34/36 ( 94%)  ' Anh Xương, Bùi Văn Đa đuổi theo không, Lê Tư dự đoán của Trung Quốc.⏎Ảnh hưởng cách mạng PGS Hoàng Trang - Nguyễn Văn Thuyên là một nhà thơ tài hoàng.⏎Nguyễn Thanh'
+    λ=0.5  seed=2  MỚI=35/36 ( 97%)  ' một nhà thơ, vừa xuyên qua.⏎Nhà Lý cho rằng loạn vũ ký ức rất tốt, nhiều hành đình đào tạo khoa học quan tâm.⏎Riêng phần Cao Bá Hi ở hương Trà Bát'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=31/36 ( 86%)  ' vợ của một người mua sắm của xã hội Việt Nam\'w\'s "Đảng Cộng sản Việt Nam".⏎Cuộc đánh chà xát ngay sau khi kết quả bầu cử được thống nhất bước đầu'
+    λ=0.3  seed=1  MỚI=34/36 ( 94%)  ' Dương Chấp đại phu đi theo hộ giá."     Đến trước thần vị cùng với mày nói: "Người quân tàng trống trải để về, chuông không có ai dám phạm tội, đang đêm ở'
+    λ=0.3  seed=2  MỚI=31/36 ( 86%)  ' một nhà thơ, vừa cai trị.⏎Dù vậy, theo Thanh thực lục Lâm - Nguyễn Kim (2881 – 180), Thăng Long – Nguyễn Đình Lễ, Ngô Quảng'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Khúc Thừa Dụ'
+    λ=0.5  seed=0  MỚI=35/36 ( 97%)  ' xem như là có trưng đốc tướng a? Cuối năm, tuyên sắc tướng trong bệnh viện và con người có quyền tham gia rất mâu thuẫn giữa anh em của mình.⏎Tại sao Viện Nghiên cứu'
+    λ=0.5  seed=1  MỚI=35/36 ( 97%)  ' tính khoan thứ bảy (2744): Đình Quân⏎⏎Con trai có con đường đã đưa đến thụ nguyệt kỵ làm Bình Nguyên. Báo cáo, giáo dục cho vua.⏎Do đó'
+    λ=0.5  seed=2  MỚI=36/36 (100%)  ' lại chỉ phái một chân nho.⏎Ông ông trung nhất với Hồ Đình Ánh hậu nàng là nơi quân đội quý tộc.⏎Hoàng đế nói: "Hiểu Đông Sát quân để cầu cứu Nghệ An'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=36/36 (100%)  ' đánh giá, và bá tước tôn quý hay Thừa Dụ, chiêu dụ binh thần ấn quân bằng cách ra làm lễ ưu đãi và biếu xén vạn quân bằng cách ra lệnh giải quyết chiến thắng Kỷ Hợi'
+    λ=0.3  seed=1  MỚI=36/36 (100%)  ' làm Tiết độ kiếp là nơi rèn luyện thân".⏎Ông sớm liệu xong, Trần Đức Tông thi hành chính Pháp Loa trở thành theo hai ngôi trường.⏎Thái sư Quý hoàng Minh Tông,'
+    λ=0.3  seed=2  MỚI=30/36 ( 83%)  ' cũng bị diệt, quả nhiên, không dùng tên Bắc Thành của Tây Sơn nữa vượt sông đánh, còn Minh Mạng muốn trọng yếu.⏎Loại này không chia sẻ thêm về việc giữ ngôi vua.'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Ngô Quyền'
+    λ=0.5  seed=0  MỚI=33/36 ( 92%)  ' vào năm 1289.⏎Đại sứ quán, Nhà nước Đại Nam Chủ tịch nước Việt.⏎Lê Duy Vinh bị Thoát Thoát giết chết.⏎Ông giữ Long Ý và Phan Bội Châu'
+    λ=0.5  seed=1  MỚI=33/36 ( 92%)  ' và Trưng quốc Tuấn lại tiếp tục mang tên là Cố đô đến Lào và Tây Nguyên.⏎Lúc mới đến bán cảng Marseille, Pháp đã về Berlin.⏎Thời Lý thuộc Học nên quân Pháp cũng'
+    λ=0.5  seed=2  MỚI=30/36 ( 83%)  ' không còn lựa chọn nào khác.".⏎Liên chủ xã ấy được chia cắt lớn trong thời gian quá khứ của ông vào năm 13017.⏎Cuối năm 1354'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=34/36 ( 94%)  ' và Hoàng gia.⏎Đình Ninh Xá, Tp Hà.Chí một tảng phủ Tràng An, tỉnh Long Sơn.⏎Đình Bình Ea Kao.⏎Đình Ngô Văn Trị, xã Bắc Định (Tỉnh'
+    λ=0.3  seed=1  MỚI=33/36 ( 92%)  ' và Trưng Tam Kha mà làm chấn động cả.⏎Chuyện "chẳng biết xem như thế!⏎Phạm Nhân thấy Phạm Phu Thánh mất.⏎Đoàn thuyền ở Hưng Hóa.⏎Năm 160'
+    λ=0.3  seed=2  MỚI=27/36 ( 75%)  ' không còn lựa chọn nào khác.⏎Trong Liên hiệp Quốc gia Việt Nam thì sôi lên.⏎Ông còn củng cố quân đội tốt trong các năm.⏎Để trả thù.⏎Đến cuối năm'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Lý Thái Tổ'
+    λ=0.5  seed=0  MỚI=36/36 (100%)  ' tiến vào các thành trì kháng lễ nhà Lý dời đô, đứa con gái của Ngô Quyền là cố sự.     Ngô Quyền thu liễm Thạch Đầu giúp đỡ để cho Ngô Quyền cùng tuổi trai mỹ thuật'
+    λ=0.5  seed=1  MỚI=36/36 (100%)  ' tiến cử.     Vì vậy Lý Thái Tổ là thơ trữ tình - lý tinh thần cùng các tu sĩ có chút lơi lơi lỏng cho nhiều người vời mà không rõ ràng về đóng lại?⏎Có'
+    λ=0.5  seed=2  MỚI=30/36 ( 83%)  ' còn không tham gia hầu hết các ngươi.⏎Ngô Tổ sau khi xem xét Giải Cổ Pháp là vị hoàng đế duy nhất cai trị chủ nghĩa.⏎Phan Lại Chú đánh giá "Giai tổng thống'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=36/36 (100%)  ' tiến vào về.     Thích uống rượu làm Chương Sở, cảng và ban vào cướp hoa.⏎Loại này gồm tất cả họ Nhục Xương vô dung địa loại, đánh bại tài ba bốn thớt voi'
+    λ=0.3  seed=1  MỚI=35/36 ( 97%)  ' tiến cử nói « tên chữ Tết bắt đầu.⏎Thế nhưng điểm ra đây.⏎Dưới thời Nội các con Hữu Quýnh đã trở thành người nghiện thuốc rồi chết ở chùa chiền, mất bao đồng'
+    λ=0.3  seed=2  MỚI=30/36 ( 83%)  ' liền bị xử tử.⏎Lý Thánh Tông quyết định làm giả bệnh chết như Mạc Đăng Dung, gọi là Hậu Lê.⏎Lý Đạo Thành, năm 878 chỉ còn kiểm soát Bắc Bộ'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Hai Bà Trưng'
+    λ=0.5  seed=0  MỚI=36/36 (100%)  ' cùng với "dụng dáng người tùy thuộc nhất nữa" như∩Es2 Jovianff, là nữ diễn viên của alkaneban đã hạ cánh.<EOS>Khu vực địa lý lịch sử quốc'
+    λ=0.5  seed=1  MỚI=36/36 (100%)  ' đến Campuchia, Lào và Lào ngày nay là một vùng thuộc địa Ontario.⏎Người Pháp còn được vua coi là Les Braque và Charles Burton Maria II, nơi xưa kia thuộc vào tên gọi là'
+    λ=0.5  seed=2  MỚI=32/36 ( 89%)  '.⏎Kẻ Mền nổi lên, nhân dân Đại Việt sử ký toàn thư Phan Rang.⏎Nhà thơ loài ong được in trên giấy, làm bằng gạch vuông cỡ lớn.⏎Do yêu cầu'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=33/36 ( 92%)  ' đã trở lại.⏎đều không coi Lý Tiến Hùng, nối từ chùa Kim Môn lại vì với các nước ngoài đến tận lúc triền miên và sức cường tráng, tông thất.⏎Dẫu rằng thế'
+    λ=0.3  seed=1  MỚI=32/36 ( 89%)  ' và Trưng Vương ngụ ở Lan Xang.⏎Các quận Nam Hải cũng bị chiếm được kinh thành.⏎Theo truyền thuyết hang động (tức "đảo xa") lên đỉnh 9.220'
+    λ=0.3  seed=2  MỚI=34/36 ( 94%)  '.⏎đều có vài huyện và có hai vòng sát nhau: nghị lưu sông ngòi bị phá giảm thế tục sang xâm chiếm quận Ba Giồng, nay là Hưng Yên thờ Lê Văn Khôi ở Mê Linh'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Nhà Lý'
+    λ=0.5  seed=0  MỚI=35/36 ( 97%)  ' Chiêu Hoàng..⏎Ôn Như Mai tự trói buộc, bi là hậu chính Quân đội Thanh niên, sau đó xuất quân thì triền miên tới cứu viện.⏎Lê Tư Hiếu nổi dậy khởi nghĩa'
+    λ=0.5  seed=1  MỚI=35/36 ( 97%)  ' Tông Diệu và Trinh Chu bị đe dọa bởi các bà vợ cả chiến tranh để đối thoại.⏎Cuộc chiến ngày hôm ấy ra khỏi cuộc chiến ám sát.⏎Đứng đầu nhằm phải gây tranh luận'
+    λ=0.5  seed=2  MỚI=34/36 ( 94%)  ' chiến sĩ chống lại nhưng chưa thể nói được vì sao có 1m2 đây chấm dứt đã thành công và vua cướp tội chém quốc vương, các lực lượng chống ngoại xâm.⏎Kết quả đó'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=32/36 ( 89%)  ' Chiêu Hoàng.⏎Triều Lý trải qua chín mươi bốn, Tạ thái hậu được loạn rồi mà đem một nhà thơ nhỏ trung lưu yếm tùng để vua Lê đã làm tổn thất không thần phục triều đình'
+    λ=0.3  seed=1  MỚI=29/36 ( 81%)  ' Chiêu Thống.⏎Ông được trụ sở trung tâm quyền lực của Nguyễn Nhạc.⏎Việc chính sự Bắc Hà lại mâu thuẫn sau đó từ thời Tiền Lê.⏎Nguyễn Huệ tỏ ra lo lắng,'
+    λ=0.3  seed=2  MỚI=36/36 (100%)  ' Quốc Vượng kể: "Cô nào?⏎Việt Nam: Từ điển nhân đạo Sa Pa hình thành một nơi di sản này với những dòng họ cũng như Nhất Linh lân cận có lượng 5 tới 2'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Trần Hưng Đạo'
+    λ=0.5  seed=0  MỚI=34/36 ( 94%)  ' Trần nói.<EOS>Tướng Tấn thất bại. Ngụy Thức, Thuận chính sai đem chém chết.⏎Sau đó, Tây Sơn thi mạt chánh sai rút quân về nước đánh bại.⏎Hay chật cuộc'
+    λ=0.5  seed=1  MỚI=35/36 ( 97%)  ' làm ngơ, bèn hỏi đến Thư ký toàn bộ vùng núi phía bắc.⏎Sau những năm 1754 vẫn tụ tập tại khu vực Bến Tre, trấn Vĩnh Lăng tại nhiều nơi có độ'
+    λ=0.5  seed=2  MỚI=36/36 (100%)  ' và Nguyên Vinh, đơn vị thời đầu thời Đường cho tới khi thi phụ Việt Quý Đôn được trình diễn ra tương ứng là Lê Ý khởi đầu.⏎Thuyền buôn Nguyễn Phan Quang Thạch đánh hạm Việt'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=32/36 ( 89%)  ' bắt đầu đi, sai vợ thì hưởng ứng Tây Vân, Tương điều binh không ưa nhau.⏎Trong thành phố Long Hưng Đạo tặc kỵ vệ Nguyễn Ánh vào thành Thăng Long.⏎Triều đình quân'
+    λ=0.3  seed=1  MỚI=31/36 ( 86%)  ' ra chiếu cho Mạnh.⏎Phạm Bạch Hổ, Tống Chân Tông chấp nhận đề văn hỏi cho 3 anh em Tây Tạng bắt đầu con đường đi Nhiệt Hà.⏎Ngô Sĩ Thay là Trần Hưng Đạo'
+    λ=0.3  seed=2  MỚI=34/36 ( 94%)  ' là người duy nhất giữa nước.⏎Thời niên thiếu, dân tộc thống nhất vùng biển phía nam của Trung Hoa hay vùng Duyên hải Nam.⏎Sau 4 ngày tuyển thêm quân đội Nam Tống.'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  prompt='Lê Lợi'
+    λ=0.5  seed=0  MỚI=34/36 ( 94%)  ' lên kế nhà, tây bắc gây dựng lên hoang phế".⏎Ngô Tam Kha giúp thủ tướng, làm Chi Gia hoàng thái duệ Hoảng Thánh Tông thu nhận".⏎Lúc lên ngôi vua cho'
+    λ=0.5  seed=1  MỚI=36/36 (100%)  ' đến Bệnh viện Lanessan, báo cáo công tác và tòa báo của Hiệp định Quận 10.⏎Vua Nguyễn Huy Khoát xưng vương mới là Anh Duệ Tông, ban bức tranh Tứ đại chung (1'
+    λ=0.5  seed=2  MỚI=35/36 ( 97%)  ' có con trai: Lê Lợi và hai người con gái: Nguyễn Lợi và Nguyễn Nộn đánh bại đồng ý. Từ đây, Huệ Tông phản công.⏎Hay tin hầu hết các cuộc khởi nghĩa đã'
+    ⇒ λ=0.5: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+    λ=0.3  seed=0  MỚI=34/36 ( 94%)  ' lên kế vị, Ngô Sĩ Liên chẳng vì vua Lê, Quang Trung thi hành đánh nắm quyền hành, một tác phẩm theo quân bèn cúi đầu ngoan ngoãn đòi "công đức".⏎Cương trường'
+    λ=0.3  seed=1  MỚI=33/36 ( 92%)  ' cũng chuyên tâm dạy học cũng phát triển cơ học tập và văn hóa.⏎Sau khi chiến tranh giành được quan tài Lê Lợi làm công nhân bãi bỏ, Trương Xương (Lạng Quốc) là một'
+    λ=0.3  seed=2  MỚI=30/36 ( 83%)  ' có chút lác đác.⏎Cho đến năm 1515, Hoàng đế Bàn La (Từ ngày 2 ngày nay) đổi tên phủ thành "Hoa Lư thành hẹp, đất thấp" là hậu'
+    ⇒ λ=0.3: 3/3 seed cho văn bản KHÁC NHAU  ← có biến thiên
+
+  TỔNG lấy mẫu: 5-gram MỚI 1610/1728 = 93%
+
+⇒ ĐỌC:
+  seed khác nhau → CHỮ khác nhau (không phải chỉ khác vài từ đệm) ⇒ đúng kiểu
+  'lúc chó lúc cún' đang tìm. Đọc tay: chữ khác nhau đó có còn ĐÚNG SỰ THẬT không,
+  hay sampling làm mất luôn cả tính đúng đắn mà λ thấp+argmax từng giữ được.
+  So MỚI% với bảng argmax (§7.17b): sampling có giảm vòng lặp mà KHÔNG cần giảm λ
+  (tức không cần hy sinh độ liên quan tới corpus thật) hay không.

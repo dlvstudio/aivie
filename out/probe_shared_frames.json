@@ -1,0 +1,30 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "ket_qua": {
+  "dong_hien_1": {
+   "n": 600,
+   "trung_vi": 3.0,
+   "p25": 0,
+   "p75": 8,
+   "ty_le_ge2": 0.5883333333333334
+  },
+  "ngau_nhien": {
+   "n": 600,
+   "trung_vi": 0.0,
+   "p25": 0,
+   "p75": 0,
+   "ty_le_ge2": 0.075
+  },
+  "cung_lop": {
+   "n": 600,
+   "trung_vi": 5.0,
+   "p25": 3,
+   "p75": 10,
+   "ty_le_ge2": 1.0
+  }
+ },
+ "ty_so": 3000000000.0,
+ "bao_hoa": 0.075,
+ "gate_pass": true,
+ "seconds": 9.2
+}

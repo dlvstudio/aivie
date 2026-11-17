@@ -1,0 +1,13 @@
+{
+ "id": "09_regex",
+ "cat": "py_text",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Viết hàm Python dùng regex lấy tất cả địa chỉ email trong một đoạn văn bản, bỏ trùng, giữ thứ tự xuất hiện. Thử với: 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'",
+   "text": "Chào bạn, dưới đây là đoạn mã Python hoàn chỉnh để giải quyết yêu cầu của bạn. \n\nĐể vừa loại bỏ trùng lặp vừa giữ nguyên thứ tự xuất hiện một cách hiệu quả nhất trong Python (từ bản 3.7 trở đi), chúng ta sẽ sử dụng `dict.fromkeys()`.\n\n```python\nimport re\n\ndef extract_emails(text):\n    # 1. Định nghĩa regex để tìm email\n    # Pattern này bao gồm: các ký tự chữ, số, dấu chấm, dấu cộng, dấu gạch ngang... trước @\n    # Sau đó là tên miền và phần mở rộng (ví dụ .com, .vn)\n    email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'\n    \n    # 2. Tìm tất cả các email xuất hiện trong văn bản (trả về một list)\n    all_emails = re.findall(email_pattern, text)\n    \n    # 3. Loại bỏ trùng lặp nhưng giữ nguyên thứ tự\n    # dict.fromkeys() sẽ tạo một dictionary với các key là email đã tìm thấy.\n    # Vì key trong dict là duy nhất và Python (3.7+) giữ thứ tự chèn, \n    # nên khi chuyển lại thành list, ta có danh sách không trùng và đúng thứ tự.\n    unique_emails = list(dict.fromkeys(all_emails))\n    \n    return unique_emails\n\n# --- Chạy thử nghiệm ---\ntest_text = 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'\n\nresult = extract_emails(test_text)\n\nprint(f\"Văn bản gốc: {test_text}\")\nprint(f\"Kết quả lấy được: {result}\")\n```\n\n### Giải thích chi tiết:\n\n1.  **Regex (`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}`)**:\n    *   `[a-zA-Z0-9._%+-]+`: Tìm một chuỗi gồm chữ cái, số hoặc các ký tự đặc biệt cho phép trong phần tên email.\n    *   `@`: Bắt buộc phải có ký tự `@`.\n    *   `[a-zA-Z0-9.-]+`: Tên miền (ví dụ: `gmail`, `cty`).\n    *   `\\.`: Dấu chấm trước phần mở rộng.\n    *   `[a-zA-Z]{2,}`: Phần mở rộng như `com`, `vn`, `edu` (phải có ít nhất 2 ký tự).\n\n2.  **Cách xử lý trùng lặp (`dict.fromkeys`)**:\n    *   Thông thường nếu dùng `set(all_emails)`, bạn sẽ mất thứ tự xuất hiện của email.\n    *   Sử dụng `list(dict.fromkeys(all_emails))` là cách \"Pythonic\" nhất để loại bỏ phần tử trùng mà vẫn đảm bảo: **Email nào xuất hiện trước thì đứng trước trong danh sách kết quả.**\n\n### Kết quả khi chạy code:\n```text\nVăn bản gốc: Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.\nKết quả lấy được: ['an.nguyen@gmail.com', 'sales@cty.vn']\n```",
+   "tokens": 1504,
+   "sec": 23.1
+  }
+ ]
+}

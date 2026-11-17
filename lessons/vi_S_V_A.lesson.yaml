@@ -1,0 +1,26 @@
+lesson_id: vi_grade3_S_V_A
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_V_A
+slots:
+  - var: S
+  - gap: s+
+    min: 0
+  - var: V
+  - var: A
+
+bind:
+  S: chủ ngữ
+  V: động từ
+  A: tính từ
+
+examples:
+  - "Con mèo chạy nhanh"
+  - "Em học giỏi"
+  - "Lan hát hay"
+  - "Bé khóc to"
+  - "Chó sủa lớn"
+  - "Mẹ nấu ngon"

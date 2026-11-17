@@ -1,0 +1,81 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/classrich2.pkl …
+[    4.4s RSS  3.45GB] nạp xong · parents=67541 vocab=32002
+[    4.4s RSS  3.45GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    4.4s RSS  3.45GB] ws_spans 0/67541 · span=0 · bỏ=0
+[    8.9s RSS  3.45GB] ws_spans 20000/67541 · span=15576 · bỏ=8873
+[   12.5s RSS  3.45GB] ws_spans 40000/67541 · span=28252 · bỏ=17464
+[   14.9s RSS  3.45GB] ws_spans 60000/67541 · span=32660 · bỏ=31199
+[   15.8s RSS  3.45GB] 34106 span · 0.2 phút
+[   15.8s RSS  3.45GB] ghi checkpoints/classrich2.ws_spans.json (0.6 MB) · roundtrip OK
+[   15.8s RSS  3.45GB]   mẫu[00] '<0x81> <0x98> 風'
+[   15.8s RSS  3.45GB]   mẫu[01] 'h iên'
+[   15.8s RSS  3.45GB]   mẫu[02] 'ả hữu'
+[   15.8s RSS  3.45GB]   mẫu[03] 'ạn đạo'
+[   15.8s RSS  3.45GB]   mẫu[04] 'quan phó'
+[   15.8s RSS  3.45GB]   mẫu[05] 'đo lường'
+[   15.8s RSS  3.45GB]   mẫu[06] 'quốc công'
+[   15.8s RSS  3.45GB]   mẫu[07] 'sách nhiễu'
+[   15.8s RSS  3.45GB]   mẫu[08] 'diễn đàn'
+[   15.8s RSS  3.45GB]   mẫu[09] 'thất thường'
+[   15.8s RSS  3.45GB]   mẫu[10] 'ùi cui'
+[   15.8s RSS  3.45GB]   mẫu[11] 'ry ps ed ra'
+[   15.8s RSS  3.45GB]   mẫu[12] 'Tổng cộng'
+[   15.8s RSS  3.45GB]   mẫu[13] 'Cu il co'
+[   15.8s RSS  3.45GB]   mẫu[14] 'Nam Hải'
+[   15.8s RSS  3.45GB]   mẫu[15] 'Cần Thơ'
+[   15.8s RSS  3.45GB]   mẫu[16] 'bồ câu'
+[   15.8s RSS  3.45GB]   mẫu[17] 'rat er es tra'
+[   15.8s RSS  3.45GB]   mẫu[18] 'Tin ol ius'
+[   15.8s RSS  3.45GB]   mẫu[19] 'Gar am antes'
+[   15.8s RSS  3.45GB]   mẫu[20] 'Kỹ sư'
+[   15.8s RSS  3.45GB]   mẫu[21] 'pan ul atrix'
+[   15.8s RSS  3.45GB]   mẫu[22] 'xã hội học'
+[   15.8s RSS  3.45GB]   mẫu[23] 'Poly t'
+[   15.8s RSS  3.45GB]   mẫu[24] 'chiến trận'
+[   15.8s RSS  3.45GB]   mẫu[25] 'odo ec ia'
+[   15.8s RSS  3.45GB]   mẫu[26] 'chst AG'
+[   15.8s RSS  3.45GB]   mẫu[27] 'Cóc Ho ur gl ass'
+[   15.8s RSS  3.45GB]   mẫu[28] 'đô la'
+[   15.8s RSS  3.45GB]   mẫu[29] 'odol umines cence'
+[   15.9s RSS  3.45GB] span nghi rác (tự động): 593/34106 = 1.7% (ISG: 57%)
+[   15.9s RSS  3.45GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp checkpoints/classrich2.pkl …
+[    4.0s RSS  3.03GB] nạp xong · parents=55460 vocab=32002
+[    4.0s RSS  3.03GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    4.1s RSS  3.03GB] ws_spans 0/55460 · span=0 · bỏ=0
+[    8.6s RSS  3.03GB] ws_spans 20000/55460 · span=14607 · bỏ=8902
+[   10.9s RSS  3.03GB] ws_spans 40000/55460 · span=19678 · bỏ=23168
+[   12.8s RSS  3.03GB] 22904 span · 0.1 phút
+[   12.8s RSS  3.03GB] ghi checkpoints/classrich2.ws_spans.json (0.3 MB) · roundtrip OK
+[   12.8s RSS  3.03GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[   12.8s RSS  3.03GB]   mẫu[01] 'm ép'
+[   12.8s RSS  3.03GB]   mẫu[02] 'ư văn'
+[   12.8s RSS  3.03GB]   mẫu[03] 'ùng bách'
+[   12.8s RSS  3.03GB]   mẫu[04] 'thế chiến'
+[   12.8s RSS  3.03GB]   mẫu[05] 'nước cốt'
+[   12.8s RSS  3.03GB]   mẫu[06] 'thông số'
+[   12.8s RSS  3.03GB]   mẫu[07] 'chu kỳ'
+[   12.8s RSS  3.03GB]   mẫu[08] 'ấm địa'
+[   12.8s RSS  3.03GB]   mẫu[09] 'cây xanh'
+[   12.8s RSS  3.03GB]   mẫu[10] 'trẻ em trai'
+[   12.8s RSS  3.03GB]   mẫu[11] 'dựng đứng'
+[   12.8s RSS  3.03GB]   mẫu[12] 'Công Hòa'
+[   12.8s RSS  3.03GB]   mẫu[13] 'Ngọc Tuấn'
+[   12.8s RSS  3.03GB]   mẫu[14] 'Triệu Thị Trinh'
+[   12.8s RSS  3.03GB]   mẫu[15] 'ảo giác'
+[   12.8s RSS  3.03GB]   mẫu[16] 'khinh miệt'
+[   12.8s RSS  3.03GB]   mẫu[17] 'Nam Hải'
+[   12.8s RSS  3.03GB]   mẫu[18] 'ho ả lực'
+[   12.8s RSS  3.03GB]   mẫu[19] 'con đội'
+[   12.8s RSS  3.03GB]   mẫu[20] 'phồn thịnh'
+[   12.8s RSS  3.03GB]   mẫu[21] 'ngh é'
+[   12.8s RSS  3.03GB]   mẫu[22] 'đặc sản'
+[   12.8s RSS  3.03GB]   mẫu[23] 'Đấng Messiah'
+[   12.8s RSS  3.03GB]   mẫu[24] 'tiểu hùng'
+[   12.8s RSS  3.03GB]   mẫu[25] 'long vân'
+[   12.8s RSS  3.03GB]   mẫu[26] 'Be is l'
+[   12.8s RSS  3.03GB]   mẫu[27] 'ngoằn ngoèo'
+[   12.8s RSS  3.03GB]   mẫu[28] 'Bong uar'
+[   12.8s RSS  3.03GB]   mẫu[29] 'đèn sách'
+[   12.8s RSS  3.03GB] span nghi rác (tự động): 521/22904 = 2.3% (ISG: 57%)
+[   12.8s RSS  3.03GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

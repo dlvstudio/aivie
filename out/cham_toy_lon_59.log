@@ -1,0 +1,196 @@
+
+### CHẤM 4 checkpoint bằng mặc định §58
+
+  head_rule=trai_du_dac_thu · trai=phai_nhat · rank=phieu_x_ctx · lọc gidf=0.0/indeg=0.0
+
+      cha      nhãn   khỉ hạng  ③ top-6
+[     0.0s] === load_toy_noise_60000 START (pid=96732) → out/logs/load_toy_noise_60000_20260814_205824.log ===
+[     0.0s] load checkpoint out/noise_big/toy_noise_60000.pkl …
+[     0.0s] ▶ unpickle
+[     0.7s] ✓ unpickle  (0.7s)
+[     0.7s] ▶ vocab (32002 token)
+[     0.8s] ✓ vocab (32002 token)  (0.0s)
+[     0.8s] ▶ adjacency
+[     2.7s] ✓ adjacency  (1.9s)
+[     2.7s] ▶ embedding
+[     2.8s] ✓ embedding  (0.1s)
+[     2.8s] ▶ parents
+[     2.8s] parents: deserialize 59769 records …
+[     2.9s] parents 5000/59769 (8.4%)
+[     2.9s] parents 10000/59769 (16.7%)
+[     3.0s] parents 15000/59769 (25.1%)
+[     3.1s] parents 20000/59769 (33.5%)
+[     3.2s] parents 25000/59769 (41.8%)
+[     3.3s] parents 30000/59769 (50.2%)
+[     3.4s] parents 35000/59769 (58.6%)
+[     3.5s] parents 40000/59769 (66.9%)
+[     3.6s] parents 45000/59769 (75.3%)
+[     3.6s] parents 50000/59769 (83.7%)
+[     3.7s] parents 55000/59769 (92.0%)
+[     5.7s] ▶ rebuild_hierarchical_index …
+[     5.9s] ✓ rebuild_hierarchical_index (0.2s)
+[     7.0s]     resync match_ids: 59769/59769 cha (df dựng lại)
+[     7.0s] ✓ parents  (4.2s)
+[     7.0s] ✓ loaded: vocab=32002 parents=59769 E=(32002, 96)
+[     7.1s] sidecar thiếu → migrate: toy_noise_60000.content.pkl
+[     7.1s] ✓ load_checkpoint XONG
+    59769      động         20  ['Am', 'An', 'Biên', 'Chim', 'Joseph', 'Long']   hạt=['chó', 'mèo']
+[     0.0s] === load_toy_noise_100000 START (pid=96732) → out/logs/load_toy_noise_100000_20260814_205841.log ===
+[     0.0s] load checkpoint out/noise_big/toy_noise_100000.pkl …
+[     0.0s] ▶ unpickle
+[     1.1s] ✓ unpickle  (1.1s)
+[     1.1s] ▶ vocab (32002 token)
+[     1.1s] ✓ vocab (32002 token)  (0.0s)
+[     1.1s] ▶ adjacency
+[     3.9s] ✓ adjacency  (2.8s)
+[     3.9s] ▶ embedding
+[     3.9s] ✓ embedding  (0.0s)
+[     3.9s] ▶ parents
+[     3.9s] parents: deserialize 99362 records …
+[     4.0s] parents 5000/99362 (5.0%)
+[     4.1s] parents 10000/99362 (10.1%)
+[     4.1s] parents 15000/99362 (15.1%)
+[     4.2s] parents 20000/99362 (20.1%)
+[     4.3s] parents 25000/99362 (25.2%)
+[     4.4s] parents 30000/99362 (30.2%)
+[     4.4s] parents 35000/99362 (35.2%)
+[     4.5s] parents 40000/99362 (40.3%)
+[     4.6s] parents 45000/99362 (45.3%)
+[     4.7s] parents 50000/99362 (50.3%)
+[     4.7s] parents 55000/99362 (55.4%)
+[     4.8s] parents 60000/99362 (60.4%)
+[     4.9s] parents 65000/99362 (65.4%)
+[     5.0s] parents 70000/99362 (70.4%)
+[     5.0s] parents 75000/99362 (75.5%)
+[     5.1s] parents 80000/99362 (80.5%)
+[     5.2s] parents 85000/99362 (85.5%)
+[     5.3s] parents 90000/99362 (90.6%)
+[     5.4s] parents 95000/99362 (95.6%)
+[     8.8s] ▶ rebuild_hierarchical_index …
+[     9.2s] ✓ rebuild_hierarchical_index (0.4s)
+[    11.1s]     resync match_ids: 99362/99362 cha (df dựng lại)
+[    11.1s] ✓ parents  (7.1s)
+[    11.1s] ✓ loaded: vocab=32002 parents=99362 E=(32002, 96)
+[    11.4s] sidecar thiếu → migrate: toy_noise_100000.content.pkl
+[    11.4s] ✓ load_checkpoint XONG
+    99362      động          —  ['chiếc', 'Am', 'An', 'Biên', 'Cao', 'Chim']   hạt=['chó', 'mèo']
+[     0.0s] === load_toy_noise_150000 START (pid=96732) → out/logs/load_toy_noise_150000_20260814_205908.log ===
+[     0.0s] load checkpoint out/noise_big/toy_noise_150000.pkl …
+[     0.0s] ▶ unpickle
+[     1.6s] ✓ unpickle  (1.6s)
+[     1.6s] ▶ vocab (32002 token)
+[     1.6s] ✓ vocab (32002 token)  (0.0s)
+[     1.6s] ▶ adjacency
+[     5.6s] ✓ adjacency  (4.0s)
+[     5.6s] ▶ embedding
+[     5.7s] ✓ embedding  (0.0s)
+[     5.7s] ▶ parents
+[     5.7s] parents: deserialize 148875 records …
+[     5.8s] parents 5000/148875 (3.4%)
+[     5.8s] parents 10000/148875 (6.7%)
+[     5.9s] parents 15000/148875 (10.1%)
+[     6.0s] parents 20000/148875 (13.4%)
+[     6.1s] parents 25000/148875 (16.8%)
+[     6.1s] parents 30000/148875 (20.2%)
+[     6.2s] parents 35000/148875 (23.5%)
+[     6.3s] parents 40000/148875 (26.9%)
+[     6.4s] parents 45000/148875 (30.2%)
+[     6.4s] parents 50000/148875 (33.6%)
+[     6.5s] parents 55000/148875 (36.9%)
+[     6.6s] parents 60000/148875 (40.3%)
+[     6.7s] parents 65000/148875 (43.7%)
+[     6.8s] parents 70000/148875 (47.0%)
+[     6.8s] parents 75000/148875 (50.4%)
+[     6.9s] parents 80000/148875 (53.7%)
+[     7.0s] parents 85000/148875 (57.1%)
+[     7.1s] parents 90000/148875 (60.5%)
+[     7.2s] parents 95000/148875 (63.8%)
+[     7.2s] parents 100000/148875 (67.2%)
+[     7.3s] parents 105000/148875 (70.5%)
+[     7.4s] parents 110000/148875 (73.9%)
+[     7.5s] parents 115000/148875 (77.2%)
+[     7.6s] parents 120000/148875 (80.6%)
+[     7.6s] parents 125000/148875 (84.0%)
+[     7.7s] parents 130000/148875 (87.3%)
+[     7.8s] parents 135000/148875 (90.7%)
+[     7.9s] parents 140000/148875 (94.0%)
+[     8.0s] parents 145000/148875 (97.4%)
+[    13.1s] ▶ rebuild_hierarchical_index …
+[    13.7s] ✓ rebuild_hierarchical_index (0.7s)
+[    16.6s]     resync match_ids: 148875/148875 cha (df dựng lại)
+[    16.6s] ✓ parents  (10.9s)
+[    16.6s] ✓ loaded: vocab=32002 parents=148875 E=(32002, 96)
+[    17.2s] sidecar thiếu → migrate: toy_noise_150000.content.pkl
+[    17.2s] ✓ load_checkpoint XONG
+   148875       bao          —  ['cả', 'tiếng', 'cá', 'phần', 'sự', 'nhiều']   hạt=['chó', 'mèo']
+[     0.0s] === load_toy_noise_250000 START (pid=96732) → out/logs/load_toy_noise_250000_20260814_205950.log ===
+[     0.0s] load checkpoint out/noise_big/toy_noise_250000.pkl …
+[     0.0s] ▶ unpickle
+[     2.5s] ✓ unpickle  (2.5s)
+[     2.5s] ▶ vocab (32002 token)
+[     2.6s] ✓ vocab (32002 token)  (0.0s)
+[     2.6s] ▶ adjacency
+[     8.7s] ✓ adjacency  (6.1s)
+[     8.7s] ▶ embedding
+[     8.7s] ✓ embedding  (0.0s)
+[     8.7s] ▶ parents
+[     8.7s] parents: deserialize 245321 records …
+[     8.8s] parents 5000/245321 (2.0%)
+[     8.8s] parents 10000/245321 (4.1%)
+[     8.9s] parents 15000/245321 (6.1%)
+[     9.0s] parents 20000/245321 (8.2%)
+[     9.1s] parents 25000/245321 (10.2%)
+[     9.2s] parents 30000/245321 (12.2%)
+[     9.3s] parents 35000/245321 (14.3%)
+[     9.4s] parents 40000/245321 (16.3%)
+[     9.5s] parents 45000/245321 (18.3%)
+[     9.6s] parents 50000/245321 (20.4%)
+[     9.7s] parents 55000/245321 (22.4%)
+[     9.8s] parents 60000/245321 (24.5%)
+[     9.9s] parents 65000/245321 (26.5%)
+[    10.0s] parents 70000/245321 (28.5%)
+[    10.1s] parents 75000/245321 (30.6%)
+[    10.2s] parents 80000/245321 (32.6%)
+[    10.3s] parents 85000/245321 (34.6%)
+[    10.4s] parents 90000/245321 (36.7%)
+[    10.5s] parents 95000/245321 (38.7%)
+[    10.6s] parents 100000/245321 (40.8%)
+[    10.7s] parents 105000/245321 (42.8%)
+[    10.8s] parents 110000/245321 (44.8%)
+[    10.9s] parents 115000/245321 (46.9%)
+[    11.0s] parents 120000/245321 (48.9%)
+[    11.1s] parents 125000/245321 (51.0%)
+[    11.2s] parents 130000/245321 (53.0%)
+[    11.3s] parents 135000/245321 (55.0%)
+[    11.4s] parents 140000/245321 (57.1%)
+[    11.5s] parents 145000/245321 (59.1%)
+[    11.6s] parents 150000/245321 (61.1%)
+[    11.7s] parents 155000/245321 (63.2%)
+[    11.8s] parents 160000/245321 (65.2%)
+[    11.9s] parents 165000/245321 (67.3%)
+[    12.0s] parents 170000/245321 (69.3%)
+[    12.1s] parents 175000/245321 (71.3%)
+[    12.1s] parents 180000/245321 (73.4%)
+[    12.2s] parents 185000/245321 (75.4%)
+[    12.3s] parents 190000/245321 (77.4%)
+[    12.4s] parents 195000/245321 (79.5%)
+[    12.5s] parents 200000/245321 (81.5%)
+[    12.6s] parents 205000/245321 (83.6%)
+[    12.7s] parents 210000/245321 (85.6%)
+[    12.8s] parents 215000/245321 (87.6%)
+[    12.9s] parents 220000/245321 (89.7%)
+[    12.9s] parents 225000/245321 (91.7%)
+[    13.0s] parents 230000/245321 (93.8%)
+[    13.1s] parents 235000/245321 (95.8%)
+[    13.2s] parents 240000/245321 (97.8%)
+[    13.3s] parents 245000/245321 (99.9%)
+[    22.4s] ▶ rebuild_hierarchical_index …
+[    23.6s] ✓ rebuild_hierarchical_index (1.2s)
+[    28.5s]     resync match_ids: 245321/245321 cha (df dựng lại)
+[    28.5s] ✓ parents  (19.8s)
+[    28.5s] ✓ loaded: vocab=32002 parents=245321 E=(32002, 96)
+[    30.6s] sidecar thiếu → migrate: toy_noise_250000.content.pkl
+[    30.6s] ✓ load_checkpoint XONG
+   245321       vật          —  ['chó', 'dụng', 'thực', 'truyền', 'vũ', 'đồng']   hạt=['chó', 'mèo']
+
+[157s] xong

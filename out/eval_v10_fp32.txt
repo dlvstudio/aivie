@@ -1,0 +1,61 @@
+held-out: 300 đơn vị từ data/real_vi/essays.jsonl
+load out/lm_v2_v10_fp32.pt …
+Traceback (most recent call last):
+  File "~/Documents/learn/nn-aivie/scripts/eval_bits.py", line 254, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "~/Documents/learn/nn-aivie/scripts/eval_bits.py", line 223, in main
+    state, _ = load_checkpoint(args.checkpoint)
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/core/checkpoint_io.py", line 37, in load_checkpoint
+    state = GraphState.load(str(checkpoint), logger=logger, freeze_adjacency=freeze_adjacency)
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/core/state.py", line 74, in load
+    payload = pickle.load(f)
+_pickle.UnpicklingError: persistent IDs in protocol 0 must be ASCII strings
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    1.9s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.4s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   19.4s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   20.4s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   20.4s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   20.7s] train: 19,696,660 token
+[   20.7s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   20.7s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   24.7s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   24.7s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   24.7s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   24.7s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   24.7s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   24.7s] 
+--- LM NƠ-RON ---
+[   25.2s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   26.1s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   26.1s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   26.1s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   26.1s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   26.7s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   26.7s]   ▶ RESUME từ lm_v2_v10_fp32.pt.resume: tiếp step 30000/30000 · best cũ 5.843 bits/tok
+[   28.6s]     nơ-ron (CUỐI): 5.843 bits/token · 1.052 bits/BYTE (3,702 vị trí)
+[   32.8s]     TRAIN 5.052 vs EVAL 5.843 bits/token · khoảng cách +0.791
+[   32.8s]     ✓ đã có khoảng cách train/eval ⇒ mô hình đã vắt được data; kết luận có nghĩa.
+[   32.8s]     head-sim(Wq) L0: mean|cos|=0.0064
+[   32.8s]     head-sim(Wq) L1: mean|cos|=0.0054
+[   32.8s]     head-sim(Wq) L2: mean|cos|=0.0051
+[   32.8s]     head-sim(Wq) L3: mean|cos|=0.0059
+[   32.8s]     head-sim(Wq) L4: mean|cos|=0.0048
+[   32.8s]     head-sim(Wq) L5: mean|cos|=0.0045
+[   32.8s]     head-sim(Wq) L6: mean|cos|=0.0054
+[   32.8s]     head-sim(Wq) L7: mean|cos|=0.0060
+[   32.8s] 
+================================================================
+[   32.8s]   ĐẾM     : 1.276 bits/byte
+[   32.8s]   NƠ-RON  : 1.052 bits/byte   (Δ -0.224)
+[   32.8s] ================================================================
+[   32.8s] 
+→ GAP THẬT. Đếm KHÔNG lấy được ngữ cảnh dài. Câu hỏi B vs C có nghĩa.

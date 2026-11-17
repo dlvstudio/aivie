@@ -1,0 +1,27 @@
+
+ĐÚNG SƠ ĐỒ: gieo từ VẬT MANG (a,b) → tìm x chung → x ⊃ c
+
+  vật mang ['hạc', 'sếu', 'ưng']  (lớp thật = 'chim')
+     cooc         gidf≥0.0  → ['nói', 'Thiên', 'Xung', 'Nhi', 'mộc', 'Hiên', 'Tử']   có «chim»: False
+     cooc         gidf≥6.0  → ['Xung', 'Nhi', 'mộc', 'Hiên', 'Tử', 'Linh', 'sơn']   có «chim»: False
+     typed_first  gidf≥0.0  → ['chim', 'vùng', 'cói', 'võ', 'thú', 'một chỗ', 'một loài']   có «chim»: True
+     typed_first  gidf≥6.0  → ['chim', 'vùng', 'cói', 'võ', 'thú', 'một loài', 'Xung']   có «chim»: True
+
+  vật mang ['cáo', 'chuột', 'cầy']  (lớp thật = 'thú')
+     cooc         gidf≥0.0  → ['buộc', 'tài', 'chính', 'biệt', 'cáo', 'lui', 'tín']   có «thú»: False
+     cooc         gidf≥6.0  → ['buộc', 'cáo', 'lui', 'tín', 'tri', 'lừa', 'nhắm']   có «thú»: False
+     typed_first  gidf≥0.0  → ['loài', 'yếu', 'thủ', 'chủ', 'năm', 'lỗ', 'thanh']   có «thú»: False
+     typed_first  gidf≥6.0  → ['loài', 'lỗ', 'sói', 'ant', 'kênh', 'chồn', 'Lam']   có «thú»: False
+
+  vật mang ['chuối', 'dừa', 'cau']  (lớp thật = 'cây')
+     cooc         gidf≥0.0  → ['mày', 'chín', 'nói', 'tiêu', 'khô', 'vua', 'tinh']   có «cây»: False
+     cooc         gidf≥6.0  → ['mày', 'chín', 'khô', 'vua', 'nướng', 'lát', 'lùn']   có «cây»: False
+     typed_first  gidf≥0.0  → ['tươi', 'hạn', 'loại', 'dao', 'phần', 'cột', 'ngon']   có «cây»: False
+     typed_first  gidf≥6.0  → ['tươi', 'dao', 'cột', 'ngon', 'vuông', 'Táo', 'mềm']   có «cây»: False
+
+  vật mang ['bạc', 'chì']  (lớp thật = 'kim loại')
+     cooc         gidf≥0.0  → ['quý', 'hà', 'đá', 'bạc', 'Sài', 'Gòn', 'trắng']   có «kim loại»: False
+     cooc         gidf≥6.0  → ['quý', 'hà', 'đá', 'bạc', 'Sài', 'Gòn', 'trắng']   có «kim loại»: False
+     typed_first  gidf≥0.0  → ['bác', 'mỏ', 'cơ', 'kiếm', 'chất', 'bút', 'kẻ']   có «kim loại»: False
+     typed_first  gidf≥6.0  → ['bác', 'mỏ', 'bút', 'kẻ', 'ắc', 'Thủy', 'buổi']   có «kim loại»: False
+

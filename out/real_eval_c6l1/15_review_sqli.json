@@ -1,0 +1,12 @@
+{
+ "id": "15_review_sqli",
+ "cat": "review",
+ "turns": [
+  {
+   "user": "Review giúp đoạn code đăng nhập này, có vấn đề gì không?\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    conn = sqlite3.connect('app.db')\n    cur = conn.cursor()\n    cur.execute(f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\")\n    user = cur.fetchone()\n    return user is not None\n```",
+   "text": "Đoạn code của bạn bị lỗi kết nối (bare quote) vì không có dấu `sau`. Để chạy được, bạn cần bao bọc đoạn code trong khối `try...except` để bắt lỗi và ngắt chương trình ngay khi dữ liệu bị thiếu.\n\n```python\nimport sqlite3\n\ndef dang_nhap(username, password):\n    conn = sqlite3.connect('app.db')\n    cur = conn.cursor()\n    try:\n        cur.execute(f\"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'\")\n        result = cur.fetchone()\n        if result is not None:\n            return result\n    except Exception as e:\n        print(f\"Lỗi khi truy cập user {username}: {e}\")\n        return None\n    finally:\n        conn.close()\n```\nBạn có muốn tôi hướng dẫn cách ghi kết quả này ra file thay vì in ra màn hình không?",
+   "tokens": 255,
+   "sec": 9.2
+  }
+ ]
+}

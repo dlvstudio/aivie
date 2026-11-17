@@ -1,0 +1,13 @@
+{
+ "id": "06_debounce",
+ "cat": "js",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết hàm debounce bằng JavaScript và ví dụ dùng nó cho ô tìm kiếm: người dùng gõ xong 300ms mới gọi API fetch('/api/search?q=...') và hiển thị kết quả vào một thẻ <ul>.",
+   "text": "Đây là cách bạn có thể viết hàm debounce trong JavaScript:\n\n```javascript\nfunction debounce(func, wait) {\n    let timeout;\n\n    return function executedFunction(...args) {\n        const context = this;\n\n        clearTimeout(timeout);\n\n        timeout = setTimeout(() => func.apply(context, args), wait);\n    };\n};\n```\n\nVí dụ sử dụng debounce cho ô tìm kiếm có thể như sau:\n\n```javascript\nconst searchInput = document.querySelector('#search-input');\nconst ulElement = document.querySelector('#results');\n\nconst debouncedSearch = debounce(function (event) {\n    const searchText = event.target.value;\n    \n    // Gọi API fetch /api/search?q=... sau 300ms\n    fetch(`/api/search?q=${searchText}`)\n        .then(response => response.json())\n        .then(data => {\n            ulElement.innerHTML = '';\n\n            data.results.forEach(result => {\n                const li = document.createElement('li');\n                li.textContent = result;\n                ulElement.appendChild(li);\n            });\n        })\n        .catch(error => console.error(error));\n}, 300);\n\nsearchInput.addEventListener('input', debouncedSearch);\n```\n\nỞ đây, chúng ta tạo một hàm debounce có tên là `debouncedSearch` từ hàm `debounce` với tham số là hàm thực hiện tìm kiếm và thời gian chờ là 300ms. Khi người dùng nhập vào ô tìm kiếm, sự kiện 'input' sẽ kích hoạt hàm `debouncedSearch`. Hàm này sẽ xóa thời gian chờ trước đó (nếu có), sau đó tạo một mới để gọi hàm thực hiện tìm kiếm sau 300ms. Kết quả tìm kiếm được hiển thị trong thẻ <ul>.",
+   "tokens": 354,
+   "sec": 7.6
+  }
+ ]
+}

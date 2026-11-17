@@ -1,0 +1,18 @@
+[    0.0s] load network_v10.pkl (1,850 MB) … — checkpoint lớn mất 5–15 phút (resync_match_ids quét MỌI cha lúc load)
+[  206.3s] loaded: cha=65,098 vocab=126,518
+[  206.3s]   [PASS] EOS cuối source_ids: 2000/2000 cha — nếu ~0 thì `_with_eos` KHÔNG chạy trên đường train này
+[  206.3s]   [PASS] EOS ngoài match_ids: 0/2000 cha có EOS trong match_ids
+[  206.3s]   [PASS] dấu câu vào thống kê: '.' gdf=38,976 gidf=1.513 — gidf>7 nghĩa là dấu câu VẮNG khỏi _gdf → nó thành token phân biệt NHẤT corpus (bug)
+[  206.3s]          (đối chiếu 'Việt': gdf=4,035 gidf=3.781)
+[  206.3s]          (đối chiếu 'là': gdf=26,632 gidf=1.894)
+[  206.5s]   P(EOS) nền = 0.00358 (≈ số đơn vị / tổng token — lift chia cho số này)
+[  206.5s]   [PASS] mốc kết học từ EOS: '.' P(→EOS)=0.057 lift=16.0 (ngưỡng 2.0) ends_unit=True; từ nội dung nhận nhầm làm mốc: không
+[  206.5s]   [PASS] bake FRAME_BRACKET: edges=1,812,272 meta=1,812,272 endpoints=357,138 — endpoints=0 nghĩa là checkpoint KẸT (bake báo skipped, runtime bị guard chặn) → chạy lại với --bake
+[  206.5s]   [PASS] bake skip_spans: 30,000
+[  206.5s]   varlm: max_ctx=4 lam=0.45 use_clusters=True n_tokens=9,654,468
+[  206.5s]          ctx mỗi bậc: k=1:96631, k=2:776081, k=3:1065944, k=4:1171036
+[  207.4s]   [PASS] varlm khớp vocab: 0 token-id NGOÀI vocab — sidecar build từ checkpoint KHÁC → load OK nhưng điểm SAI (im lặng). Build lại SAU khi train xong.
+[  207.4s]   [PASS] varlm học mốc kết: 119,093 ctx có EOS làm token kế
+[  207.6s]   [PASS] varlm cluster-aware: 3,114,704 ctx-element là cluster id
+[  207.6s] 
+[  207.6s] ✅ TẤT CẢ PASS

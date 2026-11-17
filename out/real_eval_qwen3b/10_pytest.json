@@ -1,0 +1,13 @@
+{
+ "id": "10_pytest",
+ "cat": "test",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Viết test pytest cho hàm này, bao phủ cả trường hợp biên:\n\n```python\ndef chia_deu(tong: int, so_nguoi: int) -> list[int]:\n    \"\"\"Chia tong thành so_nguoi phần nguyên chênh nhau tối đa 1.\"\"\"\n    if so_nguoi <= 0:\n        raise ValueError('so_nguoi phải > 0')\n    q, r = divmod(tong, so_nguoi)\n    return [q + 1] * r + [q] * (so_nguoi - r)\n```",
+   "text": "Để viết một test pytest cho hàm `chia_deu`, chúng ta cần kiểm tra nhiều trường hợp khác nhau bao gồm:\n\n1. Trong trường hợp chia số nguyên thành nhiều phần.\n2. Trong trường hợp chia số nguyên thành một phần lớn và một phần nhỏ.\n3. Trong trường hợp chia số nguyên thành nhiều phần với phần chênh lệch tối đa 1.\n4. Trong trường hợp `so_nguoi` là 0 hoặc âm, bắt đầu bằng việc kiểm tra ngoại lệ.\n5. Trong trường hợp tổng là 0, kết quả phải là một danh sách toàn bộ bằng 0.\n\nVì hàm này sử dụng tính toán chia lấy dư (`divmod`), nên chúng ta cần đảm bảo rằng tổng và số người đều lớn hơn hoặc bằng 0. \n\nDưới đây là đoạn mã test pytest:\n\n```python\nimport pytest\n\ndef test_chia_deu():\n    # Trong trường hợp chia số nguyên thành nhiều phần\n    assert chia_deu(15, 3) == [4, 4, 3]\n    \n    # Trong trường hợp chia số nguyên thành một phần lớn và một phần nhỏ\n    assert chia_deu(20, 3) == [6, 7, 7]\n    \n    # Trong trường hợp chia số nguyên thành nhiều phần với phần chênh lệch tối đa 1\n    assert chia_deu(19, 5) == [4, 4, 4, 4, 3]\n    \n    # Trong trường hợp so_nguoi là 0 hoặc âm\n    with pytest.raises(ValueError):\n        chia_deu(15, 0)\n    with pytest.raises(ValueError):\n        chia_deu(15, -3)\n    \n    # Trong trường hợp tổng là 0\n    assert chia_deu(0, 2) == [0, 0]\n```\n\nHãy đảm bảo rằng bạn đã cài đặt pytest bằng cách chạy `pip install pytest` trước khi thực hiện các test.",
+   "tokens": 447,
+   "sec": 5.1
+  }
+ ]
+}

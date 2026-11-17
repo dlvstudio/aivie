@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cạnh loại suy · AIVIE</title>
+<style>
+  :root { --bg:#0f1117; --panel:#171a22; --fg:#d7dae0; --muted:#8b93a3;
+          --analogy:#4ec9b0; --reinforced:#e5c07b; --seed:#e06c75; --node:#5b9fd4; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:14px/1.4 -apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding:.7rem 1rem; background:var(--panel); display:flex; gap:.6rem;
+           align-items:center; flex-wrap:wrap; border-bottom:1px solid #262b36; }
+  input,button,select { background:#0f1117; color:var(--fg); border:1px solid #2a3040;
+         border-radius:6px; padding:.4rem .6rem; font-size:14px; }
+  button { cursor:pointer; background:#232838; }
+  button:hover { background:#2c3346; }
+  .legend { margin-left:auto; display:flex; gap:1rem; color:var(--muted); font-size:13px; }
+  .chip { display:inline-flex; align-items:center; gap:.35rem; }
+  .swatch { width:22px; height:0; border-top:3px solid; display:inline-block; }
+  #status { color:var(--muted); padding:.3rem 1rem; font-size:13px; }
+  svg { width:100vw; height:calc(100vh - 92px); display:block; }
+  text { fill:var(--fg); font-size:12px; pointer-events:none; }
+  .seedlabel { fill:#fff; font-weight:600; }
+</style>
+</head>
+<body>
+<header>
+  <strong style="color:var(--analogy)">Cạnh loại suy</strong>
+  <input id="tok" value="sắt" size="16" placeholder="token, vd: sắt / mèo / phở">
+  <select id="kinds">
+    <option value="analogy,reinforced">analogy + reinforced</option>
+    <option value="reinforced">reinforced (đã xác nhận)</option>
+    <option value="analogy">analogy (thụ động)</option>
+  </select>
+  <select id="hops"><option value="1">1 hop</option><option value="2">2 hop</option></select>
+  <button id="go">Xem</button>
+  <span class="legend">
+    <span class="chip"><span class="swatch" style="border-color:var(--reinforced)"></span>reinforced</span>
+    <span class="chip"><span class="swatch" style="border-color:var(--analogy)"></span>analogy</span>
+    <span class="chip"><span class="swatch" style="border-color:var(--seed);border-top-width:0;width:10px;height:10px;border-radius:50%;background:var(--seed)"></span>nguồn</span>
+  </span>
+</header>
+<div id="status">…</div>
+<svg id="cv"></svg>
+<script>
+const COLOR = { analogy:"#4ec9b0", reinforced:"#e5c07b" };
+const $ = s => document.querySelector(s);
+const svg = $("#cv");
+function strip(s){ return (s||"").replace(/^[ĠĊ]+/,""); }
+
+async function load(){
+  const tok = encodeURIComponent($("#tok").value.trim());
+  const kinds = $("#kinds").value, hops = $("#hops").value;
+  $("#status").textContent = "đang tải…";
+  let d;
+  try {
+    const r = await fetch(`/api/graph/token?token=${tok}&kinds=${kinds}&hops=${hops}&max_edges=120`);
+    d = await r.json();
+  } catch(e){ $("#status").textContent = "lỗi: "+e; return; }
+  if(!d.nodes || !d.nodes.length){ $("#status").textContent="không có cạnh loại suy cho token này."; svg.innerHTML=""; return; }
+  // gộp nút theo BỀ MẶT (bỏ marker Ġ) để sắt và Ġsắt là một
+  const surf = {}, nodes=[], idmap={};
+  for(const n of d.nodes){ const s=strip(n.label);
+    if(!(s in surf)){ surf[s]={id:nodes.length,label:s,seed:false}; nodes.push(surf[s]); }
+    idmap[n.id]=surf[s].id; if(n.seed) surf[s].seed=true; }
+  const seen=new Set(), edges=[];
+  for(const e of d.edges){ const a=idmap[e.source],b=idmap[e.target]; if(a===b) continue;
+    const k=a<b?a+"-"+b:b+"-"+a; if(seen.has(k)) continue; seen.add(k);
+    edges.push({s:a,t:b,kind:e.kind,w:e.weight}); }
+  draw(nodes,edges,d.meta);
+  $("#status").textContent = `«${$("#tok").value.trim()}» · ${nodes.length} nút · ${edges.length} cạnh · ${d.meta.kinds.join("+")}`;
+}
+
+function draw(nodes,edges,meta){
+  const W=svg.clientWidth||window.innerWidth, H=svg.clientHeight||(window.innerHeight-92), cx=W/2, cy=H/2;
+  for(const n of nodes){ n.x=cx+(Math.random()-.5)*300; n.y=cy+(Math.random()-.5)*300;
+    if(n.seed){ n.x=cx; n.y=cy; } n.vx=0; n.vy=0; }
+  // force sim đơn giản
+  for(let it=0; it<320; it++){
+    for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
+      const a=nodes[i],b=nodes[j]; let dx=a.x-b.x,dy=a.y-b.y,d2=dx*dx+dy*dy||1;
+      const f=1400/d2, d=Math.sqrt(d2); dx/=d;dy/=d; a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f; }
+    for(const e of edges){ const a=nodes[e.s],b=nodes[e.t];
+      let dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)||1; const f=(d-120)*0.02; dx/=d;dy/=d;
+      a.vx+=dx*f;a.vy+=dy*f;b.vx-=dx*f;b.vy-=dy*f; }
+    for(const n of nodes){ if(n.seed){n.vx=0;n.vy=0;continue;}
+      n.x+=n.vx*.85; n.y+=n.vy*.85; n.vx*=.6; n.vy*=.6;
+      n.x=Math.max(40,Math.min(W-40,n.x)); n.y=Math.max(40,Math.min(H-40,n.y)); }
+  }
+  let s='';
+  for(const e of edges){ const a=nodes[e.s],b=nodes[e.t]; const c=COLOR[e.kind]||"#8b93a3";
+    s+=`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${c}" stroke-width="${1+2.5*e.w}" stroke-opacity=".7"/>`; }
+  for(const n of nodes){ const r=n.seed?9:5; const fill=n.seed?"#e06c75":"#5b9fd4";
+    s+=`<circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${fill}" stroke="#0f1117" stroke-width="1.5"/>`;
+    s+=`<text class="${n.seed?'seedlabel':''}" x="${n.x+r+3}" y="${n.y+4}">${n.label}</text>`; }
+  svg.innerHTML=s;
+}
+$("#go").onclick=load; $("#tok").addEventListener("keydown",e=>{if(e.key==="Enter")load();});
+// đọc ?token=… ?kinds=… từ URL nếu có
+const _q = new URLSearchParams(location.search);
+if(_q.get("token")) $("#tok").value = _q.get("token");
+if(_q.get("kinds")) $("#kinds").value = _q.get("kinds");
+// đợi layout xong (SVG có kích thước) rồi mới vẽ lần đầu
+window.addEventListener("load", ()=>requestAnimationFrame(()=>requestAnimationFrame(load)));
+</script>
+</body>
+</html>

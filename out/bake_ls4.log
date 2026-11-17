@@ -1,0 +1,65 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[     0.0s] === load_loai_suy START (pid=21199) → out/logs/load_loai_suy_20260815_194706.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/loai_suy.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.2s] ✓ adjacency  (0.9s)
+[     1.2s] ▶ embedding
+[     1.2s] ✓ embedding  (0.0s)
+[     1.2s] ▶ parents
+[     1.2s] parents: deserialize 36482 records …
+[     1.2s] parents 5000/36482 (13.7%)
+[     1.3s] parents 10000/36482 (27.4%)
+[     1.3s] parents 15000/36482 (41.1%)
+[     1.4s] parents 20000/36482 (54.8%)
+[     1.5s] parents 25000/36482 (68.5%)
+[     1.5s] parents 30000/36482 (82.2%)
+[     1.6s] parents 35000/36482 (95.9%)
+[     2.1s] ▶ rebuild_hierarchical_index …
+[     2.2s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.6s]     resync match_ids: 36482/36482 cha (df dựng lại)
+[     2.6s] ✓ parents  (1.4s)
+[     2.6s] ✓ loaded: vocab=32002 parents=36482 E=(32002, 96)
+[     2.7s] sidecar thiếu → migrate: loai_suy.content.pkl
+[     2.7s] ✓ load_checkpoint XONG
+[    2.9s RSS  2.44GB] nạp xong · parents=36482 vocab=32002
+[    2.9s RSS  2.44GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.9s RSS  2.44GB] ws_spans 0/36482 · span=0 · bỏ=0
+[    5.1s RSS  2.44GB] ws_spans 20000/36482 · span=7218 · bỏ=13826
+[    7.3s RSS  2.44GB] 11384 span · 0.1 phút
+[    7.3s RSS  2.44GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.3s RSS  2.44GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.3s RSS  2.44GB]   mẫu[01] 'T oshiba'
+[    7.3s RSS  2.44GB]   mẫu[02] 'Giải tích'
+[    7.3s RSS  2.44GB]   mẫu[03] 'nước nặng'
+[    7.3s RSS  2.44GB]   mẫu[04] '3 m'
+[    7.3s RSS  2.44GB]   mẫu[05] 'ngoài Mặt Trời'
+[    7.3s RSS  2.44GB]   mẫu[06] 'G 8'
+[    7.3s RSS  2.44GB]   mẫu[07] 'anh em'
+[    7.3s RSS  2.44GB]   mẫu[08] 'đứng tên'
+[    7.3s RSS  2.44GB]   mẫu[09] 'mạng ARPANET'
+[    7.3s RSS  2.44GB]   mẫu[10] 'o cha'
+[    7.3s RSS  2.44GB]   mẫu[11] 'Bình Kình'
+[    7.3s RSS  2.44GB]   mẫu[12] 'Văn Phụng'
+[    7.3s RSS  2.44GB]   mẫu[13] 'kẻ thù'
+[    7.3s RSS  2.44GB]   mẫu[14] 'Cơ cấu'
+[    7.3s RSS  2.44GB]   mẫu[15] 'trốn tránh'
+[    7.3s RSS  2.44GB]   mẫu[16] 'Vì vậy'
+[    7.3s RSS  2.44GB]   mẫu[17] 'dinh dưỡng khoáng'
+[    7.3s RSS  2.44GB]   mẫu[18] 'Huy Sâm'
+[    7.3s RSS  2.44GB]   mẫu[19] 'luân hồi'
+[    7.3s RSS  2.44GB]   mẫu[20] 'rẻ tiền'
+[    7.3s RSS  2.44GB]   mẫu[21] 'Lịch Ireland'
+[    7.3s RSS  2.44GB]   mẫu[22] 'ling stone'
+[    7.3s RSS  2.44GB]   mẫu[23] 'Máy bay'
+[    7.3s RSS  2.44GB]   mẫu[24] 'Sóc Trăng'
+[    7.3s RSS  2.44GB]   mẫu[25] 'boson Higgs'
+[    7.3s RSS  2.44GB]   mẫu[26] 'Dal älven'
+[    7.3s RSS  2.44GB]   mẫu[27] 'Book er'
+[    7.3s RSS  2.44GB]   mẫu[28] 'Ag ain Shell'
+[    7.3s RSS  2.44GB]   mẫu[29] 'đô china'
+[    7.3s RSS  2.44GB] span nghi rác (tự động): 315/11384 = 2.8% (ISG: 57%)
+[    7.3s RSS  2.44GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

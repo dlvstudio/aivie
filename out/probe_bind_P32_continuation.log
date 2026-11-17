@@ -1,0 +1,49 @@
+[     0s] load checkpoints/network_v11_coref.pkl (gc.disable) …
+[    78s] ✓ loaded · parents 65,098
+[   107s] probe: 12 item
+[   107s] 
+═══ P3.0 baseline (kênh copy TẮT) — kỳ vọng copy ≈ 0 ═══
+[   159s] [single] copy=✗ novelty=['exact=n reg=Y gidf=4.9']
+[   159s]     prompt: 'Lữ Bằng Sơn là một nhà thơ nổi tiếng của Việt Nam .'
+[   159s]     cont  : '.Lữ từ .'   (mong copy: ['Lữ Bằng Sơn'])
+[   163s] [single] copy=✗ novelty=['exact=n reg=Y gidf=8.6']
+[   163s]     prompt: 'Vĩnh Trảng là một tỉnh ven biển thuộc miền Trung .'
+[   163s]     cont  : 'Vĩnh, . . .'   (mong copy: ['Vĩnh Trảng'])
+[   167s] [single] copy=✗ novelty=['exact=n reg=Y gidf=5.1']
+[   167s]     prompt: 'Trác Vĩ Hạ lên ngôi vua và bắt đầu trị vì đất nước .'
+[   167s]     cont  : '. . .'   (mong copy: ['Trác Vĩ Hạ'])
+[   171s] [single] copy=✗ novelty=['exact=n reg=Y gidf=6.4']
+[   171s]     prompt: 'Ngân Hoài Lạc sinh ra trong một gia đình nông dân nghèo .'
+[   171s]     cont  : 'Ngân từ . . .'   (mong copy: ['Ngân Hoài Lạc'])
+[   204s] [single] copy=✗ novelty=['exact=n reg=Y gidf=6.6']
+[   204s]     prompt: 'Đằng Thuỵ Khương là một tổ chức phi lợi nhuận thành lập năm 1995 .'
+[   204s]     cont  : 'Đằng Long555'   (mong copy: ['Đằng Thuỵ Khương'])
+[   208s] [single] copy=✗ novelty=['exact=n reg=Y gidf=4.5']
+[   208s]     prompt: 'Cù Minh Thác là một vị tướng tài ba dưới triều Trần .'
+[   208s]     cont  : 'Cù tácC'   (mong copy: ['Cù Minh Thác'])
+[   212s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=4.5', 'exact=n reg=Y gidf=5.1']
+[   212s]     prompt: 'Cù Minh Thác đánh bại Trác Vĩ Hạ trong một trận chiến lớn ,'
+[   212s]     cont  : 'CCC'   (mong copy: ['Cù Minh Thác', 'Trác Vĩ Hạ'])
+[   215s] [crossed] copy=✗ novelty=['exact=n reg=Y gidf=5.1', 'exact=n reg=Y gidf=4.9']
+[   215s]     prompt: 'Trác Vĩ Hạ là con trai của Lữ Bằng Sơn ,'
+[   215s]     cont  : 'năm con con con'   (mong copy: ['Trác Vĩ Hạ', 'Lữ Bằng Sơn'])
+[   219s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=4.9']
+[   219s]     prompt: 'Lữ Bằng Sơn là một họa sĩ tài năng . Ông'
+[   219s]     cont  : 'từ . . .'   (mong copy: ['Lữ Bằng Sơn'])
+[   223s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=6.4']
+[   223s]     prompt: 'Ngân Hoài Lạc là một nữ ca sĩ nổi tiếng . Bà'
+[   223s]     cont  : ', . . .'   (mong copy: ['Ngân Hoài Lạc'])
+[   227s] [pronoun] copy=✗ novelty=['exact=n reg=Y gidf=8.6']
+[   227s]     prompt: 'Vĩnh Trảng là một thành phố cổ kính và yên bình . Nơi này'
+[   227s]     cont  : '. . .'   (mong copy: ['Vĩnh Trảng'])
+[   230s] [single·SKIP(not-novel)] copy=✓ novelty=['exact=Y reg=Y gidf=5.1']
+[   230s]     prompt: 'Hà Nội là thủ đô của Việt Nam .'
+[   230s]     cont  : '.Hà Nội là . .'   (mong copy: ['Hà Nội'])
+[   230s] 
+═══ BẢNG (chỉ item novel hợp lệ) ═══
+[   230s]   single  : copy 0/6
+[   230s]   crossed : copy 0/2
+[   230s]   pronoun : copy 0/3
+[   230s] 
+→ P3.0: xác nhận nền (copy thấp) + harness chạy. Số này là MỐC cho P3.2 A/B.
+[   230s]   Drift: đọc tay 'cont' ở trên — có thực-thể TRAIN lạ bị kéo vào không (G15).

@@ -1,0 +1,109 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[     0.0s] === load_network_v11 START (pid=2488) → out/logs/load_network_v11_20260721_212516.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11.pkl …
+[     0.0s] ▶ unpickle
+[     6.2s] ✓ unpickle  (6.2s)
+[     6.2s] ▶ vocab (32002 token)
+[     6.2s] ✓ vocab (32002 token)  (0.0s)
+[     6.2s] ▶ adjacency
+[    15.6s] ✓ adjacency  (9.4s)
+[    15.6s] ▶ embedding
+[    15.7s] ✓ embedding  (0.1s)
+[    15.7s] ▶ parents
+[    15.7s] parents: deserialize 65098 records …
+[    15.9s] parents 5000/65098 (7.7%)
+[    16.1s] parents 10000/65098 (15.4%)
+[    16.2s] parents 15000/65098 (23.0%)
+[    16.3s] parents 20000/65098 (30.7%)
+[    16.4s] parents 25000/65098 (38.4%)
+[    17.3s] parents 30000/65098 (46.1%)
+[    20.4s] parents 35000/65098 (53.8%)
+[    22.1s] parents 40000/65098 (61.4%)
+[    22.3s] parents 45000/65098 (69.1%)
+[    22.4s] parents 50000/65098 (76.8%)
+[    22.6s] parents 55000/65098 (84.5%)
+[    22.7s] parents 60000/65098 (92.2%)
+[    22.8s] parents 65000/65098 (99.8%)
+[    49.8s] ▶ rebuild_hierarchical_index …
+[    51.4s] ✓ rebuild_hierarchical_index (1.6s)
+[    59.1s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    59.1s] ✓ parents  (43.4s)
+[    59.1s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    63.2s] sidecar thiếu → migrate: network_v11.content.pkl
+[    63.3s] ✓ load_checkpoint XONG
+[   110s] ✓ loaded · corpus index 51,071 đơn vị
+[   110s] ═══ ENTITY (multi-fact composition) — n_facts = số fact KHÁC NHAU ghép ═══
+[   112s]     [diag] focus='ĠNhà'(5.13) 'ĠLý'(4.90) · facts_about-theme#1=' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ ' · plan.agenda=' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ '
+[   163s]   Hỏi: Nhà Lý là gì
+    n_facts=1 copy=0.22 ent_keep=0.00
+    → Nhà Lý tồn tại từ năm 10809 đến 12825, trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô. Thời kỳ này còn nổi tiếng với việc xây chùa, khuyến khích Nho – Phật.
+[   164s]     [diag] focus='Nhà'(5.83) 'ĠTrần'(4.97) · facts_about-theme#1=' Nhà Trần ba lần đánh thắng quân Nguyên – Mông xâm lược. Chiến thắng B' · plan.agenda=' Nhà Trần ba lần đánh thắng quân Nguyên – Mông xâm lược. Chiến thắng B'
+[   175s]   Hỏi: Nhà Trần là gì
+    n_facts=1 copy=0.28 ent_keep=0.00
+    → Nhà Trần ba lần đánh thắng quân Nguyên – Mông xâm lược. Chiến thắng Bạch Đằng năm 128,8 là tiêu biểu. Sức mạnh nhà Trần đến từ đoàn kết dân tộc và mưu lược quân sự.
+[   176s]     [diag] focus='ĠHà'(4.53) 'ĠNội'(5.10) · facts_about-theme#1=' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành' · plan.agenda=' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành'
+[   187s]   Hỏi: Hà Nội là gì
+    n_facts=1 copy=0.32 ent_keep=0.00
+    → ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[   188s]     [diag] focus='ĠSông'(6.89) 'ĠHồng'(5.27) · facts_about-theme#1=' Sông Hồng chảy qua Hà Nội. Dòng sông bồi đắp đồng bằng Bắc Bộ phì nhi' · plan.agenda=' Sông Hồng chảy qua Hà Nội. Dòng sông bồi đắp đồng bằng Bắc Bộ phì nhi'
+[   200s]   Hỏi: Sông Hồng là gì
+    n_facts=1 copy=0.30 ent_keep=0.00
+    → Sông Hồng chảy qua Hà Nội. Dòng sông bồi đắp đồng bằng Bắc Bộ phì nhiêu, đồng thời tạo cảnh quen thuộc cho thủ đô. Mùa lũ, nước sông dâng cao; mùa khô, bờ sông lại trở thành nơi người Hà Nội tập thể dục, ngắm hoàng hôn.
+[   201s]     [diag] focus='Ġlà'(1.89) 'Ġai'(3.69) · facts_about-theme#1=' AI hỗ trợ đọc phim X-quang, phát hiện bệnh sớm và gợi ý điều trị. Khô' · plan.agenda=' trong y tế giúp gì? Đáp: AI hỗ trợ đọc phim X-quang, phát hiện bệnh s'
+[   211s]   Hỏi: Trần Hưng Đạo là ai
+    n_facts=2 copy=0.19 ent_keep=0.00
+    → trong y tế giúp gì? Đáp: AI hỗ trợ đọc phim X-quang, phát hiện bệnh sớm và gợi ý điều trị. Không thay bác sĩ hoàn toàn nhưng giảm sai sót. Đây là ứng dụng tích cực của trí tuệ nhân tạo.
+[   212s]     [diag] focus='ĠThăng'(6.49) 'ĠLong'(4.72) · facts_about-theme#1=' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngà' · plan.agenda=' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngà'
+[   222s]   Hỏi: Thăng Long là gì
+    n_facts=2 copy=0.36 ent_keep=0.00
+    → Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay. Sự kiện mở ra thời kỳ phát triển lâu dài của nhà Lý. Thăng Long nghĩa là rồng bay lên.
+[   222s] ═══ GRADE closed-book — ans_recall = retrieval trúng đáp ═══
+[   229s]   Hỏi: Ai chữa bệnh  [gold: Bác sĩ chữa bệnh.]
+    ans_recall=0.00 n_facts=1
+    → khi có thẻ BHYT. Học sinh thường được cấp thẻ theo chính sách nhà nước. Khi ốm, mang thẻ đến cơ sở y tế trong danh mục để được hưởng quyền lợi.
+[   236s]   Hỏi: Ai trồng lúa  [gold: Nông dân trồng lúa.]
+    ans_recall=0.00 n_facts=1
+    → , rau, nuôi cá — cung cấp thức ăn cho cả xã hội. Không có nông nghiệp, thành phố cũng thiếu lương thực. Vì vậy ta cần trân trọng người làm ruộng.
+[   249s]   Hỏi: Ai may quần áo  [gold: Thợ may may quần áo.]
+    ans_recall=1.00 n_facts=4
+    → Bài 1:
+Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia đình và cộng đồng. Đây là phần 2 trong chương trình lớp 3.
+Thợ may, may quần áo.
+Mỗi người một nghề.
+Lao động là vinh quang.
+Em mơ ước làm bác sĩ.
+[   260s]   Hỏi: Khi đi xe máy cần gì  [gold: Đội mũ bảo hiểm khi đi xe máy.]
+    ans_recall=0.12 n_facts=0
+    → Khi ngày ngắn lại, cây ngừng sản xuất chất xanh lục. Sắc tố vàng, đỏ ẩn dưới lộ ra trước khi lá rụng. Đây là cách cây thích nghi với mùa khô hoặc lạnh.
+[   270s]   Hỏi: Đoàn kết giúp em thế nào  [gold: Đoàn kết giúp em mạnh hơn.]
+    ans_recall=0.17 n_facts=0
+    → Em nên học ở chỗ yên tĩnh, tắt thông báo điện thoại và chia bài thành từng phần nhỏ. Học 25 phút rồi nghỉ 5 phút giúp não không bị quá tải. Quan trọng nhất là bắt đầu, dù chỉ mười phút, thay vì trì hoãn.
+[   276s]   Hỏi: Ai giữ an ninh  [gold: Công an giữ an ninh.]
+    ans_recall=0.00 n_facts=2
+    → và phát triển kinh tế. Thủ tướng là người đứng đầu Chính phủ.
+[   287s]   Hỏi: Chính phủ làm gì  [gold: Chính phủ điều hành đất nước.]
+    ans_recall=1.00 n_facts=1
+    → ? Đáp: Chính phủ điều hành đất nước theo luật do Quốc hội ban hành. Chính phủ tổ chức giáo dục, y tế, an ninh và phát triển kinh tế. Thủ tướng là người đứng đầu Chính phủ.
+[   297s]   Hỏi: Tòa án làm gì  [gold: Tòa án xét xử theo luật.]
+    ans_recall=1.00 n_facts=0
+    → ? Đáp: Tòa án xét xử tranh chấp và tội phạm theo pháp luật. Phán quyết của tòa phải công bằng, dựa trên chứng cứ. Đây là nhánh quyền lực tư pháp trong nhà nước pháp quyền.
+[   307s]   Hỏi: Công an làm gì  [gold: Công an điều tra tội phạm.]
+    ans_recall=0.00 n_facts=1
+    → đặc biệt? Đáp: Hội An là phố cổ với kiến trúc giao thoa Việt – Hoa – Nhật. Đêm rằm, phố thắp đèn lồng rất đẹp. Hội An được UNESCO công nhận di sản văn hóa thế giới.
+[   320s]   Hỏi: Trung thu là tết của ai  [gold: Trung thu là tết trẻ em.]
+    ans_recall=0.17 n_facts=3
+    → Bồn9Thu nhập tính theo đầu người của tiểu bang vào năm 20.0 tính0 là $2840.0 (USD), đứng thứ 1 trong cả nước Sản phẩm nông nghiệp chính của Ohio là đậu nành, sản phẩm từ sữa, ngô, cà chua, lợn, bò, gia cầm
+[   334s]   Hỏi: Công dân có nghĩa vụ gì  [gold: Công dân có nghĩa vụ nộp thuế.]
+    ans_recall=0.29 n_facts=2
+    → ? Đáp: Megacity là đô thị có dân số trên 10 triệu người. TP. Hồ Chí Minh và Hà Nội đang hướng tới nhóm này. Đô thị lớn thuận tiện việc làm nhưng cũng đặt ra thách thức về giao thông, nhà ở và môi trường.
+[   349s]   Hỏi: Người khuyết tật cần gì  [gold: Người khuyết tật cần hỗ trợ.]
+    ans_recall=0.33 n_facts=2
+    → Từ: khuyết tật
+Nghĩa 1:
+Loại từ: danh từ
+Giải nghĩa: sai sót vốn có trên sản phẩm ngay sau khi chế tạo, gia công xong: khắc phục một số khuyết tật trên sản phẩm gốm mới ra lò
+Ví dụ: khắc phục một số khuyết tật trên sản phẩm gốm mới ra
+[   349s] ═══════════ TÓM TẮT ═══════════
+[   349s]   ENTITY: n_facts TB 1.33 · copy TB 0.28 · ent_keep TB 0.00
+[   349s]   GRADE : ans_recall TB 0.34
+[   349s] → ĐỌC: n_facts>1 = ghép đa-fact THẬT (trả lời câu tác giả). ent_keep/ans_recall + đọc tay = có ĐÚNG NGỮ CẢNH không. Thấp ⇒ lever RETRIEVAL; cao ⇒ lever SCALE coverage.

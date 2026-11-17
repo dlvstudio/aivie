@@ -1,0 +1,30 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_prompt": 2000,
+ "n_empty": 442,
+ "n_short": 155,
+ "sinh": {
+  "n_mau": 1403,
+  "distinct2": 0.9921649244267978,
+  "max_lap_1_chu": 2.1610833927298647,
+  "co_bigram_lap": 0.18460441910192446,
+  "co_lap_ke": 0.048467569493941556,
+  "n_chu": 31.310049893086244,
+  "distinct2_p25": 1.0
+ },
+ "van_that": {
+  "n_mau": 1108,
+  "distinct2": 0.9890387284152725,
+  "max_lap_1_chu": 1.9187725631768953,
+  "co_bigram_lap": 0.18231046931407943,
+  "co_lap_ke": 0.016245487364620937,
+  "n_chu": 25.252707581227437,
+  "distinct2_p25": 1.0
+ },
+ "sinh_lap_nhieu_hon": false,
+ "lap_ke_moi_noi": 0.01751866743251005,
+ "lap_ke_trong_menh_de": 0.0002561278590272264,
+ "n_moi_noi": 3482,
+ "n_cap_trong": 39043,
+ "seconds": 17.5
+}

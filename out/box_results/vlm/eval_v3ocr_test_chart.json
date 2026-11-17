@@ -1,0 +1,1413 @@
+{
+ "tag": "v3ocr",
+ "test": "data/vlm/test_chart.jsonl",
+ "rows": [
+  {
+   "src": "vichart",
+   "q": "So sánh khí thải công nghiệp giữa nửa đầu và nửa cuối năm, có sự khác biệt nào đáng chú ý?",
+   "ref": "Nửa đầu cao hơn đáng kể",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 6, khí thải công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần qua tháng 1 đến 6",
+   "ans": "Giảm dần qua các tháng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm sản phẩm có mức bán cao nhất?",
+   "ref": "Tháng 4 cao nhất",
+   "ans": "Tháng Tháng 11",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Điện thoại đến Máy ảnh, doanh thu của các sản phẩm thay đổi như thế nào?",
+   "ref": "Tăng dần rồi giảm nhẹ",
+   "ans": "Tăng dần từ Điện thoại tới Máy ảnh",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh giữa nửa đầu (2015-2017) và nửa cuối (2018-2019), năng lượng mặt trời có sự khác biệt rõ rệt về mức độ biến động?",
+   "ref": "Nửa đầu dao động mạnh, nửa cuối ổn định",
+   "ans": "Biến động lớn hơn nửa đầu",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào năng lượng gió đạt mức cao nhất trong khoảng thời gian 2015-2019?",
+   "ref": "Năm 2015",
+   "ans": "Năng lượng gió đạt cao nhất vào năm 2019",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong dữ liệu đạt mức giá cổ phiếu B cao nhất?",
+   "ref": "Ngày 3 1 2023 đạt cao nhất",
+   "ans": "Đỉnh trong Quý 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Q5, Giá nhà thay đổi như thế nào?",
+   "ref": "Giá nhà dao động, tăng rồi giảm, lại tăng",
+   "ans": "Giảm mạnh từ Quý 1 tới Quý 3",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Tháng nào chi phí đạt mức thấp nhất và tháng nào doanh thu đạt mức cao nhất?",
+   "ref": "Tháng Tháng 9 chi phí thấp nhất, Tháng 2 doanh thu cao nhất",
+   "ans": "Tháng Tháng 4 chi phí thấp nhất, Tháng Tháng 5 doanh thu cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng Giêng đến tháng Năm, doanh số bán hàng có thay đổi như thế nào?",
+   "ref": "Tăng dần qua tháng Giêng đến Tháng Năm",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lượng CO2 từ giao thông tăng, lượng CO2 từ công nghiệp có xu hướng thay đổi như thế nào trong cùng khoảng thời gian?",
+   "ref": "Đôi khi tăng, không liên quan kiên định",
+   "ans": "Giảm khi giao thông tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chi phí tăng, doanh thu có xu hướng tăng, giảm hay không có mối quan hệ rõ ràng?",
+   "ref": "Không rõ liên hệ",
+   "ans": "Không có mối quan hệ rõ ràng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Tháng nào chi phí đạt mức thấp nhất và tháng nào doanh thu đạt mức cao nhất?",
+   "ref": "Chi phí thấp nhất tháng Tháng 1, doanh thu cao nhất tháng Tháng 5",
+   "ans": "Tháng Tháng 4 chi phí thấp nhất, Tháng Tháng 5 doanh thu cao nhất",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Sự so sánh giữa doanh thu của Miền Bắc và Miền Nam cho thấy có sự khác biệt lớn hay nhỏ, và điều đó có thể ám chỉ tính ổn định của dữ liệu?",
+   "ref": "Sự khác biệt giữa Miền Bắc và Miền Nam lớn, cho thấy dữ liệu không ổn định",
+   "ans": "Sự khác biệt không đáng kể",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm 2018-2022 khí thải công nghiệp đạt mức cao nhất?",
+   "ref": "Đỉnh công nghiệp xuất hiện vào năm 2022",
+   "ans": "Năm 2022",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Năm nào chỉ số Giao thông đạt mức thấp nhất?",
+   "ref": "2022",
+   "ans": "2019",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa Miền Bắc và Miền Tây, có sự khác biệt đáng kể không?",
+   "ref": "Sự khác biệt giữa Bắc và Tây lớn",
+   "ans": "Sự khác biệt không đáng kể",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Sự khác biệt doanh thu giữa Miền Bắc và Tây Nguyên so với Miền Trung và Đông Nam Bộ là gì?",
+   "ref": "Bắc Tây thấp hơn Trung ĐB",
+   "ans": "Sự khác biệt lớn, Bắc thấp hơn Tây Nguyên",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi Giá đất giảm, Giá nhà có xu hướng tăng hay giảm?",
+   "ref": "Khi đất giảm, nhà thường tăng áp lực",
+   "ans": "Giảm khi đất giảm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Trong giai đoạn từ tháng 1 đến tháng 5, doanh thu có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Giảm dần qua các tháng",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lợi nhuận tăng, doanh thu có xu hướng tăng đồng thời hay không?",
+   "ref": "Khi lợi nhuận tăng, doanh thu thường tăng",
+   "ans": "Không đồng bộ, có xu hướng giảm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào công nghiệp đạt mức cao nhất?",
+   "ref": "Đỉnh vào năm 2017",
+   "ans": "Công nghiệp cao nhất vào năm 2021",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu năm và nửa cuối năm có sự khác biệt gì về doanh thu và lợi nhuận?",
+   "ref": "Nửa đầu mạnh hơn, nửa cuối thịnh hành",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 5, doanh thu của Product A thay đổi như thế nào?",
+   "ref": "Tăng dần, sau đỉnh giảm nhẹ",
+   "ans": "Tăng dần, rồi giảm nhẹ cuối kỳ",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Mục nào trong danh mục sản phẩm đạt doanh số cao nhất trong dữ liệu này?",
+   "ref": "Electronics cao nhất",
+   "ans": "Máy tính bảng cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh thu của Laptop tăng, doanh thu của Tablet có xu hướng tăng hay giảm?",
+   "ref": "Cũng giảm nhẹ",
+   "ans": "Tablet thường giảm khi Laptop tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong dữ liệu trên đạt mức doanh số cao nhất cho sản phẩm A?",
+   "ref": "Đỉnh nhất tại Quý 1 2023",
+   "ans": "Đỉnh vào Quý 4 2023",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi giá cổ phiếu A tăng, giá cổ phiếu B có xu hướng tăng đồng thời hay giảm?",
+   "ref": "Khi A tăng, B thường giảm",
+   "ans": "Giá cổ phiếu B cũng có xu hướng tăng khi A tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh số Product A tăng, doanh số Product B có xu hướng tăng hay giảm?",
+   "ref": "Bình thường, B giảm khi A tăng",
+   "ans": "Không đồng bộ, có lúc tăng, có lúc giảm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa Miền Bắc và Miền Nam, có sự khác biệt đáng kể nào?",
+   "ref": "Sự chênh lệch không quá lớn, tương đối đồng đều",
+   "ans": "Sự khác biệt lớn, Bắc thấp hơn Nam",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Miền Bắc và Miền Trung có xu hướng doanh thu tăng lên so với Miền Nam và Đông Nam Bộ trong bảng dữ liệu này không?",
+   "ref": "Miền Bắc và Miền Trung có xu hướng tăng hơn Miền Nam và Đông Nam Bộ",
+   "ans": "Có, Bắc và Trung có xu hướng tăng nhẹ",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi thị phần của một sản phẩm cao hơn, có phải các sản phẩm khác thường có thị phần thấp hơn không?",
+   "ref": "Không nhất thiết, thị phần có thể đa dạng",
+   "ans": "Không, khi cao hơn, đa số sản phẩm khác giảm nhẹ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh số bán hàng của các mặt hàng trong nhóm 'Đồ gia dụng' và 'Thực phẩm', có sự khác biệt đáng kể không?",
+   "ref": "Sự khác biệt nhẹ, không nổi bật",
+   "ans": "Không, khác biệt nhỏ, gần bằng nhau",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi năng lượng gió giảm, năng lượng mặt trời có xu hướng tăng, giảm hay không có thay đổi rõ rệt?",
+   "ref": "Không rõ rệt, không có xu hướng nhất quán",
+   "ans": "Tăng nhẹ khi gió giảm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào doanh thu xuất khẩu đạt mức cao nhất?",
+   "ref": "Đỉnh Quý 2",
+   "ans": "Quý 4 đạt cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi khí thải giao thông tăng, khí thải công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Tăng khi giao thông tăng",
+   "ans": "Giảm khi giao thông tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lạm phát tăng trong một năm, GDP trong năm đó có xu hướng tăng, giảm hay không thay đổi?",
+   "ref": "Giá trị GDP thường tăng khi lạm phát giảm",
+   "ans": "Khi lạm phát tăng, GDP thường tăng nhẹ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Doanh thu trong các khu vực Miền Trung và Miền Nam có biến động nhiều hay ít so với các khu vực khác?",
+   "ref": "Trung và Nam dao động nhẹ hơn",
+   "ans": "Biến động nhẹ, gần bằng nhau",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2015 đến 2020, tổng sản lượng công nghiệp thay đổi như thế nào?",
+   "ref": "Giảm mạnh, sau đó giảm nhẹ",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 4 2023, dân số có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần qua các quý",
+   "ans": "Giảm dần qua các quý",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh mức tăng trưởng của cổ phiếu A và cổ phiếu B trong nửa đầu và nửa cuối năm 2023?",
+   "ref": "A tăng đồng đều, B tăng mạnh hơn",
+   "ans": "A giảm mạnh, B tăng nhẹ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 6, năng lượng mặt trời có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần qua các tháng từ tháng 1 đến 6",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi sản phẩm A tăng, sản phẩm B có xu hướng ra sao?",
+   "ref": "Khi A tăng, B thường giảm nhẹ",
+   "ans": "Khi A tăng, B cũng thường tăng theo",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 6, mức độ O3 thay đổi theo hướng nào?",
+   "ref": "Có xu hướng giảm dần qua tháng 1 đến 6",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ học kỳ 1 đến học kỳ 4, tỷ lệ đậu có xu hướng nào?",
+   "ref": "Giảm dần qua các học kỳ",
+   "ans": "Tăng dần qua các kỳ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Trong bốn lĩnh vực kinh doanh này, doanh thu trong ngành công nghệ tăng như thế nào so với các ngành khác?",
+   "ref": "Doanh thu công nghệ tăng nhanh hơn các ngành",
+   "ans": "Tăng mạnh nhất ở Công nghệ",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm đạt mức cao nhất của ô nhiễm không khí?",
+   "ref": "Tháng 12 cao nhất",
+   "ans": "Tháng 3",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, doanh thu và lợi nhuận có xu hướng thay đổi như thế nào?",
+   "ref": "Thuận dần qua các quý",
+   "ans": "Tăng dần qua các quý",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm 2023 có sự khác biệt gì về biến động giá mở cửa?",
+   "ref": "Nửa đầu tăng, nửa cuối ổn định",
+   "ans": "Nửa đầu biến động mạnh hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2018 đến 2022, lượng khí thải công nghiệp có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Giảm dần qua các năm",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Tháng nào trong năm có doanh số bán hàng cao nhất cho sản phẩm B?",
+   "ref": "Tháng 5 đạt doanh số cao nhất",
+   "ans": "Tháng Tháng 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Mục nào trong bảng dữ liệu đạt doanh thu cao nhất?",
+   "ref": "Miền Tây luôn dẫn đầu, đứng đầu bảng",
+   "ans": "Miền Bắc có doanh thu cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2018 đến 2022, lượng phát thải công nghiệp có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Tăng dần nhẹ qua năm",
+   "ans": "Tăng dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa đầu có doanh thu cao hơn nửa cuối",
+   "ans": "Nửa đầu thấp hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, ngân sách R&D thay đổi như thế nào?",
+   "ref": "Tăng mạnh từ Quý 1, giảm nhẹ Quý 2, tăng đột biến Quý 3, ổn định Quý 4",
+   "ans": "Tăng dần qua các quý",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi thị phần của Product B tăng, thị phần của các sản phẩm khác có xu hướng giảm, ổn định hay tăng đồng thời?",
+   "ref": "Định hình giảm dần khi Product B tăng",
+   "ans": "Giảm khi B tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Miền nào có doanh thu cao nhất trong bảng dữ liệu này?",
+   "ref": "Miền Tây đứng đầu",
+   "ans": "Miền Bắc có doanh thu cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh nửa đầu (2018-2020) và nửa cuối (2021-2022) về thay đổi trung bình của Công nghiệp?",
+   "ref": "Nửa cuối tăng mạnh hơn",
+   "ans": "Nửa đầu giảm, nửa cuối tăng nhẹ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa nửa đầu năm 2023 và nửa cuối năm 2023 là như thế nào?",
+   "ref": "Như nhau, hơi cao hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi số lượng người dùng internet tăng, liệu mức độ sử dụng thiết bị thông minh có đồng thời tăng lên không?",
+   "ref": "Không đồng bộ, thường giảm",
+   "ans": "Không đồng bộ, nhưng giảm khi tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 5, doanh thu thay đổi như thế nào?",
+   "ref": "Tăng dần rồi giảm nhẹ cuối kỳ",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi giá trị của Europe tăng, số liệu của North America có xu hướng tăng, giảm hay không liên quan?",
+   "ref": "Không liên quan",
+   "ans": "Không có mối liên hệ rõ ràng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi ngân sách dự kiến tăng, chi tiêu thực tế có xu hướng tăng hay giảm?",
+   "ref": "Giảm khi ngân sách tăng",
+   "ans": "Chi tiêu thực tế giảm khi dự kiến tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh số bán hàng của sản phẩm A tăng, doanh số bán hàng của sản phẩm B có xu hướng ra sao?",
+   "ref": "Không có xu hướng nhất quán, thường kém",
+   "ans": "Bùng lên khi A tăng, không ổn định",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 12, doanh số bán hàng của sản phẩm A thay đổi như thế nào?",
+   "ref": "Tăng nhẹ đầu năm, giảm mạnh sau tháng 5, bùng nổ cuối năm",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa cuối năm doanh thu cao hơn nửa đầu",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2022 đến Quý 4 2022, số liệu của North America có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Giảm dần qua các quý",
+   "ans": "Tăng dần qua các giai đoạn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm có sự khác biệt đáng kể về mức độ ô nhiễm nước không?",
+   "ref": "Nửa đầu ít hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh số giữa nửa đầu năm 2023 và nửa đầu năm 2024, có sự khác biệt đáng kể gì?",
+   "ref": "2024 hơn 2023, hơn đáng kể",
+   "ans": "Nửa đầu cao hơn nửa đầu",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Tháng 1 đến Tháng 5, doanh thu có xu hướng thay đổi như thế nào?",
+   "ref": "Xu hướng dao động, không ổn định",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào Giá nhà đạt mức cao nhất?",
+   "ref": "Đỉnh cao nhất xuất hiện ở Quý 4",
+   "ans": "Giá nhà cao nhất vào Quý 4",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào chi phí đạt mức cao nhất?",
+   "ref": "Chi phí cao nhất vào cuối chu kỳ",
+   "ans": "Chi phí cao nhất vào cuối chu kỳ",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh mức độ biến động của PM2.5 và O3 giữa nửa đầu và nửa cuối năm?",
+   "ref": "PM2.5 biến động lớn hơn O3 trong nửa đầu",
+   "ans": "Nửa đầu biến động lớn, nửa cuối ổn định hơn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Trong bảng thị phần, xu hướng tổng thể của thị phần Samsung, Apple, Xiaomi, OPPO và Vivo có biểu hiện tăng hay giảm trong khoảng thời gian cung cấp?",
+   "ref": "Thị phần giảm dần qua thời gian",
+   "ans": "Tăng dần qua các giai đoạn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi Giao thông tăng, ngành Công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Khi giao thông tăng, công nghiệp có xu hướng giảm",
+   "ans": "Giảm khi Giao thông tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm đạt mức cao nhất của Ozon?",
+   "ref": "Quý 3",
+   "ans": "Tháng 3",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm sản phẩm B đạt mức bán chạy nhất?",
+   "ref": "B cao nhất vào tháng 5",
+   "ans": "Tháng Tháng 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh khối lượng bán hàng giữa vùng Tây và vùng Đông, sự khác biệt là gì?",
+   "ref": "Tây thấp, Đông cao, chênh lệch lớn",
+   "ans": "Đông thấp hơn Tây, khác biệt vừa phải",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, mức độ CO₂ có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Tăng dần qua các quý",
+   "ans": "Tăng dần qua các quý",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi sản phẩm A tăng, sản phẩm B có xu hướng tăng hay giảm?",
+   "ref": "Cả hai đồng bộ lên khi A tăng",
+   "ans": "Giảm khi A tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2015 đến 2020, ngành công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Công nghiệp có xu hướng giảm dần qua năm",
+   "ans": "Giảm dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào CO₂ đạt mức cao nhất?",
+   "ref": "Quý 1 cao nhất",
+   "ans": "Đỉnh vào tháng 4",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa Clothing và Furniture, có sự khác biệt đáng kể không?",
+   "ref": "Clothing thấp hơn Furniture, khác biệt đáng kể",
+   "ans": "Có, khác biệt đáng kể",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Quý nào chi phí đạt mức thấp nhất?",
+   "ref": "Quý 2 chi phí thấp nhất",
+   "ans": "Quý 2 chi phí thấp nhất",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu (Quý 1-Quý 2) và nửa cuối (Quý 3-Quý 4, Quý 4 2024) có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa đầu thấp hơn, nửa cuối tăng",
+   "ans": "Nửa đầu nhẹ hơn, nửa cuối tăng hơn đáng kể",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi GDP tăng, dân số có xu hướng tăng, giảm hay không có mối quan hệ rõ ràng?",
+   "ref": "Không có mối quan hệ rõ ràng",
+   "ans": "Không có mối quan hệ rõ ràng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm 2015-2020 có sự khác biệt gì về công nghiệp?",
+   "ref": "Sự khác biệt nhẹ, công nghiệp giảm trong nửa đầu",
+   "ans": "Nửa đầu giảm, nửa cuối tăng mạnh",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm 2018-2022 có mức giảm nhờ năng lượng tái tạo cao nhất?",
+   "ref": "2019",
+   "ans": "Năm 2022",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh số Product B giữa nửa đầu và nửa cuối năm 2023, có sự khác biệt đáng kể nào?",
+   "ref": "Nửa đầu cao hơn nửa cuối rõ rệt",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu của ngành y tế và ngành công nghệ, ngành y tế lại có mức tăng trưởng lớn hơn hay nhỏ hơn?",
+   "ref": "Công nghệ tăng trưởng lớn hơn y tế",
+   "ans": "Y tế tăng trưởng mạnh hơn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm 2023 có sự khác biệt gì về doanh số của sản phẩm A?",
+   "ref": "Nửa đầu cao hơn nửa sau",
+   "ans": "Sản phẩm A giảm mạnh từ đầu năm đến cuối năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi năng lượng tái tạo tăng, lượng khí thải CO₂ có xu hướng giảm hay tăng?",
+   "ref": "Khi tăng năng lượng tái tạo, khí thải thường giảm",
+   "ans": "Tăng khi tái tạo tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nếu doanh thu trong ngành giáo dục tăng, doanh thu trong ngành du lịch có xu hướng tăng hay giảm?",
+   "ref": "Khi giáo dục tăng, du lịch cũng có xu hướng tăng",
+   "ans": "Giảm khi giáo dục tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào cổ phiếu B đạt mức cao nhất?",
+   "ref": "Quý 3 2023",
+   "ans": "Đỉnh trong Quý 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chi phí tăng, liệu lợi nhuận (doanh thu trừ chi phí) có xu hướng tăng hay giảm?",
+   "ref": "Giảm khi chi phí cao",
+   "ans": "Lợi nhuận thường giảm khi chi phí tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh năm 2018-2020 và năm 2021-2022, sự thay đổi của lượng khí thải công nghiệp và lượng giảm nhờ năng lượng tái tạo có khác nhau như nào?",
+   "ref": "2018-2020 giảm nhẹ, 2021-2022 giảm mạnh hơn",
+   "ans": "Giảm mạnh sau 2018-2020, tăng nhẹ sau 2021-2022",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi CO2 từ giao thông tăng, CO2 từ công nghiệp có xu hướng tăng, giảm, hay không liên quan?",
+   "ref": "Không có mối liên hệ rõ ràng",
+   "ans": "Không liên quan",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh thu của Miền Nam tăng, doanh thu của Đông Nam Bộ có xu hướng tăng hay giảm?",
+   "ref": "Khi Nam tăng, ĐB thường tăng",
+   "ans": "Giảm khi Nam tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh nửa đầu (2018-2020) và nửa cuối (2021-2022) về mức độ biến động của chi phí?",
+   "ref": "Chi phí biến động mạnh hơn nửa cuối",
+   "ans": "Chi phí dao động nhẹ hơn nửa đầu",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào công nghiệp đạt mức cao nhất?",
+   "ref": "Đỉnh công nghiệp đạt vào năm 2019",
+   "ans": "Công nghiệp cao nhất vào năm 2021",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, khí thải công nghiệp có xu hướng thay đổi như thế nào?",
+   "ref": "Tăng dần rồi giảm nhẹ cuối năm",
+   "ans": "Giảm dần qua các quý",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chi phí tăng, doanh thu có xu hướng tăng hay giảm?",
+   "ref": "Khi chi phí tăng, doanh thu cũng tăng",
+   "ans": "Chi phí tăng thường kèm doanh thu tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Mục nào trong danh sách có ngân sách cao nhất?",
+   "ref": "Marketing",
+   "ans": "Công nghệ cao cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2015 đến 2019, năng lượng mặt trời có xu hướng tăng hay giảm liên tục?",
+   "ref": "Giảm liên tục qua từng năm",
+   "ans": "Giảm dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Th1 đến Th5, doanh thu có xu hướng tăng, giảm hay ổn định không?",
+   "ref": "Doanh thu dao động nhẹ, không có xu hướng rõ rệt",
+   "ans": "Tăng dần qua các giai đoạn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào chi phí đạt mức cao nhất?",
+   "ref": "Quý 4",
+   "ans": "Chi phí cao nhất vào Quý 4 2023",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh thu của một công ty tăng, có mối quan hệ nào với doanh thu của công ty khác trong danh sách?",
+   "ref": "Không có mối quan hệ rõ rệt",
+   "ans": "Không nhất thiết",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chi phí tăng, doanh thu có xu hướng tăng, giảm hay không có mối quan hệ rõ ràng?",
+   "ref": "Chi phí tăng không đồng nhất doanh thu",
+   "ans": "Không có mối quan hệ rõ ràng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 1 2024, giá cổ phiếu A thay đổi như thế nào?",
+   "ref": "Tăng, giảm, tăng, giảm, tăng, giảm",
+   "ans": "Giảm mạnh từ Quý 1 2023 đến Quý 1 2024",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ vùng Bắc đến vùng Trung tâm, khối lượng bán hàng có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần, từ Bắc xuống Tây rồi tăng nhẹ",
+   "ans": "Giảm dần qua các khu vực",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi mức thị phần của OPPO tăng, mức thị phần của Vivo có xu hướng tăng hay giảm?",
+   "ref": "Vivo giảm khi OPPO tăng",
+   "ans": "Giảm khi OPPO tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi số lượng bán của Product B giảm, Product A có xu hướng tăng hay giảm?",
+   "ref": "Giảm khi B giảm",
+   "ans": "Giảm khi B giảm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, doanh thu nội địa thay đổi như thế nào?",
+   "ref": "Tăng dần rồi giảm mạnh",
+   "ans": "Tăng dần qua các quý",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm đạt doanh thu cao nhất của Product A?",
+   "ref": "Đỉnh vào giữa năm",
+   "ans": "Tháng Tháng 11",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lượng khí thải giao thông tăng, lượng khí thải công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Không thấy mối quan hệ trực tiếp",
+   "ans": "Giảm khi giao thông tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 6, PM2.5 có xu hướng tăng, giảm hay ổn định?",
+   "ref": "PM2.5 dần dần tăng qua tháng",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm có mức chi tiêu thực tế đạt mức cao nhất?",
+   "ref": "Quý 1",
+   "ans": "Tháng Tháng 10",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2018 đến 2022, khí thải công nghiệp có xu hướng thay đổi như thế nào?",
+   "ref": "Fluctuating, peaking in 2021 before a decline",
+   "ans": "Giảm dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chỉ số Giao thông giảm, chỉ số Công nghiệp có xu hướng giảm hơn hay tăng hơn?",
+   "ref": "Có xu hướng giảm nhẹ",
+   "ans": "Giảm khi giao thông giảm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào khí thải từ giao thông đạt mức cao nhất?",
+   "ref": "Giao thông cao nhất vào năm 2018",
+   "ans": "2019",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Quý 1-2 và Quý 3-4 có sự khác biệt đáng kể về NO₂ không?",
+   "ref": "Quý 1-2 và Quý 3-4 có khác biệt đáng kể",
+   "ans": "Có, Quý 1-2 cao hơn Quý 3-4",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào ngân sách R&D đạt mức cao nhất?",
+   "ref": "Tháng Quý 3",
+   "ans": "Tháng 2021",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa đầu cao hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Tháng nào trong năm 2023 có doanh số Product A cao nhất?",
+   "ref": "Tháng 5 đạt cao nhất",
+   "ans": "Tháng Tháng 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm 2015-2019 năng lượng gió đạt mức cao nhất?",
+   "ref": "2015 đạt cao nhất",
+   "ans": "Năm 2019 đạt đỉnh",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, doanh thu và chi phí thay đổi như thế nào?",
+   "ref": "Doanh thu tăng dần, chi phí dao động nhẹ",
+   "ans": "Tăng dần qua các quý",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Sự khác biệt về thị phần giữa những thương hiệu lớn (Samsung, Apple) và những thương hiệu nhỏ hơn (OPPO, Vivo) là gì?",
+   "ref": "Khác biệt lớn giữa Samsung Apple và OPPO Vivo",
+   "ans": "Khác biệt rõ rệt, Samsung mạnh",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Sản phẩm nào có thị phần đạt mức cao nhất trong danh sách này?",
+   "ref": "Sản phẩm E có thị phần cao nhất",
+   "ans": "Sản phẩm E dẫn đầu thị phần",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2018 đến 2022, lượng CO2 phát thải từ công nghiệp có xu hướng tăng, giảm, hay ổn định?",
+   "ref": "Tăng đột ngột rồi giảm dần",
+   "ans": "Tăng dần qua các năm",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Miền Bắc đến Miền Trung, doanh thu của các khu vực thay đổi như thế nào?",
+   "ref": "Từ Bắc dần giảm xuống Trung",
+   "ans": "Tăng dần từ Bắc tới Trung",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm đạt mức cao nhất cho Product B?",
+   "ref": "Đỉnh cao vào cuối năm",
+   "ans": "Tháng 3",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối chu kỳ có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa đầu có doanh thu cao hơn",
+   "ans": "Nửa đầu thấp hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối dữ liệu có sự khác biệt gì về Giá đất?",
+   "ref": "Nửa đầu đất thấp hơn, nửa cuối cao hơn",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2018 đến 2022, khí thải công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Tăng dần qua các năm",
+   "ans": "Giảm dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2018 đến 2022, lượng khí thải CO₂ thay đổi như thế nào?",
+   "ref": "Tăng rồi giảm, rồi tăng nhẹ, rồi giảm mạnh, rồi tăng lại",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi một hãng điện thoại có % thị phần cao, xu hướng doanh thu bán hàng của hãng đó có phải luôn tăng?",
+   "ref": "Không nhất thiết, doanh thu phụ thuộc nhiều yếu tố",
+   "ans": "Không nhất thiết",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh nửa đầu năm (tháng Giêng-Tháng Ba) và nửa cuối năm (tháng Tháng Ba-Năm) về khối lượng doanh thu và lợi nhuận, có sự khác biệt rõ rệt nào?",
+   "ref": "Nửa đầu thấp hơn nửa cuối về doanh thu và lợi nhuận",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi Ozon tăng, PM2.5 có xu hướng tăng, giảm hay không có xu hướng rõ ràng?",
+   "ref": "Không rõ xu hướng",
+   "ans": "Không có xu hướng rõ ràng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa nửa đầu năm 2023 và nửa cuối năm 2023, có sự khác biệt gì?",
+   "ref": "Doanh thu nửa đầu lớn hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm có mức năng lượng gió cao nhất?",
+   "ref": "Tháng 6 có năng lượng gió cao nhất",
+   "ans": "Tháng 3",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi giá mở cửa tăng, giá đóng cửa có xu hướng tăng hơn hay giảm?",
+   "ref": "Khi mở cửa tăng, đóng cửa thường giảm",
+   "ans": "Giảm khi mở cao",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào doanh thu đạt mức cao nhất và chi phí đạt mức thấp nhất?",
+   "ref": "Doanh thu cao nhất 2021, chi phí thấp nhất 2022",
+   "ans": "Doanh thu cao nhất cuối năm, chi phí thấp nhất đầu năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh nửa đầu và nửa cuối năm, doanh thu và chi phí có sự khác biệt đáng kể gì?",
+   "ref": "Nửa cuối cao hơn nửa đầu",
+   "ans": "Nửa đầu cao hơn, chi phí ổn định hơn",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Vùng nào có doanh số bán hàng đạt mức cao nhất trong bảng dữ liệu?",
+   "ref": "Bắc đạt doanh số cao nhất",
+   "ans": "Đông Nam Á đứng đầu",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu của hai nửa đầu và nửa cuối danh sách, có sự khác biệt đáng kể nào?",
+   "ref": "Sự khác biệt không đáng kể",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2018 đến 2022, lượng phát thải CO2 và năng lượng tái tạo có xu hướng thay đổi như thế nào?",
+   "ref": "Tăng dần, hơi dốc sau năm 2021",
+   "ans": "Tăng dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh hai nửa kỳ 2018-2020 và 2021-2022, hai đại lượng phát thải CO2 và năng lượng tái tạo có sự khác biệt gì đáng chú ý?",
+   "ref": "Hai nửa kỳ khác nhau, CO2 tăng, năng lượng giảm",
+   "ans": "Nửa đầu cao hơn, nửa sau giảm nhẹ",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh doanh thu giữa Nhiều sản phẩm ở nửa đầu bảng và nửa cuối, có sự khác biệt đáng kể không?",
+   "ref": "Có khác biệt lớn",
+   "ans": "Nửa đầu mạnh hơn, nửa cuối giảm nhẹ",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ TechCorp đến FutureTech, doanh thu của các công ty có xu hướng tăng, giảm, hay ổn định?",
+   "ref": "Tăng dần qua các công ty",
+   "ans": "Tăng dần qua các công ty",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi tỷ lệ cải thiện tăng, tỷ lệ đậu thường có xu hướng giảm hay tăng?",
+   "ref": "Tăng khi cải thiện giảm",
+   "ans": "Giảm khi cải thiện tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 1 2024, sản phẩm A thay đổi như thế nào?",
+   "ref": "Tăng dần, sau đó giảm nhẹ",
+   "ans": "Tăng dần, giảm mạnh rồi tăng trở lại",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh tổng doanh thu và tổng chi phí trong nửa đầu và nửa cuối năm, có sự khác biệt đáng kể nào?",
+   "ref": "Nửa đầu có chi phí cao hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào PM10 đạt mức cao nhất trong năm?",
+   "ref": "Quý 2",
+   "ans": "Đỉnh vào tháng 4",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh giữa nửa đầu (2018-2020) và nửa cuối (2021-2022), hai loại CO2 có sự khác biệt lớn về mức độ biến động không?",
+   "ref": "Sự biến động thấp hơn giữa nửa cuối",
+   "ans": "Biến động nhẹ hơn nửa đầu",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Quý nào có mức độ ô nhiễm không khí đạt mức cao nhất?",
+   "ref": "Quý 4 có độ cao nhất",
+   "ans": "Quý 2",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Mục nào trong danh sách có doanh thu cao nhất và trong khu vực nào đạt mức cao nhất?",
+   "ref": "Doanh thu cao nhất là công nghệ",
+   "ans": "Miền Bắc có doanh thu cao nhất, Miền Trung thấp nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi số lượt CP A tăng, số lượt CP B có xu hướng giảm hay tăng?",
+   "ref": "CP B có xu hướng giảm khi CP A tăng",
+   "ans": "Giảm khi A tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Tháng nào chi phí đạt mức thấp nhất và tại sao?",
+   "ref": "Chi phí thấp nhất vào tháng 3 do hoạt động tối ưu",
+   "ans": "Chi phí thấp nhất vào tháng 4, vì tăng trưởng giảm mạnh",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh thu xuất khẩu tăng, doanh thu nội địa có xu hướng giảm không?",
+   "ref": "Có xu hướng giảm khi xuất khẩu tăng",
+   "ans": "Không đồng bộ, có xu hướng giảm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi thị phần Apple tăng, thị phần Samsung có xu hướng giảm hay ổn định?",
+   "ref": "Đồng thời giảm nhẹ khi Apple tăng",
+   "ans": "Giảm nhẹ khi Apple tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2015 đến 2019, năng lượng mặt trời có xu hướng tăng lên hay giảm xuống?",
+   "ref": "Giảm dần qua năm 2015-2019",
+   "ans": "Giảm dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu (2015-2017) và nửa cuối (2018-2020) của dữ liệu có sự khác biệt gì về mức độ biến động của CO₂ giao thông?",
+   "ref": "Giao thông biến động nhẹ hơn đầu kỳ",
+   "ans": "Nửa đầu dao động mạnh hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh lượng khí thải công nghiệp giữa nửa đầu (2018–2020) và nửa cuối (2021–2022) có sự khác biệt đáng kể không?",
+   "ref": "Sự khác biệt không đáng kể",
+   "ans": "Sự khác biệt rõ rệt, giảm mạnh",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh thị phần của Samsung và Vivo trong cùng một khoảng thời gian, có sự khác biệt đáng kể nào?",
+   "ref": "Sự khác biệt nhỏ, gần như đồng bộ",
+   "ans": "Sự khác biệt không đáng kể",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi năng lượng gió tăng, năng lượng mặt trời có xu hướng tăng, giảm hay không đổi?",
+   "ref": "Khi gió tăng, năng lượng mặt trời thường giảm",
+   "ans": "Không đổi khi gió tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 1 2024, sản phẩm A có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần qua các quý",
+   "ans": "Giảm dần qua các giai đoạn",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh giữa nửa đầu và nửa cuối năm, có sự khác biệt đáng kể nào về mức độ biến động của nhiệt độ cao và thấp?",
+   "ref": "Nửa cuối có biến động lớn hơn nửa đầu",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Công nghiệp và Giao thông có xu hướng thay đổi như thế nào so với mục tiêu giảm thiểu?",
+   "ref": "Công nghiệp giảm, Giao thông tăng nhẹ",
+   "ans": "Giảm thiểu giảm nhẹ, giao thông tăng nhẹ",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào CP B đạt mức cao nhất trong năm?",
+   "ref": "Đỉnh cao nhất vào tháng đầu năm",
+   "ans": "Đỉnh vào Quý 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ HR đến Sales, ngân sách của các bộ phận thay đổi như thế nào?",
+   "ref": "Giảm, tăng, giảm",
+   "ans": "Giảm dần từ HR tới Sales",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Các công ty nào có thị phần tăng trưởng đáng kể so với những năm trước?",
+   "ref": "InnovateCo và NextGen cho thấy tăng trưởng mạnh",
+   "ans": "Apple và Samsung dẫn đầu",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu năm và nửa cuối năm có sự khác biệt gì về mức độ biến động của chi phí?",
+   "ref": "Nửa đầu biến động lớn hơn nửa cuối",
+   "ans": "Chi phí dao động nhẹ hơn nửa đầu",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi doanh thu của khu vực Trung tăng, doanh thu của Tây Nguyên có xu hướng ra sao?",
+   "ref": "Giảm nhẹ khi Trung tăng",
+   "ans": "Tây Nguyên giảm khi Trung tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi chi phí tăng, doanh thu có xu hướng theo chiều nào?",
+   "ref": "Tăng khi chi phí giảm",
+   "ans": "Chi phí tăng thường kèm doanh thu tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Công ty nào đạt doanh thu cao nhất trong bảng dữ liệu này?",
+   "ref": "Công ty FutureTech dẫn đầu",
+   "ans": "Apple cao nhất",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi năng lượng gió tăng, năng lượng mặt trời có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Khi gió tăng, mặt trời giảm",
+   "ans": "Tăng khi gió tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 5, doanh thu và lợi nhuận có xu hướng tăng hay giảm chung?",
+   "ref": "Giảm dần qua tháng 5",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi giao thông tăng, công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Khi giao thông tăng, công nghiệp giảm nhẹ",
+   "ans": "Giảm khi giao thông tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Giai đoạn nào trong năm 2024 chi phí đạt mức cao nhất?",
+   "ref": "Chi phí cao nhất trong giai đoạn cuối cùng",
+   "ans": "Chi phí cao nhất vào tháng 4",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh mức khí thải công nghiệp giữa nửa đầu (tháng 1–3) và nửa cuối (tháng 4–6), có sự khác biệt đáng kể gì?",
+   "ref": "Nửa đầu thấp hơn, nửa cuối cao hơn",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh dữ liệu của năm 2023 và năm 2024, có sự khác biệt nào đáng chú ý về sản phẩm A?",
+   "ref": "A giảm đáng kể so với năm trước",
+   "ans": "Sản phẩm A giảm mạnh so với năm 2023",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2018 đến 2022, doanh thu của công ty có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Giảm mạnh, tăng mạnh, rồi giảm nhẹ",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu và nửa cuối năm 2023 có sự khác biệt gì về doanh thu?",
+   "ref": "Nửa đầu mạnh hơn nửa cuối",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 đến Quý 4, lượng khí thải công nghiệp có xu hướng thay đổi như thế nào?",
+   "ref": "Tăng dần rồi giảm mạnh, cuối cùng tăng nhẹ",
+   "ans": "Giảm dần qua các quý",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nửa đầu (2018-2020) và nửa cuối (2021-2022) của dữ liệu có sự khác biệt lớn trong mức phát thải công nghiệp không?",
+   "ref": "Có, nửa cuối cao hơn",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2015 đến 2021, ngành công nghiệp có xu hướng tăng hay giảm?",
+   "ref": "Giảm dần qua các năm",
+   "ans": "Giảm dần qua các năm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh mức phát thải của Nông nghiệp và Dân cư: đâu có sự biến động lớn hơn?",
+   "ref": "Nông nghiệp biến động lớn hơn Dân cư",
+   "ans": "Nông nghiệp có mức phát thải lớn hơn Dân cư",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 4 2023, doanh thu có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Tăng dần rồi giảm nhẹ cuối năm",
+   "ans": "Tăng dần qua các giai đoạn",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Quý 1 2023 đến Quý 1 2024, doanh thu và chi phí thay đổi như thế nào?",
+   "ref": "Doanh thu tăng, chi phí dao động",
+   "ans": "Doanh thu tăng, chi phí dao động giảm",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ tháng 1 đến tháng 3, doanh thu có xu hướng tăng hay giảm?",
+   "ref": "Tăng dần qua ba tháng đầu",
+   "ans": "Tăng dần qua các tháng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lợi nhuận tăng, doanh số bán hàng thường có xu hướng tăng hay giảm?",
+   "ref": "Lợi nhuận tăng thường kèm doanh số tăng",
+   "ans": "Giảm khi lợi nhuận tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi cổ phiếu B tăng, cổ phiếu A có xu hướng tăng hay giảm?",
+   "ref": "Giảm khi B tăng",
+   "ans": "Giảm khi B tăng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Electronics đến Food, xu hướng doanh thu có tăng dần, giảm hay ổn định?",
+   "ref": "Tăng dần đều qua các giai đoạn",
+   "ans": "Tăng dần qua các mặt hàng",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ Bắc tới Đông Nam Bộ, doanh thu trong các khu vực có xu hướng tăng hay giảm?",
+   "ref": "Tăng dần qua các vùng",
+   "ans": "Giảm dần qua các khu vực",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Nhìn vào bảng, xu hướng thị phần của các sản phẩm có xu hướng tăng hay giảm khi so sánh từ sản phẩm A đến sản phẩm E?",
+   "ref": "Giảm nhẹ qua từng sản phẩm",
+   "ans": "Giảm dần qua các sản phẩm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ 2018 đến 2022, lượng khí thải công nghiệp có xu hướng tăng, giảm hay ổn định?",
+   "ref": "Lượng khí thải công nghiệp dao động, không có xu hướng rõ ràng",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "So sánh hai nửa của khoảng 2018-2022, khí thải công nghiệp trong nửa đầu và nửa cuối có sự khác biệt gì?",
+   "ref": "Second half shows higher industrial emissions overall",
+   "ans": "Nửa đầu cao hơn nửa cuối",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi mức phát thải của Năng lượng tăng, mức mục tiêu giảm thiểu có xu hướng tăng hơn hay giảm?",
+   "ref": "Năng lượng mục tiêu tăng khi phát thải tăng",
+   "ans": "Giảm khi Năng lượng tăng",
+   "judge": "sai"
+  },
+  {
+   "src": "vichart",
+   "q": "Khi lợi nhuận tăng, doanh thu có xu hướng tăng theo không?",
+   "ref": "Không đồng nhất, không có xu hướng rõ ràng",
+   "ans": "Không đồng bộ, có lúc tăng, có lúc giảm",
+   "judge": "dung"
+  },
+  {
+   "src": "vichart",
+   "q": "Từ năm 2018 đến năm 2022, lượng khí thải công nghiệp giảm hay tăng như thế nào?",
+   "ref": "Giảm dần qua các năm",
+   "ans": "Tăng dần qua các năm",
+   "judge": "sai"
+  }
+ ],
+ "res": {
+  "n": 200,
+  "dung_%": 37.5,
+  "mot_phan_%": 7.0,
+  "khop_gia_tri_%": 17.4,
+  "chep_lai_giong": null
+ }
+}

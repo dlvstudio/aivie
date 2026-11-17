@@ -1,0 +1,12 @@
+{
+ "id": "18_git",
+ "cat": "tooling",
+ "turns": [
+  {
+   "user": "Tôi lỡ commit nhầm 1 file .env chứa mật khẩu lên git (chưa push). Làm sao bỏ commit đó nhưng giữ lại các thay đổi khác, và lần sau không commit .env nữa?",
+   "text": "Để bỏ commit mà không làm mất dữ liệu (không 'gửi' commit mới), bạn dùng **git reset --soft**.\n\n**Thứ tự thực hiện:**\n1.  Chạy lệnh: `git reset --soft HEAD~1`\n2.  Git sẽ đưa bạn về trạng thái trước commit vừa rồi (vẫn có thay đổi nhưng mật khẩu đã bị xóa).\n3.  Thực hiện thêm các thay đổi của bạn (ví dụ: `git add .`).\n4.  Chạy tiếp: `git reset --hard HEAD~1` (Việc này sẽ đưa bạn về trạng thái trước commit vừa rồi).\n5.  Nếu muốn bỏ commit luôn, chạy: `git reset --hard origin`\n\n**Lưu ý quan trọng:**\n*   **Giữ lại thay đổi:** Những file dùng để chuyển sang file khác (ví dụ: `.env`, `.gitignore`) sẽ không bị mất, nhưng các file `.shadow` (đểHideDeletedFiles) của bạn cũng không bị mất.\n*   **An toàn:** Không nên dùng `git reset --hard` nếu bạn làm việc trên một dự án lớn hoặc để push code lên GitHub. Hãy dùng `git reset --soft` để tránh rủi ro mất dữ liệu.\n\nBạn đang dùng Git bản bao nhiêu (nếu hướng dẫn trái phiên bản)?",
+   "tokens": 336,
+   "sec": 11.7
+  }
+ ]
+}

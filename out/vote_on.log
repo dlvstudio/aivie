@@ -1,0 +1,124 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[6s] ✓ 5,664 cha · max_len=60 · extra={'ar_matrix_w_skip_decode_weight': 1.0, 'hybrid_temperature': 0.35, 'ar_sharp_gate': False}
+[54s]   xong no_agenda·T1 verbatim (20)
+[63s]   xong no_agenda·T2 paraphrase (5)
+[70s]   xong no_agenda·T3 ghép (10)
+[70s]   xong no_agenda·T4 qa (10)
+[81s]   xong no_agenda·T5 số (4)
+[93s]   xong no_agenda·T6 bịa (5)
+[105s]   xong no_agenda·T7 dài (5)
+[149s]   xong handoff·T1 verbatim (20)
+[154s]   xong handoff·T2 paraphrase (5)
+[162s]   xong handoff·T3 ghép (10)
+[163s]   xong handoff·T4 qa (10)
+[174s]   xong handoff·T5 số (4)
+[185s]   xong handoff·T6 bịa (5)
+[197s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen    lạc  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.00   0.69    0.45   0.00   0.32     2.00   0.55   40.9
+no_agenda T2 paraphrase     5    0.00   0.00   0.81    0.60   0.20   0.41     1.80   0.60   36.0
+no_agenda T3 ghép          10    0.00   0.40   0.75    0.20   0.00   0.48     1.00   0.90   17.0
+no_agenda T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   15.9
+no_agenda T5 số             4    0.00   0.00   0.72    0.25   0.00   0.20     2.75   0.00   60.0
+no_agenda T6 bịa            5    0.00   0.00   0.69    0.80   0.00   0.20     3.20   0.20   60.0
+no_agenda T7 dài            5    0.00   0.00   0.72    0.40   0.00   0.21     1.60   0.80   47.8
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.00   0.57    0.45   0.00   0.36     2.25   0.50   44.4
+handoff   T2 paraphrase     5    0.00   0.00   0.62    0.60   0.00   0.42     1.60   0.80   30.8
+handoff   T3 ghép          10    0.00   0.40   0.73    0.20   0.00   0.43     0.80   0.80   20.8
+handoff   T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   15.9
+handoff   T5 số             4    0.00   0.00   0.93    0.50   0.00   0.20     2.50   0.00   60.0
+handoff   T6 bịa            5    0.00   0.00   0.70    0.80   0.00   0.24     2.40   0.40   53.8
+handoff   T7 dài            5    0.00   0.00   0.82    0.60   0.00   0.17     2.20   0.20   53.2
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · **lạc↓** · digit⎵↓ · loop4↓ · stop↑
+`lạc` = tỉ lệ CÂU (từ câu 2 trở đi) KHÔNG chia fold nội dung nào với prompt — đo TRÔI ĐỀ.
+  Cột này thêm ở §12.73: mọi cột cũ đều mù với việc output nhảy sang tài liệu khác.
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── đếm ca (cổng §12.38) ──
+  no_agenda T3 ghép      readable(n_tok≥4&!degen)=5/10  · n_facts>1=3/10
+  no_agenda T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+  handoff   T3 ghép      readable(n_tok≥4&!degen)=5/10  · n_facts>1=1/10
+  handoff   T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+
+── mẫu đọc tay (mỗi ô tối đa 6) ──
+  [no_agenda·T1 verbatim] 'Việc các sông đổi dòng cũng tạo ra nhưng đầm lầy và được . hiện tinh thần tự xưng là di làm con nuôi được cho là một trong những năm trước 1 5 0 . triệu người , sống trên . lưu vực của các quan Bồ Chính đem . Dưới đánh quân đi đánh dẹp . quân , trong hệ Mặt Tr'
+  [no_agenda·T1 verbatim] 'Diện tích hình vuông bằng cạnh nhân cạnh .'
+  [no_agenda·T1 verbatim] 'Trong thời kỳ làm vua, Trần Nhân Tông vẫn sống thanh tịnh trên . , tinh thần và Phật giáo .'
+  [no_agenda·T1 verbatim] '100 chia 25 bằng 4 . 2 1 2 8 1 9 8 bằng 6 , 0 , 1 5 0 4 . 1 0 hoặc một số . cho là người . tự chủ đạo một của nhà thiên văn Alexis . Bouvard. tinh mới , được chấp nhận Tuyên bố Potsdam .'
+  [no_agenda·T1 verbatim] 'Ngày 10 tháng 3 âm lịch trở thành ngày quốc lễ , ngày giỗ Tổ Hùng Vương vào tháng 3 âm lịch , năm 2 1 tháng . 2 4 0 tại . năm , 9 0 9 đền thờ Anh hùng dân tộc Khúc Thừa Dụ đã được khánh thành . nhà Minh ở miền Nam .'
+  [no_agenda·T1 verbatim] 'Cao nguyên Arakan Yoma ở Myanma và quần đảo Andaman và Nicobar thuộc vịnh , Lan cũng bị quân Minh xâm lược của nhà Nguyên và các quan trọng số . một vùng có một cuộc xung quanh tâm . hình núi . , phân bố xung quanh vùng cao nguyên . trung tâm thành phố , . , .'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010.91, nhà Lý dời đô từ Hoa Lư về Thăng Long , 1 0 1 . 0 đến năm . 2 0 . 8 6 , 8 0 2 1 6 năm . , 0 đến 2 , 2 6 , 0 đến 2 1 6 3 bằng 4 5'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm , 938).'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 9 8 1 8 0 .'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288), Nguyễn Văn miếu , là nơi có nhiều người , của thân . , cũng không phải quan . trong các vùng biển có 1 0 đến 2 0 đến 0 Trận Bạch Đằng 1 2 8 năm . 1 2 8 1 8 1 8 1 8 1 đề Tiêu Lê . lập'
+  [no_agenda·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là thành Hoa . là thành lập . , Trung Hoa Dân quốc được coi là Trung Hoa có thể được coi là vùng . biển phía đông bắc quần đảo Nat .una.'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: là'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là thành phố hóa . , của các hoạt động văn hóa và mang tính chất , . nghi lễ dâng hương . có 2 0 . 0 7 5 0 triệu người sống trên lưu vực của các công . ở làng , được xem như một vị anh hùng dân tộc Việt Nam , thành lập , .'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp:Đại thắng trên sông Bạch Đằng đã khắc họa mưu lược và khả năng đánh trận của ông.'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo , chỉ huy trận Bạch Đằng , Ngô Quyền . thắng quân Nam Hán . , .'
+  [no_agenda·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp: lúc'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh Ngô Quyền và Lê Hoàn Đáp: Chiêm Thành bị'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T4 qa] 'Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp: Ngô Quyền đánh thắng quân Nam Hán.'
+  [no_agenda·T4 qa] 'Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010, người Pháp đã có 1 9 0 5 người Pháp đã cho chồng là Trần Cảnh , mở ra nhà Mạc Kính 4 bằng . 2 0 , . năm 1 2 4 3 0 phút bằng sông giờ Long Hưng đụng . tỉnh Hà Nội . nay . là Hà Giang . Trì thần'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng của nơi . là thành . Long , Cửu Long . các nhà . đã được phát hiện được coi việc nước là một người . và bảo vệ nền độc lập của đất nước . , và có người thắng này . được cho'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968, Lê Hoàn là điểm trên đảo bảo nhất của ông , các nguồn không . , cho đến khai khẩn của Lê Lợi đã có một số vùng này trong những nơi khác đến ở khai thác nước biển . , và Nguyễn . được quân Đỗ Cảnh Thạc Nguyễn Án'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288. Trần Hưng Đạo vương . đóng đô ở Cổ Loa , kiến trúc này . thành phố . thuộc huyện Tân Bình phủ Gia Định đánh dấu sự ra đời thành phố . là thành , nhà Trần , là thành , nhà . Lê sơ . chế độ n'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010, người dân nhà Trần đánh tan quân Nguyên trên sông Bạch Đằng . 1 2 8 , 8 , 8 âm lịch năm 1228.9.3), ông được phong làm cho 1 4 0 . năm thứ ba đời vua Lý . , trở lại kinh đô .'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau . không cần được . người Pháp và có thể được Chính phủ Chính hành đất nước là Nguyễn chiến thắng này là Ngô Quyền lên ngôi vua tái lập tức , Lê Thế Tông . lập người con của người út của vua là một trong những nơi có độ tự n'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010.0,42652., tức 3 6 5 2 5 6 năm 1 4 2 6 năm 9 0 đế nhà Hậu Lê , . kéo dài , gần . 400, ngôi hoàng đế . mở ra cơ nghiệp nhà Hậu Lê kéo dài , chiều rộng'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1 2 5 8 1258 năm 8 Trần . Hưng Đạo là một nhà Trần Tự Khánh , quân ra , lớn . các nước Đại Cồ Việt , và được Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt , là thành . của nhà Lý . , . , lập Quốc Tử'
+  [no_agenda·T6 bịa] 'Đinh Bộ Lĩnh đánh bại quân Nam Hán trên sông Bạch Đằng năm 938. mưu đồ và làm thắng Bạch Đằng năm 1 2 8 6 0 , 0 . 1 0 năm 1 0 1 0 đến 2 0 , 7 2 0 1 7 tháng 4 9 ông được cử làm Phó Thủ tướng , phủ của Việt Nam là thành , . là vị vua thứ ba'
+  [no_agenda·T7 dài] 'Tên khai sinh là Nguyễn Sinh Cung, sinh tại Nghệ An. Trong hoạt động cách mạng, Người dùng nhiều tên gọi như Nguyễn Tất Thành, Nguyễn Ái Quốc. Tên Bác ca và các quan sát hại phổi thể hiện nhiễm không chỉ cần người . của miền Tây Đô . , là Nguyễn Ánh được cho đ'
+  [no_agenda·T7 dài] 'Khoảng 4,25 đến 3,56 tỉ năm trước từ trường Mặt Trăng có khả năng mạnh gần bằng . , 2 0 . 8 0 , 2 3 2 0 tăng cường Sư đoàn 8 . Quân đội của ông , là điểm có tên ghi lại trong các tỉnh . Hà . Nội gồm có một là con vua thứ nhất .'
+  [no_agenda·T7 dài] 'Mắm tôm phổ biến miền Bắc, đặc biệt trong bún riêu và bún chả. Mùi đậm, vị mặn umami. Người nước mắm từ thường xuyên trong khoảng người có thể . chứa khoảng 90, người và có người được biết đến từ năm 1901).'
+  [no_agenda·T7 dài] 'Bắt đầu từ trứng chiên, mì xào, canh rau — khó fail. Xem video ngắn và làm theo từng bước. Nấu cho các quan trọng là một đêm văn hóa thế giới của nó được gọi hợp thành . và sông khác có nhiều nguồn từ , cao nguyên Lâm Viên , hợp hạt nhân và các loại hạt tiêu d'
+  [no_agenda·T7 dài] 'Nước dùng ngon cần ninh xương vài giờ để ngọt tự nhiên. Phần chuẩn bị rau, thịt và trụng bánh phở nhanh hơn. Nhiều gia đình nấu nước , ở Tây Nam là một chư . hầu của các tướng . Nguyên . là người , ở Tây Nam nước và Nam nước Lâm Ấp là nơi các vua cha mất ông .'
+  [handoff·T1 verbatim] 'Việc các sông đổi dòng cũng tạo ra nhưng đầm lầy và được ao thành , có các quan sát trong một lần là một vật thể là quay trở lại . sau . 7 5 0 tuổi 0 . , . , . vương Đinh Toàn lên ngôi . tức , Lê . , Thế Tông ( 2 0 2 8 tháng sau . 1 6 năm 1'
+  [handoff·T1 verbatim] 'Diện tích hình vuông bằng cạnh nhân cạnh . Hình chữ nhật có bốn góc vuông.'
+  [handoff·T1 verbatim] 'Trong thời kỳ làm vua, Trần Nhân Tông vẫn sống thanh tịnh trên . , tinh thần và Phật giáo , .'
+  [handoff·T1 verbatim] '100 chia 25 bằng 4 . 2 1 2 8 1 9 8 bằng 6 , 0 . 1 5 0 4 . 1 0 hoặc một số tận cùng trong số hết cho con có 1 . 2 0 , 0 . 1 6 năm 0 con đường lớn đã được xây dựng nối với đất liền . Đây là một hang'
+  [handoff·T1 verbatim] 'Ngày 10 tháng 3 âm lịch trở thành ngày quốc lễ , ngày . , giỗ Tổ Hùng Vương vào tháng 3 âm lịch , năm 2 1 tháng 7 1 9 0 7 2 3 âm lịch . trở thành một lớp đá . này bị nước là vị trí của người Việt 9 5 4 năm 1 9 3 0 .'
+  [handoff·T1 verbatim] 'Cao nguyên Arakan Yoma ở Myanma và quần đảo Andaman và Nicobar thuộc vịnh Bengal Lan nguyên khí hậu qua không của ông . đời ở Trung , là nơi các vua Hùng . dùng làm bài hát ,'
+  [handoff·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010.91. 1 8 0 1 0 2 5 . , . , . , bằng 5 0 độ .'
+  [handoff·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm , 938). Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 9 8 1 8 0 .'
+  [handoff·T2 paraphrase] 'Trận Bạch Đằng năm 1288, Lê Hoàn là người 9 8 1 Lê Hoàn đề tài đất đai và 1 5 0 7 5 7 , . 9 4 5 0 . 5 năm 1 9 4 5 0 4 5 0 4 3 bằng 1 2 . 0 chia 1 2 0 . 8 1 9 6 . 5'
+  [handoff·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là thành . kinh đô của nhà nước Đại Cồ Việt . và có những đám mây khác trong khí quyển . , .'
+  [handoff·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: là'
+  [handoff·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là thành phố hóa . Hiến ( còn là một viện này là " thành , có thể được chính thức , . đặt tên là vị thần biển cả của người , La Mã Nanga Parbat, Lê phía tây của quân đội nhà Nguyễn . , do sự của các tướng và Nam , là con cùng'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp:Đại thắng trên sông Bạch Đằng đã khắc họa mưu lược và khả năng đánh trận của ông.'
+  [handoff·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo , . là thành 9 3 8 0 vua Nam 0 Tháng 4 năm 1916 Hội đồng Phụ , chính của Việt Minh Mạng còn có nhiều cải cách hành chính là thành . Xương Văn khiến Xương Văn . , . bất bình '
+  [handoff·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp: lúc'
+  [handoff·T3 ghép] 'Hỏi: so sánh Ngô Quyền và Lê Hoàn Đáp: Chiêm Thành bị'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [handoff·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.'
+  [handoff·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [handoff·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [handoff·T4 qa] 'Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp: Ngô Quyền đánh thắng quân Nam Hán.'
+  [handoff·T4 qa] 'Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  [handoff·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010, người Pháp đã có 1 9 0 5 người Pháp đã cho chồng là Trần Cảnh mở ra nhà Trần . là thành 2 . 2 5 khi ông là một 8 năm 1 7 8 7 2 0 đến năm 1279, ông vẫn chọn Phú Xuân là con 8 này'
+  [handoff·T5 số] 'Chiến thắng Bạch Đằng năm 1288, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng của nơi diễn ra trong lịch sử Việt Nam là thành xã hội tiền sử thuộc thời đại , cho là người , và 1 2 0 1 0 9 0 9 0 9 3 8 0 . và 1 2 8 . 8 0'
+  [handoff·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968, Lê Hoàn là điểm trên đảo bảo nhất của ông , các nguồn không thống nhất về việc . ông có những nơi ở và Nam là Ngô , mất nơi đây vẫn là vùng cát cứ quân nhà . là nơi có tên , người dân cư ở đây . , do di cư đến'
+  [handoff·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288. Trần Hưng Đạo vương . đóng đô ở Cổ Loa . kiến trúc này . thành phố . thuộc huyện Tân Bình phủ Gia Định đánh dấu sự ra đời thành phố . là thành , nhà Trần , là thành . nhà . Lê sơ chế độ . ,'
+  [handoff·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010.0. 1 / 4 . 2 bằng 2 / 0 , 1 0 . nhà Lý dời đô từ Hoa Lư về Thăng Long . 1 9 6 8 .'
+  [handoff·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau . không cần được . người Pháp và có thể được Chính phủ Chính hành đất nước là Nguyễn chiến thắng này là " Ngô Quyền lên ngôi vua tái lập đất nước . Ông được xem là một vị "vua của các vua" trong lịch sử Việt Nam.'
+  [handoff·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010.0,42652., tức 3 6 5 2 5 6 năm 1 4 2 6 năm 9 0 đế nhà Hậu Lê . , . lập ra nhà Hậu Lê , . và có hoàng đế , lập ra nhà . Lê Lợi lên ngôi hoàng đế , lập'
+  [handoff·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1 2 5 8 1258 năm 8 Trần . Hưng Đạo là một nhà Trần Tự Khánh , quân ra Thái úy , quốc Cảnh . sinh vật . và dân số của Việt Nam là một trong nước giữ đất nước . 1 8 0 2 8 0 2 0 độ C Nước Việt và ở'
+  [handoff·T6 bịa] 'Đinh Bộ Lĩnh đánh bại quân Nam Hán trên sông Bạch Đằng năm 938. mưu đồ và làm thắng Bạch Đằng năm 1 2 8 6 0 , 0 . 1 0 năm 1 0 1 0 đến 2 0 , 7 2 0 1 7 tháng 4 9 ông được cử làm Phó Thủ tướng , phủ của Việt Nam là thành , . là vị vua thứ ba'
+  [handoff·T7 dài] 'Tên khai sinh là Nguyễn Sinh Cung, sinh tại Nghệ An. Trong hoạt động cách mạng, Người dùng nhiều tên gọi như Nguyễn Tất Thành, Nguyễn Ái Quốc. Tên Bác ca và các quan sát hại phổi thể hiện nhiễm không chỉ cần người . của miền Tây Đô . nghĩa là di tích lịch , . '
+  [handoff·T7 dài] 'Khoảng 4,25 đến 3,56 tỉ năm trước từ trường Mặt Trăng có khả năng mạnh gần bằng . từ trường . Trái Đất , lên đến năm 1 0 4 0 , 0 . chiến thuyền , và sông Tô Lịch trước cửa thành Đại La . , tên kinh đô về thành trục giao thông đường xuân năm 1 là hành . , 0 thì'
+  [handoff·T7 dài] 'Mắm tôm phổ biến miền Bắc, đặc biệt trong bún riêu và bún chả. Mùi đậm, vị mặn umami. Người nước mắm từ thường xuyên trong khoảng người có thể . chứa khoảng 90, người và có người được . là một đoạn trích , của ông là Nguyễn . , . và các nước khác là Nguyễn Phú'
+  [handoff·T7 dài] 'Bắt đầu từ trứng chiên, mì xào, canh rau — khó fail. Xem video ngắn và làm theo từng bước. Nấu cho các quan trọng là một đêm văn hóa thế giới của nó được gọi hợp thành tập trung học , 2 5 0 1 0 . 5 0 triệu năm trước một trong những chiến thắng của quân Tây Sơn'
+  [handoff·T7 dài] 'Nước dùng ngon cần ninh xương vài giờ để ngọt tự nhiên. Phần chuẩn bị rau, thịt và trụng bánh phở nhanh hơn. Nhiều gia đình nấu nước , ở Tây Nam là một chư hầu của các hành động vật và có người , nhiễm . gây hại , . sinh vật .'
+
+[197s] → out/vote_on.log

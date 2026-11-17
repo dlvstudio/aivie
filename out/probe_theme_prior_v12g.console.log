@@ -1,0 +1,279 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=25433) → out/logs/load_network_v12_sent_20260729_122555.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.3s] ✓ unpickle  (2.3s)
+[     2.3s] ▶ vocab (32002 token)
+[     2.3s] ✓ vocab (32002 token)  (0.0s)
+[     2.3s] ▶ adjacency
+[    11.1s] ✓ adjacency  (8.8s)
+[    11.1s] ▶ embedding
+[    11.2s] ✓ embedding  (0.1s)
+[    11.2s] ▶ parents
+[    11.2s] parents: deserialize 430447 records …
+[    11.2s] parents 5000/430447 (1.2%)
+[    11.3s] parents 10000/430447 (2.3%)
+[    11.3s] parents 15000/430447 (3.5%)
+[    11.4s] parents 20000/430447 (4.6%)
+[    11.4s] parents 25000/430447 (5.8%)
+[    11.5s] parents 30000/430447 (7.0%)
+[    11.5s] parents 35000/430447 (8.1%)
+[    11.6s] parents 40000/430447 (9.3%)
+[    11.6s] parents 45000/430447 (10.5%)
+[    11.7s] parents 50000/430447 (11.6%)
+[    11.7s] parents 55000/430447 (12.8%)
+[    11.7s] parents 60000/430447 (13.9%)
+[    11.8s] parents 65000/430447 (15.1%)
+[    11.8s] parents 70000/430447 (16.3%)
+[    11.9s] parents 75000/430447 (17.4%)
+[    11.9s] parents 80000/430447 (18.6%)
+[    11.9s] parents 85000/430447 (19.7%)
+[    12.0s] parents 90000/430447 (20.9%)
+[    12.0s] parents 95000/430447 (22.1%)
+[    12.1s] parents 100000/430447 (23.2%)
+[    12.1s] parents 105000/430447 (24.4%)
+[    12.2s] parents 110000/430447 (25.6%)
+[    12.2s] parents 115000/430447 (26.7%)
+[    12.3s] parents 120000/430447 (27.9%)
+[    12.3s] parents 125000/430447 (29.0%)
+[    12.4s] parents 130000/430447 (30.2%)
+[    12.4s] parents 135000/430447 (31.4%)
+[    12.5s] parents 140000/430447 (32.5%)
+[    12.5s] parents 145000/430447 (33.7%)
+[    12.6s] parents 150000/430447 (34.8%)
+[    12.7s] parents 155000/430447 (36.0%)
+[    12.7s] parents 160000/430447 (37.2%)
+[    12.8s] parents 165000/430447 (38.3%)
+[    12.9s] parents 170000/430447 (39.5%)
+[    13.0s] parents 175000/430447 (40.7%)
+[    13.0s] parents 180000/430447 (41.8%)
+[    13.1s] parents 185000/430447 (43.0%)
+[    13.2s] parents 190000/430447 (44.1%)
+[    13.3s] parents 195000/430447 (45.3%)
+[    13.3s] parents 200000/430447 (46.5%)
+[    13.4s] parents 205000/430447 (47.6%)
+[    13.5s] parents 210000/430447 (48.8%)
+[    13.6s] parents 215000/430447 (49.9%)
+[    13.7s] parents 220000/430447 (51.1%)
+[    13.8s] parents 225000/430447 (52.3%)
+[    13.8s] parents 230000/430447 (53.4%)
+[    13.9s] parents 235000/430447 (54.6%)
+[    14.0s] parents 240000/430447 (55.8%)
+[    14.1s] parents 245000/430447 (56.9%)
+[    14.2s] parents 250000/430447 (58.1%)
+[    14.2s] parents 255000/430447 (59.2%)
+[    14.3s] parents 260000/430447 (60.4%)
+[    14.4s] parents 265000/430447 (61.6%)
+[    14.5s] parents 270000/430447 (62.7%)
+[    14.6s] parents 275000/430447 (63.9%)
+[    14.7s] parents 280000/430447 (65.0%)
+[    14.8s] parents 285000/430447 (66.2%)
+[    14.8s] parents 290000/430447 (67.4%)
+[    14.9s] parents 295000/430447 (68.5%)
+[    15.0s] parents 300000/430447 (69.7%)
+[    15.1s] parents 305000/430447 (70.9%)
+[    15.2s] parents 310000/430447 (72.0%)
+[    15.3s] parents 315000/430447 (73.2%)
+[    15.4s] parents 320000/430447 (74.3%)
+[    15.5s] parents 325000/430447 (75.5%)
+[    15.5s] parents 330000/430447 (76.7%)
+[    15.6s] parents 335000/430447 (77.8%)
+[    15.7s] parents 340000/430447 (79.0%)
+[    15.8s] parents 345000/430447 (80.1%)
+[    15.9s] parents 350000/430447 (81.3%)
+[    16.0s] parents 355000/430447 (82.5%)
+[    16.0s] parents 360000/430447 (83.6%)
+[    16.1s] parents 365000/430447 (84.8%)
+[    16.2s] parents 370000/430447 (86.0%)
+[    16.3s] parents 375000/430447 (87.1%)
+[    16.4s] parents 380000/430447 (88.3%)
+[    16.5s] parents 385000/430447 (89.4%)
+[    16.6s] parents 390000/430447 (90.6%)
+[    16.6s] parents 395000/430447 (91.8%)
+[    16.7s] parents 400000/430447 (92.9%)
+[    16.8s] parents 405000/430447 (94.1%)
+[    16.9s] parents 410000/430447 (95.2%)
+[    16.9s] parents 415000/430447 (96.4%)
+[    17.0s] parents 420000/430447 (97.6%)
+[    17.1s] parents 425000/430447 (98.7%)
+[    17.1s] parents 430000/430447 (99.9%)
+[    29.5s] ▶ rebuild_hierarchical_index …
+[    30.8s] ✓ rebuild_hierarchical_index (1.3s)
+[    35.4s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    35.4s] ✓ parents  (24.2s)
+[    35.4s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    37.1s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    37.1s] ✓ load_checkpoint XONG
+[48s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.117        —        —           —
+none          0.117    0.493    0.263      -0.011
+pos           0.128    0.482    0.275      +0.000
+content       0.131    0.467    0.268      +0.004
+clear         0.095    0.387    0.204      -0.033
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng   3 · thua   6 · bất đồng   9/274 = 3.3%
+  content  thắng   3 · thua   2 · bất đồng   5/274 = 1.8%
+  clear    thắng   3 · thua  12 · bất đồng  15/274 = 5.5%
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          23 =   8.4%
+  C_hoà_nhưng_nền_thua          57 =  20.8%
+  D_gold_NGOÀI_nhóm_hoà        194 =  70.8%
+  B = đã đúng sẵn · **C = phần tín hiệu phân biệt NỘI NHÓM cứu được** · D = cần cách khác.
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  72.6%** (199/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  73.0%** (200/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.482 · top1 0.128)
+G2 prior có tác dụng?            : tw=0 → 0.117 ‖ pos → 0.128 (Δ +0.011)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `content` 0.131, Δ +0.004)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+====================================================================================
+ĐỌC 20 CA NHÓM C — gold Ở TRONG nhóm hoà nhưng điểm nền chọn nhầm.
+Đây là đám mà tín hiệu phân biệt NỘI NHÓM phải sửa. `nền` = trùng-từ có trọng gidf.
+====================================================================================
+
+[0] HỎI: Truyện:Ċ"Các ngươi ngược lại là nói chuyện rất vui sướng, lão bà tử ta bỏ lỡ cái gì sao?" Whent 
+    GOLD (nền 10.771):  không phản ứng.<EOS>
+    nền#1 (75.255): Truyện:Ċ“Các ngươi là nghĩ tại chúng ta đế hào gây sự sao,” Trong quầy hoàng mao trên mặt lộ ra một tia thần sắc
+    nền#2 (39.932):  Lúc đầu ngư lang liên minh bắt đầu coi như thuận lợi, nếu là đông tuyến nhất cử cầm xuống Thành King's Landing,
+    nền#3 (39.110): Bởi vì tọa trấn Thông U phong Lưu Kế Đường lặng yên rời đi, mà tin tức tiết ra ngoài lại cực kỳ đột nhiên, Cơ Vă
+
+[1] HỎI:  Thủ đô Việt Nam là gì? 
+    GOLD (nền 8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#1 (8.398): Thủ đô Việt Nam là Hà Nội.<EOS>
+    nền#2 (8.398): Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#3 (8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+
+[2] HỎI:  Thủ đô Việt Nam ở đâu? 
+    GOLD (nền 8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#1 (8.398): Thủ đô Việt Nam là Hà Nội.<EOS>
+    nền#2 (8.398): Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#3 (8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+
+[3] HỎI:  Sông Hồng chảy qua thành phố nào? 
+    GOLD (nền 9.720):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#1 (9.720): Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#2 (9.720):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#3 (7.229): Sông Mekong chảy qua nhiều nước.<EOS>
+
+[4] HỎI:  Đà Nẵng là thành phố thế nào? 
+    GOLD (nền 7.792):  Đà Nẵng là thành phố biển.<EOS>
+    nền#1 (7.792): Đà Nẵng là thành phố biển.<EOS>
+    nền#2 (7.792):  Đà Nẵng là thành phố biển.<EOS>
+    nền#3 (5.195): Đà Nẵng là thành phố loại 2, tương tự như thành phố Chợ Lớn thành lập trước đó.<EOS>
+
+[5] HỎI:  Lá cờ Việt Nam có màu gì? 
+    GOLD (nền 10.401):  Lá cờ Việt Nam màu đỏ sao vàng.<EOS>
+    nền#1 (10.401): Lá cờ Việt Nam màu đỏ sao vàng.<EOS>
+    nền#2 (10.401):  Lá cờ Việt Nam màu đỏ sao vàng.<EOS>
+    nền#3 (5.240):  Lá cờ chữ thập màu vàng từng là quân kỳ của hải quân Hoàng gia Thuỵ Điển.<EOS>
+
+[6] HỎI:  Miền Bắc và miền Nam khác nhau thế nào về khí hậu? 
+    GOLD (nền 5.532):  Miền Nam ấm quanh năm.<EOS>
+    nền#1 (5.623):  Miền Bắc thành một nước xã hội chủ nghĩa, trong khi miền Nam thành lập một chế độ mới do Mỹ hậu thuẫn.<EOS>
+    nền#2 (5.599): Miền Bắc có mùa đông lạnh.<EOS>
+    nền#3 (5.532): Miền Nam ấm quanh năm.<EOS>
+
+[7] HỎI:  Đồng bằng và núi khác nhau thế nào? 
+    GOLD (nền 5.141):  Đồng bằng bằng phẳng.<EOS>
+    nền#1 (5.141): Đồng bằng bằng phẳng.<EOS>
+    nền#2 (5.141):  Đồng bằng bằng phẳng.<EOS>
+    nền#3 (4.033): Đồng thời ngăn ngừa lỗi bất cứ khi nào có thể bằng cách tiếp nhận các thông tin và trình tự khác nhau.<EOS>
+
+[8] HỎI:  Ngày 2 tháng 9 là ngày gì? 
+    GOLD (nền 7.141):  Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+    nền#1 (9.669):  Ngày 29 tháng 2.<EOS>
+    nền#2 (7.141): Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+    nền#3 (7.141):  Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+
+[9] HỎI:  Quang Trung đại phá quân nào? 
+    GOLD (nền 10.238):  Quang Trung đại phá quân Thanh.<EOS>
+    nền#1 (10.238): Quang Trung đại phá quân Thanh.<EOS>
+    nền#2 (10.238):  Quang Trung đại phá quân Thanh.<EOS>
+    nền#3 (6.151):  Quang Trung chia quân làm 5 đạo.<EOS>
+
+[10] HỎI:  Trống đồng Đông Sơn là gì? 
+    GOLD (nền 9.408):  Trống đồng Đông Sơn là di sản.<EOS>
+    nền#1 (9.408): Trống đồng Đông Sơn là di sản.<EOS>
+    nền#2 (9.408):  Trống đồng Đông Sơn là di sản.<EOS>
+    nền#3 (3.401): Trống này sau đó truyền mực lên giấy.<EOS>
+
+[11] HỎI:  Phổi giúp ta làm gì? 
+    GOLD (nền 8.371):  Phổi giúp ta thở.<EOS>
+    nền#1 (8.371): Phổi giúp ta thở.<EOS>
+    nền#2 (8.371):  Phổi giúp ta thở.<EOS>
+    nền#3 (4.467):  Phổi: Uống cà phê giúp thể cải thiện chức năng phổi.<EOS>
+
+[12] HỎI:  Biến đổi khí hậu ảnh hưởng gì đến Việt Nam? 
+    GOLD (nền 7.561): Biến đổi khí hậu làm mực nước biển dâng.<EOS>
+    nền#1 (8.268): Biến đổi khí hậu: Nó ảnh hưởng đến môi trường của chúng ta như thế nàoĊ<EOS>
+    nền#2 (7.930): Biến đổi khí hậu cần hành động chung.<EOS>
+    nền#3 (7.684):  Biến đổi khí hậu cũng có thể ảnh hưởng đến vòng đời của loài bướm, dẫn đến suy giảm quần thể.<EOS>
+
+[13] HỎI:  Megacity là gì? 
+    GOLD (nền 7.815):  Megacity trên 10 triệu dân.<EOS>
+    nền#1 (7.815): Megacity trên 10 triệu dân.<EOS>
+    nền#2 (7.815):  Megacity trên 10 triệu dân.<EOS>
+
+[14] HỎI:  Cà phê robusta trồng nhiều ở đâu nước ta? 
+    GOLD (nền 9.882):  Cà phê robusta ở Tây Nguyên.<EOS>
+    nền#1 (9.882): Cà phê robusta ở Tây Nguyên.<EOS>
+    nền#2 (9.882):  Cà phê robusta ở Tây Nguyên.<EOS>
+
+[15] HỎI:  Gạo xuất khẩu của Việt Nam chủ yếu từ đâu? 
+    GOLD (nền 7.784):  Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#1 (7.784): Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#2 (7.784):  Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#3 (3.535):  Gạo tẻ vo sạch nấu thành cháo.<EOS>
+
+[16] HỎI:  Hạn hán ở Việt Nam thường gặp ở đâu? 
+    GOLD (nền 6.866):  Hạn hán ở Tây Nguyên.<EOS>
+    nền#1 (6.866): Hạn hán ở Tây Nguyên.<EOS>
+    nền#2 (6.866):  Hạn hán ở Tây Nguyên.<EOS>
+    nền#3 (5.795):  Hạn hán: Vùng Sahel, nằm ở phía nam sa mạc Sahara, thường xuyên phải chịu hạn hán do thiếu mưa trên sa mạc.<EOS
+
+[17] HỎI:  Sông Hồng bắt nguồn từ đâu? 
+    GOLD (nền 5.697):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#1 (5.697): Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#2 (5.697):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#3 (5.095): Sông Hồng nuôi dưỡng đồng bằng Bắc Bộ.<EOS>
+
+[18] HỎI:  Tại sao phải rửa tay trước khi ăn? 
+    GOLD (nền 9.703):  Rửa tay trước khi ăn.<EOS>
+    nền#1 (9.703): Rửa tay trước khi ăn.<EOS>
+    nền#2 (9.703):  Rửa tay trước khi ăn.<EOS>
+    nền#3 (4.642): Rửa tay diệt vi khuẩn.<EOS>
+
+[19] HỎI:  Sa mạc Sahara ở châu lục nào? 
+    GOLD (nền 11.419):  Sa mạc Sahara ở châu Phi.<EOS>
+    nền#1 (11.419): Sa mạc Sahara ở châu Phi.<EOS>
+    nền#2 (11.419):  Sa mạc Sahara ở châu Phi.<EOS>
+    nền#3 (8.186):  Sa mạc Sahara là sa mạc lớn nhất thế giới.<EOS>
+
+[232s] → out/probe_theme_prior_v12g.log

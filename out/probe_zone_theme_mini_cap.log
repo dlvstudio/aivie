@@ -1,0 +1,40 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+[6s] ✓ bipartite
+  2067 head ứng viên (gidf ≥ 5.0)
+[6s] 25 zone TỰ SINH qua left_pmi ≥ 3.0
+
+zone                          tw=0    tw=1
+------------------------------------------
+Biển Đông                     0.60    0.20
+Hội An                        0.60    0.80
+chinh Pháp                    0.60    0.60
+tỉnh Hà                       0.60    0.20
+Diêm Vương                    1.00    1.00
+Gò Công                       0.60    0.60
+Tất Thành                     0.80    0.20
+Hệ Mặt                        0.20    0.00
+Hà Nội                        0.00    1.00
+Bội Châu                      1.00    1.00
+Thái Bình                     0.00    0.80
+Hậu Ngô                       0.60    0.60
+chữ Hán                       1.00    0.80
+Trên Sao                      0.20    0.60
+Hoàng Hoa                     0.40    0.60
+Mặt Trời                      1.00    0.20
+Tĩnh Hải                      1.00    0.80
+Đinh Bộ                       0.60    1.00
+: Nhà                         0.40    0.20
+xã Thanh                      0.40    0.40
+quân Tống                     0.80    0.40
+Thuận Thiên                   0.60    0.80
+Trái Đất                      1.00    0.20
+Trọng Kim                     0.80    0.80
+diệt Mạc                      0.60    0.60
+------------------------------------------
+TRUNG BÌNH                    0.62    0.58   (n=25 zone)
+
+biên (tw=0 − tw=1) = **+0.040**
+⇒ TRƯỢT — hiện tượng chỉ có ở mini; chốt âm tính, giữ nguyên facts_about
+
+[7s] → out/probe_zone_theme_mini_cap.log

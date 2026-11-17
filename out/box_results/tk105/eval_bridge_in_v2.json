@@ -1,0 +1,150 @@
+{
+ "dd_test/soft": {
+  "bleu": 2.2,
+  "chrf": 21.8,
+  "n": 300,
+  "vi_du": [
+   {
+    "vi": "Chào chú ạ. Chỗ này có ngân hàng nào gần đây không ạ?",
+    "ref": "Good morning, sir. Is there a bank near here?",
+    "hyp": "Hello little friend. Is there a shopping mall nearby?"
+   },
+   {
+    "vi": "Có đấy. Đi thêm khoảng 5 dãy nhà nữa là tới.",
+    "ref": "There is one. 5 blocks away from here?",
+    "hyp": "I see that. Go add about 5 more rows to reach.\n\nThe text above is a mix of Vietnamese and English words. The translated text in English is: \"I see that. Go add about 5 more rows to reach.\""
+   },
+   {
+    "vi": "Dạ, xa quá ạ. Thế chú đổi hộ cháu ít tiền được không?",
+    "ref": "Well, that's too far.Can you change some money for me?",
+    "hyp": "Oh, it's too far. What if the uncle doesn't have enough money?\n\n(Note: The text above appears to be a mix of different languages and doesn't form a coherent sentence. The translation provided is an attempt to make sense of the given text.)"
+   },
+   {
+    "vi": "Được chứ, chuyện nhỏ. Cháu muốn đổi tiền gì nào?",
+    "ref": "Surely, of course. What kind of currency have you got?",
+    "hyp": "\"Eh, it's a small matter. What money do you want to borrow?\"\n\nThe text you provided seems to be a mix of different languages, possibly misspelled or with abbreviations. I translated the part that appears to be in Vietnamese to English."
+   },
+   {
+    "vi": "Tiền Nhân dân tệ ạ.",
+    "ref": "RIB.",
+    "hyp": "I'm sorry, but the text you provided appears to be a mix of different languages and doesn't form a coherent sentence. It seems to include Italian (e), esperanto (tiĉ), and possibly some other languages or characters. Could you please provide a clearer and more complete sentence in one specific language? I'll be happy to help with the translation."
+   },
+   {
+    "vi": "Cháu muốn đổi bao nhiêu?",
+    "ref": "How much would you like to change?",
+    "hyp": "The text above is a mix of Vietnamese and Italian. Here's the translation:\n\n\"eSports teams how many points do they want to score?\"\n\nHowever, the text seems to have some errors and is not fully clear."
+   }
+  ]
+ },
+ "dd_test/vi_raw": {
+  "bleu": 5.7,
+  "chrf": 30.9,
+  "n": 300,
+  "vi_du": [
+   {
+    "vi": "Chào chú ạ. Chỗ này có ngân hàng nào gần đây không ạ?",
+    "ref": "Good morning, sir. Is there a bank near here?",
+    "hyp": "Hello uncle. Is there a bank nearby here?"
+   },
+   {
+    "vi": "Có đấy. Đi thêm khoảng 5 dãy nhà nữa là tới.",
+    "ref": "There is one. 5 blocks away from here?",
+    "hyp": "Here it is. Going another 5 blocks will get you there."
+   },
+   {
+    "vi": "Dạ, xa quá ạ. Thế chú đổi hộ cháu ít tiền được không?",
+    "ref": "Well, that's too far.Can you change some money for me?",
+    "hyp": "Sure, here's the translation: \"Yes, it's very far. So, can the uncle who has less money adopt the child?\""
+   },
+   {
+    "vi": "Được chứ, chuyện nhỏ. Cháu muốn đổi tiền gì nào?",
+    "ref": "Surely, of course. What kind of currency have you got?",
+    "hyp": "Sure, it's just a small matter. What money do you want to exchange?"
+   },
+   {
+    "vi": "Tiền Nhân dân tệ ạ.",
+    "ref": "RIB.",
+    "hyp": "The text \"Tiền Nhân dân tệ ạ\" is in Vietnamese. Translating it into English, it means \"People's currency is bad.\"\n\nHere's the step-by-step process:\n\n1. Identify the language: The text is in Vietnamese.\n2. Translate each word:"
+   },
+   {
+    "vi": "Cháu muốn đổi bao nhiêu?",
+    "ref": "How much would you like to change?",
+    "hyp": "The text \"Cháu muốn đổi bao nhiêu?\" translates to \"How many does Cháu want to exchange?\" in English.\n\nHere's the step-by-step process:\n\n1. Identify the language: The text is in Vietnamese.\n2. Translate each word:\n   - Chá"
+   }
+  ]
+ },
+ "evalv1/soft": {
+  "bleu": 9.2,
+  "chrf": 36.3,
+  "n": 158,
+  "vi_du": [
+   {
+    "vi": "Soạn hộ anh một cái mail mời đối tác đến dự lễ khai trương chi nhánh mới vào tháng sau, yêu cầu trang trọng một chút.",
+    "ref": "Could you draft a formal email for me to invite partners to our new branch opening ceremony next month?",
+    "hyp": "I'm sorry, but the text you provided appears to be a mix of different languages and doesn't form a coherent message. It seems to contain a combination of Vietnamese and English words, as well as some typos and repetitions.\n\nHowever, I will try to extract the main idea and provide a translation:\n\n\"Please draft an email inviting partners to"
+   },
+   {
+    "vi": "Tạo giúp tôi một mẫu lịch họp định kỳ hàng tháng giữa bộ phận kinh doanh và kế toán.",
+    "ref": "Please create a template for a monthly recurring meeting schedule between the sales and accounting departments.",
+    "hyp": "Create a meeting agenda template for a monthly meeting between the sales and accounting departments."
+   },
+   {
+    "vi": "Soạn hộ chị một thông báo gửi nhân viên về việc thay đổi giờ làm việc từ tháng sau vì lý do sửa văn phòng.",
+    "ref": "Please draft an announcement for me to send to employees regarding the change in working hours starting next month due to office renovations.",
+    "hyp": "The text above, when translated into English, reads:\n\n\"Please send an email to the employees about the change in working hours starting from next month due to office renovation.\""
+   },
+   {
+    "vi": "viết mail xin lỗi khách hàng vì giao hàng trễ do bên em bị kẹt đơn, mong khách thông cảm và sẽ giảm giá cho lần sau nha",
+    "ref": "Write an apology email to a customer for a late delivery due to an order backlog; ask for their understanding and mention that we will offer a discount on their next order.",
+    "hyp": "I've written an email to apologize to the customer for the delayed delivery due to our side being backlogged. I hope the customer understands and will be more lenient next time."
+   },
+   {
+    "vi": "Viết hộ cái báo cáo ngắn gọn tình hình bán hàng tuần này tăng 5% so với tuần trước, lý do là do chạy quảng cáo hiệu quả.",
+    "ref": "Write a brief report stating that sales this week increased by 5% compared to last week, due to effective advertising.",
+    "hyp": "Write a short news report on the sales trend this week, which increased by 5% compared to last week, due to effective advertising campaigns."
+   },
+   {
+    "vi": "Viết giúp tôi một cái email xin nghỉ phép đi du lịch 3 ngày tới nhé.",
+    "ref": "Please help me write an email to request 3 days off for a trip.",
+    "hyp": "Sure, I can help you with that. The text you provided is a mix of different languages and doesn't make much sense. However, I will try to understand your request and provide you with a translation.\n\nIt seems like you want to book a flight to go on a 3-day trip. Here's a possible translation:\n\n\"Help me book an e-"
+   }
+  ]
+ },
+ "evalv1/vi_raw": {
+  "bleu": 23.3,
+  "chrf": 53.2,
+  "n": 158,
+  "vi_du": [
+   {
+    "vi": "Soạn hộ anh một cái mail mời đối tác đến dự lễ khai trương chi nhánh mới vào tháng sau, yêu cầu trang trọng một chút.",
+    "ref": "Could you draft a formal email for me to invite partners to our new branch opening ceremony next month?",
+    "hyp": "Sure, here is the translation of the text:\n\n\"Write a formal invitation email to a business partner to attend the opening ceremony of the new branch in the next month, emphasizing the importance.\""
+   },
+   {
+    "vi": "Tạo giúp tôi một mẫu lịch họp định kỳ hàng tháng giữa bộ phận kinh doanh và kế toán.",
+    "ref": "Please create a template for a monthly recurring meeting schedule between the sales and accounting departments.",
+    "hyp": "Create a meeting agenda template for a monthly meeting between the sales department and accounting department."
+   },
+   {
+    "vi": "Soạn hộ chị một thông báo gửi nhân viên về việc thay đổi giờ làm việc từ tháng sau vì lý do sửa văn phòng.",
+    "ref": "Please draft an announcement for me to send to employees regarding the change in working hours starting next month due to office renovations.",
+    "hyp": "Sure, the text translates to: \"Write a memo to an employee about the change in working hours starting next month due to office renovation.\""
+   },
+   {
+    "vi": "viết mail xin lỗi khách hàng vì giao hàng trễ do bên em bị kẹt đơn, mong khách thông cảm và sẽ giảm giá cho lần sau nha",
+    "ref": "Write an apology email to a customer for a late delivery due to an order backlog; ask for their understanding and mention that we will offer a discount on their next order.",
+    "hyp": "Write an email apologizing to the customer for the delayed delivery due to our side being held up with the order. Please understand and we will offer a discount for the next time."
+   },
+   {
+    "vi": "Viết hộ cái báo cáo ngắn gọn tình hình bán hàng tuần này tăng 5% so với tuần trước, lý do là do chạy quảng cáo hiệu quả.",
+    "ref": "Write a brief report stating that sales this week increased by 5% compared to last week, due to effective advertising.",
+    "hyp": "Write a short news report on the sales trend this week, which increased by 5% compared to last week, due to effective advertising."
+   },
+   {
+    "vi": "Viết giúp tôi một cái email xin nghỉ phép đi du lịch 3 ngày tới nhé.",
+    "ref": "Please help me write an email to request 3 days off for a trip.",
+    "hyp": "Write me an email requesting a 3-day leave for a trip."
+   }
+  ]
+ }
+}

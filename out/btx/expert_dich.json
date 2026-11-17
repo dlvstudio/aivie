@@ -1,0 +1,168 @@
+{
+ "cmd": "expert",
+ "args": {
+  "cmd": "expert",
+  "domain": "dich",
+  "experts": "",
+  "mode": "frozen",
+  "init": "",
+  "steps": 0,
+  "tag": "",
+  "tags": []
+ },
+ "hist": [
+  {
+   "step": 0,
+   "loss": 1.8613,
+   "val": {
+    "truyen": 1.9258,
+    "hoithoai": 3.1162,
+    "dich": 2.4236,
+    "toan": 0.4176,
+    "laptrinh": 1.363
+   }
+  },
+  {
+   "step": 250,
+   "loss": 1.8319,
+   "val": {
+    "truyen": 1.9852,
+    "hoithoai": 3.2108,
+    "dich": 2.3832,
+    "toan": 0.5651,
+    "laptrinh": 1.8687
+   }
+  },
+  {
+   "step": 500,
+   "loss": 1.7086,
+   "val": {
+    "truyen": 1.9394,
+    "hoithoai": 3.2876,
+    "dich": 2.1958,
+    "toan": 1.5623,
+    "laptrinh": 3.2514
+   }
+  },
+  {
+   "step": 750,
+   "loss": 1.5788,
+   "val": {
+    "truyen": 1.9407,
+    "hoithoai": 3.4273,
+    "dich": 2.1792,
+    "toan": 2.9354,
+    "laptrinh": 4.2393
+   }
+  },
+  {
+   "step": 1000,
+   "loss": 1.4566,
+   "val": {
+    "truyen": 1.8788,
+    "hoithoai": 3.3964,
+    "dich": 2.1518,
+    "toan": 3.241,
+    "laptrinh": 4.6168
+   }
+  },
+  {
+   "step": 1250,
+   "loss": 1.4553,
+   "val": {
+    "truyen": 1.9253,
+    "hoithoai": 3.5113,
+    "dich": 2.0569,
+    "toan": 3.6358,
+    "laptrinh": 4.7919
+   }
+  },
+  {
+   "step": 1500,
+   "loss": 1.4154,
+   "val": {
+    "truyen": 1.8839,
+    "hoithoai": 3.4643,
+    "dich": 2.1441,
+    "toan": 4.0055,
+    "laptrinh": 5.0173
+   }
+  },
+  {
+   "step": 1750,
+   "loss": 1.3537,
+   "val": {
+    "truyen": 1.9115,
+    "hoithoai": 3.5413,
+    "dich": 2.0045,
+    "toan": 4.0872,
+    "laptrinh": 5.1798
+   }
+  },
+  {
+   "step": 2000,
+   "loss": 1.3501,
+   "val": {
+    "truyen": 1.868,
+    "hoithoai": 3.6733,
+    "dich": 2.0712,
+    "toan": 4.3363,
+    "laptrinh": 5.4348
+   }
+  },
+  {
+   "step": 2250,
+   "loss": 1.3417,
+   "val": {
+    "truyen": 1.89,
+    "hoithoai": 3.6264,
+    "dich": 2.171,
+    "toan": 4.5139,
+    "laptrinh": 5.6961
+   }
+  },
+  {
+   "step": 2500,
+   "loss": 1.3353,
+   "val": {
+    "truyen": 1.8778,
+    "hoithoai": 3.6995,
+    "dich": 2.0962,
+    "toan": 4.7286,
+    "laptrinh": 5.7878
+   }
+  },
+  {
+   "step": 2750,
+   "loss": 1.1917,
+   "val": {
+    "truyen": 1.8326,
+    "hoithoai": 3.6848,
+    "dich": 2.0815,
+    "toan": 4.7152,
+    "laptrinh": 5.9735
+   }
+  },
+  {
+   "step": 2999,
+   "loss": 1.1595,
+   "val": {
+    "truyen": 1.7966,
+    "hoithoai": 3.6339,
+    "dich": 1.9584,
+    "toan": 4.7507,
+    "laptrinh": 5.8354
+   }
+  },
+  {
+   "best_step": 2999
+  }
+ ],
+ "final": {
+  "truyen": 1.799,
+  "hoithoai": 3.6639,
+  "dich": 2.0705,
+  "toan": 4.7492,
+  "laptrinh": 5.8442
+ }
+}

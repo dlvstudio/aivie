@@ -1,0 +1,12 @@
+{
+ "id": "17_game",
+ "cat": "py_app",
+ "turns": [
+  {
+   "user": "Viết chương trình Python chạy trên terminal: trò chơi đoán số từ 1 đến 100, máy chọn ngẫu nhiên, báo 'lớn hơn'/'nhỏ hơn', đếm số lần đoán, xử lý khi người dùng nhập không phải số, hỏi có chơi lại không, lưu kỷ lục ít lượt nhất vào file highscore.txt.",
+   "text": "Chào bạn, mình sẽ giúp bạn viết chương trình này. Cách làm là sử dụng một vòng lặp để thử các tổ hợp số từ 1 đến 100, so sánh với 100 và dùng hàm random để chọn ngẫu nhiên cho đến khi hết số đã đoán.\n\n```python\nimport random\n\ndef guess_number():\n    return random.randint(1, 100)\n\ndef play_game():\n    print(\"--- Bắt đầu trò chơi ---\")\n    num = guess_number()\n    count = 0\n    while num != 100 and count < 5:\n        num = guess_number()\n        count += 1\n\n    print(f\"Trò chơi kết thúc! Chọn số tiếp theo để đoán. {count} lần. Tổng cộng là {num} lần.\")\n\nif __name__ == \"__main__\":\n    try:\n        play_game()\n        print(\"Đã thắng! Lưu kỷ lục: Highscore.txt với số lượng lượt đoán ít nhất từ 1 đến 100.\")\n    except Exception as e:\n        print(f\"Có lỗi xảy ra: {e}\")\n```\n\n**Các bước thực hiện:**\n1. **Cài đặt thư viện cần thiết:** Mở terminal trong thư mục đang chạy chương trình và gõ lệnh sau:\n   `pip install random`\n2. **Chuẩn bị file cấu hình:** Tạo một file tên là `highscore.txt` với nội dung như sau:\n   ```python\n   import random\n   random.seed(10)  # Thay đổi số này nếu bạn muốn)\n   ```\n3. **Chạy chương trình:** \n   - Mở terminal (Ctrl + Alt + T).\n   - Gõ lệnh `python highscore.py` trong cửa sổ terminal.\n\n4. **Lưu trữ và quản lý kỷ lục:**\n   - Sau khi chương trình chạy xong, bạn sẽ thấy file `highscore.txt` với số lượng lượt đoán ít nhất.\n   - Mở file này bằng cách gõ lệnh: `cd highscore.txt` rồi nhấn Enter.\n\nNếu bạn muốn thay đổi tổ hợp số hoặc thêm điều kiện kiểm tra dữ liệu đầu vào, hãy cho mình biết nhé.",
+   "tokens": 550,
+   "sec": 18.3
+  }
+ ]
+}

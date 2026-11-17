@@ -1,0 +1,137 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[57s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.318        —        —           —
+none          0.318    0.493    0.376      -0.029
+pos           0.347    0.482    0.393      +0.000
+content       0.310    0.467    0.368      -0.036
+clear         0.215    0.391    0.275      -0.131
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng  13 · thua  21 · bất đồng  34/274 = 12.4%
+  content  thắng   1 · thua  11 · bất đồng  12/274 = 4.4%
+  clear    thắng   2 · thua  38 · bất đồng  40/274 = 14.6%
+
+THƯỚC CẶP CÓ THỨ TỰ (§12.76) — `A` là túi từ nên không phân biệt nổi trật tự:
+  thước            top1    Δ so B   thắng   thua   (n=274)
+  B (túi từ)      0.318         —       —      —
+  PAIR            0.285    -0.033       9     18
+  B+PAIR          0.292    -0.026       4     11
+  B+.5PAIR        0.314    -0.004       4      5
+  pos             0.347    +0.029      21     13
+  pos+PAIR        0.369    +0.051      17      3
+
+  CỔNG (§12.56c) so TIÊU CHÍ HIỆN HÀNH `pos` 0.347 → `pos+PAIR` 0.369  (Δ +0.022 · thắng 15 · thua 9)
+  ⇒ TRƯỢT  (cần Δ ≥ +0.05 VÀ thắng−thua ≥ 5)
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          63 =  23.0%
+  C_hoà_nhưng_nền_thua          17 =   6.2%
+  C1_nền#1_có_thể_CŨNG_ĐÚNG      6 =   2.2%
+  C2_lỗi_xếp_hạng_THẬT          11 =   4.0%
+  D_gold_NGOÀI_nhóm_hoà        194 =  70.8%
+  B = đã đúng sẵn · C = gold trong nhóm nhưng nền thua · D = cần cách khác.
+  **C2 mới là phần tín hiệu nội nhóm thật sự cứu được** — C1 là nhiễu nhãn (đáp đúng khác).
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  72.6%** (199/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  73.0%** (200/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.482 · top1 0.347)
+G2 prior có tác dụng?            : tw=0 → 0.318 ‖ pos → 0.347 (Δ +0.029)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `none` 0.318, Δ -0.029)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+====================================================================================
+ĐỌC 11 CA NHÓM **C2** — đã lọc bỏ C1 (nền#1 cũng là đáp đúng).
+Đây là đám mà tín hiệu phân biệt NỘI NHÓM phải sửa. `nền` = trùng-từ có trọng gidf.
+====================================================================================
+
+[0] HỎI: Truyện:Ċ"Các ngươi ngược lại là nói chuyện rất vui sướng, lão bà tử ta bỏ lỡ cái gì sao?" Whent 
+    GOLD (nền 10.771):  không phản ứng.<EOS>
+    nền#1 (75.255): Truyện:Ċ“Các ngươi là nghĩ tại chúng ta đế hào gây sự sao,” Trong quầy hoàng mao trên mặt lộ ra một tia thần sắc
+    nền#2 (39.932):  Lúc đầu ngư lang liên minh bắt đầu coi như thuận lợi, nếu là đông tuyến nhất cử cầm xuống Thành King's Landing,
+    nền#3 (39.110): Bởi vì tọa trấn Thông U phong Lưu Kế Đường lặng yên rời đi, mà tin tức tiết ra ngoài lại cực kỳ đột nhiên, Cơ Vă
+
+[1] HỎI:  Miền Bắc và miền Nam khác nhau thế nào về khí hậu? 
+    GOLD (nền 5.532): Miền Nam ấm quanh năm.<EOS>
+    nền#1 (5.623):  Miền Bắc thành một nước xã hội chủ nghĩa, trong khi miền Nam thành lập một chế độ mới do Mỹ hậu thuẫn.<EOS>
+    nền#2 (5.599): Miền Bắc có mùa đông lạnh.<EOS>
+    nền#3 (5.532): Miền Nam ấm quanh năm.<EOS>
+
+[2] HỎI:  Biến đổi khí hậu ảnh hưởng gì đến Việt Nam? 
+    GOLD (nền 7.561): Biến đổi khí hậu làm mực nước biển dâng.<EOS>
+    nền#1 (8.268): Biến đổi khí hậu: Nó ảnh hưởng đến môi trường của chúng ta như thế nàoĊ<EOS>
+    nền#2 (7.930): Biến đổi khí hậu cần hành động chung.<EOS>
+    nền#3 (7.684):  Biến đổi khí hậu cũng có thể ảnh hưởng đến vòng đời của loài bướm, dẫn đến suy giảm quần thể.<EOS>
+
+[3] HỎI:  Kinh đô triều Nguyễn đặt ở đâu? 
+    GOLD (nền 2.293):  Kinh thành Huế là di sản văn hóa.<EOS>
+    nền#1 (4.994): Kinh đô là thành Đại Lý.<EOS>
+    nền#2 (4.977): Kinh đô ban đầu đặt tại đất Trần, sau dời tới Khúc Phụ.<EOS>
+    nền#3 (4.828): Kinh đô đặt ở Băl Canar, nay thuộc tỉnh Bình Thuận.<EOS>
+
+[4] HỎI:  Tỉ lệ 1:100000 trên bản đồ nghĩa là gì? 
+    GOLD (nền 7.224):  tỉ lệ).<EOS>
+    nền#1 (7.289):  Tỉ lệ sinh 13/1.<EOS>
+    nền#2 (7.289): Tỉ lệ sinh 13/1.<EOS>
+    nền#3 (7.224):  tỉ lệ).<EOS>
+
+[5] HỎI:  Chính phủ làm nhiệm vụ gì? 
+    GOLD (nền 4.475):  Chính phủ điều hành đất nước.<EOS>
+    nền#1 (5.574):  Chính phủ hiện nay chỉ là chính phủ dân chủ vì thế không có nhiệm vụ nói trên.<EOS>
+    nền#2 (5.574): Chính phủ hiện nay chỉ là chính phủ dân chủ vì thế không có nhiệm vụ nói trên.<EOS>
+    nền#3 (4.600): Chính phủ Anh cũng đồng ý và cấm thương vụ của GEC.<EOS>
+
+[6] HỎI:  Tòa án giải quyết việc gì? 
+    GOLD (nền 5.276):  Tòa án xét xử theo luật.<EOS>
+    nền#1 (5.745):  Tòa án có một ban thư ký giúp việc.<EOS>
+    nền#2 (5.745): Tòa án có một ban thư ký giúp việc.<EOS>
+    nền#3 (5.276): Tòa án xét xử theo luật.<EOS>
+
+[7] HỎI:  0,75 bằng phân số nào? 
+    GOLD (nền 6.848): 0,75 bằng 3/4.<EOS>
+    nền#1 (6.985): 000 đến 57.<EOS>
+    nền#2 (6.985): 075 km.<EOS>
+    nền#3 (6.848): 0,75 bằng 3/4.<EOS>
+
+[8] HỎI:  Lực là gì? 
+    GOLD (nền 2.563): Lực là tác dụng làm vật biến dạng.<EOS>
+    nền#1 (3.309):  Lực lượng Liên Xô.<EOS>
+    nền#2 (3.064):  Lực khống chế kinh khủng!<EOS>
+    nền#3 (3.064):  lực lượng của thiên nhiên.<EOS>
+
+[9] HỎI:  Bản đồ tỉ lệ 1:1000000 nghĩa là gì? 
+    GOLD (nền 6.150):  tỉ lệ).<EOS>
+    nền#1 (6.440):  Tỉ lệ sinh 13/1.<EOS>
+    nền#2 (6.440): Tỉ lệ sinh 13/1.<EOS>
+    nền#3 (6.150):  tỉ lệ).<EOS>
+
+[10] HỎI:  Đình làng dùng để làm gì? 
+    GOLD (nền 4.668):  Đình làng là nơi sinh hoạt cộng đồng.<EOS>
+    nền#1 (5.579): Đình làng thờ Thành hoàng.<EOS>
+    nền#2 (5.579):  Đình làng thờ Thành hoàng.<EOS>
+    nền#3 (4.668): Đình làng là nơi sinh hoạt cộng đồng.<EOS>
+
+[514s] → out/pair_v12.log

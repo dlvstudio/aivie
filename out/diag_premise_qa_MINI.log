@@ -1,0 +1,35 @@
+[0s] load checkpoints/mini_sent.pkl (gc.disable) …
+[20s] ✓ parents 5,004
+
+(1) cha is_qa = 0 / 5,004  (0.00%)
+    ⇒ KẾT LUẬN (a): v12 KHÔNG có cha QA. Nhóm `qa_supervised` ở §12.17 bị tôi gán
+      nhãn 'ĐÃ train' mà chưa kiểm ⇒ 100% là ĐÚNG, không phải lỗi cổng.
+
+(3) vết GIAO từng bước (last_k=6) — token nào làm rỗng?  [frame ids loại: [2, 3]]
+
+  [qa_supervised.jsonl] 'Hỏi: 2 cộng 3 bằng mấy? Đáp:'
+    hi=['Ġ2', 'Ġcộng', 'Ġ3', 'Ġbằng', 'Ġmấy']
+    Ġ2(df=473)→∩473  Ġcộng(df=74)→∩12  Ġ3(df=312)→∩3  Ġbằng(df=223)→∩3  Ġmấy(df=11)→∩0
+
+  [qa_supervised.jsonl] 'Hỏi: 10 trừ 4 bằng mấy? Đáp:'
+    hi=['Ġtrừ', 'Ġ4', 'Ġbằng', 'Ġmấy']
+    Ġtrừ(df=20)→∩20  Ġ4(df=335)→∩2  Ġbằng(df=223)→∩1  Ġmấy(df=11)→∩0
+
+  [qa_supervised.jsonl] 'Hỏi: 3 nhân 4 bằng mấy? Đáp:'
+    hi=['Ġ3', 'Ġnhân', 'Ġ4', 'Ġbằng', 'Ġmấy']
+    Ġ3(df=312)→∩312  Ġnhân(df=151)→∩11  Ġ4(df=335)→∩2  Ġbằng(df=223)→∩1  Ġmấy(df=11)→∩0
+
+  [qa_heldout.jsonl] 'ật và giải trí.\nHỏi: Paris đạt được thành quả gì sau khoảng 4 thế kỷ tính từ ngày Cách mạng Pháp diễn ra? Đáp:'
+    hi=['Ġsau', 'Ġkhoảng', 'Ġ4', 'Ġtính', 'Ġtừ', 'Ġngày']
+    Ġsau(df=277)→∩277  Ġkhoảng(df=122)→∩6  Ġ4(df=335)→∩1  Ġtính(df=59)→∩0  Ġtừ(df=294)→∩0  Ġngày(df=183)→∩0
+
+  [qa_heldout.jsonl] 'hóa của thế giới, thủ đô của nghệ thuật và giải trí.\nHỏi: Kinh tế xung quanh kinh đô ánh sáng mạnh về gì? Đáp:'
+    hi=['Ġquanh', 'Ġkinh', 'Ġánh', 'Ġsáng', 'Ġmạnh', 'Ġgì']
+    Ġquanh(df=30)→∩30  Ġkinh(df=120)→∩0  Ġánh(df=41)→∩0  Ġsáng(df=55)→∩0  Ġmạnh(df=35)→∩0  Ġgì(df=16)→∩0
+
+  [qa_heldout.jsonl] 'rung tâm văn hóa của thế giới, thủ đô của nghệ thuật và giải trí.\nHỏi: Cuộc cách mạng Pháp diễn ra ở đâu? Đáp:'
+    hi=['Ġđô', 'Ġgiải', 'Ġtrí', 'ĠCuộc', 'Ġcách', 'Ġđâu']
+    Ġđô(df=117)→∩117  Ġgiải(df=33)→∩1  Ġtrí(df=33)→∩0  ĠCuộc(df=87)→∩0  Ġcách(df=86)→∩0  Ġđâu(df=10)→∩0
+
+[20s] → out/diag_premise_qa_MINI.log
+Dán mục (1)(2) + vài dòng (3) vào ticket §12.18.

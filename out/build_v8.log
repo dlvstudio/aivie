@@ -1,0 +1,45 @@
+[     0.0s] === build_history START (pid=43272) → out/logs/build_history_20260708_224832.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history_segseed.pkl …
+[     0.0s] ▶ unpickle
+[     9.7s] ✓ unpickle  (9.7s)
+[     9.7s] ▶ vocab (112275 token)
+[    10.3s] ✓ vocab (112275 token)  (0.6s)
+[    10.3s] ▶ adjacency
+[    23.8s] ✓ adjacency  (13.5s)
+[    23.8s] ▶ embedding
+[    24.9s] ✓ embedding  (1.1s)
+[    24.9s] ▶ parents
+[   106.5s] ✓ parents  (81.6s)
+[   106.6s] ✓ loaded: vocab=112275 parents=142733 E=(77464, 96)
+[   108.9s] sidecar có: network_v7_history_segseed.content.pkl
+[   108.9s] ✓ load_checkpoint XONG
+[   108.9s] trước: parents=142733
+[   109.0s] câu sử curated: 8063
+[   109.0s] ▶ ingest_statements (parents, priority cao)
+[   122.6s] ingest_statements 2000/8063 (24.8%) — parents+=2000
+[   129.4s] ingest_statements 4000/8063 (49.6%) — parents+=4000
+[   135.6s] ingest_statements 6000/8063 (74.4%) — parents+=6000
+[   142.7s] ingest_statements 8000/8063 (99.2%) — parents+=8000
+[   148.0s] ✓ ingest_statements (parents, priority cao)  (39.1s)
+[   148.0s] parents +4855 ({'statements': 8063})
+[   148.0s] ▶ ingest_entities (gộp mọi nguồn title)
+[   158.2s] ingest_entities 200/3104 (6.4%) — ents=200
+[   159.4s] ingest_entities 400/3104 (12.9%) — ents=400
+[   159.9s] ingest_entities 600/3104 (19.3%) — ents=600
+[   160.4s] ingest_entities 800/3104 (25.8%) — ents=800
+[   160.7s] ingest_entities 1000/3104 (32.2%) — ents=1000
+[   160.9s] ingest_entities 1200/3104 (38.7%) — ents=1200
+[   161.1s] ingest_entities 1400/3104 (45.1%) — ents=1400
+[   161.4s] ingest_entities 1600/3104 (51.5%) — ents=1600
+[   161.6s] ingest_entities 1800/3104 (58.0%) — ents=1800
+[   161.8s] ingest_entities 2000/3104 (64.4%) — ents=2000
+[   162.0s] ingest_entities 2200/3104 (70.9%) — ents=2200
+[   162.2s] ingest_entities 2400/3104 (77.3%) — ents=2400
+[   162.4s] ingest_entities 2600/3104 (83.8%) — ents=2600
+[   162.6s] ingest_entities 2800/3104 (90.2%) — ents=2800
+[   162.8s] ingest_entities 3000/3104 (96.6%) — ents=3000
+[   163.0s] ✓ ingest_entities (gộp mọi nguồn title)  (15.0s)
+[   163.0s] entities: {'titles_seen': 3700, 'entities': 3104, 'links': 169729}
+[   163.0s] ▶ save
+[   231.2s] ✓ save  (68.2s)
+[   231.2s] ✓ SAVED checkpoints/network_v8_histwiki.pkl

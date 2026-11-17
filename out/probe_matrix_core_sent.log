@@ -1,0 +1,14 @@
+prompt='Ngô Quyền là vị vua sáng lập nhà Ngô, được'
+parent conf=1.000
+parent_bag  top=[('Ngô', 8.508), ('ĠQuyền', 8.334), ('Ġlập', 5.855), ('Ġvua', 5.152), ('ĠNgô', 4.325), ('Ġvị', 3.924), ('Ġsáng', 3.885), ('Ġlà', 3.717)]
+parent_succ top=[('Ġxem', 1944.659), ('Ġsử', 0.0), ('Imperator', 0.0), ('ĠTATA', 0.0), ('Elizabeth', 0.0), ('ĠCapitol', 0.0), ('ĠTaekwondo', 0.0), ('ĠAryan', 0.0)]
+matrix logits top=[('Ġxem', 5.711), ('Ġngười', 0.552), ('Ġlà', 0.45), ('Ví', 0.377), ('Ngô', 0.313), ('ĠQuyền', 0.304), ('Ġthời', 0.249), ('Ġđầu', 0.249)]
+  Ġxem rank=1 val=5.711
+  Ġđể rank=722 val=0.005
+  Ġgọi rank=101 val=0.022
+  <EOS> rank=18 val=0.126
+
+--- argmax no_agenda+matrix ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủNghĩa 2Giải
+
+--- note: MZ+matrix / sample bị dừng (CPU spin trên 250k parents) ---

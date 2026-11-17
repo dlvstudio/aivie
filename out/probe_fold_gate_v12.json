@@ -1,0 +1,51 @@
+{
+  "checkpoint": "checkpoints/network_v12_sent.pkl",
+  "n_prompt": 120,
+  "n_clauses": 1758562,
+  "pmi_cut": 0.0,
+  "gidf_min": 4.0,
+  "gates": {
+    "dead_max": 0.5,
+    "lac_max": 0.3
+  },
+  "rows": [
+    {
+      "config": "A_don_am_tiet",
+      "lac_strict": 0.9822695035460992,
+      "pmi_cross": 1.50627290866611,
+      "dead_rate": 0.8083333333333333,
+      "n_tokens": 26.05128205128205,
+      "n_scored": 47,
+      "n_alive": 78
+    },
+    {
+      "config": "B_bo_chu_so",
+      "lac_strict": 0.9814814814814814,
+      "pmi_cross": 1.4794703537515568,
+      "dead_rate": 0.8166666666666667,
+      "n_tokens": 25.75,
+      "n_scored": 45,
+      "n_alive": 76
+    },
+    {
+      "config": "C_cap_am_tiet",
+      "lac_strict": NaN,
+      "pmi_cross": 1.2705393354506866,
+      "dead_rate": 0.9416666666666667,
+      "n_tokens": 19.666666666666668,
+      "n_scored": 0,
+      "n_alive": 15
+    },
+    {
+      "config": "D_cap_bo_so",
+      "lac_strict": NaN,
+      "pmi_cross": 1.2705393354506866,
+      "dead_rate": 0.9416666666666667,
+      "n_tokens": 19.666666666666668,
+      "n_scored": 0,
+      "n_alive": 15
+    }
+  ],
+  "gate_pass": false,
+  "seconds": 115.4
+}

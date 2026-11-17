@@ -1,0 +1,54 @@
+[    0.0s RSS  0.06GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[   13.1s RSS  0.53GB] nạp xong · vocab=32002 parents=5664
+[   18.4s RSS  0.57GB] index xong · cạnh typed=2244 · nhãn CỤM=674
+[   18.5s RSS  0.57GB] 20 thuộc tính đóng băng
+[   18.8s RSS  0.57GB] 19 dòng → /private/tmp/claude-501/-Users-dlv-Documents-code-nn-aivie/2635812a-9ff6-45e4-92bd-c6581966f41b/scratchpad/c3.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   49.1s RSS  5.38GB] nạp xong · vocab=249107 parents=430447
+[   90.4s RSS  7.66GB] index xong · cạnh typed=136822 · nhãn CỤM=39385
+[   90.5s RSS  7.66GB] 30 thuộc tính đóng băng
+[   90.9s RSS  7.66GB] 22 dòng → out/hub3_chain_v12_samples.txt
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[    4.7s RSS  1.02GB] nạp xong · vocab=32002 parents=5664
+[    5.0s RSS  1.02GB] sidecar WS-CRF: 791 span TỪ (/tmp/mini.ws_spans.json)
+[    7.2s RSS  1.02GB] index xong · cạnh typed=3660 · nhãn CỤM=2295
+[    7.2s RSS  1.02GB] 12 thuộc tính đóng băng
+[    7.3s RSS  1.02GB] 12 dòng → /tmp/c3b.txt
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[    4.7s RSS  1.02GB] nạp xong · vocab=32002 parents=5664
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   47.8s RSS  6.85GB] nạp xong · vocab=249107 parents=430447
+[   56.8s RSS  7.79GB] sidecar WS-CRF: 71379 span TỪ (checkpoints/network_v12_subst_isg_pw.ws_spans.json)
+[   97.9s RSS  7.79GB] index xong · cạnh typed=412949 · nhãn CỤM=143929
+[   98.0s RSS  7.79GB] 30 thuộc tính đóng băng
+[   98.5s RSS  7.79GB] 28 dòng → out/hub3_chain_v12_r3_samples.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   47.1s RSS  7.62GB] nạp xong · vocab=249107 parents=430447
+[   47.1s RSS  7.67GB] ⚠️ CHẠY KHÔNG CÓ span WS-CRF (đối chứng, neo bằng cụm ISG)
+[   97.0s RSS  7.67GB] index xong · cạnh typed=354772 · nhãn CỤM=100578
+[   97.1s RSS  7.67GB] 30 thuộc tính đóng băng
+[   97.6s RSS  7.67GB] 23 dòng → out/hub3_chain_v12_r3_noWS_samples.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   49.9s RSS  5.32GB] nạp xong · vocab=249107 parents=430447
+[   60.5s RSS  6.71GB] sidecar WS-CRF: 71379 span TỪ (checkpoints/network_v12_subst_isg_pw.ws_spans.json)
+[  103.3s RSS  6.71GB] index xong · cạnh typed=294424 · nhãn CỤM=53888
+[  103.5s RSS  6.71GB] 30 thuộc tính đóng băng
+[  103.9s RSS  6.71GB] 21 dòng → out/hub3_chain_v12_r4_samples.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   49.3s RSS  7.93GB] nạp xong · vocab=249107 parents=430447
+[   49.4s RSS  7.93GB] ⚠️ CHẠY KHÔNG CÓ span WS-CRF (đối chứng, neo bằng cụm ISG)
+[  100.1s RSS  7.93GB] index xong · cạnh typed=302463 · nhãn CỤM=94117
+[  100.3s RSS  7.93GB] 30 thuộc tính đóng băng
+[  100.7s RSS  7.93GB] 14 dòng → out/hub3_chain_v12_r4_noWS_samples.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   52.0s RSS  6.59GB] nạp xong · vocab=249107 parents=430447
+[   62.2s RSS  7.53GB] sidecar WS-CRF: 71379 span TỪ (checkpoints/network_v12_subst_isg_pw.ws_spans.json)
+[  106.6s RSS  7.53GB] index xong · cạnh typed=294424 · nhãn CỤM=53888
+[  106.8s RSS  7.53GB] 80 thuộc tính đóng băng
+[  107.7s RSS  7.53GB] 44 dòng → out/hub3_chain_v12_r5_samples.txt
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   50.3s RSS  6.86GB] nạp xong · vocab=249107 parents=430447
+[   50.3s RSS  7.49GB] ⚠️ CHẠY KHÔNG CÓ span WS-CRF (đối chứng, neo bằng cụm ISG)
+[  101.6s RSS  7.49GB] index xong · cạnh typed=302463 · nhãn CỤM=94117
+[  101.8s RSS  7.49GB] 80 thuộc tính đóng băng
+[  102.7s RSS  7.49GB] 34 dòng → out/hub3_chain_v12_r5_noWS_samples.txt

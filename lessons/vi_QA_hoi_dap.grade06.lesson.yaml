@@ -1,0 +1,74 @@
+lesson_id: vi_grade6_qa
+grade: 6
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: Tổng ba góc tam giác bằng bao nhiêu độ ? Đáp: Tổng ba góc tam giác bằng 180 độ."
+  - "Hỏi: Phương trình bậc nhất một ẩn có dạng gì ? Đáp: Phương trình bậc nhất một ẩn có dạng ax cộng b bằng 0."
+  - "Hỏi: a m nhân a n bằng gì ? Đáp: a m nhân a n bằng a m cộng n."
+  - "Hỏi: Hàm số y bằng ax c b có đồ thị gì ? Đáp: Hàm số y bằng ax c b là đường thẳng."
+  - "Hỏi: Thể tích hình lập phương cạnh a bằng gì ? Đáp: Thể tích hình lập phương cạnh a bằng a mũ ba."
+  - "Hỏi: a m chia a n bằng gì ? Đáp: a m chia a n bằng a m trừ n."
+  - "Hỏi: Góc đối đỉnh thế nào ? Đáp: Góc đối đỉnh bằng nhau."
+  - "Hỏi: Tam giác cân có gì đặc biệt ? Đáp: Tam giác cân có hai góc đáy bằng nhau."
+  - "Hỏi: Hình thoi có mấy cạnh bằng nhau ? Đáp: Hình thoi có bốn cạnh bằng nhau."
+  - "Hỏi: Số vô tỉ là gì ? Đáp: Số vô tỉ không viết được phân số."
+  - "Hỏi: Diện tích hình chữ nhật tính sao ? Đáp: Diện tích hình chữ nhật bằng dài nhân rộng."
+  - "Hỏi: Trái đất quay quanh Mặt Trời mất bao lâu ? Đáp: Một vòng quỹ đạo mất khoảng 365 ngày."
+  - "Hỏi: Bốn mùa do nguyên nhân gì ? Đáp: Trục Trái đất nghiêng tạo bốn mùa."
+  - "Hỏi: Việt Nam thuộc múi giờ nào ? Đáp: Việt Nam múi giờ UTC cộng 7."
+  - "Hỏi: Châu lục đông dân nhất là châu nào ? Đáp: Châu Á đông dân nhất."
+  - "Hỏi: Biển Đông thuộc đại dương nào ? Đáp: Biển Đông là một phần Thái Bình Dương."
+  - "Hỏi: Ngày đêm luân phiên do đâu ? Đáp: Ngày đêm luân phiên do Trái đất tự quay."
+  - "Hỏi: Múi giờ chia theo gì ? Đáp: Múi giờ chia theo kinh tuyến."
+  - "Hỏi: Động đất do đâu ? Đáp: Động đất do vỏ Trái đất dịch chuyển."
+  - "Hỏi: Dân số thế giới bao nhiêu ? Đáp: Dân số thế giới trên 8 tỷ người."
+  - "Hỏi: Châu Nam Cực có cư dân không ? Đáp: Châu Nam Cực không có cư dân thường trú."
+  - "Hỏi: Sa mạc có đặc điểm gì ? Đáp: Sa mạc khô hạn ít mưa."
+  - "Hỏi: Ngô Quyền đánh thắng quân Nam Hán năm nào ? Đáp: Ngô Quyền đánh thắng quân Nam Hán năm 938."
+  - "Hỏi: Lý Thái Tổ dời đô năm nào ? Đáp: Lý Thái Tổ dời đô về Thăng Long năm 1010."
+  - "Hỏi: Chiến dịch Điện Biên Phủ năm nào ? Đáp: Chiến dịch Điện Biên Phủ năm 1954."
+  - "Hỏi: Việt Nam gia nhập ASEAN năm nào ? Đáp: Việt Nam gia nhập ASEAN năm 1995."
+  - "Hỏi: Đinh Bộ Lình làm gì ? Đáp: Đinh Bộ Lình dẹp loạn 12 sứ quân."
+  - "Hỏi: Hai Bà Trưng khởi nghĩa năm nào ? Đáp: Hai Bà Trưng khởi nghĩa năm 40."
+  - "Hỏi: Nhà Đinh thành lập năm nào ? Đáp: Nhà Đinh thành lập năm 968."
+  - "Hỏi: Pháp xâm lược Việt Nam năm nào ? Đáp: Pháp xâm lược Việt Nam năm 1858."
+  - "Hỏi: Việt Nam gia nhập Liên Hợp Quốc năm nào ? Đáp: Việt Nam gia nhập Liên Hợp Quốc 1977."
+  - "Hỏi: Chiến thắng Bạch Đằng năm nào ? Đáp: Chiến thắng Bạch Đằng năm 1288."
+  - "Hỏi: Lê Lợi đánh đuổi quân nào ? Đáp: Lê Lợi đánh đuổi quân Minh."
+  - "Hỏi: Nguyên tử gồm những gì ? Đáp: Nguyên tử gồm hạt nhân và electron."
+  - "Hỏi: pH bằng 7 là môi trường gì ? Đáp: pH bằng 7 là trung tính."
+  - "Hỏi: Đơn vị lực là gì ? Đáp: Đơn vị lực là newton."
+  - "Hỏi: Định luật Ohm là gì ? Đáp: Định luật Ohm U bằng I nhân R."
+  - "Hỏi: Hệ sinh thái gồm gì ? Đáp: Hệ sinh thái gồm sinh vật và môi trường."
+  - "Hỏi: Hạt nhân gồm gì ? Đáp: Hạt nhân gồm proton và neutron."
+  - "Hỏi: Axit có vị gì ? Đáp: Axit có vị chua."
+  - "Hỏi: pH nhỏ hơn 7 là môi trường gì ? Đáp: pH nhỏ hơn 7 là môi trường axit."
+  - "Hỏi: Áp suất tính thế nào ? Đáp: Áp suất bằng lực chia diện tích."
+  - "Hỏi: Dòng điện là gì ? Đáp: Dòng điện là dòng điện tích."
+  - "Hỏi: Sinh vật gồm mấy giới ? Đáp: Sinh vật gồm năm giới."
+  - "Hỏi: Việt Nam có bao nhiêu dân tộc ? Đáp: Việt Nam có 54 dân tộc anh em."
+  - "Hỏi: Lớp 6 thuộc bậc học nào ? Đáp: Lớp 6 là khối đầu THCS."
+  - "Hỏi: Quyền trẻ em theo công ước nào ? Đáp: Quyền trẻ em theo Công ước Liên Hợp Quốc."
+  - "Hỏi: Phòng chống bạo lực học đường là gì ? Đáp: Phòng chống bạo lực học đường bảo vệ học sinh."
+  - "Hỏi: Năng lượng tái tạo giúp gì ? Đáp: Năng lượng tái tạo giảm khí thải."
+  - "Hỏi: Dân tộc nào đông nhất Việt Nam ? Đáp: Kinh là dân tộc đông nhất."
+  - "Hỏi: Chùa thờ ai ? Đáp: Chùa thờ Phật."
+  - "Hỏi: Đình làng thờ ai ? Đáp: Đình làng thờ Thành hoàng."
+  - "Hỏi: Bản quyền bảo vệ gì ? Đáp: Quyền sở hữu trí tuệ bảo vệ sáng tạo."
+  - "Hỏi: Giao thông xanh giúp gì ? Đáp: Giao thông xanh giảm ô nhiễm."

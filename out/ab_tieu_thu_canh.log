@@ -1,0 +1,140 @@
+[     0.0s] === load_network_v12_sent_dn START (pid=1444) → out/logs/load_network_v12_sent_dn_20260817_080109.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent_dn.pkl …
+[     0.0s] ▶ unpickle
+[     2.5s] ✓ unpickle  (2.5s)
+[     2.5s] ▶ vocab (32002 token)
+[     2.5s] ✓ vocab (32002 token)  (0.0s)
+[     2.5s] ▶ adjacency
+[    11.1s] ✓ adjacency  (8.6s)
+[    11.1s] ▶ embedding
+[    11.2s] ✓ embedding  (0.1s)
+[    11.2s] ▶ parents
+[    11.2s] parents: deserialize 450050 records …
+[    11.2s] parents 5000/450050 (1.1%)
+[    11.3s] parents 10000/450050 (2.2%)
+[    11.3s] parents 15000/450050 (3.3%)
+[    11.4s] parents 20000/450050 (4.4%)
+[    11.4s] parents 25000/450050 (5.6%)
+[    11.4s] parents 30000/450050 (6.7%)
+[    11.5s] parents 35000/450050 (7.8%)
+[    11.5s] parents 40000/450050 (8.9%)
+[    11.6s] parents 45000/450050 (10.0%)
+[    11.6s] parents 50000/450050 (11.1%)
+[    11.6s] parents 55000/450050 (12.2%)
+[    11.7s] parents 60000/450050 (13.3%)
+[    11.7s] parents 65000/450050 (14.4%)
+[    11.8s] parents 70000/450050 (15.6%)
+[    11.8s] parents 75000/450050 (16.7%)
+[    11.8s] parents 80000/450050 (17.8%)
+[    11.9s] parents 85000/450050 (18.9%)
+[    11.9s] parents 90000/450050 (20.0%)
+[    11.9s] parents 95000/450050 (21.1%)
+[    12.0s] parents 100000/450050 (22.2%)
+[    12.0s] parents 105000/450050 (23.3%)
+[    12.1s] parents 110000/450050 (24.4%)
+[    12.1s] parents 115000/450050 (25.6%)
+[    12.1s] parents 120000/450050 (26.7%)
+[    12.2s] parents 125000/450050 (27.8%)
+[    12.2s] parents 130000/450050 (28.9%)
+[    12.3s] parents 135000/450050 (30.0%)
+[    12.3s] parents 140000/450050 (31.1%)
+[    12.4s] parents 145000/450050 (32.2%)
+[    12.4s] parents 150000/450050 (33.3%)
+[    12.5s] parents 155000/450050 (34.4%)
+[    12.5s] parents 160000/450050 (35.6%)
+[    12.6s] parents 165000/450050 (36.7%)
+[    12.6s] parents 170000/450050 (37.8%)
+[    12.7s] parents 175000/450050 (38.9%)
+[    12.8s] parents 180000/450050 (40.0%)
+[    12.9s] parents 185000/450050 (41.1%)
+[    12.9s] parents 190000/450050 (42.2%)
+[    13.0s] parents 195000/450050 (43.3%)
+[    13.1s] parents 200000/450050 (44.4%)
+[    13.1s] parents 205000/450050 (45.6%)
+[    13.2s] parents 210000/450050 (46.7%)
+[    13.3s] parents 215000/450050 (47.8%)
+[    13.3s] parents 220000/450050 (48.9%)
+[    13.4s] parents 225000/450050 (50.0%)
+[    13.5s] parents 230000/450050 (51.1%)
+[    13.6s] parents 235000/450050 (52.2%)
+[    13.6s] parents 240000/450050 (53.3%)
+[    13.7s] parents 245000/450050 (54.4%)
+[    13.8s] parents 250000/450050 (55.5%)
+[    13.9s] parents 255000/450050 (56.7%)
+[    13.9s] parents 260000/450050 (57.8%)
+[    14.0s] parents 265000/450050 (58.9%)
+[    14.1s] parents 270000/450050 (60.0%)
+[    14.1s] parents 275000/450050 (61.1%)
+[    14.2s] parents 280000/450050 (62.2%)
+[    14.3s] parents 285000/450050 (63.3%)
+[    14.4s] parents 290000/450050 (64.4%)
+[    14.4s] parents 295000/450050 (65.5%)
+[    14.5s] parents 300000/450050 (66.7%)
+[    14.6s] parents 305000/450050 (67.8%)
+[    14.7s] parents 310000/450050 (68.9%)
+[    14.7s] parents 315000/450050 (70.0%)
+[    14.8s] parents 320000/450050 (71.1%)
+[    14.9s] parents 325000/450050 (72.2%)
+[    15.0s] parents 330000/450050 (73.3%)
+[    15.0s] parents 335000/450050 (74.4%)
+[    15.1s] parents 340000/450050 (75.5%)
+[    15.1s] parents 345000/450050 (76.7%)
+[    15.2s] parents 350000/450050 (77.8%)
+[    15.3s] parents 355000/450050 (78.9%)
+[    15.4s] parents 360000/450050 (80.0%)
+[    15.4s] parents 365000/450050 (81.1%)
+[    15.5s] parents 370000/450050 (82.2%)
+[    15.6s] parents 375000/450050 (83.3%)
+[    15.7s] parents 380000/450050 (84.4%)
+[    15.7s] parents 385000/450050 (85.5%)
+[    15.8s] parents 390000/450050 (86.7%)
+[    15.9s] parents 395000/450050 (87.8%)
+[    16.0s] parents 400000/450050 (88.9%)
+[    16.0s] parents 405000/450050 (90.0%)
+[    16.1s] parents 410000/450050 (91.1%)
+[    16.2s] parents 415000/450050 (92.2%)
+[    16.3s] parents 420000/450050 (93.3%)
+[    16.3s] parents 425000/450050 (94.4%)
+[    16.4s] parents 430000/450050 (95.5%)
+[    16.5s] parents 435000/450050 (96.7%)
+[    16.5s] parents 440000/450050 (97.8%)
+[    16.6s] parents 445000/450050 (98.9%)
+[    16.7s] parents 450000/450050 (100.0%)
+[    28.0s] ▶ rebuild_hierarchical_index …
+[    29.3s] ✓ rebuild_hierarchical_index (1.3s)
+[    34.3s]     resync match_ids: 450050/450050 cha (df dựng lại)
+[    34.3s] ✓ parents  (23.1s)
+[    34.3s] ✓ loaded: vocab=32002 parents=450050 E=(32002, 96)
+[    35.7s] sidecar thiếu → migrate: network_v12_sent_dn.content.pkl
+[    35.7s] ✓ load_checkpoint XONG
+
+═══ TẮT hẳn  ·  consume_edges=False · edge_scale=0.0 · boost=1.0
+  ensure_frame_brackets(state)
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «đồng là» ▸ đồng là kim loại có màu đỏ, dễ dát mỏng và kéo sợi, dẫn điện nhiệt và rất và dẫn nhiệt dẫn dễ và
+   VÀNG «thủ đô của Việt Nam là» ▸ thủ đô của Việt Nam là Hà Nội.
+   ── KẾT CÂU 12/20 · LẶP 28.2%
+
+═══ giết CỨNG (mặc định)  ·  consume_edges=True · edge_scale=0.0 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «đồng là» ▸ đồng là kim loại có màu đỏ, dễ dát mỏng và kéo sợi, dẫn điện nhiệt và rất và dẫn tốt làm hợp dùng
+   VÀNG «thủ đô của Việt Nam là» ▸ thủ đô của Việt Nam là Hà Nội.
+   ── KẾT CÂU 13/20 · LẶP 13.6%
+
+═══ mềm 0,3  ·  consume_edges=True · edge_scale=0.3 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ trong bị gỉ không bị gỉ trong bị trong gỉ
+   VÀNG «đồng là» ▸ đồng là kim loại có màu đỏ, dễ dát mỏng và kéo sợi, dẫn điện nhiệt rất và dẫn và dẫn nhiệt dễ rất
+   VÀNG «thủ đô của Việt Nam là» ▸ thủ đô của Việt Nam là Hà Nội.
+   ── KẾT CÂU 14/20 · LẶP 25.8%
+
+═══ mềm 0,6  ·  consume_edges=True · edge_scale=0.6 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «đồng là» ▸ đồng là kim loại có màu đỏ, dễ dát mỏng và kéo sợi, dẫn điện nhiệt rất và dẫn và dẫn nhiệt dễ rất
+   VÀNG «thủ đô của Việt Nam là» ▸ thủ đô của Việt Nam là Hà Nội.
+   ── KẾT CÂU 13/20 · LẶP 26.1%
+
+[400s] xong

@@ -1,0 +1,33 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[174s] ✓
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  pivot: 'Ġrốt Ġcuộc'  score=1.205
+  payoff: 'nhìn cách ông bày trận, thời nay chắc cũng chỉ là một cú setup deadline cực cao: địch vào lúc nước lớn, mình thu hoạch lúc nước rút, báo cáo cuối quý nhìn mà lạ'
+  MZ only    fact=1.00 bigram=0.3814 seam=0.0000 pivot=False punch=True
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng năm 938 chấm dứt hơn một nghìn năm Bắc thuộc.
+Năm 939, Ngô Quyền xưng
+  MZ+soft    fact=1.00 bigram=0.3261 seam=-0.0038 pivot=True punch=True
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. rốt cuộc nhìn cách ông bày trận thời nay chắc cũng chỉ là một cú set up deadline cực cao địch vào lúc nước lớn mình thu hoạch lúc nước
+  MZ+hard    fact=1.00 bigram=0.3261 seam=-0.0038 pivot=True punch=True
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. rốt cuộc nhìn cách ông bày trận thời nay chắc cũng chỉ là một cú set up deadline cực cao địch vào lúc nước lớn mình thu hoạch lúc nước
+
+═══ 'Viết hài hước về Trần Hưng Đạo' ═══
+  pivot: 'Ġthế Ġnhưng'  score=1.592
+  payoff: "Trần Hưng Đạo mà sống thời nay chắc cũng phải lập kênh TikTok dạy binh pháp. Video đầu tiên kiểu 'Ba lần thắng quân Nguyên Mông, và đây là ba tips để bạn không "
+  MZ only    fact=1.00 bigram=0.3427 seam=0.0000 pivot=False punch=True
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+Trần Hưng Đạo viết Hịch tướng sĩ để khích lệ tinh thần binh lính.
+Ông cũng soạn Binh thư yếu lược, một tác phẩm về nghệ thuật quân sự.
+Năm 128,
+  MZ+soft    fact=1.00 bigram=0.3110 seam=0.0622 pivot=True punch=True
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần. thế nhưng Trần Hưng Đạo mà sống thời nay chắc cũng phải lập kênh TikTok dạy binh pháp Video đầu tiên kiểu Ba lần thắng quân Nguyên Mông và đây
+  MZ+hard    fact=1.00 bigram=0.3110 seam=0.0622 pivot=True punch=True
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần. thế nhưng Trần Hưng Đạo mà sống thời nay chắc cũng phải lập kênh TikTok dạy binh pháp Video đầu tiên kiểu Ba lần thắng quân Nguyên Mông và đây
+
+[1294s] → out/probe_style_payoff.log
+Đạt: soft seam≥hard, fact≈1, punch có thể paraphrase.

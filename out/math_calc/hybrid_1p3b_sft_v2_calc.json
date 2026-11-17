@@ -1,0 +1,2154 @@
+{
+ "ckpt": "ckpt/hybrid_1p3b_sft_v2.pt",
+ "mode": "calc",
+ "gsm8k_vi": 0.068,
+ "gsm8k_vi_calc_per_bai": 2.26,
+ "eval_v1": 0.167,
+ "eval_v1_calc_per_bai": 1.83,
+ "rows": [
+  {
+   "set": "gsm8k_vi",
+   "q": "Đàn vịt của Janet đẻ được 16 eggs mỗi ngày. Mỗi sáng, cô ấy ăn 3 eggs cho bữa sáng và dùng 4 eggs để làm bánh muffin cho bạn bè mỗi ngày. Số còn lại cô ấy đem bán tại chợ nông sản hàng ngày với giá $2",
+   "gold": "18",
+   "ans": "4 eggbreads = 12 eggs. Cô ấy cũng bán những quả trứng vịt tươi với giá 2 đô la cho mỗi quả trứng vịt nên cô ấy kiếm được 16 đô la x 2 = 32 đô la tại chợ nông sản. Số tiền còn lại mà Janet mang ra chợ bán hàng ngày là 4 eggbreads + 12 eggs = 36 eggs. Cô ấy cũng bán những quả trứng vịt tươi với giá 2 đô la cho mỗi quả trứng vịt nên cô ấy kiếm được 36 đô la x 2 = 64 đô la tại chợ nông sản. Đáp án: 64",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Để may một chiếc áo choàng cần 2 cuộn sợi màu xanh và một lượng sợi màu trắng bằng một nửa số đó. Hỏi cần tổng cộng bao nhiêu cuộn sợi?",
+   "gold": "3",
+   "ans": "Để may một chiếc áo choàng cần 2 cuộn sợi màu xanh và một lượng sợi màu trắng bằng một nửa số đó, ta cần 2 * 2 = 4 cuộn sợi. Tổng cộng cần 2 + 4 = 6 cuộn sợi. Đáp án: 6",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Josh quyết định thử kinh doanh mua bán nhà. Anh ấy mua một ngôi nhà với giá $80,000 và sau đó chi $50,000 để sửa chữa. Việc này đã làm tăng giá trị của ngôi nhà lên 150%. Hỏi anh ấy đã thu về bao nhiê",
+   "gold": "70000",
+   "ans": "Ngôi nhà có giá trị là 80,000 USD và anh ấy mua nó với giá 80,000 USD x 150/100 = 1,5 triệu USD. Vậy anh ấy đã kiếm được lợi nhuận là 1,5000 USD x 1,500 = 30000 USD. Đáp án: 30000",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "James quyết định chạy 3 lượt chạy nước rút, 3 lần mỗi tuần. Mỗi lượt chạy dài 60 meters. Hỏi tổng cộng một tuần anh ấy chạy bao nhiêu meters?",
+   "gold": "540",
+   "ans": "Mỗi tuần anh ấy chạy 3*60= 180 méters Vậy anh ấy chạy 180*3= 540 méters trong một tuần. Đáp án: 540",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi ngày, Wendi cho mỗi con gà ăn 3 cốc thức ăn hỗn hợp gồm hạt, sâu quy và rau củ để giúp chúng luôn khỏe mạnh. Cô chia thức ăn cho lũ gà thành 3 bữa riêng biệt. Vào buổi sáng, cô cho đàn gà ăn 15 cố",
+   "gold": "20",
+   "ans": "Wendi cho mỗi con gà ăn 3 cốc thức ăn hỗn hợp gồm hạt, sâu quy và rau củ để giúp chúng luôn khỏe mạnh. Cô chia thức ăn cho lũ gà thành 3 bữa riêng biệt. Vào buổi sáng, cô cho đàn gà ăn 15 cốc thức ăn. Vào buổi chiều, cô cho chúng ăn thêm 25 cốc thức ăn nữa. Vào buổi sáng, cô cho chúng ăn thêm 25 cốc thức ăn nữa. Như vậy, tổng cộng Wendi cần cho đàn gà ăn 3 + 1 = 4 cốc thức ăn trong ngày. Đáp án: 4",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kylar đi cửa hàng để mua ly cho căn hộ mới của mình. Mỗi chiếc ly có giá $5, nhưng cứ mỗi chiếc thứ hai thì giá chỉ bằng 60% so với giá gốc. Kylar muốn mua 16 chiếc ly. Hỏi anh ấy cần phải trả bao nhi",
+   "gold": "64",
+   "ans": "Mỗi chiếc ly có giá 5*16= 80 USD. Vì vậy, Kylar sẽ phải trả $80-$80/2= 40 USD cho mỗi chiếc ly. Đáp án: 40",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Toulouse có số lượng cừu gấp đôi Charleston. Charleston có số lượng cừu gấp 4 lần Seattle. Hỏi tổng số cừu của Toulouse, Charleston và Seattle là bao nhiêu, biết rằng Seattle có 20 sheep?",
+   "gold": "260",
+   "ans": "Nếu Seattle có 20 sheep thì số cừu của Toulouse gấp đôi là 4 * 20 = 80 cừu. Tổng số cừu của cả ba nơi là 80+4*20 = 160. Đáp án: 160",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Carla đang tải một tệp tin nặng 200 GB. Thông thường, cô ấy có thể tải với tốc độ 2 GB/minute, nhưng khi đã tải được 40% tiến trình, Windows buộc phải khởi động lại để cài đặt các bản cập nhật, việc n",
+   "gold": "160",
+   "ans": "Đầu tiên hãy tìm xem còn bao nhiêu GB trên máy tính của Carla: 200 GB - 40% = 100 GB Sau đó chia số đó cho tốc độ tải xuống để tìm thời gian tải: 200 GB / 100 GB/phút = 2 phút Sau đó tìm tổng thời gian tải tệp tin: 2 phút + 40% = 6 phút. Đáp án: 6",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John lái xe trong 3 hours với tốc độ 60 mph, sau đó anh ấy quay đầu vì nhận ra mình đã quên một thứ rất quan trọng ở nhà. Anh ấy cố gắng về đến nhà trong 4 hours nhưng lại mất 2 hours đầu tiên vì tắc ",
+   "gold": "45",
+   "ans": "thời gian lái xe của anh ấy với thời gian anh ấy dành cho việc lái xe: 1 hour + 2 hours = 3 hours Bây giờ hãy tìm xem John đã đi được bao xa trong 4 hours bằng cách nhân tốc độ của anh ấy với thời gian anh ấy dành cho mỗi dặm: 4 hours * 0,5 = 1 hour Sau đó cộng thời gian lái xe của anh ấy với thời gian anh ấy dành cho việc lái xe để tìm tổng khoảng cách: 1 hour + 2 hours + 0,5 = 3 hours. Đáp án: 3",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mức lương mỗi giờ của Eliza trong 40 giờ làm việc đầu tiên mỗi tuần là $10. Cô ấy cũng được nhận lương làm thêm giờ bằng 1.2 lần mức lương giờ bình thường. Nếu tuần này Eliza làm việc 45 giờ, thì tổng",
+   "gold": "460",
+   "ans": "Mức lương làm thêm giờ của cô ấy là 1.2 * 45 giờ = 480 giờ. Tổng thu nhập của cô ấy trong tuần này là $480 + $10 = $560. Đáp án: 560",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một chương trình mới có 60 lượt tải xuống trong tháng đầu tiên. Số lượt tải xuống trong tháng thứ hai gấp ba lần số lượt tải xuống của tháng đầu tiên, nhưng sau đó giảm 30% vào tháng thứ ba. Hỏi tổng ",
+   "gold": "366",
+   "ans": "Trong tháng đầu tiên, 60*3= 180 lượt tải xuống. Trong tháng thứ hai, 180*3= 540 lượt tải xuống. Trong tháng thứ ba, 540*3= 1620 lượt tải xuống. Tổng cộng chương trình có 60+180+540= 780 lượt tải xuống trong 3 tháng đầu tiên. Sau đó giảm 30% vào tháng thứ ba, chương trình còn lại 780-30= 750 lượt tải xuống. Đáp án: 750",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Toula đi đến tiệm bánh và mua nhiều loại bánh ngọt khác nhau. Cô ấy đã mua 3 dozen bánh donut với giá $68 mỗi dozen, 2 dozen bánh cupcake mini với giá $80 mỗi dozen, và 6 dozen bánh cheesecake mini vớ",
+   "gold": "694",
+   "ans": "Tổng cộng có 3 chiếc bánh ngọt nhỏ, 6 chiếc bánh ngọt nhỏ mini và 6 chiếc bánh cupcake mini có giá $68 + $80 + $55 = $172. Tổng cộng có 3 chiếc bánh ngọt nhỏ, 6 chiếc bánh ngọt nhỏ mini và 6 chiếc bánh cupcake mini có giá $172 + $55 = $203. Đáp án: 203",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Carlos đang trồng một cây chanh. Chi phí để trồng cây là $90. Mỗi năm cây sẽ ra 7 quả chanh, mỗi quả anh ấy có thể bán với giá $1.5. Chi phí để tưới nước và bón phân cho cây là $3 mỗi năm. Hỏi mất bao",
+   "gold": "13",
+   "ans": "Cây chanh cần 90/7= 12,8571 năm để trưởng thành. Cây sẽ ra quả trong 12,8571/7 = 1,8367 năm. Đáp án: 1,8367",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Melanie là một nhân viên bán hàng tận nhà. Cô ấy đã bán 1/3 số máy hút bụi của mình cho ngôi nhà màu xanh lá, thêm 2 chiếc cho ngôi nhà màu đỏ, và một nửa số máy còn lại cho ngôi nhà màu cam. Nếu Mela",
+   "gold": "18",
+   "ans": "Đầu tiên hãy tìm tổng số máy hút bụi mà Melanie đã bán được: 1/3 * 1/2 = 0,1667 Sau đó cộng số máy hút bụi mà Melanie đã bán được để tìm tổng số máy hút bụi cô ấy đã bán được: 0,1667 + 2 = 2,1667 Sau đó trừ đi số máy hút bụi mà Melanie đã bán được từ tổng số máy hút bụi còn lại để tìm xem lúc đầu cô ấy có bao nhiêu máy hút bụi: 2,1667 - 5 = -2,8333. Đáp án: 8333",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong một lớp học nhảy có 20 học sinh, 20% đăng ký học nhảy đương đại, 25% số học sinh còn lại đăng ký học nhảy jazz, và số còn lại đăng ký học nhảy hip-hop. Hỏi có bao nhiêu phần trăm tổng số học sin",
+   "gold": "60",
+   "ans": "20% + 25% = 50% số học sinh đăng ký học nhảy đương đại. Vậy 20% - 50% = 10% số học sinh đăng ký học nhảy đương đại. Do đó, 10% * 20% = 2% số học sinh đăng ký học nhảy hip-hop. Đáp án: 2",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một thương nhân đang cân nhắc lựa chọn giữa 2 phương án mua hàng: trang sức trị giá $5,000 hoặc các thiết bị điện tử trị giá $8,000. Cố vấn tài chính của ông dự đoán rằng thị trường trang sức sẽ tăng ",
+   "gold": "125",
+   "ans": "Mức tăng trưởng tiềm năng cho các thiết bị điện tử là $1.2% mỗi năm trong khi giá trị của trang sức là $5.000. Do đó, lợi nhuận tiềm năng cho các thiết bị điện tử sẽ là $1.200/$5000 = nhiều hơn so với việc mua các thiết bị điện tử. Đáp án: 12000",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Hai đoàn tàu rời San Rafael cùng một lúc. Chúng bắt đầu đi về phía tây, mỗi đoàn đi được 80 miles. Ngày hôm sau, chúng đi về phía bắc, đi được 150 miles. Hỏi quãng đường mỗi đoàn tàu đã đi được trong ",
+   "gold": "230",
+   "ans": "Ngày thứ nhất: 2 * 80 = 160 dặm Ngày thứ hai: 150 + 150 = 300 dặm Tổng cộng: 160 + 300 = 460 dặm Hai đoàn tàu đã đi được 460 dặm trong hai ngày. Đáp án: 460",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jill được trả $20 mỗi giờ để dạy học và $30 để làm huấn luyện viên cổ vũ. Nếu cô ấy làm việc 50 tuần mỗi năm, với 35 giờ mỗi tuần làm giáo viên và 15 giờ mỗi tuần làm huấn luyện viên, thì tổng thu nhậ",
+   "gold": "57500",
+   "ans": "Đầu tiên hãy tìm tổng số giờ Jill làm công việc giáo viên: 50 tuần/năm * 35 giờ/tuần = 1450 giờ Sau đó tìm tổng số giờ Jill làm huấn luyện viên cổ vũ: 15 giờ/tuần * 50 tuần/năm = 1250 giờ Sau đó cộng hai số tiền đó để tìm tổng thu nhập hàng năm của cô ấy: $1450 + $1250 = $2750. Đáp án: 2750",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi sáng Claire đều làm món trứng cuộn 3 quả để ăn sáng. Hỏi cô ấy sẽ ăn hết bao nhiêu tá trứng trong 4 tuần?",
+   "gold": "7",
+   "ans": "Mỗi ngày Claire làm 3 quả trứng, vậy cô ấy cần 3*4 = 12 quả trứng mỗi tuần. Trong 4 tuần, cô ấy sẽ cần 12 *4 = 48 quả trứng. Đáp án: 48",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Marissa đang đi bộ đường dài trên một con đường mòn dài 12 miles. Cô ấy mất 1 hour để đi hết 4 miles đầu tiên, sau đó mất thêm một hour nữa để đi tiếp 2 miles tiếp theo. Nếu cô ấy muốn tốc độ trung bì",
+   "gold": "6",
+   "ans": "Đầu tiên hãy tìm tổng thời gian Marissa đã đi bộ: 12 miles / 4 Miles/Miles = 2 giờ Sau đó tìm tổng số dặm cô ấy đã đi được trong 2 giờ: 2 giờ * 60 phút/giờ = 120 phút Sau đó tìm tổng quãng đường cô ấy đã đi được trong 2 giờ: 120 phút / 2 giờ = 5 giờ Sau đó chia thời gian cho tốc độ trung bình để tìm xem cô ấy cần đi bao nhiêu dặm mỗi giờ: 5 giờ / 4 giờ/hour = 15 dặm/giờ. Đáp án: 15",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tôi có 10 liters nước cam với hai phần ba là nước và tôi muốn pha nó vào 15 liters nước dứa với ba phần năm là nước. Nhưng khi đang đổ, tôi làm đổ mất 1 liter nước cam. Hỏi có bao nhiêu nước trong 24 ",
+   "gold": "15",
+   "ans": "1 lít bằng 1000 ml nên 10 lít bằng 1000 x 10 = 10000 ml. 15 lít bằng 15 x 15 = 225 lít. 15 + 10 = 25 lít được pha vào 10 lít nước cam. Vậy còn lại 10 + 25 = 35 lít nước cam. Đáp án: 35",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Raymond và Samantha là anh em họ. Raymond sinh trước Samantha 6 năm. Raymond có một con trai vào năm 23 tuổi. Nếu hiện tại Samantha 31 tuổi, thì con trai của Raymond được sinh ra cách đây bao nhiêu nă",
+   "gold": "14",
+   "ans": "Nếu Samantha 31 tuổi ở thời điểm hiện tại thì Raymond là 31-6 = 25 tuổi. Con trai của Raymond sinh năm 23-25 = -2 tuổi. Đáp án: 25",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Billy bán đĩa DVD. Vào thứ Ba, anh ấy có 8 khách hàng. 3 khách hàng đầu tiên, mỗi người mua 1 đĩa DVD. 2 khách hàng tiếp theo, mỗi người mua 2 đĩa DVD. 3 khách hàng cuối cùng không mua đĩa DVD nào. Hỏ",
+   "gold": "7",
+   "ans": "3 khách hàng đầu tiên mua tổng cộng 8*3 = 24 đĩa DVD. 2 khách hàng tiếp theo mua tổng cộng 2*2 = 4 đĩa DVD. Tổng cộng, 3+2+4 = 9 đĩa DVD được bán ra. Đáp án: 9",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một cây nến tan chảy 2 centimeters sau mỗi giờ thắp sáng. Hỏi cây nến sẽ ngắn đi bao nhiêu centimeters sau khi thắp từ 1:00 PM đến 5:00 PM?",
+   "gold": "8",
+   "ans": "Một cây nến cháy hết 2*1= 2 mét khối chất lỏng trong một giờ thắp sáng. Vậy nó sẽ còn lại 1-2*2= -3 mét khối chất lỏng sau 1 giờ thắp sáng. Như vậy, nó sẽ ngắn đi 3-4 mét khối so với ban đầu. Đáp án: 4",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kyle đã mua cuốn sách bán chạy nhất năm ngoái với giá $19.50. Mức giá này đã được giảm 25% so với giá gốc. Hỏi giá gốc của cuốn sách là bao nhiêu?",
+   "gold": "26",
+   "ans": "Mức giảm giá là 19,50 USD x 25/100 = 0,25 USD. Do đó, mức giảm giá là 0,25 USD x 25/100 = 0,25 USD. Đáp án: 25",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Marie đặt một suất gà giá $12, 5 hộp sữa giá $3 mỗi hộp, 4 quả táo giá $1.50 mỗi quả, và một số hộp pizza. Marie đã thanh toán tổng cộng $50. Hỏi Marie đã đặt bao nhiêu hộp pizza nếu mỗi hộp có giá $8",
+   "gold": "2",
+   "ans": "Tổng chi phí của các hộp sữa là $3 x 5 = 15 USD. Tổng chi phí của các hộp pizza là $12 x 4 = 48 USD. Tổng chi phí của các hộp pizza là $50 - $15 - $48 = $12. Đáp án: 12",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mishka mua 3 chiếc quần đùi, 3 chiếc quần dài và 3 đôi giày. Một chiếc quần đùi có giá $16.50. Một chiếc quần dài có giá $22.50 và một đôi giày có giá $42. Hỏi Mishka đã chi tổng cộng bao nhiêu đô la ",
+   "gold": "243",
+   "ans": "Chiếc quần đùi có giá $16,50 nên nó có giá 16,50 USD x 3 = 48 USD. Chiếc quần dài có giá $22,50 nên nó có giá 22,50 USD x 4 = 96 USD. Và đôi giày có giá $42, nên nó có giá 42 USD x 4 = 182 USD. Do đó, Mishka đã chi tổng cộng $48 + $182 = $70 cho tất cả các món đồ. Đáp án: 70",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi tối Cynthia đều ăn một khẩu phần kem. Cô ấy mua các hộp kem, mỗi hộp có 15 khẩu phần và giá là $4.00 mỗi hộp. Sau 60 ngày, cô ấy sẽ phải chi bao nhiêu tiền để mua kem?",
+   "gold": "16",
+   "ans": "Cô ấy mua 15 hộp x 15 USD/hộp = 210 USD cho kem. Vì vậy, cô ấy cần trả 210 USD - 4 USD = 209 USD. Đáp án: 209",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Henry đã dừng lại hai lần trong chuyến đi xe đạp dài 60 miles của mình. Lần dừng đầu tiên là sau khi đi được 20 miles. Lần dừng thứ hai cách điểm kết thúc của chuyến đi 15 miles. Hỏi Henry đã đi được ",
+   "gold": "25",
+   "ans": "Sau khi đi được 20 dặm, Henry dừng lại ở điểm kết thúc của chuyến đi 60 dặm - 20 dặm = 40 dặm. Vậy anh ấy đã đi được 40 dặm / 2 = 20 dặm giữa hai lần dừng. Đáp án: 20",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Gloria đang đi mua giày thì tình cờ thấy một đôi bốt có giá nằm trong ngân sách của cô ấy. Tuy nhiên, cô ấy phải cân nhắc giữa đôi bốt này với hai đôi giày cao gót, mà tổng giá của hai đôi giày cao gó",
+   "gold": "104",
+   "ans": "3+$2*$2= $66. Nếu một đôi giày cao gót có giá $33 và một đôi còn lại có giá gấp đôi, thì tổng số tiền của hai đôi giày cao gót là $33*2= 66 USD. Tổng số tiền của hai đôi giày cao gót là $66+$33= $108. Nếu một đôi giày cao gót có giá $33 và một đôi còn lại có giá gấp đôi, thì tổng số tiền của hai đôi giày cao gót là $33*2= 66 USD. Tổng số tiền của hai đôi giày cao gót là $66+$108= $144. Đáp án: 144",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tỉ số giữa tuổi của Darrell và Allen là 7:11. Nếu tổng số tuổi của hai người hiện tại là 162, hãy tính tuổi của Allen sau 10 năm nữa.",
+   "gold": "109",
+   "ans": "Nếu tuổi của Allen là 7 thì anh ấy hiện tại 7+1= 8 tuổi. Tổng số tuổi của Allen và Darrell hiện tại là 8+1= 9 tuổi. Nếu tổng số tuổi của hai người hiện tại là 162, thì tổng số tuổi của Allen sau 10 năm nữa sẽ là 162-9 = 153. Đáp án: 153",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Gunter đang cố gắng đếm số kẹo dẻo trong một chiếc lọ. Cậu ấy hỏi bạn bè xem họ nghĩ trong lọ có bao nhiêu viên. Một người nói là 80. Một người khác nói là 20 nhiều hơn một nửa số của người thứ nhất. ",
+   "gold": "80",
+   "ans": "Người thứ nhất:80/2= 40 Người thứ hai:40+20(1/2)= 0,5 Người thứ ba:20+25(1/2)= 0,5+1= 1,5 Tổng cộng: 80+40+0,5+1,5= 122. Đáp án: 122",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John chăm sóc 10 con chó. Mỗi con chó mất .5 giờ mỗi ngày để dắt đi dạo và vệ sinh. Hỏi mỗi tuần anh ấy dành bao nhiêu giờ để chăm sóc lũ chó?",
+   "gold": "35",
+   "ans": "Anh ấy dành 10*7= 70 giờ mỗi tuần để chăm sóc lũ chó. Vậy anh ấy dành 70/10= 7 giờ mỗi tuần để chăm sóc lũ chó. Đáp án: 7",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Gretchen có 110 đồng xu. Số đồng xu vàng nhiều hơn số đồng xu bạc là 30. Hỏi Gretchen có bao nhiêu đồng xu vàng?",
+   "gold": "70",
+   "ans": "Tổng cộng, Gretchen có 110 + 110 = 220 đồng xu vàng. Tổng số đồng xu bạc là 110 - 30 = 80. Vậy Gretchen có 220 - 80 = 140 đồng xu bạc. Đáp án: 140",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Siobhan có ít hơn Aaron 2 viên ngọc. Aaron có nhiều hơn một nửa số ngọc của Raymond là 5 viên. Nếu Raymond có 40 viên ngọc, hỏi Siobhan có bao nhiêu viên ngọc?",
+   "gold": "23",
+   "ans": "Nếu Aaron có 1/2 số ngọc của Raymond thì Aaron có 1/2*40 = 20 viên ngọc. Tổng cộng Aaron có 40+20 = 60 viên ngọc. Siobhan có 60-2 = 58 viên ngọc. Đáp án: 58",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mike chơi bóng bàn trong 40 phút. Trong 20 phút đầu, anh ấy ghi được 4 điểm. Trong 20 phút tiếp theo, anh ấy ghi được nhiều điểm hơn 25% so với trước đó. Hỏi tổng cộng anh ấy đã ghi được bao nhiêu điể",
+   "gold": "9",
+   "ans": "Anh ấy ghi được 4 điểm trong 20 phút đầu tiên nên 20*4 = 80 điểm Anh ấy ghi được 4 điểm trong 20 phút tiếp theo nên 20*4 = 80 điểm Anh ấy ghi được 80 điểm trong 20 phút cuối cùng nên 80*25% = 16 điểm. Đáp án: 16",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Terry ăn 2 hộp sữa chua mỗi ngày. Hiện tại, sữa chua đang được giảm giá với mức 4 hộp giá $5.00. Hỏi trong 30 ngày, anh ấy chi bao nhiêu tiền để mua sữa chua?",
+   "gold": "75",
+   "ans": "Anh ấy mua 2*5= 10 hộp sữa chua Vậy nên anh ấy chi 5*10= 50 USD cho sữa chua. Đáp án: 50",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John dự định bán tất cả đồ chơi của mình để lấy tiền mua trò chơi điện tử. Cậu ấy có 13 bộ lego và bán mỗi bộ với giá $15. Cuối cùng, cậu ấy mua 8 trò chơi điện tử với giá $20 mỗi trò và còn dư $5. Hỏ",
+   "gold": "2",
+   "ans": "John đã bán tất cả đồ chơi của mình với tổng số tiền là 15*$15 = $300 Vì vậy, anh ấy đã bán được 8*$20 = $160 trò chơi điện tử Điều đó có nghĩa là anh ấy đã bán được 13*$15 = $270 bộ lego. Vậy còn lại 13-270 = -257 bộ lego. Đáp án: 257",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John chạy 60 miles mỗi tuần. Anh ấy chạy 3 ngày một tuần. Anh ấy chạy 3 hours vào ngày đầu tiên và mỗi ngày trong hai ngày còn lại chạy ít bằng một nửa so với ngày đầu. Hỏi tốc độ chạy của anh ấy là b",
+   "gold": "10",
+   "ans": "Anh ấy chạy 3*2= 6 ngày một tuần Vậy anh ấy chạy 6*3= 18 giờ trong một ngày Vậy anh ấy chạy 18/2= 9 giờ vào ngày thứ hai Vậy anh ấy chạy 9*2= 18 giờ vào ngày thứ ba Vậy anh ấy chạy 18+9= 27 giờ vào ngày thứ tư Vậy anh ấy chạy 27*2= 54 giờ vào ngày thứ năm Vậy anh ấy chạy 54/5= 10,8 dặm một giờ. Đáp án: 10",
+   "ok": true,
+   "calc": 7
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dana có thể chạy với tốc độ nhanh gấp 4 lần so với tốc độ đi bộ, nhưng cô ấy chỉ có thể nhảy chân sáo với tốc độ bằng một nửa tốc độ chạy. Nếu cô ấy nhảy chân sáo với tốc độ 3 miles per hour, hỏi cô ấ",
+   "gold": "18",
+   "ans": "Nếu Dana dành 1/3 thời gian để chạy và 2/3 thời gian để đi bộ thì cô ấy dành 3/2 = 1,5 giờ để đi bộ. Vì vậy, cô ấy có thể đi bộ 60/3 = 20 dặm trong 60 phút. Đáp án: 20",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "iPhone của Brandon lớn gấp 4 lần iPhone của Ben. iPhone của Ben lớn gấp 2 lần iPhone của Suzy. Nếu iPhone của Suzy được 1 year tuổi, thì iPhone của Brandon bao nhiêu tuổi?",
+   "gold": "8",
+   "ans": " 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y = 12Y",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Con rồng khổng lồ, Perg, ngự trên đỉnh núi Farbo cao vút, phun lửa vào bất cứ thứ gì trong phạm vi 1000 feet. Polly có thể phóng cây lao vàng, vũ khí duy nhất được biết đến có thể hạ gục con rồng, đi ",
+   "gold": "200",
+   "ans": "Nếu Polly cầm viên đá quý và phóng cây lao vàng về phía con rồng, cô ấy sẽ đi được quãng đường 400 feet trong 1000 feet, tức là 400/1000 = 0,4 lần khoảng cách cần thiết để bắn trúng con rồng. Nếu cô ấy cầm viên sapphire, cô ấy có thể phóng cây lao đi xa gấp ba lần so với khi không cầm viên đá, nghĩa là 3*0,4 = 1,2 lần khoảng cách cần thiết để bắn trúng con rồng. Đáp án: 12",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Bà Jones đã nướng 5 chiếc bánh táo cho bữa trưa của lính cứu hỏa. Bà cắt mỗi chiếc bánh thành 8 miếng và bày cả 5 chiếc bánh lên bàn tiệc buffet để khách tự phục vụ. Đến cuối buổi tối, sau khi khách đ",
+   "gold": "26",
+   "ans": "Bà Jones đã nướng 5 x 8 = 40 miếng bánh. Vậy bà đã cho khách 40/8 = 5 miếng bánh. Tổng cộng có 5 + 14 = 19 miếng bánh được phục vụ. Đáp án: 19",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Theo thông tin dinh dưỡng, một khẩu phần khoai tây chiên chứa 250 calories. Nếu một túi 300g có 5 khẩu phần, bạn có thể ăn bao nhiêu gram nếu mục tiêu lượng calo hàng ngày của bạn là 2000 và bạn đã ti",
+   "gold": "48",
+   "ans": "Nếu một túi 300g có 5 khẩu phần thì bạn có thể ăn 1800/5 = 360 gram khoai tây chiên. Nếu một túi có 5 khẩu phần thì bạn có thể ăn 1800/5 = 360 gram. Đáp án: 360",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Charlie muốn bán nến sáp ong. Với mỗi pound sáp ong, anh ấy có thể làm được 10 cây nến trụ. Chi phí nguyên liệu cho một pound sáp ong và bấc nến là $10.00. Nếu anh ấy bán mỗi cây nến với giá $2.00, th",
+   "gold": "20",
+   "ans": "Anh ta cần 10 pound sáp ong để làm được 10 cây nến trụ nên anh ta có thể làm được 10/10 = 1 cây nến mỗi pound Anh ta cần 10 pound sáp ong với giá $2,00 mỗi pound nên anh ta sẽ kiếm được 2*$2 = $4,00 cho mỗi pound sáp ong. Vì vậy, lợi nhuận ròng của anh ấy là 4+$4 = $9,00. Đáp án: 9",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Meredith là một blogger tự do, cô chuyên viết về các chủ đề sức khỏe và gửi bài cho khách hàng mỗi ngày như một công việc chính thức. Trung bình, cô mất 4 giờ để nghiên cứu và viết một bài blog. Tuần ",
+   "gold": "104",
+   "ans": "Vào thứ Hai, Meredith viết 5 bài, và vào thứ Ba cô viết nhiều hơn thứ Hai là 2/5 lần số bài đó, nghĩa là cô ấy viết 5+2= 7 bài. Vào thứ Tư, cô ấy viết gấp đôi số lượng bài so với thứ Ba, tổng cộng là 2*7= 14 bài. Tổng cộng, trong ba ngày, Meredith đã dành 14+13= 27 giờ để viết blog. Đáp án: 27",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Candice để 80 tờ giấy ghi chú vào trong túi xách trước khi đi làm tại một quán cà phê. Trên đường đi, cô ấy ghé qua cửa hàng và mua thêm một gói giấy ghi chú; Tại nơi làm việc, cô ấy dán mỗi tờ giấy g",
+   "gold": "163",
+   "ans": "Nếu cô ấy mua thêm một gói giấy ghi chú thì số lượng là 80-23 = 57 tờ giấy ghi chú. Số tờ giấy ghi chú trong gói là 57+80 = 137 tờ giấy ghi chú. Đáp án: 137",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John mua số lượng cà vạt đỏ nhiều gấp đôi số lượng cà vạt xanh. Giá của cà vạt đỏ cao hơn 50% so với cà vạt xanh. Anh ấy đã chi 200$ cho những chiếc cà vạt xanh với giá 40$ mỗi chiếc. Hỏi anh ấy đã ch",
+   "gold": "800",
+   "ans": "Giá của cà vạt đỏ là 200*50/100= 100 USD Vậy tổng số tiền anh ta chi tiêu là 100+200= 300 USD. Đáp án: 300",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tracy dùng một đoạn dây kẽm dài 4 feet để làm giá đỡ cho cây cà chua trong vườn. Đoạn dây được cắt thành các đoạn dài 6 inches. Hỏi cô ấy có được bao nhiêu đoạn dây?",
+   "gold": "8",
+   "ans": "Đầu tiên hãy tìm chiều dài của đoạn dây: 4 feet * 6 inch = 24 inch Sau đó nhân số đó với số đoạn dây để tìm tổng số đoạn dây: 24 inch + 4 feet = 28 inch Sau đó chia tổng số đoạn dây cho số đoạn dây trên mỗi feet để tìm số đoạn dây trên một feet: 28 inch / 1 feet = 28. Đáp án: 28",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Richard sống trong một tòa chung cư cao 15 tầng. Mỗi tầng có 8 căn hộ, và 3/4 tòa nhà đã có người ở. Hỏi có tổng cộng bao nhiêu căn hộ chưa có người ở trong tòa nhà?",
+   "gold": "30",
+   "ans": "Có 15 x 3/4 = 11,25 căn hộ chưa có người ở trong tòa nhà. Vậy có 11,25 - 8 = 3,25 căn hộ chưa có người ở trong tòa nhà. Đáp án: 325",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Lloyd có một trang trại nuôi gà. Đàn gà của ông sản xuất được 252 quả trứng mỗi ngày và ông bán chúng với giá $2 cho mỗi tá. Hỏi mỗi tuần Lloyd kiếm được bao nhiêu tiền từ trứng?",
+   "gold": "294",
+   "ans": "Tổng số trứng mà đàn gà của Lloyd sản xuất trong một tuần là 252 * 7 = 1764 quả trứng. Vì vậy, mỗi tuần anh ấy kiếm được 252 * 1764 = 444528 USD từ việc bán trứng. Đáp án: 444528",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tàu của Tom có thể di chuyển với tốc độ 10 miles per hour. Anh ấy bắt đầu đi từ 1 đến 4 PM. Sau đó, anh ấy đi về với tốc độ 6 mph. Hỏi anh ấy mất bao lâu để đi về?",
+   "gold": "5",
+   "ans": "Anh ấy đi được 4 dặm/giờ * 10 dặm = 40 dặm trong một giờ Vậy anh ấy đi được 40 dặm/giờ * 6 dặm/giờ = 240 dặm trong một giờ Vậy anh ấy mất 240 dặm / 10 dặm/giờ = 24 giờ. Đáp án: 24",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Chiếc cặp sách của Uriah đang trở nên quá nặng đối với cậu ấy. Cậu ấy cần lấy bớt 15 pounds ra khỏi cặp. Mỗi cuốn truyện tranh nặng 1/4 pound và mỗi món đồ chơi nặng 1/2 pound. Nếu cậu ấy lấy ra 30 cu",
+   "gold": "15",
+   "ans": "Mỗi cuốn truyện tranh nặng 1/4 pound nên Uriah nặng 2*1/4 = 0,5 pounds Mỗi món đồ chơi nặng 1/2 pound nên Uriah nặng 0,5 * 0,25 = 0,125 pounds Mỗi món đồ chơi nặng 1/2 + 1/4 = 0,75 pounds Vậy mỗi món đồ chơi nặng 0,75 * 0,125 = 0,0938 pounds. Đáp án: 0,0938",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một thợ sửa xe tính phí khác nhau cho việc sửa lốp xe tải và xe con. Với mỗi lốp xe tải được sửa, thợ sẽ tính phí $60 và với mỗi lốp xe con được sửa, thợ sẽ tính phí $40. Vào thứ Năm, người thợ sửa 6 ",
+   "gold": "40",
+   "ans": " con và không sửa lốp xe tải nên tổng cộng 12*120 = 1440 lốp xe con. Vào thứ Năm, người thợ sửa 1440 lốp xe con và 4 lốp xe tải nên tổng cộng 1440+440 = 1880 lốp xe con. Vào thứ Sáu, người thợ sửa 1880 lốp xe con và 4 lốp xe tải nên tổng cộng 1880+440 = 2320 lốp xe con. Vào ngày có doanh thu cao hơn, người thợ đã kiếm được nhiều hơn $60 - $1880 = $540 so với ngày có doanh thu thấp hơn. Đáp án: 540",
+   "ok": false,
+   "calc": 6
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Chị em nhà Doubtfire đang trên đường về nhà cùng 7 chú mèo con vừa nhận nuôi từ trạm cứu hộ động vật địa phương thì mẹ họ gọi điện thông báo rằng hai con mèo nhà họ vừa mới sinh con. Bà nói rằng Patch",
+   "gold": "40",
+   "ans": "Gọi x là số mèo con Patchy sinh. Vậy Trixie sinh 12/10= 1,2 con mèo. Vậy tổng số mèo con mà gia đình Doubtfire có là 3+1+2= 6. Đáp án: 6",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jean có 30 lollipops. Jean ăn 2 lollipops. Với số lollipops còn lại, Jean muốn đóng gói 2 lollipops vào một túi. Hỏi Jean có thể đóng được bao nhiêu túi?",
+   "gold": "14",
+   "ans": "Joyce có 30+2 = 32 lollipops. Cô ấy cần đóng gói 2 lollipops vào một túi nên cô ấy có thể đóng gói 32/2 = 16 túi. Đáp án: 16",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Peter dự định đi xem phim trong tuần này. Anh ấy luôn mua một vé giá $7 và một phần bắp rang giá $7. Nếu anh ấy có 42 dollars cho tuần này, anh ấy có thể đi xem phim bao nhiêu lần?",
+   "gold": "3",
+   "ans": "Anh ấy đã chi 7 + 1 = 8 đô la cho vé của mình. Vì vậy, anh ấy có thể đi xem phim 8/8 = 1 lần. Đáp án: 1",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một cây cầu gỗ có khả năng chịu tải tối đa là 5000 pounds. Một chiếc xe tải giao hàng chở đầy các thùng hàng giống hệt nhau, mỗi thùng nặng 15 pounds, sẽ đi qua cầu. Tổng trọng lượng của người lái xe ",
+   "gold": "83",
+   "ans": "Tổng trọng lượng của người lái xe và chiếc xe tải là 3755 + 15 = 3770 pounds. Số thùng hàng tối đa có thể chất lên xe mà không vượt quá giới hạn trọng tải của cầu là 3755/30 = 125,1667 thùng. Đáp án: 125,1667",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Stephen đặt mua hàng tạp hóa trực tuyến. Tổng hóa đơn cuối cùng của anh ấy là $40.00. Vì mua qua dịch vụ giao hàng, họ đã cộng thêm 25% phí vào tổng hóa đơn và tính thêm $3.00 phí vận chuyển. Stephen ",
+   "gold": "57",
+   "ans": "Tổng chi phí của hàng tạp hóa là $40.00 + $25% = $35.00 Vì vậy, anh ta đã trả $40+$35 = $75.00 cho hàng tạp hóa. Phí giao hàng cộng thêm 25/100 * $40.00 = $8.00 Tổng chi phí của hàng tạp hóa là $40.00 + $75.00 = $125.00. Vì vậy, Stephen đã trả tổng cộng $125.00 + $75.00 = $155.00 cho đơn hàng tạp hóa. Đáp án: 155",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một bụi mâm xôi có 6 chùm, mỗi chùm gồm 20 quả, và có thêm 67 quả mâm xôi nằm rải rác khắp bụi. Hỏi tổng cộng có bao nhiêu quả mâm xôi?",
+   "gold": "187",
+   "ans": "Có 6 x 20 = 120 quả mâm xôi trong bụi. Vậy tổng số quả mâm xôi là 120 + 67 = 187. Đáp án: 187",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một giỏ có 25 quả cam, trong đó có 1 quả bị hỏng, 20% là cam xanh, 2 quả bị chua và số còn lại là cam ngon. Hỏi có bao nhiêu quả cam ngon?",
+   "gold": "17",
+   "ans": "Có 25 x 1/2 = 12,5 quả cam ngon. Có 20 - 1 = 19 quả cam ngon. Vậy có 25 - 12,5 = 12,5 quả cam ngon. Đáp án: 12",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Janet mua một chiếc trâm cài cho con gái mình. Cô ấy trả 500 $ cho nguyên liệu để làm trâm, sau đó trả thêm 800 $ cho thợ kim hoàn để chế tác. Sau đó, cô ấy trả thêm 10% của số tiền đó để mua bảo hiểm",
+   "gold": "1430",
+   "ans": "Tổng chi phí của chiếc trâm là 500+800= 1300 USD. Bảo hiểm sẽ chi trả 1300*.1=$130 Vậy tổng cộng Janet đã trả 1300+130 = 1430 USD. Đáp án: 1430",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Nếu Marcy làm việc cho cùng một công ty trong 40 năm, cô ấy sẽ nhận được mức lương hưu hàng năm là $50,000/year. Bắt đầu sau 20 năm, cô ấy được hưởng 5% giá trị lương hưu mỗi năm. Nếu cô ấy nghỉ việc ",
+   "gold": "25000",
+   "ans": "Sau 20 năm, Marcy nhận được $50,000 x 0,20 = 10,000 USD. Sau 30 năm, cô ấy nhận được $50,000 x 0,10 = 5,000 USD. Do đó, mức lương hưu hàng năm của cô ấy sẽ là $50,000 - $5,000 = $45,000. Đáp án: 45000",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Aleena đăng ký một dịch vụ xem phim trực tuyến với mức phí là $140 mỗi tháng. Nếu công ty cung cấp dịch vụ tính mức phí ban đầu cho nửa đầu năm và sau đó giảm 10% cho nửa cuối năm, hãy tính tổng số ti",
+   "gold": "1596",
+   "ans": "Nếu Aleena trả một nửa số tiền ban đầu là $140 và công ty giảm giá 10% cho nửa cuối năm thì cô ấy phải trả $140 - $10 = $136 cho nửa đầu năm. Nếu cô ấy trả nửa cuối năm, cô ấy sẽ trả $136 / 2 = 68 USD. Tổng số tiền Aleena đã thanh toán cho dịch vụ xem phim trực tuyến là $140 + $68 = $192. Đáp án: 192",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sophia đang dự định thực hiện một chuyến đi bằng xe ô tô và muốn biết mình có thể lái được bao xa với một bình xăng đầy. Cô ấy đã đi được 100 miles kể từ lần đổ xăng cuối cùng, và cô ấy cần thêm 4 gal",
+   "gold": "300",
+   "ans": "Sofia đã đi được 100 + 4 = 104 dặm kể từ lần đổ xăng cuối cùng. Như vậy, cô ấy cần thêm 104 x 4 = 416 gallon để đổ đầy bình. Đáp án: 416",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jim dành 2 hours xem TV, sau đó quyết định đi ngủ và đọc sách với thời gian bằng một nửa thời gian xem TV. Anh ấy thực hiện việc này 3 times a week. Hỏi trong 4 weeks, anh ấy dành tổng cộng bao nhiêu ",
+   "gold": "36",
+   "ans": "Anh ấy dành 2*1= 2 giờ để xem TV Vậy anh ấy dành 2+2= 4 giờ để đọc sách Vậy anh ấy dành 4*4= 16 giờ cho việc đọc sách. Đáp án: 16",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 4 trường học đang tranh tài tại một giải đấu bóng rổ. Mỗi trường gửi một đội tuyển bóng rổ nữ và một đội tuyển bóng rổ nam, mỗi đội có 5 cầu thủ. Mỗi trường cũng cử một huấn luyện viên cho mỗi đội.",
+   "gold": "48",
+   "ans": "Tổng số người tham gia là 4 * 5 = 20 người. Tổng số người tham gia là 20 + 5 = 25 người. Như vậy, tất cả các trường đã gửi 25 + 5 = 30 người. Đáp án: 30",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một thợ săn kho báu đã tìm thấy một rương kho báu bị chôn giấu đầy những viên đá quý. Có 175 viên kim cương, số lượng hồng ngọc ít hơn kim cương 35 viên, và số lượng ngọc lục bảo gấp đôi số lượng hồng",
+   "gold": "595",
+   "ans": "Có 175 + 35 = 210 viên đá quý trong rương kho báu. Có tổng cộng 175 + 210 = 385 viên đá quý trong rương kho báu. Đáp án: 385",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Số lượng nam sinh ở trường của Tiến sĩ Wertz gấp đôi số lượng nữ sinh. Nếu có 60 nữ sinh và cứ 5 học sinh thì có 1 giáo viên, hỏi có bao nhiêu giáo viên?",
+   "gold": "36",
+   "ans": "Nếu có 60 nữ sinh và mỗi lớp có 1 giáo viên thì tổng số học sinh là 60+1= 61 học sinh. Có 60/2 = 30 giáo viên trong trường của Tiến sĩ Wertz. Vậy có 61-30 = 31 giáo viên trong trường của Tiến sĩ Wertz. Đáp án: 31",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Bailey bắt đầu với một số tiền nhất định. Sau đó, mỗi tuần cô ấy được cho 5$ trong vòng 8 tuần. Sau 8 tuần, nếu cô ấy có tổng cộng 100$, hỏi lúc đầu Bailey có bao nhiêu tiền?",
+   "gold": "60",
+   "ans": "Bailey bắt đầu với $100 và cô ấy kiếm được 5$ mỗi tuần trong 8 tuần nên cô ấy đã kiếm được $5*8 = 40$ trong 8 tuần. Sau đó, cô ấy kiếm được $40 trong 8 tuần và cô ấy có tổng cộng $100+$40 = $140. Đáp án: 140",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Judy dạy 5 lớp nhảy mỗi ngày vào các ngày trong tuần và 8 lớp vào thứ Bảy. Nếu mỗi lớp có 15 học sinh và cô ấy thu phí $15.00 mỗi học sinh, thì cô ấy kiếm được bao nhiêu tiền trong 1 tuần?",
+   "gold": "7425",
+   "ans": "Cô ấy dạy 5 lớp vào các ngày trong tuần với tổng số 5*15 = 75 học sinh Cô ấy dạy 8 lớp vào thứ Bảy với tổng số 8*15 = 120 học sinh Tổng cộng cô ấy đã dạy 75+120+120= 315 học sinh. Vì vậy, cô ấy kiếm được 75.000 USD / 315 = 6.000 USD mỗi ngày. Đáp án: 6000",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kelian có hai công thức chế biến món ăn, một công thức có 20 bước hướng dẫn và công thức thứ hai có số bước hướng dẫn gấp đôi công thức đầu tiên. Hỏi Kelian phải đọc tổng cộng bao nhiêu bước hướng dẫn",
+   "gold": "60",
+   "ans": "Công thức thứ hai có 2*20= 40 bước hướng dẫn. Tổng cộng, Kelian cần đọc 40+20= 60 bước hướng dẫn. Đáp án: 60",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tommy đang gây quỹ cho tổ chức từ thiện của mình bằng cách bán bánh brownie với giá $3 một miếng và bánh cheesecake với giá $4 một miếng. Nếu Tommy bán được 43 miếng brownie và 23 miếng cheesecake, To",
+   "gold": "221",
+   "ans": "Nếu Tommy bán 43 miếng brownie với giá 3 đô la mỗi miếng thì anh ấy đã kiếm được 43 * 3 = 129 đô la từ việc bán những chiếc bánh brownie. Nếu anh ta bán 23 miếng cheesecake với giá 4 đô la mỗi cái thì anh ta đã kiếm được 23 * 4 = 92 đô la từ việc bán những chiếc bánh cheesecake. Tổng cộng, Tommy đã kiếm được $129 + $92 = $157 từ việc bán brownie và cheesecake của mình. Đáp án: 157",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Shiela mua 5 chiếc điện thoại với giá $150 mỗi chiếc theo hình thức trả góp trong 3 tháng. Mỗi chiếc sẽ chịu mức lãi suất là 2%. Hỏi mỗi tháng Shiela phải trả bao nhiêu tiền trong vòng 3 tháng?",
+   "gold": "255",
+   "ans": "Mỗi chiếc điện thoại có giá $150 và cô ấy trả $150*3 = 450 USD mỗi tháng. Vì vậy, cô ấy phải trả tổng cộng $450+$150=$550 mỗi tháng. Do đó, cô ấy sẽ phải trả tổng cộng $550/3 = 183,3333 trong vòng 3 tháng. Đáp án: 183",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Artie có một sạp bán hoa tại Chợ Nông sản. Anh ấy bán ba loại hoa: vạn thọ, dạ yến thảo và thu hải đường. Thông thường, anh ấy bán hoa vạn thọ với giá $2.74 mỗi chậu, hoa dạ yến thảo giá $1.87 mỗi chậ",
+   "gold": "88",
+   "ans": "Giá của mỗi chậu hoa vạn thọ là 2.74 USD x 3 = 76 USD. Giá của mỗi chậu hoa dạ yến thảo là 1.87 USD x 4 = 6.42 USD. Giá của mỗi chậu hoa thu hải đường là 2.12 USD x 9 = 88 USD. Tổng số tiền Artie kiếm được từ việc bán hoa là $76 + $6.42 + $88 = $153. Đáp án: 153",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Luke đang dành thời gian ở bãi biển để xây lâu đài cát. Cậu ấy nhận thấy rằng mỗi tầng của lâu đài cát sẽ có diện tích bằng một nửa diện tích của tầng ngay bên dưới nó. Nếu cậu ấy xây một lâu đài cát ",
+   "gold": "60",
+   "ans": "Mỗi tầng có diện tích bằng một nửa diện tích của tầng ngay bên dưới nó, vì vậy tầng đầu tiên có diện tích bằng 1/2 * 4 = 2/3 diện tích của tầng ngay bên dưới nó. Tổng cộng, các tầng có diện tích bằng 4 * 2/3 = 2,6667. Vì mỗi tầng có diện tích bằng một nửa diện tích của tầng ngay bên dưới nó nên tổng diện tích của tất cả các tầng là 2,6667 * 4 = 10,6668. Đáp án: 10",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Cecilia vừa mới mua một chú chó con. Theo lời bác sĩ thú y, cô phải cho chó ăn 1 cup thức ăn mỗi ngày trong 180 ngày đầu tiên. Sau đó, cô phải cho chó ăn 2 cup thức ăn mỗi ngày trong suốt quãng đời cò",
+   "gold": "5",
+   "ans": "Trong 180 ngày đầu tiên, Cecilia sẽ cho chó ăn 110/180 = 0,6111 cup thức ăn mỗi ngày. Trong 180 ngày còn lại, cô ấy sẽ cho chó ăn 2 cup thức ăn mỗi ngày, tổng cộng là 0,6111 x 2 = 1,2222 cup thức ăn. Như vậy, Cecilia sẽ cần dùng 1,2222 + 110 = 111,2222 cup thức ăn trong năm đầu tiên. Đáp án: 111",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Nếu Raymond giặt ít một nửa so với Sarah, và Sarah giặt nhiều gấp 4 lần so với David, hãy tính sự chênh lệch lượng quần áo giữa Raymond và David nếu Sarah giặt 400 pounds.",
+   "gold": "100",
+   "ans": "Nếu Sarah giặt 400 pounds thì Raymond giặt 1/2*400 = 200 pounds. Tổng số pounds mà cả hai đều giặt là 200+400 = 600 pounds. Nếu David giặt 400 pounds thì David giặt 400-600 = -200 pounds. Nếu David giặt 400 pounds thì Raymond giặt 1/2*400 = 200 pounds. Tổng số pounds mà cả hai đều giặt là 200+200 = 400 pounds. Đáp án: 400",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vincent có thể mua hoa theo bó 3 bông với giá $2.50 hoặc bó 2 bông với giá $1. Anh ấy sẽ tiết kiệm được bao nhiêu tiền nếu mua 18 bông hoa theo cách có giá hời hơn?",
+   "gold": "6",
+   "ans": "Giá của bó hoa 18 bông là 18*$1,50 = $36. Giá của bó hoa 3 bông là 36*$2,50 = $78. Do đó, việc mua 18 bông hoa sẽ rẻ hơn mua 18+3= 21 bông hoa so với giá hời là $78. Đáp án: 78",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John nhận nuôi một chú chó. Anh ấy đưa chú chó đến tiệm chăm sóc thú cưng, với chi phí là $100. Tiệm đưa ra chương trình giảm giá 30% cho khách hàng mới. Hỏi chi phí chăm sóc thú cưng hết bao nhiêu ti",
+   "gold": "70",
+   "ans": "Chi phí của việc chăm sóc thú cưng là $100 x 30/100 = 30 USD. Vậy chi phí chăm sóc thú cưng là $100 - $30 = $70. Đáp án: 70",
+   "ok": true,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Hai cô gái, mỗi người lấy 1/6 của 24 liters nước. Sau đó, một cậu bé lấy 6 liters nước. Hỏi còn lại bao nhiêu liters nước?",
+   "gold": "10",
+   "ans": "Hai cô gái lấy 1/6 x 24 = 4 lít nước. Vậy còn lại 1/6 x 4 = 0,6667 lít nước. Vậy còn lại 0,6667 x 24 = 16,0008 lít nước. Vậy còn lại 16,0008 x 24 = 384,0192 lít nước. Đáp án: 384,0192",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Charlie có 10 nhãn dán. Cậu ấy mua thêm 21 nhãn dán từ một cửa hàng trong trung tâm thương mại và được tặng 23 nhãn dán vào dịp sinh nhật. Sau đó, Charlie tặng 9 nhãn dán cho em gái và dùng 28 nhãn dá",
+   "gold": "17",
+   "ans": "Charlie đã mua thêm 21 nhãn dán + 23 nhãn dán = 45 nhãn dán. Sau khi tặng quà, cậu ấy có 45 nhãn dán - 23 nhãn dán = 34 nhãn dán. Sau đó, cậu ấy tặng 9 nhãn dán cho em gái và dùng 28 nhãn dán để trang trí thiệp chúc mừng, vậy còn lại 34 nhãn dán - 28 nhãn dán = 16 nhãn dán. Đáp án: 16",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Grace nặng 125 pounds. Alex nặng ít hơn 4 lần cân nặng của Grace là 2 pounds. Tổng cân nặng của cả hai người tính theo pounds là bao nhiêu?",
+   "gold": "623",
+   "ans": "Alex nặng 125 - 4 = 121 pounds. Tổng trọng lượng của họ là 125 + 4 = 129 pounds. Đáp án: 129",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dan trồng 3 bụi hoa hồng. Mỗi bụi hoa hồng có 25 bông hoa. Mỗi bông hoa có 8 cái gai. Hỏi có tổng cộng bao nhiêu cái gai?",
+   "gold": "600",
+   "ans": "Tổng số hoa hồng là 3*25= 75 Tổng số gai là 75+30= 105. Đáp án: 105",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một đội bóng đá đã chơi 22 trận. Số trận thắng nhiều hơn số trận thua là 8. Hỏi đội đó đã thắng bao nhiêu trận?",
+   "gold": "15",
+   "ans": "Gọi x là số trận thắng. Vậy 22-x = 21+8 = 29 trận thắng. Vậy tổng số trận thắng của đội là 21+8 = 29. Đáp án: 29",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Gene đang may một chiếc chăn ghép vải từ những chiếc áo thun lưu niệm cũ. Anh ấy có mỗi kỳ nghỉ một chiếc áo. Mỗi chiếc áo là một mảnh ghép của chăn. Mỗi hàng được tạo thành từ các mảnh ghép của các n",
+   "gold": "44",
+   "ans": "Anh ấy bắt đầu với 23 tuổi vì 23 + 23 = 46 Anh ấy đi nghỉ 4 lần trong năm nay vì 4 x 23 = 92 Anh ấy đã đi nghỉ được 10 năm vì 92/4 = 23. Đáp án: 23",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Greg đặt báo thức reo ba lần một ngày để nhắc nhở. Khi báo thức vang lên, nó sẽ tiếp tục reo cho đến khi Greg tắt đi. Lần đầu tiên báo thức reo trong ngày hôm nay, nó reo 4 lần. Lần thứ hai, nó reo lâ",
+   "gold": "22",
+   "ans": "Báo thức vang lên 4 lần nên lần thứ hai nó reo 4/2 = 2 lần Báo thức vang lên 4 lần trong ngày hôm nay nên nó đã được báo thức 4*2= 8 lần Tổng số lần báo thức là 8+4+2= 14 lần. Đáp án: 14",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một công ty trả cho mỗi nhân viên $600 mỗi tháng. Công ty có chính sách tăng lương hàng năm cho những nhân viên đã làm việc được 5 năm, với mức tăng bằng 10% mức lương ban đầu. Nếu Sylvie vừa tròn 5 n",
+   "gold": "9360",
+   "ans": "Mức tăng lương hàng năm của cô ấy là $600*3= 1800 USD. Mức tăng lương hàng năm của cô ấy là 1800*10% = 180 USD. Cô ấy đã làm việc được 5 năm, vì vậy mức tăng lương hàng năm của cô ấy là 1800-5= 1795 USD. Vì vậy, mức lương hàng năm của cô ấy sau 3 năm nữa sẽ là $1795+$180 = $2045. Đáp án: 2045",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Album đầu tay của Marilyn bán được số lượng gấp 10 lần so với của Harald. Nếu cả hai bán được tổng cộng 88,000 bản, hỏi Harald đã bán được bao nhiêu bản?",
+   "gold": "8000",
+   "ans": "Nếu cả hai đều bán được tổng cộng 88,000 bản thì album đầu tay của Marilyn bán được 88,000/10 = 8,8,000 bản. Nếu cả hai cùng bán được 8,800 bản thì Harald đã bán được 8,800/2 = 4,4,000 bản. Đáp án: 4,4",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Christina đang lên kế hoạch cho một bữa tiệc sinh nhật và cần chuẩn bị .75 túi quà cho mỗi khách mời, vì có 1/4 số người tham dự sẽ không đến. Cô ấy đã mời 16 người bạn. Mỗi túi quà có giá $2. Hỏi cô ",
+   "gold": "24",
+   "ans": "Cô ấy đã mời 16 người bạn nên cô ấy cần mua 75/16 = 4,6875 túi quà. Vì vậy, cô ấy cần chi 24 đô la cho mỗi túi quà x 4,6875 = 120 đô la. Đáp án: 120",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Ted là một chú khủng long bạo chúa đang lên kế hoạch mang món salad khoai tây đến buổi dã ngoại của các loài khủng long. Chú biết rằng một con khủng long trưởng thành sẽ ăn 10 lbs salad khoai tây, còn",
+   "gold": "225",
+   "ans": "Một con khủng long trưởng thành sẽ ăn 10 lbs. salad khoai tây, vì vậy nó sẽ cần 10*10 = 100 lbs. Một con khủng long con sẽ ăn bằng một nửa lượng thức ăn của một con trưởng thành, vì vậy nó sẽ cần 5/2 = 2,5 lbs. Vì vậy, để đảm bảo đủ phần ăn cho tất cả mọi người, Ted sẽ cần mang theo 100+2,5= 102,5 pounds salad khoai tây. Đáp án: 102",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jan có số thú cưng gấp ba lần Marcia. Marcia có nhiều hơn Cindy 2 thú cưng. Nếu Cindy có 4 thú cưng, thì tổng cộng cả ba người có bao nhiêu thú cưng?",
+   "gold": "28",
+   "ans": "Marcia có 4 * 3 = 12 thú cưng. Jan có 3 * 12 = 36 thú cưng. Tổng cộng họ có 36 + 12 = 48 thú cưng. Đáp án: 48",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Emily có 4 người con tên là Amy, Jackson, Corey và James. Amy lớn hơn Jackson 5 years và kém Corey 2 years. Nếu James 10 years tuổi và kém Corey 1 year, hỏi Jackson bao nhiêu years tuổi?",
+   "gold": "4",
+   "ans": "Nếu James 10 tuổi thì anh ấy kém Corey 1 năm nên anh ấy 10-1= 9 năm. Nếu Emily 12 Years tuổi thì cô ấy 12+9 = 21 tuổi. Vậy Jackson 21-4 = 17 tuổi. Đáp án: 17",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Lee từng chạy vượt chướng ngại vật 400-meter nhanh hơn Gerald 2 giây. Tuy nhiên, Gerald đã thay đổi chế độ ăn uống, giúp cải thiện tốc độ thêm 10%. Nếu Lee chạy vượt chướng ngại vật 400-meter hết 38 s",
+   "gold": "36",
+   "ans": "Nếu Lee chạy 400-meter hết 38 giây thì thời gian còn lại để anh ta chạy là 400-38 = 362 giây. Chế độ ăn cải thiện của Gerald giúp anh ta chạy thêm 10%, tức là 10/100 * 400-meter = 40 giây. Như vậy, Gerald có thể chạy thêm 400-40 = 360 giây. Đáp án: 360",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong một khu dân cư, số lượng thỏ nuôi ít hơn tổng số chó và mèo nuôi là twelve. Nếu cứ mỗi con chó thì có hai con mèo, và số lượng chó là 60, hỏi tổng cộng có bao nhiêu thú cưng trong khu dân cư đó?",
+   "gold": "348",
+   "ans": "Nếu cứ mỗi con chó thì có hai con mèo thì tổng số mèo trong khu dân cư là 2*60 = 120. Tổng số chó là 60+120 = 180. Nếu mỗi con chó có hai con mèo thì tổng số mèo trong khu dân cư là 180+240 = 420. Tổng số thú cưng trong khu dân cư là 420+120 = 540. Đáp án: 540",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong số 200 học sinh lớp 5, 2/5 là nam và 2/3 số học sinh nữ tham gia đội hướng đạo sinh nữ. Hỏi có bao nhiêu học sinh nữ không tham gia đội hướng đạo sinh nữ?",
+   "gold": "40",
+   "ans": "200 x 2/5 = 80 nam. Vậy 200 - 80 = 120 học sinh nữ. Đáp án: 120",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tối qua Harry ngủ 9 hours. Bạn của cậu ấy, James, chỉ ngủ được 2/3 số giờ mà Harry đã ngủ. Hỏi Harry đã ngủ nhiều hơn James bao nhiêu hours?",
+   "gold": "3",
+   "ans": "James ngủ 2/3 * 9 hours = 6 hours. Vậy James ngủ 6/2 = 3 hours mỗi đêm. Vậy tối qua Harry ngủ 9 - 3 = 6 hours. Vậy James ngủ 6 - 6 = 0,5 hours mỗi đêm. Đáp án: 5",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Khi Freda nấu cà chua đóng hộp thành sốt, chúng bị giảm đi một nửa thể tích. Mỗi lon cà chua 16 ounce mà cô ấy dùng chứa 3 quả cà chua. Mẻ sốt cà chua gần nhất của Freda làm ra được 32 ounces sốt. Hỏi",
+   "gold": "12",
+   "ans": "Đầu tiên hãy tìm xem Freda còn lại bao nhiêu quả cà chua trong một hộp: 32 ounce / 16 ounce/hộp = 4 hộp Sau đó chia số đó cho 2 để tìm xem Freda dùng bao nhiêu quả cà chua: 4 hộp / 3 quả/lon = 12 quả cà chua Sau đó trừ đi lượng cà chua Freda đã dùng từ lượng cà chua còn lại trong lon để tìm xem cô ấy dùng bao nhiêu quả cà chua: 12 quả - 12 quả = 8 quả cà chua. Đáp án: 8",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Các xe đang xếp hàng dài trên đường cao tốc. Một số xe đã đi qua trong 15 phút đầu của đợt tắc đường, sau đó có thêm 20 xe nữa đi qua trong 15 phút còn lại của đợt tắc đường. Có 5 xe trong hàng đã rẽ ",
+   "gold": "5",
+   "ans": "Trong 15 phút đầu tiên, số xe đã đi qua là 15*10= 150 xe Số xe đã đi qua trong 15 phút còn lại của đợt tắc đường là 30-150= -120 xe Tổng số xe đã đi qua đoạn tắc đường là 120+30= 150. Đáp án: 150",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mary là một người rất yêu làm vườn. Ngày hôm qua, cô ấy đã nhận được 18 chậu cây mới từ cửa hàng cây cảnh yêu thích của mình. Cô ấy đã có sẵn 2 chậu cây trên mỗi bệ cửa sổ của ngôi nhà lớn ở vùng nông",
+   "gold": "58",
+   "ans": "Mary có 2 + 1 = 3 chậu cây trong nhà của mình. Cô ấy đã có sẵn 2 + 1 = 3 chậu cây trên mỗi bệ cửa sổ. Vì vậy, cô ấy sẽ tặng tổng cộng 3 + 1 = 4 chậu cây cho bạn bè và gia đình của mình. Đáp án: 4",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vào một ngày nọ, Jerome có 4 người bạn đến thăm mình. Người bạn thứ nhất đã nhấn chuông 20 lần trước khi Jerome ra mở cửa, người bạn thứ hai nhấn chuông nhiều hơn người bạn thứ nhất là 1/4 lần. Người ",
+   "gold": "175",
+   "ans": "Người bạn thứ hai nhấn chuông 20+10= 30 lần. Người bạn thứ ba nhấn chuông 30+60= 90 lần. Tổng số lần chuông vang lên là 4+30+90= 124 lần. Đáp án: 124",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Solo cần đọc 4 trang trong sách giáo khoa Khoa học, 20 trang trong sách giáo khoa Lịch sử - Địa lý, 7 trang trong sách giáo khoa Lịch sử và 8 trang trong sách giáo khoa Địa lý. Solo đã đọc được 15 tra",
+   "gold": "6",
+   "ans": "Solo cần đọc 4 * 15 = 60 trang. Vì anh ấy có 20 trang trong sách giáo khoa Lịch sử - Địa lý nên anh ấy cần đọc 20 - 15 = 5 trang. Vì anh ấy có 7 trang trong sách giáo khoa Địa lý nên anh ấy cần đọc 7 - 8 = -1 trang. Do đó, mỗi ngày anh ấy cần đọc 60 - 5 - 5 - 5 = 45 trang. Đáp án: 45",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John có thói quen uống một ly nước vào bữa sáng, bữa trưa và bữa tối. Cuối cùng, anh ấy còn uống thêm một ly trước khi đi ngủ. John duy trì thói quen này vào tất cả các ngày trong tuần, nhưng vào cuối",
+   "gold": "26",
+   "ans": "John uống 1 + 1 = 2 ly nước trước khi đi ngủ vào các ngày trong tuần. Anh ấy cũng uống 1 + 1 = 2 ly nước trước khi đi ngủ vào cuối tuần. Vậy anh ấy uống tổng cộng 2 + 1 + 2 = 5 ly nước trong cả tuần. Đáp án: 5",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một màn sương mù từ đại dương tràn vào bao phủ một thành phố. Cứ mỗi 3 miles của thành phố thì mất 10 phút để sương mù bao phủ hết. Nếu thành phố rộng 42 miles tính từ bờ biển đến rìa đất liền đối diệ",
+   "gold": "140",
+   "ans": "Nếu cứ 3 miles lại có 10 phút sương mù bao phủ thì trong thành phố sẽ mất tổng cộng 3*42= 126 phút. Nếu mỗi Miles là 60 phút thì tổng thời gian mất là 126/60= 2,1 phút. Đáp án: 2",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Poppy đang giải một bộ xếp hình gồm 1000 mảnh. Cô ấy đặt một phần tư số mảnh lên bảng, sau đó mẹ cô ấy đặt một phần ba số mảnh còn lại. Hỏi còn lại bao nhiêu mảnh xếp hình chưa được đặt vào?",
+   "gold": "500",
+   "ans": "Poppy đã đặt 1000/4 = 250 mảnh trên bảng. Mẹ cô ấy đã đặt 250 x 1/3 = 83,3333 mảnh còn lại trên bảng. Vậy còn lại 250 - 83,3333 = 166,6667 mảnh chưa được xếp vào. Đáp án: 166",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Cody ăn số lượng bánh quy nhiều gấp 3 lần Amir. Nếu Amir ăn 5 cookies, thì cả hai người ăn tổng cộng bao nhiêu cookies?",
+   "gold": "20",
+   "ans": "Nếu Amir ăn 5 cái bánh quy thì anh ấy ăn 5*3= 15 cái bánh quy. Cody ăn 3 cái bánh quy nên anh ấy ăn 3*15 = 45 cái bánh quy. Tổng số bánh quy mà cả hai người ăn là 45+5= 50. Đáp án: 50",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John có 3 chiếc hộp. Mỗi chiếc hộp có kích thước 5 inches x 6 inches x 4 inches. Độ dày của thành hộp là 1 inch. Tính tổng thể tích bên trong của cả 3 chiếc hộp?",
+   "gold": "72",
+   "ans": "Mỗi hộp có kích thước 5*6*1= 30 inch vuông Vậy tổng thể tích của chúng là 30*4= 120 inch vuông. Đáp án: 120",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tối nào Frankie cũng xem TV sau khi làm xong bài tập về nhà. Vào thứ Hai và thứ Ba, mỗi tối cậu ấy xem một tập phim dài 1-hour của chương trình yêu thích. Vào thứ Tư, cậu ấy xem một vài tập của một ch",
+   "gold": "3",
+   "ans": "Vào thứ Hai và thứ Ba, Frankie xem một tập phim dài 1-hour với thời lượng 120 phút. Vào thứ Tư, cậu ấy xem một tập phim dài 30-minute với thời lượng 120 phút. Tổng cộng, Frankie đã xem 7+3= 10 tập phim 30-minute. Đáp án: 10",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Henry đang làm bánh quy để tham gia một cuộc thi làm bánh tại địa phương. Anh ấy muốn làm số lượng gấp đôi so với năm ngoái. Khi nướng xong, anh ấy nhận ra mình đã làm nhiều hơn dự định là 15 chiếc bá",
+   "gold": "50",
+   "ans": "Henry đã làm 15+5= 20 cái bánh trong năm nay. Vậy năm ngoái anh ấy đã làm 20*110 = 2200 cái bánh. Đáp án: 2200",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một trạm xăng địa phương đang bán xăng với giá $3.00 một gallon. Một công ty ứng dụng đang ưu đãi hoàn tiền $.20 mỗi gallon nếu bạn đổ xăng tại trạm này. Nếu một người mua 10 gallons xăng, thì sau khi",
+   "gold": "28",
+   "ans": "Ứng dụng đang cung cấp cho khách hàng của mình mức giảm giá $20 vì 10*.2=$20 Họ sẽ phải trả $30 cho 10 gallon xăng vì 10*30= 300 USD. Đáp án: 300",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Marcell và Beatrice đang tổ chức một cuộc thi xem ai có thể ăn được nhiều kẹo dẻo cuộn (fruit roll-ups) nhất, vì vậy họ đã trải ra tất cả số kẹo mà họ tìm thấy. Thật không may, có người đã nhầm lẫn nê",
+   "gold": "45",
+   "ans": "Có tổng cộng 24 + 2 = 26 cuộn được tìm thấy. Vì vậy, Marcell đã ăn 26/2 = 13 cuộn. Còn lại 14 - 13 = 1 cuộn. Do đó, trung bình mỗi người ăn 13/1 = 13 cuộn. Đáp án: 13",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Thuyền của Julia bị thủng một lỗ khi cô ấy đang ở trên hồ. Cứ mỗi mười feet cô chèo về phía bờ, thuyền lại bị tràn vào hai lít nước. Cô mất mười sáu giây để chèo được hai mươi feet. Quãng đường về đến",
+   "gold": "16",
+   "ans": "Đầu tiên hãy tìm số lít nước mà thuyền của Julia đã đi qua trong 16 giây đầu tiên: 16 giây * 20 feet/giây = 320 feet Sau đó nhân số đó với 16 để tìm tổng số lít nước mà thuyền đã đi qua: 320 feet * 16 = 4800 feet Sau đó chia số đó cho tốc độ của cô ấy để tìm xem cô ấy đã đi được bao xa trong 16 giây đầu tiên: 4800 feet / 16 giây/giây = 240 dặm. Đáp án: 240",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một lớp học có một chiếc bảng trắng được dùng chung bởi 4 giáo viên thay phiên nhau đứng lớp. Mỗi giáo viên có 2 tiết học mỗi ngày và sử dụng bảng trắng trong mỗi tiết đó. Nếu mỗi tiết học, bảng trắng",
+   "gold": "24",
+   "ans": "Mỗi giáo viên có 2*4= 8 tiết học mỗi ngày Vậy tổng số tiết học trong một ngày là 8*3= 24 tiết. Mỗi giáo viên sử dụng bảng trắng trong 24/3= 8 lần một ngày Vậy tổng số lần lau bảng trắng trong một ngày là 8*3= 24 lần. Đáp án: 24",
+   "ok": true,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Ryan trồng 2 bông hoa mỗi ngày trong vườn của mình. Sau 15 ngày, anh ấy có bao nhiêu bông hoa nếu có 5 bông không mọc?",
+   "gold": "25",
+   "ans": "Anh ấy trồng tổng cộng 2 x 15 = 30 bông hoa. Vì vậy, anh ấy có tổng cộng 30 + 2 = 32 bông hoa. Đáp án: 32",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Điện thoại của Jamal có thể chứa số lượng ảnh gấp 6 lần so với điện thoại của Brittany. Số lượng ảnh tối đa mà điện thoại của Brittany có thể chứa gấp 50 lần số lượng con chim trong bức ảnh Jamal chụp",
+   "gold": "6",
+   "ans": "thoại của Brittany có thể chứa là 50*1800 = 90000 photographs. Nếu điện thoại của Jamal có thể chứa được 18000 photographs, thì tổng số ảnh tối đa mà điện thoại của Brittany có thể chứa là 90000+90000 = 180000 photographs. Nếu điện thoại của Jamal có thể chứa được 180000 photographs, thì tổng số con vịt trong bức ảnh Jamal chụp đàn vịt ở sở thú là 180000+180000 = 360000 photographs. Đáp án: 360000",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sasha nhận thấy giá gỗ đã tăng 50% trong vài tháng qua kể từ khi cô mua một ít gỗ. Vì vẫn còn gỗ thừa, cô quyết định bán chúng. Cô có mười tấm ván 2 x 4 x 10 với giá 10 $ mỗi tấm. Cô cũng có năm tấm v",
+   "gold": "90",
+   "ans": "Cô ấy đã chi 10 x 10 = 100 USD cho gỗ vì vậy cô ấy đã kiếm được 100 - 100 = 0,50 USD cho mỗi tấm ván. Cô ấy đã bán 5 tấm ván 4 x 4 với giá 16 USD mỗi tấm nên cô ấy kiếm được 5*16 = 80 USD từ chúng. Cô ấy đã chi 16 + 10 = 26 USD cho gỗ vì vậy cô ấy đã kiếm được 26 - 80 = -54 USD từ chúng. Do đó, lợi nhuận của cô ấy là 0,50 USD x 5 = 20 USD. Đáp án: 20",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Katy pha cà phê bằng cách dùng thìa cà phê đường và cốc nước theo tỷ lệ 7:13. Nếu cô ấy đã dùng tổng cộng 120 thìa cà phê đường và cốc nước, hãy tính số thìa cà phê đường mà cô ấy đã dùng.",
+   "gold": "42",
+   "ans": "Tổng tỷ lệ đại diện cho số thìa cà phê đường mà Katy đã dùng là 7+13 = 20. Tỷ lệ đại diện cho số thìa cà phê đường mà Katy đã dùng là 120/20 = 6. Đáp án: 6",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John mua 2 đôi giày cho mỗi người trong số 3 đứa con của mình. Mỗi đôi có giá $60. Hỏi ông ấy đã trả tổng cộng bao nhiêu tiền?",
+   "gold": "360",
+   "ans": "Mỗi đôi giày có giá 60 USD x 3 = 180 USD. Vậy tổng chi phí là 180 USD x 2 = 360 USD. Do đó, John đã trả tổng cộng $60 + $360 = $102. Đáp án: 102",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một nhân viên hải quan tại cảng chính của SeaSide đã kiểm kê được 2 container xe nhập khẩu, mỗi container có 5 xe bên trong. Ngày hôm sau, thêm nhiều container khác được đưa vào, và tổng số xe tại cản",
+   "gold": "4",
+   "ans": "Ngày đầu tiên: 2 * 5 = 10 xe Ngày thứ hai: 5 + 10 = 15 xe Tổng cộng: 2 + 10 + 15 = 27 xe. Đáp án: 27",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tổng lương của Adrien cao hơn lương của Lylah là 30 percent. Bốn năm sau, lương của anh ấy tăng lên và anh ấy kiếm được nhiều hơn 40% so với mức lương của bốn năm trước. Nếu lương của Adrien và Lylah ",
+   "gold": "95200",
+   "ans": "Tổng lương của Adrien là $40000+$40=$44000 Tổng lương của Lylah là $44000+$30=$48000 Tổng lương của họ cùng nhau là $44000+$48000 = $96000. Đáp án: 96000",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Miguel dùng hết 2 xấp giấy mỗi tuần để vẽ. Nếu mỗi xấp có 30 tờ giấy, hỏi mỗi tháng cậu ấy dùng hết bao nhiêu tờ giấy?",
+   "gold": "240",
+   "ans": "Mỗi tuần cậu ấy dùng hết 2 x 30 = 60 tờ giấy. Vậy trong một tháng, cậu ấy dùng 60 x 30 = 1800 tờ giấy. Đáp án: 1800",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Morisette và Kael được nhờ đi mua trái cây. Morisette mang theo 5 apples và 8 oranges, trong khi Kael mang số lượng apples gấp đôi và số lượng oranges bằng một nửa so với Morisette. Hỏi cả hai có tổng",
+   "gold": "27",
+   "ans": "Kael mang theo 2 x 12 = 24 quả táo. Anh ấy cũng mang theo 5 x 2 = 10 quả táo. Tổng cộng Kael và Morisette mang theo 24 + 10 = 34 quả táo. Do đó, cả hai có tổng cộng 5 + 10 = 15 quả táo. Đáp án: 15",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sadie đã ngủ 8 hours vào thứ Hai. Trong hai ngày tiếp theo, mỗi ngày cô ấy ngủ ít hơn 2 hours vì phải hoàn thành một số bài tập. Nếu trong những ngày còn lại của tuần, cô ấy ngủ nhiều hơn 1 hour so vớ",
+   "gold": "48",
+   "ans": "Sadie ngủ 8-2= 6 hours trong hai ngày đầu tiên. Trong hai ngày tiếp theo, cô ấy ngủ ít hơn 2 hours, nghĩa là cô ấy ngủ 6-2= 4 hours. Tổng cộng cô ấy đã ngủ 6+4= 10 hours trong cả tuần. Đáp án: 10",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Rosie có thể chạy với tốc độ 10 miles per hour trong 3 hours. Sau đó, cô ấy chạy với tốc độ 5 miles per hour. Hỏi cô ấy có thể chạy được bao nhiêu miles trong 7 hours?",
+   "gold": "50",
+   "ans": "Rose có thể chạy với tốc độ 10 dặm/giờ * 3 giờ = 30 dặm/giờ trong 7 giờ. Vậy trong 7 giờ, cô ấy có thể chạy với tốc độ 30 dặm/giờ * 7 giờ = 145 dặm. Đáp án: 145",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jennie đang giúp mẹ làm việc tại văn phòng. Cô ấy có một xấp 60 lá thư cần dán tem và một xấp các lá thư đã được dán tem. Cô ấy dán tem lên một phần ba số lá thư cần dán. Nếu hiện tại xấp thư đã dán t",
+   "gold": "10",
+   "ans": "Jennie dán tem vào 1/3 số lá thư, tổng cộng là 1/3*30 = 10 lá. Vậy lúc đầu cô ấy dán tem vào 10/3= 3,3333 lá thư. Đáp án: 3333",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Julia đang chuẩn bị cho một bữa tiệc tối tại nhà, nơi cô dự định sẽ phục vụ món hầm. Cô nhận thấy mình đã hết thìa nhựa, vì vậy cô đã mua một gói thìa mới. Sau đó, chồng cô cũng mua một gói gồm 5 chiế",
+   "gold": "10",
+   "ans": "Sau khi chồng cô ấy mua 5 chiếc thìa mới, Julia đã dùng 3 + 12 = 15 chiếc thìa. Tổng số thìa mà Julia có sau khi chồng cô ấy mua là 15 + 12 = 27. Đáp án: 27",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dylan cần xúc xích gà và xúc xích cá để làm bánh mì xúc xích cho một bữa tiệc. Cậu ấy đã mua 38 xúc xích gà và số lượng xúc xích cá nhiều hơn xúc xích gà là 6. Hỏi tổng cộng Dylan đã mua tất cả bao nh",
+   "gold": "82",
+   "ans": "Dylan đã mua 38 + 6 = 44 xúc xích cá. Tổng cộng Dylan đã mua 44 + 38 = 82 xúc xích. Đáp án: 82",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sau khi chuyển đến trường mới, Amy kết bạn được nhiều hơn Lily 20 người. Nếu Lily có 50 người bạn, thì cả Lily và Amy có tổng cộng bao nhiêu người bạn?",
+   "gold": "120",
+   "ans": "Lily có 50 x 2 = 100 người bạn. Vậy cả hai đều có 100 + 50 = 150 người bạn. Đáp án: 150",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mẹ của Well bán dưa hấu, ớt chuông và cam tại một cửa hàng địa phương. Một quả dưa hấu có giá gấp 3 lần một quả ớt chuông. Một quả cam có giá kém quả dưa hấu 5$. Dillon được cử đi cửa hàng để mua 4 qu",
+   "gold": "880",
+   "ans": "Một quả dưa hấu có giá 3 * 15 = 45 USD. Một quả ớt chuông có giá 4 * 20 = 80 USD. Một quả cam có giá 20 * 10 = 200 USD. Tổng số tiền Dillon sẽ phải trả là $45 + $80 + $200 = $130. Đáp án: 130",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một bệnh viện tiếp nhận 500 bệnh nhân mỗi ngày. Trung bình mỗi bệnh nhân được khám trong 24 phút. Các bác sĩ tính phí cho bệnh viện là $150 một giờ và bệnh viện tính phí bệnh nhân là $200 một giờ. Hỏi",
+   "gold": "10000",
+   "ans": "Bệnh viện kiếm được 200*$200=$4000 mỗi ngày Vậy họ kiếm được 4000*$2000=$80000 mỗi ngày Điều đó có nghĩa là họ kiếm được 80000*$150=$12.000.000 từ việc khám bệnh. Đáp án: 120000",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Nissa thuê 60 nhân viên thời vụ để đóng vai các tiên nhỏ trong làng Giáng sinh tại cửa hàng bách hóa của cô. Một phần ba số tiên đã nghỉ việc sau khi bị trẻ em nôn lên người, sau đó 10 người trong số ",
+   "gold": "30",
+   "ans": "Sau khi nghỉ việc 60/3= 20 nhân viên. Sau khi nghỉ việc 10/2= 5 nhân viên. Vậy còn lại 60-20-5= 35 nhân viên. Sau khi nghỉ việc, có 35-10= 25 nhân viên. Sau khi nghỉ việc, còn lại 35-25= 10 nhân viên. Đáp án: 10",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Chi tiêu của Joseph trong tháng 5 là $500. Trong tháng 6, chi tiêu của ông ấy ít hơn $60. Hỏi tổng chi tiêu của ông ấy trong hai tháng đó là bao nhiêu?",
+   "gold": "940",
+   "ans": "Chi tiêu của Joseph trong tháng 5 là $500 - $60 = $450. Chi tiêu của ông ấy trong tháng 6 là $500 - $450 = $150. Đáp án: 150",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Pam và Fred đi chơi hội chợ. Pam chơi tàu lượn siêu tốc 2 lần trong khi Fred chơi 4 lần. Sau đó, mỗi người quyết định chơi xe trượt luge 2 lần. Nếu mỗi lượt chơi tốn 6 vé, hỏi ngày hôm đó họ đã sử dụn",
+   "gold": "60",
+   "ans": "Nếu Pam chơi 2 lần và Fred chơi 4 lần thì cả hai cùng chơi 2*4 = 8 lần. Tổng số vé mà Fred và Pam đã chơi là 8+2= 10 vé. Ngày hôm đó họ đã sử dụng tổng cộng 2*10= 20 vé. Đáp án: 20",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vào thứ Hai, Walt đi bộ được 4 miles. Thứ Ba, anh ấy đi bộ được số miles gấp 6 lần so với thứ Hai. Tổng số miles anh ấy đi từ thứ Hai đến thứ Tư là 41 miles. Hỏi anh ấy đã đi bộ bao nhiêu miles vào th",
+   "gold": "13",
+   "ans": "Thứ Hai:41 Miles Thứ Ba:4*6= 24 Miles Tổng cộng:41+24+41= 106 Miles. Đáp án: 106",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi tháng Tom đi rửa xe 4 lần. Nếu mỗi lần rửa xe có giá $15 thì một năm anh ấy phải trả bao nhiêu tiền?",
+   "gold": "720",
+   "ans": "Mỗi lần rửa xe có giá 15*4= 60$ mỗi tháng Vậy anh ấy cần trả 60*12= 720$ mỗi tháng. Đáp án: 720",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Bạn của Brian là Bobby có số lượng trò chơi điện tử ít hơn 3 lần số lượng của Brian là 5. Nếu Brian có 20 trò chơi điện tử nhưng đã làm mất 5 cái ngay trước khi thực hiện phép so sánh, thì Bobby có ba",
+   "gold": "40",
+   "ans": "Nếu Brian có 20 trò chơi điện tử thì Bobby có 20-5 = 15 trò chơi điện tử. Sau khi bị mất 5 cái ngay trước khi thực hiện phép so sánh, Bobby có 15+5 = 20 trò chơi điện tử. Đáp án: 20",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 27 con kỳ lân còn lại trên thế giới. Một phần ba trong số chúng ở vùng Cao nguyên Scotland. Hai phần ba số kỳ lân ở Scotland là cái. Hỏi có bao nhiêu con kỳ lân cái ở Scotland?",
+   "gold": "6",
+   "ans": "Đầu tiên hãy tìm xem có bao nhiêu con kỳ lân còn sống trên thế giới: 27 con * 3/3 = 1 mươi con kỳ lân Sau đó nhân số đó với 2 để tìm số kỳ lân còn lại trên thế giới: 10 con kỳ lân * 2 = 20 con kỳ lân Sau đó trừ đi số đó khỏi số kỳ lân còn lại trên thế giới để tìm xem có bao nhiêu con kỳ lân cái ở Scotland: 27 con kỳ lân - 20 con kỳ lân = 14 con kỳ lân cái. Đáp án: 14",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Rory đặt 2 bánh mì sandwich với giá $7.50 mỗi cái, 2 túi khoai tây chiên với giá $1.50 mỗi túi và 2 chiếc bánh quy với giá $1.00 mỗi chiếc để giao hàng. Có một khoản phí giao hàng 20% được cộng thêm k",
+   "gold": "29",
+   "ans": "Tổng chi phí của bánh mì sandwich, khoai tây chiên và bánh quy là $7.50 + $1.50 + $20 = $13.50 Cô ấy muốn thêm $5.00 tiền tip nên tổng chi phí sẽ là $13.50 + $5.00 = $16.50. Đáp án: 1650",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Hôm qua Mark đã làm một bài kiểm tra gồm 75 câu hỏi. Cậu ấy hoàn thành bài kiểm tra với tốc độ 5 câu mỗi giờ. Hôm nay, cậu ấy làm một bài kiểm tra khác gồm 100 câu hỏi với tốc độ tương tự. Nếu Mark có",
+   "gold": "105",
+   "ans": " nay cậu ấy làm một bài kiểm tra khác với tốc độ 5 câu mỗi giờ nên tổng cộng là 75+5 = 80 câu. Hôm nay Mark đã làm một bài kiểm tra gồm 100 câu hỏi. Vậy hôm nay cậu ấy đã làm một bài kiểm tra khác với tốc độ 100*2 = 200 câu. Tổng cộng, hôm qua Mark đã làm một bài kiểm tra gồm 75 câu hỏi và đã hoàn thành được 80 câu nên hôm nay cậu ấy đã hoàn thành được 200-80 = 120 câu chưa hoàn thành. Đáp án: 120",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong một máy bán kẹo, số kẹo cao su màu hồng nhiều hơn 22 so với 4 lần số kẹo cao su màu xanh. Nếu có 12 kẹo cao su màu xanh thì có bao nhiêu kẹo cao su màu hồng?",
+   "gold": "70",
+   "ans": "Gọi x là số kẹo cao su màu hồng. Vậy có 4x+22=6x+4x+21=30 kẹo cao su màu hồng. Số kẹo cao su màu xanh nhiều hơn 22-6= 16 so với 4 lần số kẹo cao su màu xanh. Do đó, có 30-16= 14 kẹo cao su màu hồng. Đáp án: 14",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong số 20 chiếc xe cho thuê, có 12 chiếc là xe số tự động, 4 chiếc là xe số sàn, và số còn lại là xe số bán tự động. Hỏi xe số bán tự động chiếm bao nhiêu phần trăm trong tổng số xe?",
+   "gold": "20",
+   "ans": "Số xe số tự động là 20/12 = 1,6667 Số xe số sàn là 20/4 = 5,816 Số xe số tự động là 20-12-4= 4,536 Số xe số tự động và bán tự động là 4,536 nên xe số bán tự động chiếm 4,536/9 = 0,504. Đáp án: 504",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 700 con ong trong một tổ. Số ong thợ gấp đôi số ong non, và số ong non gấp đôi số ong chúa. Hỏi có bao nhiêu con ong thợ?",
+   "gold": "400",
+   "ans": "Số ong thợ gấp đôi số ong non là 2 * 700 = 1400 con ong thợ. Vậy số ong thợ gấp đôi số ong thợ là 1400/2 = 700 con ong thợ. Đáp án: 700",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jordan chơi trò chơi điện tử 2 giờ mỗi ngày. Cậu ấy cũng có một công việc làm thêm với mức lương $10 một giờ. Jordan sẽ kiếm được bao nhiêu tiền trong một tuần nếu cậu ấy dùng thời gian chơi game đó đ",
+   "gold": "140",
+   "ans": "Jordan chơi game 2*60= 120 phút mỗi ngày Vậy nên Jordan chơi game tổng cộng 120*4= 480 phút trong một ngày Vậy nên Jordan chơi game 480/7= 68,5714 USD một tuần. Đáp án: 68,5714",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John mua sữa hết 2 dollars, trứng hết 3 dollars, bóng đèn hết 3 dollars, cốc hết 3 dollars, và bẫy gián hết 4 dollars. Nếu các mặt hàng không phải thực phẩm chịu thuế 10% thì tổng cộng tất cả hết bao ",
+   "gold": "16",
+   "ans": "Tổng chi phí của những món đồ là 2 + 3 + 3 = 8. Tổng số tiền thuế là 10 * $8 = $88. Đáp án: 88",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kim đã bắt đầu công việc kinh doanh dịch vụ dọn dẹp nhà cửa riêng và đang tính toán xem mình sẽ thu được bao nhiêu lợi nhuận từ các khách hàng. Anh ấy đã có 3 khách hàng, đồng thời đang trao đổi với 5",
+   "gold": "20",
+   "ans": "Tổng chi phí của các chai thuốc tẩy là 2 x $2 = $4 Tổng chi phí của khăn lau là 5 x $5 = $15 Tổng chi phí của ngôi nhà là $92 - $15 = $78. Do đó, lợi nhuận của Lucas sẽ là $78 - $2/chai thuốc tẩy = $36. Đáp án: 36",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John có 10 héc-ta vườn dứa. Mỗi héc-ta có 100 quả dứa. Cứ 3 tháng John lại có thể thu hoạch dứa một lần. Hỏi trong một năm, John có thể thu hoạch được bao nhiêu quả dứa?",
+   "gold": "4000",
+   "ans": "Mỗi năm anh ấy có thể thu hoạch 10*12= 120 quả dứa. Vậy trong một năm anh ấy có thể thu hoạch 120*3= 360 quả dứa. Đáp án: 360",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Johnny đang dọn dẹp đồ chơi trên sàn phòng mình. Cậu ấy đã làm đổ một bộ Lego có 500 pieces trên sàn, một bộ khác có số lượng mảnh gấp 3 lần bộ 500 piece đó, và một bộ nữa có số lượng mảnh bằng 1/4 số",
+   "gold": "2125",
+   "ans": "Bộ thứ hai có 500/4= 125 mảnh Bộ thứ ba có 3*125= 375 mảnh Tổng cộng, bộ Lego có 500+125+375= 1000 pieces. Vì vậy, nếu Johnny nhặt tất cả các mảnh Lego thì cậu ấy sẽ có 1000/4= 250 khối. Đáp án: 250",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Debra đang theo dõi một tổ ong để xem có bao nhiêu con ong bay ra và bay vào trong một ngày. Cô ấy thấy 30 con ong rời tổ trong 6 giờ đầu tiên, và sau đó thấy số lượng ong quay trở lại trong 6 giờ tiế",
+   "gold": "75",
+   "ans": "Trong 6 giờ đầu tiên, số lượng ong bay ra là 30/6 = 5 con ong. Trong 6 giờ tiếp theo, số lượng ong bay ra là 1/2 * 30 = 15 con ong. Sau đó, số lượng ong quay trở lại tổ gấp hai lần số lượng ong rời tổ lúc đầu là 2 * 6 = 12 con ong. Tổng cộng, Debra thấy 30 + 15 + 12 = 57 con ong đã bay ra và quay trở lại tổ trong 6 giờ cuối cùng của ngày. Đáp án: 57",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Brittany và mẹ đi tham quan bảo tàng. Giá vé vào cửa là $12 đối với người lớn và $10 đối với trẻ em. Mẹ của Brittany đưa cho nhân viên thu ngân số tiền để mua 1 vé trẻ em và 1 vé người lớn. Nếu bà nhậ",
+   "gold": "30",
+   "ans": "Giá vé người lớn là $12 x 2 = 24 USD. Giá vé trẻ em là $10 x 2 = 20 USD. Do đó Brittany đã đưa cho nhân viên thu ngân $24 + $20 = $44. Đáp án: 44",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Charlie có số lượng bạn bè trên Facebook gấp 3 lần Dorothy. James có số lượng bạn bè trên Facebook gấp 4 lần Dorothy. Nếu Charlie có 12 bạn bè trên Facebook, thì James có bao nhiêu bạn bè trên Faceboo",
+   "gold": "16",
+   "ans": "James có 4 * 12 = 48 bạn bè trên Facebook. Vậy tổng cộng anh ấy có 12 + 48 = 60 bạn bè trên Facebook. Đáp án: 60",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Steve và Tim quyết định thi xem ai về nhà từ trường nhanh nhất. Steve sống xa trường hơn Tim, nên cậu ấy được phép đi xe đạp. Steve sống cách trường 3 miles và có thể đạp xe với tốc độ 440 feet per mi",
+   "gold": "4",
+   "ans": "t mỗi phút. Tim có thể đi xe đạp với vận tốc 110 feet mỗi phút trong 3 giờ, vì vậy anh ấy đi xe đạp với vận tốc 110/3 = 36,6667 feet mỗi phút. Steve có thể đi xe đạp với vận tốc 220 feet mỗi phút trong 3 giờ, vì vậy anh ấy đi xe đạp với vận tốc 220/3 = 73,3333 feet mỗi phút. Tim có thể đi xe đạp với vận tốc 110 feet mỗi phút trong 3 giờ, vì vậy anh ấy đi xe đạp với vận tốc 110/3 = 36,6667 feet mỗi",
+   "ok": false,
+   "calc": 9
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Shawnda quyết định rằng lũ trẻ trong xóm thực sự đang cần một dịch vụ bơm xe đạp. Cô ấy quyết định cách tính phí tốt nhất là tính theo mỗi lốp xe. Mỗi lốp xe có giá bơm là 25 cents. Vào ngày đầu tiên,",
+   "gold": "5",
+   "ans": "Có 5 + 3 = 8 người đi xe đạp trong xóm. Họ đã trả tổng cộng 25 + 8 = 33 USD cho dịch vụ bơm lốp xe. Tổng cộng, họ đã trả 33 + 5 = 38 USD. Do đó, Shawnda kiếm được 38 - 25 = 13 USD vào ngày hôm đó. Đáp án: 13",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Carl mua 10 gói bánh quy. Mỗi gói bánh có 6 chiếc bánh bên trong. Mỗi chiếc bánh có giá $0.10. Carl sẽ nhận được bao nhiêu tiền thừa nếu cậu ấy thanh toán bằng tờ $10?",
+   "gold": "4",
+   "ans": "Mỗi gói bánh quy có giá 6 x 0,10 USD = 4 USD. Vì vậy, Carl sẽ nhận được $4 - $0,10 = $3 cho những chiếc bánh quy. Đáp án: 3",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dave mua một gói khoai tây chiên lớn và ăn hết fourteen miếng trước khi một con mòng biển đang đói bụng cướp mất gói khoai khỏi tay anh ấy. Khi con mòng biển hạ cánh, nó đã ngấu nghiến một lượng khoai",
+   "gold": "48",
+   "ans": "Dave mua 45+45= 90 miếng khoai tây chiên trước khi con mòng biển ăn hết. Khi Dave mua nó, anh ấy đã tiêu thụ 90*3= 270 miếng khoai tây chiên. Đáp án: 270",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vào các ngày Thứ Hai, Thứ Tư và Thứ Sáu, sinh viên đại học Kimo có ba tiết học, mỗi tiết kéo dài 1 giờ mỗi ngày. Vào các ngày Thứ Ba và Thứ Năm, anh ấy có hai tiết học, mỗi tiết kéo dài 2 giờ mỗi ngày",
+   "gold": "272",
+   "ans": "Vào các ngày Thứ Ba và Thứ Năm, sinh viên đại học Kimo có 3*2= 6 tiết học. Vào các ngày Thứ Ba và Thứ Năm, anh ấy có 2*6= 12 tiết học. Trong một học kỳ, Kimo dành tổng cộng 12*16= 192 giờ lên lớp. Đáp án: 192",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi ngày, Bill nướng 300 bánh mì cuộn, 120 bánh sừng bò sô-cô-la và 60 bánh mì baguette. Mỗi chiếc bánh mì cuộn dài 4 inches, mỗi chiếc bánh sừng bò dài 6 inches, và mỗi chiếc bánh mì baguette dài two",
+   "gold": "280",
+   "ans": " Sau đó tìm xem có bao nhiêu chiếc bánh sừng bò: 60 bánh mì baguette * 2 feet/bánh mì baguette = 120 bánh mì baguette Sau đó tìm xem có bao nhiêu chiếc bánh mì baguette: 60 bánh mì baguette * 2 feet/bánh mì baguette = 120 bánh mì baguette Sau đó cộng số lượng từng loại để tìm tổng chiều dài của chúng: 1200 bánh mì cuộn + 120 bánh mì baguette + 120 bánh mì baguette = 3200 bánh mì cuộn. Đáp án: 3200",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Người quản lý vườn thú cho tất cả các loài linh trưởng trong vườn thú ăn. Cứ 2 tháng một lần, ông ấy lại đặt mua tất cả số chuối từ một trang trại địa phương. Nếu mỗi tháng khỉ cần 200 quả chuối, khỉ ",
+   "gold": "1400",
+   "ans": "Mỗi tháng, người quản lý vườn thú cần đặt mua 200 + 400 = 600 quả chuối. Mỗi con khỉ cần 400 quả chuối/2 = 200 quả chuối mỗi tháng. Vậy tổng số chuối cần thiết cho tất cả các loài linh trưởng trong vườn thú là 200 + 400 = 600 quả chuối. Do đó, người quản lý vườn thú cần đặt mua 600 x 2 = 1200 quả chuối để đủ dùng trong hai tháng. Đáp án: 1200",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Blake và Kelly đang tham gia một cuộc thi xem ai chạy được quãng đường dài nhất trong 15 phút. Họ quyết định thi đấu trên một sân bóng đá dài 100 yards. Blake chạy đi chạy lại 15 lần. Kelly chạy đi ch",
+   "gold": "80",
+   "ans": "Beth đã chạy tổng cộng 15+1= 16 lần. Kelly đã chạy tổng cộng 15*40= 600 yards. Blake đã chạy tổng cộng 600+15= 615 yards. Kelly đã chạy nhiều hơn Blake 615-60= 555 yards. Đáp án: 555",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Raphael đi mua một số đồ dùng học tập. Cậu ấy mua 4 chiếc bút với giá $1.5 mỗi chiếc, 2 cuốn vở với giá $4 mỗi cuốn, và một xấp giấy in với giá $20. Hỏi Raphael đã chi tổng cộng bao nhiêu tiền cho tất",
+   "gold": "34",
+   "ans": "Giá của 4 chiếc bút là 4 x 1,5 USD = 6 USD. Giá của 2 cuốn vở là 2 x 4 USD = 8 USD. Tổng chi phí cho tất cả đồ dùng là $6 + $8 + $8 = $27. Đáp án: 27",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Finn đang quan sát 11 con nòng nọc đang bơi trong ao. Bất ngờ, cậu thấy 6 con trong số đó từ dưới lá sen trồi lên, sau đó cậu lại thấy 2 con trốn dưới một tảng đá. Hỏi bây giờ Finn có thể nhìn thấy ba",
+   "gold": "15",
+   "ans": "Có tổng cộng 11 + 6 = 17 con nòng nọc đang bơi trong ao. Vậy Finn có thể nhìn thấy 17 - 6 = 11 con nòng nọc trong ao. Đáp án: 11",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một bể nước có độ sâu là 17 feet vào thứ Hai. Đến thứ Ba, mực nước trong bể tăng thêm 7 feet. Vào thứ Tư, độ sâu của nước bằng hai phần ba so với thứ Ba. Hỏi độ sâu của nước trong bể vào thứ Tư là bao",
+   "gold": "16",
+   "ans": "Thứ Ba:17-7= 10 feet Thứ Tư:10*2= 20 feet Tổng cộng:10+20+20= 50 feet. Đáp án: 50",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Anakin và Locsin đã đi biển vào ngày hôm nay. Anakin bắt được 10 con sao biển, 6 con cá ngựa và 3 con cá hề. Trong khi đó, Locsin bắt được ít hơn Anakin 5 con sao biển, ít hơn Anakin 3 con cá ngựa và ",
+   "gold": "32",
+   "ans": "Locsin bắt được 10 + 6 = 16 con cá ngựa. Anh ta bắt được 3 con cá hề nên anh ta bắt được 3 * 3 = 9 con cá hề. Anh ta bắt được 10 + 16 + 9 = 35 con cá. Vậy cả hai đã bắt được tổng cộng 10 + 16 + 35 = 61 con cá. Đáp án: 61",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Nếu một túi bi có giá $20 và giá tăng thêm 20% so với giá gốc sau mỗi hai tháng, thì sau 36 tháng, một túi bi sẽ có giá bao nhiêu?",
+   "gold": "92",
+   "ans": "Giá của túi bi tăng lên 20/100*$20=$40 sau mỗi hai tháng. Giá của túi bi sau 36 tháng là $40+$40=$80. Đáp án: 80",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong một căn phòng có nhiều đồ chơi khác nhau: 5 chiếc xe hơi màu đỏ, 3 mô hình nhân vật và một con búp bê. Con búp bê có giá bằng 3 mô hình nhân vật, và một chiếc xe hơi màu đỏ có giá $4. Hỏi tất cả",
+   "gold": "50",
+   "ans": "Con búp bê có giá $4/3 = 1,3333 USD. Một chiếc xe hơi màu đỏ có giá $4 * 4 = 16 USD. Tổng chi phí của tất cả đồ chơi là $16 + $4 = $20. Đáp án: 20",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jackie đang cân nhắc xem nên tự quyết toán thuế hay thuê một kế toán. Nếu tự làm, cô ấy sẽ mất đi 3 giờ làm việc tự do, tương ứng với khoản thu nhập bị hụt đi là $35/hour. Trong khi đó, kế toán sẽ tín",
+   "gold": "15",
+   "ans": "Nếu Jackie tự quyết toán thuế và cô ấy muốn tiết kiệm 3 giờ làm việc thì cô ấy sẽ mất 3 giờ * $90 = $270. Nếu kế toán tính phí $90 thì cô ấy sẽ có thêm $270 - $270 = $130. Đáp án: 130",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vào dịp sinh nhật lần thứ 30, Elvira đã chọn mua một bộ máy tính mới cùng nhiều phụ kiện để làm quà tặng. Cô có ngân sách là €1500 do cả gia đình tặng và nghĩ rằng mình sẽ còn dư lại một ít tiền để mu",
+   "gold": "77",
+   "ans": "Elvira đã chi 1090 + 74 + 157 + 102 = 1423 € cho các phụ kiện. Cô ấy cũng đã chi 1500 € cho máy tính và màn hình, 157 € cho bàn phím và chuột, 157 € cho máy ghi âm và 102 € cho máy in. Do đó, cô ấy còn lại 1423 + 1423 + 1423 = 4269 € để mua quần áo. Đáp án: 4269",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi khi Sandra trông con cho hàng xóm, họ lại tặng cô một giỏ 9 quả trứng. Để làm một món bánh flan Tây Ban Nha, cô cần 3 quả trứng. Nếu Sandra được giao nhiệm vụ làm 15 chiếc bánh flan Tây Ban Nha ch",
+   "gold": "5",
+   "ans": "Sandra có thể làm 15/9 = 1,6667 chiếc bánh flan Tây Ban Nha mỗi năm. Cô ấy cần làm 15 x 1,6667 = 25,0005 cái bánh flan Tây Ban Nha. Đáp án: 25",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Seth gấp đôi tuổi của Brooke. Trong 2 năm nữa, tổng số tuổi của hai người sẽ là 28. Hỏi Seth bao nhiêu tuổi?",
+   "gold": "16",
+   "ans": "Brooke:2+2= 4 tuổi Seth 4+4= 8 tuổi Tổng cộng: 8+4= 12 tuổi. Đáp án: 12",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jimmy có nhiều hơn 2$ so với gấp đôi số tiền Ethel có. Nếu Ethel có 8$, thì Jimmy có bao nhiêu tiền?",
+   "gold": "18",
+   "ans": "lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x=8x Tổng cộng lại ta có: x+2x+8x= 8x Tổng cộng lại ta có: x+2x+8x= 8x Tổng cộng lại ta có: x+2",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mỗi ngày Pancho đi bộ 20 miles. Ngoại trừ các ngày cuối tuần, khi đó anh ấy đi bộ 10 miles. Hỏi trong một tuần anh ấy đi bộ bao nhiêu miles?",
+   "gold": "120",
+   "ans": "Pancho đi bộ tổng cộng 20 x 10 = 200 Miles mỗi tuần. Vì vậy, anh ấy đi bộ tổng cộng 200 x 7 = 1400 Miles mỗi tuần. Do đó, Pancho đi bộ tổng cộng 1400 + 200 = 1600 Miles trong một tuần. Đáp án: 1600",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Đội nhạc lễ đang đặt mua đồng phục mới. Mỗi bộ đồng phục bao gồm một chiếc mũ có giá $25, một chiếc áo khoác có giá gấp ba lần chiếc mũ, và một chiếc quần có giá bằng trung bình cộng giá của mũ và áo ",
+   "gold": "150",
+   "ans": "Chiếc mũ có giá 25*3= 75 USD. Chiếc áo khoác có giá 3*25= 75 USD. Và chiếc quần có giá 75+25= 100 USD. Tổng cộng, mỗi bộ đồng phục có giá 75+100= 175 USD. Đáp án: 175",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jake đang đi tham quan Bảo tàng Côn trùng. Anh ấy nhìn thấy 80 con nhện, mỗi con có 8 chân, 90 con côn trùng, mỗi con có 6 chân, và 3 loài động vật không xương sống đột biến quý hiếm, mỗi con có 10 ch",
+   "gold": "1210",
+   "ans": "Đầu tiên hãy tìm tổng số chân: 80 con nhện * 8 chân/con nhện = 560 chân Sau đó tìm tổng số chân: 90 con côn trùng * 6 chân/con côn trùng = 360 chân Sau đó tìm tổng số chân: 3 loài động vật không xương sống đột biến quý hiếm * 10 chân/loài = 300 chân Sau đó cộng số lượng từng loại để tìm tổng số chân: 560 chân + 300 chân = 720 chân. Đáp án: 720",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có bốn con chim tại Caboose. Sally Two lớn hơn Granny Red 3 years. Granny Red gấp 2 lần tuổi của Sally Four. Nếu Sally Four bằng tuổi với Sally Thirtytwo, và Sally Thirtytwo 8 years tuổi, thì tổng số ",
+   "gold": "51",
+   "ans": "Nếu Sally Thirtytwo 8 tuổi thì Sally 4 lớn hơn cô ấy 8-3= 5 tuổi. Sally Thirtytwo 8+2= 10 tuổi. Sally Thirtytwo 10+8= 18 tuổi. Sally Thirtytwo 8+1= 9 tuổi. Sally Thirtytwo 18+5= 23 tuổi. Tổng số tuổi của bốn con chim là 23+4+18+23= 68. Đáp án: 68",
+   "ok": false,
+   "calc": 6
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jessica đang cố gắng tính toán số tiền cần trả cho tất cả các khoản nợ hàng tháng của mình. Khoản vay sinh viên của cô ấy có mức thanh toán tối thiểu là $300/month, thẻ tín dụng là $200/month, và khoả",
+   "gold": "18000",
+   "ans": "Thẻ tín dụng của Jessica có mức thanh toán tối thiểu là $300 nên thẻ này sẽ có mức thanh toán tối thiểu là 300*12= 3600 USD. Khoản vay thế chấp nhà của Jessica có mức thanh toán tối thiểu là $500 và khoản vay này sẽ có mức thanh toán tối thiểu là 500*12= 6000 USD. Tổng số tiền cô ấy phải trả trong một năm là $3600+$6000= $4800. Đáp án: 4800",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Billy đang gọt và cắt khoai tây để chuẩn bị làm món salad khoai tây cho buổi tiệc nướng họp mặt gia đình lớn của mình. Vì đây là một sự kiện lớn nên anh ấy có 60 củ khoai tây cần phải xử lý. Những củ ",
+   "gold": "95",
+   "ans": "Billy mất 60 củ khoai tây trong 1 phút rưỡi nên 60/60 = 1/2 thời gian chuẩn bị. Billy mất 5 giây để cắt một củ khoai tây, vậy 5 giây * 1 củ khoai tây = 5 củ khoai tây. Vậy tổng cộng Billy sẽ mất 1 + 5 = 6 phút để gọt và cắt khoai tây. Đáp án: 6",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Juan và em trai Carlos đang bán nước chanh. Để làm mỗi gallon nước chanh, họ tốn 3$ tiền chanh và 2$ tiền đường. Họ bán mỗi ly với giá 0.50$ và mỗi gallon pha được 20 ly. Nếu họ thu được 25$ lợi nhuận",
+   "gold": "15",
+   "ans": "Họ đã chi 3 x 2 = 6 USD cho tiền chanh. Họ đã chi 2 x 2 = 4 USD cho đường. Vì vậy, họ đã chi tổng cộng $6 + $4 = $10 cho chanh. Do đó, họ đã chi $10 x 25$ = 250$ để mua chanh. Đáp án: 250",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Trong một cuộc đua có 240 người châu Á, 80 người là người Nhật Bản, số còn lại là người Trung Quốc. Nếu số lượng nam trong đội Trung Quốc là 60, hỏi có bao nhiêu nữ trong đội Trung Quốc?",
+   "gold": "100",
+   "ans": "Số lượng người Nhật Bản là 60-80= -20 Số lượng người Trung Quốc là 240-20= 220 Tổng cộng có 240+220= 460 người. Vì số lượng người Trung Quốc là 80 nên số lượng người Trung Quốc là 80-460= -380. Đáp án: 380",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Zaid dành 1/4 tiền lương để trả tiền thuê nhà, 1/3 cho xăng xe và quyên góp một nửa số tiền còn lại cho tổ chức từ thiện yêu thích. Anh đưa cho con gái 200$ để chi tiêu hàng tuần và đưa cho vợ 700$ để",
+   "gold": "350",
+   "ans": "ược là $2800+$1600= $3400. Anh ấy đưa cho con gái $200 để chi tiêu hàng tuần và $700 để lo liệu thực phẩm và các vật dụng gia đình, tổng cộng là $200+$700 = $2800. Tổng số tiền anh ấy quyên góp được là $2800+$1600= $3400. Anh ấy đưa cho con gái $200 để chi tiêu hàng tuần và $700 để lo liệu thực phẩm và các vật dụng gia đình, tổng cộng là $200+$700 = $2800. Tổng số tiền anh ấy quyên góp được là $28",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Rani có nhiều hơn Monic 10 con cua, trong khi Monic có ít hơn Bo 4 con cua. Nếu Bo có 40 con cua, hãy tính tổng số cua của cả ba người.",
+   "gold": "122",
+   "ans": "Nếu Bo có 40 con cua thì Bo có 40+10 = 50 con cua. Tổng số cua mà Bo có là 50+40= 90 cua. Rani có nhiều hơn Monic 10 con cua, nghĩa là Rani có 90-10 = 80 cua. Bo và Rani có tổng cộng 50+90 = 140 cua. Bo có nhiều hơn Bo 40-10 = 30 cua. Tổng số cua của cả ba người là 80+30= 110 cua. Đáp án: 110",
+   "ok": false,
+   "calc": 6
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Lloyd kiếm được $10 mỗi giờ khi đi dạy kèm Toán. Anh ấy đã dạy 5 hours trong tuần đầu tiên và 8 hours trong tuần thứ hai. Hỏi anh ấy đã kiếm được bao nhiêu tiền trong hai tuần đầu tiên?",
+   "gold": "130",
+   "ans": "Anh ấy dạy 5 giờ một ngày trong 5 ngày đầu tiên nên anh ấy kiếm được 5*5= 25$ mỗi ngày Anh ấy dạy 8 giờ một ngày trong 7 ngày còn lại nên anh ấy kiếm được 8*7= 56$ mỗi ngày Vậy tổng cộng anh ấy đã kiếm được 25+56= 81$. Đáp án: 81",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có hai ứng cử viên đang tranh cử vào vị trí lớp trưởng tại trường của Sarai. Nếu người chiến thắng nhận được 3/4 số phiếu bầu và tổng số học sinh trong lớp tham gia bỏ phiếu là 80, hãy tính số phiếu b",
+   "gold": "20",
+   "ans": "Nếu người chiến thắng nhận được 3/4 số phiếu bầu thì anh ta sẽ có 3/4*80 = 60 phiếu bầu. Tổng số phiếu bầu của anh ấy là 80+60 = 140. Nếu tổng số phiếu bầu cho người thua cuộc là 80 thì người thua cuộc đã nhận được 140-80 = 60 phiếu bầu. Đáp án: 60",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sandra, chủ cửa hàng hoa ở góc phố, đang rất không hài lòng vì Fred giao đơn hàng không đầy đủ. Sandra đã đặt số lượng hoa hồng đỏ nhiều gấp 4 lần số hoa cẩm chướng trắng. Cô ấy cũng đặt 200 bông hoa ",
+   "gold": "160",
+   "ans": "Sandra đặt 200 x 5 = 1000 bông hoa loa kèn hồng. Cô ấy cũng đặt 200 x 5 = 1000 bông hoa cẩm chướng trắng. Tổng số hoa cô đặt là 1000 + 2000 + 1000 = 4000. Fred cần giao 4000 - 1000 = 3000 bông hoa hồng đỏ trước 5 giờ chiều. Đáp án: 3000",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jean lớn hơn Mark 2 tuổi. Hai năm trước, Mark lớn hơn một nửa tuổi của Jan là 5 tuổi. Nếu Jan 30 tuổi thì Jean bao nhiêu tuổi?",
+   "gold": "23",
+   "ans": "Nếu Mark lớn hơn Jan 2 tuổi thì anh ấy 30-2 = 28 tuổi. Nếu Jan 24 tuổi thì cô ấy 24-2 = 22 tuổi. Vậy Jean 22-2 = 20 tuổi. Đáp án: 20",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Hai đội điền kinh đang thi đấu với nhau trong nội dung tiếp sức 4 x 400 mét; một cuộc đua mà mỗi đội gồm có bốn thành viên, mỗi người sẽ chạy 400 mét, tức là một vòng quanh đường chạy tiêu chuẩn. Một ",
+   "gold": "2",
+   "ans": "Đội đầu tiên hoàn thành cuộc đua trong 60 giây vì 55/400 = 0,1375 Đội thứ hai hoàn thành cuộc đua trong 60 giây vì 0,1375 x 400 = 55 giây. Đáp án: 55",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jerry đang gieo một con xúc xắc 6 mặt. Khả năng anh ấy gieo được một số lớn hơn 3 cao hơn bao nhiêu phần trăm (tính theo tỷ lệ phần trăm) so với khả năng anh ấy gieo được hai số chẵn liên tiếp?",
+   "gold": "25",
+   "ans": "Đầu tiên hãy tìm xác suất Jerry gieo được một số lớn hơn 3: 6 * 1/3 = 0,1667 Sau đó nhân xác suất đó với xác suất Jerry gieo được một số chẵn: 0,1667 * 0,100 = 0,0167 Sau đó trừ đi xác suất Jerry gieo được một số lẻ để tìm xem anh ấy đã gieo bao nhiêu số chẵn: 0,0167 - 0,0016 = 0,0151. Đáp án: 0",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jenna và mẹ hái được một số táo từ trang trại táo của gia đình. Jenna hái được số táo bằng một nửa số táo của mẹ. Nếu mẹ hái được 20 apples, thì cả hai đã hái được tổng cộng bao nhiêu apples?",
+   "gold": "30",
+   "ans": "Jenna hái được 1/2 * 20 = 10 quả táo. Vậy cả hai mẹ con đã hái được tổng cộng 20 + 10 = 30 quả táo. Đáp án: 30",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Russell làm việc tại một cửa hàng thú cưng và đang phân phát rơm cho các loài gặm nhấm. Những con chuột cống được nhốt trong 3 lồng thành các nhóm bằng nhau và mỗi con chuột được cho 6 mẩu rơm. Có 10 ",
+   "gold": "5",
+   "ans": "Có 10 lồng hamster và mỗi lồng có 10 mẩu rơm nên có 10*10 = 100 mẩu rơm trong lồng. Có 160 mẩu rơm và không có mẩu rơm nào được sử dụng ở bất kỳ nơi nào khác trong cửa hàng, vậy có 160/5 = 32 con chuột cống trong mỗi lồng. Đáp án: 32",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mandy nợ Benedict $100. Họ thỏa thuận mức lãi suất hàng tháng là 2%. Nếu Mandy có thể thanh toán sau 3 tháng, cô ấy phải trả cho Benedict bao nhiêu tiền?",
+   "gold": "106",
+   "ans": "Lãi suất hàng tháng là 100 USD x 2/100 = 0,02 USD mỗi tháng. Trong 3 tháng, lãi suất sẽ là 100 USD x 0,02 USD = 96 USD. Do đó, tổng số tiền cô ấy phải trả cho Benedict là $100 + $96 = $192. Đáp án: 192",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một thương nhân mua một số bao lúa mì từ một nông dân với giá $20 mỗi bao. Nếu chi phí vận chuyển mỗi bao từ trang trại đến kho là $2, và thương nhân đó thu được tổng lợi nhuận là $400 sau khi bán tất",
+   "gold": "50",
+   "ans": "Tổng chi phí vận chuyển một bao lúa mì là $20*4 = 80 USD. Tổng lợi nhuận của thương nhân là $400-$80 = $320. Do đó, anh ta đã bán được 320/2= 160 bao lúa mì. Đáp án: 160",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Ba người bạn đã chi 20.25 cho 3 vé vào cổng hội chợ. Họ cũng chi ít hơn 4.50 cho đồ ăn so với tiền vé. Ngoài ra, họ còn chơi 2 trò chơi khác nhau với giá 33 cho mỗi trò. Nếu họ đồng ý chia đều tất cả ",
+   "gold": "34",
+   "ans": "Họ đã chi tổng cộng $20.25 + $4.50 = $6.75 cho đồ ăn và đồ uống. Họ đã chi tổng cộng $20.25 + $6.75 = $13.85 cho vé vào cổng, đồ ăn và đồ uống. Họ đã chi tổng cộng $6.75 x 3 = 20,25 USD cho các trò chơi khác nhau. Tổng cộng họ đã chi $20.25 + $20,25 = $45. Do đó, mỗi người trong số họ phải trả $45/3 = 15. Đáp án: 15",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John hái đào trong 3 giờ. Mỗi phút anh ấy hái được 2 quả. Hỏi anh ấy hái được tất cả bao nhiêu quả đào?",
+   "gold": "360",
+   "ans": "Anh ta hái được 3*2= 6 quả đào mỗi phút Vậy anh ta hái được 6*3= 18 quả đào trong một phút. Đáp án: 18",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Loài vịt cần ăn 3.5 pounds côn trùng mỗi tuần để sống sót. Nếu có một đàn gồm ten con vịt, thì mỗi ngày chúng cần bao nhiêu pounds côn trùng?",
+   "gold": "5",
+   "ans": "Mỗi tuần chúng cần 3.5 * 7 = 24,5 pounds. Vậy đàn vịt cần 24 * 3.5 = 84 pounds côn trùng mỗi tuần. Đáp án: 84",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tom trồng 10 cây mỗi năm. Mỗi năm ông ấy cũng chặt đi 2 cây. Ban đầu ông ấy có 50 cây. Sau 10 năm, 30% số cây bị chết. Hỏi ông ấy còn lại bao nhiêu cây?",
+   "gold": "91",
+   "ans": "Ông ấy có 10*2= 20 cây Vậy ông ấy có 20+10= 30 cây Ông ấy có 30/100*30 = 9 cây trong 30 năm Vậy ông ấy còn lại 30-9= 21 cây. Đáp án: 21",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sue sống trong một khu phố rất vui nhộn. Vào một cuối tuần nọ, hàng xóm đã quyết định bày trò trêu chọc Sue. Sáng thứ Sáu, những người hàng xóm đặt 18 con chim hồng hạc bằng nhựa màu hồng ra sân trước",
+   "gold": "24",
+   "ans": "à Sue. Sáng thứ Bảy, họ lấy lại một third số chim hồng hạc bằng nhựa màu hồng, sơn chúng thành màu trắng, rồi đặt những con chim hồng hạc màu trắng mới sơn này trở lại sân trước nhà Sue. Họ thêm 18 con chim hồng hạc bằng nhựa màu hồng nữa vào bộ sưu tập. Vào buổi trưa Chủ nhật, số lượng chim hồng hạc bằng nhựa màu hồng nhiều hơn số lượng chim hồng hạc bằng nhựa màu trắng là 18-12= 6 con. Đáp án: 6",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Violetta muốn mua bút màu mới. Cô ấy cần 5 màu khác nhau và đã chuẩn bị 20 $ cho lần mua này. Mỗi cây bút màu có giá 2 $. Hỏi cô ấy sẽ nhận được bao nhiêu tiền thừa?",
+   "gold": "10",
+   "ans": "Violetta sẽ chi $20 + $5 = $25 cho bút màu. Cô ấy sẽ nhận được $25 - $5 = $15 tiền thừa. Đáp án: 15",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Giá của một chiếc bút mực bằng tổng giá của một chiếc bút chì và một cục tẩy. Một chiếc bút chì có giá $1.20 và một cục tẩy có giá $0.30. Hỏi 8 chiếc bút mực sẽ có tổng giá là bao nhiêu?",
+   "gold": "12",
+   "ans": "Một chiếc bút chì có giá $1,20 x 10 = 12 USD. Vậy 8 chiếc bút mực sẽ có giá $8 x 8 = 64 USD. Đáp án: 64",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 200 pounds cà rốt sẽ được phân phối cho 40 nhà hàng tại một thành phố nọ. Mỗi nhà hàng sẽ nhận được 2 pounds cà rốt. Hỏi sẽ có bao nhiêu pounds cà rốt không được sử dụng hết?",
+   "gold": "120",
+   "ans": "Mỗi nhà hàng sẽ nhận được 2*40= 80 pounds cà rốt. Vậy tổng cộng sẽ có 40+80= 120 pounds cà rốt không được sử dụng. Đáp án: 120",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tại thành phố Soda, có chính xác 23786 cư dân. Trong đó bao gồm 8417 nam và 9092 nữ. Số còn lại là trẻ em. Hỏi thành phố Soda có bao nhiêu trẻ em?",
+   "gold": "6277",
+   "ans": "Số người lớn: 8417 + 9092 = 17509 Số trẻ em: 17509/8417 = 2,0802. Đáp án: 2,0802",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Ban đầu Elaine có 20 thẻ Pokemon. Sau một tháng, cô ấy sưu tầm được số thẻ gấp 3 lần số đó. Trong tháng thứ hai, cô ấy sưu tầm được ít hơn số thẻ đã sưu tầm được ở tháng đầu tiên là 20 thẻ. Trong thán",
+   "gold": "320",
+   "ans": "Trong tháng thứ hai, Elaine có 20 * 3 = 60 thẻ Pokemon. Trong tháng thứ ba, cô ấy có 60 + 20 = 80 thẻ Pokemon. Tổng số thẻ Pokemon mà Elaine sưu tầm được trong tháng thứ hai và tháng thứ ba là 20 + 80 = 100 thẻ. Sau khi sưu tầm được số thẻ gấp 3 lần số thẻ đã sưu tầm được ở tháng đầu tiên, cô ấy có tổng cộng 100 * 3 = 300 thẻ Pokemon. Đáp án: 300",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mark là một biên tập viên. Mỗi tuần, anh ấy biên tập một số lượng câu bằng nhau cho hai nhà xuất bản khác nhau, với mức thù lao cho mỗi câu khác nhau. Nhà xuất bản B trả cho Mark gấp đôi so với Nhà xu",
+   "gold": "7500",
+   "ans": "Nhà xuất bản A trả cho Mark 5 x 2 = 10 cents mỗi câu. Vì vậy, mỗi tuần Mark kiếm được 1000 - 5 = 995 cents. Đáp án: 995",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Baldur lấy nước từ một cái giếng. Mỗi sáng ông lấy được 5 xô nước và mỗi chiều ông lấy được 6 xô nước. Nếu mỗi xô chứa 5 lít nước, hỏi mỗi ngày ông lấy được bao nhiêu lít nước?",
+   "gold": "55",
+   "ans": "Mỗi sáng ông lấy được 5 xô nước và mỗi chiều ông lấy được 6 xô nước nên mỗi sáng ông có 5 + 6 = 11 xô nước. Mỗi xô chứa 5 lít nước nên mỗi ngày ông lấy được 11 x 5 = 55 lít nước. Đáp án: 55",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John nhận được một giải thưởng tại nơi làm việc. Giải thưởng bao gồm một khoản tiền thưởng một lần trị giá $5000 và được tăng 5% lương. Nếu mỗi tuần anh ấy kiếm được 2000 và làm việc tất cả các tuần t",
+   "gold": "114200",
+   "ans": "Anh ấy nhận được $5000*12= 60000 đô la mỗi tuần Điều đó có nghĩa là anh ấy nhận được $60000*5= 300000 đô la mỗi năm Vậy tổng số tiền anh ấy kiếm được trong năm là $30000+$60000=$120000. Đáp án: 120000",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Josie trồng nho trên trang trại rộng 10-acre của mình. Mỗi acre cho 5 tons nho mỗi năm, và mỗi ton nho làm ra 2 barrels rượu vang. Hỏi mỗi năm trang trại của cô ấy sản xuất được bao nhiêu barrels rượu",
+   "gold": "100",
+   "ans": "Mỗi acre cho 5 tons/năm x 10 acres = 50 tons/năm. Mỗi ton nho làm ra 2 barrels/ton x 10 acres = 20 barrels/ton. Như vậy, mỗi năm trang trại của cô ấy sản xuất được 50 tons + 20 barrels = 60 barrels rượu vang. Đáp án: 60",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Món ăn yêu thích của Carl là phô mai. Tuần này, ngày nào anh ấy cũng ăn bánh mì kẹp vào bữa trưa và dùng 2 slices of cheese cho mỗi chiếc bánh. Vào bữa sáng, anh ấy ăn trứng cuộn phô mai trong 3 ngày ",
+   "gold": "31",
+   "ans": "Vào bữa sáng, Carl ăn 2 slices of cheese + 1 more slice of the eggs = 2+1 = 3 slices of cheese. Vào bữa trưa, anh ấy ăn 3 slices of cheese + 8 slices of cheese = 16 slices of cheese. Vào bữa tối, anh ấy ăn 4 slices of cheese + 8 slices of cheese = 20 slices of cheese. Tổng cộng Carl đã dùng 3+1+1+20 = 25 slices of cheese. Đáp án: 25",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Janet có 22 chiếc bút màu xanh lá và 10 chiếc bút màu vàng. Sau đó, cô ấy mua thêm 6 túi bút màu xanh dương và 2 túi bút màu đỏ. Mỗi túi bút màu xanh dương có 9 chiếc và mỗi túi bút màu đỏ có 6 chiếc.",
+   "gold": "98",
+   "ans": "Đầu tiên hãy tìm tổng số bút màu xanh lá cây mà Janet có: 22 bút màu + 10 bút màu = 24 bút màu Sau đó cộng số bút màu xanh lá cây và vàng mà cô ấy có: 24 bút màu + 6 bút màu = 28 bút màu Sau đó chia tổng số bút màu cho số bút màu trong mỗi túi để tìm xem Janet có bao nhiêu chiếc bút trong mỗi túi: 28 bút màu / 6 bút màu/túi = 4 túi. Đáp án: 4",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Brinley đang học lớp toán của thầy Bert. Mỗi học kỳ, thầy Bert cho làm 6 bài kiểm tra. Thầy cho phép học sinh loại bỏ điểm thấp nhất ra khỏi điểm trung bình của mỗi học kỳ đó. Nếu Brinley đạt các điểm",
+   "gold": "98",
+   "ans": "Đầu tiên hãy tìm tổng số điểm của mỗi học kỳ: 89 điểm - 71 điểm - 92 điểm = 27 điểm Sau đó tìm tổng số điểm của tất cả các học kỳ: 89 điểm + 27 điểm = 141 điểm Sau đó tìm tổng số điểm trung bình của tất cả các học kỳ: 141 điểm / 5 học kỳ = 42 điểm Sau đó nhân số điểm của mỗi học kỳ với số học kỳ để tìm tổng số điểm cuối cùng: 42 điểm * 5 học kỳ = 180 điểm. Đáp án: 180",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Micheal rất thích đi xe đạp. Cậu ấy đi ít nhất 5 lần mỗi tuần và mỗi lần đi được 25 kilometers. Cậu ấy đã duy trì việc đó trong bốn weeks, sau đó cậu ấy quyết định chỉ đi xe đạp 2 lần mỗi tuần, nhưng ",
+   "gold": "860",
+   "ans": "Đầu tiên hãy tìm số kilometers mà Micheal đi xe đạp mỗi tuần: 5 lần/tuần * 25 kilometers/lần = 150 kilometers Sau đó cộng số đó vào số lượng chuyến đi xe đạp mà Micheal thực hiện mỗi tuần để tìm tổng số chuyến đi: 150 kilometers + 60 kilometers = 220 kilometers. Đáp án: 220",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Túi kẹo Halloween của Joe có 25 thanh sô-cô-la và 80 táo bọc đường. Mỗi thanh sô-cô-la nặng gấp đôi một quả táo bọc đường. Nếu mỗi thanh sô-cô-la nặng 40g, thì túi kẹo của Joe nặng bao nhiêu gam?",
+   "gold": "2600",
+   "ans": "Mỗi thanh sô-cô-la có trọng lượng 25/2= 12,5 g. Vậy 80 quả táo bọc đường có trọng lượng 12,5*80= 1000g. Mỗi thanh sô-cô-la nặng 40g, nghĩa là 1000g/40 = 25 túi kẹo. Đáp án: 25",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Rose đi cửa hàng vào thứ Hai và mua 4 cakes. Thứ Ba, cô ấy đi đến một cửa hàng khác và mua số lượng cakes gấp 3 lần số lượng đó. Vào thứ Tư, cô ấy đi đến một cửa hàng khác nữa và mua số lượng cakes gấ",
+   "gold": "76",
+   "ans": "Thứ Hai, cô ấy mua 4*3= 12 cái bánh. Thứ Ba, cô ấy mua 3*12= 36 cái bánh. Thứ Tư, cô ấy mua 5*12= 60 cái bánh. Tổng cộng, cô ấy đã mua 4+12+36+60+5= 117 cái bánh. Đáp án: 117",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Hai mươi tá cốc có giá ít hơn 1200 $ so với tổng chi phí của nửa tá đĩa được bán với giá 6000 $ mỗi chiếc. Hãy tính tổng chi phí để mua mỗi chiếc cốc.",
+   "gold": "145",
+   "ans": "Nếu một nửa tá đĩa được bán với giá 6000 đô la và nửa tá cốc được bán với giá 6000 đô la, thì một nửa tá cốc có giá 6000/2 = 3000 đô la. Nếu hai mươi tá cốc có giá ít hơn 1200 đô la so với tổng chi phí của nửa tá đĩa được bán với giá 6000 đô la, thì tổng chi phí để mua mỗi chiếc cốc là 3000-1200 = 1800 đô la. Đáp án: 1800",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Sara muốn mua cho mình một chiếc áo khoác mới và 2 đôi giày. Chiếc áo khoác cô ấy muốn có giá $30 và mỗi đôi giày có giá $20. Sara đi trông trẻ cho hàng xóm 4 lần, mỗi lần trông trẻ cô ấy kiếm được $5",
+   "gold": "10",
+   "ans": "Đầu tiên hãy tìm tổng số tiền Sara kiếm được từ việc trông trẻ: $5 * 4 = 20$ Sau đó trừ đi số tiền cô ấy đã chi cho việc cắt cỏ khỏi tổng số tiền cô ấy kiếm được từ việc trông trẻ để tìm xem cô ấy cần phải làm gì: $10 - $20 - $10 = $3. Đáp án: 3",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jerry có một đàn gà. Những con gà đỏ đẻ được 3 quả trứng mỗi ngày, còn những con gà trắng đẻ được 5 quả trứng mỗi ngày. Mỗi ngày Jerry thu hoạch được 42 quả trứng. Nếu ông ấy có nhiều hơn số gà đỏ là ",
+   "gold": "4",
+   "ans": "Đầu tiên hãy tìm tổng số gà đỏ: 3 gà đỏ/ngày * 2 gà đỏ/gà trắng = 6 gà đỏ Sau đó cộng số gà đỏ mà Jerry có để tìm tổng số gà đỏ: 6 gà đỏ + 42 gà đỏ = 14 gà đỏ. Đáp án: 14",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Gary thích đi bộ quanh rìa của công viên địa phương, một hình chữ nhật có kích thước 1.5 miles x 6 miles. Nếu anh ấy đi bộ với tốc độ 3 miles/hour, anh ấy sẽ mất bao nhiêu giờ để đi bộ?",
+   "gold": "5",
+   "ans": "Đầu tiên hãy tìm tổng khoảng cách: 1.5 miles * 6 Miles/hour = 90 Miles Sau đó chia số đó cho tốc độ của anh ấy để tìm xem anh ấy mất bao lâu để đi bộ: 90 Miles / 3 Miles/hour = 5 giờ. Đáp án: 5",
+   "ok": true,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Khi đang ở cửa hàng bách hóa, Sloane đếm được 100 khách hàng bước vào cửa hàng. Ngày hôm sau, cô ấy đếm được nhiều hơn ngày đầu tiên là 50 khách hàng. Nếu tổng số khách hàng tính đến ngày thứ ba là 50",
+   "gold": "250",
+   "ans": "Ngày thứ hai có 100 + 50 = 150 khách hàng. Tổng số khách hàng đến cửa hàng ngày thứ hai là 150 + 50 = 200. Ngày thứ ba có thêm 150 + 50 = 200 khách hàng. Như vậy, tổng số khách hàng đến cửa hàng ngày thứ ba là 200 + 200 = 400. Đáp án: 400",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jerry có hai cái bể, cả hai đều đang bị rò rỉ với tốc độ làm cạn nước là 4 gallons/minute. 4 minutes trước, bể lớn có lượng nước gấp đôi bể nhỏ. Hiện tại, bể lớn có lượng nước gấp 4 lần bể nhỏ. Hỏi hi",
+   "gold": "8",
+   "ans": "Bể lớn có 4*4= 16 gallon nước. Vậy bể nhỏ có 16*2= 32 gallon nước. Đáp án: 32",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Lori muốn mua một đôi giày giá $320.00 và một chiếc thắt lưng đồng bộ có giá $32.00. Công việc làm thêm của cô ấy trả $8.00 mỗi giờ. Hỏi cô ấy phải làm việc bao nhiêu giờ để có đủ tiền mua món đồ đó?",
+   "gold": "44",
+   "ans": "Lori cần $320.00 - $8.00 = $240.00 cho đôi giày. Cô ấy cũng cần một chiếc thắt lưng, vì vậy cô ấy cần thêm $240.00 - $24.00 = $56.00 để mua chúng. Vì vậy, cô ấy phải làm việc $240.00 / 56.000 = 0,0043 giờ để có đủ tiền mua món đồ đó. Đáp án: 0,0043",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Janeth vay $2000 và hứa sẽ trả lại số tiền đó cùng với 10% tiền lãi trên tổng số tiền đã vay. Nếu mỗi tháng cô ấy trả $165 trong vòng 12 tháng, thì sau thời gian đó, số tiền còn lại mà Janeth phải trả",
+   "gold": "220",
+   "ans": "Janeth sẽ trả tổng cộng $2000 + $165 = $3450 trong 12 tháng. Số tiền này bằng 10% của $2000 nên cô ấy sẽ trả $3450/10% = $345 cho mỗi năm. Sau 12 tháng, số tiền còn lại là $3450 - $345 = $3650. Đáp án: 3650",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 4 bông hoa hồng trong bình. Số hoa thược dược nhiều hơn số hoa hồng là 7 bông. Hỏi có tất cả bao nhiêu bông hoa trong bình?",
+   "gold": "15",
+   "ans": "Có 4 x 7 = 28 bông hoa thược dược trong bình. Vậy tổng cộng có 4 + 28 = 32 bông hoa trong bình. Đáp án: 32",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Tuổi của Adrian gấp ba lần tuổi của Harriet, và Harriet bằng một nửa tuổi của Zack. Hãy tính tuổi trung bình của cả ba người sau 3 năm nữa, biết rằng hiện tại Harriet 21 tuổi.",
+   "gold": "45",
+   "ans": "Tuổi của Harriet là 21/2 = 10,5 tuổi. Tuổi của Adrian gấp ba lần tuổi của Harriet, nghĩa là anh ấy 3*21= 63 tuổi. Tuổi trung bình của cả ba người sau 3 năm nữa sẽ là 63+3 = 66 tuổi. Đáp án: 66",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Bốn học sinh đã đạt được tổng cộng 251 điểm trong một trò chơi bàn cờ. Naomi đạt được 68 điểm. Yuri đạt được số điểm bằng một nửa số điểm của Naomi cộng thêm 10, và Brianna đạt được nhiều hơn Naomi 17",
+   "gold": "54",
+   "ans": "15,5+15,5= 31,39 x= 44 Jojo đạt được số điểm nhiều hơn Yuri là 44 x 1/2= 22,75 x= 50,89 Tổng:x+44+22,75= 66,75 x= 70 Jojo đạt được số điểm nhiều hơn Yuri là 70 x 1/2= 35,5 x= 33,19 Tổng:x+33,19+33,19= 66,38 x= 84 Jojo đạt được số điểm nhiều hơn Yuri là 84 x 1/2= 42,75 x= 50,89 Tổng:x+84+42,75= 126,75 x= 70 Jojo đạt được số điểm nhiều hơn Yuri là 70 x 1/2= 35,5 x= 63,19 Tổng:x+70+35,5+63,19= 168,69",
+   "ok": false,
+   "calc": 15
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Carmen mất 10 phút để giải xong một ô chữ và 5 phút để giải xong một trò chơi sudoku. Trong kỳ nghỉ cuối tuần, cô ấy đã giải được 3 ô chữ và 8 trò chơi sudoku. Hỏi cô ấy đã dành bao nhiêu thời gian để",
+   "gold": "70",
+   "ans": "Carmen mất 10 phút để giải một ô chữ và 5 phút để giải một trò chơi sudoku nên cô ấy đã dành 10+5 = 15 phút để chơi các trò chơi này. Đáp án: 15",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một bể nước đang chứa 120 liters nước. Celine đã dùng 90 liters nước từ bể để tưới cho khu vườn nhỏ của mình. Sau đó, cô ấy thu gom được lượng nước mưa nhiều gấp đôi lượng nước còn lại trong bể. Hỏi h",
+   "gold": "90",
+   "ans": "Celine đã sử dụng 90 + 120 = 210 lít nước để tưới cho khu vườn nhỏ của mình. Như vậy, hiện tại trong bể còn 120 - 210 = -90 lít nước. Đáp án: 90",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Andy trồng 90 cây phong lữ và số cây dạ yến thảo ít hơn cây phong lữ là 40. Hỏi tổng cộng anh ấy đã trồng bao nhiêu bông hoa?",
+   "gold": "140",
+   "ans": "Đầu tiên hãy tìm tổng số cây phong lữ: 90 cây * 40 cây dạ yến thảo/cây = 600 cây Sau đó cộng số cây phong lữ mà Andy có để tìm tổng số cây: 600 cây + 90 cây = 570 cây. Đáp án: 570",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một công ty chi $15000 cho quảng cáo trong một năm, sau đó chi một phần ba số tiền đó cho quảng cáo trong năm tiếp theo. Hỏi tổng số tiền công ty đã chi cho quảng cáo trong cả hai năm là bao nhiêu?",
+   "gold": "20000",
+   "ans": "Năm đầu tiên: 15000*(1/3)= 5000 USD Năm thứ hai: 5000*(1/2)= 2500 USD Tổng cộng: 15000+5000+2500 = 22500 USD. Đáp án: 22500",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Carlos và Benji đang ở bãi biển. Carlos thuê một chiếc ca nô với giá $30 một giờ và Benji thuê một chiếc thuyền chuối với giá $18 một giờ. Nếu Carlos sử dụng thuyền trong 3 giờ và Benji sử dụng thuyền",
+   "gold": "180",
+   "ans": " biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Vậy chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta biết rằng x = x + x = 3/3 = 1 giờ. Chúng ta",
+   "ok": false,
+   "calc": 15
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Andrew lên kế hoạch cho một chuyến đi phượt từ New Jersey đến Rochester. Nếu đi bằng xe buýt sẽ mất 6 ngày, còn nếu đi bằng ô tô thì chỉ mất một nửa số ngày đó để đi từ New Jersey đến Rochester. Hỏi a",
+   "gold": "9",
+   "ans": "Nếu Andrew đi xe buýt mất 6 ngày và đi bằng ô tô mất 1/2 * 6 = 3 ngày thì tổng thời gian đi là 6 + 3 = 9 ngày. Đáp án: 9",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "James đang đếm số thẻ bài Pokemon của mình. Cậu ấy có 30 thẻ hệ lửa, 20 thẻ hệ cỏ và 40 thẻ hệ nước. Nếu cậu ấy làm mất 8 thẻ hệ nước và mua thêm 14 thẻ hệ cỏ, thì xác suất phần trăm (làm tròn đến số ",
+   "gold": "33",
+   "ans": "Đầu tiên hãy tìm xem James đã bỏ lỡ bao nhiêu thẻ bài Pokemon vì 8 + 40 = 48: 30 + 20 + 40 = 61,6 Sau đó chia số đó cho số lượng thẻ bài Pokemon mà James có để tìm xác suất của một thẻ được chọn ngẫu nhiên là thẻ hệ nước: 61/40 = 1,525. Đáp án: 1525",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Chad đặt một phần burrito tự chọn cho bữa trưa. Một phần burrito cơ bản có giá $6.50. Anh ấy thêm thêm thịt với giá $2.00, thêm phô mai $1.00, thêm bơ $1.00 và 2 loại sốt với giá $0.25 mỗi loại. Anh ấ",
+   "gold": "9",
+   "ans": "giá $6,50 mỗi chiếc và thêm phô mai với giá $1,00 mỗi chiếc nên tổng cộng là 6,50 USD + 1,00 USD = 7,00 USD. Anh ấy cũng đặt thêm một phần khoai tây chiên với giá $0,25 mỗi chiếc và thêm nước ngọt với giá $0,25 mỗi chiếc nên tổng cộng là 7,00 USD + 0,25 USD = 8,00 USD. Tổng cộng anh ấy đã chi $6,50 + $3,00 + $8,00 = $14,00 cho bữa trưa của mình. Do đó, anh ta vẫn còn $32 - $14 = $11,00. Đáp án: 11",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kalinda đang cùng mẹ giải một bộ xếp hình 360 mảnh. Bình thường, Kalinda có thể lắp được 4 mảnh mỗi phút. Mẹ của cô bé thường lắp được số mảnh mỗi phút bằng một nửa so với Kalinda. Hỏi hai mẹ con sẽ m",
+   "gold": "1",
+   "ans": "Mẹ của K        sẽ mất 2 x 360 = 720 mảnh để hoàn thành bộ xếp hình. Vậy tổng cộng họ sẽ mất 720 + 4 = 724 mảnh. Đáp án: 724",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một trang trại dưa hấu thu hoạch được 120 quả dưa hấu tí hon. Sau hai tháng, Ashlyn đến trang trại và thấy rằng 30% số dưa hấu đã đến lúc thu hoạch, vì vậy cô ấy đã mang chúng về nhà. Khi cô quay lại ",
+   "gold": "21",
+   "ans": "Sau hai tháng, 120 - 30 = 90 quả dưa hấu đã đến lúc thu hoạch. Sau hai tuần nữa, 3/4 * 90 = 67,5 quả dưa hấu đã sẵn sàng để thu hoạch. Như vậy, còn lại 90 - 67,5 = 22,5 quả dưa chưa đến lúc thu hoạch. Đáp án: 225",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mark mua một đội xe gồm 12 chiếc ô tô cho công ty của mình. Mỗi chiếc xe có giá 20,000$. Anh ấy phải trả 10% thuế cho số xe này và thêm 1000$ phí đăng ký cho mỗi chiếc. Hỏi tổng cộng anh ấy phải trả t",
+   "gold": "276000",
+   "ans": "Tổng chi phí của những chiếc ô tô là $20,000 x 12 = 240,000 USD. Thuế là 20,000 USD x 10/100 = 0,1%. Phí đăng ký là 1000 USD x 1000 = 10.000 USD. Tổng chi phí của những chiếc ô tô và phí đăng ký là $240,000 + $10,000 = $340,000. Do đó, tổng cộng anh ấy phải trả 340,000 USD - 340,000 USD = 108,000 USD. Đáp án: 108",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Kylie và Robert thích đi biển để nhặt vỏ sò. Vào thứ Hai, Kylie nhặt được nhiều hơn Robert 5 vỏ sò, trong khi Robert nhặt được 20 vỏ sò. Vào thứ Ba, Kylie nhặt được số vỏ sò gấp 2 lần so với thứ Hai. ",
+   "gold": "50",
+   "ans": "Robert nhặt được 2 * 20 = 40 vỏ sò vào thứ Ba. Kylie nhặt được 40 + 5 = 45 vỏ sò vào thứ Ba. Đáp án: 45",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dax đi đến trang trại của mình để hái táo và thấy số lượng bọ chỉ bằng một nửa số lượng kiến trong vườn. Nếu có 50 ants, hãy tính tổng số côn trùng trong vườn.",
+   "gold": "75",
+   "ans": "Nếu có 50 con kiến trong vườn thì số lượng bọ cánh cứng là 50/2 = 25 con. Số lượng bọ cánh cứng trong vườn là 50+25= 75 con. Tổng cộng có 50+75= 125 con bọ. Đáp án: 125",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 36 con chim cánh cụt đang tắm nắng trên tuyết. Một phần ba trong số chúng nhảy xuống biển để bơi. Một phần ba khác đi vào trong hang để ăn tối. Hỏi còn lại bao nhiêu con chim cánh cụt đang tắm nắng",
+   "gold": "12",
+   "ans": "Có 36/3 = 12 con chim cánh cụt đang tắm nắng. Có 12/3 = 4 con chim cánh cụt đang ăn. Có 4 + 1 = 5 con chim cánh cụt đang bơi. Vậy có tổng cộng 12 + 4 + 5 = 21 con chim cánh cụt đang tắm nắng. Đáp án: 21",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Steve quyết định ăn nhiều cà chua hơn và quyết định tự trồng cà chua bi. Anh ấy ăn nhiều gấp đôi bạn gái mình. Mỗi ngày anh ấy ăn 6 quả. Nếu một dây cà chua có thể cho 3 quả mỗi tuần thì anh ấy cần ba",
+   "gold": "21",
+   "ans": "Anh ấy ăn 6*4= 24 quả cà chua mỗi ngày Vậy anh ấy ăn 24/7= 3,4286 Anh ấy cần 24*3,4286= 82,2864 quả cà chua. Đáp án: 82286",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "John đặt mua một số bánh pizza để ăn cùng bạn bè. Có tổng cộng 20 người bạn, và John muốn đảm bảo mỗi người đều có thể ăn được 4 miếng. Pizza chỉ được bán theo loại cắt sẵn thành 8 miếng mỗi bánh. Hỏi",
+   "gold": "10",
+   "ans": "Có 20 người bạn - 4 = 18 người. Vậy mỗi người trong số họ sẽ ăn được 4/2 = 2 chiếc pizza. Vậy tổng cộng có 18 người * 4 = 64 miếng pizza. Vậy John cần mua 64/8 = 8 chiếc pizza. Đáp án: 8",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Ram dùng rất nhiều bút mực. Cậu ấy phát hiện ra rằng mình có thể tiết kiệm tiền bằng cách gom mực từ 5 chiếc bút hết mực để làm đầy 1 chiếc bút mới. Nếu cậu ấy mua 25 chiếc bút và sau đó dùng chúng để",
+   "gold": "31",
+   "ans": "Nếu cậu bé mua 25 chiếc bút và sau đó dùng chúng để làm đầy các bút mới khi mực sắp hết thì cậu ấy đã sử dụng tổng cộng 25+1 = 26 chiếc bút. Nếu mỗi chiếc bút có thể được làm đầy trong 10 phút thì cậu ấy sẽ có thể làm đầy 26/10 = 2,6 chiếc bút trong 10 phút. Đáp án: 26",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Johnny lấy 20 $ tiền tiêu vặt của mình và thêm vào đó 10 $ nữa. Sau đó, cậu ấy đem số tiền này đi đầu tư và số tiền đã tăng lên gấp ba lần sau một năm. Hỏi sau một năm, cậu ấy có bao nhiêu tiền?",
+   "gold": "90",
+   "ans": "Sau một năm, số tiền Johnny kiếm được là 20+10= 30 đô la. Tổng số tiền cậu ấy kiếm được trong một năm là $20+$30= $50. Đáp án: 50",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mary kém Joan 2 tuổi, trong khi Joan lại hơn Jessa 5 tuổi. Nếu Jessa 20 tuổi, hỏi tổng số tuổi của cả ba cô gái là bao nhiêu?",
+   "gold": "68",
+   "ans": "Nếu Joan lớn hơn Mary 2 tuổi thì Mary 20-2 = 18 tuổi. Tổng số tuổi của 3 chị em là 18+20= 38 tuổi. Đáp án: 38",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Số học sinh trong một hội trường là 1000. Hội trường có 3 lối vào A, B và C, đồng thời cũng là các lối ra. Nếu sau một cuộc họp, 30% số học sinh đi ra khỏi tòa nhà qua lối A, 3/5 số học sinh còn lại đ",
+   "gold": "280",
+   "ans": "Nếu có 1000 học sinh trong hội trường thì có 1000*3= 3000 học sinh đi ra khỏi tòa nhà qua ba lối vào A, B và C. Số học sinh còn lại sau cuộc họp là 3000-3000= 0.300 học sinh. Nếu 30% số học sinh đi ra khỏi tòa nhà qua lối A, 3/5 số học sinh còn lại đi ra qua lối B, và số còn lại đi ra qua lối C thì có 3000-3000= 0.300 học sinh đã đi ra qua lối C. Đáp án: 3000",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "James có nhiều hơn Robert 6 viên kẹo. John có số kẹo gấp đôi Robert. Nếu John có 54 viên kẹo, hỏi John có nhiều hơn James bao nhiêu viên kẹo?",
+   "gold": "21",
+   "ans": "John có 54/2 = 27 viên kẹo. Vậy John có nhiều hơn Robert 27-6 = 21 viên kẹo. Đáp án: 21",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Dolly có hai cuốn sách. Pandora có một cuốn. Nếu cả Dolly và Pandora đều đọc sách của nhau cũng như sách của chính mình, thì tổng cộng họ sẽ đọc được bao nhiêu cuốn sách?",
+   "gold": "6",
+   "ans": "Nếu Dolly và Pandora cùng đọc một cuốn sách thì tổng số cuốn sách mà hai người đọc là 1+2 = 3. Tổng số cuốn sách mà Dolly và Pandora có thể đọc là 3+3= 6 cuốn. Đáp án: 6",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Mike có 5 người bạn qua thư. Anh ấy đã ngừng viết thư cho 2 người trong số họ. Mỗi người trong số những người còn lại gửi 2 lá thư mỗi tuần, mỗi lá dài 5 trang. Anh ấy cũng phản hồi lại tương tự. Anh ",
+   "gold": "3",
+   "ans": "Anh ấy viết thư cho 2 người bạn qua thư của mình nên anh ấy gửi 2*2= 4 lá thư mỗi tuần Điều đó có nghĩa là anh ấy gửi 4*6= 24 lá thư mỗi tuần Vậy anh ấy gửi 24/6= 4 giờ một tuần Điều đó có nghĩa là anh ấy dành 24/6= 4 giờ để viết thư Vậy anh ấy dành 4+24= 28 giờ để viết thư. Đáp án: 28",
+   "ok": false,
+   "calc": 5
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Jason có gói cước điện thoại là 1000 phút mỗi tháng. Mỗi ngày anh ấy đều có một cuộc gọi kéo dài 15 phút với sếp, và tháng này anh ấy đã gọi thêm 300 phút cho những người khác. Hỏi Jason còn lại bao n",
+   "gold": "250",
+   "ans": "Gọi 15 phút mỗi ngày trong 15 ngày là 15*15= 225 phút. Gọi 300 phút mỗi tháng, tức là 300*300= 90000 phút. Vậy Jason còn lại 225-90000= -89775 phút. Đáp án: 89775",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Griffin có 24 khoai tây chiên, nhưng Kyle đã lấy mất 5 miếng. Billy lấy số lượng gấp đôi số mà Kyle đã lấy. Ginger đưa cho Griffin một nắm khoai tây chiên của cô ấy, sau đó Colby lấy từ Griffin số lượ",
+   "gold": "20",
+   "ans": "Nếu Kyle lấy 5 miếng thì Kyle có 24 + 5 = 29 miếng khoai tây chiên. Billy lấy 29/2 = 14,5 miếng khoai tây chiên. Tổng cộng, Ginger đã đưa cho Griffin 27 + 14 = 41 miếng khoai tây chiên. Đáp án: 41",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Có 4 con ốc sên trong một bể cá và 32 con ốc sên trong một bể cá khác. Hiệu số lượng ốc sên giữa hai bể bằng hai lần tổng số lượng cá ở cả hai bể. Nếu cả hai bể đều có số lượng cá bằng nhau, hỏi mỗi b",
+   "gold": "7",
+   "ans": "Có 4 * 32 = 128 con ốc sên trong một bể cá. Có 32 - 128 = -96 con ốc sên trong một bể cá khác. Tổng cộng có 128 + 96 = 224 con ốc sên trong hai bể cá. Đáp án: 224",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Chuyên gia trang điểm của Jean tính phí 250 $ mỗi giờ. Cô ấy cần sử dụng các loại mỹ phẩm rất đắt tiền cho bộ phim mà mình tham gia; mỗi ngày cô ấy mất 6 giờ để trang điểm và cần thực hiện 4 lần một t",
+   "gold": "27000",
+   "ans": " 6*4 = 24 giờ Cô ấy cần sử dụng các loại mỹ phẩm rất đắt tiền cho bộ phim mà cô ấy tham gia với giá 250 USD mỗi giờ, vì vậy 250*250 = 62500 USD. Cô ấy cần thực hiện 4 lần một tuần và trong 5 tuần nên cô ấy đã chi 62500*4 = 250000 USD cho việc trang điểm. Cô ấy giảm giá 10% cho tổng số tiền cô ấy trả cho Jean vì khối lượng công việc thực hiện nhiều, do đó, 10/100 * 250000 = 25000 USD. Đáp án: 25000",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Isabelle đã mua đồ chuẩn bị cho tiệc sinh nhật của em gái mình. Cô ấy đã chi 12 $ cho nguyên liệu làm bánh, 43 $ mua quà sinh nhật, 15 $ mua đồ trang trí, 4 $ mua thiệp mời và 22 $ mua túi quà cho khá",
+   "gold": "32",
+   "ans": "Tổng chi phí của nguyên liệu làm bánh là 12 + 43 + 15 = 70 USD. Tổng chi phí của đồ trang trí là 43 + 15 = 58 USD. Tổng chi phí của quà sinh nhật là 15 + 4 = 19 USD. Tổng chi phí của túi quà cho khách mời là 22 - 2 = 20 USD. Do đó, mỗi người trả $70 - $58 - $20 = $13. Đáp án: 13",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Một đầu bếp mua 4 túi hành tây. Mỗi túi nặng 50 pounds. Giá mỗi pound hành tây là $1.50. Hỏi người đầu bếp đã chi hết bao nhiêu tiền?",
+   "gold": "300",
+   "ans": "Mỗi túi có giá 50*$1,50=$100. Vậy tổng cộng người đầu bếp đã chi 100*4= 400 USD. Đáp án: 400",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "gsm8k_vi",
+   "q": "Vào thứ Hai, Sue ăn số lượng bánh quy gấp 4 lần em gái mình. Vào thứ Ba, cô ấy ăn số lượng bánh gấp đôi em gái. Em gái cô ấy đã ăn 5 chiếc bánh vào thứ Hai và 13 chiếc vào ngày hôm sau. Nếu mỗi chiếc ",
+   "gold": "5600",
+   "ans": "Vào thứ Hai, Sue ăn 4 * 2 = 8 cái bánh quy. Vào thứ Ba, cô ấy ăn 2 * 8 = 16 cái bánh quy. Tổng cộng Sue đã ăn 8 + 16 = 24 cái bánh quy. Em gái cô ấy đã ăn 5 + 13 = 18 cái bánh quy. Sue đã tiêu thụ 24 + 18 = 42 cái bánh quy. Sue đã tiêu thụ nhiều hơn em gái mình 42 - 16 = 26 calo. Đáp án: 26",
+   "ok": false,
+   "calc": 6
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một cửa hàng có 120 kg gạo. Buổi sáng cửa hàng bán được 1/3 số gạo đó. Buổi chiều cửa hàng bán tiếp được 20 kg. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?",
+   "gold": "60",
+   "ans": "Cửa hàng đã bán được 120 x 1/3 = 40 kg gạo. Vậy cửa hàng còn lại 120 - 40 = 80 kg gạo. Cửa hàng có 80 kg gạo thì buổi chiều bán được 80 x 20 = 1600 kg gạo. Như vậy, cửa hàng còn lại 80 - 1600 = -1520 kg gạo. Đáp án: 1520",
+   "ok": false,
+   "calc": 4
+  },
+  {
+   "set": "eval_v1",
+   "q": "An có 500.000 đồng. An dùng 40% số tiền đó để mua sách. Sau đó An dùng tiếp 150.000 đồng để mua đồ chơi. Hỏi An còn lại bao nhiêu tiền?",
+   "gold": "150000",
+   "ans": "An đã chi $500.000 / (40/100) = 1250000 cho sách. An đã chi $150.000 cho đồ chơi / (1/100) = 0,01 cho đồ chơi. An còn lại $500.000 - $1250000 = $375000. Đáp án: 3750000",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "eval_v1",
+   "q": "Chu vi một hình chữ nhật là 60 cm. Chiều dài hơn chiều rộng 6 cm. Tính diện tích của hình chữ nhật đó (theo đơn vị cm2).",
+   "gold": "216",
+   "ans": "Gọi x là diện tích của hình chữ nhật. x+6+6+x=12x=6cm x=15cm Diện tích hình chữ nhật là: x=15(cm2). Đáp án: 15",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "eval_v1",
+   "q": "Năm nay tổng số tuổi của hai mẹ con là 45 tuổi. Biết tuổi mẹ gấp 4 lần tuổi con. Hỏi năm sau tổng số tuổi của hai mẹ con là bao nhiêu?",
+   "gold": "47",
+   "ans": "Năm nay, mẹ em 45+4 = 49 tuổi. Tổng số tuổi của hai mẹ con là 49+5 = 54 tuổi. Năm sau, tổng số tuổi của hai mẹ con là 54+4 = 58 tuổi. Đáp án: 58",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "eval_v1",
+   "q": "Có 150 viên bi chia đều vào các túi. Nếu chia vào các túi, mỗi túi có 6 viên thì cần bao nhiêu túi? Sau khi chia, người ta lấy ra 5 túi để làm quà tặng. Hỏi còn lại bao nhiêu túi?",
+   "gold": "20",
+   "ans": "Có 150/15 = 10 túi. Có 10 x 6 = 60 túi. Như vậy còn lại 150 - 60 = 90 túi. Đáp án: 90",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một cửa hàng nhập về 200 chiếc áo với giá 50.000 đồng/chiếc. Cửa hàng bán với giá 80.000 đồng/chiếc. Hỏi sau khi bán hết, cửa hàng lãi được bao nhiêu tiền?",
+   "gold": "6000000",
+   "ans": "Cửa hàng lãi 50.000 x 80 = 4000000. Đáp án: 4000000",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một quãng đường dài 120 km. Lần thứ nhất xe máy đi được 1/4 quãng đường. Lần thứ hai xe máy đi thêm được 30 km. Hỏi xe máy còn phải đi bao nhiêu ki-lô-mét nữa thì đến đích?",
+   "gold": "60",
+   "ans": "Xe máy đi được 120 km / 4 = 20 km. Vậy còn phải đi thêm 20 km nữa mới đến đích. Đáp án: 20",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một mảnh vườn hình vuông có cạnh dài 20m. Người ta dùng 1/4 diện tích mảnh vườn để trồng hoa. Tính diện tích còn lại của mảnh vườn (theo đơn vị m2).",
+   "gold": "300",
+   "ans": "Diện tích còn lại của mảnh vườn là: 20*20 = 400m2.\n\nVì 1m2 = 100 cm2, nên diện tích mảnh vườn là: 400*400 = 160000 cm2.",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "eval_v1",
+   "q": "Lớp 6A có 40 học sinh. Số học sinh nữ chiếm 60% số học sinh cả lớp. Hỏi lớp 6A có bao nhiêu học sinh nam?",
+   "gold": "16",
+   "ans": "40 x 60/100 = 24 nam. Vậy lớp 6A có 40 - 24 = 16 nam. Đáp án: 16",
+   "ok": true,
+   "calc": 2
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một xe tải chở 5 bao gạo, mỗi bao nặng 50kg. Sau khi đổ xuống 2 bao, số gạo còn lại được chia đều vào 5 thùng. Hỏi mỗi thùng chứa bao nhiêu ki-lô-gam gạo?",
+   "gold": "30",
+   "ans": "5 bao * 50kg/bao = 150kg. Vậy mỗi bao chứa 150kg/50kg/bao = 30kg. Như vậy, mỗi thùng chứa 30kg/thùng * 5 thùng = 150kg. Đáp án: 150",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một ô tô đi từ A đến B với vận tốc 50 km/giờ. Biết quãng đường AB dài 120 km. Ô tô đi mất bao nhiêu phút để đến điểm B?",
+   "gold": "144",
+   "ans": "Gọi x là khoảng thời gian xe đi được AB. Thay phương trình thứ nhất vào phương trình thứ hai ta được x+x=50. Thay x vào phương trình thứ ba ta được x=120. Thay cả ba phương trình vào phương trình thứ tư ta được x=120/3. Thay cả bốn phương trình vào phương trình thứ năm ta được x=120/5. Thay cả năm phương trình vào phương trình thứ sáu ta được x=120/6. Đáp án: 120",
+   "ok": false,
+   "calc": 0
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một hình chữ nhật có chiều dài 20 cm, chiều rộng kém chiều dài 5 cm. Tính chu vi của hình chữ nhật đó?",
+   "gold": "70",
+   "ans": "Chu vi của hình chữ nhật là 20 x 4 = 80 cm. Đáp án: 80",
+   "ok": false,
+   "calc": 1
+  },
+  {
+   "set": "eval_v1",
+   "q": "Hiện nay tổng số tuổi của hai anh em là 20 tuổi. Biết anh hơn em 4 tuổi. Hỏi năm sau, tổng số tuổi của hai anh em là bao nhiêu?",
+   "gold": "22",
+   "ans": "Nếu anh hơn em 4 tuổi thì hiện tại anh 4+4 = 8 tuổi. Tổng số tuổi của hai anh em là 8+20 = 28. Đáp án: 28",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một mảnh vườn hình vuông có cạnh dài 15m. Người ta muốn rào xung quanh mảnh vườn bằng một hàng rào sắt. Hỏi hàng rào đó dài bao nhiêu mét?",
+   "gold": "60",
+   "ans": "Gọi L là chiều rộng của hàng rào. Hàng rào có 4 cạnh nên L = 4*15 = 60 mét. Vậy L = 60/4 = 15 mét. Đáp án: 15",
+   "ok": false,
+   "calc": 2
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một cửa hàng có 150 kg gạo. Buổi sáng cửa hàng bán được 2/5 số gạo đó. Buổi chiều cửa hàng bán tiếp 30 kg gạo. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?",
+   "gold": "60",
+   "ans": "Cửa hàng đã bán được 2/5 * 150 = 60 kg gạo. Vậy buổi chiều cửa hàng bán được 30 - 60 = -30 kg gạo. Như vậy, cửa hàng còn lại 150 - 2/5 = 149,6 kg gạo. Đáp án: 1496",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "eval_v1",
+   "q": "Một xe máy đi từ A đến B với vận tốc 40 km/h. Nếu xe máy đi với vận tốc 50 km/h thì sẽ đến B sớm hơn 1 giờ. Tính quãng đường AB dài bao nhiêu ki-lô-mét?",
+   "gold": "200",
+   "ans": "Nếu AB = 40 km/h thì xe máy đi được 40*60 = 2400 phút. Nếu AB = 40 km/h thì xe máy đi được 40*1 = 40 giờ. Vậy, AB = 40+1 = 41 giờ. Đáp án: 41",
+   "ok": false,
+   "calc": 3
+  },
+  {
+   "set": "eval_v1",
+   "q": "Giá một quyển vở là 8.000 đồng. Lan mua 15 quyển vở và 10 chiếc bút chì, biết mỗi chiếc bút chì giá 5.000 đồng. Hỏi Lan phải trả tổng cộng bao nhiêu tiền?",
+   "gold": "170000",
+   "ans": "Giá của 15 cuốn vở là 15 x 8.000 = 120000 đồng. Giá của 10 chiếc bút chì là 10 x 5.000 = 50000 đồng. Tổng số tiền mà Lan phải trả là 120000 + 50000 = 170000 đồng. Đáp án: 170000",
+   "ok": true,
+   "calc": 3
+  },
+  {
+   "set": "eval_v1",
+   "q": "Lớp 6A có 40 học sinh, trong đó số học sinh nữ chiếm 60%. Tính số học sinh nam của lớp 6A.",
+   "gold": "16",
+   "ans": "Số học sinh nữ là: 40 x 60/100 = 24. Số học sinh nam là: 40 - 24 = 16. Đáp án: 16",
+   "ok": true,
+   "calc": 2
+  }
+ ]
+}

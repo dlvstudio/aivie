@@ -1,0 +1,23 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[6s] ✓ 5,664 cha
+  câu: nửa A 3,407 · nửa B 3,406
+[8s] ✓ đếm A
+[8s] ✓ dựng bảng điểm
+  chấm 6,000 vị trí
+
+============================================================
+kênh              top1     top10       MRR   (n=6,000)
+============================================================
+d1_prob          0.169     0.318     0.218
+skip_prob        0.140     0.323     0.198
+d1_ppmi          0.106     0.277     0.160
+skip_ppmi        0.132     0.303     0.188
+d1p+skip_p       0.168     0.339     0.223
+============================================================
+G1 tỉnh táo (d1_prob top10 ≥0.20): ĐẠT (0.318)
+G2 W_skip hơn d1 ≥+0.05 top10 : TRƯỢT (+0.021)  ← quyết định
+G3 PPMI hơn đếm thô           : TRƯỢT (0.303 ‖ 0.323)
+
+⇒ W_skip KHÔNG phải kênh trôi chảy tốt hơn — đóng hướng dùng nó cho sinh
+
+[9s] → out/next_token_mini.log

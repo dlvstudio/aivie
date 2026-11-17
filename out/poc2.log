@@ -1,0 +1,149 @@
+[     0.0s] === load_net_ls_concept_conf START (pid=29531) → out/logs/load_net_ls_concept_conf_20260826_212905.log ===
+[     0.0s] load checkpoint checkpoints/net_ls_concept_conf.pkl …
+[     0.0s] ▶ unpickle
+[     2.4s] ✓ unpickle  (2.4s)
+[     2.4s] ▶ vocab (32002 token)
+[     2.4s] ✓ vocab (32002 token)  (0.0s)
+[     2.4s] ▶ adjacency
+[    11.7s] ✓ adjacency  (9.3s)
+[    11.7s] ▶ embedding
+[    11.8s] ✓ embedding  (0.1s)
+[    11.8s] ▶ parents
+[    11.8s] parents: deserialize 450303 records …
+[    11.8s] parents 5000/450303 (1.1%)
+[    11.9s] parents 10000/450303 (2.2%)
+[    11.9s] parents 15000/450303 (3.3%)
+[    12.0s] parents 20000/450303 (4.4%)
+[    12.0s] parents 25000/450303 (5.6%)
+[    12.0s] parents 30000/450303 (6.7%)
+[    12.1s] parents 35000/450303 (7.8%)
+[    12.1s] parents 40000/450303 (8.9%)
+[    12.2s] parents 45000/450303 (10.0%)
+[    12.2s] parents 50000/450303 (11.1%)
+[    12.3s] parents 55000/450303 (12.2%)
+[    12.3s] parents 60000/450303 (13.3%)
+[    12.4s] parents 65000/450303 (14.4%)
+[    12.4s] parents 70000/450303 (15.5%)
+[    12.4s] parents 75000/450303 (16.7%)
+[    12.5s] parents 80000/450303 (17.8%)
+[    12.5s] parents 85000/450303 (18.9%)
+[    12.6s] parents 90000/450303 (20.0%)
+[    12.6s] parents 95000/450303 (21.1%)
+[    12.6s] parents 100000/450303 (22.2%)
+[    12.7s] parents 105000/450303 (23.3%)
+[    12.7s] parents 110000/450303 (24.4%)
+[    12.8s] parents 115000/450303 (25.5%)
+[    12.8s] parents 120000/450303 (26.6%)
+[    12.8s] parents 125000/450303 (27.8%)
+[    12.9s] parents 130000/450303 (28.9%)
+[    12.9s] parents 135000/450303 (30.0%)
+[    13.0s] parents 140000/450303 (31.1%)
+[    13.0s] parents 145000/450303 (32.2%)
+[    13.1s] parents 150000/450303 (33.3%)
+[    13.2s] parents 155000/450303 (34.4%)
+[    13.2s] parents 160000/450303 (35.5%)
+[    13.3s] parents 165000/450303 (36.6%)
+[    13.3s] parents 170000/450303 (37.8%)
+[    13.4s] parents 175000/450303 (38.9%)
+[    13.5s] parents 180000/450303 (40.0%)
+[    13.5s] parents 185000/450303 (41.1%)
+[    13.6s] parents 190000/450303 (42.2%)
+[    13.7s] parents 195000/450303 (43.3%)
+[    13.8s] parents 200000/450303 (44.4%)
+[    13.9s] parents 205000/450303 (45.5%)
+[    13.9s] parents 210000/450303 (46.6%)
+[    14.0s] parents 215000/450303 (47.7%)
+[    14.1s] parents 220000/450303 (48.9%)
+[    14.2s] parents 225000/450303 (50.0%)
+[    14.3s] parents 230000/450303 (51.1%)
+[    14.3s] parents 235000/450303 (52.2%)
+[    14.4s] parents 240000/450303 (53.3%)
+[    14.5s] parents 245000/450303 (54.4%)
+[    14.6s] parents 250000/450303 (55.5%)
+[    14.6s] parents 255000/450303 (56.6%)
+[    14.7s] parents 260000/450303 (57.7%)
+[    14.8s] parents 265000/450303 (58.8%)
+[    14.9s] parents 270000/450303 (60.0%)
+[    15.0s] parents 275000/450303 (61.1%)
+[    15.0s] parents 280000/450303 (62.2%)
+[    15.1s] parents 285000/450303 (63.3%)
+[    15.2s] parents 290000/450303 (64.4%)
+[    15.3s] parents 295000/450303 (65.5%)
+[    15.4s] parents 300000/450303 (66.6%)
+[    15.4s] parents 305000/450303 (67.7%)
+[    15.5s] parents 310000/450303 (68.8%)
+[    15.6s] parents 315000/450303 (70.0%)
+[    15.7s] parents 320000/450303 (71.1%)
+[    15.8s] parents 325000/450303 (72.2%)
+[    15.8s] parents 330000/450303 (73.3%)
+[    15.9s] parents 335000/450303 (74.4%)
+[    16.0s] parents 340000/450303 (75.5%)
+[    16.1s] parents 345000/450303 (76.6%)
+[    16.2s] parents 350000/450303 (77.7%)
+[    16.3s] parents 355000/450303 (78.8%)
+[    16.3s] parents 360000/450303 (79.9%)
+[    16.4s] parents 365000/450303 (81.1%)
+[    16.5s] parents 370000/450303 (82.2%)
+[    16.6s] parents 375000/450303 (83.3%)
+[    16.6s] parents 380000/450303 (84.4%)
+[    16.7s] parents 385000/450303 (85.5%)
+[    16.8s] parents 390000/450303 (86.6%)
+[    16.9s] parents 395000/450303 (87.7%)
+[    17.0s] parents 400000/450303 (88.8%)
+[    17.0s] parents 405000/450303 (89.9%)
+[    17.1s] parents 410000/450303 (91.0%)
+[    17.2s] parents 415000/450303 (92.2%)
+[    17.3s] parents 420000/450303 (93.3%)
+[    17.3s] parents 425000/450303 (94.4%)
+[    17.4s] parents 430000/450303 (95.5%)
+[    17.5s] parents 435000/450303 (96.6%)
+[    17.6s] parents 440000/450303 (97.7%)
+[    17.6s] parents 445000/450303 (98.8%)
+[    17.7s] parents 450000/450303 (99.9%)
+[    30.0s] ▶ rebuild_hierarchical_index …
+[    32.2s] ✓ rebuild_hierarchical_index (2.1s)
+[    38.5s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    38.5s] ✓ parents  (26.8s)
+[    38.5s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    40.3s] sidecar thiếu → migrate: net_ls_concept_conf.content.pkl
+[    40.3s] ✓ load_checkpoint XONG
+### load
+
+### «Hổ sống ở đâu?»  (def: 'Hổ là một loài động vật có lãnh thổ')
+   cos=+0.41 ' Hổ thẹn, cảm thấy cay cay nơi sống mũi Em xin lỗi v'
+   cos=+0.67 'Rắn hổ mang chúa được đánh giá là loài nguy hiểm và '
+   cos=+0.68 ' Hổ Nữu ở những ngày này hơi hơi dạy bảo qua tương q'
+   cos=+0.38 ' Hổ ca, ngươi không biết là cô em gái kia giấy rất n'
+   cos=+0.41 'hổ cốt là xương hổ dùng làm thuốc .'
+   cos=+0.59 'hổ phách là nhựa thông lâu ngày kết rắn lại, có màu '
+   cos=+0.70 'hổ phù là phù hiệu, ấn tín của các quan võ thời xưa,'
+   cos=+0.63 'Hổ mang chúa: tên một loài rắn thuộc họ Hổ mang .'
+
+### «Chó ăn gì?»  (def: 'chó là gia súc thuộc nhóm ăn thịt, ')
+   cos=+0.26 'Chó màu gì?'
+   cos=+0.74 ' Chó ăn thịt.'
+   cos=+1.00 'chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà h'
+   cos=+0.84 ' Chó vườn chính là chó vườn, chó săn chính là chó să'
+   cos=+0.50 'Con chó là gì?'
+   cos=+0.79 ' Chó Pug con ngoài sữa mẹ thì cần tập ăn những thức '
+   cos=+0.50 ' Chó Pug trưởng thành cần nạp lượng thức ăn tương đư'
+   cos=+0.77 ' Chó con, giống như bất kỳ thú cưng nào, cần được ch'
+
+### «Nước sôi ở nhiệt độ nào?»  (def: 'nước là chất lỏng không màu, không ')
+   cos=+0.48 'nước sôi ở nhiệt độ 100OC .'
+   cos=+0.54 ' Nước đông đá ở 0 độ C.'
+   cos=+0.61 'nước trắng là nước đun sôi để uống;'
+   cos=+0.61 ' Nước rất cần thiết cho nhiều chức năng của cơ thể, '
+   cos=+0.63 'nước rút là sự dồn sức để tăng tốc độ lên mức cao nh'
+   cos=+0.48 ' NƯỚC ÉP CÁC LOẠI CAM, CHANH BƯỞI KHÔNG ĐƯỜNG Nhờ hà'
+
+### «Sắt được dùng để làm gì?»  (def: 'sắt là kim loại màu xám xanh, dễ dá')
+   cos=+0.70 'đe là khối sắt hoặc thép dùng làm bệ để đặt kim loại'
+   cos=+0.61 ' Sắt rất quan trọng để vận chuyển oxy đến cơ bắp và '
+   cos=+0.54 'két là tủ sắt kiên cố, chuyên dùng để cất giữ tiền c'
+   cos=+0.68 'Lõi sắt(II) sunfit này có trạng thái lỏng một phần, '
+   cos=+0.79 'then là thanh gỗ hay sắt nhỏ và dài, dùng để cài giữ'
+   cos=+0.57 'Sắt tốt cho máu.'
+   cos=+0.60 'Giải nghĩa: vòng sắt tròn có mắc lưới, gắn vào mặt b'
+   cos=+0.70 'Giải nghĩa: khối sắt hoặc thép dùng làm bệ để đặt ki'
+### hết

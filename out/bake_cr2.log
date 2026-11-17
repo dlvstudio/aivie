@@ -1,0 +1,73 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/classrich2.pkl …
+[     0.0s] === load_classrich2 START (pid=6375) → out/logs/load_classrich2_20260815_103718.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/classrich2.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.4s] ✓ vocab (32002 token)  (0.0s)
+[     0.4s] ▶ adjacency
+[     1.6s] ✓ adjacency  (1.2s)
+[     1.6s] ▶ embedding
+[     1.6s] ✓ embedding  (0.0s)
+[     1.6s] ▶ parents
+[     1.6s] parents: deserialize 67541 records …
+[     1.7s] parents 5000/67541 (7.4%)
+[     1.7s] parents 10000/67541 (14.8%)
+[     1.7s] parents 15000/67541 (22.2%)
+[     1.8s] parents 20000/67541 (29.6%)
+[     1.8s] parents 25000/67541 (37.0%)
+[     1.9s] parents 30000/67541 (44.4%)
+[     1.9s] parents 35000/67541 (51.8%)
+[     2.0s] parents 40000/67541 (59.2%)
+[     2.0s] parents 45000/67541 (66.6%)
+[     2.1s] parents 50000/67541 (74.0%)
+[     2.1s] parents 55000/67541 (81.4%)
+[     2.2s] parents 60000/67541 (88.8%)
+[     2.2s] parents 65000/67541 (96.2%)
+[     3.2s] ▶ rebuild_hierarchical_index …
+[     3.3s] ✓ rebuild_hierarchical_index (0.1s)
+[     3.9s]     resync match_ids: 67541/67541 cha (df dựng lại)
+[     3.9s] ✓ parents  (2.3s)
+[     3.9s] ✓ loaded: vocab=32002 parents=67541 E=(32002, 96)
+[     4.0s] sidecar thiếu → migrate: classrich2.content.pkl
+[     4.0s] ✓ load_checkpoint XONG
+[    4.4s RSS  3.45GB] nạp xong · parents=67541 vocab=32002
+[    4.4s RSS  3.45GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    4.4s RSS  3.45GB] ws_spans 0/67541 · span=0 · bỏ=0
+[    8.9s RSS  3.45GB] ws_spans 20000/67541 · span=15576 · bỏ=8873
+[   12.5s RSS  3.45GB] ws_spans 40000/67541 · span=28252 · bỏ=17464
+[   14.9s RSS  3.45GB] ws_spans 60000/67541 · span=32660 · bỏ=31199
+[   15.8s RSS  3.45GB] 34106 span · 0.2 phút
+[   15.8s RSS  3.45GB] ghi checkpoints/classrich2.ws_spans.json (0.6 MB) · roundtrip OK
+[   15.8s RSS  3.45GB]   mẫu[00] '<0x81> <0x98> 風'
+[   15.8s RSS  3.45GB]   mẫu[01] 'h iên'
+[   15.8s RSS  3.45GB]   mẫu[02] 'ả hữu'
+[   15.8s RSS  3.45GB]   mẫu[03] 'ạn đạo'
+[   15.8s RSS  3.45GB]   mẫu[04] 'quan phó'
+[   15.8s RSS  3.45GB]   mẫu[05] 'đo lường'
+[   15.8s RSS  3.45GB]   mẫu[06] 'quốc công'
+[   15.8s RSS  3.45GB]   mẫu[07] 'sách nhiễu'
+[   15.8s RSS  3.45GB]   mẫu[08] 'diễn đàn'
+[   15.8s RSS  3.45GB]   mẫu[09] 'thất thường'
+[   15.8s RSS  3.45GB]   mẫu[10] 'ùi cui'
+[   15.8s RSS  3.45GB]   mẫu[11] 'ry ps ed ra'
+[   15.8s RSS  3.45GB]   mẫu[12] 'Tổng cộng'
+[   15.8s RSS  3.45GB]   mẫu[13] 'Cu il co'
+[   15.8s RSS  3.45GB]   mẫu[14] 'Nam Hải'
+[   15.8s RSS  3.45GB]   mẫu[15] 'Cần Thơ'
+[   15.8s RSS  3.45GB]   mẫu[16] 'bồ câu'
+[   15.8s RSS  3.45GB]   mẫu[17] 'rat er es tra'
+[   15.8s RSS  3.45GB]   mẫu[18] 'Tin ol ius'
+[   15.8s RSS  3.45GB]   mẫu[19] 'Gar am antes'
+[   15.8s RSS  3.45GB]   mẫu[20] 'Kỹ sư'
+[   15.8s RSS  3.45GB]   mẫu[21] 'pan ul atrix'
+[   15.8s RSS  3.45GB]   mẫu[22] 'xã hội học'
+[   15.8s RSS  3.45GB]   mẫu[23] 'Poly t'
+[   15.8s RSS  3.45GB]   mẫu[24] 'chiến trận'
+[   15.8s RSS  3.45GB]   mẫu[25] 'odo ec ia'
+[   15.8s RSS  3.45GB]   mẫu[26] 'chst AG'
+[   15.8s RSS  3.45GB]   mẫu[27] 'Cóc Ho ur gl ass'
+[   15.8s RSS  3.45GB]   mẫu[28] 'đô la'
+[   15.8s RSS  3.45GB]   mẫu[29] 'odol umines cence'
+[   15.9s RSS  3.45GB] span nghi rác (tự động): 593/34106 = 1.7% (ISG: 57%)
+[   15.9s RSS  3.45GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

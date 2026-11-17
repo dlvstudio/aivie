@@ -1,0 +1,14 @@
+corpus: data/real_vi/history_vi.jsonl
+train sentences: 139 | held-out: 34
+VarOrderLM max_ctx=4 lam=0.45 (protocol: log2-rank, giống TK_031)
+lm_ws tokens counted: 2147 vocab=655 | k=1:568, k=2:1231, k=3:169, k=4:89
+lm_uts tokens: 1672 vocab=533 | k=1:532, k=2:1076, k=3:79, k=4:33
+
+=== HELD-OUT (whitespace tokenize) ===
+n=349 bits=1.499 MRR=0.511 top1=31.8% top5=75.6%
+
+=== HELD-OUT (underthesea word_tokenize) ===
+n=256 bits=1.853 MRR=0.445 top1=25.8% top5=66.8%
+
+Δbits (uts − ws) = +0.354 (âm = underthesea tốt hơn)
+XONG

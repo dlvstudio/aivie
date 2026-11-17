@@ -1,0 +1,45 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[95s] ✓ loaded · parents 65,098
+
+═══ Hỏi: Trần Hưng Đạo là ai   [GÃY: focus 'ai' → bài AI/X-quang (fold ai≡AI?)] ═══
+  per-token content (gidf · fold_gidf · gdf · FB? · case-equiv):
+    'ĠTrần'        gidf= 4.97 fold= 4.97 gdf= 1225 fb=False caseq='Trần ĠTrần Ġtrần'
+    'ĠHưng'        gidf= 6.09 fold= 6.09 gdf=  401 fb=False caseq='Hưng ĠHưng Ġhưng'
+    'ĠĐạo'         gidf= 5.05 fold= 5.05 gdf= 1131 fb=False caseq='Đạo đạo ĠĐạo Ġđạo'
+    'Ġlà'          gidf= 1.89 fold= 1.89 gdf=26644 fb=False caseq='Là là ĠLÀ ĠLà Ġlà'
+    'Ġai'          gidf= 3.69 fold= 3.69 gdf= 4407 fb=False caseq='AI Ai ai ĠAI ĠAi Ġai'
+  entity_register[:5] = 'ĠTrần' 'ĠHưng' 'Ġlà' 'Ġai' 'ĠĐạo'
+  FOCUS = 'ĠTrần' 'ĠHưng'
+  facts_about(focus)#1 = ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Mông – Nguyên ba lần xâ'
+
+═══ Hỏi: Hà Nội là gì   [GÃY: → Ca trù (focus lệch?)] ═══
+  per-token content (gidf · fold_gidf · gdf · FB? · case-equiv):
+    'ĠHà'          gidf= 4.53 fold= 4.53 gdf= 1901 fb=False caseq='Hà ĠHÀ ĠHà Ġhà'
+    'ĠNội'         gidf= 5.10 fold= 5.10 gdf= 1073 fb=False caseq='Nội nội ĠNội Ġnội'
+    'Ġlà'          gidf= 1.89 fold= 1.89 gdf=26644 fb=False caseq='Là là ĠLÀ ĠLà Ġlà'
+    'Ġgì'          gidf= 2.92 fold= 2.92 gdf= 9578 fb=False caseq='Gì gì ĠGÌ ĠGì Ġgì'
+  entity_register[:5] = 'ĠHà' 'ĠNội' 'Ġgì' 'Ġlà'
+  FOCUS = 'ĠHà' 'ĠNội'
+  facts_about(focus)#1 = ' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành phố. Hồ g'
+
+═══ Hỏi: Nhà Trần là gì   [ĐÚNG (control) — focus 'Nhà Trần'] ═══
+  per-token content (gidf · fold_gidf · gdf · FB? · case-equiv):
+    'ĠNhà'         gidf= 5.13 fold= 5.13 gdf= 1049 fb=False caseq='Nhà nhà ĠNHÀ ĠNhà Ġnhà'
+    'ĠTrần'        gidf= 4.97 fold= 4.97 gdf= 1225 fb=False caseq='Trần ĠTrần Ġtrần'
+    'Ġlà'          gidf= 1.89 fold= 1.89 gdf=26644 fb=False caseq='Là là ĠLÀ ĠLà Ġlà'
+    'Ġgì'          gidf= 2.92 fold= 2.92 gdf= 9578 fb=False caseq='Gì gì ĠGÌ ĠGì Ġgì'
+  entity_register[:5] = 'ĠNhà' 'ĠTrần' 'Ġgì' 'Ġlà'
+  FOCUS = 'ĠNhà' 'ĠTrần'
+  facts_about(focus)#1 = ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Mông – Nguyên ba lần xâ'
+
+═══ Hỏi: Thăng Long là gì   [ĐÚNG (control)] ═══
+  per-token content (gidf · fold_gidf · gdf · FB? · case-equiv):
+    'ĠThăng'       gidf= 6.49 fold= 6.49 gdf=  268 fb=False caseq='Thăng ĠThăng Ġthăng'
+    'ĠLong'        gidf= 4.72 fold= 4.72 gdf= 1574 fb=False caseq='Long long ĠLong Ġlong'
+    'Ġlà'          gidf= 1.89 fold= 1.89 gdf=26644 fb=False caseq='Là là ĠLÀ ĠLà Ġlà'
+    'Ġgì'          gidf= 2.92 fold= 2.92 gdf= 9578 fb=False caseq='Gì gì ĠGÌ ĠGì Ġgì'
+  entity_register[:5] = 'ĠThăng' 'ĠLong' 'Ġgì' 'Ġlà'
+  FOCUS = 'ĠThăng' 'ĠLong'
+  facts_about(focus)#1 = ' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay. Sự '
+
+[123s] → GÃY: thực-thể gidf < từ-hỏi? 'ai' caseq chứa 'AI'? → điểm vá (demote từ-hỏi / chặn fold chéo-lớp / neo cụm thực-thể).

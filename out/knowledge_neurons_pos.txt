@@ -1,0 +1,56 @@
+vocab 32,002 · E64 (32002, 64) · device mps
+nạp corpus data/text_corpus/*.jsonl …
+✓ 65,160 bài · train 17,696,864 tok · held-out 1,999,796 tok
+✓ gieo mầm: 4,096 đơn vị corpus (phía train)
+
+── ffn: 4.51M tham số ──
+  step  1000 loss 7.679 held-out 11.5765 bits/tok (33s)
+  step  2000 loss 6.989 held-out 10.3768 bits/tok (65s)
+  step  3000 loss 6.839 held-out 10.1034 bits/tok (97s)
+  SAU TRAIN CHÍNH: held-out 10.1034 · fact-hư-cấu 11.5737 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ', không có thể, không có thể' (kỳ vọng 'thành Phượng Nham')
+  MỌC (full-FT lr=0.0001):
+    fact-hư-cấu 11.5737 → 3.3680  (Δ -8.2057)
+    held-out CŨ 10.1034 → 20.2991  (Δ +10.1957 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ' nam trong hoàng thành năm 17.' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → ' năm 132.<EOS>Vua Trần' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → ' năm 1432.<EOS>Vua' (kỳ vọng 'Yên Phong')
+
+── mem_rand: 5.17M tham số ──
+  step  1000 loss 7.715 held-out 11.7027 bits/tok (45s)
+  step  2000 loss 7.013 held-out 10.4089 bits/tok (91s)
+  step  3000 loss 6.921 held-out 10.1770 bits/tok (137s)
+  SAU TRAIN CHÍNH: held-out 10.1770 · fact-hư-cấu 11.5881 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ',, không có thể,, có' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 330 slot (position), train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 11.5881 → 11.2159  (Δ -0.3722)
+    held-out CŨ 10.1770 → 10.2817  (Δ +0.1046 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ',.<EOS><EOS>.<EOS>.<EOS>' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '.<EOS><EOS>.<EOS>.<EOS><EOS>' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.<EOS>.<EOS>.<EOS>.<EOS>' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 31/32 là slot MỚI; top-5=[4284, 4163, 4224, 4392, 4377]
+
+── mem_graph: 5.17M tham số ──
+  step  1000 loss 7.709 held-out 11.7027 bits/tok (49s)
+  step  2000 loss 7.014 held-out 10.4093 bits/tok (96s)
+  step  3000 loss 6.922 held-out 10.1761 bits/tok (142s)
+  SAU TRAIN CHÍNH: held-out 10.1761 · fact-hư-cấu 11.5844 bits/tok
+  probe TRƯỚC mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ',, không có thể,, có' (kỳ vọng 'thành Phượng Nham')
+  MỌC (mọc 330 slot (position), train CHỈ slot mới lr=0.005):
+    fact-hư-cấu 11.5844 → 11.2238  (Δ -0.3606)
+    held-out CŨ 10.1761 → 10.2715  (Δ +0.0955 ← thước QUÊN)
+    probe SAU mọc: 'Vua Trần Vĩnh Khôi dời đô về' → ',.<EOS><EOS>.<EOS>.<EOS>' (kỳ vọng 'thành Phượng Nham')
+    probe SAU mọc: 'Vua Lê Cảnh Thuận ban hành bộ luật' → '.<EOS><EOS>.<EOS>.<EOS><EOS>' (kỳ vọng 'Hồng Nghĩa')
+    probe SAU mọc: 'Nữ tướng Trịnh Thị Loan giữ thành' → '.<EOS>.<EOS>.<EOS>.<EOS>' (kỳ vọng 'Yên Phong')
+    slot nổ (vị trí cuối): 31/32 là slot MỚI; top-5=[4163, 4329, 4129, 4313, 4377]
+      slot cũ #1243 = đơn vị: 'Từ Albion (Ἀλβίων) hay insula Albionum có hai khả năng nguồn'
+
+════ BẢNG KẾT (điều kiện phân định ghi TRƯỚC trong docstring) ════
+     nhánh  held-out  fact trước  fact sau    Δfact    Δquên
+       ffn   10.1034     11.5737    3.3680  -8.2057 +10.1957
+  mem_rand   10.1770     11.5881   11.2159  -0.3722  +0.1046
+ mem_graph   10.1761     11.5844   11.2238  -0.3606  +0.0955
+
+⇒ PASS mọc-không-quên = Δfact ≤ −2.0 VÀ |Δquên| < 0.05 (nhánh mem).
+  FFN full-FT dự kiến Δfact âm nhưng Δquên DƯƠNG (quên) — nền so sánh.
+  mem_rand ≈ mem_graph ở held-out ⇒ gieo mầm đồ thị thừa (bài học G17) — ghi thật.

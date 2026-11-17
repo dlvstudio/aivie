@@ -1,0 +1,23 @@
+lesson_id: vi_grade3_da_V
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_da_V
+slots:
+  - var: S
+  - const: "đã"
+  - var: V
+
+bind:
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Em đã học"
+  - "Bé đã ngủ"
+  - "Mẹ đã nấu"
+  - "Bố đã đi"
+  - "Lan đã chạy"
+  - "Con mèo đã ăn"

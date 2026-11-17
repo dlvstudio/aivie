@@ -1,0 +1,25 @@
+lesson_id: vi_grade7_Trong_N_S_V
+grade: 7
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_Trong_N_S_V
+slots:
+  - const: "Trong"
+  - var: N
+  - var: S
+  - var: V
+
+bind:
+  N: danh từ
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Trong lớp em học chăm"
+  - "Trong vườn hoa nở đẹp"
+  - "Trong nhà mèo ngủ yên"
+  - "Trong sách có nhiều chuyện"
+  - "Trong trường học sinh chạy"
+  - "Trong rừng chim hót vang"

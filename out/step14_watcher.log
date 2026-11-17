@@ -1,0 +1,70 @@
+[2026-07-20 23:25:39] G19c done. Starting Step 14 SFT...
+[    0.6s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    1.5s] model 42.1M · ctx 512 · dropout 0.1 · device=mps
+[    1.5s] nạp SFT data …
+[    2.6s]   sft_train.jsonl: 6,302 cặp
+[    2.6s]   QA nhà (grade_0*/qa/train): 251 cặp
+[    2.6s]   giữ 6,525 · bỏ 28 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.7s]   giữ 64 · bỏ 0 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.7s]   QA val nhà: 30 cặp (loại 1 lộ đề vào train)
+[    2.7s]   giữ 30 · bỏ 0 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.7s] guard held-out: 200 đơn vị · 19,963 byte
+[    2.7s] nạp corpus replay …
+[    2.7s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    2.7s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    3.1s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    4.6s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    6.2s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   22.3s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   23.3s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   23.3s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   28.2s] TRƯỚC SFT: sft-val 5.087 bits-đáp · QA-nhà 4.544 · guard 1.0539 bpb
+[   28.7s] train: 6,525 ví dụ · 173 batch/epoch · 2 epoch · lr 3e-05 · replay mỗi 4 step
+[   30.1s]   ep0     0/173 loss 5.425 bits · ETA 173m
+[  206.0s]   ep0   100/173 loss 4.963 bits · ETA 8m
+[  469.3s] EPOCH 0: sft-val 4.794 (Δ-0.292) · QA-nhà 4.300 (Δ-0.244) · guard 1.0549 (Δ+0.0010) ★ lưu
+[  470.8s]   ep1     0/173 loss 5.113 bits · ETA 8m
+[  836.2s]   ep1   100/173 loss 4.787 bits · ETA 4m
+[ 1173.2s] EPOCH 1: sft-val 4.758 (Δ-0.329) · QA-nhà 4.300 (Δ-0.244) · guard 1.0553 (Δ+0.0013) ★ lưu
+[ 1174.9s] ================================================================
+[ 1174.9s] 1) sft-val bits-đáp 5.087 → 4.758 (Δ-0.329) — ❌ chưa đạt ngưỡng −0.5
+[ 1174.9s] 2) guard essays 1.0539 → 1.0553 bpb (Δ+0.0013) — ✅ sạch (≤ +0.05)
+[ 1174.9s] 3) ĐỌC TAY (bits mù với bịa — G15):
+[ 1176.5s]    Hỏi: Lao động có ích gì
+     GOLD: Lao động là vinh quang.
+     SINH: Hỏi: Lao động có ích gì Đáp: Lao động có ích gì? Đáp: Lao động có ích gì Đáp: Lao động có ích gì? Đáp: Lao động có ích gì Đáp: Lao động có ích gì? Đáp: Lao động có ích gì Đáp: Lao động có ích gì? Đáp: Lao động có ích gì Đáp:
+[ 1176.6s]    Hỏi: Ai chữa bệnh
+     GOLD: Bác sĩ chữa bệnh.
+     SINH: Hỏi: Ai chữa bệnh Đáp: Bạn có thể sử dụng thuốc trừ sâu để ngăn ngừa các bệnh.
+[ 1177.2s]    Hỏi: Ai trồng lúa
+     GOLD: Nông dân trồng lúa.
+     SINH: Hỏi: Ai trồng lúa Đáp: Bạn có thể sử dụng một số loại rau như rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau, rau,
+[ 1177.3s]    Hỏi: Ai may quần áo
+     GOLD: Thợ may may quần áo.
+     SINH: Hỏi: Ai may quần áo Đáp: Bạn có thể sử dụng quần áo để làm cho bạn cảm thấy thoải mái hơn.
+[ 1177.4s]    Hỏi: Khi đi xe máy cần gì
+     GOLD: Đội mũ bảo hiểm khi đi xe máy.
+     SINH: Hỏi: Khi đi xe máy cần gì Đáp: Bạn có thể sử dụng máy chủ động để làm gì?
+[ 1177.9s]    Hỏi: Đoàn kết giúp em thế nào
+     GOLD: Đoàn kết giúp em mạnh hơn.
+     SINH: Hỏi: Đoàn kết giúp em thế nào Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không? Đáp: Bạn có thể giúp em không
+[ 1178.4s]    Hỏi: Ai giữ an ninh
+     GOLD: Công an giữ an ninh.
+     SINH: Hỏi: Ai giữ an ninh Đáp: Bạn có thể cho tôi biết thêm về cách an ninh Đáp: Bạn có thể cho tôi biết thêm về cách an ninh Đáp: Bạn có thể cho tôi biết thêm về cách an ninh Đáp: an ninh Đáp: an ninh Đáp: an ninh Đáp: an ninh Đáp: an ninh Đáp: an
+[ 1178.9s]    Hỏi: Chính phủ làm gì
+     GOLD: Chính phủ điều hành đất nước.
+     SINH: Hỏi: Chính phủ làm gì Đáp: Bạn có thể làm gì để làm gì? Đáp: Bạn có thể làm gì để làm gì? Đáp: Bạn có thể làm gì để làm gì? Đáp: Bạn có thể làm gì để làm gì? Đáp: Bạn có thể làm gì để làm gì? Đáp: Bạn có thể làm gì
+[ 1179.1s]    Hỏi: Tòa án làm gì
+     GOLD: Tòa án xét xử theo luật.
+     SINH: Hỏi: Tòa án làm gì Đáp: Bạn có thể cho tôi biết thêm về các chủ đề như thế nào?
+[ 1179.6s]    Hỏi: Công an làm gì
+     GOLD: Công an điều tra tội phạm.
+     SINH: Hỏi: Công an làm gì Đáp: Công an làm việc? Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc. Đáp: Công an làm việc
+[ 1179.7s]    Hỏi: Trung thu là tết của ai
+     GOLD: Trung thu là tết trẻ em.
+     SINH: Hỏi: Trung thu là tết của ai Đáp: Bạn có thể thưởng thức bữa ăn ngon và thưởng thức bữa ăn ngon.
+[ 1180.2s]    Hỏi: Công dân có nghĩa vụ gì
+     GOLD: Công dân có nghĩa vụ nộp thuế.
+     SINH: Hỏi: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì? Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có nghĩa vụ gì Đáp: Công dân có
+[ 1180.2s] → checkpoint tốt nhất (epoch 1): out/lm_v2_sft.pt
+[2026-07-20 23:45:23] Step 14 SFT finished.

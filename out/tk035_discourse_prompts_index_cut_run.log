@@ -1,0 +1,134 @@
+[     0.0s] === eval_discourse_prompts START (pid=11174) → out/logs/eval_discourse_prompts_20260709_221927.log ===
+[     0.0s] results → /Users/dlv/Documents/code/nn-aivie/out/tk035_discourse_prompts_index_cut.log
+[     0.0s] ▶ load_checkpoint
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    22.0s] ✓ unpickle  (22.0s)
+[    22.0s] ▶ vocab (113572 token)
+[    22.7s] ✓ vocab (113572 token)  (0.7s)
+[    22.7s] ▶ adjacency
+[    42.4s] ✓ adjacency  (19.7s)
+[    42.4s] ▶ embedding
+[    43.7s] ✓ embedding  (1.3s)
+[    43.7s] ▶ parents
+[    43.7s] parents: deserialize 176430 records …
+[    44.1s] parents 5000/176430 (2.8%)
+[    44.6s] parents 10000/176430 (5.7%)
+[    45.0s] parents 15000/176430 (8.5%)
+[    45.6s] parents 20000/176430 (11.3%)
+[    45.9s] parents 25000/176430 (14.2%)
+[    46.4s] parents 30000/176430 (17.0%)
+[    46.9s] parents 35000/176430 (19.8%)
+[    47.4s] parents 40000/176430 (22.7%)
+[    48.0s] parents 45000/176430 (25.5%)
+[    48.5s] parents 50000/176430 (28.3%)
+[    49.0s] parents 55000/176430 (31.2%)
+[    49.5s] parents 60000/176430 (34.0%)
+[    50.0s] parents 65000/176430 (36.8%)
+[    50.5s] parents 70000/176430 (39.7%)
+[    51.0s] parents 75000/176430 (42.5%)
+[    66.1s] parents 80000/176430 (45.3%)
+[    66.6s] parents 85000/176430 (48.2%)
+[    67.0s] parents 90000/176430 (51.0%)
+[    67.4s] parents 95000/176430 (53.8%)
+[    67.9s] parents 100000/176430 (56.7%)
+[    68.4s] parents 105000/176430 (59.5%)
+[    68.8s] parents 110000/176430 (62.3%)
+[    69.1s] parents 115000/176430 (65.2%)
+[    69.5s] parents 120000/176430 (68.0%)
+[    70.0s] parents 125000/176430 (70.8%)
+[    70.4s] parents 130000/176430 (73.7%)
+[    70.7s] parents 135000/176430 (76.5%)
+[    71.1s] parents 140000/176430 (79.4%)
+[    71.5s] parents 145000/176430 (82.2%)
+[    71.9s] parents 150000/176430 (85.0%)
+[    72.7s] parents 155000/176430 (87.9%)
+[    73.6s] parents 160000/176430 (90.7%)
+[    75.0s] parents 165000/176430 (93.5%)
+[   103.5s] parents 170000/176430 (96.4%)
+[   106.5s] parents 175000/176430 (99.2%)
+[   458.8s] ▶ rebuild_hierarchical_index …
+[   461.2s] ✓ rebuild_hierarchical_index (2.4s)
+[   461.2s] ✓ parents  (417.5s)
+[   461.2s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   468.4s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   468.5s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   472.1s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   472.1s] ✓ load_checkpoint XONG
+[   472.1s] ✓ load_checkpoint  (472.1s)
+[   472.1s] ▶ build_prompts
+[   478.3s] ✓ build_prompts  (6.1s)
+[   478.3s] eval: 43 prompts × 3 modes = 129 generations
+[   478.3s] ▶ eval_generate
+[   478.3s] prompt 1/43 [history_wiki_para] 'Khối trường tư thục phát triển năng'
+[   478.3s] ▶ gen 1/129 gen multi varlm=0
+[   564.9s] ✓ gen 1/129 (86.6s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   564.9s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   564.9s] ▶ gen 2/129 gen multi varlm=0.35
+[   576.3s] ✓ gen 2/129 (11.3s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   576.3s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   576.3s] ▶ gen 3/129 gen multi varlm=0.5
+[   585.1s] ✓ gen 3/129 (8.8s) overlap=1.00 chars=66 multi=0 ent_keep=0.00
+[   585.1s]     → 'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+[   585.1s] prompt 2/43 [history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+[   585.1s] ▶ gen 4/129 gen multi varlm=0
+[   601.6s] ✓ gen 4/129 (16.4s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   601.6s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   601.6s] ▶ gen 5/129 gen multi varlm=0.35
+[   612.2s] ✓ gen 5/129 (10.7s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   612.2s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   612.2s] ▶ gen 6/129 gen multi varlm=0.5
+[   621.6s] ✓ gen 6/129 (9.4s) overlap=1.00 chars=86 multi=0 ent_keep=1.00
+[   621.6s]     → 'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+[   621.6s] prompt 3/43 [history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+[   621.6s] ▶ gen 7/129 gen multi varlm=0
+[   632.9s] ✓ gen 7/129 (11.3s) overlap=1.00 chars=65 multi=0 ent_keep=1.00
+[   632.9s]     → 'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+[   632.9s] ▶ gen 8/129 gen multi varlm=0.35
+[   648.9s] ✓ gen 8/129 (16.0s) overlap=1.00 chars=65 multi=0 ent_keep=1.00
+[   648.9s]     → 'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+[   648.9s] ▶ gen 9/129 gen multi varlm=0.5
+[   662.3s] ✓ gen 9/129 (13.4s) overlap=1.00 chars=65 multi=0 ent_keep=1.00
+[   662.3s]     → 'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+[   662.3s] prompt 4/43 [history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+[   662.3s] ▶ gen 10/129 gen multi varlm=0
+[   685.1s] ✓ gen 10/129 (22.8s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   685.1s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   685.1s] ▶ gen 11/129 gen multi varlm=0.35
+[   718.4s] ✓ gen 11/129 (33.2s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   718.4s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   718.4s] ▶ gen 12/129 gen multi varlm=0.5
+[   741.6s] ✓ gen 12/129 (23.2s) overlap=1.00 chars=93 multi=0 ent_keep=0.00
+[   741.6s]     → 'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+[   741.6s] prompt 5/43 [history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+[   741.6s] ▶ gen 13/129 gen multi varlm=0
+[   767.2s] ✓ gen 13/129 (25.6s) overlap=1.00 chars=35 multi=0 ent_keep=0.00
+[   767.2s]     → 'Chúa gánh cái lo , ta hưởng cái vui'
+[   767.2s] ▶ gen 14/129 gen multi varlm=0.35
+[   802.3s] ✓ gen 14/129 (35.0s) overlap=1.00 chars=35 multi=0 ent_keep=0.00
+[   802.3s]     → 'Chúa gánh cái lo , ta hưởng cái vui'
+[   802.3s] ▶ gen 15/129 gen multi varlm=0.5
+[   835.4s] ✓ gen 15/129 (33.1s) overlap=1.00 chars=35 multi=0 ent_keep=0.00
+[   835.4s]     → 'Chúa gánh cái lo , ta hưởng cái vui'
+[   835.4s] prompt 6/43 [history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+[   835.4s] ▶ gen 16/129 gen multi varlm=0
+[   907.9s] ✓ gen 16/129 (72.5s) overlap=1.00 chars=75 multi=1 ent_keep=1.00
+[   907.9s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+[   907.9s] ▶ gen 17/129 gen multi varlm=0.35
+[  1012.3s] ✓ gen 17/129 (104.4s) overlap=1.00 chars=75 multi=1 ent_keep=1.00
+[  1012.3s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+[  1012.3s] ▶ gen 18/129 gen multi varlm=0.5
+[  1078.1s] ✓ gen 18/129 (65.8s) overlap=1.00 chars=75 multi=1 ent_keep=1.00
+[  1078.1s]     → 'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+[  1078.1s] prompt 7/43 [history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+[  1078.1s] ▶ gen 19/129 gen multi varlm=0
+[  1163.1s] ✓ gen 19/129 (84.8s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[  1163.1s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[  1163.1s] ▶ gen 20/129 gen multi varlm=0.35
+[  1218.7s] ✓ gen 20/129 (55.6s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[  1218.7s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[  1218.7s] ▶ gen 21/129 gen multi varlm=0.5
+[  1259.4s] ✓ gen 21/129 (40.6s) overlap=1.00 chars=80 multi=0 ent_keep=0.00
+[  1259.4s]     → 'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+[  1259.4s] prompt 8/43 [history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+[  1259.4s] ▶ gen 22/129 gen multi varlm=0

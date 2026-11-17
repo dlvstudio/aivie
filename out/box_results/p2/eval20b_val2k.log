@@ -1,0 +1,22 @@
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+hybrid_2p6b_x.pt @step 0: vi_web 3.050 · long 2.434 · vi_wiki 4.974 · en_edu 3.686 · math 3.771 · code 3.686 · pretrain_vi 2.669 · TB 3.467
+cpt_a1.pt @step 3814: vi_web 2.727 · long 2.268 · vi_wiki 4.435 · en_edu 2.871 · math 2.414 · code 1.763 · pretrain_vi 2.648 · TB 2.732
+cpt_a2.pt @step 5722: vi_web 2.623 · long 2.164 · vi_wiki 4.435 · en_edu 2.801 · math 2.331 · code 1.699 · pretrain_vi 2.636 · TB 2.670
+cpt_b.pt @step 9536: vi_web 2.210 · long 2.057 · vi_wiki 3.924 · en_edu 2.511 · math 1.882 · code 0.975 · pretrain_vi 2.610 · TB 2.310
+### {"hybrid_2p6b_x.pt@0": {"vi_web": 3.0502, "long": 2.434, "vi_wiki": 4.9742, "en_edu": 3.6856, "math": 3.7707, "code": 3.6863, "pretrain_vi": 2.6691, "TB": 3.4672}, "cpt_a1.pt@3814": {"vi_web": 2.727, "long": 2.2675, "vi_wiki": 4.4346, "en_edu": 2.8709, "math": 2.4139, "code": 1.7632, "pretrain_vi": 2.6485, "TB": 2.7322}, "cpt_a2.pt@5722": {"vi_web": 2.6229, "long": 2.1642, "vi_wiki": 4.435, "en_edu": 2.801, "math": 2.3313, "code": 1.6991, "pretrain_vi": 2.6359, "TB": 2.6699}, "cpt_b.pt@9536": {"vi_web": 2.2101, "long": 2.057, "vi_wiki": 3.9238, "en_edu": 2.5107, "math": 1.8818, "code": 0.9754, "pretrain_vi": 2.6097, "TB": 2.3098}}
+EVAL20B_XONG

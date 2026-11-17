@@ -1,0 +1,90 @@
+[0s] load checkpoints/network_v11_coref.pkl (gc.disable) …
+[107s] ✓ loaded · parents 65,098
+
+═══ PLAN-AGENDA diagnostic — agenda bám thực-thể MỚI hay train? ═══
+
+[single] 'Lữ Bằng Sơn là một nhà thơ nổi tiếng của Việt Nam .'
+    entity_register : 'Lữ là một nhà thơ Bằng Sơn của Việt Nam nổi tiếng .'
+    focus           : 'Lữ'(9.3) 'Ġlà'(1.9)
+    plan.entity_ids : 'Lữ là một nhà thơ Bằng Sơn của Việt Nam nổi tiếng .'
+    plan.AGENDA     : '\nNguyễn Phi Phúc có tám người con, trong đó có ba người con trai: Nguyễn Nhạc, Nguyễn Lữ v'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Nguyễn Nhạc\n\nBa anh em Tây Sơn, Nguyễn Nhạc, Nguyễn '
+
+[single] 'Vĩnh Trảng là một tỉnh ven biển thuộc miền Trung .'
+    entity_register : 'Vĩnh Trảng là một tỉnh ven biển thuộc miền Trung .'
+    focus           : 'Vĩnh'(8.6) 'ĠTrảng'(9.6)
+    plan.entity_ids : 'Vĩnh Trảng là một tỉnh ven biển thuộc miền Trung .'
+    plan.AGENDA     : '\nCó hai nhân vật lãnh đạo không phải là quân nhân tham gia là các ông Nguyễn Văn Linh và V'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Chiến dịch Hồ Chí Minh\n\nTên Chiến dịch Hồ Chí Minh d'
+
+[single] 'Trác Vĩ Hạ lên ngôi vua và bắt đầu trị vì đất nước .'
+    entity_register : 'Trác Vĩ Hạ bắt đầu trị vì ngôi vua đất nước lên . và'
+    focus           : 'Trác'(10.3) 'ĠVĩ'(7.0)
+    plan.entity_ids : 'Trác Vĩ Hạ bắt đầu trị vì ngôi vua đất nước lên . và'
+    plan.AGENDA     : ' Làm sao chính hắn nhưng vẫn nhốt ở cùng nơi đây khó có thể rời đi , còn Linh Phong giới c'   ← mấu chốt
+    facts_about#1   : 'Truyện:\nCho tới nay, Thương Hạ đối với Nguyên Hưng giới bên trong tình'
+
+[single] 'Ngân Hoài Lạc sinh ra trong một gia đình nông dân nghèo .'
+    entity_register : 'Ngân Hoài Lạc gia đình dân nghèo sinh nông ra trong . một'
+    focus           : 'Ngân'(8.6) 'ĠHoài'(6.9)
+    plan.entity_ids : 'Ngân Hoài Lạc gia đình dân nghèo sinh nông ra trong . một'
+    plan.AGENDA     : ' Ban đêm ta thấy dải sáng mờ trên trời chính là nhìn ngang vào đĩa thiên hà. Trái Đất chỉ '   ← mấu chốt
+    facts_about#1   : ' Dải Ngân Hà là thiên hà chứa Hệ Mặt Trời và hàng tỷ ngôi sao khác. Ba'
+
+[single] 'Đằng Thuỵ Khương là một tổ chức phi lợi nhuận thành lập năm 1995 .'
+    entity_register : 'Đằng Thuỵ Khương một tổ chức thành lập năm 19 nhuận phi là l'
+    focus           : 'Đằng'(9.2) 'ĠThuỵ'(7.6)
+    plan.entity_ids : 'Đằng Thuỵ Khương một tổ chức thành lập năm 19 nhuận phi là l'
+    plan.AGENDA     : ' Chiến thắng chấm dứt hơn một nghìn năm Bắc thuộc. Ngô Quyền được tôn là vị vua mở đầu thờ'   ← mấu chốt
+    facts_about#1   : ' Ngô Quyền giành độc lập năm 938 sau trận Bạch Đằng lịch sử. Chiến thắ'
+
+[single] 'Cù Minh Thác là một vị tướng tài ba dưới triều Trần .'
+    entity_register : 'Cù Thác là một vị Minh ba dưới triều Trần tướng tài .'
+    focus           : 'C'(5.3) 'ù'(8.2)
+    plan.entity_ids : 'Cù Thác là một vị Minh ba dưới triều Trần tướng tài .'
+    plan.AGENDA     : '\nNăm 1787, ông đã trở lại và giữ vững được Nam Bộ.\nTriều đại của Gia Long đã chính thức sử'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Gia Long\n\nNguyễn Ánh là cháu nội của chúa Nguyễn Phú'
+
+[crossed] 'Cù Minh Thác đánh bại Trác Vĩ Hạ trong một trận chiến lớn ,'
+    entity_register : 'Cù Thác đánh bại Minh Trác một trận Vĩ chiến lớn Hạ , trong'
+    focus           : 'C'(5.3) 'ù'(8.2)
+    plan.entity_ids : 'Cù Thác đánh bại Minh Trác một trận Vĩ chiến lớn Hạ , trong'
+    plan.AGENDA     : ' huy động hơn 20-30 vạn quân thủy bộ, chia làm ba đường.\nTrong tình trạng hiện thời, nếu c'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Gia Long\n\nNguyễn Ánh là cháu nội của chúa Nguyễn Phú'
+
+[crossed] 'Trác Vĩ Hạ là con trai của Lữ Bằng Sơn ,'
+    entity_register : 'Trác Vĩ Hạ con trai của Lữ Bằng Sơn là ,'
+    focus           : 'Trác'(10.3) 'ĠVĩ'(7.0)
+    plan.entity_ids : 'Trác Vĩ Hạ con trai của Lữ Bằng Sơn là ,'
+    plan.AGENDA     : ' Thương Hạ đối với Nguyên Hưng giới bên trong tình thế đều vô cùng cảm thấy hứng thú. Làm '   ← mấu chốt
+    facts_about#1   : 'Truyện:\nCho tới nay, Thương Hạ đối với Nguyên Hưng giới bên trong tình'
+
+[pronoun] 'Lữ Bằng Sơn là một họa sĩ tài năng . Ông'
+    entity_register : 'Lữ Bằng họa sĩ Sơn Ông là tài . một năng'
+    focus           : 'Lữ'(9.3) 'ĠBằng'(4.9)
+    plan.entity_ids : 'Lữ Bằng họa sĩ Sơn Ông là tài . một năng'
+    plan.AGENDA     : '.\nTrong những năm đầu tiên, Nguyễn Nhạc đóng vai trò quan trọng nhất.\nTương truyền trước k'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Nguyễn Nhạc\n\nBa anh em Tây Sơn, Nguyễn Nhạc, Nguyễn '
+
+[pronoun] 'Ngân Hoài Lạc là một nữ ca sĩ nổi tiếng . Bà'
+    entity_register : 'Ngân Hoài một nữ Lạc ca sĩ tiếng . Bà là nổi'
+    focus           : 'Ngân'(8.6) 'ĠHoài'(6.9)
+    plan.entity_ids : 'Ngân Hoài một nữ Lạc ca sĩ tiếng . Bà là nổi'
+    plan.AGENDA     : ' Dải Ngân Hà là thiên hà chứa Hệ Mặt Trời và hàng tỷ ngôi sao khác. Ban đêm ta thấy dải sá'   ← mấu chốt
+    facts_about#1   : ' Dải Ngân Hà là thiên hà chứa Hệ Mặt Trời và hàng tỷ ngôi sao khác. Ba'
+
+[pronoun] 'Vĩnh Trảng là một thành phố cổ kính và yên bình . Nơi này'
+    entity_register : 'Vĩnh Trảng thành phố là kính cổ một Nơi yên . bình và này'
+    focus           : 'Vĩnh'(8.6) 'ĠTrảng'(9.6)
+    plan.entity_ids : 'Vĩnh Trảng thành phố là kính cổ một Nơi yên . bình và này'
+    plan.AGENDA     : ' trở thành một ốc đảo chỉ còn giao lưu với bên ngoài bằng đường không.\nĐại sứ quán các nướ'   ← mấu chốt
+    facts_about#1   : 'Lịch sử:\nTiêu đề: Chiến dịch Hồ Chí Minh\n\nTên Chiến dịch Hồ Chí Minh d'
+
+[single] 'Hà Nội là thủ đô của Việt Nam .'
+    entity_register : 'Hà là thủ đô của Nội Việt Nam .'
+    focus           : 'Hà'(7.1) 'Ġlà'(1.9)
+    plan.entity_ids : 'Hà là thủ đô của Nội Việt Nam .'
+    plan.AGENDA     : ' Hồ gắn với truyền thuyết vua Lê trả gươm, xung quanh là đền Ngọc Sơn và cầu Thê Húc. Đây '   ← mấu chốt
+    facts_about#1   : ' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành'
+
+[139s] → agenda/facts = train-entity (Nguyễn Lữ…) ⇒ drift PLAN-level (copy-score không cứu); = thực-thể-mới/rỗng ⇒ score-level.

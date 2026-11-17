@@ -1,0 +1,150 @@
+[     0.0s] === load_net_ls_concept_conf START (pid=31944) → out/logs/load_net_ls_concept_conf_20260826_192412.log ===
+[     0.0s] load checkpoint checkpoints/net_ls_concept_conf.pkl …
+[     0.0s] ▶ unpickle
+[     2.3s] ✓ unpickle  (2.3s)
+[     2.3s] ▶ vocab (32002 token)
+[     2.4s] ✓ vocab (32002 token)  (0.0s)
+[     2.4s] ▶ adjacency
+[    11.2s] ✓ adjacency  (8.9s)
+[    11.2s] ▶ embedding
+[    11.3s] ✓ embedding  (0.1s)
+[    11.3s] ▶ parents
+[    11.3s] parents: deserialize 450303 records …
+[    11.3s] parents 5000/450303 (1.1%)
+[    11.4s] parents 10000/450303 (2.2%)
+[    11.4s] parents 15000/450303 (3.3%)
+[    11.5s] parents 20000/450303 (4.4%)
+[    11.5s] parents 25000/450303 (5.6%)
+[    11.6s] parents 30000/450303 (6.7%)
+[    11.6s] parents 35000/450303 (7.8%)
+[    11.6s] parents 40000/450303 (8.9%)
+[    11.7s] parents 45000/450303 (10.0%)
+[    11.7s] parents 50000/450303 (11.1%)
+[    11.8s] parents 55000/450303 (12.2%)
+[    11.8s] parents 60000/450303 (13.3%)
+[    11.8s] parents 65000/450303 (14.4%)
+[    11.9s] parents 70000/450303 (15.5%)
+[    11.9s] parents 75000/450303 (16.7%)
+[    11.9s] parents 80000/450303 (17.8%)
+[    12.0s] parents 85000/450303 (18.9%)
+[    12.0s] parents 90000/450303 (20.0%)
+[    12.1s] parents 95000/450303 (21.1%)
+[    12.1s] parents 100000/450303 (22.2%)
+[    12.1s] parents 105000/450303 (23.3%)
+[    12.2s] parents 110000/450303 (24.4%)
+[    12.2s] parents 115000/450303 (25.5%)
+[    12.3s] parents 120000/450303 (26.6%)
+[    12.3s] parents 125000/450303 (27.8%)
+[    12.3s] parents 130000/450303 (28.9%)
+[    12.4s] parents 135000/450303 (30.0%)
+[    12.4s] parents 140000/450303 (31.1%)
+[    12.5s] parents 145000/450303 (32.2%)
+[    12.5s] parents 150000/450303 (33.3%)
+[    12.6s] parents 155000/450303 (34.4%)
+[    12.6s] parents 160000/450303 (35.5%)
+[    12.7s] parents 165000/450303 (36.6%)
+[    12.8s] parents 170000/450303 (37.8%)
+[    12.8s] parents 175000/450303 (38.9%)
+[    12.9s] parents 180000/450303 (40.0%)
+[    13.0s] parents 185000/450303 (41.1%)
+[    13.1s] parents 190000/450303 (42.2%)
+[    13.2s] parents 195000/450303 (43.3%)
+[    13.2s] parents 200000/450303 (44.4%)
+[    13.3s] parents 205000/450303 (45.5%)
+[    13.4s] parents 210000/450303 (46.6%)
+[    13.5s] parents 215000/450303 (47.7%)
+[    13.5s] parents 220000/450303 (48.9%)
+[    13.6s] parents 225000/450303 (50.0%)
+[    13.7s] parents 230000/450303 (51.1%)
+[    13.8s] parents 235000/450303 (52.2%)
+[    13.8s] parents 240000/450303 (53.3%)
+[    13.9s] parents 245000/450303 (54.4%)
+[    14.0s] parents 250000/450303 (55.5%)
+[    14.1s] parents 255000/450303 (56.6%)
+[    14.2s] parents 260000/450303 (57.7%)
+[    14.3s] parents 265000/450303 (58.8%)
+[    14.3s] parents 270000/450303 (60.0%)
+[    14.4s] parents 275000/450303 (61.1%)
+[    14.5s] parents 280000/450303 (62.2%)
+[    14.6s] parents 285000/450303 (63.3%)
+[    14.7s] parents 290000/450303 (64.4%)
+[    14.8s] parents 295000/450303 (65.5%)
+[    14.9s] parents 300000/450303 (66.6%)
+[    14.9s] parents 305000/450303 (67.7%)
+[    15.0s] parents 310000/450303 (68.8%)
+[    15.1s] parents 315000/450303 (70.0%)
+[    15.2s] parents 320000/450303 (71.1%)
+[    15.3s] parents 325000/450303 (72.2%)
+[    15.4s] parents 330000/450303 (73.3%)
+[    15.5s] parents 335000/450303 (74.4%)
+[    15.6s] parents 340000/450303 (75.5%)
+[    15.6s] parents 345000/450303 (76.6%)
+[    15.7s] parents 350000/450303 (77.7%)
+[    15.8s] parents 355000/450303 (78.8%)
+[    15.9s] parents 360000/450303 (79.9%)
+[    16.0s] parents 365000/450303 (81.1%)
+[    16.1s] parents 370000/450303 (82.2%)
+[    16.2s] parents 375000/450303 (83.3%)
+[    16.3s] parents 380000/450303 (84.4%)
+[    16.3s] parents 385000/450303 (85.5%)
+[    16.4s] parents 390000/450303 (86.6%)
+[    16.5s] parents 395000/450303 (87.7%)
+[    16.5s] parents 400000/450303 (88.8%)
+[    16.6s] parents 405000/450303 (89.9%)
+[    16.7s] parents 410000/450303 (91.0%)
+[    16.8s] parents 415000/450303 (92.2%)
+[    16.8s] parents 420000/450303 (93.3%)
+[    16.9s] parents 425000/450303 (94.4%)
+[    17.0s] parents 430000/450303 (95.5%)
+[    17.1s] parents 435000/450303 (96.6%)
+[    17.1s] parents 440000/450303 (97.7%)
+[    17.2s] parents 445000/450303 (98.8%)
+[    17.3s] parents 450000/450303 (99.9%)
+[    29.4s] ▶ rebuild_hierarchical_index …
+[    31.3s] ✓ rebuild_hierarchical_index (1.9s)
+[    36.4s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    36.4s] ✓ parents  (25.1s)
+[    36.4s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    38.2s] sidecar thiếu → migrate: net_ls_concept_conf.content.pkl
+[    38.2s] ✓ load_checkpoint XONG
+[38s] load
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1033: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 450303 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/net_ls_concept_conf.pkl --in-place
+  ensure_frame_brackets(state)
+[209s] W_skip warmed
+[228s] completion_graph xong trong 19.3s
+generated: 'Hỏi: Sắt là gì? Đáp: có bốn'
+         76324815 function calls (76324658 primitive calls) in 19.269 seconds
+
+   Ordered by: cumulative time
+   List reduced from 546 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.018    0.018   19.269   19.269 ~/Documents/learn/nn-aivie/src/nn_aivie/viz/export_graph_v3.py:222(completion_graph)
+        5    6.232    1.246   17.402    3.480 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1210(rank_matches)
+        2    0.064    0.032   13.877    6.939 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1784(_build_segment_plan)
+        1    0.000    0.000    7.912    7.912 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:4367(generate)
+        1    0.000    0.000    7.211    7.211 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:3062(_build_agenda)
+  1095147    1.980    0.000    2.868    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:726(parent_phrases_for_query)
+  3813275    1.643    0.000    2.693    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:873(_idf)
+        5    0.581    0.116    2.138    0.428 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:193(tiebreak_ranked)
+11471121/11471115    1.227    0.000    1.949    0.000 {built-in method builtins.max}
+        1    0.001    0.001    1.246    1.246 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:1022(_wseq_fallback)
+        1    0.013    0.013    1.245    1.245 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:282(_w_skip_primary_loop)
+       16    0.499    0.031    0.980    0.061 {built-in method builtins.sorted}
+  9871121    0.829    0.000    0.829    0.000 {method 'get' of 'dict' objects}
+  6970333    0.663    0.000    0.663    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:739(<genexpr>)
+        3    0.558    0.186    0.558    0.186 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/_w_skip_p42_helpers.py:79(eos_from_end_after)
+        3    0.009    0.003    0.523    0.174 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1800(facts_about)
+        3    0.153    0.051    0.499    0.166 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:2631(theme_neuron)
+  1095167    0.325    0.000    0.491    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1082(_phrase_idf)
+  1095135    0.196    0.000    0.444    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:226(<lambda>)
+9571727/9571634    0.399    0.000    0.399    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.388    0.388 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:3113(hub_chain_proposals)
+        5    0.247    0.049    0.377    0.075 ~/Documents/learn/nn-aivie/src/nn_aivie/hca/hopfield.py:139(retrieve)
+  3207510    0.369    0.000    0.369    0.000 ~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py:1399(<genexpr>)
+  6007097    0.352    0.000    0.352    0.000 {built-in method math.log}
+   450303    0.052    0.000    0.345    0.000 {built-in method builtins.next}
+
+
+
+### hết

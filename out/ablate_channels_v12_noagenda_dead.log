@@ -1,0 +1,16 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[83s] ✓ 430,447 cha · chế độ=no_agenda
+  23 prompt (T2–T6 của eval_gen_broad)
+[4436s] BASE  empty=0.04  digit_split=0.09  loop4=0.00  copy=0.87  n_facts=0.52  stop_clean=1.00  n_tok=7.61
+
+============================================================================================
+tắt kênh         Δempty  Δdigit⎵  Δloop4   Δcopy  Δn_facts   Δstop   Δn_tok
+============================================================================================
+readout            0.00     0.00    0.00    0.00      0.00    0.00      0.0   [8039s]
+qk                 0.00     0.00    0.00    0.00      0.00    0.00      0.0   [11591s]
+============================================================================================
+Ứng viên KÊNH CHẾT (mọi Δ = 0): ['readout', 'qk']
+Δ=0 ở bộ prompt này KHÔNG chứng minh kênh vô dụng toàn cục — chỉ là ứng viên;
+trước khi bỏ phải chạy thêm `--mode no_agenda` và bộ T1/T7 của eval_gen_broad.
+
+[11591s] → out/ablate_channels_v12_noagenda_dead.log

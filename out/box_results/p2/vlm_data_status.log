@@ -1,0 +1,25 @@
+2026-10-11 14:06:05 A: bắt đầu · ổ còn 102G
+2026-10-11 14:06:35 LỖI A: pip (xem vlmd_pip.log)
+2026-10-11 14:08:11 A: bắt đầu · ổ còn 102G
+2026-10-11 14:12:12 install xong · vllm 0.31.0 · ổ còn 88G
+2026-10-11 14:12:26 p3data xong · calib code_sft code_tb cpt eval_clean math multiturn office office_v2 pretrain_vi sft_p3 sgk v5 vlm  · ổ còn 88G
+2026-10-11 15:01:22 fetch xong · ### vichart: 3768 mẫu · 54s ### openvivqa: 10199 mẫu · 965s ### ktvic: 6300 mẫu · 1546s ### coco: 30000 mẫu · 370s ### cauldron: 48528 mẫu · 1174s  · ổ còn 80G
+2026-10-11 15:29:56 render xong · màn hình 45000+600 · đọc-trước 40000 · chữ 40000+80000 · 16G · ổ còn 72G
+2026-10-11 15:30:53 A XONG · chờ P2 XONG để chạy B
+2026-10-12 02:16:15 B: xoá ckpt A1/A2/chèn khối cũ (CLEAN_OK=1) → ổ còn 126G
+2026-10-12 02:31:47 B: 3 thầy Gemma sẵn sàng (GPU 1–3)
+2026-10-12 02:52:55 B: 3 thầy Gemma sẵn sàng (GPU 1–3)
+2026-10-12 03:36:31 translate xong · ### translate: 31802/31934 · ổ còn 94G
+2026-10-12 03:38:09 ảnh code xong · train 19999 · vòng thầy 3000 · test 300 · 1.5G
+2026-10-12 03:52:21 teach1 xong · ### thầy viết 17117/17117 mẫu cần hiểu · tổng 45000 ### thầy viết 231/231 mẫu cần hiểu · tổng 600 ### thầy viết 8270/8270 mẫu cần hiểu · tổng 40000  · ổ còn 94G
+2026-10-12 04:17:36 ảnh code: thầy điền ### thầy viết 9986/9986 mẫu cần hiểu · tổng 19999 ### thầy viết 149/149 mẫu cần hiểu · tổng 300 
+2026-10-12 04:19:49 vision xong · 36251 ảnh có lời thầy · ổ còn 94G
+2026-10-12 04:54:34 news xong · 39999 train · 600 test · ổ còn 83G
+2026-10-12 05:24:00 teach2 xong · ### thầy viết 13661/13667 mẫu cần hiểu · tổng 39993 ### thầy viết 198/198 mẫu cần hiểu · tổng 600  · ổ còn 83G
+2026-10-12 05:24:37 B gộp: ### align 80830 · sft 133364 (chỉ chữ 12500) · test nat 1664 · screen 600 · chart 424 · ovqa 1070 sft theo nguồn: {'nat_coco': 19561, 'text': 12500, 'ovqa': 9129, 'nat_openvivqa': 9066, 'screen_doc': 8692, 'screen_email': 8535, 'screen_code': 8522, 'screen_chart': 6326, 'nat_ktvic': 5960, 'caul_textvqa': 4991, 'caul_chartqa': 4942, 'screen_chat': 4313, 'caul_st_vqa': 3998, 'caul_docvqa' · sft_ocr 173364 · sft5 219989
+2026-10-12 05:27:22 B: đã đẩy HF donaldluong/nn-aivie-vlm-data (8.1G)
+2026-10-12 05:27:23 VLM DATA XONG · 29G
+2026-10-12 05:29:09 ảnh code: gộp sft5 + code 19999 → 239988 · đã đẩy HF
+2026-10-12 05:29:09 VLM CODE XONG
+2026-10-12 05:37:03 đẩy-hết: trang báo + ảnh gốc (19G) + README → HF donaldluong/nn-aivie-vlm-data
+2026-10-12 05:37:04 VLM UPLOAD ALL XONG

@@ -1,0 +1,63 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] === load_network_v11_styled_1k START (pid=3493) → out/logs/load_network_v11_styled_1k_20260723_173604.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] ▶ unpickle
+[     7.5s] ✓ unpickle  (7.5s)
+[     7.5s] ▶ vocab (32002 token)
+[     7.6s] ✓ vocab (32002 token)  (0.0s)
+[     7.6s] ▶ adjacency
+[    17.8s] ✓ adjacency  (10.2s)
+[    17.8s] ▶ embedding
+[    17.8s] ✓ embedding  (0.1s)
+[    17.8s] ▶ parents
+[    17.8s] parents: deserialize 65098 records …
+[    18.0s] parents 5000/65098 (7.7%)
+[    18.2s] parents 10000/65098 (15.4%)
+[    18.3s] parents 15000/65098 (23.0%)
+[    18.4s] parents 20000/65098 (30.7%)
+[    18.6s] parents 25000/65098 (38.4%)
+[    19.7s] parents 30000/65098 (46.1%)
+[    23.3s] parents 35000/65098 (53.8%)
+[    25.0s] parents 40000/65098 (61.4%)
+[    25.2s] parents 45000/65098 (69.1%)
+[    25.3s] parents 50000/65098 (76.8%)
+[    25.5s] parents 55000/65098 (84.5%)
+[    25.6s] parents 60000/65098 (92.2%)
+[    25.8s] parents 65000/65098 (99.8%)
+[    51.8s] ▶ rebuild_hierarchical_index …
+[    53.4s] ✓ rebuild_hierarchical_index (1.6s)
+[    61.8s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    61.8s] ✓ parents  (44.0s)
+[    61.8s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    66.1s] sidecar thiếu → migrate: network_v11_styled_1k.content.pkl
+[    66.1s] ✓ load_checkpoint XONG
+[66s] ✓ parents 65,098
+plan: Ġhệt | Ġlướt | Ġkiệm
+═══ calib cos(punct → style_head) ═══
+  'Ġhệt': '.'→0.079  ','→0.116  '!'→0.046  'Ċ'→0.119
+  'Ġlướt': '.'→0.053  ','→0.008  '!'→0.129  'Ċ'→0.052
+  'Ġkiệm': '.'→0.201  ','→0.008  '!'→0.076  'Ċ'→-0.012
+
+═══ generate A/B (cos_thresh=0.12) ═══
+… MZ only
+MZ only           bigram_cos=0.3827  inject_fit=nan  n_style=0  hits=[]
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông
+… Hard boundary
+Hard boundary     bigram_cos=0.3581  inject_fit=0.0336  n_style=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. hệt
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng. lướt
+Ông cho đóng cọc nhọn kiệm
+… Mixture cosine
+Mixture cosine    bigram_cos=0.3781  inject_fit=0.0941  n_style=1  hits=['Ġkiệm']
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. kiệm
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng
+
+═══ verdict ═══
+So sánh bigram_cos (cao = mượt hơn trên E) và inject_fit (chỗ style có khớp không).
+Hard > Mixture trên n_style nhưng bigram/fit thấp → ép chèn làm gãy.
+Mixture bigram ≈ MZ và inject_fit cao → cửa cosine đúng hướng.
+Δ bigram Hard−MZ=-0.0246  Mix−MZ=-0.0046  Mix−Hard=+0.0200
+[206s] → out/probe_style_mixture.log

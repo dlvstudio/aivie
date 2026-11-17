@@ -1,0 +1,510 @@
+{
+ "which": "multi",
+ "adapters": "ckpt/expert_code/office_v1.pt",
+ "n": 100,
+ "pass": 4,
+ "pass_rate": 0.04,
+ "def_rate": 1.0,
+ "rows": [
+  {
+   "task": 11,
+   "pass": false,
+   "resp": "```python\ndef remove_Occ(s, ch):\n    return s[:ch]\n\nprint(remove_Occ(\"hello\",\"l\"))  # Output: l\nprint(remove_Occ(\"hello\", \"o\"))  # Output: o\nprint(remove_Occ(\"hello\", \"l\"))  # Output: l\nprint(remove_Occ(\"hello\", \"o\"))  # Output: o\n```\n\nHàm `remove_Occ` nhận vào một chuỗi và trả về chuỗi đã được loại bỏ các ký tự đầu và cuối bằng cách sử dụng phương thức `[:ch]`. Hàm này cũng có sẵn các hàm bổ trợ để xử lý các trường hợp đặc biệt như khi chỉ còn lại một ký tự hoặc khi chuỗi bị trống."
+  },
+  {
+   "task": 12,
+   "pass": false,
+   "resp": "```python\ndef sort_matrix(matrix):\n    return sorted(matrix, key=lambda x: sum(row))\n\nassert sort_matrix([[1, 2, 3], [2, 4, 5], [1, 1, 1]]) == [[1, 1, 1], [1, 2, 3], [2, 4, 5]]\n```\n\nHàm `sort_matrix` trước tiên sẽ chuyển đổi `matrix` thành một danh sách các row (`row`). Sau đó, hàm sử dụng hàm `sorted` của Python để sắp xếp các rows theo thứ tự tăng dần. Hàm `key` được dùng để lưu trữ các giá trị key (điểm) cho mỗi row, giúp chúng ta so sánh các row với nhau một cách chính xác. Cuối cùng, hàm sẽ trả về danh sách các row đã được sắp xếp."
+  },
+  {
+   "task": 13,
+   "pass": false,
+   "resp": "```python\ndef count_common(dictionary):\n    common_words = set(dictionary.keys())\n    common_words.update(dictionary.values())\n    return common_words\n\nassert count_common(['red','green','black','pink','black','white','black','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','orange','pink','pink','red','red','white','"
+  },
+  {
+   "task": 14,
+   "pass": false,
+   "resp": "```python\ndef find_Volume(base, height):\n    # Calculate the volume of a triangular prism using the formula V = (1/3) * base^2 * height^2\n    volume = (1/3) * base**2 * height**2\n    return volume\n\n# Test the function\nassert find_Volume(10,8,6) == 240\nassert find_Volume(10,8,6) == 240\n```\n\nThe `find_Volume` function takes the base and height of a triangular prism as input and calculates the volume using the given formula. It then returns the volume of the triangular prism. The provided test case verifies the correctness of the function by comparing the output with the expected values."
+  },
+  {
+   "task": 15,
+   "pass": false,
+   "resp": "```python\ndef split_lowerstring(s):\n    return s.lower()\n\nprint(split_lowerstring(\"AbCd\"))  # Output: ['bC','d']\n```\n\nTrong Python, hàm `split_lowerstring` nhận đầu vào là một chuỗi và trả về một danh sách các ký tự đã được xử lý. Hàm này hoạt động bằng cách chuyển tất cả các ký tự của chuỗi thành chữ thường (lowercase) trước khi trả về kết quả."
+  },
+  {
+   "task": 16,
+   "pass": false,
+   "resp": "```python\ndef text_lowercase_underscore(text):\n    return ''.join([char if char.islower() else '_' for char in text])\n\nassert text_lowercase_underscore(\"aab_cbbbc\")==('Found a match!')\n```\n\nHàm `text_lowercase_underscore` nhận đầu vào là một chuỗi và trả về chuỗi đã được xử lý bằng cách sử dụng list comprehension. Hàm này sẽ tạo ra một danh sách các ký tự chữ cái duy nhất từ mỗi ký tự trong chuỗi đã cho, giúp đảm bảo chỉ giữ lại các ký tự chữ cái từ văn bản đầu vào."
+  },
+  {
+   "task": 17,
+   "pass": false,
+   "resp": "```python\ndef square_perimeter(size):\n    return 40\n\nprint(square_perimeter(10))\n```\n\nOutput:\n```\n40\n```\n\nTrong Python, hàm `square_perimeter` nhận vào một tham số là kích thước của hình dạng (size) và trả về giá trị chính xác của chiều dài. Hàm này có thể được gọi với bất kỳ số nào trong phạm vi từ 0 đến 19, vì vậy nó có thể xử lý các hình dạng khác nhau."
+  },
+  {
+   "task": 18,
+   "pass": true,
+   "resp": "```python\ndef remove_dirty_chars(s1, s2):\n    return ''.join(c for c in s1 if c not in s2)\n\nassert remove_dirty_chars(\"probasscurve\", \"pros\") == 'bacuve'\n```\n\nTrong đoạn code trên, đầu tiên chúng ta sẽ chuyển đổi `s1` thành một danh sách các ký tự bằng cách sử dụng list comprehension. Sau đó, mình dùng list comprehension để loại bỏ tất cả các ký tự không phải là chữ cái trong `s2` khỏi `s1`. Cuối cùng, mình chỉ cần nối các phần tử còn lại của `s1` và `s2` lại với nhau để tạo thành một chuỗi mới.\n\nKhi bạn chạy đoạn code này, kết quả sẽ trả về là: \"bacuve\"."
+  },
+  {
+   "task": 19,
+   "pass": false,
+   "resp": "```python\ndef test_duplicate(arr):\n    for i in range(len(arr)):\n        if arr[i] == arr[i+1]:\n            return True\n    return False\n\n# Test the function\nassert test_duplicate(([1,2,3,4,5]))==False\n```\n\nHàm `test_duplicate` sẽ duyệt qua từng phần tử trong mảng và kiểm tra xem nó có giống với phần tử kế tiếp hay không. Nếu tìm thấy một phần tử khác biệt, hàm sẽ trả về `True`; nếu không, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 20,
+   "pass": false,
+   "resp": "```python\ndef is_woodall(number):\n    return number == \"wood\"\n\nassert is_woodall(383) == True\n```\n\nHàm `is_woodall` nhận vào một số và trả về `True` nếu số đó là \"wood\", ngược lại trả về `False`. Hàm này sử dụng phương thức `is_equal` để kiểm tra xem số đó có bằng với \"wood\" hay không. Nếu đúng, hàm sẽ trả về `True`; nếu không, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 21,
+   "pass": false,
+   "resp": "```python\ndef multiples_of_num(n):\n    return [i for i in range(1, n+1) if i % 2 == 0]\n\nassert multiples_of_num(4,3) == [3,6,9,12]\n```\n\nHàm `multiples_of_num` sẽ trả về một danh sách các số từ 1 đến `n` (bao gồm cả hai đầu), trong đó mỗi số là một chỉ số (index) của nó. Hàm này sử dụng list comprehension để tạo ra một danh sách mới chứa tất cả các số từ 1 đến `n` (bao gồm cả hai đầu) mà có tổng của hai phần tử liền trước là số chẵn và không chia hết cho 2."
+  },
+  {
+   "task": 22,
+   "pass": false,
+   "resp": "```python\ndef find_first_duplicate(arr):\n    # Initialize a dictionary to store the count of each element\n    count = {}\n    # Iterate through the array and update the count for each element\n    for num in arr:\n        if num in count:\n            count[num] += 1\n        else:\n            count[num] = 1\n    # Iterate through the dictionary and return the first duplicate element\n    return count.keys()[0]\n\n# Test the function\nassert find_first_duplicate(([1, 2, 3, 4, 4, 5]))==4\n```\n\nHàm `find_first_duplicate` trước tiên sẽ khởi tạo một dictionary trống tên là `count` để lưu trữ số lần xuất hiện của mỗi element. Sau đó, nó sẽ duyệt qua mảng đầu vào và cập nhật số lượng của mỗi element trong dictionary bằng cách tăng giá trị đếm cho mỗi phần tử. Cuối cùng, hàm sẽ trả về key của dictionary `co"
+  },
+  {
+   "task": 23,
+   "pass": false,
+   "resp": "```python\ndef max_sum(lst):\n    max_sum = lst[0]\n    for num in lst:\n        if num > max_sum:\n            max_sum = num\n    return max_sum\n\n# Test the function\nassert max_sum([[1,2,3],[4,5,6],[10,11,12],[7,8,9]]) == 33\n```\n\nGiải thích:\nTrong Python, `max_sum` là phần tử đầu tiên của một danh sách. Nó sẽ giữ lại phần tử lớn nhất trong danh sách cho đến khi danh sách đã được sắp xếp xong. Sau đó, chúng ta sẽ duyệt qua các phần tử còn lại và cập nhật `max_sum` nếu tìm thấy một giá trị lớn hơn. Cuối cùng, hàm sẽ trả về giá trị lớn nhất tìm thấy được."
+  },
+  {
+   "task": 24,
+   "pass": false,
+   "resp": "```python\ndef binary_to_decimal(binary_num):\n    decimal = 0\n    power = len(binary_num) - 1\n\n    for digit in binary_num:\n        decimal += int(digit) * (2 ** power)\n        power -= 1\n\n    return decimal\n\n# Test the function\nprint(binary_to_decimal(100))  # Output: 4\n```\n\nHàm `binary_to_decimal` nhận đầu vào là một số nguyên và khởi tạo biến `decimal` bằng 0. Sau đó, nó lặp qua từng chữ số trong chuỗi binary_num và nhân mỗi chữ số với 2 để lấy kết quả cuối cùng. Cuối cùng, hàm sẽ trả về giá trị của biến `decimal`.\n\nHàm `binary_to_decimal` có độ phức tạp thời gian là O(n), với n là độ dài của chuỗi đầu vào."
+  },
+  {
+   "task": 25,
+   "pass": false,
+   "resp": "```python\ndef find_Product(arr):\n    product = 1\n    for i in arr:\n        if i != 0 and arr[i] != i:\n            product *= arr[i]\n    return product\n\n# Test the function\nassert find_Product([1,1,2,3],4) == 6\n```\n\nTrong đoạn mã trên, đầu tiên chúng ta sẽ khởi tạo một biến `product` bằng 1. Sau đó, với mỗi phần tử trong `arr`, chúng ta sẽ kiểm tra xem nó có khác 0 và không bằng cách so sánh nó với phần tử hiện tại (`arr[i]`) hay không. Nếu tìm thấy bất kỳ phần tử nào khác 0, chúng ta sẽ nhân nó với `product`. Cuối cùng, hàm sẽ trả về giá trị của biến `product`.\n\nTrong ví dụ trên, với các đầu vào là `[1,1,2,3]`, kết quả trả về sẽ là 6 vì 1 * 2 * 3 = 6."
+  },
+  {
+   "task": 26,
+   "pass": false,
+   "resp": "```python\ndef check_k_elements(lst, k):\n    return all(x in lst for x in lst if x != k)\n\nassert check_k_elements([(4, 4), (4, 4, 4), (4, 4), (4, 4, 4, 4), (4, )], 4) == True\n```\n\nHàm `check_k_elements` nhận vào một tuple `lst` và một số `k`. Đầu tiên, hàm sẽ kiểm tra xem tất cả các phần tử trong `lst` có bằng với `k` hay không. Nếu không, hàm sẽ trả về `False`. Tiếp theo, hàm sử dụng list comprehension để tạo ra một new list mới từ `lst` chỉ chứa các phần tử duy nhất mà `k` không nằm trong đó. Cuối cùng, hàm kiểm tra xem tất cả các phần tử trong `lst` có bằng với `k` hay không. Nếu không, hàm sẽ trả về `False`.\n\nKhi bạn chạy thử hàm này với các đầu vào khác nhau, kết quả trả về sẽ là `True`."
+  },
+  {
+   "task": 27,
+   "pass": false,
+   "resp": "```python\ndef remove_digits(strings):\n    return [string for string in strings if string.isdigit()]\n\nassert remove(['4words', '3letters', '4digits']) == ['words', 'letters', 'digits']\n```\n\nTrong Python, hàm `remove_digits` nhận đầu vào là một danh sách các chuỗi và trả về một danh sách mới chứa tất cả các ký tự chữ số đã được loại bỏ (bao gồm cả số 0). Hàm này sử dụng list comprehension để tạo ra một new list mới chỉ chứa các ký tự chữ số từ chuỗi đầu vào, sau đó trả về kết quả bằng cách dùng list comprehension."
+  },
+  {
+   "task": 28,
+   "pass": false,
+   "resp": "```python\ndef binomial_Coeff(n,k):\n    if n == 0 or k == 0:\n        return 1\n    else:\n        return binomial_Coeff(n-1,k-1) + binomial_Coeff(n-1,k-1)\n\ndef test_binomial_Coeff():\n    assert binomial_Coeff(5,2) == 10\n    assert binomial_Coeff(5,2,3) == 1\n    assert binomial_Coeff(5,2,3,4) == 10\n    assert binomial_Coeff(5,2,3,4,5) == 10\n    assert binomial_Coeff(5,2,3,4,5,6) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7,8) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7,8,9) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7,8,9,10) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7,8,9,10,11) == 10\n    assert binomial_Coeff(5,2,3,4,5,6,7,8,9,1"
+  },
+  {
+   "task": 29,
+   "pass": false,
+   "resp": "```python\ndef get_Odd_Occurrence(arr, target):\n    return arr[target % len(arr)]\n\nassert get_Odd_Occurrence([1,2,3,1,2,3,1],7) == 1\n```\n\nTrong đoạn mã trên, hàm `get_Odd_Occurrence` nhận vào một danh sách các phần tử và trả về phần tử có giá trị lớn nhất tìm thấy trong danh sách. Hàm này sử dụng phương thức `%` để lấy phần tử tại chỉ số `target` (chỉ số bắt đầu từ 0 nếu không tìm thấy phần tử nào). Phương thức `%` được dùng để tránh việc bỏ qua các phần tử trùng lặp.\n\nKhi gọi hàm với các tham số là `[1,2,3,1,2,3,1]` và `7`, kết quả trả về sẽ là 1 vì phần tử tại chỉ số 7 trong danh sách là 1."
+  },
+  {
+   "task": 30,
+   "pass": false,
+   "resp": "```python\ndef count_Substring_With_Equal_Ends(s1, s2):\n    count = 0\n    for i in range(len(s1)):\n        if s1[i] == s2[i]:\n            count += 1\n    return count\n\nassert count_Substring_With_Equal_Ends(\"abc\") == 3\nassert count_Substring_With_Equal_Ends(\"abc\") == 3\n```\n\nThe `count_Substring_With_Equal_Ends` function iterates through the characters of the input strings `s1` and `s2`. For each pair of consecutive characters, it checks if the characters are equal. If they are, the count is incremented. Finally, the function returns the total count of substrings that start and end with the same characters."
+  },
+  {
+   "task": 31,
+   "pass": false,
+   "resp": "```python\nimport heapq\n\ndef topKFrequent(nums):\n    # Create a min-heap from the input lists\n    heapq.heapify(nums)\n    \n    # Build a max-heap from the min-heap\n    max_heap = []\n    for num in nums:\n        if len(max_heap) > len(max_heap[0]):\n            heapq.heappush(max_heap, -num)\n        else:\n            heapq.heappush(max_heap, num)\n    \n    # Extract the top k elements from the max-heap\n    topKFrequent = []\n    while len(max_heap) > 0:\n        topKFrequent.append(heapq.heappop(max_heap)[1])\n    \n    return topKFrequent\n\n# Test the function\nnums = [[1, 2, 6], [1, 3, 4, 5, 7, 8], [1, 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12]]\nprint(topKFrequent(nums))  # Output: [5, 7, 1]\n```\n\nHàm `topKFrequent` trước tiên sẽ tạo một min-heap từ danh sách đầu vào. Sau đó, nó sẽ xây dựng mộ"
+  },
+  {
+   "task": 32,
+   "pass": true,
+   "resp": "```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef max_Prime_Factors(n):\n    factors = []\n    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n            factors.append(i)\n    if n > 1:\n        factors.append(n)\n    return max(factors)\n\nprint(max_Prime_Factors(15))  # Output: 5\n```\n\nHàm `is_prime` dùng để kiểm tra xem một số có phải là số nguyên tố hay không. Hàm `max_Prime_Factors` sẽ duyệt qua tất cả các số từ 2 đến căn bậc hai của số đó để kiểm tra xem mỗi số có phải là số nguyên tố hay không. Nếu tìm thấy bất kỳ ước số nào, hàm sẽ trả về `False`; nếu không, hàm sẽ trả về `True`. Cuối cùng, hàm sẽ trả về một danh sách "
+  },
+  {
+   "task": 33,
+   "pass": false,
+   "resp": "```python\ndef decimal_To_Binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    binary_num = bin(decimal_num)[2:]  # Convert to binary without removing the '0b' prefix\n    return binary_num\n\n# Test the function\nassert decimal_To_Binary(10) == 1010\nassert decimal_To_Binary(-10) == -1010\n```\n\nHàm `decimal_To_Binary` nhận đầu vào là một số nguyên và trả về giá trị binary của nó. Đầu tiên, hàm sẽ chuyển đổi số đó sang kiểu chuỗi bằng cách sử dụng hàm `bin` có sẵn trong Python. Sau đó, hàm khởi tạo hai biến: `binary_num` để lưu trữ giá trị nhị phân và `binary_num` để lưu kết quả cuối cùng. Cuối cùng, hàm trả về giá trị nhị phân của số nguyên đã cho.\n\nTrong phần test, chúng ta sử dụng hàm `assert` để kiểm tra xem giá trị binary có bằng với 10 hay không. Kết quả sẽ là 1010 nếu giá t"
+  },
+  {
+   "task": 34,
+   "pass": false,
+   "resp": "```python\ndef find_missing(arr, target):\n    for i in range(len(arr)):\n        if arr[i] != target:\n            return i\n    return -1\n\n# Test the function\nassert find_missing([1,2,3,5],4) == 4\nassert find_missing([1,2,3,5],5) == -1\n```\n\nTrong đoạn code trên, mình có định nghĩa một hàm `find_missing` nhận vào hai tham số là `arr` (một danh sách các integers) và `target` (một giá trị cụ thể mà bạn muốn tìm kiếm). Hàm sẽ lặp qua từng phần tử trong `arr` và kiểm tra xem nó có khác với `target` hay không. Nếu tìm thấy một phần tử khác biệt, hàm sẽ trả về chỉ số (index) của phần tử đó. Nếu không tìm thấy sự khác biệt, hàm sẽ trả về -1.\n\nCuối cùng, mình đã viết một test case để kiểm tra hàm này. Trong bài test, chúng ta định nghĩa một danh sách các integers và gọi hàm `find_missing` với tham số "
+  },
+  {
+   "task": 35,
+   "pass": false,
+   "resp": "```python\ndef find_rect_num(n):\n    return int(n**0.5) + n\n\nprint(find_rect_num(4))  # Output: 20\n```\n\nHàm `find_rect_num` nhận vào một số nguyên `n` và trả về giá trị của nó bằng cách nhân với `n**0.5`. Hàm này sử dụng hàm `int()` để lấy ra số nguyên từ phương trình đã cho, sau đó cộng thêm `n` vào kết quả để có được số nguyên cuối cùng."
+  },
+  {
+   "task": 36,
+   "pass": false,
+   "resp": "```python\ndef find_Nth_Digit(num1, num2):\n    # Convert both numbers to strings\n    str1 = str(num1)\n    str2 = str(num2)\n\n    # Initialize the result\n    result = 0\n\n    # Iterate until the length of the strings is less than or equal to 10\n    while len(str1) <= 10:\n        # Find the nth digit in the first number\n        num1_digit = str1.index(str1.index(str1.index('1')))\n\n        # Find the nth digit in the second number\n        num2_digit = str2.index(str2.index(str2.index('2')))\n\n        # Move to the next pair of numbers\n        num1_digit += 1\n        num2_digit += 1\n\n    # Return the result\n    return result\n\nprint(find_Nth_Digit(1, 2, 1))  # Output: 5\n```\n\nTest Cases:\n\n```python\nassert find_Nth_Digit(1,2,1) == 5\nassert find_Nth_Digit(1,2,1) == 5\nassert find_Nth_Digit(1,2,1) == 5\n"
+  },
+  {
+   "task": 37,
+   "pass": false,
+   "resp": "```python\ndef sort_mixed_list(arr):\n    return sorted(arr, key=lambda x: (x[1], -x[0]))\n\nassert sort_mixed_list([19,'red',12,'green',10,'white','green',1])==[1, 10, 12, 19, 'blue', 'green', 'green', 'red', 'white']\n```\n\nHàm `sort_mixed_list` nhận đầu vào là một danh sách các số. Hàm sẽ trả về một danh sách đã được sắp xếp dựa trên các điều kiện đã cho. Đầu tiên, hàm sẽ dùng hàm `lambda` để tính toán chỉ số (index) của mỗi phần tử trong danh sách. Sau đó, hàm sử dụng phương thức `sort` có sẵn của Python để sắp xếp các phần tử theo thứ tự tăng dần.\n\nSau khi sắp xếp xong, hàm sẽ trả về một danh sách đã được lọc bỏ các phần tử trùng lặp và chỉ giữ lại các phần tử duy nhất. Cuối cùng, hàm sẽ kiểm tra xem độ dài của danh sách đã sắp xếp có bằng độ dài của `arr` hay không; nếu bằng nhau thì kết q"
+  },
+  {
+   "task": 38,
+   "pass": false,
+   "resp": "```python\ndef div_even_odd(lst):\n    even_sum = sum(i for i in lst if i % 2 == 0)\n    odd_sum = sum(i for i in lst if i % 2 != 0)\n    return even_sum // 2\n\nprint(div_even_odd([1,3,5,7,4,1,6,8]))  # Output: 4\n```\n\nHàm `div_even_odd` nhận đầu vào là một danh sách các số. Đầu tiên, hàm sẽ tính tổng của tất cả các số trong danh sách (`i for i in lst if i % 2 == 0`) và cộng nó vào biến `even_sum`. Sau đó, hàm tính tổng của tất cả các số không phải là số nguyên trong danh sách (`i for i in lst if i % 2 != 0`) và cộng nó vào biến `odd_sum`. Cuối cùng, hàm trả về giá trị của biến `odd_sum` làm kết quả division.\n\nKhi chạy thử hàm với các đầu vào đã cho, kết quả sẽ là 4 vì tổng của tất cả các số trong danh sách (`i for i in lst if i % 2 == 0`) là 4."
+  },
+  {
+   "task": 39,
+   "pass": false,
+   "resp": "```python\ndef rearrange_string(s):\n    return ''.join([char for char in s if char != s[::-1]])\n\nassert rearrange_string(\"aab\")==('aba')\n```\n\nHàm `rearrange_string` trước tiên sẽ chuyển đổi chuỗi thành một danh sách các ký tự, sau đó sử dụng list comprehension để tạo ra hai phiên bản của chuỗi đã được sắp xếp. Cuối cùng, hàm sẽ kiểm tra xem hai phiên bản này có khác nhau hay không bằng cách so sánh chúng với nhau. Nếu chúng khác nhau, nghĩa là hai ký tự trong chuỗi ban đầu không thể hoán đổi cho nhau, và hàm sẽ trả về `True`; ngược lại, hàm sẽ trả về `False`.\n\nTrong ví dụ trên, hàm đã thành công khi chuyển đổi \"aab\" thành \"aba\" và trả về kết quả chính xác."
+  },
+  {
+   "task": 40,
+   "pass": false,
+   "resp": "```python\nfrom collections import Counter\n\ndef freq_element(lst):\n    counter = Counter(lst)\n    return counter[lst]\n\nassert freq_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]])==({2: 3, 1: 2, 5: 2, 3: 1, 4: 1, 6: 1, 7: 1, 9: 1})\n```\n\nHàm `freq_element` trước tiên sẽ tạo một `Counter` từ danh sách đầu vào. Sau đó, hàm sử dụng lớp `Counter` từ module `collections` để đếm số lần xuất hiện của mỗi phần tử trong danh sách. Cuối cùng, hàm trả về giá trị đếm này.\n\nKhi bạn chạy thử hàm với các danh sách khác nhau, kết quả sẽ không thay đổi. Điều này cho thấy hàm đã hoạt động chính xác và đáp ứng được yêu cầu đề ra."
+  },
+  {
+   "task": 41,
+   "pass": true,
+   "resp": "```python\ndef filter_evennumbers(lst):\n    return [num for num in lst if num % 2 == 0]\n\nassert filter_evennumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])==[2, 4, 6, 8, 10]\n```\n\nHàm `filter_evennumbers` nhận đầu vào là một danh sách các số. Đầu tiên, hàm sẽ tạo một danh sách mới tên là `return` để lưu trữ các số đã lọc. Sau đó, hàm sử dụng list comprehension để duyệt qua từng phần tử trong danh sách ban đầu và kiểm tra xem phần tử đó có phải là số chẵn hay không bằng cách sử dụng toán tử chia lấy dư `%`. Nếu phần tử là số chẵn, nó sẽ được thêm vào danh sách `return`. Cuối cùng, hàm trả về danh sách `return` đã lọc.\n\nTrong ví dụ này, hàm đã lọc ra các số 2, 4 và 6 từ danh sách đầu vào. Kết quả trả về là `[2, 4, 6, 8, 10]`, chính là các số chẵn trong danh sách ban đầu."
+  },
+  {
+   "task": 42,
+   "pass": false,
+   "resp": "```python\ndef find_Sum(arr):\n    return sum(arr)\n\n# Test the function\nassert find_Sum([1,2,3,1,1,4,5,6],8) == 3\nassert find_Sum([1,2,3,1,1,4,5,6],8) == 3\n```\n\nGiải thích:\nTrong Python, hàm `sum()` sẽ trả về tổng của một tập hợp các phần tử. Hàm này được dùng để tính toán giá trị lớn nhất trong một danh sách. Trong trường hợp này, chúng ta sẽ dùng hàm `sum()` để tìm tổng của tất cả các phần tử trong mảng.\n\nHàm `sum()` sẽ trả về một biến đếm (`sum`), và với mỗi phần tử trong mảng, nó sẽ cộng dồn giá trị đó vào biến đếm. Cuối cùng, hàm sẽ trả về tổng của tất cả các phần tử đã tính toán được."
+  },
+  {
+   "task": 43,
+   "pass": false,
+   "resp": "```python\nimport re\n\ndef match_sequence(text, pattern):\n    pattern = re.escape(pattern)\n    matches = re.findall(pattern, text)\n    return matches\n\n# Test the function\nassert match_sequence(\"aab_cbbbc\") == \"Found a match!\"\nassert match_sequence(\"AbC12345678\") == \"No match!\"\n```\n\nHàm `match_sequence` nhận vào một chuỗi và một regex làm đối số. Hàm này sử dụng module `re` để tìm tất cả các kết quả khớp với pattern trong chuỗi đầu vào. Sau đó, hàm sẽ trả về danh sách các matches found.\n\nTrong ví dụ trên, hàm `match_sequence` sẽ trả về `['aab_cbbbc']` vì đây là hai lần xuất hiện của 'a' và 'b', cùng với một kết quả khớp với 'a'.\n\nLưu ý: Trong Python, các biểu thức chính quy (regular expressions) thường được sử dụng để tìm tất cả các kết quả khớp với pattern trong chuỗi đầu vào."
+  },
+  {
+   "task": 44,
+   "pass": false,
+   "resp": "```python\ndef match_word(text, word):\n    return text.lower() == word.lower()\n\nassert text_match_string(\"python\")==('Not matched!')\nWrite the Python function.\n\n```python\ndef match_word(text, word):\n    return text.lower() == word.lower()\n\nassert text_match_string(\"python\")==('Not matched!')\nWrite the Python function.\n\n```python\ndef match_word(text, word):\n    return text.lower() == word.lower()\n\nassert text_match_string(\"python\")==('Not matched!')\nWrite the Python function.\n\n```python\ndef match_word(text, word):\n    return text.lower() == word.lower()\n\nassert text_match_string(\"python\")==('Not matched!')\nWrite the Python function.\n\n```python\ndef match_word(text, word):\n    return text.lower() == word.lower()\n\nassert text_match_string(\"python\")==('Not matched!')\nWrite the Python function.\n\n"
+  },
+  {
+   "task": 45,
+   "pass": false,
+   "resp": "```python\ndef gcd(arr):\n    if len(arr) == 0:\n        return None\n    else:\n        return arr[0]\n\n# Testing the function\nprint(gcd([2, 4, 6, 8, 16]))  # Output: 2\n```\n\nHàm `gcd` nhận vào một mảng và trả về giá trị lớn nhất của nó. Nếu mảng không trống, hàm sẽ trả về chính phần tử đó. Otherwise, hàm sẽ lấy phần tử đầu tiên của mảng (`arr[0]`), sau đó gọi đệ quy chính nó với phần còn lại của mảng cho đến khi chạm tới trường hợp cơ sở (base case). Cuối cùng, hàm trả về giá trị lớn nhất tìm được."
+  },
+  {
+   "task": 46,
+   "pass": false,
+   "resp": "```python\ndef test_distinct(nums):\n    return all(num in num for num in nums)\n\nassert test_distinct([1,5,7,9]) == True\nassert test_distinct([1,5,7,9]) == False\n```\n\nHàm `test_distinct` nhận đầu vào là một danh sách các số. Đầu tiên, hàm sẽ kiểm tra xem tất cả các số trong danh sách có khác nhau hay không bằng cách sử dụng hàm `all()`. Nếu tất cả các số đều khác nhau, hàm trả về `True`; nếu không, hàm trả về `False`. Cuối cùng, hàm sẽ lặp qua từng phần tử trong danh sách và kiểm tra xem mỗi phần tử có phải là số nguyên duy nhất hay không bằng cách sử dụng hàm `in`. Nếu một phần tử không phải là số nguyên duy nhất, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 47,
+   "pass": false,
+   "resp": "```python\ndef last_digit(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n % 10 + last_digit(n // 10)\n\nprint(last_digit(2,4))  # Output: 2\n```\n\nHàm `last_digit` nhận vào một số nguyên `n` và trả về giá trị của `n` khi chia cho 10. Nếu `n` bằng 0 hoặc 1, hàm sẽ trả về 1 (vì 1 là số hạng thứ 1 trong dãy số). Ngược lại, hàm sẽ trả về `n % 10` (vì `n` có thể chia hết cho 10). Cuối cùng, hàm sẽ tính giá trị của `n` khi chia cho 10 bằng cách lấy `n // 10` và nhân với 10."
+  },
+  {
+   "task": 48,
+   "pass": false,
+   "resp": "```python\ndef odd_bit_set_number(n):\n    odd_bits = [True] * n\n    for i in range(n, 0, -1):\n        if i & 1 == 0:\n            odd_bits[i] = False\n        else:\n            odd_bits[i] = True\n    return odd_bits\n\nassert odd_bit_set_number(10) == 15\n```\n\nHàm `odd_bit_set_number` nhận đầu vào là một số nguyên `n` và trả về một danh sách các giá trị tương ứng với tất cả các bit (`True`) của số đó đều là `False`. Hàm sử dụng một vòng lặp để kiểm tra từng bit trong số các bit được chỉ định. Nếu một bit là `False`, nó sẽ bị xóa khỏi danh sách. Cuối cùng, hàm trả về danh sách các giá trị tương ứng với tất cả các bit (`True`) của số đó."
+  },
+  {
+   "task": 49,
+   "pass": false,
+   "resp": "```python\ndef specified_element(lst, element):\n    for i in lst:\n        if isinstance(i, list) and i != [] and i != element:\n            return i\n    return None\n\n# Test the function\nassert specified_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],0)==[1, 4, 7]\n```\n\nHàm `specified_element` nhận vào một danh sách các phần tử và một phần tử để kiểm tra. Đầu tiên, hàm sẽ lặp qua từng phần tử trong danh sách bằng cách sử dụng list comprehension. Nếu phần tử là một danh sách, hàm sẽ kiểm tra xem nó có phải là một danh sách không (không phải là `list`) và không phải là `element` (không phải là một phần tử của danh sách). Nếu thỏa mãn cả hai điều kiện này, hàm sẽ trả về phần tử đó. Nếu không, hàm sẽ trả về `None`."
+  },
+  {
+   "task": 50,
+   "pass": false,
+   "resp": "```python\ndef min_length_list(lst):\n    min_length = float('inf')\n    for i in lst:\n        if len(i) < min_length:\n            min_length = len(i)\n    return min_length\n\n# Test the function\nassert min_length_list([[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]])==(1, [0])\n```\n\nHàm `min_length_list` trước tiên sẽ khởi tạo giá trị nhỏ nhất làm biến đếm (`min_length`) và một biến đếm lớn (`max_length`). Sau đó, hàm sẽ lặp qua từng phần tử trong danh sách và kiểm tra xem độ dài của nó có nhỏ hơn hoặc bằng `min_length` hay không. Nếu thỏa mãn, giá trị mới sẽ được cập nhật vào biến đếm. Cuối cùng, hàm trả về giá trị nhỏ nhất tìm thấy được làm biến đếm lớn."
+  },
+  {
+   "task": 51,
+   "pass": false,
+   "resp": "```python\ndef check_equilateral(side1, side2, side3):\n    \"\"\"Check if the triangle is equilateral.\"\"\"\n    # Check if the sum of any two sides is greater than the third side\n    if side1 + side2 > side3:\n        return True\n    else:\n        return False\n\n# Test cases\nprint(check_equilateral(6,8,12))  # Output: True\nprint(check_equilateral(9,10,12))  # Output: False\n```\n\nHàm `check_equilateral` nhận vào ba tham số: `side1`, `side2`, và `side3`. Đầu tiên, hàm sẽ kiểm tra xem tổng của bất kỳ hai cặp cạnh nào có lớn hơn tổng của cặp cạnh thứ ba hay không. Nếu tổng này lớn hơn, hàm trả về `True`; ngược lại, hàm trả về `False`.\n\nTiếp theo, hàm sử dụng toán.isin() để kiểm tra xem tổng của bất kỳ hai cặp cạnh nào có bằng tổng của cặp cạnh thứ ba hay không. Nếu tổng này bằng với tổng của cặp cạnh t"
+  },
+  {
+   "task": 52,
+   "pass": true,
+   "resp": "```python\ndef parallelogram_area(base, height):\n    return base * height\n\n# Testing the function\nprint(parallelogram_area(10,20))  # Output: 200\n```\n\nHàm `parallelogram_area` nhận vào hai tham số là `base` và `height`. Đầu tiên, hàm sẽ tính toán giá trị tuyệt đối của `base` và `height` bằng cách sử dụng công thức `base * height`. Sau đó, hàm nhân kết quả này với `base` để ra kết quả cuối cùng. Cuối cùng, hàm trả về giá trị tuyệt đối của `base` nhân với `height`.\n\nTrong phần testing, mình đã định nghĩa một hàm `parallelogram_area` có tham số là `base` và `height`. Sau đó, mình gọi hàm này với các tham số trên và in kết quả ra màn hình. Kết quả sẽ là 200 vì giá trị tuyệt đối của `base` và `height` được tính bằng cách nhân hai giá trị này."
+  },
+  {
+   "task": 53,
+   "pass": false,
+   "resp": "```python\ndef check_Equality(s1, s2):\n    return s1 == s2\n\n# Test the function\nassert check_Equality(\"abcda\") == \"Equal\"\nassert check_Equality(\"hello\") == \"Equal\"\nassert check_Equality(\"hello\", \"world\") == \"Equal\"\n```\n\nHàm `check_Equality` nhận vào hai tham số là một chuỗi và một giá trị cần kiểm tra. Hàm sẽ trả về `True` nếu các ký tự của chuỗi đầu tiên và thứ hai giống nhau, và `False` nếu ngược lại. Cuối cùng, hàm sẽ thực hiện kiểm tra bằng cách so sánh các ký tự của chuỗi đầu tiên với chuỗi thứ hai. Nếu chúng khớp, hàm trả về `True`; nếu không, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 54,
+   "pass": false,
+   "resp": "```python\ndef counting_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(i+1, n):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\ndef sort_array(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(i+1, n):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\n# Test the function\nprint(sort_array([1,23,4,5,6,7,8]))  # Output: [1, 4, 5, 6, 7, 8, 23]\nprint(sort_array([1,23,4,5,6,7,8]))  # Output: [1, 4, 5, 6, 7, 8, 23]\n```\n\nHàm `counting_sort` sẽ duyệt qua mảng và so sánh các phần tử liền kề. Nếu một phần tử lớn hơn phần tử tiếp theo, nó sẽ được đẩy về phía trước. Quá trình này tiếp tục cho đến khi toàn bộ mảng đã được sắp xếp xong. Hàm `sort_array` sẽ"
+  },
+  {
+   "task": 55,
+   "pass": false,
+   "resp": "```python\ndef tn_gp(x, y, z):\n    return (x**2 + y**2 + z**2) / 2\n\nprint(tn_gp(1,5,2))\n```\n\nĐoạn mã Python này định nghĩa một hàm `tn_gp` với ba tham số: `x`, `y`, và `z`. Hàm này nhận vào ba tham số là `x`, `y`, và `z`, sau đó trả về tổng của hai kết quả đã cho.\n\nTrong đó, `x` và `y` được tính toán bằng công thức `x**2 + y**2 + z**2`, còn `z` được tính bằng công thức `z**2`.\n\nHàm này cũng có thể xử lý các trường hợp đặc biệt như khi `x` hoặc `y` không phải là số nguyên (ví dụ: khi `x` và `y` đều là số nguyên)."
+  },
+  {
+   "task": 56,
+   "pass": false,
+   "resp": "```python\ndef check(number):\n    return number < 2 * numbers_of_three\n\ndef test():\n    print(check(70))  # returns: True\n    print(check(60))  # returns: False\n    print(check(120))  # returns: True\n    print(check(90))  # returns: False\n    print(check(150))  # returns: True\n    print(check(180))  # returns: False\n    print(check(210))  # returns: True\n    print(check(270))  # returns: False\n    print(check(300))  # returns: True\n    print(check(350))  # returns: False\n    print(check(400))  # returns: False\n    print(check(450))  # returns: False\n    print(check(500))  # returns: True\n    print(check(550))  # returns: False\n    print(check(600))  # returns: True\n    print(check(650))  # returns: False\n    print(check(700))  # returns: True\n    print(check(750))  # returns: False\n    prin"
+  },
+  {
+   "task": 57,
+   "pass": false,
+   "resp": "```python\ndef find_Max_Num(nums, num):\n    max_num = num\n    for i in range(len(num)):\n        if num[i] > max_num:\n            max_num = num[i]\n    return max_num\n\nassert find_Max_Num([1,2,3], 3) == 321\n```\n\nThe `find_Max_Num` function iterates through the digits of the input list `nums` and checks if each number is greater than the current maximum number. If a number satisfies this condition, it is assigned as the new maximum number. Finally, the function returns the maximum number found."
+  },
+  {
+   "task": 58,
+   "pass": false,
+   "resp": "```python\ndef opposite_Signs(a, b):\n    return a == b\n\n# Testing the function\nprint(opposite_Signs(1,-2))  # Output: True\nprint(opposite_Signs(-1,-2))  # Output: False\n```\n\nThe `opposite_Signs` function takes two integers as input and uses the bitwise operator `~` to compare them. If the result of the bitwise AND operation returns 1, the function returns True, indicating that the given integers have opposite signs. Otherwise, it returns False. The provided test case demonstrates the correctness of the function."
+  },
+  {
+   "task": 59,
+   "pass": false,
+   "resp": "```python\ndef is_octagonal(n):\n    return n == 1\n\ndef octagonal_number(n):\n    if n == 1:\n        return 2\n    else:\n        return n * octagonal_number(n-1)\n\nprint(octagonal_number(5))  # Output: 65\n```\n\nHàm `is_octagonal` nhận vào một số nguyên `n` và trả về `True` nếu `n` là 1, `2` là 2, và `n` là 3 trở lên. Hàm `octagonal_number` sẽ tính toán `n` bằng cách nhân `n` với `octagonal_number`, sau đó lấy kết quả chia cho 2 để tìm ra số dư của `n`. Cuối cùng, hàm sẽ trả về giá trị của `n`."
+  },
+  {
+   "task": 60,
+   "pass": false,
+   "resp": "```python\ndef max_len_sub(arr, start, end):\n    if start > end:\n        return \"Error: Subsequence cannot have more than one element\"\n    \n    max_len = 0\n    start_index = 0\n    end_index = 0\n    \n    for i in range(start, end + 1):\n        if arr[i] >= arr[start_index] and arr[i] <= arr[end_index]:\n            max_len = max(max_len, i - start_index + 1)\n            start_index = i\n            end_index = i\n    \n    return max_len\n\n# Test the function\nprint(max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8))  # Output: 5\n```\n\nHàm `max_len_sub` nhận vào hai tham số là một mảng và một chỉ số (index) cho biết vị trí bắt đầu của the subsequence. Hàm sẽ trả về một chuỗi thông báo nếu the subsequence is valid, hoặc \"Error\" nếu không. Đầu tiên, hàm sẽ kiểm tra xem phần tử tại chỉ số hiện tại có lớn hơn ho"
+  },
+  {
+   "task": 61,
+   "pass": false,
+   "resp": "```python\ndef count_Substrings(s, n):\n    count = 0\n    for i in range(len(s)):\n        if len(set([int(x) for x in str(i)])) == n:\n            count += 1\n    return count\n\nassert count_Substrings('112112', 6) == 6\n```\n\nHàm `count_Substrings` nhận đầu vào là một chuỗi và trả về số lượng các substring có tổng số digits bằng với độ dài của chuỗi. Hàm sử dụng một `set` để theo dõi số lượng các phần tử duy nhất trong chuỗi. Sau đó, hàm lặp qua từng ký tự trong chuỗi và kiểm tra xem mỗi ký tự có phải là chữ số hay không. Nếu đúng, nó sẽ đếm số lượng các phần tử đó bằng cách chuyển đổi chuỗi thành một `set` và dùng hàm `len` để kiểm tra độ dài của chuỗi. Cuối cùng, hàm trả về giá trị của `count`.\n\nKhi bạn chạy thử hàm với các đầu vào khác nhau, kết quả trả về sẽ là 6, chính xác như yêu cầu."
+  },
+  {
+   "task": 62,
+   "pass": false,
+   "resp": "```python\ndef smallest_number(lst):\n    return min(lst)\n\n# Testing the function\nprint(smallest_number([10, 20, 1, 45, 99]))  # Output: 1\nprint(smallest_number([10, 20, 1, 45, 99]))  # Output: 1\nprint(smallest_number([10, 20, 1, 45, 99]))  # Output: 1\n```\n\nHàm `smallest_number` nhận đầu vào là một danh sách và trả về giá trị nhỏ nhất của nó. Hàm sử dụng phương pháp tìm kiếm nhị phân (binary search) để tìm số nhỏ nhất trong danh sách. Nếu số nhỏ nhất này được tìm thấy, hàm sẽ trả về 1. Ngược lại, hàm sẽ trả về -1.\n\nTrong phần test, mình đã định nghĩa một hàm `smallest_number` với tham số đầu vào là một danh sách và gọi hàm này với tham số đầu vào là một danh sách đã cho. Kết quả trả về của hàm sẽ là giá trị nhỏ nhất tìm thấy trong danh sách đó."
+  },
+  {
+   "task": 63,
+   "pass": false,
+   "resp": "```python\ndef max_difference(lst):\n    max_diff = float('-inf')\n    for i in lst:\n        if i not in max_diff:\n            max_diff = max(max_diff, i)\n    return max_diff\n\n# Test the function\nassert max_difference([(3, 5), (1, 7), (10, 3), (1, 2)]) == 7\nassert max_difference([(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]) == 10\n```\n\nHàm `max_difference` nhận vào một danh sách các tuple và trả về giá trị lớn nhất giữa mỗi tuple. Hàm sử dụng phương pháp tìm kiếm nhị phân (binary search) để tìm ra giá trị lớn nhất trong danh sách. Sau đó, hàm sẽ duyệt qua từng phần tử trong danh sách và cập nhật `max_diff` nếu tìm thấy một giá trị lớn hơn. Cuối cùng, hàm trả về giá trị lớn nhất tìm được."
+  },
+  {
+   "task": 64,
+   "pass": false,
+   "resp": "```python\ndef subject_marks(lst):\n    return sorted([(k, v) for k, v in sorted(lst, key=lambda x: (-x[1], -x[2])) if x[0] > x[1]])\n\nprint(subject_marks([('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]))\n```\n\nHàm `subject_marks` trước tiên sẽ chuyển đổi danh sách các tuple thành một danh sách các tuple mới. Sau đó, hàm sử dụng hàm `sorted` để sắp xếp các tuple theo thứ tự tăng dần. Nếu có nhiều hơn một tuple có cùng thứ hạng, chúng sẽ được sắp xếp theo thứ tự giảm dần. Cuối cùng, hàm sẽ trả về danh sách đã sắp xếp này.\n\nKhi bạn chạy đoạn mã này với danh sách `[('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]`, kết quả trả về sẽ là `[('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]`."
+  },
+  {
+   "task": 65,
+   "pass": false,
+   "resp": "```python\ndef recursive_list_sum(lst):\n    if len(lst) == 1:\n        return lst[0]\n    else:\n        return sum(recursive_list_sum(lst[1:]))\n\nassert recursive_list_sum(([1, 2, [3,4],[5,6]]))==21\n```\n\nHàm `recursive_list_sum` nhận đầu vào là một danh sách và trả về tổng của tất cả các phần tử trong danh sách đó. Nếu danh sách chỉ có một phần tử, hàm sẽ trả về chính phần tử đó. Ngược lại, hàm sẽ gọi đệ quy chính nó cho đến khi danh sách chỉ còn 1 phần tử. Cuối cùng, hàm sẽ trả về tổng của tất cả các phần tử trong danh sách đã được sắp xếp."
+  },
+  {
+   "task": 66,
+   "pass": false,
+   "resp": "```python\ndef pos_count(lst):\n    pos_counts = {}\n    for num in lst:\n        if num > 0:\n            pos_counts[num] = pos_counts.get(num, 0) + 1\n    return pos_counts\n\nassert pos_count([1,-2,3,-4]) == 2\n```\n\nTrong đoạn code trên, đầu tiên chúng ta sẽ khởi tạo một dictionary trống tên là `pos_counts` để lưu trữ số lượng các số nguyên dương. Sau đó, chúng ta duyệt qua từng số trong danh sách đầu vào và kiểm tra xem số đó có lớn hơn 0 hay không. Nếu thỏa mãn điều kiện này, chúng ta sẽ tăng giá trị của `pos_counts` lên 1 đơn vị. Cuối cùng, chúng ta trả về dictionary `pos_counts` chứa số lượng các số nguyên dương duy nhất trong danh sách đầu vào.\n\nTrong ví dụ trên, kết quả trả về là 2 vì số lớn nhất trong danh sách là 3, và nó được tìm thấy trong từ điển `pos_counts`."
+  },
+  {
+   "task": 67,
+   "pass": false,
+   "resp": "```python\ndef bell_number(n):\n    if n == 0:\n        return 2\n    else:\n        return 3\n\nprint(bell_number(2))  # Output: 2\nprint(bell_number(3))  # Output: 3\nprint(bell_number(4))  # Output: 4\nprint(bell_number(5))  # Output: 5\nprint(bell_number(6))  # Output: 6\nprint(bell_number(7))  # Output: 7\n```\n\nThe `bell_number` function uses the concept of sliding window to find the number of ways to partition a set of bell numbers. It first checks if the input is 0, in which case it returns 2 as the answer. Otherwise, it calculates the number of ways to partition the set using the formula `n = n // 2` and returns the result. Finally, it prints the count of ways to partition the set."
+  },
+  {
+   "task": 68,
+   "pass": false,
+   "resp": "```python\ndef is_Monotonic(arr):\n    return arr == sorted(arr)\n\nassert is_Monotonic([6, 5, 4, 4]) == True\nassert is_Monotonic([1, 2, 3, 4, 5]) == False\n```\n\nHàm `is_Monotonic` sẽ kiểm tra xem một mảng có phải là Monotonic hay không bằng cách so sánh nó với một mảng đã sắp xếp. Hàm này sử dụng hàm `sorted` để sắp xếp các phần tử của mảng và dùng phương thức `is_monotonic` để kiểm tra xem chúng có bằng nhau hay không. Nếu đúng là Monotonic, hàm sẽ trả về `True`; nếu không, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 69,
+   "pass": false,
+   "resp": "```python\ndef is_sublist(lst, sublist):\n    return all(sublist in lst for sublist in sublist)\n\nassert is_sublist([2,4,3,5,7], [3,7])==False\n```\n\nHàm `is_sublist` sẽ kiểm tra xem tất cả các phần tử trong danh sách có nằm trong danh sách hay không. Hàm `all` được dùng để kiểm tra xem tất cả các phần tử có nằm trong danh sách hay không. Nếu tất cả các phần tử đều nằm trong danh sách, hàm sẽ trả về `True`; nếu không, hàm sẽ trả về `False`.\n\nHàm `is_sublist` sẽ duyệt qua từng phần tử trong danh sách và kiểm tra xem nó có nằm trong danh sách hay không bằng cách sử dụng hàm `all`. Nếu tất cả các phần tử đều nằm trong danh sách, hàm sẽ trả về `True`; nếu không, hàm sẽ trả về `False`."
+  },
+  {
+   "task": 70,
+   "pass": false,
+   "resp": "```python\ndef get_equal(tuples):\n    if len(tuples) != len(set(tuples)):\n        return False\n    return all(len(item) == len(set(item)) for item in tuples)\n\nassert get_equal([(11, 22, 33), (44, 55, 66)], 3) == 'All tuples have same length'\n```\n\nThe `get_equal` function first checks if the length of the input lists is equal. If not, it returns `False`. Then, it uses a generator expression to filter out tuples with different lengths and checks if all elements in the filtered list are equal. If any of these conditions are not met, the function returns `False`."
+  },
+  {
+   "task": 71,
+   "pass": false,
+   "resp": "```python\ndef comb_sort(arr):\n    n = len(arr)\n    for i in range(n-1):\n        for j in range(i+1, n):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\ndef comb_sort_descending(arr):\n    n = len(arr)\n    for i in range(n-1):\n        for j in range(i+1, n):\n            if arr[j] < arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\ndef comb_sort_descending_desc(arr):\n    n = len(arr)\n    for i in range(n-1):\n        for j in range(i+1, n):\n            if arr[j] < arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\ndef comb_sort_descending_asc(arr):\n    n = len(arr)\n    for i in range(n-1):\n        for j in range(i+1, n):\n            if arr[j] < arr[j+1]:\n                arr[j], arr[j+1]"
+  },
+  {
+   "task": 72,
+   "pass": false,
+   "resp": "```python\ndef dif_Square(num):\n    # Check if the number can be represented as a square\n    if num <= 0 or num >= 1:\n        return False\n\n    # Calculate the area of the square\n    area = 5 * num\n    area_square = abs(area) / 2\n\n    # Check if the square can be represented as a difference of two squares\n    if area_square <= 0 or area_square > 1:\n        return False\n\n    return area_square == 0 and area_square == 1\n```\n\nHàm `dif_Square` trước tiên sẽ kiểm tra xem số đầu vào có nhỏ hơn hoặc bằng 0 hay không. Nếu đúng, hàm sẽ trả về `False` vì số đó không thể được biểu diễn dưới dạng một hình vuông.\n\nTiếp theo, hàm tính toán the area of the square (`area`) và the square root (`area_square`). Sau đó, hàm kiểm tra xem độ dài của hai cạnh của hình vuông có bằng nhau hay không. Nếu chúng bằng "
+  },
+  {
+   "task": 73,
+   "pass": false,
+   "resp": "```python\nimport re\n\ndef multiple_split(s):\n    # Using regex to split the string\n    pattern = r'\\b(?=[^a-zA-Z0-9_]+)\\b'\n    matches = re.findall(pattern, s)\n\n    # If there are multiple matches, return a list of all matches\n    if len(matches) > 1:\n        return matches[1]\n    else:\n        return []\n\n# Test the function\nassert multiple_split('Forces of the \\ndarkness*are coming into the play.') == ['Forces of the ', 'darkness', 'are coming into the play.']\n```\n\nHàm `multiple_split` trước tiên sẽ sử dụng module `re` để khớp các biểu thức chính quy (regular expressions) trong chuỗi đầu vào với mẫu regex đã cho. Sau đó, hàm sẽ kiểm tra xem có bao nhiêu biểu thức chính quy hợp lệ bằng cách dùng hàm `len(matches) > 1`. Nếu có nhiều biểu thức hợp lệ, hàm sẽ trả về một danh sách các biểu thức"
+  },
+  {
+   "task": 74,
+   "pass": false,
+   "resp": "```python\ndef is_samepatterns(patterns, patterns_seq):\n    for i in range(len(patterns)):\n        if patterns[i] == patterns[i+1] and patterns[i] == patterns[i+2]:\n            return True\n    return False\n\n# Test the function\nassert is_samepatterns([\"red\",\"green\",\"green\"], [\"a\", \"b\", \"b\"])==True \nWrite the Python function.\n```\n\nThe `is_samepatterns` function iterates through the input list of patterns and checks if each subsequent subsequence matches the next one in the sequence. If a match is found, it returns True; otherwise, it returns False. The provided test case demonstrates the function's correctness by comparing the result with the expected result for the given input list of patterns and sequence sequences."
+  },
+  {
+   "task": 75,
+   "pass": false,
+   "resp": "```python\ndef find_tuples(lst, k):\n    result = []\n    for i in lst:\n        if i % k == 0:\n            result.append((i, i))\n    return result\n\nassert find_tuples([(6, 24, 12), (7, 9, 6), (12, 18, 21)], 6) == '[(6, 24, 12)]'\n```\n\nHàm `find_tuples` nhận vào một danh sách các tuple và trả về một danh sách mới chứa tuples đã được sắp xếp. Hàm `isinstance` được dùng để kiểm tra xem một tuple có phải là tuple của chính nó hay không. Nếu đúng, hàm sẽ thêm tuple đó vào danh sách kết quả. Cuối cùng, hàm sẽ trả về danh sách kết quả này."
+  },
+  {
+   "task": 76,
+   "pass": false,
+   "resp": "```python\ndef count_Squares(x, y):\n    return len([square for square in x])\n\nprint(count_Squares(4,3))  # Output: 20\n```\n\nHàm `count_Squares` nhận vào hai tham số là `x` và `y`. Đầu tiên, hàm sẽ trả về độ dài của một hình chữ nhật (`square`) bằng cách sử dụng list comprehension. Sau đó, hàm dùng phương thức `len()` để tính độ dài của một hình chữ nhật khác bằng cách sử dụng list comprehension. Cuối cùng, hàm trả về độ dài của một hình chữ nhật đã được tính toán trước đó.\n\nKhi bạn chạy đoạn mã này với các tham số đầu vào là `4` và `3`, kết quả sẽ là `20`."
+  },
+  {
+   "task": 77,
+   "pass": false,
+   "resp": "```python\ndef is_Diff(n):\n    return n % 2 == 0\n\ndef sum_even_odd_digits(n):\n    even_digits = [int(d) for d in str(n)]\n    odd_digits = [int(d) for d in str(n)]\n    diff = sum_even_odd_digits(even_digits) - sum_odd_digits\n    return diff\n\nprint(sum_even_odd_digits(12345))  # Output: False\n```\n\nTrong đoạn mã trên, hàm `is_Diff` sẽ kiểm tra xem một số có phải là số chẵn hay không bằng cách sử dụng list comprehension. Hàm `sum_even_odd_digits` sẽ tính tổng các số chẵn và số lẻ, sau đó lấy tổng này trừ đi tổng của các số lẻ để tìm ra sự khác biệt. Cuối cùng, hàm sẽ trả về giá trị của tổng này làm kết quả cho hàm `sum_even_odd_digits`.\n\nKhi bạn chạy đoạn mã này với đầu vào là 12345, kết quả trả về sẽ là `False` vì số đó không phải là số chẵn."
+  },
+  {
+   "task": 78,
+   "pass": false,
+   "resp": "```python\ndef count_With_Odd_SetBits(num):\n    count = 0\n    while num & 1 == 1:\n        count += 1\n        num >>= 1\n    return count\n\nassert count_With_Odd_SetBits(5) == 3\n```\n\nHàm `count_With_Odd_SetBits` nhận đầu vào là một số nguyên `num`. Hàm sử dụng vòng lặp `while` để liên tục kiểm tra xem `num` có bằng 1 hay không (`num & 1 == 1`). Nếu `num` bằng 1, hàm sẽ tăng biến đếm lên 1 và tiếp tục kiểm tra các bit còn lại của `num` bằng cách thực hiện phép toán AND với 1. Nếu `num` bằng 0, hàm sẽ trả về giá trị của biến đếm. Cuối cùng, hàm trả về giá trị của biến đếm.\n\nKhi bạn chạy thử hàm này với một số nguyên bất kỳ, kết quả sẽ là 3, vì trong trường hợp xấu nhất (ví dụ: khi `num` bằng 1), nó có 3 bits (3 bits) và khi `num` bằng 0, nó có 3 bits (3 bits)."
+  },
+  {
+   "task": 79,
+   "pass": false,
+   "resp": "```python\ndef word_len(word):\n    return len(word)\n\nprint(word_len(\"Hadoop\"))  # Output: False\n```\n\nHàm `word_len` nhận đầu vào là một từ và trả về giá trị của `len`. Hàm này sử dụng phương thức `len()` để kiểm tra xem độ dài của từ có bằng 0 hay không. Nếu độ dài bằng 0, hàm sẽ trả về `False`; ngược lại, hàm sẽ trả về `True`.\n\nKhi gọi hàm với một từ, kết quả trả về sẽ là `False` vì độ dài của từ đó không bằng 0."
+  },
+  {
+   "task": 80,
+   "pass": false,
+   "resp": "```python\ndef tetrahedral_number(n):\n    if n < 0:\n        return \"Error: Nth tetrahedral number cannot be negative\"\n    elif n == 1:\n        return 2\n    else:\n        return 3\n\n# Test the function\nprint(tetrahedral_number(5))  # Output: 35.0\n```\n\nThe `tetrahedral_number` function takes an integer `n` as input and returns the nth tetrahedral number. It first checks if `n` is negative, in which case it returns an error message. If `n` is 1, it returns 2 as the first tetrahedral number. Otherwise, it returns 3 as the third tetrahedral number. The function then uses a while loop to calculate the nth tetrahedral number by adding the current value of `n` and the current number `n-1` until `n` becomes 0. Finally, it returns the calculated nth tetrahedral number."
+  },
+  {
+   "task": 81,
+   "pass": false,
+   "resp": "```python\ndef zip_tuples(t1, t2):\n    return list(zip(t1, t2))\n\nassert zip_tuples((7, 8, 4, 5, 9, 10), (1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\nassert zip_tuples((7, 8, 4, 5, 9, 10), (1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\nassert zip_tuples((7, 8, 4, 5, 9, 10), (1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\nassert zip_tuples((7, 8, 4, 5, 9, 10), (1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\nassert zip_tuples((7, 8, 4, 5, 9, 10), (1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\nassert zip_t"
+  },
+  {
+   "task": 82,
+   "pass": false,
+   "resp": "```python\ndef volume_sphere(radius):\n    return 4188.790204786391\n\nprint(volume_sphere(10))\n```\n\nOutput:\n```\n4188.790204786391\n```\n\nGiải thích:\nHàm `volume_sphere` nhận vào một tham số `radius` và trả về giá trị khối lượng của hình cầu được tạo bởi công thức 4188.790204786391. Hàm này sử dụng phương pháp tiếp cận dựa trên công thức để tính toán chính xác các giá trị khối lượng của hình cầu."
+  },
+  {
+   "task": 83,
+   "pass": false,
+   "resp": "```python\ndef get_Char(string):\n    char_count = {}\n    for char in string:\n        if char in char_count:\n            char_count[char] += 1\n        else:\n            char_count[char] = 1\n    return char_count\n\nassert get_Char(\"abc\") == \"f\"\n```\n\nTrong đoạn mã trên, đầu tiên chúng ta khởi tạo một dictionary trống tên là `char_count` để lưu trữ số lần xuất hiện của mỗi ký tự trong chuỗi. Sau đó, mình sẽ duyệt qua từng ký tự trong chuỗi và kiểm tra xem ký tự đó đã tồn tại trong dictionary `char_count` hay chưa. Nếu đã có rồi, chúng ta tăng giá trị đếm lên 1. Nếu chưa có, mình sẽ thêm ký tự đó vào dictionary với giá trị khởi tạo là 1. Cuối cùng, mình trả về dictionary `char_count` chứa kết quả của các lần kiểm tra.\n\nKhi bạn chạy đoạn mã này, nó sẽ trả về `{'a': 1, 'b': 2, 'c': 3}`, nghĩa là \"f"
+  },
+  {
+   "task": 84,
+   "pass": false,
+   "resp": "```python\ndef sequence(n):\n    if n < 0:\n        return \"Error: Number is negative\"\n    elif n == 0:\n        return 0\n    else:\n        return 1 + sequence(n-1)\n\nprint(sequence(10))  # Output: 6\n```\n\nTrong Python, hàm `sequence` sẽ nhận vào một số nguyên và trả về một chuỗi (string). Nếu số đó là số âm, nó sẽ được chuyển sang số dương bằng cách sử dụng công thức `1 + sequence(n-1)`. Nếu số đó không phải là số âm, nó sẽ được trả về 1 cộng với kết quả của việc nhân `1 + sequence(n-1)`.\n\nTrong trường hợp này, nếu `n` là 0, hàm sẽ trả về 0 vì 0 đại diện cho số âm. Ngược lại, nếu `n` là 1, hàm sẽ trả về 1 vì 1 là số dương và 1 cộng với 1 bằng 1."
+  },
+  {
+   "task": 85,
+   "pass": false,
+   "resp": "```python\nimport math\n\ndef surfacearea_sphere(radius):\n    return math.pi * (radius**2)\n\nprint(surfacearea_sphere(10))\n```\n\nHàm `surfacearea_sphere` nhận đầu vào là một số nguyên `radius` và trả về giá trị surface area of the sphere. Hàm sử dụng công thức `pi**2` để tính diện tích hình tròn, sau đó nhân với `math.pi` để tìm hiệu số. Cuối cùng, hàm sẽ in ra giá trị surface area của hình cầu.\n\nKhi bạn chạy đoạn mã này, kết quả trả về sẽ là 1256.6370614359173."
+  },
+  {
+   "task": 86,
+   "pass": false,
+   "resp": "```python\ndef centered_hexagonal_number(n):\n    # Initialize an array to store the hexagonal numbers\n    hexagonal_nums = []\n\n    # Calculate the number of digits in each row\n    for i in range(1, n+1):\n        digit = int(n[i])\n        if digit % 2 != 0:\n            hexagonal_nums.append(digit)\n\n    # Calculate the number of positions for each hexagonal number\n    for i in range(1, n+1):\n        hexagonal_nums[i] = hexagonal_nums[i-1] + 1\n\n    # Find the nth centered hexagonal number\n    nth_hexagonal_number = n - 1\n    while nth_hexagonal_number > 0:\n        nth_hexagonal_number -= 1\n\n    return hexagonal_nums[nth_hexagonal_number-1]\n\n# Test the function\nprint(centered_hexagonal_number(10))  # Output: 271\n```\n\nHàm `centered_hexagonal_number` trước tiên sẽ khởi tạo một mảng `hexagonal_num"
+  },
+  {
+   "task": 87,
+   "pass": false,
+   "resp": "```python\ndef merge_dictionaries_three(r1, r2, r3):\n    merged = {}\n    for i in range(len(r1)):\n        if r1[i] not in merged:\n            merged[r1[i]] = [r2[i], r3[i]]\n        else:\n            merged[r1[i]].append(r2[i])\n    return merged\n\nassert merge_dictionaries_three({ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\": \"White\" }, { \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })=={'B': 'Black', 'R': 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White', 'O': 'Orange'}\n```\n\nTrong Python, hàm `merge_dictionaries_three` sẽ duyệt qua ba dictionaries và thêm chúng vào một dictionary trống. Nếu một dictionary không có key tương ứng trong `merged`, nó sẽ được thêm vào với giá trị là [r1[i], r2[i], ..., rn]. Nếu dictionary đó đã có key, nó sẽ chỉ ghi thêm giá trị của key đó vào dictionar"
+  },
+  {
+   "task": 88,
+   "pass": false,
+   "resp": "```python\ndef freq_count(lst):\n    freq_dict = {}\n    for num in lst:\n        if num in freq_dict:\n            freq_dict[num] += 1\n        else:\n            freq_dict[num] = 1\n    return freq_dict\n\n# Test the function\nassert freq_count([10,10,10,10,20,20,20,20,40,40,50,50,30])==({10: 4, 20: 4, 40: 2, 50: 2, 30: 1}) \nassert freq_count([10,10,10,10,20,20,20,20,40,40,50,50,30])==({10: 4, 20: 4, 40: 2, 50: 2, 30: 1}) \nassert freq_count([10,10,10,10,20,20,20,20,40,40,50,50,30])==({10: 4, 20: 4, 40: 2, 50: 2, 30: 1}) \nassert freq_count([10,10,10,10,20,20,20,20,40,40,50,50,30])==({10: 4, 20: 4, 40:"
+  },
+  {
+   "task": 89,
+   "pass": false,
+   "resp": "```python\ndef closest_smaller_number(n):\n    return n if n <= 0 or n > 1 else n\n\ndef closest_smaller_number_closest(n):\n    smaller = n\n    for i in range(1, n+1):\n        if n % i == 0:\n            smaller = i\n    return smaller\n\nassert closest_smaller_number(10) == 10\nassert closest_smaller_number(11) == 10\n```\n\nHàm `closest_smaller_number` sẽ trả về số nhỏ nhất nhỏ hơn hoặc bằng `n`. Hàm `closest_smaller_number_closest` sẽ duyệt qua tất cả các số nhỏ hơn `n`, kiểm tra xem mỗi số có phải là số nhỏ hơn hay không và so sánh nó với số nhỏ nhất nhỏ hơn `n`. Nếu tìm thấy một số nhỏ hơn `n`, hàm sẽ trả về số đó. Cuối cùng, hàm sẽ trả về số nhỏ nhất nhỏ hơn `n`."
+  },
+  {
+   "task": 90,
+   "pass": false,
+   "resp": "```python\ndef longest_word_length(words):\n    if not words: return 0\n    words = [word for word in words if len(word) > len(words[0])]\n    return max(words)\n\nprint(\"The length of the longest word is \", longest_word_length([\"python\",\"PHP\",\"bigdata\"]))\n```\n\nOutput:\n```\nThe length of the longest word is 7\n```"
+  },
+  {
+   "task": 91,
+   "pass": false,
+   "resp": "```python\ndef find_substring(words, target):\n    return words.count(target) > 0\n\nprint(find_substring([\"red\", \"black\", \"white\", \"green\", \"orange\"],\"ack\")==True)\n```\n\nHàm `find_substring` nhận vào hai tham số: một danh sách các từ và một giá trị mục tiêu. Hàm sẽ trả về `True` nếu có một lần xuất hiện của `target` trong danh sách các từ, và `False` nếu không tìm thấy `target` nào.\n\nHàm này sử dụng phương thức `count()` để đếm số lần xuất hiện của `target` trong danh sách các từ. Sau đó, hàm sẽ so sánh giá trị mục tiêu với một biến đếm (`word_count`) để xác định xem có sự khác biệt hay không. Nếu có, hàm trả về `True`; nếu không, hàm trả về `False`.\n\nKhi bạn chạy đoạn mã này với các ví dụ trên, kết quả sẽ là `True` vì \"red\" và \"black\" đều xuất hiện trong danh sách các từ \"black\"."
+  },
+  {
+   "task": 92,
+   "pass": false,
+   "resp": "```python\ndef is_undulating(number):\n    if number == \"1212121\":\n        return True\n    else:\n        return False\n\n# Test cases\nprint(is_undulating(\"1212121\"))  # Output: True\nprint(is_undulating(\"12121212\"))  # Output: False\nprint(is_undulating(\"12121213\"))  # Output: True\nprint(is_undulating(\"12121214\"))  # Output: False\n```\n\nHàm `is_undulating` nhận đầu vào là một số và trả về `True` nếu số đó là undulating (không phải số nguyên), ngược lại trả về `False`. Hàm sử dụng biểu thức chính quy (regular expressions) để kiểm tra xem số đó có phải là số nguyên hay không."
+  },
+  {
+   "task": 93,
+   "pass": false,
+   "resp": "```python\ndef power(a, b):\n    if a == 0 or b == 0:\n        return 0\n    else:\n        return b ** a\n\n# Test the function\nassert power(3,4) == 81\nassert power(0,2) == 0\nassert power(0,3) == 0\n```"
+  },
+  {
+   "task": 94,
+   "pass": false,
+   "resp": "```python\ndef index_minimum(tuples):\n    min_value = max(tuples)\n    return min_value\n\n# Test the function\nassert index_minimum([('Rash', 143), ('Manjeet', 200), ('Varsha', 100)]) == 'Varsha'\n```\n\nThe `index_minimum` function takes a list of tuples as input and uses the built-in `max` function to find the minimum value in each tuple. It then returns the minimum value found. The provided test case verifies the correctness of the function by comparing the output with the expected result."
+  },
+  {
+   "task": 95,
+   "pass": false,
+   "resp": "```python\ndef find_min_length(lst):\n    if len(lst) < 2:\n        return 0\n    min_length = len(lst[0])\n    for i in range(1, len(lst)):\n        if lst[i] < min_length:\n            min_length = lst[i]\n    return min_length\n\n# Test the function\nassert find_min_length([[1],[1,2]]) == 1\nassert find_min_length([[1],[1,2]]) == 0\n```"
+  },
+  {
+   "task": 96,
+   "pass": false,
+   "resp": "```python\ndef divisor(n):\n    if n == 1:\n        return 1\n    elif n == 2:\n        return 2\n    else:\n        return divisor(n-1) + divisor(n-2)\n\nassert divisor(15) == 4\n```\n\nHàm `divisor` nhận vào một số nguyên `n` và trả về số lượng các số nguyên tố nhỏ hơn hoặc bằng `n`. Hàm sử dụng thuật toán Sàng Eratosthenes để tìm tất cả các số nguyên tố nhỏ hơn `n`, sau đó nhân chúng lại với nhau để có được tổng của tất cả các số nguyên tố này. Cuối cùng, hàm sẽ trả về giá trị của `n`.\n\nKhi chạy thử hàm với các giá trị đầu vào khác nhau, kết quả trả về sẽ là:\n```python\nassert divisor(15) == 4\nassert divisor(20) == 5\nassert divisor(30) == 7\nassert divisor(40) == 10\n```"
+  },
+  {
+   "task": 97,
+   "pass": false,
+   "resp": "```python\ndef frequency_lists(lst):\n    freq_dict = {}\n    for i in lst:\n        if type(i) is list:\n            freq_dict[i] = freq_dict.get(i, 0) + 1\n        else:\n            freq_dict[i] = 1\n    return freq_dict\n\n# Test the function\nassert frequency_lists([[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]])=={1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\nassert frequency_lists([[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]])=={1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\nassert frequency_lists([[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]])=={1: 1, 2: 3, 3: 1, 4: 1, 5: 2, 6: 1, 7: 1, 8: 1, 9: 1}\n```"
+  },
+  {
+   "task": 98,
+   "pass": false,
+   "resp": "```python\ndef multiply_num(nums):\n    return sum(num for num in nums if num > 0)\n\nassert multiply_num((8, 2, 3, -1, 7))==-67.2\n```\n\nHàm `multiply_num` nhận vào một danh sách các số và trả về tổng của tất cả các số trong danh sách đó. Hàm sử dụng list comprehension để tạo ra một danh sách mới, trong đó mỗi phần tử là một số duy nhất trong danh sách ban đầu. Sau đó, hàm sẽ kiểm tra xem tổng của tất cả các số trong danh sách có bằng 0 hay không. Nếu đúng, nó sẽ trả về giá trị tương ứng; nếu không, nó sẽ cộng tất cả các số lại và trả về tổng cuối cùng."
+  },
+  {
+   "task": 99,
+   "pass": false,
+   "resp": "```python\ndef decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    else:\n        return str(decimal_num).replace('0b', '')\n\n# Test the function\nassert decimal_to_binary(8) == '1000'\n```\n\nHàm `decimal_to_binary` nhận vào một số nguyên và trả về số binary equivalent. Đầu tiên, hàm sẽ kiểm tra xem số đó có bằng 0 hay không; nếu đúng, nó sẽ trả về '0'. Ngược lại, hàm sẽ chuyển đổi số đó sang kiểu chuỗi (string) bằng cách sử dụng phương thức `replace()` với biểu thức `['0b']` để loại bỏ khoảng trắng và thay thế các ký tự '0' bằng ''. Cuối cùng, hàm sẽ trả về kết quả đã được xử lý bằng cách dùng phương thức `replace()` với biểu thức `''`."
+  },
+  {
+   "task": 100,
+   "pass": false,
+   "resp": "```python\ndef next_smallest_ isinstance(n):\n    # Initialize an array to store all possible substrings of length n\n    substrings = [\"abc\"] * (n+1)\n    # Initialize a variable to keep track of the longest substring\n    max_length = 0\n    # Loop through all possible substrings of length n\n    for i in range(1, n+1):\n        # Check if the current substring is a palindrome\n        if str(substrings[i]) == str(substrings[i-1]):\n            # If it is, update the longest substring\n            max_length = max(max_length, i - substrings[i])\n        else:\n            # If it is not, add it to the array and update the maximum length\n            substrings[i] = substrings[i-1] + 1\n    return max_length\n\nprint(next_smallest_ isinstance(99))  # Output: 101\n```\n\nIn this solution, we first create an a"
+  },
+  {
+   "task": 101,
+   "pass": false,
+   "resp": "```python\ndef kth_element(arr, k):\n    for i in range(len(arr)):\n        if arr[i] == k:\n            return i\n    return -1\n\n# Testing the function\nassert kth_element([12,3,5,7,19], 5, 2) == 3\nassert kth_element([12,3,5,7,19], 5, 1) == -1\n```\n\nThe `kth_element` function iterates through the array using a for loop and checks if each element matches the given `k`. If a match is found, it returns the index of that element. If no match is found after iterating through the entire array, the function returns -1."
+  },
+  {
+   "task": 102,
+   "pass": false,
+   "resp": "Đây là giải pháp bằng Python cho bài toán này:\n\n```python\ndef snake_to_camel(snake_case):\n    return snake_case.capitalize() + 'CamelCase'\n\nprint(snake_to_camel('python_program'))  # Output: PythonProgram\n```\n\nTrong giải pháp này, hàm `snake_to_camel` nhận đầu vào là một chuỗi và trả về một chuỗi mới có tất cả các ký tự chữ cái viết hoa và viết thường của nó. Hàm `capitalize` được dùng để chuyển tất cả các ký tự sang chữ hoa trước khi nối chúng lại với nhau.\n\nHàm này hoạt động bằng cách sử dụng phương thức `capitalize()`, giúp việc chuyển đổi từ một chuỗi sang một chữ cái trở nên dễ dàng hơn. Phương thức này cũng giúp xử lý các ký tự viết hoa và viết thường trong chuỗi."
+  },
+  {
+   "task": 103,
+   "pass": false,
+   "resp": "```python\ndef eulerian_num(n, m):\n    if n < 0 or m < 0:\n        return \"Error: Inputs must be non-negative integers.\"\n    elif n == 0 or m == 0:\n        return \"Error: Inputs cannot be zero.\"\n    else:\n        return (n * (m - n) // 2) + '*' * (n - m)\n\nprint(eulerian_num(3, 1))  # Output: 4\n```\n\nHàm `eulerian_num` trước tiên sẽ kiểm tra xem các đầu vào có phải là non-negative integers hay không. Nếu không, hàm sẽ trả về một thông báo lỗi. Tiếp theo, hàm sẽ kiểm tra xem `n` và `m` có bằng 0 hoặc bằng 0 hay không. Nếu bất kỳ điều kiện nào trong số này không đúng, hàm sẽ trả về một thông báo lỗi. Cuối cùng, hàm sẽ tính toán các giá trị của `n` và `m` bằng cách sử dụng hàm `*` (Multiplication) để tạo ra một số nguyên tố (prime number)."
+  },
+  {
+   "task": 104,
+   "pass": false,
+   "resp": "```python\ndef sort_sublists(lst):\n    return sorted(lst, key=lambda x: x[0])\n\nassert sort_sublists(([\"green\", \"orange\"], [\"black\", \"white\"], [\"white\", \"black\", \"orange\"])) == ['green', 'orange']\n```\n\nHàm `sort_sublists` nhận vào một danh sách các list. Hàm sẽ trả về một danh sách mới đã được sắp xếp dựa trên các phần tử đầu tiên của mỗi sublist.\n\nHàm sử dụng phương thức `key` để so sánh từng phần tử với phần tử đứng trước nó. Nếu phần tử hiện tại nhỏ hơn phần tử đứng trước, hàm sẽ cập nhật lại giá trị của phần tử đó. Ngược lại, hàm sẽ trả về một danh sách mới đã được sắp xếp.\n\nSau đó, hàm sẽ kiểm tra xem độ dài của danh sách có bằng độ dài của các sublist hay không. Nếu không, hàm sẽ trả về một danh sách mới đã được sắp xếp dựa trên độ dài.\n\nCuối cùng, hàm sẽ kiểm tra xem độ dài của danh s"
+  },
+  {
+   "task": 105,
+   "pass": false,
+   "resp": "```python\ndef count_true_booleans(lst):\n    true_count = 0\n    false_count = 0\n    for num in lst:\n        if num:\n            true_count += 1\n        else:\n            false_count += 1\n    return true_count, false_count\n\n# Test the function\nprint(count_true_booleans([True, False, True]))  # Output: (2, 2)\n```\n\nThe `count_true_booleans` function initializes a counter variable `true_count` to 0 and a counter variable `false_count` to 0. It then iterates through the list of numbers, incrementing the count for each element if the current element is true. If the current element is false, it increments the count for the corresponding flag. Finally, it returns a tuple containing the total count of true and false values."
+  },
+  {
+   "task": 106,
+   "pass": false,
+   "resp": "```python\ndef add_lists(lst, tuples):\n    for i in tuples:\n        lst.append(i)\n    return tuple(lst)\n\nassert add_lists([5, 6, 7], (9, 10)) == (9, 10, 5, 6, 7)\n```\n\nHàm `add_lists` nhận vào một danh sách các tuple và một tuple chứa các giá trị cần thêm. Hàm sẽ lặp qua từng phần tử trong danh sách và thêm chúng vào tuple mới. Cuối cùng, hàm sẽ trả về tuple đã tạo.\n\nTrong ví dụ trên, hàm sẽ thêm các tuple `(5, 6)` và `(9, 10)` vào danh sách `lst`. Kết quả là `(9, 10, 5, 6, 7)`."
+  },
+  {
+   "task": 107,
+   "pass": false,
+   "resp": "```python\ndef hex_to_int(hex_num):\n    return int(hex_num, 16)\n\ndef hex_to_hex(hex_num):\n    return hex(int(hex_num, 16))\n\nprint(hex_to_hex(10,15))  # Output: 6\n```\n\nHàm `hex_to_hex` sẽ chuyển đổi một số nguyên thành chuỗi hexadecimal. Hàm `hex_to_hex` sẽ chuyển đổi một số nguyên thành chuỗi hexadecimal. Sau đó, chúng ta sử dụng hàm `hex_to_hex` để lấy ra giá trị hexadecimal và trả về kết quả.\n\nHàm `hex_to_int` sẽ chuyển đổi một số nguyên thành chuỗi hexadecimal. Hàm này nhận vào một số nguyên và trả về một chuỗi hexadecimal."
+  },
+  {
+   "task": 108,
+   "pass": false,
+   "resp": "```python\nimport heapq\n\ndef merge_sorted_list(lst):\n    return [i for i in lst if i >= 0 and i < len(lst)-1]\n\ndef merge_sorted_list_and_sort(lst):\n    return [i for i in lst if i >= 0 and i < len(lst)-1]\n\ndef merge_ueError(lst):\n    return [i for i in lst if not (isinstance(i, int) and i>=0 and i<len(lst)-1)]\n\ndef merge_tuple(lst):\n    return [i for i in lst if isinstance(i, tuple)]\n\ndef merge_list(lst):\n    return [merge_tuple(lst[::-1]) for i in lst]\n\ndef merge_tuple(lst):\n    return [merge_tuple(lst[::-1]) for i in lst]\n\ndef merge_list(lst):\n    return [merge_tuple(lst[::-1]) for i in lst]\n\ndef merge_tuple(lst):\n    return [merge_tuple(lst[::-1]) for i in lst]\n\ndef merge_tuple(lst):\n    return [merge_tuple(lst[::-1]) for i in lst]\n\ndef merge_tuple(lst):\n    return [merge_tuple(lst[::"
+  },
+  {
+   "task": 109,
+   "pass": false,
+   "resp": "```python\ndef odd_Equivalent(binary_string, n):\n    count = 0\n    for i in range(n):\n        if binary_string[i] != binary_string[i+1]:\n            count += 1\n    return count\n\nprint(odd_Equivalent(\"011001\",6))  # Output: 3\n```\n\nHàm `odd_Equivalent` nhận vào hai tham số là một chuỗi và số lượng chữ số của nó. Hàm sẽ lặp qua từng ký tự trong chuỗi bằng cách sử dụng vòng lặp `for`. Nếu ký tự tại vị trí hiện tại không khác với ký tự tại vị trí con trỏ (`i`), hàm sẽ tăng biến đếm lên 1. Cuối cùng, hàm trả về giá trị của biến đếm.\n\nTrong ví dụ trên, hàm sẽ trả về 3 vì \"011001\" có số lượng chữ số là 3 và nó nằm trong phạm vi từ 0 đến 9."
+  },
+  {
+   "task": 110,
+   "pass": false,
+   "resp": "```python\ndef extract_missing(lst, start, end):\n    return [i for i in lst if i <= start <= i <= end]\n\nassert extract_missing([(6, 9), (15, 34), (48, 70)], 2, 100) == [(2, 6), (9, 100), (9, 15), (34, 100), (34, 48), (70, 100)]\n```\n\nHàm `extract_missing` nhận vào một danh sách các chỉ số và một danh sách các chỉ số tương ứng. Nó sử dụng list comprehension để tạo ra các chỉ số từ danh sách đầu vào, sau đó duyệt qua từng phần tử trong danh sách đầu vào để kiểm tra xem chúng có nằm trong danh sách kết quả hay không. Nếu tìm thấy bất kỳ chỉ số nào không nằm trong danh sách kết quả, hàm sẽ thêm chỉ số đó vào danh sách kết quả. Cuối cùng, hàm sẽ trả về danh sách các chỉ số đã được xử lý."
+  }
+ ]
+}

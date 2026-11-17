@@ -1,0 +1,77 @@
+{
+ "cmd": "seed",
+ "args": {
+  "cmd": "seed",
+  "domain": "",
+  "experts": "",
+  "mode": "frozen",
+  "init": "",
+  "steps": 0,
+  "tag": "",
+  "tags": []
+ },
+ "hist": [
+  {
+   "step": 0,
+   "loss": 9.8262,
+   "val": {
+    "truyen": 9.7872,
+    "hoithoai": 9.795,
+    "dich": 9.7998,
+    "toan": 9.7738,
+    "laptrinh": 9.8074
+   }
+  },
+  {
+   "step": 500,
+   "loss": 2.4882,
+   "val": {
+    "truyen": 2.7726,
+    "hoithoai": 3.8852,
+    "dich": 3.2142,
+    "toan": 0.6256,
+    "laptrinh": 2.4816
+   }
+  },
+  {
+   "step": 1000,
+   "loss": 2.0214,
+   "val": {
+    "truyen": 2.3112,
+    "hoithoai": 3.5013,
+    "dich": 2.7293,
+    "toan": 0.4886,
+    "laptrinh": 1.8483
+   }
+  },
+  {
+   "step": 1500,
+   "loss": 1.6649,
+   "val": {
+    "truyen": 2.1497,
+    "hoithoai": 3.3707,
+    "dich": 2.5742,
+    "toan": 0.4726,
+    "laptrinh": 1.626
+   }
+  },
+  {
+   "step": 1999,
+   "loss": 1.7459,
+   "val": {
+    "truyen": 1.8991,
+    "hoithoai": 3.0804,
+    "dich": 2.376,
+    "toan": 0.4223,
+    "laptrinh": 1.3592
+   }
+  }
+ ],
+ "final": {
+  "truyen": 1.9129,
+  "hoithoai": 3.1254,
+  "dich": 2.4054,
+  "toan": 0.4269,
+  "laptrinh": 1.4206
+ }
+}

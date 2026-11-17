@@ -1,0 +1,144 @@
+[     0.0s] === load_network_v12_sent_ls START (pid=11326) → out/logs/load_network_v12_sent_ls_20260823_210909.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent_ls.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[     9.9s] ✓ adjacency  (7.7s)
+[     9.9s] ▶ embedding
+[     9.9s] ✓ embedding  (0.0s)
+[     9.9s] ▶ parents
+[     9.9s] parents: deserialize 450303 records …
+[    10.0s] parents 5000/450303 (1.1%)
+[    10.0s] parents 10000/450303 (2.2%)
+[    10.0s] parents 15000/450303 (3.3%)
+[    10.1s] parents 20000/450303 (4.4%)
+[    10.1s] parents 25000/450303 (5.6%)
+[    10.2s] parents 30000/450303 (6.7%)
+[    10.2s] parents 35000/450303 (7.8%)
+[    10.2s] parents 40000/450303 (8.9%)
+[    10.3s] parents 45000/450303 (10.0%)
+[    10.3s] parents 50000/450303 (11.1%)
+[    10.3s] parents 55000/450303 (12.2%)
+[    10.4s] parents 60000/450303 (13.3%)
+[    10.4s] parents 65000/450303 (14.4%)
+[    10.4s] parents 70000/450303 (15.5%)
+[    10.5s] parents 75000/450303 (16.7%)
+[    10.5s] parents 80000/450303 (17.8%)
+[    10.5s] parents 85000/450303 (18.9%)
+[    10.6s] parents 90000/450303 (20.0%)
+[    10.6s] parents 95000/450303 (21.1%)
+[    10.6s] parents 100000/450303 (22.2%)
+[    10.7s] parents 105000/450303 (23.3%)
+[    10.7s] parents 110000/450303 (24.4%)
+[    10.8s] parents 115000/450303 (25.5%)
+[    10.8s] parents 120000/450303 (26.6%)
+[    10.8s] parents 125000/450303 (27.8%)
+[    10.9s] parents 130000/450303 (28.9%)
+[    10.9s] parents 135000/450303 (30.0%)
+[    11.0s] parents 140000/450303 (31.1%)
+[    11.1s] parents 145000/450303 (32.2%)
+[    11.1s] parents 150000/450303 (33.3%)
+[    11.1s] parents 155000/450303 (34.4%)
+[    11.2s] parents 160000/450303 (35.5%)
+[    11.2s] parents 165000/450303 (36.6%)
+[    11.3s] parents 170000/450303 (37.8%)
+[    11.3s] parents 175000/450303 (38.9%)
+[    11.4s] parents 180000/450303 (40.0%)
+[    11.5s] parents 185000/450303 (41.1%)
+[    11.5s] parents 190000/450303 (42.2%)
+[    11.6s] parents 195000/450303 (43.3%)
+[    11.7s] parents 200000/450303 (44.4%)
+[    11.7s] parents 205000/450303 (45.5%)
+[    11.8s] parents 210000/450303 (46.6%)
+[    11.9s] parents 215000/450303 (47.7%)
+[    11.9s] parents 220000/450303 (48.9%)
+[    12.0s] parents 225000/450303 (50.0%)
+[    12.1s] parents 230000/450303 (51.1%)
+[    12.1s] parents 235000/450303 (52.2%)
+[    12.2s] parents 240000/450303 (53.3%)
+[    12.2s] parents 245000/450303 (54.4%)
+[    12.3s] parents 250000/450303 (55.5%)
+[    12.4s] parents 255000/450303 (56.6%)
+[    12.4s] parents 260000/450303 (57.7%)
+[    12.5s] parents 265000/450303 (58.8%)
+[    12.6s] parents 270000/450303 (60.0%)
+[    12.6s] parents 275000/450303 (61.1%)
+[    12.7s] parents 280000/450303 (62.2%)
+[    12.8s] parents 285000/450303 (63.3%)
+[    12.8s] parents 290000/450303 (64.4%)
+[    12.9s] parents 295000/450303 (65.5%)
+[    12.9s] parents 300000/450303 (66.6%)
+[    13.0s] parents 305000/450303 (67.7%)
+[    13.1s] parents 310000/450303 (68.8%)
+[    13.1s] parents 315000/450303 (70.0%)
+[    13.2s] parents 320000/450303 (71.1%)
+[    13.3s] parents 325000/450303 (72.2%)
+[    13.3s] parents 330000/450303 (73.3%)
+[    13.4s] parents 335000/450303 (74.4%)
+[    13.4s] parents 340000/450303 (75.5%)
+[    13.5s] parents 345000/450303 (76.6%)
+[    13.6s] parents 350000/450303 (77.7%)
+[    13.6s] parents 355000/450303 (78.8%)
+[    13.7s] parents 360000/450303 (79.9%)
+[    13.7s] parents 365000/450303 (81.1%)
+[    13.8s] parents 370000/450303 (82.2%)
+[    13.9s] parents 375000/450303 (83.3%)
+[    13.9s] parents 380000/450303 (84.4%)
+[    14.0s] parents 385000/450303 (85.5%)
+[    14.0s] parents 390000/450303 (86.6%)
+[    14.1s] parents 395000/450303 (87.7%)
+[    14.2s] parents 400000/450303 (88.8%)
+[    14.2s] parents 405000/450303 (89.9%)
+[    14.3s] parents 410000/450303 (91.0%)
+[    14.3s] parents 415000/450303 (92.2%)
+[    14.4s] parents 420000/450303 (93.3%)
+[    14.5s] parents 425000/450303 (94.4%)
+[    14.5s] parents 430000/450303 (95.5%)
+[    14.6s] parents 435000/450303 (96.6%)
+[    14.6s] parents 440000/450303 (97.7%)
+[    14.7s] parents 445000/450303 (98.8%)
+[    14.8s] parents 450000/450303 (99.9%)
+[    25.1s] ▶ rebuild_hierarchical_index …
+[    26.3s] ✓ rebuild_hierarchical_index (1.2s)
+[    30.9s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    30.9s] ✓ parents  (21.0s)
+[    30.9s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    32.1s] sidecar thiếu → migrate: network_v12_sent_ls.content.pkl
+[    32.1s] ✓ load_checkpoint XONG
+
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · bigram-cha 29787 hàng
+### có câu nguồn thật: 16/30 prompt → ['bướm là', 'chó là', 'học sinh', 'hổ là', 'khoẻ như', 'khỉ là', 'lúa là', 'muối là', 'mèo là', 'mùa xuân', 'mặt trời là', 'nhanh như', 'nước là', 'sóc là', 'sắt là', 'đồng là']
+
+═══ độ_tin=0.0  ·  gop=False · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:991: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 450303 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent_ls.pkl --in-place
+  ensure_frame_brackets(state)
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt động rất rộng, và các cá thể phân tán trên khoảng cách lên tới 6
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu
+   ── 6 hạt · TRUNG THÀNH  80.6%±3.5 [76.4–83.4]  · PHỦ  34.5%±1.5 [33.3–36.3]  · TRẬT TỰ  95.8%±1.9 [93.5–97.2]  · LẶP   9.7%±1.6 [7.7–10.9]  · RỖNG 1.5/30
+
+═══ độ_tin=0.05  ·  gop=False · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt động rất rộng, và các cá thể phân tán trên khoảng cách lên tới 6
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu
+   ── 6 hạt · TRUNG THÀNH  84.5%±1.5 [83.1–86.0]  · PHỦ  34.2%±1.4 [33.1–35.8]  · TRẬT TỰ  98.3%±1.0 [96.9–98.8]  · LẶP   8.3%±0.8 [7.4–9.1]  · RỖNG 7.7/30
+
+═══ độ_tin=0.1  ·  gop=False · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt động rất rộng, và các cá thể phân tán trên khoảng cách lên tới 6
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu
+   ── 6 hạt · TRUNG THÀNH  86.3%±1.4 [84.6–87.4]  · PHỦ  34.0%±1.4 [33.1–35.8]  · TRẬT TỰ  98.9%±0.4 [98.3–99.2]  · LẶP   7.9%±0.6 [7.4–8.5]  · RỖNG 8.7/30
+
+═══ độ_tin=0.15  ·  gop=False · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt động rất rộng, và các cá thể phân tán trên khoảng cách lên tới 6
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu
+   ── 6 hạt · TRUNG THÀNH  86.3%±1.1 [85.0–87.3]  · PHỦ  33.7%±1.4 [32.8–35.6]  · TRẬT TỰ  98.9%±0.5 [98.2–99.2]  · LẶP   8.0%±0.4 [7.6–8.5]  · RỖNG 9.7/30
+
+[901s] xong

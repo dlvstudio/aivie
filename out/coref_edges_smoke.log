@@ -1,0 +1,96 @@
+[0s] load checkpoints/network_v11_coref_smoke.pkl (gc.disable) …
+[69s] ✓ loaded · coref edges 10,763 · after_role 46,231
+
+═══ TOP 30 cạnh coref (SIG-nhắc-lại → SIG-antecedent) — đọc tay khuôn ═══
+
+  [0] «∅ [ENT] ( ; <ENT> /»
+      → «vương quốc <ENT> giáo [ENT] là một quốc gia» · after_role='('
+
+  [1] «∅ [ENT] ( ; ; ;»
+      → «khoảng 11 triệu người. [ENT] thuộc cả hai vùng» · after_role='('
+
+  [2] «∅ [ENT] ( hoặc ) là»
+      → «và <ENT> <ENT> đưa [ENT] đi vào hoạt động» · after_role='('
+
+  [3] «∅ [ENT] ( ), tên chính»
+      → «thức là <ENT> hòa [ENT] (, ) là một» · after_role='('
+
+  [4] «∅ [ENT] ( ), tên đầy»
+      → «thực thể liên bang. [ENT] có biên giới giáp» · after_role='('
+
+  [5] «∅ [ENT] ( 獅子) (tên <ENT>»
+      → «diện tích. <ENT> sao [ENT] nằm kề các chòm» · after_role='('
+
+  [6] «∅ [ENT] 5 là một quận»
+      → «<ENT> <ENT> <ENT> lý [ENT] 5 nằm ở trung» · after_role='5'
+
+  [7] «∅ [ENT] 6 một quận nội»
+      → «<ENT> <ENT> <ENT> lý [ENT] 6 thuộc nội thành» · after_role='6'
+
+  [8] «∅ [ENT] 6 có thể là:»
+      → «6 có thể là: [ENT] 6, <ENT> phố <ENT>» · after_role='6'
+
+  [9] «∅ [ENT] g (thường được đọc»
+      → «người phát minh chữ [ENT] g này là một» · after_role='g'
+
+  [10] «∅ [ENT] y (zh. 皈依, sa.»
+      → «y thác (zh. 依托). [ENT] y trong <ENT> giáo» · after_role='y'
+
+  [11] «∅ [ENT] ước giờ mùa hè»
+      → «mùa hè) trong năm. [ENT] ước này thường được» · after_role='ước'
+
+  [12] «∅ [ENT] ăn hay trong dân»
+      → «hay các mỏ muối. [ENT] thu được từ nước» · after_role='ăn'
+
+  [13] «∅ [ENT] ánh sáng là đơn»
+      → «vị của thời gian. [ENT] ánh sáng thường hay» · after_role='ánh'
+
+  [14] «∅ [ENT] âm lịch, hiện nay»
+      → «trung trong tháng giêng. [ENT] âm lịch, tháng giêng» · after_role='âm'
+
+  [15] «∅ [ENT] án <ENT> tế là»
+      → «của luật quốc tế. [ENT] án <ENT> tế được» · after_role='án'
+
+  [16] «∅ [ENT] ứng <ENT> là một»
+      → «so với môi trường. [ENT] ứng <ENT> lúc đó» · after_role='ứng'
+
+  [17] «∅ [ENT] ứng <ENT> là hiệu»
+      → «lý của vật liệu. [ENT] ứng này được nhà» · after_role='ứng'
+
+  [18] «∅ [ENT] ứng nhà kính diễn»
+      → «<ENT> ví dụ về [ENT] ứng nhà kính làm» · after_role='ứng'
+
+  [19] «∅ [ENT] ứng thế trong hóa»
+      → «khác. <ENT> hữu cơ [ENT] ứng thế thân hạch» · after_role='ứng'
+
+  [20] «∅ [ENT] ứng nhiệt điện là»
+      → «bộ phận chuyển động. [ENT] ứng này có thể» · after_role='ứng'
+
+  [21] «∅ [ENT] ứng bề mặt là»
+      → «ứng bề mặt này. [ENT] ứng này có tầm» · after_role='ứng'
+
+  [22] «∅ [ENT] ảnh trong tiếng <ENT>»
+      → «ảnh trên sa mạc [ENT] ảnh, bài hát nằm» · after_role='ảnh'
+
+  [23] «∅ [ENT] ảnh cũng được gọi»
+      → «duy nhất có thật. [ENT] ảnh được dùng để» · after_role='ảnh'
+
+  [24] «∅ [ENT] ảnh (電影) là một»
+      → «phương diện nghệ thuật, [ENT] ảnh cũng là một» · after_role='ảnh'
+
+  [25] «∅ [ENT] ro (tiếng <ENT> <ENT>»
+      → «sản hoặc môi trường). [ENT] ro thường tập trung» · after_role='ro'
+
+  [26] «∅ [ENT] son (vermilion) hay đỏ»
+      → «nhìn vào hình bên. [ENT] son là màu rất» · after_role='son'
+
+  [27] «∅ [ENT] nói <ENT> <ENT> (tiếng»
+      → «nước ngoài, vì vậy [ENT] nói Hoa Kỳ được» · after_role='nói'
+
+  [28] «∅ [ENT] phương pháp <ENT> <ENT>»
+      → «khí động lực học. [ENT] phương pháp này đặc» · after_role='phương'
+
+  [29] «∅ [ENT] thức chính quy (tiếng»
+      → «khái niệm cơ bản [ENT] thức chính quy, thường» · after_role='thức'
+
+[96s] → CỔNG: ≥ ~7/10 cạnh khuôn hợp lý (nhắc-lại→giới-thiệu) ⇒ P3.2. Loạn/rỗng ⇒ xem occurrence-detect / SIG-width / purity (RUNBOOK §6).

@@ -1,0 +1,255 @@
+[     0.0s] === probe_clause_layer START (pid=4353) → out/logs/probe_clause_layer_20260802_115018.log ===
+[     0.0s] P47 — cổng sinh-tử tầng mệnh đề · checkpoint=checkpoints/network_v12_sent.pkl
+[     0.0s] CỔNG: bits/token < 2.0 (v4 §3.7) · cross_parent ≥ 5% · len ∈ [4.0,12.0]  | cổng-cũ H_type<6.0 MIS-SPECIFIED, chỉ báo cáo
+[     0.0s] === load_network_v12_sent START (pid=4353) → out/logs/load_network_v12_sent_20260802_115018.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[    10.4s] ✓ adjacency  (8.2s)
+[    10.4s] ▶ embedding
+[    10.4s] ✓ embedding  (0.0s)
+[    10.4s] ▶ parents
+[    10.4s] parents: deserialize 430447 records …
+[    10.5s] parents 5000/430447 (1.2%)
+[    10.5s] parents 10000/430447 (2.3%)
+[    10.6s] parents 15000/430447 (3.5%)
+[    10.6s] parents 20000/430447 (4.6%)
+[    10.6s] parents 25000/430447 (5.8%)
+[    10.7s] parents 30000/430447 (7.0%)
+[    10.7s] parents 35000/430447 (8.1%)
+[    10.7s] parents 40000/430447 (9.3%)
+[    10.8s] parents 45000/430447 (10.5%)
+[    10.8s] parents 50000/430447 (11.6%)
+[    10.8s] parents 55000/430447 (12.8%)
+[    10.9s] parents 60000/430447 (13.9%)
+[    10.9s] parents 65000/430447 (15.1%)
+[    10.9s] parents 70000/430447 (16.3%)
+[    11.0s] parents 75000/430447 (17.4%)
+[    11.0s] parents 80000/430447 (18.6%)
+[    11.0s] parents 85000/430447 (19.7%)
+[    11.1s] parents 90000/430447 (20.9%)
+[    11.1s] parents 95000/430447 (22.1%)
+[    11.2s] parents 100000/430447 (23.2%)
+[    11.2s] parents 105000/430447 (24.4%)
+[    11.3s] parents 110000/430447 (25.6%)
+[    11.3s] parents 115000/430447 (26.7%)
+[    11.4s] parents 120000/430447 (27.9%)
+[    11.5s] parents 125000/430447 (29.0%)
+[    11.5s] parents 130000/430447 (30.2%)
+[    11.6s] parents 135000/430447 (31.4%)
+[    11.6s] parents 140000/430447 (32.5%)
+[    11.7s] parents 145000/430447 (33.7%)
+[    11.7s] parents 150000/430447 (34.8%)
+[    11.8s] parents 155000/430447 (36.0%)
+[    11.9s] parents 160000/430447 (37.2%)
+[    11.9s] parents 165000/430447 (38.3%)
+[    12.0s] parents 170000/430447 (39.5%)
+[    12.1s] parents 175000/430447 (40.7%)
+[    12.2s] parents 180000/430447 (41.8%)
+[    12.2s] parents 185000/430447 (43.0%)
+[    12.3s] parents 190000/430447 (44.1%)
+[    12.4s] parents 195000/430447 (45.3%)
+[    12.5s] parents 200000/430447 (46.5%)
+[    12.5s] parents 205000/430447 (47.6%)
+[    12.6s] parents 210000/430447 (48.8%)
+[    12.7s] parents 215000/430447 (49.9%)
+[    12.8s] parents 220000/430447 (51.1%)
+[    12.8s] parents 225000/430447 (52.3%)
+[    12.9s] parents 230000/430447 (53.4%)
+[    13.0s] parents 235000/430447 (54.6%)
+[    13.0s] parents 240000/430447 (55.8%)
+[    13.1s] parents 245000/430447 (56.9%)
+[    13.2s] parents 250000/430447 (58.1%)
+[    13.2s] parents 255000/430447 (59.2%)
+[    13.3s] parents 260000/430447 (60.4%)
+[    13.4s] parents 265000/430447 (61.6%)
+[    13.5s] parents 270000/430447 (62.7%)
+[    13.6s] parents 275000/430447 (63.9%)
+[    13.6s] parents 280000/430447 (65.0%)
+[    13.7s] parents 285000/430447 (66.2%)
+[    13.8s] parents 290000/430447 (67.4%)
+[    13.9s] parents 295000/430447 (68.5%)
+[    14.0s] parents 300000/430447 (69.7%)
+[    14.0s] parents 305000/430447 (70.9%)
+[    14.1s] parents 310000/430447 (72.0%)
+[    14.2s] parents 315000/430447 (73.2%)
+[    14.2s] parents 320000/430447 (74.3%)
+[    14.3s] parents 325000/430447 (75.5%)
+[    14.4s] parents 330000/430447 (76.7%)
+[    14.5s] parents 335000/430447 (77.8%)
+[    14.5s] parents 340000/430447 (79.0%)
+[    14.6s] parents 345000/430447 (80.1%)
+[    14.7s] parents 350000/430447 (81.3%)
+[    14.8s] parents 355000/430447 (82.5%)
+[    14.8s] parents 360000/430447 (83.6%)
+[    14.9s] parents 365000/430447 (84.8%)
+[    15.0s] parents 370000/430447 (86.0%)
+[    15.1s] parents 375000/430447 (87.1%)
+[    15.1s] parents 380000/430447 (88.3%)
+[    15.2s] parents 385000/430447 (89.4%)
+[    15.3s] parents 390000/430447 (90.6%)
+[    15.4s] parents 395000/430447 (91.8%)
+[    15.4s] parents 400000/430447 (92.9%)
+[    15.5s] parents 405000/430447 (94.1%)
+[    15.6s] parents 410000/430447 (95.2%)
+[    15.6s] parents 415000/430447 (96.4%)
+[    15.7s] parents 420000/430447 (97.6%)
+[    15.7s] parents 425000/430447 (98.7%)
+[    15.8s] parents 430000/430447 (99.9%)
+[    27.0s] ▶ rebuild_hierarchical_index …
+[    28.4s] ✓ rebuild_hierarchical_index (1.4s)
+[    32.8s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    32.8s] ✓ parents  (22.3s)
+[    32.8s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    33.9s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    33.9s] ✓ load_checkpoint XONG
+[    33.9s] load xong 33.9s
+[    40.6s] vocab=32,002 · cha=430,447
+[    41.1s] P(EOS) nền = 0.003362
+[    41.1s] lift cao nhất: 'Trust'=297.5, 'dungculambanh'=297.5, 'HoatDong'=255.0, '\u2060'=198.3, 'fs'=198.3, 'htm'=178.5, 'iể'=148.7, 'Express'=148.7, 'master'=148.7, '你'=148.7, '😭'=148.7, '🌐'=148.7
+[    41.1s] dựng W_skip d_max=8 min_count=1 …
+[    54.1s] W_skip: 68,134,213 lượt cạnh · 430,447 span · 54.1s
+[    54.1s] ── PMI cut = none (θ_eos=2.0) ──────────────
+[    74.0s]   … mệnh đề: 50,000/430,447 cha → 89,853
+[    74.3s]   … mệnh đề: 100,000/430,447 cha → 181,684
+[    74.7s]   … mệnh đề: 150,000/430,447 cha → 254,518
+[    75.2s]   … mệnh đề: 200,000/430,447 cha → 333,098
+[    75.7s]   … mệnh đề: 250,000/430,447 cha → 412,763
+[    76.2s]   … mệnh đề: 300,000/430,447 cha → 493,369
+[    76.7s]   … mệnh đề: 350,000/430,447 cha → 565,666
+[    77.3s]   … mệnh đề: 400,000/430,447 cha → 637,383
+[    77.5s]     | sức.
+[    77.5s]     | quy củ * không khí làm việc khẩn trương và quy củ<EOS>
+[    77.5s]     | Ví dụ: tìm ra chân lí
+[    77.5s]     | Mấu chốt nhất phòng hộ năng lực thí nghiệm, lúc trước cũng tiến hành qua rất nhiều lần lý luận, mô phỏng nghiệ
+[    77.5s]     | 1949 – Hai thân vương quốc Cochin và Travancore hợp thành bang Thiru-Kochi (nay là Kerala)
+[    77.5s]     | euro một ít.
+[    77.5s]     | hàng xấu lấy hàng tốt * lường
+[    77.5s]     | Ví dụ: nôn nao như người say sóngĊ<EOS>
+[    77.6s]   M1: 680,864 mệnh đề · dài TB 14.73 (median 12) · 14,855 token mở
+[   115.0s]   … mối nối 500/1500
+[   151.2s]   … mối nối 1000/1500
+[   186.8s]   M2: ứng viên TB 266261 (1945 token mở) · KHÁC-CHA 100.0% · chết 0.1%
+[   186.8s]   M3: H_type 8.55 bits · H_clause 16.17 · **0.580 bits/token** (bigram = 6.42)
+[   186.8s]   CỔNG: len=✗ cross=✓ bits/tok=✓ ⇒ TRƯỢT   [cổng-cũ H_type=✗]
+[   186.8s] ── PMI cut = -1.0 (θ_eos=2.0) ──────────────
+[   187.5s]   … mệnh đề: 50,000/430,447 cha → 126,648
+[   188.3s]   … mệnh đề: 100,000/430,447 cha → 257,405
+[   189.1s]   … mệnh đề: 150,000/430,447 cha → 378,303
+[   190.4s]   … mệnh đề: 200,000/430,447 cha → 533,181
+[   191.7s]   … mệnh đề: 250,000/430,447 cha → 690,776
+[   193.0s]   … mệnh đề: 300,000/430,447 cha → 850,324
+[   194.3s]   … mệnh đề: 350,000/430,447 cha → 976,953
+[   195.5s]   … mệnh đề: 400,000/430,447 cha → 1,101,593
+[   196.3s]     | ,5 lít
+[   196.3s]     | thành thật kì
+[   196.3s]     | đỉnh sóng, một đầu bạch xà uốn qua uốn lại thật cao ngẩng đầu rắn gắt
+[   196.3s]     | ghế kiệu
+[   196.3s]     | như đan xen
+[   196.3s]     | một cách đúng đắn
+[   196.3s]     | diều" miêu tả sự phát triển của nhân vật và động lực trong mối quan hệ của họ xuyên suốt câu chuyện.
+[   196.3s]     | phương tiện truyền thông xã hội không?<EOS>
+[   196.3s]   M1: 1,168,852 mệnh đề · dài TB 8.48 (median 6) · 15,729 token mở
+[   300.6s]   … mối nối 500/1500
+[   406.3s]   … mối nối 1000/1500
+[   509.2s]   M2: ứng viên TB 701735 (2224 token mở) · KHÁC-CHA 100.0% · chết 0.0%
+[   509.2s]   M3: H_type 8.71 bits · H_clause 18.01 · **1.027 bits/token** (bigram = 6.42)
+[   509.2s]   CỔNG: len=✓ cross=✓ bits/tok=✓ ⇒ ĐẠT   [cổng-cũ H_type=✗]
+[   509.2s] ── PMI cut = 0.0 (θ_eos=2.0) ──────────────
+[   510.0s]   … mệnh đề: 50,000/430,447 cha → 170,931
+[   510.7s]   … mệnh đề: 100,000/430,447 cha → 347,219
+[   511.5s]   … mệnh đề: 150,000/430,447 cha → 519,373
+[   512.8s]   … mệnh đề: 200,000/430,447 cha → 762,234
+[   514.2s]   … mệnh đề: 250,000/430,447 cha → 1,010,387
+[   515.6s]   … mệnh đề: 300,000/430,447 cha → 1,260,523
+[   516.8s]   … mệnh đề: 350,000/430,447 cha → 1,460,620
+[   518.1s]   … mệnh đề: 400,000/430,447 cha → 1,657,754
+[   518.9s]     | thái độ
+[   518.9s]     | một nhóm người cũng
+[   518.9s]     | sẽ có lúc
+[   518.9s]     | trang trại cừu cho đến năm 1953.
+[   518.9s]     | trẻ các mẹ
+[   518.9s]     | xanh biếc
+[   518.9s]     | quan sát trận chiến đấu này
+[   518.9s]     | độ nguy hiểm Thủy Tinh Long Vương
+[   518.9s]   M1: 1,758,562 mệnh đề · dài TB 5.59 (median 4) · 16,389 token mở
+[   706.4s]   … mối nối 500/1500
+[   894.3s]   … mối nối 1000/1500
+[  1082.4s]   M2: ứng viên TB 1220790 (2372 token mở) · KHÁC-CHA 100.0% · chết 0.0%
+[  1082.4s]   M3: H_type 8.80 bits · H_clause 18.87 · **1.574 bits/token** (bigram = 6.42)
+[  1082.4s]   CỔNG: len=✓ cross=✓ bits/tok=✓ ⇒ ĐẠT   [cổng-cũ H_type=✗]
+[  1082.4s] ── PMI cut = 0.5 (θ_eos=2.0) ──────────────
+[  1083.1s]   … mệnh đề: 50,000/430,447 cha → 196,168
+[  1083.8s]   … mệnh đề: 100,000/430,447 cha → 397,691
+[  1084.6s]   … mệnh đề: 150,000/430,447 cha → 598,994
+[  1085.9s]   … mệnh đề: 200,000/430,447 cha → 897,642
+[  1087.3s]   … mệnh đề: 250,000/430,447 cha → 1,202,362
+[  1088.6s]   … mệnh đề: 300,000/430,447 cha → 1,509,795
+[  1089.9s]   … mệnh đề: 350,000/430,447 cha → 1,756,163
+[  1091.2s]   … mệnh đề: 400,000/430,447 cha → 1,998,809
+[  1092.0s]     | Ví dụ:
+[  1092.0s]     | Ví dụ: ăn nói
+[  1092.0s]     | các vị trí lãnh đạo
+[  1092.0s]     | của teen 2k hoạt động
+[  1092.0s]     | của cả nước
+[  1092.0s]     | bên trên
+[  1092.0s]     | Làm thế nào để
+[  1092.0s]     | đánh xuyên
+[  1092.1s]   M1: 2,120,945 mệnh đề · dài TB 4.61 (median 4) · 16,738 token mở
+[  1340.1s]   … mối nối 500/1500
+[  1587.9s]   … mối nối 1000/1500
+[  1832.1s]   M2: ứng viên TB 1576357 (2609 token mở) · KHÁC-CHA 100.0% · chết 0.1%
+[  1832.1s]   M3: H_type 8.90 bits · H_clause 19.34 · **1.931 bits/token** (bigram = 6.42)
+[  1832.1s]   CỔNG: len=✓ cross=✓ bits/tok=✓ ⇒ ĐẠT   [cổng-cũ H_type=✗]
+[  1832.1s] ── PMI cut = 1.0 (θ_eos=2.0) ──────────────
+[  1832.8s]   … mệnh đề: 50,000/430,447 cha → 220,723
+[  1833.5s]   … mệnh đề: 100,000/430,447 cha → 446,551
+[  1834.4s]   … mệnh đề: 150,000/430,447 cha → 676,161
+[  1835.7s]   … mệnh đề: 200,000/430,447 cha → 1,031,956
+[  1837.0s]   … mệnh đề: 250,000/430,447 cha → 1,395,087
+[  1838.4s]   … mệnh đề: 300,000/430,447 cha → 1,761,318
+[  1851.0s]   … mệnh đề: 350,000/430,447 cha → 2,058,838
+[  1852.4s]   … mệnh đề: 400,000/430,447 cha → 2,352,487
+[  1853.4s]     | khí huyết
+[  1853.4s]     | sớm hoặc
+[  1853.4s]     | thành lập
+[  1853.4s]     | tại đống lửa
+[  1853.4s]     | Thành thật
+[  1853.4s]     | Các số này
+[  1853.4s]     | của Sài Gòn sau này
+[  1853.4s]     | Dương Đào
+[  1853.5s]   M1: 2,495,807 mệnh đề · dài TB 3.88 (median 3) · 17,207 token mở
+[  2150.4s]   … mối nối 500/1500
+[  2437.5s]   … mối nối 1000/1500
+[  2725.9s]   M2: ứng viên TB 1884995 (2541 token mở) · KHÁC-CHA 100.0% · chết 0.0%
+[  2725.9s]   M3: H_type 8.89 bits · H_clause 19.58 · **2.291 bits/token** (bigram = 6.42)
+[  2725.9s]   CỔNG: len=✗ cross=✓ bits/tok=✗ ⇒ TRƯỢT   [cổng-cũ H_type=✗]
+[  2725.9s] ── PMI cut = 1.5 (θ_eos=2.0) ──────────────
+[  2726.6s]   … mệnh đề: 50,000/430,447 cha → 241,559
+[  2727.4s]   … mệnh đề: 100,000/430,447 cha → 487,564
+[  2728.3s]   … mệnh đề: 150,000/430,447 cha → 742,464
+[  2729.7s]   … mệnh đề: 200,000/430,447 cha → 1,145,405
+[  2731.1s]   … mệnh đề: 250,000/430,447 cha → 1,556,625
+[  2732.6s]   … mệnh đề: 300,000/430,447 cha → 1,971,407
+[  2733.9s]   … mệnh đề: 350,000/430,447 cha → 2,315,645
+[  2735.3s]   … mệnh đề: 400,000/430,447 cha → 2,655,379
+[  2736.2s]     | đến 5 ngày sau khi nhiễm khuẩn bằng đường
+[  2736.2s]     | là triệu chứng thường gặp
+[  2736.2s]     | tại nơi trú
+[  2736.2s]     | hoặc không
+[  2736.2s]     | nói tới chỗ này,
+[  2736.2s]     | này là gì?
+[  2736.2s]     | một số lượng
+[  2736.2s]     | bắt đầu
+[  2736.3s]   M1: 2,817,748 mệnh đề · dài TB 3.42 (median 3) · 17,579 token mở
+[  3081.9s]   … mối nối 500/1500
+[  3422.3s]   … mối nối 1000/1500
+[  3765.8s]   M2: ứng viên TB 2165527 (2554 token mở) · KHÁC-CHA 100.0% · chết 0.0%
+[  3765.8s]   M3: H_type 8.91 bits · H_clause 19.78 · **2.605 bits/token** (bigram = 6.42)
+[  3765.8s]   CỔNG: len=✗ cross=✓ bits/tok=✗ ⇒ TRƯỢT   [cổng-cũ H_type=✗]
+[  3765.8s] → ~/Documents/learn/nn-aivie/out/probe_clause_layer_v12.json
+[  3765.8s] VERDICT: MỞ — có θ qua cả ba cổng ⇒ triển khai Trụ A
+[  3765.8s] tổng 3765.8s

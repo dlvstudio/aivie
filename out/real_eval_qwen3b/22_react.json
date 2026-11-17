@@ -1,0 +1,13 @@
+{
+ "id": "22_react",
+ "cat": "js_react",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Viết component React (function + hooks) hiển thị danh sách todo: ô nhập + nút Thêm, bấm vào việc để gạch ngang (hoàn thành), nút xoá từng việc, hiện số việc chưa xong.",
+   "text": "Dưới đây là một ví dụ về component React sử dụng `useState` và `useEffect` để hiển thị danh sách các việc cần làm:\n\n```jsx\nimport React, { useState, useEffect } from 'react';\n\nconst TodoList = () => {\n  const [todos, setTodos] = useState([]);\n  const [inputValue, setInputValue] = useState('');\n  \n  // Thêm một việc mới vào danh sách\n  const handleAddTodo = () => {\n    if (inputValue.trim() !== '') {\n      setTodos([...todos, inputValue]);\n      setInputValue('');\n    }\n  };\n\n  // Xoá một việc khỏi danh sách\n  const handleDeleteTodo = (index) => {\n    setTodos(todos.filter((_, i) => i !== index));\n  };\n\n  useEffect(() => {\n    console.log('Danh sách todo đã thay đổi:', todos);\n  }, [todos]);\n\n  return (\n    <div>\n      <h2>Danh sách việc cần làm</h2>\n      <input\n        type=\"text\"\n        value={inputValue}\n        onChange={(e) => setInputValue(e.target.value)}\n        placeholder=\"Nhập việc cần làm...\"\n      />\n      <button onClick={handleAddTodo}>Thêm</button>\n\n      <ul>\n        {todos.map((todo, index) => (\n          <li key={index}>\n            <span\n              style={{\n                textDecoration: todo ? 'none' : 'line-through',\n              }}\n              onDoubleClick={() => setTodos([...todos, todo])}\n              onClick={() => handleDeleteTodo(index)}\n            >\n              {todo}\n            </span>\n          </li>\n        ))}\n      </ul>\n\n      <p>{`Còn ${todos.length} việc chưa xong.`}</p>\n    </div>\n  );\n};\n\nexport default TodoList;\n```\n\n### Giải thích:\n1. **State Management**:\n   - `todos`: Mảng lưu trữ danh sách các việc cần làm.\n   - `inputValue`: Giá trị hiện tại của ô nhập.\n\n2. **Methods**:\n   - `handleAddTodo`: Hàm xử lý sự kiện khi bấm nút \"Thêm\". Nếu giá trị của ô nhập không rỗng, thêm việc mới vào mảng `todos` và reset giá trị ô nhập.\n   - `handleDeleteTodo`: Hàm xử lý sự kiện khi bấm vào nút xoá một việc. Xóa việc khỏi mảng `todos`.\n\n3. **Effect**:\n   - Sử dụng `useEffect` để log lại danh sách todo mỗi khi có thay đổi.\n\n4. **Rendering**:\n   - Ô nhập cho người dùng nhập việc cần làm.\n   - Nút \"Thêm\" để thêm việc mới.\n   - Danh sách các việc cần làm với các tính năng: gạch ngang (hoàn thành) và xoá từng việc.",
+   "tokens": 592,
+   "sec": 6.8
+  }
+ ]
+}

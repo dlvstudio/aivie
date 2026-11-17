@@ -1,0 +1,45 @@
+held-out n=200
+
+=== checkpoints/network_v9_histwiki.pkl ===
+[     0.0s] === load_network_v9_histwiki START (pid=10757) → out/logs/load_network_v9_histwiki_20260709_130136.log ===
+[     0.0s] load checkpoint checkpoints/network_v9_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[    11.0s] ✓ unpickle  (11.0s)
+[    11.0s] ▶ vocab (113260 token)
+[    11.5s] ✓ vocab (113260 token)  (0.6s)
+[    11.5s] ▶ adjacency
+[    24.1s] ✓ adjacency  (12.6s)
+[    24.1s] ▶ embedding
+[    25.1s] ✓ embedding  (1.0s)
+[    25.1s] ▶ parents
+[   127.2s] ✓ parents  (102.1s)
+[   127.2s] ✓ loaded: vocab=113260 parents=149627 E=(77464, 96)
+[   129.2s] sidecar có: network_v9_histwiki.content.pkl
+[   129.3s] ✓ load_checkpoint XONG
+varlm sidecar: False
+  w=0.00  bits=4.401  top1=19.9%  n_pos=2860
+  w=0.35  bits=4.993  top1=18.2%  n_pos=3137
+  w=0.50  bits=4.993  top1=18.2%  n_pos=3137
+
+=== checkpoints/network_v9_histwiki_paragraph.pkl ===
+[     0.0s] === load_network_v9_histwiki_paragraph START (pid=10757) → out/logs/load_network_v9_histwiki_paragraph_20260709_130434.log ===
+[     0.0s] load checkpoint checkpoints/network_v9_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    68.6s] ✓ unpickle  (68.6s)
+[    68.6s] ▶ vocab (113260 token)
+[    69.4s] ✓ vocab (113260 token)  (0.7s)
+[    69.4s] ▶ adjacency
+[    84.5s] ✓ adjacency  (15.1s)
+[    84.5s] ▶ embedding
+[    86.2s] ✓ embedding  (1.7s)
+[    86.2s] ▶ parents
+[  1180.6s] ✓ parents  (1094.4s)
+[  1180.7s] ✓ loaded: vocab=113260 parents=174627 E=(77464, 96)
+[  1188.1s] sidecar có: network_v9_histwiki_paragraph.content.pkl
+[  1188.2s] ▶ varlm sidecar: network_v9_histwiki_paragraph.varlm.pkl
+[  1190.6s] ✓ varlm: k=1:52191, k=2:469395, k=3:968120, k=4:1258702
+[  1190.6s] ✓ load_checkpoint XONG
+varlm sidecar: True
+  w=0.00  bits=4.401  top1=19.9%  n_pos=2860
+  w=0.35  bits=4.971  top1=18.0%  n_pos=3137
+  w=0.50  bits=4.969  top1=17.9%  n_pos=3137

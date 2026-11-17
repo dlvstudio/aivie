@@ -1,0 +1,16 @@
+[     0.0s] load checkpoint checkpoints/network_v10.varlm.pkl …
+[     0.0s] ▶ unpickle
+[     0.6s] ✓ unpickle  (0.6s)
+Traceback (most recent call last):
+  File "~/Documents/learn/nn-aivie/scripts/probe_granularity.py", line 139, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "~/Documents/learn/nn-aivie/scripts/probe_granularity.py", line 96, in main
+    state, _ = load_checkpoint(ck, logger=log)
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/core/checkpoint_io.py", line 37, in load_checkpoint
+    state = GraphState.load(str(checkpoint), logger=logger, freeze_adjacency=freeze_adjacency)
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/core/state.py", line 77, in load
+    with _phase(f"vocab ({len(payload['vocab_tokens'])} token)"):
+                              ~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'vocab_tokens'

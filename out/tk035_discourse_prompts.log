@@ -1,0 +1,368 @@
+checkpoint=network_v10.pkl
+parents=65098 vocab=126518
+prompts=43 (history=10, doc=10, conv=10, common=10, +frame=3)
+
+=== Discourse prompts (dataset-derived) ===
+
+[history_wiki_para] 'Khối trường tư thục phát triển năng'
+  - gen multi varlm=0: chars=342 sents=4 commas=3 multi=1 copy=0.75 ent_keep=0.00 (62.1s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội . Năm học 2023-2024 , số lượng trường tư thục tăng thêm 18 trường , nâng tổng số lên 591 trường với hơn 330.000 học sinh . Hà Nội cũng là nơi tập trung 105 cơ sở giáo dục có vốn đầu tư nước ngoài . Bên cạnh các trường công lập , thành phố còn có 65 trường dân lập và 5 trường'
+  - gen multi varlm=0.35: chars=342 sents=4 commas=3 multi=1 copy=0.75 ent_keep=0.00 (32.8s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội . Năm học 2023-2024 , số lượng trường tư thục tăng thêm 18 trường , nâng tổng số lên 591 trường với hơn 330.000 học sinh . Hà Nội cũng là nơi tập trung 105 cơ sở giáo dục có vốn đầu tư nước ngoài . Bên cạnh các trường công lập , thành phố còn có 65 trường dân lập và 5 trường'
+  - gen multi varlm=0.5: chars=342 sents=4 commas=3 multi=1 copy=0.75 ent_keep=0.00 (33.4s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội . Năm học 2023-2024 , số lượng trường tư thục tăng thêm 18 trường , nâng tổng số lên 591 trường với hơn 330.000 học sinh . Hà Nội cũng là nơi tập trung 105 cơ sở giáo dục có vốn đầu tư nước ngoài . Bên cạnh các trường công lập , thành phố còn có 65 trường dân lập và 5 trường'
+
+[history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+  - gen multi varlm=0: chars=343 sents=3 commas=2 multi=1 copy=0.61 ent_keep=1.00 (32.6s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo . Từ năm 976 , thuyền buôn của các nước ngoài đến dâng sản vật của nước họ , kết mối giao thương với Đại Cồ Việt . Ông là vị vua mở đầu cho lễ tịch điền nhằm khuyến khích sản xuất nông nghiệp dưới chế độ phong kiến Việt Nam . Lê Đại Hành cũng là vị vua đầu'
+  - gen multi varlm=0.35: chars=343 sents=3 commas=2 multi=1 copy=0.61 ent_keep=1.00 (30.8s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo . Từ năm 976 , thuyền buôn của các nước ngoài đến dâng sản vật của nước họ , kết mối giao thương với Đại Cồ Việt . Ông là vị vua mở đầu cho lễ tịch điền nhằm khuyến khích sản xuất nông nghiệp dưới chế độ phong kiến Việt Nam . Lê Đại Hành cũng là vị vua đầu'
+  - gen multi varlm=0.5: chars=343 sents=3 commas=2 multi=1 copy=0.61 ent_keep=1.00 (29.5s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo . Từ năm 976 , thuyền buôn của các nước ngoài đến dâng sản vật của nước họ , kết mối giao thương với Đại Cồ Việt . Ông là vị vua mở đầu cho lễ tịch điền nhằm khuyến khích sản xuất nông nghiệp dưới chế độ phong kiến Việt Nam . Lê Đại Hành cũng là vị vua đầu'
+
+[history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0: chars=319 sents=6 commas=4 multi=1 copy=0.56 ent_keep=1.00 (32.6s)
+      'Người Minh dùng hỏa tiễn bắn voi . Voi lui lại , người Minh theo voi đánh vào . Quân ở dọc sông tan vỡ , lui giữ Hoàng Giang . Người Minh vào Đông Đô . Hồ Quý Ly và Hồ Hán Thương đều trở về Thanh Hóa . Hồ Nguyên Trừng và Hồ Đỗ cũng dời quân đến Hoàng Giang , lại đón Hồ Quý Ly , Hồ Hán Thương từ Thanh Hóa tới . Ngày 13'
+  - gen multi varlm=0.35: chars=319 sents=6 commas=4 multi=1 copy=0.56 ent_keep=1.00 (29.4s)
+      'Người Minh dùng hỏa tiễn bắn voi . Voi lui lại , người Minh theo voi đánh vào . Quân ở dọc sông tan vỡ , lui giữ Hoàng Giang . Người Minh vào Đông Đô . Hồ Quý Ly và Hồ Hán Thương đều trở về Thanh Hóa . Hồ Nguyên Trừng và Hồ Đỗ cũng dời quân đến Hoàng Giang , lại đón Hồ Quý Ly , Hồ Hán Thương từ Thanh Hóa tới . Ngày 13'
+  - gen multi varlm=0.5: chars=319 sents=6 commas=4 multi=1 copy=0.56 ent_keep=1.00 (30.2s)
+      'Người Minh dùng hỏa tiễn bắn voi . Voi lui lại , người Minh theo voi đánh vào . Quân ở dọc sông tan vỡ , lui giữ Hoàng Giang . Người Minh vào Đông Đô . Hồ Quý Ly và Hồ Hán Thương đều trở về Thanh Hóa . Hồ Nguyên Trừng và Hồ Đỗ cũng dời quân đến Hoàng Giang , lại đón Hồ Quý Ly , Hồ Hán Thương từ Thanh Hóa tới . Ngày 13'
+
+[history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+  - gen multi varlm=0: chars=323 sents=3 commas=5 multi=1 copy=0.53 ent_keep=0.00 (34.7s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) , gồm 12 quyển , có tựa của tác giả đề năm 1777 . Đây là tập bút ký nói về lịch sử và văn hóa Việt Nam từ đời Trần đến đời Lê . Lịch đại danh thần ngôn hành lục , gồm 2 quyển , chép công việc của các danh thần các triều . Quế Đường văn tập (Tập văn Quế Đường) , gồm 3 quyển'
+  - gen multi varlm=0.35: chars=323 sents=3 commas=5 multi=1 copy=0.53 ent_keep=0.00 (33.2s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) , gồm 12 quyển , có tựa của tác giả đề năm 1777 . Đây là tập bút ký nói về lịch sử và văn hóa Việt Nam từ đời Trần đến đời Lê . Lịch đại danh thần ngôn hành lục , gồm 2 quyển , chép công việc của các danh thần các triều . Quế Đường văn tập (Tập văn Quế Đường) , gồm 3 quyển'
+  - gen multi varlm=0.5: chars=323 sents=3 commas=5 multi=1 copy=0.53 ent_keep=0.00 (33.1s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) , gồm 12 quyển , có tựa của tác giả đề năm 1777 . Đây là tập bút ký nói về lịch sử và văn hóa Việt Nam từ đời Trần đến đời Lê . Lịch đại danh thần ngôn hành lục , gồm 2 quyển , chép công việc của các danh thần các triều . Quế Đường văn tập (Tập văn Quế Đường) , gồm 3 quyển'
+
+[history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+  - gen multi varlm=0: chars=310 sents=5 commas=5 multi=1 copy=0.51 ent_keep=0.00 (28.8s)
+      'Chúa gánh cái lo , ta hưởng cái vui . Mất chúa , tức là cái lo lại về ta , ta còn vui gì" . Câu nói đó phản ánh tư tưởng an phận giữ mình của các vua Lê . Chỉnh đánh tan quân Trịnh , đuổi Trịnh Bồng đi mất tích . Nhưng sau đó vua Lê lại bị Chỉnh lộng quyền . Tây Sơn kéo ra giết Chỉnh , rồi tướng Tây Sơn là Vũ'
+  - gen multi varlm=0.35: chars=310 sents=5 commas=5 multi=1 copy=0.51 ent_keep=0.00 (27.7s)
+      'Chúa gánh cái lo , ta hưởng cái vui . Mất chúa , tức là cái lo lại về ta , ta còn vui gì" . Câu nói đó phản ánh tư tưởng an phận giữ mình của các vua Lê . Chỉnh đánh tan quân Trịnh , đuổi Trịnh Bồng đi mất tích . Nhưng sau đó vua Lê lại bị Chỉnh lộng quyền . Tây Sơn kéo ra giết Chỉnh , rồi tướng Tây Sơn là Vũ'
+  - gen multi varlm=0.5: chars=310 sents=5 commas=5 multi=1 copy=0.51 ent_keep=0.00 (26.8s)
+      'Chúa gánh cái lo , ta hưởng cái vui . Mất chúa , tức là cái lo lại về ta , ta còn vui gì" . Câu nói đó phản ánh tư tưởng an phận giữ mình của các vua Lê . Chỉnh đánh tan quân Trịnh , đuổi Trịnh Bồng đi mất tích . Nhưng sau đó vua Lê lại bị Chỉnh lộng quyền . Tây Sơn kéo ra giết Chỉnh , rồi tướng Tây Sơn là Vũ'
+
+[history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+  - gen multi varlm=0: chars=310 sents=3 commas=4 multi=1 copy=0.57 ent_keep=1.00 (34.4s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân . Nhờ hành động của Lê Lai , Lê Lợi cùng các tướng lĩnh khác được thoát . Lê Lợi cho quân nghỉ ở Mường Nanh , sau dời quân đóng ở Mường Thôi . Lê Lợi sai Lê Triệu , Lê Lý và Lê Vấn đem quân phục ở xứ Bồ Mộng để phục đánh tiền quân Nhà'
+  - gen multi varlm=0.35: chars=310 sents=3 commas=4 multi=1 copy=0.57 ent_keep=1.00 (32.0s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân . Nhờ hành động của Lê Lai , Lê Lợi cùng các tướng lĩnh khác được thoát . Lê Lợi cho quân nghỉ ở Mường Nanh , sau dời quân đóng ở Mường Thôi . Lê Lợi sai Lê Triệu , Lê Lý và Lê Vấn đem quân phục ở xứ Bồ Mộng để phục đánh tiền quân Nhà'
+  - gen multi varlm=0.5: chars=310 sents=3 commas=4 multi=1 copy=0.57 ent_keep=1.00 (31.9s)
+      'Vì tưởng là Lê Lợi , người Minh đã xử tử Lê Lai một cách tàn ác và lui quân . Nhờ hành động của Lê Lai , Lê Lợi cùng các tướng lĩnh khác được thoát . Lê Lợi cho quân nghỉ ở Mường Nanh , sau dời quân đóng ở Mường Thôi . Lê Lợi sai Lê Triệu , Lê Lý và Lê Vấn đem quân phục ở xứ Bồ Mộng để phục đánh tiền quân Nhà'
+
+[history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+  - gen multi varlm=0: chars=318 sents=3 commas=7 multi=1 copy=0.54 ent_keep=0.00 (33.4s)
+      'Nguyên quán của ông ở hương Trà Lũ , xã Xuân Trung , phủ Xuân Trường , trấn Sơn Nam Hạ . Các tư liệu này cũng cho biết , bà Hồ Xuân Hương sinh cho ông một người con trai tên Phạm Viết Thiệu . Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . Vào thời ấy , các cô gái con nhà'
+  - gen multi varlm=0.35: chars=318 sents=3 commas=7 multi=1 copy=0.54 ent_keep=0.00 (32.8s)
+      'Nguyên quán của ông ở hương Trà Lũ , xã Xuân Trung , phủ Xuân Trường , trấn Sơn Nam Hạ . Các tư liệu này cũng cho biết , bà Hồ Xuân Hương sinh cho ông một người con trai tên Phạm Viết Thiệu . Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . Vào thời ấy , các cô gái con nhà'
+  - gen multi varlm=0.5: chars=318 sents=3 commas=7 multi=1 copy=0.54 ent_keep=0.00 (33.4s)
+      'Nguyên quán của ông ở hương Trà Lũ , xã Xuân Trung , phủ Xuân Trường , trấn Sơn Nam Hạ . Các tư liệu này cũng cho biết , bà Hồ Xuân Hương sinh cho ông một người con trai tên Phạm Viết Thiệu . Khi cha mất , Xuân Hương ở với mẹ hai mẹ con tần tảo nuôi nhau , kiếm sống với nghề làm nón . Vào thời ấy , các cô gái con nhà'
+
+[history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+  - gen multi varlm=0: chars=324 sents=2 commas=5 multi=1 copy=0.51 ent_keep=1.00 (35.3s)
+      'Tuy nhiên , Tây Sơn vẫn còn Lịch sử : Tiêu đề : Chúa Trịnh Tuy nhiên thực tế thì vua Lê không có thực quyền , việc cai trị chủ yếu do chúa Trịnh thực hiện . Bộ máy triều đình lúc này hoạt động theo thể chế lưỡng đầu . Sau khi hoàng đế Lê Hiến Tông mất năm 1504 , các hoàng đế kế vị đều yểu mạng , hoặc tàn bạo , hoặc kém tài'
+  - gen multi varlm=0.35: chars=324 sents=2 commas=5 multi=1 copy=0.51 ent_keep=1.00 (34.6s)
+      'Tuy nhiên , Tây Sơn vẫn còn Lịch sử : Tiêu đề : Chúa Trịnh Tuy nhiên thực tế thì vua Lê không có thực quyền , việc cai trị chủ yếu do chúa Trịnh thực hiện . Bộ máy triều đình lúc này hoạt động theo thể chế lưỡng đầu . Sau khi hoàng đế Lê Hiến Tông mất năm 1504 , các hoàng đế kế vị đều yểu mạng , hoặc tàn bạo , hoặc kém tài'
+  - gen multi varlm=0.5: chars=324 sents=2 commas=5 multi=1 copy=0.51 ent_keep=1.00 (33.9s)
+      'Tuy nhiên , Tây Sơn vẫn còn Lịch sử : Tiêu đề : Chúa Trịnh Tuy nhiên thực tế thì vua Lê không có thực quyền , việc cai trị chủ yếu do chúa Trịnh thực hiện . Bộ máy triều đình lúc này hoạt động theo thể chế lưỡng đầu . Sau khi hoàng đế Lê Hiến Tông mất năm 1504 , các hoàng đế kế vị đều yểu mạng , hoặc tàn bạo , hoặc kém tài'
+
+[history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+  - gen multi varlm=0: chars=308 sents=4 commas=3 multi=1 copy=0.46 ent_keep=1.00 (34.2s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình . Hồ Quý Ly là cháu 4 đời của Lê Huấn , khi lên làm vua thì đổi lại họ Hồ . Hồ Quý Ly thuở nhỏ theo học võ Nguyễn Sư Tề , sau đỗ thi Hương , rồi đỗ khoa Hoành từ . Nhật Lễ vốn là con của người làm trò trong hoàng cung tên Dương Khương .'
+  - gen multi varlm=0.35: chars=308 sents=4 commas=3 multi=1 copy=0.46 ent_keep=1.00 (33.3s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình . Hồ Quý Ly là cháu 4 đời của Lê Huấn , khi lên làm vua thì đổi lại họ Hồ . Hồ Quý Ly thuở nhỏ theo học võ Nguyễn Sư Tề , sau đỗ thi Hương , rồi đỗ khoa Hoành từ . Nhật Lễ vốn là con của người làm trò trong hoàng cung tên Dương Khương .'
+  - gen multi varlm=0.5: chars=308 sents=4 commas=3 multi=1 copy=0.46 ent_keep=1.00 (34.9s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình . Hồ Quý Ly là cháu 4 đời của Lê Huấn , khi lên làm vua thì đổi lại họ Hồ . Hồ Quý Ly thuở nhỏ theo học võ Nguyễn Sư Tề , sau đỗ thi Hương , rồi đỗ khoa Hoành từ . Nhật Lễ vốn là con của người làm trò trong hoàng cung tên Dương Khương .'
+
+[history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+  - gen multi varlm=0: chars=341 sents=4 commas=2 multi=1 copy=0.62 ent_keep=0.00 (32.4s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố , thị trấn . Năm 1876 , Bưu điện Đại Thanh được thành lập . Có tới 75 cơ xưởng sản xuất và 33 mỏ than và khoáng sản được thành lập . Các lĩnh vực công nghiệp ứng dụng phương pháp kỹ thuật mới . Năm 1853 nhà thuốc Lão Đức ở Thượng Hải đã chế được thuốc tây'
+  - gen multi varlm=0.35: chars=341 sents=4 commas=2 multi=1 copy=0.62 ent_keep=0.00 (31.9s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố , thị trấn . Năm 1876 , Bưu điện Đại Thanh được thành lập . Có tới 75 cơ xưởng sản xuất và 33 mỏ than và khoáng sản được thành lập . Các lĩnh vực công nghiệp ứng dụng phương pháp kỹ thuật mới . Năm 1853 nhà thuốc Lão Đức ở Thượng Hải đã chế được thuốc tây'
+  - gen multi varlm=0.5: chars=341 sents=4 commas=2 multi=1 copy=0.62 ent_keep=0.00 (33.1s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố , thị trấn . Năm 1876 , Bưu điện Đại Thanh được thành lập . Có tới 75 cơ xưởng sản xuất và 33 mỏ than và khoáng sản được thành lập . Các lĩnh vực công nghiệp ứng dụng phương pháp kỹ thuật mới . Năm 1853 nhà thuốc Lão Đức ở Thượng Hải đã chế được thuốc tây'
+
+[statements_doc] 'Tuy nhiên trong một số trường hợp'
+  - gen multi varlm=0: chars=337 sents=6 commas=0 multi=1 copy=0.17 ent_keep=0.00 (40.4s)
+      'Tuy nhiên trong một số trường hợp Hội thoại : Chia danh sách các câu này thành hai đoạn văn : Bầu trời xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bầu trời trong xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bạn có thể giải thích tại sao'
+  - gen multi varlm=0.35: chars=337 sents=6 commas=0 multi=1 copy=0.17 ent_keep=0.00 (39.5s)
+      'Tuy nhiên trong một số trường hợp Hội thoại : Chia danh sách các câu này thành hai đoạn văn : Bầu trời xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bầu trời trong xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bạn có thể giải thích tại sao'
+  - gen multi varlm=0.5: chars=337 sents=6 commas=0 multi=1 copy=0.17 ent_keep=0.00 (38.4s)
+      'Tuy nhiên trong một số trường hợp Hội thoại : Chia danh sách các câu này thành hai đoạn văn : Bầu trời xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bầu trời trong xanh và đầy nắng . Những chú chim đang hót líu lo trên cây . Không khí trong lành và cỏ xanh . Bạn có thể giải thích tại sao'
+
+[statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+  - gen multi varlm=0: chars=218 sents=3 commas=0 multi=1 copy=0.53 ent_keep=1.00 (12.7s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập . Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO) .'
+  - gen multi varlm=0.35: chars=218 sents=3 commas=0 multi=1 copy=0.53 ent_keep=1.00 (11.6s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập . Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO) .'
+  - gen multi varlm=0.5: chars=218 sents=3 commas=0 multi=1 copy=0.53 ent_keep=1.00 (11.3s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập . Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO) .'
+
+[statements_doc] 'Dựa trên từ vựng cơ bản ,'
+  - gen multi varlm=0: chars=321 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (40.3s)
+      'Dựa trên từ vựng cơ bản , Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+  - gen multi varlm=0.35: chars=321 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (39.4s)
+      'Dựa trên từ vựng cơ bản , Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+  - gen multi varlm=0.5: chars=321 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (40.1s)
+      'Dựa trên từ vựng cơ bản , Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+
+[statements_doc] 'Tiếng Việt là ngôn ngữ thanh điệu'
+  - gen multi varlm=0: chars=202 sents=2 commas=2 multi=1 copy=0.62 ent_keep=1.00 (10.7s)
+      'Tiếng Việt là ngôn ngữ thanh điệu , mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó . Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu , phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu .'
+  - gen multi varlm=0.35: chars=202 sents=2 commas=2 multi=1 copy=0.62 ent_keep=1.00 (10.0s)
+      'Tiếng Việt là ngôn ngữ thanh điệu , mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó . Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu , phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu .'
+  - gen multi varlm=0.5: chars=202 sents=2 commas=2 multi=1 copy=0.62 ent_keep=1.00 (9.3s)
+      'Tiếng Việt là ngôn ngữ thanh điệu , mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó . Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu , phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu .'
+
+[statements_doc] 'Đến đời Đường , tiếng Việt mới'
+  - gen multi varlm=0: chars=209 sents=2 commas=3 multi=1 copy=0.60 ent_keep=0.00 (14.0s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về mặt ngữ âm , một số từ Hán Việt thay đổi cả ngữ nghĩa .'
+  - gen multi varlm=0.35: chars=209 sents=2 commas=3 multi=1 copy=0.60 ent_keep=0.00 (14.2s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về mặt ngữ âm , một số từ Hán Việt thay đổi cả ngữ nghĩa .'
+  - gen multi varlm=0.5: chars=209 sents=2 commas=3 multi=1 copy=0.60 ent_keep=0.00 (14.7s)
+      'Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về mặt ngữ âm , một số từ Hán Việt thay đổi cả ngữ nghĩa .'
+
+[statements_doc] 'Hiện nay có 1945 chữ Hán thông'
+  - gen multi varlm=0: chars=236 sents=5 commas=4 multi=1 copy=0.40 ent_keep=0.00 (14.1s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật , cũng có khoảng 2000 từ Hán–Hàn thông dụng . Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác , người Trung Quốc gọi là Thái Sơn , Hoàng Hà , cổ thụ . . .'
+  - gen multi varlm=0.35: chars=236 sents=5 commas=4 multi=1 copy=0.40 ent_keep=0.00 (14.0s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật , cũng có khoảng 2000 từ Hán–Hàn thông dụng . Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác , người Trung Quốc gọi là Thái Sơn , Hoàng Hà , cổ thụ . . .'
+  - gen multi varlm=0.5: chars=236 sents=5 commas=4 multi=1 copy=0.40 ent_keep=0.00 (14.3s)
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật , cũng có khoảng 2000 từ Hán–Hàn thông dụng . Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác , người Trung Quốc gọi là Thái Sơn , Hoàng Hà , cổ thụ . . .'
+
+[statements_doc] 'Mặt khác , những khái niệm chính'
+  - gen multi varlm=0: chars=328 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (42.2s)
+      'Mặt khác , những khái niệm chính Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+  - gen multi varlm=0.35: chars=328 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (42.0s)
+      'Mặt khác , những khái niệm chính Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+  - gen multi varlm=0.5: chars=328 sents=3 commas=2 multi=1 copy=0.33 ent_keep=0.00 (40.3s)
+      'Mặt khác , những khái niệm chính Lịch sử : Tiêu đề : Nho giáo Những người thực hành theo các tín điều của Nho giáo được gọi là các nhà Nho , Nho sĩ hay Nho sinh . Chính vì thế mà người đời sau coi Khổng Tử là người sáng lập ra Nho giáo . Về sau Kinh Nhạc bị thất lạc nên chỉ còn năm bộ kinh thường được gọi là Ngũ kinh . Sau khi'
+
+[statements_doc] 'Tuy nhiên , chưa có quy định'
+  - gen multi varlm=0: chars=74 sents=1 commas=1 multi=1 copy=1.00 ent_keep=0.00 (5.3s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+  - gen multi varlm=0.35: chars=74 sents=1 commas=1 multi=1 copy=1.00 ent_keep=0.00 (5.1s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+  - gen multi varlm=0.5: chars=74 sents=1 commas=1 multi=1 copy=1.00 ent_keep=0.00 (4.3s)
+      'Tuy nhiên , chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia .'
+
+[statements_doc] 'Sự tiếp xúc giữa tiếng Việt và'
+  - gen multi varlm=0: chars=337 sents=3 commas=2 multi=1 copy=0.35 ent_keep=0.00 (19.6s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán . Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về'
+  - gen multi varlm=0.35: chars=337 sents=3 commas=2 multi=1 copy=0.35 ent_keep=0.00 (19.0s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán . Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về'
+  - gen multi varlm=0.5: chars=337 sents=3 commas=2 multi=1 copy=0.35 ent_keep=0.00 (18.8s)
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán . Đến đời Đường , tiếng Việt mới có sự tiếp nhận các từ ngữ Hán một cách có hệ thống qua đường sách vở . Khi đưa vào tiếng Việt , bên cạnh việc thay đổi về'
+
+[statements_doc] 'Trong khi đó , những từ có'
+  - gen multi varlm=0: chars=172 sents=2 commas=2 multi=1 copy=0.54 ent_keep=0.00 (10.8s)
+      'Trong khi đó , những từ có 2 âm tiết trở lên , vay mượn thông qua sách vở vẫn còn dấu ấn ngoại lai . Có những từ vay mượn nguyên dạng nên tạo ảnh hưởng trong cách phát âm .'
+  - gen multi varlm=0.35: chars=172 sents=2 commas=2 multi=1 copy=0.54 ent_keep=0.00 (9.8s)
+      'Trong khi đó , những từ có 2 âm tiết trở lên , vay mượn thông qua sách vở vẫn còn dấu ấn ngoại lai . Có những từ vay mượn nguyên dạng nên tạo ảnh hưởng trong cách phát âm .'
+  - gen multi varlm=0.5: chars=172 sents=2 commas=2 multi=1 copy=0.54 ent_keep=0.00 (9.9s)
+      'Trong khi đó , những từ có 2 âm tiết trở lên , vay mượn thông qua sách vở vẫn còn dấu ấn ngoại lai . Có những từ vay mượn nguyên dạng nên tạo ảnh hưởng trong cách phát âm .'
+
+[conv] '"Nước Anh vì lần này nước Mỹ'
+  - gen multi varlm=0: chars=339 sents=2 commas=4 multi=1 copy=0.14 ent_keep=1.00 (31.3s)
+      '"Nước Anh vì lần này nước Mỹ cùng nước Anh ở một vài vấn đề bên trên khác nhau , cảm thấy thất vọng." Đối mặt với ngửi theo gió mà đến phóng viên truyền thông , Allen Wilson đỏ cả vành mắt , trong miệng tràn đầy đối trước mặt Anh Mỹ hai nước xuất hiện ma sát tiếc hận . "Ta nghĩ nhấn mạnh là , Iran vấn đề nước Anh đã sớm điều chỉnh dầu mỏ'
+  - gen multi varlm=0.35: chars=339 sents=2 commas=4 multi=1 copy=0.14 ent_keep=1.00 (31.0s)
+      '"Nước Anh vì lần này nước Mỹ cùng nước Anh ở một vài vấn đề bên trên khác nhau , cảm thấy thất vọng." Đối mặt với ngửi theo gió mà đến phóng viên truyền thông , Allen Wilson đỏ cả vành mắt , trong miệng tràn đầy đối trước mặt Anh Mỹ hai nước xuất hiện ma sát tiếc hận . "Ta nghĩ nhấn mạnh là , Iran vấn đề nước Anh đã sớm điều chỉnh dầu mỏ'
+  - gen multi varlm=0.5: chars=339 sents=2 commas=4 multi=1 copy=0.14 ent_keep=1.00 (30.7s)
+      '"Nước Anh vì lần này nước Mỹ cùng nước Anh ở một vài vấn đề bên trên khác nhau , cảm thấy thất vọng." Đối mặt với ngửi theo gió mà đến phóng viên truyền thông , Allen Wilson đỏ cả vành mắt , trong miệng tràn đầy đối trước mặt Anh Mỹ hai nước xuất hiện ma sát tiếc hận . "Ta nghĩ nhấn mạnh là , Iran vấn đề nước Anh đã sớm điều chỉnh dầu mỏ'
+
+[conv] 'Bạn đang băn khoăn cách nấu vịt'
+  - gen multi varlm=0: chars=327 sents=4 commas=0 multi=1 copy=0.12 ent_keep=0.00 (28.9s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon ? Bạn muốn tự tay chuẩn bị nồi thịt vịt cho gia đình nhưng chưa biết cách ? Bạn muốn học cách làm thịt vịt om sấu chua chua ăn đưa cơm ? Theo dõi các bài viết dưới đây để được chia sẻ kiến thức hay và thú vị . >>> Xem thêm : Cách Nấu Vịt Om Sấu Ngon Miền Bắc Đơn'
+  - gen multi varlm=0.35: chars=327 sents=4 commas=0 multi=1 copy=0.12 ent_keep=0.00 (28.8s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon ? Bạn muốn tự tay chuẩn bị nồi thịt vịt cho gia đình nhưng chưa biết cách ? Bạn muốn học cách làm thịt vịt om sấu chua chua ăn đưa cơm ? Theo dõi các bài viết dưới đây để được chia sẻ kiến thức hay và thú vị . >>> Xem thêm : Cách Nấu Vịt Om Sấu Ngon Miền Bắc Đơn'
+  - gen multi varlm=0.5: chars=327 sents=4 commas=0 multi=1 copy=0.12 ent_keep=0.00 (29.4s)
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon ? Bạn muốn tự tay chuẩn bị nồi thịt vịt cho gia đình nhưng chưa biết cách ? Bạn muốn học cách làm thịt vịt om sấu chua chua ăn đưa cơm ? Theo dõi các bài viết dưới đây để được chia sẻ kiến thức hay và thú vị . >>> Xem thêm : Cách Nấu Vịt Om Sấu Ngon Miền Bắc Đơn'
+
+[conv] 'FxPro.com : NZD/USD intraday 29/10/2021 có thể'
+  - gen multi varlm=0: chars=61 sents=1 commas=0 multi=0 copy=0.50 ent_keep=0.00 (6.0s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể tăng 37-52pips'
+  - gen multi varlm=0.35: chars=61 sents=1 commas=0 multi=0 copy=0.50 ent_keep=0.00 (5.3s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể tăng 37-52pips'
+  - gen multi varlm=0.5: chars=61 sents=1 commas=0 multi=0 copy=0.50 ent_keep=0.00 (5.3s)
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể tăng 37-52pips'
+
+[conv] 'P/s : Cầu donate cứu trợ cvt'
+  - gen multi varlm=0: chars=341 sents=2 commas=5 multi=1 copy=0.11 ent_keep=0.00 (30.5s)
+      'P/s : Cầu donate cứu trợ cvt sống qua mùa dịch ლ(´ڡ`ლ) ◎◎◎ Mai Tuyết Hinh vuốt ve Lâm Tử Phong cổ , "Vậy ngươi thích không?" "Ta nằm mơ đều thích." Lâm Tử Phong nói gần sát bên tai của nàng , nói khẽ : "Đại tiểu thư , nói cho ngươi một cái bí mật , lần thứ nhất nhìn thấy đại tiểu thư vào lúc ban đêm , mộng bên trong liền xuất hiện đại tiểu'
+  - gen multi varlm=0.35: chars=341 sents=2 commas=5 multi=1 copy=0.11 ent_keep=0.00 (29.6s)
+      'P/s : Cầu donate cứu trợ cvt sống qua mùa dịch ლ(´ڡ`ლ) ◎◎◎ Mai Tuyết Hinh vuốt ve Lâm Tử Phong cổ , "Vậy ngươi thích không?" "Ta nằm mơ đều thích." Lâm Tử Phong nói gần sát bên tai của nàng , nói khẽ : "Đại tiểu thư , nói cho ngươi một cái bí mật , lần thứ nhất nhìn thấy đại tiểu thư vào lúc ban đêm , mộng bên trong liền xuất hiện đại tiểu'
+  - gen multi varlm=0.5: chars=341 sents=2 commas=5 multi=1 copy=0.11 ent_keep=0.00 (29.1s)
+      'P/s : Cầu donate cứu trợ cvt sống qua mùa dịch ლ(´ڡ`ლ) ◎◎◎ Mai Tuyết Hinh vuốt ve Lâm Tử Phong cổ , "Vậy ngươi thích không?" "Ta nằm mơ đều thích." Lâm Tử Phong nói gần sát bên tai của nàng , nói khẽ : "Đại tiểu thư , nói cho ngươi một cái bí mật , lần thứ nhất nhìn thấy đại tiểu thư vào lúc ban đêm , mộng bên trong liền xuất hiện đại tiểu'
+
+[conv] 'Nghĩ cũng ngộ , làn khẩn cấp'
+  - gen multi varlm=0: chars=330 sents=6 commas=4 multi=1 copy=0.17 ent_keep=0.00 (34.7s)
+      'Nghĩ cũng ngộ , làn khẩn cấp Truyện : "( Huyết nhục Mẫu thụ ) . . . Sớm thức tỉnh?" Motura nghĩ đến thời đại thượng cổ cảnh tượng , dù cho đã thân là Ti Tuế , đều nổi lên phát ra từ linh hồn run rẩy ! \'Quạ\' linh xảo ngẩng đầu lên , nhìn thấy một vòng ở toàn bộ Linh giới trong chậm rãi bay lên Phi hồng chi nguyệt . Nương theo màu'
+  - gen multi varlm=0.35: chars=228 sents=3 commas=2 multi=1 copy=0.49 ent_keep=0.00 (14.1s)
+      'Nghĩ cũng ngộ , làn khẩn cấp . Đại sứ Hoa Kỳ Graham Martin cũng bay tới Washington để trình bày vụ việc với Tổng thống Gerald Ford . Tuy vậy , chính quyền Ford tiếp tục khuyến khích ông Thiệu hãy giữ vững lòng tin với người Mỹ .'
+  - gen multi varlm=0.5: chars=228 sents=3 commas=2 multi=1 copy=0.49 ent_keep=0.00 (13.1s)
+      'Nghĩ cũng ngộ , làn khẩn cấp . Đại sứ Hoa Kỳ Graham Martin cũng bay tới Washington để trình bày vụ việc với Tổng thống Gerald Ford . Tuy vậy , chính quyền Ford tiếp tục khuyến khích ông Thiệu hãy giữ vững lòng tin với người Mỹ .'
+
+[conv] 'Giao ngạc lỗ mũi phun ra một'
+  - gen multi varlm=0: chars=319 sents=2 commas=6 multi=1 copy=0.15 ent_keep=0.00 (30.9s)
+      'Giao ngạc lỗ mũi phun ra một cỗ hàn khí trắng xóa , bên ngoài thân hiện ra vô số bạch sắc hàn khí , úy lam đại hải bỗng nhiên kết băng , bất quá rất nhanh , tầng băng vỡ tan . Nước biển tốc độ xoay tròn quá nhanh , tầng băng trả vô pháp lan tràn ra liền vỡ vụn . Từng đợt sục sôi tiếng tỳ bà vang lên , lấy ngàn mà tính'
+  - gen multi varlm=0.35: chars=319 sents=2 commas=6 multi=1 copy=0.15 ent_keep=0.00 (30.5s)
+      'Giao ngạc lỗ mũi phun ra một cỗ hàn khí trắng xóa , bên ngoài thân hiện ra vô số bạch sắc hàn khí , úy lam đại hải bỗng nhiên kết băng , bất quá rất nhanh , tầng băng vỡ tan . Nước biển tốc độ xoay tròn quá nhanh , tầng băng trả vô pháp lan tràn ra liền vỡ vụn . Từng đợt sục sôi tiếng tỳ bà vang lên , lấy ngàn mà tính'
+  - gen multi varlm=0.5: chars=319 sents=2 commas=6 multi=1 copy=0.15 ent_keep=0.00 (30.6s)
+      'Giao ngạc lỗ mũi phun ra một cỗ hàn khí trắng xóa , bên ngoài thân hiện ra vô số bạch sắc hàn khí , úy lam đại hải bỗng nhiên kết băng , bất quá rất nhanh , tầng băng vỡ tan . Nước biển tốc độ xoay tròn quá nhanh , tầng băng trả vô pháp lan tràn ra liền vỡ vụn . Từng đợt sục sôi tiếng tỳ bà vang lên , lấy ngàn mà tính'
+
+[conv] 'Mặc dù bỏ ra số tiền khổng'
+  - gen multi varlm=0: chars=372 sents=3 commas=0 multi=1 copy=0.14 ent_keep=0.00 (24.8s)
+      'Mặc dù bỏ ra số tiền khổng lồ để mua sắm tân binh nhưng Chelsea vẫn khởi đầu rất chật vật tại Premier League lẫn Champions League . Cụ thể đội bóng thành London chỉ xếp thứ 6 tại Premier League và để thua 0-1 trước Dynamo Zagreb ở trận mở màn Champions League . Điều này khiến cho HLV Tuchel bị Chelsea sa thải sau khi "ngã ngựa" chưa đầy 24h . Bài viết trên trang chủ của'
+  - gen multi varlm=0.35: chars=372 sents=3 commas=0 multi=1 copy=0.14 ent_keep=0.00 (24.5s)
+      'Mặc dù bỏ ra số tiền khổng lồ để mua sắm tân binh nhưng Chelsea vẫn khởi đầu rất chật vật tại Premier League lẫn Champions League . Cụ thể đội bóng thành London chỉ xếp thứ 6 tại Premier League và để thua 0-1 trước Dynamo Zagreb ở trận mở màn Champions League . Điều này khiến cho HLV Tuchel bị Chelsea sa thải sau khi "ngã ngựa" chưa đầy 24h . Bài viết trên trang chủ của'
+  - gen multi varlm=0.5: chars=372 sents=3 commas=0 multi=1 copy=0.14 ent_keep=0.00 (24.0s)
+      'Mặc dù bỏ ra số tiền khổng lồ để mua sắm tân binh nhưng Chelsea vẫn khởi đầu rất chật vật tại Premier League lẫn Champions League . Cụ thể đội bóng thành London chỉ xếp thứ 6 tại Premier League và để thua 0-1 trước Dynamo Zagreb ở trận mở màn Champions League . Điều này khiến cho HLV Tuchel bị Chelsea sa thải sau khi "ngã ngựa" chưa đầy 24h . Bài viết trên trang chủ của'
+
+[conv] 'Tân Hải tiểu trấn —— mấy trăm'
+  - gen multi varlm=0: chars=339 sents=1 commas=2 multi=1 copy=0.14 ent_keep=1.00 (27.5s)
+      'Tân Hải tiểu trấn —— mấy trăm năm trước dân bản xứ nhóm cứ như vậy xưng hô nàng . Quá lâu xưng hô để tòa thành này trấn nguyên bản danh tự đã từ mọi người trong trí nhớ biến mất , cho dù là chính thức cùng địa đồ đều đem nơi này đánh dấu vì "Tân Hải tiểu trấn" , có lẽ chỉ có Ellen vương quốc hoàng thất trong tiệm sách ghi lại nàng nguyên'
+  - gen multi varlm=0.35: chars=339 sents=1 commas=2 multi=1 copy=0.14 ent_keep=1.00 (27.3s)
+      'Tân Hải tiểu trấn —— mấy trăm năm trước dân bản xứ nhóm cứ như vậy xưng hô nàng . Quá lâu xưng hô để tòa thành này trấn nguyên bản danh tự đã từ mọi người trong trí nhớ biến mất , cho dù là chính thức cùng địa đồ đều đem nơi này đánh dấu vì "Tân Hải tiểu trấn" , có lẽ chỉ có Ellen vương quốc hoàng thất trong tiệm sách ghi lại nàng nguyên'
+  - gen multi varlm=0.5: chars=339 sents=1 commas=2 multi=1 copy=0.14 ent_keep=1.00 (27.0s)
+      'Tân Hải tiểu trấn —— mấy trăm năm trước dân bản xứ nhóm cứ như vậy xưng hô nàng . Quá lâu xưng hô để tòa thành này trấn nguyên bản danh tự đã từ mọi người trong trí nhớ biến mất , cho dù là chính thức cùng địa đồ đều đem nơi này đánh dấu vì "Tân Hải tiểu trấn" , có lẽ chỉ có Ellen vương quốc hoàng thất trong tiệm sách ghi lại nàng nguyên'
+
+[conv] '8 ngày qua đã xuất hiện ba'
+  - gen multi varlm=0: chars=332 sents=3 commas=1 multi=1 copy=0.60 ent_keep=0.00 (35.6s)
+      '8 ngày qua đã xuất hiện ba Lịch sử : Tiêu đề : Chiến dịch Điện Biên Phủ Đây là chiến thắng quân sự lớn nhất trong cuộc Chiến tranh Đông Dương (1945 – 1954) của Việt Nam . Pháp đã không còn bất kì khả năng nào để tiếp tục chiến đấu tại Việt Nam sau thảm bại này . và nhiều khu vực ở vùng đồng bằng Bắc Bộ . Đến năm 1954 , Mỹ lại viện'
+  - gen multi varlm=0.35: chars=332 sents=3 commas=1 multi=1 copy=0.60 ent_keep=0.00 (37.5s)
+      '8 ngày qua đã xuất hiện ba Lịch sử : Tiêu đề : Chiến dịch Điện Biên Phủ Đây là chiến thắng quân sự lớn nhất trong cuộc Chiến tranh Đông Dương (1945 – 1954) của Việt Nam . Pháp đã không còn bất kì khả năng nào để tiếp tục chiến đấu tại Việt Nam sau thảm bại này . và nhiều khu vực ở vùng đồng bằng Bắc Bộ . Đến năm 1954 , Mỹ lại viện'
+  - gen multi varlm=0.5: chars=332 sents=3 commas=1 multi=1 copy=0.60 ent_keep=0.00 (37.1s)
+      '8 ngày qua đã xuất hiện ba Lịch sử : Tiêu đề : Chiến dịch Điện Biên Phủ Đây là chiến thắng quân sự lớn nhất trong cuộc Chiến tranh Đông Dương (1945 – 1954) của Việt Nam . Pháp đã không còn bất kì khả năng nào để tiếp tục chiến đấu tại Việt Nam sau thảm bại này . và nhiều khu vực ở vùng đồng bằng Bắc Bộ . Đến năm 1954 , Mỹ lại viện'
+
+[conv] 'Chương 277 : Các ngươi nói cái'
+  - gen multi varlm=0: chars=330 sents=2 commas=4 multi=1 copy=0.14 ent_keep=0.00 (32.7s)
+      'Chương 277 : Các ngươi nói cái này Ma Quỷ , hắn cùng ta lớn lên giống sao ? Hàn Phi cùng con nhện đã có đi sâu vào giao lưu , hắn biết rõ bươm bướm nhìn chằm chằm vào một người về sau , sẽ trước tiên theo phương diện tinh thần phá hủy mục tiêu , bươm bướm am hiểu nhất liền là lợi dụng tâm lý ám chỉ cùng mộng cảnh . Trên thế giới'
+  - gen multi varlm=0.35: chars=330 sents=2 commas=4 multi=1 copy=0.14 ent_keep=0.00 (32.3s)
+      'Chương 277 : Các ngươi nói cái này Ma Quỷ , hắn cùng ta lớn lên giống sao ? Hàn Phi cùng con nhện đã có đi sâu vào giao lưu , hắn biết rõ bươm bướm nhìn chằm chằm vào một người về sau , sẽ trước tiên theo phương diện tinh thần phá hủy mục tiêu , bươm bướm am hiểu nhất liền là lợi dụng tâm lý ám chỉ cùng mộng cảnh . Trên thế giới'
+  - gen multi varlm=0.5: chars=330 sents=2 commas=4 multi=1 copy=0.14 ent_keep=0.00 (32.1s)
+      'Chương 277 : Các ngươi nói cái này Ma Quỷ , hắn cùng ta lớn lên giống sao ? Hàn Phi cùng con nhện đã có đi sâu vào giao lưu , hắn biết rõ bươm bướm nhìn chằm chằm vào một người về sau , sẽ trước tiên theo phương diện tinh thần phá hủy mục tiêu , bươm bướm am hiểu nhất liền là lợi dụng tâm lý ám chỉ cùng mộng cảnh . Trên thế giới'
+
+[frame] 'Hỏi: Việt Nam là gì Đáp:'
+  - gen multi varlm=0: chars=364 sents=4 commas=2 multi=1 copy=0.56 ent_keep=0.00 (32.9s)
+      'Hỏi: Việt Nam là gì Đáp: Lịch sử : Tiêu đề : Chiến tranh Việt Nam Kết thúc chiến tranh , các đảng cộng sản lên nắm chính quyền tại Nam Việt Nam , Lào và Campuchia . vẫn tiếp tục ảnh hưởng tới các bên nhiều năm về sau . Truyền thông phương Tây thường gọi cuộc chiến này là "Vietnam War" . Military Assistance Advisory Group – MAAG) tại Việt Nam được thành lập . Tại'
+  - gen multi varlm=0.35: chars=364 sents=4 commas=2 multi=1 copy=0.56 ent_keep=0.00 (32.3s)
+      'Hỏi: Việt Nam là gì Đáp: Lịch sử : Tiêu đề : Chiến tranh Việt Nam Kết thúc chiến tranh , các đảng cộng sản lên nắm chính quyền tại Nam Việt Nam , Lào và Campuchia . vẫn tiếp tục ảnh hưởng tới các bên nhiều năm về sau . Truyền thông phương Tây thường gọi cuộc chiến này là "Vietnam War" . Military Assistance Advisory Group – MAAG) tại Việt Nam được thành lập . Tại'
+  - gen multi varlm=0.5: chars=364 sents=4 commas=2 multi=1 copy=0.56 ent_keep=0.00 (31.9s)
+      'Hỏi: Việt Nam là gì Đáp: Lịch sử : Tiêu đề : Chiến tranh Việt Nam Kết thúc chiến tranh , các đảng cộng sản lên nắm chính quyền tại Nam Việt Nam , Lào và Campuchia . vẫn tiếp tục ảnh hưởng tới các bên nhiều năm về sau . Truyền thông phương Tây thường gọi cuộc chiến này là "Vietnam War" . Military Assistance Advisory Group – MAAG) tại Việt Nam được thành lập . Tại'
+
+[frame] 'Hỏi: Văn Miếu là gì Đáp:'
+  - gen multi varlm=0: chars=324 sents=3 commas=2 multi=1 copy=0.26 ent_keep=0.00 (16.0s)
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên của Việt Nam , thờ Khổng Tử và các bậc hiền tài . Khu di tích ở Hà Nội còn có 82 tấm bia tiến sĩ . Nơi đây tượng trưng cho truyền thống hiếu học . Lịch sử : Tiêu đề : Gia Long Nguyễn Ánh là cháu nội của chúa Nguyễn Phúc Khoát , vị chúa Nguyễn áp chót ở Đàng Trong'
+  - gen multi varlm=0.35: chars=324 sents=3 commas=2 multi=1 copy=0.26 ent_keep=0.00 (13.9s)
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên của Việt Nam , thờ Khổng Tử và các bậc hiền tài . Khu di tích ở Hà Nội còn có 82 tấm bia tiến sĩ . Nơi đây tượng trưng cho truyền thống hiếu học . Lịch sử : Tiêu đề : Gia Long Nguyễn Ánh là cháu nội của chúa Nguyễn Phúc Khoát , vị chúa Nguyễn áp chót ở Đàng Trong'
+  - gen multi varlm=0.5: chars=324 sents=3 commas=2 multi=1 copy=0.26 ent_keep=0.00 (13.2s)
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên của Việt Nam , thờ Khổng Tử và các bậc hiền tài . Khu di tích ở Hà Nội còn có 82 tấm bia tiến sĩ . Nơi đây tượng trưng cho truyền thống hiếu học . Lịch sử : Tiêu đề : Gia Long Nguyễn Ánh là cháu nội của chúa Nguyễn Phúc Khoát , vị chúa Nguyễn áp chót ở Đàng Trong'
+
+[frame] 'Hỏi: Nhà Lý là gì Đáp:'
+  - gen multi varlm=0: chars=290 sents=3 commas=6 multi=1 copy=0.22 ent_keep=0.00 (33.5s)
+      'Hỏi: Nhà Lý là gì Đáp: Lịch sử : Tiêu đề : Lý Thái Tổ Lý Thái Tổ tên thật là Lý Công Uẩn , là vị vua đầu tiên của nhà Lý . Lý Công Uẩn sinh năm 974 , quê ở vùng Kinh Bắc , được nuôi dạy trong chùa từ nhỏ . Năm 1009 , Lý Công Uẩn được các quan tôn lên làm vua , lập ra nhà Lý . Năm 1010 , Lý'
+  - gen multi varlm=0.35: chars=290 sents=3 commas=6 multi=1 copy=0.22 ent_keep=0.00 (33.8s)
+      'Hỏi: Nhà Lý là gì Đáp: Lịch sử : Tiêu đề : Lý Thái Tổ Lý Thái Tổ tên thật là Lý Công Uẩn , là vị vua đầu tiên của nhà Lý . Lý Công Uẩn sinh năm 974 , quê ở vùng Kinh Bắc , được nuôi dạy trong chùa từ nhỏ . Năm 1009 , Lý Công Uẩn được các quan tôn lên làm vua , lập ra nhà Lý . Năm 1010 , Lý'
+  - gen multi varlm=0.5: chars=290 sents=3 commas=6 multi=1 copy=0.22 ent_keep=0.00 (33.8s)
+      'Hỏi: Nhà Lý là gì Đáp: Lịch sử : Tiêu đề : Lý Thái Tổ Lý Thái Tổ tên thật là Lý Công Uẩn , là vị vua đầu tiên của nhà Lý . Lý Công Uẩn sinh năm 974 , quê ở vùng Kinh Bắc , được nuôi dạy trong chùa từ nhỏ . Năm 1009 , Lý Công Uẩn được các quan tôn lên làm vua , lập ra nhà Lý . Năm 1010 , Lý'
+
+[common_noun] 'ẩm thực Việt Nam'
+  - gen multi varlm=0: chars=311 sents=3 commas=5 multi=1 copy=0.69 ent_keep=1.00 (34.6s)
+      'ẩm thực Việt Nam Vì thế việc ăn uống còn minh chứng cho lịch sử và sự hình thành nền văn hoá của Việt Nam . Việt Nam là một nước thiên về nông nghiệp thuộc đới khí hậu nhiệt đới , vùng nhiệt đới gió mùa . Ngoài ra , lãnh thổ Việt Nam được chia ra ba miền rõ rệt là Bắc , Trung , Nam . Mỗi miền có một nét , khẩu'
+  - gen multi varlm=0.35: chars=311 sents=3 commas=5 multi=1 copy=0.69 ent_keep=1.00 (34.3s)
+      'ẩm thực Việt Nam Vì thế việc ăn uống còn minh chứng cho lịch sử và sự hình thành nền văn hoá của Việt Nam . Việt Nam là một nước thiên về nông nghiệp thuộc đới khí hậu nhiệt đới , vùng nhiệt đới gió mùa . Ngoài ra , lãnh thổ Việt Nam được chia ra ba miền rõ rệt là Bắc , Trung , Nam . Mỗi miền có một nét , khẩu'
+  - gen multi varlm=0.5: chars=311 sents=3 commas=5 multi=1 copy=0.69 ent_keep=1.00 (34.0s)
+      'ẩm thực Việt Nam Vì thế việc ăn uống còn minh chứng cho lịch sử và sự hình thành nền văn hoá của Việt Nam . Việt Nam là một nước thiên về nông nghiệp thuộc đới khí hậu nhiệt đới , vùng nhiệt đới gió mùa . Ngoài ra , lãnh thổ Việt Nam được chia ra ba miền rõ rệt là Bắc , Trung , Nam . Mỗi miền có một nét , khẩu'
+
+[common_noun] 'bóng đá là'
+  - gen multi varlm=0: chars=134 sents=0 commas=0 multi=0 copy=0.31 ent_keep=0.00 (9.9s)
+      'bóng đá là một môn thể thao được nhiều người ưa thích Ví dụ : đại hội thể thao * bóng đá là một môn thể thao được nhiều người ưa thích'
+  - gen multi varlm=0.35: chars=134 sents=0 commas=0 multi=0 copy=0.31 ent_keep=0.00 (8.9s)
+      'bóng đá là một môn thể thao được nhiều người ưa thích Ví dụ : đại hội thể thao * bóng đá là một môn thể thao được nhiều người ưa thích'
+  - gen multi varlm=0.5: chars=134 sents=0 commas=0 multi=0 copy=0.31 ent_keep=0.00 (9.0s)
+      'bóng đá là một môn thể thao được nhiều người ưa thích Ví dụ : đại hội thể thao * bóng đá là một môn thể thao được nhiều người ưa thích'
+
+[common_noun] 'trường học là'
+  - gen multi varlm=0: chars=136 sents=2 commas=0 multi=1 copy=0.57 ent_keep=0.00 (7.9s)
+      'trường học là bắt buộc đối với mọi trẻ em từ 6 đến 16 tuổi . Hệ thống trường học tại Thụy Điển phần lớn được tài trợ bởi các loại thuế .'
+  - gen multi varlm=0.35: chars=136 sents=2 commas=0 multi=1 copy=0.57 ent_keep=0.00 (7.6s)
+      'trường học là bắt buộc đối với mọi trẻ em từ 6 đến 16 tuổi . Hệ thống trường học tại Thụy Điển phần lớn được tài trợ bởi các loại thuế .'
+  - gen multi varlm=0.5: chars=136 sents=2 commas=0 multi=1 copy=0.57 ent_keep=0.00 (7.6s)
+      'trường học là bắt buộc đối với mọi trẻ em từ 6 đến 16 tuổi . Hệ thống trường học tại Thụy Điển phần lớn được tài trợ bởi các loại thuế .'
+
+[common_noun] 'âm nhạc giúp'
+  - gen multi varlm=0: chars=166 sents=2 commas=2 multi=1 copy=0.73 ent_keep=0.00 (7.4s)
+      'âm nhạc giúp ông khi đang suy nghĩ về các lý thuyết . Ông mải mê nghiên cứu , quay trở ra giải trí bằng đánh vài đoạn hợp âm piano , rồi tiếp tục trở lại công việc" .'
+  - gen multi varlm=0.35: chars=166 sents=2 commas=2 multi=1 copy=0.73 ent_keep=0.00 (7.3s)
+      'âm nhạc giúp ông khi đang suy nghĩ về các lý thuyết . Ông mải mê nghiên cứu , quay trở ra giải trí bằng đánh vài đoạn hợp âm piano , rồi tiếp tục trở lại công việc" .'
+  - gen multi varlm=0.5: chars=166 sents=2 commas=2 multi=1 copy=0.73 ent_keep=0.00 (7.1s)
+      'âm nhạc giúp ông khi đang suy nghĩ về các lý thuyết . Ông mải mê nghiên cứu , quay trở ra giải trí bằng đánh vài đoạn hợp âm piano , rồi tiếp tục trở lại công việc" .'
+
+[common_noun] 'phở là'
+  - gen multi varlm=0: chars=217 sents=2 commas=5 multi=1 copy=1.00 ent_keep=0.00 (12.6s)
+      'phở là món ăn rất phổ biến ở Việt Nam , nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian , nhiều món phở mới xuất hiện với những cách chế biến khác nhau , như phở xào , phở rán , phở cuốn .'
+  - gen multi varlm=0.35: chars=217 sents=2 commas=5 multi=1 copy=1.00 ent_keep=0.00 (12.3s)
+      'phở là món ăn rất phổ biến ở Việt Nam , nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian , nhiều món phở mới xuất hiện với những cách chế biến khác nhau , như phở xào , phở rán , phở cuốn .'
+  - gen multi varlm=0.5: chars=217 sents=2 commas=5 multi=1 copy=1.00 ent_keep=0.00 (11.9s)
+      'phở là món ăn rất phổ biến ở Việt Nam , nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian , nhiều món phở mới xuất hiện với những cách chế biến khác nhau , như phở xào , phở rán , phở cuốn .'
+
+[common_noun] 'mùa hè em'
+  - gen multi varlm=0: chars=314 sents=8 commas=1 multi=1 copy=0.18 ent_keep=0.00 (18.9s)
+      'mùa hè em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 2 trong chương trình lớp 5 . Bán cầu Bắc và Bán cầu Nam . Thái Bình Dương rộng nhất các đại dương . Himalaya có đỉnh Everest cao nhất . Đỉnh Fansipan cao nhất Đông Dương . Khí hậu nhiệt đới ẩm gió mùa . Bão nhiệt đới xảy ra mùa hè . Em hãy đọc'
+  - gen multi varlm=0.35: chars=314 sents=8 commas=1 multi=1 copy=0.18 ent_keep=0.00 (20.0s)
+      'mùa hè em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 2 trong chương trình lớp 5 . Bán cầu Bắc và Bán cầu Nam . Thái Bình Dương rộng nhất các đại dương . Himalaya có đỉnh Everest cao nhất . Đỉnh Fansipan cao nhất Đông Dương . Khí hậu nhiệt đới ẩm gió mùa . Bão nhiệt đới xảy ra mùa hè . Em hãy đọc'
+  - gen multi varlm=0.5: chars=314 sents=8 commas=1 multi=1 copy=0.18 ent_keep=0.00 (20.0s)
+      'mùa hè em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 2 trong chương trình lớp 5 . Bán cầu Bắc và Bán cầu Nam . Thái Bình Dương rộng nhất các đại dương . Himalaya có đỉnh Everest cao nhất . Đỉnh Fansipan cao nhất Đông Dương . Khí hậu nhiệt đới ẩm gió mùa . Bão nhiệt đới xảy ra mùa hè . Em hãy đọc'
+
+[common_noun] 'môi trường là'
+  - gen multi varlm=0: chars=265 sents=8 commas=0 multi=1 copy=0.23 ent_keep=0.00 (19.1s)
+      'môi trường là hiện tượng ánh sáng bật lại . Khúc xạ là ánh sáng đổi hướng qua môi trường . Âm thanh lan truyền qua không khí . Tai người nghe được âm thanh . Cơ thể cần protein và vitamin . Thiếu vitamin C gây scorbút . Vitamin A tốt cho mắt . Canxi tốt cho xương .'
+  - gen multi varlm=0.35: chars=265 sents=8 commas=0 multi=1 copy=0.23 ent_keep=0.00 (21.2s)
+      'môi trường là hiện tượng ánh sáng bật lại . Khúc xạ là ánh sáng đổi hướng qua môi trường . Âm thanh lan truyền qua không khí . Tai người nghe được âm thanh . Cơ thể cần protein và vitamin . Thiếu vitamin C gây scorbút . Vitamin A tốt cho mắt . Canxi tốt cho xương .'
+  - gen multi varlm=0.5: chars=265 sents=8 commas=0 multi=1 copy=0.23 ent_keep=0.00 (21.1s)
+      'môi trường là hiện tượng ánh sáng bật lại . Khúc xạ là ánh sáng đổi hướng qua môi trường . Âm thanh lan truyền qua không khí . Tai người nghe được âm thanh . Cơ thể cần protein và vitamin . Thiếu vitamin C gây scorbút . Vitamin A tốt cho mắt . Canxi tốt cho xương .'
+
+[common_noun] 'sức khỏe là'
+  - gen multi varlm=0: chars=256 sents=9 commas=0 multi=1 copy=0.20 ent_keep=0.00 (19.9s)
+      'sức khỏe là phần 1 trong chương trình lớp 3 . Con người cần ăn uống đầy đủ . Rau xanh tốt cho sức khỏe . Uống nước sạch mỗi ngày . Rửa tay trước khi ăn . Đánh răng hai lần mỗi ngày . Ngủ đủ giấc giúp cơ thể khỏe . Tập thể dục buổi sáng . Mắt giúp ta nhìn .'
+  - gen multi varlm=0.35: chars=256 sents=9 commas=0 multi=1 copy=0.20 ent_keep=0.00 (22.7s)
+      'sức khỏe là phần 1 trong chương trình lớp 3 . Con người cần ăn uống đầy đủ . Rau xanh tốt cho sức khỏe . Uống nước sạch mỗi ngày . Rửa tay trước khi ăn . Đánh răng hai lần mỗi ngày . Ngủ đủ giấc giúp cơ thể khỏe . Tập thể dục buổi sáng . Mắt giúp ta nhìn .'
+  - gen multi varlm=0.5: chars=256 sents=9 commas=0 multi=1 copy=0.20 ent_keep=0.00 (23.0s)
+      'sức khỏe là phần 1 trong chương trình lớp 3 . Con người cần ăn uống đầy đủ . Rau xanh tốt cho sức khỏe . Uống nước sạch mỗi ngày . Rửa tay trước khi ăn . Đánh răng hai lần mỗi ngày . Ngủ đủ giấc giúp cơ thể khỏe . Tập thể dục buổi sáng . Mắt giúp ta nhìn .'
+
+[common_noun] 'đọc sách giúp'
+  - gen multi varlm=0: chars=312 sents=4 commas=2 multi=1 copy=0.18 ent_keep=0.00 (34.9s)
+      'đọc sách giúp bạn phát triển vốn từ vựng , ngữ pháp và phong cách viết . Việc tiếp xúc với các phong cách và thể loại viết khác nhau cũng có thể truyền cảm hứng cho bài viết của bạn . 3 . Sử dụng giọng nói tích cực khi có thể . Như tôi đã đề cập trước đó , giọng chủ động làm cho câu trở nên rõ ràng và trực tiếp'
+  - gen multi varlm=0.35: chars=312 sents=4 commas=2 multi=1 copy=0.18 ent_keep=0.00 (35.4s)
+      'đọc sách giúp bạn phát triển vốn từ vựng , ngữ pháp và phong cách viết . Việc tiếp xúc với các phong cách và thể loại viết khác nhau cũng có thể truyền cảm hứng cho bài viết của bạn . 3 . Sử dụng giọng nói tích cực khi có thể . Như tôi đã đề cập trước đó , giọng chủ động làm cho câu trở nên rõ ràng và trực tiếp'
+  - gen multi varlm=0.5: chars=312 sents=4 commas=2 multi=1 copy=0.18 ent_keep=0.00 (37.0s)
+      'đọc sách giúp bạn phát triển vốn từ vựng , ngữ pháp và phong cách viết . Việc tiếp xúc với các phong cách và thể loại viết khác nhau cũng có thể truyền cảm hứng cho bài viết của bạn . 3 . Sử dụng giọng nói tích cực khi có thể . Như tôi đã đề cập trước đó , giọng chủ động làm cho câu trở nên rõ ràng và trực tiếp'
+
+[common_noun] 'Tết Nguyên Đán'
+  - gen multi varlm=0: chars=196 sents=3 commas=0 multi=1 copy=1.00 ent_keep=1.00 (8.4s)
+      'Tết Nguyên Đán nữa . Năm thành lập Trung Hoa Dân quốc được coi là Trung Hoa Dân quốc năm thứ nhất . Lấy số năm Công nguyên trừ cho 1911 thì sẽ ra số năm Dân quốc tương ứng của năm Công nguyên đó .'
+  - gen multi varlm=0.35: chars=196 sents=3 commas=0 multi=1 copy=1.00 ent_keep=1.00 (7.7s)
+      'Tết Nguyên Đán nữa . Năm thành lập Trung Hoa Dân quốc được coi là Trung Hoa Dân quốc năm thứ nhất . Lấy số năm Công nguyên trừ cho 1911 thì sẽ ra số năm Dân quốc tương ứng của năm Công nguyên đó .'
+  - gen multi varlm=0.5: chars=196 sents=3 commas=0 multi=1 copy=1.00 ent_keep=1.00 (7.6s)
+      'Tết Nguyên Đán nữa . Năm thành lập Trung Hoa Dân quốc được coi là Trung Hoa Dân quốc năm thứ nhất . Lấy số năm Công nguyên trừ cho 1911 thì sẽ ra số năm Dân quốc tương ứng của năm Công nguyên đó .'
+
+=== Summary (mean metrics by bucket/mode) ===
+bucket | mode | n | chars | sents | commas | multi% | copy | ent_keep
+--------------------------------------------------------------------------------------------
+common_noun  | gen multi varlm=0        | 10 |   231 |  4.10 |   1.50 |  90.0% | 0.51 |    0.20
+common_noun  | gen multi varlm=0.35     | 10 |   231 |  4.10 |   1.50 |  90.0% | 0.51 |    0.20
+common_noun  | gen multi varlm=0.5      | 10 |   231 |  4.10 |   1.50 |  90.0% | 0.51 |    0.20
+conv         | gen multi varlm=0        | 10 |   309 |  2.60 |   2.60 |  90.0% | 0.22 |    0.20
+conv         | gen multi varlm=0.35     | 10 |   299 |  2.30 |   2.40 |  90.0% | 0.25 |    0.20
+conv         | gen multi varlm=0.5      | 10 |   299 |  2.30 |   2.40 |  90.0% | 0.25 |    0.20
+frame        | gen multi varlm=0        |  3 |   326 |  3.33 |   3.33 | 100.0% | 0.35 |    0.00
+frame        | gen multi varlm=0.35     |  3 |   326 |  3.33 |   3.33 | 100.0% | 0.35 |    0.00
+frame        | gen multi varlm=0.5      |  3 |   326 |  3.33 |   3.33 | 100.0% | 0.35 |    0.00
+history_wiki_para | gen multi varlm=0        | 10 |   324 |  3.70 |   4.00 | 100.0% | 0.57 |    0.50
+history_wiki_para | gen multi varlm=0.35     | 10 |   324 |  3.70 |   4.00 | 100.0% | 0.57 |    0.50
+history_wiki_para | gen multi varlm=0.5      | 10 |   324 |  3.70 |   4.00 | 100.0% | 0.57 |    0.50
+statements_doc | gen multi varlm=0        | 10 |   243 |  3.00 |   1.80 | 100.0% | 0.49 |    0.20
+statements_doc | gen multi varlm=0.35     | 10 |   243 |  3.00 |   1.80 | 100.0% | 0.49 |    0.20
+statements_doc | gen multi varlm=0.5      | 10 |   243 |  3.00 |   1.80 | 100.0% | 0.49 |    0.20

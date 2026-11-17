@@ -1,0 +1,28 @@
+lesson_id: vi_grade3_chat
+grade: 3
+repeat: 2
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_chat_hoi_thoai
+slots:
+  - const: "User:"
+  - var: U
+  - const: "Assistant:"
+  - var: R
+
+bind:
+  U: lời người dùng
+  R: lời trợ lý
+
+examples:
+  - "User: Xin chào Assistant: Xin chào! Em có thể giúp gì?"
+  - "User: Em tên gì Assistant: Em là trợ lý học tiếng Việt."
+  - "User: Hôm nay trời thế nào Assistant: Trời hôm nay rất đẹp."
+  - "User: Em học lớp mấy Assistant: Em học lớp 3."
+  - "User: Mẹ em làm gì Assistant: Mẹ em nấu cơm."
+  - "User: Con mèo màu gì Assistant: Con mèo màu trắng."
+  - "User: Chó màu gì Assistant: Chó màu nâu."
+  - "User: Em thích màu gì Assistant: Em thích màu xanh."
+  - "User: Bạn Lan ở đâu Assistant: Lan ở trường."
+  - "User: Cảm ơn Assistant: Không có gì!"

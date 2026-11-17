@@ -1,0 +1,131 @@
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[     0.6s] ✓ unpickle  (0.6s)
+[     0.6s] ▶ vocab (113572 token)
+[     0.7s] ✓ vocab (113572 token)  (0.1s)
+[     0.7s] ▶ adjacency
+[     3.5s] ✓ adjacency  (2.8s)
+[     3.5s] ▶ embedding
+[     3.6s] ✓ embedding  (0.1s)
+[     3.6s] ▶ parents
+[     3.6s] parents: deserialize 151430 records …
+[     3.6s] parents 5000/151430 (3.3%)
+[     3.7s] parents 10000/151430 (6.6%)
+[     3.7s] parents 15000/151430 (9.9%)
+[     3.8s] parents 20000/151430 (13.2%)
+[     3.8s] parents 25000/151430 (16.5%)
+[     3.8s] parents 30000/151430 (19.8%)
+[     3.9s] parents 35000/151430 (23.1%)
+[     3.9s] parents 40000/151430 (26.4%)
+[     4.0s] parents 45000/151430 (29.7%)
+[     4.0s] parents 50000/151430 (33.0%)
+[     4.1s] parents 55000/151430 (36.3%)
+[     4.1s] parents 60000/151430 (39.6%)
+[     4.2s] parents 65000/151430 (42.9%)
+[     4.2s] parents 70000/151430 (46.2%)
+[     4.3s] parents 75000/151430 (49.5%)
+[     4.3s] parents 80000/151430 (52.8%)
+[     4.4s] parents 85000/151430 (56.1%)
+[     4.4s] parents 90000/151430 (59.4%)
+[     4.5s] parents 95000/151430 (62.7%)
+[     4.5s] parents 100000/151430 (66.0%)
+[     4.5s] parents 105000/151430 (69.3%)
+[     4.6s] parents 110000/151430 (72.6%)
+[     4.6s] parents 115000/151430 (75.9%)
+[     4.7s] parents 120000/151430 (79.2%)
+[     4.7s] parents 125000/151430 (82.5%)
+[     4.8s] parents 130000/151430 (85.8%)
+[     4.8s] parents 135000/151430 (89.2%)
+[     4.9s] parents 140000/151430 (92.5%)
+[     4.9s] parents 145000/151430 (95.8%)
+[     5.0s] parents 150000/151430 (99.1%)
+[     6.7s] ▶ rebuild_hierarchical_index …
+[     6.9s] ✓ rebuild_hierarchical_index (0.3s)
+[     8.2s]     resync match_ids: 151430/151430 cha (df dựng lại)
+[     8.2s] ✓ parents  (4.6s)
+[     8.2s] ✓ loaded: vocab=113572 parents=151430 E=(77464, 96)
+[     8.4s] sidecar có: network_v10_histwiki.content.pkl
+[     8.4s] ✓ load_checkpoint XONG
+[     9.3s] dựng index 5-gram toàn corpus …
+[    11.4s]   n-gram index 20,000/151,430 · 274,489 5-gram
+[    11.5s]   n-gram index 40,000/151,430 · 556,629 5-gram
+[    11.5s]   n-gram index 60,000/151,430 · 957,778 5-gram
+[    11.6s]   n-gram index 80,000/151,430 · 1,247,981 5-gram
+[    11.7s]   n-gram index 100,000/151,430 · 1,508,519 5-gram
+[    11.7s]   n-gram index 120,000/151,430 · 1,761,790 5-gram
+[    11.8s]   n-gram index 140,000/151,430 · 2,003,175 5-gram
+[    11.8s] ✓ index: 2,137,917 5-gram phân biệt (3s)
+[    11.8s] sinh 1/8: 'Nhà Trần là' …
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[     1.1s] ✓ unpickle  (1.1s)
+[     1.1s] ▶ vocab (113572 token)
+[     1.2s] ✓ vocab (113572 token)  (0.1s)
+[     1.2s] ▶ adjacency
+[     4.3s] ✓ adjacency  (3.1s)
+[     4.3s] ▶ embedding
+[     4.4s] ✓ embedding  (0.1s)
+[     4.4s] ▶ parents
+[     4.4s] parents: deserialize 151430 records …
+[     4.5s] parents 5000/151430 (3.3%)
+[     4.5s] parents 10000/151430 (6.6%)
+[     4.5s] parents 15000/151430 (9.9%)
+[     4.6s] parents 20000/151430 (13.2%)
+[     4.6s] parents 25000/151430 (16.5%)
+[     4.7s] parents 30000/151430 (19.8%)
+[     4.7s] parents 35000/151430 (23.1%)
+[     4.8s] parents 40000/151430 (26.4%)
+[     4.8s] parents 45000/151430 (29.7%)
+[     4.9s] parents 50000/151430 (33.0%)
+[     4.9s] parents 55000/151430 (36.3%)
+[     5.0s] parents 60000/151430 (39.6%)
+[     5.0s] parents 65000/151430 (42.9%)
+[     5.1s] parents 70000/151430 (46.2%)
+[     5.1s] parents 75000/151430 (49.5%)
+[     5.2s] parents 80000/151430 (52.8%)
+[     5.2s] parents 85000/151430 (56.1%)
+[     5.3s] parents 90000/151430 (59.4%)
+[     5.3s] parents 95000/151430 (62.7%)
+[     5.4s] parents 100000/151430 (66.0%)
+[     5.4s] parents 105000/151430 (69.3%)
+[     5.5s] parents 110000/151430 (72.6%)
+[     5.5s] parents 115000/151430 (75.9%)
+[     5.6s] parents 120000/151430 (79.2%)
+[     5.6s] parents 125000/151430 (82.5%)
+[     5.7s] parents 130000/151430 (85.8%)
+[     5.7s] parents 135000/151430 (89.2%)
+[     5.7s] parents 140000/151430 (92.5%)
+[     5.8s] parents 145000/151430 (95.8%)
+[     5.8s] parents 150000/151430 (99.1%)
+[     8.6s] ▶ rebuild_hierarchical_index …
+[     8.9s] ✓ rebuild_hierarchical_index (0.3s)
+[    10.3s]     resync match_ids: 151430/151430 cha (df dựng lại)
+[    10.3s] ✓ parents  (5.9s)
+[    10.3s] ✓ loaded: vocab=113572 parents=151430 E=(77464, 96)
+[    10.5s] sidecar có: network_v10_histwiki.content.pkl
+[    10.5s] ✓ load_checkpoint XONG
+[    11.7s] dựng index 5-gram toàn corpus …
+[    14.2s]   n-gram index 20,000/151,430 · 274,489 5-gram
+[    14.3s]   n-gram index 40,000/151,430 · 556,629 5-gram
+[    14.3s]   n-gram index 60,000/151,430 · 957,778 5-gram
+[    14.4s]   n-gram index 80,000/151,430 · 1,247,981 5-gram
+[    14.5s]   n-gram index 100,000/151,430 · 1,508,519 5-gram
+[    14.5s]   n-gram index 120,000/151,430 · 1,761,790 5-gram
+[    14.6s]   n-gram index 140,000/151,430 · 2,003,175 5-gram
+[    14.6s] ✓ index: 2,137,917 5-gram phân biệt (3s)
+[    14.6s] sinh 1/8: 'Nhà Trần là' …
+[    20.9s]   ✓ 1/8 (6s) cha=23tok đáp=15tok copy=13% MỚI=0/11 (0%)
+[    20.9s] sinh 2/8: 'Khúc Thừa Dụ' …
+[    21.5s]   ✓ 2/8 (1s) cha=6tok đáp=3tok copy=100% MỚI=0/0 (0%)
+[    21.5s] sinh 3/8: 'Ngô Quyền' …
+[    22.1s]   ✓ 3/8 (1s) cha=6tok đáp=4tok copy=100% MỚI=0/0 (0%)
+[    22.1s] sinh 4/8: 'Lý Thái Tổ' …
+[    22.8s]   ✓ 4/8 (1s) cha=8tok đáp=5tok copy=100% MỚI=0/1 (0%)
+[    22.8s] sinh 5/8: 'Hai Bà Trưng' …
+[    23.4s]   ✓ 5/8 (1s) cha=6tok đáp=3tok copy=100% MỚI=0/0 (0%)
+[    23.4s] sinh 6/8: 'Nhà Lý' …
+[    25.1s]   ✓ 6/8 (2s) cha=8tok đáp=24tok copy=0% MỚI=20/20 (100%)
+[    25.1s] sinh 7/8: 'Trần Hưng Đạo' …
+[    25.8s]   ✓ 7/8 (1s) cha=7tok đáp=4tok copy=100% MỚI=0/0 (0%)
+[    25.8s] sinh 8/8: 'Lê Lợi' …
+[    26.3s]   ✓ 8/8 (1s) cha=6tok đáp=4tok copy=0% MỚI=0/0 (0%)

@@ -1,0 +1,14 @@
+{
+ "id": "v06_chinhta",
+ "cat": "vi",
+ "model": "gemma4:12b",
+ "turns": [
+  {
+   "user": "Sửa lỗi chính tả trong đoạn sau, liệt kê các chỗ đã sửa:\n\n\"Hôm qua tôi đã dành được giải nhất cuộc thi. Mọi người điều chúc mừng và tôi cảm thấy rất xung sướng. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỷ năng thuyết trình trước đám đông.\"",
+   "text": "Dưới đây là đoạn văn đã được sửa lỗi chính tả và các vị trí đã thay đổi:\n\n**Đoạn văn hoàn chỉnh:**\n\"Hôm qua tôi đã **giành** được giải nhất cuộc thi. Mọi người **đều** chúc mừng và tôi cảm thấy rất **sung** sướng. Tuy nhiên, tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là **kỹ** năng thuyết trình trước đám đông.\"\n\n**Các lỗi đã sửa:**\n1.  **dành** $\\rightarrow$ **giành**: \"Giành\" dùng cho việc đạt được thứ gì đó qua sự nỗ lực (giành giải thưởng), còn \"dành\" là để dành, bỏ qua hoặc phân bổ thời gian/không gian.\n2.  **điều** $\\rightarrow$ **đều**: \"Đều\" là phó từ chỉ sự đồng loạt của mọi người.\n3.  **xung sướng** $\\rightarrow$ **sung sướng**: Từ đúng là \"sung sướng\" (vui vẻ, thỏa mãn).\n4.  **kỷ năng** $\\rightarrow$ **kỹ năng**: Từ đúng là \"kỹ năng\" (khả năng thực hiện một công việc nào đó).",
+   "thinking": "\n*   Input text: \"Hôm qua tôi đã dành được giải nhất cuộc thi. Mọi người điều chúc mừng và tôi cảm thấy rất xung sướng. Tuy nhiên tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỷ năng thuyết trình trước đám đông.\"\n    *   Task: Correct spelling/grammar errors and list the corrections made.\n\n    *   \"Hôm qua tôi đã dành được giải nhất cuộc thi.\" -> \"dành\" (to spend/dedicate) vs. \"giành\" (to win/achieve). In this context, winning a prize is \"giành\".\n    *   \"Mọi người điều chúc mừng\" -> \"điều\" (thing/item) vs. \"đều\" (all/everyone). It should be \"đều\".\n    *   \"xung sướng\" -> \"xung\" vs. \"xướng\". The correct word is \"sung sướng\" (happy/joyful).\n    *   \"kỷ năng\" -> \"kỷ\" vs. \"kỹ\". The correct word is \"kỹ năng\" (skill).\n\n    *   Original: \"Hôm qua tôi đã dành được giải nhất cuộc thi.\" -> Corrected: \"Hôm qua tôi đã giành được giải nhất cuộc thi.\"\n    *   Original: \"Mọi người điều chúc mừng\" -> Corrected: \"Mọi người đều chúc mừng\"\n    *   Original: \"xung sướng\" -> Corrected: \"sung sướng\"\n    *   Original: \"kỷ năng\" -> Corrected: \"kỹ năng\"\n\n    *   *Refined Text:* \"Hôm qua tôi đã giành được giải nhất cuộc thi. Mọi người đều chúc mừng và tôi cảm thấy rất sung sướng. Tuy nhiên, tôi vẫn còn nhiều điểm yếu cần khắc phục, nhất là kỹ năng thuyết trình trước đám đông.\" (Added a comma after \"Tuy nhiên\" for better flow, though not strictly a spelling error, it's good grammar).\n\n    *   Item 1: dành -> giành\n    *   Item 2: điều -> đều\n    *   Item 3: xung sướng -> sung sướng\n    *   Item 4: kỷ năng -> kỹ năng\n\n    *   Ensure the tone is helpful and clear.",
+   "tokens": 748,
+   "sec": 25.9
+  }
+ ]
+}

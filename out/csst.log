@@ -1,0 +1,39 @@
+[     0.0s] === load_classrich2 START (pid=23497) → out/logs/load_classrich2_20260815_210851.log ===
+[     0.0s] load checkpoint checkpoints/classrich2.pkl …
+[     0.0s] ▶ unpickle
+[     0.5s] ✓ unpickle  (0.5s)
+[     0.5s] ▶ vocab (32002 token)
+[     0.5s] ✓ vocab (32002 token)  (0.0s)
+[     0.5s] ▶ adjacency
+[     1.8s] ✓ adjacency  (1.3s)
+[     1.8s] ▶ embedding
+[     1.9s] ✓ embedding  (0.0s)
+[     1.9s] ▶ parents
+[     1.9s] parents: deserialize 55460 records …
+[     1.9s] parents 5000/55460 (9.0%)
+[     2.0s] parents 10000/55460 (18.0%)
+[     2.0s] parents 15000/55460 (27.0%)
+[     2.0s] parents 20000/55460 (36.1%)
+[     2.1s] parents 25000/55460 (45.1%)
+[     2.2s] parents 30000/55460 (54.1%)
+[     2.2s] parents 35000/55460 (63.1%)
+[     2.3s] parents 40000/55460 (72.1%)
+[     2.3s] parents 45000/55460 (81.1%)
+[     2.7s] parents 50000/55460 (90.2%)
+[     2.8s] parents 55000/55460 (99.2%)
+[     4.5s] ▶ rebuild_hierarchical_index …
+[     4.6s] ✓ rebuild_hierarchical_index (0.1s)
+[     5.2s]     resync match_ids: 55460/55460 cha (df dựng lại)
+[     5.2s] ✓ parents  (3.3s)
+[     5.2s] ✓ loaded: vocab=32002 parents=55460 E=(32002, 96)
+[     5.2s] sidecar thiếu → migrate: classrich2.content.pkl
+[     5.2s] ✓ load_checkpoint XONG
+
+  277 bộ dựng được từ CÂU THẬT
+  23105 câu thật → 11553 dòng → data/text_corpus/so_sanh_that.jsonl
+  3 bộ đầu:
+     A='liền' lớp='phần' mang=['một', 'răng'] GIỮ LẠI='bã'
+     A='đều' lớp='bộ phận' mang=['cánh', 'nhau'] GIỮ LẠI='Hoa'
+     A='đen' lớp='bộ phận' mang=['hoa', 'hạt', 'nhau', 'tuyến'] GIỮ LẠI='bẹ'
+
+[221s] xong

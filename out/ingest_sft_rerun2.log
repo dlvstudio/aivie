@@ -1,0 +1,9 @@
+── vi-alpaca (bkai-foundation-models/vi-alpaca) ──
+  leakage filter: 500 instruction từ essays.jsonl
+  giữ 0 · LOẠI 0 trùng held-out essays (leakage — phải >0 mới đúng)
+  ⚠ leak=0 ĐÁNG NGỜ: essays.jsonl rút từ chính repo này — kiểm tra lại filter
+── ViQuAD 2.0 (taidng/UIT-ViQuAD2.0) ──
+  ⚠ /rows trả rỗng cho ViQuAD — fallback sang load_dataset(streaming)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  giữ 18,676 · bỏ 9,216 is_impossible
+→ ~/Documents/learn/nn-aivie/data/sft/sft_train.jsonl: 18,489 · ~/Documents/learn/nn-aivie/data/sft/sft_val.jsonl: 187 (stride 100)

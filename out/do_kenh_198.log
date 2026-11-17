@@ -1,0 +1,15 @@
+############ kênh=typed_first · 198 bộ ############
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=typed_first
+═══ VẾ 3 · thu hồi trên 198 bộ lớp CỤ THỂ
+   THẬT      : 196 bộ · top-1 0.5% · top-5 2.6% · top-10 4.1%
+   HOÁN VỊ   : 196 bộ · top-1 0.5% · top-5 1.5% · top-10 3.1%
+############ kênh=cooc · 198 bộ ############
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=cooc
+═══ VẾ 3 · thu hồi trên 198 bộ lớp CỤ THỂ
+   THẬT      : 196 bộ · top-1 0.5% · top-5 2.6% · top-10 4.1%
+   HOÁN VỊ   : 196 bộ · top-1 2.0% · top-5 2.6% · top-10 4.1%
+############ kênh=mixed · 198 bộ ############
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=mixed
+═══ VẾ 3 · thu hồi trên 198 bộ lớp CỤ THỂ
+   THẬT      : 196 bộ · top-1 1.0% · top-5 2.6% · top-10 4.6%
+   HOÁN VỊ   : 196 bộ · top-1 1.0% · top-5 2.6% · top-10 5.1%

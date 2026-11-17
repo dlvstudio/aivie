@@ -1,0 +1,13 @@
+{
+ "id": "13_excel",
+ "cat": "excel",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Trong Excel, sheet DonHang có cột A = Mã SP, B = Số lượng; sheet BangGia có cột A = Mã SP, B = Đơn giá. Tôi cần (1) công thức cột C của DonHang lấy đơn giá theo mã, (2) cột D thành tiền, (3) ô tổng doanh thu chỉ của mã bắt đầu bằng 'SP0'. Cho công thức cụ thể.",
+   "text": "Để thực hiện yêu cầu của bạn, tôi sẽ hướng dẫn bạn sử dụng các hàm Excel sau:\n\n1. Công thức lấy đơn giá từ sheet BangGia dựa trên Mã SP:\n\n   Trong cột C của sheet DonHang, hãy nhập công thức sau vào ô C2:\n   \n   =VLOOKUP(A2, 'BangGia'!A:B, 2, FALSE)\n\n   Giải thích: VLOOKUP tìm kiếm giá trị trong cột A của sheet BangGia (mã sản phẩm) và trả về giá trị tương ứng trong cột B (đơn giá).\n\n2. Công thức tính thành tiền từ Số lượng và Đơn giá:\n\n   Trong cột D của sheet DonHang, hãy nhập công thức sau vào ô D2:\n   \n   =B2 * C2\n\n   Giải thích: Đây là phép nhân đơn giản để tính tổng tiền cho mỗi hàng.\n\n3. Công thức tổng doanh thu chỉ của mã bắt đầu bằng 'SP0':\n\n   Để tính tổng doanh thu chỉ của các sản phẩm có Mã SP bắt đầu bằng 'SP0', bạn cần sử dụng hàm SUMIFS và wildcard (*). Trong một ô mới (ví dụ E1), hãy nhập công thức sau:\n   \n   =SUMIFS(D:D, A:A, \"SP0*\")\n\n   Giải thích: SUMIFS sẽ cộng tất cả các giá trị trong cột D mà khi đó Mã SP trong cột A bắt đầu bằng 'SP0' và kết thúc với bất kỳ ký tự nào (thông qua wildcard *).\n\nLưu ý:\n- Đảm bảo rằng các mã sản phẩm (cột A) đều được định dạng giống nhau trên cả hai sheet.\n- Nếu bạn muốn áp dụng công thức cho tất cả hàng trong danh sách, hãy kéo và thả các con trỏ chéo từ góc ô C2 hoặc D2 xuống dưới.",
+   "tokens": 392,
+   "sec": 8.5
+  }
+ ]
+}

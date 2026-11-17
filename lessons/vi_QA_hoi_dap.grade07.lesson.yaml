@@ -1,0 +1,74 @@
+lesson_id: vi_grade7_qa
+grade: 7
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: Phương trình bậc hai có dạng gì ? Đáp: Phương trình bậc hai ax bình c bx c bằng 0."
+  - "Hỏi: Delta bằng gì ? Đáp: Delta b bình trừ 4ac."
+  - "Hỏi: Định lý Pythagore là gì ? Đáp: Định lý Pythagore a bình c bình bằng c bình."
+  - "Hỏi: sin góc B bằng gì trong tam giác vuông ? Đáp: sin b bằng đối chia huyền."
+  - "Hỏi: Xác suất nằm trong khoảng nào ? Đáp: Xác suất nằm trong đoạn 0 đến 1."
+  - "Hỏi: cos góc B bằng gì ? Đáp: cos b bằng kề chia huyền."
+  - "Hỏi: tan góc B bằng gì ? Đáp: tan b bằng đối chia kề."
+  - "Hỏi: Delta dương thì có mấy nghiệm ? Đáp: Delta dương thì hai nghiệm phân biệt."
+  - "Hỏi: Delta bằng 0 thì nghiệm thế nào ? Đáp: Delta bằng 0 thì nghiệm kép."
+  - "Hỏi: Cạnh nào dài nhất trong tam giác vuông ? Đáp: Tam giác vuông có cạnh huyền dài nhất."
+  - "Hỏi: Xác suất tính thế nào ? Đáp: Xác suất bằng số trường hợp thuận chia tổng."
+  - "Hỏi: Megacity là thành phố có bao nhiêu dân ? Đáp: Megacity trên 10 triệu dân."
+  - "Hỏi: Cà phê robusta trồng nhiều ở đâu ? Đáp: Cà phê robusta ở Tây Nguyên."
+  - "Hỏi: Biến đổi khí hậu làm mực nước biển thế nào ? Đáp: Biến đổi khí hậu làm mực nước biển dâng."
+  - "Hỏi: Du lịch Phú Quốc thuộc loại hình gì ? Đáp: Du lịch biển đảo Phú Quốc."
+  - "Hỏi: Địa lý dân cư nghiên cứu gì ? Đáp: Địa lý dân cư nghiên cứu phân bố dân số."
+  - "Hỏi: Cá tra basa xuất khẩu từ đâu ? Đáp: Cá tra basa xuất khẩu từ Mekong."
+  - "Hỏi: Gạo xuất khẩu từ vùng nào ? Đáp: Gạo xuất khẩu từ đồng bằng."
+  - "Hỏi: Lũ lụt xảy ra ở đâu ? Đáp: Lũ lụt ở đồng bằng sông Cửu Long."
+  - "Hỏi: Hạn hán xảy ra ở đâu ? Đáp: Hạn hán ở Tây Nguyên."
+  - "Hỏi: Địa lý kinh tế nghiên cứu gì ? Đáp: Địa lý kinh tế nghiên cứu hoạt động kinh tế."
+  - "Hỏi: Hồ tiêu trồng ở đâu ? Đáp: Hồ tiêu ở miền Trung."
+  - "Hỏi: Văn Lang là gì ? Đáp: Văn Lang là nhà nước sơ khai."
+  - "Hỏi: Văn Miếu Quốc Tử Giám thành lập năm nào ? Đáp: Văn Miếu Quốc Tử Giám năm 1076."
+  - "Hỏi: Bộ luật Hồng Đức ban hành năm nào ? Đáp: Bộ luật Hồng Đức năm 1483."
+  - "Hỏi: Nguyễn Huệ đánh thắng ai ? Đáp: Nguyễn Huệ đại phá quân Thanh."
+  - "Hỏi: Việt Nam thống nhất năm nào ? Đáp: Thống nhất đất nước 1975."
+  - "Hỏi: Âu Lạc do ai lập ? Đáp: Âu Lạc do An Dương Vương."
+  - "Hỏi: Nguyễn Trãi viết tác phẩm gì ? Đáp: Nguyễn Trãi viết Bình Ngô đại cáo."
+  - "Hỏi: Hội nghị Diên Hồng thể hiện gì ? Đáp: Hội nghị Diên Hồng đồng lòng."
+  - "Hỏi: Quang Trung làm gì ? Đáp: Quang Trung thống nhất giang sơn."
+  - "Hỏi: Ngô Quyền giành độc lập năm nào ? Đáp: Ngô Quyền độc lập năm 938."
+  - "Hỏi: Văn hóa Đông Sơn có gì ? Đáp: Văn hóa Đông Sơn có trống đồng."
+  - "Hỏi: Ti thể làm gì ? Đáp: Ti thể tạo ATP."
+  - "Hỏi: Gen trội và gen lặn do ai phát hiện ? Đáp: Di truyền học Mendel."
+  - "Hỏi: Tim người có mấy buồng ? Đáp: Tim có bốn buồng."
+  - "Hỏi: Insulin điều hòa gì ? Đáp: Insulin điều hòa đường huyết."
+  - "Hỏi: Công suất điện bằng gì ? Đáp: Công suất điện P bằng U nhân I."
+  - "Hỏi: Nhân tế bào chứa gì ? Đáp: Nhân chứa ADN."
+  - "Hỏi: Thận làm gì ? Đáp: Thận lọc máu tạo nước tiểu."
+  - "Hỏi: Gan làm gì ? Đáp: Gan chuyển hóa chất."
+  - "Hỏi: Kháng sinh diệt gì ? Đáp: Kháng sinh diệt vi khuẩn."
+  - "Hỏi: Giảm phân tạo gì ? Đáp: Giảm phân tạo giao tử."
+  - "Hỏi: Nhiệt truyền theo chiều nào ? Đáp: Nhiệt lượng truyền từ nóng sang lạnh."
+  - "Hỏi: Công dân được bầu cử từ bao nhiêu tuổi ? Đáp: Công dân có quyền bầu cử từ 18 tuổi."
+  - "Hỏi: Hiến pháp hiện hành ban hành năm nào ? Đáp: Hiến pháp 2013 là hiến pháp hiện hành."
+  - "Hỏi: Chủ tịch nước là ai trong nhà nước ? Đáp: Chủ tịch nước là người đứng đầu nhà nước."
+  - "Hỏi: ASEAN hướng tới cộng đồng gì ? Đáp: ASEAN cộng đồng chính trị kinh tế."
+  - "Hỏi: Phòng chống ma túy ở trường là gì ? Đáp: Phòng chống ma túy học đường bảo vệ học sinh."
+  - "Hỏi: Quốc hội do ai bầu ? Đáp: Quốc hội do nhân dân bầu ra."
+  - "Hỏi: Thủ tướng làm gì ? Đáp: Thủ tướng điều hành Chính phủ."
+  - "Hỏi: Tòa án nhân dân xét xử thế nào ? Đáp: Tòa án nhân dân xét xử độc lập."
+  - "Hỏi: Trẻ em có quyền gì ? Đáp: Trẻ em có quyền được bảo vệ."
+  - "Hỏi: Mặt trận Tổ quốc làm gì ? Đáp: Mặt trận Tổ quốc đoàn kết dân tộc."

@@ -1,0 +1,96 @@
+[0s] load checkpoints/network_v11_coref_smoke_v3.pkl (gc.disable) …
+[69s] ✓ loaded · coref edges 11,673 · after_role 44,550
+
+═══ TOP 30 cạnh coref (SIG-nhắc-lại → SIG-antecedent) — đọc tay khuôn ═══
+
+  [0] «<ENT> <ENT> <ENT> ! [ENT] Ġphút Ġnày , Ġhết»
+      → «Ġtiếng Ġcủa Ġhắn ! [ENT] Ġphút Ġnày , ĠVô» · after_role='Ġphút'
+
+  [1] «<ENT> <ENT> <ENT> , [ENT] , Ġhay Ġmiền <ENT>»
+      → «<ENT> Ġđồng Ġbằng Ġsông [ENT] Ġ( còn Ġđược Ġgọi» · after_role=','
+
+  [2] «<ENT> <ENT> <ENT> , [ENT] , Ġđứng Ġtại Ġmột»
+      → «<ENT> Ġmột Ġđêm , [ENT] Ġđều Ġtại Ġtruy Ġtra» · after_role=','
+
+  [3] «<ENT> <ENT> <ENT> , [ENT] . <ENT> <ENT> <ENT>»
+      → «3 Ġtỉnh Ġthành Ġcủa [ENT] Ġvà Ġlà Ġđơn Ġvị» · after_role='.'
+
+  [4] «<ENT> <ENT> <ENT> , [ENT] . <ENT> " Chẳng»
+      → «Ġđánh Ġgiá Ġđối Ġdiện [ENT] , Ġ" Đại Ġlão» · after_role='.'
+
+  [5] «<ENT> <ENT> <ENT> , [ENT] . <ENT> Ġtừng Ġlà»
+      → «Ġđô <ENT> ) Ġcủa [ENT] Ġdưới Ġtriều <ENT> <ENT>» · after_role='.'
+
+  [6] «<ENT> <ENT> <ENT> , [ENT] . ĊĊ Năm Ġ2»
+      → «Ġđơn Ġvị Ġhành Ġchính [ENT] Ġđông Ġthứ Ġ2 1» · after_role='.'
+
+  [7] «<ENT> <ENT> <ENT> , [ENT] . ĊĊ Địa Ġlý»
+      → «Ġở Ġphía Ġđông Ġbắc [ENT] , Ġcó Ġvị Ġtrí» · after_role='.'
+
+  [8] «<ENT> <ENT> <ENT> , [ENT] . ĊĊ Quận Ġcó»
+      → «Ġcủa Ġngười <ENT> Ġở [ENT] . ĊĊ Địa Ġlý» · after_role='.'
+
+  [9] «<ENT> <ENT> <ENT> , [ENT] . ĊĊ Quận Ġ5»
+      → «Ġcủa Ġngười <ENT> Ġở [ENT] . ĊĊ Địa Ġlý» · after_role='.'
+
+  [10] «<ENT> <ENT> <ENT> , [ENT] Ġcó Ġthể Ġcảm Ġnhận»
+      → «Ġtrên Ġđường . Ġ- [ENT] Ġtôi Ġsợ . .» · after_role='Ġcó'
+
+  [11] «<ENT> <ENT> <ENT> , [ENT] Ġcũng Ġbiết Ġtình ,»
+      → «Ġvậy Ġsẽ Ġphải Ġđối [ENT] Ġsưu Ġhồn Ġmới Ġbiết» · after_role='Ġcũng'
+
+  [12] «<ENT> <ENT> <ENT> , [ENT] Ġlại Ġcó Ġnhiều Ġđiểm»
+      → «. <ENT> Ġđó , [ENT] Ġvà <ENT> <ENT> <ENT>» · after_role='Ġlại'
+
+  [13] «<ENT> <ENT> <ENT> , [ENT] Ġ( <0xE6> <0x9F> <0xB3>»
+      → «<ENT> Ġ( ) Ġhay [ENT] Ġcông Ġchúa Ġ( )» · after_role='Ġ('
+
+  [14] «<ENT> <ENT> <ENT> , [ENT] Ġcùng Ġbăng Ġnhóm Ġphạm»
+      → «0 0 3 , [ENT] Ġbị Ġtòa Ġán Ġxử» · after_role='Ġcùng'
+
+  [15] «<ENT> <ENT> <ENT> , [ENT] Ġtrên Ġngười <ENT> Ġgiai»
+      → «Ġmẫu Ġphù Ġgiao Ġcho [ENT] , <ENT> <ENT> <ENT>» · after_role='Ġtrên'
+
+  [16] «<ENT> <ENT> <ENT> , [ENT] Ġmặt Ġnạ , <ENT>»
+      → «<ENT> Ġmặt Ġnạ , [ENT] Ġthần Ġbào , Ġchỉ» · after_role='Ġmặt'
+
+  [17] «<ENT> <ENT> <ENT> , [ENT] Ġđều Ġhốt Ġhoảng .»
+      → «Ġmắt Ġphim Ġmới Ġcủa [ENT] , <ENT> <ENT> <ENT>» · after_role='Ġđều'
+
+  [18] «<ENT> <ENT> <ENT> , [ENT] Ġtương Ġđội , Ġmột»
+      → «Ġvà Ġvũ Ġcông Ġngười [ENT] . Ċ Đó Ġlà» · after_role='Ġtương'
+
+  [19] «<ENT> <ENT> <ENT> , [ENT] Ġlão , Ġcòn Ġcó»
+      → «Ġnày Ġxuất Ġhiện , [ENT] Ġlão Ġcùng Ġcái Ġkia» · after_role='Ġlão'
+
+  [20] «<ENT> <ENT> <ENT> , [ENT] Ġđóng Ġvai Ġtrò Ġthẩm»
+      → «<ENT> ; <ENT> - [ENT] ; <ENT> - <ENT>» · after_role='Ġđóng'
+
+  [21] «<ENT> <ENT> <ENT> , [ENT] Ġthở Ġdài , Ġnói»
+      → «<ENT> <ENT> <ENT> Ġcùng [ENT] Ġđi Ġra Ġngoài ,» · after_role='Ġthở'
+
+  [22] «<ENT> <ENT> <ENT> , [ENT] Ġdiệt Ġvong . Ċ»
+      → «<ENT> <ENT> Ġcủa Ġnước [ENT] , Ġbắt Ġgiữ <ENT>» · after_role='Ġdiệt'
+
+  [23] «<ENT> <ENT> <ENT> , [ENT] Ġdời Ġđô Ġđã Ġkhẳng»
+      → «<0xA9> <0x94> ) Ġtức [ENT] Ġdời Ġđô Ġlà Ġmột» · after_role='Ġdời'
+
+  [24] «<ENT> <ENT> <ENT> , [ENT] Ġquấn Ġkhăn Ġtắm Ġtừ»
+      → «Ġthoại , Ġliền Ġôm [ENT] Ġlăn Ġlên Ġgiường .» · after_role='Ġquấn'
+
+  [25] «<ENT> <ENT> <ENT> , [ENT] Ġchích Ġquái Ġviết :»
+      → «Ġđề Ġcập Ġtrong Ġtruyện [ENT] Ġchích Ġquái . ĊĊ» · after_role='Ġchích'
+
+  [26] «<ENT> <ENT> <ENT> . [ENT] " Ba Ġtrăm ?»
+      → «Ġnhiều Ġít ? " [ENT] " Ba Ġtrăm ,» · after_role='"'
+
+  [27] «<ENT> <ENT> <ENT> . [ENT] Ġlà Ġmột Ġthành Ġphố»
+      → «0 0 4 Ġnày [ENT] Ġăn Ġmừng Ġkỷ Ġniệm» · after_role='Ġlà'
+
+  [28] «<ENT> <ENT> <ENT> . [ENT] Ġlà Ġtương Ġtự Ġnhư»
+      → «Ġtới Ġvùng Ġcực . [ENT] Ġđôi Ġkhi Ġcòn Ġđược» · after_role='Ġlà'
+
+  [29] «<ENT> <ENT> <ENT> . [ENT] Ġcùng <ENT> <ENT> <ENT>»
+      → «Ġgọi Ġđiện Ġthoại . [ENT] Ġcúp Ġđiện Ġthoại ,» · after_role='Ġcùng'
+
+[93s] → CỔNG: ≥ ~7/10 cạnh khuôn hợp lý (nhắc-lại→giới-thiệu) ⇒ P3.2. Loạn/rỗng ⇒ xem occurrence-detect / SIG-width / purity (RUNBOOK §6).

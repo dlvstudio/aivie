@@ -1,0 +1,49 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "ws_model": "out/models/ws_crf_uts_full",
+ "n_prompt": 60,
+ "sinh": {
+  "n": 41,
+  "n_bo": 69,
+  "ly_do_bo": {
+   "cat_giua_am_tiet": 69
+  },
+  "dinh_trai": 0.34146341463414637,
+  "dinh_phai": 0.3170731707317073,
+  "co_ws": 0.17073170731707318
+ },
+ "that": {
+  "n": 234,
+  "n_bo": 113,
+  "ly_do_bo": {
+   "cat_giua_am_tiet": 113
+  },
+  "dinh_trai": 0.3333333333333333,
+  "dinh_phai": 0.021367521367521368,
+  "co_ws": 0.008547008547008548
+ },
+ "tach": 0.16218469877006464,
+ "n_benh": 4,
+ "do_nhay": 0.5,
+ "n_lanh": 37,
+ "bao_nham": 0.13513513513513514,
+ "gate": {
+  "min_n": 300,
+  "sep_min": 0.08,
+  "recall_min": 0.5,
+  "fp_max": 0.15
+ },
+ "gate_pass": false,
+ "vi_du_bat_duoc": [
+  "' nhân dân' ⇒ ' dân số'",
+  "' tối đa' ⇒ ' đa số'"
+ ],
+ "vi_du_bao_nham": [
+  "' quốc gia' ⇒ ' gia vị'",
+  "' đảo chính' ⇒ ' chính quyền'",
+  "' Thuận Hải' ⇒ ' Hải Phòng'",
+  "' nhật thực' ⇒ ' thực dân'",
+  "' Hoàng Quốc' ⇒ ' Quốc Tử'"
+ ],
+ "seconds": 9.0
+}

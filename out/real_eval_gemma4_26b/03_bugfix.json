@@ -1,0 +1,13 @@
+{
+ "id": "03_bugfix",
+ "cat": "debug",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Code này chạy sai: gọi them_mon('trà') rồi them_mon('cà phê') ở hai đơn hàng khác nhau mà đơn sau lại có cả trà. Sửa giúp tôi và giải thích lỗi.\n\n```python\ndef them_mon(mon, don_hang=[]):\n    don_hang.append(mon)\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```",
+   "text": "### 1. Giải thích lỗi: \"Mutable Default Argument\"\n\nLỗi bạn gặp phải là một lỗi cực kỳ phổ biến trong Python, được gọi là **\"Mutable Default Argument\"** (Tham số mặc định là kiểu dữ liệu có thể thay đổi).\n\n**Tại sao nó lại xảy ra?**\nTrong Python, các tham số mặc định (như `don_hang=[]`) chỉ được khởi tạo **duy nhất một lần** tại thời điểm hàm được **định nghĩa**, chứ không phải mỗi khi hàm được gọi.\n\nKhi bạn viết `don_hang=[]`, Python tạo ra một danh sách trống trong bộ nhớ và gắn nó vào hàm đó.\n1. **Lần gọi 1 (`them_mon('trà')`):** Bạn không truyền gì cho `don_hang`, nên Python dùng cái danh sách mặc định đó. Bạn thêm `'trà'` vào $\\rightarrow$ Danh sách mặc định bây giờ là `['trà']`.\n2. **Lần gọi 2 (`them_mon('cà phê')`):** Bạn lại không truyền gì, Python tiếp tục lấy đúng cái danh sách \"đã có trà\" đó ra để dùng. Bạn thêm `'cà phê'` vào $\\rightarrow$ Danh sách mặc định trở thành `['trà', 'cà phê']`.\n\nVì vậy, `don1` và `don2` thực chất đều đang trỏ cùng vào một địa chỉ ô nhớ của danh sách mặc định này.\n\n---\n\n### 2. Cách sửa đúng\n\nCách chuẩn mực nhất để xử lý vấn đề này trong Python là đặt giá trị mặc định là `None`, sau đó kiểm tra bên trong hàm. Như vậy, mỗi khi hàm được gọi mà không có tham số thứ hai, một danh sách mới hoàn toàn sẽ được tạo ra.\n\n```python\ndef them_mon(mon, don_hang=None):\n    # Nếu don_hang là None (tức là người dùng không truyền gì vào)\n    # thì ta khởi tạo một danh sách mới ngay tại đây\n    if don_hang is None:\n        don_hang = []\n    \n    don_hang.append(mon)\n    return don_hang\n\n# Chạy thử nghiệm\ndon1 = them_mon('trà')\nprint(f\"Đơn 1: {don1}\") # Kết quả: ['trà']\n\ndon2 = them_mon('cà phê')\nprint(f\"Đơn 2: {don2}\") # Kết quả: ['cà phê'] (Đã đúng!)\n\n# Kiểm tra nếu truyền thêm danh sách có sẵn\ndon3 = them_mon('bánh mì', don1)\nprint(f\"Đơn 3 (thêm vào đơn 1): {don3}\") # Kết quả: ['trà', 'bánh mì']\n```\n\n### Tóm tắt quy tắc cần nhớ:\n* **KHÔNG BAO GIỜ** dùng các kiểu dữ liệu có thể thay đổi (mutable) như `list`, `dict`, `set` làm giá trị mặc định cho tham số hàm.\n* **LUÔN LUÔN** sử dụng `None` làm giá trị mặc định nếu bạn muốn khởi tạo một danh sách hoặc từ điển mới mỗi khi gọi hàm.",
+   "tokens": 1393,
+   "sec": 23.4
+  }
+ ]
+}

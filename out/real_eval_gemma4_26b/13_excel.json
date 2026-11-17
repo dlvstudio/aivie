@@ -1,0 +1,13 @@
+{
+ "id": "13_excel",
+ "cat": "excel",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Trong Excel, sheet DonHang có cột A = Mã SP, B = Số lượng; sheet BangGia có cột A = Mã SP, B = Đơn giá. Tôi cần (1) công thức cột C của DonHang lấy đơn giá theo mã, (2) cột D thành tiền, (3) ô tổng doanh thu chỉ của mã bắt đầu bằng 'SP0'. Cho công thức cụ thể.",
+   "text": "Chào bạn, dưới đây là các công thức cụ thể để giải quyết yêu cầu của bạn trong Excel.\n\nGiả sử dữ liệu của bạn bắt đầu từ dòng thứ **2** (dòng 1 là tiêu đề).\n\n### 1. Công thức cột C của sheet `DonHang` (Lấy đơn giá)\nBạn có thể dùng hàm `VLOOKUP` để tìm kiếm giá trị dựa trên Mã SP.\n\nTại ô **C2** của sheet `DonHang`, bạn nhập công thức:\n```excel\n=VLOOKUP(A2, BangGia!$A:$B, 2, 0)\n```\n*Hoặc nếu bạn dùng Excel đời mới (Office 365/Excel 2021), dùng **XLOOKUP** sẽ chuyên nghiệp hơn:*\n```excel\n=XLOOKUP(A2, BangGia!$A:$A, BangGia!$B:$B)\n```\n\n**Giải thích:**\n* `A2`: Mã SP cần tìm ở sheet hiện tại.\n* `BangGia!$A:$B`: Vùng dữ liệu bên sheet Bảng giá (cố định cột A và B).\n* `2`: Lấy dữ liệu ở cột thứ 2 (cột Đơn giá).\n* `0`: Tìm kiếm chính xác tuyệt đối.\n\n*Lưu ý: Nếu mã SP không tồn tại trong bảng giá, công thức sẽ báo lỗi `#N/A`. Để đẹp hơn, bạn có thể dùng:* `=IFERROR(VLOOKUP(A2, BangGia!$A:$B, 2, 0), 0)` (nếu không thấy thì hiện số 0).\n\n---\n\n### 2. Công thức cột D của sheet `DonHang` (Thành tiền)\nTại ô **D2** của sheet `DonHang`, bạn nhập:\n```excel\n=B2 * C2\n```\n*(Sau đó kéo công thức xuống cho các dòng còn lại).*\n\n---\n\n### 3. Ô tính tổng doanh thu chỉ của mã bắt đầu bằng 'SP0'\nBạn có thể đặt công thức này ở bất kỳ ô trống nào (ví dụ ô E1 hoặc một sheet khác). Sử dụng hàm `SUMIF` kết hợp với ký tự đại diện `*`.\n\n```excel\n=SUMIF(A:A, \"SP0*\", D:D)\n```\n\n**Giải thích:**\n* `A:A`: Vùng điều kiện (cột Mã SP).\n* `\"SP0*\"`: Điều kiện là mã phải bắt đầu bằng cụm \"SP0\" và theo sau là bất kỳ ký tự nào (dấu `*` là ký tự đại diện).\n* `D:D`: Vùng cần tính tổng (cột Thành tiền).\n\n---\n\n### Tóm tắt bảng công thức cho bạn dễ nhìn:\n\n| Cột | Nội dung | Công thức tại dòng 2 |\n| :--- | :--- | :--- |\n| **A** | Mã SP | *(Nhập tay)* |\n| **B** | Số lượng | *(Nhập tay)* |\n| **C** | Đơn giá | `=VLOOKUP(A2, BangGia!$A:$B, 2, 0)` |\n| **D** | Thành tiền | `=B2*C2` |\n| **Tổng SP0** | **Doanh thu** | `=SUMIF(A:A, \"SP0*\", D:D)` |",
+   "tokens": 1369,
+   "sec": 20.9
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "id": "03_bugfix",
+ "cat": "debug",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Code này chạy sai: gọi them_mon('trà') rồi them_mon('cà phê') ở hai đơn hàng khác nhau mà đơn sau lại có cả trà. Sửa giúp tôi và giải thích lỗi.\n\n```python\ndef them_mon(mon, don_hang=[]):\n    don_hang.append(mon)\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```",
+   "text": "Lỗi trong đoạn mã của bạn là do việc sử dụng một biến toàn cục `don_hang` mà không có cách quản lý trạng thái cho từng đơn hàng riêng biệt. Khi có cách để biết đơn hàng thứ hai được thêm món trà, vì nó đang trỏ đến cùng một danh sách.\n\nĐể sửa lỗi này, chúng ta cần sử dụng một đối tượng để lưu trữ thông tin cho từng đơn hàng. Một cách hiệu quả là sử dụng một list của dict:\n\n```python\ndef them_mon(mon, don_hang=[]):\n    # Nếu don_hang là mảng rỗng, khởi tạo nó với một dict mới\n    if not don_hang:\n        don_hang.append({})\n    # Thêm món vào đơn hàng hiện tại\n    don_hang[-1][mon] = True  # Đánh dấu đã thêm món\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```\n\nGiải thích:\n\n1. **Khai báo `don_hang`**: Mặc định, `don_hang` là một list rỗng. Nếu không được truyền vào giá trị cho `don_hang`, nó sẽ khởi tạo với một dict mới.\n\n2. **Thêm món vào đơn hàng**:\n   - Sử dụng `don_hang[-1]` để truy cập vào đơn hàng cuối cùng trong danh sách.\n   - Thêm món vào dict này bằng cách sử dụng `mon: True`. Điều này đánh dấu rằng đã thêm món đó vào đơn hàng.\n\n3. **Trả về danh sách đơn hàng**:\n   - Trả về danh sách đơn hàng chứa cả don1 và don2, mỗi đơn hàng có thể chứa nhiều món khác nhau.\n\nBây giờ, khi bạn chạy đoạn mã này, `don2` sẽ chỉ bao gồm món cà phê mà không có trà vì trà đã được thêm vào `don1`.",
+   "tokens": 405,
+   "sec": 4.6
+  }
+ ]
+}

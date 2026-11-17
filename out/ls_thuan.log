@@ -1,0 +1,44 @@
+[     0.0s] === load_loai_suy START (pid=20695) → out/logs/load_loai_suy_20260815_192940.log ===
+[     0.0s] load checkpoint checkpoints/loai_suy.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.2s] ✓ adjacency  (0.9s)
+[     1.2s] ▶ embedding
+[     1.3s] ✓ embedding  (0.0s)
+[     1.3s] ▶ parents
+[     1.3s] parents: deserialize 37667 records …
+[     1.3s] parents 5000/37667 (13.3%)
+[     1.3s] parents 10000/37667 (26.5%)
+[     1.4s] parents 15000/37667 (39.8%)
+[     1.4s] parents 20000/37667 (53.1%)
+[     1.5s] parents 25000/37667 (66.4%)
+[     1.6s] parents 30000/37667 (79.6%)
+[     1.6s] parents 35000/37667 (92.9%)
+[     2.2s] ▶ rebuild_hierarchical_index …
+[     2.3s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.7s]     resync match_ids: 37667/37667 cha (df dựng lại)
+[     2.7s] ✓ parents  (1.4s)
+[     2.7s] ✓ loaded: vocab=32002 parents=37667 E=(32002, 96)
+[     2.7s] sidecar thiếu → migrate: loai_suy.content.pkl
+[     2.7s] ✓ load_checkpoint XONG
+
+### checkpoints/loai_suy.pkl · 37667 cha · 382 bộ · chuỗi THUẦN
+
+  382 bộ chấm được
+  THU HỒI m3:  top-1   0.3%  ·  top-5   2.1%  ·  top-10   6.0%
+  (đối chiếu) LỚP đúng trong top-10: 5.2%
+
+  8 bộ đầu:
+     «muốt như loài ___» giữ lại='bánh' lớp='loại' → ['loài', 'con', 'chúng', 'tảng', 'công', 'ISDN']
+     «thuận như loài ___» giữ lại='băng' lớp='loài' → ['Pháp', 'được', 'Anh', 'bất', 'Ayu', 'cả']
+     «đườn như loài ___» giữ lại='bàn tay' lớp='phần' → ['chúng', 'tảng', 'đặc', 'lời', 'bổ', 'công']
+     «quắn như loài ___» giữ lại='bãi' lớp='khoảng' → ['loài', 'sản', 'được', 'chúng', 'tảng', 'Sa']
+     «vênh như loài ___» giữ lại='bánh lái' lớp='bộ phận' → ['chúng', 'tảng', 'Trung', 'Tây', 'Đông', 'lời']
+     «thượng như loài ___» giữ lại='bí' lớp='cây' → ['chúng', 'tảng', 'lời', 'loài', 'máy', 'ngành']
+     «trung như loài ___» giữ lại='bùa' lớp='vật' → ['La', 'cảng', 'chúng', 'tảng', 'loài', 'Phnôm']
+     «khái như loài ___» giữ lại='bàn chải' lớp='đồ dùng' → ['chùng', 'tích', 'chúng', 'tảng', 'loài', 'Moskva']
+
+[31s] xong

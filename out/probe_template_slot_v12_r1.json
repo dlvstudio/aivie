@@ -1,0 +1,42 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_parent": 592,
+ "khe": 8982,
+ "khe_thay_duoc": 5405,
+ "to_hop_moi_log10": 6.635476025886861,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 5405,
+   "hep": 0.3883441258094357,
+   "chu_de": 0.967622571692877
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 5405,
+   "hep": 0.015911193339500463,
+   "chu_de": 0.5400555041628122
+  }
+ },
+ "ty_so_chu_de": 1.7917094895512162,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0,
+  "narrow_min": 0.5
+ },
+ "gate_pass": false,
+ "vi_du": [
+  "' góc độ,'  →  thay ' độ' bằng ' vuông'",
+  "', trình bày'  →  thay ' trình' bằng ' còn'",
+  "' trình bày liên'  →  thay ' bày' bằng ' PowerPoint'",
+  "' bày liên quan'  →  thay ' liên' bằng ' trực'",
+  "' liên quan với'  →  thay ' quan' bằng ' doanh'",
+  "', nước Anh'  →  thay ' nước' bằng ' tiếng'",
+  "' tốt nhất là'  →  thay ' nhất' bằng ' xấu'",
+  "' là giao ra'  →  thay ' giao' bằng ' tản'",
+  "' ra lực lượng'  →  thay ' lực' bằng ' khối'",
+  "' lượng hạt nhân'  →  thay ' hạt' bằng ' địch'",
+  "' nhân thuộc về'  →  thay ' thuộc' bằng ' hướng'",
+  "' ở nước Mỹ'  →  thay ' nước' bằng ' Nam'"
+ ],
+ "seconds": 67.9
+}

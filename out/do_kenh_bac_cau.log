@@ -1,0 +1,24 @@
+ok
+################ kênh = typed_first ################
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=typed_first
+   «khoẻ như» ▸ khoẻ như voi .
+   «nhanh như» ▸ nhanh như sóc .
+   «khôn như» ▸ khôn như cáo .
+   THẬT      : 44 bộ · top-1 0.0% · top-5 4.5% · top-10 4.5%
+   HOÁN VỊ   : 44 bộ · top-1 0.0% · top-5 6.8% · top-10 6.8%
+################ kênh = cooc ################
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=cooc
+   «khoẻ như» ▸ khoẻ như voi .
+   «nhanh như» ▸ nhanh như sóc .
+   «khôn như» ▸ khôn như cáo .
+   THẬT      : 44 bộ · top-1 0.0% · top-5 2.3% · top-10 2.3%
+   HOÁN VỊ   : 44 bộ · top-1 0.0% · top-5 0.0% · top-10 0.0%
+################ kênh = mixed ################
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · KENH=mixed
+   «khoẻ như» ▸ khoẻ như voi .
+   «nhanh như» ▸ nhanh như sóc .
+   «khôn như» ▸ khôn như cáo .
+   THẬT      : 44 bộ · top-1 0.0% · top-5 0.0% · top-10 4.5%
+   HOÁN VỊ   : 44 bộ · top-1 0.0% · top-5 0.0% · top-10 0.0%
+
+[exited with code 0]

@@ -1,0 +1,130 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=32539) → out/logs/load_network_v12_sent_20260729_221937.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.3s] ✓ unpickle  (2.3s)
+[     2.3s] ▶ vocab (32002 token)
+[     2.4s] ✓ vocab (32002 token)  (0.0s)
+[     2.4s] ▶ adjacency
+[    11.1s] ✓ adjacency  (8.8s)
+[    11.1s] ▶ embedding
+[    11.2s] ✓ embedding  (0.1s)
+[    11.2s] ▶ parents
+[    11.2s] parents: deserialize 430447 records …
+[    11.2s] parents 5000/430447 (1.2%)
+[    11.3s] parents 10000/430447 (2.3%)
+[    11.3s] parents 15000/430447 (3.5%)
+[    11.4s] parents 20000/430447 (4.6%)
+[    11.4s] parents 25000/430447 (5.8%)
+[    11.5s] parents 30000/430447 (7.0%)
+[    11.5s] parents 35000/430447 (8.1%)
+[    11.5s] parents 40000/430447 (9.3%)
+[    11.6s] parents 45000/430447 (10.5%)
+[    11.6s] parents 50000/430447 (11.6%)
+[    11.7s] parents 55000/430447 (12.8%)
+[    11.7s] parents 60000/430447 (13.9%)
+[    11.8s] parents 65000/430447 (15.1%)
+[    11.8s] parents 70000/430447 (16.3%)
+[    11.8s] parents 75000/430447 (17.4%)
+[    11.9s] parents 80000/430447 (18.6%)
+[    11.9s] parents 85000/430447 (19.7%)
+[    12.0s] parents 90000/430447 (20.9%)
+[    12.0s] parents 95000/430447 (22.1%)
+[    12.0s] parents 100000/430447 (23.2%)
+[    12.1s] parents 105000/430447 (24.4%)
+[    12.1s] parents 110000/430447 (25.6%)
+[    12.2s] parents 115000/430447 (26.7%)
+[    12.2s] parents 120000/430447 (27.9%)
+[    12.3s] parents 125000/430447 (29.0%)
+[    12.3s] parents 130000/430447 (30.2%)
+[    12.4s] parents 135000/430447 (31.4%)
+[    12.4s] parents 140000/430447 (32.5%)
+[    12.5s] parents 145000/430447 (33.7%)
+[    12.5s] parents 150000/430447 (34.8%)
+[    12.6s] parents 155000/430447 (36.0%)
+[    12.7s] parents 160000/430447 (37.2%)
+[    12.8s] parents 165000/430447 (38.3%)
+[    12.8s] parents 170000/430447 (39.5%)
+[    12.9s] parents 175000/430447 (40.7%)
+[    13.0s] parents 180000/430447 (41.8%)
+[    13.0s] parents 185000/430447 (43.0%)
+[    13.1s] parents 190000/430447 (44.1%)
+[    13.2s] parents 195000/430447 (45.3%)
+[    13.3s] parents 200000/430447 (46.5%)
+[    13.3s] parents 205000/430447 (47.6%)
+[    13.4s] parents 210000/430447 (48.8%)
+[    13.5s] parents 215000/430447 (49.9%)
+[    13.6s] parents 220000/430447 (51.1%)
+[    13.7s] parents 225000/430447 (52.3%)
+[    13.7s] parents 230000/430447 (53.4%)
+[    13.8s] parents 235000/430447 (54.6%)
+[    13.9s] parents 240000/430447 (55.8%)
+[    14.0s] parents 245000/430447 (56.9%)
+[    14.1s] parents 250000/430447 (58.1%)
+[    14.2s] parents 255000/430447 (59.2%)
+[    14.2s] parents 260000/430447 (60.4%)
+[    14.3s] parents 265000/430447 (61.6%)
+[    14.4s] parents 270000/430447 (62.7%)
+[    14.5s] parents 275000/430447 (63.9%)
+[    14.6s] parents 280000/430447 (65.0%)
+[    14.7s] parents 285000/430447 (66.2%)
+[    14.7s] parents 290000/430447 (67.4%)
+[    14.8s] parents 295000/430447 (68.5%)
+[    14.9s] parents 300000/430447 (69.7%)
+[    15.0s] parents 305000/430447 (70.9%)
+[    15.1s] parents 310000/430447 (72.0%)
+[    15.2s] parents 315000/430447 (73.2%)
+[    15.2s] parents 320000/430447 (74.3%)
+[    15.3s] parents 325000/430447 (75.5%)
+[    15.4s] parents 330000/430447 (76.7%)
+[    15.5s] parents 335000/430447 (77.8%)
+[    15.6s] parents 340000/430447 (79.0%)
+[    15.6s] parents 345000/430447 (80.1%)
+[    15.7s] parents 350000/430447 (81.3%)
+[    15.8s] parents 355000/430447 (82.5%)
+[    15.9s] parents 360000/430447 (83.6%)
+[    16.0s] parents 365000/430447 (84.8%)
+[    16.1s] parents 370000/430447 (86.0%)
+[    16.2s] parents 375000/430447 (87.1%)
+[    16.3s] parents 380000/430447 (88.3%)
+[    16.4s] parents 385000/430447 (89.4%)
+[    16.4s] parents 390000/430447 (90.6%)
+[    16.5s] parents 395000/430447 (91.8%)
+[    16.6s] parents 400000/430447 (92.9%)
+[    16.7s] parents 405000/430447 (94.1%)
+[    16.8s] parents 410000/430447 (95.2%)
+[    16.8s] parents 415000/430447 (96.4%)
+[    16.9s] parents 420000/430447 (97.6%)
+[    17.0s] parents 425000/430447 (98.7%)
+[    17.0s] parents 430000/430447 (99.9%)
+[    29.2s] ▶ rebuild_hierarchical_index …
+[    30.8s] ✓ rebuild_hierarchical_index (1.6s)
+[    35.5s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    35.5s] ✓ parents  (24.3s)
+[    35.5s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    37.2s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    37.2s] ✓ load_checkpoint XONG
+[37s] ✓ E (32002, 96) · vocab 32,002
+
+======================================================================
+hàng chuẩn ≈ 0        : 4.32%  (1,382/32,002)
+chuẩn  min/trung vị/max: 0 / 0.6609 / 4.574
+cos cặp NGẪU NHIÊN    : trung bình +0.078 · |trung bình| 0.100   (gần 1 ⇒ sụp hạng)
+======================================================================
+
+LÁNG GIỀNG gần nhất (top 8) — phép thử đọc-tay, phân định chắc nhất:
+         ĠLý → ĠVũ(0.94) · ĠTrần(0.93) · ĠTriệu(0.93) · ĠLương(0.91) · ĠLưu(0.89) · ĠDiên(0.88) · ĠLâm(0.88) · ĠLạc(0.87)
+      ĠThăng → ĠLiêu(0.86) · ĠHậu(0.85) · ĠNghi(0.83) · ĠPhụng(0.83) · ĠTấn(0.82) · ĠSơn(0.82) · Lê(0.82) · ĠChiêm(0.81)
+       Ġsông → Ġbờ(0.91) · Ġvùng(0.85) · Ġthung(0.85) · Sông(0.85) · Ġbắc(0.85) · Ġbiển(0.83) · Ġdọc(0.83) · ĠSông(0.83)
+        Ġvua → ĠVua(0.90) · Ġtriều(0.85) · ĠChiêm(0.85) · Ġvương(0.84) · Ġhoàng(0.83) · Ġchúa(0.82) · Vua(0.81) · ĠJaya(0.80)
+       ĠViệt → ĠNam(0.88) · ĠTrung(0.83) · ĠQuốc(0.79) · Việt(0.79) · ĠCộng(0.74) · ĠKháng(0.73) · ĠDân(0.71) · ĠBộ(0.68)
+       ĠTrần → ĠVũ(0.96) · ĠLý(0.93) · ĠHoàng(0.90) · ĠLiễu(0.89) · ĠTrọng(0.89) · ĠThanh(0.88) · ĠKiệt(0.88) · ĠTriệu(0.88)
+        Ġnăm → Ġtháng(0.91) · Ġ1(0.86) · Ġngày(0.83) · Vào(0.83) · Ġthứ(0.80) · ĠVào(0.80) · ipia(0.79) · ĠGregory(0.78)
+         Ġđô → Ġphố(0.74) · ĠNăm(0.71) · Ġchiếm(0.68) · Ġquốc(0.67) · Ġkhu(0.67) · ĠKhu(0.65) · Thủ(0.64) · Ġthành(0.63)
+
+HỎNG nếu: nhiều hàng chuẩn ≈0, hoặc láng giềng vô nghĩa, hoặc cos ngẫu nhiên gần 1.
+LÀNH nếu: `Lý` gần `Trần`/`Thái`/`triều`… và cos ngẫu nhiên gần 0.
+Chuẩn MINI (embedding lành): hàng ≈0 69.26% · cos ngẫu nhiên +0.051
+  Lý → Thánh·Tông·vua·Thái·Lê | sông → chảy·Hồng·bồi·ngòi | đô → Lư·dời·Hoa·Kinh
+
+[50s] → out/diag_emb_v12.log

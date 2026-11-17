@@ -1,0 +1,84 @@
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[   25.0s RSS  0.52GB] nạp xong · parents=5664 vocab=32002
+[   25.1s RSS  0.57GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   25.2s RSS  0.57GB] ws_spans 0/400 · span=0 · bỏ=0
+[   25.8s RSS  0.57GB] 380 span · 0.0 phút
+[   25.8s RSS  0.57GB] ghi /tmp/mini_ws_spans.json (0.0 MB) · roundtrip OK
+[   25.8s RSS  0.57GB] mẫu span: 'k ép' · 'quan lại' · 'hành chính' · 'chiến lược' · 'tương tự' · 'hoạt động' · 'độc lập' · 'Nguyễn về' · 'lá dong' · 'Cửu Chân' · 'Băng Dương' · 'Lĩnh Biểu'
+[   25.8s RSS  0.57GB] span nghi rác: 0/380 = 0.0% (ISG: 57%)
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[   10.6s RSS  0.59GB] nạp xong · parents=5664 vocab=32002
+[   10.6s RSS  0.62GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   10.8s RSS  0.62GB] ws_spans 0/600 · span=0 · bỏ=0
+[   11.4s RSS  0.62GB] 596 span · 0.0 phút
+[   11.4s RSS  0.62GB] ghi /tmp/m2.json (0.0 MB) · roundtrip OK
+[   11.4s RSS  0.62GB]   mẫu[00] 'k ép'
+[   11.4s RSS  0.62GB]   mẫu[01] 'chính thức'
+[   11.4s RSS  0.62GB]   mẫu[02] 'hiện vật'
+[   11.4s RSS  0.62GB]   mẫu[03] 'đại hội'
+[   11.4s RSS  0.62GB]   mẫu[04] 'hình thành'
+[   11.4s RSS  0.62GB]   mẫu[05] 'chủ quyền'
+[   11.4s RSS  0.62GB]   mẫu[06] 'thần nhân'
+[   11.4s RSS  0.62GB]   mẫu[07] 'tác giả'
+[   11.4s RSS  0.62GB]   mẫu[08] 'trung tâm'
+[   11.4s RSS  0.62GB]   mẫu[09] 'thống nhất'
+[   11.4s RSS  0.62GB]   mẫu[10] 'phụ trách'
+[   11.4s RSS  0.62GB]   mẫu[11] 'máy bay'
+[   11.4s RSS  0.62GB]   mẫu[12] 'linh thiêng'
+[   11.4s RSS  0.62GB]   mẫu[13] 'an ninh'
+[   11.4s RSS  0.62GB]   mẫu[14] 'di tích'
+[   11.4s RSS  0.62GB]   mẫu[15] 'vùng đất'
+[   11.4s RSS  0.62GB]   mẫu[16] 'Thành ủy'
+[   11.4s RSS  0.62GB]   mẫu[17] 'Nguyễn Cửu'
+[   11.4s RSS  0.62GB]   mẫu[18] 'quần đảo'
+[   11.4s RSS  0.62GB]   mẫu[19] 'Đế Toàn'
+[   11.4s RSS  0.62GB]   mẫu[20] 'phó Tĩnh'
+[   11.4s RSS  0.62GB]   mẫu[21] 'hào trưởng'
+[   11.4s RSS  0.62GB]   mẫu[22] 'Đối với'
+[   11.4s RSS  0.62GB]   mẫu[23] 'Điện Bàn'
+[   11.4s RSS  0.62GB]   mẫu[24] 'Phú Xuân'
+[   11.4s RSS  0.62GB]   mẫu[25] 'Huy Thiềm'
+[   11.4s RSS  0.62GB]   mẫu[26] 'nghênh chiến'
+[   11.4s RSS  0.62GB]   mẫu[27] 'Chủ tịch'
+[   11.4s RSS  0.62GB]   mẫu[28] 'Việt Nam'
+[   11.4s RSS  0.62GB]   mẫu[29] 'XX III'
+[   11.4s RSS  0.62GB] span nghi rác (tự động): 28/596 = 4.7% (ISG: 57%)
+[   11.4s RSS  0.62GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[    5.0s RSS  1.00GB] nạp xong · parents=5664 vocab=32002
+[    5.0s RSS  1.00GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    5.1s RSS  1.00GB] ws_spans 0/800 · span=0 · bỏ=0
+[    5.6s RSS  1.00GB] 791 span · 0.0 phút
+[    5.6s RSS  1.00GB] ghi /tmp/mini.ws_spans.json (0.0 MB) · roundtrip OK
+[    5.6s RSS  1.00GB]   mẫu[00] 'k ép'
+[    5.6s RSS  1.00GB]   mẫu[01] 'chính sử'
+[    5.6s RSS  1.00GB]   mẫu[02] 'sự nghiệp'
+[    5.6s RSS  1.00GB]   mẫu[03] 'đại dương'
+[    5.6s RSS  1.00GB]   mẫu[04] 'hợp thành'
+[    5.6s RSS  1.00GB]   mẫu[05] 'bất kỳ'
+[    5.6s RSS  1.00GB]   mẫu[06] 'chiến thắng'
+[    5.6s RSS  1.00GB]   mẫu[07] 'thị trấn'
+[    5.6s RSS  1.00GB]   mẫu[08] 'văn hoá'
+[    5.6s RSS  1.00GB]   mẫu[09] 'chí hướng'
+[    5.6s RSS  1.00GB]   mẫu[10] 'đặc điểm'
+[    5.6s RSS  1.00GB]   mẫu[11] 'sợ hãi'
+[    5.6s RSS  1.00GB]   mẫu[12] 'diễn ca trù'
+[    5.6s RSS  1.00GB]   mẫu[13] 'di cư'
+[    5.6s RSS  1.00GB]   mẫu[14] 'vùng biển'
+[    5.6s RSS  1.00GB]   mẫu[15] 'Trường Sơn'
+[    5.6s RSS  1.00GB]   mẫu[16] 'Nguyễn Ánh'
+[    5.6s RSS  1.00GB]   mẫu[17] 'quần chúng'
+[    5.6s RSS  1.00GB]   mẫu[18] 'thắng cử'
+[    5.6s RSS  1.00GB]   mẫu[19] 'nghỉ mát'
+[    5.6s RSS  1.00GB]   mẫu[20] 'hào trưởng'
+[    5.6s RSS  1.00GB]   mẫu[21] 'hùng mạnh'
+[    5.6s RSS  1.00GB]   mẫu[22] 'Điện Bàn'
+[    5.6s RSS  1.00GB]   mẫu[23] 'thiệt mạng'
+[    5.6s RSS  1.00GB]   mẫu[24] 'Tất Liệt'
+[    5.6s RSS  1.00GB]   mẫu[25] 'Hiệp định'
+[    5.6s RSS  1.00GB]   mẫu[26] 'Thân sinh'
+[    5.6s RSS  1.00GB]   mẫu[27] 'De Long'
+[    5.6s RSS  1.00GB]   mẫu[28] 'Rõ ràng'
+[    5.6s RSS  1.00GB]   mẫu[29] 'Chức năng'
+[    5.6s RSS  1.00GB] span nghi rác (tự động): 36/791 = 4.6% (ISG: 57%)
+[    5.6s RSS  1.00GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

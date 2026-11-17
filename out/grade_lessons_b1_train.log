@@ -1,0 +1,63 @@
+[     0.0s] === train START (pid=79011) → out/logs/train_20260711_163458.log ===
+[     0.0s] ▶ graph trống (fresh)
+[     0.0s] ▶ train
+[     0.0s] ▶ [1/1] grade_lessons.jsonl priority=0.6
+[     0.0s] ▶ ingest grade_lessons.jsonl
+[     0.7s] ingest_text 100/100 (100.0%) — n=100
+[     1.2s] ingest_text 200/200 (100.0%) — n=200
+[     1.9s] ingest_text 300/300 (100.0%) — n=300
+[     2.5s] ingest_text 400/400 (100.0%) — n=400
+[    15.4s]     ISG: promote 500 clusters=500 pair_count=3
+[    18.9s]     skip_ledger record_parent 0/476
+[    19.0s] skip_ledger record_parent 25/476 (5.3%)
+[    19.0s] skip_ledger record_parent 50/476 (10.5%)
+[    19.2s] skip_ledger record_parent 75/476 (15.8%)
+[    19.3s] skip_ledger record_parent 100/476 (21.0%)
+[    19.3s] skip_ledger record_parent 125/476 (26.3%)
+[    19.4s] skip_ledger record_parent 150/476 (31.5%)
+[    19.4s] skip_ledger record_parent 175/476 (36.8%)
+[    19.5s] skip_ledger record_parent 200/476 (42.0%)
+[    19.6s] skip_ledger record_parent 225/476 (47.3%)
+[    19.6s] skip_ledger record_parent 250/476 (52.5%)
+[    19.7s] skip_ledger record_parent 275/476 (57.8%)
+[    19.8s] skip_ledger record_parent 300/476 (63.0%)
+[    19.8s] skip_ledger record_parent 325/476 (68.3%)
+[    19.9s] skip_ledger record_parent 350/476 (73.5%)
+[    20.0s] skip_ledger record_parent 375/476 (78.8%)
+[    20.1s] skip_ledger record_parent 400/476 (84.0%)
+[    20.1s] skip_ledger record_parent 425/476 (89.3%)
+[    20.2s] skip_ledger record_parent 450/476 (94.5%)
+[    20.2s] skip_ledger record_parent 475/476 (99.8%)
+[    20.2s]     skip_ledger materialize …
+[    20.2s] skip ledger cặp thô=11626 → spans=1359
+[    20.2s]     skip_ledger gán skip_span_ids 0/476
+[    20.3s] skip_ledger gán skip_span_ids 25/476 (5.3%)
+[    20.4s] skip_ledger gán skip_span_ids 50/476 (10.5%)
+[    20.5s] skip_ledger gán skip_span_ids 75/476 (15.8%)
+[    20.6s] skip_ledger gán skip_span_ids 100/476 (21.0%)
+[    20.6s] skip_ledger gán skip_span_ids 125/476 (26.3%)
+[    20.7s] skip_ledger gán skip_span_ids 150/476 (31.5%)
+[    20.7s] skip_ledger gán skip_span_ids 175/476 (36.8%)
+[    20.8s] skip_ledger gán skip_span_ids 200/476 (42.0%)
+[    20.9s] skip_ledger gán skip_span_ids 225/476 (47.3%)
+[    20.9s] skip_ledger gán skip_span_ids 250/476 (52.5%)
+[    20.9s] skip_ledger gán skip_span_ids 275/476 (57.8%)
+[    21.1s] skip_ledger gán skip_span_ids 300/476 (63.0%)
+[    21.1s] skip_ledger gán skip_span_ids 325/476 (68.3%)
+[    21.2s] skip_ledger gán skip_span_ids 350/476 (73.5%)
+[    21.3s] skip_ledger gán skip_span_ids 375/476 (78.8%)
+[    21.4s] skip_ledger gán skip_span_ids 400/476 (84.0%)
+[    21.4s] skip_ledger gán skip_span_ids 425/476 (89.3%)
+[    21.5s] skip_ledger gán skip_span_ids 450/476 (94.5%)
+[    21.5s] skip_ledger gán skip_span_ids 475/476 (99.8%)
+[    21.5s] ✓ skip_ledger materialize spans=1359 promoted=250
+[    21.5s] ✓ ingest grade_lessons.jsonl  (21.5s)
+[    21.5s] ▶ slot_hubs
+[    21.5s]   hubs=0 bindings=0
+[    21.5s] ▶ embedding
+[    22.1s]   E shape=(2158, 96)
+[    22.1s] ✓ train  (22.1s)
+[    22.1s] ingested: {'grade_lessons.jsonl': 476}
+[    22.1s] ▶ save
+[    22.4s] ✓ save  (0.3s)
+[    22.4s] ✓ saved /Users/dlv/Documents/code/nn-aivie/checkpoints/grade_lessons_b1_test.pkl

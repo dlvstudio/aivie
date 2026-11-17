@@ -1,0 +1,22 @@
+lesson_id: vi_grade3_progressive
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_dang_V
+slots:
+  - var: S
+  - const: "đang"
+  - var: V
+
+bind:
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Bé đang ngủ"
+  - "Mẹ đang nấu"
+  - "Em đang học"
+  - "Con mèo đang chạy"
+  - "Bố đang làm"

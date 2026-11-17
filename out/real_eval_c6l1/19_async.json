@@ -1,0 +1,12 @@
+{
+ "id": "19_async",
+ "cat": "py_async",
+ "turns": [
+  {
+   "user": "Viết code Python dùng asyncio + aiohttp tải song song nội dung 10 URL, tối đa 3 request cùng lúc, timeout 10 giây mỗi request, in ra URL nào lỗi.",
+   "text": "Đây là mã Python hoàn chỉnh để tải 10 URL đồng thời, hỗ trợ nhiều request cùng lúc và bắt lỗi timeout/tràn bộ nhớ đệm bằng aiohttp.\n\n```python\nimport asyncio\nimport aiohttp\nimport random\nfrom collections import deque\n\n# Danh sách 10 URL cần tải\nurls = [\n    \"https://example.com/a\",\n    \"https://example.com/b\",\n    \"https://example.com/c\",\n    \"https://example.com/d\",\n    \"https://example.com/e\",\n    \"https://example.com/f\",\n    \"https://example.com/g\",\n    \"https://example.com/h\",\n    \"https://example.com/i\",\n    \"https://example.com/j\",\n    \"https://example.com/k\"\n]\n\n# Deque giúp hàng đợi (queues) để tối ưu performance\ndeques = deque(urls)\n\ndef fetch_url(source):\n    try:\n        # Asyncio sử dụng readall(), aiohttp readline() dùng select/thread.isatty()\n        # để đảm bảo an toàn khi chạy nhiều luồng cùng lúc. \n        # Nhưng timeout 10 giây sẽ ngăn cản các luồng khác tải URL cùng lúc.\n        # Để chạy độc lập, ta dùng timeout ngắn hơn.\n        return aiohttp.ClientSession().get(source, timeout=10)\n    except asyncio.TimeoutError:\n        print(\"Lỗi: Không thể gửi yêu cầu trong thời gian chờ.\")\n        return None\n\nasync def main(urls):\n    # Sử dụng aiohttp/aiohttp_to_asyncio để chạy song song\n    async with aiohttp.ClientSession().get(*urls, timeout=10) as session:\n        return await session.send(fetch_url(url))\n\nif __name__ == \"__main__\":\n    # Chạy hàm với danh sách URL cần tải\n    results = asyncio.run(main(urls))\n    print(results)\n```\n\n**Cách chạy từng bước:**\n\n1. **Cài đặt thư viện:** Nếu máy chưa có, mở terminal/cmd và chạy lệnh:\n   `pip install aiohttp asyncio`\n2. **Chuẩn bị file:** Tạo một thư mục `test_urls` trong cùng thư mục với file code Python này. Copy tất cả 10 URL vào đó.\n3. **Chạy code:** \n   - Mở terminal tại thư mục đó.\n   - Chạy file bằng lệnh: `python test_urls.py` (thay `10` bằng số lượng URL bạn đã copy).\n4. **Kiểm tra kết quả:** Mở terminal/cmd, di chuyển đến thư mục chứa file và chạy lại lệnh `python test_urls.py` một lần nữa để xem nội dung trang web.\n\nNếu muốn tải thêm URL thứ 11 (thay vì dùng 3 request), hãy cho tôi biết.",
+   "tokens": 800,
+   "sec": 27.5
+  }
+ ]
+}

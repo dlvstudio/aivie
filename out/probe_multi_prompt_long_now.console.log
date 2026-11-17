@@ -1,0 +1,184 @@
+[     0.0s] === load_network_v12_sent START (pid=66638) → out/logs/load_network_v12_sent_20260727_142515.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     9.8s] ✓ unpickle  (9.8s)
+[     9.8s] ▶ vocab (32002 token)
+[    18.7s] ✓ vocab (32002 token)  (8.9s)
+[    18.7s] ▶ adjacency
+[    42.3s] ✓ adjacency  (23.6s)
+[    42.3s] ▶ embedding
+[    42.4s] ✓ embedding  (0.1s)
+[    42.4s] ▶ parents
+[    42.4s] parents: deserialize 430447 records …
+[    42.4s] parents 5000/430447 (1.2%)
+[    42.5s] parents 10000/430447 (2.3%)
+[    42.5s] parents 15000/430447 (3.5%)
+[    42.6s] parents 20000/430447 (4.6%)
+[    42.7s] parents 25000/430447 (5.8%)
+[    42.7s] parents 30000/430447 (7.0%)
+[    42.8s] parents 35000/430447 (8.1%)
+[    42.9s] parents 40000/430447 (9.3%)
+[    42.9s] parents 45000/430447 (10.5%)
+[    43.0s] parents 50000/430447 (11.6%)
+[    43.0s] parents 55000/430447 (12.8%)
+[    43.1s] parents 60000/430447 (13.9%)
+[    43.2s] parents 65000/430447 (15.1%)
+[    43.2s] parents 70000/430447 (16.3%)
+[    43.3s] parents 75000/430447 (17.4%)
+[    43.3s] parents 80000/430447 (18.6%)
+[    43.4s] parents 85000/430447 (19.7%)
+[    43.4s] parents 90000/430447 (20.9%)
+[    43.5s] parents 95000/430447 (22.1%)
+[    43.5s] parents 100000/430447 (23.2%)
+[    43.6s] parents 105000/430447 (24.4%)
+[    43.7s] parents 110000/430447 (25.6%)
+[    43.8s] parents 115000/430447 (26.7%)
+[    43.8s] parents 120000/430447 (27.9%)
+[    43.9s] parents 125000/430447 (29.0%)
+[    44.0s] parents 130000/430447 (30.2%)
+[    44.1s] parents 135000/430447 (31.4%)
+[    44.2s] parents 140000/430447 (32.5%)
+[    44.2s] parents 145000/430447 (33.7%)
+[    44.3s] parents 150000/430447 (34.8%)
+[    44.4s] parents 155000/430447 (36.0%)
+[    44.5s] parents 160000/430447 (37.2%)
+[    44.6s] parents 165000/430447 (38.3%)
+[    44.8s] parents 170000/430447 (39.5%)
+[    44.9s] parents 175000/430447 (40.7%)
+[    45.0s] parents 180000/430447 (41.8%)
+[    45.1s] parents 185000/430447 (43.0%)
+[    45.2s] parents 190000/430447 (44.1%)
+[    45.4s] parents 195000/430447 (45.3%)
+[    45.5s] parents 200000/430447 (46.5%)
+[    45.6s] parents 205000/430447 (47.6%)
+[    45.7s] parents 210000/430447 (48.8%)
+[    45.8s] parents 215000/430447 (49.9%)
+[    45.9s] parents 220000/430447 (51.1%)
+[    46.0s] parents 225000/430447 (52.3%)
+[    46.1s] parents 230000/430447 (53.4%)
+[    46.2s] parents 235000/430447 (54.6%)
+[    46.3s] parents 240000/430447 (55.8%)
+[    46.4s] parents 245000/430447 (56.9%)
+[    46.5s] parents 250000/430447 (58.1%)
+[    46.7s] parents 255000/430447 (59.2%)
+[    46.8s] parents 260000/430447 (60.4%)
+[    46.9s] parents 265000/430447 (61.6%)
+[    47.0s] parents 270000/430447 (62.7%)
+[    47.1s] parents 275000/430447 (63.9%)
+[    47.2s] parents 280000/430447 (65.0%)
+[    63.2s] parents 285000/430447 (66.2%)
+[    63.3s] parents 290000/430447 (67.4%)
+[    63.5s] parents 295000/430447 (68.5%)
+[    63.6s] parents 300000/430447 (69.7%)
+[    63.7s] parents 305000/430447 (70.9%)
+[    63.8s] parents 310000/430447 (72.0%)
+[    63.9s] parents 315000/430447 (73.2%)
+[    64.0s] parents 320000/430447 (74.3%)
+[    64.1s] parents 325000/430447 (75.5%)
+[    64.2s] parents 330000/430447 (76.7%)
+[    64.4s] parents 335000/430447 (77.8%)
+[    64.5s] parents 340000/430447 (79.0%)
+[    64.6s] parents 345000/430447 (80.1%)
+[    64.7s] parents 350000/430447 (81.3%)
+[    64.8s] parents 355000/430447 (82.5%)
+[    64.9s] parents 360000/430447 (83.6%)
+[    65.0s] parents 365000/430447 (84.8%)
+[    65.1s] parents 370000/430447 (86.0%)
+[    65.2s] parents 375000/430447 (87.1%)
+[    65.4s] parents 380000/430447 (88.3%)
+[    65.5s] parents 385000/430447 (89.4%)
+[    65.6s] parents 390000/430447 (90.6%)
+[    65.7s] parents 395000/430447 (91.8%)
+[    65.8s] parents 400000/430447 (92.9%)
+[    65.9s] parents 405000/430447 (94.1%)
+[    66.0s] parents 410000/430447 (95.2%)
+[    66.1s] parents 415000/430447 (96.4%)
+[    66.2s] parents 420000/430447 (97.6%)
+[    66.3s] parents 425000/430447 (98.7%)
+[    66.4s] parents 430000/430447 (99.9%)
+[   157.8s] ▶ rebuild_hierarchical_index …
+[   160.3s] ✓ rebuild_hierarchical_index (2.5s)
+[   167.9s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[   167.9s] ✓ parents  (125.6s)
+[   167.9s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[   172.9s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[   172.9s] ✓ load_checkpoint XONG
+ckpt=checkpoints/network_v12_sent.pkl max_len=64
+
+########## MODE no_agenda ##########
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+
+=== nq_def  (254.5s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (14.7s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ''
+
+=== thd  (38.1s) dots≈0 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương'
+
+=== ly  (47.5s) dots≈0 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long năm 1010
+cont:   'Thăng Long năm 1010'
+
+=== bach  (28.4s) dots≈0 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm 1288
+cont:   '1288'
+
+=== qa_nq  (70.3s) dots≈0 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu trách nhiệm lão sư
+cont:   'không còn chịu trách nhiệm lão sư'
+
+=== hung  (26.0s) dots≈0 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   'Lam Sơn'
+
+########## MODE agenda_handoff ##########
+
+=== nq_def  (195.3s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== nq_full  (11.5s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   '. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== thd  (36.2s) dots≈2 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.
+cont:   'Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.'
+
+=== ly  (46.5s) dots≈2 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.
+cont:   'Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+
+=== bach  (28.2s) dots≈2 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.
+cont:   '1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+
+=== qa_nq  (69.8s) dots≈2 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu trách nhiệm lão sư. Sướng khổ mình chịu.
+cont:   'không còn chịu trách nhiệm lão sư. Sướng khổ mình chịu.'
+
+=== hung  (25.7s) dots≈2 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.
+cont:   'Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.'
+
+[1066s] → out/probe_multi_prompt_long_now.log

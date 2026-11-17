@@ -1,0 +1,102 @@
+[     0.0s] === load_loai_suy START (pid=1516) → out/logs/load_loai_suy_20260816_095026.log ===
+[     0.0s] load checkpoint checkpoints/loai_suy.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.1s] ✓ adjacency  (0.9s)
+[     1.1s] ▶ embedding
+[     1.2s] ✓ embedding  (0.0s)
+[     1.2s] ▶ parents
+[     1.2s] parents: deserialize 36482 records …
+[     1.2s] parents 5000/36482 (13.7%)
+[     1.2s] parents 10000/36482 (27.4%)
+[     1.3s] parents 15000/36482 (41.1%)
+[     1.3s] parents 20000/36482 (54.8%)
+[     1.4s] parents 25000/36482 (68.5%)
+[     1.4s] parents 30000/36482 (82.2%)
+[     1.5s] parents 35000/36482 (95.9%)
+[     2.1s] ▶ rebuild_hierarchical_index …
+[     2.1s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.5s]     resync match_ids: 36482/36482 cha (df dựng lại)
+[     2.5s] ✓ parents  (1.3s)
+[     2.5s] ✓ loaded: vocab=32002 parents=36482 E=(32002, 96)
+[     2.5s] sidecar thiếu → migrate: loai_suy.content.pkl
+[     2.5s] ✓ load_checkpoint XONG
+
+### 102 ĐẠT · 43 TRƯỢT trên 145 bộ
+
+  ✓ ĐẠT — ánh xạ ca «con khỉ»:
+     thuộc tính  'thuận'      ↔ `nghịch ngợm`
+     vật mang    'bã', 'cay'  ↔ `chó`, `mèo`
+     lớp         'phần'       ↔ `động vật`
+     GIỮ LẠI     'châu'       ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        thuận như loài cay .
+        Người Mỹ có thể đến bất cứ đâu kiểm tra tình hình không cần sự chấp thuận của tổng chỉ huy Pháp .
+     ĐỀ CỬ  → ['bã', 'cay', 'châu', 'biển', 'chim', 'cây', 'cá', 'kỳ']
+     ① via_attr[thuận] = ['cay']
+     ② via_pivot[bã] = ['phần']
+
+  ✓ ĐẠT — ánh xạ ca «con khỉ»:
+     thuộc tính  'lành'       ↔ `nghịch ngợm`
+     vật mang    'buổi', 'bãi'  ↔ `chó`, `mèo`
+     lớp         'khoảng'     ↔ `động vật`
+     GIỮ LẠI     'chiều'      ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        lành như loài bãi .
+        Sa Pa bắt đầu được biết tới với không khí mát mẻ , trong lành và cảnh quan đẹp .
+     ĐỀ CỬ  → ['buổi', 'bãi', 'bề', 'chiều', 'cửa', 'cữ', 'gang', 'gầm']
+     ① via_attr[lành] = ['bãi']
+     ② via_pivot[buổi] = ['khoảng']
+
+  ✓ ĐẠT — ánh xạ ca «con khỉ»:
+     thuộc tính  'rách'       ↔ `nghịch ngợm`
+     vật mang    'bẹ', 'bụng'  ↔ `chó`, `mèo`
+     lớp         'bộ phận'    ↔ `động vật`
+     GIỮ LẠI     'choá'       ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        rách như loài bụng .
+        Lá dong chọn lá dong rừng bánh tẻ , to bản , đều nhau , không bị rách , màu xanh mướt .
+     ĐỀ CỬ  → ['bẹ', 'bụng', 'choá', 'biển', 'chim', 'cây', 'chiều', 'cá']
+     ① via_attr[rách] = ['bụng']
+     ② via_pivot[bẹ] = ['bộ phận']
+
+  ✗ TRƯỢT — ánh xạ ca «con khỉ»:
+     thuộc tính  'ngặt'       ↔ `nghịch ngợm`
+     vật mang    'biển', 'bánh'  ↔ `chó`, `mèo`
+     lớp         'loại'       ↔ `động vật`
+     GIỮ LẠI     'bóng'       ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        ngặt như loài bánh .
+        Chính phủ Lào kiểm soát nghiêm ngặt toàn bộ các kênh truyền thông nhằm ngăn chặn phê bình các hành động của họ .
+     ĐỀ CỬ  → ['biển', 'chim', 'cây', 'cá', 'kỳ', 'rùa', 'rắn', 'thằn']
+     ① via_attr[ngặt] = ['bánh', 'ma túy']
+     ② via_pivot[biển] = ['Đây', 'Oxy', 'loại', 'loài', 'vùng', 'động vật']
+
+  ✗ TRƯỢT — ánh xạ ca «con khỉ»:
+     thuộc tính  'sạch'       ↔ `nghịch ngợm`
+     vật mang    'biển', 'báo'  ↔ `chó`, `mèo`
+     lớp         'loài'       ↔ `động vật`
+     GIỮ LẠI     'băng'       ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        sạch như loài báo .
+        Xương phải được rửa sạch , cạo sạch hết thịt bám vào xương cho vào nồi đun với nước lạnh .
+     ĐỀ CỬ  → ['báo', 'bh', 'biển', 'chim', 'dạng', 'cây', 'cá', 'kỳ']
+     ① via_attr[sạch] = ['báo']
+     ② via_pivot[biển] = ['Đây', 'Oxy', 'loại', 'loài', 'vùng', 'động vật']
+
+  ✗ TRƯỢT — ánh xạ ca «con khỉ»:
+     thuộc tính  'mọng'       ↔ `nghịch ngợm`
+     vật mang    'hai', 'loạn'  ↔ `chó`, `mèo`
+     lớp         'sự'         ↔ `động vật`
+     GIỮ LẠI     'ngách'      ↔ `khỉ`  (chưa từng đứng cạnh thuộc tính)
+     CÂU TRAIN:
+        mọng như loài loạn .
+        Tỉnh là nơi xuất khẩu cây thông Noel , tôm hùm , thạch cao và quả mọng hoang giã nhiều nhất thế giới .
+     ĐỀ CỬ  → ['buổi', 'bãi', 'bề', 'chiều', 'cửa', 'cữ', 'gang', 'gầm']
+     ① via_attr[mọng] = ['loạn']
+     ② via_pivot[hai] = ['Bà Trưng', 'chính', 'Mét ro', 'sự', 'sân', 'phiên âm']
+
+[15s] xong

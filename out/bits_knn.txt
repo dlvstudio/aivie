@@ -1,0 +1,19 @@
+LM 11.4M · vocab 32,002 · ctx=256
+datastore 142 bài · held-out 16 bài (tách, không leakage)
+✓ datastore 317,488 cặp (h,next)
+
+đánh giá 2,500 token · 12,316 byte held-out
+
+      λ  bits/token  bits/byte   ghi chú
+    1.0      4.6944     0.9529   ← LM THUẦN (baseline)
+    0.7      4.5129     0.9161   cải thiện +3.9% vs LM thuần
+    0.5      4.6606     0.9460   cải thiện +0.7% vs LM thuần
+    0.4      4.7841     0.9711   cải thiện -1.9% vs LM thuần
+   0.25      5.0725     1.0296   cải thiện -8.1% vs LM thuần
+
+⇒ kNN CẢI THIỆN: λ=0.7 tốt nhất, +3.9% bits/token vs LM thuần.
+  kNN có giá trị ĐO ĐƯỢC (không chỉ phá lặp). Đáng giữ. Việc SINH tốt vẫn cần LM
+  lớn hơn (§7.17d) nhưng kNN đã chứng minh không phải đồ trang trí.
+
+⚠️ Chỉ đo density (perplexity), KHÔNG đo 'sinh có đúng sự thật' — hai câu khác nhau.
+  kNN cải thiện bits/byte mà SINH vẫn trôi chủ đề (§7.17d) là hoàn toàn có thể xảy ra.

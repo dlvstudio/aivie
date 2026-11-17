@@ -1,0 +1,289 @@
+[     0.0s] === load_network_v10_histwiki_paragraph START (pid=20930) → out/logs/load_network_v10_histwiki_paragraph_20260709_183544.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    69.9s] ✓ unpickle  (69.9s)
+[    69.9s] ▶ vocab (113572 token)
+[    73.2s] ✓ vocab (113572 token)  (3.3s)
+[    73.3s] ▶ adjacency
+[   144.5s] ✓ adjacency  (71.3s)
+[   144.5s] ▶ embedding
+[   150.8s] ✓ embedding  (6.2s)
+[   150.8s] ▶ parents
+[   745.4s] ✓ parents  (594.7s)
+[   745.5s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   754.2s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   754.2s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   757.2s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   757.2s] ✓ load_checkpoint XONG
+... 10/40 prompts done
+... 20/40 prompts done
+... 30/40 prompts done
+... 40/40 prompts done
+checkpoint=network_v10_histwiki_paragraph.pkl
+parents=176430 vocab=113572
+prompts=43 (history=10, doc=10, conv=10, common=10, +frame=3)
+
+=== Discourse prompts (dataset-derived) ===
+
+[history_wiki_para] 'Khối trường tư thục phát triển năng'
+  - gen pool=OFF varlm=0: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen pool=ON  varlm=0: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+
+[history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+  - gen pool=OFF varlm=0: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen pool=ON  varlm=0: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+
+[history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+  - gen pool=OFF varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+  - gen pool=ON  varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+
+[history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+  - gen pool=OFF varlm=0: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen pool=ON  varlm=0: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+
+[history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+  - gen pool=OFF varlm=0: chars=61 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Chúa gánh cái lo , ta hưởng Chúa gánh cái lo ta hưởng cái vui'
+  - gen pool=ON  varlm=0: chars=61 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Chúa gánh cái lo , ta hưởng Chúa gánh cái lo ta hưởng cái vui'
+
+[history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+  - gen pool=OFF varlm=0: chars=100 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00
+      'Vì tưởng là Lê Lợi , người Vì tưởng là Lê Lợi người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+  - gen pool=ON  varlm=0: chars=100 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00
+      'Vì tưởng là Lê Lợi , người Vì tưởng là Lê Lợi người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+
+[history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+  - gen pool=OFF varlm=0: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen pool=ON  varlm=0: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+
+[history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+  - gen pool=OFF varlm=0: chars=78 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00
+      'Tuy nhiên , Tây Sơn vẫn còn Tuy nhiên Tây Sơn vẫn còn vây chặt thành Bình Định'
+  - gen pool=ON  varlm=0: chars=78 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00
+      'Tuy nhiên , Tây Sơn vẫn còn Tuy nhiên Tây Sơn vẫn còn vây chặt thành Bình Định'
+
+[history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+  - gen pool=OFF varlm=0: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+  - gen pool=ON  varlm=0: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+
+[history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+  - gen pool=OFF varlm=0: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+  - gen pool=ON  varlm=0: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+
+[statements_doc] 'Tuy nhiên trong một số trường hợp'
+  - gen pool=OFF varlm=0: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+  - gen pool=ON  varlm=0: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+
+[statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+  - gen pool=OFF varlm=0: chars=70 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tiếng Việt là 1 ngôn ngữ đơn Ngữ pháp Tiếng Việt là 1 ngôn ngữ đơn lập'
+  - gen pool=ON  varlm=0: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+
+[statements_doc] 'Dựa trên từ vựng cơ bản ,'
+  - gen pool=OFF varlm=0: chars=86 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+  - gen pool=ON  varlm=0: chars=86 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Dựa trên từ vựng cơ bản , tiếng Việt được phân loại là một ngôn ngữ thuộc ngữ hệ Nam Á'
+
+[statements_doc] 'Tiếng Việt là ngôn ngữ thanh điệu'
+  - gen pool=OFF varlm=0: chars=90 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó'
+  - gen pool=ON  varlm=0: chars=194 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tiếng Việt là ngôn ngữ thanh điệu mọi âm tiết của tiếng Việt luôn mang 1 thanh điệu nào đó Phương ngôn tiếng Việt Bắc Bộ có 6 thanh điệu phương ngôn tiếng Việt Trung Bộ và Nam Bộ có 5 thanh điệu'
+
+[statements_doc] 'Đến đời Đường , tiếng Việt mới'
+  - gen pool=OFF varlm=0: chars=65 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Đến đời Đường , tiếng Việt mới Đảng Cộng sản Việt Nam ra đời 1930'
+  - gen pool=ON  varlm=0: chars=65 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Đến đời Đường , tiếng Việt mới Đảng Cộng sản Việt Nam ra đời 1930'
+
+[statements_doc] 'Hiện nay có 1945 chữ Hán thông'
+  - gen pool=OFF varlm=0: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng'
+  - gen pool=ON  varlm=0: chars=220 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Hiện nay có 1945 chữ Hán thông dụng trong tiếng Nhật cũng có khoảng 2000 từ Hán–Hàn thông dụng Số lượng từ vựng tiếng Việt có thêm hàng loạt các yếu tố Hán–Việt . Mặt khác người Trung Quốc gọi là Thái Sơn Hoàng Hà cổ thụ'
+
+[statements_doc] 'Mặt khác , những khái niệm chính'
+  - gen pool=OFF varlm=0: chars=130 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Mặt khác , những khái niệm chính Mặt khác những khái niệm chính trị xã hội kỹ thuật mới dẫn đến việc nhập các thuật ngữ từ ngữ mới'
+  - gen pool=ON  varlm=0: chars=130 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Mặt khác , những khái niệm chính Mặt khác những khái niệm chính trị xã hội kỹ thuật mới dẫn đến việc nhập các thuật ngữ từ ngữ mới'
+
+[statements_doc] 'Tuy nhiên , chưa có quy định'
+  - gen pool=OFF varlm=0: chars=99 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Tuy nhiên , chưa có quy định Tuy nhiên chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia'
+  - gen pool=ON  varlm=0: chars=99 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Tuy nhiên , chưa có quy định Tuy nhiên chưa có quy định nào nói rằng giọng Hà Nội là chuẩn quốc gia'
+
+[statements_doc] 'Sự tiếp xúc giữa tiếng Việt và'
+  - gen pool=OFF varlm=0: chars=125 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Sự tiếp xúc giữa tiếng Việt và Từ đó người Việt được tiếp xúc trực tiếp với tiếng Hán trực tiếp vay mượn từ ngữ của tiếng Hán'
+  - gen pool=ON  varlm=0: chars=241 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Sự tiếp xúc giữa tiếng Việt và tiếng Hán bắt đầu khi nhà Hán của Trung Quốc xâm chiếm khu vực Việt Nam . Quá trình tiếp xúc đã đưa vào tiếng Việt một khối lượng từ ngữ của tiếng Hán Đến đời Đường tiếng Việt mới có sự tiếp nhận các từ ngữ Hán'
+
+[statements_doc] 'Trong khi đó , những từ có'
+  - gen pool=OFF varlm=0: chars=127 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Trong khi đó , những từ có Trong khi đó những tay nỏ cự phách rất có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa'
+  - gen pool=ON  varlm=0: chars=127 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Trong khi đó , những từ có Trong khi đó những tay nỏ cự phách rất có giá trị khi được sử dụng trong vai trò lính bắn tỉa tầm xa'
+
+[conv] '"Nước Anh vì lần này nước Mỹ'
+  - gen pool=OFF varlm=0: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      '"Nước Anh vì lần này nước Mỹ Anh hùng liệt sĩ hy sinh vì Tổ quốc'
+  - gen pool=ON  varlm=0: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      '"Nước Anh vì lần này nước Mỹ Anh hùng liệt sĩ hy sinh vì Tổ quốc'
+
+[conv] 'Bạn đang băn khoăn cách nấu vịt'
+  - gen pool=OFF varlm=0: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+  - gen pool=ON  varlm=0: chars=64 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Bạn đang băn khoăn cách nấu vịt om sấu miền Bắc như nào cho ngon'
+
+[conv] 'FxPro.com : NZD/USD intraday 29/10/2021 có thể'
+  - gen pool=OFF varlm=0: chars=127 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể Đồng tiền Thái Bình được đúc bằng đồng hình tròn lỗ vuông có thể xâu thành chuỗi'
+  - gen pool=ON  varlm=0: chars=127 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'FxPro.com : NZD/USD intraday 29/10/2021 có thể Đồng tiền Thái Bình được đúc bằng đồng hình tròn lỗ vuông có thể xâu thành chuỗi'
+
+[conv] 'P/s : Cầu donate cứu trợ cvt'
+  - gen pool=OFF varlm=0: chars=100 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'P/s : Cầu donate cứu trợ cvt Thuần sai Nhân lẻn ra Bình Thuận cầu cứu Chu Văn Tiếp , Trần Văn Thức .'
+  - gen pool=ON  varlm=0: chars=100 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'P/s : Cầu donate cứu trợ cvt Thuần sai Nhân lẻn ra Bình Thuận cầu cứu Chu Văn Tiếp , Trần Văn Thức .'
+
+[conv] 'Nghĩ cũng ngộ , làn khẩn cấp'
+  - gen pool=OFF varlm=0: chars=105 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Nghĩ cũng ngộ , làn khẩn cấp Trợ giúp y tế khẩn cấp khi ngộ độc hay bị tai nạn trong khi sử dụng hóa chất'
+  - gen pool=ON  varlm=0: chars=105 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Nghĩ cũng ngộ , làn khẩn cấp Trợ giúp y tế khẩn cấp khi ngộ độc hay bị tai nạn trong khi sử dụng hóa chất'
+
+[conv] 'Giao ngạc lỗ mũi phun ra một'
+  - gen pool=OFF varlm=0: chars=169 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Giao ngạc lỗ mũi phun ra một cỗ hàn khí trắng xóa . bên ngoài thân hiện ra vô số bạch sắc hàn khí , úy lam đại hải bỗng nhiên kết băng bất quá rất nhanh tầng băng vỡ tan'
+  - gen pool=ON  varlm=0: chars=169 sents=1 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Giao ngạc lỗ mũi phun ra một cỗ hàn khí trắng xóa . bên ngoài thân hiện ra vô số bạch sắc hàn khí , úy lam đại hải bỗng nhiên kết băng bất quá rất nhanh tầng băng vỡ tan'
+
+[conv] 'Mặc dù bỏ ra số tiền khổng'
+  - gen pool=OFF varlm=0: chars=129 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Mặc dù bỏ ra số tiền khổng lồ để mua sắm tân binh nhưng Chelsea vẫn khởi đầu rất chật vật tại Premier League lẫn Champions League'
+  - gen pool=ON  varlm=0: chars=129 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Mặc dù bỏ ra số tiền khổng lồ để mua sắm tân binh nhưng Chelsea vẫn khởi đầu rất chật vật tại Premier League lẫn Champions League'
+
+[conv] 'Tân Hải tiểu trấn —— mấy trăm'
+  - gen pool=OFF varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tân Hải tiểu trấn —— mấy trăm Duy Tân do Phan Châu Trinh đề xướng'
+  - gen pool=ON  varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'Tân Hải tiểu trấn —— mấy trăm Duy Tân do Phan Châu Trinh đề xướng'
+
+[conv] '8 ngày qua đã xuất hiện ba'
+  - gen pool=OFF varlm=0: chars=106 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      '8 ngày qua đã xuất hiện ba Ông đã xuất bản 8 tập thơ cùng hàng chục đầu sách về y học và khoa học nhân văn'
+  - gen pool=ON  varlm=0: chars=106 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      '8 ngày qua đã xuất hiện ba Ông đã xuất bản 8 tập thơ cùng hàng chục đầu sách về y học và khoa học nhân văn'
+
+[conv] 'Chương 277 : Các ngươi nói cái'
+  - gen pool=OFF varlm=0: chars=57 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Chương 277 : Các ngươi nói cái Còn 277 ngày nữa trong năm'
+  - gen pool=ON  varlm=0: chars=57 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'Chương 277 : Các ngươi nói cái Còn 277 ngày nữa trong năm'
+
+[frame] 'Hỏi: Việt Nam là gì Đáp:'
+  - gen pool=OFF varlm=0: chars=230 sents=4 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Việt Nam là gì Đáp: Thủ đô Việt Nam là Hà Nội. . Miền Nam Việt Nam là một khái niệm để chỉ vùng địa lý ở phía nam nước Việt Nam . Từ năm 1945 , khái niệm miền Nam Việt Nam được dùng để chỉ vùng lãnh thổ phía nam vĩ tuyến 16 .'
+  - gen pool=ON  varlm=0: chars=230 sents=4 commas=1 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Việt Nam là gì Đáp: Thủ đô Việt Nam là Hà Nội. . Miền Nam Việt Nam là một khái niệm để chỉ vùng địa lý ở phía nam nước Việt Nam . Từ năm 1945 , khái niệm miền Nam Việt Nam được dùng để chỉ vùng lãnh thổ phía nam vĩ tuyến 16 .'
+  - hybrid (QA): chars=230 sents=4 commas=1 overlap=1.00
+      'Hỏi: Việt Nam là gì Đáp: Thủ đô Việt Nam là Hà Nội. . Miền Nam Việt Nam là một khái niệm để chỉ vùng địa lý ở phía nam nước Việt Nam . Từ năm 1945 , khái niệm miền Nam Việt Nam được dùng để chỉ vùng lãnh thổ phía nam vĩ tuyến 16 .'
+
+[frame] 'Hỏi: Văn Miếu là gì Đáp:'
+  - gen pool=OFF varlm=0: chars=142 sents=3 commas=0 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên Việt Nam. . Văn Miếu Quốc Tử Giám năm 1076 . Văn Miếu thờ Khổng Tử và các bác học'
+  - gen pool=ON  varlm=0: chars=142 sents=3 commas=0 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên Việt Nam. . Văn Miếu Quốc Tử Giám năm 1076 . Văn Miếu thờ Khổng Tử và các bác học'
+  - hybrid (QA): chars=142 sents=3 commas=0 overlap=1.00
+      'Hỏi: Văn Miếu là gì Đáp: Văn Miếu là trường đại học đầu tiên Việt Nam. . Văn Miếu Quốc Tử Giám năm 1076 . Văn Miếu thờ Khổng Tử và các bác học'
+
+[frame] 'Hỏi: Nhà Lý là gì Đáp:'
+  - gen pool=OFF varlm=0: chars=214 sents=3 commas=2 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Nhà Lý là gì Đáp: Nhà Trần thay nhà Lý năm 1226 . Năm 1075 , Lý Thường Kiệt đi đánh Chiêm Thành nhưng không thu được kết quả . Để cản quân Tống qua sông , Lý Thường Kiệt sai đắp đê nam ngạc cao như bức thành .'
+  - gen pool=ON  varlm=0: chars=214 sents=3 commas=2 multi=1 overlap=1.00 ent_keep=0.00
+      'Hỏi: Nhà Lý là gì Đáp: Nhà Trần thay nhà Lý năm 1226 . Năm 1075 , Lý Thường Kiệt đi đánh Chiêm Thành nhưng không thu được kết quả . Để cản quân Tống qua sông , Lý Thường Kiệt sai đắp đê nam ngạc cao như bức thành .'
+  - hybrid (QA): chars=214 sents=3 commas=2 overlap=1.00
+      'Hỏi: Nhà Lý là gì Đáp: Nhà Trần thay nhà Lý năm 1226 . Năm 1075 , Lý Thường Kiệt đi đánh Chiêm Thành nhưng không thu được kết quả . Để cản quân Tống qua sông , Lý Thường Kiệt sai đắp đê nam ngạc cao như bức thành .'
+
+[common_noun] 'ẩm thực Việt Nam'
+  - gen pool=OFF varlm=0: chars=35 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'ẩm thực Việt Nam với rất nhiều dạng'
+  - gen pool=ON  varlm=0: chars=35 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00
+      'ẩm thực Việt Nam với rất nhiều dạng'
+
+[common_noun] 'bóng đá là'
+  - gen pool=OFF varlm=0: chars=103 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'bóng đá là môn thể thao phổ biến nhất đội tuyển bóng đá quốc gia Anh có sân nhà là sân vận động Wembley'
+  - gen pool=ON  varlm=0: chars=103 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'bóng đá là môn thể thao phổ biến nhất đội tuyển bóng đá quốc gia Anh có sân nhà là sân vận động Wembley'
+
+[common_noun] 'trường học là'
+  - gen pool=OFF varlm=0: chars=58 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'trường học là bắt buộc đối với mọi trẻ em từ 6 đến 16 tuổi'
+  - gen pool=ON  varlm=0: chars=134 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'trường học là bắt buộc đối với mọi trẻ em từ 6 đến 16 tuổi . Hệ thống trường học tại Thụy Điển phần lớn được tài trợ bởi các loại thuế'
+
+[common_noun] 'âm nhạc giúp'
+  - gen pool=OFF varlm=0: chars=81 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'âm nhạc giúp Ý Nhã nhạc cung đình Huế là di sản và Đờn ca tài tử Nam Bộ là di sản'
+  - gen pool=ON  varlm=0: chars=158 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'âm nhạc giúp ông khi đang suy nghĩ về các lý thuyết Ông mải mê nghiên cứu quay trở ra giải trí bằng đánh vài đoạn hợp âm piano rồi tiếp tục trở lại công việc"'
+
+[common_noun] 'phở là'
+  - gen pool=OFF varlm=0: chars=26 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'phở là một món ăn đặc biệt'
+  - gen pool=ON  varlm=0: chars=205 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'phở là món ăn rất phổ biến ở Việt Nam nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian nhiều món phở mới xuất hiện với những cách chế biến khác nhau như phở xào phở rán phở cuốn'
+
+[common_noun] 'mùa hè em'
+  - gen pool=OFF varlm=0: chars=37 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'mùa hè em ấm Mùa mưa tập trung mùa hè'
+  - gen pool=ON  varlm=0: chars=37 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'mùa hè em ấm Mùa mưa tập trung mùa hè'
+
+[common_noun] 'môi trường là'
+  - gen pool=OFF varlm=0: chars=38 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'môi trường là pH bằng 7 là trung tính.'
+  - gen pool=ON  varlm=0: chars=38 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=0.00
+      'môi trường là pH bằng 7 là trung tính.'
+
+=== Summary (mean metrics by bucket/mode) ===
+bucket | mode | n | chars | sents | commas | multi% | overlap | ent_keep
+--------------------------------------------------------------------------------
+common_noun  | gen pool=OFF varlm=0 |  7 |    54 |  0.14 |   0.00 |   0.0% |    1.00 |    0.14
+common_noun  | gen pool=ON  varlm=0 |  7 |   101 |  0.43 |   0.00 |   0.0% |    1.00 |    0.14
+conv         | gen pool=OFF varlm=0 | 10 |    99 |  0.30 |   0.30 |  30.0% |    1.00 |    0.20
+conv         | gen pool=ON  varlm=0 | 10 |    99 |  0.30 |   0.30 |  30.0% |    1.00 |    0.20
+frame        | gen pool=OFF varlm=0 |  3 |   195 |  3.33 |   1.00 | 100.0% |    1.00 |    0.00
+frame        | gen pool=ON  varlm=0 |  3 |   195 |  3.33 |   1.00 | 100.0% |    1.00 |    0.00
+frame        | hybrid (QA)          |  3 |   195 |  3.33 |   1.00 | 100.0% |    1.00 |    0.00
+history_wiki_para | gen pool=OFF varlm=0 | 10 |    79 |  0.00 |   0.30 |  30.0% |    1.00 |    0.50
+history_wiki_para | gen pool=ON  varlm=0 | 10 |    79 |  0.00 |   0.30 |  30.0% |    1.00 |    0.50
+statements_doc | gen pool=OFF varlm=0 | 10 |    98 |  0.00 |   0.50 |  50.0% |    1.00 |    0.20
+statements_doc | gen pool=ON  varlm=0 | 10 |   147 |  0.30 |   0.50 |  50.0% |    1.00 |    0.20
+
+→ /Users/dlv/Documents/code/nn-aivie/out/tk035_discourse_prompts_full.log

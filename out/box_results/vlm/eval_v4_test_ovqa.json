@@ -1,0 +1,1413 @@
+{
+ "tag": "v4",
+ "test": "data/vlm/test_ovqa.jsonl",
+ "rows": [
+  {
+   "src": "ovqa",
+   "q": "Người dân không được tụ tập quá bao nhiêu người ?",
+   "ref": "10 người",
+   "ans": "Không quá hai người",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tiêu lệnh 3 là gì ?",
+   "ref": "Dùng bình chữa cháy cát và nước để dập tắt",
+   "ans": "Tiêu lệnh 3 là bình chữa cháy",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là biển hiệu của ai ?",
+   "ref": "Đây là biển hiệu của cửa hàng tân",
+   "ans": "Của nhà hàng cơm gia công",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số đăng kí kinh doanh của đại lý internet trung nguyên là gì ?",
+   "ref": "54a801353",
+   "ans": "Số đăng ký kinh doanh của đại lý internet trung nguyên là 43080012",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trường này ở đâu ?",
+   "ref": "Ở số 71 ngũ hành sơn , thành phố đà nẵng",
+   "ans": "Ở đà nẵng",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đào tiên bán sản phẩm như thế nào ?",
+   "ref": "Đào tiên bán sản phẩm chất lượng cao , đẹp , bền , tiện dụng",
+   "ans": "Sản phẩm chất lượng cao",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Phương châm của traphaco là gì ?",
+   "ref": "Phương chân của traphaco là \" con đường sức khỏe xanh \"",
+   "ans": "Phương châm của traphaco là \" nâng tầm cuộc sống \"",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Người ở đây yêu cầu gì ?",
+   "ref": "Người ở đây yêu cầu mang ổ quá về",
+   "ans": "Yêu cầu gửi đồ qua ngày sẽ sẽ sẽ sẽ sẽ sẽ đến ngày sẽ sẽ sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến ngày sẽ đến",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trường nghề này dạy về nghềg gì ?",
+   "ref": "Ẩm thực",
+   "ans": "Trường nghề này dạy nấu ăn",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trang web của quảng cáo đại phát là ?",
+   "ref": "Thietkethicongdaiphat . com",
+   "ans": "Trang web của quảng cáo đại phát là www . quangcaodaiphat . com",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có thể liên hệ nhà hàng qua số điện thoại nào ?",
+   "ref": "0868259259 hoặc 0466568999",
+   "ans": "02513896789 hoặc 0913594567",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Màu sắc chủ yếu của những ngôi nhà trong ảnh được sơn màu gì ?",
+   "ref": "Hầu hết những ngôi nhà đều có màu vàng",
+   "ans": "Những ngôi nhà trong ảnh được sơn màu vàng",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đi đường nào có thể tìm thấy quán lẩu bò hai tín ?",
+   "ref": "Đi trên đường trần não là tìm thấy quán lẩu bò hai tín",
+   "ans": "Đi đường cầu vượt ngã tư linh trung",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Dòng chữ \" kết nối nguồn lực , hiện thực ước mơ . \" có màu gì ?",
+   "ref": "Dòng chữ \" kết nối nguồn lực , hiện thực ước mơ . \" có màu xanh dương",
+   "ans": "Dòng chữ \" kết nối nguồn lực , hiện thực ước mơ \" có màu xanh dương",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng linh thiêm có số hiệu là bao nhiêu ?",
+   "ref": "Cửa hàng có số hiệu là 769",
+   "ans": "78",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Liên hệ phòng quản lý qua số điện thoại nào ?",
+   "ref": "Qua số 02193875210",
+   "ans": "02437641385",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng tên gì ?",
+   "ref": "Cửa hàng tên kenny phạm",
+   "ans": "Cửa hàng tên viên tốc",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán này mang thương hiệu gì ?",
+   "ref": "Quán này mang thương hiệu trung nguyên",
+   "ans": "Quán này mang thương hiệu trung nguyên",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công ty pvi kinh doanh gì ?",
+   "ref": "Kinh doanh bảo hiểm",
+   "ans": "Công ty kinh doanh dịch vụ bảo hiểm",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Địa chỉ của tiệm win - won là gì ?",
+   "ref": "Địa chỉ của tiệm win - won là 24a nguyễn thị huỳnh - phú nhuận",
+   "ans": "147 nguyễn thiện thuật , phường 1 , quận 3",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng tên gì ?",
+   "ref": "Cửa hàng tên pizza hut",
+   "ans": "Cửa hàng tên pizza hut",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Để đặt hàng trà tại cửa hàng này có thể gọi qua số điện thoại nào ?",
+   "ref": "0888388865",
+   "ans": "0888865512",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là câu lạc bộ cờ tướng phường nào ?",
+   "ref": "Đây là câu lạc bộ cờ tướng phường 8",
+   "ans": "Phường phương đông",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công ty làm về dịch vụ gì gì ?",
+   "ref": "Công ty làm về đo đạc , nhà đất , kiểm tra tư vần quy hoạch , đo phục hồi ranh mốc địa chính",
+   "ans": "Công ty làm về dịch vụ đo đạc và bản đồ",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Kệ bán dép để biển giá bao nhiêu ?",
+   "ref": "150 000 đồng",
+   "ans": "15 000 đồng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Nhà thuốc tên gì ?",
+   "ref": "Tên ngọc hà",
+   "ans": "Nhà thuốc tên nhà thuốc tây hà nội",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại liên lạc là gì ?",
+   "ref": "0975991001",
+   "ans": "0979102902",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chiếc xe đang đậu ở đâu ?",
+   "ref": "Chiếc xe đang đậu ở sungrand lương yên",
+   "ans": "Ở trước tòa nhà golden times",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quầy hàng thanh long sấy được bày bán ở hội chợ nằm ở đâu ?",
+   "ref": "Long an",
+   "ans": "Ở trong một khu hội chợ",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa tiệm hớt tóc này tên gì ?",
+   "ref": "Khánh vân",
+   "ans": "Tên là khánh vân",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tấm biển có nền màu gì ?",
+   "ref": "Màu vàng",
+   "ans": "Màu vàng",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Thông điệp ở bìa sách của cuốn làm lại từ đầu là gì ?",
+   "ref": "Hãy thêm số 1 vào cuộc đời bạn khi bạn đang bắt đầu từ số 0",
+   "ans": "Hãy số 100%",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Buổi hội thảo có địa chỉ ở đâu ?",
+   "ref": "Ở hà nội",
+   "ans": "Số 18 tháng 11 năm 2017",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Địa chỉ cửa hàng vinmart là bao nhiêu ?",
+   "ref": "60 pasteur , p . bến nghé , q . 1 , tp . hcm",
+   "ans": "60 phan bội châu , p . 1 , tp . đà lạt",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chiếc ô tô này trực thuộc đội an ninh miền nào ?",
+   "ref": "Chiếc ô tô này trực thuộc đội an ninh miền bắc",
+   "ans": "Đội an ninh miền bắc",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Câu châm ngôn của cửa hàng này là gì ?",
+   "ref": "Ăn no không lo về giá",
+   "ans": "Ăn ngon mỗi ngày",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công trình này được thực hiện để chào mừng sự kiện gì ?",
+   "ref": "Công trình này được thực hiện để chào mừng đại hội đại biểu toàn quốc hội sinh viên việt nam lần thứ ix , nhiệm kỳ 2013 - 2018",
+   "ans": "Công trình này được thực hiện để chào mừng ngày khởi công xây dựng nhà máy sản xuất nước sạch và xử lý nước thải sinh hoạt",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là đâu ?",
+   "ref": "Đây là một chốt kiểm soát dịch covid-19",
+   "ans": "Đây là chợ đồng xuân",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Nhà cổ phùng hưng nằm ở địa chỉ số bao nhiêu ?",
+   "ref": "4 nguyễn thị minh khai , phường minh an , hội an",
+   "ans": "Số 47",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Những quang cảnh này được trang trí và dựng nên để vinh danh ai ?",
+   "ref": "Vinh danh thiên chúa trên trời",
+   "ans": "Để vinh danh một người đàn ông",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Để thành phố \" sáng - xanh - sạch - đẹp \" , người dân vĩnh long cần phải làm gì ?",
+   "ref": "Để thành phố \" sáng - xanh - sạch - đẹp \" , người dân vĩnh long cần phải chung tay , góp sức xây dựng",
+   "ans": "Người dân vĩnh long cần chung tay dọn dẹp",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Thị trường bán lẻ truyền thống chiếm bao nhiêu phần trăm ?",
+   "ref": "Thị trường bán lẻ truyền thống chiếm 26%",
+   "ans": "Chiếm 26%",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu di lịch sinh thái này tên gì ?",
+   "ref": "Khu du lịch sinh thái vedana resort",
+   "ans": "Khu di tích sinh thái hồ xuân bình",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng mạnh mai làm gì ?",
+   "ref": "Cửa hàng nhận giặt , sấy , sửa quần áo , cho thuê xe máy",
+   "ans": "Cửa hàng mạnh mai bán xe máy",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có bao nhiêu mệnh giá được đề cập ở trong biển quảng cáo ?",
+   "ref": "Có hai mệnh giá được đề cập ở trong biển quảng cáo",
+   "ans": "Có năm mệnh giá được đề cập ở trong biển quảng cáo",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ở quận 1 có chợ gì ?",
+   "ref": "Chợ thái bình",
+   "ans": "Chợ thái bình",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quảng cáo được đặt từ website nào ?",
+   "ref": "Https : / / thegioiad . com",
+   "ans": "Được đặt từ trang web quangcaothangloi . com",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại của tiệm cà phê lúa là bao nhiêu ?",
+   "ref": "0933383566",
+   "ans": "0913383333",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng thực phẩm fresh shop được khai trương vào ngày nào ?",
+   "ref": "24 / 04 / 2021",
+   "ans": "Ngày 24 tháng 4",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có bao nhiêu người vừa đi ra từ quán ăn ?",
+   "ref": "Có hai người vừa đi ra từ quán ăn",
+   "ans": "Có hai người vừa đi ra từ quán ăn",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trẻ em phải làm gì khi đi xe máy ?",
+   "ref": "Trẻ em phải đội mũ bảo hiểm khi đi xe máy",
+   "ans": "Phải đội mũ bảo hiểm",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Câu khẩu hiệu của nhà thuốc pharmacity là gì ?",
+   "ref": "Thuốc tốt , giá rẻ , nếu không rẻ hoàn tiền chênh lệch",
+   "ans": "Thực phẩm tốt , giá rẻ , tiện lợi cho mọi nhà",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đại lý xe đức chính sài gòn có số điện thoại là gì ?",
+   "ref": "0983250233 hoặc 01683886699",
+   "ans": "0822171717",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Hội chợ xúc tiến thương mại được tổ chức ở địa điểm nào thuộc tỉnh cà mau ?",
+   "ref": "Tổ chức ở quảng trường thanh niên tại thành phố cà mau , tỉnh cà mau",
+   "ans": "Hội chợ xúc tiến thương mại được tổ chức ở thành phố cần thơ",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có bao nhiêu người trên bìa cuốn sách ?",
+   "ref": "Có hai người",
+   "ans": "Có hai người trên bìa sách",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán bán gì ?",
+   "ref": "Quán bán cháo hến , bún riêu cua , trứng vịt lộn , điểm tâm giải khát",
+   "ans": "Bán bún bò huế",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tấm bảng được treo ở đâu ?",
+   "ref": "Trên mái nhà",
+   "ans": "Ở cửa hàng giải khát",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại của lan anh là gì ?",
+   "ref": "Số điện thoại của lan anh là 0973 494 878",
+   "ans": "Lan anh có số điện thoại là 0937 384 878",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu di tích lịch sử này tên gì ?",
+   "ref": "Ngã ba giồng",
+   "ans": "Khu di tích lịch sử này tên đình nguyễn hữu cầu",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đại lý hiền đức nằm ở số nhà bao nhiêu ?",
+   "ref": "Số 37",
+   "ans": "37",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là khu chợ nào ?",
+   "ref": "Chợ hà đông",
+   "ans": "Chợ đồng xuân",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng này thuộc hệ thống cửa hàng nào ?",
+   "ref": "Hệ thống cửa hàng mẹ và bé kids plaza",
+   "ans": "Cửa hàng này thuộc hệ thống kidzapla",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Huy có thể đảm nhận những kỹ thuật gì ?",
+   "ref": "Huy có thể thay pin , sửa đồng hồ - máy tính",
+   "ans": "Sửa chữa đồng hồ",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng có địa chỉ ở đâu ?",
+   "ref": "97 võ thị sáu",
+   "ans": "Ở 977-977-107",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Phòng giám đốc trần văn lực ở đâu ?",
+   "ref": "Ở bên phải",
+   "ans": "Ở 66",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Phố đi bộ này tên gì ?",
+   "ref": "Phố đi bộ bùi viện",
+   "ans": "Phố đi bộ bùi viện",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bạn nữ này đang đứng ở đâu ?",
+   "ref": "Ở khu di tích đèo pha đin",
+   "ans": "Ở trên một bức tường",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cô gái cầm túi có bao nhiêu cái kính ?",
+   "ref": "Có 2 cái kính",
+   "ans": "Cô gái cầm túi có hai cái kính",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Vào năm nào đã diễn ra ngày hội mua sắm này ?",
+   "ref": "Năm 2016",
+   "ans": "Vào năm 2016",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bài thơ này tên gì ?",
+   "ref": "Bài thơ này tên tự hỏi",
+   "ans": "Bài thơ này tên làm sao bước tới",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Căn nhà số 83 đang được người ta để làm gì ?",
+   "ref": "Đang được người ta để cho thuê",
+   "ans": "Để bán",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Câu lạc bộ thể hình này tên gì ?",
+   "ref": "Câu lạc bộ thể hình này tên yết kiêu",
+   "ans": "Câu lạc bộ thể hình này tên hd gym",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công ty ở đường nào ?",
+   "ref": "Ở đường nguyễn chí thanh",
+   "ans": "Đường nguyễn chí thanh",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ở làng đừơng bên phải , tốc độ tối đa cho phép là bao nhiêu ?",
+   "ref": "40 km / h",
+   "ans": "Tốc độ tối đa cho phép là 60",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Làm thế nào để lấy xe đạp đôi ?",
+   "ref": "Gọi số 0977030977",
+   "ans": "Lấy bằng cách đẩy hai bánh sau",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại của quán ăn là gì ?",
+   "ref": "0944767968",
+   "ans": "Quán ăn có số điện thoại là 0936796669",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Red nest là một thương hiệu của loại sản phẩm gì ?",
+   "ref": "Red nest là một thương hiệu yến sào",
+   "ans": "Sản phẩm chăm sóc mẹ và bé",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khi muốn làm bảng quảng cáo giá rẻ có thể liên hệ số điện thoại nào ?",
+   "ref": "Khi muốn làm bảng quảng cáo giá rẻ có thể liên hệ số điện thoại 0935248949",
+   "ans": "0935248949",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cánh cổng của ngôi nhà có màu gì ?",
+   "ref": "Cánh cổng có màu đen",
+   "ans": "Màu đen",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Mã số thuế của nhà hàng là gì ?",
+   "ref": "Mã số thuế của nhà hàng là 41b8002805",
+   "ans": "Mã số thuế của nhà hàng là 0702582285",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Hotline liên hệ làm bảng quảng cáo giá rẻ là ?",
+   "ref": "0935248949",
+   "ans": "0935248949",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Vì sao khách không được để xe ở hè bên cạnh ?",
+   "ref": "Vì có con yêu quái , quái vật",
+   "ans": "Vì hè bên cạnh là nơi để xe của quán ăn",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng bing . vn kinh doanh những mặt hàng gì ?",
+   "ref": "Cửa hàng này chuyên bán các loại đồ chơi trẻ em",
+   "ans": "Cửa hàng bán đồ chơi trẻ em",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Dòng chữ trên tòa nhà có nội dung gì ?",
+   "ref": "Xây dựng lại đất nước ta đàng hoàng hơn to đẹp hơn",
+   "ans": "Xô viết nghệ thuật",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Từ vựng tiếng trung có chủ đề gì ?",
+   "ref": "Phố cổ hà nội",
+   "ans": "Có chủ đề tiếng trung là phố cổ hà nội",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Địa chỉ cửa hàng này nằm ở đâu ?",
+   "ref": "54 lê văn sỹ- p11- quận phú nhuận",
+   "ans": "Số 111 / 115 lê văn sĩ , phường 13 , quận phú nhuận",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là con phố nào ?",
+   "ref": "Phố tạ hiện",
+   "ans": "Phố hàng bạc",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có thể gửi fax đến công ty cổ phần thủy sản cửu long thông qua số nào ?",
+   "ref": "074852078",
+   "ans": "0785232255",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công ty xây dựng này tên gì ?",
+   "ref": "Đại tín",
+   "ans": "Đại tín",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Từ đường hoa sứ rẽ phải sẽ vào đường nào ?",
+   "ref": "Từ đường hoa sứ rẽ phải sẽ vào đường hoa phượng",
+   "ans": "Rẽ phải",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chợ đầu mối tên gì ?",
+   "ref": "Tên hòa cường",
+   "ans": "Tên hoa mai",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chiều ngang của sản phẩm là mấy ?",
+   "ref": "Là 120cm",
+   "ans": "Chiều ngang của sản phẩm là 120 cm",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bản tin do kênh truyền hình nào thực hiện ?",
+   "ref": "Bản tin do kênh vtv4 thực hiện",
+   "ans": "Do kênh tv4 thực hiện",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cô tuyết cung cấp số điện thoại nào cho khách hỏi thuê nhà ?",
+   "ref": "0963000388",
+   "ans": "0937648188",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tiệm cà phê này tên gì ?",
+   "ref": "Tiệm cà phê này tên cà phê nhà sàn",
+   "ans": "Tiệm cà phê an sơn",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chùa mỹ an thuộc quản lý của đơn vị nào ?",
+   "ref": "Giáo hội phật giáo việt nam",
+   "ans": "Chùa mỹ an thuộc quản lý của hội đồng hương mỹ an",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Xe đẩy này bán các món ăn nào ?",
+   "ref": "Xe đẩy này bán bánh tráng trộn và bánh tráng cuốn",
+   "ans": "Bánh tráng nướng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu chợ này có tên là gì ?",
+   "ref": "Khu chợ này có tên là hạnh thông tây",
+   "ans": "Khu chợ này có tên là chợ đồng xuân",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Di tích ở tỉnh nào ?",
+   "ref": "Ở tỉnh thừa thiên huế",
+   "ans": "Ở tỉnh tiền giang",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là vé vào cổng của khu du lịch nào ?",
+   "ref": "Khu du lịch cửa biển",
+   "ans": "Khu du lịch biển phú quốc",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại nào có thể dùng để gọi cho chủ quán nước này ?",
+   "ref": "0937442215",
+   "ans": "0914251111",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tên cửa hàng là gì ?",
+   "ref": "Pharmacy hai yen",
+   "ans": "Cửa hàng tên là haiyen",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quốc dương chọn loại hình doanh nghiệp nào ?",
+   "ref": "Quốc dương chọn loại hình doanh nghiệp công ty tnhh mtv",
+   "ans": "Quốc dương chọn loại hình doanh nghiệp công ty tnhh",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đưa tiền giữ xe ở đây thì sao ?",
+   "ref": "Tự chịu trách nhiệm",
+   "ans": "Ở đây có ai đưa tiền đâu",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ngoài nội thất ra thì siêu thị chợ lớn còn bán những mặt hàng gì ?",
+   "ref": "Những mặt hàng nội thất",
+   "ans": "Bán các thiết bị điện tử , điện lạnh",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bức ảnh được lấy từ nguồn nào ?",
+   "ref": "Kenh14",
+   "ans": "Kien trúc",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bức ảnh đang chụp cảnh gì ?",
+   "ref": "Một con phố đi bộ",
+   "ans": "Bức ảnh đang chụp một khu vui chơi",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu nghỉ mát này tên gì ?",
+   "ref": "Khu nghỉ mát này tên phương nam",
+   "ans": "Phương nam",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đại lý này ở đâu ?",
+   "ref": "Ở 235 tỉnh lộ 10 , thị trấn hậu nghĩa , tỉnh long an",
+   "ans": "Ở 101-103 lê lợi - thành phố vĩnh long",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng bên trái cửa hàng đang mở cửa tên gì ?",
+   "ref": "Cửa hàng tên vietnamese gift shop",
+   "ans": "Cửa hàng có tên ha long",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán này nằm ở đường nào ?",
+   "ref": "Quán này nằm ở đường lê văn sỹ",
+   "ans": "Đường nguyễn thị minh khai",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có bao nhiêu người đang đứng trong cửa hàng the face shop ?",
+   "ref": "Có ba người đang đứng trong cửa hàng the face shop",
+   "ans": "Không có ai cả",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khung cảnh này là ở đâu ?",
+   "ref": "Bảo tàng tài nguyên rừng việt nam",
+   "ans": "Ở trường đại học tt việt nam",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ăn tên gì ?",
+   "ref": "Quán cơm xuất hộp",
+   "ans": "Quán ăn tên quán cơm gà",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có thể gọi món cháo lòng khi đi ăn ở quán này vào buổi nào ?",
+   "ref": "Có thể gọi món cháo lòng khi đi ăn ở quán này vào buổi sáng",
+   "ans": "Vào buổi sáng",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tiệm cà phê này ở đâu ?",
+   "ref": "Ở 68 / 16d , phó cơ điều , phường 3 , thành phố vĩnh long",
+   "ans": "Ở số 66 , phố cơ điều , phường 3 , thành phố vĩnh long",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tầng 1 của căn nhà cho thuê có diện tích như thế nào ?",
+   "ref": "Tầng 1 có diện tích là 100 mét vuông",
+   "ans": "Tầng 1 có diện tích 51 m2",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Người biên dịch quyển sách này là ai ?",
+   "ref": "Người biên dịch quyển sách này là việt khương",
+   "ans": "Người biên dịch quyển sách này là nguyễn thị kim liên",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Buổi lễ gì đang diễn ra ?",
+   "ref": "Lễ khai giảng",
+   "ans": "Lễ khai giảng năm học 2016-2017",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Địa chỉ website của queenie là gì ?",
+   "ref": "Queenienails . com",
+   "ans": "Www . queenie . vn",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Dự án đầu tư này sẽ được triển khai ở đâu ?",
+   "ref": "Ở tỉnh bắc giang",
+   "ans": "Ở thành phố hồ chí minh",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Làn bên phải dẫn đến quận mấy ?",
+   "ref": "Làn bên phải dẫn đến quận 8",
+   "ans": "Làn bên phải dẫn đến quận tân phú",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ăn sẽ khai trương vào ngày nào ?",
+   "ref": "Quán ăn sẽ khai trương vào ngày 20 tháng 6 năm 2018",
+   "ans": "Quán ăn sẽ khai trương vào ngày 24 tháng 6 năm 2018",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tấm bảng có nền màu gì ?",
+   "ref": "Có màu nâu",
+   "ans": "Màu nâu",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là bệnh viện của tỉnh nào ?",
+   "ref": "Của tỉnh vĩnh long",
+   "ans": "Bệnh viện của tỉnh vinh long",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán này chủ yếu bán đồ gì ?",
+   "ref": "Quán này chủ yếu bán đồ biển",
+   "ans": "Bán hải sản",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chức năng của khu này là gì ?",
+   "ref": "Chức năng của khu này là khám và điều trị trong ngày",
+   "ans": "Khu này dùng để trưng bày và triển lãm sách",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Hai chiếc xe máy đang đậu ở đâu ?",
+   "ref": "Hai chiếc xe máy đang đậu ở cửa hàng cafe 81",
+   "ans": "Ở trước quán cafe số 121",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Sản vật ở vị trí thứ nhất là gì ?",
+   "ref": "Khuôn bánh trung thu",
+   "ans": "Các loại bánh",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Koreana là gì ?",
+   "ref": "Là tên thẩm mĩ viện",
+   "ans": "Là tên viện chăm sóc da",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Sao y chính bản vào ngày nào ?",
+   "ref": "3-10-1968",
+   "ans": "Ngày 31 tháng 8 năm 1968",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Biển hiệu này của cửa hàng tên gì ?",
+   "ref": "Cửa hàng nhà xinh",
+   "ans": "Nhà xing",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại của hiển là gì ?",
+   "ref": "Số điện thoại của hiển là 0 868 3 700 88",
+   "ans": "0862798889",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ăn nằm ở đâu ?",
+   "ref": "Số 322 đường tân sơn nhì , phường tân sơn nhì , quận tân phú",
+   "ans": "Quán ăn nằm ở số 122 đường trần quốc thảo",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ngoài cơm ra quán ngũ gia còn bán những món gì ?",
+   "ref": "Trà sâm bí đao",
+   "ans": "Bán trà chanh",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng chuyên làm gì ?",
+   "ref": "Cửa hàng chuyên gội đầu - tẩy trắng - hấp dầu - uốn mi - làm móng - vẽ móng - tẩy trắng - lột mụn - đắp dưỡng - massage - đắp collagen",
+   "ans": "Chuyên các mặt hàng mỹ phẩm",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trường này là trường gì ?",
+   "ref": "Trường này là trường đại học kinh tế quốc dân",
+   "ans": "Trường đại học kinh tế quốc dân",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng bán rèm vải tên gì ?",
+   "ref": "Tên mạnh",
+   "ans": "Tên thành đạt",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Con số 3 được trang trí bằng màu gì ?",
+   "ref": "Con số 3 được trang trí bằng màu xanh dương",
+   "ans": "Con số 3 được trang trí bằng màu xanh dương",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu vực tiếp nhận cung ứng được lập ra nhằm phục vụ cho ai ?",
+   "ref": "Khu vực tiếp nhận cung ứng được lập ra nhằm phục vụ nhân dân khu vực cách ly",
+   "ans": "Khu vực tiếp nhận cung ứng được lập ra nhằm phục vụ cho nhân dân khu vực các quận huyện các tỉnh thành phố",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tòa nhà này được sử dụng làm mục đích gì ?",
+   "ref": "Tòa nhà này được sử dụng để làm thư viện hà nội",
+   "ans": "Làm thư viện",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trung tâm đào đạo tiếng nhật tên gì ?",
+   "ref": "Sunrise",
+   "ans": "Tên sunshine",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Nguyễn thị lợi sinh năm bao nhiêu ?",
+   "ref": "Năm 1911",
+   "ans": "1930",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Căn hộ có bao nhiêu phòng ngủ ?",
+   "ref": "Căn hộ có 2 phòng ngủ",
+   "ans": "Căn hộ có hai phòng ngủ",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Dòng chữ phía dưới tên công ty thinh phat land có nội dung gì ?",
+   "ref": "Kiến tạo cuộc sống",
+   "ans": "Dòng chữ phía dưới tên công ty thinh phat land có nội dung là kiến tạo cuộc sống",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bức ảnh này đang nói về gì ?",
+   "ref": "Bức ảnh đang nói về một số trang thiết bị cần có trong siêu thị mini",
+   "ans": "Bức ảnh này đang nói về một cửa hàng bán đồ trang trí nội thất",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Biển quảng cáo đang quảng cáo cho sản phẩm của công ty nào ?",
+   "ref": "Công ty mentos",
+   "ans": "Công ty mimosa",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quầy hàng này trưng bày những mặt hàng gì ?",
+   "ref": "Mắm thái và sốt tôm kha",
+   "ans": "Các loại nước chấm",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là quầy tính tiền số mấy ?",
+   "ref": "Số 21",
+   "ans": "Số 21",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Món ăn mà cửa hàng này chuyên bán là gì ?",
+   "ref": "Bún đậu mắm tôm hà nội",
+   "ans": "Món ăn mà cửa hàng này chuyên bán là cơm tấm , bún thịt nướng và sườn",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ăn này nằm ở quận mấy ?",
+   "ref": "Quận 3",
+   "ans": "Quận 3",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là giấy gì ?",
+   "ref": "Giấy chứng nhận bảo hiểm tự nguyện mô tô- xe máy",
+   "ans": "Đây là giấy chứng nhận bảo hiểm",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tên của nhà hàng là gì ?",
+   "ref": "Nhà hàng có tên là nét sài gòn",
+   "ans": "Nhà hàng có tên là nỗi lòng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Số điện thoại của quán ốc là gì ?",
+   "ref": "0963494136",
+   "ans": "Quán có số điện thoại là 093644444",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có thể khơi dậy kích thích trí tưởng tượng , thúc đẩy tiềm năng sẵn có của trẻ bằng phương pháp nào ?",
+   "ref": "Có thể khơi dậy kích thích trí tưởng tượng , thúc đẩy tiềm năng sẵn có của trẻ bằng cách làm cho trẻ hiểu nhưng không buộc trẻ phải ghi nhớ",
+   "ans": "Bằng cách tạo ra môi trường tương tác và trải nghiệm",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ẩm thực việt - hàn sóc việt nằm ở số nhà bao nhiêu ?",
+   "ref": "Số 01a",
+   "ans": "19",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Lầu 5 có khu vui chơi gì ?",
+   "ref": "Rạp chiếu phim cinema",
+   "ans": "Có khu vui chơi trẻ em",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Hầu hết các tấm đệm ghế trong quán có màu gì ?",
+   "ref": "Màu nâu",
+   "ans": "Hầu hết các tấm đệm ghế trong quán có màu đen",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là gì ?",
+   "ref": "Đây là nhà xe sinh viên của ký túc xá ngoại ngữ",
+   "ans": "Đây là nhà xe sinh viên",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Những chiếc xe tải này đang đậu ở đâu ?",
+   "ref": "Ở khu vực f của một khu chợ",
+   "ans": "Ở trong một khu chợ",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cuốn sách có tên là gì ?",
+   "ref": "Cuốn sách có tên là sài gòn chợ lớn",
+   "ans": "Cuốn sách có tên là \"SÁU GÓI\"",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có thể tìm thấy nhà hàng cây me 289 tại số nhà mấy trên đường lê văn thọ ?",
+   "ref": "465",
+   "ans": "100",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ngôi trường này nằm tại địa phương nào ?",
+   "ref": "Ngôi trường này nằm tại tp . hồ chí minh",
+   "ans": "Ngôi trường này nằm tại tỉnh hồ chí minh",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Mỗi chai có thể tích bao nhiêu ?",
+   "ref": "Mỗi chai có thể tích là 250 ml",
+   "ans": "1 lít",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Người phụ nữ đang làm gì ?",
+   "ref": "Đang tạo dáng để chụp ảnh",
+   "ans": "Cô ấy đang tạo dáng",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán này bán món gì ?",
+   "ref": "Quán này bán món cá lóc",
+   "ans": "Quán này bán càloc nước",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chương trình khuyến mãi giảm bao nhiêu phần trăm ?",
+   "ref": "Chương trình khuyến mãi giảm 50%",
+   "ans": "Giảm 50%",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khách sạn này tên gì ?",
+   "ref": "Khách sạn này tên biển sao",
+   "ans": "Khách sạn này tên biển sao",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trọng lượng tối đa của xe vào đường này là bao nhiêu ?",
+   "ref": "Là 10 tấn",
+   "ans": "Trọng lượng tối đa của xe vào đường này là 180 kg",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tiệm candy nails có số điện thoại liên lạc là gì ?",
+   "ref": "0909542173",
+   "ans": "0909173456",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tiến mobile chuyên kinh doanh gì ?",
+   "ref": "Tiến mobile chuyên kinh doanh điện thoại di động",
+   "ans": "Điện thoại di động",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa tiệm này bán gì ?",
+   "ref": "Cửa tiệm này bán chăn - ga - gối - đệm hàn quốc",
+   "ans": "Cửa tiệm này bán nội thất",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chữ tầng 14 có màu gì ?",
+   "ref": "Có màu xanh dương",
+   "ans": "Màu vàng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tên viết tắt của trung tâm kiểm soát bệnh tật là gì ?",
+   "ref": "Tên viết tắt của trung tâm là cdc",
+   "ans": "Trung tâm kiểm soát bệnh tật có tên viết tắt là cdc dt",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán cơm 51 nhận những dịch vụ gì ?",
+   "ref": "Quán cơm 51 nhận tiệc cưới , liên hoan , sinh nhật",
+   "ans": "Nhận nấu ăn , phục vụ , làm tiệc cưới , liên hoan",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Tên đầy đủ của cô bìn là gì ?",
+   "ref": "Tên đầy đủ của cô bìn là nguyễn yến bình",
+   "ans": "Cô bìn có tên là yến",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Thời gian hoạt động của đường sách như thế nào ?",
+   "ref": "Thời gian hoạt đồng từ 08 h 00 đến 22 h 00",
+   "ans": "Đường sách hoạt động từ 8 giờ đến 22 giờ",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Những chiếc xe này đang chạy ở đâu ?",
+   "ref": "Ở trên đường trong thành phố hà nội",
+   "ans": "Ở trên đường phố đi bộ",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Địa chỉ đầy đủ của phòng khám này là gì ?",
+   "ref": "Địa chỉ đầy đủ của phòng khám này là 569 lê thánh tông , phường bạch đằng , tp . hạ long , quảng ninh",
+   "ans": "Phòng khám này có địa chỉ là 590 đường nguyễn xiển , phường thanh xuân nam , quận thanh xuân , thành phố hà nội",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bảng ở trên có chữ màu gì ?",
+   "ref": "Chữ màu trắng",
+   "ans": "Màu xanh dương",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Bình ắc quy hybrid do công ty nào sản xuất ?",
+   "ref": "Bình ắc quy hybrid do công ty pinaco sản xuất",
+   "ans": "Công ty cổ phần bình điện gia hưng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Đây là biển hiệu của của tiệm gì ?",
+   "ref": "Đây là biển hiệu của cgv",
+   "ans": "Tiệm phim",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Hôm nay là ngày mấy ?",
+   "ref": "Hôm nay là ngày 19-02-2019",
+   "ans": "Hôm nay là ngày 2 tháng 9 năm 2019",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trường cao đẳng asean có số thứ tự thứ mấy ?",
+   "ref": "Có số thứ tự thứ 3",
+   "ans": "Số 1",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Ở đây bán gì ?",
+   "ref": "Ở đây bán chè thái",
+   "ans": "Ở đây bán bún thịt nướng , bún chả cá",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Trường đào tạo quản lý doanh nghiệp tên gì ?",
+   "ref": "Là cbam",
+   "ans": "Tên cb",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Những mặt hàng này được để ở trên tủ kệ của hãng nào ?",
+   "ref": "Hãng sanaky",
+   "ans": "Hãng sanaky",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Biển hiệu chứa dòng chữ gì ?",
+   "ref": "Biển hiệu chứa dòng chữ cafe sữa 12 000",
+   "ans": "Cà phê sữa",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Giải thể thao diễn ra vào ngày nào ?",
+   "ref": "Ngày 16 và 17 tháng 12 năm 2016",
+   "ans": "Ngày 22 tháng 12 năm 2016",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Công ty cổ phần ứng dụng quốc tế tên gì ?",
+   "ref": "Ipeco",
+   "ans": "Inteco",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng ngân khánh 2 kinh doanh mặt hàng gì ?",
+   "ref": "Thực phẩm an toàn",
+   "ans": "Cửa hàng ngân khánh 2 kinh doanh thịt heo",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Dòng chữ superstore được trang trí bằng màu gì ?",
+   "ref": "Dòng chữ superstore được trang trí bằng màu vàng",
+   "ans": "Dòng chữ superstore được trang trí bằng màu đỏ",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Chi nhánh tiệm làm tóc đức nguyễn ở thành phố mỹ tho nằm tại số nhà mấy ?",
+   "ref": "Số 30 ấp bắc",
+   "ans": "Số 30",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "ovqa",
+   "q": "Khu nội địa đến hướng nào ?",
+   "ref": "Hướng phía trước",
+   "ans": "Hướng daniels",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cồn vành là gì ?",
+   "ref": "Là tên biển",
+   "ans": "Là tên của con đường",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Lễ hội du lịch mà tin tức quảng bá có tên là ?",
+   "ref": "Lễ hội du lịch carnaval",
+   "ans": "Lễ hội du lịch biển đảo và hang động",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Quán ăn có tên là gì ?",
+   "ref": "Quán có tên là nhất tâm",
+   "ans": "Nhà hàng có tên là nhật tâm",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Thức ăn gỏi cánh gà có giá bao nhiêu ?",
+   "ref": "Thức ăn gỏi cánh gà có giá là 35 000 đồng",
+   "ans": "Giá là 3 000 đồng",
+   "judge": "sai"
+  },
+  {
+   "src": "ovqa",
+   "q": "Có bao nhiêu người ?",
+   "ref": "Không có ai",
+   "ans": "Không có ai",
+   "judge": "dung"
+  },
+  {
+   "src": "ovqa",
+   "q": "Cửa hàng thảo sương kinh doanh loại hình dịch vụ gì ?",
+   "ref": "Hớt tóc",
+   "ans": "Cửa hàng thảo sương kinh doanh các dịch vụ làm đẹp",
+   "judge": "dung"
+  }
+ ],
+ "res": {
+  "n": 200,
+  "dung_%": 28.5,
+  "mot_phan_%": 10.5,
+  "khop_gia_tri_%": 23.9,
+  "chep_lai_giong": null
+ }
+}

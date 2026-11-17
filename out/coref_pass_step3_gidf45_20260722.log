@@ -1,0 +1,6 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[    64s] ✓ loaded · parents 65,098 · phrases 376,800
+[   169s] ✓ coref-pass xong · edges 615 · after_role 1,296 · records_with_occ 356
+[   169s] stats: {'records_with_occ': 356, 'coref_edges': 615, 'after_role': 1296}
+[   169s] lưu → checkpoints/network_v11_coref_step3_gidf45.pkl (cần state.save persist coref/after_role — RUNBOOK §4)
+[   313s] ✓ xong. Kế: scripts/dump_coref_edges.py --checkpoint checkpoints/network_v11_coref_step3_gidf45.pkl

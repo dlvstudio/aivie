@@ -1,0 +1,74 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] === load_network_v11_styled_1k START (pid=25105) → out/logs/load_network_v11_styled_1k_20260723_192832.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] ▶ unpickle
+[     7.0s] ✓ unpickle  (7.0s)
+[     7.0s] ▶ vocab (32002 token)
+[     7.1s] ✓ vocab (32002 token)  (0.0s)
+[     7.1s] ▶ adjacency
+[    17.4s] ✓ adjacency  (10.3s)
+[    17.4s] ▶ embedding
+[    17.5s] ✓ embedding  (0.1s)
+[    17.5s] ▶ parents
+[    17.5s] parents: deserialize 65098 records …
+[    17.7s] parents 5000/65098 (7.7%)
+[    17.8s] parents 10000/65098 (15.4%)
+[    17.9s] parents 15000/65098 (23.0%)
+[    18.1s] parents 20000/65098 (30.7%)
+[    18.2s] parents 25000/65098 (38.4%)
+[    19.3s] parents 30000/65098 (46.1%)
+[    23.2s] parents 35000/65098 (53.8%)
+[    25.0s] parents 40000/65098 (61.4%)
+[    25.2s] parents 45000/65098 (69.1%)
+[    25.3s] parents 50000/65098 (76.8%)
+[    25.5s] parents 55000/65098 (84.5%)
+[    25.6s] parents 60000/65098 (92.2%)
+[    25.8s] parents 65000/65098 (99.8%)
+[    56.3s] ▶ rebuild_hierarchical_index …
+[    58.1s] ✓ rebuild_hierarchical_index (1.8s)
+[    66.7s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    66.7s] ✓ parents  (49.2s)
+[    66.7s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    71.2s] sidecar thiếu → migrate: network_v11_styled_1k.content.pkl
+[    71.2s] ✓ load_checkpoint XONG
+[123s] bodies=511
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  discourse: Ġrốt Ġcuộc | Ġcảm Ġgiác | Ġthế Ġnhưng | Ġthực Ġtế | Ġcông Ġty | Ġthời Ġgian
+  plan: Ġrốt Ġcuộc | Ġcảm Ġgiác | Ġthế Ġnhưng
+  MZ only            fact=1.00 bigram=0.3709 style_hits=[]
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng năm 9
+  Mix mid (unsafe)   fact=1.00 bigram=0.3783 style_hits=[]
+    Ngô Quyền cảm giác là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng
+  Mix fact-safe      fact=1.00 bigram=0.3709 style_hits=[]
+    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng năm 9
+
+═══ 'Viết hài hước về Trần Hưng Đạo' ═══
+  discourse: Ġthế Ġnhưng | Ġcảm Ġgiác | Ġrốt Ġcuộc | Ġcông Ġty | Ġthực Ġtế | Ġthời Ġgian
+  plan: Ġthế Ġnhưng | Ġcảm Ġgiác | Ġrốt Ġcuộc
+  MZ only            fact=1.00 bigram=0.3378 style_hits=[]
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+Trần Hưng Đạo viết Hịch tướng sĩ để khích lệ tinh thần binh lính.
+Ông cũng soạn
+  Mix mid (unsafe)   fact=1.00 bigram=0.3600 style_hits=['thế nhưng']
+    Trần Hưng Đạo thế nhưng tên thật là cảm giác Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+Ông là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+Trần Hưng Đạo viết Hịch tướng sĩ để khích lệ tinh thần binh lính.
+  Mix fact-safe      fact=1.00 bigram=0.3324 style_hits=['thế nhưng']
+    Trần Hưng Đạo tên thật là Trần Quốc Tuấn, là danh tướng kiệt xuất của nhà Trần.
+ thế nhưngÔng là tổng chỉ huy quân đội Đại Việt trong hai cuộc kháng chiến chống quân Nguyên Mông năm 1285 và 128.8
+Trần Hưng Đạo viết Hịch tướng sĩ để khích lệ tinh thần binh lính.
+Ông
+
+[289s] → out/probe_style_fact_mix.log
+Đọc: fact≈1.0 + bigram gần MZ + style_hits có frame/redup → đạt.

@@ -1,0 +1,51 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[49s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.036        —        —           —
+none          0.036    0.423    0.196      -0.015
+pos           0.051    0.423    0.207      +0.000
+content       0.062    0.412    0.204      +0.011
+clear         0.047    0.332    0.157      -0.004
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng   0 · thua   4 · bất đồng   4/274 = 1.5%
+  content  thắng   4 · thua   1 · bất đồng   5/274 = 1.8%
+  clear    thắng   2 · thua   3 · bất đồng   5/274 = 1.8%
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          12 =   4.4%
+  C_hoà_nhưng_nền_thua          59 =  21.5%
+  D_gold_NGOÀI_nhóm_hoà        203 =  74.1%
+  B = đã đúng sẵn · **C = phần tín hiệu phân biệt NỘI NHÓM cứu được** · D = cần cách khác.
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  58.8%** (161/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  69.0%** (189/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.423 · top1 0.051)
+G2 prior có tác dụng?            : tw=0 → 0.036 ‖ pos → 0.051 (Δ +0.015)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `content` 0.062, Δ +0.011)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+[260s] → out/probe_theme_prior_v12e.log

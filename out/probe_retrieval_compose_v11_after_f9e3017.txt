@@ -1,0 +1,170 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[     0.0s] === load_network_v11 START (pid=90411) → out/logs/load_network_v11_20260721_204938.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11.pkl …
+[     0.0s] ▶ unpickle
+[     7.0s] ✓ unpickle  (7.0s)
+[     7.0s] ▶ vocab (32002 token)
+[     7.0s] ✓ vocab (32002 token)  (0.0s)
+[     7.0s] ▶ adjacency
+[    16.7s] ✓ adjacency  (9.7s)
+[    16.7s] ▶ embedding
+[    16.8s] ✓ embedding  (0.1s)
+[    16.8s] ▶ parents
+[    16.8s] parents: deserialize 65098 records …
+[    17.0s] parents 5000/65098 (7.7%)
+[    17.2s] parents 10000/65098 (15.4%)
+[    17.3s] parents 15000/65098 (23.0%)
+[    17.4s] parents 20000/65098 (30.7%)
+[    17.6s] parents 25000/65098 (38.4%)
+[    18.7s] parents 30000/65098 (46.1%)
+[    22.0s] parents 35000/65098 (53.8%)
+[    23.7s] parents 40000/65098 (61.4%)
+[    23.9s] parents 45000/65098 (69.1%)
+[    24.0s] parents 50000/65098 (76.8%)
+[    24.2s] parents 55000/65098 (84.5%)
+[    24.3s] parents 60000/65098 (92.2%)
+[    24.4s] parents 65000/65098 (99.8%)
+[    49.3s] ▶ rebuild_hierarchical_index …
+[    50.9s] ✓ rebuild_hierarchical_index (1.6s)
+[    58.4s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    58.4s] ✓ parents  (41.6s)
+[    58.4s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    62.5s] sidecar thiếu → migrate: network_v11.content.pkl
+[    62.5s] ✓ load_checkpoint XONG
+[   109s] ✓ loaded · corpus index 51,071 đơn vị
+[   109s] ═══ ENTITY (multi-fact composition) — n_facts = số fact KHÁC NHAU ghép ═══
+[   111s]     [diag] focus='ĠNhà'(5.13) 'ĠLý'(4.90) · facts_about-theme#1=' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ ' · plan.agenda=' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ '
+[   167s]   Hỏi: Nhà Lý là gì
+    n_facts=2 copy=0.25 ent_keep=0.00
+    → Lịch sử:
+Tiêu đề: Lý Thái Tổ
+
+Lý Thái Tổ tên thật là Lý Công Uẩn, là vị vua đầu tiên của nhà Lý.
+Lý Công Uẩn sinh năm 974, quê ở vùng Kinh Bắc, được nuôi dạy trong chùa từ nhỏ.
+Năm 1009, Lý Công Uẩn
+[   169s]     [diag] focus='Nhà'(5.83) 'ĠTrần'(4.97) · facts_about-theme#1=' Nhà Trần ba lần đánh thắng quân Nguyên – Mông xâm lược. Chiến thắng B' · plan.agenda=' Nhà Trần ba lần đánh thắng quân Nguyên – Mông xâm lược. Chiến thắng B'
+[   190s]   Hỏi: Nhà Trần là gì
+    n_facts=2 copy=0.49 ent_keep=0.00
+    → Lịch sử:
+Tiêu đề: Hồ Quý Ly
+
+Hồ Quý Ly để lại bài học cho lịch sử nhiều hơn là cái ông làm cho lịch sử.
+Thời niên thiếu, Hồ Quý Ly theo học võ, gia nhập chốn quan trường triều Trần sau khi đỗ thi Hương, khoa Hoành từ.
+Năm 13
+[   191s]     [diag] focus='ĠHà'(4.53) 'ĠNội'(5.10) · facts_about-theme#1=' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành' · plan.agenda=' Hà Nội có Hồ Gươm, còn gọi là Hồ Hoàn Kiếm, ngay giữa trung tâm thành'
+[   202s]   Hỏi: Hà Nội là gì
+    n_facts=1 copy=0.32 ent_keep=0.00
+    → ? Đáp: Ca trù là hình thức hát xướng cổ truyền ở Hà Nội, thường biểu diễn trên phố cổ. Nghệ thuật kết hợp hát, đàn và trống chầu. Ca trù được UNESCO ghi danh di sản văn hóa phi vật thể.
+[   203s]     [diag] focus='ĠSông'(6.89) 'ĠHồng'(5.27) · facts_about-theme#1=' Sông Hồng chảy qua Hà Nội. Dòng sông bồi đắp đồng bằng Bắc Bộ phì nhi' · plan.agenda=' Sông Hồng chảy qua Hà Nội. Dòng sông bồi đắp đồng bằng Bắc Bộ phì nhi'
+[   220s]   Hỏi: Sông Hồng là gì
+    n_facts=1 copy=0.20 ent_keep=0.00
+    → Bài 1:
+Tiết này luyện mẫu câu «Câu định nghĩa: Ai/Cái gì là gì». Em đọc từng ví dụ và nhận ra cấu trúc.
+Ví dụ mẫu 1: Thủ đô Việt Nam là Hà Nội.
+Ví dụ mẫu 2: Quốc kỳ Việt Nam là cờ đỏ.
+Ví
+[   221s]     [diag] focus='Ġlà'(1.89) 'Ġai'(3.69) · facts_about-theme#1=' AI hỗ trợ đọc phim X-quang, phát hiện bệnh sớm và gợi ý điều trị. Khô' · plan.agenda=' trong y tế giúp gì? Đáp: AI hỗ trợ đọc phim X-quang, phát hiện bệnh s'
+[   239s]   Hỏi: Trần Hưng Đạo là ai
+    n_facts=4 copy=0.53 ent_keep=0.00
+    → Lịch sử:
+Tiêu đề: Lý Chiêu Hoàng
+
+Thuận Thiên Công Chúa, người kế vị ngôi hoàng hậu sau đó, chính là chị ruột của bà.
+Bà qua đời ngay sau Thái Tông khoảng 1 năm.
+Trần Tự Khánh là anh thứ của Trần Thị Dung, tức là bác ruột của Chiêu Thánh.
+[   240s]     [diag] focus='ĠThăng'(6.49) 'ĠLong'(4.72) · facts_about-theme#1=' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngà' · plan.agenda=' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngà'
+[   261s]   Hỏi: Thăng Long là gì
+    n_facts=4 copy=0.51 ent_keep=0.00
+    → Lịch sử:
+Tiêu đề: Gia Long
+
+Nguyễn Ánh là cháu nội của chúa Nguyễn Phúc Khoát, vị chúa Nguyễn áp chót ở Đàng Trong.
+Năm 1787, ông đã trở lại và giữ vững được Nam Bộ.
+Triều đại của Gia Long đã chính thức sử dụng quốc hiệu Việt Nam.
+[   261s] ═══ GRADE closed-book — ans_recall = retrieval trúng đáp ═══
+[   277s]   Hỏi: Ai chữa bệnh  [gold: Bác sĩ chữa bệnh.]
+    ans_recall=0.00 n_facts=1
+    → Lịch sử:
+Tiêu đề: Lê Thánh Tông
+
+Lê Thánh Tông là vị vua thứ năm của nhà Hậu Lê, trị vì từ năm 1460 đến 1497.
+Thời Lê Thánh Tông được coi là giai đoạn thịnh trị nhất của nhà Hậu Lê.
+Ông ban hành bộ luật Hồng Đức
+[   284s]   Hỏi: Ai trồng lúa  [gold: Nông dân trồng lúa.]
+    ans_recall=0.25 n_facts=2
+    → nhiều vì sao? Đáp: Vùng có phù sa dày, sông ngòi dẫn nước thuận tiện cho cấy lúa. Khí hậu ấm và mưa phù hợp vụ lúa. Đây là vựa lúa lớn nhất Việt Nam.
+[   297s]   Hỏi: Ai may quần áo  [gold: Thợ may may quần áo.]
+    ans_recall=1.00 n_facts=4
+    → Bài 1:
+Tiết Đạo đức và Xã hội giúp em sống có trách nhiệm với gia đình và cộng đồng. Đây là phần 2 trong chương trình lớp 3.
+Thợ may, may quần áo.
+Mỗi người một nghề.
+Lao động là vinh quang.
+Em mơ ước làm bác sĩ.
+[   318s]   Hỏi: Khi đi xe máy cần gì  [gold: Đội mũ bảo hiểm khi đi xe máy.]
+    ans_recall=0.00 n_facts=4
+    → Lịch sử:
+Tiêu đề: Hồ Chí Minh
+
+Về mặt tư tưởng chính trị, Hồ Chí Minh là một người theo chủ nghĩa Marx–Lenin.
+Ông là nhà lãnh đạo phong trào độc lập Việt Minh tiến hành Cách mạng Tháng Tám năm 1945.
+Hồ Chí Minh giảm dần hoạt động chính
+[   338s]   Hỏi: Đoàn kết giúp em thế nào  [gold: Đoàn kết giúp em mạnh hơn.]
+    ans_recall=0.00 n_facts=2
+    → Lịch sử:
+Tiêu đề: Nhà Trần
+
+Nhà Trần là triều đại phong kiến Việt Nam tồn tại từ năm 1225 đến năm 1400.
+Nhà Trần được lập nên khi Trần Cảnh, tức Trần Thái Tông, lên ngôi năm 1225.
+Trần Thủ Độ là người có
+[   356s]   Hỏi: Ai giữ an ninh  [gold: Công an giữ an ninh.]
+    ans_recall=0.00 n_facts=3
+    → Lịch sử:
+Tiêu đề: Nhà Nguyễn
+
+Nhà Nguyễn là triều đại phong kiến cuối cùng của Việt Nam, tồn tại từ năm 1802 đến năm 1945.
+Nhà Nguyễn do Nguyễn Ánh, tức vua Gia Long, sáng lập năm 1802.
+Gia Long đặt kinh đô
+[   369s]   Hỏi: Chính phủ làm gì  [gold: Chính phủ điều hành đất nước.]
+    ans_recall=1.00 n_facts=1
+    → ? Đáp: Chính phủ điều hành đất nước theo luật do Quốc hội ban hành. Chính phủ tổ chức giáo dục, y tế, an ninh và phát triển kinh tế. Thủ tướng là người đứng đầu Chính phủ.
+[   380s]   Hỏi: Tòa án làm gì  [gold: Tòa án xét xử theo luật.]
+    ans_recall=1.00 n_facts=0
+    → ? Đáp: Tòa án xét xử tranh chấp và tội phạm theo pháp luật. Phán quyết của tòa phải công bằng, dựa trên chứng cứ. Đây là nhánh quyền lực tư pháp trong nhà nước pháp quyền.
+[   401s]   Hỏi: Công an làm gì  [gold: Công an điều tra tội phạm.]
+    ans_recall=0.00 n_facts=2
+    → Lịch sử:
+Tiêu đề: Chiến dịch Hồ Chí Minh
+
+Tên Chiến dịch Hồ Chí Minh do Bộ Chính trị Đảng Lao động Việt Nam quyết định.
+Có hai nhân vật lãnh đạo không phải là quân nhân tham gia là các ông Nguyễn Văn Linh và Võ Văn Kiệt.
+Ông Nguyễn Văn Linh được giao phụ
+[   420s]   Hỏi: Trung thu là tết của ai  [gold: Trung thu là tết trẻ em.]
+    ans_recall=0.17 n_facts=4
+    → Lịch sử:
+Tiêu đề: Hồ Chí Minh
+
+Về mặt tư tưởng chính trị, Hồ Chí Minh là một người theo chủ nghĩa Marx–Lenin.
+Ông là nhà lãnh đạo phong trào độc lập Việt Minh tiến hành Cách mạng Tháng Tám năm 1945.
+Hồ Chí Minh giảm dần hoạt động chính
+[   441s]   Hỏi: Công dân có nghĩa vụ gì  [gold: Công dân có nghĩa vụ nộp thuế.]
+    ans_recall=0.00 n_facts=4
+    → Lịch sử:
+Tiêu đề: Chiến tranh Đông Dương
+
+Các tài liệu nghiên cứu, sách báo ở nước ngoài phần lớn gọi là Chiến tranh Việt-Pháp hoặc Chiến tranh Đông Dương.
+Động cơ thúc đẩy Pháp tham chiến mang tính chính trị và tâm lý hơn là kinh tế.
+Trong khi đó, mục
+[   460s]   Hỏi: Người khuyết tật cần gì  [gold: Người khuyết tật cần hỗ trợ.]
+    ans_recall=0.00 n_facts=5
+    → Đạo đức và Xã hội:
+Lớp 4:
+Tiêu đề: Đạo đức và Xã hội lớp 4 — bài tổng hợp
+
+Hiến pháp là luật cơ bản nhất. Quyền con người được pháp luật bảo vệ. Trẻ em có quyền học hành. Trẻ em có quyền được chăm sóc.
+
+Phụ nữ bình đẳng với
+[   460s] ═══════════ TÓM TẮT ═══════════
+[   460s]   ENTITY: n_facts TB 2.33 · copy TB 0.38 · ent_keep TB 0.00
+[   460s]   GRADE : ans_recall TB 0.28
+[   460s] → ĐỌC: n_facts>1 = ghép đa-fact THẬT (trả lời câu tác giả). ent_keep/ans_recall + đọc tay = có ĐÚNG NGỮ CẢNH không. Thấp ⇒ lever RETRIEVAL; cao ⇒ lever SCALE coverage.

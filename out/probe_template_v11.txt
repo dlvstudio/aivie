@@ -1,0 +1,37 @@
+[     0s] E (32002, 96) · vocab 32,002
+[     0s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[     0s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[     0s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[     2s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[     4s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[    28s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[    30s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[    30s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[    30s] k-means K=200 …
+[    30s]   kmeans iter 0/25
+[    31s]   kmeans iter 5/25
+[    31s]   kmeans iter 10/25
+[    32s]   kmeans iter 15/25
+[    33s]   kmeans iter 20/25
+[    33s] đếm n-gram (order 1..3, corpus 10M) …
+[   120s] held-out qa_heldout.jsonl: 278 chuỗi
+[   120s] ═══ PART 1: KHUÔN cat-trigram tần cao + 1 hiện thực bề mặt ═══
+[   121s]   (107, 107, 107) (n=299931): ' tính từ\nBài'
+[   121s]   (107, 150, 150) (n=37945): '\nVí dụ mẫu'
+[   121s]   (150, 150, 107) (n=37288): 'Ví dụ: rèn'
+[   121s]   (96, 0, 191) (n=31170): ''
+[   121s]   (150, 107, 107) (n=27445): '<EOS>Từ: a'
+[   121s]   (191, 191, 0) (n=17436): ''
+[   121s]   (144, 144, 144) (n=16893): ' sau đó đã tử'
+[   121s]   (191, 0, 191) (n=16862): ''
+[   121s]   (32, 144, 144) (n=16721): ', thấy mình sắp'
+[   122s]   (96, 191, 0) (n=16079): ''
+[   122s] ═══ PART 2: bits dự đoán HẠNG-MỤC kế (tụt theo k ⇒ khuôn có cấu trúc) ═══
+[   122s]   order 1 (context 1 hạng-mục): 5.752 bits/hạng-mục
+[   122s]   order 2 (context 2 hạng-mục): 5.650 bits/hạng-mục
+[   122s]   order 3 (context 3 hạng-mục): 6.127 bits/hạng-mục
+[   122s] ═══ PART 3: dự đoán TOKEN kế — coverage% + bits, surface vs category theo order ═══
+[   123s]   order 1: surface cov 84.4% bits  8.961  ·  category cov 93.5% bits  9.419
+[   123s]   order 2: surface cov 49.7% bits 11.778  ·  category cov 74.8% bits 10.263
+[   124s]   order 3: surface cov 19.8% bits 13.857  ·  category cov 40.3% bits 12.611
+[   124s] ═══ ĐỌC: PART3 — surface cov SỤP theo order? category cov GIỮ + bits < surface ở order cao ⇒ KHUÔN khái quát ⇒ build Tier 3. Cả hai sụp/không hơn ⇒ chốt LM-lo-ngữ-pháp (đóng nhánh) ═══

@@ -1,0 +1,29 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/786 [00:00<?, ?it/s]Loading weights:   5%|▍         | 36/786 [00:00<00:02, 344.15it/s]Loading weights:   9%|▉         | 71/786 [00:00<00:02, 256.24it/s]Loading weights:  13%|█▎        | 104/786 [00:00<00:02, 273.77it/s]Loading weights:  17%|█▋        | 134/786 [00:00<00:02, 276.87it/s]Loading weights:  21%|██        | 163/786 [00:00<00:02, 253.29it/s]Loading weights:  24%|██▍       | 191/786 [00:00<00:02, 260.16it/s]Loading weights:  28%|██▊       | 220/786 [00:00<00:02, 268.96it/s]Loading weights:  32%|███▏      | 251/786 [00:00<00:02, 266.16it/s]Loading weights:  36%|███▌      | 282/786 [00:01<00:01, 278.47it/s]Loading weights:  40%|███▉      | 311/786 [00:01<00:01, 274.90it/s]Loading weights:  44%|████▍     | 344/786 [00:01<00:01, 280.70it/s]Loading weights:  47%|████▋     | 373/786 [00:01<00:01, 282.05it/s]Loading weights:  51%|█████     | 402/786 [00:01<00:01, 278.71it/s]Loading weights:  55%|█████▌    | 434/786 [00:01<00:01, 287.92it/s]Loading weights:  59%|█████▉    | 463/786 [00:01<00:01, 283.68it/s]Loading weights:  63%|██████▎   | 492/786 [00:01<00:01, 278.77it/s]Loading weights:  66%|██████▌   | 520/786 [00:01<00:00, 274.86it/s]Loading weights:  70%|██████▉   | 549/786 [00:01<00:00, 278.41it/s]Loading weights:  74%|███████▍  | 580/786 [00:02<00:00, 285.28it/s]Loading weights:  78%|███████▊  | 610/786 [00:02<00:00, 279.55it/s]Loading weights:  82%|████████▏ | 645/786 [00:02<00:00, 298.66it/s]Loading weights:  86%|████████▌ | 675/786 [00:02<00:00, 277.44it/s]Loading weights:  90%|████████▉ | 704/786 [00:02<00:00, 270.22it/s]Loading weights:  94%|█████████▎| 736/786 [00:02<00:00, 282.86it/s]Loading weights:  97%|█████████▋| 766/786 [00:02<00:00, 277.99it/s]Loading weights: 100%|██████████| 786/786 [00:02<00:00, 277.34it/s]
+[11s] nạp xong Zyphra/Zamba2-7B-Instruct
+[93s] VMLU 100/743 · {'vi': 0.41, 'en': 0.58}
+[120s] VMLU 200/743 · {'vi': 0.41, 'en': 0.53}
+[147s] VMLU 300/743 · {'vi': 0.4, 'en': 0.53}
+[173s] VMLU 400/743 · {'vi': 0.38, 'en': 0.5525}
+[199s] VMLU 500/743 · {'vi': 0.378, 'en': 0.57}
+[227s] VMLU 600/743 · {'vi': 0.37166666666666665, 'en': 0.5633333333333334}
+[253s] VMLU 700/743 · {'vi': 0.37285714285714283, 'en': 0.56}
+[265s] ### VMLU: {'vi': 38.0, 'en': 55.5}
+[311s] en 10/158 · 1.9s/câu
+[350s] en 20/158 · 3.6s/câu
+[386s] en 30/158 · 1.6s/câu
+[426s] en 40/158 · 2.9s/câu
+[484s] en 50/158 · 5.7s/câu
+[550s] en 60/158 · 4.2s/câu
+[730s] en 70/158 · 19.4s/câu
+[867s] ### LƯU out/evalclean_zamba7b_en.jsonl
+[946s] vi 10/158 · 2.8s/câu
+[1041s] vi 20/158 · 3.3s/câu
+[1128s] vi 30/158 · 2.5s/câu
+[1211s] vi 40/158 · 1.9s/câu
+[1317s] vi 50/158 · 15.5s/câu
+[1424s] vi 60/158 · 10.0s/câu
+[1578s] vi 70/158 · 9.3s/câu
+[1691s] ### LƯU out/evalclean_zamba7b_vi.jsonl
+[1691s] ### ZCEIL XONG

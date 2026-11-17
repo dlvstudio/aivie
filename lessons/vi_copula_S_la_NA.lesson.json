@@ -1,0 +1,28 @@
+{
+  "lesson_id": "vi_grade3_copula",
+  "grade": 3,
+  "repeat": 3,
+  "eta_teach": 0.5,
+  "w_init": 2.0,
+  "pattern_id": "vi_copula_S_la_NA",
+  "slots": [
+    { "var": "S" },
+    { "gap": "s+", "min": 1 },
+    { "const": "là" },
+    { "gap": "s+", "min": 1 },
+    { "one_of": ["N", "A"] }
+  ],
+  "bind": {
+    "S": "chủ ngữ",
+    "N": "danh từ",
+    "A": "tính từ"
+  },
+  "examples": [
+    "Thủ đô Việt Nam là Hà Nội",
+    "Quốc kỳ Việt Nam là cờ đỏ",
+    "Sông Hồng là sông lớn",
+    "Mặt trời là ngôi sao lớn",
+    "Trái đất là hành tinh xanh",
+    "Cá heo là động vật biển"
+  ]
+}

@@ -1,0 +1,510 @@
+{
+ "which": "base",
+ "adapters": "",
+ "n": 100,
+ "pass": 0,
+ "pass_rate": 0.0,
+ "def_rate": 0.23,
+ "rows": [
+  {
+   "task": 11,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng hàm `return()` để trả về giá trị ban đầu và hàm `cook_at()` để trả về giá trị cuối cùng."
+  },
+  {
+   "task": 12,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng một hàm để so sánh các cột trong một bảng với tiêu chí là số lượng dòng trong một hàng và điểm số của nó. Hàm này sẽ là:\n```python\nassert_range([1, 2, 3], [2, 4, 5], [1, 1, 1])`\n\n### Giải thích từng bước:\n1. Đầu tiên, chúng ta cần so sánh các cột trong bảng với tiêu chí là số lượng dòng trong một hàng và điểm số của nó.\n2. Chúng ta sẽ sử dụng hàm `assert_range` để thực hiện điều này.\n3. Điểm số của cột đầu tiên sẽ được tính bằng cách chia khoảng cách giữa các cột và nhân với số dòng cho mỗi cột.\n4. Sau đó, chúng ta sẽ so sánh điểm số của tất cả các cột trong bảng với tiêu chí là số lượng dòng trong một hàng và điểm số.\n5. Nếu điểm số của tất cả các cột trong bảng cao hơn điểm số của cột đầu tiên, thì cột đầu tiên sẽ được nâng lên hàng tiếp "
+  },
+  {
+   "task": 13,
+   "pass": false,
+   "resp": "```python\nassert count_common(['red', 'green', 'black', 'pink', 'white', 'white',' black','eyes','white','white','black','pink','pink','green','green','pink','white','red','white','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red','red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red', 'red'"
+  },
+  {
+   "task": 14,
+   "pass": false,
+   "resp": "Để tìm số lượng đĩa CD-ROM có trong một cây đàn piano, chúng ta có thể sử dụng vòng lặp để kiểm tra từng phần tử trong cây đàn piano và trả về kết quả của tất cả các phần tử đó.\n\n```python\nimport pandas as pd\nfrom pathlib import Path\n\n# Thay đổi giá trị của Path('pd')\npath = Path('div')\n\n# Thay đổi giá trị của VolumeFrame(10,8,6)\nvolume_if_== '10,8,6' = 10,8\n\n# Thay đổi giá trị của FileSize('to_file', separator ''')\nfile_size = 40\n\n# Thay đổi giá trị của Encoding [UTF-8] [ UTF-8]\nEncoding = UTF-8 → UTF-16\nfor p in Path('pd.read_excel')\npath = Path('div', 'file')\nif __name__ == \"__main__\":\n    # Thay đổi giá trị của FileSize('to_file', separator ''')\nfile_size = 40\n\n# Thay đổi giá trị của Encoding [ UTF-8] [ UTF-16]\nEncoding = UTF-8 → UTF-16\n    volume_for_file = []\n    volume_to_file = []\n"
+  },
+  {
+   "task": 15,
+   "pass": false,
+   "resp": "Để chia một chuỗi ở mức thấp hơn vào một chuỗi thấp hơn, bạn có thể sử dụng hàm \"pass\" với tham số \"lộ trình\" và \"lộ trình\" phải giống nhau. Bạn cũng có thể sử dụng hàm \"async def\" để đảm bảo \"bC\" và \"d\" là như nhau. Dưới đây là mã Python:\n```python\nassert split_lowerstring(\"AbCd\", \"Dd\", \"E\")==['bC', 'd']\n```\n\nGiải thích: Hàm \"async def\" sẽ đảm bảo \"bC\" và \"d\" là như nhau, tức là \"bC\" phải nhỏ hơn \"d\"."
+  },
+  {
+   "task": 16,
+   "pass": false,
+   "resp": "```python\nasync function write {\n  return Text(' find a match!');\n}\n```\n\nGiải thích:\nPhương thức `get_match('search') trả về một danh sách các điểm cuối. Nếu một điểm cuối không tồn tại, nó sẽ trả về một chuỗi trống (`null`).\n```python\n#Cách dùng\nforeach () = Text(\" find a match!\");\n```\n\nGiải thích: Phương thức `get_match('search') trả về một danh sách các điểm cuối. Nếu một điểm cuối không tồn tại, nó sẽ trả về một chuỗi trống (`null`).\n\n**Lưu ý:**\nPhương thức `get_match('search') phải được đặt trong vòng lặp. Nếu bạn không sử dụng nó, hãy đảm bảo rằng chuỗi ' find a match!' không chứa khoảng trắng thừa."
+  },
+  {
+   "task": 17,
+   "pass": false,
+   "resp": "```python\nasync function write(x):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp bình phương tối thiểu\")\n    print(\"Bạn đã tìm thấy chiều dài đoạn thẳng bằng phương pháp bình phương tối thiểu.\")\n```\nwith open(x, 't') as f (x):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp bình phương tối thiểu.\")\n```\nwith open(x, 't') as g (g):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp góc.\")\n```\nwith open(x, g, 't') as b (b):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp đường chéo.\")\n```\n\nwith open(x, b, 'y') as f (x):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp đường chéo.\")\n```\nwith open(x, y, 'y') as g (g):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương pháp đường chéo.\")\n```\nwith open(x, y, 'y') as b (b):\n    print(f\"Tìm chiều dài đoạn thẳng bằng phương"
+  },
+  {
+   "task": 18,
+   "pass": false,
+   "resp": "`with open('chuong_trinh', sep_Chương, dos=\"800000\", description=\"Thử nghiệm: Loại bỏ các ký tự trùng lặp trong chương này\") as final result:\n    return dirty=True"
+  },
+  {
+   "task": 19,
+   "pass": false,
+   "resp": "Để tìm xem một mảng có chứa bất kỳ phần tử nào có thể là bản sao, hãy dùng hàm `pass` với tham số đầu vào `False`."
+  },
+  {
+   "task": 20,
+   "pass": false,
+   "resp": "Để kiểm tra xem số được đưa ra là gỗ hay không, chúng ta sẽ sử dụng hàm `assert`. Chúng ta sẽ viết mã như sau:\n```python\nassert('awk.ity') => 'awk free'\n```\nĐây là mã đã được sửa:\n```python\nassert(awk.ity, 0) => 'awk free'\n```\nGiải thích mã: Trong hàm này, chúng ta sử dụng `awk.ity` để kiểm tra xem số có phải là gỗ hay không. Nếu số là gỗ, chúng ta in ra kết quả, và nếu không, chúng ta sẽ báo lỗi. Chúng ta muốn tạo một hàm có thể kiểm tra xem số được cung cấp có phải là số gỗ hay không."
+  },
+  {
+   "task": 21,
+   "pass": false,
+   "resp": "Để tìm số lượng đa dạng, bạn có thể sử dụng hàm \"p\" trong mã nguồn của mình. Bạn có thể viết lại đoạn code như sau:\n```python\n# Thay thế tất cả bằng số lượng đa dạng\np('đa dạng') = p.data('số lượng đa dạng');\nfor i in range(p):\n    p('Số lượng đa dạng') = p.data('Số lượng đa dạng').drop(d2)(== i)\n    return p.data[i][i].to_numeric('Số lượng đa dạng')]\n```\nTrong đoạn code trên, chúng ta sẽ sử dụng hàm \"p\" để tìm số lượng đa dạng. Hàm này trả về chuỗi \"p.data('số lượng đa dạng')\". Nó bắt đầu từ trái qua phải, nghĩa là mỗi hàng chứa số lượng đa dạng mà nó tìm thấy."
+  },
+  {
+   "task": 22,
+   "pass": false,
+   "resp": "Để tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối bởi các hàm số, hãy sử dụng:\n```python\n# Tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối\ndef find_all(\"[1, 2, 3, 4, 4, 5]):=local(\"[1, 2, 3, 4, 4, 5]);\n# Tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối\ndef find_first_duplicate(([1, 2, 3, 4, 4, 5]):=local(\"[1, 2, 3, 4, 4, 5]);\n# Tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối\ndef find_last_all([1, 2, 3, 4, 4, 5]):=local(\"[1, 2, 3, 4, 4, 5]);\n# Tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối\ndef find_last_all([1, 2, 3, 4, 4, 5]):=local(\"[1, 2, 3, 4, 4, 5]);\n# Tìm sự trùng lặp của các cặp cạnh trong một mảng được phân phối\ndef find_last_all([1, 2, 3, 4, 4, 5]):=local(\"[1, 2, 3, 4, 4, 5]);\n# Tìm sự trùng lặp của cá"
+  },
+  {
+   "task": 23,
+   "pass": false,
+   "resp": "Để tìm tổng các cột trong danh sách, hãy dùng:\n`assert_um([1,2,3],[4,5,6],[10,11,12],[7,8,9])`\n\nBạn muốn tìm tổng các cột trong một danh sách khác nhau. Bạn có thể sử dụng hàm `assert_um([1,2,3],[4,5,6],[10,11,12],[7,8,9])`."
+  },
+  {
+   "task": 24,
+   "pass": false,
+   "resp": "```python\nassert binary_to_decimal(100):\n    return 0\n```\n\nĐây là code diễn giải từ `excellent()` thành `decimal()`. Mình không cần biết cách viết của số nguyên, chỉ cần chuyển số thành số nguyên."
+  },
+  {
+   "task": 25,
+   "pass": false,
+   "resp": "Để tìm các đối tượng không lặp lại trong một array, bạn có thể sử dụng hàm `find_Product` với cấp độ là các đối tượng và giá trị của nó là 0.\n\nDưới đây là đoạn mã Python:\n```python\n# Thay thế bằng cách gọi phương thức `find_Product` từ `list`\ndef find_Product([1,1,2,3],4):\n    query=['', '', 4]\n    return f\"{{query}\"}\n    return \"{{query}\"}\n```\nThay thế các giá trị trong dấu ngoặc đơn bằng đối tượng bạn muốn tìm kiếm.\n\n```python\n# Thay thế bằng cách gọi phương thức `find_Product` từ `list`\ndef find_Product([1,1,2,3],4):\n    query=['', '', 4]\n    return f\"{{query}\"}\n    return \"{{query}\"}\n```\nThay thế các giá trị trong dấu ngoặc đơn bằng đối tượng bạn muốn tìm kiếm.\n\n```python\n# Thay thế bằng cách gọi phương thức `find_Product` từ `list`\ndef find_Product([1,1,2,3],4):\n    query=['', '', 4]\n"
+  },
+  {
+   "task": 26,
+   "pass": false,
+   "resp": "Để kiểm tra xem danh sách các mục có tất cả các thành phần, hãy dùng hàm `assert_check_k_elements` với tất cả các thành phần:\n```python\n# Kiểm tra nếu danh sách các mục có tất cả các thành phần\nassert([4, 4], (4, 4, 4), (4, 4), (4, 4), (4, )], 4) == True\nwith open('async function', receipt_append()) as f\"    # Kiểm tra xem danh sách các mục có tất cả các thành phần\n\"    \" = 'pd.read_excel([4, 4], (4, 4), 8)\")\nwith open('async function', receipt_append()) as f\"    # Kiểm tra xem danh sách các mục có tất cả các thành phần\n\"    \" = 'pd.read_excel([4, 4], (4, 4), 8)\")\nwith open('async function', receipt_append()) as f\"    # Kiểm tra xem danh sách các mục có tất cả các thành phần\n\"    \" = 'pd.read_excel([4, 4], (4, 4), 8)\")\nwith open('async function', receipt_append()) as f\"    # Kiểm tra xem d"
+  },
+  {
+   "task": 27,
+   "pass": false,
+   "resp": "Để bỏ tất cả các chữ trong danh sách, bạn dùng hàm:\nassert rm(text):\n    return rm(text)\n```"
+  },
+  {
+   "task": 28,
+   "pass": false,
+   "resp": "Để tìm số dư của một trong các biến độc lập, ta thực hiện phép nhân thông qua hàm `{aw}` (hay `aw^1` với nghĩa tương tự).\n\nCông thức: =aw[*](5,2) == 10\n\nThay giá trị này vào biến `sheet_name`, và giữ giá trị này trong khoảng 0 đến 100."
+  },
+  {
+   "task": 29,
+   "pass": false,
+   "resp": "Để tìm số lần xuất hiện của một giá trị, chúng ta có thể sử dụng hàm `await` và sau đó so sánh giá trị đó với số lần xuất hiện mong muốn.\n\nCông thức:\n```python\n# Tìm số lần xuất hiện\ndef want_premium(data):\n    return data\n    await = data.get_Odd()\n    \n    # Số lần xuất hiện mong muốn\n    return def successfull(data)\n\n# Áp dụng\ndef want_premium(data):\n    print(f\"Số lần xuất hiện và giá trị xuất hiện của nó là {{data}:{data_numeric}}\")\n```\nThay `data_numeric` bằng giá trị cần tìm."
+  },
+  {
+   "task": 30,
+   "pass": false,
+   "resp": "Để đếm tất cả các cặp ký tự bắt đầu bằng một chữ cái, hãy dùng ` count_Substring_With_Equal_Ends(\"abc\") == 3`\n\nThay thế 'AB' bằng 'AB' và 'Equal' bằng 'Equal' trong hàm `assert count_substreet_With_Equal_Ends()`:\n`assert count_substreet_With_Equal_Ends(\"abc\") == 3 - equal = 10\n`assert count_substreet_With_Equal_Ends() = \"abc\" + \"equal\" = 10"
+  },
+  {
+   "task": 31,
+   "pass": false,
+   "resp": "Để tìm phần tử lớn nhất trong danh sách được sắp xếp, bạn có thể sử dụng hàm next() để lấy phần tử đầu tiên từ danh sách và insert nó vào một vị trí mới. Bạn cũng có thể sử dụng hàm restart() để chạy lại quá trình kiểm tra danh sách. Nếu danh sách không tồn tại trong danh sách chờ, bạn có thể sử dụng hàm delete() để xóa nó khỏi danh sách chờ."
+  },
+  {
+   "task": 32,
+   "pass": false,
+   "resp": "Để tìm giá trị lớn nhất của một số, bạn có thể sử dụng hàm `pd.to_numeric` với tham số `max_Prime_Factor` (được đề xuất là 15) và trả về giá trị nhỏ nhất."
+  },
+  {
+   "task": 33,
+   "pass": false,
+   "resp": "Để chuyển một số nguyên âm về số nguyên, bạn chỉ cần thay đổi giá trị ban đầu, ví dụ từ \"1\" về \"1\". Bạn có thể dùng câu lệnh trên với tham số đầu vào là \"1\" và đáp án được cung cấp."
+  },
+  {
+   "task": 34,
+   "pass": false,
+   "resp": "Để tìm số thiếu trong một mảng được sắp xếp, chúng ta có thể sử dụng hàm `find_ma` với hai tham số: danh sách các ô và vị trí của các ô đó trong bộ nhớ. Dưới đây là mã Python để tìm số thiếu trong một mảng được sắp xếp:\n```python\n# Tìm số thiếu trong một mảng được sắp xếp\nf\"{the_alphabetically_queryed_orders}-display=True}\"\n# Thay thế bằng danh sách các ô được sắp xếp trong mảng được sắp xếp\ndef df_search():\n    return f\"{the_alphabetically_queryed_orders}_searches={{rank_name: '{first_10} - second_10}'}`\n# Thay thế bằng danh sách các ô không sắp xếp trong mảng được sắp xếp\ndef df_search():\n    return f\"{the_alphabetically_queryed_orders}_searches={{rank_name: 'last_order' - second_10}'}`\n# Thay thế bằng danh sách các ô không sắp xếp trong mảng được sắp xếp\ndef df_search():\n    return f\"{t"
+  },
+  {
+   "task": 35,
+   "pass": false,
+   "resp": "Để tìm số nguyên tố trong một số, bạn có thể sử dụng phương pháp sau đây:\n\n1. Tìm số chia cho số nguyên tố bằng cách lấy số chia cho số nguyên tố và sau đó chia cho số nguyên tố mà không chia hết cho số nguyên tố.\n2. Nhân cả hai vế của phương trình với 1 để được 1, và sau đó chia cả hai vế cho 1 để được 0, và sau đó chia cả hai vế cho 1 để được 0.\n\nĐây là một ví dụ về mã:\n```python\n# Nhập giá trị đầu và cuối của biến\n    with open('{1-a}') as integer\n    if ws = 100 then use {10, 0}\n    else:\n    ws.append(ws[100])\n    else:\n    ws.append(ws[1])\n    else:\n    ws.append(ws[2])\n    else:\n    ws.append(ws[3])\n    else:\n    ws.append(ws[4])\n    else:\n    ws.append(ws[5])\n    else:\n    ws.append(ws[6])\n    else:\n    ws.append(ws[7])\n    else:\n    ws.append(ws[8])\n    else:\n    ws.append(ws[9])\n"
+  },
+  {
+   "task": 36,
+   "pass": false,
+   "resp": "Để tìm số nguyên tố trong dãy số, bạn có thể sử dụng hàm sudit-f trong mã nguồn Python. Bạn chỉ cần khai báo số cần tìm và hàm sudit-f, sau đó thực hiện vòng lặp theo các bước sau:\n\n1. Bắt đầu vòng lặp for: bắt đầu một vòng lặp mới mà không bị mất dòng dữ liệu.\n2. Tìm tất cả các số nguyên tố trong dãy: sudit-f(sud) = sudit-f.search('+ ', '=1))\n3. In kết quả tìm được:\n    #Tìm số nguyên tố trong dãy\n    if sudit-f in 3ulp == 5:\n    df['Nth_digit'] = 1e2 + 1e2\n    #Tìm giá trị nhỏ nhất của số nguyên tố\n    if sudit-f in 3ulp == 5:\n        df['Nth_digit'] = 1e2 + 1e2\n    if sudit-f in 3ulp == 5:\n        df['Nth_digit'] = 1e2 + 1e2\n    if sudit-f in 3ulp == 5:\n            df['Nth_digit'] = 1e2 + 1e2\n    if sudit-f in 3ulp == 5:\n            df['Nth_digit'] = 1e2 + 1e2\n    if sudit-f in 3ulp == "
+  },
+  {
+   "task": 37,
+   "pass": false,
+   "resp": "```python\nassert sort_mixed_list([19,'red',12,'green',10,'blue', 10,'white', 10,'green', 10,'white') ==[10, 12, 19, 'blue', 'green', 'green', 'red']\n```python\n# Thay đổi giá trị của 'red', 'green', 'blue' trong hàm `assert_list`\ndef main():\n    try:\n        # Hàm sẽ trả về `red` nếu nó tìm thấy một danh sách có chứa các khoảng trắng.\n        if ('red') == 'green':\n            return 'red'\n            return 'white'\n            return '# Bị loại khỏi danh sách)\n        else:\n            return 'blue'\n            return 'white'\n            return 'red'\n            return 'white'\n    }\n```\nTrong code này, chúng ta sẽ sử dụng `red` để tìm các khoảng trắng và `green` để tìm các danh sách có chứa các khoảng trắng. Chúng ta sẽ gọi hàm `assert_list` với `red` làm giá trị trả về và thêm `white` vào"
+  },
+  {
+   "task": 38,
+   "pass": false,
+   "resp": "Để tìm khoảng phân chia thứ nhất và thứ hai, chúng ta sử dụng hàm df_even_odd([1,3,5,7,4,1,6,8]) cho cả hai danh sách. Để tìm khoảng phân chia thứ ba, chúng ta sử dụng hàm df_even_odd([4,5,7,8,9,10]) cho cả hai danh sách.\n\nĐể tìm khoảng phân chia thứ hai và thứ ba, chúng ta sử dụng hàm df_even_odd([4,5,7,8,9,10]) cho cả hai danh sách. Để tìm khoảng phân chia thứ tư, chúng ta sử dụng hàm df_even_odd([2,5,7,8,9,10]) cho cả hai danh sách.\n\nĐể tìm khoảng phân chia thứ năm, chúng ta sử dụng hàm df_even_odd([6,8,11,13,17,19,20]) cho cả hai danh sách. Để tìm khoảng phân chia thứ sáu, chúng ta sử dụng hàm df_even_odd([10,11,12,15,17,19,20]) cho cả hai danh sách.\n\nĐể tìm khoảng phân chia cuối cùng, chúng ta sử dụng hàm df_even_odd([1,2,3,4,5,6,7,8,9,10]) cho cả hai danh sách."
+  },
+  {
+   "task": 39,
+   "pass": false,
+   "resp": "Để kiểm tra xem các ký tự trong một chuỗi có khác nhau không, chúng ta sẽ thực hiện phép toán \"AB = aab\" đối với \"A\" và \"a\".\n\nCông thức: =AB['A']=('aba')==('aba')\nSố lượng các ký tự không bằng nhau trong một chuỗi được kiểm tra sẽ được chỉ định trong giá trị của biến \"a\". Nếu chúng ta muốn thay đổi giá trị này, hãy thay đổi giá trị trong biến \"a\".\n\nCông thức này có thể được sử dụng để so sánh các chuỗi khác nhau."
+  },
+  {
+   "task": 40,
+   "pass": false,
+   "resp": "Để tìm tần suất của các phần được đánh dấu trong danh sách được nhóm, hãy sử dụng hàm `assert_fields([1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5])`."
+  },
+  {
+   "task": 41,
+   "pass": false,
+   "resp": "```python\nassert filter_evennumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) ==[2, 4, 6, 8, 10]\n# Kiểm tra bộ lọc\nif 'async def' ======= 'replace':\n    print(f\"Đang kiểm tra bộ lọc: {    except (====== 'replace')}\")\n```\n\n# Lọc ra số cần tìm\nif' ======= 'replace':\n    print(f\"Số này đã được loại bỏ số dư đầu kỳ từ bảng lương\")\n```\n\n**Lưu ý:**\n1. Chạy mã với tất cả các dấu ngoặc nhọn {}. Nếu tên có khoảng trắng, hãy thêm \"\\n\" vào cuối lệnh.\n2. Nếu hàm trả về chuỗi 'replace' mà không có thì là đúng. Nếu không, hãy thử chạy lại lệnh với tham số \"replace_{i}\".\n3. Nếu kết quả ra sai, hãy kiểm tra xem cột dữ liệu nguồn có đang nhận giá trị tạm thời (Pre-query) không.\n\nĐể viết code chính xác hơn cho dự án của bạn, hãy cho tôi biết thêm thông tin:\n1. Bạn đang viết mã nguồn hướng đối tượng hay thuần túy?\n2."
+  },
+  {
+   "task": 42,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng vòng lặp để kiểm tra tính hợp lệ của các phần tử trong một mảng.\n\n```python\n# Thay thế `repe` bằng `n`\n```python\n# Thay thế `repe` bằng `n`\nscanf() => scanf(n > 1)\n    query('nếu', df[1])\n    return n."
+  },
+  {
+   "task": 43,
+   "pass": false,
+   "resp": "`Yes, I can do that. I will look at your previous works and show you how to use this function."
+  },
+  {
+   "task": 44,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng hàm \"replace\" để xóa tất cả các ký tự trùng lặp trong chuỗi đầu tiên và in ra giá trị của mỗi ký tự trùng lặp ở phía trên và phía dưới.\n\ndef main():\n    try:\n        return Text_match_string!\n        return Text_match(text_match, text)\n        if Text_match_string == 'Not matched!':\n        print(\"Lỗi! Không tìm thấy bất kỳ ký tự nào trong chuỗi. Hãy thử lại!\")\n        return \"Not matched!\"\n        return Text_match(text_match, text)\n        if Text_match_string == 'Not matched!':\n        print(f\"Lỗi! Không tìm thấy bất kỳ ký tự nào trong chuỗi. Hãy thử lại!\")\n        return \"Not matched!\"\n        return Text_match(text_match, text)\n        if Text_match_string == 'Not matched!':\n        print(f\"Lỗi! Không tìm thấy bất kỳ ký tự nào trong ch"
+  },
+  {
+   "task": 45,
+   "pass": false,
+   "resp": "Để tìm các đối tượng trong mảng, bạn có thể sử dụng hàm `get_gcd` kết hợp với hàm `write` như sau:\n\n```python\n# Tìm các đối tượng trong mảng\ndef get_gcd([2, 4, 6, 8, 16]):\n    # Write a function to find the gcd of the given array.\n    if (!j == '/') {\n        return 0;\n    return '/' for each individual's inner string.\n    \n    return '/' for all individuals.\n    \n    # 2: Tìm các đối tượng trong mảng đã cho\ndef get_gcd([2, 4, 6, 8, 16]):\n    if (!j == '/') {\n        return 0;\n    return '/' for each individual's inner string.\n    \n    return '/' for all individuals.\n    \n    # 3: Tìm tất cả các đối tượng trong mảng đã cho\ndef get_gcd([2, 4, 6, 8, 16]):\n    if (!j == '/') {\n        return 0;\n    return '/' for each individual's inner string.\n    \n    return '/' for all individuals.\n    \n  "
+  },
+  {
+   "task": 46,
+   "pass": false,
+   "resp": "Để xác định xem tất cả các số trong khoảng từ 1 đến 9 có khác nhau hay không, ta sẽ sử dụng phương thức \"Define Number\" trong hàm Evaluate của python:\nassert test_distinct([1,5,7,9]) == True\nWrite the Python function.\n    with open('directory', 'f') as folder_path:\n    if directory_path is true:\n        df = df['directory_path'].file_path('directory')\n    \n    if file_path is false:\n        print(f\"Define {file_path} for null}\"\n    return df['directory_path'].file_path('directory').append(df)\n    print(f\"Define {file_path} false\")\n```\nThay `directory_path` vào hàm:\n```python\n# Thay đổi"
+  },
+  {
+   "task": 47,
+   "pass": false,
+   "resp": "Để tìm khoảng cách của hai điểm, chúng ta sử dụng hàm LTRIM() và kiểm tra xem số lượng điểm có giống nhau không. Chúng ta sẽ sử dụng vòng lặp để kiểm tra từng cặp giá trị, sau đó cộng hoặc trừ mỗi cặp để tìm ra sự khác biệt về số lượng điểm.\n\n```python\nimport os\nimport pandas as pd\nimport LTRIM()\n\n# Kiểm tra từng cặp giá trị để tìm ra số lượng điểm bằng nhau\ndef load_digits_to_figures(LTRIM(), defaultLTRIM(2,4)):\n    # Kiểm tra xem số lượng điểm có giống nhau không\n    if (displayListener.write(\"Xin lỗi, số điểm của bạn là 2, nhưng ở đây có một điểm khác biệt, vui lòng kiểm tra lại điểm!\") -> 0):\n        print(\"Tìm thấy chuỗi không có số lượng điểm bằng nhau!\")\n    return load_digits_to_figures.append(def load_digits_to_figures(2,4))\n\n# Kiểm tra kết quả\nif (displayListener.write(\"Xin lỗi, "
+  },
+  {
+   "task": 48,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng hàm set_all_binary() để đặt số lượng lớn các giá trị số cho một số duy nhất. Chúng ta sẽ gọi hàm này và kiểm tra xem nó có thực hiện được điều kiện đưa ra hay không.\n\n```python\nimport os\nimport fast_configuration\nimport sys\n\ndef main():\n    parser = fast_configuration()\n    \n    # Kiểm tra số lượng lớn các giá trị số cho số lượng lớn các giá trị số cho số lượng lớn\n    if parser.isna() {\n        return parser.append({})\n    \n    # Kiểm tra xem số lượng lớn các giá trị số cho số lượng lớn các giá trị số cho số lượng lớn có được trả về hay không\n    for i in range(parser.append({}) = 15.i === 0\n    \n    # Nếu số lượng lớn các giá trị số cho số lượng lớn các giá trị số cho số lượng lớn là trả về, thì hãy đặt lại các số lượng lớn các giá trị số"
+  },
+  {
+   "task": 49,
+   "pass": false,
+   "resp": "```python\nassert specified_element([1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],0)==[1, 4, 7]\n```\nWrite the code:\n    #extract every first or specified element from a given two-dimensional list.\n    public class MyTable({\n        \\text_name: \"Danh_sach\",\n        \\text_name: \"Tên_Table\",\n        \\text_name: \"Tiêu_de_ Table\",\n        )}\n```\nGiải thích: Hàm `myTable` trước tiên lấy tất cả các phần tử nằm trên danh sách 'tên_Table', sau đó trả về giá trị của mỗi phần tử. Bạn có thể dùng lệnh `public class MyTable({\n        \\text_name: \"Danh_sach\",\n        \\text_name: \"Tên_Table\",\n        \\text_name: \"Tiêu_de_ Table\",\n        )` để gọi hàm này."
+  },
+  {
+   "task": 50,
+   "pass": false,
+   "resp": "Để tìm độ dài của một đoạn văn trong hàm lambda, bạn dùng:\nassert (f\"<=\"x\")[0][1][3][5][7][9]]\n```\nTrong đó:\n    *   `f\"<=\"x\"`: Độ dài của đoạn văn.\n    *   `x`: Độ dài của một phần trong hàm lambda (ví dụ: 0,1,2,3...).\n    *   `[1], [3], [5], [7]: Độ dài của phần cuối cùng và tiếp theo trong chuỗi.\n    *   `[13, 15, 17]: Độ dài của các phần đó.\n    *   `1`: Bắt đầu một hàng mới.\n    *   `2`: Tiếp tục một phần tử tiếp theo trong chuỗi.\n    *   `3`: Tiếp tục một phần tử tiếp theo nữa theo thứ tự từ trái sang phải (theo chiều kim đồng hồ).\n    *   `4`: Tiếp tục một phần tử tiếp theo nữa theo thứ tự từ phải sang trái (theo chiều kim đồng hồ).\n    *   `5`: Tiếp tục một phần tử tiếp theo nữa theo thứ tự từ trái sang phải (theo chiều kim đồng hồ).\n    *   `7`: Tiếp tục một phần tử tiếp theo nữa "
+  },
+  {
+   "task": 51,
+   "pass": false,
+   "resp": "Để in được kiểm tra hình tam giác, bạn cần sử dụng một hàm có tên là \"pass\" kiểm tra hình tam giác (có giá trị 6,8,12) và trả về kết quả là True hoặc Lỗi. Bạn có thể dùng thư viện `pandas` để thực hiện việc này một cách dễ dàng.\n\nDưới đây là đoạn mã Python của bạn:\n\n```python\nimport os\nimport pandas as pd\n\n# 1. Thiết lập thông số cho kiểm tra hình tam giác\ndef load_equilateral( Check_equilateral, 6,8,12):\n    with open( Check_equilateral, 6,8,& check_equilateral_type ==False) as check_equilateral:\n    \n    # 2. Thiết lập thông số cho kiểm tra hình tam giác\ndef load_equilateral( Check_equilateral, 8,12):\n    with open( Check_equilateral, 8,8,& check_equilateral_type ==False) as check_equilateral:\n    \n    # 3. Thiết lập thông số cho kiểm tra hình tam giác và kiểm tra hình tam giác ngược\ndef"
+  },
+  {
+   "task": 52,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng một hàm để đếm số ô trong một hàng ngang và sau đó so sánh tổng số ô đó với giá trị của hàm.\n\n```python\nimport pandas as pd\nimport os\n\ndef detect_area('pd') = os.get_area('pd')\n\ndef detect_area== '10' && detect_area== 200 && detect_area== 2000\n\ndef find_area('parallelogram', index=False)\nfor p in range['parallelogram'].astype(str).str.strip().str.upper()\nfor d in range['parallelogram'].astype(str).str.strip().str.upper()\n\nif __name__ == \"__main__\":\n    print(f\"Đang đếm: 'Parallelogram'!\")\n    print(r\"Số lượng ô đã được tính tổng: {parallelogram}\")\n    print(g\"Tổng: {parallelogram}[])\n\nif __name__ == \"__main__\":\n    print(f\"Số lượng ô đã được tính tổng: {parallelogram}!\")\n    print(g\"Tổng: {parallelogram}[])\n\nif __name__ == \"__main__\":\n    p"
+  },
+  {
+   "task": 53,
+   "pass": false,
+   "resp": "Để kiểm tra xem các ký tự đầu tiên và cuối cùng của chuỗi có bằng nhau hay không, chúng ta sẽ sử dụng hàm \"archive check_equalize\" trong python. Chúng ta sẽ thực hiện việc này bằng cách sử dụng hàm `append` với tham số 'equal' và `appendEach`.\n\nTrước tiên, chúng ta sẽ kiểm tra xem chuỗi đã được ký hiệu có chứa ký tự nào khác ngoài \"AB\" hay không. Chúng ta sẽ sử dụng hàm `append` với giá trị `appendEach` và tham số `appendEach` cho trường hợp này:\n`append('a = 1, b = 2, c = 3)`\n\nSau đó thực hiện kiểm tra tương tự cho chuỗi đã được ký hiệu có chứa \"AB\" hay không. Chúng ta sẽ sử dụng hàm `append` với giá trị `appendEach` và tham số `appendEach` cho trường hợp này:\n`append('a = 1, b = 2, c = 3)`\n\nCuối cùng, chúng ta sẽ thực hiện kiểm tra tương tự cho chuỗi đã được ký hiệu có chứa \"AB\" hay khôn"
+  },
+  {
+   "task": 54,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, bạn có thể sử dụng hàm \"count\" để đếm số lượng các đối tượng trong mảng và sau đó so sánh nó với một giá trị mặc định (ví dụ 1) để xác định xem có cần sắp xếp lại hay không. Bạn cũng có thể sử dụng hàm \"groupby\" để nhóm các đối tượng theo cùng một điều kiện, ví dụ: nếu đối tượng \"layer1\" đã được sắp xếp và đối tượng \"layer2\" chưa được sắp xếp, thì chúng sẽ được nhóm lại."
+  },
+  {
+   "task": 55,
+   "pass": false,
+   "resp": "```python\nasync function write(\".\") = tn_gp(1,5,2)\nasync (int 1, 5, 2):\n    return tn_gp(1,5,2)\n\nif (!tn_gp.isInteger(int, value=True)):\n    print(f\"Tìm t-nth với số mũ tự nhiên {1,5,2}\")\n    print(f\"Tìm t-nth với số mũ tự nhiên {1,5,2}\")\n```"
+  },
+  {
+   "task": 56,
+   "pass": false,
+   "resp": "Để kiểm tra nếu số được đưa ra lớn hơn 1 lần, hãy dùng hàm này:\nassert check(70) == False\nwith open(ref('-5')):1 for each in range, give a less than twice reverse:1\nas good:1\nas bad:1\nas less than:1\nas one:1\nas another:1"
+  },
+  {
+   "task": 57,
+   "pass": false,
+   "resp": "Để tìm số lớn nhất có thể được định nghĩa bằng số nguyên, bạn có thể sử dụng hàm `zero` để tìm giá trị lớn nhất và sau đó kết hợp nó với các số nguyên khác để tìm ra số nhỏ hơn. Bạn cũng có thể sử dụng hàm `max` để tìm giá trị lớn nhất và sau đó kết hợp nó với các số nguyên khác để tìm ra số lớn hơn."
+  },
+  {
+   "task": 58,
+   "pass": false,
+   "resp": "Để kiểm tra hai cặp ký tự có giống nhau hay không, chúng ta sẽ sử dụng hàm so sánh ngược lại (FalseSoGet). Chúng ta sẽ thực hiện việc này bằng cách sử dụng vòng lặp for và hàm payload.\n\ndef write_for(payload = false) {\n    return 'as' if (payload > 0, 'not')}\n\n# Kiểm tra nếu hai cặp ký tự giống nhau\nif (as -i insertged == 'left' + 'True') {\n    return 'as';\n    return 'as' + 1;\n    return 'as' + 0;\n    return 'as' + 100%;\n}\n\n# Kiểm tra nếu không có cặp ký tự nào giống nhau\nif (as -i insertged == 'left' + 'True') {\n    return 'as';\n    return 'as' + 0;\n    return 'as' + 100%;\n}\n\n# Kiểm tra nếu không có cặp ký tự nào giống nhau\nif (as -i insertged == 'left' + 'True') {\n    return 'as';\n    return 'as' + 0;\n    return 'as' + 100%;\n}\n\n# Kiểm tra nếu không có cặp ký tự nào giống nhau\nif (as -i "
+  },
+  {
+   "task": 59,
+   "pass": false,
+   "resp": "Để tìm số nguyên tố, chúng ta có thể sử dụng phương pháp từng phần hữu hạn hoặc phương pháp tổng quát hóa.\n\nTrước tiên, hãy đảm bảo rằng phương trình biểu thị một số nguyên tố là phương trình chứa:\n`12(2cd)` = 12cd(12)`\n\nTiếp theo, thực hiện phép chia cho cả hai vế của phương trình trên:\n`12cd(2c)` = 12cd(2c)`\n\nSau đó, tìm số nguyên tố bằng cách chia cả hai vế của phương trình cho một số tự nhiên:\n`12cd(2c)` = 12cd/2c = 10."
+  },
+  {
+   "task": 60,
+   "pass": false,
+   "resp": "Để tìm độ dài tối đa của chuỗi vô tận với sự khác biệt nhỏ giữa các thành phần cho bộ lặp, hãy sử dụng mã sau:\n\n```python\nassert max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8) == 5\nWrite the Python function.\n```\nThay \"5\" vào hàm và đảm bảo thay thế các giá trị độ dài vô tận cho các thành phần khác (các thành phần \"1\" và \"2\" được bỏ qua).\n\n```python\nassert max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8) == 5\nWrite the Python function.\n```\nThay thế các giá trị độ dài vô tận cho các thành phần khác (các thành phần \"1\" và \"2\" được bỏ qua).\n\n```python\nassert max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8) == 5\nWrite the Python function.\n```\nThay thế các giá trị độ dài vô tận cho các thành phần khác (các thành phần \"1\" và \"2\" được bỏ qua).\n\n```python\nassert max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8) == 5\nWrite the Py"
+  },
+  {
+   "task": 61,
+   "pass": false,
+   "resp": "Để đếm số lượng dây, hãy sử dụng hàm `count_substrings` với tham số '112112' và in kết quả ra một danh sách các dây."
+  },
+  {
+   "task": 62,
+   "pass": false,
+   "resp": "Để tìm số nhỏ nhất trong danh sách, bạn dùng hàm `z1` với cấp số nhân (1) và trả về phần nguyên.\nCông thức:\n```python\nz1 = z1()\n# Kiểm tra xem số nhỏ nhất có vượt qua thử thách không\nz1_num = z1[10, 20, 1, 45, 99]\n# Tìm số nhỏ nhất lớn hơn 1\nfile_path = 'ten_file_cua_ban.py'\n# Danh sách đã lưu: tìm tất cả các số nhỏ hơn 1 và khác 1\nfile_name = 'ten_file_cua_ban.py'\n# Tìm các số nhỏ hơn hoặc bằng 1 và khác 1 trên danh sách này\n\nprint(z1_num)\n```\nThay `z1` vào đây:\n```python\n# Thay 'ten_file_cua_ban.py' vào chỗ `file_name`\n```python\n```python\nwith open(z1, {z1_num}) if (z1_num > 1) {\n    return z1[1].append(z1) == 1\n```\n\nThay `ten_file_cua_ban.py` vào đây:\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```python\n```pyth"
+  },
+  {
+   "task": 63,
+   "pass": false,
+   "resp": "```python\nasync function write(\"# test.maximum difference between two pairs in the given list.\") {\n    return \"# maximum difference between two pairs in the given list if it is not null.\"\n    return \"# maximum difference between two pairs in the given list if it is not null.\"\n    }\n\n    print({\n      \"where else is much easier.\"\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n    }\n "
+  },
+  {
+   "task": 64,
+   "pass": false,
+   "resp": "`with open(x1, x2) as integer, with cp = 1, cp+1, cp-1; with -1 for science, sci, medicine, science, science + 1; with -1 for science, sci, medicine, science, science + 1; `"
+  },
+  {
+   "task": 65,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng một hàm để duyệt qua danh sách kiểm tra đầu vào và in ra kết quả với tham số cuối cùng là \"21\". Chúng ta có thể sử dụng hàm \"reject\" để từ chối các giá trị không phải là số 21 và sử dụng hàm \"reset\" để đưa tất cả về trạng thái \"chờ\" (returns to 'no').\n\nDưới đây là một hàm tổng hợp có tên là \"reject\":\n```python\n# Hàm tham số đầu vào (Trả về \"21\")\ndata = {\n    \"input_file\": \"data field\",\n    \"results\": [\"data\", if not paths],\n    \"results.json\": required },\n    \"results.php\": default results,\n    \"results.csv\": certificates\n}\n```\nTrong hàm này, chúng ta sẽ in ra danh sách kiểm tra đầu vào với các giá trị \"21\" và trả về kết quả \"trống\" nếu không tìm thấy giá trị nào trong danh sách kiểm tra đầu vào.\n\nfor 'data':\n    data[\"input_file\"] = reject"
+  },
+  {
+   "task": 66,
+   "pass": false,
+   "resp": "Để đếm số lượng số âm trong danh sách đã cho, bạn sẽ cần sử dụng hàm pref. Bạn có thể làm điều này bằng cách sử dụng toán tử \"=\" và sau đó chia cả hai vế cho 1:\npublic final function(pref[1,-2,3,-4]) {\n    return pd.count([1,-2,3,-4]);\n}\n\n# Cách sử dụng khác là:\n1. Trong danh sách đã cho, thay thế tất cả các số âm bằng 0 và cộng số âm đầu tiên với số âm tương ứng:\npd.count(0, -0, -1,-4) == 1;\n2. Tiếp theo, đếm số lượng số dương trong danh sách bằng cách sử dụng toán tử \"=\" và chia cả hai vế cho 1:\npd.count([1, -1,-4]) == 1;\n3. Cuối cùng, cộng tất cả các số dương để tìm tổng của danh sách:\npd.count([1, -1,-4], -1, -4) == 5;\n4. Cuối cùng, chia tổng này cho số lượng số dương để tìm ra số lượng số âm:\npd.count(5, 1) == 5;\n}\n\nprint(print(f\"Count of Positive Number in List\", f\"Count\", pos_count)"
+  },
+  {
+   "task": 67,
+   "pass": false,
+   "resp": "Để tìm số cách sắp xếp một bộ đếm số lượng các cách, hãy dùng hàm `{bell_number}` với 2 tham số: số cách và chữ cái muốn cách chia hết."
+  },
+  {
+   "task": 68,
+   "pass": false,
+   "resp": "Formal code:\nassert (int, str({1, 2})) == True;\n    while in (int, str({3, 2})) == Not in (int, str({3, 2})) == Not in (int, str({3, 2})) == False).\nFormal code:\nassert (int, str({1, 2})) == Not in (int, str({3, 2})) == Not in (int, str({3, 2})) == False).\n`"
+  },
+  {
+   "task": 69,
+   "pass": false,
+   "resp": "Để kiểm tra xem danh sách có chứa phần tử được đánh dấu hay không, hãy sử dụng hàm pass (lưu ý rằng phương thức `pass` không được định nghĩa trong khối cơ bản):\nassert(_sublist([2,4,3,5,7], on='sublist', how='left', indicator=True) ==False)\n```\nThay giá trị của biến `sublist` bằng giá trị của biến `sublist_{_sublist}`.\n\nCông thức cuối cùng sẽ trả về kết quả là 'True':\nassert(_sublist([2,4,3,5,7], on='sublist', how='left', indicator=True) ==False)\n```\n\nThay `sublist_{_sublist}` vào công thức và trả về kết quả là 'True'."
+  },
+  {
+   "task": 70,
+   "pass": false,
+   "resp": "Để tìm xem tất cả các cặp triples có cùng chiều dài hay không, hãy viết code này:\n```python\nassert get_equal([(11, 22, 33, 44, 55, 66)], 3) == 'All tuples have same length'\nWrite the Python function.\n```\nThay `all tuples` bằng chiều dài của tất cả các cặp triples."
+  },
+  {
+   "task": 71,
+   "pass": false,
+   "resp": "Để viết một hàm để sort danh sách các thành phần sử dụng hàm `comb`, bạn cần tuân theo các bước sau:\n\n1. **Xác định danh sách các thành phần:** Bạn cần liệt kê tất cả các thành phần sẽ được sort trong danh sách `Elements`.\n2. **Viết hàm sort:**\n```python\nimport random.randall('list_Elements')\n\n# Thay thế bằng danh sách các thành phần bạn muốn sort\ndef comb_sort([5, 15, 37, 25, 79]):\n    # 01. Chuẩn bị để sort:\n        duplicates = [0]\n    \n    # 02. Chuẩn bị để sort:\n        filters = [['Autumn', 'Winter', 'Winter'], 'Spring']]\n    \n    # 03. So sánh các nhóm:\n        groupby = ['Spring'] + 'Spring']\n    \n    # So sánh các nhóm với nhau:\n        if 'Autumn' > 'Winter': ['Spring'] + 'Spring']\n    \n    # Nếu 'Spring' > 'Winter': ['Spring'] + ['Winter']\n    \n    # Nếu 'Spring' < 'Winter': ['S"
+  },
+  {
+   "task": 72,
+   "pass": false,
+   "resp": "Để kiểm tra xem số được cung cấp có phải là khoảng cách giữa hai mặt phẳng song song hay không, hãy sử dụng hàm checkout:\n```python\n# Kiểm tra xem số được cung cấp có phải là khoảng cách giữa hai mặt phẳng song song hay không\nassert_square(5) == True\nwith open(5, false) as each's first integer is integer, add whole's first integer as each's footer.\n```\nGiải thích: Hàm checkout trả về giá trị lỗi, cho biết số có phải là khoảng cách giữa hai mặt phẳng song song hay không. Nếu mỗi phần tử integer đầu tiên là một giá trị khác nhau, thì có nghĩa là số đó không phải là khoảng cách, vì nó trái ngược với định lý thuận.\n\nThay vào đó, hãy kiểm tra xem số được cung cấp có phải là khoảng cách giữa hai mặt phẳng song song hay không bằng cách sử dụng hàm checkout:\n```python\n# Kiểm tra xem số được cung c"
+  },
+  {
+   "task": 73,
+   "pass": false,
+   "resp": "```python\nasync function write(errors='coerce') {\n  // 1. Thay thế `Forces of the \\ndarkness*are coming into the play` bằng `Forces of the \\ndarkness` đang được sử dụng trong đoạn mã trước.\n  }\n}\n```\n    #Cách dùng: Dùng hàm write để chia chuỗi thành nhiều phần, mỗi phần có thể chứa nhiều biến.\n    for i in range('Forces of the '):\n        return i\n    \n    for i in range('Darkness'):\n            return darkness\n    \n    for i in range('Darkness', 'Forces of the '):\n            return darkness\n    \n    for i in range('Darkness', 'Darkness'):\n            return darkness\n    \n    for i in range('Darkness', 'Darkness'):\n            return darkness\n    \n    for i in range('Darkness', 'Darkness'):\n            return darkness\n    \n    for i in range('Darkness', 'Darkness'):\n            return da"
+  },
+  {
+   "task": 74,
+   "pass": false,
+   "resp": "Để kiểm tra xem mã có tuân theo các mẫu hình dạng không, bạn có thể sử dụng hàm test(). Bạn có thể viết lại đoạn code sau:\n```python\n# Thử nghiệm kiểm tra {\n  \"red\":=[\"red\"],\n  \"green\":=[\"green\"],\n  \"blue\":=[\"blue\"],\n  \"a\":=[\"a\"],\n  \"b\":=[\"b\"]\n}\n```\nThay thế \"red\" bằng giá trị của biến \"red\".\n\nĐây là đoạn code hoàn chỉnh:\n```python\n# Thử nghiệm kiểm tra {\n  \"red\":=[\"red\"],\n  \"green\":=[\"green\"],\n  \"blue\":=[\"blue\"],\n  \"a\":=[\"a\"],\n  \"b\":=[\"b\"]\n}\n```\nThay thế \"red\" bằng giá trị của biến \"red\".\n\nĐây là đoạn code hoàn chỉnh:\n```python\n# Thử nghiệm kiểm tra {\n  \"red\":=[\"red\"],\n  \"green\":=[\"green\"],\n  \"blue\":=[\"blue\"],\n  \"a\":=[\"a\"],\n  \"b\":=[\"b\"]\n}\n```\nThay thế \"red\" bằng giá trị của biến \"red\".\n\nĐây là đoạn code hoàn chỉnh:\n```python\n# Thử nghiệm kiểm tra {\n  \"red\":=[\"red\"],\n  \"green\":=[\"green\"],"
+  },
+  {
+   "task": 75,
+   "pass": false,
+   "resp": "Để tìm các phần tử có tất cả các phần khác đều nhỏ hơn k, chúng ta có thể sử dụng hàm \"k\". Hàm này trả về một danh sách các phần tử có tất cả các phần khác đều nhỏ hơn k và chỉ những phần tử lớn hơn 40. Danh sách này được gọi là \"tuples\" vì nó chứa tất cả các phần tử có tất cả các phần khác đều nhỏ hơn hoặc bằng 40.\n\nĐể tìm các phần tử có tất cả các phần khác đều lớn hơn 40, chúng ta có thể sử dụng hàm \"k\" ngược lại với hàm \"k\". Hàm này trả về một danh sách các phần tử có tất cả các phần khác đều lớn hơn 40 và chỉ những phần tử lớn hơn 40. Danh sách này được gọi là \"tuples\" vì nó chứa tất cả các phần tử có tất cả các phần khác đều lớn hơn 40.\n\nĐể tìm các phần tử có tất cả các phần khác đều nhỏ hơn hoặc bằng 25, chúng ta có thể sử dụng hàm \"k\"2. Hàm này trả về một danh sách các phần tử có t"
+  },
+  {
+   "task": 76,
+   "pass": false,
+   "resp": "Để đếm số hạt trong một hình vuông, chúng ta có thể sử dụng hàm `count_Quartz`. Hàm này sẽ trả về một giá trị duy nhất là số hạt. Chúng ta sẽ thực hiện điều này bằng cách gọi hàm `count_Quartz` hai lần:\n1. Đếm tất cả các hạt trong một hình vuông và trả về giá trị ban đầu:\nf() = errors(\"undefined\")\n2. Đếm số hạt trong mỗi hình vuông mà không có giá trị ban đầu:\nf() = errors(\"undefined\")\n3. Chia cả hai vế cho 2 để tìm ra giá trị ban đầu:\nf() = errors(\"undefined\")\n4. Chia cả hai vế cho 2 để tìm ra giá trị hiện tại:\nf() = errors(\"undefined\")\n5. Chia cả hai vế cho 5 để tìm ra độ dài của hình vuông ban đầu:\nf() = errors(\"undefined\")\n6. Chia cả hai vế cho 5 để tìm ra độ dài của hình vuông hiện tại:\nf() = errors(\"undefined\")\n7. Chia cả hai vế cho 5 để tìm ra độ dài của hình vuông cuối cùng:\nf() = "
+  },
+  {
+   "task": 77,
+   "pass": false,
+   "resp": "Để tìm sự khác biệt giữa sum và thậm chí, hãy dùng `sum_igm = 12345`. Để tìm sự khác biệt giữa odd và Digits, hãy dùng `wave_igm = 12345`."
+  },
+  {
+   "task": 78,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng hàm random.fillna để đếm số lần xuất hiện của các giá trị từ 0 đến 99. Chúng ta sẽ sử dụng hàm random.json() và gọi nó là \"min\" để lưu trữ số lượng nhỏ nhất."
+  },
+  {
+   "task": 79,
+   "pass": false,
+   "resp": "Để kiểm tra xem từ \"Hadoop\" có được lưu vào bộ nhớ chính (Memory) hay không, ta sẽ sử dụng hàm checked(). Để làm được điều này, chúng ta cần đảm bảo rằng từ khóa \"Hadoop\" phải là một chuỗi thuần túy (không bị lặp ký tự, không bị thừa số) và nó đang nằm trong bộ nhớ (Memory).\n\nDưới đây là đoạn mã Python kiểm tra xem từ \"Hadoop\" có được lưu vào bộ nhớ chính (Memory) hay không:\n```python\n# Dữ liệu thử nghiệm\nwhile True:\n    # Kiểm tra xem từ \"Hadoop\" có nằm trong bộ nhớ (Memory) hay không\n    with open('with', configure }) == 'Hadoop'\n    for write-up('Hadoop': open('w with', configure )) == 'Hadoop'\n    for write-up('Hadoop' + ' ', configure ) == 'Hadoop'\n    for write-up('Hadoop' + ' ', configure ) == 'Hadoop'\n    )\n\n    # Kiểm tra xem từ \"Hadoop\" có nằm trong bộ nhớ chính (Memory) hay khôn"
+  },
+  {
+   "task": 80,
+   "pass": false,
+   "resp": "Để tìm số hạng thứ hai ta thực hiện phép chia cho `nth`, ta sử dụng `nth-nth` (nth/2)."
+  },
+  {
+   "task": 81,
+   "pass": false,
+   "resp": "```python\n# Zip two two tuples; how many two do you want to zip? (You can only double-click the zipper icon in the browser)\n```"
+  },
+  {
+   "task": 82,
+   "pass": false,
+   "resp": "Để tìm khối lượng của một vùng, bạn có thể sử dụng hàm sqlite3. Bạn cần cung cấp các giá trị cho sqlite3:\n```sql\nSELECT sqlite3 FROM 'f' WHERE f = 0;\n```\n\nDưới đây là code mẫu:\n\n```python\nimport os\nimport sys\nfrom sys.config('sqlite3'):\n    return SELECT * FROM 'f';\n\n# Thay thế bằng giá trị của bạn vào `f`\n    VS = f[0] = 0;\n      # Thay thế bằng giá trị của bạn vào `f'\n    False;\n      print(f\"Tìm thấy vùng: {f}\");\n\n# Thay thế bằng giá trị của bạn bằng 0 khi kết quả được trả về\n    ```\nThay `sqlite3` bằng tên hàm bạn muốn sử dụng."
+  },
+  {
+   "task": 83,
+   "pass": false,
+   "resp": "Để tìm số lượng ký tự trong chuỗi, bạn có thể sử dụng hàm \"if\". Bạn cũng có thể sử dụng hàm \"if\" để kiểm tra xem một chuỗi đã được nhập đúng hay chưa.\n\nDưới đây là đoạn mã Python sử dụng hàm \"if\" để tìm số lượng ký tự trong chuỗi:\n```python\n# Thay thế bằng giá trị của chuỗi cần tìm kiếm\ndef get_Char(\"abc\"):\n    return 0\ndef find_Char(\"abc\"):\n    return 0\ndef find_Char(file_path, file_name, engine=\"openpyxl\", mode=\"a\", if_sheet_exists=\"replace\":\n    if_sheet_exists=\"replace\":\n        return \").get_Char(file_path)\n    \n    # Thay thế giá trị của chuỗi cần tìm kiếm bằng cách dùng hàm \"if\":\n    return \"\"\n    return 0\ndef find_Char(file_path, file_name, engine=\"openpyxl\", mode=\"a\", if_sheet_exists=\"replace\":\n        return \").get_Char(file_path)\n    \n    # Thay thế giá trị của chuỗi cần tìm kiế"
+  },
+  {
+   "task": 84,
+   "pass": false,
+   "resp": "Để tìm số hạng thứ tự trong hàm \"F\", bạn có thể sử dụng một trong các cách sau:\n\nCách 1: Dùng hàm `f_all` để tìm tất cả các số hạng:\n```python\ndef find_all('f_all'):\n    return f_all[10] == 6\n```\nCách 2: Dùng hàm `if` để kiểm tra xem số hạng ở đầu ra có lớn hơn số hạng đầu vào hay không:\n```python\ndef if(f_all[10] >= 0): == 10\n```\nCách 3: Dùng hàm `num_value` để kiểm tra số hạng có giá trị lớn hơn hay bằng 0. Nếu không tìm thấy số hạng, hãy kiểm tra xem số hạng ở đầu ra có lớn hơn số hạng đầu vào hay không. Nếu không tìm thấy cả hai, hãy kiểm tra xem số hạng đầu vào có lớn hơn hay bằng 0."
+  },
+  {
+   "task": 85,
+   "pass": false,
+   "resp": "```python\nascii('sys.py') {\n    return sys.py('file_path/sheet') if 'file_path/sheet' == '{sys.py}'`\n    return sys.py('file_path/sheet').reset_index()\n```\n\n### Giải thích:\n```python\nascii('sys.py') {\n    return sys.py('file_path/sheet') if 'file_path/sheet' == '{sys.py}'`\n    return sys.py('file_path/sheet').reset_index()\n```\n\n### Giải thích:\n```python\nascii('sys.py') {\n    return sys.py('file_path/sheet') if 'file_path/sheet' == '{sys.py}'`\n    return sys.py('file_path/sheet').reset_index()\n```\n\n### Giải thích:\n```python\nascii('sys.py') {\n    return sys.py('file_path/sheet') if 'file_path/sheet' == '{sys.py}'`\n    return sys.py('file_path/sheet').reset_index()\n```\n\n### Giải thích:\n```python\nascii('sys.py') {\n    return sys.py('file_path/sh"
+  },
+  {
+   "task": 86,
+   "pass": false,
+   "resp": "Để tìm tâm của một khối cầu, chúng ta có thể sử dụng phương pháp số học. Thay vì tìm kiếm các số nguyên dương nhỏ nhất (z), chúng ta nên tìm các số nguyên dương lớn nhất bằng cách chia cả hai vế cho 24.\n\nDưới đây là mã để tìm tâm của một khối cầu:\n```python\nassert centered_hexagonal_number(10) == 271\n# Code này có thể được chạy từ dòng 42 đến dòng 60."
+  },
+  {
+   "task": 87,
+   "pass": false,
+   "resp": "Để viết một hàm để merge ba mã thông báo thành một, bạn cần sử dụng hàm `merge` với tư cách là đối số đầu tiên và trả về kết quả là một chuỗi duy nhất chứa các giá trị được thay đổi.\n\n```python\nimport os\nimport fastError\ndef main():\n    parser = fastError()\n    return None\n    # Bước 1: Thay thế các mã thông báo bạn muốn merge\n    transform Data = fastError()\n    {\n        transform Data : 'red',\n        transform Data : 'red',\n        transform Data : 'red',\n        }\n    {\n        transform Data : 'red' = 'red',\n        transform Data : 'red',\n        transform Data : 'red',\n        }\n    {\n        transform Data : 'red' = 'red',\n        transform Data : 'red',\n        transform Data : 'red',\n        }\n    {\n        transform Data : 'red' = 'red',\n        transform Data : 'red',\n        "
+  },
+  {
+   "task": 88,
+   "pass": false,
+   "resp": "Để vượt qua bài kiểm tra, mã phải pass được thử này:\nassert freq_count([10,10,10,10,20,20,20,40,40,50,50,30))==({10: 4, 20: 4, 40: 2, 50: 2, 30: 1}) \nWrite the Python function."
+  },
+  {
+   "task": 89,
+   "pass": false,
+   "resp": "```python\nasync function write(xl, x) {\n  // 1. Khởi tạo hàm `write`;\n      print(f\"Đang tìm kiếm số nhỏ hơn (x)\");\n      print(\"Tìm thấy số nhỏ hơn (x)\");\n}\n```\nasync function save(x) {\n  // 2. Biến đổi tham số thành số nhỏ hơn (x) bằng cách thay đổi x vào hai trường hợp sau:\n    if (value = 0) {\n        return x;\n        if (value > 0) {\n        return x;\n}\n```\n\n# Cách dùng\nxl = x;\nx + x = 11;\nxl + x = 20;\n```"
+  },
+  {
+   "task": 90,
+   "pass": false,
+   "resp": "Để tìm độ dài của từ dài nhất, bạn dùng hàm \"lag\" với tham số là độ dài lớn nhất của từ và kiểu dữ liệu của từ (ví dụ: integer hoặc string). Bạn cũng có thể sử dụng phương pháp tương đương với hàm \"log\" với tham số là độ dài nhỏ nhất của từ và kiểu dữ liệu của từ (ví dụ: byt). Sau đó, dùng so sánh để kiểm tra sự khác biệt về độ dài. Nếu bạn muốn tính tổng của từ, bạn có thể sử dụng phương thức \"while\" thay vì hàm \"log\"."
+  },
+  {
+   "task": 91,
+   "pass": false,
+   "resp": "Để kiểm tra xem một danh sách có chứa các giá trị chuỗi được chỉ định hay không, hãy sử dụng hàm sau:\n```python\n# Kiểm tra xem một danh sách có chứa các giá trị chuỗi được chỉ định hay không\nassert_list = str(all_values)\n# Lưu và in ra danh sách đã được kiểm tra\nassert_list_list = str(all_values)\n\n# Kiểm tra xem danh sách có chứa tất cả các chuỗi được chỉ định hay không\nwhile echoed_values = true\nfor each, if_sheet_exists='replace':\n    while echoed_values = false:\n    async def main():\n    return 0 if_sheet_exists='replace'\n    \n    # Kiểm tra xem danh sách có chứa tất cả các chuỗi được chỉ định hay không\nif_sheet_exists='replace':\n    return 0 for each in enumerate(main)\n\n# In ra danh sách đã được kiểm tra\nassert_list_list = str(all_values)\n\n# In ra danh sách đã được kiểm tra\nwith open(e"
+  },
+  {
+   "task": 92,
+   "pass": false,
+   "resp": "Để kiểm tra xem số được cho là \"1212121\" có bị thiếu hay không, ta dùng hàm undulating. Nếu số vẫn nằm trong khoảng, ta kết luận số bị thiếu.\nCông thức:\n```python\ndef df_undulating():\n    # Kiểm tra xem số cho là \"1212121\" có bị thiếu hay không\n    if df_undulating():\n        with open(\n\n    # Kết hợp số đang cho là \"1212121\" với số khác để so sánh\n    else:\n        if df_undulating():\n            display_items == '1212121'\n            else:\n            if df_undulating():\n            display_items < '1212121'\n            else:\n            display_items < '1212121'\n            else:\n            display_items == '1212121'\n            else:\n            display_items < '1212121'\n            else:\n            display_items < '1212121'\n            else:\n            display_items < '1212121'\n   "
+  },
+  {
+   "task": 93,
+   "pass": false,
+   "resp": "Để tính giá trị của 'A', bạn có thể sử dụng phương pháp đơn giản là nhân số lượng điện tích (A) với giá trị của nó trên mỗi đơn vị điện tích (B):\n\naq = b*(3.4)^2 = 3aq\n\nasync function write a validate(aq,(3.4)) and write the rate(b) if it is true.\n```python\nasync () {\n    aq = 3aq;\n    b = 3bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+   "task": 94,
+   "pass": false,
+   "resp": "```python\nasync def sqlite({\n  'data_path': ['Map': '<\\d{3}:\\d{1}\\d{2}\\d{3}}',\n  'data_path': ['Map': '<\\d{3}\\d{1}\\d{2}\\d{3}',\n  'data_path': ['Manjeet', 200', ('Varsha', 100'), ('Varsha', 200')])\n```\n    async def sqlite({\n  'data_path': ['Map': '<\\d{3}\\d{1}\\d{2}\\d{3}',\n  'data_path': ['Manjeet', 200', ('Varsha', 100'), ('Varsha', 200')])\n```\n    async def errors({\n  \"error\": [echo 'Failure\"]\n  }\n```\n    return sqlite({\n  'data_path': ['Map': '<\\d{3}\\d{1}\\d{2}\\d{3}',\n  'data_path': ['Manjeet', 200', ('Varsha', 100'), ('Varsha', 200')])\n```\n    return sqlite({\n  'data_path': ['Map"
+  },
+  {
+   "task": 95,
+   "pass": false,
+   "resp": "Để tìm chiều dài tối thiểu của danh sách, bạn có thể sử dụng hàm `find_min_num` với tham số 'đầu vào'. Bạn cũng có thể thay thế nó bằng một trong các giá trị được cung cấp:\n```python\n    # Tìm chiều dài của danh sách nếu đầu vào là 'đầu vào_đầu ra' và kiểu dữ liệu là 'adj'\n    def find_min_num(input, output):\n        return [1,2]\n    if output is None:\n            return [1,2]\n    return 0.tole"
+  },
+  {
+   "task": 96,
+   "pass": false,
+   "resp": "Để tìm số lượng băng chuyền, hãy dùng hàm sau:\nassert divisor(15) == 4 \nThay các giá trị này vào đây:\n### 1. Đầu ra của hàm divisor: số lượng băng chuyền\n### 2. Đầu vào của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 3. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 1 hoặc 0):\n### 4. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 5. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 6. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 7. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 8. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 9. Đầu ra của hàm divisor: số lượng băng chuyền (bắt đầu bằng 0 hoặc 1):\n### 10. Đầu ra của hàm diviso"
+  },
+  {
+   "task": 97,
+   "pass": false,
+   "resp": "Để tìm số lần xuất hiện của một danh từ trong một danh sách, chúng ta dùng hàm frequency_lists()."
+  },
+  {
+   "task": 98,
+   "pass": false,
+   "resp": "Để giải quyết bài toán này, chúng ta sẽ sử dụng một thuật toán để chia cả danh sách các số thành các nhóm và sau đó divide độ dài của mỗi nhóm theo kích thước của từng nhóm.\n\n```python\nimport os\nimport pandas as pd\nimport num\nfrom pathlib import Path\n\n# Đường dẫn của file cài đặt\npath = 'ten_file_cua_ban.xlsx'\ncd = 'ten_file_cua_ban.xlsx'\nvh = 9m - 2v - 1, 2, 3, 4\ny = 9, 2, 3, 4, 5, 6\n\n# Đường dẫn của các file kế tiếp\npath = 'ten_file_cua_ban.xlsx'\ny = 9, 2, 3, 4, 5, 6\ny + 1, 5, 6, 7, 8, 9\n7 = pd.read_excel(path)\n8 = pd.read_excel(path)\n2 = pd.read_excel(path)\n3 = pd.read_excel(path)\n4 = pd.read_excel(path)\n\n# Chia danh sách thành các nhóm\nquery = (8, 2, 3, -1, 7) * 1000\nfor query: 'Diplaces in columns' | Query | DoNotFound\n    for detail:\n    df = pd.read_excel(df, sheet_name=\"Diplaces\")\n"
+  },
+  {
+   "task": 99,
+   "pass": false,
+   "resp": "```python\nassert decimal_to_binary(8);\n```\n\n### Giải thích nhanh:\nĐây là một hàm `async def`, nó sẽ chuyển đổi chuỗi số được cung cấp thành số nguyên với tham số 'b'. Nó giống như việc bạn dùng hàm `pd.to_excel` để thực hiện phép tính này, và kết quả là các số nguyên sẽ được lưu vào bộ nhớ.\n\n---\n\n### Bước 1: Lưu trữ giá trị của chuỗi \"1000\"\nBạn có thể dùng hàm `async def' để chuyển đổi trực tiếp chuỗi '1000' thành chuỗi mới với giá trị tương ứng (ví dụ: `1000000`).\n\nTuy nhiên, để kết quả chính xác hơn, bạn nên dùng thêm `pd.to_numeric(b)` để chuyển đổi sang dạng thập phân, sau đó dùng `import pandas as pd` thông thường.\n\n### Bước 2: Thực thi hàm\n```python\nassert decimal_to_binary(8);\n```\n### Bước 3: Kiểm tra kết quả\nSau khi chạy xong, kết quả sẽ trả về chuỗi `1000000` (có thêm dấu phẩy).\n\n"
+  },
+  {
+   "task": 100,
+   "pass": false,
+   "resp": "Để tìm số tiếp theo, hãy sử dụng hàm next_smallest_python()."
+  },
+  {
+   "task": 101,
+   "pass": false,
+   "resp": "Để tìm các phần tử trong một mảng, bạn có thể sử dụng hàm `pd.read_excel` với tham số `t`. Hàm này sẽ duyệt qua các hàng và so sánh các cặp ký tự giống nhau. Nếu không tìm thấy, nó sẽ trả về `False`. Bạn cũng có thể dùng hàm `pd.to_numeric()` để tính tổng của một nhóm các phần tử.\n\nDưới đây là đoạn mã Python sử dụng hàm `pd.read_excel` để tìm các phần tử trong mảng:\n```python\n# Giả sử code trên đúng\npd.to_numeric() = [pd.to_numeric('A')][0][12][3]]\n# Hàm trả về chuỗi ký tự giống như 'A', 'B', 'C', v.v.`\ndf['A'] = pd.to_numeric(pd.to_numeric('A'))\ndf['B'] = pd.to_numeric(pd.to_numeric('B'))\n\n# In ra tất cả các phần tử trong mảng đã tìm được\nprint(df['A']['B'])\n```\n\nTrong đoạn mã trên, `df['A']['B']` là chuỗi ký tự tìm được. Nó đại diện cho toàn bộ mảng được tìm và phần tử đầu tiên trong chu"
+  },
+  {
+   "task": 102,
+   "pass": false,
+   "resp": "```python\nasync function write(\"\", sleep(1)) = sleep(dot=1)\n# pass test\n    except requests as null:\n    return None\n\n# pass test\n    except requests as null:\n    return None\n\nasync def sleep(null, f\"{pass} == 'python_program'') == 'python_program'\n# passed test {\n  const snake_file = 'python_program';\n}\n```\nThay `python_program` bằng lệnh trong hàm `async def sleep(null, f\"{pass} == 'python_program'`)."
+  },
+  {
+   "task": 103,
+   "pass": false,
+   "resp": "Để tìm số của một số chỉ định, ta dùng hàm euler.\n\nCông thức:\n```python\ndef find_n_num(num) {\n    return n_num = 0;\n    return n_num = 40;\n}\n```\nTrong bài toán này, chúng ta muốn tìm số của một số chỉ định là số nguyên tố.\n\nSố nguyên tố nhỏ nhất là 4 và số lớn nhất là 2."
+  },
+  {
+   "task": 104,
+   "pass": false,
+   "resp": "Để giải quyết vấn đề này, chúng ta có thể sử dụng hàm `append` để nối các danh sách bài hát lại với nhau."
+  },
+  {
+   "task": 105,
+   "pass": false,
+   "resp": "Để đếm các số trong danh sách đã cho, hãy dùng hàm ` count() }().`"
+  },
+  {
+   "task": 106,
+   "pass": false,
+   "resp": "Để thêm danh sách vào các ô trong bảng, bạn có thể sử dụng hàm \"add_list\" với điều kiện là cột chứa danh sách phải nằm trong phạm vi của hàm \"add_columns\". Bạn có thể dùng câu lệnh sau để thực hiện việc này:\n```python\n# Thêm danh sách vào các ô trong bảng\nfill_date = '[1/(6/7)] - 180\nfor (fill_date() == fill_date()) {\n    continue\n    # Kết quả: add_list([5, 6, 7], (9, 10))\n    return fill_date;\n```\nTrong code này, \"fill_date\" được gọi là \"date_columns\" để lưu trữ danh sách các ô. Hàm \"add_list\" sẽ trả về một danh sách gồm tất cả các ô trong cột chứa danh sách và trả về giá trị của fill_date."
+  },
+  {
+   "task": 107,
+   "pass": false,
+   "resp": "Để đếm số lượng HexaDecimal có giá trị trong khoảng từ 10 đến 15, bạn sẽ sử dụng hàm `assert_hexadecimal(10,15)` với `+= 6`."
+  },
+  {
+   "task": 108,
+   "pass": false,
+   "resp": "```python\nasync def sys_ merge(error: \"Error#Fault! Error!\") {\n    return error.replace('.', '', regex=True) if not finished:\n        error[error];\n    return error.format=False)\n```\n\n#Cách dùng\nfig write false để lỗi (không chạy trên test)\ndef merge_args(error): lỗi (không chạy trên test)\ndef merge(error): {}: lỗi (trên test)\n    return error.format=False(error)\n\n#Cách dùng\nfig write false (cho test)\ndef merge(error): {}: {}: {}\n```\n\n#Cách dùng\nfig write (fail)"
+  },
+  {
+   "task": 109,
+   "pass": false,
+   "resp": "Để tìm số nguyên tố của một chuỗi, bạn có thể sử dụng hàm random.random.randint() để đếm số lần xuất hiện của mỗi nhóm trong một tập hợp và sau đó chia cho từng nhóm."
+  },
+  {
+   "task": 110,
+   "pass": false,
+   "resp": "```python\nassert extract_missing([(6, 9), (15, 34), (2, 110), (3, 290), (48, 70)], 2, 100) == [(2, 6), (9, 100), (9, 15), (34, 100), (34, 48), (70, 100)]\n```\n\n### 1. Code mẫu\n```python\nassert extract_missing([(6, 9), (15, 34), (2, 110), (3, 290), (48, 70)], 2, 100) == [(2, 6), (9, 100), (9, 15), (34, 100), (34, 48), (70, 100)]\n```\n\n### 2. Cách viết ngắn gọn (Dùng `shutil` cho nhanh và ít dùng hàm `extract` nếu là file tự chạy trên Windows)\n\n```python\n#apply(extract_missing([(6, 9), (15, 34), (2, 110), (3, 290), (48, 70))]\n#extract_missing([(6, 9), (15, 34), (2, 110), (3, 290), (48, 70))]\n```\n\n### 3. Ví dụ dùng `shutil`\n\n```"
+  }
+ ]
+}

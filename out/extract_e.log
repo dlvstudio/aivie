@@ -1,0 +1,31 @@
+[     0.0s] load checkpoint checkpoints/network_v11.pkl …
+[     0.0s] ▶ unpickle
+[     6.7s] ✓ unpickle  (6.7s)
+[     6.7s] ▶ vocab (32002 token)
+[     6.8s] ✓ vocab (32002 token)  (0.0s)
+[     6.8s] ▶ adjacency
+[    16.6s] ✓ adjacency  (9.8s)
+[    16.6s] ▶ embedding
+[    16.6s] ✓ embedding  (0.1s)
+[    16.6s] ▶ parents
+[    16.6s] parents: deserialize 65098 records …
+[    16.8s] parents 5000/65098 (7.7%)
+[    17.0s] parents 10000/65098 (15.4%)
+[    17.1s] parents 15000/65098 (23.0%)
+[    17.2s] parents 20000/65098 (30.7%)
+[    17.3s] parents 25000/65098 (38.4%)
+[    18.2s] parents 30000/65098 (46.1%)
+[    21.5s] parents 35000/65098 (53.8%)
+[    23.4s] parents 40000/65098 (61.4%)
+[    23.5s] parents 45000/65098 (69.1%)
+[    23.7s] parents 50000/65098 (76.8%)
+[    23.8s] parents 55000/65098 (84.5%)
+[    24.0s] parents 60000/65098 (92.2%)
+[    24.1s] parents 65000/65098 (99.8%)
+[    52.1s] ▶ rebuild_hierarchical_index …
+[    53.7s] ✓ rebuild_hierarchical_index (1.6s)
+[    61.6s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    61.6s] ✓ parents  (45.0s)
+[    61.6s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    65.7s] sidecar thiếu → migrate: network_v11.content.pkl
+[    65.7s] ✓ load_checkpoint XONG

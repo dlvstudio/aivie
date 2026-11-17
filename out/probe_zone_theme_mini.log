@@ -1,0 +1,40 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+[6s] ✓ bipartite
+  862 head ứng viên (gidf ≥ 5.0)
+[6s] 25 zone TỰ SINH qua left_pmi ≥ 3.0
+
+zone                          tw=0    tw=1
+------------------------------------------
+mẹ hoặc                       0.60    0.00
+niềm tự                       0.40    0.40
+tập trung                     1.00    0.60
+rác giúp                      0.60    0.60
+hôm trước                     0.40    0.40
+bất thường                    0.60    0.60
+khẳng định                    1.00    1.00
+Trống đồng                    0.40    0.60
+trân trọng                    0.80    0.80
+hai đều                       0.80    0.40
+lý do                         0.60    0.40
+lưới đường                    0.40    0.40
+văn hóa                       0.60    0.20
+Triều đại                     0.20    0.60
+phối hợp                      1.00    1.00
+Diện tích                     0.20    0.60
+Biển Đông                     0.60    0.20
+hành tinh                     1.00    1.00
+trừ 4                         0.60    0.40
+lương thực                    0.80    0.40
+cải cách                      1.00    1.00
+cộng 5                        0.20    0.40
+triển kinh                    1.00    0.80
+tất cả                        0.80    0.00
+Thành phố                     0.20    1.00
+------------------------------------------
+TRUNG BÌNH                    0.63    0.55   (n=25 zone)
+
+biên (tw=0 − tw=1) = **+0.080**
+⇒ TRƯỢT — hiện tượng chỉ có ở mini; chốt âm tính, giữ nguyên facts_about
+
+[7s] → out/probe_zone_theme_mini.log

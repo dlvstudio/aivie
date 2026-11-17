@@ -1,0 +1,28 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=64 mode=agenda_handoff
+
+=== nq_def  (208.1s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== nq_full  (11.3s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   '. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== thd  (35.5s) dots≈2 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.
+cont:   'Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.'
+
+=== ly  (80.7s) dots≈2 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109. Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.
+cont:   'Nhà Lý thành lập năm 109. Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.'
+
+=== hung  (25.2s) dots≈2 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.
+cont:   'Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.'
+
+[427s] → out/probe_agenda_handoff_only6.log

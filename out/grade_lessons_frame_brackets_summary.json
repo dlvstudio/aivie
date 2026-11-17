@@ -1,0 +1,66 @@
+{
+  "source": "checkpoints/grade_lessons_test.pkl",
+  "total": 8308,
+  "by_flag": {
+    "boilerplate": 1527,
+    "punct": 2213,
+    "other": 4415,
+    "discourse": 153
+  },
+  "endpoint_kinds": {
+    "token->phrase": 1956,
+    "token->token": 4036,
+    "phrase->token": 1549,
+    "phrase->phrase": 767
+  },
+  "top_openers": [
+    {
+      "opener": ": Tiết",
+      "count": 276
+    },
+    {
+      "opener": "Tiết",
+      "count": 257
+    },
+    {
+      "opener": "Lớp",
+      "count": 229
+    },
+    {
+      "opener": "Việt",
+      "count": 217
+    },
+    {
+      "opener": "Bài",
+      "count": 214
+    },
+    {
+      "opener": "1",
+      "count": 161
+    },
+    {
+      "opener": "Tiếng",
+      "count": 159
+    },
+    {
+      "opener": ": Câu",
+      "count": 150
+    },
+    {
+      "opener": "Câu",
+      "count": 142
+    },
+    {
+      "opener": "trong",
+      "count": 111
+    },
+    {
+      "opener": "2",
+      "count": 105
+    },
+    {
+      "opener": "văn",
+      "count": 105
+    }
+  ]
+}

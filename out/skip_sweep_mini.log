@@ -1,0 +1,68 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+[5s] ✓ W_skip đầy đủ: 5,664 câu · 47,377 hàng
+[5s] ✓ top-40 mỗi hàng
+
+==============================================================================
+QUÉT HIỆU CHỈNH (chế độ `vote`) — logP/token, mốc: corpus −5.91 · xáo −9.55
+==============================================================================
+      λ  top-k   nhiệt   logP/token
+   0.85      5     0.1       -4.283
+   0.85      5    0.25       -4.367
+   0.85      5     0.6       -6.452
+   0.85     12     0.1       -3.594
+   0.85     12    0.25       -4.094
+   0.85     12     0.6       -5.770
+   0.85     40     0.1       -2.997
+   0.85     40    0.25       -2.606
+   0.85     40     0.6       -6.981
+    0.5      5     0.1       -3.100
+    0.5      5    0.25       -3.557
+    0.5      5     0.6       -5.661
+    0.5     12     0.1       -2.794
+    0.5     12    0.25       -4.116
+    0.5     12     0.6       -5.775
+    0.5     40     0.1       -3.052
+    0.5     40    0.25       -4.478
+    0.5     40     0.6       -7.058
+   0.25      5     0.1       -3.032
+   0.25      5    0.25       -3.159
+   0.25      5     0.6       -5.446
+   0.25     12     0.1       -3.208
+   0.25     12    0.25       -4.027
+   0.25     12     0.6       -5.573
+   0.25     40     0.1       -3.724
+   0.25     40    0.25       -4.535
+   0.25     40     0.6       -6.940
+
+  GẦN MỨC CORPUS NHẤT: λ=0.5 · top-k=12 · nhiệt=0.6 → -5.775  (corpus -5.909)
+  (KHÔNG chọn cực đại: cực đại = chép. Xem §12.105d.)
+
+============================================================================================
+CHẾ ĐỘ `vote`  (λ=0.5 · d≤8 · top-k=12 · nhiệt=0.6)
+============================================================================================
+  'Việt Nam'                         → ' Á'
+                                     → ' Việt Trì năm. cho là người này và văn hoá vào tháng được thường đầu nhà Lý.'
+  'Nhà Lý dời đô về'                 → ' thành Đại. Mỗi đổi, họ lãnh'
+                                     → ' khởi,86, ông ở làng. Nếu là dài. và năm, và với " Hoàng Sa. Khi khi Nguyễn vào rừng. Khi ta'
+  'Ngô Quyền đánh bại quân'          → ' đi. lập người.'
+                                     → ' sự quan điểm có Loa. huyện lị'
+  'Hoa Lư là kinh đô của'            → ' nước là điểm này không'
+                                     → ' Mặt. Nếu khi chưa một vị này là hành quân đã Sơn hiện tại, như của được bắt dân suy, ông với cá'
+  'Sông Hồng chảy qua'               → ' trungis, ông làm huy, quân Nam được nhiều hàng là nơi có phía tích nam giới. Em nên có thành gọ'
+                                     → ' những năm thứ6.'
+  'Thủ đô Việt Nam là'               → ' nơi năm 10.0. Thành cần quy đánh, Tống nước biển.'
+                                     → ' Hà. Thành 1 thể cần hiểu luật. đất đá bắn là "Bánh Sơn là xã vua và nước lý của Việt nhà Lý của'
+  'Trần Hưng Đạo'                    → ' giáo dục là vùng triển, được Cửu làm từ đó được nhiều Hán từ khác làm gì được nhắn làm tướng tử'
+                                     → ' là một trong dân địa của trong dân sử Việt mất,. Long đã chính nhà trung. Người Thái0 nhà Mạc l'
+  'Chiến thắng Bạch Đằng năm'        → ' này là vị vua) và sông Hương số quỹ'
+                                     → ', không quân. Sơn nguyên gồm:  là vị như hội,. Tông Nam Cực nhập064 nhà Tống Phúc9 đã làng là mộ'
+
+  logP/token của văn sinh: **-6.177**  (n=15)
+
+============================================================================================
+MỐC §12.103 để so:  corpus **−5,91**  ·  văn sinh HIỆN TẠI **−3,97**  ·  xáo **−9,55**
+Tụt về phía −9,5 ⇒ văn què. Quanh −6 ⇒ đúng vùng văn thật. Cao hơn −4 ⇒ vẫn đang chép.
+Nhưng ĐỌC TAY là cột phán — §12.103 đo được thước này mù với mối ghép tinh vi.
+
+[11s] → out/skip_sweep_mini.log

@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_1000.pkl …
+[    0.3s RSS  0.40GB] nạp xong · parents=1005 vocab=32002
+[    0.3s RSS  0.40GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.3s RSS  0.40GB] ws_spans 0/1005 · span=0 · bỏ=0
+[    0.6s RSS  0.40GB] 1669 span · 0.0 phút
+[    0.6s RSS  0.40GB] ghi out/noise_nho/toy_noise_1000.ws_spans.json (0.0 MB) · roundtrip OK
+[    0.6s RSS  0.40GB]   mẫu[00] '<0xE5> <0xB8> <0x82> <0xE7> <0xA4> <0xBE>'
+[    0.6s RSS  0.40GB]   mẫu[01] 'một vài'
+[    0.6s RSS  0.40GB]   mẫu[02] 'chính tả'
+[    0.6s RSS  0.40GB]   mẫu[03] 'cách mạng'
+[    0.6s RSS  0.40GB]   mẫu[04] 'nước ngọt'
+[    0.6s RSS  0.40GB]   mẫu[05] 'danh từ'
+[    0.6s RSS  0.40GB]   mẫu[06] 'tâm linh'
+[    0.6s RSS  0.40GB]   mẫu[07] 'địa danh tiếng'
+[    0.6s RSS  0.40GB]   mẫu[08] 'tiên phong'
+[    0.6s RSS  0.40GB]   mẫu[09] 'phòng tuyến'
+[    0.6s RSS  0.40GB]   mẫu[10] 'triển khai'
+[    0.6s RSS  0.40GB]   mẫu[11] 'yếu tố'
+[    0.6s RSS  0.40GB]   mẫu[12] 'báo cáo'
+[    0.6s RSS  0.40GB]   mẫu[13] 'đời sống'
+[    0.6s RSS  0.40GB]   mẫu[14] 'phi công'
+[    0.6s RSS  0.40GB]   mẫu[15] 'Thành phố'
+[    0.6s RSS  0.40GB]   mẫu[16] 'Thái giáo'
+[    0.6s RSS  0.40GB]   mẫu[17] 'ph ót'
+[    0.6s RSS  0.40GB]   mẫu[18] 'nối tiếp'
+[    0.6s RSS  0.40GB]   mẫu[19] 'xu hướng'
+[    0.6s RSS  0.40GB]   mẫu[20] 'ngộ sát'
+[    0.6s RSS  0.40GB]   mẫu[21] 'dã thú'
+[    0.6s RSS  0.40GB]   mẫu[22] 'hiến pháp'
+[    0.6s RSS  0.40GB]   mẫu[23] 'Vị trí'
+[    0.6s RSS  0.40GB]   mẫu[24] 'Diễn đàn'
+[    0.6s RSS  0.40GB]   mẫu[25] 'Khí hậu'
+[    0.6s RSS  0.40GB]   mẫu[26] 'Carl Linnaeus'
+[    0.6s RSS  0.40GB]   mẫu[27] 'Karl XIV Johan'
+[    0.6s RSS  0.40GB]   mẫu[28] 'Es ai as T eg n ér'
+[    0.6s RSS  0.40GB]   mẫu[29] 'Luc ia fest'
+[    0.6s RSS  0.40GB] span nghi rác (tự động): 53/1669 = 3.2% (ISG: 57%)
+[    0.6s RSS  0.40GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

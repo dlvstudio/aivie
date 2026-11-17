@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/workspace/nn-aivie/scripts/expert_office_1p3b.py", line 306, in <module>
+    main()
+  File "/workspace/nn-aivie/scripts/expert_office_1p3b.py", line 295, in main
+    return humaneval(a)
+           ^^^^^^^^^^^^
+  File "/workspace/nn-aivie/scripts/expert_office_1p3b.py", line 234, in humaneval
+    r = multi_runner(a, "cuda")
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nn-aivie/scripts/expert_office_1p3b.py", line 133, in multi_runner
+    trunk, c = E.load_trunk(dev, kernel=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/nn-aivie/scripts/expert_ffn_1p3b.py", line 61, in load_trunk
+    return m.to(dev), c
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1355, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 915, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 915, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 915, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 942, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1341, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 79.18 GiB of which 40.44 MiB is free. Process 2255506 has 37.24 GiB memory in use. Process 2302418 has 7.75 GiB memory in use. Process 2303352 has 7.75 GiB memory in use. Process 2364452 has 7.75 GiB memory in use. Process 2366103 has 6.96 GiB memory in use. Process 2366974 has 6.96 GiB memory in use. Process 2368114 has 4.68 GiB memory in use. Of the allocated memory 4.17 GiB is allocated by PyTorch, and 4.45 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

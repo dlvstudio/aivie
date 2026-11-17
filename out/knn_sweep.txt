@@ -1,0 +1,72 @@
+LM 11.4M · vocab 32,002 · ctx=256
+
+dựng datastore từ data/text_corpus/history_articles.jsonl …
+✓ 158 bài · 355,666 cặp (h,next) trong datastore
+dựng index 5-gram từ CHÍNH data/text_corpus/history_articles.jsonl (nguồn datastore) …
+✓ 327,429 5-gram phân biệt
+
+─── QUÉT LẤY MẪU · top_k=40 · 2 seed · λ=[0.4] · temp=[0.3, 0.5, 0.7] ───
+  rep4 = tỷ lệ lặp nội bộ (CAO=hỏng do lặp) · MỚI = 5-gram chưa có trong corpus
+  ⚠️ CẢ HAI đều MÙ với 'bịa mạch lạc' (Ontario) — cột text để ĐỌC TAY tính đúng.
+
+     λ  temp   MỚI%  rep4%  seed khác
+   0.4   0.3    36%     8%      100%
+   0.4   0.5    56%     1%      100%
+   0.4   0.7    74%     0%      100%
+
+─── TOÀN VĂN (đọc tay tính ĐÚNG + rác — thứ 2 thước tự động không thấy) ───
+  λ=0.4 T=0.3 Nhà Trần là    s0 MỚI=18/36 rep=  0%  ' một nhà văn, ông Hồ bắt đầu đọc Tuyên ngôn.⏎Trong việc đối ngoại, ông viết đến một nghìn bài thơ chữ Nôm của ông.⏎Sự thật không hoàn toàn như vậy.⏎'
+  λ=0.4 T=0.3 Nhà Trần là    s1 MỚI=18/36 rep=  3%  ' một bài ngũ ngôn tuyệt cú của nhà sư Pháp Thuận.⏎Ông là một nhà thơ, nhà thơ và nhà thơ trữ tình.⏎Ông đặt quyền lợi tối cao của ông.⏎Ông là'
+  λ=0.4 T=0.3 Khúc Thừa Dụ   s0 MỚI=1/36 rep=  0%  '.⏎Loại thuế thứ hai là thuế đinh (thuế thân), đánh theo từng địa phương, tính theo từng suất đồng niên.⏎Ngoài ra, nếu nhà nào có người đi làm đường,'
+  λ=0.4 T=0.3 Khúc Thừa Dụ   s1 MỚI=29/36 rep= 43%  '.⏎Loại thuế thứ hai là thuế đinh, thuế đinh, thuế đinh, thuế đinh, thuế đinh, thuế điền.⏎Thuế đinh, thuế đinh, thuế đinh, thuế ruộng và thuế sản'
+  λ=0.4 T=0.3 Ngô Quyền      s0 MỚI=15/36 rep= 24%  ' và Hoàng hậu Dương Thị Vy.⏎Đình Ninh Xá, xã Bắc An, tp Hải Phòng.⏎Đình Ninh Xá, xã Phụng Hiệp, tỉnh Nghệ An.⏎Đình Ninh Xá, xã Bắc'
+  λ=0.4 T=0.3 Ngô Quyền      s1 MỚI=1/36 rep= 16%  ' và Trưng Trắc nay là đường Hai Bà Trưng, phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Phạm Hồng Thái, phường Thuận Hóa.⏎Đường Phạm Phú Thứ nay là đường Phạm Hồng'
+  λ=0.4 T=0.3 Lý Thái Tổ     s0 MỚI=18/36 rep=  0%  ' tiến quân, với 100 vạn quân và 80 thớt voi.⏎Khoa học kỹ thuật và tính năng.⏎Lúc bấy giờ, các tôn giáo thiểu số ở Trung Quốc bao gồm Hồi'
+  λ=0.4 T=0.3 Lý Thái Tổ     s1 MỚI=4/36 rep=  0%  ' tiến quân ra Bắc, đóng quân ở dinh Bồ Đề.⏎Khoa này Đào Công Soạn, người Tiên Lữ, Hưng Yên đỗ đầu.⏎Lúc đó, Thái Tổ mở khoa thi lấy đỗ 3'
+  λ=0.4 T=0.3 Hai Bà Trưng   s0 MỚI=12/36 rep= 14%  '.⏎Năm 1892, vua Gia Long, sáng lập năm 1802.⏎Năm 1804, vua Gia Long diệt vong.⏎Năm 1818,'
+  λ=0.4 T=0.3 Hai Bà Trưng   s1 MỚI=19/36 rep= 14%  '.⏎Năm 1837, vua Lý Nhân Tông ra lệnh cho Tây Sơn.⏎Năm 1839, vua Lý Nhân Tông sai sứ sang giao hảo với Tống Thái Tổ.⏎'
+  λ=0.4 T=0.3 Nhà Lý         s0 MỚI=18/36 rep=  0%  ' Chiêu Hoàng.⏎Trần Tự Khánh vì cớ Huệ Tông cũng không còn lựa chọn nào khác.⏎Nhưng mà Huệ Tông lại trung hưng lên được.⏎Nếu không thế thì chỉ là kẻ đại nghịch'
+  λ=0.4 T=0.3 Nhà Lý         s1 MỚI=10/36 rep=  8%  ' Chiêu Hoàng.⏎Trần Thủ Độ là người có tài như Tôn Thất Dục bị Trương Phúc Loan tìm cách hãm hại.⏎Trần Thủ Độ là em họ của Trần Thừa, Trần Thủ Độ là chú'
+  λ=0.4 T=0.3 Trần Hưng Đạo  s0 MỚI=10/36 rep=  0%  ' ra lệnh, chính sự cũng không sáng sủa.⏎Năm 1234, cánh quân Nguyên của Toa Đô từ Chiêm Thành đánh thốc vào mạn nam Đại Việt.⏎Thần tích gọi là Trần'
+  λ=0.4 T=0.3 Trần Hưng Đạo  s1 MỚI=11/36 rep=  0%  ' ra lệnh cho bá quan bàn cách dối phó.⏎Thực chất thì Ngọc Vân chỉ là vua làm vì chứ không phải 03 năm.⏎Quan hệ giữa hai nước diễn ra từ ngày 20'
+  λ=0.4 T=0.3 Lê Lợi         s0 MỚI=12/36 rep=  0%  ' có cống số vàng cống theo lệ cho triều đình nhà Minh hay không.⏎Vua Lê Thái Tổ có 2 đợt phong thưởng chính quyền của Lương Đăng, nên ông quyết định đem quân xâm lược Đại'
+  λ=0.4 T=0.3 Lê Lợi         s1 MỚI=13/36 rep=  0%  ' có cống số vàng cống theo lệ cho triều đình nhà Minh.⏎Vua Lê Thái Tổ có nhiều cống theo lệ Chiêm Thành.⏎Năm 1832, vua Lê Thái Tổ sai sứ sang'
+  λ=0.4 T=0.5 Nhà Trần là    s0 MỚI=20/36 rep=  0%  ' một nhà chính thức của ông.⏎Năm 1806, ông được bầu làm Phó Chủ tịch nước Việt Nam quản lý hành chính ở Đông Dương.⏎Tháng 3 năm 1855'
+  λ=0.4 T=0.5 Nhà Trần là    s1 MỚI=11/36 rep=  0%  ' một bài thơ chữ Hán.⏎Đại Việt sử ký toàn thư Lưu trữ ngày 10 tháng 1 năm 1999.⏎Lịch sử Camphchia do Phạm Văn Đồng là một nhà văn'
+  λ=0.4 T=0.5 Khúc Thừa Dụ   s0 MỚI=23/36 rep=  0%  ' làm Phù Đái, Phạm Hạp đều bị giết chết."     "Tôn Sĩ Nghị đóng trên bãi bỏ, lòng người không phục triều đình.⏎Vua Tống xuống chiếu khiến Cao Bằng bằng lòng với'
+  λ=0.4 T=0.5 Khúc Thừa Dụ   s1 MỚI=12/36 rep= 11%  ' đã đụng độ với quân Tây Sơn.⏎Quân Tây Sơn đã mỏng lại.⏎Quân Tây Sơn thua trận, Hoàng Phùng Tứ bỏ chạy.⏎Quân Tây Sơn cướp phá Nghệ An.⏎Sau'
+  λ=0.4 T=0.5 Ngô Quyền      s0 MỚI=24/36 rep=  0%  ' và Hoàng hậu Dương Thị Vy.⏎Đình Hiền Lương, Hải Dương được xem là vị vua sáng lập của nghệ thuật sân khấu ca trù là bậc anh hùng.⏎Đền được xây dựng dưới thời'
+  λ=0.4 T=0.5 Ngô Quyền      s1 MỚI=13/36 rep=  0%  ' và Trưng Trắc nay là đường Hai Bà Trưng, phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Phạm Thị Ngà (nay là đường Bến Nghé).⏎Đường Duy Tân nay là đường'
+  λ=0.4 T=0.5 Lý Thái Tổ     s0 MỚI=21/36 rep=  0%  ' tiến vào thời gian 1955-1919, Hà Nội nhiều lần thay đổi.⏎Cuối năm 1999, khu vực nội thành gồm 51 phường và 72'
+  λ=0.4 T=0.5 Lý Thái Tổ     s1 MỚI=17/36 rep=  3%  ' tiến quân, Lộ Bác Đức đem đại quân sang đánh.⏎Tướng Minh là Nguyễn Văn Bảo ra huyện Phù Ly và Lưu Cung nhân cơ hội Chúa Nguyễn.⏎Tướng Minh Hoàng Trung liệu thế,'
+  λ=0.4 T=0.5 Hai Bà Trưng   s0 MỚI=21/36 rep=  0%  ' là cuộc đời và kiểm soát chính quyền của vua Hùng, đóng nhiều tàu thuyền đóng ở cửa Thi Nại, đốt cháy nhiều thuyền buồm thoát được ra Bắc.⏎Cha ông là Nguyễn Thị Quách,'
+  λ=0.4 T=0.5 Hai Bà Trưng   s1 MỚI=18/36 rep=  0%  '.⏎Năm 400, vua Lý Thánh Tông qua đời.⏎Lý Thánh Tông còn định lệ cũ, thọ 71 tuổi.⏎Cuộc khởi nghĩa Tây Sơn được chúa Trịnh Sâm coi là'
+  λ=0.4 T=0.5 Nhà Lý         s0 MỚI=22/36 rep=  0%  ' Chiêu Hoàng.⏎Lê Lợi sai quân đội Đại Việt, đãi tiệc và ban thưởng rất nhiều của người Việt.⏎Nguyễn Ánh chiêu mộ gia nô, dân chúng đông đúc".⏎Dẫu vậy'
+  λ=0.4 T=0.5 Nhà Lý         s1 MỚI=32/36 rep=  0%  ' Chiêu Thống.⏎Người con gái khác cũng là Nguyễn Phúc Nguyên lên thay.⏎Cũng có câu chuyện về nguyên tắc lặp lại tư tưởng mà cử ra là Nguyễn Phúc Tần cho là Nguyễn Phúc.'
+  λ=0.4 T=0.5 Trần Hưng Đạo  s0 MỚI=18/36 rep=  0%  ' ra lệnh, chính sự nữa.⏎Lễ nhạc, nhiều bộ sử vẻ vang chống ngoại xâm, có hàng loạt tập luyện.⏎Bảy phẩm, đủ cân đai.⏎Chuyện Nguyên Phong, kể'
+  λ=0.4 T=0.5 Trần Hưng Đạo  s1 MỚI=31/36 rep=  0%  ' ra chiếu chỉ huy của Trung Quốc.⏎Ô Mã Nhi bèn sai người mang quân giữ Long Tiệp đi đánh được Đinh Liễn đem quân vào đánh Diên Khánh.⏎Tình hình tạm thời dẹp yên,'
+  λ=0.4 T=0.5 Lê Lợi         s0 MỚI=23/36 rep=  0%  ' có cống số tiền dưỡng liêm để tránh sự truy nã.⏎Loại thuế thứ hai là thuế đinh, đánh thuế cho triều đình bàn bạc.⏎Thuế đinh: Chúa Sãi chia quân đón xa giá'
+  λ=0.4 T=0.5 Lê Lợi         s1 MỚI=16/36 rep=  0%  ' có cống số vàng cống theo lệ cho triều đình nhà Minh.⏎Vua Lê Thái Tổ có nhiều cống theo lệ Chiêm Thành.⏎Năm 1940, Lê Lợi dấy lên từ năm 1'
+  λ=0.4 T=0.7 Nhà Trần là    s0 MỚI=28/36 rep=  0%  ' một nhà chính trong cải cách hành chính của Kinh thành, đãi khách và sinh mạng, nhà thơ, nhà thơ lớn.⏎Quần đảo Hoàng Sa án ngữ: "Ngày nay nước nhà cương thổ'
+  λ=0.4 T=0.7 Nhà Trần là    s1 MỚI=23/36 rep=  0%  ' một di tích vương quốc nhà Nguyên.⏎Sau khi chiếm được Bình Định.⏎Tháng 10 năm 1798, Nguyễn Phúc Dương Hưng nổi tiếng là vùng đất trù phú nhất vịnh Hạ'
+  λ=0.4 T=0.7 Khúc Thừa Dụ   s0 MỚI=32/36 rep=  0%  ' làm binh, cũng chuyên nghề buôn bán với Khôi Quận, Bùi, Phạm Văn Xảo, Lê Văn Linh, Phạm Văn Linh, Bùi Giáng.⏎Duy lục cũng rất ít, quan trọng nhằm bảo'
+  λ=0.4 T=0.7 Khúc Thừa Dụ   s1 MỚI=32/36 rep=  0%  ' làm Tiết độ sứ.⏎Chúa Trịnh đồng ý.⏎Nguyễn Đề sợ, không muốn sự bất ngờ.⏎Chỉnh tâu lên.⏎Ngay lúc đó, Nguyễn Đề chia trách.⏎Thành và'
+  λ=0.4 T=0.7 Ngô Quyền      s0 MỚI=19/36 rep=  3%  ' và Hoàng tử, Nhà Xuất bản Khoa học Xã hội, Hà Nội.⏎Vua Lê Thái Tổ, 1995.⏎Lê Hoàn lên ngôi năm 1784.⏎Lê Hoàn'
+  λ=0.4 T=0.7 Ngô Quyền      s1 MỚI=29/36 rep=  0%  ' và Trưng Nhị Thánh.⏎Đình Hải Triều, Nhà Xuất bản Văn hóa Việt Nam.⏎Nhiều trường học của Ngô Xương Ngập đang ở thời vua Lý.⏎Khu di tích là sự kết hợp'
+  λ=0.4 T=0.7 Lý Thái Tổ     s0 MỚI=27/36 rep=  0%  ' tiến vào thời gian rất ngắn.⏎Sự xung đột là thay lời anh con trai phường nón làm việc.⏎Với bộ luật Hồng Khanh làm nhiệm vụ này, triều đình nhà Minh đưa ông về'
+  λ=0.4 T=0.7 Lý Thái Tổ     s1 MỚI=28/36 rep=  0%  ' tiến quân, Lộ Bác Đức đem đại quân vào chiếm vị trí địa phương.⏎Được tin, Nguyễn Huệ trình bày rõ sự độc lập của Kinh thành.⏎Lực lượng Mông Cổ trong cơ thể'
+  λ=0.4 T=0.7 Hai Bà Trưng   s0 MỚI=30/36 rep=  0%  ' là đường Hà Nam nên đọc kinh đô đã chín muồi, song với Thượng hoàng Thánh Tông.⏎Một số văn bia các chùa chiền còn lưu giữ các bài văn tế.⏎Ngoài hiên chùa còn'
+  λ=0.4 T=0.7 Hai Bà Trưng   s1 MỚI=18/36 rep=  0%  ' là Trưng Nữ hoàng đế.⏎Năm 1174, Hai Bà Trưng được nhân dân tôn kính và lập đền thờ ở nhiều nơi.⏎Thời kỳ nhà Lê chia bờ biển 500'
+  λ=0.4 T=0.7 Nhà Lý         s0 MỚI=22/36 rep=  0%  ' Chiêu Hoàng.⏎Lê Lợi sai giết chết Mại, không đóng ở Giao Châu.⏎Năm 1003, Lê Lợi lui quân về đóng ở Cổ Loa.⏎Về sau gia quyến của'
+  λ=0.4 T=0.7 Nhà Lý         s1 MỚI=35/36 rep=  0%  ' Chiêu Thống.⏎Người con trai khác cũng là Nguyễn Phúc Thị Lộ (tức là Nguyễn Phúc Thạch, sinh ra Lê Tòng, con gái thứ 7 của mình.⏎Nguyễn Huệ cho quân bao vây'
+  λ=0.4 T=0.7 Trần Hưng Đạo  s0 MỚI=28/36 rep=  0%  ' ra lệnh, "nước Triết Đức Nhĩ" (gồm: "...⏎Họ Trần đi lại, giấu vàng bạc như cát cứ và mật sai người.⏎Vì thế, Lại bộ thượng'
+  λ=0.4 T=0.7 Trần Hưng Đạo  s1 MỚI=23/36 rep=  0%  ' ra chiếu cho Cao Bằng.⏎Ngày 20 tháng 8 năm 1422, trên đường chạy liên tiếp gần Thăng Long.⏎Sau vài chiến dịch rất yên lặng trong một hành động của'
+  λ=0.4 T=0.7 Lê Lợi         s0 MỚI=31/36 rep=  0%  ' có tên là "ngụy triều".⏎Hàng trăm người Chiêm là Chế Cai sang quấy phá nhà Thanh.⏎Thánh Tông còn vời đời sau ca ngợi là người Kinh từ năm 1883'
+  λ=0.4 T=0.7 Lê Lợi         s1 MỚI=20/36 rep=  0%  ' có cống số vàng cống theo lệ cho triều đình nhà Minh.⏎Về mặt đối nội, năm 2018 lũ làm kinh thành, Nguyễn Ánh cho vua Lê Thái Tông, an táng.'
+
+⇒ ĐỌC bảng tóm tắt:
+  ứng viên TỐT = MỚI% vừa phải + rep4% THẤP + seed-khác cao → RỒI đọc tay xác nhận
+  rep4% cao ⇒ vẫn lặp (temp quá thấp / phân bố quá nhọn)
+  MỚI% ~90%+ như temp=1.0 cũ (§7.17c) ⇒ nghi bịa — top-k đã cắt rác đuôi chưa?
+  KHÔNG ô nào vừa mạch-lạc(rep thấp) vừa mới+đúng ⇒ củng cố 'LM 11.4M là trần',
+  chuyển sang đo bits/byte (§7.17c) — núm đã hết đường.

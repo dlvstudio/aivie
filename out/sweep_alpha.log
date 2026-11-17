@@ -1,0 +1,42 @@
+[     0.0s] === load_mini_sent START (pid=92303) → out/logs/load_mini_sent_20260726_171458.log ===
+[     0.0s] load checkpoint checkpoints/mini_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.7s] ✓ vocab (32002 token)  (0.5s)
+[     2.7s] ▶ adjacency
+[     7.4s] ✓ adjacency  (4.7s)
+[     7.4s] ▶ embedding
+[     8.0s] ✓ embedding  (0.6s)
+[     8.0s] ▶ parents
+[     8.0s] parents: deserialize 5004 records …
+[     8.9s] parents 5000/5004 (99.9%)
+[    12.3s] ▶ rebuild_hierarchical_index …
+[    12.6s] ✓ rebuild_hierarchical_index (0.3s)
+[    13.2s]     resync match_ids: 5004/5004 cha (df dựng lại)
+[    13.2s] ✓ parents  (5.3s)
+[    13.2s] ✓ loaded: vocab=32002 parents=5004 E=(32002, 96)
+[    13.4s] sidecar thiếu → migrate: mini_sent.content.pkl
+[    13.5s] ✓ load_checkpoint XONG
+
+=== 'Trận Bạch Đằng năm'
+  a=1.5: succ=        0 cha='Trận Bạch Đằng của Ngô Quyền kết thúc hoàn | Tiêu đề: Trận Bạch Đằng ('
+  a=0.5: succ=        0 cha='Trận Bạch Đằng của Ngô Quyền kết thúc hoàn | Tiêu đề: Trận Bạch Đằng ('
+  a=0.3: succ=        0 cha='Trận Bạch Đằng của Ngô Quyền kết thúc hoàn | Tiêu đề: Trận Bạch Đằng ('
+
+=== 'Ngô Quyền là vị vua sáng lập nhà Ngô, được'
+  a=1.5: succ=     1951 cha='Ngô Quyền là vị vua sáng lập nhà Ngô | Phan Bội Châu coi ông là hình ả'
+  a=0.5: succ=     1951 cha='Ngô Quyền là vị vua sáng lập nhà Ngô | Phan Bội Châu coi ông là hình ả'
+  a=0.3: succ=     1951 cha='Ngô Quyền là vị vua sáng lập nhà Ngô | Phan Bội Châu coi ông là hình ả'
+
+=== 'Lê Lợi khởi nghĩa ở'
+  a=1.5: succ=        0 cha=' Lê Lợi khởi nghĩa Lam Sơn.<EOS> | Lê Lợi là người lãnh đạo cuộc khởi '
+  a=0.5: succ=        0 cha=' Lê Lợi khởi nghĩa Lam Sơn.<EOS> | Lê Lợi là người lãnh đạo cuộc khởi '
+  a=0.3: succ=        0 cha=' Lê Lợi khởi nghĩa Lam Sơn.<EOS> | Lê Lợi là người lãnh đạo cuộc khởi '
+
+=== 'Hỏi: Ngô Quyền là ai'
+  a=1.5: succ=        0 cha='Tiêu đề: Ngô QuyềnĊĊ<EOS> | Năm 944 Ngô Quyền mất.<EOS>'
+  a=0.5: succ=        0 cha='Tiêu đề: Ngô QuyềnĊĊ<EOS> | Năm 944 Ngô Quyền mất.<EOS>'
+  a=0.3: succ=        0 cha=''
+
+DONE

@@ -1,0 +1,74 @@
+lesson_id: vi_grade5_qa
+grade: 5
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: 2/3 cộng 1/3 bằng mấy ? Đáp: 2/3 cộng 1/3 bằng 1."
+  - "Hỏi: 25 phần trăm của 200 bằng mấy ? Đáp: 25 phần trăm của 200 bằng 50."
+  - "Hỏi: x cộng 5 bằng 12 thì x bằng mấy ? Đáp: x cộng 5 bằng 12 thì x bằng 7."
+  - "Hỏi: Pi xấp xỉ bằng bao nhiêu ? Đáp: Pi xấp xỉ 3,14."
+  - "Hỏi: 1 mét khối bằng bao nhiêu lít ? Đáp: 1 mét khối bằng 1000 lít."
+  - "Hỏi: 1/2 nhân 1/4 bằng mấy ? Đáp: 1/2 nhân 1/4 bằng 1/8."
+  - "Hỏi: 2x bằng 10 thì x bằng mấy ? Đáp: 2x bằng 10 thì x bằng 5."
+  - "Hỏi: 0,75 bằng phân số nào ? Đáp: 0,75 bằng 3/4."
+  - "Hỏi: 1 hecta bằng bao nhiêu mét vuông ? Đáp: 1 hecta bằng 10000 mét vuông."
+  - "Hỏi: Hình lập phương có mấy mặt ? Đáp: Hình lập phương có sáu mặt vuông."
+  - "Hỏi: Đường kính so với bán kính thế nào ? Đáp: Đường kính gấp đôi bán kính."
+  - "Hỏi: Việt Nam thuộc tổ chức nào ở khu vực ? Đáp: Việt Nam là thành viên ASEAN."
+  - "Hỏi: Đỉnh cao nhất Đông Dương là gì ? Đáp: Đỉnh Fansipan cao nhất Đông Dương."
+  - "Hỏi: Quốc lộ 1A chạy theo hướng nào ? Đáp: Quốc lộ 1A chạy dọc Việt Nam."
+  - "Hỏi: Châu lục lớn nhất là châu nào ? Đáp: Châu Á rộng lớn nhất các châu lục."
+  - "Hỏi: Xích đạo chia Trái đất thành mấy phần ? Đáp: Xích đạo chia Trái đất thành hai nửa."
+  - "Hỏi: ASEAN gồm mấy quốc gia ? Đáp: ASEAN gồm mười quốc gia."
+  - "Hỏi: Đại dương rộng nhất là gì ? Đáp: Thái Bình Dương rộng nhất các đại dương."
+  - "Hỏi: Đỉnh cao nhất thế giới ở dãy nào ? Đáp: Himalaya có đỉnh Everest cao nhất."
+  - "Hỏi: Sa mạc Sahara ở châu nào ? Đáp: Sa mạc Sahara ở châu Phi."
+  - "Hỏi: Rừng Amazon ở đâu ? Đáp: Rừng Amazon ở Nam Mỹ."
+  - "Hỏi: Hồ Tây ở đâu ? Đáp: Hồ Tây ở Hà Nội."
+  - "Hỏi: Đảng Cộng sản Việt Nam thành lập năm nào ? Đáp: Đảng Cộng sản Việt Nam thành lập năm 1930."
+  - "Hỏi: Cách mạng tháng Tám diễn ra năm nào ? Đáp: Cách mạng tháng Tám năm 1945."
+  - "Hỏi: Đổi mới bắt đầu năm nào ? Đáp: Đổi mới năm 1986 mở đường phát triển."
+  - "Hỏi: Quan họ Bắc Ninh là gì ? Đáp: Quan họ Bắc Ninh là di sản."
+  - "Hỏi: Ngô Quyền đánh thắng ai ? Đáp: Ngô Quyền đánh thắng quân Nam Hán."
+  - "Hỏi: Nhà Nguyễn thống nhất đất nước năm nào ? Đáp: Nhà Nguyễn thống nhất đất nước năm 1802."
+  - "Hỏi: Việt Nam gia nhập WTO năm nào ? Đáp: Việt Nam gia nhập WTO năm 2007."
+  - "Hỏi: Hiệp định Paris ký năm nào ? Đáp: Hiệp định Paris năm 1973."
+  - "Hỏi: Lý Thường Kiệt viết bài thơ nào ? Đáp: Lý Thường Kiệt viết bài thơ Nam quốc sơn hà."
+  - "Hỏi: Kinh đô nhà Nguyễn ở đâu ? Đáp: Huế là kinh đô nhà Nguyễn."
+  - "Hỏi: Đông Du do ai khởi xướng ? Đáp: Đông Du do Phan Bội Châu khởi xướng."
+  - "Hỏi: Tế bào là gì ? Đáp: Tế bào là đơn vị cơ bản của sự sống."
+  - "Hỏi: ADN mang thông tin gì ? Đáp: ADN mang thông tin di truyền."
+  - "Hỏi: Tim thuộc hệ cơ quan nào ? Đáp: Tim thuộc hệ tuần hoàn."
+  - "Hỏi: Quang hợp xảy ra ở đâu trong tế bào ? Đáp: Quang hợp xảy ra ở lục lạp."
+  - "Hỏi: Hiệu ứng nhà kính làm gì ? Đáp: Hiệu ứng nhà kính làm Trái đất ấm lên."
+  - "Hỏi: Gen là gì ? Đáp: Gen là đoạn ADN quy định tính trạng."
+  - "Hỏi: Não là gì ? Đáp: Não là trung tâm thần kinh."
+  - "Hỏi: Động mạch làm gì ? Đáp: Động mạch mang máu đi."
+  - "Hỏi: Tĩnh mạch làm gì ? Đáp: Tĩnh mạch mang máu về tim."
+  - "Hỏi: Tầng ô zôn bảo vệ khỏi gì ? Đáp: Tầng ô zôn bảo vệ khỏi tia cực tím."
+  - "Hỏi: Hệ thần kinh làm gì ? Đáp: Hệ thần kinh điều khiển cơ thể."
+  - "Hỏi: Thuế dùng để làm gì ? Đáp: Thuế là nguồn thu ngân sách nhà nước."
+  - "Hỏi: Bảo hiểm y tế giúp gì ? Đáp: Bảo hiểm y tế giúp khám chữa bệnh."
+  - "Hỏi: Trẻ em cần an toàn gì trên mạng ? Đáp: An toàn mạng bảo vệ trẻ em."
+  - "Hỏi: Giải quyết mâu thuẫn nên làm sao ? Đáp: Giải quyết mâu thuẫn bằng đối thoại."
+  - "Hỏi: Phòng cháy thuộc trách nhiệm ai ? Đáp: Phòng cháy chữa cháy là trách nhiệm chung."
+  - "Hỏi: Bảo hiểm xã hội hỗ trợ ai ? Đáp: Bảo hiểm xã hội hỗ trợ người lao động."
+  - "Hỏi: Báo chí có vai trò gì ? Đáp: Báo chí giám sát xã hội."
+  - "Hỏi: Ngân sách chi cho gì ? Đáp: Ngân sách chi cho giáo dục y tế."
+  - "Hỏi: Internet giúp gì ? Đáp: Internet kết nối tri thức."
+  - "Hỏi: Bình đẳng giới ở đâu ? Đáp: Bình đẳng giới trong gia đình."

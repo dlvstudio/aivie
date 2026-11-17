@@ -1,0 +1,48 @@
+✓ cú pháp OK
+499730 checkpoints/bpe_v1.json
+=== chạy thử: corpus cắt 5M, K=120, ít iter (verify + kết quả sơ bộ) ===
+[     0s] E (32002, 96) · vocab 32,002 · fingerprint 1582dad40906e69f
+[     0s] corpus (đếm bigram, cắt 5M) …
+[     0s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[     0s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[     2s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    11s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    21s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   147s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   152s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   152s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   154s] k-means K=120 trên E …
+[   154s]   kmeans iter 0/12
+[   156s]   kmeans iter 5/12
+[   158s]   kmeans iter 10/12
+[   159s] ═══ PART 1: 18 CỤM (top 12 theo tần suất) — ĐỌC TAY ═══
+[   159s]   c 15 (n=865): '\n' ':' ' từ' ' nghĩa' 'Giải' 'Loại' 'Từ' ' động' ' danh' ' tính' ' lè' ' nhèm'
+[   159s]   c  5 (n=307): ' của' ' và' ' các' ' với' ' về' ' công' ' học' ' sự' ' việc' ' theo' ' quan' ' hoặc'
+[   159s]   c 64 (n=571): ',' ' không' ' này' ' lại' ' cũng' ' cái' ' chỉ' ' sau' ' trước' ' hắn' ' đều' ' tới'
+[   159s]   c 57 (n=360): ' còn' ' phải' ' mà' ' rất' ' ý' ' mình' ' hay' ' cả' ' nên' ' tình' ' thấy' ' nhưng'
+[   159s]   c 67 (n=291): ' *' ' dụ' 'Ví' '<EOS>' ' dùng' ' ba' 'nói' ' cây' ' quát' 'tng' ' đóng' ' lá'
+[   159s]   c 49 (n=251): ' có' ' một' ' cho' ' làm' ' những' ' nhiều' ' thời' ' khi' ' nào' ' sẽ' ' điểm' ' nó'
+[   159s]   c 90 (n=363): '.' ' vào' ' đến' ' năm' ' ngày' ' tháng' ' thứ' ' cuối' ' niên' 'Còn' ' thập' 'Vào'
+[   159s]   c 93 (n=386): ' 1' '0' '1' '9' ' 2' '2' '8' '5' '7' '4' '6' ' 3'
+[   159s]   c  0 (n=1522): '     ' ' đầu' ' lên' ' hai' '    ' ' tay' ' bên' ' lấy' ' chân' ' xuống' ' từng' ' dài'
+[   159s]   c 86 (n=367): ' được' ' để' ' thể' ' số' ' thường' ' cách' ' khác' ' hơn' ' dụng' ' nhiên' ' sử' ' biến'
+[   159s]   c 33 (n=285): ' người' ' trong' ' ra' ' đã' ' đó' ' thế' ' hiện' ' mới' ' trở' ' Einstein' ' Newton' ' noi'
+[   159s]   c 80 (n=422): '"' ' "' ' nói' ' mắt' ' nhìn' ' .' ' ngươi' ' chút' ' tức' ' cười' ' miệng' ' nàng'
+[   159s]   c 77 (n=209): ' bị' ' lực' ' đánh' ' bắt' ' giữ' ' bỏ' ' cảnh' ' chết' ' sát' ' khỏi' ' hậu' ' độc'
+[   159s]   c 58 (n=311): ' chính' ' Việt' ' ông' ' hội' ' lập' ' chủ' ' chiến' ' viên' ' Quốc' ' thống' ' chức' ' cuộc'
+[   159s]   c 25 (n=503): ' cùng' ' đại' ' thân' ' đạo' ' thần' ' kia' ' tộc' ' đem' ' Vương' ' thiên' ' Thiên' ' tu'
+[   159s]   c111 (n=179): ' ngữ' ' bằng' ' hình' ' nhau' ' văn' ' kết' ' biểu' ' tượng' ' câu' ' đơn' 'Một' ' bài'
+[   159s]   c112 (n=335): ' Nam' ' Trung' ' Nguyễn' ' Đại' 'Năm' ' Minh' ' Trần' ' Long' ' Văn' ' Sơn' ' Dương' ' Hoàng'
+[   159s]   c 59 (n=226): ' (' ')' 'v' 'sa' 'ā' 'ra' 'na' 'ap' 'ya' ' Phạn' 'pi' 'ī'
+[   159s] ═══ PART 2: dự đoán token kế — surface vs category (held-out) ═══
+[   170s] held-out qa_heldout.jsonl: 278 đơn vị · 55,457 bigram
+[   170s]   λ=1.0 surface thuần  9.100 bits/token
+[   171s]   λ=0.7                8.745 bits/token
+[   171s]   λ=0.5                8.777 bits/token
+[   171s]   λ=0.3                8.893 bits/token
+[   171s]   λ=0.0 category thuần 9.422 bits/token
+[   171s]   ── CHƯA THẤY lúc train (n=10,130) — test khái quát ──
+[   171s]      surface 15.629 · category 13.397 bits
+[   171s]   ── ĐÃ THẤY (n=45,327) — surface thuộc lòng ──
+[   171s]      surface 7.641 · category 8.534 bits
+[   171s] ═══ ĐỌC: (1) cụm PART1 có ra loại-từ/lớp-nghĩa? (2) λ<1 HẠ bits ⇒ tầng khuôn đáng; category thắng trên CHƯA-THẤY ⇒ khái quát thật ═══

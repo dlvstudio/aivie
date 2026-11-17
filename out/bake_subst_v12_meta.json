@@ -1,0 +1,21 @@
+{
+ "checkpoint_in": "checkpoints/network_v12_sent.pkl",
+ "checkpoint_out": "checkpoints/network_v12_subst.pkl",
+ "unit": "thuc_the",
+ "min_share": 3,
+ "topk": 8,
+ "n_vocab_in": 32002,
+ "n_vocab_out": 247609,
+ "n_entity": 222309,
+ "n_co_activation_writes": 1316490,
+ "n_synonym_directed": 244886,
+ "n_synonym_undirected_pairs": 122443,
+ "n_token_ctx_ge_min": 20344,
+ "n_token_co_synonym": 12001,
+ "ty_le_token_co_synonym": 0.5899,
+ "n_unit_ctx_ge_min": 37122,
+ "n_unit_co_lang_gieng": 12925,
+ "gate1_ty_le_ge_0_20": true,
+ "gate2_n_entity_ge_100": true,
+ "seconds": 400.0
+}

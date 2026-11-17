@@ -1,0 +1,174 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[52s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.036        —        —           —
+none          0.036    0.423    0.196      -0.015
+pos           0.051    0.423    0.207      +0.000
+content       0.062    0.412    0.204      +0.011
+clear         0.047    0.332    0.157      -0.004
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng   0 · thua   4 · bất đồng   4/274 = 1.5%
+  content  thắng   4 · thua   1 · bất đồng   5/274 = 1.8%
+  clear    thắng   2 · thua   3 · bất đồng   5/274 = 1.8%
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          12 =   4.4%
+  C_hoà_nhưng_nền_thua          59 =  21.5%
+  D_gold_NGOÀI_nhóm_hoà        203 =  74.1%
+  B = đã đúng sẵn · **C = phần tín hiệu phân biệt NỘI NHÓM cứu được** · D = cần cách khác.
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  58.8%** (161/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  69.0%** (189/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.423 · top1 0.051)
+G2 prior có tác dụng?            : tw=0 → 0.036 ‖ pos → 0.051 (Δ +0.015)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `content` 0.062, Δ +0.011)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+====================================================================================
+ĐỌC 20 CA NHÓM C — gold Ở TRONG nhóm hoà nhưng điểm nền chọn nhầm.
+Đây là đám mà tín hiệu phân biệt NỘI NHÓM phải sửa. `nền` = trùng-từ có trọng gidf.
+====================================================================================
+
+[0] HỎI: Truyện:Ċ"Các ngươi ngược lại là nói chuyện rất vui sướng, lão bà tử ta bỏ lỡ cái gì sao?" Whent 
+    GOLD (nền 5.631): " Sau đó.<EOS>
+    nền#1 (75.255): Truyện:Ċ“Các ngươi là nghĩ tại chúng ta đế hào gây sự sao,” Trong quầy hoàng mao trên mặt lộ ra một tia thần sắc
+    nền#2 (39.932):  Lúc đầu ngư lang liên minh bắt đầu coi như thuận lợi, nếu là đông tuyến nhất cử cầm xuống Thành King's Landing,
+    nền#3 (39.110): Bởi vì tọa trấn Thông U phong Lưu Kế Đường lặng yên rời đi, mà tin tức tiết ra ngoài lại cực kỳ đột nhiên, Cơ Vă
+
+[1] HỎI:  x cộng 5 bằng 12 thì x bằng mấy? 
+    GOLD (nền 10.558):  x cộng 5 bằng 12 thì x bằng 7.<EOS>
+    nền#1 (10.558): x cộng 5 bằng 12 thì x bằng 7.<EOS>
+    nền#2 (10.558):  x cộng 5 bằng 12 thì x bằng 7.<EOS>
+    nền#3 (5.622): x và 2.<EOS>
+
+[2] HỎI:  Xác suất nằm trong khoảng nào? 
+    GOLD (nền 6.609):  Xác suất nằm trong đoạn 0 đến 1.<EOS>
+    nền#1 (6.609): Xác suất nằm trong đoạn 0 đến 1.<EOS>
+    nền#2 (6.609):  Xác suất nằm trong đoạn 0 đến 1.<EOS>
+    nền#3 (4.670): Xác suất xảy ra B khi biết A xảy ra.<EOS>
+
+[3] HỎI:  Thủ đô Việt Nam là gì? 
+    GOLD (nền 8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#1 (8.398): Thủ đô Việt Nam là Hà Nội.<EOS>
+    nền#2 (8.398): Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#3 (8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+
+[4] HỎI:  Thủ đô Việt Nam ở đâu? 
+    GOLD (nền 8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#1 (8.398): Thủ đô Việt Nam là Hà Nội.<EOS>
+    nền#2 (8.398): Thủ đô Hà Nội ở Việt Nam.<EOS>
+    nền#3 (8.398):  Thủ đô Hà Nội ở Việt Nam.<EOS>
+
+[5] HỎI:  Sông Hồng chảy qua thành phố nào? 
+    GOLD (nền 9.720):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#1 (9.720): Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#2 (9.720):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#3 (7.229): Sông Mekong chảy qua nhiều nước.<EOS>
+
+[6] HỎI:  Đà Nẵng là thành phố thế nào? 
+    GOLD (nền 7.792):  Đà Nẵng là thành phố biển.<EOS>
+    nền#1 (7.792): Đà Nẵng là thành phố biển.<EOS>
+    nền#2 (7.792):  Đà Nẵng là thành phố biển.<EOS>
+    nền#3 (5.195): Đà Nẵng là thành phố loại 2, tương tự như thành phố Chợ Lớn thành lập trước đó.<EOS>
+
+[7] HỎI:  Miền Bắc và miền Nam khác nhau thế nào về khí hậu? 
+    GOLD (nền 5.532):  Miền Nam ấm quanh năm.<EOS>
+    nền#1 (5.623):  Miền Bắc thành một nước xã hội chủ nghĩa, trong khi miền Nam thành lập một chế độ mới do Mỹ hậu thuẫn.<EOS>
+    nền#2 (5.599): Miền Bắc có mùa đông lạnh.<EOS>
+    nền#3 (5.532): Miền Nam ấm quanh năm.<EOS>
+
+[8] HỎI:  Đồng bằng và núi khác nhau thế nào? 
+    GOLD (nền 5.141):  Đồng bằng bằng phẳng.<EOS>
+    nền#1 (5.141): Đồng bằng bằng phẳng.<EOS>
+    nền#2 (5.141):  Đồng bằng bằng phẳng.<EOS>
+    nền#3 (4.033): Đồng thời ngăn ngừa lỗi bất cứ khi nào có thể bằng cách tiếp nhận các thông tin và trình tự khác nhau.<EOS>
+
+[9] HỎI:  Bác Hồ đọc Tuyên ngôn độc lập khi nào? 
+    GOLD (nền 12.354):  Bác Hồ đọc Tuyên ngôn độc lập năm 1945.<EOS>
+    nền#1 (12.354): Bác Hồ đọc Tuyên ngôn độc lập năm 1945.<EOS>
+    nền#2 (12.354):  Bác Hồ đọc Tuyên ngôn độc lập năm 1945.<EOS>
+    nền#3 (4.807): Bác Hồ sinh năm 1890.<EOS>
+
+[10] HỎI:  Ngày 2 tháng 9 là ngày gì? 
+    GOLD (nền 7.141):  Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+    nền#1 (9.669):  Ngày 29 tháng 2.<EOS>
+    nền#2 (7.141): Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+    nền#3 (7.141):  Ngày 2 tháng 9 là Quốc khánh Việt Nam.<EOS>
+
+[11] HỎI:  Quang Trung đại phá quân nào? 
+    GOLD (nền 10.238):  Quang Trung đại phá quân Thanh.<EOS>
+    nền#1 (10.238): Quang Trung đại phá quân Thanh.<EOS>
+    nền#2 (10.238):  Quang Trung đại phá quân Thanh.<EOS>
+    nền#3 (6.151):  Quang Trung chia quân làm 5 đạo.<EOS>
+
+[12] HỎI:  Trống đồng Đông Sơn là gì? 
+    GOLD (nền 9.408):  Trống đồng Đông Sơn là di sản.<EOS>
+    nền#1 (9.408): Trống đồng Đông Sơn là di sản.<EOS>
+    nền#2 (9.408):  Trống đồng Đông Sơn là di sản.<EOS>
+    nền#3 (3.401): Trống này sau đó truyền mực lên giấy.<EOS>
+
+[13] HỎI:  Phổi giúp ta làm gì? 
+    GOLD (nền 8.371):  Phổi giúp ta thở.<EOS>
+    nền#1 (8.371): Phổi giúp ta thở.<EOS>
+    nền#2 (8.371):  Phổi giúp ta thở.<EOS>
+    nền#3 (4.467):  Phổi: Uống cà phê giúp thể cải thiện chức năng phổi.<EOS>
+
+[14] HỎI:  Biến đổi khí hậu ảnh hưởng gì đến Việt Nam? 
+    GOLD (nền 7.561):  Biến đổi khí hậu làm mực nước biển dâng.<EOS>
+    nền#1 (8.268): Biến đổi khí hậu: Nó ảnh hưởng đến môi trường của chúng ta như thế nàoĊ<EOS>
+    nền#2 (7.930): Biến đổi khí hậu cần hành động chung.<EOS>
+    nền#3 (7.684):  Biến đổi khí hậu cũng có thể ảnh hưởng đến vòng đời của loài bướm, dẫn đến suy giảm quần thể.<EOS>
+
+[15] HỎI:  Megacity là gì? 
+    GOLD (nền 7.815):  Megacity trên 10 triệu dân.<EOS>
+    nền#1 (7.815): Megacity trên 10 triệu dân.<EOS>
+    nền#2 (7.815):  Megacity trên 10 triệu dân.<EOS>
+
+[16] HỎI:  Cà phê robusta trồng nhiều ở đâu nước ta? 
+    GOLD (nền 9.882):  Cà phê robusta ở Tây Nguyên.<EOS>
+    nền#1 (9.882): Cà phê robusta ở Tây Nguyên.<EOS>
+    nền#2 (9.882):  Cà phê robusta ở Tây Nguyên.<EOS>
+
+[17] HỎI:  Gạo xuất khẩu của Việt Nam chủ yếu từ đâu? 
+    GOLD (nền 7.784):  Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#1 (7.784): Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#2 (7.784):  Gạo xuất khẩu từ đồng bằng.<EOS>
+    nền#3 (3.535):  Gạo tẻ vo sạch nấu thành cháo.<EOS>
+
+[18] HỎI:  Hạn hán ở Việt Nam thường gặp ở đâu? 
+    GOLD (nền 6.866):  Hạn hán ở Tây Nguyên.<EOS>
+    nền#1 (6.866): Hạn hán ở Tây Nguyên.<EOS>
+    nền#2 (6.866):  Hạn hán ở Tây Nguyên.<EOS>
+    nền#3 (5.795):  Hạn hán: Vùng Sahel, nằm ở phía nam sa mạc Sahara, thường xuyên phải chịu hạn hán do thiếu mưa trên sa mạc.<EOS
+
+[19] HỎI:  Sông Hồng bắt nguồn từ đâu? 
+    GOLD (nền 5.697):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#1 (5.697): Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#2 (5.697):  Sông Hồng chảy qua Hà Nội.<EOS>
+    nền#3 (5.095): Sông Hồng nuôi dưỡng đồng bằng Bắc Bộ.<EOS>
+
+[236s] → out/probe_theme_prior_v12f.log

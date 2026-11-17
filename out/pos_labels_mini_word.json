@@ -1,0 +1,36 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "dict": "data/dict/vi_dict_raw.jsonl",
+ "muc": "word",
+ "n_word": 24604,
+ "n_pos_class": 8,
+ "n_token_labeled": 6260,
+ "n_vocab": 32002,
+ "n_occ": 98358,
+ "phu": 0.8894955163789422,
+ "sach_trung_vi": 1.0,
+ "sach_trung_binh": 0.7832344637611586,
+ "entropy_bit": -0.0,
+ "so_tu_loai_trung_vi": 1,
+ "lop_troi": {
+  "danh từ": 31725.9,
+  "động từ": 20029.2,
+  "tên riêng": 13295.0,
+  "tính từ": 9162.7,
+  "kết từ": 4458.5,
+  "phụ từ": 2935.2,
+  "trợ từ": 2432.7,
+  "số": 2352.0,
+  "đại từ": 888.4,
+  "cảm từ": 209.4
+ },
+ "lop_lon_nhat": "danh từ",
+ "phan_lop_lon_nhat": 0.3626274922180396,
+ "gate": {
+  "cover_min": 0.6,
+  "purity_min": 0.7,
+  "top_class_max": 0.6
+ },
+ "gate_pass": true,
+ "seconds": 74.3
+}

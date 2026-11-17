@@ -1,0 +1,24 @@
+lesson_id: vi_grade7_do_S_V
+grade: 7
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_do_S_V
+slots:
+  - const: "Do"
+  - var: N
+  - var: S
+  - var: V
+
+bind:
+  N: danh từ
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Do mưa em nghỉ"
+  - "Do bệnh Lan nghỉ học"
+  - "Do đông em đứng ngoài"
+  - "Do mệt bé ngủ sớm"
+  - "Do nắng em đội mũ"

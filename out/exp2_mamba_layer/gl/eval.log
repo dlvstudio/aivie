@@ -1,0 +1,59 @@
+merged 112
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 21959.71it/s]
+23:26:55 Mamba cho tầng global [5, 11, 17, 23, 29, 35, 41, 47]
+23:28:03 KL 2k mamba_5    0.351 (85.8%)
+23:28:37 KL 2k mamba_11   16.018 (2.5%)
+23:29:10 KL 2k mamba_17   0.504 (82.2%)
+23:29:44 KL 2k mamba_23   0.265 (85.4%)
+23:30:19 KL 2k mamba_29   0.136 (87.4%)
+23:30:54 KL 2k mamba_35   0.065 (91.5%)
+23:31:29 KL 2k mamba_41   0.185 (87.7%)
+23:32:03 KL 2k mamba_47   0.580 (77.9%)
+23:32:37 KL 2k mamba_all  12.923 (4.5%)
+23:33:08 KL 2k bo_all     16.141 (3.5%)
+23:33:42 KL 2k bo_5       0.752 (78.0%)
+23:34:15 KL 2k bo_11      1.641 (64.3%)
+23:34:48 KL 2k bo_17      0.991 (73.2%)
+23:35:21 KL 2k bo_23      0.683 (74.5%)
+23:35:55 KL 2k bo_29      0.631 (73.5%)
+23:36:28 KL 2k bo_35      0.555 (74.7%)
+23:37:01 KL 2k bo_41      0.497 (78.1%)
+23:37:35 KL 2k bo_47      12.051 (10.2%)
+23:39:24 KL 8k mamba_5    0.266 (88.3%)
+23:40:20 KL 8k mamba_11   14.756 (5.7%)
+23:41:15 KL 8k mamba_17   0.503 (82.2%)
+23:42:10 KL 8k mamba_23   0.254 (85.0%)
+23:43:06 KL 8k mamba_29   0.163 (86.5%)
+23:44:01 KL 8k mamba_35   0.060 (91.6%)
+23:44:56 KL 8k mamba_41   0.185 (87.4%)
+23:45:52 KL 8k mamba_47   0.467 (81.1%)
+23:46:48 KL 8k mamba_all  16.445 (2.2%)
+23:47:39 KL 8k bo_all     16.473 (3.0%)
+23:48:33 KL 8k bo_5       0.518 (82.5%)
+23:49:28 KL 8k bo_11      1.491 (66.1%)
+23:50:22 KL 8k bo_17      0.890 (73.4%)
+23:51:17 KL 8k bo_23      0.715 (74.1%)
+23:52:12 KL 8k bo_29      0.605 (74.0%)
+23:53:06 KL 8k bo_35      0.498 (75.2%)
+23:54:01 KL 8k bo_41      0.471 (78.7%)
+23:54:56 KL 8k bo_47      11.951 (10.6%)
+23:54:56 kim: 5 ca · ~7635 token
+Traceback (most recent call last):
+  File "~/Documents/learn/nn-aivie/scripts/exp2_global.py", line 106, in <module>
+    ans = generate(model, tok, prompt, max_tokens=12, verbose=False, prompt_cache=cache)
+  File "~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/mlx_lm/generate.py", line 779, in generate
+    for response in stream_generate(model, tokenizer, prompt, **kwargs):
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/mlx_lm/generate.py", line 716, in stream_generate
+    for n, (token, logprobs, from_draft) in enumerate(token_generator):
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/mlx_lm/generate.py", line 706, in <genexpr>
+    (token, logprobs, False) for token, logprobs in token_generator
+                                                    ^^^^^^^^^^^^^^^
+  File "~/Documents/learn/nn-aivie/.venv/lib/python3.14/site-packages/mlx_lm/generate.py", line 442, in generate_step
+    mx.eval([c.state for c in prompt_cache])
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [METAL] Command buffer execution failed: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory).
+EVALDONE

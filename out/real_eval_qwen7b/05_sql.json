@@ -1,0 +1,13 @@
+{
+ "id": "05_sql",
+ "cat": "sql",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Có 2 bảng: customers(id, ten, thanh_pho) và orders(id, customer_id, ngay_dat, tong_tien). Viết câu SQL lấy 5 khách hàng chi tiêu nhiều nhất năm 2024, kèm tổng tiền và số đơn, chỉ tính khách ở Hà Nội.",
+   "text": "Để lấy thông tin từ hai bảng `customers` và `orders`, chúng ta cần thực hiện các phép JOIN để kết nối dữ liệu giữa hai bảng dựa trên một hoặc nhiều cột chung. Trong trường hợp này, có thể dùng `customer_id` trong bảng `orders` để liên kết với `id` trong bảng `customers`.\n\nĐây là câu SQL bạn cần:\n\n```sql\nSELECT \n    c.id AS id_khach_hang,\n    c.ten AS ten_khach_hang,\n    SUM(o.tong_tien) AS tong_chi_tieu,\n    COUNT(o.id) AS so_don_dat\nFROM \n    customers c\nJOIN \n    orders o ON c.id = o.customer_id\nWHERE \n    c.thanh_pho = 'Hà Nội'\n    AND YEAR(o.ngay_dat) = 2024\nGROUP BY \n    c.id, c.ten\nORDER BY \n    tong_chi_tieu DESC\nLIMIT 5;\n```\n\nGiải thích:\n\n1. `SELECT ... FROM customers c JOIN orders o ON c.id = o.customer_id`: Đây là phần JOIN, kết nối bảng `customers` với bảng `orders` dựa trên `customer_id`.\n\n2. `WHERE c.thanh_pho = 'Hà Nội' AND YEAR(o.ngay_dat) = 2024`: Điều kiện lọc để chỉ lấy khách hàng ở Hà Nội và đơn đặt hàng trong năm 2024.\n\n3. `SUM(o.tong_tien) AS tong_chi_tieu, COUNT(o.id) AS so_don_dat`: Tính tổng tiền chi tiêu và số đơn đặt hàng cho mỗi khách hàng.\n\n4. `GROUP BY c.id, c.ten`: Nhóm kết quả theo `id` và `ten` của khách hàng để tính tổng chi tiêu và số đơn riêng biệt cho từng khách hàng.\n\n5. `ORDER BY tong_chi_tieu DESC`: Sắp xếp kết quả theo tổng chi tiêu giảm dần (từ lớn nhất đến nhỏ nhất).\n\n6. `LIMIT 5`: Giới hạn kết quả chỉ lấy 5 khách hàng đầu tiên (khách hàng có tổng chi tiêu cao nhất).",
+   "tokens": 453,
+   "sec": 9.7
+  }
+ ]
+}

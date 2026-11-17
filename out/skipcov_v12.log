@@ -1,0 +1,82 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[56s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  274 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+[191s] PPMI từ W_skip: 7,594,175 ô ≠0 → SVD 96d
+[196s] ✓ E_new (32002, 96) · E_old (32002, 96)
+
+==================================================================
+prior          top1    top10      MRR    Δ so pos   (n=274)
+==================================================================
+(tw=0)        0.318        —        —           —
+none          0.318    0.493    0.376      -0.029
+pos           0.347    0.482    0.393      +0.000
+content       0.310    0.467    0.368      -0.036
+clear         0.215    0.391    0.275      -0.131
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng  13 · thua  21 · bất đồng  34/274 = 12.4%
+  content  thắng   1 · thua  11 · bất đồng  12/274 = 4.4%
+  clear    thắng   2 · thua  38 · bất đồng  40/274 = 14.6%
+
+THƯỚC CẶP CÓ THỨ TỰ (§12.76) — `A` là túi từ nên không phân biệt nổi trật tự:
+  thước            top1    Δ so B   thắng   thua   (n=274)
+  B (túi từ)      0.318         —       —      —
+  PAIR            0.285    -0.033       9     18
+  B+PAIR          0.292    -0.026       4     11
+  B+.5PAIR        0.314    -0.004       4      5
+  pos             0.347    +0.029      21     13
+  pos+PAIR        0.369    +0.051      17      3
+  cosE_old        0.004    -0.314       0     86
+  cosE_skip       0.135    -0.182       1     51
+  cosxcov(mz)     0.336    +0.018       6      1
+  covxcos(đảo)    0.328    +0.011       4      1
+  skipxcov(mz)    0.343    +0.026       9      2
+
+  CỔNG (§12.56c) so TIÊU CHÍ HIỆN HÀNH `pos` 0.347 → `pos+PAIR` 0.369  (Δ +0.022 · thắng 15 · thua 9)
+  ⇒ TRƯỢT  (cần Δ ≥ +0.05 VÀ thắng−thua ≥ 5)
+
+`cos` CÓ ĐO MIỀN KHÔNG (§12.93) — cho nó việc mà bench đã lọc mất:
+  cos tới ứng viên TRONG bể (đã trùng fold) : +0.435
+  cos tới ứng viên NGOÀI bể (khác miền)      : +0.355
+  cos tới GOLD                                : +0.537
+  ⇒ tách miền = +0.080   ·   tách gold-trong-bể = +0.102
+  ⇒ hai tách XẤP XỈ nhau ⇒ `cos` mang cả hai, không nghiêng hẳn bên nào.
+  Lưu ý: tách gold đo so TRUNG BÌNH bể. Cao hơn trung bình vẫn có thể xa hạng 1 khi
+  bể tới hàng chục nghìn — đó là vì sao `cosE_old` xếp 0.004 mà tách gold vẫn dương.
+
+BÃO HOÀ — bao nhiêu ứng viên CÙNG chạm giá trị prior cao nhất (trung vị):
+  bể ứng viên (trung vị) = 37,908
+  pos           47 ứng viên cùng đỉnh =  0.12% bể   ⇒ prior KHÔNG phân biệt nổi
+  content       90 ứng viên cùng đỉnh =  0.24% bể   ⇒ prior KHÔNG phân biệt nổi
+  clear        113 ứng viên cùng đỉnh =  0.30% bể   ⇒ prior KHÔNG phân biệt nổi
+
+GOLD nằm đâu so với NHÓM HOÀ ở đỉnh prior `pos` — quyết định HƯỚNG SỬA:
+  B_hoà_và_nền_đã_nhất          63 =  23.0%
+  C_hoà_nhưng_nền_thua          17 =   6.2%
+  C1_nền#1_có_thể_CŨNG_ĐÚNG      6 =   2.2%
+  C2_lỗi_xếp_hạng_THẬT          11 =   4.0%
+  D_gold_NGOÀI_nhóm_hoà        194 =  70.8%
+  B = đã đúng sẵn · C = gold trong nhóm nhưng nền thua · D = cần cách khác.
+  **C2 mới là phần tín hiệu nội nhóm thật sự cứu được** — C1 là nhiễu nhãn (đáp đúng khác).
+
+TRẦN của MỌI prior nhân — ca mà top-1 CÓ THỂ đổi, theo dải hệ số:
+  dải    3× (vd [0.5,1.5]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  67.9%** (186/274)
+  dải    6× (vd [0.5,3.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  72.6%** (199/274)
+  dải   20× (vd [0.5,10.0]): đổi được top-1 100.0%  ·  **kéo được GOLD lên hạng 1  73.0%** (200/274)
+  Cột thứ hai mới là trần thật: đổi được top-1 mà gold ngoài tầm thì đổi cũng vô ích.
+  Trần thấp ⇒ điểm NỀN đã quyết xong; mọi prior NHÂN đều không với tới, dù thông minh cỡ nào.
+G1 bench lành (pos top-10 ≥0.40): ĐẠT (top10 0.482 · top1 0.347)
+G2 prior có tác dụng?            : tw=0 → 0.318 ‖ pos → 0.347 (Δ +0.029)
+G3 thay thế hơn ≥+0.05          : TRƯỢT (tốt nhất `none` 0.318, Δ -0.029)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+[791s] → out/skipcov_v12.log

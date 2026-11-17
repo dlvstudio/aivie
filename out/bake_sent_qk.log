@@ -1,0 +1,76 @@
+[     0.0s] === load_network_v11_sent START (pid=45170) → out/logs/load_network_v11_sent_20260725_140150.log ===
+[     0.0s] load checkpoint checkpoints/network_v11_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.6s] ✓ unpickle  (2.6s)
+[     2.6s] ▶ vocab (32002 token)
+[     3.2s] ✓ vocab (32002 token)  (0.6s)
+[     3.2s] ▶ adjacency
+[    15.4s] ✓ adjacency  (12.1s)
+[    15.4s] ▶ embedding
+[    15.5s] ✓ embedding  (0.1s)
+[    15.5s] ▶ parents
+[    15.5s] parents: deserialize 250000 records …
+[    15.5s] parents 5000/250000 (2.0%)
+[    15.6s] parents 10000/250000 (4.0%)
+[    15.6s] parents 15000/250000 (6.0%)
+[    15.7s] parents 20000/250000 (8.0%)
+[    15.7s] parents 25000/250000 (10.0%)
+[    15.8s] parents 30000/250000 (12.0%)
+[    15.8s] parents 35000/250000 (14.0%)
+[    15.9s] parents 40000/250000 (16.0%)
+[    15.9s] parents 45000/250000 (18.0%)
+[    16.1s] parents 50000/250000 (20.0%)
+[    16.1s] parents 55000/250000 (22.0%)
+[    16.2s] parents 60000/250000 (24.0%)
+[    16.2s] parents 65000/250000 (26.0%)
+[    16.3s] parents 70000/250000 (28.0%)
+[    16.3s] parents 75000/250000 (30.0%)
+[    16.4s] parents 80000/250000 (32.0%)
+[    16.4s] parents 85000/250000 (34.0%)
+[    16.6s] parents 90000/250000 (36.0%)
+[    16.6s] parents 95000/250000 (38.0%)
+[    16.7s] parents 100000/250000 (40.0%)
+[    16.7s] parents 105000/250000 (42.0%)
+[    16.8s] parents 110000/250000 (44.0%)
+[    16.9s] parents 115000/250000 (46.0%)
+[    16.9s] parents 120000/250000 (48.0%)
+[    17.0s] parents 125000/250000 (50.0%)
+[    17.1s] parents 130000/250000 (52.0%)
+[    17.2s] parents 135000/250000 (54.0%)
+[    17.3s] parents 140000/250000 (56.0%)
+[    17.3s] parents 145000/250000 (58.0%)
+[    17.4s] parents 150000/250000 (60.0%)
+[    17.5s] parents 155000/250000 (62.0%)
+[    17.6s] parents 160000/250000 (64.0%)
+[    17.7s] parents 165000/250000 (66.0%)
+[    17.8s] parents 170000/250000 (68.0%)
+[    17.9s] parents 175000/250000 (70.0%)
+[    18.0s] parents 180000/250000 (72.0%)
+[    18.0s] parents 185000/250000 (74.0%)
+[    18.1s] parents 190000/250000 (76.0%)
+[    18.2s] parents 195000/250000 (78.0%)
+[    18.3s] parents 200000/250000 (80.0%)
+[    24.6s] parents 205000/250000 (82.0%)
+[    24.7s] parents 210000/250000 (84.0%)
+[    24.8s] parents 215000/250000 (86.0%)
+[    24.9s] parents 220000/250000 (88.0%)
+[    24.9s] parents 225000/250000 (90.0%)
+[    25.0s] parents 230000/250000 (92.0%)
+[    25.1s] parents 235000/250000 (94.0%)
+[    25.2s] parents 240000/250000 (96.0%)
+[    25.3s] parents 245000/250000 (98.0%)
+[    25.3s] parents 250000/250000 (100.0%)
+[    47.0s] ▶ rebuild_hierarchical_index …
+[    47.9s] ✓ rebuild_hierarchical_index (0.9s)
+[    51.1s]     resync match_ids: 250000/250000 cha (df dựng lại)
+[    51.1s] ✓ parents  (35.7s)
+[    51.1s] ✓ loaded: vocab=32002 parents=250000 E=(32002, 96)
+[    52.0s] sidecar thiếu → migrate: network_v11_sent.content.pkl
+[    52.0s] ✓ load_checkpoint XONG
+▶ build SENT CSR …
+  spans=249751 l2r_pairs=40548624 r2l_pairs=40548624 agenda=258935
+  W_l2r nnz=6728918 W_r2l nnz=6728918
+▶ SVD dim=64 → checkpoints/network_v11_sent.sent_qk.npz
+sent_qk bake: N=32002 l2r_nnz=6728918 r2l_nnz=6728918 dim=64
+✓ sent_qk sidecar → checkpoints/network_v11_sent.sent_qk.npz
+[110s] done

@@ -1,0 +1,185 @@
+[     0.0s] === probe_pmi_gate START (pid=13857) → out/logs/probe_pmi_gate_20260802_200950.log ===
+[     0.0s] P60 — cổng PMI-cross hiệu chỉnh theo mốc vàng · checkpoints/network_v12_sent.pkl
+[     0.0s] CỔNG G-pmi (nêu TRƯỚC): ∃θ đạt CẢ HAI — pmi ≥ gold−0.05 VÀ chết ≤ chết(cổng fold)
+[     0.0s] mini để so: pmi≥1.75 → 2.130 vs gold 2.128 @ chết 54% (fold 1.844 @ 69%)
+[     0.0s] === load_network_v12_sent START (pid=13857) → out/logs/load_network_v12_sent_20260802_200950.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.1s] ✓ unpickle  (2.1s)
+[     2.1s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[     9.8s] ✓ adjacency  (7.6s)
+[     9.8s] ▶ embedding
+[     9.8s] ✓ embedding  (0.0s)
+[     9.8s] ▶ parents
+[     9.8s] parents: deserialize 430447 records …
+[     9.9s] parents 5000/430447 (1.2%)
+[     9.9s] parents 10000/430447 (2.3%)
+[     9.9s] parents 15000/430447 (3.5%)
+[    10.0s] parents 20000/430447 (4.6%)
+[    10.0s] parents 25000/430447 (5.8%)
+[    10.1s] parents 30000/430447 (7.0%)
+[    10.1s] parents 35000/430447 (8.1%)
+[    10.1s] parents 40000/430447 (9.3%)
+[    10.2s] parents 45000/430447 (10.5%)
+[    10.2s] parents 50000/430447 (11.6%)
+[    10.2s] parents 55000/430447 (12.8%)
+[    10.3s] parents 60000/430447 (13.9%)
+[    10.3s] parents 65000/430447 (15.1%)
+[    10.3s] parents 70000/430447 (16.3%)
+[    10.4s] parents 75000/430447 (17.4%)
+[    10.4s] parents 80000/430447 (18.6%)
+[    10.5s] parents 85000/430447 (19.7%)
+[    10.5s] parents 90000/430447 (20.9%)
+[    10.5s] parents 95000/430447 (22.1%)
+[    10.6s] parents 100000/430447 (23.2%)
+[    10.6s] parents 105000/430447 (24.4%)
+[    10.6s] parents 110000/430447 (25.6%)
+[    10.7s] parents 115000/430447 (26.7%)
+[    10.7s] parents 120000/430447 (27.9%)
+[    10.8s] parents 125000/430447 (29.0%)
+[    10.8s] parents 130000/430447 (30.2%)
+[    10.9s] parents 135000/430447 (31.4%)
+[    10.9s] parents 140000/430447 (32.5%)
+[    11.0s] parents 145000/430447 (33.7%)
+[    11.0s] parents 150000/430447 (34.8%)
+[    11.1s] parents 155000/430447 (36.0%)
+[    11.2s] parents 160000/430447 (37.2%)
+[    11.2s] parents 165000/430447 (38.3%)
+[    11.3s] parents 170000/430447 (39.5%)
+[    11.4s] parents 175000/430447 (40.7%)
+[    11.4s] parents 180000/430447 (41.8%)
+[    11.5s] parents 185000/430447 (43.0%)
+[    11.6s] parents 190000/430447 (44.1%)
+[    11.6s] parents 195000/430447 (45.3%)
+[    11.7s] parents 200000/430447 (46.5%)
+[    11.8s] parents 205000/430447 (47.6%)
+[    11.8s] parents 210000/430447 (48.8%)
+[    11.9s] parents 215000/430447 (49.9%)
+[    12.0s] parents 220000/430447 (51.1%)
+[    12.0s] parents 225000/430447 (52.3%)
+[    12.1s] parents 230000/430447 (53.4%)
+[    12.2s] parents 235000/430447 (54.6%)
+[    12.2s] parents 240000/430447 (55.8%)
+[    12.3s] parents 245000/430447 (56.9%)
+[    12.4s] parents 250000/430447 (58.1%)
+[    12.4s] parents 255000/430447 (59.2%)
+[    12.5s] parents 260000/430447 (60.4%)
+[    12.6s] parents 265000/430447 (61.6%)
+[    12.6s] parents 270000/430447 (62.7%)
+[    12.7s] parents 275000/430447 (63.9%)
+[    12.8s] parents 280000/430447 (65.0%)
+[    12.8s] parents 285000/430447 (66.2%)
+[    12.9s] parents 290000/430447 (67.4%)
+[    13.0s] parents 295000/430447 (68.5%)
+[    13.0s] parents 300000/430447 (69.7%)
+[    13.1s] parents 305000/430447 (70.9%)
+[    13.2s] parents 310000/430447 (72.0%)
+[    13.2s] parents 315000/430447 (73.2%)
+[    13.3s] parents 320000/430447 (74.3%)
+[    13.4s] parents 325000/430447 (75.5%)
+[    13.5s] parents 330000/430447 (76.7%)
+[    13.5s] parents 335000/430447 (77.8%)
+[    13.6s] parents 340000/430447 (79.0%)
+[    13.7s] parents 345000/430447 (80.1%)
+[    13.7s] parents 350000/430447 (81.3%)
+[    13.8s] parents 355000/430447 (82.5%)
+[    13.9s] parents 360000/430447 (83.6%)
+[    13.9s] parents 365000/430447 (84.8%)
+[    14.0s] parents 370000/430447 (86.0%)
+[    14.1s] parents 375000/430447 (87.1%)
+[    14.1s] parents 380000/430447 (88.3%)
+[    14.2s] parents 385000/430447 (89.4%)
+[    14.3s] parents 390000/430447 (90.6%)
+[    14.4s] parents 395000/430447 (91.8%)
+[    14.4s] parents 400000/430447 (92.9%)
+[    14.5s] parents 405000/430447 (94.1%)
+[    14.5s] parents 410000/430447 (95.2%)
+[    14.6s] parents 415000/430447 (96.4%)
+[    14.6s] parents 420000/430447 (97.6%)
+[    14.7s] parents 425000/430447 (98.7%)
+[    14.8s] parents 430000/430447 (99.9%)
+[    25.5s] ▶ rebuild_hierarchical_index …
+[    26.7s] ✓ rebuild_hierarchical_index (1.1s)
+[    31.1s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    31.1s] ✓ parents  (21.3s)
+[    31.1s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    31.8s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    31.8s] ✓ load_checkpoint XONG
+[    31.8s] load 32s · 430,447 cha
+[    46.2s]   … mệnh đề: cha 50,000 → 170,931
+[    46.9s]   … mệnh đề: cha 100,000 → 347,219
+[    47.8s]   … mệnh đề: cha 150,000 → 519,373
+[    49.1s]   … mệnh đề: cha 200,000 → 762,234
+[    50.4s]   … mệnh đề: cha 250,000 → 1,010,387
+[    51.8s]   … mệnh đề: cha 300,000 → 1,260,523
+[    53.1s]   … mệnh đề: cha 350,000 → 1,460,620
+[    54.3s]   … mệnh đề: cha 400,000 → 1,657,754
+[   112.4s] tầng mệnh đề 1,758,562 · W_skip + PMI sẵn (112s)
+[   112.7s] 
+★ MỐC VÀNG (n=400 cặp mệnh đề liền kề cùng cha): pmi = **1.372**   (mini: 2.128)
+[   112.9s] 120 prompt đóng băng (seed=42)
+[   113.4s]   [KHONG_cong] 40/120 (113s)
+[   113.9s]   [KHONG_cong] 80/120 (114s)
+[   114.4s] [114s] KHONG_cong: pmi=0.722 (so mốc -0.650) · chết=1% · tok=26.2
+[   114.4s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → đi bám gót vào lưng bạn có diện tích đất nước chuyển từ từ kinh nghiệm thực tiễn, có tác dụng
+[   114.4s]     | [Hủy thi diệt tích] → cực độ của một vật nào đó bị chia tách ra: mảnh bát * mảnh gương vỡ * mảnh vụn ra đi ra mâm * cỗ bàn
+[   114.4s]     | [Tìm ví dụ về văn bản đã cho] → thân hư không là thập toàn thập mỹ nhân tạo mà bạn có thể chia sẻ với tôi là gì? đó biểu thị trấn.
+[   114.4s]     | [Nhưng bây giờ tình huống này.] → mà không có thể tái sử dụng để tối, ưu việt tiên lộ, tiếp tục hướng về
+[   115.0s]   [fold_dang_chay] 40/120 (115s)
+[   115.8s]   [fold_dang_chay] 80/120 (116s)
+[   116.4s] [116s] fold_dang_chay: pmi=1.506 (so mốc +0.134) · chết=81% · tok=26.1
+[   116.4s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → thời gian ở đây xem ngươi nói kia một phen lời nói, nhưng thật ra
+[   116.4s]     | [Tìm ví dụ về văn bản đã cho] → là một bản giao hưởng ngọt
+[   116.4s]     | [Nhưng bây giờ tình huống này.] → này, nhưng là nàng lại có thể cảm giác được trong vùng Tirol, tuy thuộc Áo nhưng cũng nằm trong nước Đức. Quốc
+[   116.4s]     | [Sau khi xô đẩy các con] → người con gái có vẻ đẹp mĩ và sau đó được loại bỏ các biện pháp thúc đẩy nền kinh tế
+[   117.2s]   [pmi_1.25] 40/120 (117s)
+[   117.9s]   [pmi_1.25] 80/120 (118s)
+[   118.7s] [119s] pmi_1.25: pmi=1.675 (so mốc +0.303) · chết=42% · tok=14.6
+[   118.7s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → đi? ra, không phải ở chỗ này cũng không khiến khán giả không?
+[   118.7s]     | [Hủy thi diệt tích] → cực độ và đề thi các môn Toán, Lí, Hóa, tu hành. * vi phạm pháp luật này tích tụ và
+[   118.7s]     | [Tìm ví dụ về văn bản đã cho] → thân hư vô số lỗi và "they're". - their: - There:
+[   118.7s]     | [Nhưng bây giờ tình huống này.] → như sao thể hiện tình cảm của dòng tweet. một tình nguyện viên khác
+[   119.5s]   [pmi_1.5] 40/120 (119s)
+[   120.3s]   [pmi_1.5] 80/120 (120s)
+[   121.0s] [121s] pmi_1.5: pmi=2.050 (so mốc +0.678) · chết=59% · tok=11.4
+[   121.0s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → đi? đến Thất giai
+[   121.0s]     | [Hủy thi diệt tích] → cực độ và đề thi các môn Toán, Lí, Hóa, sĩ khí của toàn bộ đội ngũ giai đoạn hình thành một phương diện
+[   121.0s]     | [Tìm ví dụ về văn bản đã cho] → thân hư vô số lỗi
+[   121.0s]     | [Tắt và bật lại] → cười” cười khi chụp ảnh. các thông tin, cậy mạnh có mang điện tích
+[   121.7s]   [pmi_1.75] 40/120 (122s)
+[   122.5s]   [pmi_1.75] 80/120 (122s)
+[   123.1s] [123s] pmi_1.75: pmi=2.313 (so mốc +0.941) · chết=77% · tok=8.4
+[   123.1s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → đi? đến Thất giai
+[   123.1s]     | [Hủy thi diệt tích] → cực độ và đề thi các môn Toán, Lí, Hóa, sĩ diện hão tích cực tham gia
+[   123.1s]     | [Tìm ví dụ về văn bản đã cho] → thân tre
+[   123.1s]     | [Tắt và bật lại] → cười” cười rộ cười, hắn cười * tiếng cười cười ha ha
+[   123.7s]   [pmi_2] 40/120 (124s)
+[   124.4s]   [pmi_2] 80/120 (124s)
+[   124.9s] [125s] pmi_2: pmi=2.548 (so mốc +1.176) · chết=86% · tok=6.3
+[   124.9s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → không?
+[   124.9s]     | [Hủy thi diệt tích] → cực độ
+[   124.9s]     | [Tìm ví dụ về văn bản đã cho] → thân tre
+[   124.9s]     | [Tắt và bật lại] → cười” cười rộ cười, hắn cười cười ồ ha ha cười.
+[   125.5s]   [pmi_2.25] 40/120 (125s)
+[   126.1s]   [pmi_2.25] 80/120 (126s)
+[   126.8s] [127s] pmi_2.25: pmi=2.830 (so mốc +1.458) · chết=90% · tok=6.2
+[   126.8s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không] → không?
+[   126.8s]     | [Hủy thi diệt tích] → cực kỳ thi thử IELTS TẠI ĐÂY
+[   126.8s]     | [Tắt và bật lại] → cười” cười.
+[   126.8s]     | [Sau khi xô đẩy các con] → gái
+ trẻ trai
+[   126.8s] 
+=== P60 n=120 · MỐC VÀNG 1.372 ===
+[   126.8s]   cổng                    pmi    so mốc   chết%     tok
+[   126.8s]   KHONG_cong            0.722    -0.650     1%    26.2
+[   126.8s]   fold_dang_chay        1.506    +0.134    81%    26.1
+[   126.8s]   pmi_1.25              1.675    +0.303    42%    14.6
+[   126.8s]   pmi_1.5               2.050    +0.678    59%    11.4
+[   126.8s]   pmi_1.75              2.313    +0.941    77%     8.4
+[   126.8s]   pmi_2                 2.548    +1.176    86%     6.3
+[   126.8s]   pmi_2.25              2.830    +1.458    90%     6.2
+[   126.8s] 
+  G-pmi: ĐẠT — pmi_1.25, pmi_1.5, pmi_1.75
+[   126.8s]   → ~/Documents/learn/nn-aivie/out/probe_pmi_gate_v12.json

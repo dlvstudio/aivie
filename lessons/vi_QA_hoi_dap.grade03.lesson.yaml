@@ -1,0 +1,84 @@
+lesson_id: vi_grade3_qa
+grade: 3
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: 2 cộng 3 bằng mấy ? Đáp: 2 cộng 3 bằng 5."
+  - "Hỏi: 10 trừ 4 bằng mấy ? Đáp: 10 trừ 4 bằng 6."
+  - "Hỏi: 3 nhân 4 bằng mấy ? Đáp: 3 nhân 4 bằng 12."
+  - "Hỏi: 12 chia 3 bằng mấy ? Đáp: 12 chia 3 bằng 4."
+  - "Hỏi: Một giờ có bao nhiêu phút ? Đáp: Một giờ có sáu mươi phút."
+  - "Hỏi: Hình tam giác có mấy cạnh ? Đáp: Hình tam giác có ba cạnh."
+  - "Hỏi: Một tuần có mấy ngày ? Đáp: Một tuần có bảy ngày."
+  - "Hỏi: 5 trừ 2 bằng mấy ? Đáp: 5 trừ 2 bằng 3."
+  - "Hỏi: 4 cộng 5 bằng mấy ? Đáp: 4 cộng 5 bằng 9."
+  - "Hỏi: 2 nhân 3 bằng mấy ? Đáp: 2 nhân 3 bằng 6."
+  - "Hỏi: 10 chia 2 bằng mấy ? Đáp: 10 chia 2 bằng 5."
+  - "Hỏi: Hình vuông có mấy cạnh ? Đáp: Hình vuông có bốn cạnh bằng nhau."
+  - "Hỏi: Một ngày có bao nhiêu giờ ? Đáp: Một ngày có hai mươi tư giờ."
+  - "Hỏi: 1 mét bằng bao nhiêu xăng ti mét ? Đáp: 1 mét bằng 100 xăng ti mét."
+  - "Hỏi: Hình tròn có góc không ? Đáp: Hình tròn không có góc."
+  - "Hỏi: Thủ đô Việt Nam là gì ? Đáp: Thủ đô Việt Nam là Hà Nội."
+  - "Hỏi: Thủ đô Việt Nam ở đâu ? Đáp: Thủ đô Hà Nội ở Việt Nam."
+  - "Hỏi: Việt Nam nằm ở đâu ? Đáp: Việt Nam nằm ở Đông Nam Á."
+  - "Hỏi: Sông Hồng chảy qua thành phố nào ? Đáp: Sông Hồng chảy qua Hà Nội."
+  - "Hỏi: Lá cờ Việt Nam có màu gì ? Đáp: Lá cờ Việt Nam màu đỏ sao vàng."
+  - "Hỏi: Miền Nam có mùa đông lạnh không ? Đáp: Miền Nam ấm quanh năm."
+  - "Hỏi: Đà Nẵng là thành phố gì ? Đáp: Đà Nẵng là thành phố biển."
+  - "Hỏi: Huế là gì ? Đáp: Huế là cố đô."
+  - "Hỏi: Việt Nam có núi nào ? Đáp: Việt Nam có núi Fansipan."
+  - "Hỏi: Sông Cửu Long ở miền nào ? Đáp: Sông Cửu Long ở miền Nam."
+  - "Hỏi: Hà Nội có hồ nào ? Đáp: Hà Nội có Hồ Gươm."
+  - "Hỏi: La bàn chỉ hướng nào ? Đáp: La bàn chỉ hướng Bắc."
+  - "Hỏi: Việt Nam có biển nào ? Đáp: Việt Nam có biển Đông."
+  - "Hỏi: Việt Nam có bao nhiêu tỉnh thành ? Đáp: Việt Nam có 63 tỉnh thành."
+  - "Hỏi: Ngày Quốc khánh Việt Nam là ngày nào ? Đáp: Ngày 2 tháng 9 là Quốc khánh Việt Nam."
+  - "Hỏi: Bác Hồ đọc Tuyên ngôn độc lập năm nào ? Đáp: Bác Hồ đọc Tuyên ngôn độc lập năm 1945."
+  - "Hỏi: Hai Bà Trưng chống ai ? Đáp: Hai Bà Trưng chống giặc Hán."
+  - "Hỏi: Lý Thái Tổ dời đô về đâu ? Đáp: Lý Thái Tổ dời đô về Thăng Long."
+  - "Hỏi: Giỗ Tổ Hùng Vương vào tháng mấy ? Đáp: Giỗ Tổ Hùng Vương vào tháng 3 âm lịch."
+  - "Hỏi: Bác Hồ sinh năm nào ? Đáp: Bác Hồ sinh năm 1890."
+  - "Hỏi: Lê Lợi khởi nghĩa ở đâu ? Đáp: Lê Lợi khởi nghĩa Lam Sơn."
+  - "Hỏi: Quang Trung đại phá quân nào ? Đáp: Quang Trung đại phá quân Thanh."
+  - "Hỏi: Trần Hưng Đạo đánh thắng quân nào ? Đáp: Trần Hưng Đạo đánh thắng quân Mông."
+  - "Hỏi: Trống đồng nào là di sản ? Đáp: Trống đồng Đông Sơn là di sản."
+  - "Hỏi: Ngày 19 tháng 5 là ngày gì ? Đáp: Ngày 19 tháng 5 là sinh nhật Bác Hồ."
+  - "Hỏi: Thăng Long nay là gì ? Đáp: Thăng Long là Hà Nội ngày nay."
+  - "Hỏi: Tim làm gì trong cơ thể ? Đáp: Tim bơm máu khắp cơ thể."
+  - "Hỏi: Rễ cây làm gì ? Đáp: Rễ cây hút nước dưới đất."
+  - "Hỏi: Phổi giúp ta làm gì ? Đáp: Phổi giúp ta thở."
+  - "Hỏi: Cá sống ở đâu ? Đáp: Cá sống dưới nước."
+  - "Hỏi: Mặt trời cung cấp gì ? Đáp: Mặt trời cung cấp ánh sáng và nhiệt."
+  - "Hỏi: Rửa tay khi nào ? Đáp: Rửa tay trước khi ăn."
+  - "Hỏi: Mắt giúp ta làm gì ? Đáp: Mắt giúp ta nhìn."
+  - "Hỏi: Tai giúp ta làm gì ? Đáp: Tai giúp ta nghe."
+  - "Hỏi: Lá cây làm gì ? Đáp: Lá cây quang hợp."
+  - "Hỏi: Trái đất quay quanh gì ? Đáp: Trái đất quay quanh mặt trời."
+  - "Hỏi: Chim có gì ? Đáp: Chim có lông và cánh."
+  - "Hỏi: Quả chứa gì ? Đáp: Quả chứa hạt."
+  - "Hỏi: Em nên làm gì khi gặp người lớn ? Đáp: Em chào hỏi lễ phép người lớn."
+  - "Hỏi: Vì sao phân loại rác ? Đáp: Phân loại rác bảo vệ môi trường."
+  - "Hỏi: Qua đường em cần làm gì ? Đáp: Qua đường đi vạch kẻ đi bộ."
+  - "Hỏi: Ai dạy em học ở trường ? Đáp: Thầy cô dạy em học."
+  - "Hỏi: Lao động có ích gì ? Đáp: Lao động là vinh quang."
+  - "Hỏi: Ai chữa bệnh ? Đáp: Bác sĩ chữa bệnh."
+  - "Hỏi: Ai trồng lúa ? Đáp: Nông dân trồng lúa."
+  - "Hỏi: Ai may quần áo ? Đáp: Thợ may may quần áo."
+  - "Hỏi: Khi đi xe máy cần gì ? Đáp: Đội mũ bảo hiểm khi đi xe máy."
+  - "Hỏi: Đoàn kết giúp em thế nào ? Đáp: Đoàn kết giúp em mạnh hơn."
+  - "Hỏi: Ai giữ an ninh ? Đáp: Công an giữ an ninh."

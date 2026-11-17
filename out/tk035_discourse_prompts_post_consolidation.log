@@ -1,0 +1,99 @@
+checkpoint=network_v10_histwiki_paragraph.pkl
+parents=176430 vocab=113572
+prompts=43 (history=10, doc=10, conv=10, common=10, +frame=3)
+
+=== Discourse prompts (dataset-derived) ===
+
+[history_wiki_para] 'Khối trường tư thục phát triển năng'
+  - gen multi varlm=0: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (199.6s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.35: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (11.9s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+  - gen multi varlm=0.5: chars=66 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.0s)
+      'Khối trường tư thục phát triển năng động để đáp ứng nhu cầu xã hội'
+
+[history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+  - gen multi varlm=0: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (15.6s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.35: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (10.7s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+  - gen multi varlm=0.5: chars=86 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.2s)
+      'Đinh Tiên Hoàng là người đầu tiên lập chức tăng thống đưa phật giáo trở thành quốc đạo'
+
+[history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (12.0s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0.35: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.7s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+  - gen multi varlm=0.5: chars=65 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (12.1s)
+      'Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+
+[history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+  - gen multi varlm=0: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (11.9s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.35: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.6s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+  - gen multi varlm=0.5: chars=93 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (8.9s)
+      'Kiến văn tiểu lục (Chép vặt những điều thấy nghe) gồm 12 quyển có tựa của tác giả đề năm 1777'
+
+[history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+  - gen multi varlm=0: chars=61 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (8.7s)
+      'Chúa gánh cái lo , ta hưởng Chúa gánh cái lo ta hưởng cái vui'
+  - gen multi varlm=0.35: chars=61 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (11.3s)
+      'Chúa gánh cái lo , ta hưởng Chúa gánh cái lo ta hưởng cái vui'
+  - gen multi varlm=0.5: chars=61 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=0.00 (12.7s)
+      'Chúa gánh cái lo , ta hưởng Chúa gánh cái lo ta hưởng cái vui'
+
+[history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+  - gen multi varlm=0: chars=100 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (18.1s)
+      'Vì tưởng là Lê Lợi , người Vì tưởng là Lê Lợi người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+  - gen multi varlm=0.35: chars=100 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (21.9s)
+      'Vì tưởng là Lê Lợi , người Vì tưởng là Lê Lợi người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+  - gen multi varlm=0.5: chars=100 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (23.3s)
+      'Vì tưởng là Lê Lợi , người Vì tưởng là Lê Lợi người Minh đã xử tử Lê Lai một cách tàn ác và lui quân'
+
+[history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+  - gen multi varlm=0: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (12.6s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.35: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (12.9s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+  - gen multi varlm=0.5: chars=80 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (11.7s)
+      'Nguyên quán của ông ở hương Trà Lũ xã Xuân Trung phủ Xuân Trường trấn Sơn Nam Hạ'
+
+[history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+  - gen multi varlm=0: chars=78 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (12.4s)
+      'Tuy nhiên , Tây Sơn vẫn còn Tuy nhiên Tây Sơn vẫn còn vây chặt thành Bình Định'
+  - gen multi varlm=0.35: chars=78 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (15.4s)
+      'Tuy nhiên , Tây Sơn vẫn còn Tuy nhiên Tây Sơn vẫn còn vây chặt thành Bình Định'
+  - gen multi varlm=0.5: chars=78 sents=0 commas=1 multi=1 overlap=1.00 ent_keep=1.00 (13.7s)
+      'Tuy nhiên , Tây Sơn vẫn còn Tuy nhiên Tây Sơn vẫn còn vây chặt thành Bình Định'
+
+[history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+  - gen multi varlm=0: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.5s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+  - gen multi varlm=0.35: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (11.8s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+  - gen multi varlm=0.5: chars=71 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (10.1s)
+      'Hồ Liêm làm con nuôi của Tuyên úy Lê Huấn rồi lấy họ Lê làm họ của mình'
+
+[history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+  - gen multi varlm=0: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (13.5s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+  - gen multi varlm=0.35: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.6s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+  - gen multi varlm=0.5: chars=94 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (10.1s)
+      'Tới năm 1901 Điện báo cục đã xây dựng 14000 dặm đường dây điện tín giữa các thành phố thị trấn'
+
+[statements_doc] 'Tuy nhiên trong một số trường hợp'
+  - gen multi varlm=0: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (14.5s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+  - gen multi varlm=0.35: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (13.1s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+  - gen multi varlm=0.5: chars=97 sents=0 commas=0 multi=0 overlap=1.00 ent_keep=0.00 (16.5s)
+      'Tuy nhiên trong một số trường hợp bổ ngữ (bao gồm từ mang ý phụ và tính từ) sẽ đứng trước danh từ'
+
+[statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+  - gen multi varlm=0: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (26.3s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'
+  - gen multi varlm=0.35: chars=214 sents=1 commas=0 multi=0 overlap=1.00 ent_keep=1.00 (23.3s)
+      'Tiếng Việt là 1 ngôn ngữ đơn lập Các quan hệ ngữ pháp thể hiện chủ yếu thông qua hệ thống hư từ và cách sắp xếp trật tự từ trong câu . Trật tự từ thông dụng nhất trong tiếng Việt là chủ ngữ - vị ngữ - tân ngữ (SVO)'

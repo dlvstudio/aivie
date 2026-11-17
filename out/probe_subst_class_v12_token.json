@@ -1,0 +1,334 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_token": 23273,
+ "n_boi_canh": 1445790,
+ "min_share": 3,
+ "n_co_lang_gieng": 11452,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "cung",
+    "cũ",
+    "nóng",
+    "gió",
+    "vàng",
+    "run",
+    "chó",
+    "mưa"
+   ],
+   "embedding": [
+    "chồng",
+    "Koi",
+    "tiền",
+    "phụ",
+    "tiểu",
+    "thiên",
+    "yêu",
+    "cảnh"
+   ],
+   "n_ctx": 15
+  },
+  "sông": {
+   "lop_thay_the": [
+    "có"
+   ],
+   "embedding": [
+    "vịnh",
+    "phía",
+    "đô",
+    "đĩa",
+    "giường",
+    "quân",
+    "gói",
+    "sáu"
+   ],
+   "n_ctx": 7
+  },
+  "đánh": {
+   "lop_thay_the": [],
+   "embedding": [
+    "tiếp",
+    "đèn",
+    "cân",
+    "đắt",
+    "đào",
+    "quý",
+    "đụng",
+    "trùng"
+   ],
+   "n_ctx": 17
+  },
+  "Nguyễn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Nguyễn",
+    "Văn",
+    "Lê",
+    "Lê",
+    "Phan",
+    "Trần",
+    "Phan",
+    "Thị"
+   ],
+   "n_ctx": 18
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "tốt",
+    "ba",
+    "có",
+    "không",
+    "Không",
+    "I",
+    "Ta"
+   ],
+   "embedding": [
+    "vòng",
+    "nhồi",
+    "đẹp",
+    "giữ",
+    "chạy",
+    "lương",
+    "đệ",
+    "đeo"
+   ],
+   "n_ctx": 7
+  },
+  "quân": {
+   "lop_thay_the": [],
+   "embedding": [
+    "lực",
+    "hịch",
+    "Loạn",
+    "sông",
+    "Binh",
+    "chiến",
+    "quân",
+    "thủ"
+   ],
+   "n_ctx": 8
+  },
+  "năm": {
+   "lop_thay_the": [
+    "ngày",
+    "km²",
+    "tháng",
+    "lít",
+    "cm³",
+    "lần",
+    "Linux",
+    "USD"
+   ],
+   "embedding": [
+    "tháng",
+    "0",
+    "GRDP",
+    "NDT",
+    "lượng",
+    "kg",
+    "2",
+    "kg"
+   ],
+   "n_ctx": 50
+  },
+  "thành": {
+   "lop_thay_the": [
+    "Thành",
+    "Một",
+    "một"
+   ],
+   "embedding": [
+    "tỉnh",
+    "Thành",
+    "lỵ",
+    "quận",
+    "quận",
+    "Lậy",
+    "Phủ",
+    "Tỉnh"
+   ],
+   "n_ctx": 20
+  },
+  "nước": {
+   "lop_thay_the": [
+    "cũ",
+    "sốc",
+    "ừm",
+    "who",
+    "bơi",
+    "she",
+    "saw",
+    "run"
+   ],
+   "embedding": [
+    "khí",
+    "hơi",
+    "lửa",
+    "dầu",
+    "quả",
+    "màu",
+    "chất",
+    "mặt"
+   ],
+   "n_ctx": 43
+  },
+  "người": {
+   "lop_thay_the": [
+    "lượng",
+    "thường",
+    "việc",
+    "thuyền",
+    "bắn",
+    "lúa",
+    "cm³",
+    "cây"
+   ],
+   "embedding": [
+    "chiếm",
+    "có",
+    "phụ",
+    "hơn",
+    "làm",
+    "biểu",
+    "đại",
+    "lao"
+   ],
+   "n_ctx": 132
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "muốn",
+   "lop": [
+    "phải",
+    "cần",
+    "sẽ",
+    "dám",
+    "biết",
+    "nghĩ"
+   ]
+  },
+  {
+   "token": "xuất",
+   "lop": [
+    "phát",
+    "phẩm",
+    "biểu",
+    "thực",
+    "nghị",
+    "cập"
+   ]
+  },
+  {
+   "token": "hơn",
+   "lop": [
+    "nhất",
+    "khác",
+    "a",
+    "lắm",
+    "khoảng",
+    "nào"
+   ]
+  },
+  {
+   "token": "tự",
+   "lop": [
+    "bỗng",
+    "đột",
+    "đương",
+    "ngẫu",
+    "dĩ",
+    "ngạc"
+   ]
+  },
+  {
+   "token": "dù",
+   "lop": [
+    "kệ",
+    "nếu",
+    "nên",
+    "hắn",
+    "nhưng",
+    "nó"
+   ]
+  },
+  {
+   "token": "hiểu",
+   "lop": [
+    "biết",
+    "thấy",
+    "kiếm",
+    "đọc",
+    "tòi",
+    "nghe"
+   ]
+  },
+  {
+   "token": "giữa",
+   "lop": [
+    "cuối",
+    "mà",
+    "bển",
+    "bởi",
+    "đây",
+    "cả"
+   ]
+  },
+  {
+   "token": "luôn",
+   "lop": [
+    "vẫn",
+    "sẽ",
+    "chỉ",
+    "đều",
+    "còn",
+    "đang"
+   ]
+  },
+  {
+   "token": "thực",
+   "lop": [
+    "thật",
+    "nỗ",
+    "xuất",
+    "phát",
+    "sản",
+    "biểu"
+   ]
+  },
+  {
+   "token": "nó",
+   "lop": [
+    "chúng",
+    "họ",
+    "tôi",
+    "hắn",
+    "mình",
+    "bạn"
+   ]
+  },
+  {
+   "token": "chúng",
+   "lop": [
+    "nó",
+    "họ",
+    "bạn",
+    "tôi",
+    "anh",
+    "hắn"
+   ]
+  },
+  {
+   "token": "đơn",
+   "lop": [
+    "vy",
+    "vít",
+    "hương",
+    "kép",
+    "dâu",
+    "Leningrad"
+   ]
+  }
+ ],
+ "seconds": 76.3
+}

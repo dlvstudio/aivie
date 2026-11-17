@@ -1,0 +1,14 @@
+{
+ "id": "t04_thieu",
+ "cat": "tool",
+ "model": "gemma4:12b",
+ "turns": [
+  {
+   "user": "Bạn là trợ lý có thể gọi công cụ. Hôm nay là thứ Sáu, 06/11/2026. Các công cụ:\n- get_weather(city: str, date: str \"YYYY-MM-DD\")\n- search_flights(from_city: str, to_city: str, date: str \"YYYY-MM-DD\") → danh sách chuyến bay\n- send_email(to: str, subject: str, body: str)\n- run_sql(query: str) → chạy trên SQLite, bảng orders(id, customer, city, amount, created_at \"YYYY-MM-DD\")\nQuy tắc: nếu cần công cụ, CHỈ trả về một hoặc nhiều dòng JSON dạng {\"tool\": \"<tên>\", \"args\": {...}}, không viết gì khác. Nếu không cần công cụ thì trả lời bình thường. Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\n\nYêu cầu: Gửi email cho anh Minh nhắc họp lúc 3 giờ chiều nay.",
+   "text": "Bạn có thể cho mình biết địa chỉ email của anh Minh được không?",
+   "thinking": "*   Current Date: Friday, 06/11/2026 (November 6th, 2026).\n    *   Tools available: `get_weather`, `search_flights`, `send_email`, `run_sql`.\n    *   Constraint: If a tool is needed, return ONLY JSON lines. Otherwise, answer normally. Ask for missing info.\n\n    *   User wants to send an email to \"anh Minh\" (Mr. Minh) reminding him about a meeting at 3 PM today.\n\n    *   Tool: `send_email(to: str, subject: str, body: str)`\n    *   Parameters needed:\n        *   `to`: \"anh Minh\" - Is this an email address? No. I need his email address.\n        *   `subject`: Something like \"Nhắc họp lúc 3 giờ chiều nay\".\n        *   `body`: Something like \"Chào anh Minh, nhắc anh về cuộc họp lúc 3 giờ chiều hôm nay.\"\n\n    *   The tool `send_email` requires a `to` parameter which is an email address. \"anh Minh\" is not an email address. I need to ask for his email address.\n    *   Wait, the prompt says: \"Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\" (If mandatory information is missing, ask the user again.)\n\n    *   The user didn't provide a specific email address for \"anh Minh\".\n\n    \"Bạn có thể cho mình biết địa chỉ email của anh Minh được không?\" (Can you please give me Mr. Minh's email address?)",
+   "tokens": 365,
+   "sec": 13.9
+  }
+ ]
+}

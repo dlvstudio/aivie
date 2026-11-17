@@ -1,0 +1,96 @@
+[0s] load checkpoints/network_v11_coref_step2_postpull.pkl (gc.disable) …
+[66s] ✓ loaded · coref edges 648 · after_role 1,383
+
+═══ TOP 30 cạnh coref (SIG-nhắc-lại → SIG-antecedent) — đọc tay khuôn ═══
+
+  [0] «<ENT> <ENT> <ENT> này. [ENT] đó. . . Ngươi»
+      → «là khổ cực tiền. [ENT] thế giới này đen» · after_role='đó.'
+
+  [1] «<ENT> <ENT> . Tại [ENT] đó không thể bằng»
+      → «khả tích (square-integrable function) [ENT] khi không gian Hilbert» · after_role='đó'
+
+  [2] «<ENT> <ENT> và /hoặc [ENT] hai sự kiện xảy»
+      → «trong hệ quy chiếu [ENT] trong hệ quy chiếu» · after_role='hai'
+
+  [3] «<ENT> <ENT> nồi inox. [ENT] thố đất nung loại»
+      → «liệu cần chuẩn bị [ENT] nồi inox. <ENT> <ENT>» · after_role='thố'
+
+  [4] «<ENT> <ENT> Đế. . [ENT] cực giữa bầu trời»
+      → «động tĩnh này. . [ENT] Đế. . <ENT> <ENT>» · after_role='cực'
+
+  [5] «<ENT> ma biến *600 [ENT] Hắc Ám Tinh Thần»
+      → «<ENT> ma biến *500 [ENT] ma giáp *400 】» · after_role='Hắc'
+
+  [6] «<ENT> ma biến *500 [ENT] ma giáp *400 】»
+      → «<ENT> ma biến *600 [ENT] Hắc Ám Tinh Thần» · after_role='ma'
+
+  [7] «<ENT> ma giáp *300 [ENT] ma biến *600 <ENT>»
+      → «<ENT> ma biến *600 [ENT] Hắc Ám Tinh Thần» · after_role='ma'
+
+  [8] «<ENT> Hóa |Cửu Chân [ENT] Hóa |- |Hoài Hoan»
+      → «Chân (九真) |Cửu Chân [ENT] Hóa |Cửu Chân <ENT>» · after_role='Hóa'
+
+  [9] «<ENT> tinh thần *6 [ENT] lực lượng *153 <ENT>»
+      → «<ENT> lực lượng *153 [ENT] tốc độ *66 】» · after_role='lực'
+
+  [10] «<ENT> tinh thần *8 [ENT] luyện đan thuật *6»
+      → «luyện đan thuật *5 [ENT] tinh thần *4 】» · after_role='luyện'
+
+  [11] «<ENT> vào nồi đất [ENT] vài lát gừng <ENT>»
+      → «, chặt miếng vuông [ENT] vào nồi đất <ENT>» · after_role='vài'
+
+  [12] «<ENT> lực lượng *153 [ENT] tốc độ *66 】»
+      → «<ENT> tinh thần *6 [ENT] lực lượng *153 <ENT>» · after_role='tốc'
+
+  [13] «<ENT> lực lượng *8 [ENT] tốc độ *6 <ENT>»
+      → «<ENT> tốc độ *6 [ENT] cơ sở kiếm pháp» · after_role='tốc'
+
+  [14] «<ENT> mê hoặc *200 [ENT] Hắc Ám bản nguyên»
+      → «<ENT> mê hoặc *150 [ENT] Hắc Ám Tinh Thần» · after_role='Hắc'
+
+  [15] «<ENT> mê hoặc *150 [ENT] Hắc Ám Tinh Thần»
+      → «<ENT> mê hoặc *200 [ENT] Hắc Ám bản nguyên» · after_role='Hắc'
+
+  [16] «<ENT> sĩ Bảo Yến [ENT] sĩ Như Quỳnh -»
+      → «nhạc sĩ Quang Linh [ENT] sĩ Bảo Yến <ENT>» · after_role='sĩ'
+
+  [17] «<ENT> thao Thể dục [ENT] thao phong trào Đội»
+      → «thứ 22 Thể dục [ENT] thao Thể dục <ENT>» · after_role='thao'
+
+  [18] «<ENT> tốc độ *6 [ENT] cơ sở kiếm pháp»
+      → «<ENT> lực lượng *8 [ENT] tốc độ *6 <ENT>» · after_role='cơ'
+
+  [19] «<ENT> H2O → Fe2O3 [ENT] H2 3 Fe +»
+      → «+ H2 2 Fe [ENT] H2O → Fe2O3 <ENT>» · after_role='H2'
+
+  [20] «<ENT> muỗng canh Mayonnaise [ENT] muỗng canh trứng gà»
+      → «làm sốt bơ tỏi [ENT] muỗng canh tỏi băm» · after_role='muỗng'
+
+  [21] «<ENT> (1927-) Arthur Eichengrün [ENT] (1867-1949) Emil Erlenmayer <ENT>»
+      → «<ENT> (1877-1950) Richard Abegg [ENT] (1869-1910) Svante Arrhenius -» · after_role='(1867-1949)'
+
+  [22] «<ENT> (1877-1950) Richard Abegg [ENT] (1869-1910) Svante Arrhenius -»
+      → «<ENT> (1927-) Arthur Eichengrün [ENT] (1867-1949) Emil Erlenmayer <ENT>» · after_role='(1869-1910)'
+
+  [23] «<ENT> (1811-1899) Eduard Buchner [ENT] (1860-1917) C Melvin Calvin»
+      → «<ENT> (1927-) Arthur Eichengrün [ENT] (1867-1949) Emil Erlenmayer <ENT>» · after_role='(1860-1917)'
+
+  [24] «<ENT> (1854-1915) Manfred Eigen [ENT] (1927-) Arthur Eichengrün <ENT>»
+      → «<ENT> (1927-) Arthur Eichengrün [ENT] (1867-1949) Emil Erlenmayer <ENT>» · after_role='(1927-)'
+
+  [25] «<ENT> (1867-1949) Emil Erlenmayer [ENT] (1825-1909) Richard R. Ernst»
+      → «<ENT> (1927-) Arthur Eichengrün [ENT] (1867-1949) Emil Erlenmayer <ENT>» · after_role='(1825-1909)'
+
+  [26] «! Lang! ! ! [ENT] Không có sao chứ,»
+      → «có sao chứ, tỉnh? [ENT] Chu Thiên Ngũ thanh» · after_role='Không'
+
+  [27] «+ H2 2 Fe [ENT] H2O → Fe2O3 <ENT>»
+      → «<ENT> H2O → Fe2O3 [ENT] H2 3 Fe +» · after_role='H2O'
+
+  [28] «, , , , [ENT] . (United Arab Republic)»
+      → «, , , , [ENT] một phần ở .» · after_role='.'
+
+  [29] «, , , , [ENT] một phần ở .»
+      → «, , , , [ENT] . (United Arab Republic)» · after_role='một'
+
+[89s] → CỔNG: ≥ ~7/10 cạnh khuôn hợp lý (nhắc-lại→giới-thiệu) ⇒ P3.2. Loạn/rỗng ⇒ xem occurrence-detect / SIG-width / purity (RUNBOOK §6).

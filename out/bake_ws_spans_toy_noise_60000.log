@@ -1,0 +1,40 @@
+[    0.0s RSS  0.08GB] nạp out/noise_big/toy_noise_60000.pkl …
+[    6.8s RSS  5.49GB] nạp xong · parents=59769 vocab=32002
+[    6.8s RSS  5.49GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    6.8s RSS  5.49GB] ws_spans 0/59769 · span=0 · bỏ=0
+[   13.1s RSS  5.49GB] ws_spans 20000/59769 · span=14609 · bỏ=12000
+[   18.7s RSS  5.49GB] ws_spans 40000/59769 · span=23728 · bỏ=23928
+[   24.4s RSS  5.49GB] 32517 span · 0.3 phút
+[   24.4s RSS  5.49GB] ghi out/noise_big/toy_noise_60000.ws_spans.json (0.5 MB) · roundtrip OK
+[   24.4s RSS  5.49GB]   mẫu[00] '<0x80> 婆'
+[   24.4s RSS  5.49GB]   mẫu[01] 'v ector'
+[   24.4s RSS  5.49GB]   mẫu[02] 'au thara'
+[   24.4s RSS  5.49GB]   mẫu[03] 'y ù'
+[   24.4s RSS  5.49GB]   mẫu[04] 'chủ nghĩa tập thể'
+[   24.4s RSS  5.49GB]   mẫu[05] 'chi tiết'
+[   24.4s RSS  5.49GB]   mẫu[06] 'thanh bình'
+[   24.4s RSS  5.49GB]   mẫu[07] 'trợ năng'
+[   24.4s RSS  5.49GB]   mẫu[08] 'trẻ con'
+[   24.4s RSS  5.49GB]   mẫu[09] 'Đông An'
+[   24.4s RSS  5.49GB]   mẫu[10] 'Thái tử'
+[   24.4s RSS  5.49GB]   mẫu[11] 'khẩu hiệu'
+[   24.4s RSS  5.49GB]   mẫu[12] 'in ấn'
+[   24.4s RSS  5.49GB]   mẫu[13] 'Đại Chiêm'
+[   24.4s RSS  5.49GB]   mẫu[14] 'Cao Bằng'
+[   24.4s RSS  5.49GB]   mẫu[15] 'Ký Châu'
+[   24.4s RSS  5.49GB]   mẫu[16] 'bi kịch'
+[   24.4s RSS  5.49GB]   mẫu[17] 'Thừa Thiên đặt'
+[   24.4s RSS  5.49GB]   mẫu[18] 'Thực nghiệm'
+[   24.4s RSS  5.49GB]   mẫu[19] 'CO LA'
+[   24.4s RSS  5.49GB]   mẫu[20] 'Sông Thao'
+[   24.4s RSS  5.49GB]   mẫu[21] 'Chợ Tàu'
+[   24.4s RSS  5.49GB]   mẫu[22] 'Hiệu suất'
+[   24.4s RSS  5.49GB]   mẫu[23] 'Đá Công Đo'
+[   24.4s RSS  5.49GB]   mẫu[24] 'Đảng bộ'
+[   24.4s RSS  5.49GB]   mẫu[25] 'Re ine'
+[   24.4s RSS  5.49GB]   mẫu[26] 'Wend ers'
+[   24.4s RSS  5.49GB]   mẫu[27] 'Biệt vũ ban'
+[   24.4s RSS  5.49GB]   mẫu[28] 'Sid ney N ol an'
+[   24.4s RSS  5.49GB]   mẫu[29] 'tet raf lo etylen'
+[   24.5s RSS  5.49GB] span nghi rác (tự động): 616/32517 = 1.9% (ISG: 57%)
+[   24.5s RSS  5.49GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

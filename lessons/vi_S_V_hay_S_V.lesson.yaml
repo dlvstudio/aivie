@@ -1,0 +1,26 @@
+lesson_id: vi_grade6_hay_choice
+grade: 6
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_V_hay_S_V
+slots:
+  - var: S1
+  - var: V1
+  - const: "hay"
+  - var: S2
+  - var: V2
+
+bind:
+  S1: chủ ngữ
+  V1: động từ
+  S2: chủ ngữ
+  V2: động từ
+
+examples:
+  - "Em học hay em chơi"
+  - "Lan đi hay Lan ở"
+  - "Mẹ nấu hay mẹ mua"
+  - "Bé ngủ hay Bé khóc"
+  - "Em viết hay em đọc"

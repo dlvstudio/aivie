@@ -1,0 +1,97 @@
+[     0.0s] === debug_nguoi_minh START (pid=29300) → out/logs/debug_nguoi_minh_20260709_224739.log ===
+[     0.0s] ▶ load
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    21.8s] ✓ unpickle  (21.8s)
+[    21.8s] ▶ vocab (113572 token)
+[    22.8s] ✓ vocab (113572 token)  (1.0s)
+[    22.8s] ▶ adjacency
+[    42.5s] ✓ adjacency  (19.7s)
+[    42.5s] ▶ embedding
+[    43.9s] ✓ embedding  (1.4s)
+[    43.9s] ▶ parents
+[    43.9s] parents: deserialize 176430 records …
+[    44.2s] parents 5000/176430 (2.8%)
+[    44.5s] parents 10000/176430 (5.7%)
+[    44.8s] parents 15000/176430 (8.5%)
+[    45.1s] parents 20000/176430 (11.3%)
+[    45.6s] parents 25000/176430 (14.2%)
+[    46.1s] parents 30000/176430 (17.0%)
+[    46.8s] parents 35000/176430 (19.8%)
+[    47.2s] parents 40000/176430 (22.7%)
+[    47.9s] parents 45000/176430 (25.5%)
+[    48.4s] parents 50000/176430 (28.3%)
+[    48.8s] parents 55000/176430 (31.2%)
+[    49.2s] parents 60000/176430 (34.0%)
+[    49.6s] parents 65000/176430 (36.8%)
+[    49.9s] parents 70000/176430 (39.7%)
+[    50.3s] parents 75000/176430 (42.5%)
+[    73.9s] parents 80000/176430 (45.3%)
+[    74.8s] parents 85000/176430 (48.2%)
+[    75.1s] parents 90000/176430 (51.0%)
+[    75.8s] parents 95000/176430 (53.8%)
+[    76.1s] parents 100000/176430 (56.7%)
+[    76.5s] parents 105000/176430 (59.5%)
+[    76.9s] parents 110000/176430 (62.3%)
+[    77.2s] parents 115000/176430 (65.2%)
+[    77.6s] parents 120000/176430 (68.0%)
+[    78.0s] parents 125000/176430 (70.8%)
+[    78.3s] parents 130000/176430 (73.7%)
+[    78.9s] parents 135000/176430 (76.5%)
+[    79.4s] parents 140000/176430 (79.4%)
+[    80.0s] parents 145000/176430 (82.2%)
+[    80.5s] parents 150000/176430 (85.0%)
+[    81.3s] parents 155000/176430 (87.9%)
+[    82.7s] parents 160000/176430 (90.7%)
+[    83.8s] parents 165000/176430 (93.5%)
+[   114.8s] parents 170000/176430 (96.4%)
+[   115.6s] parents 175000/176430 (99.2%)
+[   308.0s] ▶ rebuild_hierarchical_index …
+[   320.5s] ✓ rebuild_hierarchical_index (12.5s)
+[   320.5s] ✓ parents  (276.6s)
+[   320.5s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   329.5s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   329.6s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   334.6s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   335.0s] ✓ load_checkpoint XONG
+[   335.0s] ✓ load  (335.0s)
+[   335.0s] prompt='Người Minh dùng hỏa tiễn bắn voi'
+[   335.0s] gen_ids n=7 q_ids n=7 ans_so_far n=0
+[   336.2s] top-5 rank_matches:
+[   336.2s]   pi=73921 sc=0.613 pri=0.60 src_len=8 emit_len=8 cut=6 mk=7
+[   336.2s]     source: 'Người Minh dùng hỏa tiễn bắn voi .'
+[   336.2s]     emit:   'Người Minh dùng hỏa tiễn bắn voi .'
+[   336.2s]     tail:   '.'
+[   336.2s]     agenda: 'Người Minh dùng hỏa tiễn bắn voi'
+[   336.2s]   pi=124870 sc=0.436 pri=0.60 src_len=23 emit_len=23 cut=6 mk=2
+[   336.2s]     source: 'Quân Minh dùng hỏa hổ bắn voi và quản tượng , voi hoảng sợ quay đầu chạy , quân Thái tan vỡ .'
+[   336.2s]     emit:   'Quân Minh dùng hỏa hổ bắn voi và quản tượng , voi hoảng sợ quay đầu chạy , quân Thái tan vỡ .'
+[   336.2s]     tail:   'và quản tượng , voi hoảng sợ quay đầu chạy , quân Thái tan vỡ .'
+[   336.2s]     agenda: 'và quản tượng voi hoảng sợ quay đầu chạy quân Thái tan vỡ'
+[   336.2s]   pi=146740 sc=0.367 pri=0.80 src_len=20 emit_len=20 cut=-1 mk=0
+[   336.2s]     source: 'Quân đội có kinh nghiệm chiến đấu dày dạn trang bị tốt với máy bắn đá và hỏa tiễn .'
+[   336.2s]     emit:   'Quân đội có kinh nghiệm chiến đấu dày dạn trang bị tốt với máy bắn đá và hỏa tiễn .'
+[   336.2s]     tail:   ''
+[   336.2s]     agenda: 'Quân đội có kinh nghiệm chiến đấu dày dạn trang bị tốt với máy bắn đá và hỏa tiễn'
+[   336.2s]   pi=106796 sc=0.267 pri=0.60 src_len=16 emit_len=16 cut=-1 mk=0
+[   336.2s]     source: 'Zhukov ra lệnh dùng hỏa lực pháo binh bắn phản chuẩn bị vào quân Đức .'
+[   336.2s]     emit:   'Zhukov ra lệnh dùng hỏa lực pháo binh bắn phản chuẩn bị vào quân Đức .'
+[   336.2s]     tail:   ''
+[   336.2s]     agenda: 'Zhukov ra lệnh dùng hỏa lực pháo binh bắn phản chuẩn bị vào quân Đức'
+[   336.2s]   pi=75747 sc=0.267 pri=0.60 src_len=15 emit_len=15 cut=-1 mk=0
+[   336.2s]     source: 'Sau dùng hỏa công , bắn các chất cháy như nhựa thông vào thành .'
+[   336.2s]     emit:   'Sau dùng hỏa công , bắn các chất cháy như nhựa thông vào thành .'
+[   336.2s]     tail:   ''
+[   336.2s]     agenda: 'Sau dùng hỏa công bắn các chất cháy như nhựa thông vào thành'
+[   338.2s] best_match=(73921, 0.6131833474640173)
+[   338.2s] chosen pi=73921 is_qa=False match_span=(0, 5)
+[   338.2s] completion='Người Minh dùng hỏa tiễn bắn voi .'
+[   338.2s] agenda_for_AR='Người Minh dùng hỏa tiễn bắn voi'
+[   338.2s] ▶ generate
+[   715.1s] ✓ generate  (376.9s)
+[   715.1s] OUT='Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+[   715.1s] echo_count=2
+[   715.2s] ▶ generate_autoregressive_only
+[   720.3s] ✓ generate_autoregressive_only  (5.1s)
+[   720.3s] AR_only='Người Minh dùng hỏa tiễn bắn voi Người Minh dùng hỏa tiễn bắn voi'
+[   720.3s] DONE

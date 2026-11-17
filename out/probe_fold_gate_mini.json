@@ -1,0 +1,51 @@
+{
+  "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+  "n_prompt": 60,
+  "n_clauses": 10283,
+  "pmi_cut": 0.0,
+  "gidf_min": 4.0,
+  "gates": {
+    "dead_max": 0.5,
+    "lac_max": 0.3
+  },
+  "rows": [
+    {
+      "config": "A_don_am_tiet",
+      "lac_strict": 0.9852941176470589,
+      "pmi_cross": 1.907852359450282,
+      "dead_rate": 0.7333333333333333,
+      "n_tokens": 35.022222222222226,
+      "n_scored": 34,
+      "n_alive": 45
+    },
+    {
+      "config": "B_bo_chu_so",
+      "lac_strict": 0.9857142857142858,
+      "pmi_cross": 1.8901023494468239,
+      "dead_rate": 0.7666666666666667,
+      "n_tokens": 35.0,
+      "n_scored": 35,
+      "n_alive": 43
+    },
+    {
+      "config": "C_cap_am_tiet",
+      "lac_strict": 1.0,
+      "pmi_cross": 2.765667746773863,
+      "dead_rate": 1.0,
+      "n_tokens": 12.666666666666666,
+      "n_scored": 1,
+      "n_alive": 9
+    },
+    {
+      "config": "D_cap_bo_so",
+      "lac_strict": NaN,
+      "pmi_cross": 2.381331062116768,
+      "dead_rate": 0.9666666666666667,
+      "n_tokens": 15.181818181818182,
+      "n_scored": 0,
+      "n_alive": 11
+    }
+  ],
+  "gate_pass": false,
+  "seconds": 1.7
+}

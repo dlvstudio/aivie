@@ -1,0 +1,48 @@
+[     0.0s] === load_classrich2 START (pid=14609) → out/logs/load_classrich2_20260815_160222.log ===
+[     0.0s] load checkpoint checkpoints/classrich2.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.3s] ✓ adjacency  (0.9s)
+[     1.3s] ▶ embedding
+[     1.3s] ✓ embedding  (0.0s)
+[     1.3s] ▶ parents
+[     1.3s] parents: deserialize 55460 records …
+[     1.3s] parents 5000/55460 (9.0%)
+[     1.4s] parents 10000/55460 (18.0%)
+[     1.4s] parents 15000/55460 (27.0%)
+[     1.5s] parents 20000/55460 (36.1%)
+[     1.5s] parents 25000/55460 (45.1%)
+[     1.6s] parents 30000/55460 (54.1%)
+[     1.6s] parents 35000/55460 (63.1%)
+[     1.7s] parents 40000/55460 (72.1%)
+[     1.7s] parents 45000/55460 (81.1%)
+[     1.8s] parents 50000/55460 (90.2%)
+[     1.8s] parents 55000/55460 (99.2%)
+[     2.6s] ▶ rebuild_hierarchical_index …
+[     2.7s] ✓ rebuild_hierarchical_index (0.1s)
+[     3.2s]     resync match_ids: 55460/55460 cha (df dựng lại)
+[     3.2s] ✓ parents  (1.9s)
+[     3.2s] ✓ loaded: vocab=32002 parents=55460 E=(32002, 96)
+[     3.3s] sidecar thiếu → migrate: classrich2.content.pkl
+[     3.3s] ✓ load_checkpoint XONG
+
+### checkpoints/classrich2.pkl · 55460 cha · vị_ngữ=False · cộng_dồn=3
+
+  300 ca · 53 lớp
+
+  NHỚ:  176 ca · top-1 ĐÚNG LỚP   6.2% · top-5  17.6%
+  SUY:  124 ca · top-1 ĐÚNG LỚP   5.6% · top-5  14.5%
+  TỔNG: 300 ca · top-1 6.0% · top-5 16.3%
+
+  6 ca SUY (đọc bằng mắt):
+     «chóp là ___» lớp='phần' → ['chức', 'đường', 'ậu', 'chính', 'Ngô', 'động']
+     «chót là ___» lớp='phần' → ['hoa', 'chức', 'đường', 'loài', 'ậu', 'châu']
+     «bãi là ___» lớp='khoảng' → ['đảo', 'đông', 'nền', 'Kara', 'ngày', 'Hà']
+     «chập là ___» lớp='khoảng' → ['chức', 'đường', 'ậu', 'đóng', 'chính', 'Ngô']
+     «chỗ là ___» lớp='khoảng' → ['chức', 'đường', 'ậu', 'chính', 'Ngô', 'tây']
+     «bẹ là ___» lớp='bộ phận' → []
+
+[63s] xong

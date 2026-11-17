@@ -1,0 +1,155 @@
+[     0.0s] === load_network_v12_sent START (pid=12283) → out/logs/load_network_v12_sent_20260801_220200.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.2s] ✓ unpickle  (3.2s)
+[     3.2s] ▶ vocab (32002 token)
+[     4.2s] ✓ vocab (32002 token)  (1.0s)
+[     4.2s] ▶ adjacency
+[    13.0s] ✓ adjacency  (8.8s)
+[    13.0s] ▶ embedding
+[    13.0s] ✓ embedding  (0.0s)
+[    13.0s] ▶ parents
+[    13.0s] parents: deserialize 430447 records …
+[    13.0s] parents 5000/430447 (1.2%)
+[    13.1s] parents 10000/430447 (2.3%)
+[    13.1s] parents 15000/430447 (3.5%)
+[    13.2s] parents 20000/430447 (4.6%)
+[    13.2s] parents 25000/430447 (5.8%)
+[    13.2s] parents 30000/430447 (7.0%)
+[    13.3s] parents 35000/430447 (8.1%)
+[    13.3s] parents 40000/430447 (9.3%)
+[    13.4s] parents 45000/430447 (10.5%)
+[    13.4s] parents 50000/430447 (11.6%)
+[    13.4s] parents 55000/430447 (12.8%)
+[    13.5s] parents 60000/430447 (13.9%)
+[    13.5s] parents 65000/430447 (15.1%)
+[    13.6s] parents 70000/430447 (16.3%)
+[    13.6s] parents 75000/430447 (17.4%)
+[    13.6s] parents 80000/430447 (18.6%)
+[    13.7s] parents 85000/430447 (19.7%)
+[    13.7s] parents 90000/430447 (20.9%)
+[    13.8s] parents 95000/430447 (22.1%)
+[    13.8s] parents 100000/430447 (23.2%)
+[    13.8s] parents 105000/430447 (24.4%)
+[    13.9s] parents 110000/430447 (25.6%)
+[    14.0s] parents 115000/430447 (26.7%)
+[    14.0s] parents 120000/430447 (27.9%)
+[    14.1s] parents 125000/430447 (29.0%)
+[    14.1s] parents 130000/430447 (30.2%)
+[    14.2s] parents 135000/430447 (31.4%)
+[    14.2s] parents 140000/430447 (32.5%)
+[    14.3s] parents 145000/430447 (33.7%)
+[    14.3s] parents 150000/430447 (34.8%)
+[    14.4s] parents 155000/430447 (36.0%)
+[    14.5s] parents 160000/430447 (37.2%)
+[    14.6s] parents 165000/430447 (38.3%)
+[    14.7s] parents 170000/430447 (39.5%)
+[    14.7s] parents 175000/430447 (40.7%)
+[    14.8s] parents 180000/430447 (41.8%)
+[    14.9s] parents 185000/430447 (43.0%)
+[    15.0s] parents 190000/430447 (44.1%)
+[    15.0s] parents 195000/430447 (45.3%)
+[    15.1s] parents 200000/430447 (46.5%)
+[    15.2s] parents 205000/430447 (47.6%)
+[    15.3s] parents 210000/430447 (48.8%)
+[    15.4s] parents 215000/430447 (49.9%)
+[    15.4s] parents 220000/430447 (51.1%)
+[    15.5s] parents 225000/430447 (52.3%)
+[    15.6s] parents 230000/430447 (53.4%)
+[    15.7s] parents 235000/430447 (54.6%)
+[    15.7s] parents 240000/430447 (55.8%)
+[    15.8s] parents 245000/430447 (56.9%)
+[    15.9s] parents 250000/430447 (58.1%)
+[    16.0s] parents 255000/430447 (59.2%)
+[    16.1s] parents 260000/430447 (60.4%)
+[    16.1s] parents 265000/430447 (61.6%)
+[    16.2s] parents 270000/430447 (62.7%)
+[    16.3s] parents 275000/430447 (63.9%)
+[    16.4s] parents 280000/430447 (65.0%)
+[    18.5s] parents 285000/430447 (66.2%)
+[    18.6s] parents 290000/430447 (67.4%)
+[    18.7s] parents 295000/430447 (68.5%)
+[    18.8s] parents 300000/430447 (69.7%)
+[    18.8s] parents 305000/430447 (70.9%)
+[    18.9s] parents 310000/430447 (72.0%)
+[    19.0s] parents 315000/430447 (73.2%)
+[    19.1s] parents 320000/430447 (74.3%)
+[    19.1s] parents 325000/430447 (75.5%)
+[    19.2s] parents 330000/430447 (76.7%)
+[    19.3s] parents 335000/430447 (77.8%)
+[    19.4s] parents 340000/430447 (79.0%)
+[    19.5s] parents 345000/430447 (80.1%)
+[    19.5s] parents 350000/430447 (81.3%)
+[    19.6s] parents 355000/430447 (82.5%)
+[    19.7s] parents 360000/430447 (83.6%)
+[    19.8s] parents 365000/430447 (84.8%)
+[    19.9s] parents 370000/430447 (86.0%)
+[    19.9s] parents 375000/430447 (87.1%)
+[    20.0s] parents 380000/430447 (88.3%)
+[    20.1s] parents 385000/430447 (89.4%)
+[    20.2s] parents 390000/430447 (90.6%)
+[    20.2s] parents 395000/430447 (91.8%)
+[    20.3s] parents 400000/430447 (92.9%)
+[    20.4s] parents 405000/430447 (94.1%)
+[    20.5s] parents 410000/430447 (95.2%)
+[    20.5s] parents 415000/430447 (96.4%)
+[    20.6s] parents 420000/430447 (97.6%)
+[    20.6s] parents 425000/430447 (98.7%)
+[    20.7s] parents 430000/430447 (99.9%)
+[    51.1s] ▶ rebuild_hierarchical_index …
+[    52.3s] ✓ rebuild_hierarchical_index (1.2s)
+[    57.1s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    57.1s] ✓ parents  (44.0s)
+[    57.1s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    58.0s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    58.0s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:567: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+============================================================
+Năm 1010, vua Lý Thái Tổ
+ hist: ['Năm', 'Ġ1', '0', '1', '0', ',', 'Ġvua', 'ĠLý', 'ĠThái', 'ĠTổ']
+ agenda: ['ĠNăm', 'Ġ1', '0', '1', '0', ',', 'Ġvua', 'ĠLý', 'ĠThái', 'ĠTổ', 'Ġquyết', 'Ġđịnh', 'Ġdời', 'Ġđô', 'Ġtừ', 'ĠHoa', 'ĠLư', 'Ġvề', 'ĠĐại', 'ĠLa', 'Ġvà', 'Ġđặt', 'Ġtên', 'Ġkinh']
+ s0: Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long.
+ s1: Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long.
+============================================================
+Nhà Lý dời đô về
+ hist: ['Nhà', 'ĠLý', 'Ġdời', 'Ġđô', 'Ġvề']
+ agenda: ['Nhà', 'ĠLý', 'Ġthành', 'Ġlập', 'Ġnăm', 'Ġ1', '0', '0', '9', '.']
+ s0: Nhà Lý dời đô về thành lập năm 1. Tải hình phần ảnh chụp và.
+ s1: Nhà Lý dời đô về thành lập năm 1. Tải nội dung những.
+============================================================
+Ngô Quyền đánh bại quân Nam Hán năm
+ hist: ['Ngô', 'ĠQuyền', 'Ġđánh', 'Ġbại', 'Ġquân', 'ĠNam', 'ĠHán', 'Ġnăm']
+ agenda: ['Ngô', 'ĠQuyền', 'Ġđánh', 'Ġthắng', 'Ġquân', 'ĠNam', 'ĠHán', '.']
+ s0: Ngô Quyền đánh bại quân Nam Hán năm thắng quân Nam Hán. và các bài của nhớ đọc
+ s1: Ngô Quyền đánh bại quân Nam Hán năm thắng quân Nam Hán.
+============================================================
+Hỏi: Nhà Lý dời đô về đâu? Đáp:
+ hist: ['ĠNhà', 'ĠLý', 'Ġdời', 'Ġđô', 'Ġvề', 'Ġđâu']
+ agenda: ['Nhà', 'ĠLý', 'Ġthành', 'Ġlập', 'Ġnăm', 'Ġ1', '0', '0', '9', '.']
+ s0: Hỏi: Nhà Lý dời đô về đâu? Đáp: thành lập năm 1. Tải hình phần ảnh chụp và.
+ s1: Hỏi: Nhà Lý dời đô về đâu? Đáp: thành lập năm 1. Tải nội dung những.
+============================================================
+Việt Nam là một quốc gia nằm ở
+ hist: ['Việt', 'ĠNam', 'Ġlà', 'Ġmột', 'Ġquốc', 'Ġgia', 'Ġnằm', 'Ġở']
+ agenda: ['Việt', 'ĠNam', 'Ġcó', 'Ġnúi', 'ĠFansipan', '.']
+ s0: Việt Nam là một quốc gia nằm ở núi Fansipan. lửa
+ s1: Việt Nam là một quốc gia nằm ở núi Fansipan. có bốn cạnh bằng nhau
+============================================================
+Phở là món ăn
+ hist: ['Phở', 'Ġlà', 'Ġmón', 'Ġăn']
+ agenda: ['ĠPhở', 'Ġbò', 'Ġnổi', 'Ġtiếng', 'Ġnhất', 'Ġở', 'Ġmiền', 'ĠBắc', ',', 'Ġđặc', 'Ġbiệt', 'Ġlà', 'ĠHà', 'ĠNội', '.', 'ĠNước', 'Ġdùng', 'Ġtrong', 'Ġveo', ',', 'Ġthơm', 'Ġmùi', 'Ġquế', 'Ġvà']
+ s0: Phở là món ăn bò nổi tiếng nhất ở miền Bắc, đặc biệt là Hà Nội.
+ s1: Phở là món ăn bò nổi tiếng nhất ở miền Bắc, đặc biệt là Hà Nội Nước và.
+============================================================
+Trong thời kỳ Bắc thuộc, nhân dân ta
+ hist: ['Trong', 'Ġthời', 'Ġkỳ', 'ĠBắc', 'Ġthuộc', ',', 'Ġnhân', 'Ġdân', 'Ġta']
+ agenda: ['Trong', 'Ġthời', 'Ġnhà', 'ĠNgô', ',', 'Ġvùng', 'Ġnày', 'Ġlà', 'Ġnơi', 'Ġcát', 'Ġcứ', 'Ġcủa', 'ĠĐinh', 'ĠBộ', 'ĠLĩnh', '.']
+ s0: Trong thời kỳ Bắc thuộc, nhân dân ta nhà Ngô, vùng này là nơi cát cứ của Đinh Bộ Lĩnh.
+ s1: Trong thời kỳ Bắc thuộc, nhân dân ta nhà Ngô, vùng này là nơi cát cứ của Đinh Bộ Lĩnh.
+============================================================
+Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi
+ hist: ['Ġđô', 'ĠHà', 'ĠNội', 'Ġcó', 'Ġlịch', 'Ġsử', 'Ġhơn', 'Ġnghìn', 'Ġnăm', ',', 'Ġtừ', 'Ġkhi']
+ agenda: ['Thủ', 'Ġđô', 'ĠViệt', 'ĠNam', 'Ġlà', 'ĠHà', 'ĠNội', '.']
+ s0: Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi Việt Nam là Hà Nội.
+ s1: Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi Việt Nam là Hà Nội.

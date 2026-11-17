@@ -1,0 +1,33 @@
+lesson_id: vi_grade3_copula_compound
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_copula_va_copula
+slots:
+  - var: S1
+  - gap: s+
+    min: 0
+  - const: "là"
+  - var: P1
+  - const: "và"
+  - var: S2
+  - gap: s+
+    min: 0
+  - const: "là"
+  - var: P2
+
+bind:
+  S1: chủ ngữ
+  P1: vị ngữ
+  S2: chủ ngữ
+  P2: vị ngữ
+
+examples:
+  - "mẹ là giáo và bố là bác"
+  - "Em là bạn và Lan là giỏi"
+  - "anh là thợ và chị là y"
+  - "bút là đỏ và thước là xanh"
+  - "Bé là ngoan và Em là chăm"
+  - "mèo là thú và chó là bạn"

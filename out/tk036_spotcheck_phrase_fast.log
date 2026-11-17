@@ -1,0 +1,83 @@
+[     0.0s] === tk036_spotcheck_phrase_fast START (pid=5404) → out/logs/tk036_spotcheck_phrase_fast_20260710_153829.log ===
+[     0.0s] ▶ load
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    28.1s] ✓ unpickle  (28.1s)
+[    28.1s] ▶ vocab (113572 token)
+[    29.1s] ✓ vocab (113572 token)  (1.0s)
+[    29.1s] ▶ adjacency
+[    57.3s] ✓ adjacency  (28.3s)
+[    57.3s] ▶ embedding
+[    59.4s] ✓ embedding  (2.1s)
+[    59.4s] ▶ parents
+[    59.4s] parents: deserialize 176430 records …
+[    60.2s] parents 5000/176430 (2.8%)
+[    60.8s] parents 10000/176430 (5.7%)
+[    61.7s] parents 15000/176430 (8.5%)
+[    62.4s] parents 20000/176430 (11.3%)
+[    63.3s] parents 25000/176430 (14.2%)
+[    64.3s] parents 30000/176430 (17.0%)
+[    65.0s] parents 35000/176430 (19.8%)
+[    65.6s] parents 40000/176430 (22.7%)
+[    66.7s] parents 45000/176430 (25.5%)
+[    67.4s] parents 50000/176430 (28.3%)
+[    68.0s] parents 55000/176430 (31.2%)
+[    68.8s] parents 60000/176430 (34.0%)
+[    69.7s] parents 65000/176430 (36.8%)
+[    71.1s] parents 70000/176430 (39.7%)
+[    71.8s] parents 75000/176430 (42.5%)
+[    91.0s] parents 80000/176430 (45.3%)
+[    91.9s] parents 85000/176430 (48.2%)
+[    92.6s] parents 90000/176430 (51.0%)
+[    93.2s] parents 95000/176430 (53.8%)
+[    94.4s] parents 100000/176430 (56.7%)
+[    96.0s] parents 105000/176430 (59.5%)
+[    97.1s] parents 110000/176430 (62.3%)
+[    97.9s] parents 115000/176430 (65.2%)
+[    98.5s] parents 120000/176430 (68.0%)
+[    99.1s] parents 125000/176430 (70.8%)
+[    99.9s] parents 130000/176430 (73.7%)
+[   100.7s] parents 135000/176430 (76.5%)
+[   101.3s] parents 140000/176430 (79.4%)
+[   102.5s] parents 145000/176430 (82.2%)
+[   103.6s] parents 150000/176430 (85.0%)
+[   105.8s] parents 155000/176430 (87.9%)
+[   107.9s] parents 160000/176430 (90.7%)
+[   109.6s] parents 165000/176430 (93.5%)
+[   137.6s] parents 170000/176430 (96.4%)
+[   139.3s] parents 175000/176430 (99.2%)
+[   413.9s] ▶ rebuild_hierarchical_index …
+[   418.9s] ✓ rebuild_hierarchical_index (5.0s)
+[   418.9s] ✓ parents  (359.5s)
+[   419.0s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   428.4s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   428.5s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   435.4s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   435.4s] ✓ load_checkpoint XONG
+[   435.4s] ✓ load  (435.4s)
+[   435.4s] ▶ mine
+[   435.5s] skip phrase endpoints = 12638
+[   470.3s] scan skip parents 20000/176430 (11.3%) — pairs=110354
+[   507.5s] scan skip parents 40000/176430 (22.7%) — pairs=224026
+[   648.3s] scan skip parents 60000/176430 (34.0%) — pairs=352641
+[   683.0s] scan skip parents 80000/176430 (45.3%) — pairs=441774
+[   722.5s] scan skip parents 100000/176430 (56.7%) — pairs=519325
+[   757.3s] scan skip parents 120000/176430 (68.0%) — pairs=591690
+[   789.6s] scan skip parents 140000/176430 (79.4%) — pairs=657532
+[   858.9s] scan skip parents 160000/176430 (90.7%) — pairs=711311
+[   952.6s] skip cặp thô = 736018, tổng đồng-hiện = 1354771
+[  1356.4s] ✓ SKIP_SPAN spans=30000 promoted=4167 phrase_right=30000
+[  1362.6s] ✓ mine  (927.2s)
+skip spans=30000 phở→Việt Nam=False
+phở rights: ['cuốn .']
+
+[skip=0.35] 'phở là' (71.9s)
+  → 'phở là món ăn rất phổ biến ở Việt Nam nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian nhiều món phở mới xuất hiện với những cách chế biến khác nhau như phở xào phở rán phở cuốn'
+
+[skip=0] 'phở là' (49.1s)
+  → 'phở là món ăn rất phổ biến ở Việt Nam nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian nhiều món phở mới xuất hiện với những cách chế biến khác nhau như phở xào phở rán phở cuốn'
+
+[skip=0.35] 'ẩm thực Việt Nam' (13.4s)
+  → 'ẩm thực Việt Nam với rất nhiều dạng'
+
+DONE 1497.0s

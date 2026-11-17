@@ -1,0 +1,64 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[    67s] ✓ loaded · parents 65,098
+[    89s] probe: 18 item
+[    89s] 
+═══ P3.0 baseline (kênh copy TẮT) — kỳ vọng copy ≈ 0 ═══
+[   143s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=6.8']
+[   143s]     prompt: 'Trần Vĩ Khang rất chăm học .'
+[   143s]     cont  : 'Vĩ cầm phát triển vào thế kỉ 16 ở Ý và tiếp tục được cải tiến trong suốt thế kỉ 18 và 19.\nĐàn được làm'   (mong copy: ['Trần Vĩ Khang'])
+[   177s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.2']
+[   177s]     prompt: 'Lê Bảo Trâm là học sinh lớp năm .'
+[   177s]     cont  : 'Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ. Sự kiện gắn với tinh thần bền bỉ bảo vệ độc lập dân tộc.'   (mong copy: ['Lê Bảo Trâm'])
+[   184s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.9']
+[   184s]     prompt: 'Hỏi: Ngô Duy Phát là ai Đáp:'
+[   184s]     cont  : 'Lịch sử:\nTiêu đề: Duyên hải Nam Trung Bộ và Tây Nguyên\n\nTên "duyên hải" thể hiện đặc điểm là vùng ven biển phía đông.'   (mong copy: ['Ngô Duy Phát'])
+[   193s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=6.7']
+[   193s]     prompt: 'Hỏi: Phạm Yến Vy làm nghề gì Đáp:'
+[   193s]     cont  : 'Truyện:\nYến quốc cảnh nội hiện có Thanh Ly phân bộ cùng Sơn Bắc phân bộ, trong đó Sơn Bắc phân bộ là nhất cấp phân bộ, Thanh'   (mong copy: ['Phạm Yến Vy'])
+[   201s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.3']
+[   201s]     prompt: 'Đỗ Gia Hân thích vẽ tranh ,'
+[   201s]     cont  : 'Hồ Quý Ly theo học võ, gia nhập chốn quan trường triều Trần sau khi đỗ thi Hương, khoa Hoành từ.\nNăm 1372, ông'   (mong copy: ['Đỗ Gia Hân'])
+[   208s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.3']
+[   208s]     prompt: 'Hỏi: Vũ Tuấn Lâm sống ở đâu Đáp:'
+[   208s]     cont  : 'Tiêu đề: Phạm Tuân\n\nPhạm Tuân sinh ngày 14 tháng 2 năm 1947 tại xã Quốc Tuấn, huyện Kiến Xương, tỉnh Thái Bình.'   (mong copy: ['Vũ Tuấn Lâm'])
+[   215s] [crossed·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=6.8', 'reg=Y gidf=5.2']
+[   215s]     prompt: 'Trần Vĩ Khang tặng Lê Bảo Trâm một quyển sách ,'
+[   215s]     cont  : 'mỗi dây cách nhau một quãng năm đúng.\nVĩ cầm phát triển vào thế kỉ 16 ở Ý và tiếp tục được cải tiến trong suốt thế kỉ 1'   (mong copy: ['Trần Vĩ Khang', 'Lê Bảo Trâm'])
+[   221s] [crossed·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.9', 'reg=Y gidf=6.7']
+[   221s]     prompt: 'Ngô Duy Phát gặp Phạm Yến Vy sáng nay ,'
+[   221s]     cont  : 'Ngô Quyền giành độc lập năm 938 sau trận Bạch Đằng lịch sử. Chiến thắng chấm dứt hơn một nghìn năm Bắc thuộc. Ngô Quyền được tôn là'   (mong copy: ['Ngô Duy Phát', 'Phạm Yến Vy'])
+[   227s] [crossed·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.3', 'reg=Y gidf=5.3']
+[   227s]     prompt: 'Đỗ Gia Hân đưa Vũ Tuấn Lâm cây bút ,'
+[   227s]     cont  : 'Hồ Quý Ly theo học võ, gia nhập chốn quan trường triều Trần sau khi đỗ thi Hương, khoa Hoành từ.\nNăm 1372, ông'   (mong copy: ['Đỗ Gia Hân', 'Vũ Tuấn Lâm'])
+[   235s] [pronoun·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=6.8']
+[   235s]     prompt: 'Trần Vĩ Khang là một họa sĩ nổi tiếng . Nó'
+[   235s]     cont  : 'không còn giữ được âm thanh và độ căng như ban đầu.\nNgày nay, người ta còn dùng thủy tinh hữu cơ và sợi carbon để làm vĩ.'   (mong copy: ['Trần Vĩ Khang'])
+[   239s] [pronoun·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.2']
+[   239s]     prompt: 'Lê Bảo Trâm mê ca hát , cô ấy'
+[   239s]     cont  : 'Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'   (mong copy: ['Lê Bảo Trâm'])
+[   245s] [pronoun·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.9']
+[   245s]     prompt: 'Ngô Duy Phát chăm chỉ làm việc . Anh ấy'
+[   245s]     cont  : 'Ngô Quyền giành độc lập năm 938 sau trận Bạch Đằng lịch sử. Chiến thắng chấm dứt hơn một nghìn năm Bắc thuộc. Ngô Quyền được tôn là'   (mong copy: ['Ngô Duy Phát'])
+[   252s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.9']
+[   252s]     prompt: 'Bùi Khánh Duy chơi bóng đá rất giỏi ,'
+[   252s]     cont  : 'tồn tại từ năm 10 vẻ09 đến năm 12 lắng25.\nNhà Lý do Lý Công Uẩn, tức Lý Thái Tổ, sáng lập'   (mong copy: ['Bùi Khánh Duy'])
+[   258s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=4.3']
+[   258s]     prompt: 'Hỏi: Hoàng Mỹ Duyên là ai Đáp:'
+[   258s]     cont  : 'Hoàng thành Thăng Long dưới thời nhà Lê tiếp tục được mở rộng. Bên cạnh, khu vực dân cư được chia thành 2 huyện Vĩnh Xương và Quảng Đức,'   (mong copy: ['Hoàng Mỹ Duyên'])
+[   265s] [crossed·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.9', 'reg=Y gidf=4.3']
+[   265s]     prompt: 'Bùi Khánh Duy rủ Hoàng Mỹ Duyên đi chơi ,'
+[   265s]     cont  : 'tồn tại từ năm 10.09 đến năm 12,25\nNhà Lý do Lý Công Uẩn tức Lý Thái Tổ, sáng lập vào năm'   (mong copy: ['Bùi Khánh Duy', 'Hoàng Mỹ Duyên'])
+[   273s] [pronoun·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=4.3']
+[   273s]     prompt: 'Hoàng Mỹ Duyên vừa đạt giải nhất . Bạn ấy'
+[   273s]     cont  : 'Lịch sử:\nTiêu đề: Truyện Kiều\n\nCó thuyết nói Nguyễn Du viết Truyện Kiều sau khi đi sứ Trung Quốc (1814–18'   (mong copy: ['Hoàng Mỹ Duyên'])
+[   280s] [single·SKIP(not-novel)] copy=✗ novelty=['reg=Y gidf=5.0']
+[   280s]     prompt: 'Hỏi: Nhà Trần là gì Đáp:'
+[   280s]     cont  : 'Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Mông – Nguyên ba lần xâm lược. Chiến thắng Bạch Đằng năm 128,8 là tiêu'   (mong copy: ['Nhà Trần'])
+[   286s] [single·SKIP(not-novel)] copy=✓ novelty=['reg=Y gidf=4.7']
+[   286s]     prompt: 'Hỏi: Thăng Long là gì Đáp:'
+[   286s]     cont  : 'Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay. Sự kiện mở ra thời kỳ phát triển lâu'   (mong copy: ['Thăng Long'])
+[   286s] 
+═══ BẢNG (chỉ item novel hợp lệ) ═══
+[   286s] 
+→ P3.0: xác nhận nền (copy thấp) + harness chạy. Số này là MỐC cho P3.2 A/B.
+[   286s]   Drift: đọc tay 'cont' ở trên — có thực-thể TRAIN lạ bị kéo vào không (G15).

@@ -1,0 +1,2810 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n": 400,
+ "max_clauses": 2,
+ "n_empty": 199,
+ "ty_le_trong": 0.4975,
+ "menh_de_tb": 0.775,
+ "rows": [
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A000"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A001"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A002"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A003"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A004"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A005"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A006"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A007"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A008"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A009"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A010"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A011"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A012"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A013"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A014"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A015"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A016"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A017"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A018"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A019"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A020"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A021"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A022"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A023"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A024"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A025"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A026"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A027"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A028"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A029"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A030"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A031"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A032"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A033"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A034"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A035"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A036"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A037"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A038"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A039"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A040"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A041"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A042"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A043"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A044"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A045"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A046"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A047"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A048"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A049"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A050"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A051"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A052"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A053"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A054"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A055"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A056"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A057"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A058"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A059"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A060"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A061"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A062"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A063"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A064"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A065"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A066"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A067"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A068"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A069"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A070"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A071"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A072"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A073"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A074"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A075"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A076"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A077"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A078"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A079"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A080"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A081"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A082"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A083"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A084"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A085"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A086"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A087"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A088"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A089"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A090"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A091"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A092"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A093"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A094"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A095"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A096"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A097"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A098"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A099"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A100"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A101"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A102"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A103"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A104"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A105"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A106"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A107"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A108"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A109"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A110"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A111"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A112"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A113"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A114"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A115"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A116"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A117"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A118"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A119"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A120"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A121"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A122"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A123"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A124"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A125"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A126"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A127"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A128"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A129"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A130"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A131"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A132"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A133"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A134"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A135"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A136"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A137"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A138"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A139"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A140"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A141"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A142"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A143"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A144"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A145"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A146"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A147"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A148"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A149"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A150"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A151"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A152"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A153"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A154"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A155"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A156"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A157"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A158"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A159"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A160"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A161"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A162"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A163"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A164"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A165"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A166"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A167"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A168"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A169"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A170"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A171"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A172"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A173"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A174"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A175"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A176"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A177"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A178"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A179"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A180"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A181"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A182"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A183"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A184"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A185"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A186"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A187"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A188"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A189"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A190"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A191"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A192"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A193"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A194"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A195"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A196"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A197"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A198"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A199"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A200"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A201"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A202"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A203"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A204"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A205"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A206"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A207"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A208"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A209"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A210"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A211"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A212"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A213"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A214"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A215"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A216"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A217"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A218"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A219"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A220"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A221"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A222"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A223"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A224"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A225"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A226"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A227"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A228"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A229"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A230"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A231"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A232"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A233"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A234"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A235"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A236"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A237"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A238"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A239"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A240"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A241"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A242"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A243"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A244"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A245"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A246"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A247"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A248"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A249"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A250"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A251"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A252"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A253"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A254"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A255"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A256"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A257"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A258"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A259"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A260"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A261"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A262"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A263"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A264"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A265"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A266"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A267"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A268"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A269"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A270"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A271"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A272"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A273"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A274"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A275"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A276"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A277"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A278"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A279"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A280"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A281"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A282"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A283"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A284"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A285"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A286"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A287"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A288"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A289"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A290"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A291"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A292"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A293"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A294"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A295"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A296"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A297"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A298"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A299"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A300"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A301"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A302"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A303"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A304"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A305"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A306"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A307"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A308"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A309"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A310"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A311"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A312"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A313"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A314"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A315"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A316"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A317"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A318"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A319"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A320"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A321"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A322"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A323"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A324"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A325"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A326"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A327"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A328"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A329"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A330"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A331"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A332"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A333"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A334"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A335"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A336"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A337"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A338"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A339"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A340"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A341"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A342"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A343"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A344"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A345"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A346"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A347"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A348"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A349"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A350"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A351"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A352"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A353"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A354"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A355"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A356"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A357"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A358"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A359"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A360"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A361"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A362"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A363"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A364"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A365"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A366"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A367"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A368"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A369"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A370"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A371"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A372"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A373"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A374"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A375"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A376"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A377"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A378"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A379"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A380"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A381"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A382"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A383"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A384"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A385"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A386"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A387"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A388"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A389"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A390"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A391"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A392"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A393"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A394"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A395"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 0,
+   "empty": true,
+   "stop": "loai_het",
+   "id": "A396"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A397"
+  },
+  {
+   "cfg": "mối_nối_kề",
+   "n_clauses": 1,
+   "empty": false,
+   "stop": "loai_het",
+   "id": "A398"
+  },
+  {
+   "cfg": "hien_tai",
+   "n_clauses": 2,
+   "empty": false,
+   "stop": "du_max",
+   "id": "A399"
+  }
+ ]
+}

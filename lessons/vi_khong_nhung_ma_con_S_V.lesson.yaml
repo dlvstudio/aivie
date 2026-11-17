@@ -1,0 +1,29 @@
+lesson_id: vi_grade6_not_only
+grade: 6
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_khong_nhung_ma_con_S_V
+slots:
+  - const: "Không"
+  - const: "những"
+  - var: S1
+  - var: V1
+  - const: "mà"
+  - const: "còn"
+  - var: S2
+  - var: V2
+
+bind:
+  S1: chủ ngữ
+  V1: động từ
+  S2: chủ ngữ
+  V2: động từ
+
+examples:
+  - "Không những em học mà còn em viết"
+  - "Không những Lan chạy mà còn Lan nhảy"
+  - "Không những mẹ nấu mà còn mẹ dọn"
+  - "Không những Bé hát mà còn Bé múa"
+  - "Không những em đọc mà còn em tập"

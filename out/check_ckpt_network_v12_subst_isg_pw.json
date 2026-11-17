@@ -1,0 +1,109 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst_isg_pw.pkl",
+ "n_parents": 430447,
+ "n_vocab": 249107,
+ "n_synonym_edges": 244886,
+ "n_isg_clusters": 200094,
+ "n_isg_span_ge3": 119598,
+ "analogy_meta": {
+  "n_l1": 159693,
+  "n_l2": 422470,
+  "n_triples": 821,
+  "n_prop_keys_dropped_df": 2346,
+  "max_prop_df": 40,
+  "n_compound_edge_attach": 846622,
+  "n_head_cluster": 49775,
+  "n_head_phrase": 0,
+  "n_head_entity": 40432,
+  "n_compound_surf": 85004,
+  "n_entity_map": 208595,
+  "n_cluster_spans": 200094,
+  "n_phrase_spans": 191719,
+  "hu_tu_tu_gidf": false,
+  "n_hu_tu": 77,
+  "prefer_compound": true,
+  "max_head_span": 6,
+  "n_heads": 62286
+ },
+ "la_ids": [
+  1495,
+  6137
+ ],
+ "la_gdf": {
+  "1495": 91134,
+  "6137": 129
+ },
+ "la_emit_id": 1495,
+ "la_emit_doi_so_voi_min_id": false,
+ "prompts": [
+  {
+   "de": "anh là",
+   "ra": "Vương",
+   "stop": "analogy_la",
+   "donors": [
+    "sinh",
+    "nàng",
+    "nhất định phải"
+   ],
+   "bridges": [
+    "liền+phát",
+    "thấy+rõ",
+    "nín"
+   ]
+  },
+  {
+   "de": "mẹ là",
+   "ra": "Vương",
+   "stop": "analogy_la",
+   "donors": [
+    "sinh",
+    "nàng"
+   ],
+   "bridges": [
+    "thay+đồ",
+    "uống+rượu",
+    "tự+tay"
+   ]
+  },
+  {
+   "de": "học sinh là",
+   "ra": "",
+   "stop": "khong_dien",
+   "donors": null,
+   "bridges": null
+  },
+  {
+   "de": "Việt Nam là",
+   "ra": "",
+   "stop": "khong_dien",
+   "donors": null,
+   "bridges": null
+  },
+  {
+   "de": "con mèo là",
+   "ra": "Vương",
+   "stop": "analogy_la",
+   "donors": [
+    "nàng",
+    "nhất định phải"
+   ],
+   "bridges": [
+    "bay+tới"
+   ]
+  },
+  {
+   "de": "nhà Trần là",
+   "ra": "Huyết",
+   "stop": "analogy_la",
+   "donors": [
+    "Nàng",
+    "Trương Nhược Trần"
+   ],
+   "bridges": [
+    "rốt+cục",
+    "kỳ+thật",
+    "bắt+lấy"
+   ]
+  }
+ ]
+}

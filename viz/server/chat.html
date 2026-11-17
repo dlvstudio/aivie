@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trợ lý AIVIE — hỏi đáp có nguồn</title>
+<style>
+  :root{
+    --bg:#0f1216; --panel:#171b21; --panel2:#1e242c; --line:#2a323c;
+    --text:#e7edf3; --dim:#93a1b0; --accent:#4aa3ff; --user:#243447;
+    --ok:#3ecf8e; --mid:#e2b93b; --bad:#e56a6a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:12px;background:var(--panel);position:sticky;top:0;z-index:5}
+  header h1{font-size:16px;margin:0;font-weight:600}
+  header .tag{font-size:12px;color:var(--dim);border:1px solid var(--line);
+    padding:2px 8px;border-radius:20px}
+  header .tag b{color:var(--accent)}
+  #wrap{max-width:820px;margin:0 auto;padding:20px 16px 130px}
+  .msg{margin:14px 0;display:flex;flex-direction:column;gap:6px}
+  .msg .who{font-size:12px;color:var(--dim)}
+  .bubble{padding:11px 14px;border-radius:12px;white-space:pre-wrap;word-wrap:break-word}
+  .user .bubble{background:var(--user);align-self:flex-end;max-width:85%;border-bottom-right-radius:3px}
+  .bot  .bubble{background:var(--panel2);border:1px solid var(--line);border-bottom-left-radius:3px}
+  .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;
+    padding:2px 9px;border-radius:20px;margin-top:4px;align-self:flex-start}
+  .badge .dot{width:8px;height:8px;border-radius:50%}
+  .src{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+  .src summary{cursor:pointer;color:var(--dim);font-size:12.5px;outline:none}
+  .src li{color:var(--dim);font-size:12.5px;margin:6px 0}
+  .think{color:var(--dim);font-style:italic}
+  .dots::after{content:"";animation:d 1.2s steps(4,end) infinite}
+  @keyframes d{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+  footer{position:fixed;bottom:0;left:0;right:0;background:var(--panel);
+    border-top:1px solid var(--line);padding:12px 16px}
+  .inrow{max-width:820px;margin:0 auto;display:flex;gap:10px}
+  #q{flex:1;background:var(--panel2);border:1px solid var(--line);color:var(--text);
+    border-radius:10px;padding:11px 13px;font-size:15px;resize:none;max-height:120px}
+  #q:focus{outline:none;border-color:var(--accent)}
+  #send{background:var(--accent);color:#04121f;border:none;border-radius:10px;
+    padding:0 18px;font-weight:600;cursor:pointer;font-size:15px}
+  #send:disabled{opacity:.5;cursor:default}
+  .hint{max-width:820px;margin:6px auto 0;color:var(--dim);font-size:11.5px;text-align:center}
+  .ex{color:var(--accent);cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧭 Trợ lý AIVIE</h1>
+  <span class="tag">retrieval <b>BM25F</b> (của ta) + <b>QLoRA-3B</b> (ta fine-tune) · có dẫn nguồn</span>
+</header>
+
+<div id="wrap">
+  <div class="msg bot"><div class="who">Trợ lý</div>
+    <div class="bubble">Chào anh 👋 Hỏi tôi bất cứ điều gì — tôi truy Wikipedia tiếng Việt bằng bộ tìm kiếm của chúng ta rồi trả lời <b>dựa trên nguồn</b> (kèm chỉ số grounded đo độ trung thành).
+Ví dụ: <span class="ex" data-q="Sao Hỏa có mấy vệ tinh?">Sao Hỏa có mấy vệ tinh?</span> · <span class="ex" data-q="Biến đổi khí hậu là gì?">Biến đổi khí hậu là gì?</span> · <span class="ex" data-q="Chó là loài động vật như thế nào?">Chó là loài gì?</span></div>
+  </div>
+</div>
+
+<footer>
+  <div class="inrow">
+    <textarea id="q" rows="1" placeholder="Nhập câu hỏi… (Enter để gửi, Shift+Enter xuống dòng)"></textarea>
+    <button id="send">Gửi</button>
+  </div>
+  <div class="hint">Lần hỏi ĐẦU TIÊN mất ~15–20s để nạp mô hình + chỉ mục; các câu sau ~1–2s.</div>
+</footer>
+
+<script>
+const wrap = document.getElementById('wrap');
+const q = document.getElementById('q');
+const send = document.getElementById('send');
+let busy = false;
+
+function el(html){const d=document.createElement('div');d.innerHTML=html;return d.firstElementChild;}
+function scroll(){window.scrollTo(0,document.body.scrollHeight);}
+
+function addUser(text){
+  wrap.appendChild(el(`<div class="msg user"><div class="who" style="align-self:flex-end">Bạn</div><div class="bubble"></div></div>`));
+  wrap.lastElementChild.querySelector('.bubble').textContent = text;
+  scroll();
+}
+function addThinking(){
+  const node = el(`<div class="msg bot"><div class="who">Trợ lý</div><div class="bubble think">Đang truy nguồn & soạn câu trả lời<span class="dots"></span></div></div>`);
+  wrap.appendChild(node); scroll(); return node;
+}
+function gradeColor(g){ return g>=0.85 ? 'var(--ok)' : g>=0.6 ? 'var(--mid)' : 'var(--bad)'; }
+
+function renderAnswer(node, data){
+  const g = data.grounded;
+  const col = gradeColor(g);
+  const srcHtml = (data.sources||[]).map((s,i)=>`<li>[${i+1}] ${s}…</li>`).join('');
+  node.querySelector('.who').textContent = 'Trợ lý';
+  node.querySelector('.bubble').outerHTML =
+    `<div class="bubble">${(data.answer||'(trống)').replace(/</g,'&lt;')}</div>`+
+    `<div class="badge" style="background:${col}22;border:1px solid ${col}55;color:${col}">`+
+      `<span class="dot" style="background:${col}"></span>grounded ${g} · ${(data.secs||0).toFixed(1)}s</div>`+
+    (srcHtml?`<details class="src"><summary>📚 ${data.sources.length} nguồn tham chiếu</summary><ul>${srcHtml}</ul></details>`:'');
+  scroll();
+}
+
+async function ask(text){
+  if(busy || !text.trim()) return;
+  busy=true; send.disabled=true; addUser(text.trim()); q.value=''; q.style.height='auto';
+  const node = addThinking();
+  const t0 = performance.now();
+  try{
+    const r = await fetch('/api/assistant/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({query:text.trim(), k:3})});
+    if(!r.ok){ throw new Error('HTTP '+r.status); }
+    const data = await r.json();
+    data.secs = (performance.now()-t0)/1000;
+    renderAnswer(node, data);
+  }catch(e){
+    node.querySelector('.bubble').outerHTML = `<div class="bubble" style="color:var(--bad)">Lỗi: ${e.message}. (Server đang nạp mô hình? Thử lại sau vài giây.)</div>`;
+  }
+  busy=false; send.disabled=false; q.focus();
+}
+
+send.onclick = ()=>ask(q.value);
+q.addEventListener('keydown', e=>{
+  if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); ask(q.value); }
+});
+q.addEventListener('input', ()=>{ q.style.height='auto'; q.style.height=Math.min(q.scrollHeight,120)+'px'; });
+document.addEventListener('click', e=>{ if(e.target.classList.contains('ex')) ask(e.target.dataset.q); });
+q.focus();
+</script>
+</body>
+</html>

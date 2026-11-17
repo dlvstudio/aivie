@@ -1,0 +1,10 @@
+[   10.6s] đếm 40000 câu, 748186 token
+[   16.9s] đếm 80000 câu, 1484373 token
+[   26.1s] đếm 120000 câu, 2213850 token
+[   36.7s] đếm 160000 câu, 2918799 token
+[   37.9s] corpus: 167173 câu, 3030633 token; ctx tables: k=1:65918, k=2:526992, k=3:1198322, k=4:1493377
+[   37.9s] mật độ ctx-dài-nhất-thấy trên held-out: k=0:1.2%, k=1:22.2%, k=2:43.2%, k=3:24.8%, k=4:8.5%
+[   39.1s] BIGRAM (ctx=1): n=3097 bits=4.369 MRR=0.249 top1=16.4% top5=33.3%
+[   42.1s] PPM (ctx=1..4, λ=0.6): n=3097 bits=4.158 MRR=0.288 top1=20.4% top5=36.7%
+[   42.1s] Δbits = +0.210 (dương = PPM tốt hơn)
+[   42.1s] XONG

@@ -1,0 +1,96 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[69s] ✓ loaded · parents 65,098
+
+═══ Hỏi: So sánh Nhà Lý và Nhà Trần ═══
+  5 zone → 4 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġvà' 'ĠNhà'  (gidf≤5.1 · top-cos=0.72)
+       cos=0.72 w=0.25 → ' Kinh đô nhà Nguyễn đặt tại Huế từ đầu thế kỷ 19. Kinh thành Huế với đại nộ'
+       cos=0.68 w=0.21 → ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đ'
+  ── zone [CONTENT] 'ĠTrần'  (gidf≤5.0 · top-cos=0.71)
+       cos=0.71 w=0.21 → 'Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Chu Văn'
+       cos=0.65 w=0.16 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+  ── zone [CONTENT] 'ĠNhà'  (gidf≤5.1 · top-cos=0.63)
+       cos=0.63 w=0.23 → ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đ'
+       cos=0.60 w=0.20 → ' Thành nhà Hồ ở tỉnh Thanh Hóa, xây thế kỷ 14. Kiến trúc đá độc đáo thể hiệ'
+  ── zone [CONTENT] 'ĠLý'  (gidf≤4.9 · top-cos=0.56)
+       cos=0.56 w=0.30 → ' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay'
+       cos=0.47 w=0.19 → ' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ quyền'
+  ── zone [bỏ (style/chức-năng)] 'ĠSo'  (gidf≤6.1 · top-cos=0.45)
+       cos=0.45 w=0.18 → ' So sánh từng cặp số liền kề và đổi chỗ nếu sai thứ tự. Lặp lại đến khi khô'
+       cos=0.39 w=0.14 → 'Tiếng Việt:\nLớp 4:\nTiết 18: So sánh hơn\nBài 1:\nTiết này luyện mẫu câu «So s'
+  GHÉP-NAIVE (content zones): ' Kinh đô nhà Nguyễn đặt tại Huế từ đầu thế kỷ 19. Kinh thành Huế với đ Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Ch  Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý   Lý Thá'
+
+═══ Hỏi: Kể về Trần Hưng Đạo và trận Bạch Đằng ═══
+  6 zone → 3 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġvề' 'ĠTrần'  (gidf≤5.0 · top-cos=0.74)
+       cos=0.74 w=0.34 → 'Trần Quốc Tuấn vẫn giữ nguyên tước cũ và trở về thái ấp ở Vạn Kiếp. Như Quố'
+       cos=0.66 w=0.23 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+  ── zone [CONTENT] 'Ġvà' 'Ġtrận'  (gidf≤4.1 · top-cos=0.54)
+       cos=0.54 w=0.23 → ' Nguyễn Huệ đại phá quân Thanh năm 1789 khi chúng sang xâm lược nước ta. Tr'
+       cos=0.50 w=0.19 → 'Tiêu đề: Trận Phai Khắt, Nà Ngần\n\nLàng Phai Khắt thuộc xã Tam Kim, huyện Ng'
+  ── zone [CONTENT] 'ĠHưng'  (gidf≤6.1 · top-cos=0.54)
+       cos=0.54 w=0.20 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+       cos=0.51 w=0.17 → 'Lịch sử:\nTiêu đề: Phùng Hưng\n\nTuy nhiên, tồn tại một luồng ý kiến trái chiề'
+  ── zone [bỏ (style/chức-năng)] 'ĠBạch' 'ĠĐằng'  (gidf≤6.4 · top-cos=0.47)
+       cos=0.47 w=0.21 → 'Lịch sử:\nTiêu đề: Chiến thắng Bạch Đằng\n\nSông Bạch Đằng là nơi diễn ra ba t'
+       cos=0.42 w=0.16 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (1288)\n\nNgoài ra, có tới 400 chiến thuyền '
+  ── zone [bỏ (style/chức-năng)] 'Hỏi:' 'ĠKể'  (gidf≤12.1 · top-cos=0.40)
+       cos=0.40 w=0.26 → 'Hội thoại:\nChỉnh sửa cụm từ sau để nó trở thành câu nghi vấn: Câu trả lời c'
+       cos=0.35 w=0.21 → 'Hội thoại:\nXây dựng một câu hỏi trắc nghiệm nhằm kiểm tra kiến \u200b\u200bthức về Hi'
+  ── zone [bỏ (style/chức-năng)] 'ĠĐạo'  (gidf≤5.1 · top-cos=0.35)
+       cos=0.35 w=0.16 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 3:\nHội '
+       cos=0.35 w=0.16 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 2:\nCông'
+  GHÉP-NAIVE (content zones): 'Trần Quốc Tuấn vẫn giữ nguyên tước cũ và trở về thái ấp ở Vạn Kiếp. Nh  Nguyễn Huệ đại phá quân Thanh năm 1789 khi chúng sang xâm lược nước t  Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông b'
+
+═══ bằng văn phong hài hước, hãy miêu tả trận Bạch Đằng của Ngô Quyền ═══
+  5 zone → 4 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġhài' 'Ġhước'  (gidf≤6.9 · top-cos=0.82)
+       cos=0.82 w=0.35 → 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt no'
+       cos=0.64 w=0.14 → 'Hội thoại:\nTạo ra một câu nói hài hước.\nTiền không thể mua được hạnh phúc, '
+  ── zone [CONTENT] 'Ġcủa' 'ĠNgô' 'ĠQuyền'  (gidf≤6.1 · top-cos=0.74)
+       cos=0.74 w=0.21 → 'Lịch sử:\nTiêu đề: Nhà Lý\n\nNhà Lý là một triều đại phong kiến trong lịch sử '
+       cos=0.71 w=0.19 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (938)\n\nKết quả là người Việt giành thắng l'
+  ── zone [CONTENT] 'Ġmiêu' 'Ġtả'  (gidf≤5.8 · top-cos=0.73)
+       cos=0.73 w=0.26 → 'Từ: miêu tả\nLoại từ: động từ\nGiải nghĩa: dùng một phương tiện nào đó làm ch'
+       cos=0.63 w=0.16 → ' Quan sát hình dáng thân, cành, lá và cảm giác khi đứng gần. Mở bài giới th'
+  ── zone [CONTENT] ',' 'Ġhãy'  (gidf≤4.6 · top-cos=0.72)
+       cos=0.72 w=0.19 → ' Đừng so sánh để nản lòng. Hãy hỏi bạn cách học, lập thời gian biểu và ôn t'
+       cos=0.68 w=0.16 → 'Truyện:\nHãy học ngôn ngữ như một đứa trẻ” – đây là phương pháp học ngoại ng'
+  ── zone [bỏ (style/chức-năng)] 'ĠBạch' 'ĠĐằng'  (gidf≤6.4 · top-cos=0.47)
+       cos=0.47 w=0.21 → 'Lịch sử:\nTiêu đề: Chiến thắng Bạch Đằng\n\nSông Bạch Đằng là nơi diễn ra ba t'
+       cos=0.42 w=0.16 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (1288)\n\nNgoài ra, có tới 400 chiến thuyền '
+  GHÉP-NAIVE (content zones): 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ m Lịch sử:\nTiêu đề: Nhà Lý\n\nNhà Lý là một triều đại phong kiến trong lịc Từ: miêu tả\nLoại từ: động từ\nGiải nghĩa: dùng một phương tiện nào đó l  Đừng s'
+
+═══ Viết một đoạn văn hài hước về Trần Quốc Toản bóp nát quả cam và thế hệ gen Z ═══
+  7 zone → 6 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġhài' 'Ġhước'  (gidf≤6.9 · top-cos=0.82)
+       cos=0.82 w=0.35 → 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt no'
+       cos=0.64 w=0.14 → 'Hội thoại:\nTạo ra một câu nói hài hước.\nTiền không thể mua được hạnh phúc, '
+  ── zone [CONTENT] 'Ġvề' 'ĠTrần'  (gidf≤5.0 · top-cos=0.74)
+       cos=0.74 w=0.34 → 'Trần Quốc Tuấn vẫn giữ nguyên tước cũ và trở về thái ấp ở Vạn Kiếp. Như Quố'
+       cos=0.66 w=0.23 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+  ── zone [CONTENT] 'Ġnát' 'Ġquả' 'Ġcam'  (gidf≤5.1 · top-cos=0.67)
+       cos=0.67 w=0.28 → 'Từ: chín mõm\nLoại từ: tính từ\nGiải nghĩa: (quả cây) chín đến mức trở nên mề'
+       cos=0.59 w=0.19 → 'Từ: bóp\nNghĩa 1:\nLoại từ: danh từ\nGiải nghĩa: (cũ) như bốt: bóp cảnh sát * '
+  ── zone [CONTENT] 'ĠToản'  (gidf≤8.9 · top-cos=0.65)
+       cos=0.65 w=0.20 → 'Lịch sử:\nTiêu đề: Nguyễn Nhạc\n\nBa anh em Tây Sơn, Nguyễn Nhạc, Nguyễn Lữ và'
+       cos=0.60 w=0.16 → 'Lịch sử:\nTiêu đề: Quang Trung\n\nQuang Trung tên thật là Nguyễn Huệ, là vị vu'
+  ── zone [CONTENT] 'ĠQuốc'  (gidf≤4.0 · top-cos=0.64)
+       cos=0.64 w=0.19 → ' Liên Hợp Quốc ra đời sau Thế chiến II nhằm duy trì hòa bình, hợp tác quốc '
+       cos=0.63 w=0.18 → ' Quốc hội là cơ quan quyền lực nhà nước cao nhất do nhân dân bầu ra. Quốc h'
+  ── zone [CONTENT] 'Viết'  (gidf≤6.1 · top-cos=0.55)
+       cos=0.55 w=0.22 → ' ChatGPT là trợ lý AI hỗ trợ trả lời câu hỏi, viết nháp, giải thích khái ni'
+       cos=0.52 w=0.19 → ' Truyện Kiều viết bằng thơ lục bát — dòng 6 chữ xen dòng 8 chữ. Tác phẩm gồ'
+  ── zone [bỏ (style/chức-năng)] 'ĠZ'  (gidf≤6.7 · top-cos=0.25)
+       cos=0.25 w=0.16 → 'Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 7:\nCấp độ rủi'
+       cos=0.23 w=0.15 → "Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 22:\n'Nóng' tì"
+  GHÉP-NAIVE (content zones): 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ m Trần Quốc Tuấn vẫn giữ nguyên tước cũ và trở về thái ấp ở Vạn Kiếp. Nh Từ: chín mõm\nLoại từ: tính từ\nGiải nghĩa: (quả cây) chín đến mức trở n Lịch sử'
+
+═══ kể một câu chuyện buồn về mùa thu Hà Nội ═══
+  1 zone → 1 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠHà' 'ĠNội'  (gidf≤5.1 · top-cos=0.83)
+       cos=0.83 w=0.29 → ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng'
+       cos=0.73 w=0.18 → ' Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên'
+  GHÉP-NAIVE (content zones): ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông'
+
+[158s] → zone CONTENT tách đúng + Hopfield chọn fact khớp? style-zone cos thấp (xác nhận HOW≠retrieve). Ghép-naive là input cho compose/LM. Dán log về.

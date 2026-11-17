@@ -1,0 +1,18 @@
+hist: Năm 1010, vua Lý Thái Tổ
+last='ĠTổ' id=2748
+AGENDA: , vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long. Đây là mốc quan trọng mở
+chức id=2187 quyết id=2134
+W_skip[d=1] from Tổ: Ġchức:123.4, ,:44.9, ĠĐình:28.2, Ġquốc:27.9, .:15.0, Ġcũng:14.4, ĠThần:12.6, ĠHiền:12.0, ĠLong:10.2, Ġthứ:9.0, Ġdời:8.5, ĠHùng:7.5, Ġcó:7.2, Ġkhông:7.2, Ġcười:6.6
+out_tail: [',', 'Ġvua', 'ĠLý', 'ĠThái', 'ĠTổ']
+consumed first fail at pending[0]=Ġquyết
+pending[:6]: ['Ġquyết', 'Ġđịnh', 'Ġdời', 'Ġđô', 'Ġtừ', 'ĠHoa']
+VOTE top: ,=1.992, .=1.992, ĠThần=1.500, Ġcũng=1.250, Ġthứ=1.000, ĠHiền=1.000, Ġdời=1.000, ĠHùng=1.000, Ġquốc=1.000, Ġchức=1.000
+BONUS top: ĠTổ=8.000, ĠThái=8.000, Ġvua=8.000, ĠLý=8.000, Ġlà=4.000, Ġdời=3.000, ĠLong=3.000, ĠThăng=3.000, Giải=3.000, Ġđô=3.000
+FLU top: Ġchức=123.430, ,=44.940, ĠĐình=28.200, Ġquốc=27.940, .=15.050, Ġcũng=14.400, ĠThần=12.600, ĠHiền=12.000, ĠLong=10.200, Ġthứ=9.000
+GATE top: Ġchức=1.000, ,=0.364, ĠĐình=0.228, Ġquốc=0.226, .=0.122, Ġcũng=0.117, ĠThần=0.102, ĠHiền=0.097, ĠLong=0.083, Ġthứ=0.073
+AG_ADD top: Ġquyết=2.500, Ġđịnh=1.500, Ġdời=0.900, Ġđô=0.540, ĠCapitol=0.000, ĠAryan=0.000, Elizabeth=0.000, Imperator=0.000, ĠTATA=0.000, ĠGekkou=0.000
+FINAL top: Ġquyết=2.500, Ġđịnh=1.500, Ġdời=1.021, Ġchức=1.000, Ġđô=0.540, .=0.243, ĠĐình=0.228, Ġquốc=0.226, ,=0.181, ĠThần=0.153
+  chức: vote=1.000 bonus=0.000 flu=123.430 gate=1.000 ag=0.000 final=1.000
+    proposers: ["d=1←'ĠTổ' λw=1.000 c=123.4"]
+  quyết: vote=0.000 bonus=0.000 flu=0.000 gate=0.000 ag=2.500 final=2.500
+    proposers: []

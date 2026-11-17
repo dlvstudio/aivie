@@ -1,0 +1,290 @@
+[
+  {
+    "label": "QA",
+    "prompt": "Hỏi: Mẹ làm gì ? Đáp:",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.69,
+        "full": "Hỏi: Mẹ làm gì ? Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏi: Mẹ làm gì ?",
+        "gen": "toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏ"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.47,
+        "full": "Hỏi: Mẹ làm gì ? Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏi: Mẹ làm gì ?",
+        "gen": "toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏ"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.47,
+        "full": "Hỏi: Mẹ làm gì ? Đáp: toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏi: Mẹ làm gì ?",
+        "gen": "toán . Hỏi: sao Đáp: vui . Hỏi: Em học gì ? Đáp: Em học toán . Hỏi: Lan là ai ? Đáp: Lan là bạn . Hỏ"
+      }
+    ]
+  },
+  {
+    "label": "QA",
+    "prompt": "Hỏi: Em học gì ? Đáp:",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.45,
+        "full": "Hỏi: Em học gì ? Đáp: Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội truyền thống và các sự kiện quan trọng",
+        "gen": "Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội tru"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.45,
+        "full": "Hỏi: Em học gì ? Đáp: Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội truyền thống và các sự kiện quan trọng",
+        "gen": "Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội tru"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.46,
+        "full": "Hỏi: Em học gì ? Đáp: Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội truyền thống và các sự kiện quan trọng",
+        "gen": "Lịch sử Lớp 3 Tiết 2 Nguyễn Huệ là vị anh hùng dân tộc Bài 1 Tiết Lịch sử giúp em biết nguồn cội tru"
+      }
+    ]
+  },
+  {
+    "label": "QA",
+    "prompt": "Hỏi: Trời mưa không ? Đáp:",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.47,
+        "full": "Hỏi: Trời mưa không ? Đáp: Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: Mẹ đi đâu ? Đáp: Mẹ",
+        "gen": "Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: M"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.48,
+        "full": "Hỏi: Trời mưa không ? Đáp: Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: Mẹ đi đâu ? Đáp: Mẹ",
+        "gen": "Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: M"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.47,
+        "full": "Hỏi: Trời mưa không ? Đáp: Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: Mẹ đi đâu ? Đáp: Mẹ",
+        "gen": "Em ở trường . Hỏi: Lan có vui không ? Đáp: Lan rất vui . Hỏi: Em đi đâu ? Đáp: Em đi trường . Hỏi: M"
+      }
+    ]
+  },
+  {
+    "label": "QA",
+    "prompt": "Hỏi: Bé ở đâu ? Đáp:",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.39,
+        "full": "Hỏi: Bé ở đâu ? Đáp: Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng Ví dụ mẫu 2 User Chó màu gì",
+        "gen": "Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.41,
+        "full": "Hỏi: Bé ở đâu ? Đáp: Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng Ví dụ mẫu 2 User Chó màu gì",
+        "gen": "Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.45,
+        "full": "Hỏi: Bé ở đâu ? Đáp: Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng Ví dụ mẫu 2 User Chó màu gì",
+        "gen": "Tiếng Việt Lớp 3 Tiết 18 Hội thoại Bài 2 Ví dụ mẫu 1 User Con mèo màu gì Assistant Con mèo màu trắng"
+      }
+    ]
+  },
+  {
+    "label": "lesson",
+    "prompt": "Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn Bài 1 : Tiết này luyện mẫu câu",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.66,
+        "full": "Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy . Ví dụ mẫu",
+        "gen": "«Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy ."
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.81,
+        "full": "Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy . Ví dụ mẫu",
+        "gen": "«Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy ."
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.72,
+        "full": "Tiếng Việt : Lớp 3 : Tiết 2 : Câu đơn Bài 1 : Tiết này luyện mẫu câu «Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy . Ví dụ mẫu",
+        "gen": "«Câu đơn : Chủ ngữ + Động từ» . Em đọc từng ví dụ và nhận ra cấu trúc . Ví dụ mẫu 1 : Con mèo chạy ."
+      }
+    ]
+  },
+  {
+    "label": "lesson",
+    "prompt": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 :",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 1.11,
+        "full": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình tam giác có ba cạnh .",
+        "gen": "Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình "
+      },
+      {
+        "gate": 0.35,
+        "sec": 1.33,
+        "full": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình tam giác có ba cạnh .",
+        "gen": "Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình "
+      },
+      {
+        "gate": 0.5,
+        "sec": 1.69,
+        "full": "Toán : Lớp 3 : Tiết 1 : 1 cộng 1 bằng 2 Bài 2 : Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình tam giác có ba cạnh .",
+        "gen": "Bài 3 : 20 chia 4 bằng 5 . Hình vuông có bốn cạnh bằng nhau . Hình chữ nhật có bốn góc vuông . Hình "
+      }
+    ]
+  },
+  {
+    "label": "discourse",
+    "prompt": "Trời mưa nên",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.97,
+        "full": "Trời mưa nên Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tối",
+        "gen": "Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tố"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.55,
+        "full": "Trời mưa nên Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tối",
+        "gen": "Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tố"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.45,
+        "full": "Trời mưa nên Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tối",
+        "gen": "Bé ngủ . Ví dụ mẫu 2 : Em mệt nên Lan nghỉ . Ví dụ mẫu 3 : Lan đói nên em ăn . Ví dụ mẫu 4 : Trời tố"
+      }
+    ]
+  },
+  {
+    "label": "discourse",
+    "prompt": "Mẹ nấu rồi Bố",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.57,
+        "full": "Mẹ nấu rồi Bố ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : Anh",
+        "gen": "ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : A"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.7,
+        "full": "Mẹ nấu rồi Bố ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : Anh",
+        "gen": "ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : A"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.59,
+        "full": "Mẹ nấu rồi Bố ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : Anh",
+        "gen": "ăn . Ví dụ mẫu 3 : Lan chạy rồi em đi . Ví dụ mẫu 4 : Con mèo ngủ rồi con chó thức . Ví dụ mẫu 5 : A"
+      }
+    ]
+  },
+  {
+    "label": "discourse",
+    "prompt": "Không những em học mà còn",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.45,
+        "full": "Không những em học mà còn em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé hát mà còn Bé múa . Không những",
+        "gen": "em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé h"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.53,
+        "full": "Không những em học mà còn em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé hát mà còn Bé múa . Không những",
+        "gen": "em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé h"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.46,
+        "full": "Không những em học mà còn em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé hát mà còn Bé múa . Không những",
+        "gen": "em viết . Không những Lan chạy mà còn Lan nhảy . Không những mẹ nấu mà còn mẹ dọn . Không những Bé h"
+      }
+    ]
+  },
+  {
+    "label": "example",
+    "prompt": "Ví dụ mẫu 1 :",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.5,
+        "full": "Ví dụ mẫu 1 : : Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là sông lớn",
+        "gen": ": Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là s"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.58,
+        "full": "Ví dụ mẫu 1 : : Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là sông lớn",
+        "gen": ": Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là s"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.51,
+        "full": "Ví dụ mẫu 1 : : Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là sông lớn",
+        "gen": ": Thủ đô Việt Nam là Hà Nội . Ví dụ mẫu 2 : Quốc kỳ Việt Nam là cờ đỏ . Ví dụ mẫu 3 : Sông Hồng là s"
+      }
+    ]
+  },
+  {
+    "label": "math",
+    "prompt": "20 chia 4 bằng",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.35,
+        "full": "20 chia 4 bằng 12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 .",
+        "gen": "12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 ."
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.36,
+        "full": "20 chia 4 bằng 12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 .",
+        "gen": "12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 ."
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.36,
+        "full": "20 chia 4 bằng 12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 .",
+        "gen": "12 . 5 nhân 2 bằng 10 . 4 nhân 5 bằng 20 . 10 chia 2 bằng 5 . 12 chia 3 bằng 4 ."
+      }
+    ]
+  },
+  {
+    "label": "geo",
+    "prompt": "Thủ đô Việt Nam là",
+    "runs": [
+      {
+        "gate": 0.0,
+        "sec": 0.59,
+        "full": "Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 trong chương trình lớp 3 .",
+        "gen": "Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 tr"
+      },
+      {
+        "gate": 0.35,
+        "sec": 0.72,
+        "full": "Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 trong chương trình lớp 3 .",
+        "gen": "Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 tr"
+      },
+      {
+        "gate": 0.5,
+        "sec": 0.62,
+        "full": "Thủ đô Việt Nam là Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 trong chương trình lớp 3 .",
+        "gen": "Hà Nội Bài 1 : Tiết Địa lý giúp em hiểu đất nước , địa hình và con người Việt Nam . Đây là phần 1 tr"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+═══ tín hiệu binding trong corpus (mẫu) — lặp-tên vs đồng-chỉ ═══
+
+[history_articles] n=158
+   lặp-tên ≥2× (cụm Hoa)      : 91.8%
+   danh-xưng đa-từ (ông ấy…)  : 11.4%
+   đại-từ đơn (ông/bà/nó/họ…) : 83.5%
+   chỉ-định (này/đó)          : 89.9%
+   marker top: ông×94, đây×88, họ×79, bà×58, nó×43, ngài×8, hắn×8, người này×7
+
+[conv_stories] n=8000
+   lặp-tên ≥2× (cụm Hoa)      : 89.2%
+   danh-xưng đa-từ (ông ấy…)  : 32.3%
+   đại-từ đơn (ông/bà/nó/họ…) : 86.2%
+   chỉ-định (này/đó)          : 90.4%
+   marker top: đây×5522, nó×3376, họ×3167, hắn×3056, nơi này×1153, ông×1096, người này×1001, bà×770
+
+[paragraph_units] n=20000
+   lặp-tên ≥2× (cụm Hoa)      : 11.5%
+   danh-xưng đa-từ (ông ấy…)  : 0.6%
+   đại-từ đơn (ông/bà/nó/họ…) : 22.4%
+   chỉ-định (này/đó)          : 29.0%
+   marker top: ông×1524, nó×1159, họ×970, đây×927, bà×280, ông ta×28, người này×24, hắn×22
+
+[viwiki] n=20000
+   lặp-tên ≥2× (cụm Hoa)      : 83.1%
+   danh-xưng đa-từ (ông ấy…)  : 12.9%
+   đại-từ đơn (ông/bà/nó/họ…) : 72.2%
+   chỉ-định (này/đó)          : 77.1%
+   marker top: đây×8824, nó×8017, họ×6994, ông×6622, bà×2782, người này×743, ông ta×714, ngài×463
+
+[subject_articles] n=25
+   lặp-tên ≥2× (cụm Hoa)      : 64.0%
+   danh-xưng đa-từ (ông ấy…)  : 0.0%
+   đại-từ đơn (ông/bà/nó/họ…) : 20.0%
+   chỉ-định (này/đó)          : 4.0%
+   marker top: bà×3, ông×2, họ×1, đây×1
+
+→ TỔNG marker top: đây×15362, nó×12595, họ×11211, ông×9338, bà×3893, hắn×3307, người này×1775, nơi này×1515, ngài×1020, vị này×1015, ông ta×807, thành phố này×477

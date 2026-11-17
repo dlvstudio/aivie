@@ -1,0 +1,12 @@
+{
+  "model_file": "model.crfsuite",
+  "dictionary_file": "dictionary_lower.txt",
+  "window": 2,
+  "train_sentences": 2,
+  "test_sentences": 0,
+  "params": {
+    "c1": 1.0,
+    "c2": 0.001,
+    "max_iterations": 300
+  }
+}

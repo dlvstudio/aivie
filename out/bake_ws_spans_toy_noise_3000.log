@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_3000.pkl …
+[    0.5s RSS  0.63GB] nạp xong · parents=3005 vocab=32002
+[    0.5s RSS  0.63GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    0.5s RSS  0.63GB] ws_spans 0/3005 · span=0 · bỏ=0
+[    1.4s RSS  0.63GB] 3717 span · 0.0 phút
+[    1.4s RSS  0.63GB] ghi out/noise_nho/toy_noise_3000.ws_spans.json (0.1 MB) · roundtrip OK
+[    1.4s RSS  0.63GB]   mẫu[00] '<0x82> <0xE7> <0xA4> <0xBE>'
+[    1.4s RSS  0.63GB]   mẫu[01] 'có lẽ'
+[    1.4s RSS  0.63GB]   mẫu[02] 'âu Thìn'
+[    1.4s RSS  0.63GB]   mẫu[03] 'đối kháng'
+[    1.4s RSS  0.63GB]   mẫu[04] 'vì vậy'
+[    1.4s RSS  0.63GB]   mẫu[05] 'hàng đầu'
+[    1.4s RSS  0.63GB]   mẫu[06] 'đường hàng không'
+[    1.4s RSS  0.63GB]   mẫu[07] 'phân phối'
+[    1.4s RSS  0.63GB]   mẫu[08] 'dân tộc'
+[    1.4s RSS  0.63GB]   mẫu[09] 'thiên lệch'
+[    1.4s RSS  0.63GB]   mẫu[10] 'đặc trưng'
+[    1.4s RSS  0.63GB]   mẫu[11] 'kế cận'
+[    1.4s RSS  0.63GB]   mẫu[12] 'tham gia'
+[    1.4s RSS  0.63GB]   mẫu[13] 'doanh nghiệp'
+[    1.4s RSS  0.63GB]   mẫu[14] 'phổ thông'
+[    1.4s RSS  0.63GB]   mẫu[15] 'vũ khí'
+[    1.4s RSS  0.63GB]   mẫu[16] 'tả ngạn'
+[    1.4s RSS  0.63GB]   mẫu[17] 'nối tiếp'
+[    1.4s RSS  0.63GB]   mẫu[18] 'Bảo hiểm'
+[    1.4s RSS  0.63GB]   mẫu[19] 'tịch thu'
+[    1.4s RSS  0.63GB]   mẫu[20] 'Nữ hoàng'
+[    1.4s RSS  0.63GB]   mẫu[21] 'buôn bán'
+[    1.4s RSS  0.63GB]   mẫu[22] 'Động Đào Hoa'
+[    1.4s RSS  0.63GB]   mẫu[23] 'Toàn quyền'
+[    1.4s RSS  0.63GB]   mẫu[24] 'Lee Berg thold'
+[    1.4s RSS  0.63GB]   mẫu[25] 'Thomas Edison'
+[    1.4s RSS  0.63GB]   mẫu[26] 'Sun M icros ystem s'
+[    1.4s RSS  0.63GB]   mẫu[27] 'nhà băng'
+[    1.4s RSS  0.63GB]   mẫu[28] 'Hóc Môn'
+[    1.4s RSS  0.63GB]   mẫu[29] 'Luc ia fest'
+[    1.4s RSS  0.63GB] span nghi rác (tự động): 120/3717 = 3.2% (ISG: 57%)
+[    1.4s RSS  0.63GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

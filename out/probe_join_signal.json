@@ -1,0 +1,31 @@
+{
+  "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+  "n_gold": 400,
+  "n_fake": 386,
+  "gate": {
+    "auc_min": 0.65,
+    "auc_gain": 0.05
+  },
+  "rows": [
+    {
+      "signal": "S1_hien_tai",
+      "auc": 0.6048704663212435,
+      "mean_gold": 5.72,
+      "mean_fake": 1.9119170984455958
+    },
+    {
+      "signal": "S2_cua_so",
+      "auc": 0.7358128238341969,
+      "mean_gold": 19.1592032,
+      "mean_fake": 6.978405139896372
+    },
+    {
+      "signal": "S3_pmi",
+      "auc": 0.8143329015544042,
+      "mean_gold": 2.116226518534302,
+      "mean_fake": 1.0739435931613899
+    }
+  ],
+  "gate_pass": true,
+  "seconds": 13.7
+}

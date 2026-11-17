@@ -1,0 +1,37 @@
++ cd /workspace
++ python -m venv --system-site-packages /workspace/zenv
++ PIP_CONSTRAINT=
++ /workspace/zenv/bin/pip install -q transformers==5.16.1 accelerate sentencepiece
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/opt_einsum-3.4.0-py3.12.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/lightning_thunder-0.2.2.dev0-py3.12.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/lightning_utilities-0.14.0-py3.12.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/looseversion-1.3.0-py3.12.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/nvfuser-0.2.26a0+c5e1555-py3.12-linux-x86_64.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mamba-ssm 2.2.2 requires triton, which is not installed.
++ /workspace/zenv/bin/python -c 'import torch, numpy; print(torch.__version__, numpy.__version__); from transformers import Zamba2ForCausalLM; print("zamba2 ok")'
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+2.7.0a0+7c8ec84dab.nv25.03 1.26.4
+zamba2 ok
++ HF_HUB_DISABLE_XET=1
++ /workspace/zenv/bin/python -c 'from huggingface_hub import snapshot_download as s; print(s("Zyphra/Zamba2-7B-Instruct"))'
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   7%|▋         | 1/15 [00:00<00:05,  2.49it/s]Fetching 15 files:  13%|█▎        | 2/15 [00:00<00:05,  2.48it/s]Fetching 15 files:  33%|███▎      | 5/15 [00:01<00:01,  5.09it/s]Fetching 15 files:  40%|████      | 6/15 [00:01<00:03,  2.98it/s]Fetching 15 files:  47%|████▋     | 7/15 [00:02<00:03,  2.26it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:03<00:04,  1.49it/s]Fetching 15 files:  60%|██████    | 9/15 [00:54<01:28, 14.81s/it]Fetching 15 files:  67%|██████▋   | 10/15 [11:03<15:27, 185.57s/it]Fetching 15 files:  73%|███████▎  | 11/15 [11:15<09:00, 135.12s/it]Fetching 15 files:  80%|████████  | 12/15 [11:21<04:51, 97.06s/it] Fetching 15 files:  87%|████████▋ | 13/15 [11:33<02:24, 72.04s/it]Fetching 15 files:  93%|█████████▎| 14/15 [11:54<00:56, 56.92s/it]Fetching 15 files: 100%|██████████| 15/15 [11:56<00:00, 40.56s/it]Fetching 15 files: 100%|██████████| 15/15 [11:56<00:00, 47.77s/it]
+/root/.cache/huggingface/hub/models--Zyphra--Zamba2-7B-Instruct/snapshots/3146688c5286a3d1ac54ac287bc276b6803e193e
++ echo ZENV_XONG
+ZENV_XONG

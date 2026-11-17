@@ -1,0 +1,41 @@
+── vi-alpaca (bkai-foundation-models/vi-alpaca) ──
+  leakage filter: 500 instruction từ essays.jsonl
+[hf/bkai-foundation-models/vi-alpaca] fetched 100/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 200/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 300/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 400/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 500/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 600/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 700/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 800/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 900/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1000/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1100/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1200/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1300/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1400/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1500/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1600/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1700/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1800/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 1900/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2000/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2100/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2200/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2300/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2400/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2500/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2600/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2700/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2800/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 2900/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 3000/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 3100/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 3200/60000 rows
+[hf/bkai-foundation-models/vi-alpaca] fetched 3300/60000 rows
+  giữ 2,382 · LOẠI 500 trùng held-out essays (leakage — phải >0 mới đúng)
+── ViQuAD 2.0 (taidng/UIT-ViQuAD2.0) ──
+  ⚠ /rows trả rỗng cho ViQuAD — fallback sang load_dataset(streaming)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  giữ 3,984 · bỏ 9,216 is_impossible
+→ ~/Documents/learn/nn-aivie/data/sft/sft_train.jsonl: 6,302 · ~/Documents/learn/nn-aivie/data/sft/sft_val.jsonl: 64 (stride 100)

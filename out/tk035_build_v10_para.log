@@ -1,0 +1,39 @@
+[     0.0s] === build_paragraph_pool START (pid=12739) → out/logs/build_paragraph_pool_20260709_134806.log ===
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[    21.9s] ✓ unpickle  (21.9s)
+[    21.9s] ▶ vocab (113572 token)
+[    24.8s] ✓ vocab (113572 token)  (2.9s)
+[    24.8s] ▶ adjacency
+[    62.8s] ✓ adjacency  (38.0s)
+[    62.8s] ▶ embedding
+[    67.5s] ✓ embedding  (4.6s)
+[    67.5s] ▶ parents
+[  1144.1s] ✓ parents  (1076.6s)
+[  1144.1s] ✓ loaded: vocab=113572 parents=151430 E=(77464, 96)
+[  1185.4s] sidecar có: network_v10_histwiki.content.pkl
+[  1185.8s] ✓ load_checkpoint XONG
+[  1185.8s] ▶ thu đơn vị đoạn 2–4 câu
+[  1196.2s] đơn vị unique: 25000 (doc files=4, conv=2)
+[  1196.2s] ✓ thu đơn vị đoạn 2–4 câu  (10.5s)
+[  1196.4s] ▶ encode + lọc OOV
+[  1200.9s] nạp được: 25000 (bỏ OOV/thưa: 0)
+[  1200.9s] ✓ encode + lọc OOV  (4.5s)
+[  1200.9s] ▶ nạp parents priority=0.36
+[  1208.0s] paragraph_pool 2000/25000 (8.0%)
+[  1210.1s] paragraph_pool 4000/25000 (16.0%)
+[  1212.2s] paragraph_pool 6000/25000 (24.0%)
+[  1214.3s] paragraph_pool 8000/25000 (32.0%)
+[  1216.7s] paragraph_pool 10000/25000 (40.0%)
+[  1218.9s] paragraph_pool 12000/25000 (48.0%)
+[  1798.1s] paragraph_pool 14000/25000 (56.0%)
+[  1812.9s] paragraph_pool 16000/25000 (64.0%)
+[  1831.2s] paragraph_pool 18000/25000 (72.0%)
+[  1842.1s] paragraph_pool 20000/25000 (80.0%)
+[  1850.5s] paragraph_pool 22000/25000 (88.0%)
+[  1860.3s] paragraph_pool 24000/25000 (96.0%)
+[  4310.6s] ✓ nạp parents priority=0.36  (3109.7s)
+[  4310.6s] parents 151430 → 176430 (+25000); vocab 113572 → 113572
+[  4310.6s] ▶ save
+[  4410.1s] ✓ save  (99.5s)
+[  4410.1s] XONG → checkpoints/network_v10_histwiki_paragraph.pkl

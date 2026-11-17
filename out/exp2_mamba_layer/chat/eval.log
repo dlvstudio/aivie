@@ -1,0 +1,38 @@
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 49344.75it/s]
+04:05:27 ── chat_vi: 8 chuỗi × 2048 token · 738s · ppl gốc 32.043
+04:05:27    bo_1       KL 0.7991 · top1 đồng-ý 77.6% · ppl 31.251
+04:05:27    bo_14      KL 1.3542 · top1 đồng-ý 68.6% · ppl 30.280
+04:05:27    bo_30      KL 0.8396 · top1 đồng-ý 76.1% · ppl 21.925
+04:05:27    mamba_1    KL 0.3013 · top1 đồng-ý 88.0% · ppl 31.747
+04:05:27    mamba_14   KL 0.4508 · top1 đồng-ý 83.6% · ppl 32.872
+04:05:27    mamba_30   KL 0.0814 · top1 đồng-ý 90.4% · ppl 34.469
+04:05:27    mamba_all  KL 0.5214 · top1 đồng-ý 81.1% · ppl 35.341
+04:05:27    bo_all     KL 1.6903 · top1 đồng-ý 63.4% · ppl 28.625
+04:17:48 ── vanphong_vi: 8 chuỗi × 2048 token · 741s · ppl gốc 25.809
+04:17:48    bo_1       KL 0.7585 · top1 đồng-ý 78.5% · ppl 27.701
+04:17:48    bo_14      KL 1.6466 · top1 đồng-ý 64.6% · ppl 39.878
+04:17:48    bo_30      KL 0.9137 · top1 đồng-ý 75.7% · ppl 16.902
+04:17:48    mamba_1    KL 0.2819 · top1 đồng-ý 89.1% · ppl 25.894
+04:17:48    mamba_14   KL 0.4305 · top1 đồng-ý 84.8% · ppl 28.785
+04:17:48    mamba_30   KL 0.1015 · top1 đồng-ý 89.6% · ppl 28.290
+04:17:48    mamba_all  KL 0.6284 · top1 đồng-ý 79.7% · ppl 31.333
+04:17:48    bo_all     KL 2.0925 · top1 đồng-ý 60.6% · ppl 36.369
+04:30:09 ── code_en: 8 chuỗi × 2048 token · 741s · ppl gốc 14.964
+04:30:09    bo_1       KL 0.6905 · top1 đồng-ý 82.9% · ppl 16.361
+04:30:09    bo_14      KL 0.9592 · top1 đồng-ý 77.0% · ppl 17.327
+04:30:09    bo_30      KL 0.8680 · top1 đồng-ý 81.4% · ppl 8.690
+04:30:09    mamba_1    KL 0.2208 · top1 đồng-ý 91.5% · ppl 15.042
+04:30:09    mamba_14   KL 0.3436 · top1 đồng-ý 88.1% · ppl 15.392
+04:30:09    mamba_30   KL 0.0794 · top1 đồng-ý 92.4% · ppl 16.520
+04:30:09    mamba_all  KL 0.4772 · top1 đồng-ý 84.5% · ppl 17.371
+04:30:09    bo_all     KL 1.3703 · top1 đồng-ý 73.6% · ppl 10.274
+04:45:19 ── dai_8k: 2 chuỗi × 8192 token · 910s · ppl gốc 17.648
+04:45:19    bo_1       KL 0.5210 · top1 đồng-ý 83.7% · ppl 15.951
+04:45:19    bo_14      KL 1.0973 · top1 đồng-ý 73.1% · ppl 13.495
+04:45:19    bo_30      KL 0.6239 · top1 đồng-ý 79.4% · ppl 14.734
+04:45:19    mamba_1    KL 0.2420 · top1 đồng-ý 90.2% · ppl 18.374
+04:45:19    mamba_14   KL 0.3112 · top1 đồng-ý 88.2% · ppl 17.703
+04:45:19    mamba_30   KL 0.0715 · top1 đồng-ý 91.7% · ppl 19.025
+04:45:19    mamba_all  KL 0.3926 · top1 đồng-ý 84.6% · ppl 18.955
+04:45:19    bo_all     KL 1.3112 · top1 đồng-ý 68.6% · ppl 15.356
+04:45:19 XONG eval

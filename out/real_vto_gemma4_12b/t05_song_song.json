@@ -1,0 +1,14 @@
+{
+ "id": "t05_song_song",
+ "cat": "tool",
+ "model": "gemma4:12b",
+ "turns": [
+  {
+   "user": "Bạn là trợ lý có thể gọi công cụ. Hôm nay là thứ Sáu, 06/11/2026. Các công cụ:\n- get_weather(city: str, date: str \"YYYY-MM-DD\")\n- search_flights(from_city: str, to_city: str, date: str \"YYYY-MM-DD\") → danh sách chuyến bay\n- send_email(to: str, subject: str, body: str)\n- run_sql(query: str) → chạy trên SQLite, bảng orders(id, customer, city, amount, created_at \"YYYY-MM-DD\")\nQuy tắc: nếu cần công cụ, CHỈ trả về một hoặc nhiều dòng JSON dạng {\"tool\": \"<tên>\", \"args\": {...}}, không viết gì khác. Nếu không cần công cụ thì trả lời bình thường. Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\n\nYêu cầu: So sánh thời tiết Hà Nội và Huế hôm nay giúp mình.",
+   "text": "{\"tool\": \"get_weather\", \"args\": {\"city\": \"Hà Nội\", \"date\": \"2026-11-06\"}}\n{\"tool\": \"get_weather\", \"args\": {\"city\": \"Huế\", \"date\": \"2026-11-06\"}}",
+   "thinking": "*   Current date: Friday, 06/11/2026.\n    *   Available tools: `get_weather`, `search_flights`, `send_email`, `run_sql`.\n    *   Task: Compare the weather in Hanoi and Hue today.\n\n    *   The user wants to compare weather for two cities (Hanoi and Hue) for \"today\" (2026-11-06).\n    *   I need information for both cities.\n    *   `get_weather(city: str, date: str)` is the appropriate tool.\n\n    *   Call 1: `get_weather(city=\"Hà Nội\", date=\"2026-11-06\")`\n    *   Call 2: `get_weather(city=\"Huế\", date=\"2026-11-06\")`\n\n    *   Rule: If tools are needed, return ONLY JSON lines. No other text.",
+   "tokens": 286,
+   "sec": 10.7
+  }
+ ]
+}

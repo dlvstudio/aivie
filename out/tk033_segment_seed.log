@@ -1,0 +1,117 @@
+corpus: data/real_vi/history_vi.jsonl
+checkpoint: checkpoints/network_v7_history_segseed.pkl
+sentences: 173
+ISG min_frequency (promote threshold): 3
+
+=== GOLD COMPOUNDS (underthesea word_tokenize, cụm đa âm tiết) ===
+distinct_compounds: 347
+total_compound_occurrences: 713
+distilled_merge_decisions (cạnh MERGE có hướng, đếm cả lặp): 838
+
+=== ISG COVERAGE (dựa TẦN SUẤT bigram âm-tiết corpus) ===
+ISG-discoverable (mọi cặp >= 3): 79 (22.8%)
+ISG-MISSED  (>=1 cặp < 3): 268 (77.2%)
+
+=== SEED COVERAGE (count>=min_freq OR cluster exists in checkpoint) ===
+Seed-discoverable: 300 (86.5%)
+Seed-missed     : 47 (13.5%)
+
+→ Cụm ISG BỎ LỠ = giá trị dictionary-seed / gold-distill (bắt ngay, không chờ tần suất).
+
+=== ISG-MISSED EXAMPLES (max 30) ===
+  'Lý do' (freq=1, weakest ('Lý', 'do')=1)
+  'triều Lý' (freq=2, weakest ('triều', 'Lý')=2)
+  'Lý đặt' (freq=1, weakest ('Lý', 'đặt')=1)
+  'Đại Việt' (freq=4, weakest ('Đại', 'Việt')=2)
+  'xây Văn Miếu' (freq=2, weakest ('xây', 'Văn')=2)
+  'Khổng Tử' (freq=2, weakest ('Khổng', 'Tử')=1)
+  'hiền tài' (freq=1, weakest ('hiền', 'tài')=0)
+  'Lý mở' (freq=1, weakest ('Lý', 'mở')=1)
+  'tuyển chọn' (freq=1, weakest ('tuyển', 'chọn')=1)
+  'nhân tài' (freq=1, weakest ('nhân', 'tài')=1)
+  'đất nước' (freq=4, weakest ('đất', 'nước')=1)
+  'Lý lập Quốc Tử Giám' (freq=1, weakest ('Lý', 'lập')=1)
+  'đại học' (freq=2, weakest ('đại', 'học')=2)
+  'xâm lược' (freq=4, weakest ('xâm', 'lược')=2)
+  'Như Nguyệt' (freq=2, weakest ('Như', 'Nguyệt')=0)
+  'Lý sùng đạo' (freq=1, weakest ('Lý', 'sùng')=1)
+  'Lý trải' (freq=1, weakest ('Lý', 'trải')=1)
+  'kéo dài' (freq=1, weakest ('kéo', 'dài')=1)
+  'trăm năm' (freq=1, weakest ('trăm', 'năm')=0)
+  'Lý kết thúc' (freq=1, weakest ('Lý', 'kết')=1)
+  'Lý Chiêu Hoàng' (freq=1, weakest ('Lý', 'Chiêu')=1)
+  'nhường ngôi' (freq=2, weakest ('nhường', 'ngôi')=1)
+  'Trần Cảnh' (freq=2, weakest ('Trần', 'Cảnh')=0)
+  'Kinh Bắc' (freq=1, weakest ('Kinh', 'Bắc')=0)
+  'quan tôn' (freq=1, weakest ('quan', 'tôn')=1)
+  'ban Chiếu' (freq=1, weakest ('ban', 'Chiếu')=1)
+  'quyết định' (freq=1, weakest ('quyết', 'định')=1)
+  'Đại La thành' (freq=1, weakest ('La', 'thành')=1)
+  'nghĩa là' (freq=1, weakest ('nghĩa', 'là')=1)
+  'nền móng' (freq=1, weakest ('nền', 'móng')=1)
+
+=== SEED-RESCUED EXAMPLES (max 30, only those ISG missed) ===
+  'Lý do' (freq=1, min_pair_count=1)
+  'triều Lý' (freq=2, min_pair_count=2)
+  'Đại Việt' (freq=4, min_pair_count=2)
+  'Khổng Tử' (freq=2, min_pair_count=1)
+  'hiền tài' (freq=1, min_pair_count=0)
+  'tuyển chọn' (freq=1, min_pair_count=1)
+  'nhân tài' (freq=1, min_pair_count=1)
+  'đất nước' (freq=4, min_pair_count=1)
+  'đại học' (freq=2, min_pair_count=2)
+  'xâm lược' (freq=4, min_pair_count=2)
+  'Như Nguyệt' (freq=2, min_pair_count=0)
+  'kéo dài' (freq=1, min_pair_count=1)
+  'trăm năm' (freq=1, min_pair_count=0)
+  'Lý Chiêu Hoàng' (freq=1, min_pair_count=1)
+  'nhường ngôi' (freq=2, min_pair_count=1)
+  'Trần Cảnh' (freq=2, min_pair_count=0)
+  'Kinh Bắc' (freq=1, min_pair_count=0)
+  'quyết định' (freq=1, min_pair_count=1)
+  'Đại La thành' (freq=1, min_pair_count=1)
+  'nghĩa là' (freq=1, min_pair_count=1)
+  'nền móng' (freq=1, min_pair_count=1)
+  'vững chắc' (freq=1, min_pair_count=1)
+  'Lý Thái Tông' (freq=2, min_pair_count=1)
+  'phục vụ' (freq=1, min_pair_count=1)
+  'chủ động' (freq=1, min_pair_count=1)
+  'phủ đầu' (freq=1, min_pair_count=1)
+  'châu Ung' (freq=1, min_pair_count=0)
+  'châu Khâm' (freq=1, min_pair_count=1)
+  'Nam quốc' (freq=1, min_pair_count=1)
+  'sơn hà' (freq=1, min_pair_count=1)
+
+=== ISG-DISCOVERABLE EXAMPLES (max 30) ===
+  'Nhà Lý' (freq=1, min_pair_count=4)
+  'triều đại' (freq=7, min_pair_count=9)
+  'phong kiến' (freq=3, min_pair_count=4)
+  'lịch sử' (freq=5, min_pair_count=5)
+  'Việt Nam' (freq=13, min_pair_count=6)
+  'tồn tại' (freq=4, min_pair_count=6)
+  'Lý Công Uẩn' (freq=5, min_pair_count=3)
+  'Lý Thái Tổ' (freq=7, min_pair_count=7)
+  'sáng lập' (freq=8, min_pair_count=9)
+  'lên ngôi' (freq=8, min_pair_count=9)
+  'Tiền Lê' (freq=2, min_pair_count=4)
+  'dời đô' (freq=7, min_pair_count=6)
+  'Hoa Lư' (freq=10, min_pair_count=6)
+  'Đại La' (freq=5, min_pair_count=4)
+  'kinh đô' (freq=7, min_pair_count=7)
+  'Thăng Long' (freq=14, min_pair_count=6)
+  'Lý Thánh Tông' (freq=4, min_pair_count=5)
+  'quốc hiệu' (freq=6, min_pair_count=6)
+  'nhà Lý' (freq=10, min_pair_count=5)
+  'đầu tiên' (freq=8, min_pair_count=7)
+  'Lý Thường Kiệt' (freq=6, min_pair_count=6)
+  'danh tướng' (freq=4, min_pair_count=4)
+  'lãnh đạo' (freq=5, min_pair_count=4)
+  'kháng chiến' (freq=8, min_pair_count=8)
+  'quân Tống' (freq=5, min_pair_count=5)
+  'đánh bại' (freq=8, min_pair_count=9)
+  'xây dựng' (freq=4, min_pair_count=4)
+  'Một Cột' (freq=3, min_pair_count=3)
+  'trị vì' (freq=2, min_pair_count=3)
+  'quân sự' (freq=4, min_pair_count=3)
+
+XONG

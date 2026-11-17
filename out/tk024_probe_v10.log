@@ -1,0 +1,38 @@
+[     0.0s] === load_network_v10_histwiki START (pid=12689) → out/logs/load_network_v10_histwiki_20260709_134757.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[    28.0s] ✓ unpickle  (28.0s)
+[    28.0s] ▶ vocab (113572 token)
+[    28.9s] ✓ vocab (113572 token)  (0.9s)
+[    28.9s] ▶ adjacency
+[    69.9s] ✓ adjacency  (41.0s)
+[    70.0s] ▶ embedding
+[    75.6s] ✓ embedding  (5.6s)
+[    75.6s] ▶ parents
+[  1138.1s] ✓ parents  (1062.4s)
+[  1138.1s] ✓ loaded: vocab=113572 parents=151430 E=(77464, 96)
+[  1178.6s] sidecar có: network_v10_histwiki.content.pkl
+[  1179.4s] ✓ load_checkpoint XONG
+# checkpoints/network_v10_histwiki.pkl  vocab=113572 parents=151430
+
+Q: Nhà Lý có gì   [entity='Nhà Lý' primary='Lý' gidf(primary)=5.85]
+   → Nhà Lý là một triều đại phong kiến trong lịch sử Việt Nam tồn tại từ năm 1009 đến năm 1225 . Năm 1075 , Lý Thường Kiệt đi đánh Chiêm Thành nhưng không thu được kết quả . Để cản quân Tống qua sông , Lý Thường Kiệt sai đắp đê nam ngạc cao như bức thành .
+
+Q: Nhà Lý là gì   [entity='Nhà Lý' primary='Lý' gidf(primary)=5.85]
+   → Nhà Trần thay nhà Lý năm 1226 . Năm 1075 , Lý Thường Kiệt đi đánh Chiêm Thành nhưng không thu được kết quả . Để cản quân Tống qua sông , Lý Thường Kiệt sai đắp đê nam ngạc cao như bức thành .
+
+Q: Lý Thường Kiệt là ai   [entity='Lý Thường Kiệt' primary='Kiệt' gidf(primary)=8.26]
+   → Lý Thường Kiệt viết bài thơ Nam quốc sơn hà. . Hoàng đế Lý Nhân Tông sai Lý Thường Kiệt đem quân đón đánh , lập chiến lũy sông Như Nguyệt để chặn quân Tống . Lý Thường Kiệt chiếm xong thành Ung , lại lấy đá lấp sông ngăn cứu viện rồi đem quân lên phía Bắc lấy Tân Châu .
+
+Q: Văn Miếu là gì   [entity='Văn Miếu' primary='Miếu' gidf(primary)=8.64]
+   → Văn Miếu là trường đại học đầu tiên Việt Nam. . Văn Miếu Quốc Tử Giám năm 1076 . Văn Miếu thờ Khổng Tử và các bác học
+
+Q: Trần Hưng Đạo là ai   [entity='Trần Hưng Đạo' primary='Đạo' gidf(primary)=6.37]
+   → Trần Hưng Đạo đánh thắng quân Nguyên. . Một hôm , Trần Hưng Đạo từ Vạn Kiếp tới , Trần Quang Khải xuống thuyền chơi suốt ngày mới trở về . Mang lòng hậm hực , Trần Liễu tìm khắp những người tài nghệ để dạy Trần Quốc Tuấn (tức Trần Hưng Đạo) .
+
+Q: Nhà Trần có gì   [entity='Nhà Trần' primary='Trần' gidf(primary)=5.61]
+   → Nhà Trần kết thúc năm 1400 khi Hồ Quý Ly cướp ngôi lập ra nhà Hồ . Triều Trần gọi là lộ Quốc Oai , sau đổi là châu Tuyên Quang . Một hôm , Trần Hưng Đạo từ Vạn Kiếp tới , Trần Quang Khải xuống thuyền chơi suốt ngày mới trở về .
+
+Q: Người chữa bệnh là ai   [entity='Người chữa bệnh' primary='bệnh' gidf(primary)=5.94]
+   → Bác sĩ chữa bệnh.
+

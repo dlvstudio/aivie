@@ -1,0 +1,41 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa_pos.pkl",
+ "n_parent": 545,
+ "khe": 7951,
+ "khe_thay_duoc": 1784,
+ "to_hop_moi_log10": 1.380211241711606,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 1784,
+   "hep": 0.2337443946188341,
+   "chu_de": 0.8082959641255605
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 1607,
+   "hep": 0.013690105787181083,
+   "chu_de": 0.3273179838207841
+  }
+ },
+ "ty_so_chu_de": 2.469451738307558,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0
+ },
+ "gate_pass": true,
+ "vi_du": [
+  "' Sao Thiên Vương'  →  thay ' Thiên' bằng ' Diêm'",
+  "' gian Tấn,'  →  thay ' Tấn' bằng ' đó'",
+  "', Lộc,'  →  thay ' Lộc' bằng ' Hình'",
+  "' bắt ông.'  →  thay ' ông' bằng ' đầu'",
+  "'Trần Nhân Tông'  →  thay ' Nhân' bằng ' Duệ'",
+  "' với vua.'  →  thay ' vua' bằng ' Pháp'",
+  "' Cửu Long,'  →  thay ' Long' bằng ' Uyên'",
+  "' cả nước.'  →  thay ' nước' bằng ' ngày'",
+  "' rất cao.'  →  thay ' cao' bằng ' sớm'",
+  "'. Gạo Việt'  →  thay ' Gạo' bằng ' Phim'",
+  "' thế giới.'  →  thay ' giới' bằng ' lực'",
+  "'Trần Duệ Tông'  →  thay ' Duệ' bằng ' Nghệ'"
+ ],
+ "seconds": 78.2
+}

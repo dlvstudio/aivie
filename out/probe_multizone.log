@@ -1,0 +1,84 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[72s] ✓ loaded · parents 65,098
+
+═══ Hỏi: So sánh Nhà Lý và Nhà Trần ═══
+  3 zone → 3 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠSo' 'Ġsánh' 'Ġvà'  (gidf≤6.1 · top-cos=0.79)
+       cos=0.79 w=0.20 → ' Biểu đồ cột giúp so sánh số liệu giữa các nhóm. Cột cao hơn nghĩa là giá t'
+       cos=0.74 w=0.15 → 'Hội thoại:\nSo sánh và đối chiếu hai loại mạng máy tính.\nCó hai loại mạng má'
+  ── zone [CONTENT] 'ĠTrần' 'ĠLý'  (gidf≤5.0 · top-cos=0.64)
+       cos=0.64 w=0.27 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+       cos=0.58 w=0.19 → 'Lịch sử:\nLớp 3:\nTiết 1: Bác Hồ sinh năm 1890\nBài 3:\nDi sản cần được bảo vệ.'
+  ── zone [CONTENT] 'ĠNhà'  (gidf≤5.1 · top-cos=0.63)
+       cos=0.63 w=0.23 → ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đ'
+       cos=0.60 w=0.20 → ' Thành nhà Hồ ở tỉnh Thanh Hóa, xây thế kỷ 14. Kiến trúc đá độc đáo thể hiệ'
+  GHÉP-NAIVE (content zones): ' Biểu đồ cột giúp so sánh số liệu giữa các nhóm. Cột cao hơn nghĩa là   Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông b  Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý '
+
+═══ Hỏi: Kể về Trần Hưng Đạo và trận Bạch Đằng ═══
+  4 zone → 2 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġvề'  (gidf≤2.5 · top-cos=0.76)
+       cos=0.76 w=0.34 → ' Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư duy. Mỗ'
+       cos=0.66 w=0.20 → ' Nhẹ nhàng đuổi về, không đánh. Rào hoặc đóng cổng nếu cần. Nói với hàng xó'
+  ── zone [CONTENT] 'ĠĐằng' 'ĠHưng' 'ĠBạch' 'ĠĐạo' 'ĠTrần'  (gidf≤6.4 · top-cos=0.67)
+       cos=0.67 w=0.21 → ' Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông ba lần'
+       cos=0.64 w=0.18 → 'Truyện:\nLung Nguyệt bến cảng, ở vào Kim Yến đảo tây bộ khu vực, là ở trên đ'
+  ── zone [bỏ (style/chức-năng)] 'Ġtrận'  (gidf≤4.1 · top-cos=0.46)
+       cos=0.46 w=0.15 → ' Ngô Quyền giành độc lập năm 938 sau trận Bạch Đằng lịch sử. Chiến thắng ch'
+       cos=0.44 w=0.14 → 'Lịch sử:\nTiêu đề: Trận Như Nguyệt\n\nHọ điều động cả bộ binh lẫn thủy binh nh'
+  ── zone [bỏ (style/chức-năng)] 'ĠKể'  (gidf≤6.6 · top-cos=0.45)
+       cos=0.45 w=0.20 → 'Kể từ sau năm 1976, dân số Sài Gòn gia tăng nhanh, nhất là dân nhập cư. Cứ '
+       cos=0.41 w=0.17 → ' Truyện kể về Thúy Kiều — người con gái tài sắc nhưng bất hạnh. Nguyễn Du d'
+  GHÉP-NAIVE (content zones): ' Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư du  Trần Hưng Đạo chỉ huy quân dân nhà Trần đánh thắng quân Nguyên Mông b'
+
+═══ bằng văn phong hài hước, hãy miêu tả trận Bạch Đằng của Ngô Quyền ═══
+  3 zone → 2 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġhước' 'Ġmiêu' 'Ġhài'  (gidf≤6.9 · top-cos=0.78)
+       cos=0.78 w=0.29 → 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt no'
+       cos=0.66 w=0.15 → 'Hội thoại:\nTạo ra một câu nói hài hước.\nTiền không thể mua được hạnh phúc, '
+  ── zone [CONTENT] 'ĠĐằng' 'ĠQuyền' 'ĠNgô' 'ĠBạch'  (gidf≤6.4 · top-cos=0.69)
+       cos=0.69 w=0.21 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+       cos=0.64 w=0.17 → 'Lịch sử:\nTiêu đề: Nhà Trần\n\nNhà Trần là triều đại phong kiến Việt Nam tồn t'
+  ── zone [bỏ (style/chức-năng)] 'bằng'  (gidf≤7.9 · top-cos=0.35)
+       cos=0.35 w=0.20 → ' Delta bằng 0 thì phương trình có nghiệm kép.'
+       cos=0.34 w=0.19 → ' 2x bằng 10 thì x bằng 5.'
+  GHÉP-NAIVE (content zones): 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ m Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc T'
+
+═══ Viết một đoạn văn hài hước về Trần Quốc Toản bóp nát quả cam và thế hệ gen Z ═══
+  6 zone → 4 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġgen'  (gidf≤6.8 · top-cos=0.70)
+       cos=0.70 w=0.19 → 'Gen là nhân tố cơ bản của di truyền ở tất cả các sinh vật. Mã để dịch từ RN'
+       cos=0.68 w=0.18 → ' ADN là phân tử mang thông tin di truyền trong nhân tế bào. Gen là các đoạn'
+  ── zone [CONTENT] 'Ġcam'  (gidf≤5.1 · top-cos=0.66)
+       cos=0.66 w=0.33 → 'Từ: cam\nNghĩa 1:\nLoại từ: danh từ\nGiải nghĩa: cây ăn quả, hoa màu trắng, qu'
+       cos=0.64 w=0.30 → ' Thiếu vitamin C lâu ngày có thể bị bệnh scorbut, chảy máu nướu và mệt mỏi.'
+  ── zone [CONTENT] 'ĠToản'  (gidf≤8.9 · top-cos=0.65)
+       cos=0.65 w=0.20 → 'Lịch sử:\nTiêu đề: Nguyễn Nhạc\n\nBa anh em Tây Sơn, Nguyễn Nhạc, Nguyễn Lữ và'
+       cos=0.60 w=0.16 → 'Lịch sử:\nTiêu đề: Quang Trung\n\nQuang Trung tên thật là Nguyễn Huệ, là vị vu'
+  ── zone [CONTENT] 'Ġhước' 'Viết'  (gidf≤6.9 · top-cos=0.64)
+       cos=0.64 w=0.27 → 'Hội thoại:\nNghĩ ra năm ý tưởng cho một câu chuyện hài hước lấy bối cảnh ở m'
+       cos=0.57 w=0.19 → 'Hội thoại:\nMô tả một cuốn sách gần đây bạn đã đọc.\nGần đây, tôi đọc một cuố'
+  ── zone [bỏ (style/chức-năng)] 'Ġbóp' 'Ġnát'  (gidf≤6.3 · top-cos=0.47)
+       cos=0.47 w=0.23 → 'Truyện:\nChương 1704: Ba kiện Thần khí khác! Loạn chiến! Trấn áp! Cự quy thứ'
+       cos=0.37 w=0.14 → 'Truyện:\nP/S: Cầu donate! Cầu donate! Cầu donate!!!!!!! Cầu donate!Cầu donat'
+  ── zone [bỏ (style/chức-năng)] 'ĠZ'  (gidf≤6.7 · top-cos=0.25)
+       cos=0.25 w=0.16 → 'Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 7:\nCấp độ rủi'
+       cos=0.23 w=0.15 → "Tiếng Việt:\nLớp 3:\nTiết 19: Câu tiếng Việt trong văn cảnh\nBài 22:\n'Nóng' tì"
+  GHÉP-NAIVE (content zones): 'Gen là nhân tố cơ bản của di truyền ở tất cả các sinh vật. Mã để dịch  Từ: cam\nNghĩa 1:\nLoại từ: danh từ\nGiải nghĩa: cây ăn quả, hoa màu trắn Lịch sử:\nTiêu đề: Nguyễn Nhạc\n\nBa anh em Tây Sơn, Nguyễn Nhạc, Nguyễn  Hội tho'
+
+═══ kể một câu chuyện buồn về mùa thu Hà Nội ═══
+  4 zone → 3 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠNội' 'ĠHà'  (gidf≤5.1 · top-cos=0.83)
+       cos=0.83 w=0.29 → ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Hồng'
+       cos=0.73 w=0.18 → ' Thủ đô Việt Nam là Hà Nội, nằm ở phía Bắc đất nước. Thành phố tọa lạc trên'
+  ── zone [CONTENT] 'Ġbuồn' 'Ġchuyện' 'Ġcâu'  (gidf≤4.9 · top-cos=0.77)
+       cos=0.77 w=0.25 → 'Truyện:\nTrong cuộc sống không phải ai lúc nào cũng toàn niềm vui và ngược l'
+       cos=0.73 w=0.21 → ' Buồn là có thật, nhưng im lặng không nhất thiết là ghét bạn. Đừng nhắn dồn'
+  ── zone [CONTENT] 'Ġmùa' 'Ġthu'  (gidf≤4.6 · top-cos=0.67)
+       cos=0.67 w=0.26 → 'Khoa học:\nLớp 3:\nTiết 2: Muông thú sống trên cạn\nBài 1:\nTiết Khoa học giúp '
+       cos=0.66 w=0.24 → ' Xuân ấm áp, cây cối đâm chồi nảy lộc. Hạ nóng, mưa nhiều ở miền Bắc. Thu m'
+  ── zone [bỏ (style/chức-năng)] 'kể'  (gidf≤8.9 · top-cos=0.27)
+       cos=0.27 w=0.20 → 'Kể từ sau năm 1976, dân số Sài Gòn gia tăng nhanh, nhất là dân nhập cư. Cứ '
+       cos=0.22 w=0.16 → ' Hehe đúng là hài thật. Bạn kể thêm đi, mình nghe.'
+  GHÉP-NAIVE (content zones): ' Thủ đô Việt Nam là Hà Nội. Thành phố nằm ở đồng bằng Bắc Bộ, ven sông Truyện:\nTrong cuộc sống không phải ai lúc nào cũng toàn niềm vui và ng Khoa học:\nLớp 3:\nTiết 2: Muông thú sống trên cạn\nBài 1:\nTiết Khoa học '
+
+[170s] → zone CONTENT tách đúng + Hopfield chọn fact khớp? style-zone cos thấp (xác nhận HOW≠retrieve). Ghép-naive là input cho compose/LM. Dán log về.

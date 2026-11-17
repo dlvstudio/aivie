@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_20000.pkl …
+[    2.4s RSS  2.20GB] nạp xong · parents=19963 vocab=32002
+[    2.4s RSS  2.20GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.4s RSS  2.20GB] ws_spans 0/19963 · span=0 · bỏ=0
+[    7.9s RSS  2.20GB] 14607 span · 0.1 phút
+[    7.9s RSS  2.20GB] ghi out/noise_nho/toy_noise_20000.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.9s RSS  2.20GB]   mẫu[00] '<0x81> <0x87> <0xE5> <0x80> <0x9F>'
+[    7.9s RSS  2.20GB]   mẫu[01] '海 <0xE9> <0x87> <0xA3> <0xE5> <0xB1> <0xA0>'
+[    7.9s RSS  2.20GB]   mẫu[02] 'âm lịch'
+[    7.9s RSS  2.20GB]   mẫu[03] 'đại đa số'
+[    7.9s RSS  2.20GB]   mẫu[04] 'toàn phần'
+[    7.9s RSS  2.20GB]   mẫu[05] 'địa danh'
+[    7.9s RSS  2.20GB]   mẫu[06] 'tài chính'
+[    7.9s RSS  2.20GB]   mẫu[07] 'sức mạnh'
+[    7.9s RSS  2.20GB]   mẫu[08] 'diện mạo'
+[    7.9s RSS  2.20GB]   mẫu[09] 'mô hình nhân khẩu'
+[    7.9s RSS  2.20GB]   mẫu[10] 'ngoại lang'
+[    7.9s RSS  2.20GB]   mẫu[11] 'Lâm Tây'
+[    7.9s RSS  2.20GB]   mẫu[12] 'đương đầu'
+[    7.9s RSS  2.20GB]   mẫu[13] 'lo eg r'
+[    7.9s RSS  2.20GB]   mẫu[14] 'Quang Thùy'
+[    7.9s RSS  2.20GB]   mẫu[15] 'Le ft'
+[    7.9s RSS  2.20GB]   mẫu[16] 'súng trường'
+[    7.9s RSS  2.20GB]   mẫu[17] 'non sông'
+[    7.9s RSS  2.20GB]   mẫu[18] 'yth era'
+[    7.9s RSS  2.20GB]   mẫu[19] 'eo biển'
+[    7.9s RSS  2.20GB]   mẫu[20] 'Hệ thống'
+[    7.9s RSS  2.20GB]   mẫu[21] 'Tàu ô'
+[    7.9s RSS  2.20GB]   mẫu[22] 'Thúc Kháng'
+[    7.9s RSS  2.20GB]   mẫu[23] 'Tuổi Trẻ'
+[    7.9s RSS  2.20GB]   mẫu[24] 'Fre edom H EC'
+[    7.9s RSS  2.20GB]   mẫu[25] 'Ac ad ia'
+[    7.9s RSS  2.20GB]   mẫu[26] 'bal let'
+[    7.9s RSS  2.20GB]   mẫu[27] 'Sund ay ro ast'
+[    7.9s RSS  2.20GB]   mẫu[28] 'Britt ān ia'
+[    7.9s RSS  2.20GB]   mẫu[29] 'Herman Mel ville'
+[    7.9s RSS  2.20GB] span nghi rác (tự động): 347/14607 = 2.4% (ISG: 57%)
+[    7.9s RSS  2.20GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

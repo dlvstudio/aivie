@@ -1,0 +1,165 @@
+<title>Nhận-diện đồ vật (CNN từ-đầu)</title>
+<style>
+:root{--bg:#f4f4f2;--ink:#1b1d22;--ink-soft:#5a5f6b;--card:#fff;--hair:#e3e3e0;
+  --accent:#2f7bff;--good:#3ec26b;--warn:#ff9f43;--bad:#ff5a4d;--bar:#2f7bff}
+:root[data-theme=dark],:root:not([data-theme=light]){@media(prefers-color-scheme:dark){
+  --bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}}
+:root[data-theme=dark]{--bg:#0f1115;--ink:#e8e8ea;--ink-soft:#9a9aa2;--card:#171a20;--hair:#262a31}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:22px;margin:0 0 4px}.lede{color:var(--ink-soft);max-width:76ch;margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:16px;margin-bottom:16px}
+h3{font-size:14px;margin:0 0 12px;display:flex;gap:8px;align-items:center}
+.badge{font-size:11px;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:20px;padding:1px 8px}
+.row{display:flex;flex-wrap:wrap;gap:16px}
+.pv{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+canvas{image-rendering:pixelated;border-radius:8px;border:1px solid var(--hair);background:#000}
+#pin{width:168px;height:168px}
+.pred{flex:1;min-width:260px}
+.big{font-size:26px;font-weight:800;margin:2px 0 2px}
+.sub{color:var(--ink-soft);font-size:12px;margin-bottom:10px}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:5px 8px;align-items:center;font-size:12px}
+.bars .lab{white-space:nowrap;color:var(--ink-soft)}
+.track{background:var(--bg);border:1px solid var(--hair);border-radius:6px;height:14px;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:6px 0 0 6px}
+.samples{display:flex;flex-wrap:wrap;gap:6px}
+.samples canvas{width:52px;height:52px;cursor:pointer;transition:transform .08s}
+.samples canvas:hover{transform:scale(1.12);border-color:var(--accent)}
+button,.filebtn{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--hair);background:var(--card);color:var(--ink);cursor:pointer}
+.filebtn{display:inline-block}.filebtn input{display:none}
+.acc{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:center;font-size:12px}
+.note{color:var(--ink-soft);font-size:13px;margin-top:6px;max-width:80ch}
+.tag{font-size:11px;padding:1px 7px;border-radius:6px;border:1px solid var(--hair);color:var(--ink-soft)}
+.hero{font-size:15px}
+</style>
+<div class="wrap">
+  <h1>Nhận-diện đồ vật <span class="badge">CNN tự-viết · luyện trên M4</span></h1>
+  <p class="lede">Một mạng tích-chập (CNN) <b>viết tay từ-đầu</b> — 3 lớp conv + 2 lớp fully-connected, ~90 nghìn tham-số —
+    luyện trên bộ <b>CIFAR-10</b> (ảnh 32×32) bằng PyTorch/MPS trên Apple M4. Trọng-số nhúng thẳng vào trang; suy-luận
+    chạy <b>ngay trong trình-duyệt</b> bằng JavaScript (không gọi máy-chủ nào). Bấm một ảnh mẫu hoặc <b>tải ảnh của bạn</b>
+    để xem mạng đoán. <b>Không thổi-phồng:</b> đây là mạng nhỏ, ảnh 32×32 độ-phân-giải thấp, chỉ biết <b>11 lớp</b>
+    (10 loại vật + <b>người</b>) — xem độ chính-xác thật ở cuối.</p>
+
+  <div class="card">
+    <h3>Thử ngay <span class="badge" id="dev-badge">đang tải mạng…</span></h3>
+    <div class="pv">
+      <div>
+        <canvas id="pin" width="32" height="32"></canvas>
+        <div class="sub" style="text-align:center;margin-top:6px">ảnh vào 32×32</div>
+      </div>
+      <div class="pred">
+        <div class="hero sub">Mạng đoán:</div>
+        <div class="big" id="top">—</div>
+        <div class="sub" id="topsub"></div>
+        <div class="bars" id="bars"></div>
+      </div>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <label class="filebtn">📷 Tải ảnh của bạn<input id="file" type="file" accept="image/*"></label>
+      <span class="tag">hoặc bấm 1 ảnh mẫu ↓</span>
+    </div>
+    <div class="samples" id="samples" style="margin-top:10px"></div>
+  </div>
+
+  <div class="card">
+    <h3>Độ chính-xác THẬT <span class="badge" id="acc-badge">—</span></h3>
+    <div class="acc" id="acc"></div>
+    <p class="note" id="acc-note"></p>
+  </div>
+
+  <div class="card">
+    <h3>Mạng này thấy gì? <span class="badge">trung-thực</span></h3>
+    <p class="note">Ảnh vào bị thu về <b>32×32</b> — cố-tình nhỏ như dữ-liệu luyện. Nếu bạn tải ảnh <b>ngoài 11 lớp</b>,
+      mạng vẫn <b>buộc phải chọn 1 trong 11</b> → nó đoán lớp "gần giống" nhất với độ tự-tin thấp. Đó không phải lỗi —
+      mạng chỉ biết đúng những thứ nó từng học. <b>11 lớp hiện có:</b> máy bay · ô tô · chim · mèo · hươu · chó · ếch ·
+      ngựa · tàu thủy · xe tải · <b>người</b>. Lớp "người" lấy từ siêu-lớp <em>people</em> của CIFAR-100 (baby/boy/girl/
+      man/woman, cùng gốc 32×32) — nên là <b>người ở cỡ ảnh nhỏ, cả thân/mặt</b>, không phải nhận-diện danh-tính ai.</p>
+  </div>
+</div>
+
+<script>
+const CNNW = /*__CNNW__*/ null;
+const SAMPLES = /*__SAMPLES__*/ null;
+const b64 = s => { const bin=atob(s), a=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i); return a; };
+
+// ---- FORWARD (khớp PyTorch: conv pad1 + relu + maxpool2 + fc + softmax) ----
+let W1,W2,W3;   // conv weight đã "phẳng-hoá" cho nhanh
+function flat(w){ const O=w.length,I=w[0].length; const a=new Float32Array(O*I*9);
+  for(let o=0;o<O;o++)for(let i=0;i<I;i++)for(let ky=0;ky<3;ky++)for(let kx=0;kx<3;kx++)a[o*I*9+i*9+ky*3+kx]=w[o][i][ky][kx];
+  return a; }
+function conv(inp,Ci,H,Wd,Wf,b,Co){ const out=new Float32Array(Co*H*Wd);
+  for(let oc=0;oc<Co;oc++){ const wb0=oc*Ci*9;
+    for(let y=0;y<H;y++)for(let x=0;x<Wd;x++){ let s=b[oc];
+      for(let ic=0;ic<Ci;ic++){ const ib=ic*H*Wd, wb=wb0+ic*9;
+        for(let ky=0;ky<3;ky++){ const iy=y+ky-1; if(iy<0||iy>=H)continue;
+          for(let kx=0;kx<3;kx++){ const ix=x+kx-1; if(ix<0||ix>=Wd)continue;
+            s+=inp[ib+iy*Wd+ix]*Wf[wb+ky*3+kx]; }}}
+      out[oc*H*Wd+y*Wd+x]=s>0?s:0; } }
+  return out; }
+function pool(inp,C,H,Wd){ const H2=H>>1,W2=Wd>>1,out=new Float32Array(C*H2*W2);
+  for(let c=0;c<C;c++)for(let y=0;y<H2;y++)for(let x=0;x<W2;x++){ const bb=c*H*Wd; let m=-1e9;
+    for(let dy=0;dy<2;dy++)for(let dx=0;dx<2;dx++){const v=inp[bb+(2*y+dy)*Wd+(2*x+dx)]; if(v>m)m=v;}
+    out[c*H2*W2+y*W2+x]=m; }
+  return out; }
+function fc(inp,w,b,relu){ const O=w.length,I=w[0].length,out=new Float32Array(O);
+  for(let o=0;o<O;o++){ let s=b[o]; const wo=w[o]; for(let i=0;i<I;i++)s+=inp[i]*wo[i]; out[o]=relu&&s<0?0:s; }
+  return out; }
+function softmax(a){ let m=Math.max(...a); const e=a.map(v=>Math.exp(v-m)); const z=e.reduce((p,c)=>p+c,0); return e.map(v=>v/z); }
+// planar RGB uint8 [3*32*32] (c*1024+y*32+x) → logits
+function predict(planar){
+  const mean=CNNW.meta.mean, std=CNNW.meta.std, x=new Float32Array(3*32*32);
+  for(let c=0;c<3;c++)for(let p=0;p<1024;p++) x[c*1024+p]=(planar[c*1024+p]/255 - mean[c])/std[c];
+  let h=conv(x,3,32,32,W1,CNNW.conv1.b,16); h=pool(h,16,32,32);
+  h=conv(h,16,16,16,W2,CNNW.conv2.b,32);    h=pool(h,32,16,16);
+  h=conv(h,32,8,8,W3,CNNW.conv3.b,64);      h=pool(h,64,8,8);
+  h=fc(h,CNNW.fc1.w,CNNW.fc1.b,true);
+  const logit=fc(h,CNNW.fc2.w,CNNW.fc2.b,false);
+  return softmax(Array.from(logit));
+}
+// vẽ planar RGB lên canvas 32×32
+function drawPlanar(planar,cv){ const ctx=cv.getContext('2d'),img=ctx.createImageData(32,32),d=img.data;
+  for(let p=0;p<1024;p++){ d[p*4]=planar[p]; d[p*4+1]=planar[1024+p]; d[p*4+2]=planar[2048+p]; d[p*4+3]=255; }
+  ctx.putImageData(img,0,0); }
+
+const VI = CNNW ? CNNW.meta.classes_vi : [];
+function show(planar){
+  drawPlanar(planar, document.getElementById('pin'));
+  const pr=predict(planar), order=pr.map((p,i)=>[p,i]).sort((a,b)=>b[0]-a[0]);
+  const [p0,i0]=order[0];
+  document.getElementById('top').textContent = VI[i0];
+  document.getElementById('topsub').textContent = `tự-tin ${(p0*100).toFixed(1)}%` + (p0<0.5?' · (không chắc — có thể ngoài 10 loại)':'');
+  const bars=document.getElementById('bars'); bars.innerHTML='';
+  order.forEach(([p,i])=>{ const pct=(p*100).toFixed(1);
+    bars.insertAdjacentHTML('beforeend',
+      `<span class="lab">${VI[i]}</span><div class="track"><div class="fill" style="width:${Math.max(2,p*100)}%;background:${i===i0?'var(--accent)':'#8a8f99'}"></div></div><span class="lab">${pct}%</span>`); });
+}
+// ảnh tải lên → thu 32×32 → planar
+function fromImage(img){ const c=document.createElement('canvas'); c.width=32;c.height=32;
+  const ctx=c.getContext('2d'); ctx.drawImage(img,0,0,32,32); const d=ctx.getImageData(0,0,32,32).data;
+  const planar=new Uint8Array(3*1024); for(let p=0;p<1024;p++){ planar[p]=d[p*4]; planar[1024+p]=d[p*4+1]; planar[2048+p]=d[p*4+2]; }
+  return planar; }
+document.getElementById('file').addEventListener('change',e=>{ const f=e.target.files[0]; if(!f)return;
+  const img=new Image(); img.onload=()=>show(fromImage(img)); img.src=URL.createObjectURL(f); });
+
+function boot(){
+  const dev=document.getElementById('dev-badge');
+  if(!CNNW){ dev.textContent='CHƯA nhúng mạng'; return; }
+  W1=flat(CNNW.conv1.w); W2=flat(CNNW.conv2.w); W3=flat(CNNW.conv3.w);
+  dev.textContent = `test ${(CNNW.meta.test_acc*100).toFixed(1)}% · 32×32 · ${CNNW.meta.classes_en.length} lớp`;
+  // bảng accuracy
+  document.getElementById('acc-badge').textContent = `tổng ${(CNNW.meta.test_acc*100).toFixed(1)}% (bộ test chưa từng thấy)`;
+  const acc=document.getElementById('acc'); const pc=CNNW.meta.per_class, en=CNNW.meta.classes_en;
+  en.forEach((k,i)=>{ const v=pc[k]||0, pct=(v*100).toFixed(0), col=v>=0.8?'var(--good)':v>=0.6?'var(--warn)':'var(--bad)';
+    acc.insertAdjacentHTML('beforeend',
+      `<span class="lab">${VI[i]}</span><div class="track"><div class="fill" style="width:${v*100}%;background:${col}"></div></div><span class="lab">${pct}%</span>`); });
+  document.getElementById('acc-note').textContent =
+    `Đo trên bộ ảnh test mạng CHƯA từng thấy (CIFAR-10 + ảnh người từ CIFAR-100). Lớp nào thấp (thường mèo/chó/chim — dễ lẫn ở 32×32) là giới-hạn thật của mạng nhỏ, không giấu.`;
+  // ảnh mẫu
+  if(SAMPLES){ const box=document.getElementById('samples');
+    SAMPLES.forEach(s=>{ const planar=b64(s.d); const cv=document.createElement('canvas'); cv.width=32;cv.height=32;
+      cv.title=VI[s.y]; drawPlanar(planar,cv); cv.onclick=()=>show(planar); box.appendChild(cv); });
+    show(b64(SAMPLES[0].d)); }
+}
+boot();
+</script>
+</body></html>

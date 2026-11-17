@@ -1,0 +1,21 @@
+[    0.0s RSS  0.02GB] gc.disable() · nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   41.4s RSS  5.73GB] nạp xong · parents=430447 vocab=249107
+[   41.5s RSS  5.73GB] cạnh SYNONYM = 244886  (frame_da_khe/compose_2cha cần >0)
+[   41.5s RSS  5.73GB] cụm ISG = 200094 · span≥3 token = 119598
+[   92.2s RSS  5.73GB] dựng index analogy 50.5s
+[   92.2s RSS  5.73GB]   n_l1 = 159693
+[   92.2s RSS  5.73GB]   n_l2 = 422470
+[   92.2s RSS  5.73GB]   n_triples = 821
+[   92.2s RSS  5.73GB]   n_prop_keys_dropped_df = 2346
+[   92.2s RSS  5.73GB]   n_heads = 62286
+[   92.2s RSS  5.73GB]   n_head_cluster = 49775
+[   92.2s RSS  5.73GB]   n_head_phrase = 0
+[   92.2s RSS  5.73GB]   n_head_entity = 40432
+[   92.2s RSS  5.73GB] la_ids=[1495, 6137] gdf={1495: 91134, 6137: 129} → emit=1495 (trùng so với min-id cũ)
+[   92.2s RSS  5.73GB]   'anh là' → 'Vương'  stop=analogy_la donors=['sinh', 'nàng', 'nhất định phải']
+[   92.3s RSS  5.73GB]   'mẹ là' → 'Vương'  stop=analogy_la donors=['sinh', 'nàng']
+[   92.3s RSS  5.73GB]   'học sinh là' → ''  stop=khong_dien donors=None
+[   92.3s RSS  5.73GB]   'Việt Nam là' → ''  stop=khong_dien donors=None
+[   92.3s RSS  5.73GB]   'con mèo là' → 'Vương'  stop=analogy_la donors=['nàng', 'nhất định phải']
+[   92.4s RSS  5.73GB]   'nhà Trần là' → 'Huyết'  stop=analogy_la donors=['Nàng', 'Trương Nhược Trần']
+[   92.4s RSS  5.73GB] ghi out/check_ckpt_network_v12_subst_isg_pw.json

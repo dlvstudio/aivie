@@ -1,0 +1,30 @@
+lesson_id: vi_grade5_qa_compound
+grade: 5
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_compound
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A1
+  - const: ","
+  - var: P
+  - gap: s+
+    min: 0
+  - const: ","
+  - var: T
+
+bind:
+  Q: câu hỏi
+  A1: vế đầu
+  P: đại từ
+  T: vế cuối
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: Việt Nam là gì ? Đáp: Việt Nam là thành viên ASEAN , nó thuộc khu vực Đông Nam Á , Dân số Việt Nam trên 90 triệu người."
+  - "Hỏi: Huế là gì ? Đáp: Huế là kinh đô nhà Nguyễn , Kinh thành Huế là di sản văn hóa , Nhã nhạc cung đình Huế là di sản."

@@ -1,0 +1,42 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/so_sanh.pkl …
+[    6.7s RSS  5.19GB] nạp xong · parents=80592 vocab=32002
+[    6.7s RSS  5.19GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    6.7s RSS  5.19GB] ws_spans 0/80592 · span=0 · bỏ=0
+[   18.2s RSS  5.19GB] ws_spans 20000/80592 · span=29370 · bỏ=1822
+[   23.8s RSS  5.19GB] ws_spans 40000/80592 · span=42832 · bỏ=8997
+[   26.5s RSS  5.19GB] ws_spans 60000/80592 · span=47437 · bỏ=21722
+[   28.9s RSS  5.19GB] ws_spans 80000/80592 · span=50237 · bỏ=35572
+[   28.9s RSS  5.19GB] 50345 span · 0.4 phút
+[   29.0s RSS  5.19GB] ghi checkpoints/so_sanh.ws_spans.json (0.8 MB) · roundtrip OK
+[   29.0s RSS  5.19GB]   mẫu[00] '<0x80> <0x83> <0xE5> <0xB0> <0x81>'
+[   29.0s RSS  5.19GB]   mẫu[01] 'p inh'
+[   29.0s RSS  5.19GB]   mẫu[02] 'có khi'
+[   29.0s RSS  5.19GB]   mẫu[03] 'nghĩa bóng'
+[   29.0s RSS  5.19GB]   mẫu[04] 'sinh vật học'
+[   29.0s RSS  5.19GB]   mẫu[05] 'chiến hạm'
+[   29.0s RSS  5.19GB]   mẫu[06] 'chỗ đứng'
+[   29.0s RSS  5.19GB]   mẫu[07] 'Trung Âu là'
+[   29.0s RSS  5.19GB]   mẫu[08] 'Linh thuật'
+[   29.0s RSS  5.19GB]   mẫu[09] 'tù trưởng'
+[   29.0s RSS  5.19GB]   mẫu[10] 'Văn Sáu'
+[   29.0s RSS  5.19GB]   mẫu[11] 'Ngọc Thảo'
+[   29.0s RSS  5.19GB]   mẫu[12] 'miễn dịch'
+[   29.0s RSS  5.19GB]   mẫu[13] 'Lý Hạo'
+[   29.0s RSS  5.19GB]   mẫu[14] 'thói thường'
+[   29.0s RSS  5.19GB]   mẫu[15] 'Nhà văn'
+[   29.0s RSS  5.19GB]   mẫu[16] 'Phó Tổng thống'
+[   29.0s RSS  5.19GB]   mẫu[17] 'Frank en'
+[   29.0s RSS  5.19GB]   mẫu[18] 'Be ca'
+[   29.0s RSS  5.19GB]   mẫu[19] 'mĩ viện'
+[   29.0s RSS  5.19GB]   mẫu[20] 'Bến cảng'
+[   29.0s RSS  5.19GB]   mẫu[21] 'Nag y kan iz sa'
+[   29.0s RSS  5.19GB]   mẫu[22] 'Cộng đồng'
+[   29.0s RSS  5.19GB]   mẫu[23] 'đầu ra'
+[   29.0s RSS  5.19GB]   mẫu[24] 'Gri b ov ski'
+[   29.0s RSS  5.19GB]   mẫu[25] 'Bry ce Dallas Howard'
+[   29.0s RSS  5.19GB]   mẫu[26] 'giao thoa'
+[   29.0s RSS  5.19GB]   mẫu[27] 'Flo or'
+[   29.0s RSS  5.19GB]   mẫu[28] 'Raf etus'
+[   29.0s RSS  5.19GB]   mẫu[29] 'Pomp ey'
+[   29.1s RSS  5.19GB] span nghi rác (tự động): 883/50345 = 1.8% (ISG: 57%)
+[   29.1s RSS  5.19GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

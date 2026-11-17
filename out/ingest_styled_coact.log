@@ -1,0 +1,6 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[    60s] ✓ loaded · parents 65,098
+[    82s] styled: 496 đoạn × 5 lặp = 2480 record
+[   138s] g1_passive stats: {'records': 2480, 'tokens': 115465, 'updates': 112985, 'sentence_updates': 2480, 'wseq_updates': 112985}
+[   138s] lưu → checkpoints/network_v11_styled2.pkl
+[   254s] ✓ xong. Kế: probe_style_coact.py --checkpoint checkpoints/network_v11_styled2.pkl

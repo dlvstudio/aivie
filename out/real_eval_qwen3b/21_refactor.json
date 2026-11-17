@@ -1,0 +1,13 @@
+{
+ "id": "21_refactor",
+ "cat": "refactor",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Refactor đoạn code sau cho gọn, dễ đọc và dễ mở rộng thêm loại khách hàng:\n\n```python\ndef tinh_giam_gia(loai_khach, tong_tien):\n    if loai_khach == 'vang':\n        if tong_tien > 1000000:\n            return tong_tien * 0.8\n        else:\n            return tong_tien * 0.9\n    elif loai_khach == 'bac':\n        if tong_tien > 1000000:\n            return tong_tien * 0.9\n        else:\n            return tong_tien * 0.95\n    elif loai_khach == 'thuong':\n        return tong_tien\n    else:\n        return tong_tien\n```",
+   "text": "Để refactor đoạn code này cho gọn, dễ đọc và dễ mở rộng thêm loại khách hàng, bạn có thể sử dụng một dictionary để mapping giữa loại khách hàng và mức giảm giá. Dưới đây là cách cải tiến:\n\n```python\ndef tinh_giam_gia(loai_khach, tong_tien):\n    # Mapped discount rates for different customer types\n    discounts = {\n        'vang': 0.8 if tong_tien > 1000000 else 0.9,\n        'bac': 0.9 if tong_tien > 1000000 else 0.95,\n        'thuong': 1.0,  # No discount for regular customers\n    }\n    \n    # Return the discounted amount or original amount based on customer type\n    return tong_tien * discounts.get(loai_khach, 1.0)\n```\n\n### Lý giải:\n- **Dictionary `discounts`:** Dùng để lưu trữ mức giảm giá cho từng loại khách hàng.\n- **Mặc định:** Nếu không có loại khách hàng trong dictionary, hàm sẽ trả về giá trị mặc định là 1 (không giảm giá).\n- **Phương thức `get()`:** Sử dụng để lấy giá trị từ dictionary với tên loai_khach. Nếu không tìm thấy, nó sẽ sử dụng giá trị mặc định.\n\n### Các lợi ích:\n- **Giảm độ phức tạp:** Code trở nên ít dòng và dễ hiểu hơn.\n- **Mở rộng thêm loại khách hàng:** Thêm một loại khách hàng mới chỉ cần thêm vào dictionary `discounts`.\n- **Tính linh hoạt:** Có thể dễ dàng thay đổi mức giảm giá cho từng loại khách hàng trong tương lai.",
+   "tokens": 370,
+   "sec": 4.4
+  }
+ ]
+}

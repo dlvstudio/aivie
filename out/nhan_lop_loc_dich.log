@@ -1,0 +1,26 @@
+
+═══ loc_dich=False · 24996 nguồn ═══
+   «chó   »    ['bạn.<EOS>', 'chủ', 'phổ biến', 'gì?<EOS>', 'yếu']
+   «mèo   » ✓3 ['chủ', 'thú', 'đề nghị', 'sọc', 'loài']
+   «hổ    » ✓3 ['Tiên', 'gì:', 'sinh vật', 'vật', 'kẻ']
+   «sóc   »    ['gì?<EOS>', 'điều cần thiết để', 'một phần thiết yếu', 'rất', 'một loài']
+   «sắt   »    ['oxide', 'lĩnh vực', 'những nguồn tài nguyên', 'dùng', 'kim loại']
+   «đồng  » ✓3 ['gì?<EOS>', 'kim loại', 'loài', 'hạn', 'Tổng Bí thư']
+   «lúa   » ✓1 ['cây', 'sản', 'dị', 'vùng', 'yếu']
+   «muối  »    ['hai', 'hoàn toàn', 'thì', 'phát triển', 'vừng']
+   «nước  »    ['gì?<EOS>', '3', 'Hoa', 'hạn', '0']
+   «khỉ   »    ['gì?<EOS>', 'nắm', 'một loại', 'loài bản địa', 'thú']
+   ── top-1 ĐÚNG 1/10 · top-3 ĐÚNG 4/10
+
+═══ loc_dich=True · 21278 nguồn ═══
+   «chó   »    ['chủ', 'nhà', 'thể thấy được', 'tự nhiên', 'giống']
+   «mèo   » ✓3 ['chủ', 'thú', 'sọc', 'loài', 'một loài']
+   «hổ    » ✓3 ['Tiên', 'gì:', 'sinh vật', 'vật', 'kẻ']
+   «sóc   »    ['điều cần thiết để', 'một phần thiết yếu', 'một loài', 'phần', 'cô']
+   «sắt   »    ['oxide', 'lĩnh vực', 'những nguồn tài nguyên', 'kim loại', 'mạt']
+   «đồng  » ✓1 ['kim loại', 'loài', 'hạn', 'Tổng Bí thư', 'chủ tịch']
+   «lúa   » ✓1 ['cây', 'vùng', 'cho người,', 'thân mềm', 'ngũ cốc']
+   «muối  »    ['hai', 'vừng', 'cái', 'mắm', 'sương']
+   «nước  »    ['Hoa', 'hạn', 'loại', 'H2O', 'nước']
+   «khỉ   » ✓3 ['một loại', 'loài bản địa', 'thú', 'anh', 'linh trưởng']
+   ── top-1 ĐÚNG 2/10 · top-3 ĐÚNG 5/10

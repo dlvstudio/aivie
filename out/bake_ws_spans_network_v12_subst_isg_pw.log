@@ -1,0 +1,88 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   49.0s RSS  5.16GB] nạp xong · parents=430447 vocab=249107
+[   49.1s RSS  7.49GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   49.1s RSS  7.49GB] ws_spans 0/430447 · span=0 · bỏ=0
+[   50.4s RSS  7.49GB] ws_spans 20000/430447 · span=6127 · bỏ=16732
+[   61.2s RSS  7.49GB] ws_spans 40000/430447 · span=9129 · bỏ=34401
+[   62.3s RSS  7.49GB] ws_spans 60000/430447 · span=11510 · bỏ=52024
+[   63.5s RSS  7.49GB] ws_spans 80000/430447 · span=13459 · bỏ=69662
+[   64.5s RSS  7.49GB] ws_spans 100000/430447 · span=15122 · bỏ=87381
+[   66.9s RSS  7.49GB] ws_spans 120000/430447 · span=20859 · bỏ=101334
+[   69.6s RSS  7.49GB] ws_spans 140000/430447 · span=27290 · bỏ=114351
+[   72.9s RSS  7.49GB] ws_spans 160000/430447 · span=33168 · bỏ=127922
+[   78.2s RSS  7.49GB] ws_spans 180000/430447 · span=39889 · bỏ=139659
+[   83.5s RSS  7.49GB] ws_spans 200000/430447 · span=45083 · bỏ=151455
+[   88.7s RSS  7.49GB] ws_spans 220000/430447 · span=49527 · bỏ=163121
+[   93.8s RSS  7.49GB] ws_spans 240000/430447 · span=53754 · bỏ=175011
+[   98.9s RSS  7.49GB] ws_spans 260000/430447 · span=57503 · bỏ=186993
+[  103.9s RSS  7.49GB] ws_spans 280000/430447 · span=61018 · bỏ=199040
+[  109.1s RSS  7.49GB] ws_spans 300000/430447 · span=64393 · bỏ=210832
+[  113.7s RSS  7.49GB] ws_spans 320000/430447 · span=66735 · bỏ=223069
+[  118.3s RSS  7.49GB] ws_spans 340000/430447 · span=68538 · bỏ=235143
+[  123.0s RSS  7.49GB] ws_spans 360000/430447 · span=70314 · bỏ=247191
+[  127.6s RSS  7.49GB] ws_spans 380000/430447 · span=72083 · bỏ=259338
+[  132.3s RSS  7.49GB] ws_spans 400000/430447 · span=73800 · bỏ=271415
+[  135.4s RSS  7.49GB] ws_spans 420000/430447 · span=76878 · bỏ=283698
+[  137.1s RSS  7.49GB] 78563 span · 1.5 phút
+[  148.1s RSS  7.49GB] ghi checkpoints/network_v12_subst_isg_pw.ws_spans.json (1.3 MB) · roundtrip OK
+[  148.2s RSS  7.49GB] mẫu span: 'Hỏi: Tàu' · 'tại Gia Lý Học Viện' · 'địa bàn' · 'lão Dương' · 'sâu rộng' · 'Tam Xoa Kích' · 'Khương Thượng' · 'đảng Quốc xã' · 'Bí Mật' · 'Địch Long' · 'Bat ư' · 'René Lac os te'
+[  148.3s RSS  7.49GB] span nghi rác: 0/78563 = 0.0% (ISG: 57%)
+[    0.0s RSS  0.08GB] nạp checkpoints/network_v12_subst_isg_pw.pkl …
+[   50.7s RSS  5.29GB] nạp xong · parents=430447 vocab=249107
+[   50.8s RSS  6.77GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   50.8s RSS  6.77GB] ws_spans 0/430447 · span=0 · bỏ=0
+[   52.2s RSS  6.77GB] ws_spans 20000/430447 · span=5277 · bỏ=16732
+[   53.3s RSS  6.77GB] ws_spans 40000/430447 · span=7375 · bỏ=34401
+[   64.4s RSS  6.77GB] ws_spans 60000/430447 · span=9069 · bỏ=52024
+[   65.4s RSS  6.77GB] ws_spans 80000/430447 · span=10506 · bỏ=69662
+[   66.5s RSS  6.77GB] ws_spans 100000/430447 · span=11741 · bỏ=87381
+[   68.9s RSS  6.77GB] ws_spans 120000/430447 · span=17282 · bỏ=101334
+[   71.5s RSS  6.77GB] ws_spans 140000/430447 · span=23567 · bỏ=114351
+[   74.7s RSS  6.77GB] ws_spans 160000/430447 · span=29234 · bỏ=127922
+[   79.9s RSS  6.77GB] ws_spans 180000/430447 · span=35508 · bỏ=139659
+[   85.2s RSS  6.77GB] ws_spans 200000/430447 · span=40308 · bỏ=151455
+[   90.4s RSS  6.77GB] ws_spans 220000/430447 · span=44427 · bỏ=163121
+[   95.6s RSS  6.77GB] ws_spans 240000/430447 · span=48317 · bỏ=175011
+[  100.7s RSS  6.77GB] ws_spans 260000/430447 · span=51764 · bỏ=186993
+[  106.0s RSS  6.77GB] ws_spans 280000/430447 · span=54971 · bỏ=199040
+[  111.6s RSS  6.77GB] ws_spans 300000/430447 · span=58049 · bỏ=210832
+[  116.5s RSS  6.77GB] ws_spans 320000/430447 · span=60236 · bỏ=223069
+[  121.2s RSS  6.77GB] ws_spans 340000/430447 · span=61922 · bỏ=235143
+[  125.8s RSS  6.77GB] ws_spans 360000/430447 · span=63536 · bỏ=247191
+[  130.3s RSS  6.77GB] ws_spans 380000/430447 · span=65207 · bỏ=259338
+[  135.0s RSS  6.77GB] ws_spans 400000/430447 · span=66778 · bỏ=271415
+[  137.9s RSS  6.77GB] ws_spans 420000/430447 · span=69766 · bỏ=283698
+[  139.6s RSS  6.77GB] 71379 span · 1.5 phút
+[  150.1s RSS  7.46GB] ghi checkpoints/network_v12_subst_isg_pw.ws_spans.json (1.1 MB) · roundtrip OK
+[  150.2s RSS  7.46GB]   mẫu[00] '<0x82> <0x85> 宗'
+[  150.2s RSS  7.46GB]   mẫu[01] 'nh ộng'
+[  150.2s RSS  7.46GB]   mẫu[02] 'chính khí'
+[  150.2s RSS  7.46GB]   mẫu[03] 'bản tính'
+[  150.2s RSS  7.46GB]   mẫu[04] 'chiến lược'
+[  150.2s RSS  7.46GB]   mẫu[05] 'vô thanh'
+[  150.2s RSS  7.46GB]   mẫu[06] 'hết sức'
+[  150.2s RSS  7.46GB]   mẫu[07] 'phản quốc'
+[  150.2s RSS  7.46GB]   mẫu[08] 'Hoa kiều'
+[  150.2s RSS  7.46GB]   mẫu[09] 'Kim Công sơn mạch'
+[  150.2s RSS  7.46GB]   mẫu[10] 'Thái Cổ truyền'
+[  150.2s RSS  7.46GB]   mẫu[11] 'nặng lòng'
+[  150.2s RSS  7.46GB]   mẫu[12] 'quỷ thần'
+[  150.2s RSS  7.46GB]   mẫu[13] 'hào quang'
+[  150.2s RSS  7.46GB]   mẫu[14] 'ngộ Hỏa chi'
+[  150.2s RSS  7.46GB]   mẫu[15] 'súng lục'
+[  150.2s RSS  7.46GB]   mẫu[16] 'Quý thị Vương tộc'
+[  150.2s RSS  7.46GB]   mẫu[17] 'cưỡng bức'
+[  150.2s RSS  7.46GB]   mẫu[18] 'Tình tự nhiên'
+[  150.2s RSS  7.46GB]   mẫu[19] 'Nghĩa Bình'
+[  150.2s RSS  7.46GB]   mẫu[20] 'không khí'
+[  150.2s RSS  7.46GB]   mẫu[21] 'James Moriarty'
+[  150.2s RSS  7.46GB]   mẫu[22] 'Sy d ne'
+[  150.2s RSS  7.46GB]   mẫu[23] 'ngoạn mục'
+[  150.2s RSS  7.46GB]   mẫu[24] 'Mị bách'
+[  150.2s RSS  7.46GB]   mẫu[25] 'Hamburg địa vị'
+[  150.2s RSS  7.46GB]   mẫu[26] 'cyan ic'
+[  150.2s RSS  7.46GB]   mẫu[27] 'Steven Sod er ber gh'
+[  150.2s RSS  7.46GB]   mẫu[28] 'lụp xụp'
+[  150.2s RSS  7.46GB]   mẫu[29] 'bhā s vara'
+[  150.4s RSS  7.46GB] span nghi rác (tự động): 1313/71379 = 1.8% (ISG: 57%)
+[  150.4s RSS  7.46GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

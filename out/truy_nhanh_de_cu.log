@@ -1,0 +1,25 @@
+
+TẮT TỪNG NHÁNH — đầu ra có đổi không?
+
+  MỐC (mặc định):
+      khoẻ   ['đồ', 'mục', 'chỗ', 'phần', 'đá', 'hình']
+      cứng   ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'cùng']
+      khôn   ['hàng', 'tờ', 'đới', 'nhân', 'bạn', 'dịch']
+
+  §71 nhãn trực tiếp TẮT     ĐỔI ở: ['khoẻ', 'cứng', 'khôn']
+      khoẻ   ['đá', 'hình', 'bánh', 'ngữ', 'phẩm', 'anh']
+      cứng   ['cùng', 'hắn', 'đối', 'chiến', 'hồ', 'ngươi']
+      khôn   ['hàng', 'nhân', 'bạn', 'dịch', 'bản', 'nước']
+
+  §72 kề TẮT                 ĐỔI ở: ['khoẻ', 'cứng', 'khôn']
+      khoẻ   ['chỗ', 'đồ', 'mục', 'phần', 'đá', 'hình']
+      cứng   ['dấu', 'bệnh', 'giấy', 'cốt', 'cảm', 'cùng']
+      khôn   ['hàng', 'nhân', 'bạn', 'dịch', 'cây', 'bản']
+
+  ③ ke_ctx TẮT               ĐỔI ở: ['khoẻ', 'cứng', 'khôn']
+      khoẻ   ['đồ', 'mục', 'chỗ', 'phần', 'hình', 'phẩm']
+      cứng   ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'nói']
+      khôn   ['tờ', 'đới', 'bạn', 'cây', 'họ', 'công']
+
+  gộp mảnh từ TẮT            ĐỔI ở: ['khôn']
+      khôn   ['tờ', 'đới', 'cây', 'khoảng', 'dụng', 'lỗ']

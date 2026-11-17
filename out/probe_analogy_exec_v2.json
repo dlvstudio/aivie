@@ -1,0 +1,148 @@
+{
+ "n_pos_cases": 200,
+ "n_neg_cases": 200,
+ "pos": {
+  "hebbian_E": {
+   "prec": 0.355,
+   "n_fill": 200,
+   "hit": 71
+  },
+  "embedding": {
+   "prec": 0.245,
+   "n_fill": 200,
+   "hit": 49
+  },
+  "ngau_nhien": {
+   "prec": 0.01,
+   "n_fill": 200,
+   "hit": 2
+  }
+ },
+ "neg": {
+  "hebbian_E": {
+   "fp": 0.0,
+   "n_fill": 154,
+   "fp_n": 0
+  },
+  "embedding": {
+   "fp": 0.02,
+   "n_fill": 200,
+   "fp_n": 4
+  },
+  "ngau_nhien": {
+   "fp": 0.05,
+   "n_fill": 200,
+   "fp_n": 10
+  }
+ },
+ "examples_pos_he": [
+  {
+   "a": "Lăng",
+   "c_star": "Nguyễn",
+   "pred": "Nguyễn",
+   "donors": [
+    "Sơn",
+    "vương"
+   ],
+   "prompt": "Lăng là",
+   "gen": "Lăng là Nguyễn",
+   "creative": true
+  },
+  {
+   "a": "thân",
+   "c_star": "Nguyễn",
+   "pred": "Nguyễn",
+   "donors": [
+    "đầu",
+    "mới",
+    "sinh",
+    "em"
+   ],
+   "prompt": "thân là",
+   "gen": "thân là Nguyễn",
+   "creative": true
+  },
+  {
+   "a": "Trang",
+   "c_star": "triều",
+   "pred": "triều",
+   "donors": [
+    "Hồ",
+    "Lê"
+   ],
+   "prompt": "Trang là",
+   "gen": "Trang là triều",
+   "creative": true
+  },
+  {
+   "a": "nguồn",
+   "c_star": "Nguyễn",
+   "pred": "Nguyễn",
+   "donors": [
+    "khác",
+    "sinh"
+   ],
+   "prompt": "nguồn là",
+   "gen": "nguồn là Nguyễn",
+   "creative": true
+  },
+  {
+   "a": "Năm",
+   "c_star": "Lê",
+   "pred": "Lê",
+   "donors": [
+    "thứ",
+    "Tông"
+   ],
+   "prompt": "Năm là",
+   "gen": "Năm là Lê",
+   "creative": true
+  },
+  {
+   "a": "nghìn",
+   "c_star": "Nguyễn",
+   "pred": "Nguyễn",
+   "donors": [
+    "2",
+    "4",
+    "7"
+   ],
+   "prompt": "nghìn là",
+   "gen": "nghìn là Nguyễn",
+   "creative": true
+  },
+  {
+   "a": "Bạn",
+   "c_star": "Nguyễn",
+   "pred": "Nguyễn",
+   "donors": [
+    "mình",
+    "em"
+   ],
+   "prompt": "Bạn là",
+   "gen": "Bạn là Nguyễn",
+   "creative": true
+  },
+  {
+   "a": "ít",
+   "c_star": "Bắc",
+   "pred": "Bắc",
+   "donors": [
+    "nó",
+    "thường"
+   ],
+   "prompt": "ít là",
+   "gen": "ít là Bắc",
+   "creative": true
+  }
+ ],
+ "examples_neg_he_fp": [],
+ "gate": {
+  "g1": true,
+  "g2": false,
+  "g3": true,
+  "g4": true,
+  "pass": false
+ },
+ "seconds": 8.4
+}

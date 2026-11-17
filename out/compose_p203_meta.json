@@ -1,0 +1,6373 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst.pkl",
+ "n_moi_nhanh": 120,
+ "rows": [
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.125,
+   "id": "A000"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2429,
+    185038
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 65.4,
+   "id": "A001"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 9,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1429,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A002"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 324,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6667,
+   "n_src": 1,
+   "parents": [
+    324
+   ],
+   "id": "A003"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 90146,
+   "n_src": 1,
+   "parents": [
+    90146
+   ],
+   "ent_keep": 1.0,
+   "id": "A004"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 22780,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    22780
+   ],
+   "id": "A005"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3899,
+    105618
+   ],
+   "ent_keep": 0.5,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 49.2,
+   "id": "A006"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 110,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 282077,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.7143,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "id": "A007"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 150262,
+   "n_src": 1,
+   "parents": [
+    150262
+   ],
+   "ent_keep": 0.3333,
+   "id": "A008"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2487,
+    4311
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 9.3,
+   "id": "A009"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 6302,
+   "n_src": 1,
+   "parents": [
+    6302
+   ],
+   "ent_keep": 1.0,
+   "id": "A010"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4926,
+    6296
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 17.4,
+   "id": "A011"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 26961,
+   "n_src": 1,
+   "parents": [
+    26961
+   ],
+   "ent_keep": 1.0,
+   "id": "A012"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3463,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    3463
+   ],
+   "id": "A013"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.125,
+   "id": "A014"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 355399,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    355399
+   ],
+   "id": "A015"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 10,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A016"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 282077,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "ent_keep": 0.6667,
+   "id": "A017"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 303104,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.625,
+   "n_src": 1,
+   "parents": [
+    303104
+   ],
+   "id": "A018"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4814,
+    2516
+   ],
+   "ent_keep": 0.6667,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 153.28,
+   "id": "A019"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5496,
+   "n_src": 1,
+   "parents": [
+    5496
+   ],
+   "ent_keep": 0.25,
+   "id": "A020"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0833,
+   "id": "A021"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 6295,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1667,
+   "n_src": 1,
+   "parents": [
+    6295
+   ],
+   "id": "A022"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 272192,
+   "n_src": 1,
+   "parents": [
+    272192
+   ],
+   "ent_keep": 0.6667,
+   "id": "A023"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    162063,
+    400029
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 3.6,
+   "id": "A024"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3441,
+   "n_src": 1,
+   "parents": [
+    3441
+   ],
+   "ent_keep": 0.5,
+   "id": "A025"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2793,
+   "n_src": 1,
+   "parents": [
+    2793
+   ],
+   "ent_keep": 0.2308,
+   "id": "A026"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 11,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.4,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A027"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1667,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A028"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3224,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1667,
+   "n_src": 1,
+   "parents": [
+    3224
+   ],
+   "id": "A029"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3045,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    3045
+   ],
+   "id": "A030"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 342685,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.75,
+   "n_src": 1,
+   "parents": [
+    342685
+   ],
+   "id": "A031"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 282077,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "ent_keep": 0.4167,
+   "id": "A032"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    6007,
+    302406
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 6.0,
+   "id": "A033"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    119693,
+    3165
+   ],
+   "ent_keep": 0.2609,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 23.7,
+   "id": "A034"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 277940,
+   "n_src": 1,
+   "parents": [
+    277940
+   ],
+   "ent_keep": 0.5,
+   "id": "A035"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    327596,
+    379908
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 32.38,
+   "id": "A036"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    271058,
+    174879
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 18.9,
+   "id": "A037"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 258525,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5556,
+   "n_src": 1,
+   "parents": [
+    258525
+   ],
+   "id": "A038"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A039"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    33828,
+    98926
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 51.3,
+   "id": "A040"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 363060,
+   "n_src": 1,
+   "parents": [
+    363060
+   ],
+   "ent_keep": 1.0,
+   "id": "A041"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 242207,
+   "n_src": 1,
+   "parents": [
+    242207
+   ],
+   "ent_keep": 1.0,
+   "id": "A042"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    5173,
+    337005
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 103.25,
+   "id": "A043"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 1667,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    1667
+   ],
+   "id": "A044"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 429965,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    429965
+   ],
+   "id": "A045"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A046"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    296423
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 7.9,
+   "id": "A047"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 1428,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.25,
+   "n_src": 1,
+   "parents": [
+    1428
+   ],
+   "id": "A048"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 12,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A049"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A050"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    288049,
+    321408
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 29.1,
+   "id": "A051"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    199791,
+    170055
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 135.26,
+   "id": "A052"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    162996
+   ],
+   "ent_keep": 0.8333,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 17.4,
+   "id": "A053"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 5233,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.4,
+   "n_src": 1,
+   "parents": [
+    5233
+   ],
+   "id": "A054"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    301527,
+    289163
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 4.2,
+   "id": "A055"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 248323,
+   "n_src": 1,
+   "parents": [
+    248323
+   ],
+   "ent_keep": 1.0,
+   "id": "A056"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    395730
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 34.2,
+   "id": "A057"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    66980,
+    30107
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 3.6,
+   "id": "A058"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3045,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    3045
+   ],
+   "id": "A059"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2560,
+    5034
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 46.76,
+   "id": "A060"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 313165,
+   "n_src": 1,
+   "parents": [
+    313165
+   ],
+   "ent_keep": 0.8571,
+   "id": "A061"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    66975,
+    72056
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 18.6,
+   "id": "A062"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 2931,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    2931
+   ],
+   "id": "A063"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 6387,
+   "n_src": 1,
+   "parents": [
+    6387
+   ],
+   "ent_keep": 0.0,
+   "id": "A064"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    119693,
+    251025
+   ],
+   "ent_keep": 0.6667,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 18.0,
+   "id": "A065"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 7,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.125,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A066"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    52765,
+    42218
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 67.2,
+   "id": "A067"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 4,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A068"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 293869,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.8,
+   "n_src": 1,
+   "parents": [
+    293869
+   ],
+   "id": "A069"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    98963,
+    40207
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 135.52,
+   "id": "A070"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4279,
+   "n_src": 1,
+   "parents": [
+    4279
+   ],
+   "ent_keep": 0.4,
+   "id": "A071"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A072"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3045,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    3045
+   ],
+   "id": "A073"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4787,
+    3230
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 50.98,
+   "id": "A074"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    342130
+   ],
+   "ent_keep": 0.6,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 281.37,
+   "id": "A075"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 752,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    752
+   ],
+   "id": "A076"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    320820,
+    136792
+   ],
+   "ent_keep": 0.5,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A077"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.5,
+   "id": "A078"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 189168,
+   "n_src": 1,
+   "parents": [
+    189168
+   ],
+   "ent_keep": 0.8,
+   "id": "A079"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 254089,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    254089
+   ],
+   "id": "A080"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    282077
+   ],
+   "ent_keep": 0.5,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A081"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 297786,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6,
+   "n_src": 1,
+   "parents": [
+    297786
+   ],
+   "id": "A082"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3084,
+    3712
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 11.4,
+   "id": "A083"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    81605,
+    53492
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 12.9,
+   "id": "A084"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 19,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A085"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A086"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    1324,
+    126469
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 44.4,
+   "id": "A087"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    202054,
+    6027
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 149.46,
+   "id": "A088"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 398826,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6,
+   "n_src": 1,
+   "parents": [
+    398826
+   ],
+   "id": "A089"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 86541,
+   "n_src": 1,
+   "parents": [
+    86541
+   ],
+   "ent_keep": 0.3333,
+   "id": "A090"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3844,
+   "n_src": 1,
+   "parents": [
+    3844
+   ],
+   "ent_keep": 0.0,
+   "id": "A091"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 2314,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.25,
+   "n_src": 1,
+   "parents": [
+    2314
+   ],
+   "id": "A092"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 8226,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    8226
+   ],
+   "id": "A093"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3903,
+    339666
+   ],
+   "ent_keep": 0.875,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 22.2,
+   "id": "A094"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    367124,
+    331354
+   ],
+   "ent_keep": 0.6,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 58.5,
+   "id": "A095"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 13030,
+   "n_src": 1,
+   "parents": [
+    13030
+   ],
+   "ent_keep": 1.0,
+   "id": "A096"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 235229,
+   "n_src": 1,
+   "parents": [
+    235229
+   ],
+   "ent_keep": 0.75,
+   "id": "A097"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 236,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    236
+   ],
+   "id": "A098"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    33828,
+    98926
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 51.3,
+   "id": "A099"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 176747,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    176747
+   ],
+   "id": "A100"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2890,
+   "n_src": 1,
+   "parents": [
+    2890
+   ],
+   "ent_keep": 0.3333,
+   "id": "A101"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 67852,
+   "n_src": 1,
+   "parents": [
+    67852
+   ],
+   "ent_keep": 0.8,
+   "id": "A102"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5655,
+   "n_src": 1,
+   "parents": [
+    5655
+   ],
+   "ent_keep": 0.0,
+   "id": "A103"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 282077,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "ent_keep": 0.7778,
+   "id": "A104"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A105"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 62783,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    62783
+   ],
+   "id": "A106"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A107"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 228592,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.8571,
+   "n_src": 1,
+   "parents": [
+    228592
+   ],
+   "id": "A108"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0833,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A109"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    381938
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 28.5,
+   "id": "A110"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 181350,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6667,
+   "n_src": 1,
+   "parents": [
+    181350
+   ],
+   "id": "A111"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    270574
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 15.0,
+   "id": "A112"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 6113,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1111,
+   "n_src": 1,
+   "parents": [
+    6113
+   ],
+   "id": "A113"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 193381,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.75,
+   "n_src": 1,
+   "parents": [
+    193381
+   ],
+   "id": "A114"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 224074,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.7143,
+   "n_src": 1,
+   "parents": [
+    224074
+   ],
+   "id": "A115"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 50,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 119693,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0769,
+   "n_src": 1,
+   "parents": [
+    119693
+   ],
+   "id": "A116"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 430031,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    430031
+   ],
+   "id": "A117"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A118"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    6342,
+    4613
+   ],
+   "ent_keep": 0.7778,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 61.21,
+   "id": "A119"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.1111,
+   "id": "A120"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2583,
+    174862
+   ],
+   "ent_keep": 0.8333,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 7.12,
+   "id": "A121"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A122"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 2432,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.25,
+   "n_src": 1,
+   "parents": [
+    2432
+   ],
+   "id": "A123"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A124"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A125"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 339308,
+   "n_src": 1,
+   "parents": [
+    339308
+   ],
+   "ent_keep": 1.0,
+   "id": "A126"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    205208,
+    251180
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 19.02,
+   "id": "A127"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5019,
+   "n_src": 1,
+   "parents": [
+    5019
+   ],
+   "ent_keep": 0.75,
+   "id": "A128"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 7,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0714,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A129"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    362815,
+    363369
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.18,
+   "id": "A130"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    1670,
+    269897
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 21.56,
+   "id": "A131"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 292011,
+   "n_src": 1,
+   "parents": [
+    292011
+   ],
+   "ent_keep": 0.4286,
+   "id": "A132"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    228488,
+    238912
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 31.2,
+   "id": "A133"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    103844,
+    103846
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 318.84,
+   "id": "A134"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.2,
+   "id": "A135"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 226813,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.75,
+   "n_src": 1,
+   "parents": [
+    226813
+   ],
+   "id": "A136"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 154033,
+   "n_src": 1,
+   "parents": [
+    154033
+   ],
+   "ent_keep": 0.8,
+   "id": "A137"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    201184
+   ],
+   "ent_keep": 0.5833,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 5.04,
+   "id": "A138"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 297740,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2,
+   "n_src": 1,
+   "parents": [
+    297740
+   ],
+   "id": "A139"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3442,
+    270114
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 6.0,
+   "id": "A140"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4265,
+   "n_src": 1,
+   "parents": [
+    4265
+   ],
+   "ent_keep": 0.4,
+   "id": "A141"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 282077,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "ent_keep": 0.6667,
+   "id": "A142"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2549,
+    246157
+   ],
+   "ent_keep": 0.8,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A143"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 9791,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    9791
+   ],
+   "id": "A144"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A145"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 346756,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    346756
+   ],
+   "id": "A146"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    119693,
+    178302
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 33.26,
+   "id": "A147"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 16,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A148"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 256078,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    256078
+   ],
+   "id": "A149"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 1625,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    1625
+   ],
+   "id": "A150"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 21646,
+   "n_src": 1,
+   "parents": [
+    21646
+   ],
+   "ent_keep": 1.0,
+   "id": "A151"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 8,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A152"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    214961,
+    165037
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 53.4,
+   "id": "A153"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 700,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    700
+   ],
+   "id": "A154"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 33,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 282077,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2857,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "id": "A155"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3144,
+    6917
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 184.42,
+   "id": "A156"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 129506,
+   "n_src": 1,
+   "parents": [
+    129506
+   ],
+   "ent_keep": 1.0,
+   "id": "A157"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    168638,
+    229141
+   ],
+   "ent_keep": 0.875,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 45.0,
+   "id": "A158"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 141083,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    141083
+   ],
+   "id": "A159"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    306633,
+    300825
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 54.3,
+   "id": "A160"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5517,
+   "n_src": 1,
+   "parents": [
+    5517
+   ],
+   "ent_keep": 1.0,
+   "id": "A161"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 215787,
+   "n_src": 1,
+   "parents": [
+    215787
+   ],
+   "ent_keep": 1.0,
+   "id": "A162"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 234745,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    234745
+   ],
+   "id": "A163"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 8,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A164"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    343988,
+    343989
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 52.2,
+   "id": "A165"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3695,
+    269794
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 50.27,
+   "id": "A166"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A167"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 64373,
+   "n_src": 1,
+   "parents": [
+    64373
+   ],
+   "ent_keep": 1.0,
+   "id": "A168"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    779,
+    3333
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 22.8,
+   "id": "A169"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    162995,
+    180748
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 13.5,
+   "id": "A170"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 198322,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    198322
+   ],
+   "id": "A171"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A172"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 275109,
+   "n_src": 1,
+   "parents": [
+    275109
+   ],
+   "ent_keep": 1.0,
+   "id": "A173"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    211752,
+    206820
+   ],
+   "ent_keep": 0.8571,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 926.39,
+   "id": "A174"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 5370,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    5370
+   ],
+   "id": "A175"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    205247
+   ],
+   "ent_keep": 0.5714,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 120.0,
+   "id": "A176"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4543,
+    398004
+   ],
+   "ent_keep": 0.8889,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 32.1,
+   "id": "A177"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 52318,
+   "n_src": 1,
+   "parents": [
+    52318
+   ],
+   "ent_keep": 1.0,
+   "id": "A178"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 282077,
+   "n_src": 1,
+   "parents": [
+    282077
+   ],
+   "ent_keep": 0.5,
+   "id": "A179"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 37,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 119693,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    119693
+   ],
+   "id": "A180"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3343,
+   "n_src": 1,
+   "parents": [
+    3343
+   ],
+   "ent_keep": 0.5,
+   "id": "A181"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A182"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    234764,
+    393058
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 46.8,
+   "id": "A183"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    392314
+   ],
+   "ent_keep": 0.5833,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 27.95,
+   "id": "A184"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4557,
+   "n_src": 1,
+   "parents": [
+    4557
+   ],
+   "ent_keep": 1.0,
+   "id": "A185"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    704,
+    6279
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 5310.01,
+   "id": "A186"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 72768,
+   "n_src": 1,
+   "parents": [
+    72768
+   ],
+   "ent_keep": 1.0,
+   "id": "A187"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A188"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2738,
+   "n_src": 1,
+   "parents": [
+    2738
+   ],
+   "ent_keep": 0.3333,
+   "id": "A189"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.125,
+   "id": "A190"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    164423,
+    186464
+   ],
+   "ent_keep": 0.8889,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 87.3,
+   "id": "A191"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 7,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2143,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A192"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 321467,
+   "n_src": 1,
+   "parents": [
+    321467
+   ],
+   "ent_keep": 0.7778,
+   "id": "A193"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    339301,
+    330682
+   ],
+   "ent_keep": 0.7,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 120.78,
+   "id": "A194"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A195"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    2967,
+    5710
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 25.76,
+   "id": "A196"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    3
+   ],
+   "id": "A197"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A198"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    75049,
+    87390
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 387.6,
+   "id": "A199"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 369198,
+   "n_src": 1,
+   "parents": [
+    369198
+   ],
+   "ent_keep": 0.5,
+   "id": "A200"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 303022,
+   "n_src": 1,
+   "parents": [
+    303022
+   ],
+   "ent_keep": 0.8889,
+   "id": "A201"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 221046,
+   "n_src": 1,
+   "parents": [
+    221046
+   ],
+   "ent_keep": 1.0,
+   "id": "A202"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_fallback_p112",
+   "n_src": 1,
+   "parents": [
+    119215,
+    118150
+   ],
+   "ent_keep": 1.0,
+   "joined": false,
+   "fallback": true,
+   "fallback_p112": true,
+   "join_ok": false,
+   "join_score": 0.0,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "id": "A203"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A204"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 389863,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    389863
+   ],
+   "id": "A205"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    159401,
+    225705
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 49.8,
+   "id": "A206"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 336687,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    336687
+   ],
+   "id": "A207"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 152910,
+   "n_src": 1,
+   "parents": [
+    152910
+   ],
+   "ent_keep": 0.25,
+   "id": "A208"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    27973,
+    7266
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 26.4,
+   "id": "A209"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 1256,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    1256
+   ],
+   "id": "A210"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3818,
+    282077
+   ],
+   "ent_keep": 0.6667,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 14.4,
+   "id": "A211"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    282077
+   ],
+   "ent_keep": 0.6,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A212"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0714,
+   "id": "A213"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3559,
+   "n_src": 1,
+   "parents": [
+    3559
+   ],
+   "ent_keep": 0.5,
+   "id": "A214"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    212941,
+    258830
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 78.0,
+   "id": "A215"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 316597,
+   "n_src": 1,
+   "parents": [
+    316597
+   ],
+   "ent_keep": 1.0,
+   "id": "A216"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A217"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    12050,
+    67516
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 51.0,
+   "id": "A218"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 279,
+   "n_src": 1,
+   "parents": [
+    279
+   ],
+   "ent_keep": 0.0,
+   "id": "A219"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 243154,
+   "n_src": 1,
+   "parents": [
+    243154
+   ],
+   "ent_keep": 0.6,
+   "id": "A220"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 321842,
+   "n_src": 1,
+   "parents": [
+    321842
+   ],
+   "ent_keep": 0.5,
+   "id": "A221"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A222"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 15,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A223"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 150873,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.8889,
+   "n_src": 1,
+   "parents": [
+    150873
+   ],
+   "id": "A224"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 5746,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.25,
+   "n_src": 1,
+   "parents": [
+    5746
+   ],
+   "id": "A225"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    5619,
+    329728
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 55.9,
+   "id": "A226"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 8314,
+   "n_src": 1,
+   "parents": [
+    8314
+   ],
+   "ent_keep": 1.0,
+   "id": "A227"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 95413,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    95413
+   ],
+   "id": "A228"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 259970,
+   "n_src": 1,
+   "parents": [
+    259970
+   ],
+   "ent_keep": 1.0,
+   "id": "A229"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 20,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A230"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4980,
+    7413
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 260.48,
+   "id": "A231"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 41647,
+   "n_src": 1,
+   "parents": [
+    41647
+   ],
+   "ent_keep": 1.0,
+   "id": "A232"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3666,
+   "n_src": 1,
+   "parents": [
+    3666
+   ],
+   "ent_keep": 0.0,
+   "id": "A233"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0909,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A234"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A235"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    148378,
+    151753
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 22.78,
+   "id": "A236"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    275298,
+    270760
+   ],
+   "ent_keep": 0.8333,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 77.1,
+   "id": "A237"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 268610,
+   "n_src": 1,
+   "parents": [
+    268610
+   ],
+   "ent_keep": 1.0,
+   "id": "A238"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2841,
+   "n_src": 1,
+   "parents": [
+    2841
+   ],
+   "ent_keep": 0.3333,
+   "id": "A239"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    280910,
+    224958
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 33.6,
+   "id": "A240"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    306524,
+    328908
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 19.8,
+   "id": "A241"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 334413,
+   "n_src": 1,
+   "parents": [
+    334413
+   ],
+   "ent_keep": 0.5714,
+   "id": "A242"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    314583,
+    325779
+   ],
+   "ent_keep": 0.7857,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 28.8,
+   "id": "A243"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A244"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 210645,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.8,
+   "n_src": 1,
+   "parents": [
+    210645
+   ],
+   "id": "A245"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 279822,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.4286,
+   "n_src": 1,
+   "parents": [
+    279822
+   ],
+   "id": "A246"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 107848,
+   "n_src": 1,
+   "parents": [
+    107848
+   ],
+   "ent_keep": 0.75,
+   "id": "A247"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    117827
+   ],
+   "ent_keep": 0.5,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 113.25,
+   "id": "A248"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 65457,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    65457
+   ],
+   "id": "A249"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 2288,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.4,
+   "n_src": 1,
+   "parents": [
+    2288
+   ],
+   "id": "A250"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3151,
+    7508
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 2.4,
+   "id": "A251"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A252"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 430222,
+   "n_src": 1,
+   "parents": [
+    430222
+   ],
+   "ent_keep": 1.0,
+   "id": "A253"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    133966,
+    133974
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 5.15,
+   "id": "A254"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    353713,
+    251760
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 28.8,
+   "id": "A255"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    119693
+   ],
+   "ent_keep": 0.5,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 30.9,
+   "id": "A256"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 221553,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5556,
+   "n_src": 1,
+   "parents": [
+    221553
+   ],
+   "id": "A257"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    76830,
+    103740
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 22.8,
+   "id": "A258"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A259"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 87690,
+   "n_src": 1,
+   "parents": [
+    87690
+   ],
+   "ent_keep": 1.0,
+   "id": "A260"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    302480,
+    348992
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 54.9,
+   "id": "A261"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 10,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.2727,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A262"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 279404,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.625,
+   "n_src": 1,
+   "parents": [
+    279404
+   ],
+   "id": "A263"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 188407,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    188407
+   ],
+   "id": "A264"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    6486,
+    334670
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 15.6,
+   "id": "A265"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 4265,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    4265
+   ],
+   "id": "A266"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.1667,
+   "id": "A267"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 310447,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    310447
+   ],
+   "id": "A268"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 188011,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    188011
+   ],
+   "id": "A269"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    80025,
+    44825
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 269.4,
+   "id": "A270"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A271"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    391761,
+    217278
+   ],
+   "ent_keep": 0.8333,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 21.0,
+   "id": "A272"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    256089,
+    256078
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 130.38,
+   "id": "A273"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 18035,
+   "n_src": 1,
+   "parents": [
+    18035
+   ],
+   "ent_keep": 1.0,
+   "id": "A274"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 369855,
+   "n_src": 1,
+   "parents": [
+    369855
+   ],
+   "ent_keep": 0.9231,
+   "id": "A275"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    6384,
+    224891
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 101.95,
+   "id": "A276"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    145595
+   ],
+   "ent_keep": 0.6364,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 29.1,
+   "id": "A277"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    388054
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 18.6,
+   "id": "A278"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 313972,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    313972
+   ],
+   "id": "A279"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 274925,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    274925
+   ],
+   "id": "A280"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 3131,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    3131
+   ],
+   "id": "A281"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 397523,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6667,
+   "n_src": 1,
+   "parents": [
+    397523
+   ],
+   "id": "A282"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 18,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A283"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 430327,
+   "n_src": 1,
+   "parents": [
+    430327
+   ],
+   "ent_keep": 0.5,
+   "id": "A284"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 31290,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    31290
+   ],
+   "id": "A285"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 220181,
+   "n_src": 1,
+   "parents": [
+    220181
+   ],
+   "ent_keep": 0.8333,
+   "id": "A286"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    430255,
+    5228
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 463.84,
+   "id": "A287"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.125,
+   "id": "A288"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 330707,
+   "n_src": 1,
+   "parents": [
+    330707
+   ],
+   "ent_keep": 0.5,
+   "id": "A289"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 9,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0833,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A290"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    282077
+   ],
+   "ent_keep": 0.5833,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A291"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    317639,
+    305005
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 316.95,
+   "id": "A292"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 63284,
+   "n_src": 1,
+   "parents": [
+    63284
+   ],
+   "ent_keep": 1.0,
+   "id": "A293"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A294"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    96955,
+    82981
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 11.4,
+   "id": "A295"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    265577,
+    282077
+   ],
+   "ent_keep": 0.56,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 10.2,
+   "id": "A296"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    336049,
+    388713
+   ],
+   "ent_keep": 0.9091,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 25.2,
+   "id": "A297"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 395241,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6667,
+   "n_src": 1,
+   "parents": [
+    395241
+   ],
+   "id": "A298"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 338695,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    338695
+   ],
+   "id": "A299"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 288831,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.75,
+   "n_src": 1,
+   "parents": [
+    288831
+   ],
+   "id": "A300"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 259249,
+   "n_src": 1,
+   "parents": [
+    259249
+   ],
+   "ent_keep": 0.3333,
+   "id": "A301"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 570,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    570
+   ],
+   "id": "A302"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A303"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    322908,
+    337910
+   ],
+   "ent_keep": 0.8333,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 3.6,
+   "id": "A304"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3932,
+   "n_src": 1,
+   "parents": [
+    3932
+   ],
+   "ent_keep": 0.5,
+   "id": "A305"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 11074,
+   "n_src": 1,
+   "parents": [
+    11074
+   ],
+   "ent_keep": 1.0,
+   "id": "A306"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    247601,
+    158663
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 83.4,
+   "id": "A307"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 4494,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    4494
+   ],
+   "id": "A308"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 234711,
+   "n_src": 1,
+   "parents": [
+    234711
+   ],
+   "ent_keep": 0.25,
+   "id": "A309"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.1429,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A310"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    4694,
+    10784
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 25.8,
+   "id": "A311"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A312"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4813,
+   "n_src": 1,
+   "parents": [
+    4813
+   ],
+   "ent_keep": 0.3333,
+   "id": "A313"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 7291,
+   "n_src": 1,
+   "parents": [
+    7291
+   ],
+   "ent_keep": 1.0,
+   "id": "A314"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 175350,
+   "n_src": 1,
+   "parents": [
+    175350
+   ],
+   "ent_keep": 1.0,
+   "id": "A315"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A316"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.2,
+   "id": "A317"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 194902,
+   "n_src": 1,
+   "parents": [
+    194902
+   ],
+   "ent_keep": 1.0,
+   "id": "A318"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 163160,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    163160
+   ],
+   "id": "A319"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 62783,
+   "n_src": 1,
+   "parents": [
+    62783
+   ],
+   "ent_keep": 1.0,
+   "id": "A320"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 2,
+   "n_khe_de_xuat": 12,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 265577,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "id": "A321"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 279,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.0,
+   "n_src": 1,
+   "parents": [
+    279
+   ],
+   "id": "A322"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 314251,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6,
+   "n_src": 1,
+   "parents": [
+    314251
+   ],
+   "id": "A323"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    373728,
+    347556
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 1424.52,
+   "id": "A324"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 140005,
+   "n_src": 1,
+   "parents": [
+    140005
+   ],
+   "ent_keep": 0.6,
+   "id": "A325"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    48448,
+    48449
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 31.46,
+   "id": "A326"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    95444,
+    10086
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 70.8,
+   "id": "A327"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5967,
+   "n_src": 1,
+   "parents": [
+    5967
+   ],
+   "ent_keep": 0.3333,
+   "id": "A328"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    158928,
+    3537
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 181.44,
+   "id": "A329"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    399522,
+    276030
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 4.8,
+   "id": "A330"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 307036,
+   "n_src": 1,
+   "parents": [
+    307036
+   ],
+   "ent_keep": 0.8,
+   "id": "A331"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    5748,
+    375191
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 46.8,
+   "id": "A332"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 5291,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.6667,
+   "n_src": 1,
+   "parents": [
+    5291
+   ],
+   "id": "A333"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 298261,
+   "n_src": 1,
+   "parents": [
+    298261
+   ],
+   "ent_keep": 1.0,
+   "id": "A334"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    139646
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 4.8,
+   "id": "A335"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 4721,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    4721
+   ],
+   "id": "A336"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3922,
+    141847
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 376.03,
+   "id": "A337"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "n_src": 1,
+   "parents": [
+    265577
+   ],
+   "ent_keep": 0.0,
+   "id": "A338"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 289849,
+   "n_src": 1,
+   "parents": [
+    289849
+   ],
+   "ent_keep": 0.4,
+   "id": "A339"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3254,
+    138479
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 42.3,
+   "id": "A340"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 267932,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5,
+   "n_src": 1,
+   "parents": [
+    267932
+   ],
+   "id": "A341"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    307662,
+    379137
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 31.8,
+   "id": "A342"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    368798,
+    360845
+   ],
+   "ent_keep": 0.7143,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 307.6,
+   "id": "A343"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2382,
+   "n_src": 1,
+   "parents": [
+    2382
+   ],
+   "ent_keep": 0.4,
+   "id": "A344"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282077,
+    234051
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 51.3,
+   "id": "A345"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    282530,
+    6429
+   ],
+   "ent_keep": 0.6,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 53.4,
+   "id": "A346"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 6364,
+   "n_src": 1,
+   "parents": [
+    6364
+   ],
+   "ent_keep": 0.2667,
+   "id": "A347"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3931,
+   "n_src": 1,
+   "parents": [
+    3931
+   ],
+   "ent_keep": 0.2,
+   "id": "A348"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 98630,
+   "n_src": 1,
+   "parents": [
+    98630
+   ],
+   "ent_keep": 1.0,
+   "id": "A349"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 322,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.3333,
+   "n_src": 1,
+   "parents": [
+    322
+   ],
+   "id": "A350"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    397000,
+    390762
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 19.48,
+   "id": "A351"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4738,
+   "n_src": 1,
+   "parents": [
+    4738
+   ],
+   "ent_keep": 0.1429,
+   "id": "A352"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3924,
+   "n_src": 1,
+   "parents": [
+    3924
+   ],
+   "ent_keep": 1.0,
+   "id": "A353"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 306103,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 0.5714,
+   "n_src": 1,
+   "parents": [
+    306103
+   ],
+   "id": "A354"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    3643,
+    226103
+   ],
+   "ent_keep": 0.75,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 41.06,
+   "id": "A355"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    5372,
+    8318
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 15.6,
+   "id": "A356"
+  },
+  {
+   "cfg": "compose_2cha",
+   "empty": false,
+   "n_clauses": -6,
+   "stop": "compose_2cha",
+   "n_src": 2,
+   "parents": [
+    343743,
+    393082
+   ],
+   "ent_keep": 1.0,
+   "joined": true,
+   "fallback": false,
+   "fallback_p112": false,
+   "join_ok": true,
+   "join_score": 159.9,
+   "id": "A357"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 327283,
+   "n_src": 1,
+   "parents": [
+    327283
+   ],
+   "ent_keep": 0.3077,
+   "id": "A358"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "n_thay": 0,
+   "n_khe_de_xuat": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "max_thay": 2,
+   "slot_rank": "bam",
+   "min_gain": 1,
+   "decode_unit": "token",
+   "era_filter": false,
+   "parent": 97004,
+   "stop": "ep_da_khe_giao",
+   "ent_keep": 1.0,
+   "n_src": 1,
+   "parents": [
+    97004
+   ],
+   "id": "A359"
+  }
+ ]
+}

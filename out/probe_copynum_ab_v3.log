@@ -1,0 +1,50 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36
+A/B ar_matrix_copy_number (no_agenda) — load 1 lần
+
+########## COPY_OFF ar_matrix_copy_number=False ##########
+
+=== ly gen (188.9s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 1 0 1 0
+cont: ' Thăng Long năm 1 0 1 0'
+
+=== bach gen (155.5s) ===
+out:  Trận Bạch Đằng năm 1 2 8 thắng Bạch Đằng năm của Ngô Quyền kết thúc hoàn toàn thắng lợi
+cont: ' 1 2 8 thắng Bạch Đằng năm của Ngô Quyền kết thúc hoàn toàn thắng lợi'
+
+=== nq_def gen (111.0s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd gen (38.9s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+=== hung gen (27.4s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+########## COPY_ON ar_matrix_copy_number=True ##########
+  [copy] w0='Ġnăm' pi=3066 run=['Ġ1', '0', '1', '0'] emit='Hoàng Ġthành Ġđược Ġxây Ġdựng Ġtừ Ġthời Ġnhà ĠLý Ġkhi ĠLý ĠThái ĠTổ Ġdời Ġđô Ġvề ĠThăng ĠLong Ġnăm Ġ1 0 1 0 . <EOS>'
+
+=== ly gen (148.7s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 1010
+cont: ' Thăng Long năm 1010'
+  [copy] w0='Ġ1' pi=2093 run=['2', '8', '8'] emit='ĠChiến Ġthắng ĠBạch ĠĐằng Ġnăm Ġ1 2 8 8 . <EOS>'
+
+=== bach gen (29.5s) ===
+out:  Trận Bạch Đằng năm 1288
+cont: ' 1288'
+
+=== nq_def gen (112.2s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd gen (38.6s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+=== hung gen (27.7s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+[974s] → out/probe_copynum_ab_v3.log

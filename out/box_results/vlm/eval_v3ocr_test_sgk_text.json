@@ -1,0 +1,1063 @@
+{
+ "tag": "v3ocr",
+ "test": "data/vlm/test_sgk_text.jsonl",
+ "rows": [
+  {
+   "src": "sgk",
+   "q": "Làm sao để biết số này bé hơn số kia hả thầy?",
+   "ref": "Em hãy so sánh số lượng vật của hai nhóm, nhóm nào có ít vật hơn thì số đó bé hơn. Ví dụ 2 cái kẹo sẽ bé hơn 4 cái kẹo.",
+   "ans": "Em hãy so sánh các chữ số từ trái sang phải, bắt đầu từ hàng chục nghìn. Nếu hàng chục nghìn nhỏ hơn hàng chục nghìn thứ hai thì số bé hơn. Em có muốn thử so sánh số 10 và số 9 không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Số 5 và số 5 thì mình dùng dấu gì ạ?",
+   "ref": "Con dùng dấu bằng (=) vì hai số này có giá trị bằng nhau. Khi số lượng hai bên như nhau, ta luôn dùng dấu =.",
+   "ans": "Em dùng dấu \"=\" để kết hợp hai số này lại với nhau. Vì 5 x 5 = 25 nên khi cộng hoặc trừ cả hai sẽ cho kết quả là 25. Em có muốn thử làm một bài tập áp dụng không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để tính 7 - 2 nhanh nhất ạ?",
+   "ref": "Em có thể dùng cách đếm lùi, bắt đầu từ 7 rồi đếm lùi 2 bước: 6, 5. Vậy kết quả là 5. Em có muốn thầy hướng dẫn thêm cách dùng ngón tay không?",
+   "ans": "Cách nhanh nhất là em cộng hai vế của phép trừ cho nhau. Ví dụ 15 - 8 = 4, em lấy 4 trừ 8 bằng 2, kết quả là 3. Em có muốn thử làm một bài tập tương tự không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con thấy hình vuông cũng có 4 góc như hình chữ nhật, vậy chúng có giống nhau không ạ?",
+   "ref": "Hai hình này giống nhau ở chỗ đều có 4 góc vuông, nhưng khác nhau ở độ dài cạnh. Hình vuông yêu cầu tất cả 4 cạnh phải dài bằng nhau, còn hình chữ nhật thì không. Em có muốn tập vẽ hai hình này để thấy sự khác biệt không?",
+   "ans": "Có em nhé, hình vuông cũng có 4 góc vuông và tất cả các cạnh của hình vuông đều bằng nhau. Đây là đặc điểm giúp phân biệt hình vuông với các hình khác.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho con hỏi, tay cầm bút là tay bên nào ạ?",
+   "ref": "Đa số các bạn sẽ cầm bút bằng tay phải, nên đó thường là bên phải của em. Tuy nhiên, có một số bạn thuận tay trái thì sẽ cầm bút bằng tay trái. Em hãy thử giơ tay phải lên cho thầy xem nào?",
+   "ans": "Tay cầm bút chính là tay cầm bút để viết em nhé. Trong khi em viết, em có thể dùng tay cầm bút để điều chỉnh trang giấy hoặc viết bài cho nhanh hơn.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, số 20 được tạo ra từ mấy chục ạ?",
+   "ref": "Số 20 gồm 2 chục và 0 đơn vị. Nó tương đương với 10 + 10 đó em. Em có biết số nào đứng ngay trước số 20 không?",
+   "ans": "Số 20 được tạo thành từ 2 chục và 0 đơn vị. Em có thể viết là 20 = 200.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Muốn cộng hai số trong phạm vi 20 mà không nhớ thì làm thế nào ạ?",
+   "ref": "Em chỉ cần cộng các chữ số ở hàng đơn vị với nhau, rồi giữ nguyên chữ số hàng chục của số hạng thứ nhất. Ví dụ 12 + 4 = 16 vì 2 + 4 = 6.",
+   "ans": "Em hãy viết số hạng này dưới số hạng kia sao cho hàng đơn vị thẳng cột với hàng chục, rồi cộng các chữ số ở cùng một hàng lại. Ví dụ 15 + 30 = 55. Em có muốn thử làm một bài tập tương tự không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để con phân biệt được khối lập phương và khối hộp chữ nhật?",
+   "ref": "Em hãy nhìn vào các mặt của hình khối đó, nếu tất cả các mặt đều là hình vuông thì là khối lập phương, còn nếu có mặt là hình chữ nhật thì là khối hộp chữ nhật. Ví dụ, hộp quà vuông là khối lập phương, còn hộp sữa là khối hộp chữ nhật.",
+   "ans": "Em hãy thử đếm xem trong hộp có bao nhiêu khối vuông, sau đó đếm thêm các viên cạnh bên trong xem có bao nhiêu khối góc không nhé. Nếu tất cả khối vuông và khối chữ nhật đều là khối lập phương thì đó là khối hộp chữ nhật. Em có muốn thử phân loại một vài khối hình cụ thể không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con dùng gang tay để đo cái bàn có được không ạ?",
+   "ref": "Hoàn toàn được em nhé, vì gang tay là một đơn vị đo ước lượng rất tiện lợi. Tuy nhiên, vì tay mỗi người to nhỏ khác nhau nên kết quả đo của em và bạn có thể sẽ khác nhau đấy.",
+   "ans": "Không được em nhé, vì gang tay không phải là vật đo chính xác. Chúng ta bắt buộc phải dùng thước kẻ hoặc các dụng cụ đo chuyên dụng.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Cách so sánh hai số có hai chữ số như thế nào ạ?",
+   "ref": "Trước hết em hãy nhìn vào chữ số hàng chục, số nào có hàng chục lớn hơn thì lớn hơn. Nếu hàng chục bằng nhau, em hãy so sánh tiếp chữ số hàng đơn vị.",
+   "ans": "Em hãy so sánh từng cặp chữ số ở cùng một hàng từ trái sang phải nhé. Đến hàng nào có chữ số khác nhau thì ta kết luận số lớn hơn. Em có muốn thử so sánh số 5 và 7 không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Số 10 có phải là số tròn chục không thầy?",
+   "ref": "Đúng rồi, số 10 chính là số tròn chục nhỏ nhất mà em được học. Nó gồm 1 chục và 0 đơn vị. Em có biết số tròn chục tiếp theo sau số 10 là số nào không?",
+   "ans": "Đúng rồi em, số 10 là số tròn chục vì nó thỏa mãn điều kiện của số tròn. Ví dụ 10 = 100 nên nó tròn chục. Em có muốn tìm hiểu thêm về cách đọc các số tròn chục không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, cho con hỏi cách so sánh số có 2 chữ số với số có 1 chữ số với ạ?",
+   "ref": "Số có hai chữ số luôn luôn lớn hơn số có một chữ số em nhé. Chẳng hạn như số 10 là số bé nhất có hai chữ số và nó vẫn lớn hơn số 9.",
+   "ans": "Em hãy so sánh từng cặp chữ số ở cùng một hàng từ trái sang phải nhé. Đến hàng nào có chữ số khác nhau thì ta kết luận số đó lớn hơn. Em đã nắm rõ quy tắc này chưa?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, làm sao để biết một phép cộng là không nhớ?",
+   "ref": "Em hãy nhìn vào tổng của các chữ số cùng hàng, nếu tổng đó từ 0 đến 9 thì đó là phép cộng không nhớ. Ví dụ 12 + 34 thì 2 + 4 = 6 (nhỏ hơn 10) nên là phép cộng không nhớ.",
+   "ans": "Em hãy thử thêm một số đối tượng vào bên trái phép cộng rồi cộng trừ các phép tính của đối tượng đó ra. Nếu kết quả vẫn bằng 0 thì đó là phép cộng không nhớ. Em có muốn thử làm một ví dụ không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Phép trừ không nhớ là thế nào ạ?",
+   "ref": "Đó là phép trừ mà chữ số hàng đơn vị của số bị trừ luôn lớn hơn hoặc bằng chữ số hàng đơn vị của số trừ. Vì vậy, em chỉ cần trừ trực tiếp mà không cần mượn từ hàng chục.",
+   "ans": "Đó là phép tính với số bị trừ nhỏ hơn số trừ, còn số trừ thì bằng số trừ. Ví dụ 49 - 10 thì 9 - 9 = 9. Em có muốn thử làm một bài tập về phép trừ không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Kim ngắn và kim dài trên đồng hồ dùng để làm gì vậy thầy?",
+   "ref": "Kim ngắn dùng để chỉ giờ, còn kim dài dùng để chỉ phút em nhé. Khi hai kim phối hợp, chúng ta sẽ biết chính xác thời gian hiện tại.",
+   "ans": "Kim dài dùng để chỉ giờ, còn kim ngắn dùng để chỉ phút. Khi em muốn xem giờ, em chỉ cần nhìn vào kim dài là được. Em có muốn biết cách phân biệt vị trí của hai loại kim này không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, ngày trước ngày Thứ Năm là ngày nào?",
+   "ref": "Ngày trước ngày Thứ Năm là ngày Thứ Tư em nhé. Em hãy thử đếm ngược từ Thứ Năm để kiểm tra lại xem nào.",
+   "ans": "Đó chính là Thứ Năm của tuần thứ hai trong tháng 12 em nhé. Vì trong lịch sử, chúng ta đếm ngược từ ngày Thứ Ba của tuần sau để tính đến Thứ Năm. Em có muốn biết tại sao lại là Thứ Năm không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu đề bài có từ \"tất cả\" thì con làm phép tính gì ạ?",
+   "ref": "Con hãy sử dụng phép tính cộng nhé. Từ \"tất cả\" thường ám chỉ việc gộp hai hay nhiều nhóm lại với nhau.",
+   "ans": "Em hãy sử dụng phép cộng nhé. Từ \"tất cả\" thường ám chỉ việc gộp hai hay nhiều nhóm lại với nhau để tính tổng. Em có muốn thử làm một ví dụ không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Âm và chữ cái khác nhau thế nào hả thầy?",
+   "ref": "Âm là cái em nghe thấy khi nói, còn chữ cái là cái em nhìn thấy khi viết. Ví dụ, khi thầy phát âm \"a\" thì đó là âm, còn khi thầy viết chữ \"a\" lên bảng thì đó là chữ cái. Em đã phân biệt được chưa?",
+   "ans": "Âm là những âm mà khi phát ra, luồng hơi bị cản lại bởi môi, răng hoặc lưỡi. Còn chữ cái là những ký hiệu hình học dùng để ghép lại các phụ âm với nhau. Em có muốn thử tập ghép chữ cái với chữ cái không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, từ \"cá vàng\" có phải là từ đơn không ạ?",
+   "ref": "Không phải đâu em, từ \"cá vàng\" là từ phức vì nó được ghép từ hai tiếng là \"cá\" và \"vàng\". Khi ghép lại, chúng ta biết rõ đó là loại cá có màu vàng. Em có biết thêm từ nào chỉ màu sắc giống như vậy không?",
+   "ans": "Đúng rồi em, từ \"cá vàng\" là một từ đơn vì nó được tạo thành từ hai tiếng và có nghĩa. Em hãy thử tìm thêm một từ đơn chỉ hoạt động xung quanh mình xem nào?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con thấy có dấu chấm ở cuối câu thì phải làm sao ạ?",
+   "ref": "Khi gặp dấu chấm, em hãy nghỉ hơi một chút trước khi sang câu tiếp theo. Dấu chấm báo hiệu rằng một ý đã được nói xong rồi đấy. Em có biết dấu hỏi dùng để làm gì không?",
+   "ans": "Em hãy viết thêm một dấu phẩy vào bên phải sau dấu chấm cuối cùng. Việc thêm dấu phẩy giúp phân tách rõ ràng hai vế câu khi chúng ta chọn cách nối trực tiếp. Em có muốn biết thêm về các loại dấu câu khác không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi viết vần, con cần lưu ý điều gì nhất ạ?",
+   "ref": "Em cần lưu ý nhất là quy tắc nối nét giữa các con chữ để vần viết liền mạch và đúng độ cao. Việc viết đúng độ cao giúp chữ trông cân đối và đẹp hơn.",
+   "ans": "Em hãy viết chữ \"b\" trước, sau đó từ nét móc cuối của chữ \"c\", em nối liền sang chữ \"o\". Hãy nhớ giữ khoảng cách các chữ vừa phải nhé. Em đã nắm rõ cách nối nét chưa?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, chữ đầu câu phải viết hoa đúng không ạ?",
+   "ref": "Đúng rồi em, chữ cái đầu tiên của từ đầu tiên trong câu luôn luôn phải viết hoa. Điều này giúp người đọc dễ dàng nhận biết câu bắt đầu từ đâu.",
+   "ans": "Đúng rồi em, tất cả các chữ đầu câu trong một câu đều phải viết hoa. Điều này giúp phân biệt rõ ràng giữa câu thứ hai và câu thứ ba. Em hãy thử tìm một câu xem nào?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Viết câu là gì vậy thầy?",
+   "ref": "Viết câu là dùng các từ ngữ sắp xếp theo thứ tự để diễn đạt một ý nghĩa hoàn chỉnh. Một câu đúng phải có đủ chữ viết hoa đầu câu và dấu chấm cuối câu.",
+   "ans": "Viết câu là em dùng ngôn ngữ nói để trình bày ý kiến, quan điểm của mình về một vấn đề nào đó. Khi viết, em nhớ đặt dấu chấm ở cuối câu nhé. Em đã biết cách đặt dấu chấm chưa?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Những từ nào được gọi là từ về gia đình ạ?",
+   "ref": "Đó là những từ dùng để gọi những người thân ruột thịt trong nhà. Ví dụ như từ ông, bà, bố, mẹ, anh, chị. Nhà em có những ai nào?",
+   "ans": "Đó là các từ chỉ người thân như ông bà, cha mẹ, anh chị em và những cặp đôi như vợ chồng, con cái. Mỗi từ đều đóng vai trò quan trọng trong việc hình thành tình cảm gia đình. Em có biết từ nào thể hiện sự yêu thương không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để biết một câu có đủ nghĩa hay không hả thầy?",
+   "ref": "Em hãy đọc to câu đó lên, nếu em và người nghe hiểu rõ nội dung muốn truyền đạt thì đó là câu đủ nghĩa. Ví dụ câu \"Con mèo bắt chuột\" là một câu rõ nghĩa.",
+   "ans": "Em hãy thử đặt câu hỏi \"Ai?\", \"Cái gì?\" hoặc \"Con gì?\" cho câu đó, phần trả lời chính là nghĩa của câu. Nếu cụm từ đó chỉ đơn thuần là nghĩa đen thì chưa đủ nghĩa. Em có muốn luyện tập với một câu khác không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, làm sao để kể chuyện không bị quên bài ạ?",
+   "ref": "Em nên quan sát kỹ tranh minh họa và ghi nhớ các sự kiện chính theo thứ tự trước - sau. Việc tập kể nhiều lần trước gương cũng là một cách rất hiệu quả. Em có muốn thử tập kể một đoạn ngắn cho thầy nghe không?",
+   "ans": "Em hãy tập trung vào từ khóa và các bước diễn biến của câu chuyện. Việc đặt nhân vật vào đúng bối cảnh sẽ giúp người nghe dễ dàng theo dõi câu chuyện hơn. Em có muốn thử tập phân tích một tình huống thực tế không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Con phải làm gì khi đang nghe mà chưa hiểu ý thầy cô?",
+   "ref": "Em hãy lịch sự giơ tay và xin phép thầy cô giải thích lại chỗ em chưa rõ. Việc đặt câu hỏi khi chưa hiểu sẽ giúp em không bị hổng kiến thức.",
+   "ans": "Em hãy kiên nhẫn suy nghĩ, đọc kỹ lại lý thuyết và tập trung lắng nghe, không ngắt lời. Việc trả lời cầu hỏi của thầy cô là cách thể hiện sự tôn trọng. Em có muốn thầy hướng dẫn cách trả lời cầu hỏi hiệu quả không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, làm sao để con đặt được một câu hỏi ạ?",
+   "ref": "Em hãy sử dụng các từ nghi vấn như Ai, Cái gì, Ở đâu ở đầu hoặc cuối câu nhé. Khi nói, em nhớ lên giọng ở cuối câu để mọi người biết em đang hỏi. Em có muốn thử đặt một câu hỏi cho thầy không?",
+   "ans": "Em hãy đặt một câu hỏi cho chính mình hoặc cho người khác. Ví dụ: \"Ai là chủ tịch nước Việt Nam?\". Em có muốn thử đặt một câu hỏi cho bạn bè xung quanh không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Đọc trôi chảy có nghĩa là gì vậy thầy?",
+   "ref": "Đọc trôi chảy là khi em đọc liền mạch các tiếng trong câu, không còn phải đánh vần từng chữ một. Điều này giúp bài đọc nghe hay hơn và dễ hiểu hơn.",
+   "ans": "Đọc trôi chảy là em đọc ra tiếng của từ đó ngay lập tức mà không cần đánh vần từng chữ cái. Ví dụ thay vì đọc \"cờ-a-ca-sắc-cá\", em đọc luôn là \"cá\". Em có muốn luyện đọc trơn thêm vài từ nữa không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Chữ \"ngh\" và \"ng\" khác nhau thế nào khi viết chính tả ạ?",
+   "ref": "Tương tự như g/gh, chữ \"ngh\" chỉ đứng trước e, ê, i; còn \"ng\" đứng trước các nguyên âm còn lại. Ví dụ \"nghỉ hè\" viết là ngh nhưng \"ngủ ngon\" lại viết là ng. Em có muốn tìm hiểu thêm về các vần khó không?",
+   "ans": "Chữ \"ngh\" có nghĩa là \"viết\", còn \"ng\" có nghĩa là \"viết hoa\". Trong tiếng Việt, hai từ này được dùng để phân biệt rõ nhất khi chúng ta đọc lên. Em thử tìm một từ chỉ hoạt động khác xem nào?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Yêu thương gia đình là gì hả thầy?",
+   "ref": "Đó là tình cảm gắn bó, quan tâm và chăm sóc những người thân trong nhà em. Khi em biết lo lắng và muốn mang lại niềm vui cho ông bà, cha mẹ, đó chính là yêu thương gia đình. Em có muốn biết những hành động cụ thể để thể hiện tình yêu này không?",
+   "ans": "Đó là sự quan tâm, chăm sóc và lo lắng cho những người thân như ông bà, cha mẹ, anh chị em. Tình cảm này giúp gắn kết các thành viên trong nhà trở nên bền chặt hơn. Em có muốn biết những hành động cụ thể nào để thể hiện tình yêu không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi gặp thầy cô ở ngoài đường, em có cần chào không thầy?",
+   "ref": "Có chứ, em nên chủ động chào hỏi thầy cô dù ở bất cứ đâu. Điều này cho thấy em là một đứa trẻ ngoan và biết tôn trọng người lớn.",
+   "ans": "Có chứ, em cần chào lễ phép bằng một nụ cười hoặc cái gật đầu nhẹ. Điều này thể hiện sự tôn trọng và lịch sự với người lớn tuổi.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Chúng em nên làm gì để thể hiện sự yêu quý bạn bè?",
+   "ref": "Em hãy luôn niềm nở, biết chia sẻ đồ dùng và giúp đỡ bạn khi gặp khó khăn. Chẳng hạn, em có thể giảng bài cho bạn hoặc an ủi khi bạn buồn.",
+   "ans": "Em hãy chăm chỉ học tập, rèn luyện đạo đức và giữ gìn vệ sinh trường lớp. Khi em làm những việc tốt, em đang giúp đỡ bạn cùng tiến bộ đấy. Em có muốn biết thêm những việc cụ thể khác không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao chúng ta cần phải tự giác làm việc hả thầy?",
+   "ref": "Vì tự giác giúp em rèn luyện tính trách nhiệm và khiến mọi người xung quanh yêu quý, tin tưởng em hơn. Khi đó, em sẽ cảm thấy tự hào về bản thân mình.",
+   "ans": "Vì khi em tự giác làm việc, em sẽ hoàn thành công việc đầy đủ và chất lượng hơn. Điều này giúp em trở nên độc lập và trưởng thành hơn trong cuộc sống. Em có muốn biết thêm về những biểu hiện của người tự giác không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao khi thật thà mình lại được mọi người yêu quý hơn?",
+   "ref": "Vì sự thật thà tạo nên niềm tin giữa người với người. Khi mọi người biết em luôn nói thật, họ sẽ tin tưởng và muốn gần gũi, giúp đỡ em nhiều hơn. Em có muốn tìm hiểu cách để xin lỗi khi làm sai không?",
+   "ans": "Vì sự thật thà không bao giờ làm hại ai và luôn đem lại điều tốt đẹp. Khi em thật thà, em sẽ cảm thấy lòng mình thanh thản và được mọi người tin yêu hơn.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi đưa quà cho người lớn, con phải làm sao?",
+   "ref": "Em hãy đưa bằng hai tay để thể hiện sự tôn trọng và kính trọng. Đây là một cử chỉ đẹp trong văn hóa Việt Nam. Em có muốn tìm hiểu thêm về các cử chỉ lễ phép khác không?",
+   "ans": "Em cần lễ phép, nói lời cảm ơn và nói rõ tên món quà là \"quà tặng mẹ\". Điều này thể hiện sự tôn trọng và lòng biết ơn của em đối với người nhận.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, vâng lời ông bà, cha mẹ là như thế nào ạ?",
+   "ref": "Đó là khi em lắng nghe và thực hiện theo những lời chỉ bảo, nhắc nhở của người lớn trong nhà. Việc này cho thấy em là đứa trẻ ngoan và biết kính trọng người thân. Em có muốn biết thêm những việc cụ thể nào là vâng lời không?",
+   "ans": "Đó là việc em lễ phép, lắng nghe và tiếp thu những lời dạy bảo đúng đắn của người lớn. Điều này thể hiện lòng hiếu thảo của em đối với gia đình. Em có muốn biết những lời dặn an toàn không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Việc đánh răng 2 lần một ngày có tác dụng gì vậy thầy?",
+   "ref": "Tác dụng chính là giúp răng chắc khỏe và ngăn ngừa sâu răng em ạ. Khi đánh răng sạch, hơi thở của em cũng sẽ thơm tho hơn.",
+   "ans": "Việc này giúp loại bỏ mảng bám và ngăn ngừa sâu răng hiệu quả. Em hãy tập thói quen này từ lúc ngủ dậy cho đến khi ăn trưa nhé.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao chúng em phải giữ cho lớp học sạch sẽ?",
+   "ref": "Để bảo vệ sức khỏe cho chính em và các bạn, đồng thời tạo không gian học tập thoải mái. Môi trường sạch sẽ giúp chúng ta tập trung học bài và cảm thấy vui vẻ hơn.",
+   "ans": "Vì lớp học là nơi tập trung nhiều đồ vật, bụi bẩn và vi khuẩn dễ dàng xâm nhập gây ảnh hưởng đến sức khỏe mọi người. Khi lớp sạch, chúng ta sẽ cảm thấy thoải mái hơn và không bị bệnh. Em có muốn biết thêm về cách bảo vệ môi trường trường học không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Em có thể làm gì để thể hiện tình yêu với các loài động vật?",
+   "ref": "Em hãy đối xử nhẹ nhàng, không đánh đập và không săn bắt trái phép các loài vật. Nếu nhà có nuôi thú cưng, em hãy cho chúng ăn và chăm sóc chúng thật chu đáo. Em thích loài vật nào nhất trong tự nhiên?",
+   "ans": "Em hãy chăm sóc thú cưng, không săn bắt trái phép và chăm sóc thú cưng chu đáo. Việc này không chỉ là yêu thương mà còn giúp bảo vệ động vật khỏi nguy cơ tuyệt chủng. Em có sẵn lòng chăm sóc thú cưng ở nhà không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu thấy bạn vứt rác ra sân trường, em nên làm gì?",
+   "ref": "Em hãy nhẹ nhàng nhắc nhở bạn nhặt rác bỏ vào thùng. Việc giúp bạn cùng làm điều đúng sẽ giúp môi trường trường học của chúng ta sạch hơn.",
+   "ans": "Em hãy vui vẻ bỏ rác vào thùng và tuyệt đối không vứt rác bừa bãi ra sân trường. Hành động nhỏ này giúp trường lớp luôn sạch đẹp. Em có thường xuyên nhắc nhở bạn bè cùng bỏ rác vào thùng không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Đội mũ bảo hiểm khi đi xe máy có quan trọng không thầy?",
+   "ref": "Rất quan trọng vì mũ bảo hiểm bảo vệ vùng đầu của em nếu chẳng may có va chạm xảy ra. Đây là quy định bắt buộc để đảm bảo an toàn cho chính em.",
+   "ans": "Rất quan trọng, vì mũ giúp bảo vệ vùng đầu của em nếu xảy ra va chạm. Đây là thói quen rất tốt để phòng tránh chấn thương sọ não. Em có muốn tìm hiểu về các loại mũ bảo hiểm phổ biến hiện nay không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi thấy dây điện bị hở thì con phải làm gì ạ?",
+   "ref": "Em tuyệt đối không được chạm vào và phải báo ngay cho người lớn biết. Việc chạm vào dây điện hở rất nguy hiểm vì có thể gây điện giật.",
+   "ans": "Em tuyệt đối không được chạm tay vào vì sẽ bị điện giật trực tiếp. Hãy đứng xa và báo ngay cho người lớn để xử lý kịp thời. Em có biết cách nhận biết dây điện bị hở ở đâu không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Để cơ thể khỏe mạnh, em cần sinh hoạt thế nào ạ?",
+   "ref": "Em cần ăn uống đủ chất, uống đủ nước, đi ngủ sớm và thức dậy đúng giờ. Một chế độ sinh hoạt điều độ sẽ giúp em có tinh thần sảng khoái để học tập. Em có hay thức khuya không?",
+   "ans": "Em cần kết hợp hài hòa giữa vận động, ăn uống đủ chất và ngủ đủ giấc. Việc duy trì thói quen sống lành mạnh sẽ giúp em cao lớn và thông minh hơn. Em thường tập môn thể thao nào nhất?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Chúng ta nên cư xử ra sao với những người làm công việc vất vả ạ?",
+   "ref": "Chúng ta nên có thái độ lịch sự, lễ phép và luôn biết ơn họ. Một lời chào hay một nụ cười tươi cũng đủ để khích lệ tinh thần của những người lao động vất vả.",
+   "ans": "Em cần yêu quý, tôn trọng và chia sẻ với họ. Khi em biết thương yêu người lao động, em cũng sẽ được mọi người yêu quý và tôn trọng. Em có muốn biết thêm về cách ứng xử lịch sự với người lớn không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Em nên đối xử với mọi người xung quanh như thế nào để thể hiện lòng yêu quê hương?",
+   "ref": "Em hãy luôn lễ phép với người lớn, hòa nhã và giúp đỡ bạn bè, hàng xóm xung quanh. Sự đoàn kết, yêu thương con người chính là nét đẹp của một vùng quê đáng sống. Em có muốn biết cách giúp đỡ mọi người xung quanh không?",
+   "ans": "Em hãy bắt đầu từ những việc nhỏ nhất như giữ gìn vệ sinh chung và chăm chỉ học tập. Khi em làm những việc tốt, em đang góp phần làm cho quê hương mình đẹp hơn. Em có muốn cùng bạn bè tham gia các hoạt động bảo vệ môi trường không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Học sinh lớp 1 yêu nước như thế nào ạ?",
+   "ref": "Các em yêu nước bằng cách chăm ngoan, học giỏi, lễ phép với người lớn và yêu quý bạn bè. Những việc làm giản dị hằng ngày chính là biểu hiện của lòng yêu nước. Em có muốn kể cho thầy nghe một việc tốt em đã làm không?",
+   "ans": "Các em cần yêu quý, tôn trọng và có ý thức giữ gìn những nơi công cộng. Chẳng hạn, khi ở trường, em hãy bỏ rác đúng nơi quy định và không vẽ bậy lên bàn ghế. Em có muốn biết thêm về các địa danh lịch sử nổi tiếng không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Sự khác biệt giữa mọi người thể hiện ở những điểm nào ạ?",
+   "ref": "Sự khác biệt thể hiện qua ngoại hình, sở thích, khả năng và cả hoàn cảnh gia đình hay vùng miền. Ví dụ, có bạn cao, bạn thấp, bạn giỏi vẽ, bạn giỏi hát. Em thấy mình có điểm gì đặc biệt nhất?",
+   "ans": "Sự khác biệt lớn nhất là ở thái độ và tính cách: người thẳng thắn, người kín đáo, người cởi mở, người khép kín. Sự chủ động tìm hiểu thông tin từ các nguồn uy tín cũng là một biểu hiện điển hình.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Gia đình là gì hả thầy?",
+   "ref": "Gia đình là những người cùng chung sống, có quan hệ huyết thống hoặc hôn nhân và yêu thương nhau. Đó là nơi em được sinh ra và lớn lên trong vòng tay chăm sóc của mọi người. Em có biết gia đình mình có bao nhiêu người không?",
+   "ans": "Gia đình là tập hợp những người cùng chung sống, có quan hệ huyết thống hoặc quan hệ hôn nhân, cùng chăm sóc và yêu thương nhau. Mọi thành viên trong gia đình thường có mối quan hệ thân thiết như ông bà, cha mẹ, anh chị em và con cái. Em có muốn biết thêm về cách xưng hô với mọi người không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Trong một ngôi nhà thường có những phòng nào hả thầy?",
+   "ref": "Một ngôi nhà thường có phòng khách, phòng ngủ, phòng bếp và phòng vệ sinh. Mỗi phòng sẽ có những đồ dùng và công dụng riêng biệt để phục vụ sinh hoạt. Em có thể kể tên các đồ vật trong phòng ngủ của em không?",
+   "ans": "Ngôi nhà thường có các phòng chính là phòng khách, phòng ngủ, phòng bếp và phòng vệ sinh. Mỗi nơi đều có một vai trò riêng để phục vụ nhu cầu sinh hoạt của gia đình.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Ở trường em sẽ gặp những ai ạ?",
+   "ref": "Em sẽ gặp thầy cô giáo và các bạn học sinh. Thầy cô là người truyền đạt kiến thức, còn bạn bè là những người cùng em học tập và chia sẻ niềm vui.",
+   "ans": "Ở trường em sẽ gặp thầy cô, bạn bè và các cán bộ nhà trường. Đây là những người giúp đỡ và cung cấp kiến thức cho em trong quá trình học tập. Em đã làm quen được với nhiều bạn mới ở nơi đây chưa?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao chúng ta phải giữ gìn bàn ghế sạch sẽ?",
+   "ref": "Chúng ta cần giữ gìn bàn ghế sạch sẽ để môi trường học tập luôn thoáng mát và bền đẹp. Việc không vẽ bậy lên bàn thể hiện em là một học sinh văn minh. Em có muốn biết cách lau bàn ghế đúng cách không?",
+   "ans": "Việc giữ gìn bàn ghế sạch sẽ giúp không gian học tập luôn sạch đẹp, thoáng mát và bảo vệ sức khỏe cho tất cả mọi người. Khi bàn ghế sạch, chúng ta sẽ cảm thấy thoải mái hơn khi ngồi học và không phải mất thời gian dọn dẹp đồ dùng bừa bãi. Điều này cũng giúp lớp học luôn gọn gàng, tạo cảm giác chuyên nghiệp và uy tín đối với thầy cô và bạn bè.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Em phải làm gì khi thấy bạn mình đang buồn?",
+   "ref": "Em hãy đến bên cạnh an ủi, hỏi thăm hoặc kể một câu chuyện vui để bạn mỉm cười. Một lời động viên nhỏ cũng đủ khiến bạn cảm thấy ấm áp hơn. Em có muốn tìm hiểu cách an ủi bạn sao cho tinh tế không?",
+   "ans": "Em hãy chủ động đến bên bạn, an ủi và giúp bạn vui lên. Việc lắng nghe bạn chia sẻ về chuyện buồn cũng là một cách an ủi hiệu quả. Em có thường xuyên giúp bạn vui lên không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao mình phải giữ vệ sinh cơ thể sạch sẽ ạ?",
+   "ref": "Giữ vệ sinh sạch sẽ giúp cơ thể tránh được vi khuẩn và bệnh tật. Khi sạch sẽ, em sẽ cảm thấy thoải mái và tự tin hơn. Em đã rửa tay trước khi ăn hôm nay chưa?",
+   "ans": "Vì khi cơ thể sạch, em sẽ cảm thấy thoải mái và dễ chịu hơn. Đồng thời, mọi người xung quanh cũng sẽ đánh giá cao sự sạch sẽ của em. Em có muốn biết những việc nhỏ nào thường được mọi người khen không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, vùng mình gồm những gì thế ạ?",
+   "ref": "Vùng mình bao gồm ngực, bụng, lưng và hông. Phần này đóng vai trò nâng đỡ và bảo vệ các cơ quan bên trong cơ thể.",
+   "ans": "Vùng mình bao gồm ba khu vực chính là Bắc Bộ, Trung Bộ và Nam Bộ. Mỗi nơi lại có những đặc điểm địa hình riêng biệt như đồng bằng, núi non hay sông ngòi. Em có muốn biết thêm về đặc điểm của vùng nào không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao chúng ta phải giữ vệ sinh cơ thể ạ?",
+   "ref": "Để cơ thể luôn sạch sẽ và không bị bệnh em nhé. Khi sạch sẽ, em sẽ cảm thấy thoải mái hơn và ngăn chặn được các vi khuẩn gây hại xâm nhập vào người. Em có muốn biết những bệnh thường gặp nếu không vệ sinh sạch sẽ không?",
+   "ans": "Vì khi cơ thể sạch sẽ, em sẽ cảm thấy thoải mái và dễ chịu hơn. Đồng thời, điều này cũng giúp phòng tránh bệnh tật cho chính em. Em có muốn biết những bệnh nào dễ mắc không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con có được tự ý dùng bàn là để tập làm không thầy?",
+   "ref": "Không được đâu em nhé, vì bàn là khi hoạt động rất nóng và có thể gây bỏng nặng cho em. Hãy đợi khi có bố mẹ hướng dẫn và giám sát thì em mới được làm quen nhé.",
+   "ans": "Tuyệt đối không em nhé, vì bàn là hoạt động bằng điện và có thể gây nguy hiểm cho tính mạng nếu sử dụng sai cách. Em hãy luôn nhờ người lớn giúp đỡ khi muốn làm phẳng quần áo nhé.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con không được leo trèo lan can trường vì lý do gì vậy thầy?",
+   "ref": "Vì lan can có thể không đủ chắc chắn hoặc em có thể bị trượt chân ngã từ trên cao xuống, gây chấn thương rất nặng. Hãy luôn đứng cách xa lan can khi vui chơi. Em có đồng ý cùng thầy giữ an toàn cho cả lớp không?",
+   "ans": "Vì hành động này rất nguy hiểm, em có thể bị trượt chân và ngã từ trên cao xuống rất nguy hiểm. Em hãy luôn chơi đùa ở những nơi an toàn và bằng phẳng nhé.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Cây xanh có ích lợi gì cho chúng ta không thầy?",
+   "ref": "Cây xanh mang lại rất nhiều lợi ích như cung cấp oxy cho chúng ta thở, cho quả ngọt để ăn và làm cho không khí trong lành hơn. Vì vậy, trồng nhiều cây xanh sẽ giúp môi trường sạch đẹp hơn.",
+   "ans": "Có rất nhiều lợi ích em ạ, vì cây xanh cung cấp oxy để thở, cung cấp lương thực (gạo, ngô, rau) và làm thuốc chữa bệnh. Ngoài ra, rễ cây còn giúp giữ đất chống xói mòn. Em có muốn tìm hiểu thêm về các loại cây lọc không khí tốt không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Những con vật nào sống trên cạn vậy thầy?",
+   "ref": "Đó là những loài sống và hoạt động trên mặt đất như con chó, con mèo, con gà hay con voi. Chúng thường có chân để đi lại hoặc chạy nhảy.",
+   "ans": "Có rất nhiều loài như hổ, khỉ, chó, mèo hoặc các loài chim sống trên cạn. Đặc điểm của chúng là có cơ thể thích nghi để di chuyển và hít thở trong không khí. Em hãy thử kể thêm một vài con vật quanh nhà mình xem nào?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con vật sống ở những môi trường nào vậy thầy?",
+   "ref": "Con vật có thể sống trên cạn, dưới nước hoặc vừa sống trên cạn vừa sống dưới nước. Ví dụ như con chó sống trên cạn, còn con cá thì sống dưới nước. Em có muốn biết con vật nào sống được ở cả hai nơi không?",
+   "ans": "Các con vật thường sống ở hai môi trường chính là trên cạn và dưới nước. Tùy vào đặc điểm cơ thể mà chúng sẽ sống ở rừng, sa mạc, ao hồ hay biển cả. Em có biết con vật nào sống trên cạn không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu đang đi ngoài đường mà gặp mưa to có sấm sét thì con phải làm gì?",
+   "ref": "Em tuyệt đối không được đứng dưới gốc cây to hoặc những nơi trống trải vì rất nguy hiểm. Hãy nhanh chóng tìm nơi trú ẩn an toàn như trong nhà hoặc tòa nhà kiên cố. Em có muốn tìm hiểu thêm về các hiện tượng thiên nhiên nguy hiểm khác không?",
+   "ans": "Em hãy đứng yên trên mặt đất, mặc áo mưa và tuyệt đối không chạy nhảy. Em có biết tại sao không nên chạy khi có sấm sét không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho em hỏi mùa mưa ở miền Nam là như thế nào ạ?",
+   "ref": "Mùa mưa ở miền Nam thường có những cơn mưa lớn và kéo dài, làm cho không khí mát mẻ hơn. Em có thích ngắm mưa không?",
+   "ans": "Đó là mùa xuất hiện nhiều mây đen kéo đến, trời thường trở nên ẩm ướt và nhiệt độ giảm sâu. Em sẽ thấy những cơn mưa lớn bất chợt vào buổi chiều.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Có phải lúc nào bầu trời ban ngày cũng màu xanh không thầy?",
+   "ref": "Không phải lúc nào cũng vậy đâu em. Bầu trời sẽ chuyển màu tùy theo thời tiết, chẳng hạn như màu trắng khi nhiều mây hoặc màu đỏ cam lúc chiều tà.",
+   "ans": "Đúng vậy, tùy vào thời điểm mà bầu trời ban ngày sẽ có màu sắc khác nhau. Thông thường, khi Mặt Trời tỏa sáng, bầu trời sẽ chuyển sang màu xanh lam. Em có muốn biết tại sao ban ngày đôi khi lại thấy bầu trời màu xanh không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con thấy trăng lúc tròn lúc khuyết, tại sao vậy ạ?",
+   "ref": "Hình dạng của Mặt Trăng thay đổi tùy theo vị trí của nó đối với Trái Đất và Mặt Trời. Vì vậy, có lúc em thấy trăng tròn như cái đĩa, có lúc lại chỉ là một mảnh nhỏ.",
+   "ans": "Đó là hiện tượng mặt trăng tròn rồi lại khuyết. Vì trăng không có hình dạng cố định mà thay đổi theo thời gian nên chúng ta nhìn thấy những lúc khác nhau. Em có muốn tìm hiểu thêm về cách người ta tính toán ngày trăng tròn không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Việc vứt rác ra sân trường có tác hại gì không thầy?",
+   "ref": "Có chứ, việc này làm mất mỹ quan và gây ô nhiễm môi trường trường học. Khi sân trường bẩn, chúng ta sẽ không có không gian vui chơi thoải mái. Em có muốn cùng thầy lập kế hoạch nhặt rác vào giờ ra chơi không?",
+   "ans": "Việc vứt rác bừa bãi sẽ làm ô nhiễm môi trường và làm mất mỹ quan. Rác thải nhiều cũng dễ thu hút ruồi muỗi, gây ảnh hưởng đến sức khỏe mọi người.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, khi cộng có nhớ thì con phải làm thế nào ạ?",
+   "ref": "Em hãy cộng hàng đơn vị trước, nếu kết quả từ 10 trở lên thì viết chữ số hàng đơn vị và nhớ 1 sang hàng chục nhé. Sau đó, em cộng tiếp hàng chục và cộng thêm 1 vừa nhớ vào. Em có muốn thử làm một ví dụ không?",
+   "ans": "Em cần nhớ quy tắc \"nhớ\", tức là lấy số hạng này cộng với số hạng kia và nhớ trả về kết quả. Ví dụ (1 + 2) + 3 = 7. Em có muốn thử một bài tập tương tự không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Điểm A và điểm B nối với nhau thì tạo thành cái gì ạ?",
+   "ref": "Khi em dùng thước nối hai điểm A và B lại, em sẽ được một đoạn thẳng AB. Em có muốn tìm hiểu thêm về cách đo độ dài đoạn thẳng này bằng thước không?",
+   "ans": "Hai đường thẳng này cắt nhau tại một điểm duy nhất gọi là trọng tâm của tam giác. Đây là điểm cân bằng của toàn bộ cấu trúc nếu em cắt hình tam giác đó bằng bìa cứng.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, hình tứ giác là gì vậy ạ?",
+   "ref": "Hình tứ giác là hình có 4 cạnh và 4 đỉnh em nhé. Em hãy thử nhìn xung quanh lớp xem có đồ vật nào có 4 cạnh không?",
+   "ans": "Hình tứ giác là tứ giác có bốn cạnh bằng nhau em nhé. Em có thể dễ dàng tìm thấy hình ảnh này trong chiếc ê-ke hoặc biển báo giao thông hình tứ giác đấy.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu một cái thước dài 30 cm thì bằng bao nhiêu dm ạ?",
+   "ref": "Cái thước đó dài 3 dm. Vì 10 cm = 1 dm nên 30 cm sẽ tương ứng với 3 dm.",
+   "ans": "Bằng 15 dm em nhé. Vì khi nhìn từ xa, em sẽ thấy nó hình chữ nhật nhưng khi đặt thẳng đứng xuống đất, em sẽ thấy nó uốn lượn như một đường tròn.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Tên gọi của các thành phần trong phép nhân là gì thầy nhỉ?",
+   "ref": "Chúng gồm Thừa số và Tích em nhé. Hai số nhân với nhau gọi là thừa số, kết quả nhận được gọi là tích. Em đã phân biệt được chưa?",
+   "ans": "Tên gọi của các thành phần trong phép nhân được viết theo thứ tự là \"Nhân\", \"Số\", \"Đổi\" và \"Nhân\". Ví dụ trong phép tính 2 3 4 5, ta có 2 nhân 3 bằng 6, 3 nhân 2 bằng 12, kết quả là 6 x 2 = 12.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thương là gì vậy thầy?",
+   "ref": "Thương chính là tên gọi của kết quả sau khi thực hiện phép chia. Chẳng hạn trong phép tính 15 : 3 = 5, số 5 được gọi là thương. Em đã phân biệt được thương và số bị chia chưa?",
+   "ans": "Thương là một từ Hán Việt, có nghĩa là \"yêu quý\" hoặc \"quan tâm\". Đây là một tính từ dùng để khen ngợi vẻ đẹp, sự dễ thương hoặc lòng tốt của ai đó. Em có muốn tìm thêm các từ đồng nghĩa với thương không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để biết 2 nhân 9 bằng 18 hay 18 chia 2 bằng 9?",
+   "ref": "Cả hai đều đúng vì đây là hai phép tính ngược nhau. Khi em nhân 2 với 9 được 18, thì khi lấy 18 chia ngược lại cho 2, em sẽ quay về số 9 ban đầu.",
+   "ans": "Em hãy tự tìm một số x bất kỳ, sau đó nhân với chính nó rồi chia cho 2 sẽ ra kết quả ngay. Ví dụ (15) * 2 = 40 (vì 2 nhân 5 bằng 10), vậy 2 nhân 9 bằng 18. Em có muốn thử tính 2 nhân 7 không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, làm sao để nhớ nhanh bảng nhân 5 ạ?",
+   "ref": "Em hãy nhớ rằng kết quả của bảng nhân 5 luôn kết thúc bằng số 0 hoặc số 5. Em cũng có thể đếm thêm 5 đơn vị cho mỗi lần nhân tiếp theo. Em có muốn thử đếm từ 5 đến 50 cùng thầy không?",
+   "ans": "Em hãy dựa vào bảng nhân 5 để ghi nhớ nhé. Vì 2 * 5 = 10 nên khi gặp 10 : 2, em sẽ suy ra ngay đó là 5. Đây là cách ghi nhớ nhanh và chính xác nhất. Em có muốn thử áp dụng cách này với bảng nhân 3 không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để viết số ba trăm bốn mươi hai thành con số ạ?",
+   "ref": "Em viết chữ số 3 ở hàng trăm, số 4 ở hàng chục và số 2 ở hàng đơn vị, ta được số 342. Em có thể tự viết số sáu trăm mười chín được không?",
+   "ans": "Em viết là 342, sau đó viết chữ số hàng chục là 4 và hàng đơn vị là 2. Ví dụ 342 sẽ viết thành 0,402. Em có muốn thử viết số năm trăm linh bảy không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con muốn biết 1m bằng bao nhiêu cm ạ?",
+   "ref": "1m bằng 100cm em nhé. Khi em thấy một vật dài đúng 100cm thì nghĩa là vật đó dài 1 mét đấy.",
+   "ans": "1m bằng đúng 100 cm em nhé. Đây là đơn vị đo độ dài cơ bản trong hệ đo lường quốc tế, trong đó cm là viết tắt của xăng-ti-mét. Em có muốn thử đổi 200cm sang cm không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Mặt đáy của khối trụ là hình gì vậy thầy?",
+   "ref": "Hai mặt đáy của khối trụ là hai hình tròn bằng nhau và song song với nhau. Đây là đặc điểm quan trọng nhất để phân biệt với các khối khác. Em có muốn tìm hiểu thêm về khối cầu không?",
+   "ans": "Mặt đáy của khối trụ là một hình tròn. Vì mặt đáy là hình tròn nên chúng ta chỉ cần tính diện tích của một hình tròn đơn giản. Em có muốn thử tính xem diện tích mặt đáy bao nhiêu không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, khối cầu là gì ạ?",
+   "ref": "Khối cầu là hình khối có bề mặt cong tròn khép kín và không có góc cạnh. Em có thể tưởng tượng nó giống như một quả bóng vậy. Em có muốn thử tìm xung quanh lớp mình xem có vật nào là khối cầu không?",
+   "ans": "Khối cầu là một hình khối không gian có bề mặt cong tròn khép kín. Em có thể tưởng tượng nó giống như một miếng bánh pizza được cắt ra từ chiếc bánh tròn. Em có muốn biết làm sao để cắt một miếng bánh pizza ra hình khối không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, nếu kim dài chỉ số 6 thì là mấy phút ạ?",
+   "ref": "Khi kim dài chỉ số 6, tức là đã trôi qua 30 phút của giờ đó. Vì 30 phút chính là một nửa của 60 phút nên ta gọi là giờ rưỡi. Em có biết 30 phút còn gọi là nửa giờ không?",
+   "ans": "Đó là 60 phút em nhé. Vì kim dài chạy hết một vòng tròn, nên khi kim ngắn chỉ số 8 thì nó sẽ quay về vị trí cũ vào đúng 1 giờ. Em có muốn thử tính cho một kim dài khác không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Đơn vị tiền tệ của nước Việt Nam mình là gì ạ?",
+   "ref": "Đơn vị tiền tệ chính thức của nước ta là Đồng. Khi viết số tiền, em nhớ viết thêm chữ \"đồng\" ở cuối nhé. Em đã thấy chữ này trên các tờ tiền chưa?",
+   "ans": "Đơn vị tiền tệ chính thức của nước ta là Đồng Việt Nam, ký hiệu là VND. Đây là một trong những đơn vị tiền tệ quan trọng nhất tại Việt Nam, được dùng để chi tiêu cho mọi hoạt động hàng ngày của người dân. Ngoài ra, bạn có thể sử dụng các loại thẻ ngân hàng hoặc tiền mặt từ ngân hàng để thanh toán cho các giao dịch chuyển khoản hoặc rút tiền tại cây ATM.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con thực hiện phép cộng từ trái sang phải hay từ phải sang trái ạ?",
+   "ref": "Em phải thực hiện từ phải sang trái, bắt đầu từ hàng đơn vị trước nhé. Sau đó em mới cộng đến hàng chục rồi mới đến hàng trăm. Em có muốn thử làm một ví dụ không?",
+   "ans": "Em luôn luôn thực hiện tính từ phải sang trái, bắt đầu từ hàng đơn vị. Điều này giúp em dễ dàng hơn trong việc tính toán các hàng từ cao xuống thấp.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Phép cộng có nhớ trong phạm vi 1000 thì tính từ trái sang phải hay phải sang trái ạ?",
+   "ref": "Em phải tính từ phải sang trái, bắt đầu từ hàng đơn vị, rồi đến hàng chục và cuối cùng là hàng trăm. Đây là quy tắc bắt buộc cho mọi phép cộng, trừ viết.",
+   "ans": "Em luôn luôn thực hiện tính từ phải sang trái, bắt đầu từ hàng đơn vị. Đây là quy tắc bất di bất dịch cho cả phép cộng không nhớ và phép cộng có nhớ.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, làm sao để biết bài này dùng phép cộng hay phép trừ ạ?",
+   "ref": "Em hãy chú ý vào các \"từ khóa\" trong đề bài nhé. Nếu thấy từ \"tất cả\", \"thêm\" thì em dùng phép cộng, còn nếu thấy từ \"còn lại\", \"bớt đi\" thì em dùng phép trừ. Em có muốn thử phân tích một ví dụ cụ thể không?",
+   "ans": "Em hãy tự đặt câu hỏi \"Số nào nhân với 5 thì bằng 15?\". Nếu số đó có 5 đứng trước thì là phép cộng, ngược lại là phép trừ. Em có muốn thử làm một bài tập để phân biệt không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Từ chỉ người là những từ như thế nào vậy thầy?",
+   "ref": "Đó là những từ dùng để gọi tên người dựa trên quan hệ gia đình hoặc nghề nghiệp. Ví dụ như \"ông nội\", \"cô giáo\", \"học sinh\". Em có muốn tìm hiểu thêm về các từ chỉ đồ vật không?",
+   "ans": "Từ chỉ người là những từ dùng để gọi tên con người như ông bà, bố mẹ, thầy cô, bạn bè. Ví dụ như từ \"mẹ\", \"bố\" hay \"thầy giáo\" đều là từ chỉ người. Em có muốn tìm thêm các từ chỉ đồ vật xung quanh mình không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Từ chỉ đặc điểm dùng để làm gì vậy thầy?",
+   "ref": "Những từ này được dùng để giúp chúng ta mô tả sự vật một cách chi tiết và sinh động hơn. Nhờ đó, người nghe hoặc người đọc có thể hình dung rõ hơn về hình dáng, màu sắc hay tính chất của sự vật đó.",
+   "ans": "Từ chỉ đặc điểm dùng để mô tả hình dáng, màu sắc hoặc tính chất của sự vật. Ví dụ như từ \"xinh xắn\" để tả một em bé. Em có muốn tìm thêm ví dụ về loại từ này không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "\"Đọc sách\" là từ chỉ hoạt động đúng không thầy?",
+   "ref": "Đúng rồi em, \"đọc sách\" là từ chỉ hoạt động vì mắt và trí não em đang làm việc, đôi khi em còn lật từng trang sách nữa. Đây là một hoạt động rất tốt cho việc học tập. Ngoài đọc sách, em còn thích hoạt động nào khác không?",
+   "ans": "Chính xác, \"đọc\" chính là từ chỉ hoạt động của mắt và trí não khi chúng ta tiếp nhận thông tin từ sách. Em hãy thử đọc một cuốn truyện xem sao?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để nhận biết một câu là câu giới thiệu ạ?",
+   "ref": "Em hãy quan sát xem câu đó có dùng để cho biết tên, đặc điểm hay vai trò của ai/cái gì và thường có từ \"là\" hay không. Em có muốn thầy lấy thêm ví dụ để dễ phân biệt không?",
+   "ans": "Em hãy nhìn vào cuối câu xem có dấu chấm than (!) không và trong câu có các từ như \"là\", \"là\", \"đâu\". Đây là những dấu hiệu đặc trưng nhất của loại câu này.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để con nhận biết được đâu là câu kể khi đọc bài ạ?",
+   "ref": "Em hãy nhìn vào cuối câu, câu kể thường kết thúc bằng một dấu chấm. Bên cạnh đó, câu đó phải cung cấp một thông tin cụ thể cho người đọc. Em có muốn biết thêm về các dấu câu khác không?",
+   "ans": "Em hãy nhìn vào cuối câu, câu kể thường kết thúc bằng dấu chấm. Ngoài ra, em có thể tìm các từ như \"Ai\", \"Cái gì\", \"Con gì\" ở cuối câu nhé. Em có muốn thử tìm câu kể trong một cuốn truyện không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Cuối câu hỏi khi viết mình phải dùng dấu gì ạ?",
+   "ref": "Em bắt buộc phải dùng dấu chấm hỏi (?) ở cuối câu nhé. Nếu thiếu dấu này, người đọc sẽ dễ nhầm sang câu kể đấy.",
+   "ans": "Em bắt buộc phải dùng dấu chấm hỏi (?) ở cuối câu. Nếu thiếu dấu này, văn bản sẽ không rõ nghĩa và sai quy tắc chính tả.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Có phải cứ có dấu chấm than là thành câu cảm không thầy?",
+   "ref": "Không hẳn em nhé, dấu chấm than còn dùng trong câu cầu khiến (ra lệnh, yêu cầu). Vì vậy, em cần xem nội dung câu đó có phải là bộc lộ cảm xúc hay không thì mới kết luận là câu cảm. Em có muốn phân biệt kỹ hơn về hai loại câu này không?",
+   "ans": "Không hẳn em nhé, vì câu cảm thường có cả dấu chấm than và dấu chấm (.). Tuy nhiên, dấu chấm than vẫn được dùng để kết thúc một câu cảm đặc biệt. Em có muốn thử đặt một câu cảm không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi đọc đến dấu chấm thì mình phải làm sao hả thầy?",
+   "ref": "Em cần nghỉ hơi một chút trước khi đọc câu tiếp theo. Việc nghỉ hơi này giúp người nghe hiểu rõ ý của từng câu mà em đang đọc. Em có muốn thầy hướng dẫn cách ngắt nghỉ ở dấu phẩy không?",
+   "ans": "Em hãy dừng lại một chút ở cuối câu để phân biệt với câu kể nhé. Nếu thấy dấu chấm than ở cuối câu thì đó là câu kể, còn nếu chỉ có dấu chấm hỏi thì đó là câu hỏi. Em có muốn thử phân loại một vài dấu câu khác không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, dấu phẩy có dùng để tách bộ phận chỉ thời gian không ạ?",
+   "ref": "Có em nhé, dấu phẩy thường dùng để ngăn cách bộ phận trả lời cho câu hỏi \"Khi nào?\" hoặc \"Ở đâu?\". Ví dụ: \"Ở trong vườn, hoa hồng đang nở rộ\". Em có muốn tìm hiểu thêm về cách đặt dấu phẩy trong các câu dài hơn không?",
+   "ans": "Có em nhé, đây chính là dấu phẩy dùng để phân cách phần liệt kê. Nó giúp người đọc biết ngay đó là một câu kể chứ không phải một đoạn văn dài. Em có muốn thử đặt một câu kể không có dấu phẩy không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Dấu chấm hỏi viết như thế nào vậy thầy?",
+   "ref": "Dấu chấm hỏi được viết bằng một nét cong móc xuống và có một dấu chấm nhỏ ở dưới cùng. Em hãy nhớ viết thật rõ ràng để phân biệt với các dấu câu khác nhé.",
+   "ans": "Dấu chấm hỏi dùng để kết thúc một câu hỏi, em nhé. Khi em muốn biết một điều gì đó chưa rõ, hãy đặt dấu chấm hỏi ở cuối câu. Em có muốn thử đặt một câu hỏi cho thầy không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho con hỏi dấu chấm than đặt ở đâu trong câu?",
+   "ref": "Dấu chấm than luôn được đặt ở cuối câu, ngay sau chữ cái cuối cùng. Điều này giúp người đọc biết câu đã kết thúc và hiểu được cảm xúc của người viết. Em có muốn tìm hiểu về cách đặt dấu phẩy không?",
+   "ans": "Dấu chấm than thường được đặt ở cuối câu cảm thán để bộc lộ cảm xúc. Tuy nhiên, nếu câu văn quá dài, em có thể đặt dấu chấm than ở đầu câu.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho em ví dụ về cặp từ trái nghĩa chỉ tính cách với ạ!",
+   "ref": "Một ví dụ điển hình là cặp từ \"chăm chỉ\" và \"lười biếng\". Người chăm chỉ thì siêng năng, còn người lười biếng thì không muốn làm việc.",
+   "ans": "Chẳng hạn như \"ngoan\" và \"lười\", \"chậm\" và \"nhanh\". Một bên là tính chất, một bên là trạng thái. Em có muốn tìm thêm ví dụ nào tương tự không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho em ví dụ về nhóm từ gần nghĩa chỉ màu sắc với ạ!",
+   "ref": "Một ví dụ điển hình là nhóm từ: \"xanh ngắt\", \"xanh lơ\", \"xanh mướt\". Tất cả đều chỉ màu xanh nhưng lại gợi ra những hình ảnh khác nhau về thiên nhiên.",
+   "ans": "Thầy lấy ví dụ nhóm từ chỉ màu đỏ như \"đỏ tươi\", \"đỏ thẫm\" nhé. Những từ này vừa có ý nghĩa là \"đỏ\", vừa gợi lên sự bắt mắt, thu hút. Em có muốn thử tìm thêm một nhóm từ gần nghĩa chỉ đặc điểm không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, từ chỉ sự vật trong chủ đề Gia đình gồm những từ nào ạ?",
+   "ref": "Từ chỉ sự vật là những từ gọi tên người hoặc đồ vật, ví dụ như: ông, bà, bố, mẹ, anh, chị. Đây là những người thân yêu nhất trong nhà của chúng ta.",
+   "ans": "Trong chủ đề này, các từ chỉ sự vật rất phổ biến là: bố, mẹ, anh, chị, em. Mỗi từ sẽ đi kèm với một ngữ cảnh sử dụng riêng biệt để giúp người đọc dễ dàng nhận biết đối tượng được nói đến. Em có muốn thử tìm một từ chỉ sự vật trong lớp học không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, viết đoạn văn kể chuyện là gì ạ?",
+   "ref": "Đó là việc em dùng lời văn để thuật lại một chuỗi các sự việc theo trình tự nhất định. Việc này giúp người đọc hình dung được câu chuyện đã diễn ra như thế nào. Em có muốn thử kể một câu chuyện ngắn cho thầy nghe không?",
+   "ans": "Đó là việc em dùng lời văn để thuật lại một chuỗi các sự việc nhằm làm nổi bật nhân vật hoặc bài học. Em cần sắp xếp các sự kiện theo trình tự hợp lý để người đọc dễ theo dõi. Em đã biết cách chọn câu chuyện để kể chưa?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, làm sao để bài văn miêu tả trở nên sinh động hơn?",
+   "ref": "Em nên sử dụng thêm các từ ngữ gợi tả và hình ảnh so sánh. Ví dụ, thay vì nói \"mắt mèo tròn\", em có thể viết \"mắt mèo tròn như hai viên bi ve\". Em có muốn tập đặt câu so sánh cùng thầy không?",
+   "ans": "Em hãy sử dụng các biện pháp so sánh và nhân hóa. Việc ví đôi mắt con vật như những viên bi ve hay coi chúng như một người bạn sẽ khiến bài viết hấp dẫn hơn nhiều. Em có muốn thử đặt một câu miêu tả không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, cấu trúc của một bài viết bày tỏ tình cảm gồm mấy phần?",
+   "ref": "Bài viết gồm 3 phần chính là Mở đoạn, Thân đoạn và Kết đoạn. Em hãy nhớ tuân thủ trình tự này để đoạn văn không bị rời rạc nhé.",
+   "ans": "Bài viết thường gồm 3 phần chính là Mở bài (giới thiệu đối tượng và lý do viết), Thân bài (triển khai chi tiết các cung bậc cảm xúc như yêu thương, thấu hiểu, hối hận hoặc chia ly) và Kết bài (khẳng định lại tình cảm hoặc nêu mong ước/lời hứa). Đây là khung sườn cơ bản mà em không được bỏ sót phần nào.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi viết tin nhắn, con có cần viết dài như viết thư không ạ?",
+   "ref": "Không nên viết dài em nhé, vì đặc điểm của tin nhắn là ngắn gọn và súc tích. Em chỉ cần ghi rõ người nhận, nội dung chính và người gửi là đủ. Em có muốn thử viết một tin nhắn cho bạn không?",
+   "ans": "Có, viết tin nhắn dài là một nghệ thuật để người nhận nắm bắt thông tin nhanh. Em nên viết ngắn gọn, rõ ràng và thêm các icon dễ thương vào cuối tin nhắn nhé.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao chúng ta phải quý trọng thời gian ạ?",
+   "ref": "Vì thời gian một khi đã trôi qua thì không bao giờ quay trở lại được. Nếu em biết tận dụng thời gian, em sẽ học tập tốt hơn và có nhiều thời gian cho sở thích cá nhân.",
+   "ans": "Vì thời gian là nguồn lực quý giá, nếu bỏ phí sẽ không bao giờ lấy lại được. Việc tận dụng đúng thời điểm và khoa học sẽ giúp em hoàn thành công việc hiệu quả hơn. Em có muốn biết cách quản lý thời gian khoa học không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Ngoài việc chào hỏi, em có thể làm gì để thầy cô vui lòng?",
+   "ref": "Em hãy cố gắng rèn luyện đạo đức, giúp đỡ bạn bè và tự giác trong học tập. Những hành động tốt đẹp của em sẽ là món quà tinh thần quý giá nhất dành cho thầy cô.",
+   "ans": "Em hãy dùng lời nói nhẹ nhàng, thái độ lễ phép và quan sát xem thầy cô thích kiểu câu trả lời nào. Ví dụ, em có thể hỏi thăm về sở thích hoặc những điều mà thầy cô yêu thích.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Em nên làm gì để thể hiện sự quan tâm đến bạn?",
+   "ref": "Em hãy chú ý lắng nghe, an ủi khi bạn buồn hoặc giúp đỡ bạn những việc nhỏ trong lớp. Ví dụ, em có thể cho bạn mượn cục tẩy khi bạn quên mang theo.",
+   "ans": "Em hãy bắt đầu từ những hành động nhỏ như cho bạn mượn bút, hướng dẫn bạn bài tập khó hoặc lắng nghe bạn kể chuyện. Những hành động nhỏ này thể hiện em là người biết quan tâm đến bạn. Em có thường xuyên giúp bạn học bài không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, làm thế nào để nhận lỗi một cách chân thành ạ?",
+   "ref": "Em hãy nhìn thẳng vào người đối diện, dùng lời nói lễ phép và thái độ hối lỗi khi xin lỗi. Sự chân thành xuất phát từ trái tim sẽ dễ dàng được mọi người tha thứ.",
+   "ans": "Em hãy dũng cảm nhận lỗi và nói lời xin lỗi chân thành với người bị ảnh hưởng. Điều này cho thấy em là người trung thực và dũng cảm. Em có muốn biết cách nói lời xin lỗi sao cho chân thành không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu em vâng lời người lớn thì điều gì sẽ xảy ra?",
+   "ref": "Em sẽ trở thành một đứa trẻ ngoan, nhận được sự tin tưởng, yêu thương từ gia đình và nhà trường. Đồng thời, em cũng sẽ rèn luyện được tính kỷ luật cho bản thân.",
+   "ans": "Em sẽ nhận được sự yêu thương, tin tưởng và giúp gia đình luôn hạnh phúc. Đây là những giá trị đạo đức quý giá mà mỗi đứa trẻ cần rèn luyện hàng ngày. Em có muốn tìm hiểu thêm về ý nghĩa của sự vâng lời không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con dùng tiền tiết kiệm để làm gì thì tốt ạ?",
+   "ref": "Em có thể dùng tiền tiết kiệm để mua sách vở, đồ dùng học tập hoặc dùng để giúp đỡ những bạn nhỏ khó khăn hơn mình. Việc chia sẻ với mọi người sẽ khiến khoản tiền tiết kiệm trở nên ý nghĩa hơn nhiều. Em có muốn tìm hiểu về các quỹ từ thiện không?",
+   "ans": "Em nên dùng số tiền này cho những mục đích thiết thực như học tập, chăm sóc sức khỏe hoặc xây dựng một ngôi nhà. Điều này giúp em có động lực để tích lũy và không bị chi tiêu quá mức. Em đã có dự định gì cho năm nay chưa?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu em tự thu dọn sách vở sau khi học thì có gọi là tự giác không ạ?",
+   "ref": "Đúng rồi, đó chính là một biểu hiện rất rõ của sự tự giác đấy. Em đã biết sắp xếp góc học tập gọn gàng mà không cần ai đôn đốc là điều rất đáng khen.",
+   "ans": "Chắc chắn là có, đó chính là một biểu hiện điển hình của sự tự giác. Việc chủ động sắp xếp lại giúp em rèn luyện tính kỷ luật và sự tập trung.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu thấy bạn chen lấn khi xếp hàng mua vé, em sẽ làm gì?",
+   "ref": "Em nên nhẹ nhàng nhắc bạn cùng xếp hàng đợi đến lượt để công bằng với mọi người. Việc chen lấn không chỉ gây mất trật tự mà còn dễ dẫn đến tranh cãi không đáng có.",
+   "ans": "Em hãy kiên quyết đứng sang một bên và nhắc nhở bạn cùng xếp hàng nếu bạn đang quá đông. Hành động này thể hiện em là học sinh có văn hóa và tôn trọng người xung quanh. Em có muốn biết thêm về cách ứng xử khi thấy bạn mình cũng đang chờ đợi không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho em hỏi, việc tắt điện khi ra khỏi phòng có giúp bảo vệ môi trường không ạ?",
+   "ref": "Có chứ, đây là hành động tiết kiệm năng lượng rất đáng khen. Tiết kiệm điện giúp giảm bớt áp lực cho các nhà máy điện, từ đó giảm ô nhiễm không khí.",
+   "ans": "Có chứ, đây chính là một cách tiết kiệm năng lượng rất tốt. Tiết kiệm điện giúp giảm bớt áp lực lên các nhà máy điện và giảm khí thải. Em có muốn tìm hiểu về các nguồn năng lượng sạch không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Em có thể làm gì để bảo vệ các loài động vật ạ?",
+   "ref": "Em hãy yêu thương, chăm sóc thú cưng và không săn bắt hay chọc phá các loài vật hoang dã. Mỗi loài vật đều có vai trò quan trọng trong tự nhiên. Em thích loài động vật nào nhất?",
+   "ans": "Em hãy chăm sóc thú cưng, không ngắt hoa bẻ cành và không săn bắt động vật hoang dã. Những hành động nhỏ nhưng lan tỏa tình yêu thương sẽ giúp bảo vệ thiên nhiên. Em có sẵn lòng cùng bạn bè xung quanh chăm sóc môi trường không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, tai nạn thương tích là gì ạ?",
+   "ref": "Đó là những tổn thương bất ngờ về cơ thể hoặc tinh thần do sự cố ngoài ý muốn gây ra. Ví dụ như khi em vô tình bị ngã hoặc bị đứt tay. Em có muốn biết những nơi nào dễ xảy ra tai nạn không?",
+   "ans": "Tai nạn thương tích là những tổn thương bất ngờ xảy ra đối với cơ thể chúng ta. Có thể là va chạm giao thông, ngã hoặc bỏng nhiệt. Em có muốn biết những nguyên nhân nào dễ gây ra tai nạn không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Rửa tay bằng xà phòng trước khi ăn có quan trọng không ạ?",
+   "ref": "Rất quan trọng vì xà phòng giúp tiêu diệt những vi khuẩn mà nước lã không rửa sạch được. Điều này bảo vệ hệ tiêu hóa của em luôn khỏe mạnh. Em có biết thêm những lúc nào khác cần rửa tay không?",
+   "ans": "Rất quan trọng, vì xà phòng giúp loại bỏ vi khuẩn và bụi bẩn bám trên tay, ngăn chặn chúng đi vào bụng khi em ăn. Đây là thói quen cực kỳ quan trọng để phòng bệnh đau bụng.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Em nên làm gì khi thấy bạn trong lớp có sở thích khác với em?",
+   "ref": "Em hãy tôn trọng sở thích đó và có thể cùng bạn tìm hiểu thêm về điều bạn thích. Sự đa dạng về sở thích làm cho cuộc sống và lớp học của chúng ta trở nên thú vị hơn nhiều đấy.",
+   "ans": "Em cần tôn trọng sự khác biệt đó vì mỗi người là một cá thể riêng biệt. Việc chấp nhận điểm khác biệt sẽ giúp tình bạn trở nên thú vị và đa dạng hơn. Em có nghĩ sự khác biệt làm tình bạn thú vị hơn không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi nhặt được một chiếc bút chì của bạn đánh rơi, em nên làm gì để thể hiện sự trung thực?",
+   "ref": "Em hãy tìm cách trả lại chiếc bút đó cho bạn hoặc gửi cho thầy cô giáo. Không tự ý lấy đồ của người khác làm của mình chính là biểu hiện của sự thật thà.",
+   "ans": "Em hãy vui vẻ trả lại chiếc bút đó cho bạn hoặc gửi cho thầy cô giáo để tìm chủ nhân. Hành động này thể hiện em là người ngay thẳng, không tham lam đồ của người khác. Em có thường xuyên giúp bạn tìm đồ thất lạc không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Việc tự giác chuẩn bị đồ dùng học tập có phải là tự lập không thầy?",
+   "ref": "Đúng rồi em ạ, đó là một biểu hiện rất tốt của tính tự lập trong học tập. Hành động này cho thấy em đã có trách nhiệm với việc học của mình.",
+   "ans": "Đúng rồi em, đó chính là một biểu hiện điển hình của tính tự lập. Việc này giúp em rèn luyện tính độc lập và không bị thụ động. Em có muốn biết thêm về các kỹ năng sống khác không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Việc giữ gìn vệ sinh đường làng ngõ xóm có phải là yêu quê hương không thầy?",
+   "ref": "Đúng vậy, đây là một biểu hiện rất rõ ràng của lòng yêu quê hương. Khi em bảo vệ môi trường xanh, sạch, đẹp, em đang góp phần làm cho nơi mình sống trở nên tuyệt vời hơn.",
+   "ans": "Đúng vậy, vì khi em giữ cho môi trường sống xanh, sạch, đẹp thì đó chính là cách em chăm sóc và tôn trọng vẻ đẹp của nơi mình ở. Điều này giúp mọi người cảm thấy dễ chịu và yêu quý em hơn.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Vì sao chúng ta phải chăm học để yêu nước hả thầy?",
+   "ref": "Vì khi em học giỏi, em sẽ có kiến thức để sau này xây dựng đất nước ngày càng giàu đẹp và phát triển hơn. Đó là cách bền vững nhất để đóng góp cho Tổ quốc. Em có muốn tìm hiểu thêm về các tấm gương hiếu học không?",
+   "ans": "Vì khi em học giỏi, em sẽ có kiến thức để sau này xây dựng đất nước Việt Nam ngày càng giàu đẹp và văn minh hơn. Đó là cách yêu nước bền vững nhất của học sinh.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thưa thầy, thế nào là gia đình ạ?",
+   "ref": "Gia đình là những người cùng sống chung một nhà, có quan hệ huyết thống hoặc hôn nhân và luôn chăm sóc nhau. Đó là nơi chúng ta được yêu thương và lớn lên mỗi ngày. Em có muốn kể cho thầy nghe về gia đình mình không?",
+   "ans": "Gia đình là tập hợp những người gắn bó với nhau bởi quan hệ huyết thống hoặc quan hệ hôn nhân, cùng chung sống dưới một mái nhà và chia sẻ mọi vui buồn. Sự gắn kết giữa các thành viên tạo nên tình cảm yêu thương vô điều kiện. Em có muốn biết thêm về cách thể hiện sự quan tâm đến gia đình không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để giữ cho trường mình luôn sạch đẹp hả thầy?",
+   "ref": "Em cần bỏ rác đúng nơi quy định, không vẽ bậy lên bàn ghế hay tường lớp học. Khi mỗi bạn một tay giữ gìn, ngôi trường sẽ trở nên tuyệt vời hơn. Em có sẵn sàng cùng bạn dọn vệ sinh lớp học không?",
+   "ans": "Em hãy bỏ rác đúng nơi quy định và không vẽ bậy lên bàn ghế. Những hành động nhỏ này sẽ giúp trường mình luôn sạch đẹp. Em có thường xuyên dọn dẹp ngăn bàn của mình không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Hoạt động chính của người dân ở nông thôn thường là gì ạ?",
+   "ref": "Người dân ở nông thôn thường làm nông nghiệp như trồng trọt và chăn nuôi. Họ canh tác trên những cánh đồng hoặc trong vườn nhà để tạo ra lương thực.",
+   "ans": "Người dân chủ yếu làm nông nghiệp, bao gồm cả việc gieo trồng và chăm sóc cây trồng. Bên cạnh đó, họ còn phát triển các nghề thủ công như dệt lụa hoặc đúc gang thép. Em có muốn biết thêm về các loại cây công nghiệp ở đây không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Có phải tất cả các loại cây đều sống trên mặt đất không thầy?",
+   "ref": "Không phải em nhé, thực vật sống ở nhiều môi trường khác nhau. Có cây sống trên cạn như cây phượng, nhưng cũng có cây sống dưới nước như cây sen, cây súng. Em có biết thêm loại cây nào sống dưới nước nữa không?",
+   "ans": "Không em nhé, tùy vào đặc điểm cơ thể mà mỗi loại cây có cách thích nghi khác nhau. Có loại cây ưa ẩm nhưng cũng có loại ưa khô. Em có muốn biết cây nào thích ẩm hơn không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Con cá dùng bộ phận nào để di chuyển dưới nước vậy thầy?",
+   "ref": "Con cá dùng vây và đuôi để bơi trong nước. Những bộ phận này giúp cá điều hướng và đẩy cơ thể tiến về phía trước một cách linh hoạt.",
+   "ans": "Cá dùng vây và đuôi để bơi lội dưới nước em nhé. Cấu tạo này giúp cá bơi nhanh hơn và giữ thăng bằng trong môi trường nước. Em có muốn biết thêm về chức năng của vây không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để con phân biệt được nấm độc với nấm ăn được ạ?",
+   "ref": "Thông thường, nấm độc thường có màu sắc rất sặc sỡ, có vòng nhẫn ở thân hoặc có bao gốc ở chân nấm. Tuy nhiên, không phải nấm độc nào cũng sặc sỡ nên cách an toàn nhất là không ăn nấm lạ. Em có muốn tìm hiểu thêm về tác hại của nấm độc không?",
+   "ans": "Em hãy quan sát màu sắc và cách sử dụng nhé. Nấm độc thường có màu sắc sặc sỡ, có vòng nhẫn ở thân hoặc bao gốc. Em có muốn tìm hiểu thêm về các loại nấm ăn được không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Xương có tác dụng bảo vệ cơ thể như thế nào ạ?",
+   "ref": "Xương tạo thành các \"lồng\" bảo vệ nội tạng, ví dụ như xương sườn bao quanh để bảo vệ tim và phổi. Em có biết bộ phận nào khác cũng được xương bảo vệ không?",
+   "ans": "Xương giúp nâng đỡ toàn bộ cơ thể và bảo vệ các cơ quan nội tạng khỏi những tác động xấu từ môi trường. Nhờ có xương, chúng ta mới có thể đứng vững, đi lại hay vận động.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thở ra là như thế nào vậy thầy?",
+   "ref": "Thở ra là quá trình lồng ngực xẹp xuống để đẩy khí các-bô-nic từ trong phổi ra ngoài. Đây là cách cơ thể loại bỏ khí thải không cần thiết. Em có biết tại sao chúng ta phải thở ra không?",
+   "ans": "Đó là khi em hít vào một hơi thật sâu và giữ hơi trong phổi cho đến khi thở ra hết. Lúc này cơ thể sẽ thả lỏng hoàn toàn. Em có muốn biết làm sao để giữ hơi lâu không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Chúng ta cần làm gì để giữ cho cơ quan bài tiết luôn khỏe mạnh?",
+   "ref": "Em cần uống đủ nước, không nhịn tiểu và giữ vệ sinh cơ thể sạch sẽ. Những thói quen đơn giản này sẽ giúp thận hoạt động hiệu quả hơn.",
+   "ans": "Để bảo vệ cơ quan bài tiết, bạn nên thực hiện các thói quen sau:\n\n- Uống đủ nước: Nước giúp thận lọc máu hiệu quả hơn và duy trì độ ẩm cho da.\n- Hạn chế muối và đường: Việc tiêu thụ quá nhiều muối và đường dễ dẫn đến tình trạng giữ nước trong cơ thể, gây áp lực lên hệ bài tiết.\n- Tập thể dục thường xuyên: Vận động giúp cơ bắp săn chắc và tăng cường sức đề kháng cho cơ thể.\n- Chế độ ăn uống hợp lý: Hạn chế thực phẩm chứa nhiều muối, chất béo và đồ ngọt để tránh gây ảnh hưởng đến chức năng thận.\n\nBạn có muốn mình gợi ý một vài loại trà thảo mộc giúp thư giãn hệ bài tiết không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Cơ quan tuần hoàn gồm những bộ phận nào hả thầy?",
+   "ref": "Cơ quan tuần hoàn bao gồm tim và các mạch máu em nhé. Tim đóng vai trò bơm máu, còn mạch máu là hệ thống ống dẫn máu đi khắp cơ thể. Em có muốn biết tim nằm ở đâu không?",
+   "ans": "Cơ quan tuần hoàn gồm có tim và các mạch máu em nhé. Tim đóng vai trò như một chiếc bơm, co bóp liên tục để đẩy máu đi nuôi cơ thể. Em có muốn biết mỗi bộ phận làm nhiệm vụ gì không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Rửa tay bằng nước sạch thôi có đủ không thầy?",
+   "ref": "Chỉ rửa bằng nước là chưa đủ, em cần dùng thêm xà phòng để tiêu diệt vi khuẩn hiệu quả hơn. Xà phòng giúp cuốn trôi những chất bẩn mà nước thường không rửa sạch được. Em có biết các bước rửa tay chuẩn của Bộ Y tế không?",
+   "ans": "Chưa đủ đâu em ạ, em cần phải rửa tay bằng xà phòng và lau khô thật kỹ. Việc này giúp loại bỏ vi khuẩn và bụi bẩn bám trên tay để không đưa vào cơ thể qua đường ăn uống.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Những đồ vật nào trong nhà dễ làm em bị thương ạ?",
+   "ref": "Đó là những vật sắc nhọn như dao, kéo, kim khâu hoặc mảnh kính vỡ. Những vật này có thể làm em bị đứt tay hoặc chảy máu nếu không cẩn thận.",
+   "ans": "Có rất nhiều vật nguy hiểm như dao, kéo, ổ điện, phích nước nóng hay bàn là. Những vật này có thể gây chảy máu, điện giật hoặc bỏng nếu em không cẩn thận.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Em nên làm gì khi thấy một ổ điện trong lớp bị hở?",
+   "ref": "Em cần tránh xa khu vực đó và báo ngay cho thầy cô giáo hoặc bác bảo vệ. Tuyệt đối không được tự ý chạm vào vì có thể bị điện giật rất nguy hiểm. Em có biết thêm dấu hiệu nào khác của thiết bị điện bị hỏng không?",
+   "ans": "Em hãy đứng xa ra và báo ngay cho thầy cô hoặc cha mẹ để xử lý kịp thời. Việc giữ an toàn là quan trọng nhất khi ở gần các thiết bị điện.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Khi ngồi trong ô tô, con cần lưu ý điều gì để an toàn?",
+   "ref": "Em cần thắt dây an toàn và tuyệt đối không được thò đầu hay tay ra ngoài cửa sổ. Những hành động này rất nguy hiểm vì dễ va chạm với các xe đi ngược chiều. Em có biết vì sao thắt dây an toàn lại quan trọng không?",
+   "ans": "Em tuyệt đối không được nghịch ổ điện, dây điện hở và không được đùa nghịch với bạn khi đang lái xe. Việc giữ tập trung khi lái xe giúp em kịp thời xử lý tình huống bất ngờ. Em có muốn biết thêm về các biển báo giao thông không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Tại sao khi đi mưa chúng ta lại phải mặc áo mưa hay che ô vậy thầy?",
+   "ref": "Để cơ thể không bị ướt, từ đó tránh bị nhiễm lạnh và cảm cúm. Khi bị ướt mưa, nhiệt độ cơ thể giảm nhanh dẫn đến dễ bị ốm. Em có muốn tìm hiểu cách phòng bệnh cảm lạnh không?",
+   "ans": "Chúng ta làm vậy để cơ thể không bị ướt, từ đó tránh bị cảm lạnh hoặc bị ốm. Em có muốn biết thêm về các bệnh thường gặp ở cơ quan hô hấp không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu rừng bị chặt hết thì điều gì sẽ xảy ra với các con vật ạ?",
+   "ref": "Các con vật sẽ mất đi nơi ở và nguồn thức ăn, dẫn đến việc chúng phải di cư hoặc bị tuyệt chủng. Điều này làm mất cân bằng tự nhiên và ảnh hưởng xấu đến con người. Em có muốn cùng thầy tìm hiểu về việc trồng rừng không?",
+   "ans": "Các con vật sẽ không có thức ăn để kiếm ăn và nguồn lực để sinh tồn. Điều này dẫn đến việc nhiều loài động vật sẽ bị tuyệt chủng trong tương lai.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, môi trường là gì ạ?",
+   "ref": "Môi trường là tất cả những gì bao quanh chúng ta, từ không khí, nước đến cây cối và nhà cửa. Môi trường sạch sẽ giúp chúng ta luôn khỏe mạnh. Em hãy thử kể tên những thứ xung quanh em lúc này xem?",
+   "ans": "Môi trường là tất cả những gì bao quanh chúng ta, bao gồm cả yếu tố tự nhiên như không khí hay nước. Và yếu tố nhân tạo như nhà cửa, đường sá. Em có muốn biết thêm về các loại môi trường xung quanh mình không?",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, tại sao lại có mưa ạ?",
+   "ref": "Mưa xảy ra khi hơi nước ngưng tụ thành những giọt nước nhỏ trong đám mây rồi rơi xuống đất. Đây là một phần của vòng tuần hoàn nước trong tự nhiên. Em có tò mò nước sau khi mưa rơi xuống sẽ đi đâu không?",
+   "ans": "Vì nước từ trên cao đổ xuống và gặp không khí lạnh nên ngưng tụ thành những hạt nước li ti. Khi gặp lạnh, chúng ngưng tụ nhanh hơn và rơi xuống nhiều hơn. Em có muốn biết hạt nước nhỏ nhất là hạt nào không?",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "sgk",
+   "q": "Số ba trăm linh tám viết là số bao nhiêu vậy thầy?",
+   "ref": "Số đó được viết là 308 em nhé. Chữ \"linh\" cho biết hàng chục là số 0, nên em đặt số 0 vào giữa số 3 và số 8.",
+   "ans": "Số ba trăm linh tám viết là số gồm ba trăm tám mươi tám = 300. Đây là cách viết gọn khi chúng ta chỉ biết tổng ba trăm tám mươi tám và ba nghìn không chia hết cho 2.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy cho con hỏi 14 chia 2 bằng mấy ạ?",
+   "ref": "14 chia 2 bằng 7. Em hãy nhớ lại bảng nhân 2, ta thấy 2 nhân 7 bằng 14 nên kết quả phép chia này là 7. Em có muốn tìm hiểu thêm về cách chia các số lớn hơn không?",
+   "ans": "14 chia 2 bằng 6. Vì 2 nhân 6 = 14 nên khi chia 14 : 2 = 6. Em có muốn thử tự đặt một phép chia cho 5 để thầy kiểm tra không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, kết quả của 3 * 9 là bao nhiêu ạ?",
+   "ref": "Kết quả là 27 em nhé. Em hãy nhớ 3 * 10 = 30 rồi bớt đi 3 đơn vị là sẽ ra 27 ngay. Em có muốn thử thách với một bài toán đố về bảng nhân 3 không?",
+   "ans": "Kết quả là 15 em nhé. Vì lấy 9 nhân với 3 bằng 15 nên khi chia cho 3 ta được 15. Em có muốn thử tự đặt một phép chia cho 5 để thầy kiểm tra không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, nếu con quên bảng chia 4 thì phải làm sao?",
+   "ref": "Em đừng lo, hãy dùng phương pháp trừ dần hoặc nhớ lại bảng nhân 4. Ví dụ muốn tính 16 : 4, em đếm 4, 8, 12, 16 (được 4 lần), vậy kết quả là 4. Em có muốn luyện tập thêm vài phép tính nữa không?",
+   "ans": "Em hãy thực hiện phép chia 4 rồi viết kết quả vào cột đơn vị của bảng chia 4. Khi đó, em sẽ biết ngay kết quả là 12 hoặc 42. Em có muốn thử làm một ví dụ không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Thầy ơi, 6 nhân 7 bằng bao nhiêu ạ?",
+   "ref": "Kết quả là 42 em nhé. Em có thể nhớ bằng cách lấy 6 x 6 = 36 rồi cộng thêm 6 nữa. Em đã thuộc lòng bảng nhân 6 chưa?",
+   "ans": "6 nhân 7 bằng 11 em nhé. Em có thể dễ dàng tìm thấy trong bảng nhân 7 hoặc bảng chia 7 mà chúng ta vừa học.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Con quên mất 56 chia 7 bằng mấy rồi ạ?",
+   "ref": "56 chia 7 bằng 8 con nhé. Em hãy nhẩm lại 7 nhân 8 bằng 56 để ghi nhớ lâu hơn. Em có muốn luyện tập thêm với số 63 không?",
+   "ans": "56 chia 7 bằng 6. Vì cả hai số đều có 6 chục, nên khi chia 56 em nhớ cộng thêm 5 để ra kết quả chính xác là 6.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "9 x 6 bằng mấy vậy thầy?",
+   "ref": "9 x 6 bằng 54. Đây là kết quả của 6 nhóm, mỗi nhóm có 9 đơn vị. Em có muốn thử tính 9 x 7 không?",
+   "ans": "9 x 6 bằng 48 em nhé. Em có thể nhớ nhanh bằng cách lấy 9 nhân 6 bằng 48 rồi cộng thêm 5 để ra kết quả này.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Nếu con quên kết quả của 64 : 8 thì làm thế nào ạ?",
+   "ref": "Em hãy nhớ lại xem trong bảng nhân 8, số nào nhân với 8 thì bằng 64. Ta thấy 8 * 8 = 64, vậy nên 64 : 8 = 8.",
+   "ans": "Em hãy viết số 64 vào cột và nhớ 1 sang hàng tiếp theo bên trái. Khi đó, em sẽ lấy 1 cộng thêm 6, như vậy kết quả sẽ không thay đổi. Em có muốn thử áp dụng cách này với một ví dụ khó hơn không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Số 3000 + 400 + 50 + 6 viết gọn lại là số nào ạ?",
+   "ref": "Đó chính là số 3456. Em chỉ cần ghép các chữ số tương ứng với hàng nghìn, trăm, chục, đơn vị lại với nhau. Em có muốn biết cách đọc số này không?",
+   "ans": "Số 3000 được viết gọn lại là 3000. Đây là cách viết gọn để chúng ta dễ dàng cộng, trừ và giữ nguyên hàng chục mà không bị nhầm lẫn.",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Làm sao để thực hiện phép trừ khi chữ số hàng đơn vị của số bị trừ nhỏ hơn số trừ ạ?",
+   "ref": "Em hãy mượn 1 ở hàng chục để cộng vào hàng đơn vị cho đủ để trừ. Sau đó, em đừng quên \"trả\" 1 vào số trừ của hàng chục nhé. Em có muốn thử làm một ví dụ không?",
+   "ans": "Em hãy mượn 1 ở hàng chục để trừ đi 1 ở hàng đơn vị, sau đó giữ nguyên số 1 ở hàng chục. Ví dụ 332 thì em mượn 1 chục là 12 trừ đi 2 đơn vị, kết quả là 304. Em có muốn thử làm một ví dụ tương tự không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Mình bắt đầu tính nhân từ hàng nào trước hả thầy?",
+   "ref": "Em luôn bắt đầu tính từ hàng đơn vị, sau đó mới đến hàng chục và cuối cùng là hàng trăm. Đây là quy tắc tính từ phải sang trái để đảm bảo tính chính xác. Em có muốn thử làm một ví dụ không?",
+   "ans": "Em luôn luôn phải thực hiện tính từ phải sang trái, bắt đầu từ hàng đơn vị. Đây là quy tắc bất di bất dịch cho cả phép cộng và phép trừ số tự nhiên.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Con muốn biết cách kiểm tra xem mình chia đúng hay sai thì làm thế nào ạ?",
+   "ref": "Em hãy lấy Thương nhân với Số chia, nếu là phép chia hết thì kết quả phải bằng Số bị chia. Với phép chia có dư, em lấy (Thương nhân Số chia) rồi cộng với Số dư để ra Số bị chia. Em có muốn thử áp dụng cách này vào bài tập vừa rồi không?",
+   "ans": "Em hãy tự giác nhận xét và đánh giá kết quả cuối cùng của mình bằng một biểu đồ cột hoặc đường. Ví dụ, em có thể vẽ một đường thẳng chia đôi chiều dài và chiều rộng rồi nối từ điểm đầu đến điểm cuối để dễ quan sát hơn. Em có muốn thầy hướng dẫn cách phân biệt chia đều hay chia hết không?",
+   "judge": "sai"
+  },
+  {
+   "src": "sgk",
+   "q": "Hình chữ nhật có phải có 4 góc vuông không thầy?",
+   "ref": "Đúng rồi em, hình chữ nhật có 4 góc vuông giống như hình vuông vậy. Tuy nhiên, hình chữ nhật chỉ có các cặp cạnh đối diện bằng nhau chứ không bắt buộc 4 cạnh phải bằng nhau hết.",
+   "ans": "Đúng rồi em, hình chữ nhật có đúng 4 góc vuông là hình chữ nhật. Đây là một đặc điểm nhận dạng quan trọng của hình này.",
+   "judge": "dung"
+  },
+  {
+   "src": "sgk",
+   "q": "Tính chu vi hình vuông có phải là lấy cạnh nhân 4 không thầy?",
+   "ref": "Đúng rồi em, đó chính là công thức chuẩn để tính chu vi hình vuông. Ví dụ cạnh 2dm thì chu vi là 2 * 4 = 8dm.",
+   "ans": "Đúng rồi em, đây chính là một cách tính khác của chu vi. Chu vi hình vuông được tính bằng công thức C = 2 * (a + b) * 4. Em có muốn tìm hiểu thêm về các loại hình tam giác thường gặp không?",
+   "judge": "sai"
+  }
+ ],
+ "res": {
+  "n": 150,
+  "dung_%": 40.7,
+  "mot_phan_%": 18.0,
+  "khop_gia_tri_%": 24.4,
+  "chep_lai_giong": null
+ }
+}

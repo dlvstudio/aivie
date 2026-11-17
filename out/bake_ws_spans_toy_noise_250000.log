@@ -1,0 +1,50 @@
+[    0.0s RSS  0.08GB] nạp out/noise_big/toy_noise_250000.pkl …
+[   37.2s RSS  8.69GB] nạp xong · parents=245321 vocab=32002
+[   37.3s RSS  8.94GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   37.3s RSS  8.94GB] ws_spans 0/245321 · span=0 · bỏ=0
+[   49.7s RSS  8.94GB] ws_spans 20000/245321 · span=14613 · bỏ=12000
+[   55.3s RSS  8.94GB] ws_spans 40000/245321 · span=23721 · bỏ=23928
+[   61.1s RSS  8.94GB] ws_spans 60000/245321 · span=32553 · bỏ=35500
+[   67.0s RSS  8.94GB] ws_spans 80000/245321 · span=40198 · bỏ=47029
+[   72.7s RSS  8.94GB] ws_spans 100000/245321 · span=47698 · bỏ=58759
+[   78.7s RSS  8.94GB] ws_spans 120000/245321 · span=54811 · bỏ=70374
+[   84.5s RSS  8.94GB] ws_spans 140000/245321 · span=61362 · bỏ=82167
+[   90.0s RSS  8.94GB] ws_spans 160000/245321 · span=68229 · bỏ=94181
+[   95.1s RSS  8.94GB] ws_spans 180000/245321 · span=74231 · bỏ=106723
+[  100.2s RSS  8.94GB] ws_spans 200000/245321 · span=81030 · bỏ=119197
+[  105.5s RSS  8.94GB] ws_spans 220000/245321 · span=86945 · bỏ=131399
+[  110.9s RSS  8.94GB] ws_spans 240000/245321 · span=92416 · bỏ=143657
+[  112.5s RSS  8.94GB] 94572 span · 1.3 phút
+[  120.4s RSS  8.94GB] ghi out/noise_big/toy_noise_250000.ws_spans.json (1.5 MB) · roundtrip OK
+[  120.4s RSS  8.94GB]   mẫu[00] '<0x80> <0x85>'
+[  120.4s RSS  8.94GB]   mẫu[01] 'c ulin'
+[  120.4s RSS  8.94GB]   mẫu[02] '貞 <0xE7> <0x83> <0x88>'
+[  120.4s RSS  8.94GB]   mẫu[03] 'K irov'
+[  120.4s RSS  8.94GB]   mẫu[04] 'bản Kinh'
+[  120.4s RSS  8.94GB]   mẫu[05] 'giải toả'
+[  120.4s RSS  8.94GB]   mẫu[06] 'tư thổ'
+[  120.4s RSS  8.94GB]   mẫu[07] 'phù văn'
+[  120.4s RSS  8.94GB]   mẫu[08] 'Phong Thủy'
+[  120.4s RSS  8.94GB]   mẫu[09] 'nghiên cứu ứng dụng'
+[  120.4s RSS  8.94GB]   mẫu[10] 'lá ser'
+[  120.4s RSS  8.94GB]   mẫu[11] 'bậc đạo sư'
+[  120.4s RSS  8.94GB]   mẫu[12] 'Mã Giám'
+[  120.4s RSS  8.94GB]   mẫu[13] 'Tứ Kiệt'
+[  120.4s RSS  8.94GB]   mẫu[14] 'Hương An'
+[  120.4s RSS  8.94GB]   mẫu[15] 'one Sch er f ig'
+[  120.4s RSS  8.94GB]   mẫu[16] 'unt ain Valley'
+[  120.4s RSS  8.94GB]   mẫu[17] 'Sam aj'
+[  120.4s RSS  8.94GB]   mẫu[18] 'Bùi Văn Cường'
+[  120.4s RSS  8.94GB]   mẫu[19] 'Lễ nghi'
+[  120.4s RSS  8.94GB]   mẫu[20] 'app el'
+[  120.4s RSS  8.94GB]   mẫu[21] 'amb ord'
+[  120.4s RSS  8.94GB]   mẫu[22] 'ull s oft'
+[  120.4s RSS  8.94GB]   mẫu[23] 'codon A AT'
+[  120.4s RSS  8.94GB]   mẫu[24] 'Lawrence Bragg'
+[  120.4s RSS  8.94GB]   mẫu[25] 'Mon ar chi que'
+[  120.4s RSS  8.94GB]   mẫu[26] 'crypt ion Pro c essing'
+[  120.4s RSS  8.94GB]   mẫu[27] 'Spec tre'
+[  120.4s RSS  8.94GB]   mẫu[28] 'Isla Salas'
+[  120.4s RSS  8.94GB]   mẫu[29] 'Vas udeva'
+[  120.7s RSS  8.94GB] span nghi rác (tự động): 1304/94572 = 1.4% (ISG: 57%)
+[  120.7s RSS  8.94GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

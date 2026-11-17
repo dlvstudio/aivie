@@ -1,0 +1,77 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=64
+
+########## MODE no_agenda ##########
+
+=== nq_def  (254.5s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (14.7s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ''
+
+=== thd  (38.1s) dots≈0 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương'
+
+=== ly  (47.5s) dots≈0 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long năm 1010
+cont:   'Thăng Long năm 1010'
+
+=== bach  (28.4s) dots≈0 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm 1288
+cont:   '1288'
+
+=== qa_nq  (70.3s) dots≈0 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu trách nhiệm lão sư
+cont:   'không còn chịu trách nhiệm lão sư'
+
+=== hung  (26.0s) dots≈0 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   'Lam Sơn'
+
+########## MODE agenda_handoff ##########
+
+=== nq_def  (195.3s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== nq_full  (11.5s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+cont:   '. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.'
+
+=== thd  (36.2s) dots≈2 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.
+cont:   'Hưng Đạo Vương. Nhà Lê thống nhất giang sơn.'
+
+=== ly  (46.5s) dots≈2 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.
+cont:   'Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+
+=== bach  (28.2s) dots≈2 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.
+cont:   '1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+
+=== qa_nq  (69.8s) dots≈2 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu trách nhiệm lão sư. Sướng khổ mình chịu.
+cont:   'không còn chịu trách nhiệm lão sư. Sướng khổ mình chịu.'
+
+=== hung  (25.7s) dots≈2 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.
+cont:   'Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.'
+
+[1066s] → out/probe_multi_prompt_long_now.log

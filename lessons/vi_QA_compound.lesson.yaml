@@ -1,0 +1,35 @@
+lesson_id: vi_grade4_qa_compound
+grade: 4
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_compound
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A1
+  - const: ","
+  - var: P
+  - gap: s+
+    min: 0
+  - const: ","
+  - var: T
+
+bind:
+  Q: câu hỏi
+  A1: vế đầu
+  P: đại từ
+  T: vế cuối
+
+# Câu ghép trả lời bằng KIẾN THỨC THỰC: vế đầu (định nghĩa) + đại từ nhắc lại + vế cuối.
+examples:
+  - "Hỏi: Hà Nội là gì ? Đáp: Hà Nội là thủ đô , nó nằm ở miền Bắc , là thành phố lớn."
+  - "Hỏi: Huế là gì ? Đáp: Huế là cố đô , nó ở miền Trung , là thành phố du lịch."
+  - "Hỏi: Tim làm gì ? Đáp: Tim bơm máu khắp cơ thể , nó đập liên tục , tim rất quan trọng."
+  - "Hỏi: Cá là gì ? Đáp: Cá là động vật , nó sống dưới nước , cá bơi bằng vây."
+  - "Hỏi: Mặt trời là gì ? Đáp: Mặt trời là ngôi sao , nó cung cấp ánh sáng , mặt trời cho ta nhiệt."
+  - "Hỏi: Cây xanh cần gì ? Đáp: Cây xanh cần nắng , nó cần nước , cây lớn nhờ quang hợp."
+  - "Hỏi: Sông Hồng là gì ? Đáp: Sông Hồng là con sông , nó chảy qua Hà Nội , sông cho nước ngọt."
+  - "Hỏi: Bác Hồ là ai ? Đáp: Bác Hồ là lãnh tụ , người đọc Tuyên ngôn độc lập , Bác sinh năm 1890."

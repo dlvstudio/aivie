@@ -1,0 +1,133 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[69s] ✓ 430,447 cha · is_qa=670
+
+══ [0] Hỏi: Nhà Lý dời đô về đâu? Đáp:
+  top-act: pi=4368 act=0.494 qa=0 match='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+           pi=4369 act=0.258 qa=0 match='Các nhà nghiên cứu khẳng định Lý Thái Tổ dời đô cũng cần dùn'
+           pi=2814 act=0.186 qa=0 match='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+           pi=3066 act=0.056 qa=0 match='Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời '
+           pi=4254 act=0.002 qa=0 match='Nhà Hồ đổi quốc hiệu thành Đại Ngu và dời đô về Thành Tây Đô'
+  gate=statement_cover ok=True cover=0.8 n=5 reject=None
+  q_content=['dời', 'lý', 'nhà', 'đâu', 'đô']
+  dropped=['Hỏi::A=0', 'Ġvề:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=15 span='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  OFF → ' nhà'
+  ON  → 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'  readable=True
+
+══ [1] Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:
+  top-act: pi=237116 act=0.239 qa=0 match='" "Sẽ là ai, Bạch hoàng hậu sao?'
+           pi=242285 act=0.131 qa=0 match=' Ai ghé thăm cũng phải trầm trồ", chị Nguyệt bộc bạch.'
+           pi=181738 act=0.110 qa=0 match='Chương 1042: Hắc Bạch Vô Thường "Ai.'
+           pi=359047 act=0.092 qa=0 match='Ai giúp Bạch Tuyết sau khi cô ăn phải quả táo độc?'
+           pi=268301 act=0.084 qa=0 match=' "Nhất thời Hứa Hoan Ngôn không nhớ nhà họ Bạch là nhà ai.'
+  gate=statement_cover ok=False cover=0.222 n=9 reject=cha phủ câu hỏi 0.22<0.8; thiếu=['bại', 'hán', 'nam', 'quân', 'sông', 'đánh', 'đằng']
+  q_content=['ai', 'bạch', 'bại', 'hán', 'nam', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' là'
+  ON  → ' là'  readable=False
+
+══ [2] Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:
+  top-act: pi=2811 act=0.838 qa=0 match='Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+           pi=2815 act=0.161 qa=0 match='Kinh đô Hoa Lư xưa, hiện nay nằm ở làng cổ Trường Yên, thuộc'
+           pi=193471 act=0.001 qa=0 match=' (SN 2008, ngụ thôn Quán Vinh, xã Ninh Hòa, huyện Hoa Lư, tỉ'
+           pi=251835 act=0.000 qa=0 match=' Phù Nam Hoa vốn đang hưng phấn cũng tỉnh táo lại.'
+           pi=426800 act=0.000 qa=0 match=' Dân số Kitô giáo không giảm ở Brazil, miền nam Hoa Kỳ, và t'
+  gate=statement_cover ok=True cover=0.8 n=5 reject=None
+  q_content=['hoa', 'lư', 'nào', 'nằm', 'tỉnh']
+  dropped=['Hỏi::A=0', 'Ġở:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=10 span='Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  OFF → 'Hoa'
+  ON  → 'Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'  readable=True
+
+══ [3] Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp:
+  top-act: pi=429842 act=0.414 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=430061 act=0.414 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=1769 act=0.125 qa=0 match=' Lê Lợi khởi nghĩa Lam Sơn.'
+           pi=102 act=0.015 qa=0 match='Lê Lợi khởi nghĩa Lam Sơn.'
+           pi=3515 act=0.012 qa=0 match='Nguyễn Trãi là quân sư giúp Lê Lợi trong cuộc khởi nghĩa.'
+  gate=qa_cover ok=True cover=1.0 n=8 reject=None
+  span_len=32 span=' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở '
+  OFF → ' Lợi'
+  ON  → ' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'  readable=True
+
+══ [4] Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp:
+  top-act: pi=2088 act=0.532 qa=0 match=' Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+           pi=2511 act=0.190 qa=0 match='Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng'
+           pi=1318 act=0.168 qa=0 match='Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+           pi=4176 act=0.100 qa=0 match='Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán t'
+           pi=429920 act=0.002 qa=1 match=' Ngô Quyền giành độc lập năm nào? '
+  gate=statement_cover ok=False cover=0.778 n=9 reject=cha phủ câu hỏi 0.78<0.8; thiếu=['bại', 'nào']
+  q_content=['bại', 'hán', 'nam', 'ngô', 'nào', 'năm', 'quyền', 'quân', 'đánh']
+  dropped=['Hỏi::A=0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' thắng'
+  ON  → ' thắng'  readable=False
+
+══ [5] Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:
+  top-act: pi=2810 act=0.991 qa=0 match='Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+           pi=2824 act=0.005 qa=0 match='Vua Đinh Tiên Hoàng đặt tên nước là Đại Cồ Việt, lấy Hoa Lư '
+           pi=177791 act=0.002 qa=0 match='Việt Trì – Thành phố lễ hội về với cội nguồn dân tộc Việt Na'
+           pi=120229 act=0.001 qa=0 match='Tô Châu trở thành kinh đô của nước Việt.'
+           pi=2747 act=0.000 qa=0 match='Từ năm 1371 đến năm 1389, ông tổ chức nhiều cuộc tấn công ra'
+  gate=statement_cover ok=True cover=0.889 n=9 reject=None
+  q_content=['cồ', 'gì', 'kinh', 'nước', 'tiên', 'việt', 'đô', 'đại', 'đầu']
+  dropped=['Hỏi::A=0', 'Ġcủa:gidf=2.9', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=14 span='Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  OFF → ' Lư'
+  ON  → 'Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'  readable=True
+
+══ [6] Hỏi: Ai chỉ huy trận Bạch Đằng năm 1288? Đáp:
+  top-act: pi=364692 act=0.184 qa=0 match=' Ai Cập - với dân số ước tính hơn 102 triệu người 4.'
+           pi=181738 act=0.182 qa=0 match='Chương 1042: Hắc Bạch Vô Thường "Ai.'
+           pi=369018 act=0.086 qa=0 match=' Kim tự tháp Cestius - kim tự tháp kiểu Ai Cập ở trung tâm R'
+           pi=421545 act=0.082 qa=0 match=' Năm 1224, Kim Tuyên Tông qua đời, thứ tử Hoàn Nhan Thủ Tự k'
+           pi=289243 act=0.077 qa=0 match=' Ai đồng cảm kết bạn zalo 0969523381'
+  gate=statement_cover ok=False cover=0.222 n=9 reject=cha phủ câu hỏi 0.22<0.8; thiếu=['8', 'bạch', 'chỉ', 'huy', 'năm', 'trận', 'đằng']
+  q_content=['2', '8', 'ai', 'bạch', 'chỉ', 'huy', 'năm', 'trận', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġ1:gidf=3.9', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' Cập'
+  ON  → ' Cập'  readable=False
+
+══ [7] Hỏi: Nhà Lý dời đô năm nào? Đáp:
+  top-act: pi=2814 act=0.528 qa=0 match='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+           pi=3066 act=0.374 qa=0 match='Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời '
+           pi=760 act=0.073 qa=0 match='Tiết 1: Nhà Lý thành lập năm 1009\n'
+           pi=761 act=0.008 qa=0 match='Nhà Lý thành lập năm 1009.'
+           pi=424275 act=0.006 qa=0 match=' Đến năm 1894, cuối cùng người ta cũng tìm thấy quan tài của'
+  gate=statement_cover ok=True cover=0.833 n=6 reject=None
+  q_content=['dời', 'lý', 'nhà', 'nào', 'năm', 'đô']
+  dropped=['Hỏi::A=0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=17 span='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  OFF → '0'
+  ON  → 'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'  readable=True
+
+══ [8] Hỏi: Đinh Bộ Lĩnh đặt tên nước là gì? Đáp:
+  top-act: pi=6230 act=0.997 qa=0 match='Đinh Bộ Lĩnh là người có công dẹp loạn mười hai sứ quân, thố'
+           pi=2824 act=0.002 qa=0 match='Vua Đinh Tiên Hoàng đặt tên nước là Đại Cồ Việt, lấy Hoa Lư '
+           pi=3653 act=0.000 qa=0 match='Vệ vương Đinh Toàn lên ngôi khi mới 6 tuổi, Lê Hoàn làm nhiế'
+           pi=107951 act=0.000 qa=0 match='Từ thời nhà Đường đến Nhà Ngô, Đinh, Tiền Lê, quận Thanh Khê'
+           pi=157362 act=0.000 qa=0 match=' Mũi kiếm thuận thế đâm vào ngực Phỉ Nhĩ Thiên Đinh, thánh h'
+  gate=statement_cover ok=False cover=0.571 n=7 reject=cha phủ câu hỏi 0.57<0.8; thiếu=['gì', 'tên', 'đặt']
+  q_content=['bộ', 'gì', 'lĩnh', 'nước', 'tên', 'đinh', 'đặt']
+  dropped=['Hỏi::A=0', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → 'Đinh không'
+  ON  → 'Đinh không'  readable=False
+
+══ [9] Hỏi: Lê Hoàn đánh bại quân nào trên sông Bạch Đằng? Đáp:
+  top-act: pi=2512 act=0.998 qa=0 match='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+           pi=142278 act=0.002 qa=0 match='Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, '
+           pi=254050 act=0.000 qa=0 match=' Bạch Vũ Quân đoán ra Cửu Lê ý nghĩ.'
+           pi=134468 act=0.000 qa=0 match='Một số nữ họa sĩ khác như Vũ Giáng Hương, Lê Kim Mỹ, Trần Th'
+           pi=166081 act=0.000 qa=0 match='" Bạch Lê hoàng tử phóng ra trầm ổn bước chân đi ra, một đầu'
+  gate=statement_cover ok=True cover=0.889 n=9 reject=None
+  q_content=['bạch', 'bại', 'hoàn', 'lê', 'nào', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=16 span='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  OFF → ' 9'
+  ON  → 'Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'  readable=True
+
+── tổng: copy_fire=6/10 · readable(n_tok≥4)=6/10 · form_min=0.9
+[164s] → out/diag_qa_answer_copy_v12_wh.log

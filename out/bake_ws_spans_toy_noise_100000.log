@@ -1,0 +1,42 @@
+[    0.0s RSS  0.08GB] nạp out/noise_big/toy_noise_100000.pkl …
+[   11.3s RSS  6.81GB] nạp xong · parents=99362 vocab=32002
+[   11.3s RSS  6.99GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[   11.3s RSS  6.99GB] ws_spans 0/99362 · span=0 · bỏ=0
+[   17.4s RSS  6.99GB] ws_spans 20000/99362 · span=14612 · bỏ=12000
+[   22.6s RSS  6.99GB] ws_spans 40000/99362 · span=23728 · bỏ=23928
+[   28.1s RSS  6.99GB] ws_spans 60000/99362 · span=32560 · bỏ=35500
+[   33.7s RSS  6.99GB] ws_spans 80000/99362 · span=40208 · bỏ=47029
+[   39.0s RSS  6.99GB] 47563 span · 0.5 phút
+[   39.0s RSS  6.99GB] ghi out/noise_big/toy_noise_100000.ws_spans.json (0.8 MB) · roundtrip OK
+[   39.0s RSS  6.99GB]   mẫu[00] '<0x80> 婆'
+[   39.0s RSS  6.99GB]   mẫu[01] 'm ốt'
+[   39.0s RSS  6.99GB]   mẫu[02] 'x út'
+[   39.0s RSS  6.99GB]   mẫu[03] 'nhân bản'
+[   39.0s RSS  6.99GB]   mẫu[04] 'khí tượng'
+[   39.0s RSS  6.99GB]   mẫu[05] 'bắt lỗi'
+[   39.0s RSS  6.99GB]   mẫu[06] 'thiên địa'
+[   39.0s RSS  6.99GB]   mẫu[07] 'nổi bật'
+[   39.0s RSS  6.99GB]   mẫu[08] 'Lý Thượng Cát'
+[   39.0s RSS  6.99GB]   mẫu[09] 'Thành quốc'
+[   39.0s RSS  6.99GB]   mẫu[10] 'thuốc độc'
+[   39.0s RSS  6.99GB]   mẫu[11] 'Ngô Trung'
+[   39.0s RSS  6.99GB]   mẫu[12] 'hào quang'
+[   39.0s RSS  6.99GB]   mẫu[13] 'Yên Quang'
+[   39.0s RSS  6.99GB]   mẫu[14] 'tọa bộ'
+[   39.0s RSS  6.99GB]   mẫu[15] 'hoài cổ'
+[   39.0s RSS  6.99GB]   mẫu[16] 'oc line'
+[   39.0s RSS  6.99GB]   mẫu[17] 'Đa Độ'
+[   39.0s RSS  6.99GB]   mẫu[18] 'Giai Xuân'
+[   39.0s RSS  6.99GB]   mẫu[19] 'James Smith'
+[   39.0s RSS  6.99GB]   mẫu[20] 'rad io'
+[   39.0s RSS  6.99GB]   mẫu[21] 'Str at ford'
+[   39.0s RSS  6.99GB]   mẫu[22] 'Bão táp'
+[   39.0s RSS  6.99GB]   mẫu[23] 'RO C'
+[   39.0s RSS  6.99GB]   mẫu[24] 'Heb ert Cop eland phân'
+[   39.0s RSS  6.99GB]   mẫu[25] 'Nan ai mo'
+[   39.0s RSS  6.99GB]   mẫu[26] 'Un ited Press International'
+[   39.0s RSS  6.99GB]   mẫu[27] 'Edgar Fau re'
+[   39.0s RSS  6.99GB]   mẫu[28] 'hậu duệ'
+[   39.0s RSS  6.99GB]   mẫu[29] 'Mats uri'
+[   39.1s RSS  6.99GB] span nghi rác (tự động): 791/47563 = 1.7% (ISG: 57%)
+[   39.1s RSS  6.99GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

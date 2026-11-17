@@ -1,0 +1,39 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/classrich.pkl …
+[    2.8s RSS  2.41GB] nạp xong · parents=35757 vocab=32002
+[    2.8s RSS  2.41GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.8s RSS  2.41GB] ws_spans 0/35757 · span=0 · bỏ=0
+[    5.0s RSS  2.41GB] ws_spans 20000/35757 · span=7260 · bỏ=14310
+[    7.1s RSS  2.41GB] 11241 span · 0.1 phút
+[    7.1s RSS  2.41GB] ghi checkpoints/classrich.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.1s RSS  2.41GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.1s RSS  2.41GB]   mẫu[01] 'thể loại'
+[    7.1s RSS  2.41GB]   mẫu[02] 'sự thật'
+[    7.1s RSS  2.41GB]   mẫu[03] 'tiếp diễn'
+[    7.1s RSS  2.41GB]   mẫu[04] 'do đó'
+[    7.1s RSS  2.41GB]   mẫu[05] 'giải phẫu'
+[    7.1s RSS  2.41GB]   mẫu[06] 'phòng tuyến'
+[    7.1s RSS  2.41GB]   mẫu[07] 'thay thế'
+[    7.1s RSS  2.41GB]   mẫu[08] 'phục kích'
+[    7.1s RSS  2.41GB]   mẫu[09] 'Hạ viện'
+[    7.1s RSS  2.41GB]   mẫu[10] 'Hải Dương'
+[    7.1s RSS  2.41GB]   mẫu[11] 'đảm đương'
+[    7.1s RSS  2.41GB]   mẫu[12] 'Tiêu chí'
+[    7.1s RSS  2.41GB]   mẫu[13] 'phim truyện'
+[    7.1s RSS  2.41GB]   mẫu[14] 'Lê Ngang'
+[    7.1s RSS  2.41GB]   mẫu[15] 'Nội vụ'
+[    7.1s RSS  2.41GB]   mẫu[16] 'ab aks'
+[    7.1s RSS  2.41GB]   mẫu[17] 'Thị trưởng'
+[    7.1s RSS  2.41GB]   mẫu[18] 'đồn lũy'
+[    7.1s RSS  2.41GB]   mẫu[19] 'Phó tổng giám đốc'
+[    7.1s RSS  2.41GB]   mẫu[20] 'Đinh đặt'
+[    7.1s RSS  2.41GB]   mẫu[21] 'hãm hiếp'
+[    7.1s RSS  2.41GB]   mẫu[22] 'phì nhiêu'
+[    7.1s RSS  2.41GB]   mẫu[23] 'chiêm bao'
+[    7.1s RSS  2.41GB]   mẫu[24] 'Bát Đại'
+[    7.1s RSS  2.41GB]   mẫu[25] 'Lành Luther'
+[    7.1s RSS  2.41GB]   mẫu[26] 'lein wal ser tal'
+[    7.1s RSS  2.41GB]   mẫu[27] 'Camel ot'
+[    7.1s RSS  2.41GB]   mẫu[28] 'ré g ation'
+[    7.1s RSS  2.41GB]   mẫu[29] 'Kobayakawa Hide aki'
+[    7.1s RSS  2.41GB] span nghi rác (tự động): 315/11241 = 2.8% (ISG: 57%)
+[    7.1s RSS  2.41GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

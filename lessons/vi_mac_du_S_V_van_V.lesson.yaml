@@ -1,0 +1,28 @@
+lesson_id: vi_grade5_concessive
+grade: 5
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_mac_du_S_V_van_V
+slots:
+  - const: "Mặc"
+  - const: "dù"
+  - var: S1
+  - var: V1
+  - var: S2
+  - const: "vẫn"
+  - var: V2
+
+bind:
+  S1: chủ ngữ
+  V1: động từ
+  S2: chủ ngữ
+  V2: động từ
+
+examples:
+  - "Mặc dù trời mưa em vẫn đi"
+  - "Mặc dù trời nắng Lan vẫn chạy"
+  - "Mặc dù trời tối Bé vẫn chơi"
+  - "Mặc dù trời lạnh em vẫn học"
+  - "Mặc dù trời nóng em vẫn tập"

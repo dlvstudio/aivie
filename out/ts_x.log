@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "~/Documents/learn/nn-aivie/scripts/thuoc_sinh_dung_lop.py", line 128, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "~/Documents/learn/nn-aivie/scripts/thuoc_sinh_dung_lop.py", line 53, in main
+    cfg.hub_chain_nhan_truc_tiep = float(a[3:])
+                                   ~~~~~^^^^^^^
+ValueError: could not convert string to float: '8.0 cd=3'

@@ -1,0 +1,16 @@
+<n.start>
+<n.lesson_id: vi_grade3_copula>
+<n.grade: 3>
+<n.repeat: 3>
+<n.eta_teach: 0.5>
+<n.w_init: 2.0>
+<n.pattern:vi_copula_S_la_NA>
+  <n.variable:S> <n.function:"s+"> <n.constant:"là"> <n.function:"s+"> <n.variable:N || n.variable:A>
+
+<n.bind>
+  <n.variable:S> <n.function:"="> <n.label:"chủ ngữ">
+  <n.variable:N> <n.function:"="> <n.label:"danh từ">
+  <n.variable:A> <n.function:"="> <n.label:"tính từ">
+
+<n.example: "Thủ đô Việt Nam là Hà Nội" || "Quốc kỳ Việt Nam là cờ đỏ" || "Sông Hồng là sông lớn" || "Mặt trời là ngôi sao lớn" || "Trái đất là hành tinh xanh" || "Cá heo là động vật biển">
+<n.end>

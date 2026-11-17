@@ -1,0 +1,49 @@
+[     0s] E (32002, 96) · vocab 32,002 · fingerprint 1582dad40906e69f
+[     0s] corpus (đếm bigram, cắt 20M) …
+[     0s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[     0s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[     0s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[     2s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[     4s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[    22s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[    24s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[    24s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[    24s] k-means K=200 trên E …
+[    24s]   kmeans iter 0/25
+[    25s]   kmeans iter 5/25
+[    25s]   kmeans iter 10/25
+[    26s]   kmeans iter 15/25
+[    26s]   kmeans iter 20/25
+[    27s] ═══ PART 1: 20 CỤM (top 12 theo tần suất) — ĐỌC TAY ═══
+[    27s]   c144 (n=176): ' không' ' người' ' cũng' ' lại' ' đến' ' đi' ' đã' ' đó' ' phải' ' còn' ' mà' ' chỉ'
+[    27s]   c114 (n=153): ' cho' ' làm' ' về' ' nhiều' ' thời' ' nào' ' sẽ' ' rất' ' bạn' ' ý' ' vì' ' chúng'
+[    27s]   c192 (n=223): ' và' ' các' ' để' ' công' ' nhân' ' quan' ' việc' ' định' ' phát' ' thực' ' tiếp' ' năng'
+[    27s]   c 80 (n=140): ' với' ' theo' ' thường' ' hình' ' tự' ' bộ' ' hợp' ' nhau' ' hành' ' phương' ' toàn' ' xuất'
+[    27s]   c107 (n=417): ':' '\n' ' từ' ' động' ' nghĩa' 'Giải' 'Loại' ' tính' 'Từ' ' danh' 'Nghĩa' ' lè'
+[    27s]   c 32 (n=253): ',' ' đều' ' Italy' ' comic' ' McCarthy' ' Simeone' ' Whitehall' ' Abyssinia' ' Aurant' ' Parax' ' Dwarf' 'Toà'
+[    27s]   c127 (n=181): ' có' ' là' ' một' ' số' ' khác' ' đây' 'Có' ' ví' 'Bạn' ' chắn' 'Chắc' 'Đúng'
+[    27s]   c191 (n=158): '"' ' nói' ' "' '?' ' ta' '!' ' ngươi' ' .' ' chút' ' sao' ' thật' ' hỏi'
+[    27s]   c 96 (n=302): '.' ' vào' ' thập' 'Kỷ' 'Mãi' ' Apollo' ' Ayu' ' Klein' ' ARPANET' ' eBay' ' Drake' ' Viking'
+[    27s]   c198 (n=144): ' của' ' này' ' trong' ' những' ' thế' ' hiện' ' sự' ' đối' ' nhiên' ' Hamlet' 'Dường' ' Juliet'
+[    27s]   c100 (n=223): ' thể' ' được' ' dụng' ' hơn' ' cách' ' hoặc' ' sử' ' liệu' ' ứng' ' thiết' ' máy' ' dữ'
+[    27s]   c 59 (n=136): ' đầu' ' lên' ' hai' ' tay' ' lấy' ' xuống' ' chân' ' chỗ' ' mấy' ' cửa' ' xe' ' đứng'
+[    27s]   c152 (n=244): ' cùng' ' đại' ' thân' ' kia' ' đạo' ' đem' ' bọn' ' thiên' ' linh' ' hạ' ' cường' ' phi'
+[    27s]   c 11 (n=228): ' Vương' ' Thần' ' Thiên' ' tộc' ' tu' ' luyện' ' Nhược' ' Linh' ' Tử' ' Tinh' ' môn' ' Nguyên'
+[    27s]   c 44 (n=126): ' bị' ' lực' ' đánh' ' bắt' ' sát' ' chết' ' mất' ' bỏ' ' kích' ' phá' ' giữ' ' khỏi'
+[    27s]   c101 (n=181): ' cảm' ' tình' ' chuyện' ' càng' ' lòng' ' lời' ' vô' ' thương' ' khó' ' hết' ' ai' ' chẳng'
+[    27s]   c 47 (n=244): '0' ' 2' ' 3' '5' '8' '7' '4' '3' ' 4' '6' ' 5' ' khoảng'
+[    27s]   c140 (n=129): ' chủ' ' hội' ' lập' ' viên' ' Nam' ' Việt' ' ông' ' chức' ' quyền' ' Trung' ' Quốc' ' tổ'
+[    27s]   c 65 (n=151): ' con' ' cô' ' yêu' ' anh' ' mẹ' ' gặp' ' em' ' khiến' ' đời' ' đình' ' trẻ' ' luôn'
+[    27s]   c  0 (n=1290): '     ' '    ' '  ' '   ' 'MBBank' '       ' 'Hata' 'Ilsa' 'Cúp' 'Valentine' 'Lestat' 'Hubbard'
+[    27s] ═══ PART 2: dự đoán token kế — surface vs category (held-out) ═══
+[    42s] held-out qa_heldout.jsonl: 278 đơn vị · 55,457 bigram
+[    42s]   λ=1.0 surface thuần  7.867 bits/token
+[    42s]   λ=0.7                7.856 bits/token
+[    42s]   λ=0.5                7.976 bits/token
+[    42s]   λ=0.3                8.174 bits/token
+[    42s]   λ=0.0 category thuần 8.939 bits/token
+[    42s]   ── CHƯA THẤY lúc train (n=3,382) — test khái quát ──
+[    42s]      surface 16.028 · category 14.750 bits
+[    42s]   ── ĐÃ THẤY (n=52,075) — surface thuộc lòng ──
+[    42s]      surface 7.337 · category 8.562 bits
+[    42s] ═══ ĐỌC: (1) cụm PART1 có ra loại-từ/lớp-nghĩa? (2) λ<1 HẠ bits ⇒ tầng khuôn đáng; category thắng trên CHƯA-THẤY ⇒ khái quát thật ═══

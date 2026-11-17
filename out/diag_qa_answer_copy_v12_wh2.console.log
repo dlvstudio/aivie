@@ -1,0 +1,240 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=84535) → out/logs/load_network_v12_sent_20260728_210145.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[     9.3s] ✓ adjacency  (7.0s)
+[     9.3s] ▶ embedding
+[     9.3s] ✓ embedding  (0.0s)
+[     9.3s] ▶ parents
+[     9.3s] parents: deserialize 430447 records …
+[     9.3s] parents 5000/430447 (1.2%)
+[     9.4s] parents 10000/430447 (2.3%)
+[     9.4s] parents 15000/430447 (3.5%)
+[     9.4s] parents 20000/430447 (4.6%)
+[     9.5s] parents 25000/430447 (5.8%)
+[     9.5s] parents 30000/430447 (7.0%)
+[     9.6s] parents 35000/430447 (8.1%)
+[     9.6s] parents 40000/430447 (9.3%)
+[     9.7s] parents 45000/430447 (10.5%)
+[     9.7s] parents 50000/430447 (11.6%)
+[     9.7s] parents 55000/430447 (12.8%)
+[     9.8s] parents 60000/430447 (13.9%)
+[     9.8s] parents 65000/430447 (15.1%)
+[     9.9s] parents 70000/430447 (16.3%)
+[     9.9s] parents 75000/430447 (17.4%)
+[     9.9s] parents 80000/430447 (18.6%)
+[    10.0s] parents 85000/430447 (19.7%)
+[    10.0s] parents 90000/430447 (20.9%)
+[    10.0s] parents 95000/430447 (22.1%)
+[    10.1s] parents 100000/430447 (23.2%)
+[    10.1s] parents 105000/430447 (24.4%)
+[    10.1s] parents 110000/430447 (25.6%)
+[    10.2s] parents 115000/430447 (26.7%)
+[    10.2s] parents 120000/430447 (27.9%)
+[    10.3s] parents 125000/430447 (29.0%)
+[    10.3s] parents 130000/430447 (30.2%)
+[    10.4s] parents 135000/430447 (31.4%)
+[    10.4s] parents 140000/430447 (32.5%)
+[    10.5s] parents 145000/430447 (33.7%)
+[    10.5s] parents 150000/430447 (34.8%)
+[    10.6s] parents 155000/430447 (36.0%)
+[    10.7s] parents 160000/430447 (37.2%)
+[    10.7s] parents 165000/430447 (38.3%)
+[    10.8s] parents 170000/430447 (39.5%)
+[    10.9s] parents 175000/430447 (40.7%)
+[    10.9s] parents 180000/430447 (41.8%)
+[    11.0s] parents 185000/430447 (43.0%)
+[    11.1s] parents 190000/430447 (44.1%)
+[    11.2s] parents 195000/430447 (45.3%)
+[    11.2s] parents 200000/430447 (46.5%)
+[    11.3s] parents 205000/430447 (47.6%)
+[    11.4s] parents 210000/430447 (48.8%)
+[    11.4s] parents 215000/430447 (49.9%)
+[    11.5s] parents 220000/430447 (51.1%)
+[    11.6s] parents 225000/430447 (52.3%)
+[    11.7s] parents 230000/430447 (53.4%)
+[    11.7s] parents 235000/430447 (54.6%)
+[    11.8s] parents 240000/430447 (55.8%)
+[    11.9s] parents 245000/430447 (56.9%)
+[    11.9s] parents 250000/430447 (58.1%)
+[    12.0s] parents 255000/430447 (59.2%)
+[    12.1s] parents 260000/430447 (60.4%)
+[    12.1s] parents 265000/430447 (61.6%)
+[    12.2s] parents 270000/430447 (62.7%)
+[    12.3s] parents 275000/430447 (63.9%)
+[    12.4s] parents 280000/430447 (65.0%)
+[    12.4s] parents 285000/430447 (66.2%)
+[    12.5s] parents 290000/430447 (67.4%)
+[    12.6s] parents 295000/430447 (68.5%)
+[    12.6s] parents 300000/430447 (69.7%)
+[    12.7s] parents 305000/430447 (70.9%)
+[    12.8s] parents 310000/430447 (72.0%)
+[    12.8s] parents 315000/430447 (73.2%)
+[    12.9s] parents 320000/430447 (74.3%)
+[    13.0s] parents 325000/430447 (75.5%)
+[    13.1s] parents 330000/430447 (76.7%)
+[    13.1s] parents 335000/430447 (77.8%)
+[    13.2s] parents 340000/430447 (79.0%)
+[    13.3s] parents 345000/430447 (80.1%)
+[    13.3s] parents 350000/430447 (81.3%)
+[    13.4s] parents 355000/430447 (82.5%)
+[    13.5s] parents 360000/430447 (83.6%)
+[    13.5s] parents 365000/430447 (84.8%)
+[    13.6s] parents 370000/430447 (86.0%)
+[    13.7s] parents 375000/430447 (87.1%)
+[    13.7s] parents 380000/430447 (88.3%)
+[    13.8s] parents 385000/430447 (89.4%)
+[    13.9s] parents 390000/430447 (90.6%)
+[    13.9s] parents 395000/430447 (91.8%)
+[    14.0s] parents 400000/430447 (92.9%)
+[    14.1s] parents 405000/430447 (94.1%)
+[    14.1s] parents 410000/430447 (95.2%)
+[    14.2s] parents 415000/430447 (96.4%)
+[    14.3s] parents 420000/430447 (97.6%)
+[    14.3s] parents 425000/430447 (98.7%)
+[    14.4s] parents 430000/430447 (99.9%)
+[    25.0s] ▶ rebuild_hierarchical_index …
+[    26.1s] ✓ rebuild_hierarchical_index (1.1s)
+[    30.6s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    30.6s] ✓ parents  (21.3s)
+[    30.6s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    31.5s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    31.5s] ✓ load_checkpoint XONG
+[66s] ✓ 430,447 cha · is_qa=670
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+
+══ [0] Hỏi: Nhà Lý dời đô về đâu? Đáp:
+  top-act: pi=4368 act=0.494 qa=0 match='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+           pi=4369 act=0.258 qa=0 match='Các nhà nghiên cứu khẳng định Lý Thái Tổ dời đô cũng cần dùn'
+           pi=2814 act=0.186 qa=0 match='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+           pi=3066 act=0.056 qa=0 match='Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời '
+           pi=4254 act=0.002 qa=0 match='Nhà Hồ đổi quốc hiệu thành Đại Ngu và dời đô về Thành Tây Đô'
+  gate=statement_cover ok=True cover=0.8 n=5 reject=None
+  q_content=['dời', 'lý', 'nhà', 'đâu', 'đô']
+  dropped=['Hỏi::A=0', 'Ġvề:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=15 span='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  OFF → ' nhà'
+  ON  → 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'  readable=True
+
+══ [1] Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:
+  top-act: pi=3074 act=0.368 qa=0 match='Sau đó, ông chỉ huy trận Bạch Đằng, đánh bại quân Nam Hán, g'
+           pi=2511 act=0.353 qa=0 match='Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng'
+           pi=4176 act=0.182 qa=0 match='Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán t'
+           pi=2512 act=0.091 qa=0 match='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+           pi=1994 act=0.003 qa=0 match=' Bạch Đằng giang đánh thắng quân Nam Hán.'
+  gate=statement_cover ok=False cover=0.778 n=9 reject=cha phủ câu hỏi 0.78<0.8; thiếu=['ai', 'sông']
+  q_content=['ai', 'bạch', 'bại', 'hán', 'nam', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=21 span='Sau đó, ông chỉ huy trận Bạch Đằng, đánh bại quân Nam Hán, giết chết Hoằng Tháo.'
+  OFF → ' bại'
+  ON  → 'Sau đó, ông chỉ huy trận Bạch Đằng, đánh bại quân Nam Hán, giết chết Hoằng Tháo.'  readable=True
+
+══ [2] Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:
+  top-act: pi=2811 act=0.838 qa=0 match='Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+           pi=2815 act=0.161 qa=0 match='Kinh đô Hoa Lư xưa, hiện nay nằm ở làng cổ Trường Yên, thuộc'
+           pi=193471 act=0.001 qa=0 match=' (SN 2008, ngụ thôn Quán Vinh, xã Ninh Hòa, huyện Hoa Lư, tỉ'
+           pi=251835 act=0.000 qa=0 match=' Phù Nam Hoa vốn đang hưng phấn cũng tỉnh táo lại.'
+           pi=426800 act=0.000 qa=0 match=' Dân số Kitô giáo không giảm ở Brazil, miền nam Hoa Kỳ, và t'
+  gate=statement_cover ok=True cover=0.8 n=5 reject=None
+  q_content=['hoa', 'lư', 'nào', 'nằm', 'tỉnh']
+  dropped=['Hỏi::A=0', 'Ġở:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=10 span='Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  OFF → 'Hoa'
+  ON  → 'Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'  readable=True
+
+══ [3] Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp:
+  top-act: pi=430061 act=0.396 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=429842 act=0.396 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=1769 act=0.097 qa=0 match=' Lê Lợi khởi nghĩa Lam Sơn.'
+           pi=102 act=0.079 qa=0 match='Lê Lợi khởi nghĩa Lam Sơn.'
+           pi=3515 act=0.010 qa=0 match='Nguyễn Trãi là quân sư giúp Lê Lợi trong cuộc khởi nghĩa.'
+  gate=qa_cover ok=True cover=1.0 n=8 reject=None
+  span_len=32 span=' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở '
+  OFF → ' Lợi'
+  ON  → ' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'  readable=True
+
+══ [4] Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp:
+  top-act: pi=2088 act=0.532 qa=0 match=' Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+           pi=2511 act=0.190 qa=0 match='Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng'
+           pi=1318 act=0.168 qa=0 match='Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+           pi=4176 act=0.100 qa=0 match='Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán t'
+           pi=429920 act=0.002 qa=1 match=' Ngô Quyền giành độc lập năm nào? '
+  gate=statement_cover ok=False cover=0.778 n=9 reject=cha phủ câu hỏi 0.78<0.8; thiếu=['bại', 'nào']
+  q_content=['bại', 'hán', 'nam', 'ngô', 'nào', 'năm', 'quyền', 'quân', 'đánh']
+  dropped=['Hỏi::A=0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=12 span=' Ngô Quyền đánh thắng quân Nam Hán năm 938.'
+  OFF → ' thắng'
+  ON  → ' Ngô Quyền đánh thắng quân Nam Hán năm 938.'  readable=True
+
+══ [5] Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:
+  top-act: pi=2810 act=0.991 qa=0 match='Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+           pi=2824 act=0.005 qa=0 match='Vua Đinh Tiên Hoàng đặt tên nước là Đại Cồ Việt, lấy Hoa Lư '
+           pi=177791 act=0.002 qa=0 match='Việt Trì – Thành phố lễ hội về với cội nguồn dân tộc Việt Na'
+           pi=120229 act=0.001 qa=0 match='Tô Châu trở thành kinh đô của nước Việt.'
+           pi=2747 act=0.000 qa=0 match='Từ năm 1371 đến năm 1389, ông tổ chức nhiều cuộc tấn công ra'
+  gate=statement_cover ok=True cover=0.889 n=9 reject=None
+  q_content=['cồ', 'gì', 'kinh', 'nước', 'tiên', 'việt', 'đô', 'đại', 'đầu']
+  dropped=['Hỏi::A=0', 'Ġcủa:gidf=2.9', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=14 span='Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'
+  OFF → ' Lư'
+  ON  → 'Hoa Lư là kinh đô đầu tiên của nhà nước Đại Cồ Việt.'  readable=True
+
+══ [6] Hỏi: Ai chỉ huy trận Bạch Đằng năm 1288? Đáp:
+  top-act: pi=142279 act=0.394 qa=0 match='Trận Bạch Đằng, 1288 giữa quân đội Việt, do Trần Hưng Đạo ch'
+           pi=5677 act=0.359 qa=0 match='Năm 1288, Trần Hưng Đạo chỉ huy trận Bạch Đằng, tiêu diệt đạ'
+           pi=142278 act=0.123 qa=0 match='Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, '
+           pi=142277 act=0.103 qa=0 match='Trận Bạch Đằng, 938 giữa quân đội Việt, do Ngô Quyền chỉ huy'
+           pi=152741 act=0.005 qa=0 match='1813 – Liên minh thứ sáu đánh bại quân Pháp do thống chế Mac'
+  gate=statement_cover ok=False cover=0.778 n=9 reject=cha phủ câu hỏi 0.78<0.8; thiếu=['ai', 'năm']
+  q_content=['2', '8', 'ai', 'bạch', 'chỉ', 'huy', 'năm', 'trận', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġ1:gidf=3.9', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=25 span='Trận Bạch Đằng, 1288 giữa quân đội Việt, do Trần Hưng Đạo chỉ huy, và quân nhà Nguyên.'
+  OFF → ' quân'
+  ON  → 'Trận Bạch Đằng, 1288 giữa quân đội Việt, do Trần Hưng Đạo chỉ huy, và quân nhà Nguyên.'  readable=True
+
+══ [7] Hỏi: Nhà Lý dời đô năm nào? Đáp:
+  top-act: pi=2814 act=0.528 qa=0 match='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+           pi=3066 act=0.374 qa=0 match='Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời '
+           pi=760 act=0.073 qa=0 match='Tiết 1: Nhà Lý thành lập năm 1009\n'
+           pi=761 act=0.008 qa=0 match='Nhà Lý thành lập năm 1009.'
+           pi=424275 act=0.006 qa=0 match=' Đến năm 1894, cuối cùng người ta cũng tìm thấy quan tài của'
+  gate=statement_cover ok=True cover=0.833 n=6 reject=None
+  q_content=['dời', 'lý', 'nhà', 'nào', 'năm', 'đô']
+  dropped=['Hỏi::A=0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=17 span='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  OFF → '0'
+  ON  → 'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'  readable=True
+
+══ [8] Hỏi: Đinh Bộ Lĩnh đặt tên nước là gì? Đáp:
+  top-act: pi=6230 act=0.997 qa=0 match='Đinh Bộ Lĩnh là người có công dẹp loạn mười hai sứ quân, thố'
+           pi=2824 act=0.002 qa=0 match='Vua Đinh Tiên Hoàng đặt tên nước là Đại Cồ Việt, lấy Hoa Lư '
+           pi=3653 act=0.000 qa=0 match='Vệ vương Đinh Toàn lên ngôi khi mới 6 tuổi, Lê Hoàn làm nhiế'
+           pi=107951 act=0.000 qa=0 match='Từ thời nhà Đường đến Nhà Ngô, Đinh, Tiền Lê, quận Thanh Khê'
+           pi=157362 act=0.000 qa=0 match=' Mũi kiếm thuận thế đâm vào ngực Phỉ Nhĩ Thiên Đinh, thánh h'
+  gate=statement_cover ok=False cover=0.571 n=7 reject=cha phủ câu hỏi 0.57<0.8; thiếu=['gì', 'tên', 'đặt']
+  q_content=['bộ', 'gì', 'lĩnh', 'nước', 'tên', 'đinh', 'đặt']
+  dropped=['Hỏi::A=0', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → 'Đinh không'
+  ON  → 'Đinh không'  readable=False
+
+══ [9] Hỏi: Lê Hoàn đánh bại quân nào trên sông Bạch Đằng? Đáp:
+  top-act: pi=2512 act=1.000 qa=0 match='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+           pi=142278 act=0.000 qa=0 match='Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, '
+           pi=5856 act=0.000 qa=0 match='Vì vậy, việc tồn tại một trận địa cọc chính cắm ngang qua dò'
+           pi=4510 act=0.000 qa=0 match='Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi.'
+           pi=236193 act=0.000 qa=0 match=' Vương Đằng trong lòng hoàn toàn không chắc.'
+  gate=statement_cover ok=True cover=0.889 n=9 reject=None
+  q_content=['bạch', 'bại', 'hoàn', 'lê', 'nào', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=16 span='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  OFF → ' 9'
+  ON  → 'Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'  readable=True
+
+── tổng: copy_fire=9/10 · readable(n_tok≥4)=9/10 · form_min=0.9
+[158s] → out/diag_qa_answer_copy_v12_wh2.log

@@ -1,0 +1,94 @@
+[0s] load checkpoints/network_v11_styled_hist.pkl …
+[65s] ✓ N=32002
+
+── build / load spectral stack d=24 ──
+spectral_stack loaded ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_hist.spectral_stack.npz
+
+── orthogonality (‖W_iᵀ W_j‖F / norms; ~0 = tốt) ──
+  uffn_0_1: 0.0000
+  uffn_0_2: 0.0000
+  uffn_0_3: 0.0000
+  uffn_1_2: 0.0000
+  uffn_1_3: 0.0000
+  uffn_2_3: 0.0000
+  wq_0_1: 0.0000
+  wq_0_2: 0.0000
+  wq_0_3: 0.0000
+  wq_1_2: 0.0000
+  wq_1_3: 0.0000
+  wq_2_3: 0.0000
+
+── held-out successor mean-rank (n=40; thấp hơn = tốt hơn) ──
+  (khám phá — không presuppose tầng nào = cú pháp)
+  W_seq raw: mean_rank=10.1
+  Wa_L0:   mean_rank=903.1
+  Wa_L1:   mean_rank=4591.2
+  Wa_L2:   mean_rank=5613.7
+  Wa_L3:   mean_rank=4129.8
+
+── top khuôn U/V mỗi tầng (đọc tay — mô tả SAU đo) ──
+  L0:
+    'Ġ*' → ','  (4.247)
+    '-' → ')'  (8.613)
+    'Ġ"' → ','  (-9.491)
+    'Ġ"' → 'Ċ'  (27.952)
+    'Ġ"' → ')'  (23.334)
+  L1:
+    'ĠThe' → '/'  (-5.540)
+    'Ġ(' → 'Ġcũng'  (10.236)
+    'Ġ(' → 'Ġcó'  (9.497)
+    'Ġ(' → '”'  (8.628)
+    'Ġ(' → 'y'  (-10.448)
+  L2:
+    'ĠT' → '_'  (4.573)
+    'ĠP' → 'Ġde'  (-3.771)
+    'ĠN' → 'Ġhay'  (-2.776)
+    'ĠM' → 'it'  (3.789)
+    'ĠP' → 'Ġhay'  (-5.606)
+  L3:
+    'ĠN' → 'Ġtrở'  (4.979)
+    'ĠK' → 'Ġkhông'  (-3.331)
+    'j' → 'ie'  (3.926)
+    'ĠP' → 'Ġthường'  (-2.729)
+    't' → 'Ġthường'  (-4.012)
+
+── gen: KHÔNG agenda (ar_no_agenda) — A3 micro vs +spectral_stack ──
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  A3     fact=0.00
+    .
+:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+
+  stack  fact=0.00
+    .
+:
+Giải nghĩa:
+., một nhận, Ôn bắt Thít đoàn. ThànhLã đợi
+ Trường Cầu Phú, đồn bắt sức đoàn Nhạc Thành vợ Hồ từ chép sổ Sao bầu nên trực kế nước sứ Hẻm để, giúp
+
+═══ 'Viết hài hước về Trần Hưng Đạo' ═══
+  A3     fact=0.00
+    Ngô Miếu Dương Đại Nghệ sâu, đã bắt cho đoàn Đền Paris Quang xa đồn lãng sức Hai và đảm gia Cô ít chiến đáp Lam dân quốc để, có thể.
+:
+Giải nghĩa:
+Loại từ:
+Giải nghĩa:
+  stack  fact=0.00
+    Ngô Miếu Dương Đại Nghệ sâu, đã bắt cho đoàn Đền Paris Quang xa đồn lãng sức Hai và đảm gia Cô ít chiến đáp Lam dân quốc để cho một, không có thể có thể.
+:
+Giải nghĩa:
+.,
+
+[170s] → out/probe_spectral_stack.log
+Đạt: không agenda → stack phải ĐỔI chữ vs A3 (có thể salad); fact không còn bắt buộc.

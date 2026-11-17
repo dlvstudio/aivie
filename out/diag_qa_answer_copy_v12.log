@@ -1,0 +1,129 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[72s] ✓ 430,447 cha · is_qa=670
+
+══ [0] Hỏi: Nhà Lý dời đô về đâu? Đáp:
+  top-act: pi=260581 act=0.736 qa=0 match=' Nhà ở đâu?'
+           pi=430442 act=0.067 qa=1 match=' Nhà mình sắp đón Tết, dọn dẹp từ đâu? '
+           pi=184189 act=0.034 qa=0 match=' Nhà đâu mà thách cưới nặng vãi đái ra nọ kia.'
+           pi=227308 act=0.031 qa=0 match=' Thứ nhất nhà đâu.'
+           pi=430087 act=0.027 qa=1 match=' Thành nhà Hồ ở đâu? '
+  gate=statement_cover ok=False cover=0.4 n=5 reject=cha phủ câu hỏi 0.40<0.8; thiếu=['dời', 'lý', 'đô']
+  q_content=['dời', 'lý', 'nhà', 'đâu', 'đô']
+  dropped=['Hỏi::A=0', 'Ġvề:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' ở'
+  ON  → ' ở'  readable=False
+
+══ [1] Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:
+  top-act: pi=246626 act=0.232 qa=0 match=' Ai biết bọn nó phía trước một cái năm trăm đều cùng, đằng s'
+           pi=228673 act=0.231 qa=0 match='" "Khẳng định là, lấy thực lực Vương Đằng, nhất định có thể '
+           pi=165279 act=0.082 qa=0 match=' Đừng nhìn Hồn lão quái tại trước mặt Vương Đằng cực kỳ phác'
+           pi=185188 act=0.077 qa=0 match=' Hắn không muốn lạc hậu bất kỳ ai, nhất là Vương Đằng, cho n'
+           pi=232177 act=0.076 qa=0 match=' Không có cách, ai bảo Vương Đằng là người Hạ quốc, hắn trắn'
+  gate=statement_cover ok=False cover=0.222 n=9 reject=cha phủ câu hỏi 0.22<0.8; thiếu=['bạch', 'bại', 'hán', 'nam', 'quân', 'sông', 'đánh']
+  q_content=['ai', 'bạch', 'bại', 'hán', 'nam', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' không'
+  ON  → ' không'  readable=False
+
+══ [2] Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:
+  top-act: pi=354567 act=0.131 qa=0 match='Hiến pháp Hoa Kỳ được ký vào năm nào?'
+           pi=394233 act=0.111 qa=0 match='Bạn có giới thiệu cuốn sách nào khác về chủ đề dân quyền ở H'
+           pi=329498 act=0.098 qa=0 match='Đã có bất kỳ thay đổi chính sách tương tự nào được thực hiện'
+           pi=226894 act=0.091 qa=0 match=' Viên Kiến Hoa ở nơi đó hung hăng mắng vài câu, nhưng lại kh'
+           pi=385911 act=0.087 qa=0 match='Tìm hiểu năm nào Hiến pháp Hoa Kỳ được thông qua.'
+  gate=statement_cover ok=False cover=0.4 n=5 reject=cha phủ câu hỏi 0.40<0.8; thiếu=['lư', 'nằm', 'tỉnh']
+  q_content=['hoa', 'lư', 'nào', 'nằm', 'tỉnh']
+  dropped=['Hỏi::A=0', 'Ġở:gidf=3.7', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' Kỳ'
+  ON  → ' Kỳ'  readable=False
+
+══ [3] Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp:
+  top-act: pi=430061 act=0.500 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=429842 act=0.500 qa=1 match=' Lê Lợi khởi nghĩa ở đâu? '
+           pi=44023 act=0.000 qa=0 match='Giải nghĩa: dài quá mức, như không biết đến đâu mới dứt: váy'
+           pi=112415 act=0.000 qa=0 match='Lê Văn Thịnh nức tiếng thông minh, học đâu nhớ đấy và nhớ rấ'
+  gate=qa_cover ok=True cover=1.0 n=8 reject=None
+  span_len=32 span=' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở '
+  OFF → ' Lê'
+  ON  → ' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'  readable=True
+
+══ [4] Hỏi: Ngô Quyền đánh bại quân Nam Hán năm nào? Đáp:
+  top-act: pi=429920 act=0.988 qa=1 match=' Ngô Quyền giành độc lập năm nào? '
+           pi=4543 act=0.003 qa=0 match='Thấy mình bị tước đoạt quyền lực, Ngô Tam Quế cho rằng ông t'
+           pi=256281 act=0.002 qa=0 match=' Tớ tính mua cho Ngô Hàng một món quà năm mới nào đó thật dễ'
+           pi=407238 act=0.001 qa=0 match='Báo chí không lúc nào ngưng suy tôn Ngô tổng thống.'
+           pi=271845 act=0.001 qa=0 match=' Ngô Hiếu Tổ so bất luận kẻ nào cũng hy vọng nó tốt, tốt đến'
+  gate=qa_cover ok=False cover=0.667 n=9 reject=history phủ match_ids 0.67<0.8
+  span_len=0 span=''
+  OFF → ' Quyền'
+  ON  → ' Quyền'  readable=False
+
+══ [5] Hỏi: Kinh đô đầu tiên của nước Đại Cồ Việt là gì? Đáp:
+  top-act: pi=182892 act=0.159 qa=0 match='" Vương Đằng cười gật gật đầu, không nói thêm gì, trực tiếp '
+           pi=363951 act=0.128 qa=0 match='Một số nguồn tài trợ phổ biến để bắt đầu kinh doanh là gì?'
+           pi=329287 act=0.103 qa=0 match='Một số cách hiệu quả để kết nối mạng khi bắt đầu kinh doanh '
+           pi=258225 act=0.102 qa=0 match=' Nhìn xem thủ hạ của mình binh, rốt cuộc là cái gì tình trạn'
+           pi=430229 act=0.090 qa=1 match=' Kinh tế thị trường định hướng XHCN nghĩa là gì? '
+  gate=statement_cover ok=False cover=0.333 n=9 reject=cha phủ câu hỏi 0.33<0.8; thiếu=['cồ', 'nước', 'tiên', 'việt', 'đô', 'đại']
+  q_content=['cồ', 'gì', 'kinh', 'nước', 'tiên', 'việt', 'đô', 'đại', 'đầu']
+  dropped=['Hỏi::A=0', 'Ġcủa:gidf=2.9', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' doanh'
+  ON  → ' doanh'  readable=False
+
+══ [6] Hỏi: Ai chỉ huy trận Bạch Đằng năm 1288? Đáp:
+  top-act: pi=275558 act=0.271 qa=0 match='Chương 358: Ai là thợ săn, ai là con mồi Phản kích rất nhanh'
+           pi=289243 act=0.158 qa=0 match=' Ai đồng cảm kết bạn zalo 0969523381'
+           pi=350947 act=0.096 qa=0 match=' (1789) - Ai thắng trong Chiến tranh Bảy Năm?'
+           pi=415573 act=0.068 qa=0 match=' Đến năm 1893, quyền kiểm soát của Toàn quyền Đông Pháp được'
+           pi=196921 act=0.065 qa=0 match=' Ai có nhu cầu liên hệ 0862593018 (Zalo hay gọi điện đều đượ'
+  gate=statement_cover ok=False cover=0.444 n=9 reject=cha phủ câu hỏi 0.44<0.8; thiếu=['2', 'bạch', 'huy', 'trận', 'đằng']
+  q_content=['2', '8', 'ai', 'bạch', 'chỉ', 'huy', 'năm', 'trận', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġ1:gidf=3.9', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' là'
+  ON  → ' là'  readable=False
+
+══ [7] Hỏi: Nhà Lý dời đô năm nào? Đáp:
+  top-act: pi=4368 act=0.999 qa=0 match='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+           pi=429974 act=0.000 qa=1 match=' Nhà Trần đánh thắng quân nào? '
+           pi=281341 act=0.000 qa=0 match=' Vừa vào nhà, thím Lý lại hỏi: "Đương gia , thế nào rồi?'
+           pi=387567 act=0.000 qa=0 match=' Nhà hàng nào ngon nhất thị trấn?'
+           pi=159056 act=0.000 qa=0 match='" "Ngươi điều kiện là để hứa bác gái ở trước mặt mọi người c'
+  gate=statement_cover ok=True cover=0.833 n=6 reject=None
+  q_content=['dời', 'lý', 'nhà', 'nào', 'năm', 'đô']
+  dropped=['Hỏi::A=0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=15 span='Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  OFF → 'Sử cũ'
+  ON  → 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'  readable=True
+
+══ [8] Hỏi: Đinh Bộ Lĩnh đặt tên nước là gì? Đáp:
+  top-act: pi=299907 act=0.563 qa=0 match=' Hắn cũng không biết dùng phương pháp gì, cầm tới cùng Đinh '
+           pi=279939 act=0.345 qa=0 match=' Năm gian thạch thất cổng phía trên phân biệt viết "Giáp Ất '
+           pi=283347 act=0.044 qa=0 match='" Allen Wilson suy nghĩ hồi lâu chém đinh chặt sắt đạo, "Bất'
+           pi=17686 act=0.019 qa=0 match='Giải nghĩa: (nói, hứa) rất chắc chắn, như không có gì làm th'
+           pi=277444 act=0.014 qa=0 match=' Thậm chí đến nay bà cũng không có động tĩnh gì trong khi tr'
+  gate=statement_cover ok=False cover=0.286 n=7 reject=cha phủ câu hỏi 0.29<0.8; thiếu=['bộ', 'lĩnh', 'nước', 'tên', 'đặt']
+  q_content=['bộ', 'gì', 'lĩnh', 'nước', 'tên', 'đinh', 'đặt']
+  dropped=['Hỏi::A=0', 'Ġlà:gidf=2.6', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=0 span=''
+  OFF → ' Tuyết nhiệm'
+  ON  → ' Tuyết nhiệm'  readable=False
+
+══ [9] Hỏi: Lê Hoàn đánh bại quân nào trên sông Bạch Đằng? Đáp:
+  top-act: pi=2512 act=0.998 qa=0 match='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+           pi=142278 act=0.002 qa=0 match='Trận Bạch Đằng, 981 giữa quân đội Việt, do Lê Hoàn chỉ huy, '
+           pi=264077 act=0.000 qa=0 match=' Khi nhìn rõ vật trong tay Vương Đằng về sau, Khổng Lê đám n'
+           pi=154195 act=0.000 qa=0 match=' Nhiều thời gian hơn tại củng cố Cửu Lê bạch bộ phụng bản th'
+  gate=statement_cover ok=True cover=0.889 n=9 reject=None
+  q_content=['bạch', 'bại', 'hoàn', 'lê', 'nào', 'quân', 'sông', 'đánh', 'đằng']
+  dropped=['Hỏi::A=0', 'Ġtrên:gidf=4.0', '?:A=0', 'Ġ:A=0', 'Đáp::A=0']
+  span_len=16 span='Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  OFF → ' 9'
+  ON  → 'Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'  readable=True
+
+── tổng: copy_fire=3/10 · readable(n_tok≥4)=3/10 · form_min=0.9
+[171s] → out/diag_qa_answer_copy_v12.log

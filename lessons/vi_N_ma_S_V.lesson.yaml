@@ -1,0 +1,25 @@
+lesson_id: vi_grade7_N_ma_S_V
+grade: 7
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_N_ma_S_V
+slots:
+  - var: N
+  - const: "mà"
+  - var: S
+  - var: V
+
+bind:
+  N: danh từ
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Người mà em biết rất tốt"
+  - "Việc mà Lan làm rất hay"
+  - "Cuốn sách mà cô giới thiệu hay"
+  - "Bài mà em làm đúng hết"
+  - "Chỗ mà chúng em chơi rộng"
+  - "Câu mà thầy hỏi rất khó"

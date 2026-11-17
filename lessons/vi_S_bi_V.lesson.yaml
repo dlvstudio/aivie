@@ -1,0 +1,22 @@
+lesson_id: vi_grade4_passive_bi
+grade: 4
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_bi_V
+slots:
+  - var: S
+  - const: "bị"
+  - var: V
+
+bind:
+  S: chủ ngữ
+  V: động từ
+
+examples:
+  - "Em bị trêu"
+  - "Lan bị mắng"
+  - "Bé bị ngã"
+  - "Chó bị đuổi"
+  - "Em bị hiểu lầm"

@@ -1,0 +1,17 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[84s] ✓ 430,447 cha · chế độ=handoff
+  23 prompt (T2–T6 của eval_gen_broad)
+[194s] BASE  empty=0.00  digit_split=0.09  loop4=0.00  copy=nan  n_facts=1.30  stop_clean=0.83  n_tok=18.30
+
+============================================================================================
+tắt kênh         Δempty  Δdigit⎵  Δloop4   Δcopy  Δn_facts   Δstop   Δn_tok
+============================================================================================
+bag(parent)        0.00    -0.04    0.00     nan      0.09    0.09      1.0   [295s]
+succ+path          0.00     0.09    0.09     nan     -0.13    0.09     -0.9   [398s]
+l2r                0.00    -0.04    0.00     nan     -0.04    0.04     -0.8   [405s]
+============================================================================================
+Ứng viên KÊNH CHẾT (mọi Δ = 0): (không có)
+Δ=0 ở bộ prompt này KHÔNG chứng minh kênh vô dụng toàn cục — chỉ là ứng viên;
+trước khi bỏ phải chạy thêm `--mode no_agenda` và bộ T1/T7 của eval_gen_broad.
+
+[405s] → out/ablate_v12_h_a.log

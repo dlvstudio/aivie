@@ -1,0 +1,70 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[39s] ✓ 430,447 cha
+[51s] dựng W_skip d_max=12 min_count=2 …
+[70s] ✓ spans=431,278 edge_adds=74,013,337
+  nnz theo d: [1323688, 1997857, 2169571, 2198752, 2176854, 2122170, 2058908, 1986186, 1908136, 1829315, 1749220, 1669246]
+[101s] 400 ca đo (hist→gold trong câu)
+
+========================================================================
+thước                           W_skip d≤D       chỉ d=1
+========================================================================
+hard∩ ≠ ∅                            0.873         0.983
+gold∈hard | hard≠∅                   0.307         0.639
+gold∈hard (mọi ca)                   0.268         0.627
+gold∈soft top-10                     0.307         0.355
+soft10 | ≥2 proposer                 0.305         0.000
+========================================================================
+quét ctx_max (W_skip đầy):
+  ctx=2: hard≠∅=0.953  gold|hard=0.391  soft10=0.333  soft10|multi=0.332 (n_multi=383)
+  ctx=3: hard≠∅=0.925  gold|hard=0.335  soft10=0.312  soft10|multi=0.311 (n_multi=389)
+  ctx=4: hard≠∅=0.900  gold|hard=0.308  soft10=0.307  soft10|multi=0.305 (n_multi=393)
+  ctx=8: hard≠∅=0.873  gold|hard=0.307  soft10=0.307  soft10|multi=0.305 (n_multi=393)
+G1 hard∩≠∅ ≥0.30          : ĐẠT (0.873)
+G2 gold∈hard|≠∅ ≥0.40     : TRƯỢT (0.307)
+G3 soft top-10 ≥0.50      : TRƯỢT (0.307)
+G4 soft10 − d1 ≥+0.05     : TRƯỢT (-0.047)
+G4b soft10|multi − d1 ≥+0.05: ĐẠT (+0.305)
+ctx_max tốt nhất theo soft10|multi: 2 (0.332)
+⇒ ĐÁNG thử cắm kênh W_skip vào sinh (A/B, mặc định vẫn OFF)
+
+── demo (tối đa 8) ──
+  [Đi ra ngoài tại] → gold=bên  hard✗ soft10✗
+     proposers: Đi@d4→21, ra@d3→64, ngoài@d2→64, tại@d1→64
+     hard∩: {cũng không và một trong là có}
+     soft top: một không có là trong
+  [Vậy mà] → gold=hắn  hard✓ soft10✗
+     proposers: Vậy@d2→37, mà@d1→64
+     hard∩: {tại em phải chỉ cũng cái nói để}…
+     soft top: không là bạn nói các
+  [Năm 1] → gold=2  hard✓ soft10✓
+     proposers: Năm@d2→23, 1@d1→64
+     hard∩: {là tuổi 0 1 2 3 4 5}…
+     soft top: 9 0 8 2 5
+  [Báo Quân đội Nhân] → gold=dân  hard✓ soft10✓
+     proposers: Báo@d4→5, Quân@d3→64, đội@d2→64, Nhân@d1→64
+     hard∩: {dân là}
+     soft top: dân là không có cũng
+  [Ồ tôi] → gold=đã  hard✓ soft10✓
+     proposers: Ồ@d2→7, tôi@d1→64
+     hard∩: {không chưa đã hiểu có}
+     soft top: không có đã hiểu chưa
+  [Giải nghĩa] → gold=rất  hard✓ soft10✗
+     proposers: Giải@d2→64, nghĩa@d1→64
+     hard∩: {phần người như khẩu bị hơi Nam chỗ}…
+     soft top: khẩu cũ có từ phương
+  [Nhận thức về] → gold=thương  hard✗ soft10✗
+     proposers: Nhận@d3→9, thức@d2→64, về@d1→64
+     hard∩: {}
+     soft top: các một cách việc những
+  [Món ngon từ thực vật] → gold=Cho  hard✗ soft10✗
+     proposers: Món@d5→1, ngon@d4→32, từ@d3→64, thực@d2→64, vật@d1→64
+     hard∩: {}
+     soft top: có và không thể của
+
+  tay 'Việt Nam' ids=2 hard∩={không Dân Cộng là gia có} soft={ là có Cộng Dân không gia Á và }
+
+  tay 'Nhà Lý' ids=2 hard∩={Đức và thành đã là do} soft={ do thành là Đức đã và học Hỏa }
+
+  tay 'Ngô Quyền' ids=2 hard∩={} soft={ Diệm Tổ Văn sinh Ngập Linh riêng lực }
+
+[125s] → out/w_skip_v12.log

@@ -1,0 +1,118 @@
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    1.8s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.4s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   18.8s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   19.8s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   19.8s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   20.1s] train: 19,696,660 token
+[   20.1s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   20.1s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   24.0s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   24.0s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   24.0s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   24.0s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   24.0s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   24.0s] 
+--- LM NƠ-RON ---
+[   24.5s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   25.5s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   25.5s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   25.5s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   25.5s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   26.1s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   26.1s]   bf16 autocast: BẬT · batch=48
+[   44.5s]     step      0/200  loss 10.496 (15.142 bits/token)  18s · ETA 61m
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.5s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    2.1s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.9s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   23.0s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   24.2s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   24.2s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   24.5s] train: 19,696,660 token
+[   24.5s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   24.5s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   29.5s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   29.5s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   29.5s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   29.5s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   29.5s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   29.5s] 
+--- LM NƠ-RON ---
+[   30.8s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   34.5s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   34.5s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   34.5s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   34.5s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   35.3s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   35.3s]   bf16 autocast: BẬT · batch=48
+[  169.0s]     step      0/200  loss 10.496 (15.142 bits/token)  134s · ETA 443m
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    2.1s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.9s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   21.6s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   22.7s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   22.8s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   23.0s] train: 19,696,660 token
+[   23.1s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   23.1s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   28.0s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   28.0s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   28.0s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   28.0s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   28.0s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   28.0s] 
+--- LM NƠ-RON ---
+[   28.9s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   30.1s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   30.1s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   30.1s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   30.1s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   30.7s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   30.7s]   bf16 autocast: BẬT · batch=16
+[   31.9s]     step      0/200  loss 10.475 (15.112 bits/token)  1s · ETA 4m
+[   55.4s]     step     20/200  loss 7.774 (11.215 bits/token)  25s · ETA 4m
+[   77.2s]     step     40/200  loss 6.603 (9.526 bits/token)  46s · ETA 3m
+[   99.5s]     step     60/200  loss 6.542 (9.438 bits/token)  69s · ETA 3m
+[  121.4s]     step     80/200  loss 6.405 (9.240 bits/token)  91s · ETA 2m
+[  143.0s]     step    100/200  loss 5.981 (8.628 bits/token)  112s · ETA 2m
+[  164.3s]     step    120/200  loss 5.898 (8.508 bits/token)  133s · ETA 1m
+[  185.7s]     step    140/200  loss 6.101 (8.802 bits/token)  155s · ETA 1m
+[  207.2s]     step    160/200  loss 5.994 (8.648 bits/token)  176s · ETA 1m
+[  228.9s]     step    180/200  loss 5.917 (8.536 bits/token)  198s · ETA 0m
+[  249.6s]     step    199/200  loss 5.812 (8.385 bits/token)  219s · ETA 0m
+[  252.1s]     nơ-ron (CUỐI): 9.123 bits/token · 1.643 bits/BYTE (3,702 vị trí)
+[  256.5s]     TRAIN 8.428 vs EVAL 9.123 bits/token · khoảng cách +0.695
+[  256.5s]     ✓ đã có khoảng cách train/eval ⇒ mô hình đã vắt được data; kết luận có nghĩa.
+[  256.5s]     head-sim(Wq) L0: mean|cos|=0.0049
+[  256.5s]     head-sim(Wq) L1: mean|cos|=0.0039
+[  256.5s]     head-sim(Wq) L2: mean|cos|=0.0039
+[  256.5s]     head-sim(Wq) L3: mean|cos|=0.0036
+[  256.5s]     head-sim(Wq) L4: mean|cos|=0.0052
+[  256.5s]     head-sim(Wq) L5: mean|cos|=0.0050
+[  256.5s]     head-sim(Wq) L6: mean|cos|=0.0028
+[  256.5s]     head-sim(Wq) L7: mean|cos|=0.0045
+[  256.6s] 
+================================================================
+[  256.6s]   ĐẾM     : 1.276 bits/byte
+[  256.6s]   NƠ-RON  : 1.643 bits/byte   (Δ +0.366)
+[  256.6s] ================================================================
+[  256.6s] 
+⚠ CHƯA TRAIN ĐỦ (steps=200, 19.70M token) — KHÔNG kết luận gì từ số này. Đây là smoke test, không phải phép đo.

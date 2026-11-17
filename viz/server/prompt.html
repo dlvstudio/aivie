@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sinh · AIVIE</title>
+<style>
+  :root { --bg:#0f1117; --panel:#171a22; --fg:#d7dae0; --muted:#8b93a3;
+          --accent:#4ec9b0; --seed:#e06c75; --border:#262b36; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; }
+  header { padding:.8rem 1.2rem; background:var(--panel); border-bottom:1px solid var(--border);
+           display:flex; align-items:center; gap:1rem; }
+  header a { color:var(--muted); text-decoration:none; font-size:14px; }
+  header a:hover { color:var(--accent); }
+  main { max-width:760px; margin:0 auto; padding:1.5rem 1.2rem; }
+  label { display:block; color:var(--muted); font-size:13px; margin:.9rem 0 .3rem; }
+  textarea,input { width:100%; background:#0f1117; color:var(--fg); border:1px solid #2a3040;
+         border-radius:8px; padding:.6rem .75rem; font-size:15px; font-family:inherit; }
+  textarea { min-height:80px; resize:vertical; }
+  .row { display:flex; gap:1rem; }
+  .row > div { flex:1; }
+  button { margin-top:1rem; background:var(--accent); color:#08302a; border:0; border-radius:8px;
+           padding:.7rem 1.4rem; font-size:15px; font-weight:600; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  #out { margin-top:1.4rem; background:var(--panel); border:1px solid var(--border);
+         border-radius:10px; padding:1.1rem 1.25rem; min-height:60px; white-space:pre-wrap;
+         line-height:1.7; }
+  #out .prompt { color:var(--muted); }
+  #out .gen { color:#fff; }
+  #status { color:var(--muted); font-size:13px; margin-top:.6rem; }
+  .ex { color:var(--muted); font-size:13px; margin-top:.5rem; }
+  .ex button { all:unset; color:var(--accent); cursor:pointer; margin-right:.8rem; }
+</style>
+</head>
+<body>
+<header>
+  <strong style="color:var(--accent)">AIVIE · Sinh</strong>
+  <a href="/loaisuy?token=sắt">→ xem cạnh loại suy</a>
+  <a href="/api/health">health</a>
+</header>
+<main>
+  <label>Prompt</label>
+  <textarea id="prompt">sắt và</textarea>
+  <div class="ex">Hỏi–đáp (lõi đếm tra-cứu grounded):
+    <button data-p="Sắt là gì?">Sắt là gì?</button>
+    <button data-p="Chó ăn gì?">Chó ăn gì?</button>
+    <button data-p="Thủ đô của Việt Nam là gì?">Thủ đô Việt Nam?</button>
+  </div>
+  <div class="ex">Sinh tự do (§TK_085 <b>LM dẫn</b> — đếm/kNN kiểm):
+    <button data-p="Chó là loài động vật">Chó là loài động vật</button>
+    <button data-p="Sông Mê Kông là con sông">Sông Mê Kông…</button>
+    <button data-p="Trong cơ thể người, tế bào">…tế bào</button>
+    <button data-p="sắt và">sắt và (loại suy)</button>
+  </div>
+  <div class="row">
+    <div><label>Max steps</label><input id="maxlen" type="number" value="60" min="1" max="64"></div>
+  </div>
+  <button id="go">Sinh</button>
+  <div id="status"></div>
+  <div id="out"></div>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+async function run(){
+  const prompt = $("#prompt").value;
+  const max_len = Math.min(64, Math.max(1, parseInt($("#maxlen").value)||40));
+  $("#go").disabled = true; $("#status").textContent = "đang sinh…"; $("#out").textContent = "";
+  const t0 = performance.now();
+  let d;
+  try {
+    const r = await fetch(`/api/gen?prompt=${encodeURIComponent(prompt)}&max_len=${max_len}`);
+    if(!r.ok){ $("#status").textContent = "lỗi HTTP "+r.status; $("#go").disabled=false; return; }
+    d = await r.json();
+  } catch(e){ $("#status").textContent = "lỗi: "+e; $("#go").disabled=false; return; }
+  const gen = d.generated || d.hybrid_generated || (d.autoregressive && d.autoregressive.answer) || "";
+  const tail = (d.tail != null) ? d.tail : (gen.startsWith(prompt) ? gen.slice(prompt.length) : gen);
+  const ms = (d.meta && d.meta.elapsed_ms) || Math.round(performance.now()-t0);
+  if(d.grounded){
+    // QA định nghĩa → câu định nghĩa ĐÃ LƯU (grounded, không sinh)
+    $("#out").innerHTML = `<span class="prompt">${escapeHtml(prompt)}</span>\n<span class="gen">${escapeHtml(d.answer || tail)}</span>`;
+    const kind = d.answer_kind === "fact" ? "fact truy hồi" : "định nghĩa đã lưu";
+    $("#status").textContent = `xong · ${ms} ms · ${kind} (cha #${d.source_parent})`;
+  } else if(d.bridged){
+    $("#out").innerHTML = `<span class="prompt">${escapeHtml(prompt)}</span>\n<span class="gen">${escapeHtml(d.gen_prompt + tail)}</span>`;
+    $("#status").textContent = `xong · ${ms} ms · bắc cầu QA→«${escapeHtml(d.gen_prompt)}»`;
+  } else {
+    $("#out").innerHTML = `<span class="prompt">${escapeHtml(prompt)}</span><span class="gen">${escapeHtml(tail)}</span>`;
+    $("#status").textContent = `xong · ${ms} ms`;
+  }
+  $("#go").disabled = false;
+}
+function escapeHtml(s){ return (s||"").replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+$("#go").onclick = run;
+document.querySelectorAll(".ex button").forEach(b => b.onclick = () => { $("#prompt").value = b.dataset.p; run(); });
+$("#prompt").addEventListener("keydown", e => { if(e.key==="Enter" && (e.metaKey||e.ctrlKey)) run(); });
+</script>
+</body>
+</html>

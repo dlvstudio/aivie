@@ -1,0 +1,233 @@
+[     0.0s] === load_network_v12_sent START (pid=12030) → out/logs/load_network_v12_sent_20260801_215048.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.2s] ✓ unpickle  (3.2s)
+[     3.2s] ▶ vocab (32002 token)
+[     4.2s] ✓ vocab (32002 token)  (1.0s)
+[     4.2s] ▶ adjacency
+[    13.1s] ✓ adjacency  (8.9s)
+[    13.1s] ▶ embedding
+[    13.2s] ✓ embedding  (0.0s)
+[    13.2s] ▶ parents
+[    13.2s] parents: deserialize 430447 records …
+[    13.2s] parents 5000/430447 (1.2%)
+[    13.2s] parents 10000/430447 (2.3%)
+[    13.3s] parents 15000/430447 (3.5%)
+[    13.3s] parents 20000/430447 (4.6%)
+[    13.4s] parents 25000/430447 (5.8%)
+[    13.4s] parents 30000/430447 (7.0%)
+[    13.4s] parents 35000/430447 (8.1%)
+[    13.5s] parents 40000/430447 (9.3%)
+[    13.5s] parents 45000/430447 (10.5%)
+[    13.6s] parents 50000/430447 (11.6%)
+[    13.6s] parents 55000/430447 (12.8%)
+[    13.6s] parents 60000/430447 (13.9%)
+[    13.7s] parents 65000/430447 (15.1%)
+[    13.7s] parents 70000/430447 (16.3%)
+[    13.8s] parents 75000/430447 (17.4%)
+[    13.8s] parents 80000/430447 (18.6%)
+[    13.8s] parents 85000/430447 (19.7%)
+[    13.9s] parents 90000/430447 (20.9%)
+[    13.9s] parents 95000/430447 (22.1%)
+[    14.0s] parents 100000/430447 (23.2%)
+[    14.0s] parents 105000/430447 (24.4%)
+[    14.0s] parents 110000/430447 (25.6%)
+[    14.1s] parents 115000/430447 (26.7%)
+[    14.2s] parents 120000/430447 (27.9%)
+[    14.2s] parents 125000/430447 (29.0%)
+[    14.3s] parents 130000/430447 (30.2%)
+[    14.3s] parents 135000/430447 (31.4%)
+[    14.4s] parents 140000/430447 (32.5%)
+[    14.4s] parents 145000/430447 (33.7%)
+[    14.5s] parents 150000/430447 (34.8%)
+[    14.6s] parents 155000/430447 (36.0%)
+[    14.7s] parents 160000/430447 (37.2%)
+[    14.7s] parents 165000/430447 (38.3%)
+[    14.8s] parents 170000/430447 (39.5%)
+[    14.9s] parents 175000/430447 (40.7%)
+[    15.0s] parents 180000/430447 (41.8%)
+[    15.0s] parents 185000/430447 (43.0%)
+[    15.1s] parents 190000/430447 (44.1%)
+[    15.2s] parents 195000/430447 (45.3%)
+[    15.3s] parents 200000/430447 (46.5%)
+[    15.4s] parents 205000/430447 (47.6%)
+[    15.4s] parents 210000/430447 (48.8%)
+[    15.5s] parents 215000/430447 (49.9%)
+[    15.6s] parents 220000/430447 (51.1%)
+[    15.7s] parents 225000/430447 (52.3%)
+[    15.8s] parents 230000/430447 (53.4%)
+[    15.8s] parents 235000/430447 (54.6%)
+[    15.9s] parents 240000/430447 (55.8%)
+[    16.0s] parents 245000/430447 (56.9%)
+[    16.1s] parents 250000/430447 (58.1%)
+[    16.2s] parents 255000/430447 (59.2%)
+[    16.2s] parents 260000/430447 (60.4%)
+[    16.3s] parents 265000/430447 (61.6%)
+[    16.4s] parents 270000/430447 (62.7%)
+[    16.5s] parents 275000/430447 (63.9%)
+[    16.5s] parents 280000/430447 (65.0%)
+[    18.6s] parents 285000/430447 (66.2%)
+[    18.7s] parents 290000/430447 (67.4%)
+[    18.8s] parents 295000/430447 (68.5%)
+[    18.8s] parents 300000/430447 (69.7%)
+[    18.9s] parents 305000/430447 (70.9%)
+[    19.0s] parents 310000/430447 (72.0%)
+[    19.1s] parents 315000/430447 (73.2%)
+[    19.2s] parents 320000/430447 (74.3%)
+[    19.2s] parents 325000/430447 (75.5%)
+[    19.3s] parents 330000/430447 (76.7%)
+[    19.4s] parents 335000/430447 (77.8%)
+[    19.5s] parents 340000/430447 (79.0%)
+[    19.5s] parents 345000/430447 (80.1%)
+[    19.6s] parents 350000/430447 (81.3%)
+[    19.7s] parents 355000/430447 (82.5%)
+[    19.8s] parents 360000/430447 (83.6%)
+[    19.9s] parents 365000/430447 (84.8%)
+[    19.9s] parents 370000/430447 (86.0%)
+[    20.0s] parents 375000/430447 (87.1%)
+[    20.1s] parents 380000/430447 (88.3%)
+[    20.2s] parents 385000/430447 (89.4%)
+[    20.2s] parents 390000/430447 (90.6%)
+[    20.3s] parents 395000/430447 (91.8%)
+[    20.4s] parents 400000/430447 (92.9%)
+[    20.5s] parents 405000/430447 (94.1%)
+[    20.5s] parents 410000/430447 (95.2%)
+[    20.6s] parents 415000/430447 (96.4%)
+[    20.7s] parents 420000/430447 (97.6%)
+[    20.7s] parents 425000/430447 (98.7%)
+[    20.8s] parents 430000/430447 (99.9%)
+[    46.0s] ▶ rebuild_hierarchical_index …
+[    47.1s] ✓ rebuild_hierarchical_index (1.1s)
+[    52.0s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    52.0s] ✓ parents  (38.8s)
+[    52.0s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    52.8s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    52.8s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:551: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+============================================================
+PROMPT: Nhà Lý dời đô về
+ hist: ['Nhà', 'ĠLý', 'Ġdời', 'Ġđô', 'Ġvề']
+     0.020  '<EOS>'
+     0.019  ','
+     0.015  '.'
+     0.011  'ĠThăng'
+     0.009  'Ġmột'
+     0.009  'Ġphía'
+     0.008  'Ġcác'
+     0.008  'Ġsau'
+     0.007  'Ġmắt'
+     0.006  'Ġcách'
+     0.005  'Ġmặt'
+     0.005  'ĠHoa'
+ seed0: Nhà Lý dời đô về 1 năm thành lậpNhà được đền khi một việc mà 1 lậpNhà thành năm tụm Mão Balticađầu 1
+ seed1: Nhà Lý dời đô về 1 năm thành lậpNhà vào của 2 đã 1 năm Kỉ ThìnNhà lập thành vào chầu 1 năm được thángNhà Việt lập Nam đại 1 thành không làNhà năm nào lập México 1 thành của một
+
+============================================================
+PROMPT: Ngô Quyền đánh bại quân Nam Hán năm
+ hist: ['Ngô', 'ĠQuyền', 'Ġđánh', 'Ġbại', 'Ġquân', 'ĠNam', 'ĠHán', 'Ġnăm']
+     0.027  '<EOS>'
+     0.019  'Ġ1'
+     0.018  '.'
+     0.012  ','
+     0.010  'Việt'
+     0.008  'Ġlà'
+     0.008  'Ġ2'
+     0.006  'Ġcổ'
+     0.005  'Tạng'
+     0.004  'Ġcó'
+     0.003  'ĠĐế'
+     0.003  'ĠLưu'
+ seed0: Ngô Quyền đánh bại quân Nam Hán năm thắng Dậu
+ seed1: Ngô Quyền đánh bại quân Nam Hán năm thắng chiến 9 là Gregory tháng dụ 1 trong một AI đây có nhưng ngữ thể nhưNgô nghĩa
+
+============================================================
+PROMPT: Hỏi: Nhà Lý dời đô về đâu? Đáp:
+ hist: ['Đáp:']
+     0.000  'Ġxụ'
+     0.000  'ĠFrench'
+     0.000  'ĠTUỔI'
+     0.000  'ĠTaekwondo'
+     0.000  'ĠGekkou'
+     0.000  'ĠTATA'
+     0.000  'Imperator'
+     0.000  'Elizabeth'
+     0.000  'ĠAryan'
+     0.000  'ĠCapitol'
+     0.000  'Ġmeson'
+     0.000  'Ġvjệc'
+ seed0: Hỏi: Nhà Lý dời đô về đâu? Đáp: pesto để thành lập 1 năm ngoái là đượcNhà đầu thành của 1 năm lập 2 cóNhà vào được nghĩa 1 năm lập
+ seed1: Hỏi: Nhà Lý dời đô về đâu? Đáp: meson French 1 khó thành lập năm có được ra là nghĩaNhà khởi cuộc năm 1 tháng lập
+
+============================================================
+PROMPT: Việt Nam là một quốc gia nằm ở
+ hist: ['Việt', 'ĠNam', 'Ġlà', 'Ġmột', 'Ġquốc', 'Ġgia', 'Ġnằm', 'Ġở']
+     0.014  '<EOS>'
+     0.013  ','
+     0.013  'Ġtrong'
+     0.011  '.'
+     0.011  'Ġphía'
+     0.009  'Ġtrên'
+     0.008  'Ġvùng'
+     0.007  'Ġcác'
+     0.006  'Ġbên'
+     0.006  'Ġđây'
+     0.006  'Ġkhu'
+     0.005  'Ġkhoảng'
+ seed0: Việt Nam là một quốc gia nằm ởViệt Nam có núi Fansipan.
+ seed1: Việt Nam là một quốc gia nằm ởViệt Nam có núi Fansipan.
+
+============================================================
+PROMPT: Phở là món ăn
+ hist: ['Phở', 'Ġlà', 'Ġmón', 'Ġăn']
+     0.024  'Ġthức'
+     0.023  'Ġđược'
+     0.023  'Ġtổ'
+     0.017  '.'
+     0.016  ','
+     0.012  'Ġuống'
+     0.008  'Ġngon'
+     0.008  'Ġrất'
+     0.007  'Ġcủa'
+     0.007  '<EOS>'
+     0.006  'Ġnày'
+     0.006  'Ġmặc'
+ seed0: Phở là món ăn của vùng nào và được người trong thành ở thế nhất trên giới thực
+ seed1: Phở là món ăn của vùng nào được và đã ở trong người của thành một trở nào thế được đã không người của biểu tượng và ở trong thế
+
+============================================================
+PROMPT: Trong thời kỳ Bắc thuộc, nhân dân ta
+ hist: ['Trong', 'Ġthời', 'Ġkỳ', 'ĠBắc', 'Ġthuộc', ',', 'Ġnhân', 'Ġdân', 'Ġta']
+     0.017  '<EOS>'
+     0.017  '.'
+     0.015  'Ġcó'
+     0.009  'Ġkhông'
+     0.007  'Ġlà'
+     0.007  'Ġcũng'
+     0.005  'Ġvà'
+     0.005  'Ġđã'
+     0.004  'Ġmột'
+     0.004  'Ġsẽ'
+     0.004  'Ġthể'
+     0.004  'Ġcủa'
+ seed0: Trong thời kỳ Bắc thuộc, nhân dân ta làTrong của mẹo nhà cát Đinh Bộ Lĩnh con là của vùng nơi
+ seed1: Trong thời kỳ Bắc thuộc, nhân dân ta làTrong của Harper nhà này Lĩnh vùng Đinh là Bộ của cát nhà Ngô cứ vùng Lĩnh là nơiTrong Bộ cát Nam không của một là nhà để nơi người nàyTrong của cả là nhà hiện có
+
+============================================================
+PROMPT: Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi
+ hist: ['ĠNội', 'Ġcó', 'Ġlịch', 'Ġsử', 'Ġhơn', 'Ġnghìn', 'Ġnăm', ',', 'Ġtừ', 'Ġkhi']
+     0.015  '<EOS>'
+     0.005  'Ġđộng'
+     0.005  'Ġdanh'
+     0.005  'Ġkhông'
+     0.005  'Ġđó'
+     0.005  'Ġđược'
+     0.005  'Ġđi'
+     0.005  'Ġbạn'
+     0.004  'Ġmột'
+     0.004  'Ġcác'
+     0.004  'Ġnào'
+     0.004  'Ġchúng'
+ seed0: Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khilike là Việt NamThủ nghĩa nước xãkhẩu đầu tổ là ra một gã về hai đi này xongThủ là được làm thế cho toàn này để mộtThủ nghĩa là higashi Việt
+ seed1: Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi được sau là đóThủ của Việt Nam các và nhân Thatcher là tôn thểThủ giáo theo Việt Nam ở là UFA thá cho đô củaThủ Nam Việt một là thành bảy trực 2Thủ Nam Việt
+

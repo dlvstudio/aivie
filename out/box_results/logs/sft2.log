@@ -1,0 +1,31 @@
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+[52s] nạp pretrain ckpt/hybrid_1p3b_sft.pt · 1.277B · d=2048 L=48 attn@[7, 15, 23, 31, 39, 47]
+[92s] SFT: 29565 train · 603 val (bỏ 0 rỗng-assistant)
+[92s] dev=cuda · 923 step/epoch × 2 = 1846 · bf16=True
+⚠️ KHÔNG --hf-repo: ckpt chỉ sống trên ổ box. Vast Destroy = mất hết. Bài-học TK_103 → thêm: --hf-repo donaldluong/nn-aivie-hybrid-1p3b-ckpt --hf-every 5000
+[92s] val-loss TRƯỚC SFT: 0.907
+[587s] step 200/1846 · loss 0.510 · val 0.747 · lr 9.85e-06
+[1066s] step 400/1846 · loss 0.663 · val 0.916 · lr 9.18e-06
+[1564s] step 600/1846 · loss 0.519 · val 0.656 · lr 8.07e-06
+[2037s] step 800/1846 · loss 0.530 · val 0.533 · lr 6.65e-06
+[2526s] step 1000/1846 · loss 0.424 · val 0.670 · lr 5.09e-06
+[3024s] step 1200/1846 · loss 0.400 · val 0.394 · lr 3.58e-06
+[3517s] step 1400/1846 · loss 0.478 · val 0.561 · lr 2.30e-06
+[4016s] step 1600/1846 · loss 0.463 · val 0.414 · lr 1.41e-06
+[4507s] step 1800/1846 · loss 0.527 · val 0.273 · lr 1.01e-06
+[4638s] XONG SFT · LƯU ckpt/hybrid_1p3b_sft_v2.pt · val cuối 0.427

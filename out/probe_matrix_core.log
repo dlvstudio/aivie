@@ -1,0 +1,43 @@
+prompt='Ngô Quyền là vị vua sáng lập nhà Ngô, được'
+parent conf=0.850
+parent_bag  top=[('ĠQuyền', 66.847), ('ĠNgô', 64.173), ('ĠNam', 23.749), ('ĠHán', 16.364), ('0', 16.352), ('ĠXương', 15.441), ('ĠPhòng', 13.616), ('ĠVương', 13.116)]
+parent_succ top=[('Ġxem', 42.667), ('Ġsử', 3.668), ('Ġtrao', 2.573), ('ĠHoằng', 2.215), ('Ġduy', 2.201), ('Ġgiao', 2.144), ('Ġnhà', 2.106), ('ĠChu', 1.878)]
+matrix logits top=[('Ġxem', 5.22), ('Ġsử', 0.316), ('<EOS>', 0.315), ('ĠQuyền', 0.261), ('ĠNgô', 0.253), ('ĠNam', 0.137), ('Ġtrao', 0.107), ('Ġgọi', 0.104)]
+  Ġxem rank=1 val=5.220
+  Ġđể rank=167 val=0.018
+  Ġgọi rank=8 val=0.104
+  <EOS> rank=3 val=0.315
+
+--- argmax no_agenda+matrix ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+
+--- argmax MZ+matrix ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng
+
+=== sample no_agenda+matrix T=0.85 top_k=32 n=3 ===
+
+--- sample seed=42 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem Hán thua chạy còn của 937 Đình Nghệ
+
+--- sample seed=43 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc Hán
+
+--- sample seed=44 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người Thượng Tiết độ sứ
+
+=== sample MZ+matrix T=0.85 top_k=32 n=3 ===
+
+--- MZ sample seed=142 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được một mục. này của nhân xem nó sẽ
+
+--- MZ sample seed=143 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được. một điểm đóng này bảo.A người R gây
+
+--- MZ sample seed=144 ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được phân xem chủ đề, là sự có đường, mở bình
+ người đầu năm đến thời cũng nói
+
+[259s] → out/probe_matrix_core.log

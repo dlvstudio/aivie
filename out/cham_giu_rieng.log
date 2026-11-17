@@ -1,0 +1,250 @@
+### 60 từ giữ riêng
+[     0.0s] === load_net_ho START (pid=6905) → out/logs/load_net_ho_20260821_123933.log ===
+[     0.0s] load checkpoint checkpoints/net_ho.pkl …
+[     0.0s] ▶ unpickle
+[     5.0s] ✓ unpickle  (5.0s)
+[     5.0s] ▶ vocab (32002 token)
+[     5.0s] ✓ vocab (32002 token)  (0.0s)
+[     5.0s] ▶ adjacency
+[    15.4s] ✓ adjacency  (10.3s)
+[    15.4s] ▶ embedding
+[    15.4s] ✓ embedding  (0.1s)
+[    15.4s] ▶ parents
+[    15.4s] parents: deserialize 449866 records …
+[    15.5s] parents 5000/449866 (1.1%)
+[    15.5s] parents 10000/449866 (2.2%)
+[    15.5s] parents 15000/449866 (3.3%)
+[    15.6s] parents 20000/449866 (4.4%)
+[    15.6s] parents 25000/449866 (5.6%)
+[    15.7s] parents 30000/449866 (6.7%)
+[    15.7s] parents 35000/449866 (7.8%)
+[    15.8s] parents 40000/449866 (8.9%)
+[    15.8s] parents 45000/449866 (10.0%)
+[    15.9s] parents 50000/449866 (11.1%)
+[    15.9s] parents 55000/449866 (12.2%)
+[    16.0s] parents 60000/449866 (13.3%)
+[    16.0s] parents 65000/449866 (14.4%)
+[    16.1s] parents 70000/449866 (15.6%)
+[    16.1s] parents 75000/449866 (16.7%)
+[    16.2s] parents 80000/449866 (17.8%)
+[    16.2s] parents 85000/449866 (18.9%)
+[    16.2s] parents 90000/449866 (20.0%)
+[    16.3s] parents 95000/449866 (21.1%)
+[    16.3s] parents 100000/449866 (22.2%)
+[    16.4s] parents 105000/449866 (23.3%)
+[    16.4s] parents 110000/449866 (24.5%)
+[    16.5s] parents 115000/449866 (25.6%)
+[    16.5s] parents 120000/449866 (26.7%)
+[    16.6s] parents 125000/449866 (27.8%)
+[    16.7s] parents 130000/449866 (28.9%)
+[    16.7s] parents 135000/449866 (30.0%)
+[    16.8s] parents 140000/449866 (31.1%)
+[    16.9s] parents 145000/449866 (32.2%)
+[    17.0s] parents 150000/449866 (33.3%)
+[    17.0s] parents 155000/449866 (34.5%)
+[    17.1s] parents 160000/449866 (35.6%)
+[    17.2s] parents 165000/449866 (36.7%)
+[    17.2s] parents 170000/449866 (37.8%)
+[    17.3s] parents 175000/449866 (38.9%)
+[    17.4s] parents 180000/449866 (40.0%)
+[    17.5s] parents 185000/449866 (41.1%)
+[    17.6s] parents 190000/449866 (42.2%)
+[    17.7s] parents 195000/449866 (43.3%)
+[    17.8s] parents 200000/449866 (44.5%)
+[    17.9s] parents 205000/449866 (45.6%)
+[    17.9s] parents 210000/449866 (46.7%)
+[    18.0s] parents 215000/449866 (47.8%)
+[    18.1s] parents 220000/449866 (48.9%)
+[    18.2s] parents 225000/449866 (50.0%)
+[    18.3s] parents 230000/449866 (51.1%)
+[    18.4s] parents 235000/449866 (52.2%)
+[    18.5s] parents 240000/449866 (53.3%)
+[    18.6s] parents 245000/449866 (54.5%)
+[    18.7s] parents 250000/449866 (55.6%)
+[    18.8s] parents 255000/449866 (56.7%)
+[    18.8s] parents 260000/449866 (57.8%)
+[    18.9s] parents 265000/449866 (58.9%)
+[    19.0s] parents 270000/449866 (60.0%)
+[    19.1s] parents 275000/449866 (61.1%)
+[    19.2s] parents 280000/449866 (62.2%)
+[    19.3s] parents 285000/449866 (63.4%)
+[    19.4s] parents 290000/449866 (64.5%)
+[    19.4s] parents 295000/449866 (65.6%)
+[    19.5s] parents 300000/449866 (66.7%)
+[    19.6s] parents 305000/449866 (67.8%)
+[    19.7s] parents 310000/449866 (68.9%)
+[    19.8s] parents 315000/449866 (70.0%)
+[    19.9s] parents 320000/449866 (71.1%)
+[    20.0s] parents 325000/449866 (72.2%)
+[    20.0s] parents 330000/449866 (73.4%)
+[    20.1s] parents 335000/449866 (74.5%)
+[    20.2s] parents 340000/449866 (75.6%)
+[    20.3s] parents 345000/449866 (76.7%)
+[    20.4s] parents 350000/449866 (77.8%)
+[    20.4s] parents 355000/449866 (78.9%)
+[    20.5s] parents 360000/449866 (80.0%)
+[    20.6s] parents 365000/449866 (81.1%)
+[    20.7s] parents 370000/449866 (82.2%)
+[    20.7s] parents 375000/449866 (83.4%)
+[    20.8s] parents 380000/449866 (84.5%)
+[    20.9s] parents 385000/449866 (85.6%)
+[    21.0s] parents 390000/449866 (86.7%)
+[    21.1s] parents 395000/449866 (87.8%)
+[    21.1s] parents 400000/449866 (88.9%)
+[    21.2s] parents 405000/449866 (90.0%)
+[    21.3s] parents 410000/449866 (91.1%)
+[    21.4s] parents 415000/449866 (92.2%)
+[    21.5s] parents 420000/449866 (93.4%)
+[    21.5s] parents 425000/449866 (94.5%)
+[    21.6s] parents 430000/449866 (95.6%)
+[    21.7s] parents 435000/449866 (96.7%)
+[    21.8s] parents 440000/449866 (97.8%)
+[    21.8s] parents 445000/449866 (98.9%)
+[    36.0s] ▶ rebuild_hierarchical_index …
+[    37.9s] ✓ rebuild_hierarchical_index (2.0s)
+[    43.5s]     resync match_ids: 449866/449866 cha (df dựng lại)
+[    43.5s] ✓ parents  (28.1s)
+[    43.5s] ✓ loaded: vocab=32002 parents=449866 E=(32002, 96)
+[    46.2s] sidecar thiếu → migrate: net_ho.content.pkl
+[    46.2s] ✓ load_checkpoint XONG
+    checkpoints/net_ho.pkl: 449,866 cha
+[     0.0s] === load_net_ho_lop START (pid=6905) → out/logs/load_net_ho_lop_20260821_132120.log ===
+[     0.0s] load checkpoint checkpoints/net_ho_lop.pkl …
+[     0.0s] ▶ unpickle
+[     7.3s] ✓ unpickle  (7.3s)
+[     7.3s] ▶ vocab (32002 token)
+[     7.4s] ✓ vocab (32002 token)  (0.0s)
+[     7.4s] ▶ adjacency
+[    18.4s] ✓ adjacency  (11.1s)
+[    18.4s] ▶ embedding
+[    18.5s] ✓ embedding  (0.1s)
+[    18.5s] ▶ parents
+[    18.5s] parents: deserialize 452883 records …
+[    18.6s] parents 5000/452883 (1.1%)
+[    18.7s] parents 10000/452883 (2.2%)
+[    18.7s] parents 15000/452883 (3.3%)
+[    18.8s] parents 20000/452883 (4.4%)
+[    18.8s] parents 25000/452883 (5.5%)
+[    18.9s] parents 30000/452883 (6.6%)
+[    18.9s] parents 35000/452883 (7.7%)
+[    19.0s] parents 40000/452883 (8.8%)
+[    19.1s] parents 45000/452883 (9.9%)
+[    19.1s] parents 50000/452883 (11.0%)
+[    19.2s] parents 55000/452883 (12.1%)
+[    19.3s] parents 60000/452883 (13.2%)
+[    19.3s] parents 65000/452883 (14.4%)
+[    19.4s] parents 70000/452883 (15.5%)
+[    19.4s] parents 75000/452883 (16.6%)
+[    19.5s] parents 80000/452883 (17.7%)
+[    19.5s] parents 85000/452883 (18.8%)
+[    19.6s] parents 90000/452883 (19.9%)
+[    19.6s] parents 95000/452883 (21.0%)
+[    19.7s] parents 100000/452883 (22.1%)
+[    19.7s] parents 105000/452883 (23.2%)
+[    19.8s] parents 110000/452883 (24.3%)
+[    19.8s] parents 115000/452883 (25.4%)
+[    19.9s] parents 120000/452883 (26.5%)
+[    19.9s] parents 125000/452883 (27.6%)
+[    20.0s] parents 130000/452883 (28.7%)
+[    20.1s] parents 135000/452883 (29.8%)
+[    20.2s] parents 140000/452883 (30.9%)
+[    20.2s] parents 145000/452883 (32.0%)
+[    20.3s] parents 150000/452883 (33.1%)
+[    20.4s] parents 155000/452883 (34.2%)
+[    20.5s] parents 160000/452883 (35.3%)
+[    20.5s] parents 165000/452883 (36.4%)
+[    20.6s] parents 170000/452883 (37.5%)
+[    20.7s] parents 175000/452883 (38.6%)
+[    20.8s] parents 180000/452883 (39.7%)
+[    20.9s] parents 185000/452883 (40.8%)
+[    21.0s] parents 190000/452883 (42.0%)
+[    21.1s] parents 195000/452883 (43.1%)
+[    21.2s] parents 200000/452883 (44.2%)
+[    21.3s] parents 205000/452883 (45.3%)
+[    21.4s] parents 210000/452883 (46.4%)
+[    21.5s] parents 215000/452883 (47.5%)
+[    21.6s] parents 220000/452883 (48.6%)
+[    21.7s] parents 225000/452883 (49.7%)
+[    21.8s] parents 230000/452883 (50.8%)
+[    21.9s] parents 235000/452883 (51.9%)
+[    22.0s] parents 240000/452883 (53.0%)
+[    22.1s] parents 245000/452883 (54.1%)
+[    22.2s] parents 250000/452883 (55.2%)
+[    22.3s] parents 255000/452883 (56.3%)
+[    22.4s] parents 260000/452883 (57.4%)
+[    22.5s] parents 265000/452883 (58.5%)
+[    22.6s] parents 270000/452883 (59.6%)
+[    22.7s] parents 275000/452883 (60.7%)
+[    22.8s] parents 280000/452883 (61.8%)
+[    22.9s] parents 285000/452883 (62.9%)
+[    22.9s] parents 290000/452883 (64.0%)
+[    23.0s] parents 295000/452883 (65.1%)
+[    23.1s] parents 300000/452883 (66.2%)
+[    23.2s] parents 305000/452883 (67.3%)
+[    23.3s] parents 310000/452883 (68.5%)
+[    23.4s] parents 315000/452883 (69.6%)
+[    23.5s] parents 320000/452883 (70.7%)
+[    23.6s] parents 325000/452883 (71.8%)
+[    23.7s] parents 330000/452883 (72.9%)
+[    23.8s] parents 335000/452883 (74.0%)
+[    23.8s] parents 340000/452883 (75.1%)
+[    23.9s] parents 345000/452883 (76.2%)
+[    24.0s] parents 350000/452883 (77.3%)
+[    24.1s] parents 355000/452883 (78.4%)
+[    24.2s] parents 360000/452883 (79.5%)
+[    24.3s] parents 365000/452883 (80.6%)
+[    24.4s] parents 370000/452883 (81.7%)
+[    24.5s] parents 375000/452883 (82.8%)
+[    24.6s] parents 380000/452883 (83.9%)
+[    24.7s] parents 385000/452883 (85.0%)
+[    24.7s] parents 390000/452883 (86.1%)
+[    24.8s] parents 395000/452883 (87.2%)
+[    24.9s] parents 400000/452883 (88.3%)
+[    25.0s] parents 405000/452883 (89.4%)
+[    25.1s] parents 410000/452883 (90.5%)
+[    25.2s] parents 415000/452883 (91.6%)
+[    25.3s] parents 420000/452883 (92.7%)
+[    25.3s] parents 425000/452883 (93.8%)
+[    25.4s] parents 430000/452883 (94.9%)
+[    25.5s] parents 435000/452883 (96.1%)
+[    25.6s] parents 440000/452883 (97.2%)
+[    25.7s] parents 445000/452883 (98.3%)
+[    25.8s] parents 450000/452883 (99.4%)
+[    42.1s] ▶ rebuild_hierarchical_index …
+[    45.0s] ✓ rebuild_hierarchical_index (2.9s)
+[    55.3s]     resync match_ids: 452883/452883 cha (df dựng lại)
+[    55.3s] ✓ parents  (36.8s)
+[    55.3s] ✓ loaded: vocab=32002 parents=452883 E=(32002, 96)
+[    58.4s] sidecar thiếu → migrate: net_ho_lop.content.pkl
+[    58.4s] ✓ load_checkpoint XONG
+    checkpoints/net_ho_lop.pkl: 452,883 cha
+
+### TRÚNG NHÃN LỚP:  CHƯA nướng 2/60  ·  CÓ nướng 4/60
+
+### ca CÓ trúng (chỉ bản có nướng):
+  «dioxin là» lớp«chất độc» anh em=['nọc', 'đi-ô-xin']
+     chưa ▸ một số ví dụ về các công nghệ của cho có thể một làm lụng
+     CÓ   ▸ chất lượng và các vật của học được trong nghĩa có
+  «xe-mi-na là» lớp«buổi sinh» anh em=['seminar', 'xê-mi-na']
+     chưa ▸ gì đó có thể hoặc một sự động đến việc trong nghĩa có
+     CÓ   ▸ gì buổi không thể làm được cho một người đó hoặc
+
+### 6 ca bất kỳ:
+  «báo» lớp«hình thức»
+     chưa ▸ một số của động thể có các trong và để bạn của ra
+     CÓ   ▸ một số ví dụ về thể có người mặt trong nghĩaGiải dụng sử để tính
+  «bãi» lớp«khoảng đất»
+     chưa ▸ những người khác nhau có thể khí không một trong nước và được của nhân
+     CÓ   ▸ những người khác nhau có thể khí không một chúng trong nước các của nh
+  «bướm» lớp«côn trùng»
+     chưa ▸ ong và bướm;
+     CÓ   ▸ ong và bướm;
+  «bề» lớp«khoảng cách»
+     chưa ▸ những gì để có nghĩaGiải
+     CÓ   ▸ những gì để có nghĩaGiải
+  «bờ» lớp«dải đất»
+     chưa ▸ những người khác nhau có ngày năng không được trong một thể đó của nói
+     CÓ   ▸ những người khác nhau có ngày năng không được trong một thể với các th
+  «chài» lớp«lưới hình»
+     chưa ▸ một số ví dụ về các có thểGiải vật trong
+     CÓ   ▸ một số ví dụ về các có thểGiải vật trong

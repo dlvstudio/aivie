@@ -1,0 +1,1208 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst.pkl",
+ "n_moi_nhanh": 40,
+ "rows": [
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 259970,
+   "id": "A000"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 242207,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A001"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 62783,
+   "n_thay": 1,
+   "n_khe_de_xuat": 1,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A002"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 7291,
+   "n_thay": 11,
+   "n_khe_de_xuat": 12,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A003"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A004"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien_khong_thay_duoc",
+   "parent": 18035,
+   "n_thay": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "id": "A005"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 6302,
+   "n_thay": 1,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A006"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 189168,
+   "id": "A007"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 11074,
+   "n_thay": 1,
+   "n_khe_de_xuat": 4,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A008"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 313165,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A009"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A010"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 259249,
+   "id": "A011"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 175350,
+   "id": "A012"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 5655,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A013"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 220181,
+   "n_thay": 15,
+   "n_khe_de_xuat": 19,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A014"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 86541,
+   "n_thay": 0,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "id": "A015"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A016"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A017"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A018"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 4279,
+   "n_thay": 7,
+   "n_khe_de_xuat": 8,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A019"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A020"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 129506,
+   "id": "A021"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 41647,
+   "id": "A022"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 72768,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A023"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A024"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 272192,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A025"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 2841,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A026"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 275109,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A027"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 90146,
+   "id": "A028"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A029"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A030"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 3441,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A031"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 3559,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A032"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A033"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 5967,
+   "n_thay": 3,
+   "n_khe_de_xuat": 8,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A034"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A035"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3924,
+   "id": "A036"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 4738,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A037"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 282077,
+   "n_thay": 441,
+   "n_khe_de_xuat": 556,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A038"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A039"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2738,
+   "id": "A040"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 4265,
+   "n_thay": 2,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A041"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 2382,
+   "id": "A042"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A043"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 282077,
+   "n_thay": 441,
+   "n_khe_de_xuat": 556,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A044"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 13030,
+   "id": "A045"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 63284,
+   "id": "A046"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 234711,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A047"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 3844,
+   "id": "A048"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 64373,
+   "n_thay": 6,
+   "n_khe_de_xuat": 9,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A049"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 363060,
+   "n_thay": 6,
+   "n_khe_de_xuat": 8,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A050"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 8314,
+   "id": "A051"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A052"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 339308,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A053"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 298261,
+   "id": "A054"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 277940,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A055"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 282077,
+   "n_thay": 442,
+   "n_khe_de_xuat": 556,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A056"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 3931,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A057"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 26961,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A058"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A059"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 52318,
+   "id": "A060"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 248323,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A061"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 369855,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A062"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 289849,
+   "id": "A063"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 321467,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A064"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 2890,
+   "n_thay": 2,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A065"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5019,
+   "id": "A066"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 21646,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A067"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 215787,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A068"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 98630,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A069"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 334413,
+   "n_thay": 11,
+   "n_khe_de_xuat": 13,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A070"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A071"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5496,
+   "id": "A072"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 67852,
+   "id": "A073"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A074"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien_khong_thay_duoc",
+   "parent": 369198,
+   "n_thay": 0,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "id": "A075"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 5517,
+   "id": "A076"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 330707,
+   "id": "A077"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 303022,
+   "id": "A078"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 282077,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A079"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 107848,
+   "id": "A080"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A081"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 3666,
+   "n_thay": 2,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A082"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 279,
+   "id": "A083"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 87690,
+   "n_thay": 0,
+   "n_khe_de_xuat": 2,
+   "trung_nguyen_van": true,
+   "licence": "giao",
+   "id": "A084"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 430222,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A085"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 268610,
+   "id": "A086"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A087"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 194902,
+   "n_thay": 4,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A088"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 152910,
+   "n_thay": 2,
+   "n_khe_de_xuat": 7,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A089"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 430327,
+   "n_thay": 4,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A090"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 307036,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A091"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A092"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 3932,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A093"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 221046,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A094"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 4557,
+   "n_thay": 3,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A095"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 6387,
+   "id": "A096"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A097"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A098"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 6364,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A099"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A100"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 316597,
+   "n_thay": 3,
+   "n_khe_de_xuat": 5,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A101"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 243154,
+   "n_thay": 9,
+   "n_khe_de_xuat": 11,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A102"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A103"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 265577,
+   "id": "A104"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A105"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A106"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 150262,
+   "id": "A107"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 282077,
+   "n_thay": 441,
+   "n_khe_de_xuat": 556,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A108"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 265577,
+   "n_thay": 24,
+   "n_khe_de_xuat": 31,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A109"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 3343,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A110"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 154033,
+   "n_thay": 2,
+   "n_khe_de_xuat": 3,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A111"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 235229,
+   "id": "A112"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 321842,
+   "id": "A113"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 265577,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A114"
+  },
+  {
+   "cfg": "ep_mot_khe_giao",
+   "empty": false,
+   "n_clauses": -4,
+   "stop": "ep_giao_ngau_nhien",
+   "parent": 327283,
+   "n_thay": 1,
+   "licence": "giao",
+   "id": "A115"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 2793,
+   "n_thay": 5,
+   "n_khe_de_xuat": 6,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A116"
+  },
+  {
+   "cfg": "ep_da_khe_giao",
+   "empty": false,
+   "n_clauses": -5,
+   "stop": "ep_da_khe_giao",
+   "parent": 140005,
+   "n_thay": 4,
+   "n_khe_de_xuat": 10,
+   "trung_nguyen_van": false,
+   "licence": "giao",
+   "id": "A117"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 292011,
+   "id": "A118"
+  },
+  {
+   "cfg": "chep_cau",
+   "empty": false,
+   "n_clauses": -1,
+   "stop": "chep",
+   "parent": 4813,
+   "id": "A119"
+  }
+ ]
+}

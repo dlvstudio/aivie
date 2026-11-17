@@ -1,0 +1,23 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[74s] ✓ parents 65,098
+[132s] corpus bodies=511 seed_keys=346
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền' ═══
+  seeds: ['Ġhước', 'Ġhài']
+  corpus_uni: 'Ġmua'(699.90)  'Ġphút'(554.76)  'Ġxong'(549.17)  'Ġxe'(483.47)  'Ġhệt'(477.77)  'Ġngồi'(412.14)  'Ġngủ'(354.69)  'Ġsang'(325.56)  'Ġtốn'(325.41)  'Ġluôn'(324.73)  'Ġchiếc'(324.16)  'Ġđêm'(314.89)
+  corpus_bi: ('Ġquần', 'Ġáo')(157.34)  ('Ġcheck', 'in')(120.32)  ('Ġlãng', 'Ġmạn')(120.32)  ('Ġvũ', 'Ġtrụ')(118.33)  ('Ġcà', 'Ġphê')(113.78)  ('Ġmỉm', 'Ġcười')(95.44)  ('Ġtrải', 'Ġnghiệm')(95.44)  ('Ġtrà', 'Ġsữa')(86.76)
+  inject_plan: Ġquần Ġáo | Ġmua | Ġphút
+
+═══ 'Kể buồn về mùa thu Hà Nội' ═══
+  seeds: ['Ġbuồn', 'Ġmùa']
+  corpus_uni: 'Ġấm'(35.65)  'Ġquay'(28.14)  'Ġmạn'(27.77)  'Ġlãng'(27.77)  'Ġxe'(19.73)  'Ġáo'(19.54)  'Ġtrả'(19.47)  'Ġca'(19.47)  'Ġtrông'(18.96)  'Ġnhắn'(18.76)  'Ġrơi'(17.35)  'Ġmịn'(16.75)
+  corpus_bi: ('Ġlãng', 'Ġmạn')(27.77)  ('Ġtơi', 'Ġbời')(14.92)  ('Ġgấu', 'Ġbông')(14.92)  ('Ġmạn', 'Ġthơ')(13.47)  ('Ġkẹt', 'Ġxe')(11.30)  ('Ġmịn', 'Ġkẹt')(11.30)  ('Ġhít', 'Ġbụi')(11.30)  ('Ġbụi', 'Ġmịn')(11.30)
+  inject_plan: Ġlãng Ġmạn | Ġấm | Ġquay
+
+═══ 'So sánh Nhà Lý và Nhà Trần' ═══
+  seeds: ['Ġsánh']
+  corpus_uni: 'Ġngủ'(19.71)  'Ġhệt'(19.50)  'Ġchu'(14.92)  'Ġchỉn'(13.47)  'Ġty'(9.73)  'Ġdoanh'(7.46)  'Ġmạo'(6.73)  'Ġxòa'(3.84)  'Ġsáu'(3.84)
+  corpus_bi: ('Ġchỉn', 'Ġchu')(13.47)
+  inject_plan: Ġchỉn Ġchu | Ġngủ | Ġhệt
+
+[132s] → đọc tay: corpus có tone (phết/hơi lố/kiểu)?

@@ -1,0 +1,51 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "ket_qua": {
+  "ca_cha": {
+   "n_don_vi": 5664,
+   "n_khung": 5416,
+   "n_khung_chia_se": 94,
+   "chia_se": 0.06038135593220339,
+   "top200": 0.07909604519774012,
+   "dai_khung_trung_vi": 8.0,
+   "to_hop_moi_log10": 0.9030899869919435,
+   "gate_pass": false
+  },
+  "menh_de": {
+   "n_don_vi": 10283,
+   "n_khung": 8598,
+   "n_khung_chia_se": 515,
+   "chia_se": 0.21394534668870951,
+   "top200": 0.14878926383351163,
+   "dai_khung_trung_vi": 5,
+   "to_hop_moi_log10": 0.954242509439325,
+   "gate_pass": false
+  },
+  "cua_so_4": {
+   "n_don_vi": 100307,
+   "n_khung": 3187,
+   "n_khung_chia_se": 2364,
+   "chia_se": 0.9917951887704747,
+   "top200": 0.610186726748881,
+   "dai_khung_trung_vi": 4.0,
+   "to_hop_moi_log10": 2.146128035678238,
+   "gate_pass": true
+  },
+  "menh_de_du_nhan": {
+   "n_don_vi": 1129,
+   "n_khung": 687,
+   "n_khung_chia_se": 120,
+   "chia_se": 0.4977856510186005,
+   "top200": 0.5686448184233835,
+   "dai_khung_trung_vi": 4.0,
+   "to_hop_moi_log10": 0.9030899869919435,
+   "gate_pass": false
+  }
+ },
+ "gate": {
+  "share_min": 0.3,
+  "top200_min": 0.2,
+  "novel_min": 1.0
+ },
+ "seconds": 28.4
+}

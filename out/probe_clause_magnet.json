@@ -1,0 +1,108 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_prompt": 20,
+ "gate": {
+  "top10_share_min": 0.1,
+  "ratio_min": 1.5,
+  "peak_min": 0.05
+ },
+ "that": {
+  "tong_lan_phat": 40,
+  "menh_de_khac_nhau": 40,
+  "top10_share": 0.25,
+  "dinh_ty_le_de": 0.05,
+  "so_menh_de_tren_5pc_de": 40
+ },
+ "doi_chung": {
+  "tong_lan_phat": 49,
+  "menh_de_khac_nhau": 48,
+  "top10_share": 0.22448979591836735,
+  "dinh_ty_le_de": 0.1,
+  "so_menh_de_tren_5pc_de": 48
+ },
+ "ty_so": 1.1136363636363635,
+ "gate_pass": false,
+ "top": [
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  },
+  {
+   "lan_phat": 1,
+   "so_de": 1
+  }
+ ],
+ "seconds": 8.8
+}

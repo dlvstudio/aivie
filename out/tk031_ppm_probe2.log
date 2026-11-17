@@ -1,0 +1,10 @@
+[   37.9s] đếm xong: k=1:65918, k=2:526992, k=3:1198322, k=4:1493377
+[   40.8s] PPM full λ=0.3: bits=4.155 MRR=0.288 top1=20.4% top5=36.9%
+[   44.2s] PPM full λ=0.45: bits=4.157 MRR=0.288 top1=20.4% top5=36.9%
+[   47.2s] PPM full λ=0.6: bits=4.158 MRR=0.288 top1=20.4% top5=36.7%
+[   49.9s] PPM full λ=0.75: bits=4.161 MRR=0.287 top1=20.3% top5=36.7%
+[   50.8s] prune k=3: 1198322 → 537132 ctx (45%)
+[   51.7s] prune k=4: 1493377 → 591968 ctx (40%)
+[   54.5s] PPM PRUNED λ=0.45: bits=4.155 MRR=0.288 top1=20.6% top5=36.9%
+[   57.5s] PPM PRUNED λ=0.6: bits=4.157 MRR=0.288 top1=20.5% top5=36.7%
+[   57.5s] XONG

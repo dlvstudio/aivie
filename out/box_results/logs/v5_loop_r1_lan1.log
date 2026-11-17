@@ -1,0 +1,712 @@
+[v5] 933 hội thoại cần chạy · 4 tiến trình
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+[w2] 1/233 hội thoại · 41s
+[w0] 1/234 hội thoại · 74s
+[w3] 1/233 hội thoại · 79s
+[w1] 1/233 hội thoại · 99s
+[w2] lỗi r1_7/4: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_11/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_9/5: OutOfMemoryError CUDA out of memory. Tried to allocate 276.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_16/5: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_20/5: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_13/5: OutOfMemoryError CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_18/5: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_24/5: OutOfMemoryError CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_22/4: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_28/5: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_33/5: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_31/5: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_37/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_41/6: OutOfMemoryError CUDA out of memory. Tried to allocate 314.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_27/5: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_39/4: OutOfMemoryError CUDA out of memory. Tried to allocate 312.00 MiB. GPU 0 has a total capacity of 
+[w2] 11/233 hội thoại · 661s
+[w1] lỗi r1_32/5: OutOfMemoryError CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_43/5: OutOfMemoryError CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 
+[w0] 11/234 hội thoại · 704s
+[w0] lỗi r1_48/5: OutOfMemoryError CUDA out of memory. Tried to allocate 296.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_54/5: OutOfMemoryError CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 
+[w3] 11/233 hội thoại · 813s
+[w2] lỗi r1_58/4: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_52/4: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w1] 11/233 hội thoại · 853s
+[w2] lỗi r1_63/4: OutOfMemoryError CUDA out of memory. Tried to allocate 266.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_49/4: OutOfMemoryError CUDA out of memory. Tried to allocate 334.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_67/5: OutOfMemoryError CUDA out of memory. Tried to allocate 318.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_53/5: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_65/5: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_69/4: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_62/4: OutOfMemoryError CUDA out of memory. Tried to allocate 328.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_73/3: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_66/4: OutOfMemoryError CUDA out of memory. Tried to allocate 298.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_78/5: OutOfMemoryError CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_70/4: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_82/4: OutOfMemoryError CUDA out of memory. Tried to allocate 354.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_74/5: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_88/5: OutOfMemoryError CUDA out of memory. Tried to allocate 362.00 MiB. GPU 0 has a total capacity of 
+[w2] 21/233 hội thoại · 1301s
+[w1] lỗi r1_79/3: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_86/5: OutOfMemoryError CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 
+[w0] 21/234 hội thoại · 1349s
+[w1] lỗi r1_83/5: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_87/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] 21/233 hội thoại · 1433s
+[w1] lỗi r1_92/3: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_95/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_96/3: OutOfMemoryError CUDA out of memory. Tried to allocate 232.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_100/4: OutOfMemoryError CUDA out of memory. Tried to allocate 168.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_103/3: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_104/3: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_108/4: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_109/3: OutOfMemoryError CUDA out of memory. Tried to allocate 156.00 MiB. GPU 0 has a total capacity of 
+[w3] lỗi r1_89/6: OutOfMemoryError CUDA out of memory. Tried to allocate 424.00 MiB. GPU 0 has a total capacity of 
+[w3] 21/233 hội thoại · 1683s
+[w1] lỗi r1_113/4: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_112/5: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_117/3: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_116/4: OutOfMemoryError CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_122/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_121/4: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_126/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_125/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_130/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w1] 31/233 hội thoại · 1868s
+[w0] lỗi r1_129/5: OutOfMemoryError CUDA out of memory. Tried to allocate 226.00 MiB. GPU 0 has a total capacity of 
+[w0] 31/234 hội thoại · 1905s
+[w1] lỗi r1_134/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_139/3: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_133/6: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_143/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_142/3: OutOfMemoryError CUDA out of memory. Tried to allocate 146.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_127/5: OutOfMemoryError CUDA out of memory. Tried to allocate 442.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_146/3: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_152/5: OutOfMemoryError CUDA out of memory. Tried to allocate 320.00 MiB. GPU 0 has a total capacity of 
+[w2] 31/233 hội thoại · 2130s
+[w1] lỗi r1_156/3: OutOfMemoryError CUDA out of memory. Tried to allocate 126.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_160/3: OutOfMemoryError CUDA out of memory. Tried to allocate 124.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_164/3: OutOfMemoryError CUDA out of memory. Tried to allocate 104.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_155/5: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_169/3: OutOfMemoryError CUDA out of memory. Tried to allocate 158.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_173/3: OutOfMemoryError CUDA out of memory. Tried to allocate 112.00 MiB. GPU 0 has a total capacity of 
+[w1] 41/233 hội thoại · 2262s
+[w0] lỗi r1_159/4: OutOfMemoryError CUDA out of memory. Tried to allocate 250.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_177/4: OutOfMemoryError CUDA out of memory. Tried to allocate 318.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_144/3: OutOfMemoryError CUDA out of memory. Tried to allocate 238.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_163/5: OutOfMemoryError CUDA out of memory. Tried to allocate 276.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_148/4: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_182/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_168/4: OutOfMemoryError CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_153/4: OutOfMemoryError CUDA out of memory. Tried to allocate 232.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_186/3: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w0] 41/234 hội thoại · 2459s
+[w2] lỗi r1_157/5: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_176/3: OutOfMemoryError CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_190/4: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_181/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_194/3: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_185/4: OutOfMemoryError CUDA out of memory. Tried to allocate 158.00 MiB. GPU 0 has a total capacity of 
+[w3] 31/233 hội thoại · 2561s
+[w2] lỗi r1_166/4: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_189/3: OutOfMemoryError CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_199/4: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_193/5: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_170/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_203/4: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_198/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_174/4: OutOfMemoryError CUDA out of memory. Tried to allocate 278.00 MiB. GPU 0 has a total capacity of 
+[w2] 41/233 hội thoại · 2729s
+[w1] lỗi r1_207/5: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_202/4: OutOfMemoryError CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_178/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_212/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_206/4: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_216/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w1] 51/233 hội thoại · 2828s
+[w0] lỗi r1_211/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_183/4: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_215/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w0] 51/234 hội thoại · 2880s
+[w1] lỗi r1_220/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_187/5: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_224/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_219/4: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_191/4: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_229/5: OutOfMemoryError CUDA out of memory. Tried to allocate 282.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_196/2: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_200/2: OutOfMemoryError CUDA out of memory. Tried to allocate 86.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_204/2: OutOfMemoryError CUDA out of memory. Tried to allocate 70.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_208/2: OutOfMemoryError CUDA out of memory. Tried to allocate 90.00 MiB. GPU 0 has a total capacity of 7
+[w0] lỗi r1_228/5: OutOfMemoryError CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_213/3: OutOfMemoryError CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_217/3: OutOfMemoryError CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 
+[w2] 51/233 hội thoại · 3122s
+[w0] lỗi r1_232/5: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_237/5: OutOfMemoryError CUDA out of memory. Tried to allocate 284.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_221/3: OutOfMemoryError CUDA out of memory. Tried to allocate 152.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_226/2: OutOfMemoryError CUDA out of memory. Tried to allocate 102.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_236/4: OutOfMemoryError CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_242/5: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_230/3: OutOfMemoryError CUDA out of memory. Tried to allocate 172.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_246/5: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_250/3: OutOfMemoryError CUDA out of memory. Tried to allocate 126.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_245/5: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_234/5: OutOfMemoryError CUDA out of memory. Tried to allocate 314.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_254/3: OutOfMemoryError CUDA out of memory. Tried to allocate 138.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_249/4: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_238/5: OutOfMemoryError CUDA out of memory. Tried to allocate 278.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_259/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w1] 61/233 hội thoại · 3367s
+[w0] lỗi r1_253/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_243/4: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_263/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_258/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w0] 61/234 hội thoại · 3428s
+[w3] 41/233 hội thoại · 3461s
+[w1] lỗi r1_267/5: OutOfMemoryError CUDA out of memory. Tried to allocate 238.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_247/5: OutOfMemoryError CUDA out of memory. Tried to allocate 342.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_262/5: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_272/3: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_251/4: OutOfMemoryError CUDA out of memory. Tried to allocate 232.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_276/3: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_280/3: OutOfMemoryError CUDA out of memory. Tried to allocate 92.00 MiB. GPU 0 has a total capacity of 7
+[w1] lỗi r1_284/2: OutOfMemoryError CUDA out of memory. Tried to allocate 88.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_256/5: OutOfMemoryError CUDA out of memory. Tried to allocate 286.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_289/3: OutOfMemoryError CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_293/3: OutOfMemoryError CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_260/5: OutOfMemoryError CUDA out of memory. Tried to allocate 238.00 MiB. GPU 0 has a total capacity of 
+[w2] 61/233 hội thoại · 3668s
+[w1] lỗi r1_297/3: OutOfMemoryError CUDA out of memory. Tried to allocate 106.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_275/5: OutOfMemoryError CUDA out of memory. Tried to allocate 272.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_302/3: OutOfMemoryError CUDA out of memory. Tried to allocate 150.00 MiB. GPU 0 has a total capacity of 
+[w1] 71/233 hội thoại · 3722s
+[w2] lỗi r1_264/4: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_306/2: OutOfMemoryError CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_279/5: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_310/2: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_268/5: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_283/5: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_314/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_273/4: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_319/3: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_277/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_288/4: OutOfMemoryError CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_281/4: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_292/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_323/4: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_327/4: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_286/4: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_296/4: OutOfMemoryError CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_332/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_301/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] 71/234 hội thoại · 4034s
+[w2] lỗi r1_290/4: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_305/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_336/4: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_340/4: OutOfMemoryError CUDA out of memory. Tried to allocate 162.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_298/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_309/6: OutOfMemoryError CUDA out of memory. Tried to allocate 288.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_344/3: OutOfMemoryError CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 
+[w1] 81/233 hội thoại · 4153s
+[w1] lỗi r1_349/3: OutOfMemoryError CUDA out of memory. Tried to allocate 126.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_303/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w2] 71/233 hội thoại · 4192s
+[w1] lỗi r1_353/3: OutOfMemoryError CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_357/3: OutOfMemoryError CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_307/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_313/5: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_362/3: OutOfMemoryError CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_311/3: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_366/3: OutOfMemoryError CUDA out of memory. Tried to allocate 148.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_370/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_316/5: OutOfMemoryError CUDA out of memory. Tried to allocate 308.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_322/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_374/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_320/4: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_326/3: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_379/3: OutOfMemoryError CUDA out of memory. Tried to allocate 188.00 MiB. GPU 0 has a total capacity of 
+[w3] 51/233 hội thoại · 4443s
+[w2] lỗi r1_324/3: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_331/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_383/5: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_335/4: OutOfMemoryError CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_387/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w1] 91/233 hội thoại · 4537s
+[w1] lỗi r1_392/3: OutOfMemoryError CUDA out of memory. Tried to allocate 178.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_339/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_333/5: OutOfMemoryError CUDA out of memory. Tried to allocate 296.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_396/4: OutOfMemoryError CUDA out of memory. Tried to allocate 158.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_343/5: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w0] 81/234 hội thoại · 4627s
+[w1] lỗi r1_400/3: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_337/4: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_348/4: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_404/3: OutOfMemoryError CUDA out of memory. Tried to allocate 250.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_352/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_341/5: OutOfMemoryError CUDA out of memory. Tried to allocate 282.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_409/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_346/5: OutOfMemoryError CUDA out of memory. Tried to allocate 286.00 MiB. GPU 0 has a total capacity of 
+[w2] 81/233 hội thoại · 4796s
+[w1] lỗi r1_413/3: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_356/4: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_361/3: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_417/4: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_350/5: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_365/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_422/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_426/4: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_358/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_430/4: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w1] 101/233 hội thoại · 4984s
+[w2] lỗi r1_363/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_373/5: OutOfMemoryError CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_434/4: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_367/4: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_439/4: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_378/4: OutOfMemoryError CUDA out of memory. Tried to allocate 338.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_371/3: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_382/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_443/4: OutOfMemoryError CUDA out of memory. Tried to allocate 226.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_376/5: OutOfMemoryError CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_447/5: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_386/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w0] 91/234 hội thoại · 5192s
+[w2] lỗi r1_380/3: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_452/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_384/3: OutOfMemoryError CUDA out of memory. Tried to allocate 178.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_391/5: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_456/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w2] 91/233 hội thoại · 5298s
+[w3] 61/233 hội thoại · 5298s
+[w0] lỗi r1_395/5: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_393/3: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_460/5: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_399/4: OutOfMemoryError CUDA out of memory. Tried to allocate 266.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_397/5: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_464/4: OutOfMemoryError CUDA out of memory. Tried to allocate 296.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_401/4: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_403/4: OutOfMemoryError CUDA out of memory. Tried to allocate 294.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_469/4: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_406/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_408/4: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_473/5: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w1] 111/233 hội thoại · 5514s
+[w2] lỗi r1_410/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_412/4: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_477/4: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_414/4: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_418/3: OutOfMemoryError CUDA out of memory. Tried to allocate 116.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_482/3: OutOfMemoryError CUDA out of memory. Tried to allocate 278.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_416/5: OutOfMemoryError CUDA out of memory. Tried to allocate 352.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_423/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_486/4: OutOfMemoryError CUDA out of memory. Tried to allocate 178.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_427/4: OutOfMemoryError CUDA out of memory. Tried to allocate 162.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_490/3: OutOfMemoryError CUDA out of memory. Tried to allocate 232.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_421/5: OutOfMemoryError CUDA out of memory. Tried to allocate 360.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_494/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_431/6: OutOfMemoryError CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 
+[w2] 101/233 hội thoại · 5760s
+[w0] lỗi r1_425/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_499/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_429/4: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w0] 101/234 hội thoại · 5820s
+[w1] lỗi r1_503/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_433/4: OutOfMemoryError CUDA out of memory. Tried to allocate 188.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_444/3: OutOfMemoryError CUDA out of memory. Tried to allocate 106.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_438/5: OutOfMemoryError CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_507/5: OutOfMemoryError CUDA out of memory. Tried to allocate 324.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_448/2: OutOfMemoryError CUDA out of memory. Tried to allocate 134.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_453/3: OutOfMemoryError CUDA out of memory. Tried to allocate 98.00 MiB. GPU 0 has a total capacity of 7
+[w0] lỗi r1_442/3: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_457/3: OutOfMemoryError CUDA out of memory. Tried to allocate 116.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_512/5: OutOfMemoryError CUDA out of memory. Tried to allocate 292.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_446/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_461/4: OutOfMemoryError CUDA out of memory. Tried to allocate 154.00 MiB. GPU 0 has a total capacity of 
+[w1] 121/233 hội thoại · 6051s
+[w0] lỗi r1_451/4: OutOfMemoryError CUDA out of memory. Tried to allocate 222.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_466/4: OutOfMemoryError CUDA out of memory. Tried to allocate 176.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_470/3: OutOfMemoryError CUDA out of memory. Tried to allocate 138.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_520/4: OutOfMemoryError CUDA out of memory. Tried to allocate 344.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_455/4: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_474/3: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] 111/233 hội thoại · 6151s
+[w0] lỗi r1_459/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_478/4: OutOfMemoryError CUDA out of memory. Tried to allocate 176.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_463/4: OutOfMemoryError CUDA out of memory. Tried to allocate 250.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_483/4: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_529/5: OutOfMemoryError CUDA out of memory. Tried to allocate 316.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_468/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_487/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_533/3: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_472/4: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w0] 111/234 hội thoại · 6332s
+[w3] 71/233 hội thoại · 6334s
+[w2] lỗi r1_491/5: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_476/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_496/4: OutOfMemoryError CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_500/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_546/3: OutOfMemoryError CUDA out of memory. Tried to allocate 118.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_550/2: OutOfMemoryError CUDA out of memory. Tried to allocate 106.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_504/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_554/2: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_485/6: OutOfMemoryError CUDA out of memory. Tried to allocate 370.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_559/3: OutOfMemoryError CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 
+[w1] 131/233 hội thoại · 6558s
+[w2] lỗi r1_508/4: OutOfMemoryError CUDA out of memory. Tried to allocate 250.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_563/3: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_513/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_489/6: OutOfMemoryError CUDA out of memory. Tried to allocate 330.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_567/3: OutOfMemoryError CUDA out of memory. Tried to allocate 158.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_517/5: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w2] 121/233 hội thoại · 6661s
+[w1] lỗi r1_572/3: OutOfMemoryError CUDA out of memory. Tried to allocate 156.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_576/3: OutOfMemoryError CUDA out of memory. Tried to allocate 138.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_521/4: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_526/4: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_580/4: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_530/3: OutOfMemoryError CUDA out of memory. Tried to allocate 172.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_584/4: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_502/4: OutOfMemoryError CUDA out of memory. Tried to allocate 318.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_534/3: OutOfMemoryError CUDA out of memory. Tried to allocate 156.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_589/3: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_538/3: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_593/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_597/4: OutOfMemoryError CUDA out of memory. Tried to allocate 158.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_543/4: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_511/5: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_547/5: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_602/3: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w1] 141/233 hội thoại · 6969s
+[w0] lỗi r1_515/5: OutOfMemoryError CUDA out of memory. Tried to allocate 222.00 MiB. GPU 0 has a total capacity of 
+[w0] 121/234 hội thoại · 6995s
+[w2] lỗi r1_551/3: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_606/4: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_519/3: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_556/3: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_610/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_560/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w2] 131/233 hội thoại · 7114s
+[w1] lỗi r1_614/4: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_564/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_619/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_528/3: OutOfMemoryError CUDA out of memory. Tried to allocate 266.00 MiB. GPU 0 has a total capacity of 
+[w3] 81/233 hội thoại · 7201s
+[w2] lỗi r1_568/3: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_623/3: OutOfMemoryError CUDA out of memory. Tried to allocate 168.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_573/3: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_532/5: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_577/3: OutOfMemoryError CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_581/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_536/4: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_632/5: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_586/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_541/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_636/4: OutOfMemoryError CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_590/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_545/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_594/3: OutOfMemoryError CUDA out of memory. Tried to allocate 140.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_598/2: OutOfMemoryError CUDA out of memory. Tried to allocate 84.00 MiB. GPU 0 has a total capacity of 7
+[w0] lỗi r1_549/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_640/5: OutOfMemoryError CUDA out of memory. Tried to allocate 416.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_553/2: OutOfMemoryError CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_603/3: OutOfMemoryError CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 
+[w2] 141/233 hội thoại · 7496s
+[w1] 151/233 hội thoại · 7512s
+[w2] lỗi r1_607/3: OutOfMemoryError CUDA out of memory. Tried to allocate 116.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_558/3: OutOfMemoryError CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 
+[w0] 131/234 hội thoại · 7529s
+[w2] lỗi r1_611/2: OutOfMemoryError CUDA out of memory. Tried to allocate 112.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_562/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_566/2: OutOfMemoryError CUDA out of memory. Tried to allocate 88.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_616/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_649/5: OutOfMemoryError CUDA out of memory. Tried to allocate 326.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_571/2: OutOfMemoryError CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_620/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_575/3: OutOfMemoryError CUDA out of memory. Tried to allocate 168.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_653/6: OutOfMemoryError CUDA out of memory. Tried to allocate 320.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_624/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_579/3: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_628/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_657/5: OutOfMemoryError CUDA out of memory. Tried to allocate 340.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_633/3: OutOfMemoryError CUDA out of memory. Tried to allocate 132.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_588/4: OutOfMemoryError CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_637/3: OutOfMemoryError CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_662/5: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_666/4: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_641/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_670/3: OutOfMemoryError CUDA out of memory. Tried to allocate 146.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_674/2: OutOfMemoryError CUDA out of memory. Tried to allocate 148.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_646/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w2] 151/233 hội thoại · 7916s
+[w0] lỗi r1_596/4: OutOfMemoryError CUDA out of memory. Tried to allocate 316.00 MiB. GPU 0 has a total capacity of 
+[w3] 91/233 hội thoại · 7942s
+[w1] lỗi r1_679/5: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_650/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_601/6: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w0] 141/234 hội thoại · 7988s
+[w2] lỗi r1_654/3: OutOfMemoryError CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_683/3: OutOfMemoryError CUDA out of memory. Tried to allocate 246.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_658/4: OutOfMemoryError CUDA out of memory. Tried to allocate 170.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_687/3: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w1] 161/233 hội thoại · 8046s
+[w2] lỗi r1_663/3: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_692/3: OutOfMemoryError CUDA out of memory. Tried to allocate 170.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_609/5: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_696/3: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_667/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_613/4: OutOfMemoryError CUDA out of memory. Tried to allocate 276.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_700/3: OutOfMemoryError CUDA out of memory. Tried to allocate 154.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_671/3: OutOfMemoryError CUDA out of memory. Tried to allocate 230.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_704/4: OutOfMemoryError CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_618/5: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_676/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_709/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_622/4: OutOfMemoryError CUDA out of memory. Tried to allocate 260.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_680/5: OutOfMemoryError CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_713/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_626/4: OutOfMemoryError CUDA out of memory. Tried to allocate 314.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_717/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w2] 161/233 hội thoại · 8392s
+[w1] lỗi r1_722/3: OutOfMemoryError CUDA out of memory. Tried to allocate 134.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_726/3: OutOfMemoryError CUDA out of memory. Tried to allocate 140.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_631/4: ValueError không thấy JSON
+[w2] lỗi r1_693/4: OutOfMemoryError CUDA out of memory. Tried to allocate 274.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_730/4: OutOfMemoryError CUDA out of memory. Tried to allocate 170.00 MiB. GPU 0 has a total capacity of 
+[w1] 171/233 hội thoại · 8469s
+[w2] lỗi r1_697/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_739/2: OutOfMemoryError CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 7
+[w1] lỗi r1_743/2: OutOfMemoryError CUDA out of memory. Tried to allocate 94.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_701/3: OutOfMemoryError CUDA out of memory. Tried to allocate 232.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_747/3: OutOfMemoryError CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_706/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_752/3: OutOfMemoryError CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_756/2: OutOfMemoryError CUDA out of memory. Tried to allocate 104.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_639/6: OutOfMemoryError CUDA out of memory. Tried to allocate 334.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_710/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_760/3: OutOfMemoryError CUDA out of memory. Tried to allocate 144.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_764/3: OutOfMemoryError CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 
+[w0] 151/234 hội thoại · 8681s
+[w2] lỗi r1_714/4: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_769/3: OutOfMemoryError CUDA out of memory. Tried to allocate 126.00 MiB. GPU 0 has a total capacity of 
+[w3] 101/233 hội thoại · 8714s
+[w1] lỗi r1_773/3: OutOfMemoryError CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 7
+[w1] 181/233 hội thoại · 8726s
+[w2] lỗi r1_718/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_777/3: OutOfMemoryError CUDA out of memory. Tried to allocate 134.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_648/5: OutOfMemoryError CUDA out of memory. Tried to allocate 352.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_723/5: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_782/3: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_727/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_652/4: OutOfMemoryError CUDA out of memory. Tried to allocate 280.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_786/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_731/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w2] 171/233 hội thoại · 8865s
+[w1] lỗi r1_790/3: OutOfMemoryError CUDA out of memory. Tried to allocate 162.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_656/5: OutOfMemoryError CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_794/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_740/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_661/4: OutOfMemoryError CUDA out of memory. Tried to allocate 306.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_799/5: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_744/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_803/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_665/5: OutOfMemoryError CUDA out of memory. Tried to allocate 350.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_748/5: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_807/3: OutOfMemoryError CUDA out of memory. Tried to allocate 142.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_812/2: OutOfMemoryError CUDA out of memory. Tried to allocate 168.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_753/5: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_816/4: OutOfMemoryError CUDA out of memory. Tried to allocate 162.00 MiB. GPU 0 has a total capacity of 
+[w1] 191/233 hội thoại · 9128s
+[w0] lỗi r1_673/5: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_820/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_678/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_824/4: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_761/5: OutOfMemoryError CUDA out of memory. Tried to allocate 294.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_682/3: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_686/3: OutOfMemoryError CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 
+[w0] 161/234 hội thoại · 9281s
+[w2] lỗi r1_766/4: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_691/3: OutOfMemoryError CUDA out of memory. Tried to allocate 146.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_695/3: OutOfMemoryError CUDA out of memory. Tried to allocate 108.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_770/5: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_833/5: OutOfMemoryError CUDA out of memory. Tried to allocate 278.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_699/3: OutOfMemoryError CUDA out of memory. Tried to allocate 140.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_774/5: OutOfMemoryError CUDA out of memory. Tried to allocate 178.00 MiB. GPU 0 has a total capacity of 
+[w2] 181/233 hội thoại · 9384s
+[w0] lỗi r1_703/3: OutOfMemoryError CUDA out of memory. Tried to allocate 134.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_708/3: OutOfMemoryError CUDA out of memory. Tried to allocate 124.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_712/3: OutOfMemoryError CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_842/4: OutOfMemoryError CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 
+[w3] 111/233 hội thoại · 9482s
+[w2] lỗi r1_783/5: OutOfMemoryError CUDA out of memory. Tried to allocate 244.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_716/4: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_787/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_846/5: OutOfMemoryError CUDA out of memory. Tried to allocate 308.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_721/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_791/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_850/5: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_725/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_796/3: OutOfMemoryError CUDA out of memory. Tried to allocate 210.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_729/3: OutOfMemoryError CUDA out of memory. Tried to allocate 264.00 MiB. GPU 0 has a total capacity of 
+[w0] 171/234 hội thoại · 9660s
+[w2] lỗi r1_800/4: OutOfMemoryError CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_854/5: OutOfMemoryError CUDA out of memory. Tried to allocate 242.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_733/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_859/4: OutOfMemoryError CUDA out of memory. Tried to allocate 270.00 MiB. GPU 0 has a total capacity of 
+[w1] 201/233 hội thoại · 9727s
+[w0] lỗi r1_738/3: OutOfMemoryError CUDA out of memory. Tried to allocate 234.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_808/4: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_863/4: OutOfMemoryError CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_742/4: OutOfMemoryError CUDA out of memory. Tried to allocate 208.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_813/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_746/4: OutOfMemoryError CUDA out of memory. Tried to allocate 202.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_751/2: OutOfMemoryError CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 7
+[w2] lỗi r1_817/5: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w2] 191/233 hội thoại · 9865s
+[w0] lỗi r1_755/2: OutOfMemoryError CUDA out of memory. Tried to allocate 112.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_759/3: OutOfMemoryError CUDA out of memory. Tried to allocate 156.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_821/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_826/4: OutOfMemoryError CUDA out of memory. Tried to allocate 216.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_876/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_830/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_880/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_768/5: OutOfMemoryError CUDA out of memory. Tried to allocate 276.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_834/4: OutOfMemoryError CUDA out of memory. Tried to allocate 262.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_884/4: OutOfMemoryError CUDA out of memory. Tried to allocate 212.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_772/5: OutOfMemoryError CUDA out of memory. Tried to allocate 252.00 MiB. GPU 0 has a total capacity of 
+[w0] 181/234 hội thoại · 10092s
+[w1] lỗi r1_889/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_776/4: OutOfMemoryError CUDA out of memory. Tried to allocate 228.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_843/5: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_893/4: OutOfMemoryError CUDA out of memory. Tried to allocate 222.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_897/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_847/4: OutOfMemoryError CUDA out of memory. Tried to allocate 258.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_785/5: OutOfMemoryError CUDA out of memory. Tried to allocate 250.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_902/6: OutOfMemoryError CUDA out of memory. Tried to allocate 176.00 MiB. GPU 0 has a total capacity of 
+[w1] 211/233 hội thoại · 10270s
+[w2] lỗi r1_851/4: OutOfMemoryError CUDA out of memory. Tried to allocate 236.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_906/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_789/4: OutOfMemoryError CUDA out of memory. Tried to allocate 240.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_856/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_910/4: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_860/4: OutOfMemoryError CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 
+[w2] 201/233 hội thoại · 10372s
+[w3] 121/233 hội thoại · 10371s
+[w0] lỗi r1_793/3: OutOfMemoryError CUDA out of memory. Tried to allocate 268.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_914/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_798/5: OutOfMemoryError CUDA out of memory. Tried to allocate 220.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_919/4: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_868/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_802/4: OutOfMemoryError CUDA out of memory. Tried to allocate 254.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_923/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_873/3: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_927/5: OutOfMemoryError CUDA out of memory. Tried to allocate 238.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_877/4: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_932/3: OutOfMemoryError CUDA out of memory. Tried to allocate 134.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_881/3: OutOfMemoryError CUDA out of memory. Tried to allocate 166.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_936/3: OutOfMemoryError CUDA out of memory. Tried to allocate 152.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_811/5: OutOfMemoryError CUDA out of memory. Tried to allocate 372.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_886/3: OutOfMemoryError CUDA out of memory. Tried to allocate 154.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_940/4: OutOfMemoryError CUDA out of memory. Tried to allocate 188.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_944/3: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w1] 221/233 hội thoại · 10708s
+[w2] lỗi r1_890/4: OutOfMemoryError CUDA out of memory. Tried to allocate 214.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_815/4: OutOfMemoryError CUDA out of memory. Tried to allocate 354.00 MiB. GPU 0 has a total capacity of 
+[w0] 191/234 hội thoại · 10724s
+[w2] lỗi r1_894/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_949/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_898/4: OutOfMemoryError CUDA out of memory. Tried to allocate 176.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_953/4: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_903/4: OutOfMemoryError CUDA out of memory. Tried to allocate 146.00 MiB. GPU 0 has a total capacity of 
+[w2] 211/233 hội thoại · 10835s
+[w1] lỗi r1_957/4: OutOfMemoryError CUDA out of memory. Tried to allocate 164.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_823/4: OutOfMemoryError CUDA out of memory. Tried to allocate 296.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_907/4: OutOfMemoryError CUDA out of memory. Tried to allocate 224.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_962/4: OutOfMemoryError CUDA out of memory. Tried to allocate 218.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_828/4: OutOfMemoryError CUDA out of memory. Tried to allocate 286.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_966/4: OutOfMemoryError CUDA out of memory. Tried to allocate 206.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_916/4: OutOfMemoryError CUDA out of memory. Tried to allocate 182.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_970/4: OutOfMemoryError CUDA out of memory. Tried to allocate 248.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_920/5: OutOfMemoryError CUDA out of memory. Tried to allocate 204.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_974/3: OutOfMemoryError CUDA out of memory. Tried to allocate 174.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_924/4: OutOfMemoryError CUDA out of memory. Tried to allocate 172.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_979/4: OutOfMemoryError CUDA out of memory. Tried to allocate 194.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_841/5: OutOfMemoryError CUDA out of memory. Tried to allocate 276.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_928/4: OutOfMemoryError CUDA out of memory. Tried to allocate 184.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_983/4: OutOfMemoryError CUDA out of memory. Tried to allocate 186.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_933/4: OutOfMemoryError CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_845/5: OutOfMemoryError CUDA out of memory. Tried to allocate 286.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_987/4: OutOfMemoryError CUDA out of memory. Tried to allocate 200.00 MiB. GPU 0 has a total capacity of 
+[w1] 231/233 hội thoại · 11167s
+[w2] lỗi r1_937/4: OutOfMemoryError CUDA out of memory. Tried to allocate 190.00 MiB. GPU 0 has a total capacity of 
+[w3] 131/233 hội thoại · 11204s
+[w1] lỗi r1_992/3: OutOfMemoryError CUDA out of memory. Tried to allocate 170.00 MiB. GPU 0 has a total capacity of 
+[w0] lỗi r1_849/5: OutOfMemoryError CUDA out of memory. Tried to allocate 300.00 MiB. GPU 0 has a total capacity of 
+[w2] lỗi r1_941/4: OutOfMemoryError CUDA out of memory. Tried to allocate 196.00 MiB. GPU 0 has a total capacity of 
+[w1] lỗi r1_996/3: OutOfMemoryError CUDA out of memory. Tried to allocate 226.00 MiB. GPU 0 has a total capacity of 
+[w2] 221/233 hội thoại · 11294s
+[w0] 201/234 hội thoại · 11340s
+[w3] 141/233 hội thoại · 11924s
+[w2] 231/233 hội thoại · 12041s
+[w0] 211/234 hội thoại · 12068s

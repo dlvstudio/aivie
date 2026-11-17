@@ -1,0 +1,132 @@
+{
+ "cmd": "dense",
+ "args": {
+  "cmd": "dense",
+  "domain": "",
+  "experts": "",
+  "mode": "frozen",
+  "init": "",
+  "steps": 0,
+  "tag": "",
+  "tags": []
+ },
+ "hist": [
+  {
+   "step": 0,
+   "loss": 1.5932,
+   "val": {
+    "truyen": 1.9257,
+    "hoithoai": 3.1159,
+    "dich": 2.4238,
+    "toan": 0.4176,
+    "laptrinh": 1.3629
+   }
+  },
+  {
+   "step": 2000,
+   "loss": 1.4774,
+   "val": {
+    "truyen": 1.8801,
+    "hoithoai": 2.9704,
+    "dich": 2.3143,
+    "toan": 0.4055,
+    "laptrinh": 1.2593
+   }
+  },
+  {
+   "step": 4000,
+   "loss": 1.2859,
+   "val": {
+    "truyen": 1.7844,
+    "hoithoai": 2.8857,
+    "dich": 2.1327,
+    "toan": 0.3746,
+    "laptrinh": 1.2285
+   }
+  },
+  {
+   "step": 6000,
+   "loss": 1.3956,
+   "val": {
+    "truyen": 1.769,
+    "hoithoai": 2.9194,
+    "dich": 2.0711,
+    "toan": 0.3696,
+    "laptrinh": 1.221
+   }
+  },
+  {
+   "step": 8000,
+   "loss": 1.3319,
+   "val": {
+    "truyen": 1.6905,
+    "hoithoai": 2.7938,
+    "dich": 2.0219,
+    "toan": 0.3587,
+    "laptrinh": 1.1302
+   }
+  },
+  {
+   "step": 10000,
+   "loss": 1.2737,
+   "val": {
+    "truyen": 1.722,
+    "hoithoai": 2.8611,
+    "dich": 1.9267,
+    "toan": 0.355,
+    "laptrinh": 1.1469
+   }
+  },
+  {
+   "step": 12000,
+   "loss": 1.4437,
+   "val": {
+    "truyen": 1.6744,
+    "hoithoai": 2.7326,
+    "dich": 1.9963,
+    "toan": 0.3528,
+    "laptrinh": 1.1147
+   }
+  },
+  {
+   "step": 14000,
+   "loss": 1.1746,
+   "val": {
+    "truyen": 1.6828,
+    "hoithoai": 2.7119,
+    "dich": 1.8486,
+    "toan": 0.3456,
+    "laptrinh": 1.1117
+   }
+  },
+  {
+   "step": 16000,
+   "loss": 1.2073,
+   "val": {
+    "truyen": 1.5847,
+    "hoithoai": 2.7709,
+    "dich": 1.8495,
+    "toan": 0.3395,
+    "laptrinh": 1.0506
+   }
+  },
+  {
+   "step": 16999,
+   "loss": 1.13,
+   "val": {
+    "truyen": 1.5794,
+    "hoithoai": 2.6705,
+    "dich": 1.9291,
+    "toan": 0.3342,
+    "laptrinh": 0.9852
+   }
+  }
+ ],
+ "final": {
+  "truyen": 1.5441,
+  "hoithoai": 2.6961,
+  "dich": 1.8821,
+  "toan": 0.343,
+  "laptrinh": 1.0398
+ }
+}

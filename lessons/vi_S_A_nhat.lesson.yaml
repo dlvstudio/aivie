@@ -1,0 +1,22 @@
+lesson_id: vi_grade4_superlative
+grade: 4
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_A_nhat
+slots:
+  - var: S
+  - var: A
+  - const: "nhất"
+
+bind:
+  S: chủ ngữ
+  A: tính từ
+
+examples:
+  - "Em giỏi nhất"
+  - "Lan cao nhất"
+  - "Mèo nhanh nhất"
+  - "Bài hay nhất"
+  - "Mẹ giỏi nhất"

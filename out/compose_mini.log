@@ -1,0 +1,40 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[4s] ✓ 5,664 cha
+  cha câu: nửa A 2,493 · nửa B 2,489
+  vật liệu `cluster`: 3,098 mảnh ≥2 token
+  vật liệu `ngram`  : 224,769 mảnh ≥2 token
+  chấm 1,500 câu giữ lại
+
+======================================================================
+vật liệu          phủ TB   phủ ≥0.8   phủ ≥0.5
+======================================================================
+cluster            0.502       9.2%      50.4%
+ngram              0.723      37.8%      89.1%
+ngram_xáo          0.225       0.3%       4.7%
+======================================================================
+số mảnh / số token (TB) = 0.284   (thấp = ghép mảnh DÀI; gần 0.5 = gần như từng-token)
+
+ATTESTATION Ở MỐI NỐI — tỉ lệ biên có k-gram bắc qua ĐƯỢC CHỨNG THỰC:
+    k   corpus(B)   ghép nửa      xáo   TÁCH ghép
+    2       0.563      0.534    0.138      +0.029
+    3       0.236      0.197    0.008      +0.039
+    4       0.098      0.070    0.000      +0.028
+    5       0.046      0.028    0.000      +0.018
+    6       0.023      0.013    0.000      +0.010
+  `TÁCH ghép` lớn dần theo k ⇒ attestation là tín hiệu nghiệm thu. Phẳng/nhỏ ⇒ nó vướng
+  đúng bẫy §12.103: không phân biệt "mới mà đúng" với "ghép mà què".
+
+PHỦ THEO CỠ KHO VẬT LIỆU (cùng bộ câu chấm):
+    % nửa A       #mảnh    phủ TB   phủ ≥0.8
+       25%      63,113     0.522      10.4%
+       50%     126,861     0.620      21.9%
+      100%     224,769     0.723      37.8%
+  ⇒ gấp đôi kho (50%→100%) thêm +15.9% ở cột `phủ ≥0.8`.  v12 có ~85× cha so mini.
+
+G1 ≥40% câu phủ ≥0.8 bằng `ngram` : TRƯỢT (37.8%)  ← quyết định
+G2 `ngram` hơn xáo ≥0.15          : ĐẠT (+0.498)
+G3 số mảnh ≤60% số token          : ĐẠT (0.284)
+
+⇒ KHÔNG có vật liệu ⇒ ĐÓNG hướng soạn câu, khỏi dựng thước
+
+[6s] → out/compose_mini.log

@@ -1,0 +1,27 @@
+lesson_id: vi_grade3_rat_A
+grade: 3
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_rat_A
+slots:
+  - var: S
+  - const: "rất"
+  - var: A
+
+bind:
+  S: chủ ngữ
+  A: tính từ
+
+examples:
+  - "Lan rất vui"
+  - "Em rất ngoan"
+  - "Em rất vui"
+  - "Mẹ rất vui"
+  - "Bố rất giỏi"
+  - "Bé rất ngoan"
+  - "Con chó rất nhanh"
+  - "Bài này rất hay"
+  - "Trời rất đẹp"
+  - "Cây cam rất ngọt"

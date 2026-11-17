@@ -1,0 +1,13 @@
+{
+ "id": "04_traceback",
+ "cat": "debug",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Chạy script bị lỗi này, nghĩa là gì và sửa sao?\n\n```\nTraceback (most recent call last):\n  File \"app.py\", line 12, in <module>\n    print(user['email'])\nKeyError: 'email'\n```\n\nĐoạn code:\n```python\nimport json\nwith open('users.json') as f:\n    users = json.load(f)\nfor user in users:\n    print(user['name'])\n    print(user['email'])\n```",
+   "text": "### 1. Lỗi này nghĩa là gì?\n\nLỗi `KeyError: 'email'` có nghĩa là: **Bạn đang cố gắng truy cập vào một \"khóa\" (key) có tên là `'email'` trong một Dictionary, nhưng cái khóa đó không tồn tại.**\n\nTrong đoạn code của bạn, khi vòng lặp `for user in users:` chạy qua danh sách các người dùng, đã có ít nhất một đối tượng (một dictionary) trong file `users.json` **không có trường `\"email\"`**.\n\n**Ví dụ về file `users.json` gây lỗi:**\n```json\n[\n    {\"name\": \"Nguyen Van A\", \"email\": \"a@gmail.com\"},\n    {\"name\": \"Tran Thi B\"} \n]\n```\nỞ dòng thứ hai, người dùng \"Tran Thi B\" không có `\"email\"`. Khi code chạy đến dòng `print(user['email'])` cho người này, Python sẽ \"bó tay\" và báo lỗi ngay lập tức.\n\n---\n\n### 2. Cách sửa lỗi\n\nCó 3 cách chính để xử lý vấn đề này tùy vào mục đích của bạn:\n\n#### Cách 1: Sử dụng phương thức `.get()` (Khuyên dùng nhất)\nThay vì dùng `user['email']`, hãy dùng `user.get('email')`. Phương thức này sẽ không làm chương trình bị dừng nếu không tìm thấy key, mà nó sẽ trả về giá trị `None` (hoặc một giá trị mặc định bạn chọn).\n\n```python\nimport json\n\nwith open('users.json') as f:\n    users = json.load(f)\n\nfor user in users:\n    print(user['name'])\n    # Nếu không có email, nó sẽ in ra \"Không có email\" thay vì báo lỗi\n    print(user.get('email', 'Không có email')) \n```\n\n#### Cách 2: Kiểm tra sự tồn tại của key trước khi in (Dùng `if`)\nCách này giúp bạn kiểm soát logic chặt chẽ hơn.\n\n```python\nfor user in users:\n    print(user['name'])\n    if 'email' in user:\n        print(user['email'])\n    else:\n        print(\"Người dùng này chưa cập nhật email.\")\n```\n\n#### Cách 3: Kiểm tra và sửa dữ liệu đầu vào (Sửa file JSON)\nNếu bạn chắc chắn rằng mọi người dùng **bắt buộc** phải có email, thì lỗi không nằm ở code mà nằm ở **dữ liệu**. Bạn cần mở file `users.json` ra và bổ sung đầy đủ trường `\"email\"` cho tất cả các đối tượng.\n\n---\n\n### Tóm tắt lời khuyên:\nKhi làm việc với dữ liệu từ bên ngoài (file JSON, API, Database...), **đừng bao giờ tin tưởng 100% là dữ liệu luôn đầy đủ**. Hãy luôn sử dụng `.get()` để tránh việc ứng dụng bị \"sập\" (crash) chỉ vì thiếu một trường thông tin nhỏ.",
+   "tokens": 1311,
+   "sec": 19.2
+  }
+ ]
+}

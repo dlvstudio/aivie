@@ -1,0 +1,72 @@
+=== TK_036 spot-check (common_noun, left-index) ===
+[     0.0s] === load_network_v10_histwiki_paragraph START (pid=11202) → out/logs/load_network_v10_histwiki_paragraph_20260710_122453.log ===
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    15.2s] ✓ unpickle  (15.2s)
+[    15.2s] ▶ vocab (113572 token)
+[    15.8s] ✓ vocab (113572 token)  (0.6s)
+[    15.8s] ▶ adjacency
+[    29.7s] ✓ adjacency  (14.0s)
+[    29.7s] ▶ embedding
+[    30.4s] ✓ embedding  (0.7s)
+[    30.4s] ▶ parents
+[    30.4s] parents: deserialize 176430 records …
+[    30.7s] parents 5000/176430 (2.8%)
+[    31.0s] parents 10000/176430 (5.7%)
+[    31.4s] parents 15000/176430 (8.5%)
+[    31.7s] parents 20000/176430 (11.3%)
+[    32.0s] parents 25000/176430 (14.2%)
+[    32.3s] parents 30000/176430 (17.0%)
+[    32.6s] parents 35000/176430 (19.8%)
+[    32.9s] parents 40000/176430 (22.7%)
+[    33.5s] parents 45000/176430 (25.5%)
+[    33.9s] parents 50000/176430 (28.3%)
+[    34.2s] parents 55000/176430 (31.2%)
+[    34.6s] parents 60000/176430 (34.0%)
+[    35.1s] parents 65000/176430 (36.8%)
+[    35.6s] parents 70000/176430 (39.7%)
+[    36.1s] parents 75000/176430 (42.5%)
+[    49.5s] parents 80000/176430 (45.3%)
+[    49.8s] parents 85000/176430 (48.2%)
+[    50.2s] parents 90000/176430 (51.0%)
+[    50.8s] parents 95000/176430 (53.8%)
+[    51.2s] parents 100000/176430 (56.7%)
+[    51.5s] parents 105000/176430 (59.5%)
+[    52.1s] parents 110000/176430 (62.3%)
+[    52.6s] parents 115000/176430 (65.2%)
+[    53.0s] parents 120000/176430 (68.0%)
+[    53.4s] parents 125000/176430 (70.8%)
+[    53.9s] parents 130000/176430 (73.7%)
+[    54.3s] parents 135000/176430 (76.5%)
+[    54.9s] parents 140000/176430 (79.4%)
+[    55.4s] parents 145000/176430 (82.2%)
+[    56.0s] parents 150000/176430 (85.0%)
+[    56.8s] parents 155000/176430 (87.9%)
+[    58.0s] parents 160000/176430 (90.7%)
+[    59.1s] parents 165000/176430 (93.5%)
+[    78.0s] parents 170000/176430 (96.4%)
+[    78.9s] parents 175000/176430 (99.2%)
+[   255.1s] ▶ rebuild_hierarchical_index …
+[   257.5s] ✓ rebuild_hierarchical_index (2.3s)
+[   257.5s] ✓ parents  (227.1s)
+[   257.5s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   264.9s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   264.9s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   268.1s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   268.1s] ✓ load_checkpoint XONG
+loaded in 268.1s
+skip spans=30000 in 272.4s
+
+[skip=0.35] 'phở là' (43.8s)
+  → 'phở là món ăn rất phổ biến ở Việt Nam nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian nhiều món phở mới xuất hiện với những cách chế biến khác nhau như phở xào phở rán phở cuốn'
+
+[skip=0] 'phở là' (22.0s)
+  → 'phở là món ăn rất phổ biến ở Việt Nam nhưng phở Hà Nội có những cách chế biến đặc trưng riêng . Cùng với thời gian nhiều món phở mới xuất hiện với những cách chế biến khác nhau như phở xào phở rán phở cuốn'
+
+[skip=0.35] 'ẩm thực Việt Nam' (7.9s)
+  → 'ẩm thực Việt Nam với rất nhiều dạng'
+
+[skip=0.35] 'bóng đá là' (12.3s)
+  → 'bóng đá là môn thể thao phổ biến nhất đội tuyển bóng đá quốc gia Anh có sân nhà là sân vận động Wembley'
+
+DONE total=626.5s

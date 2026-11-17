@@ -1,0 +1,13 @@
+{
+ "id": "21_refactor",
+ "cat": "refactor",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Refactor đoạn code sau cho gọn, dễ đọc và dễ mở rộng thêm loại khách hàng:\n\n```python\ndef tinh_giam_gia(loai_khach, tong_tien):\n    if loai_khach == 'vang':\n        if tong_tien > 1000000:\n            return tong_tien * 0.8\n        else:\n            return tong_tien * 0.9\n    elif loai_khach == 'bac':\n        if tong_tien > 1000000:\n            return tong_tien * 0.9\n        else:\n            return tong_tien * 0.95\n    elif loai_khach == 'thuong':\n        return tong_tien\n    else:\n        return tong_tien\n```",
+   "text": "Để làm cho đoạn code gọn, dễ đọc và dễ mở rộng thêm loại khách hàng, chúng ta có thể sử dụng một dictionary để lưu trữ các mức giảm giá tương ứng với từng loại khách hàng. Điều này sẽ giúp chúng ta dễ dàng thêm hoặc sửa đổi loại khách hàng mà không cần thay đổi logic chính của hàm.\n\nDưới đây là đoạn code đã được refactoring:\n\n```python\ndef tinh_giam_gia(loai_khach, tong_tien):\n    khuyen_mai = {\n        'vang': 0.8 if tong_tien > 1000000 else 0.9,\n        'bac': 0.9 if tong_tien > 1000000 else 0.95,\n        'thuong': 1\n    }\n    \n    return tong_tien * khuyen_mai.get(loai_khach, 1)\n```\n\nGiải thích:\n1. Chúng ta tạo một dictionary `khuyen_mai` chứa mức giảm giá tương ứng với từng loại khách hàng.\n2. Sử dụng phương thức `get` của dictionary để lấy giá trị tương ứng với `loai_khach`. Nếu không tìm thấy loại khách hàng nào phù hợp, sẽ trả về 1 (mức giảm giá mặc định).\n3. Trả về kết quả bằng cách nhân `tong_tien` với mức giảm giá.\n\nMột lợi ích của cách làm này là nó rất dễ mở rộng nếu bạn muốn thêm hoặc thay đổi loại khách hàng. Bạn chỉ cần cập nhật dictionary `khuyen_mai`.",
+   "tokens": 333,
+   "sec": 7.5
+  }
+ ]
+}

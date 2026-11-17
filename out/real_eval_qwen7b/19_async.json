@@ -1,0 +1,13 @@
+{
+ "id": "19_async",
+ "cat": "py_async",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết code Python dùng asyncio + aiohttp tải song song nội dung 10 URL, tối đa 3 request cùng lúc, timeout 10 giây mỗi request, in ra URL nào lỗi.",
+   "text": "Đây là một ví dụ về cách sử dụng `asyncio` và `aiohttp` để tải song song các URL với giới hạn số lượng yêu cầu đồng thời và timeout:\n\n```python\nimport asyncio\nimport aiohttp\n\nasync def fetch(session, url):\n    try:\n        async with session.get(url, timeout=10) as response:\n            return await response.text()\n    except (aiohttp.ClientError, asyncio.TimeoutError) as e:\n        return f\"Error fetching {url}: {e}\"\n\nasync def main(urls):\n    async with aiohttp.ClientSession() as session:\n        tasks = [fetch(session, url) for url in urls]\n        responses = await asyncio.gather(*tasks)\n        \n        for url, response in zip(urls, responses):\n            if isinstance(response, str) and \"Error\" in response:\n                print(f\"URL {url} has an error: {response}\")\n\nurls = [\n    \"http://example.com\",\n    \"http://example.org\",\n    # Thêm thêm URL vào đây\n]\n\nasyncio.run(main(urls))\n```\n\nGiải thích:\n\n1. Chúng ta định nghĩa hàm `fetch` để thực hiện một yêu cầu HTTP GET lên một URL cụ thể.\n\n2. Trong hàm này, chúng ta sử dụng `aiohttp.ClientSession()` để tạo một phiên giao tiếp HTTP.\n\n3. Sử dụng `session.get(url, timeout=10)`, chúng ta gửi một yêu cầu GET với thời gian timeout là 10 giây.\n\n4. Nếu yêu cầu thành công, hàm trả về nội dung của trang web (response.text()).\n\n5. Nếu có lỗi (ClientError hoặc TimeoutError), chúng ta bắt ngoại lệ và trả về một chuỗi thông báo lỗi.\n\n6. Trong hàm `main`, chúng ta tạo một danh sách các nhiệm vụ (`tasks`) bằng cách gọi `fetch(session, url)` cho mỗi URL.\n\n7. Chúng ta sử dụng `asyncio.gather(*tasks)` để chạy tất cả các nhiệm vụ đồng thời và đợi tất cả chúng hoàn thành.\n\n8. Sau khi tất cả nhiệm vụ hoàn thành, chúng ta duyệt qua danh sách URLs và phản hồi, in ra URL nào có lỗi.\n\n9. Để chạy mã này, bạn cần cài đặt `aiohttp` bằng cách chạy `pip install aiohttp`.\n\nLưu ý rằng số lượng yêu cầu đồng thời được giới hạn bởi số lượng worker trong event loop của Python (tùy thuộc vào phiên bản và cấu hình). Trong ví dụ trên, chúng ta không đặt giới hạn cụ thể cho số lượng yêu cầu đồng thời, nhưng bạn có thể điều chỉnh thông qua việc tạo một pool executor nếu cần.",
+   "tokens": 557,
+   "sec": 11.9
+  }
+ ]
+}

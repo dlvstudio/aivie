@@ -1,0 +1,8 @@
+[   1.0s] sentences=87173 train=78456 held=8717 vocab=44171
+[   8.6s] lm built: k=1:34613, k=2:257869, k=3:363776, k=4:401054
+[  47.8s] λ-interp (lam=0.45): bits=1.4305 MRR=0.603 top1=46.1% top5=77.6% n=131875 skip=4922
+[ 164.6s] KN d=0.5: bits=2.6873 (+1.2568) MRR=0.413 top1=28.4% top5=55.8% n=131712 skip=5085
+[ 278.6s] KN d=0.75: bits=2.6990 (+1.2685) MRR=0.412 top1=28.5% top5=55.6% n=131712 skip=5085
+[ 393.4s] KN d=0.9: bits=2.7540 (+1.3234) MRR=0.405 top1=28.3% top5=54.4% n=131712 skip=5085
+[ 393.4s] BEST KN d=0.5: Δbits=+1.2568 (âm = KN tốt hơn λ-interp)
+[ 393.4s] XONG

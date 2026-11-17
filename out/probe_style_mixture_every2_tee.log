@@ -1,0 +1,66 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] === load_network_v11_styled_1k START (pid=6382) → out/logs/load_network_v11_styled_1k_20260723_175149.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_1k.pkl …
+[     0.0s] ▶ unpickle
+[     6.4s] ✓ unpickle  (6.4s)
+[     6.4s] ▶ vocab (32002 token)
+[     6.4s] ✓ vocab (32002 token)  (0.0s)
+[     6.4s] ▶ adjacency
+[    16.1s] ✓ adjacency  (9.7s)
+[    16.1s] ▶ embedding
+[    16.2s] ✓ embedding  (0.1s)
+[    16.2s] ▶ parents
+[    16.2s] parents: deserialize 65098 records …
+[    16.4s] parents 5000/65098 (7.7%)
+[    16.5s] parents 10000/65098 (15.4%)
+[    16.6s] parents 15000/65098 (23.0%)
+[    16.7s] parents 20000/65098 (30.7%)
+[    16.9s] parents 25000/65098 (38.4%)
+[    17.8s] parents 30000/65098 (46.1%)
+[    21.2s] parents 35000/65098 (53.8%)
+[    23.1s] parents 40000/65098 (61.4%)
+[    23.2s] parents 45000/65098 (69.1%)
+[    23.4s] parents 50000/65098 (76.8%)
+[    23.5s] parents 55000/65098 (84.5%)
+[    23.7s] parents 60000/65098 (92.2%)
+[    23.8s] parents 65000/65098 (99.8%)
+[    51.2s] ▶ rebuild_hierarchical_index …
+[    52.9s] ✓ rebuild_hierarchical_index (1.7s)
+[    61.1s]     resync match_ids: 65098/65098 cha (df dựng lại)
+[    61.1s] ✓ parents  (44.9s)
+[    61.1s] ✓ loaded: vocab=32002 parents=65098 E=(32002, 96)
+[    65.5s] sidecar thiếu → migrate: network_v11_styled_1k.content.pkl
+[    65.5s] ✓ load_checkpoint XONG
+[65s] ✓ parents 65,098
+plan: Ġhệt | Ġlướt | Ġkiệm
+═══ calib cos(punct → style_head) ═══
+  'Ġhệt': '.'→0.079  ','→0.116  '!'→0.046  'Ċ'→0.119
+  'Ġlướt': '.'→0.053  ','→0.008  '!'→0.129  'Ċ'→0.052
+  'Ġkiệm': '.'→0.201  ','→0.008  '!'→0.076  'Ċ'→-0.012
+═══ slot-scan (MZ draft → best bridge per style) ═══
+  'Ġhệt' best@12 'Ġlà' ▷style◁ 'Ġngười'  bridge=0.233
+  'Ġlướt' best@50 'Ġnhọn' ▷style◁ 'Ġxuống'  bridge=0.492
+  'Ġkiệm' best@47 'Ġcho' ▷style◁ 'Ġđóng'  bridge=0.466
+
+═══ generate A/B (cos_thresh=0.12) ═══
+… MZ only
+MZ only           bigram_cos=0.3827  inject_fit=nan  n_style=0  hits=[]
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông
+… Hard boundary
+Hard boundary     bigram_cos=0.3581  inject_fit=0.0336  n_style=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. hệt
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng. lướt
+Ông cho đóng cọc nhọn kiệm
+… Mix every-pos
+Mix every-pos     bigram_cos=0.3797  inject_fit=0.1772  n_style=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+  text: Ngô Quyền hệt là vị vua lướt sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân kiệm đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn
+
+═══ verdict ═══
+Mix every-pos: thử mọi bước + bridge cos(left,style,agenda); cooldown=2.
+Hard ép cuối câu → fit thấp. Mix tìm chỗ giữa câu nếu E khớp hơn.
+Δ bigram Hard−MZ=-0.0246  Mix−MZ=-0.0030  Mix−Hard=+0.0216
+[221s] → out/probe_style_mixture_every2.log

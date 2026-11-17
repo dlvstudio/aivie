@@ -1,0 +1,48 @@
+# Train v12 — graph Hebbian WITH sentence parents (TK_045 P0.1 ingest).
+#
+# PYTHONPATH=src python -u scripts/train.py \
+#   --manifest config/train_v12_sent.yaml \
+#   --sentence-parents \
+#   --out checkpoints/network_v12_sent.pkl
+#
+# Giống v10 datasets; paragraph_units hạ priority (đã là cửa sổ 2–4 câu).
+# QA: không tách câu (giữ 1 parent Hỏi/Đáp).
+
+datasets:
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.92
+
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.88
+
+  # NGUỒN ĐỊNH NGHĨA — TK_046 §65. `dictionary.jsonl` là văn bản mục từ THÔ
+  # («Từ: chó / Giải nghĩa: gia súc…») nên `via_pivot` mù với nó: lời giải
+  # nghĩa KHÔNG có chữ `là`. `dinh_nghia.jsonl` viết lại thành câu thật
+  # («chó là gia súc thuộc nhóm ăn thịt…») và đo được: chân lý lớp 168 → 722
+  # lớp, 949 → 7 512 cặp. Dựng bằng `scripts/dung_corpus_dinh_nghia.py`.
+  # §88 — corpus LOẠI SUY dựng từ tri thức THẬT của từ điển (hai đường: mệnh đề
+  # `<bộ phận> <tính từ>` + thành ngữ so sánh), lọc bậc, ≥1 vật mang cùng lớp.
+  # Nhỏ (258 câu khác nhau) nhưng cơ chế đọc CẠNH `via_attr` — cạnh chỉ cần TỒN
+  # TẠI, không cần áp đảo tần suất (§80: cạnh `sóc → thú` tồn tại là đủ).
+  - path: data/text_corpus/loai_suy_that.jsonl
+    priority: 0.85
+  - path: data/text_corpus/dinh_nghia.jsonl
+    priority: 0.85
+  - path: data/text_corpus/dictionary.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/doc_add_articles.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/conv_stories.jsonl
+    priority: 0.6
+
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.30
+
+  - path: data/text_corpus/qa_supervised.jsonl
+    priority: 0.95
+    sentence_parents: false

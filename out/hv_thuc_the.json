@@ -1,0 +1,211 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_token": 1589,
+ "n_boi_canh": 15879,
+ "min_share": 3,
+ "n_co_lang_gieng": 17,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Tông",
+    "ngôi",
+    "Lý",
+    "vương",
+    "hoàng",
+    "lấy",
+    "lên",
+    "Thái"
+   ],
+   "n_ctx": 74
+  },
+  "sông": {
+   "lop_thay_the": [],
+   "embedding": [
+    "chảy",
+    "Sông",
+    "Hồng",
+    "đắp",
+    "dòng",
+    "đê",
+    "dốc",
+    "Tiền"
+   ],
+   "n_ctx": 67
+  },
+  "đánh": {
+   "lop_thay_the": [],
+   "embedding": [
+    "đuổi",
+    "trận",
+    "diệt",
+    "vạn",
+    "Nguyên",
+    "giặc",
+    "binh",
+    "xâm"
+   ],
+   "n_ctx": 60
+  },
+  "lớn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "nhất",
+    "phần",
+    "nhiều",
+    "vùng",
+    "nhỏ",
+    "nằm",
+    "trung",
+    "rất"
+   ],
+   "n_ctx": 59
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Chăm",
+    "Hội",
+    "quốc",
+    "luôn",
+    "Phó",
+    "cờ",
+    "Chính",
+    "tịch"
+   ],
+   "n_ctx": 3
+  },
+  "nước": {
+   "lop_thay_the": [],
+   "embedding": [
+    "ngọt",
+    "muối",
+    "đất",
+    "sôi",
+    "khô",
+    "pha",
+    "uống",
+    "nhiều"
+   ],
+   "n_ctx": 98
+  },
+  "Hà Nội": {
+   "lop_thay_the": [],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 8
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "2",
+   "lop": [
+    "9",
+    "5",
+    "4",
+    "1"
+   ]
+  },
+  {
+   "token": "cũng",
+   "lop": [
+    "còn"
+   ]
+  },
+  {
+   "token": "phát hiện",
+   "lop": [
+    "nhận"
+   ]
+  },
+  {
+   "token": "7",
+   "lop": [
+    "6",
+    "5",
+    "4",
+    "3"
+   ]
+  },
+  {
+   "token": "4",
+   "lop": [
+    "5",
+    "9",
+    "6",
+    "3",
+    "7",
+    "8"
+   ]
+  },
+  {
+   "token": "5",
+   "lop": [
+    "9",
+    "4",
+    "6",
+    "7",
+    "1",
+    "8"
+   ]
+  },
+  {
+   "token": "nhận",
+   "lop": [
+    "phát hiện"
+   ]
+  },
+  {
+   "token": "9",
+   "lop": [
+    "5",
+    "4",
+    "2",
+    "6",
+    "1"
+   ]
+  },
+  {
+   "token": "Bắc",
+   "lop": [
+    "nam"
+   ]
+  },
+  {
+   "token": "6",
+   "lop": [
+    "5",
+    "9",
+    "7",
+    "4",
+    "8",
+    "3"
+   ]
+  },
+  {
+   "token": "nam",
+   "lop": [
+    "Bắc"
+   ]
+  },
+  {
+   "token": "còn",
+   "lop": [
+    "cũng"
+   ]
+  }
+ ],
+ "xac_nhan_B": {
+  "lop": {
+   "n": 35,
+   "ty_le": 0.8857142857142857
+  },
+  "ngau_nhien": {
+   "n": 35,
+   "ty_le": 0.0
+  },
+  "ty_so": 885714285.7142856
+ },
+ "seconds": 23.6
+}

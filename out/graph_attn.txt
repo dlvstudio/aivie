@@ -1,0 +1,29 @@
+vocab 32,002 · E (32002, 96) · device mps
+nạp corpus data/text_corpus/*.jsonl …
+✓ 65,160 bài · train 17,696,864 tok · held-out 1,999,796 tok
+
+── PLAIN: 4.51M tham số ──
+  step   500 loss 11.004 held-out 16.0763 bits/tok (17s)
+  step  1000 loss 7.735 held-out 11.4958 bits/tok (34s)
+  step  1500 loss 6.896 held-out 10.6556 bits/tok (50s)
+  step  2000 loss 6.969 held-out 10.3463 bits/tok (67s)
+  step  2500 loss 6.495 held-out 10.1971 bits/tok (83s)
+  step  3000 loss 6.848 held-out 10.0771 bits/tok (100s)
+  step  3500 loss 6.609 held-out 9.9788 bits/tok (116s)
+  step  4000 loss 6.466 held-out 9.8577 bits/tok (133s)
+
+── GRAPH (α·Ê·Êᵀ): 4.51M tham số ──
+  step   500 loss 10.941 held-out 15.9790 bits/tok α=1.006,1.000 (18s)
+  step  1000 loss 7.712 held-out 11.4180 bits/tok α=1.032,1.002 (36s)
+  step  1500 loss 6.865 held-out 10.6223 bits/tok α=1.114,1.015 (54s)
+  step  2000 loss 6.959 held-out 10.3307 bits/tok α=1.207,1.019 (73s)
+  step  2500 loss 6.484 held-out 10.1952 bits/tok α=1.297,1.023 (92s)
+  step  3000 loss 6.859 held-out 10.0777 bits/tok α=1.377,1.023 (110s)
+  step  3500 loss 6.625 held-out 9.9741 bits/tok α=1.461,1.037 (129s)
+  step  4000 loss 6.460 held-out 9.8633 bits/tok α=1.548,1.061 (148s)
+
+════ KẾT ═════
+  PLAIN best 9.8577 · GRAPH best 9.8633 · Δ -0.0056 bits/tok (-0.06%) · α cuối = [1.5483531951904297, 1.061263918876648]
+  Δ>0 rõ + α giữ xa 0  ⇒ hình học đồ thị là PRIOR CÓ ÍCH — đáng chạy bản to.
+  Δ≈0 / α→0            ⇒ backprop tự học hết — đồ thị KHÔNG đóng góp ở tầng
+                          định tuyến. ÂM TÍNH TRUNG THỰC: ghi, khép nhánh.

@@ -1,0 +1,13 @@
+{
+ "id": "08_fastapi",
+ "cat": "py_web",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết API FastAPI quản lý danh sách việc cần làm (todo) lưu trong bộ nhớ: thêm, xem tất cả, sửa trạng thái hoàn thành, xoá. Dùng Pydantic model, trả 404 khi không tìm thấy id.",
+   "text": "Dưới đây là một ví dụ về cách bạn có thể tạo một API FastAPI để quản lý danh sách việc cần làm (todo) bằng cách lưu nó trong bộ nhớ:\n\n1. Đầu tiên, hãy cài đặt các thư viện cần thiết:\n\n```bash\npip install fastapi uvicorn pydantic\n```\n\n2. Tạo file `main.py` và thêm mã sau vào đó:\n\n```python\nfrom fastapi import FastAPI, HTTPException, status\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\n# Bộ nhớ để lưu trữ các todo\ntodos = []\n\nclass Todo(BaseModel):\n    id: int\n    title: str\n    completed: bool = False\n\n@app.post(\"/todos/\", response_model=Todo)\nasync def create_todo(todo: Todo):\n    todos.append(todo)\n    return todo\n\n@app.get(\"/todos/\", response_model=list[Todo])\nasync def get_all_todos():\n    return todos\n\n@app.put(\"/todos/{todo_id}\", response_model=Todo, status_code=status.HTTP_202_ACCEPTED)\nasync def update_todo(todo_id: int, completed: bool):\n    for todo in todos:\n        if todo.id == todo_id:\n            todo.completed = completed\n            return todo\n    raise HTTPException(status_code=404, detail=\"Todo not found\")\n\n@app.delete(\"/todos/{todo_id}\", status_code=status.HTTP_204_NO_CONTENT)\nasync def delete_todo(todo_id: int):\n    global todos\n    todos = [todo for todo in todos if todo.id != todo_id]\n```\n\n3. Để chạy ứng dụng FastAPI, hãy sử dụng lệnh sau:\n\n```bash\nuvicorn main:app --reload\n```\n\nGiải thích mã:\n\n- Chúng ta tạo một `FastAPI` instance và đặt nó trong biến `app`.\n- Chúng ta khai báo một bộ nhớ đơn giản để lưu trữ các todo.\n- Chúng ta định nghĩa các Pydantic model cho việc tạo và cập nhật todo.\n- Chúng ta tạo các endpoint cho việc thêm, lấy tất cả, cập nhật trạng thái hoàn thành và xoá todo.\n\nKhi bạn chạy ứng dụng này, bạn có thể tương tác với nó thông qua API:\n\n- Để thêm một todo mới:\n  ```\n  POST /todos/\n  Body: {\"id\": 1, \"title\": \"Buy groceries\"}\n  ```\n\n- Để lấy tất cả các todo:\n  ```\n  GET /todos/\n  ```\n\n- Để cập nhật trạng thái hoàn thành của todo với id 1:\n  ```\n  PUT /todos/1\n  Body: {\"completed\": true}\n  ```\n\n- Để xoá todo với id 1:\n  ```\n  DELETE /todos/1\n  ```\n\nNếu bạn cố gắng truy cập một todo không tồn tại, API sẽ trả về lỗi 404.",
+   "tokens": 583,
+   "sec": 12.5
+  }
+ ]
+}

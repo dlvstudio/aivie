@@ -1,0 +1,84 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[82s] ✓ 430,447 cha · max_len=48 · extra={'ar_matrix_qa_answer_copy': True, 'ar_matrix_and_form_min': 0.9}
+[194s]   xong no_agenda·T1 verbatim (20)
+[195s]   xong no_agenda·T2 paraphrase (5)
+[198s]   xong no_agenda·T3 ghép (5)
+[199s]   xong no_agenda·T4 qa (4)
+[200s]   xong no_agenda·T5 số (4)
+[203s]   xong no_agenda·T6 bịa (5)
+[207s]   xong no_agenda·T7 dài (5)
+[317s]   xong handoff·T1 verbatim (20)
+[319s]   xong handoff·T2 paraphrase (5)
+[323s]   xong handoff·T3 ghép (5)
+[324s]   xong handoff·T4 qa (4)
+[325s]   xong handoff·T5 số (4)
+[329s]   xong handoff·T6 bịa (5)
+[334s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.00    0.00   0.00   0.93     1.00   1.00    7.9
+no_agenda T2 paraphrase     5    0.20   0.20    0.00   0.00   1.00     0.60   1.00    5.4
+no_agenda T3 ghép           5    0.00   0.60    0.00   0.00   0.50     0.20   1.00    9.6
+no_agenda T4 qa             4    0.00   0.75    0.00   0.00   1.00     0.25   1.00    8.8
+no_agenda T5 số             4    0.00   0.00    0.00   0.00   1.00     0.75   1.00    6.8
+no_agenda T6 bịa            5    0.00   0.00    0.40   0.00   0.79     1.00   1.00   13.8
+no_agenda T7 dài            5    0.00   0.00    0.00   0.00   0.84     1.00   1.00    9.6
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.00    0.00   0.00   0.71     1.80   1.00   23.8
+handoff   T2 paraphrase     5    0.00   0.00    0.00   0.00   0.67     1.80   1.00   19.6
+handoff   T3 ghép           5    0.00   0.60    0.00   0.00   0.46     0.60   1.00   18.2
+handoff   T4 qa             4    0.00   0.75    0.00   0.00   1.00     0.25   1.00    8.8
+handoff   T5 số             4    0.00   0.00    0.00   0.00   0.65     2.00   1.00   21.5
+handoff   T6 bịa            5    0.00   0.00    0.40   0.00   0.53     2.00   1.00   32.4
+handoff   T7 dài            5    0.00   0.00    0.00   0.00   0.71     1.60   1.00   26.2
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · digit⎵↓ · loop4↓ · stop↑ · T3 n_facts>1
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── mẫu đọc tay ──
+  [no_agenda·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list s Nhiều ứng dụng cũng có riêng'
+  [no_agenda·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười'
+  [no_agenda·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của là Müritz'
+  [no_agenda·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là không ra'
+  [no_agenda·T1 verbatim] 'Đám người này cũng mặc kệ quốc gia định giá kia một bộ, cũng đem tivi màu làm thành bản thân tài nguyên'
+  [no_agenda·T1 verbatim] '"Theo sau ~" Đỗ Phi tập trung tinh thần đối Tiểu Ô ra lệnh'
+  [no_agenda·T1 verbatim] 'Điểm đến đầu tiên chúng mình sẽ khám phá là Khu trưng bày ngoài trời hay còn gọi là kiến trúc'
+  [no_agenda·T1 verbatim] 'The Godfather (1972) - dựa trên tiểu thuyết của 2'
+  [no_agenda·T1 verbatim] 'Vì vậy tài năng báo chí của Tam không được sử dụng'
+  [no_agenda·T1 verbatim] 'Đạo diễn Lê Hoàng so sánh Cát Phượng như bà bán than ngoài chợ ảnh'
+  [no_agenda·T1 verbatim] 'Khẩu hiệu của lực lượng từ những ngày đầu thành lập là " là có một người không Khẩu hiệu của lực lượng từ những ngày đầu thành lập là thể ninh Tổ quốc'
+  [no_agenda·T1 verbatim] 'Thành phật, có thể nói là mỗi một vị tăng nhân theo đuổi'
+  [no_agenda·T1 verbatim] 'Môn đệ danh tiếng nhất của Sư là Tông Phong Diệu Siêu ja'
+  [no_agenda·T1 verbatim] 'Bỏ lỡ khóa học online Sinh lớp 11 của thầy thì đảm bảo 2 k Bỏ lỡ khóa học online Sinh lớp 11 của 2 k Bỏ lỡ khóa học online Sinh lớp 11 của không nhẹ'
+  [no_agenda·T1 verbatim] 'Nói chung, điện thoại thông minh yêu cầu Wi-Fi hoặc dữ liệu di động để kết nối với Internet'
+  [no_agenda·T1 verbatim] '" Gai nghe vậy sững sờ, hắn không nghĩ đến Hyuga Kagami sẽ nguyện ý cùng bản thân luận bàn'
+  [no_agenda·T1 verbatim] 'Đúng, sử dụng thể bị động có thể làm cho câu kém rõ ràng hoặc kém hấp dẫn hơn vì một số lý do 1'
+  [no_agenda·T1 verbatim] 'Tự động hóa sẽ ảnh hưởng đến các doanh nghiệp nhỏ như thế nào'
+  [no_agenda·T1 verbatim] 'Môi trường bị ô nhiễm, luân lý bị suy đồi, con người phơi trần nỗi khát khao truy cầu lợi ích và dục vọng'
+  [no_agenda·T1 verbatim] 'Cảm ơn sự giúp đỡ của bạn, tôi sẽ chọn tùy chọn đầu tiên'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ cha cái từng có cả cha mẹ của đều là Marie Curie có cả cha và Nhà vật lý Marie Curie có thầy giáo'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo của chỉ huy và các Trận giữa quân đội Việt do Ngô Quyền chỉ huy và nhà Nam Hán'
+  [no_agenda·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp: toilet là'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp: ở'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp: không'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp: Kỳ'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp ngươi mái'
+
+→ out/eval_qa_v12_ON.json
+
+[334s] → out/eval_qa_v12_ON.log

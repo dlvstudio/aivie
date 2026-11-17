@@ -1,0 +1,35 @@
+[     0.0s] === build_dict START (pid=22451) → out/logs/build_dict_20260705_162318.log ===
+[     0.7s] từ điển: 26245 từ (raw 36764 nghĩa)
+[     0.7s] load checkpoint checkpoints/grade_v3_big_a2_t3_isg.pkl …
+[     0.7s] ▶ unpickle
+[     3.2s] ✓ unpickle  (2.5s)
+[     3.2s] ▶ vocab (34528 token)
+[     3.3s] ✓ vocab (34528 token)  (0.2s)
+[     3.3s] ▶ adjacency
+[     7.2s] ✓ adjacency  (3.9s)
+[     7.2s] ▶ embedding
+[     7.3s] ✓ embedding  (0.2s)
+[     7.3s] ▶ parents
+[    19.1s] ✓ parents  (11.7s)
+[    19.1s] ✓ loaded: vocab=34528 parents=44633 E=(31846, 96)
+[    19.3s] sidecar có: grade_v3_big_a2_t3_isg.content.pkl
+[    19.3s] ✓ load_checkpoint XONG
+[    19.3s] trước: vocab=34528 parents=44633
+[    19.3s] ▶ ingest_dictionary
+[    33.5s] ingest_dict 2000/26245 (7.6%) — senses=2806
+[    48.3s] ingest_dict 4000/26245 (15.2%) — senses=5556
+[    63.4s] ingest_dict 6000/26245 (22.9%) — senses=8250
+[    78.0s] ingest_dict 8000/26245 (30.5%) — senses=11061
+[    91.8s] ingest_dict 10000/26245 (38.1%) — senses=13754
+[   105.3s] ingest_dict 12000/26245 (45.7%) — senses=16523
+[   119.4s] ingest_dict 14000/26245 (53.3%) — senses=19397
+[   134.3s] ingest_dict 16000/26245 (61.0%) — senses=22237
+[   149.8s] ingest_dict 18000/26245 (68.6%) — senses=25024
+[   166.2s] ingest_dict 20000/26245 (76.2%) — senses=28029
+[   180.3s] ingest_dict 22000/26245 (83.8%) — senses=30837
+[   194.2s] ingest_dict 24000/26245 (91.4%) — senses=33587
+[   229.3s] ingest_dict 26000/26245 (99.1%) — senses=36415
+[   236.1s] ✓ ingest_dictionary  (216.8s)
+[   236.3s] ingest: {'words': 26245, 'senses': 36764, 'parents': 0, 'pos_hubs': 14} → vocab=77464 (+42936) parents=44633 (+0)
+[   236.4s] ▶ bind_sense_resonance
+[   866.6s] bind_sense 1000/36764 (2.7%) — links=19708

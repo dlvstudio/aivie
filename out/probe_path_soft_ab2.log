@@ -1,0 +1,87 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=36
+
+########## SOFT_OFF path_soft=False ##########
+
+--- coact ly conf=0.442 succ.max=25.32 ---
+  act=0.3798 pi=4368 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  act=0.202 pi=4369 'Các nhà nghiên cứu khẳng định Lý Thái Tổ dời đô cũng cần dùng tới đội thuyền.'
+  act=0.1501 pi=2814 'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+=== ly gen (160.7s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 1 0 1 0
+cont: ' Thăng Long năm 1 0 1 0'
+
+--- coact bach conf=0.516 succ.max=15.35 ---
+  act=0.2825 pi=4510 'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi.'
+  act=0.07028 pi=5827 'Tiêu đề: Trận Bạch Đằng (1288)\n\n'
+  act=0.06811 pi=5858 'Tiêu đề: Trận Bạch Đằng (938)\n\n'
+=== bach gen (45.4s) ===
+out:  Trận Bạch Đằng năm 1 2 8 8
+cont: ' 1 2 8 8'
+
+--- coact nq_def conf=0.935 succ.max=1806 ---
+  act=0.9286 pi=4175 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ'
+  act=0.02833 pi=4194 'Năm 939, Ngô Quyền xưng vương, đóng đô ở Cổ Loa, lập ra nhà Ngô.'
+  act=0.01857 pi=4200 'Sách An Nam chí lược viết rằng: Công Tiễn bị Ngô Quyền vây, sức yếu bị thua mới cầu cứu'
+=== nq_def gen (103.9s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+--- coact thd conf=0.850 succ.max=424 ---
+  act=0.7747 pi=764 'Trần Hưng Đạo là Hưng Đạo Vương.'
+  act=0.08371 pi=101 'Trần Hưng Đạo đánh thắng quân Mông.'
+  act=0.03311 pi=1866 ' Trần Hưng Đạo là Hưng Đạo Vương.'
+=== thd gen (35.8s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+--- coact hung conf=0.667 succ.max=0 ---
+  act=0.6614 pi=102 'Lê Lợi khởi nghĩa Lam Sơn.'
+  act=0.1289 pi=430061 ' Lê Lợi khởi nghĩa Lam Sơn chống quân Minh xâm lược. Sau nhiều năm đấu tranh, ông lên ngôi mở'
+  act=0.1289 pi=429842 ' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ'
+=== hung gen (25.3s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+########## SOFT_ON path_soft=True ##########
+
+--- coact ly conf=0.442 succ.max=24.54 ---
+  act=0.3798 pi=4368 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  act=0.202 pi=4369 'Các nhà nghiên cứu khẳng định Lý Thái Tổ dời đô cũng cần dùng tới đội thuyền.'
+  act=0.1501 pi=2814 'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+=== ly gen (423.5s) ===
+out:  Nhà Lý dời đô về Thăng Long năm 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cont: ' Thăng Long năm 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'
+
+--- coact bach conf=0.516 succ.max=14.34 ---
+  act=0.2825 pi=4510 'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi.'
+  act=0.07028 pi=5827 'Tiêu đề: Trận Bạch Đằng (1288)\n\n'
+  act=0.06811 pi=5858 'Tiêu đề: Trận Bạch Đằng (938)\n\n'
+=== bach gen (329.5s) ===
+out:  Trận Bạch Đằng năm 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
+cont: ' 1 2 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8'
+
+--- coact nq_def conf=0.935 succ.max=1028 ---
+  act=0.9286 pi=4175 'Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ'
+  act=0.02833 pi=4194 'Năm 939, Ngô Quyền xưng vương, đóng đô ở Cổ Loa, lập ra nhà Ngô.'
+  act=0.01857 pi=4200 'Sách An Nam chí lược viết rằng: Công Tiễn bị Ngô Quyền vây, sức yếu bị thua mới cầu cứu'
+=== nq_def gen (104.3s) ===
+out:  Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont: ' xem là người mở đầu thời kỳ độc lập tự chủ'
+
+--- coact thd conf=0.850 succ.max=405.5 ---
+  act=0.7747 pi=764 'Trần Hưng Đạo là Hưng Đạo Vương.'
+  act=0.08371 pi=101 'Trần Hưng Đạo đánh thắng quân Mông.'
+  act=0.03311 pi=1866 ' Trần Hưng Đạo là Hưng Đạo Vương.'
+=== thd gen (35.4s) ===
+out:  Trần Hưng Đạo là Hưng Đạo Vương
+cont: ' Hưng Đạo Vương'
+
+--- coact hung conf=0.850 succ.max=387.7 ---
+  act=0.6614 pi=102 'Lê Lợi khởi nghĩa Lam Sơn.'
+  act=0.1289 pi=430061 ' Lê Lợi khởi nghĩa Lam Sơn chống quân Minh xâm lược. Sau nhiều năm đấu tranh, ông lên ngôi mở'
+  act=0.1289 pi=429842 ' Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ'
+=== hung gen (25.4s) ===
+out:  Lê Lợi khởi nghĩa ở Lam Sơn
+cont: ' Lam Sơn'
+
+[1374s] → out/probe_path_soft_ab2.log

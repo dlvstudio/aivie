@@ -1,0 +1,24 @@
+
+ «đồng là» ▸ kim loại có màu đỏ, dễ dát mỏng và kéo sợi, dẫn điện và
+     b phát      biên  n_b  ÉP EOS    argmax nếu KHÔNG ép
+    14 điện     False    0       -           điện (10.37)
+    15 và       False    0       -             và (2.23)
+    16 <EOS>    False    0       -            dẫn (2.25)
+
+ «sóc là» ▸ thú gặm
+     b phát      biên  n_b  ÉP EOS    argmax nếu KHÔNG ép
+     0 thú      False    0       -            thú (3064.13)
+     1 gặm      False    0       -            gặm (310.00)
+     2 <EOS>     True    0       -          <EOS> (128.60)
+
+ «lúa là» ▸ cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả có vỏ trấu
+     b phát      biên  n_b  ÉP EOS    argmax nếu KHÔNG ép
+    19 vỏ       False    0       -             vỏ (15.77)
+    20 trấu     False    0       -           trấu (3.95)
+    21 <EOS>     True    0       -          <EOS> (53.89)
+
+ «chó là» ▸ gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+     b phát      biên  n_b  ÉP EOS    argmax nếu KHÔNG ép
+    13 săn      False    0       -            săn (7.55)
+    14 .        False    0       -              . (7.81)
+    15 <EOS>     True    1      ÉP          <EOS> (6.64)

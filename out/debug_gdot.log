@@ -1,0 +1,145 @@
+[     0.0s] === load_network_v12_sent START (pid=3112) → out/logs/load_network_v12_sent_20260801_103434.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.1s] ✓ unpickle  (3.1s)
+[     3.1s] ▶ vocab (32002 token)
+[     4.0s] ✓ vocab (32002 token)  (0.9s)
+[     4.0s] ▶ adjacency
+[    13.2s] ✓ adjacency  (9.1s)
+[    13.2s] ▶ embedding
+[    13.2s] ✓ embedding  (0.0s)
+[    13.2s] ▶ parents
+[    13.2s] parents: deserialize 430447 records …
+[    13.3s] parents 5000/430447 (1.2%)
+[    13.3s] parents 10000/430447 (2.3%)
+[    13.4s] parents 15000/430447 (3.5%)
+[    13.4s] parents 20000/430447 (4.6%)
+[    13.4s] parents 25000/430447 (5.8%)
+[    13.5s] parents 30000/430447 (7.0%)
+[    13.5s] parents 35000/430447 (8.1%)
+[    13.6s] parents 40000/430447 (9.3%)
+[    13.6s] parents 45000/430447 (10.5%)
+[    13.6s] parents 50000/430447 (11.6%)
+[    13.7s] parents 55000/430447 (12.8%)
+[    13.7s] parents 60000/430447 (13.9%)
+[    13.7s] parents 65000/430447 (15.1%)
+[    13.8s] parents 70000/430447 (16.3%)
+[    13.8s] parents 75000/430447 (17.4%)
+[    13.9s] parents 80000/430447 (18.6%)
+[    13.9s] parents 85000/430447 (19.7%)
+[    13.9s] parents 90000/430447 (20.9%)
+[    14.0s] parents 95000/430447 (22.1%)
+[    14.0s] parents 100000/430447 (23.2%)
+[    14.1s] parents 105000/430447 (24.4%)
+[    14.1s] parents 110000/430447 (25.6%)
+[    14.2s] parents 115000/430447 (26.7%)
+[    14.3s] parents 120000/430447 (27.9%)
+[    14.3s] parents 125000/430447 (29.0%)
+[    14.4s] parents 130000/430447 (30.2%)
+[    14.4s] parents 135000/430447 (31.4%)
+[    14.5s] parents 140000/430447 (32.5%)
+[    14.6s] parents 145000/430447 (33.7%)
+[    14.6s] parents 150000/430447 (34.8%)
+[    14.7s] parents 155000/430447 (36.0%)
+[    14.8s] parents 160000/430447 (37.2%)
+[    14.9s] parents 165000/430447 (38.3%)
+[    15.0s] parents 170000/430447 (39.5%)
+[    15.1s] parents 175000/430447 (40.7%)
+[    15.2s] parents 180000/430447 (41.8%)
+[    15.3s] parents 185000/430447 (43.0%)
+[    15.4s] parents 190000/430447 (44.1%)
+[    15.5s] parents 195000/430447 (45.3%)
+[    15.6s] parents 200000/430447 (46.5%)
+[    15.7s] parents 205000/430447 (47.6%)
+[    15.7s] parents 210000/430447 (48.8%)
+[    15.8s] parents 215000/430447 (49.9%)
+[    15.9s] parents 220000/430447 (51.1%)
+[    16.0s] parents 225000/430447 (52.3%)
+[    16.1s] parents 230000/430447 (53.4%)
+[    16.2s] parents 235000/430447 (54.6%)
+[    16.3s] parents 240000/430447 (55.8%)
+[    16.4s] parents 245000/430447 (56.9%)
+[    16.5s] parents 250000/430447 (58.1%)
+[    16.5s] parents 255000/430447 (59.2%)
+[    16.6s] parents 260000/430447 (60.4%)
+[    16.7s] parents 265000/430447 (61.6%)
+[    16.8s] parents 270000/430447 (62.7%)
+[    16.9s] parents 275000/430447 (63.9%)
+[    17.0s] parents 280000/430447 (65.0%)
+[    20.0s] parents 285000/430447 (66.2%)
+[    20.1s] parents 290000/430447 (67.4%)
+[    20.1s] parents 295000/430447 (68.5%)
+[    20.2s] parents 300000/430447 (69.7%)
+[    20.3s] parents 305000/430447 (70.9%)
+[    20.4s] parents 310000/430447 (72.0%)
+[    20.4s] parents 315000/430447 (73.2%)
+[    20.5s] parents 320000/430447 (74.3%)
+[    20.6s] parents 325000/430447 (75.5%)
+[    20.7s] parents 330000/430447 (76.7%)
+[    20.7s] parents 335000/430447 (77.8%)
+[    20.8s] parents 340000/430447 (79.0%)
+[    20.9s] parents 345000/430447 (80.1%)
+[    21.0s] parents 350000/430447 (81.3%)
+[    21.1s] parents 355000/430447 (82.5%)
+[    21.1s] parents 360000/430447 (83.6%)
+[    21.2s] parents 365000/430447 (84.8%)
+[    21.3s] parents 370000/430447 (86.0%)
+[    21.4s] parents 375000/430447 (87.1%)
+[    21.4s] parents 380000/430447 (88.3%)
+[    21.5s] parents 385000/430447 (89.4%)
+[    21.6s] parents 390000/430447 (90.6%)
+[    21.7s] parents 395000/430447 (91.8%)
+[    21.7s] parents 400000/430447 (92.9%)
+[    21.8s] parents 405000/430447 (94.1%)
+[    21.9s] parents 410000/430447 (95.2%)
+[    21.9s] parents 415000/430447 (96.4%)
+[    22.0s] parents 420000/430447 (97.6%)
+[    22.1s] parents 425000/430447 (98.7%)
+[    22.1s] parents 430000/430447 (99.9%)
+[    66.7s] ▶ rebuild_hierarchical_index …
+[    68.1s] ✓ rebuild_hierarchical_index (1.4s)
+[    73.0s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    73.0s] ✓ parents  (59.7s)
+[    73.0s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    74.3s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    74.3s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:370: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+GEN: Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long . Hổ . Đây Yêu mốc . một . chớp . Đây . là . Đây chương trình . là lớp . Đây . Đây . là . mốc .
+hist_tail: ['Ġvà', 'Ġđặt', 'Ġtên', 'Ġkinh', 'Ġđô', 'Ġlà', 'ĠThăng', 'ĠLong']
+actual next: 'Ġ.'
+
+=== W_skip edges → . vs Ġ. ===
+  d=1 'ĠLong'      USE  nnz=  617 →.=106.5 →Ġ.=0
+  d=2 'ĠThăng'     USE  nnz=   88 →.=45.93 →Ġ.=0
+  d=3 'Ġlà'        USE  nnz= 6263 →.=2609 →Ġ.=12.9
+  d=4 'Ġđô'        USE  nnz=  496 →.=62.52 →Ġ.=0.9
+  d=5 'Ġkinh'      USE  nnz= 1381 →.=166 →Ġ.=1.8
+  d=6 'Ġtên'       USE  nnz= 1389 →.=124 →Ġ.=1.2
+  d=7 'Ġđặt'       USE  nnz= 1061 →.=74.74 →Ġ.=1.2
+  d=8 'Ġvà'        USE  nnz= 4354 →.=2850 →Ġ.=10.2
+
+1) vote '.'=0 Ġ.=0
+   indeg '.'=10433 Ġ.=751
+   top: [('ĠĐĩnh', 3.0842800116855416), ('ĠNiện', 2.4805876584284934), ('ĠHâm', 1.9910517276868223), ('ĠThụ', 1.5574439339329067), ('ĠLiễn', 1.4257053974802472), ('Ġmễ', 1.1326707493743098), ('ĠRange', 1.131461417330294), ('ĠSào', 1.0583117935975581)]
+2) +same_sent '.'=0 Ġ.=0 (bonus .= 0 Ġ.=0)
+3) flu@'ĠLong' '.'=106.55 Ġ.=0 max=106.5
+   flu top: [('.', 106.5499999999999), (',', 104.05999999999976), ('Ġtộc', 37.200000000000045), ('ĠXuyên', 34.72000000000003), ('Ġthứ', 30.000000000000025), ('Ġlà', 26.74000000000001), ('Ġ(', 23.32000000000001), ('Ġchân', 21.000000000000007)]
+   gate '.'=1 Ġ.=0
+4) *flu '.'=0 Ġ.=0
+5) structural '.'=True Ġ.=True surface .= True Ġ.=True
+6) FINAL '.'=0 Ġ.=0 EOS=0.0145733
+   top10: [('ĠĐĩnh', 3.0842800116855416), ('ĠNiện', 2.4805876584284934), ('ĠHâm', 1.9910517276868223), ('Ġvà', 1.671707704863356), ('Ġthời', 1.6174373722555466), ('ĠHoa', 1.5692908144653637), ('ĠThụ', 1.5574439339329067), ('Ġcủa', 1.4498797110436084), ('ĠLiễn', 1.4257053974802472), ('Ġcó', 1.3545088498749598)]
+7) softmax T=0.5 (top12):
+   'ĠĐĩnh'      3.0843 p=0.5637
+   'ĠNiện'      2.4806 p=0.1685
+   'ĠHâm'       1.9911 p=0.0633
+   'Ġvà'        1.6717 p=0.0334
+   'Ġthời'      1.6174 p=0.0300
+   'ĠHoa'       1.5693 p=0.0272
+   'ĠThụ'       1.5574 p=0.0266
+   'Ġcủa'       1.4499 p=0.0214
+   'ĠLiễn'      1.4257 p=0.0204
+   'Ġcó'        1.3545 p=0.0177
+   'Ġnghĩa'     1.2309 p=0.0138
+   'Ġngười'     1.2304 p=0.0138

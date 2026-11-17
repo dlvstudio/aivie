@@ -1,0 +1,81 @@
+[0s] load checkpoints/mini_sent_ep.pkl …
+[17s] ✓ 5,004 cha · max_len=40
+[269s]   xong no_agenda·T1 verbatim (8)
+[411s]   xong no_agenda·T2 paraphrase (5)
+[549s]   xong no_agenda·T3 ghép (5)
+[645s]   xong no_agenda·T4 qa (4)
+[756s]   xong no_agenda·T5 số (4)
+[973s]   xong no_agenda·T6 bịa (5)
+[1114s]   xong no_agenda·T7 dài (4)
+[1434s]   xong handoff·T1 verbatim (8)
+[1551s]   xong handoff·T2 paraphrase (5)
+[1675s]   xong handoff·T3 ghép (5)
+[1758s]   xong handoff·T4 qa (4)
+[1890s]   xong handoff·T5 số (4)
+[2072s]   xong handoff·T6 bịa (5)
+[2249s]   xong handoff·T7 dài (4)
+
+========================================================================================================
+chế độ    nhóm              n   empty  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim       8    0.00    0.00   0.00   1.00     1.00   1.00    7.2
+no_agenda T2 paraphrase     5    0.20    0.00   0.00   0.80     0.60   1.00    5.4
+no_agenda T3 ghép           5    0.00    0.00   0.00   0.95     0.20   1.00    3.6
+no_agenda T4 qa             4    1.00    0.00   0.00   0.00     0.00   1.00    0.0
+no_agenda T5 số             4    0.00    0.00   0.00   1.00     0.75   1.00    6.8
+no_agenda T6 bịa            5    0.00    0.40   0.20   0.59     0.80   0.80   20.8
+no_agenda T7 dài            4    0.00    0.00   0.25   0.81     0.75   0.75   13.2
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim       8    0.00    0.00   0.00   0.75     1.88   1.00   29.2
+handoff   T2 paraphrase     5    0.00    0.00   0.00   0.77     1.60   1.00   20.0
+handoff   T3 ghép           5    0.00    0.00   0.00   0.95     0.20   1.00    3.6
+handoff   T4 qa             4    1.00    0.00   0.00   0.00     0.00   1.00    0.0
+handoff   T5 số             4    0.00    0.00   0.00   0.74     1.50   1.00   20.0
+handoff   T6 bịa            5    0.00    0.40   0.20   0.42     1.60   0.60   34.6
+handoff   T7 dài            4    0.00    0.00   0.25   0.71     1.25   0.75   27.2
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · digit⎵↓ · loop4↓ · stop↑ · T3 n_facts>1
+
+── mẫu đọc tay ──
+  [no_agenda·T1 verbatim] 'Khi còn thiếu thời ông làm quan cho nhà Đinh dưới thời Đinh Tiên Hoàng đến chức Thập đạo tướng quân'
+  [no_agenda·T1 verbatim] 'Đứa bé chưa đầy tháng tuổi, không sữa nên đã chết'
+  [no_agenda·T1 verbatim] 'Nhà Lê sơ được thành lập sau khi Lê Lợi phát động Khởi nghĩa Lam Sơn đánh bại nhà Minh'
+  [no_agenda·T1 verbatim] 'Nhưng sự giáo dục Thường Kiệt kể trên đây là hợp với những điều ta còn biết về đời nhà Lý'
+  [no_agenda·T1 verbatim] 'Ông là nhà lãnh đạo phong trào độc lập Việt Minh tiến hành Cách mạng Tháng Tám năm 1945'
+  [no_agenda·T1 verbatim] 'Trịnh Kiểm về không thấy mẹ đâu bèn đi tìm, đến vực tìm ra xác mẹ thì mối đã xông đầy lên rồi'
+  [no_agenda·T1 verbatim] 'Năm 1954, quân đội Viễn chinh Pháp trước khi rút khỏi Hà Nội đã cho đặt mìn để phá chùa Một Cột'
+  [no_agenda·T1 verbatim] 'Quân đội này sẽ trở thành nòng cốt của Quân lực Việt Nam Cộng Hòa sau này'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T2 paraphrase] 'Kinh đô đầu tiên của nhà nước Đại Cồ Việt là'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là ngày 1 ở Nam Cực vốn có ngày kéo dài trọn cả năm'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: Đằng'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo là'
+  [no_agenda·T3 ghép] 'Hỏi: Nhà Lý và nhà Trần khác nhau thế nào Đáp: phụng nước'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp:'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau không cần đi đường qua Đại Việt Mông Cổ vẫn đánh bại được xác định tuy nhiên nhà Ngô vẫn chưa đặt quốc hiệu'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 lên ngôi lấy hiệu là Lê Thái Tổ và đặt kinh đô ở Thăng Long'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1 2 5 8 2 8 5 và 8 1 2 8 5 8 2 8 5 và 8 1 2 8 5 8 2 8 5 8 2 8 5 8 2 8 5 8 2 8 5 8'
+  [no_agenda·T6 bịa] 'Đinh Bộ Lĩnh đánh bại quân Nam Hán trên sông Bạch Đằng năm 8 9 3 8 Ngô Quyền đánh bại quân về Hoa Lư chiêu mộ binh lính'
+  [no_agenda·T7 dài] 'Các trọng thần gồm Lê Ngang, Lê Ê, Lê Thụ, Đỗ Bí muốn binh biến nhưng bị bại lộ tất cả đều bị giết'
+  [no_agenda·T7 dài] 'Này rất phổ biến ở Bắc Mỹ, như là phụ nữ châu Âu, kỹ Sư (EURO I ở I NG ở là Này phổ biến Này rất phổ biến ở châu Âu kỹ Sư EU RO I NG Này NG Này NG Này NG Này NG Này NG Này NG Này NG Này NG Này NG Này'
+  [no_agenda·T7 dài] 'Khâm định Việt sử Thông giám cương mục thì chép Công Uẩn theo phò triều Lê vào giữa niên hiệu Ứng Thiên'
+  [no_agenda·T7 dài] 'Sông Trà Lý nối sông Hồng cắt qua tỉnh Thái Bình (nay là Hưng Yên) đổ ra cửa Trà Lý'
+  [handoff·T1 verbatim] 'Khi còn thiếu thời ông làm quan cho nhà Đinh dưới thời Đinh Tiên Hoàng đến chức Thập đạo tướng quân. Hiện nay, có giả thuyết cho rằng Lê Hoàn là chủ mưu vụ ám sát vua Đinh Tiên Hoàng để giành ngôi.'
+  [handoff·T1 verbatim] 'Đứa bé chưa đầy tháng tuổi, không sữa nên đã chết. Hương chức và dân trên đảo bị đội Tấn dọa phải theo và phụ lực với hắn để bao vây bọn ông Trực.'
+  [handoff·T1 verbatim] 'Nhà Lê sơ được thành lập sau khi Lê Lợi phát động Khởi nghĩa Lam Sơn đánh bại nhà Minh. Nhiều công trình sử liệu, văn học, thiên văn, quan chế,.'
+  [handoff·T1 verbatim] 'Nhưng sự giáo dục Thường Kiệt kể trên đây là hợp với những điều ta còn biết về đời nhà Lý'
+  [handoff·T1 verbatim] 'Ông là nhà lãnh đạo phong trào độc lập Việt Minh tiến hành Cách mạng Tháng Tám năm 1945. Hồ Chí Minh giảm dần hoạt động chính trị vào năm 1965 vì lý do sức khỏe rồi qua đời vào năm 196.'
+
+[2249s] → out/eval_gen_broad_MINI.log

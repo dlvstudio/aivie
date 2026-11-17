@@ -1,0 +1,389 @@
+{
+ "checkpoint": "checkpoints/network_v12_sent.pkl",
+ "n_token": 37122,
+ "n_boi_canh": 1776080,
+ "min_share": 3,
+ "n_co_lang_gieng": 12925,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "Sao Thủy",
+    "con riêng",
+    "vua",
+    "Hoàng đế",
+    "giáo hoàng",
+    "con nuôi",
+    "thần thánh",
+    "chủ ngữ"
+   ],
+   "embedding": [
+    "Vua",
+    "triều",
+    "Chiêm",
+    "vương",
+    "hoàng",
+    "chúa",
+    "Vua",
+    "đế"
+   ],
+   "n_ctx": 695
+  },
+  "sông": {
+   "lop_thay_the": [
+    "suối",
+    "bào quan",
+    "mồi",
+    "đực",
+    "thiên hà",
+    "đường mòn",
+    "hải lưu",
+    "cảm biến"
+   ],
+   "embedding": [
+    "bờ",
+    "vùng",
+    "thung",
+    "Sông",
+    "bắc",
+    "biển",
+    "dọc",
+    "Sông"
+   ],
+   "n_ctx": 1185
+  },
+  "đánh": {
+   "lop_thay_the": [
+    "lọt",
+    "đập",
+    "ném",
+    "chui",
+    "đâm",
+    "rơi",
+    "xông",
+    "đụng"
+   ],
+   "embedding": [
+    "vây",
+    "binh",
+    "bại",
+    "giặc",
+    "quân",
+    "bắn",
+    "đuổi",
+    "lính"
+   ],
+   "n_ctx": 3135
+  },
+  "Nguyễn": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Lê",
+    "Nguyễn",
+    "Minh",
+    "Phúc",
+    "Trần",
+    "Tấn",
+    "Khiêm",
+    "Trịnh"
+   ],
+   "n_ctx": 5
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "nhỏ",
+    "quan trọng",
+    "tốt",
+    "cao",
+    "đáng kể",
+    "mạnh",
+    "nhanh",
+    "phổ biến"
+   ],
+   "embedding": [
+    "nhất",
+    "vực",
+    "địa",
+    "trung",
+    "giới",
+    "cao",
+    "gần",
+    "thấp"
+   ],
+   "n_ctx": 4930
+  },
+  "quân": {
+   "lop_thay_the": [
+    "quân đội",
+    "phương trình",
+    "URL",
+    "chứng cớ",
+    "nước",
+    "binh sĩ",
+    "nhạc cụ",
+    "bóng"
+   ],
+   "embedding": [
+    "Quân",
+    "binh",
+    "huy",
+    "chiến",
+    "tấn",
+    "lính",
+    "lệnh",
+    "rút"
+   ],
+   "n_ctx": 1749
+  },
+  "năm": {
+   "lop_thay_the": [
+    "tháng",
+    "thế kỷ",
+    "ngày",
+    "tuần",
+    "thập niên",
+    "phút",
+    "thập kỷ",
+    "lần"
+   ],
+   "embedding": [
+    "tháng",
+    "ngày",
+    "Vào",
+    "thứ",
+    "Vào",
+    "tháng",
+    "2",
+    "Ngày"
+   ],
+   "n_ctx": 7438
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "tỉnh",
+    "Thành",
+    "lỵ",
+    "quận",
+    "quận",
+    "Phủ",
+    "Tỉnh",
+    "phường"
+   ],
+   "n_ctx": 38
+  },
+  "nước": {
+   "lop_thay_the": [
+    "quốc gia",
+    "khu vực",
+    "gia đình",
+    "chất lỏng",
+    "sản phẩm",
+    "protein",
+    "văn bản",
+    "môi trường"
+   ],
+   "embedding": [
+    "sôi",
+    "khô",
+    "đun",
+    "dầu",
+    "bọt",
+    "nóng",
+    "ấm",
+    "sạch"
+   ],
+   "n_ctx": 6123
+  },
+  "người": {
+   "lop_thay_the": [
+    "lối",
+    "quốc ca",
+    "sự việc",
+    "kẻ",
+    "dấu hiệu",
+    "tính chất",
+    "di chuyển",
+    "bộ phận"
+   ],
+   "embedding": [
+    "chiếm",
+    "có",
+    "phụ",
+    "hơn",
+    "làm",
+    "biểu",
+    "đại",
+    "lao"
+   ],
+   "n_ctx": 144
+  },
+  "Việt Nam": {
+   "lop_thay_the": [
+    "Trung Quốc",
+    "Thụy Điển",
+    "Hoa Kỳ",
+    "Nga",
+    "Ấn Độ",
+    "Canada",
+    "Đức",
+    "Einstein"
+   ],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 1316
+  },
+  "Hà Nội": {
+   "lop_thay_the": [
+    "Washington DC",
+    "Birmingham",
+    "Sao Thủy",
+    "Bắc Giang",
+    "Qatar",
+    "Hà Nam",
+    "LAN",
+    "Thừa Thiên Huế"
+   ],
+   "embedding": [
+    "(cụm — E không có vector)"
+   ],
+   "n_ctx": 306
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "hay",
+   "lop": [
+    "hoặc",
+    "vừa ý",
+    "chứ",
+    "sẽ",
+    "mà",
+    "đều"
+   ]
+  },
+  {
+   "token": "nhận",
+   "lop": [
+    "tìm",
+    "cảm nhận",
+    "đạt",
+    "xảy",
+    "nghe",
+    "thu"
+   ]
+  },
+  {
+   "token": "theo",
+   "lop": [
+    "bằng",
+    "tìm",
+    "ăn cưới",
+    "qua",
+    "tới",
+    "thực hiện"
+   ]
+  },
+  {
+   "token": "lúc",
+   "lop": [
+    "giờ phút",
+    "lần",
+    "điều",
+    "nơi",
+    "thời điểm",
+    "giờ khắc"
+   ]
+  },
+  {
+   "token": "kết quả",
+   "lop": [
+    "hậu quả",
+    "mục tiêu",
+    "giá trị",
+    "mục đích",
+    "ý tưởng",
+    "lợi ích"
+   ]
+  },
+  {
+   "token": "hoa",
+   "lop": [
+    "linh trưởng",
+    "bò sát",
+    "khủng long",
+    "côn trùng",
+    "thịt nướng",
+    "Nam Mỹ"
+   ]
+  },
+  {
+   "token": "gây",
+   "lop": [
+    "xảy",
+    "tạo",
+    "diễn",
+    "tỏ",
+    "lộ",
+    "tản mát"
+   ]
+  },
+  {
+   "token": "Anh",
+   "lop": [
+    "Pháp",
+    "Nga",
+    "Mỹ",
+    "Tây Ban Nha",
+    "Đức",
+    "Quan Thoại"
+   ]
+  },
+  {
+   "token": "rằng",
+   "lop": [
+    "biết",
+    "rõ",
+    "thấy",
+    "liệu",
+    "mình",
+    "bản thân"
+   ]
+  },
+  {
+   "token": "nhỏ",
+   "lop": [
+    "lớn",
+    "thấp",
+    "nhanh",
+    "phức tạp",
+    "quan trọng",
+    "tốt"
+   ]
+  },
+  {
+   "token": "mấy",
+   "lop": [
+    "ba",
+    "vài",
+    "hai",
+    "bốn",
+    "sáu",
+    "mười"
+   ]
+  },
+  {
+   "token": "thông qua",
+   "lop": [
+    "xác lập",
+    "thực hiện",
+    "khám phá",
+    "cung cấp",
+    "thuần hóa",
+    "ưa chuộng"
+   ]
+  }
+ ],
+ "xac_nhan_B": {},
+ "seconds": 323.3
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Demo Mamba/hybrid — kiến-trúc tự-xây</title>
+<style>
+  :root{--bg:#0f1216;--panel:#171b21;--panel2:#1e242c;--line:#2a323c;--text:#e7edf3;
+    --dim:#93a1b0;--accent:#c792ea;--warn:#e2b93b;--user:#243447;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  header{padding:14px 20px;border-bottom:1px solid var(--line);background:var(--panel);
+    position:sticky;top:0;z-index:5}
+  header h1{font-size:16px;margin:0 0 3px;font-weight:600}
+  header .sub{font-size:12px;color:var(--dim)}
+  header a{color:var(--accent);text-decoration:none}
+  #wrap{max-width:820px;margin:0 auto;padding:18px 16px 40px}
+  .warn{background:#3a2f13;border:1px solid #6b551f;color:#f0d98a;border-radius:10px;
+    padding:11px 14px;font-size:13px;margin-bottom:18px}
+  .warn b{color:var(--warn)}
+  .ctrls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+  textarea{width:100%;background:var(--panel2);border:1px solid var(--line);color:var(--text);
+    border-radius:10px;padding:11px 13px;font-size:15px;resize:none}
+  textarea:focus{outline:none;border-color:var(--accent)}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{background:var(--panel2);color:var(--dim);border:none;padding:7px 13px;
+    cursor:pointer;font-size:13px}
+  .seg button.on{background:var(--accent);color:#1a0f24;font-weight:600}
+  label.sl{font-size:12px;color:var(--dim);display:flex;align-items:center;gap:6px}
+  #go{background:var(--accent);color:#1a0f24;border:none;border-radius:9px;padding:9px 20px;
+    font-weight:600;cursor:pointer;font-size:15px}
+  #go:disabled{opacity:.5;cursor:default}
+  .ex{font-size:12.5px;color:var(--dim);margin:10px 0}
+  .ex b{color:var(--accent);cursor:pointer;font-weight:500;margin-right:10px}
+  #out{margin-top:16px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;
+    padding:14px 16px;min-height:60px;white-space:pre-wrap;line-height:1.7}
+  #out .p{color:var(--text);font-weight:600}
+  #out .g{color:#b9d0e6}
+  #meta{font-size:12px;color:var(--dim);margin-top:8px}
+  .dots::after{content:"";animation:d 1.2s steps(4,end) infinite}
+  @keyframes d{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
+</style>
+</head>
+<body>
+<header>
+  <h1>🧬 Demo Mamba / Hybrid — kiến-trúc tự-xây</h1>
+  <div class="sub">SSM 9.9M (của ta) · sinh NỐI-TIẾP · <a href="/chat">← trợ lý trả-lời-đúng ở /chat</a></div>
+</header>
+<div id="wrap">
+  <div class="warn">⚠️ <b>Đây là mạng KIẾN-TRÚC đồ-chơi (9.9M, bits~7)</b> — nó viết tiếng Việt
+    <b>trôi chảy nhưng KHÔNG hiểu</b> (word-salad, tên/số bịa). Đây là để <i>thấy kiến trúc SSM/hybrid
+    của ta sinh gì</i>, chứng minh <b>"hiểu = scale"</b>. Muốn câu trả lời ĐÚNG có nguồn → dùng
+    <a href="/chat" style="color:#f0d98a;text-decoration:underline">trợ lý /chat</a> (Qwen-3B + RAG).</div>
+
+  <div class="ctrls">
+    <span class="seg" id="modelseg">
+      <button data-m="hybrid" class="on">Hybrid (Mamba+attn)</button>
+      <button data-m="mamba">Mamba thuần</button>
+    </span>
+    <label class="sl">dài <input id="mx" type="range" min="20" max="80" value="45"><span id="mxv">45</span></label>
+    <label class="sl">nhiệt <input id="tp" type="range" min="4" max="12" value="8"><span id="tpv">0.8</span></label>
+  </div>
+  <textarea id="prompt" rows="2" placeholder="Nhập câu mở đầu để mạng NỐI TIẾP…">Chó là loài động vật</textarea>
+  <div class="ex">Ví dụ:
+    <b data-p="Chó là loài động vật">Chó là loài động vật</b>
+    <b data-p="Hà Nội là thành phố">Hà Nội là thành phố</b>
+    <b data-p="Sông Mê Kông là con sông">Sông Mê Kông…</b>
+    <b data-p="Việt Nam là một quốc gia">Việt Nam…</b>
+  </div>
+  <button id="go">Sinh nối tiếp</button>
+  <div id="out"><span style="color:var(--dim)">Bấm "Sinh nối tiếp" để xem mạng tự-xây viết gì…</span></div>
+  <div id="meta"></div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+let model="hybrid", busy=false;
+$("#modelseg").addEventListener("click",e=>{
+  const b=e.target.closest("button"); if(!b)return;
+  model=b.dataset.m;[...$("#modelseg").children].forEach(x=>x.classList.toggle("on",x===b));
+});
+$("#mx").oninput=()=>$("#mxv").textContent=$("#mx").value;
+$("#tp").oninput=()=>$("#tpv").textContent=($("#tp").value/10).toFixed(1);
+document.addEventListener("click",e=>{ if(e.target.matches(".ex b")){ $("#prompt").value=e.target.dataset.p; run(); }});
+
+async function run(){
+  if(busy) return;
+  const prompt=$("#prompt").value.trim(); if(!prompt) return;
+  busy=true; $("#go").disabled=true;
+  $("#out").innerHTML=`<span class="p">${escape(prompt)}</span> <span class="g think">…đang sinh<span class="dots"></span></span>`;
+  $("#meta").textContent="";
+  const t0=performance.now();
+  try{
+    const r=await fetch("/api/mamba/gen",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({prompt,model,max_len:+$("#mx").value,temp:$("#tp").value/10})});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const d=await r.json();
+    $("#out").innerHTML=`<span class="p">${escape(prompt)}</span> <span class="g">${escape(d.tail)}</span>`;
+    $("#meta").textContent=`${d.model} · ${((performance.now()-t0)/1000).toFixed(1)}s · (mượt nhưng vô nghĩa = giới hạn 9.9M)`;
+  }catch(e){ $("#out").innerHTML=`<span style="color:#e56a6a">Lỗi: ${e.message} — server đang nạp model? Thử lại sau vài giây.</span>`; }
+  busy=false; $("#go").disabled=false;
+}
+function escape(s){return s.replace(/</g,"&lt;");}
+$("#go").onclick=run;
+</script>
+</body>
+</html>

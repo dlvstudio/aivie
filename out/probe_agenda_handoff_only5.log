@@ -1,0 +1,28 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=64 mode=agenda_handoff
+
+=== nq_def  (409.7s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.Ngô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.Ngô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (202.4s) dots≈2 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.Ngô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   '. Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.Ngô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== thd  (88.6s) dots≈2 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà Lê thống nhất giang sơn. dụ là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương. Nhà Lê thống nhất giang sơn. dụ là Hưng Đạo Vương'
+
+=== ly  (89.7s) dots≈2 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109. Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.
+cont:   'Nhà Lý thành lập năm 109. Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.'
+
+=== hung  (90.2s) dots≈2 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.Lê Lợi khởi nghĩa Lam Sơn
+cont:   'Lam Sơn. Ông phát động khởi nghĩa tại Lam Sơn, Thanh Hóa vào năm 1418.Lê Lợi khởi nghĩa Lam Sơn'
+
+[971s] → out/probe_agenda_handoff_only5.log

@@ -1,0 +1,45 @@
+[     0.0s] === eval_v4_network_v10_histwiki START (pid=14427) → out/logs/eval_v4_network_v10_histwiki_20260709_144207.log ===
+[     0.0s] checkpoint=checkpoints/network_v10_histwiki.pkl skip=['essay', 'gen-ar'] min_cov=0.6
+[     0.0s] === load_network_v10_histwiki START (pid=14427) → out/logs/load_network_v10_histwiki_20260709_144208.log ===
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[    75.1s] ✓ unpickle  (75.1s)
+[    75.1s] ▶ vocab (113572 token)
+[    76.3s] ✓ vocab (113572 token)  (1.1s)
+[    76.3s] ▶ adjacency
+[   109.0s] ✓ adjacency  (32.7s)
+[   109.0s] ▶ embedding
+[   110.3s] ✓ embedding  (1.3s)
+[   110.3s] ▶ parents
+[   405.2s] ✓ parents  (294.9s)
+[   405.3s] ✓ loaded: vocab=113572 parents=151430 E=(77464, 96)
+[   412.0s] sidecar có: network_v10_histwiki.content.pkl
+[   412.3s] ✓ load_checkpoint XONG
+[   412.3s] loaded vocab=113572 edges=9255791 parents=151430
+Checkpoint: checkpoints/network_v10_histwiki.pkl  vocab=113572  parents=151430  min_cov=0.6
+
+Bộ             retr  gen-hy  vb-hy  gen-ar  vb-ar
+--------------------------------------------------
+QA val         100%     86%    14%    skip      —
+Paraphrase      88%     88%    50%    skip      —
+Synonym         67%     67%    17%    skip      —
+
+--- FAIL (gen-hybrid), nghiêm IDF ---
+  [QA val] Đoàn kết giúp em thế nào
+     gold='Đoàn kết giúp em mạnh hơn.'  ans='Đoàn kết giúp em mạnh mẽ .'  (cov 50%)
+  [Paraphrase] Tam giác có bao nhiêu cạnh
+     gold='Hình tam giác có ba cạnh.'  ans='Tam giác có tổng ba góc bằng 180 độ.'  (cov 50%)
+  [Synonym] Người trị bệnh là ai
+     gold='Bác sĩ chữa bệnh.'  ans='Các amit của axit sunfanilic gọi là sunfonamit hay sunfamit có tính sát trùng - kháng sinh được dùng nhiều làm thuốc trị bệnh'  (cov 0%)
+  [Synonym] Người dạy học là ai
+     gold='Giáo viên dạy học.'  ans='Trương Văn Hiến dạy học cũng đã truyền ý chí khởi nghĩa cho 3 anh em Tây Sơn'  (cov 0%)
+
+=== Perf summary (section → s) ===
+  gen-hy[QA val]           204.2s
+  gen-hy[Paraphrase]       107.2s
+  gen-hy[Synonym]           49.8s
+  retr[Paraphrase]          27.9s
+  retr[QA val]              12.7s
+  retr[Synonym]              8.6s
+  TOTAL                    410.4s
+[   825.6s] perf → out/logs/eval_v4_network_v10_histwiki_perf.json  total=410.364s

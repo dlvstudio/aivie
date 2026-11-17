@@ -1,0 +1,192 @@
+[     0.0s] === load_network_v12_sent START (pid=79846) → out/logs/load_network_v12_sent_20260726_115704.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     3.1s] ✓ unpickle  (3.1s)
+[     3.1s] ▶ vocab (32002 token)
+[     4.1s] ✓ vocab (32002 token)  (0.9s)
+[     4.1s] ▶ adjacency
+[    13.3s] ✓ adjacency  (9.3s)
+[    13.3s] ▶ embedding
+[    13.4s] ✓ embedding  (0.0s)
+[    13.4s] ▶ parents
+[    13.4s] parents: deserialize 430447 records …
+[    13.4s] parents 5000/430447 (1.2%)
+[    13.4s] parents 10000/430447 (2.3%)
+[    13.5s] parents 15000/430447 (3.5%)
+[    13.5s] parents 20000/430447 (4.6%)
+[    13.6s] parents 25000/430447 (5.8%)
+[    13.6s] parents 30000/430447 (7.0%)
+[    13.6s] parents 35000/430447 (8.1%)
+[    13.7s] parents 40000/430447 (9.3%)
+[    13.7s] parents 45000/430447 (10.5%)
+[    13.7s] parents 50000/430447 (11.6%)
+[    13.8s] parents 55000/430447 (12.8%)
+[    13.8s] parents 60000/430447 (13.9%)
+[    13.9s] parents 65000/430447 (15.1%)
+[    13.9s] parents 70000/430447 (16.3%)
+[    13.9s] parents 75000/430447 (17.4%)
+[    14.0s] parents 80000/430447 (18.6%)
+[    14.0s] parents 85000/430447 (19.7%)
+[    14.0s] parents 90000/430447 (20.9%)
+[    14.1s] parents 95000/430447 (22.1%)
+[    14.1s] parents 100000/430447 (23.2%)
+[    14.2s] parents 105000/430447 (24.4%)
+[    14.2s] parents 110000/430447 (25.6%)
+[    14.3s] parents 115000/430447 (26.7%)
+[    14.3s] parents 120000/430447 (27.9%)
+[    14.4s] parents 125000/430447 (29.0%)
+[    14.4s] parents 130000/430447 (30.2%)
+[    14.5s] parents 135000/430447 (31.4%)
+[    14.5s] parents 140000/430447 (32.5%)
+[    14.6s] parents 145000/430447 (33.7%)
+[    14.6s] parents 150000/430447 (34.8%)
+[    14.7s] parents 155000/430447 (36.0%)
+[    14.8s] parents 160000/430447 (37.2%)
+[    14.8s] parents 165000/430447 (38.3%)
+[    14.9s] parents 170000/430447 (39.5%)
+[    15.0s] parents 175000/430447 (40.7%)
+[    15.1s] parents 180000/430447 (41.8%)
+[    15.1s] parents 185000/430447 (43.0%)
+[    15.2s] parents 190000/430447 (44.1%)
+[    15.3s] parents 195000/430447 (45.3%)
+[    15.4s] parents 200000/430447 (46.5%)
+[    15.4s] parents 205000/430447 (47.6%)
+[    15.5s] parents 210000/430447 (48.8%)
+[    15.6s] parents 215000/430447 (49.9%)
+[    15.7s] parents 220000/430447 (51.1%)
+[    15.7s] parents 225000/430447 (52.3%)
+[    15.8s] parents 230000/430447 (53.4%)
+[    15.9s] parents 235000/430447 (54.6%)
+[    16.0s] parents 240000/430447 (55.8%)
+[    16.0s] parents 245000/430447 (56.9%)
+[    16.1s] parents 250000/430447 (58.1%)
+[    16.2s] parents 255000/430447 (59.2%)
+[    16.3s] parents 260000/430447 (60.4%)
+[    16.3s] parents 265000/430447 (61.6%)
+[    16.4s] parents 270000/430447 (62.7%)
+[    16.5s] parents 275000/430447 (63.9%)
+[    16.6s] parents 280000/430447 (65.0%)
+[    19.2s] parents 285000/430447 (66.2%)
+[    19.3s] parents 290000/430447 (67.4%)
+[    19.4s] parents 295000/430447 (68.5%)
+[    19.4s] parents 300000/430447 (69.7%)
+[    19.5s] parents 305000/430447 (70.9%)
+[    19.6s] parents 310000/430447 (72.0%)
+[    19.7s] parents 315000/430447 (73.2%)
+[    19.7s] parents 320000/430447 (74.3%)
+[    19.8s] parents 325000/430447 (75.5%)
+[    19.9s] parents 330000/430447 (76.7%)
+[    20.0s] parents 335000/430447 (77.8%)
+[    20.0s] parents 340000/430447 (79.0%)
+[    20.1s] parents 345000/430447 (80.1%)
+[    20.2s] parents 350000/430447 (81.3%)
+[    20.3s] parents 355000/430447 (82.5%)
+[    20.3s] parents 360000/430447 (83.6%)
+[    20.4s] parents 365000/430447 (84.8%)
+[    20.5s] parents 370000/430447 (86.0%)
+[    20.5s] parents 375000/430447 (87.1%)
+[    20.6s] parents 380000/430447 (88.3%)
+[    20.7s] parents 385000/430447 (89.4%)
+[    20.8s] parents 390000/430447 (90.6%)
+[    20.8s] parents 395000/430447 (91.8%)
+[    20.9s] parents 400000/430447 (92.9%)
+[    21.0s] parents 405000/430447 (94.1%)
+[    21.1s] parents 410000/430447 (95.2%)
+[    21.1s] parents 415000/430447 (96.4%)
+[    21.2s] parents 420000/430447 (97.6%)
+[    21.3s] parents 425000/430447 (98.7%)
+[    21.4s] parents 430000/430447 (99.9%)
+[    69.5s] ▶ rebuild_hierarchical_index …
+[    71.6s] ✓ rebuild_hierarchical_index (2.1s)
+[    78.6s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    78.6s] ✓ parents  (65.2s)
+[    78.6s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    80.6s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    80.6s] ✓ load_checkpoint XONG
+
+=== 'Hỏi: Ngô Quyền là ai' conf=0.000 ===
+     1.307  '<EOS>'
+     0.851  'Ġcũng'
+     0.830  'Ġkhông'
+     0.751  'Ġbiết'
+     0.706  'Ġnói'
+     0.701  'Ġta'
+     0.698  'Ġthì'
+     0.697  'Ġrằng'
+     0.693  'Ġđã'
+     0.692  'Ġvậy'
+     0.691  'Ġnày'
+     0.687  'Ġmuốn'
+
+=== 'Nhà Lý dời đô về' conf=0.982 ===
+  parent[4254] act=0.982 emit='Nhà Hồ đổi quốc hiệu thành Đại Ngu và dời đô về Thành Tây Đô ở'
+  parent[117082] act=0.018 emit='Nhà văn Vũ Trọng Phụng sống long đong , khi qua đời , cũng nhiều phen'
+     5.814  'ĠThành'
+     0.813  'Ġở'
+     0.629  'ĠHồ'
+     0.559  'ĠNgu'
+     0.457  'Ġđổi'
+     0.371  'Ġhiệu'
+     0.370  'Ġquốc'
+     0.345  'ĠĐại'
+     0.324  'Nhà'
+     0.318  'ĠĐô'
+     0.293  'ĠTây'
+     0.293  'ĠThanh'
+
+=== 'Lê Lợi khởi nghĩa ở' conf=0.941 ===
+  parent[102] act=0.940 emit='Lê Lợi khởi nghĩa Lam Sơn . <EOS>'
+  parent[3512] act=0.058 emit='Lê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh . <EOS>'
+  parent[1329] act=0.001 emit='Lê Lợi đánh đuổi quân Minh . <EOS>'
+  parent[412571] act=0.000 emit='Lê Lợi nghe theo cho quân giải vây rút ra . <EOS>'
+  parent[3564] act=0.000 emit='Lê Lợi lúc nhỏ được người anh ruột Lê Học nuôi nấng . <EOS>'
+     5.024  'ĠThăng'
+     0.471  'Ġnghĩa'
+     0.425  'ĠLam'
+     0.366  'ĠLợi'
+     0.357  'Lê'
+     0.345  'ĠSơn'
+     0.329  '<EOS>'
+     0.230  'Ġkhởi'
+     0.175  'Ġngười'
+     0.170  'Ġlà'
+     0.114  'khẩu'
+     0.113  'Ġchủn'
+
+=== 'Trần Hưng Đạo là' conf=0.855 ===
+  parent[764] act=0.837 emit='Trần Hưng Đạo là Hưng Đạo Vương . <EOS>'
+  parent[101] act=0.091 emit='Trần Hưng Đạo đánh thắng quân Mông . <EOS>'
+  parent[3317] act=0.028 emit='Trần Hưng Đạo là tổng chỉ huy trong hai cuộc kháng chiến sau . <EOS>'
+  parent[5673] act=0.013 emit='Trần Hưng Đạo tên thật là Trần Quốc Tuấn , là danh tướng kiệt xuất của'
+  parent[404706] act=0.011 emit='Trần Nhân Tông hỏi Hưng Đạo vương : " Năm nay đánh giặc thế nào ?'
+     6.880  'ĠHưng'
+     0.910  'ĠĐạo'
+     0.775  'ĠVương'
+     0.729  'Ġlà'
+     0.417  'Ġtrong'
+     0.297  'Trần'
+     0.277  'Ġchỉ'
+     0.232  'Ġcủa'
+     0.183  'Ġhai'
+     0.137  'Ġsau'
+     0.135  '<EOS>'
+     0.118  'Ġcác'
+
+=== 'Ngô Quyền là vị vua sáng lập nhà Ngô, được' conf=0.999 ===
+  parent[4175] act=0.999 emit='Ngô Quyền là vị vua sáng lập nhà Ngô , được xem là người mở đầu'
+  parent[3458] act=0.000 emit='Ngô Xương Ngập ( con trưởng Ngô Quyền ) chạy về nhà một hào trưởng là'
+  parent[411379] act=0.000 emit='Ngô Nam Hưng : Là con trai của Ngô Quyền , mẹ là Dương hậu .'
+  parent[280939] act=0.000 emit='Ngô Quyền ( TP . <EOS>'
+  parent[1533] act=0.000 emit='Ngô Quyền độc lập năm 9 3 8 . <EOS>'
+     5.973  'Ġxem'
+     0.608  'Ġngười'
+     0.497  'Ġlà'
+     0.368  'Ġthời'
+     0.345  'Ġkỳ'
+     0.330  'Ġtự'
+     0.315  'Ngô'
+     0.306  'ĠQuyền'
+     0.293  'Ġđầu'
+     0.271  'Ġđộc'
+     0.269  'Ġchủ'
+     0.260  'Ġlập'

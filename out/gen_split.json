@@ -1,0 +1,1591 @@
+{
+ "checkpoint": "checkpoints/classrich.pkl",
+ "boost": 4.0,
+ "n_ca": 40,
+ "len": 12,
+ "xuong": 56,
+ "vao_moi": 1,
+ "ty_le_hang_trung_vi": 0.995,
+ "ca": [
+  {
+   "P": "Áo",
+   "lop": "thành phố",
+   "hat": [
+    "Viên",
+    "gia",
+    "dài",
+    "hình"
+   ],
+   "khi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Main",
+    "Minh",
+    "Montréal",
+    "Nẵng",
+    "Paris"
+   ],
+   "n_tv": 28,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    306,
+    72,
+    0,
+    68,
+    0,
+    1727,
+    3470
+   ],
+   "hang_bat": [
+    0,
+    298,
+    79,
+    0,
+    75,
+    0,
+    1719,
+    3472
+   ],
+   "len": 2,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "dòng",
+   "lop": "thành phố",
+   "hat": [
+    "họ",
+    "sông",
+    "điện",
+    "nước"
+   ],
+   "khi": [
+    "Amsterdam",
+    "Diego",
+    "Frankfurt",
+    "Main",
+    "Montréal",
+    "Nẵng",
+    "Vancouver",
+    "Viên"
+   ],
+   "n_tv": 28,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "Höchst",
+   "lop": "trung tâm",
+   "hat": [
+    "Main"
+   ],
+   "khi": [
+    "Chicago",
+    "Long",
+    "Montparnasse",
+    "Nhơn",
+    "Não",
+    "Paris",
+    "Sarnia",
+    "Tokyo"
+   ],
+   "n_tv": 22,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "tài",
+   "lop": "trung tâm",
+   "hat": [
+    "trò",
+    "khác",
+    "Nó",
+    "liệu"
+   ],
+   "khi": [
+    "Montparnasse",
+    "Nhơn",
+    "Não",
+    "Paris",
+    "Sarnia",
+    "Tokyo",
+    "Viên",
+    "XIX"
+   ],
+   "n_tv": 22,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "nhạc",
+   "lop": "khoảng",
+   "hat": [
+    "Nguyễn",
+    "nghệ",
+    "cổ",
+    "lớn"
+   ],
+   "khi": [
+    "Sa",
+    "Thổ",
+    "Vương",
+    "biển",
+    "cm",
+    "vỏ",
+    "xã",
+    "đảo"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "Madagascar",
+   "lop": "thành viên",
+   "hat": [],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Lan",
+    "Nam",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "họ"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    1801,
+    6096,
+    2892,
+    1967,
+    1554,
+    6328,
+    1944,
+    1617
+   ],
+   "hang_bat": [
+    1801,
+    6096,
+    2892,
+    1967,
+    1554,
+    6328,
+    1944,
+    1617
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "đốt",
+   "lop": "ngôn ngữ",
+   "hat": [
+    "Nga",
+    "cùng",
+    "hương",
+    "Âu"
+   ],
+   "khi": [
+    "Anh",
+    "Baloch",
+    "Hebrew",
+    "Ho",
+    "Nó",
+    "Python",
+    "Sindh",
+    "Wa"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "Panduranga",
+   "lop": "ngôn ngữ",
+   "hat": [],
+   "khi": [
+    "Anh",
+    "Baloch",
+    "Hebrew",
+    "Ho",
+    "Nga",
+    "Nó",
+    "Pháp",
+    "Python"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    1536,
+    934,
+    9056,
+    1577,
+    3398,
+    1560,
+    1892,
+    5089
+   ],
+   "hang_bat": [
+    1523,
+    937,
+    9056,
+    1580,
+    3398,
+    1547,
+    1895,
+    5089
+   ],
+   "len": 2,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "dòng",
+   "lop": "quốc gia",
+   "hat": [
+    "họ",
+    "sông",
+    "điện",
+    "nước"
+   ],
+   "khi": [
+    "Canada",
+    "Cuba",
+    "Hạ",
+    "Kỳ",
+    "Lan",
+    "trò",
+    "Điển"
+   ],
+   "n_tv": 18,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "quảng",
+   "lop": "quốc gia",
+   "hat": [
+    "Đông",
+    "tỉnh",
+    "lớn",
+    "Nam"
+   ],
+   "khi": [
+    "Angkor",
+    "Bản",
+    "Canada",
+    "Cuba",
+    "Hạ",
+    "Kỳ",
+    "Lan",
+    "Nha"
+   ],
+   "n_tv": 18,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    110,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    111,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 1,
+   "vao_moi": 0
+  },
+  {
+   "P": "Kể",
+   "lop": "phần",
+   "hat": [
+    "lượng",
+    "thời",
+    "sinh",
+    "âm"
+   ],
+   "khi": [
+    "Bản",
+    "Francisco",
+    "Nó",
+    "buộc",
+    "chí",
+    "coli",
+    "oxy",
+    "tế"
+   ],
+   "n_tv": 14,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    1803,
+    5982,
+    41,
+    3351,
+    2135,
+    8078,
+    4179,
+    1998
+   ],
+   "hang_bat": [
+    1804,
+    5982,
+    61,
+    3338,
+    2131,
+    8078,
+    4180,
+    1996
+   ],
+   "len": 3,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "đấu",
+   "lop": "phần",
+   "hat": [
+    "tế",
+    "thao",
+    "yếu",
+    "dân"
+   ],
+   "khi": [
+    "Bản",
+    "Francisco",
+    "Nó",
+    "biến",
+    "coli",
+    "oxy",
+    "đều"
+   ],
+   "n_tv": 14,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "tuân",
+   "lop": "cơ quan",
+   "hat": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "khi": [
+    "Pháp",
+    "VietNamNet",
+    "cung",
+    "hội",
+    "tế",
+    "Điển",
+    "đài"
+   ],
+   "n_tv": 12,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    372,
+    0,
+    460,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    372,
+    0,
+    460,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "nhuận",
+   "lop": "yếu tố",
+   "hat": [
+    "động",
+    "nó",
+    "lý",
+    "lịch"
+   ],
+   "khi": [
+    "cư"
+   ],
+   "n_tv": 3,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    0
+   ],
+   "hang_bat": [
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "Áo",
+   "lop": "hệ thống",
+   "hat": [
+    "Viên",
+    "gia",
+    "dài",
+    "hình"
+   ],
+   "khi": [
+    "Internet",
+    "Mộc",
+    "chúng",
+    "cột",
+    "sộ",
+    "tảng"
+   ],
+   "n_tv": 11,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    2574,
+    3303,
+    1811,
+    0,
+    777,
+    0
+   ],
+   "hang_bat": [
+    2576,
+    3305,
+    1819,
+    0,
+    769,
+    0
+   ],
+   "len": 1,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "Quảng",
+   "lop": "hệ thống",
+   "hat": [
+    "Đông",
+    "tỉnh",
+    "lớn",
+    "Nam"
+   ],
+   "khi": [
+    "Internet",
+    "Lan",
+    "Mộc",
+    "chúng",
+    "cột",
+    "hệ",
+    "sộ",
+    "tảng"
+   ],
+   "n_tv": 11,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    4401,
+    2902,
+    3306,
+    1811,
+    3798,
+    1969,
+    0,
+    3220
+   ],
+   "hang_bat": [
+    4401,
+    2902,
+    3306,
+    1812,
+    3798,
+    1970,
+    0,
+    3220
+   ],
+   "len": 0,
+   "xuong": 2,
+   "vao_moi": 0
+  },
+  {
+   "P": "tuân",
+   "lop": "đơn vị",
+   "hat": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "khi": [
+    "Hóa",
+    "Nó",
+    "bào",
+    "gia",
+    "giờ",
+    "tử",
+    "watt",
+    "Đồ"
+   ],
+   "n_tv": 11,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    473,
+    605,
+    0,
+    530,
+    0,
+    505,
+    0,
+    0
+   ],
+   "hang_bat": [
+    473,
+    604,
+    0,
+    562,
+    0,
+    505,
+    0,
+    0
+   ],
+   "len": 1,
+   "xuong": 1,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "Chủ",
+   "lop": "ngày",
+   "hat": [
+    "thống",
+    "yếu",
+    "nghĩa",
+    "hòa"
+   ],
+   "khi": [
+    "Ba",
+    "Tư",
+    "cổ",
+    "Điển"
+   ],
+   "n_tv": 11,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    220,
+    206,
+    2220,
+    3347
+   ],
+   "hang_bat": [
+    236,
+    222,
+    2229,
+    3337
+   ],
+   "len": 1,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "chôn",
+   "lop": "ngày",
+   "hat": [
+    "Sa",
+    "cùng",
+    "vua",
+    "tôi"
+   ],
+   "khi": [
+    "Ba",
+    "Bảy",
+    "Tư",
+    "thường",
+    "thống",
+    "Điển",
+    "Đồng"
+   ],
+   "n_tv": 11,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    186,
+    0,
+    0,
+    0,
+    429,
+    172,
+    0
+   ],
+   "hang_bat": [
+    193,
+    0,
+    0,
+    16,
+    427,
+    180,
+    0
+   ],
+   "len": 1,
+   "xuong": 2,
+   "vao_moi": 1
+  },
+  {
+   "P": "giếng",
+   "lop": "khu vực",
+   "hat": [
+    "đầu",
+    "hơn",
+    "cao",
+    "tính"
+   ],
+   "khi": [
+    "Georgia",
+    "Hồng",
+    "Louis",
+    "biệt",
+    "lễ",
+    "tục",
+    "Đức"
+   ],
+   "n_tv": 10,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    453,
+    0,
+    447,
+    359
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    453,
+    0,
+    447,
+    361
+   ],
+   "len": 0,
+   "xuong": 1,
+   "vao_moi": 0
+  },
+  {
+   "P": "Áo",
+   "lop": "khu vực",
+   "hat": [
+    "Viên",
+    "gia",
+    "dài",
+    "hình"
+   ],
+   "khi": [
+    "Georgia",
+    "Hồng",
+    "Louis",
+    "lễ"
+   ],
+   "n_tv": 10,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    709,
+    2950,
+    1410,
+    2647
+   ],
+   "hang_bat": [
+    701,
+    2952,
+    1418,
+    2649
+   ],
+   "len": 1,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "protein",
+   "lop": "nguyên nhân",
+   "hat": [
+    "khác",
+    "yếu",
+    "tục",
+    "loại"
+   ],
+   "khi": [
+    "Paris",
+    "khô",
+    "quyển",
+    "thời",
+    "đều"
+   ],
+   "n_tv": 10,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    3471,
+    3230,
+    3326,
+    1699,
+    1754
+   ],
+   "hang_bat": [
+    3472,
+    3231,
+    3327,
+    1702,
+    1757
+   ],
+   "len": 0,
+   "xuong": 5,
+   "vao_moi": 0
+  },
+  {
+   "P": "trùng",
+   "lop": "nguyên nhân",
+   "hat": [
+    "sinh",
+    "hội",
+    "vật",
+    "động"
+   ],
+   "khi": [
+    "Paris",
+    "khô",
+    "lưu",
+    "quyển"
+   ],
+   "n_tv": 10,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "đám",
+   "lop": "ví dụ",
+   "hat": [
+    "lễ",
+    "đông",
+    "tử",
+    "điện"
+   ],
+   "khi": [
+    "Tokyo",
+    "củ",
+    "lẽ",
+    "mại",
+    "tây",
+    "đếm"
+   ],
+   "n_tv": 9,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    1309,
+    1514,
+    2450,
+    3435,
+    2551,
+    0
+   ],
+   "hang_bat": [
+    1311,
+    1516,
+    2452,
+    3435,
+    2552,
+    0
+   ],
+   "len": 0,
+   "xuong": 4,
+   "vao_moi": 0
+  },
+  {
+   "P": "chóng",
+   "lop": "ví dụ",
+   "hat": [
+    "tục",
+    "binh",
+    "nhận",
+    "rộng"
+   ],
+   "khi": [
+    "Tokyo",
+    "củ",
+    "lẽ",
+    "mại",
+    "tây",
+    "Đất",
+    "đếm"
+   ],
+   "n_tv": 9,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "dùng",
+   "lop": "biểu tượng",
+   "hat": [
+    "nhà",
+    "sản",
+    "loại",
+    "xuất"
+   ],
+   "khi": [
+    "Cột",
+    "Moskva",
+    "sồi",
+    "thâm",
+    "vàng",
+    "vừa"
+   ],
+   "n_tv": 8,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "hữu",
+   "lop": "biểu tượng",
+   "hat": [
+    "khác",
+    "điện",
+    "ngạn",
+    "hạn"
+   ],
+   "khi": [
+    "Cột",
+    "Moskva",
+    "sồi",
+    "thâm",
+    "vừa"
+   ],
+   "n_tv": 8,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "tuân",
+   "lop": "thủ đô",
+   "hat": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "khi": [
+    "Calcutta",
+    "Viên",
+    "York",
+    "trí",
+    "tục"
+   ],
+   "n_tv": 8,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    471,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    471,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "nhuận",
+   "lop": "yếu tố",
+   "hat": [
+    "động",
+    "nó",
+    "lý",
+    "lịch"
+   ],
+   "khi": [
+    "cư"
+   ],
+   "n_tv": 3,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    0
+   ],
+   "hang_bat": [
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "hữu",
+   "lop": "bộ phận",
+   "hat": [
+    "khác",
+    "điện",
+    "ngạn",
+    "hạn"
+   ],
+   "khi": [
+    "Eustatius",
+    "dài",
+    "hiểm",
+    "lá"
+   ],
+   "n_tv": 8,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "Viện",
+   "lop": "tôn giáo",
+   "hat": [
+    "tế",
+    "học",
+    "sự",
+    "Hoa"
+   ],
+   "khi": [
+    "thủy",
+    "Đài"
+   ],
+   "n_tv": 7,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    2721,
+    3160
+   ],
+   "hang_bat": [
+    2727,
+    3164
+   ],
+   "len": 0,
+   "xuong": 2,
+   "vao_moi": 0
+  },
+  {
+   "P": "thắng",
+   "lop": "tôn giáo",
+   "hat": [
+    "trận",
+    "vua",
+    "thế",
+    "mình"
+   ],
+   "khi": [
+    "giáo",
+    "thủy",
+    "Đài"
+   ],
+   "n_tv": 7,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    2153,
+    2726,
+    3158
+   ],
+   "hang_bat": [
+    2155,
+    2727,
+    3158
+   ],
+   "len": 0,
+   "xuong": 2,
+   "vao_moi": 0
+  },
+  {
+   "P": "hôm",
+   "lop": "triều đại",
+   "hat": [
+    "nay",
+    "Nguyễn",
+    "bộ",
+    "Trần"
+   ],
+   "khi": [
+    "Lê",
+    "Lý",
+    "Sơn",
+    "Đinh"
+   ],
+   "n_tv": 7,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "hang_bat": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  },
+  {
+   "P": "tuân",
+   "lop": "nền tảng",
+   "hat": [
+    "lịch",
+    "phép",
+    "lý",
+    "trời"
+   ],
+   "khi": [
+    "Linux",
+    "giới",
+    "lường",
+    "nhận",
+    "quang"
+   ],
+   "n_tv": 7,
+   "nhanh": "②_chưa",
+   "hang_tat": [
+    617,
+    0,
+    0,
+    491,
+    0
+   ],
+   "hang_bat": [
+    617,
+    0,
+    0,
+    491,
+    0
+   ],
+   "len": 0,
+   "xuong": 0,
+   "vao_moi": 0
+  },
+  {
+   "P": "buộc",
+   "lop": "thành viên",
+   "hat": [
+    "phải",
+    "họ",
+    "sinh",
+    "học"
+   ],
+   "khi": [
+    "Bản",
+    "KDE",
+    "Nó",
+    "Pakistan",
+    "Viên",
+    "lùn",
+    "nạp",
+    "trưởng"
+   ],
+   "n_tv": 20,
+   "nhanh": "②_KHỚP",
+   "hang_tat": [
+    1806,
+    0,
+    1554,
+    4357,
+    1948,
+    0,
+    4611,
+    2306
+   ],
+   "hang_bat": [
+    1807,
+    0,
+    1555,
+    4357,
+    1949,
+    0,
+    4611,
+    2306
+   ],
+   "len": 0,
+   "xuong": 3,
+   "vao_moi": 0
+  }
+ ]
+}

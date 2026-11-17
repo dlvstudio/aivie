@@ -1,0 +1,32 @@
+[0s] load checkpoints/mini_sent.pkl (gc.disable) …
+[6s] ✓ parents 5,004
+  emit CỦA CHA (THƯỚC): 150 prompt
+  qa_supervised (ĐÃ train): 150 prompt
+  qa_heldout (CHƯA train — tham khảo): 150 prompt
+  BỊA (hoán thực thể): 8 prompt
+
+nhóm: emit CỦA CHA (THƯỚC) | qa_supervised (ĐÃ train) | qa_heldout (CHƯA train — tham khảo) | BỊA (hoán thực thể)
+ last_k  (nổ / tổng = tỉ lệ) theo thứ tự nhóm trên
+      0     0/150  =  0.0%         147/150  = 98.0%         150/150  =100.0%           8/8    =100.0%      
+      4     0/150  =  0.0%         146/150  = 97.3%         149/150  = 99.3%           1/8    = 12.5%      
+      6     0/150  =  0.0%         147/150  = 98.0%         150/150  =100.0%           6/8    = 75.0%      
+      8     0/150  =  0.0%         147/150  = 98.0%         150/150  =100.0%           8/8    =100.0%      
+     10     0/150  =  0.0%         147/150  = 98.0%         150/150  =100.0%           8/8    =100.0%      
+
+Verdict (thước ≤5% VÀ qa_supervised ≤5% VÀ bịa ≥80%):
+  last_k=0   thước=  0.0%  qa= 98.0%  bịa=100.0%  ❌
+  last_k=4   thước=  0.0%  qa= 97.3%  bịa= 12.5%  ❌
+  last_k=6   thước=  0.0%  qa= 98.0%  bịa= 75.0%  ❌
+  last_k=8   thước=  0.0%  qa= 98.0%  bịa=100.0%  ❌
+  last_k=10  thước=  0.0%  qa= 98.0%  bịa=100.0%  ❌
+
+⛔ CHẶN: qa_supervised nổ >20% ở MỌI last_k ⇒ chưa được bật guard.
+   Chạy `scripts/diag_premise_qa.py` để phân định: (a) corpus QA không có trong
+   checkpoint  vs  (b) cổng hỏng ở đường QA. Xong rồi mới quay lại bảng này.
+→ GIỮ guard=False
+
+Ví dụ THƯỚC bị nổ tại last_k=6 (tối đa 8) — đọc tay xem cổng nhầm KIỂU gì:
+  (không có)
+
+[14s] → out/premise_guard_rate_MINI.log
+Dán NGUYÊN bảng + verdict vào ticket §12.16 (kể cả khi không đạt).

@@ -1,0 +1,11 @@
+
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 27284.06it/s]
+23:56:10 Mamba cho tầng global [5, 11, 17, 23, 29, 35, 41, 47]
+23:57:13 KL 2k mamba_no11 1.532 (63.4%)
+23:57:44 KL 2k mamba_no11_bo11 2.687 (53.0%)
+Traceback (most recent call last):
+  File "~/Documents/learn/nn-aivie/scripts/exp2_global.py", line 103, in <module>
+    E.log(f"kim: {len(cases)} ca · ~{len(tok.encode(cases[0][2]))} token")
+                                                    ~~~~~^^^
+IndexError: list index out of range

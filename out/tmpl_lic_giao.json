@@ -1,0 +1,42 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa_pos.pkl",
+ "n_parent": 198,
+ "khe": 7951,
+ "khe_thay_duoc": 295,
+ "to_hop_moi_log10": 0.47712125471966244,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 295,
+   "hep": 0.48135593220338985,
+   "chu_de": 0.976271186440678
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 295,
+   "hep": 0.10847457627118644,
+   "chu_de": 0.5322033898305085
+  }
+ },
+ "ty_so_chu_de": 1.8343949044585985,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0,
+  "narrow_min": 0.5
+ },
+ "gate_pass": false,
+ "vi_du": [
+  "' 178'  →  thay '7' bằng '1'",
+  "' 173'  →  thay '7' bằng '6'",
+  "'735'  →  thay '3' bằng '7'",
+  "' 930'  →  thay '3' bằng '6'",
+  "' tháng 5 năm'  →  thay ' 5' bằng ' 7'",
+  "'930'  →  thay '3' bằng '6'",
+  "' 13.'  →  thay '3' bằng '7'",
+  "' mới 6 tuổi'  →  thay ' 6' bằng ' 4'",
+  "' 24 tháng'  →  thay '4' bằng '7'",
+  "' tháng 3 năm'  →  thay ' 3' bằng ' 5'",
+  "'930'  →  thay '3' bằng '1'",
+  "'93.'  →  thay '3' bằng '7'"
+ ],
+ "seconds": 12.1
+}

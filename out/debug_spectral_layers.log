@@ -1,0 +1,57 @@
+[0s] load checkpoints/network_v11_styled_hist.pkl …
+spectral_stack loaded ~/Documents/learn/nn-aivie/checkpoints/network_v11_styled_hist.spectral_stack.npz
+
+══ A. Năng lượng phổ mỗi tầng (Σ Wffn + ‖Wa‖F) ══
+  L0: ‖wq‖F=70.63  ‖wk‖F=70.63  Σs_ffn=3082.25  s_max=140.74  n_keep=64
+  L1: ‖wq‖F=52.18  ‖wk‖F=52.18  Σs_ffn=2522.33  s_max=108.35  n_keep=48
+  L2: ‖wq‖F=48.92  ‖wk‖F=48.92  Σs_ffn=2289.27  s_max=97.14  n_keep=32
+  L3: ‖wq‖F=47.00  ‖wk‖F=47.00  Σs_ffn=2133.05  s_max=90.43  n_keep=24
+
+══ B. Successor từ w0='ĠĐạo' (cuối prompt) ══
+  W_seq raw top: 'ĠViễn':66.500  'Ġluật':8.450  'Ġgiáo':6.250  ',':6.100  'ĠTôn':4.100  'ĠVực':3.850  '.':3.100  'Ġvương':2.900
+  Wa_L0 top: 'ĠThiên':1.744  'ĠThần':1.626  'ĠLong':1.499  'ĠSơn':1.497  'ĠMinh':1.406  'ĠLinh':1.365  'ĠChâu':1.311  'ĠThanh':1.311  jaccard@10=0.00  rank(best_raw)=300
+  Wa_L1 top: 'Ġở':0.558  'Ġcó':0.315  'Ġcủa':0.262  'y':0.259  'Ġnăm':0.178  'Ġcon':0.177  'Ġvào':0.168  'Ġđầu':0.159  jaccard@10=0.00  rank(best_raw)=13436
+  Wa_L2 top: 'Ġtrên':0.418  'Ġhay':0.267  'Ġlên':0.260  'Ġra':0.193  'Ġvới':0.155  'Ġnày':0.136  'ĠThần':0.110  'al':0.106  jaccard@10=0.00  rank(best_raw)=17576
+  Wa_L3 top: 'Ġlại':0.430  'ĠD':0.339  'ĠM':0.329  'Ġbị':0.318  'Ġsẽ':0.313  'ine':0.311  'Ġcung':0.266  'Ġgia':0.219  jaccard@10=0.00  rank(best_raw)=6913
+
+══ C. Hub phổ — token |wq| / |wk| lớn nhất mỗi tầng (5) ══
+  L0 query-hub: ["'Ġ'", '\'Ġ"\'', "'Ġ('", "'Ġ“'", "'-'"]
+  L0 key-hub:   ["')'", "','", "'Ġ('", "'-'", "'.'"]
+  L1 query-hub: ['"Ġ\'"', "'ĠS'", "'Ġ('", "'ĠThe'", "'ĊĊ'"]
+  L1 key-hub:   ["'”'", "'o'", "'us'", "'Ġcũng'", "'en'"]
+  L2 query-hub: ["'Ġ-'", '\'Ġ"\'', "'c'", "'ĠN'", "'ĠK'"]
+  L2 key-hub:   ["'Ġđể'", "'Ġhay'", "'Ġvới'", "'_'", "'Ġthì'"]
+  L3 query-hub: ["'Ġ·'", "'Ġof'", "'Ġthe'", "'Ġ‘'", "'ĠN'"]
+  L3 key-hub:   ["'Ġthường'", "'Ġnằm'", "'Ġtrở'", "'Ġkhông'", "'Ġtại'"]
+
+══ D. Decode no-agenda — 6 bước đầu ══
+  prompt: 'Viết hài hước về Trần Hưng Đạo'
+
+── step 0  w0='ĠĐạo'  |out|=7 ──
+  W_seq/micro top: 'ĠViễn':66.500  'Ġluật':8.450  'Ġgiáo':6.250  ',':6.100  'ĠTôn':4.100  'ĠVực':3.850  '.':3.100  'Ġvương':2.900
+  scores A3 top:   '<EOS>':41.588  ',':27.059  '.':18.566  'ĠViễn':7.069  'ĠVương':1.362  'Ġlà':1.119  'Ċ':0.848  ':':0.774
+  scores+stack top:'<EOS>':10.315  ',':6.210  '.':3.130  'ĠViễn':1.336  'ĠVương':0.327  'Ġlà':0.205  'ĠThiên':0.158  'Ċ':0.128
+  argmax A3='<EOS>'  stack='<EOS>'  same=True
+  |S|=39  out_nnz=14458
+  S surface=39/39
+  a_out top: 'ĊĊ':0.452  'ĠThiên':0.434  'ĠThần':0.355  'ĠLong':0.313  'ĠMinh':0.303  'ĠPhong':0.281  'ĠVân':0.262  'ĠThanh':0.261
+  succ_L0 top: 'ĠThiên':1.000  'ĠThần':0.932  'ĠLong':0.860  'ĠSơn':0.859  'ĠMinh':0.806  'ĠLinh':0.783  'ĠChâu':0.752  'ĠThanh':0.752
+  L0: H=3.66  z=5.353  drop=0  ov_h0=0.208  Σs=3082.25
+      α: 'ĠĐạo':0.031  'ĠHưng':0.030  'Ġvề':0.030  'ĠTrần':0.030  'Ġhài':0.029  'Ġhước':0.029
+      h: 'ĊĊ':0.695  'ĠThiên':0.200  'ĠThanh':0.194  'ĠMinh':0.162  'ĠTrần':0.161  'ĠVân':0.160
+  L1: H=3.65  z=1.086  drop=0  ov_h0=0.223  Σs=2522.33
+      α: "'":0.038  'Viết':0.034  'ĠHưng':0.032  'Ġvề':0.032  'Ġhài':0.031  'Ġhước':0.031
+      h: 'ĊĊ':0.273  'ĠThiên':0.255  'ĠThần':0.233  'ĠLinh':0.232  'ĠLong':0.223  'ĠPhong':0.215
+  L2: H=3.65  z=0.724  drop=7  ov_h0=0.192  Σs=2289.27
+      α: 'ĠĐạo':0.033  'Ġvề':0.033  'Viết':0.031  'Ġhài':0.031  'Ġhước':0.031  'ĠThần':0.030
+      h: 'ĠThiên':0.042  'ĠNgọc':0.042  'ĠPhong':0.038  'ĠThần':0.038  'ĠLong':0.038  'ĠThanh':0.038
+  L3: H=3.66  z=0.556  drop=15  ov_h0=0.174  Σs=2133.05
+      α: 'Ġvề':0.031  'ĠĐạo':0.031  'Ġhài':0.031  'Viết':0.031  'Ġhước':0.031  'ĠHưng':0.031
+      h: 'ĠThánh':0.050  'ĠTiên':0.049  'ĠĐạo':0.047  'ĠSơn':0.046  'ĠTông':0.046  'ĠThiên':0.045
+  EOS
+
+══ E. Gen ngắn no-agenda (A3 vs stack) ══
+  A3: ' Ngô Miếu Dương Đại Nghệ sâu, đã bắt cho đoàn Đền Paris Quang xa đồn lãng sức Hai và đảm gia Cô ít chiến đáp Lam dân quốc để, có thể.\n:\nGiải nghĩa:'
+  stack: ' Ngô Miếu Dương Đại Nghệ sâu, đã bắt cho đoàn Đền Paris Quang xa đồn lãng sức Hai và đảm gia Cô ít chiến đáp Lam dân quốc để cho một, không có thể có thể.\n'
+
+[142s] → out/debug_spectral_layers.log

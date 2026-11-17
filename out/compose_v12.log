@@ -1,0 +1,30 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[39s] ✓ 430,447 cha
+  cha câu: nửa A 210,941 · nửa B 210,763
+  vật liệu `cluster`: 155,755 mảnh ≥2 token
+  vật liệu `ngram`  : 22,013,790 mảnh ≥2 token
+  chấm 1,500 câu giữ lại
+
+======================================================================
+vật liệu          phủ TB   phủ ≥0.8   phủ ≥0.5
+======================================================================
+cluster            0.583      13.0%      70.4%
+ngram              0.956      96.3%      99.8%
+ngram_xáo          0.617       9.9%      83.0%
+======================================================================
+số mảnh / số token (TB) = 0.289   (thấp = ghép mảnh DÀI; gần 0.5 = gần như từng-token)
+
+PHỦ THEO CỠ KHO VẬT LIỆU (cùng bộ câu chấm):
+    % nửa A       #mảnh    phủ TB   phủ ≥0.8
+       25%   3,810,672     0.824      62.5%
+       50%  10,015,955     0.925      91.2%
+      100%  22,013,790     0.956      96.3%
+  ⇒ gấp đôi kho (50%→100%) thêm +5.1% ở cột `phủ ≥0.8`.  v12 có ~85× cha so mini.
+
+G1 ≥40% câu phủ ≥0.8 bằng `ngram` : ĐẠT (96.3%)  ← quyết định
+G2 `ngram` hơn xáo ≥0.15          : ĐẠT (+0.339)
+G3 số mảnh ≤60% số token          : ĐẠT (0.289)
+
+⇒ CÓ vật liệu ⇒ đi tiếp bước (0) dựng thước trôi chảy
+
+[107s] → out/compose_v12.log

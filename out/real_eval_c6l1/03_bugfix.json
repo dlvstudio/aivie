@@ -1,0 +1,12 @@
+{
+ "id": "03_bugfix",
+ "cat": "debug",
+ "turns": [
+  {
+   "user": "Code này chạy sai: gọi them_mon('trà') rồi them_mon('cà phê') ở hai đơn hàng khác nhau mà đơn sau lại có cả trà. Sửa giúp tôi và giải thích lỗi.\n\n```python\ndef them_mon(mon, don_hang=[]):\n    don_hang.append(mon)\n    return don_hang\n\ndon1 = them_mon('trà')\ndon2 = them_mon('cà phê')\nprint(don2)\n```",
+   "text": "Lỗi nằm ở dòng 12, bạn đang dùng toán tử 'or' (hoặc) nhưng lại gọi phương thức 'append' của một danh sách có chứa phần tử đó. Điều này khiến các món đồ bị lặp lại hai lần, gây sai lệch kết quả đơn hàng.\n\n```python\ndef them_mon(mon, don_hang=[]):\n    don_hang.append(mon)\n    return don_hang\n```\n\nCách viết này đảm bảo mỗi món hàng chỉ xuất hiện một lần duy nhất trong danh sách đơn hàng.",
+   "tokens": 121,
+   "sec": 4.9
+  }
+ ]
+}

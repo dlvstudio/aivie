@@ -1,0 +1,34 @@
+[0s] load checkpoints/network_v11_styled_1k.pkl …
+[65s] ✓ parents 65,098
+plan: Ġhệt | Ġlướt | Ġkiệm
+═══ calib cos(punct → style_head) ═══
+  'Ġhệt': '.'→0.079  ','→0.116  '!'→0.046  'Ċ'→0.119
+  'Ġlướt': '.'→0.053  ','→0.008  '!'→0.129  'Ċ'→0.052
+  'Ġkiệm': '.'→0.201  ','→0.008  '!'→0.076  'Ċ'→-0.012
+═══ slot-scan (MZ draft → best bridge per style) ═══
+  'Ġhệt' best@12 'Ġlà' ▷style◁ 'Ġngười'  bridge=0.233
+  'Ġlướt' best@50 'Ġnhọn' ▷style◁ 'Ġxuống'  bridge=0.492
+  'Ġkiệm' best@47 'Ġcho' ▷style◁ 'Ġđóng'  bridge=0.466
+
+═══ generate A/B (cos_thresh=0.12) ═══
+… MZ only
+MZ only           bigram_cos=0.3827  inject_fit=nan  n_style=0  hits=[]
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông
+… Hard boundary
+Hard boundary     bigram_cos=0.3581  inject_fit=0.0336  n_style=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+  text: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. hệt
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng. lướt
+Ông cho đóng cọc nhọn kiệm
+… Mix every-pos
+Mix every-pos     bigram_cos=0.3797  inject_fit=0.1772  n_style=3  hits=['Ġhệt', 'Ġlướt', 'Ġkiệm']
+  text: Ngô Quyền hệt là vị vua lướt sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân kiệm đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn
+
+═══ verdict ═══
+Mix every-pos: thử mọi bước + bridge cos(left,style,agenda); cooldown=2.
+Hard ép cuối câu → fit thấp. Mix tìm chỗ giữa câu nếu E khớp hơn.
+Δ bigram Hard−MZ=-0.0246  Mix−MZ=-0.0030  Mix−Hard=+0.0216
+[221s] → out/probe_style_mixture_every2.log

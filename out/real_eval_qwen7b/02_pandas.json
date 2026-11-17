@@ -1,0 +1,13 @@
+{
+ "id": "02_pandas",
+ "cat": "py_data",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Tôi có file sales.csv gồm các cột: ngay (dạng 2024-03-15), san_pham, so_luong, don_gia. Viết code pandas: (1) tính doanh thu theo từng tháng, (2) tìm 3 sản phẩm có doanh thu cao nhất cả năm, (3) xuất kết quả ra file Excel 2 sheet.",
+   "text": "Dưới đây là đoạn mã Python sử dụng thư viện Pandas để thực hiện các yêu cầu bạn đưa ra:\n\n```python\nimport pandas as pd\n\n# Đọc dữ liệu từ file CSV vào DataFrame\ndf = pd.read_csv('sales.csv', parse_dates=['ngay'])\n\n# (1) Tính doanh thu theo từng tháng\ndf['doanh_thu'] = df['so_luong'] * df['don_gia']\nmonthly_sales = df.groupby(df['ngay'].dt.to_period('M'))['doanh_thu'].sum().reset_index()\n\n# (2) Tìm 3 sản phẩm có doanh thu cao nhất cả năm\ntop_products = df.groupby('san_pham')['doanh_thu'].sum().nlargest(3)\n\n# Xuất kết quả ra file Excel với 2 sheet\nwith pd.ExcelWriter('ket_qua.xlsx') as writer:\n    monthly_sales.to_excel(writer, sheet_name='Doanh Thu Theo Thang', index=False)\n    top_products.to_excel(writer, sheet_name='San Pham Co Doanh Thu Cao Nhat', index=True)\n\nprint(\"Xuat file thanh cong!\")\n```\n\nMã này sẽ thực hiện các yêu cầu sau:\n\n1. Đọc dữ liệu từ file sales.csv vào một DataFrame.\n2. Tính doanh thu cho mỗi hàng bằng cách nhân số lượng với đơn giá và thêm cột 'doanh_thu' vào DataFrame.\n3. Tính tổng doanh thu cho từng tháng bằng cách nhóm dữ liệu theo cột ngay (sử dụng to_period('M') để chuyển sang định dạng tháng) và tính tổng doanh thu.\n4. Tìm 3 sản phẩm có doanh thu cao nhất cả năm bằng cách nhóm dữ liệu theo cột san_pham và tính tổng doanh thu, sau đó lấy 3 giá trị lớn nhất.\n5. Xuất kết quả vào file Excel với hai sheet:\n   - 'Doanh Thu Theo Tháng': chứa dữ liệu về doanh thu của từng tháng.\n   - 'San Pham Co Doanh Thu Cao Nhat': chứa danh sách 3 sản phẩm có doanh thu cao nhất.\n\nĐảm bảo rằng bạn đã cài đặt các thư viện cần thiết trước khi chạy mã này. Bạn có thể cài đặt chúng bằng cách sử dụng lệnh sau:\n\n```sh\npip install pandas openpyxl\n```\n\nMã trên sẽ tạo file kết quả 'ket_qua.xlsx' trong cùng thư mục với script Python của bạn.",
+   "tokens": 523,
+   "sec": 11.2
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "id": "10_pytest",
+ "cat": "test",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết test pytest cho hàm này, bao phủ cả trường hợp biên:\n\n```python\ndef chia_deu(tong: int, so_nguoi: int) -> list[int]:\n    \"\"\"Chia tong thành so_nguoi phần nguyên chênh nhau tối đa 1.\"\"\"\n    if so_nguoi <= 0:\n        raise ValueError('so_nguoi phải > 0')\n    q, r = divmod(tong, so_nguoi)\n    return [q + 1] * r + [q] * (so_nguoi - r)\n```",
+   "text": "Đây là một số test cases phù hợp với hàm `chia_deu` của bạn, bao gồm cả trường hợp biên:\n\n```python\nimport pytest\n\ndef test_chia_deu():\n    # Trường hợp bình thường\n    assert chia_deu(10, 3) == [4, 3, 3]\n\n    # Trường hợp so_nguoi = 1\n    assert chia_deu(10, 1) == [10]\n\n    # Trường hợp tong = 0\n    assert chia_deu(0, 2) == [0, 0]\n\n    # Trường hợp so_nguoi = 0 - Trường hợp biên\n    with pytest.raises(ValueError):\n        chia_deu(10, 0)\n\n    # Trường hợp tong < 0\n    with pytest.raises(ValueError):\n        chia_deu(-5, 2)\n```\n\nTest cases này bao gồm:\n\n1. Trường hợp bình thường với `tong` và `so_nguoi` đều dương.\n2. Trường hợp `so_nguoi = 1`.\n3. Trường hợp `tong = 0`.\n4. Trường hợp biên `so_nguoi = 0`, đây là trường hợp mà hàm sẽ raise một `ValueError`.\n5. Trường hợp `tong < 0`, cũng là một trường hợp biên mà hàm sẽ raise một `ValueError`.\n\nVới những test cases này, bạn có thể kiểm tra xem hàm của mình có hoạt động đúng không, bao gồm cả các trường hợp biên.",
+   "tokens": 332,
+   "sec": 7.3
+  }
+ ]
+}

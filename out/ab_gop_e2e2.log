@@ -1,0 +1,27 @@
+
+### checkpoints/network_v12_sent_dn.pkl · 450050 cha · bigram-cha 29787 hàng
+### có câu nguồn thật: 10/20 prompt → ['chó là', 'hổ là', 'lúa là', 'muối là', 'mèo là', 'mặt trời là', 'nước là', 'sóc là', 'sắt là', 'đồng là']
+
+═══ gốc (mốc)  ·  gop=False · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+  ensure_frame_brackets(state)
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt rất động thể và các để đến có tới vật động trên thể và khác một
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng hoa lưỡng tính, hoa cây có hạt quả thực thân lươnggọi, hoa cây vỏ
+   ── TRUNG THÀNH  78.9%  · TRẬT TỰ  89.3%  · LẶP  13.6%
+
+═══ GỘP hoa/thường  ·  gop=True · w=0.0 · cha_hoat=False · top_n=20 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt rất động thể và các để đến có tới vật động trên thể và khác một
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực, thân cỏ rỗng hoa lưỡng tính, hoa cây có hạt quả thực thân lươnggọi, hoa cây vỏ
+   ── TRUNG THÀNH  78.9%  · TRẬT TỰ  89.3%  · LẶP  13.6%
+
+═══ GỘP + bậc-2 cha hoạt w=1 top_n=3  ·  gop=True · w=1.0 · cha_hoat=True · top_n=3 · boost=1.0
+   VÀNG «chó là» ▸ chó là gia súc thuộc nhóm ăn thịt, chuyên nuôi để giữ nhà nuôi gia thịt ăn năn nhóm để thuộc nhà nuôi gia săn
+   VÀNG «hổ là» ▸ hổ là một loài động vật có lãnh thổ hoạt rất động thể và các để đến có trên với động vật ăn thịt và khác
+   VÀNG «sắt là» ▸ sắt là kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không khí ẩm, là thành phần
+   VÀNG «lúa là» ▸ lúa là cây lương thực thuộc, bao thân cỏ, rỗng, được thân cây lương thực có quả hạt hoa ngoài, bao thân
+   ── TRUNG THÀNH  77.4%  · TRẬT TỰ  89.1%  · LẶP  17.8%
+
+[409s] xong

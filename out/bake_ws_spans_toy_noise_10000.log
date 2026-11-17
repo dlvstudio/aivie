@@ -1,0 +1,38 @@
+[    0.0s RSS  0.08GB] nạp out/noise_nho/toy_noise_10000.pkl …
+[    1.3s RSS  1.36GB] nạp xong · parents=9983 vocab=32002
+[    1.3s RSS  1.36GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    1.3s RSS  1.36GB] ws_spans 0/9983 · span=0 · bỏ=0
+[    4.1s RSS  1.36GB] 8944 span · 0.0 phút
+[    4.1s RSS  1.36GB] ghi out/noise_nho/toy_noise_10000.ws_spans.json (0.1 MB) · roundtrip OK
+[    4.1s RSS  1.36GB]   mẫu[00] '<0x83> <0xA1> 文 中'
+[    4.1s RSS  1.36GB]   mẫu[01] 'có mặt'
+[    4.1s RSS  1.36GB]   mẫu[02] 'công trình'
+[    4.1s RSS  1.36GB]   mẫu[03] 'con số'
+[    4.1s RSS  1.36GB]   mẫu[04] 'tình tiết'
+[    4.1s RSS  1.36GB]   mẫu[05] 'quân Xiêm'
+[    4.1s RSS  1.36GB]   mẫu[06] 'lòng dân'
+[    4.1s RSS  1.36GB]   mẫu[07] 'thương vong'
+[    4.1s RSS  1.36GB]   mẫu[08] 'máy tính'
+[    4.1s RSS  1.36GB]   mẫu[09] 'tiểu thuyết'
+[    4.1s RSS  1.36GB]   mẫu[10] 'mã hóa'
+[    4.1s RSS  1.36GB]   mẫu[11] 'ngoại lai'
+[    4.1s RSS  1.36GB]   mẫu[12] 'Bắc Âu'
+[    4.1s RSS  1.36GB]   mẫu[13] 'quần thần'
+[    4.1s RSS  1.36GB]   mẫu[14] 'mềm dẻo'
+[    4.1s RSS  1.36GB]   mẫu[15] 'Tu D í'
+[    4.1s RSS  1.36GB]   mẫu[16] 'cốt sao'
+[    4.1s RSS  1.36GB]   mẫu[17] 'Har ts field'
+[    4.1s RSS  1.36GB]   mẫu[18] 'Tứ Ân'
+[    4.1s RSS  1.36GB]   mẫu[19] 'buôn lậu'
+[    4.1s RSS  1.36GB]   mẫu[20] 'phế truất'
+[    4.1s RSS  1.36GB]   mẫu[21] 'bùng nổ'
+[    4.1s RSS  1.36GB]   mẫu[22] 'Thống đốc'
+[    4.1s RSS  1.36GB]   mẫu[23] 'Mùa Vọng'
+[    4.1s RSS  1.36GB]   mẫu[24] 'Vịnh San Francisco'
+[    4.1s RSS  1.36GB]   mẫu[25] 'Quyền lực'
+[    4.1s RSS  1.36GB]   mẫu[26] 'um tùm'
+[    4.1s RSS  1.36GB]   mẫu[27] 'Baroque Dresden'
+[    4.1s RSS  1.36GB]   mẫu[28] 'Si han ouk'
+[    4.1s RSS  1.36GB]   mẫu[29] 'sình lầy'
+[    4.1s RSS  1.36GB] span nghi rác (tự động): 249/8944 = 2.8% (ISG: 57%)
+[    4.1s RSS  1.36GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

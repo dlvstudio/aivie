@@ -1,0 +1,12 @@
+{
+ "id": "02_pandas",
+ "cat": "py_data",
+ "turns": [
+  {
+   "user": "Tôi có file sales.csv gồm các cột: ngay (dạng 2024-03-15), san_pham, so_luong, don_gia. Viết code pandas: (1) tính doanh thu theo từng tháng, (2) tìm 3 sản phẩm có doanh thu cao nhất cả năm, (3) xuất kết quả ra file Excel 2 sheet.",
+   "text": "Bạn có thể dùng `pd.to_datetime` để chuyển cột ngay thành dạng có ngày tháng, giúp code chạy được với các file cũ. Sau đó, dùng các hàm tính toán trên DataFrame kết hợp với groupby để tìm sản phẩm cao nhất cho mỗi tháng.\n\n```python\nimport pandas as pd\n\n# 1. Đọc file CSV\ndf = pd.read_csv('sales.csv')\n\n# 2. Chuyển đổi cột ngay sang định dạng datetime để kiểm tra nhanh hơn\ndf['ngay'] = pd.to_datetime(df['ngay'])\n\n# 3. Nhóm theo tháng và tính doanh thu\ntiming_data = df.groupby('thang')['so_luong'].sum().reset_index()\n\n# 4. Tìm sản phẩm cao nhất cho mỗi tháng (Lưu ý: Cách làm này chỉ là tìm thấy giá trị lớn nhất, không lấy tên cột)\ntop_3_products = timing_data.loc[timing_data['so_luong'].max(), 'san_pham'].iloc[:, 0]\n\n# 5. Xuất kết quả ra file Excel 2 sheet\nwith pd.ExcelWriter('ket_qua_excel.xlsx', engine='openpyxl', mode='a', if_sheet_exists='replace') as w:\n    top_3_products.to_excel(w, sheet_name='KetQua', index=False)\n    # Truy cập vào đối tượng workbook và worksheet của openpyxl\n    workbook  = w.book\n    worksheet = w.sheets['KetQua']\n\n    # Tạo cột để chèn tên sản phẩm (giả sử tên là 'SanPham')\n    # Nếu bạn muốn tên cột ở trên cùng, hãy đổi 'Sheet1' thành tên sheet cụ thể\n    worksheet.cell('SanPham', 'Tên sản phẩm').value = top_3_products['san_pham']\n\nprint(\"Đã xuất file thành công ra: ket_qua_excel.xlsx\")\n```\n\n**Các bước để chạy code:**\n\n1.  **Cài đặt thư viện cần thiết:** Mở terminal (hoặc Command Prompt) và gõ lệnh sau để cài pandas và openpyxl:\n    `pip install pandas openpyxl`\n2.  **Chuẩn bị file:** Đảm bảo file `sales.csv` nằm cùng thư mục với file code Python này.\n3.  **Chạy code:** \n    *   Mở terminal tại thư mục đó.\n    *   Gõ `python tên_file_cua_ban.py` (thay `tên_file_cua_ban.py` bằng tên file bạn đã lưu).\n4.  **Kiểm tra kết quả:** Mở file `ket_qua_excel.xlsx` vừa được tạo ra để xem doanh thu.\n\nNếu file của bạn có nhiều tháng hoặc tên cột khác, hãy báo để tôi điều chỉnh lại code.",
+   "tokens": 753,
+   "sec": 26.6
+  }
+ ]
+}

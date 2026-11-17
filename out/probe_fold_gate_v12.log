@@ -1,0 +1,169 @@
+[     0.0s] === probe_fold_gate START (pid=12607) → out/logs/probe_fold_gate_20260802_192238.log ===
+[     0.0s] P57 — cổng cặp-âm-tiết ở quy mô v12 · checkpoints/network_v12_sent.pkl
+[     0.0s] CỔNG G-fold (nêu TRƯỚC) cho D: dead ≤ 50% · lac_strict ≤ 0.3 · pmi ≥ pmi(A)
+[     0.0s] mini để so: A lạc .966/chết 68% · D lạc .000/chết 99%/n=3
+[     0.0s] === load_network_v12_sent START (pid=12607) → out/logs/load_network_v12_sent_20260802_192238.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.3s] ✓ vocab (32002 token)  (0.0s)
+[     2.3s] ▶ adjacency
+[     9.6s] ✓ adjacency  (7.3s)
+[     9.6s] ▶ embedding
+[     9.6s] ✓ embedding  (0.0s)
+[     9.6s] ▶ parents
+[     9.6s] parents: deserialize 430447 records …
+[     9.7s] parents 5000/430447 (1.2%)
+[     9.7s] parents 10000/430447 (2.3%)
+[     9.8s] parents 15000/430447 (3.5%)
+[     9.8s] parents 20000/430447 (4.6%)
+[     9.8s] parents 25000/430447 (5.8%)
+[     9.9s] parents 30000/430447 (7.0%)
+[     9.9s] parents 35000/430447 (8.1%)
+[     9.9s] parents 40000/430447 (9.3%)
+[    10.0s] parents 45000/430447 (10.5%)
+[    10.0s] parents 50000/430447 (11.6%)
+[    10.0s] parents 55000/430447 (12.8%)
+[    10.1s] parents 60000/430447 (13.9%)
+[    10.1s] parents 65000/430447 (15.1%)
+[    10.1s] parents 70000/430447 (16.3%)
+[    10.2s] parents 75000/430447 (17.4%)
+[    10.2s] parents 80000/430447 (18.6%)
+[    10.2s] parents 85000/430447 (19.7%)
+[    10.3s] parents 90000/430447 (20.9%)
+[    10.3s] parents 95000/430447 (22.1%)
+[    10.3s] parents 100000/430447 (23.2%)
+[    10.4s] parents 105000/430447 (24.4%)
+[    10.4s] parents 110000/430447 (25.6%)
+[    10.5s] parents 115000/430447 (26.7%)
+[    10.5s] parents 120000/430447 (27.9%)
+[    10.6s] parents 125000/430447 (29.0%)
+[    10.6s] parents 130000/430447 (30.2%)
+[    10.7s] parents 135000/430447 (31.4%)
+[    10.7s] parents 140000/430447 (32.5%)
+[    10.8s] parents 145000/430447 (33.7%)
+[    10.8s] parents 150000/430447 (34.8%)
+[    10.9s] parents 155000/430447 (36.0%)
+[    10.9s] parents 160000/430447 (37.2%)
+[    11.0s] parents 165000/430447 (38.3%)
+[    11.1s] parents 170000/430447 (39.5%)
+[    11.1s] parents 175000/430447 (40.7%)
+[    11.2s] parents 180000/430447 (41.8%)
+[    11.3s] parents 185000/430447 (43.0%)
+[    11.3s] parents 190000/430447 (44.1%)
+[    11.4s] parents 195000/430447 (45.3%)
+[    11.5s] parents 200000/430447 (46.5%)
+[    11.5s] parents 205000/430447 (47.6%)
+[    11.6s] parents 210000/430447 (48.8%)
+[    11.7s] parents 215000/430447 (49.9%)
+[    11.8s] parents 220000/430447 (51.1%)
+[    11.8s] parents 225000/430447 (52.3%)
+[    11.9s] parents 230000/430447 (53.4%)
+[    12.0s] parents 235000/430447 (54.6%)
+[    12.0s] parents 240000/430447 (55.8%)
+[    12.1s] parents 245000/430447 (56.9%)
+[    12.2s] parents 250000/430447 (58.1%)
+[    12.2s] parents 255000/430447 (59.2%)
+[    12.3s] parents 260000/430447 (60.4%)
+[    12.4s] parents 265000/430447 (61.6%)
+[    12.4s] parents 270000/430447 (62.7%)
+[    12.5s] parents 275000/430447 (63.9%)
+[    12.6s] parents 280000/430447 (65.0%)
+[    12.6s] parents 285000/430447 (66.2%)
+[    12.7s] parents 290000/430447 (67.4%)
+[    12.8s] parents 295000/430447 (68.5%)
+[    12.8s] parents 300000/430447 (69.7%)
+[    12.9s] parents 305000/430447 (70.9%)
+[    13.0s] parents 310000/430447 (72.0%)
+[    13.0s] parents 315000/430447 (73.2%)
+[    13.1s] parents 320000/430447 (74.3%)
+[    13.2s] parents 325000/430447 (75.5%)
+[    13.2s] parents 330000/430447 (76.7%)
+[    13.3s] parents 335000/430447 (77.8%)
+[    13.4s] parents 340000/430447 (79.0%)
+[    13.4s] parents 345000/430447 (80.1%)
+[    13.5s] parents 350000/430447 (81.3%)
+[    13.6s] parents 355000/430447 (82.5%)
+[    13.7s] parents 360000/430447 (83.6%)
+[    13.7s] parents 365000/430447 (84.8%)
+[    13.8s] parents 370000/430447 (86.0%)
+[    13.9s] parents 375000/430447 (87.1%)
+[    13.9s] parents 380000/430447 (88.3%)
+[    14.0s] parents 385000/430447 (89.4%)
+[    14.1s] parents 390000/430447 (90.6%)
+[    14.1s] parents 395000/430447 (91.8%)
+[    14.2s] parents 400000/430447 (92.9%)
+[    14.2s] parents 405000/430447 (94.1%)
+[    14.3s] parents 410000/430447 (95.2%)
+[    14.4s] parents 415000/430447 (96.4%)
+[    14.4s] parents 420000/430447 (97.6%)
+[    14.5s] parents 425000/430447 (98.7%)
+[    14.5s] parents 430000/430447 (99.9%)
+[    25.2s] ▶ rebuild_hierarchical_index …
+[    26.2s] ✓ rebuild_hierarchical_index (1.0s)
+[    30.9s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    30.9s] ✓ parents  (21.2s)
+[    30.9s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    31.8s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    31.8s] ✓ load_checkpoint XONG
+[    31.8s] load 32s · 430,447 cha
+[    45.3s]   … mệnh đề: cha 50,000 → 170,931
+[    46.1s]   … mệnh đề: cha 100,000 → 347,219
+[    47.0s]   … mệnh đề: cha 150,000 → 519,373
+[    48.5s]   … mệnh đề: cha 200,000 → 762,234
+[    49.9s]   … mệnh đề: cha 250,000 → 1,010,387
+[    51.3s]   … mệnh đề: cha 300,000 → 1,260,523
+[    52.7s]   … mệnh đề: cha 350,000 → 1,460,620
+[    54.0s]   … mệnh đề: cha 400,000 → 1,657,754
+[    54.7s] tầng mệnh đề: 1,758,562 · dài TB 5.59 (55s)
+[   109.2s] W_skip + PMI-cross sẵn (109s)
+[   109.4s] 120 prompt đóng băng (seed=42)
+[   109.8s]   [A_don_am_tiet] 25/120 (110s)
+[   110.2s]   [A_don_am_tiet] 50/120 (110s)
+[   110.7s]   [A_don_am_tiet] 75/120 (111s)
+[   111.1s]   [A_don_am_tiet] 100/120 (111s)
+[   111.4s] [111s] A_don_am_tiet: lạc(NGHIÊM)=0.982 · pmi=1.506 · chết=81% · tok=26.1 · n=47
+[   111.4s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không hề ] → thời gian ở đây xem ngươi nói kia một phen lời nói, nhưng thật ra
+[   111.4s]     | [Tìm ví dụ về văn bản đã cho] → là một bản giao hưởng ngọt
+[   111.4s]     | [Nhưng bây giờ tình huống này.] → này, nhưng là nàng lại có thể cảm giác được trong vùng Tirol, tuy thuộc Áo nhưng cũng nằm trong nước Đức. Quốc tế nhưng
+[   111.4s]     | [Sau khi xô đẩy các con] → người con gái có vẻ đẹp mĩ và sau đó được loại bỏ các biện pháp thúc đẩy nền kinh tế
+[   111.7s]   [B_bo_chu_so] 25/120 (112s)
+[   112.1s]   [B_bo_chu_so] 50/120 (112s)
+[   112.6s]   [B_bo_chu_so] 75/120 (113s)
+[   113.0s]   [B_bo_chu_so] 100/120 (113s)
+[   113.3s] [113s] B_bo_chu_so: lạc(NGHIÊM)=0.981 · pmi=1.479 · chết=82% · tok=25.8 · n=45
+[   113.3s]     | [Nhưng lúc này đây, Ký Tinh Hà cũng không hề ] → thời gian ở đây xem ngươi nói kia một phen lời nói, nhưng thật ra
+[   113.3s]     | [Tìm ví dụ về văn bản đã cho] → là một bản giao hưởng ngọt
+[   113.3s]     | [Nhưng bây giờ tình huống này.] → này, nhưng là nàng lại có thể cảm giác được trong vùng Tirol, tuy thuộc Áo nhưng cũng nằm trong nước Đức. Quốc tế nhưng
+[   113.3s]     | [Sau khi xô đẩy các con] → người con gái có vẻ đẹp mĩ và sau đó được loại bỏ các biện pháp thúc đẩy nền kinh tế
+[   113.5s]   [C_cap_am_tiet] 25/120 (113s)
+[   113.7s]   [C_cap_am_tiet] 50/120 (114s)
+[   114.0s]   [C_cap_am_tiet] 75/120 (114s)
+[   114.2s]   [C_cap_am_tiet] 100/120 (114s)
+[   114.4s] [114s] C_cap_am_tiet: lạc(NGHIÊM)=nan · pmi=1.271 · chết=94% · tok=19.7 · n=0
+[   114.4s]     | [Bạn cũng có thể sử dụng xà phòng và nước để ] → khuẩn, rửa sạch với xà phòng trước khi tiếp xúc với da mặt, vì
+[   114.4s]     | [Giải nghĩa: chạm] → : vào hùa * theo lệnh của các nước Đồng Minh. Mạng lưới — Xác định xem mạng lưới nhà cung cấp cho chặt: chẽ nữa
+[   114.4s]     | [Giải nghĩa: bớt đi] → căng băng rôn với độ cao 1000m và anh Phong Lang Tổ hoang chức sắc mặt khác
+[   114.4s]     | [Ví dụ: vo] → tròn nây số âm thanh toán bằng thẻ tín vật liệu mọi phương án
+[   114.6s]   [D_cap_bo_so] 25/120 (115s)
+[   114.8s]   [D_cap_bo_so] 50/120 (115s)
+[   115.1s]   [D_cap_bo_so] 75/120 (115s)
+[   115.3s]   [D_cap_bo_so] 100/120 (115s)
+[   115.4s] [115s] D_cap_bo_so: lạc(NGHIÊM)=nan · pmi=1.271 · chết=94% · tok=19.7 · n=0
+[   115.4s]     | [Bạn cũng có thể sử dụng xà phòng và nước để ] → khuẩn, rửa sạch với xà phòng trước khi tiếp xúc với da mặt, vì
+[   115.4s]     | [Giải nghĩa: chạm] → : vào hùa * theo lệnh của các nước Đồng Minh. Mạng lưới — Xác định xem mạng lưới nhà cung cấp cho chặt: chẽ nữa
+[   115.4s]     | [Giải nghĩa: bớt đi] → căng băng rôn với độ cao 1000m và anh Phong Lang Tổ hoang chức sắc mặt khác
+[   115.4s]     | [Ví dụ: vo] → tròn nây số âm thanh toán bằng thẻ tín vật liệu mọi phương án
+[   115.4s] 
+=== P57 n=120 (mini để so: A .966/68% · D .000/99%/n=3) ===
+[   115.4s]   cổng                 lạc(NGHIÊM)      pmi   chết%     tok     n
+[   115.4s]   A_don_am_tiet              0.982    1.506    81%    26.1    47
+[   115.4s]   B_bo_chu_so                0.981    1.479    82%    25.8    45
+[   115.4s]   C_cap_am_tiet                nan    1.271    94%    19.7     0
+[   115.4s]   D_cap_bo_so                  nan    1.271    94%    19.7     0
+[   115.4s] 
+  G-fold: dead=✗ (94%) · lạc=✗ (nan) · pmi=✗ (1.271 vs A 1.506) ⇒ TRƯỢT
+[   115.4s]   ⚠️ `lac_strict` = nan vì D chỉ còn 0 mẫu chấm được — KHÔNG phải 'giữ đề hoàn hảo', mà là KHÔNG ĐỦ MẪU.
+[   115.4s]   ⇒ chết vẫn cao Ở QUY MÔ v12 ⇒ giả thuyết VẬT LIỆU **BỊ BÁC**; đóng hướng cổng-fold, cần cơ chế khớp khác (không phải fold).
+[   115.4s]   → ~/Documents/learn/nn-aivie/out/probe_fold_gate_v12.json

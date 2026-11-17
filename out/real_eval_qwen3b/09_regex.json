@@ -1,0 +1,13 @@
+{
+ "id": "09_regex",
+ "cat": "py_text",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Viết hàm Python dùng regex lấy tất cả địa chỉ email trong một đoạn văn bản, bỏ trùng, giữ thứ tự xuất hiện. Thử với: 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'",
+   "text": "Để viết hàm Python sử dụng regular expressions (regex) để lấy tất cả địa chỉ email trong một đoạn văn bản, bỏ trùng và giữ thứ tự xuất hiện, bạn có thể sử dụng thư viện `re` của Python. Dưới đây là một ví dụ của cách bạn có thể làm điều này:\n\n```python\nimport re\n\ndef extract_emails(text):\n    # Định nghĩa regex pattern để tìm địa chỉ email\n    email_pattern = r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b'\n    \n    # Sử dụng re.findall để lấy tất cả các email từ văn bản\n    emails = re.findall(email_pattern, text)\n    \n    # Sử dụng set để loại bỏ các email trùng lặp và giữ thứ tự xuất hiện\n    unique_emails = list(dict.fromkeys(emails))\n    \n    return unique_emails\n\n# Ví dụ sử dụng hàm\ntext = 'Liên hệ an.nguyen@gmail.com hoặc sales@cty.vn, cc an.nguyen@gmail.com.'\nemails = extract_emails(text)\nprint(emails)\n```\n\nKết quả đầu ra của ví dụ trên là:\n\n```\n['an.nguyen@gmail.com', 'sales@cty.vn']\n```\n\nTrong đoạn mã này:\n- `re.findall()` được sử dụng để tìm tất cả các chuỗi khớp với pattern email.\n- `dict.fromkeys(emails)` loại bỏ các email trùng lặp, và `list()` chuyển đổi từ set về danh sách để giữ thứ tự xuất hiện.",
+   "tokens": 326,
+   "sec": 3.7
+  }
+ ]
+}

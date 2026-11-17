@@ -1,0 +1,19 @@
+  ensure_frame_brackets(state)
+  tổng cha=450303 · df('con' đầu dòng)=1 · df tổng của _df = 25466 trên 2871 token
+
+═══ gộp=False · idf con=13.3 · tê=14.0 · tê=14.0 · là=8.3
+   cha ĐÚNG hạng 3 · đỉnh: sừng tê giác là một loại dược liệu quý .
+Traceback (most recent call last):
+  File "<stdin>", line 20, in <module>
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py", line 4040, in generate
+    plan = _build_segment_plan(
+        state, query, cfg_plan,
+        max_facts=int(getattr(config, "ar_multizone_facts_top", 1) or 1) + 2,
+        emitted_ids=generated,
+    )
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py", line 1526, in _build_segment_plan
+    entity_ids = ps.entity_register_ids(tuple(q_content))
+  File "~/Documents/learn/nn-aivie/src/nn_aivie/core/parent_store.py", line 1755, in entity_register_ids
+    fb = self._fb_layer_ref  # gán kèm _vocab_ref
+         ^^^^^^^^^^^^^^^^^^
+AttributeError: 'ParentStore' object has no attribute '_fb_layer_ref'

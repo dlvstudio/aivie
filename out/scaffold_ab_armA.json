@@ -1,0 +1,1812 @@
+{
+ "n_pos": 16,
+ "n_neg": 80,
+ "n_pos_multi_bridge": 1,
+ "n_pos_with_l2": 0,
+ "filters": {
+  "protocol": "creative_compound_prop_L1L2",
+  "compound_bonus": 2.5,
+  "left_cls_match": true,
+  "score": "sum_over_bridges"
+ },
+ "q1": {
+  "hong_song_dead": true
+ },
+ "pos": {
+  "bridge": {
+   "n_fill": 16,
+   "hit": 16,
+   "rate": 1.0,
+   "examples": [
+    {
+     "prompt": "anh là",
+     "expect": "anh là Hồ",
+     "actual": "anh là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ",
+      "thứ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac",
+      "nguoi"
+     ],
+     "strength": 9.67,
+     "edge_sents": [
+      "[399] L=1 lop=khac cầu='họ' | Tức Nguyễn Kim chỉ là cháu họ của Nguyễn Đức Trung và là anh họ của Nguyễn Hoằng Dụ . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>",
+      "[1415] L=1 lop=khac cầu='thứ' | Trần Tự Khánh là anh thứ của Trần Thị Dung , tức là bác ruột của Chiêu Thánh . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là Hồ",
+     "actual": "mẹ là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[1399] L=1 lop=khac cầu='họ' | Lê Hoàn còn truy phong cha làm Trường Hưng vương và mẹ họ Đặng làm Hoàng thái hậu . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quan là",
+     "expect": "Quan là Hồ",
+     "actual": "Quan là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[4631] L=1 lop=khac cầu='họ' | Quan họ Bắc Ninh là di sản . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "em là",
+     "expect": "em là Hồ",
+     "actual": "em là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2385] L=1 lop=nguoi cầu='họ' | Từ đó , vua Lý hoàn toàn phụ thuộc vào thế lực anh em họ Trần . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Hồ",
+     "actual": "Tổ là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2375] L=1 lop=khac cầu='họ' | Tổ họ Trần vốn tên là Ch ép , được dịch sang tiếng Hán là  <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Thái là",
+     "expect": "Thái là Hồ",
+     "actual": "Thái là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[2187] L=1 lop=khac cầu='thứ' | Năm Gia Thái thứ 1 ( 1 2 0 1 ) , Thiết Mộc Chân đánh bại liên quân 1 1 bộ tộc dưới quyền Trát Mộc Hợp . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vũ là",
+     "expect": "Vũ là Hồ",
+     "actual": "Vũ là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[3845] L=1 lop=khac cầu='thứ' | Văn miếu được xây dựng từ năm 1 0 7 0 , tức năm Thần Vũ thứ hai đời Lý Thánh Tông . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đức là",
+     "expect": "Đức là Hồ",
+     "actual": "Đức là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[904] L=1 lop=khac cầu='thứ' | Còn thực tế cái tên Hải Phòng mới xuất hiện tại miền Bắc nước ta từ năm Tự Đức thứ 2 8 ( 1 8 7 6 ) . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là Nguyễn",
+     "actual": "Trung là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2526] L=1 lop=khac cầu='mất' | Năm 1 8 6 4 , bà Lê Thị Trung mất , ông Bình đi bước nữa và có thêm 2 người con gái . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là Nguyễn",
+     "actual": "bà là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[3407] L=1 lop=khac cầu='mất' | Khi bà mất , ( vua ban ) cho 1 0 0 quan tiền ( để mai táng ) . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Cửu là",
+     "expect": "Cửu là Nguyễn",
+     "actual": "Cửu là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[547] L=1 lop=khac cầu='mất' | Sau khi Mạc Cửu mất vào năm Ất Mão ( 1 7 3 5 ) , Mạc Thiên Tứ nối nghiệp cha , khai phá thêm vùng hữu ngạn sông Hậu . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Nguyễn",
+     "actual": "Vương là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2254] L=1 lop=khac cầu='mất' | Năm 9 4 4 , Tiền Ngô Vương mất , sai Dương Tam Kha giúp lập thái tử . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hoàng là",
+     "expect": "Hoàng là Nguyễn",
+     "actual": "Hoàng là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2341] L=1 lop=khac cầu='mất' | Tần Thủy Hoàng mất năm 2 1 0 TCN , con trai là Hồ Hợi lên thay trở thành Tần Nhị Thế . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Công là",
+     "expect": "Công là Nguyễn",
+     "actual": "Công là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[4000] L=1 lop=khac cầu='mất' | Sau khi Trần Minh Công mất , Đinh Bộ Lĩnh thay quyền , đưa quân về Hoa Lư , chiêu mộ binh lính . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "ông là",
+     "expect": "ông là Nguyễn",
+     "actual": "ông là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[1048] L=1 lop=khac cầu='mất' | Tưởng nhớ đến người đẹp ngồi chơi đu , có đường ngôi trắng giữa hai mái tóc xanh , khiến ông mất ăn mất ngủ . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    }
+   ]
+  },
+  "embedding": {
+   "n_fill": 16,
+   "hit": 5,
+   "rate": 0.3125,
+   "examples": [
+    {
+     "prompt": "anh là",
+     "expect": "anh là Hồ",
+     "actual": "anh là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ",
+      "thứ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac",
+      "nguoi"
+     ],
+     "strength": 9.67,
+     "edge_sents": [
+      "[399] L=1 lop=khac cầu='họ' | Tức Nguyễn Kim chỉ là cháu họ của Nguyễn Đức Trung và là anh họ của Nguyễn Hoằng Dụ . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>",
+      "[1415] L=1 lop=khac cầu='thứ' | Trần Tự Khánh là anh thứ của Trần Thị Dung , tức là bác ruột của Chiêu Thánh . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là Hồ",
+     "actual": "mẹ là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[1399] L=1 lop=khac cầu='họ' | Lê Hoàn còn truy phong cha làm Trường Hưng vương và mẹ họ Đặng làm Hoàng thái hậu . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quan là",
+     "expect": "Quan là Hồ",
+     "actual": "Quan là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[4631] L=1 lop=khac cầu='họ' | Quan họ Bắc Ninh là di sản . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "em là",
+     "expect": "em là Hồ",
+     "actual": "em là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2385] L=1 lop=nguoi cầu='họ' | Từ đó , vua Lý hoàn toàn phụ thuộc vào thế lực anh em họ Trần . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Hồ",
+     "actual": "Tổ là bộ",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2375] L=1 lop=khac cầu='họ' | Tổ họ Trần vốn tên là Ch ép , được dịch sang tiếng Hán là  <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Thái là",
+     "expect": "Thái là Hồ",
+     "actual": "Thái là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[2187] L=1 lop=khac cầu='thứ' | Năm Gia Thái thứ 1 ( 1 2 0 1 ) , Thiết Mộc Chân đánh bại liên quân 1 1 bộ tộc dưới quyền Trát Mộc Hợp . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vũ là",
+     "expect": "Vũ là Hồ",
+     "actual": "Vũ là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[3845] L=1 lop=khac cầu='thứ' | Văn miếu được xây dựng từ năm 1 0 7 0 , tức năm Thần Vũ thứ hai đời Lý Thánh Tông . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đức là",
+     "expect": "Đức là Hồ",
+     "actual": "Đức là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[904] L=1 lop=khac cầu='thứ' | Còn thực tế cái tên Hải Phòng mới xuất hiện tại miền Bắc nước ta từ năm Tự Đức thứ 2 8 ( 1 8 7 6 ) . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là Nguyễn",
+     "actual": "Trung là dân",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2526] L=1 lop=khac cầu='mất' | Năm 1 8 6 4 , bà Lê Thị Trung mất , ông Bình đi bước nữa và có thêm 2 người con gái . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là Nguyễn",
+     "actual": "bà là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[3407] L=1 lop=khac cầu='mất' | Khi bà mất , ( vua ban ) cho 1 0 0 quan tiền ( để mai táng ) . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Cửu là",
+     "expect": "Cửu là Nguyễn",
+     "actual": "Cửu là dân",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[547] L=1 lop=khac cầu='mất' | Sau khi Mạc Cửu mất vào năm Ất Mão ( 1 7 3 5 ) , Mạc Thiên Tứ nối nghiệp cha , khai phá thêm vùng hữu ngạn sông Hậu . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Nguyễn",
+     "actual": "Vương là Hồ",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2254] L=1 lop=khac cầu='mất' | Năm 9 4 4 , Tiền Ngô Vương mất , sai Dương Tam Kha giúp lập thái tử . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hoàng là",
+     "expect": "Hoàng là Nguyễn",
+     "actual": "Hoàng là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2341] L=1 lop=khac cầu='mất' | Tần Thủy Hoàng mất năm 2 1 0 TCN , con trai là Hồ Hợi lên thay trở thành Tần Nhị Thế . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Công là",
+     "expect": "Công là Nguyễn",
+     "actual": "Công là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[4000] L=1 lop=khac cầu='mất' | Sau khi Trần Minh Công mất , Đinh Bộ Lĩnh thay quyền , đưa quân về Hoa Lư , chiêu mộ binh lính . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "ông là",
+     "expect": "ông là Nguyễn",
+     "actual": "ông là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[1048] L=1 lop=khac cầu='mất' | Tưởng nhớ đến người đẹp ngồi chơi đu , có đường ngôi trắng giữa hai mái tóc xanh , khiến ông mất ăn mất ngủ . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    }
+   ]
+  },
+  "ngau_nhien": {
+   "n_fill": 16,
+   "hit": 3,
+   "rate": 0.1875,
+   "examples": [
+    {
+     "prompt": "anh là",
+     "expect": "anh là Hồ",
+     "actual": "anh là Mạc",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ",
+      "thứ"
+     ],
+     "n_bridges": 2,
+     "n_l2": 0,
+     "left_cls": [
+      "khac",
+      "nguoi"
+     ],
+     "strength": 9.67,
+     "edge_sents": [
+      "[399] L=1 lop=khac cầu='họ' | Tức Nguyễn Kim chỉ là cháu họ của Nguyễn Đức Trung và là anh họ của Nguyễn Hoằng Dụ . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>",
+      "[1415] L=1 lop=khac cầu='thứ' | Trần Tự Khánh là anh thứ của Trần Thị Dung , tức là bác ruột của Chiêu Thánh . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là Hồ",
+     "actual": "mẹ là trưởng",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[1399] L=1 lop=khac cầu='họ' | Lê Hoàn còn truy phong cha làm Trường Hưng vương và mẹ họ Đặng làm Hoàng thái hậu . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Quan là",
+     "expect": "Quan là Hồ",
+     "actual": "Quan là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[4631] L=1 lop=khac cầu='họ' | Quan họ Bắc Ninh là di sản . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "em là",
+     "expect": "em là Hồ",
+     "actual": "em là Ngọc",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2385] L=1 lop=nguoi cầu='họ' | Từ đó , vua Lý hoàn toàn phụ thuộc vào thế lực anh em họ Trần . <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Hồ",
+     "actual": "Tổ là Nguyễn",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.86,
+     "edge_sents": [
+      "[2375] L=1 lop=khac cầu='họ' | Tổ họ Trần vốn tên là Ch ép , được dịch sang tiếng Hán là  <EOS>",
+      "[1042] L=1 lop=khac cầu='họ' | Ngày ấy có một chàng thư sinh đẹp trai họ Tống , tên là Như Mai , con một viên quan đầu tỉnh tên là Thạch . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Thái là",
+     "expect": "Thái là Hồ",
+     "actual": "Thái là Khúc",
+     "ok": false,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[2187] L=1 lop=khac cầu='thứ' | Năm Gia Thái thứ 1 ( 1 2 0 1 ) , Thiết Mộc Chân đánh bại liên quân 1 1 bộ tộc dưới quyền Trát Mộc Hợp . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vũ là",
+     "expect": "Vũ là Hồ",
+     "actual": "Vũ là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[3845] L=1 lop=khac cầu='thứ' | Văn miếu được xây dựng từ năm 1 0 7 0 , tức năm Thần Vũ thứ hai đời Lý Thánh Tông . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Đức là",
+     "expect": "Đức là Hồ",
+     "actual": "Đức là Hồ",
+     "ok": true,
+     "donors": [
+      "trai",
+      "cháu"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.81,
+     "edge_sents": [
+      "[904] L=1 lop=khac cầu='thứ' | Còn thực tế cái tên Hải Phòng mới xuất hiện tại miền Bắc nước ta từ năm Tự Đức thứ 2 8 ( 1 8 7 6 ) . <EOS>",
+      "[569] L=1 lop=khac cầu='thứ' | Con trai thứ 3 còn lại mới 6 tuổi là Đinh Toàn lên ngôi , tức Đinh Đế Toàn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là Nguyễn",
+     "actual": "Trung là trung",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2526] L=1 lop=khac cầu='mất' | Năm 1 8 6 4 , bà Lê Thị Trung mất , ông Bình đi bước nữa và có thêm 2 người con gái . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là Nguyễn",
+     "actual": "bà là bộ",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[3407] L=1 lop=khac cầu='mất' | Khi bà mất , ( vua ban ) cho 1 0 0 quan tiền ( để mai táng ) . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Cửu là",
+     "expect": "Cửu là Nguyễn",
+     "actual": "Cửu là Nguyễn",
+     "ok": true,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[547] L=1 lop=khac cầu='mất' | Sau khi Mạc Cửu mất vào năm Ất Mão ( 1 7 3 5 ) , Mạc Thiên Tứ nối nghiệp cha , khai phá thêm vùng hữu ngạn sông Hậu . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Vương là",
+     "expect": "Vương là Nguyễn",
+     "actual": "Vương là trưởng",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2254] L=1 lop=khac cầu='mất' | Năm 9 4 4 , Tiền Ngô Vương mất , sai Dương Tam Kha giúp lập thái tử . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Hoàng là",
+     "expect": "Hoàng là Nguyễn",
+     "actual": "Hoàng là bộ",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[2341] L=1 lop=khac cầu='mất' | Tần Thủy Hoàng mất năm 2 1 0 TCN , con trai là Hồ Hợi lên thay trở thành Tần Nhị Thế . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "Công là",
+     "expect": "Công là Nguyễn",
+     "actual": "Công là trưởng",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[4000] L=1 lop=khac cầu='mất' | Sau khi Trần Minh Công mất , Đinh Bộ Lĩnh thay quyền , đưa quân về Hoa Lư , chiêu mộ binh lính . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    },
+    {
+     "prompt": "ông là",
+     "expect": "ông là Nguyễn",
+     "actual": "ông là bộ",
+     "ok": false,
+     "donors": [
+      "mẹ",
+      "cha"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [
+      "khac"
+     ],
+     "strength": 4.24,
+     "edge_sents": [
+      "[1048] L=1 lop=khac cầu='mất' | Tưởng nhớ đến người đẹp ngồi chơi đu , có đường ngôi trắng giữa hai mái tóc xanh , khiến ông mất ăn mất ngủ . <EOS>",
+      "[969] L=1 lop=khac cầu='mất' | Sau khi mẹ mất , ( 1 9 0 1 ) , ông về Nghệ An ở với bà ngoại một thời gian ngắn . <EOS>"
+     ]
+    }
+   ]
+  }
+ },
+ "neg": {
+  "bridge": {
+   "n_fill": 14,
+   "hit": 0,
+   "rate": 0.0,
+   "examples": [
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là trung",
+     "actual": "Trung là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Não"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là hình",
+     "actual": "bà là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Mạc",
+     "actual": "Tổ là Hồ",
+     "ok": false,
+     "donors": [
+      "em"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là trưởng",
+     "actual": "mẹ là Hồ",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trứ là",
+     "expect": "Trứ là trưởng",
+     "actual": "Trứ là Nguyễn",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hưng là",
+     "expect": "Hưng là dân",
+     "actual": "Hưng là Hồ",
+     "ok": false,
+     "donors": [
+      "Kinh"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "ông là",
+     "expect": "ông là năng",
+     "actual": "ông là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Công"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trứ là",
+     "expect": "Trứ là năng",
+     "actual": "Trứ là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Công"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Mình là",
+     "expect": "Mình là Thuận",
+     "actual": "Mình là Nguyễn",
+     "ok": false,
+     "donors": [
+      "mẹ"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hồ là",
+     "expect": "Hồ là trưởng",
+     "actual": "Hồ là Nguyễn",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thắng là",
+     "expect": "Thắng là Khúc",
+     "actual": "Thắng là Hồ",
+     "ok": false,
+     "donors": [
+      "trai"
+     ],
+     "bridges": [
+      "thứ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "em là",
+     "expect": "em là Tổng",
+     "actual": "em là Hồ",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Quan là",
+     "expect": "Quan là Mạc",
+     "actual": "Quan là Hồ",
+     "ok": false,
+     "donors": [
+      "em"
+     ],
+     "bridges": [
+      "họ"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là dân",
+     "actual": "bà là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Kinh"
+     ],
+     "bridges": [
+      "mất"
+     ],
+     "n_bridges": 1,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  },
+  "embedding": {
+   "n_fill": 80,
+   "hit": 4,
+   "rate": 0.05,
+   "examples": [
+    {
+     "prompt": "Đại là",
+     "expect": "Đại là trưởng",
+     "actual": "Đại là tổng",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Lâm là",
+     "expect": "Lâm là trưởng",
+     "actual": "Lâm là Hồ",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nho là",
+     "expect": "Nho là năng",
+     "actual": "Nho là tổng",
+     "ok": false,
+     "donors": [
+      "Công"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là trung",
+     "actual": "Trung là dân",
+     "ok": false,
+     "donors": [
+      "Não"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là hình",
+     "actual": "bà là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hưu là",
+     "expect": "Hưu là trưởng",
+     "actual": "Hưu là Ngô",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thương là",
+     "expect": "Thương là Hồ",
+     "actual": "Thương là Hồ",
+     "ok": true,
+     "donors": [
+      "trai"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đô là",
+     "expect": "Đô là Niết",
+     "actual": "Đô là dân",
+     "ok": false,
+     "donors": [
+      "tâm"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hát là",
+     "expect": "Hát là Nguyễn",
+     "actual": "Hát là năng",
+     "ok": false,
+     "donors": [
+      "cha"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Mạc",
+     "actual": "Tổ là bộ",
+     "ok": false,
+     "donors": [
+      "em"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là trưởng",
+     "actual": "mẹ là Hồ",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Phúc là",
+     "expect": "Phúc là dân",
+     "actual": "Phúc là Nguyễn",
+     "ok": false,
+     "donors": [
+      "Kinh"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thứ là",
+     "expect": "Thứ là bộ",
+     "actual": "Thứ là năng",
+     "ok": false,
+     "donors": [
+      "Hoa"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trứ là",
+     "expect": "Trứ là trưởng",
+     "actual": "Trứ là năng",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đinh là",
+     "expect": "Đinh là trưởng",
+     "actual": "Đinh là Hồ",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  },
+  "ngau_nhien": {
+   "n_fill": 80,
+   "hit": 34,
+   "rate": 0.425,
+   "examples": [
+    {
+     "prompt": "Đại là",
+     "expect": "Đại là trưởng",
+     "actual": "Đại là dân",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Lâm là",
+     "expect": "Lâm là trưởng",
+     "actual": "Lâm là trưởng",
+     "ok": true,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Nho là",
+     "expect": "Nho là năng",
+     "actual": "Nho là Mạc",
+     "ok": false,
+     "donors": [
+      "Công"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trung là",
+     "expect": "Trung là trung",
+     "actual": "Trung là Hồ",
+     "ok": false,
+     "donors": [
+      "Não"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "bà là",
+     "expect": "bà là hình",
+     "actual": "bà là hình",
+     "ok": true,
+     "donors": [
+      "Ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hưu là",
+     "expect": "Hưu là trưởng",
+     "actual": "Hưu là trưởng",
+     "ok": true,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thương là",
+     "expect": "Thương là Hồ",
+     "actual": "Thương là Mạc",
+     "ok": false,
+     "donors": [
+      "trai"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đô là",
+     "expect": "Đô là Niết",
+     "actual": "Đô là Niết",
+     "ok": true,
+     "donors": [
+      "tâm"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Hát là",
+     "expect": "Hát là Nguyễn",
+     "actual": "Hát là Nguyễn",
+     "ok": true,
+     "donors": [
+      "cha"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Tổ là",
+     "expect": "Tổ là Mạc",
+     "actual": "Tổ là Thuận",
+     "ok": false,
+     "donors": [
+      "em"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "mẹ là",
+     "expect": "mẹ là trưởng",
+     "actual": "mẹ là Ngọc",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Phúc là",
+     "expect": "Phúc là dân",
+     "actual": "Phúc là dân",
+     "ok": true,
+     "donors": [
+      "Kinh"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Thứ là",
+     "expect": "Thứ là bộ",
+     "actual": "Thứ là bộ",
+     "ok": true,
+     "donors": [
+      "Hoa"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Trứ là",
+     "expect": "Trứ là trưởng",
+     "actual": "Trứ là Thuận",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    },
+    {
+     "prompt": "Đinh là",
+     "expect": "Đinh là trưởng",
+     "actual": "Đinh là Lê",
+     "ok": false,
+     "donors": [
+      "ông"
+     ],
+     "bridges": [],
+     "n_bridges": 0,
+     "n_l2": 0,
+     "left_cls": [],
+     "strength": 0.0,
+     "edge_sents": []
+    }
+   ]
+  }
+ },
+ "gate": {
+  "g1": true,
+  "g2": true,
+  "g3": true,
+  "g4": true,
+  "q1": true,
+  "pass": true
+ },
+ "scaffold": {
+  "scaffold": "full",
+  "case_scaffold": "keep",
+  "n_STOP": 75,
+  "n_BAD_PRED": 25,
+  "n_KINSHIP": 17
+ },
+ "seconds": 9.3
+}

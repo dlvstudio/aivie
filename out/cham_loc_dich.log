@@ -1,0 +1,21 @@
+ok
+########## loc_dich=False ##########
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · LOC_DICH=False
+═══ VẾ 2 · prompt LOẠI SUY
+   «khoẻ như» ▸ khoẻ như voi .
+   «nhanh như» ▸ nhanh như sóc .
+   «khôn như» ▸ khôn như cáo .
+═══ VẾ 3 · thu hồi trên 44 bộ lớp CỤ THỂ
+   THẬT      : 44 bộ · top-1 0.0% · top-5 4.5% · top-10 4.5%
+   HOÁN VỊ   : 44 bộ · top-1 0.0% · top-5 6.8% · top-10 6.8%
+########## loc_dich=loc ##########
+### checkpoints/network_v12_sent_ls.pkl · 450303 cha · boost=1.0 · LOC_DICH=True
+═══ VẾ 2 · prompt LOẠI SUY
+   «khoẻ như» ▸ khoẻ như voi .
+   «nhanh như» ▸ nhanh như sóc .
+   «khôn như» ▸ khôn như cáo .
+═══ VẾ 3 · thu hồi trên 44 bộ lớp CỤ THỂ
+   THẬT      : 44 bộ · top-1 0.0% · top-5 4.5% · top-10 6.8%
+   HOÁN VỊ   : 44 bộ · top-1 0.0% · top-5 6.8% · top-10 15.9%
+
+[exited with code 0]

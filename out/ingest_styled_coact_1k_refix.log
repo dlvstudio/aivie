@@ -1,0 +1,6 @@
+[     0s] load checkpoints/network_v11.pkl (gc.disable) …
+[   189s] ✓ loaded · parents 65,098
+[   292s] styled texts: 511 từ ['data/text_corpus/styled_sft_1k.jsonl', 'data/text_corpus/styled_sft.jsonl']
+[   321s] conditional: records=1533 pairs=60300 body_win=19455 skip_seed=0 skip_body=0
+[   321s] lưu → checkpoints/network_v11_styled_1k.pkl
+[   476s] ✓ xong. Kế: probe_style_coact.py --checkpoint checkpoints/network_v11_styled_1k.pkl

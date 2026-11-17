@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nn-aivie"
+version = "0.1.0"
+description = "Biologically inspired Hebbian SLM (AIVIE)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pyyaml>=6.0",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+hf = ["datasets>=2.14", "huggingface-hub>=0.20"]
+dev = ["pytest>=7.0", "datasets>=2.14"]
+viz = ["fastapi>=0.100", "uvicorn[standard]>=0.23", "pydantic>=2.0"]
+ws = ["python-crfsuite>=0.9.11", "datasets>=2.14"]
+
+[project.scripts]
+aivie = "nn_aivie.cli.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "slow: test nặng (load checkpoint lớn / build parents / train) — bỏ bằng -m 'not slow'",
+]

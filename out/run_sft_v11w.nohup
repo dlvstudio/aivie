@@ -1,0 +1,69 @@
+[    0.8s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    1.7s] model 42.1M · ctx 512 · dropout 0.1 · device=mps
+[    1.7s] nạp SFT data …
+[    2.8s]   sft_train.jsonl: 6,302 cặp
+[    2.9s]   QA nhà (grade_0*/qa/train): 251 cặp
+[    2.9s]   giữ 6,525 · bỏ 28 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.9s]   giữ 64 · bỏ 0 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.9s]   QA val nhà: 30 cặp (loại 1 lộ đề vào train)
+[    2.9s]   giữ 30 · bỏ 0 dài >512 tok · 0 thiếu Đáp: (ok)
+[    2.9s] guard held-out: 200 đơn vị · 19,963 byte
+[    2.9s] nạp corpus replay …
+[  203.1s]   viwiki.jsonl: +160,285,955 token (tổng 160,285,955)
+[  203.2s]   qa_supervised.jsonl ×15: +506,835 token (tổng 160,792,790)
+[  203.2s]   grade_lessons.jsonl ×10: +413,890 token (tổng 161,206,680)
+[  203.2s]   subject_articles.jsonl ×10: +68,960 token (tổng 161,275,640)
+[  203.5s]   history_articles.jsonl ×5: +1,786,500 token (tổng 163,062,140)
+[  222.9s]   conv_stories.jsonl ×2: +28,498,792 token (tổng 191,560,932)
+[  224.8s]   doc_add_articles.jsonl ×2: +3,391,498 token (tổng 194,952,430)
+[  225.9s]   paragraph_units.jsonl ×2: +2,620,890 token (tổng 197,573,320)
+[  227.4s]   dictionary.jsonl: +2,001,696 token (tổng 199,575,016)
+[  234.1s] TRƯỚC SFT: sft-val 5.197 bits-đáp · QA-nhà 4.763 · guard 1.1333 bpb
+[  234.7s] train: 6,525 ví dụ · 173 batch/epoch · 2 epoch · lr 3e-05 · replay mỗi 4 step
+[  236.4s]   ep0     0/173 loss 5.547 bits · ETA 1359m
+[  572.3s]   ep0   100/173 loss 4.815 bits · ETA 23m
+[ 1101.6s] EPOCH 0: sft-val 5.021 (Δ-0.176) · QA-nhà 4.311 (Δ-0.452) · guard 1.1213 (Δ-0.0121) ★ lưu
+[ 1103.8s]   ep1     0/173 loss 5.354 bits · ETA 18m
+[ 1712.1s]   ep1   100/173 loss 4.731 bits · ETA 7m
+[ 2458.3s] EPOCH 1: sft-val 4.998 (Δ-0.199) · QA-nhà 4.291 (Δ-0.471) · guard 1.1205 (Δ-0.0128) ★ lưu
+[ 2460.2s] ================================================================
+[ 2460.2s] 1) sft-val bits-đáp 5.197 → 4.998 (Δ-0.199) — ❌ chưa đạt ngưỡng −0.5
+[ 2460.2s] 2) guard essays 1.1333 → 1.1205 bpb (Δ-0.0128) — ✅ sạch (≤ +0.05)
+[ 2460.2s] 3) ĐỌC TAY (bits mù với bịa — G15):
+[ 2460.9s]    Hỏi: Lao động có ích gì
+     GOLD: Lao động là vinh quang.
+     SINH: Hỏi: Lao động có ích gì Đáp: Bạn có thể cho tôi biết thêm về cách sử dụng các kỹ thuật để tìm kiếm những người dùng và thực hiện các vấn đề này.<EOS>
+[ 2460.9s]    Hỏi: Ai chữa bệnh
+     GOLD: Bác sĩ chữa bệnh.
+     SINH: Hỏi: Ai chữa bệnh Đáp: Không có gì?<EOS>
+[ 2460.9s]    Hỏi: Ai trồng lúa
+     GOLD: Nông dân trồng lúa.
+     SINH: Hỏi: Ai trồng lúa Đáp:<EOS>
+[ 2461.0s]    Hỏi: Ai may quần áo
+     GOLD: Thợ may may quần áo.
+     SINH: Hỏi: Ai may quần áo Đáp:<EOS>
+[ 2461.0s]    Hỏi: Khi đi xe máy cần gì
+     GOLD: Đội mũ bảo hiểm khi đi xe máy.
+     SINH: Hỏi: Khi đi xe máy cần gì Đáp: Nếu bạn có thể làm việc với mình.<EOS>
+[ 2461.1s]    Hỏi: Đoàn kết giúp em thế nào
+     GOLD: Đoàn kết giúp em mạnh hơn.
+     SINH: Hỏi: Đoàn kết giúp em thế nào Đáp: Việt Nam.<EOS>
+[ 2461.1s]    Hỏi: Ai giữ an ninh
+     GOLD: Công an giữ an ninh.
+     SINH: Hỏi: Ai giữ an ninh Đáp:<EOS>
+[ 2461.1s]    Hỏi: Chính phủ làm gì
+     GOLD: Chính phủ điều hành đất nước.
+     SINH: Hỏi: Chính phủ làm gì Đáp:<EOS>
+[ 2461.1s]    Hỏi: Tòa án làm gì
+     GOLD: Tòa án xét xử theo luật.
+     SINH: Hỏi: Tòa án làm gì Đáp:<EOS>
+[ 2461.1s]    Hỏi: Công an làm gì
+     GOLD: Công an điều tra tội phạm.
+     SINH: Hỏi: Công an làm gì Đáp:<EOS>
+[ 2461.1s]    Hỏi: Trung thu là tết của ai
+     GOLD: Trung thu là tết trẻ em.
+     SINH: Hỏi: Trung thu là tết của ai Đáp:<EOS>
+[ 2461.1s]    Hỏi: Công dân có nghĩa vụ gì
+     GOLD: Công dân có nghĩa vụ nộp thuế.
+     SINH: Hỏi: Công dân có nghĩa vụ gì Đáp:<EOS>
+[ 2461.1s] → checkpoint tốt nhất (epoch 1): out/lm_v2_v11w_sft.pt

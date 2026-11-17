@@ -1,0 +1,33 @@
+[     0.0s] START ckpt=network_v9_histwiki_paragraph.pkl out=network_v9_histwiki_paragraph_wsseed.pkl model_dir=out/models/ws_crf_uts_full
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v9_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    53.6s] ✓ unpickle  (53.6s)
+[    53.6s] ▶ vocab (113260 token)
+[    54.4s] ✓ vocab (113260 token)  (0.8s)
+[    54.4s] ▶ adjacency
+[    80.9s] ✓ adjacency  (26.5s)
+[    81.0s] ▶ embedding
+[    84.7s] ✓ embedding  (3.7s)
+[    84.7s] ▶ parents
+[  2562.2s] ✓ parents  (2477.4s)
+[  2562.4s] ✓ loaded: vocab=113260 parents=174627 E=(77464, 96)
+[  2636.7s] sidecar có: network_v9_histwiki_paragraph.content.pkl
+[  2637.3s] ▶ varlm sidecar: network_v9_histwiki_paragraph.varlm.pkl
+[  2646.2s] ✓ varlm: k=1:52191, k=2:469395, k=3:968120, k=4:1258702
+[  2646.2s] ✓ load_checkpoint XONG
+[  2646.5s] ✓ loaded WS-CRF model
+[  2646.8s] corpus=/Users/dlv/Documents/code/nn-aivie/data/real_vi/history_wiki_para.jsonl sentences=19314
+[  2689.3s] corpus=/Users/dlv/Documents/code/nn-aivie/data/real_vi/history_vi.jsonl sentences=173
+[  2690.1s] corpus=/Users/dlv/Documents/code/nn-aivie/data/real_vi/statements_doc.jsonl sentences=45000
+[  2691.8s]   processed 20000 sentences; pairs=18328
+[  2738.5s]   processed 40000 sentences; pairs=28852
+[  2779.1s]   processed 60000 sentences; pairs=38271
+[  2792.4s] predicted_pairs total=39949 kept(min=2)=16506
+[  2793.1s] seed_pairs(in-vocab)=13541 oov_pairs=2965
+[  2793.3s] seg.seed_pairs before=22268 add=13541 after=30266
+[  2812.1s] promote 500 clusters=209208 pair_count=2
+[  2814.5s] promote 1000 clusters=209708 pair_count=1
+[  2814.8s] promote 1500 clusters=210208 pair_count=0
+[  2815.0s] promoted=1709 clusters=210417
+[  2815.0s] saving → /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v9_histwiki_paragraph_wsseed.pkl
+[  3985.3s] DONE

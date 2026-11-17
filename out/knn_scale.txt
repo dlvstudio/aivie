@@ -1,0 +1,83 @@
+LM 11.4M · vocab 32,002 · ctx=256
+
+dựng datastore từ data/text_corpus/history_articles.jsonl …
+✓ 158 bài · 355,666 cặp (h,next) trong datastore
+dựng index 5-gram từ CHÍNH data/text_corpus/history_articles.jsonl (nguồn datastore) …
+✓ 327,429 5-gram phân biệt
+
+          prompt                        λ=1.0                        λ=0.5                        λ=0.2                        λ=0.0
+     Nhà Trần là ' một nhà văn học, nhà thơ,' ' một nhà thơ lớn, không ch' ' một bài ngũ ngôn tuyệt cú' ' một bài ngũ ngôn tuyệt cú'
+    Khúc Thừa Dụ ', cũng không phải là một c' '.⏎Năm 1836, nhà Minh đưa q' '.⏎Theo sách Đại Việt sử ký' '.⏎Theo sách Đại Việt sử ký'
+       Ngô Quyền ', Ngô Quyền, Ngô Quyền, Ng' ' và Hoàng hậu Dương Thị Vy' ' và Hoàng hậu Dương Thị Vy' ' và Hoàng hậu Dương Thị Vy'
+      Lý Thái Tổ ' nói: "Ta không có ý tứ, t' ' tiến quân ra Bắc, đóng qu' ' tiến quân ra Bắc, đóng qu' ' tiến quân ra Bắc, đóng qu'
+    Hai Bà Trưng ' và Trưng Trắc là một tron' ', phường Thuận Hóa.⏎Đường ' ', phường Thuận Hóa.⏎Đường ' ', phường Thuận Hóa.⏎Đường '
+          Nhà Lý ', nhà Lý, nhà Lý, nhà Lý, ' ' Chiêu Hoàng.⏎Trần Tự Khán' ' Chiêu Hoàng.⏎Trần Thủ Độ ' ' Chiêu Hoàng.⏎Trần Thủ Độ '
+   Trần Hưng Đạo ', Trần Hưng Đạo, Trần Hưng' ' ra lệnh cho quân dùng sún' ' ra lệnh cho quân dùng sún' ' ra lệnh cho quân dùng sún'
+          Lê Lợi ', Lê Lợi, Lê Lợi, Lê Lợi, ' ' có cống số vàng cống theo' ' có cống số vàng cống theo' ' có cống số vàng cống theo'
+
+─── TOÀN VĂN + 5-gram MỚI (thước CHUẨN §0.5/§7.16, không phải đọc mắt) ───
+  Nhà Trần là      λ=1.0  MỚI=36/36 (100%)  ' một nhà văn học, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ, nhà thơ'
+  Nhà Trần là      λ=0.5  MỚI=22/36 ( 61%)  ' một nhà thơ lớn, không chỉ là một nhà thơ lớn, có thể nói là một nhà thơ lớn.⏎Năm 1820, nhà thơ lên ngôi, nhà thơ lên ngôi, nhà'
+  Nhà Trần là      λ=0.2  MỚI=0/36 (  0%)  ' một bài ngũ ngôn tuyệt cú của nhà sư Pháp Thuận.⏎Đây là loại hình sân khâu tiêu biểu nhất của Việt Nam.⏎Sang thời Lý, nước Đại Cồ Việt tiếp tục phát triển hưng'
+  Nhà Trần là      λ=0.0  MỚI=0/36 (  0%)  ' một bài ngũ ngôn tuyệt cú của nhà sư Pháp Thuận.⏎Đây là loại hình sân khâu tiêu biểu nhất của Việt Nam.⏎Sang thời Lý, nước Đại Cồ Việt tiếp tục phát triển hưng'
+  Khúc Thừa Dụ     λ=1.0  MỚI=36/36 (100%)  ', cũng không phải là một cái khác người, mà là một cái khác người, mà là một cái khác người, cũng không phải là một cái khác người, mà là một cái khác người,'
+  Khúc Thừa Dụ     λ=0.5  MỚI=10/36 ( 28%)  '.⏎Năm 1836, nhà Minh đưa quân xâm chiếm quận Nhật Nam và tiến đến quận Cửu Đức.⏎Năm 1835, Lê Hoàn cử Nguyễn Huệ làm tướng mang quân'
+  Khúc Thừa Dụ     λ=0.2  MỚI=10/36 ( 28%)  '.⏎Theo sách Đại Việt sử ký toàn thư, sau cuộc Chiến tranh Minh – Đại Việt sử ký toàn thư, Nhà Xuất bản Khoa học xã hội.⏎Lúc này, Nguyễn Hữu Cảnh đi'
+  Khúc Thừa Dụ     λ=0.0  MỚI=13/36 ( 36%)  '.⏎Theo sách Đại Việt sử ký toàn thư, sau cuộc Chiến tranh Minh – Đại Việt sử ký toàn thư không chép gì về Nguyễn Văn Siêu.⏎Lúc này, Nguyễn Ánh vẫn quyết định'
+  Ngô Quyền        λ=1.0  MỚI=36/36 (100%)  ', Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền, Ngô Quyền,'
+  Ngô Quyền        λ=0.5  MỚI=12/36 ( 33%)  ' và Hoàng hậu Dương Thị Vy.⏎Đình Ninh Xá, xã Bắc An, Hải Phòng.⏎Đình Ninh Xá, xã Bắc An, tp Hải Phòng.⏎Đình Ninh Xá, xã Bắc An'
+  Ngô Quyền        λ=0.2  MỚI=5/36 ( 14%)  ' và Hoàng hậu Dương Thị Vy.⏎Đình Ninh Xá, xã Bắc An Phụ, Hải Phòng thờ Ngô Quyền.⏎Miếu Xâm Bồ, phường Hải An, tp Hải Phòng: Thờ Ngô Quyền.'
+  Ngô Quyền        λ=0.0  MỚI=0/36 (  0%)  ' và Hoàng hậu Dương Thị Vy.⏎Đình Ninh Xá, xã Bắc An Phụ, Hải Phòng thờ Ngô Quyền và Phùng Hưng.⏎Miếu Xâm Bồ, phường Hải An, tp Hải Phòng: Thờ'
+  Lý Thái Tổ       λ=1.0  MỚI=36/36 (100%)  ' nói: "Ta không có ý tứ, ta không có ý tứ."     "Ta không có ý tứ."     "Ta không có ý tứ."     "Ta không có ý'
+  Lý Thái Tổ       λ=0.5  MỚI=4/36 ( 11%)  ' tiến quân ra Bắc, đóng quân ở dinh Bồ Đề.⏎Khoa này Đào Công Soạn, người Tiên Lữ, Hưng Yên đỗ đầu.⏎Lúc đó, Thái Tổ mở khoa thi lấy đỗ 3'
+  Lý Thái Tổ       λ=0.2  MỚI=0/36 (  0%)  ' tiến quân ra Bắc, đóng quân ở dinh Bồ Đề.⏎Khoa này Đào Công Soạn, người Tiên Lữ, Hưng Yên đỗ đầu.⏎Lúc mới đến Đông Đô, Thái Tổ mở khoa thi'
+  Lý Thái Tổ       λ=0.0  MỚI=0/36 (  0%)  ' tiến quân ra Bắc, đóng quân ở dinh Bồ Đề.⏎Khoa này Đào Công Soạn, người Tiên Lữ, Hưng Yên đỗ đầu.⏎Lúc mới đến Đông Đô, Thái Tổ mở khoa thi'
+  Hai Bà Trưng     λ=1.0  MỚI=27/36 ( 75%)  ' và Trưng Trắc là một trong những nhà thơ nổi tiếng nhất của triều Nguyễn.⏎Ông là một trong những nhà thơ nổi tiếng nhất của triều Nguyễn.⏎Ông là một trong những nhà thơ nổi'
+  Hai Bà Trưng     λ=0.5  MỚI=6/36 ( 17%)  ', phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Nguyễn Chí Diểu, phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Nguyễn Chí Diểu, phường Thuận Hóa.⏎Đường Lê'
+  Hai Bà Trưng     λ=0.2  MỚI=6/36 ( 17%)  ', phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Nguyễn Chí Diểu, phường Thuận Hóa.⏎Đường Phạm Hồng Thái nay là đường Nguyễn Chí Thanh, phường Thuận Hóa.⏎Đường Phạm'
+  Hai Bà Trưng     λ=0.0  MỚI=4/36 ( 11%)  ', phường Thuận Hóa.⏎Đường Lê Đình Dương nay là đường Nguyễn Chí Diểu, phường Thuận Hóa.⏎Đường Phạm Hồng Thái nay là đường Phan Bội Châu, phường Thuận Hóa.⏎Đường Phạm'
+  Nhà Lý           λ=1.0  MỚI=32/36 ( 89%)  ', nhà Lý, nhà Lý, nhà Lý, nhà Lý, nhà Lý, nhà Lý.⏎Nhà Lý là nhà Lý, nhà Lý, nhà Lý, nhà Lý.⏎Nhà Lý là nhà'
+  Nhà Lý           λ=0.5  MỚI=27/36 ( 75%)  ' Chiêu Hoàng.⏎Trần Tự Khánh là người có công chúa Thuận Thiên, vợ, mẹ là Nguyễn Thị Lộ.⏎Trần Tự Khánh là người có công chúa Thuận Thiên, tức là Nguyễn Thị Lộ'
+  Nhà Lý           λ=0.2  MỚI=0/36 (  0%)  ' Chiêu Hoàng.⏎Trần Thủ Độ tiến cử Trần Cảnh, lúc đó mới 8 tuổi, làm Chi hậu chính chi ứng cục hầu hạ trong cung.⏎Trần Cảnh trạc tuổi với Chiêu Hoàng, được'
+  Nhà Lý           λ=0.0  MỚI=0/36 (  0%)  ' Chiêu Hoàng.⏎Trần Thủ Độ tiến cử Trần Cảnh, lúc đó mới 8 tuổi, làm Chi hậu chính chi ứng cục hầu hạ trong cung.⏎Trần Cảnh trạc tuổi với Chiêu Hoàng, được'
+  Trần Hưng Đạo    λ=1.0  MỚI=36/36 (100%)  ', Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo, Trần Hưng Đạo'
+  Trần Hưng Đạo    λ=0.5  MỚI=9/36 ( 25%)  ' ra lệnh cho quân dùng súng bắn chết.⏎Quan điểm của Vua Lê Thánh Tông là vừa tiếp tục duy trì sự thịnh vượng của các đời Anh Tông.⏎Ngoài ra, việc dời đô còn'
+  Trần Hưng Đạo    λ=0.2  MỚI=8/36 ( 22%)  ' ra lệnh cho quân dùng súng bắn chết.⏎Quan điểm của Vua Lê Thánh Tông là vừa tiếp tục duy trì sự thịnh vượng của các đời Anh Tông đã tạo nên.⏎Ngoài ra, việc'
+  Trần Hưng Đạo    λ=0.0  MỚI=6/36 ( 17%)  ' ra lệnh cho quân dùng súng bắn chết.⏎Quan điểm của Vua Lê Thánh Tông là vừa tiếp đãi, vừa dè chừng họ.⏎Nghệ thuật quân sự trở thành thánh võ hay thần võ có'
+  Lê Lợi           λ=1.0  MỚI=36/36 (100%)  ', Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi, Lê Lợi,'
+  Lê Lợi           λ=0.5  MỚI=10/36 ( 28%)  ' có cống số vàng cống theo lệ cho triều đình.⏎Vua Lê Thái Tổ sau khi lên ngôi, đổi tên là Đông Kinh.⏎Nhà Nguyễn sau khi lên ngôi, vua Lê Thái Tổ đã'
+  Lê Lợi           λ=0.2  MỚI=6/36 ( 17%)  ' có cống số vàng cống theo lệ cho triều đình nhà Minh hay không.⏎Vua Lê Thái Tổ sau khi lên ngôi, chia trong nước làm năm 1428, chia trong nước làm năm'
+  Lê Lợi           λ=0.0  MỚI=0/36 (  0%)  ' có cống số vàng cống theo lệ cho triều đình nhà Minh hay không.⏎Vua Lê Thái Tổ sau khi lên ngôi năm 1428, chia trong nước làm năm đạo: Đông, Tây'
+
+  TỔNG (mọi λ, mọi prompt): 5-gram MỚI 433/1152 = 38%
+  ⇒ MỚI ≈ 0%  = vẫn khảm — kNN chỉ chọn ĐOẠN NÀO để chép, không sinh nội dung mới
+    MỚI cao   = chuỗi CHƯA TỪNG CÓ trong datastore ⇒ bằng chứng sinh thật ĐẦU TIÊN
+
+─── hàng xóm gần nhất cho 3 prompt đầu (chẩn đoán retrieval) ───
+
+  prompt='Nhà Trần là'
+    cos=0.9198  …' Lê Hoàn là' → ' một'
+    cos=0.8871  …' Hồ Chí Minh còn là' → ' một'
+    cos=0.8787  …' Minh là' → ' Lý'
+    cos=0.8662  …'Lý Nhân Tông là' → ' vua'
+    cos=0.8578  …' còn cho rằng mẹ Lê Hoàn là' → ' Đặng'
+
+  prompt='Khúc Thừa Dụ'
+    cos=0.7422  …' Văn Lang sinh Nguyễn Hoằng Dụ' → '.'
+    cos=0.7121  …'\nNhưng Hoằng Dụ' → ' lưỡng'
+    cos=0.6944  …' buộc phải công nhận Khúc Thừa Dụ' → ' làm'
+    cos=0.6905  …' Anh hùng dân tộc Khúc Thừa Dụ' → ' đã'
+    cos=0.6902  …' độ sứ.\nKhúc Thừa Dụ' → ' dựng'
+
+  prompt='Ngô Quyền'
+    cos=0.8394  …': thờ Ngô Quyền' → ' và'
+    cos=0.8193  …' của Khúc Thừa Mỹ, Ngô Quyền' → ' không'
+    cos=0.7743  …': Là con trai của Ngô Quyền' → ','
+    cos=0.7618  …' Trong đình có tượng vua Ngô Quyền' → ' và'
+    cos=0.7612  …' Điện Bàn.\nTôn Thất Quyền' → ' và'
+
+⇒ ĐỌC: λ=1.0 là LM thuần (không đổi so với đã biết). So λ=0.5/0.2/0.0:
+  hàng xóm liên quan + văn bản KHÔNG trùng y hệt bất kỳ câu datastore nào
+  ⇒ dấu hiệu SINH THẬT đầu tiên ở quy mô corpus thật.
+  hàng xóm không liên quan ⇒ nhiễu lấn át ở quy mô này, cần datastore lớn hơn/biểu
+  diễn tốt hơn.

@@ -1,0 +1,49 @@
+[     0.0s] START ckpt=network_v7_history.pkl out=network_v7_history_segseed.pkl
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history.pkl …
+[     0.0s] ▶ unpickle
+[    58.9s] ✓ unpickle  (58.9s)
+[    59.0s] ▶ vocab (112275 token)
+[    60.2s] ✓ vocab (112275 token)  (1.3s)
+[    60.2s] ▶ adjacency
+[   101.5s] ✓ adjacency  (41.3s)
+[   101.5s] ▶ embedding
+[   104.0s] ✓ embedding  (2.5s)
+[   104.0s] ▶ parents
+[   395.5s] ✓ parents  (291.5s)
+[   395.5s] ✓ loaded: vocab=112275 parents=142733 E=(77464, 96)
+[   405.8s] sidecar có: network_v7_history.content.pkl
+[   406.1s] ▶ varlm sidecar: network_v7_history.varlm.pkl
+[   410.8s] ✓ varlm: k=1:65918, k=2:526992, k=3:537132, k=4:591968
+[   410.8s] ✓ load_checkpoint XONG
+[   412.4s] dict_raw: {'rows': 36764, 'words_multi': 24536, 'oov_words': 0} seed_pairs=22209
+[   412.4s] titles: {'rows': 173, 'titles': 173, 'titles_multi': 173} seed_pairs=59
+[   412.4s] seed_pairs: before=0 add=22268 after=22268
+[   415.5s] promote 500 clusters=131453 pair_count=2
+[   416.0s] promote 1000 clusters=131953 pair_count=2
+[   416.3s] promote 1500 clusters=132453 pair_count=2
+[   416.5s] promote 2000 clusters=132953 pair_count=1
+[   416.7s] promote 2500 clusters=133453 pair_count=1
+[   416.9s] promote 3000 clusters=133953 pair_count=1
+[   417.2s] promote 3500 clusters=134453 pair_count=1
+[   417.4s] promote 4000 clusters=134953 pair_count=1
+[   417.5s] promote 4500 clusters=135453 pair_count=0
+[   417.7s] promote 5000 clusters=135953 pair_count=0
+[   417.7s] promote 5500 clusters=136453 pair_count=0
+[   417.7s] promote 6000 clusters=136953 pair_count=0
+[   417.7s] promote 6500 clusters=137453 pair_count=0
+[   417.8s] promote 7000 clusters=137953 pair_count=0
+[   417.8s] promote 7500 clusters=138453 pair_count=0
+[   417.9s] promote 8000 clusters=138953 pair_count=0
+[   417.9s] promote 8500 clusters=139453 pair_count=0
+[   417.9s] promote 9000 clusters=139953 pair_count=0
+[   417.9s] promote 9500 clusters=140453 pair_count=0
+[   417.9s] promote 10000 clusters=140953 pair_count=0
+[   417.9s] promote 10500 clusters=141453 pair_count=0
+[   417.9s] promote 11000 clusters=141953 pair_count=0
+[   417.9s] promote 11500 clusters=142453 pair_count=0
+[   417.9s] promote 12000 clusters=142953 pair_count=0
+[   417.9s] promote 12500 clusters=143453 pair_count=0
+[   417.9s] promote 13000 clusters=143953 pair_count=0
+[   417.9s] promoted=13342 clusters=144295
+[   418.0s] saving → /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v7_history_segseed.pkl
+[   557.5s] DONE

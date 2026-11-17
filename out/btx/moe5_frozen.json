@@ -1,0 +1,121 @@
+{
+ "cmd": "merge",
+ "args": {
+  "cmd": "merge",
+  "domain": "",
+  "experts": "truyen,hoithoai,dich,toan,laptrinh",
+  "mode": "frozen",
+  "init": "",
+  "steps": 0,
+  "tag": "moe5_frozen",
+  "tags": []
+ },
+ "before": {
+  "truyen": 2.7235,
+  "hoithoai": 3.868,
+  "dich": 3.4302,
+  "toan": 1.7552,
+  "laptrinh": 3.2767
+ },
+ "hist": [
+  {
+   "step": 0,
+   "loss": 2.9433,
+   "val": {
+    "truyen": 3.4364,
+    "hoithoai": 4.3972,
+    "dich": 3.9527,
+    "toan": 0.8794,
+    "laptrinh": 3.8209
+   }
+  },
+  {
+   "step": 500,
+   "loss": 1.5022,
+   "val": {
+    "truyen": 1.7837,
+    "hoithoai": 2.9312,
+    "dich": 2.1988,
+    "toan": 0.3488,
+    "laptrinh": 1.1515
+   }
+  },
+  {
+   "step": 1000,
+   "loss": 1.4484,
+   "val": {
+    "truyen": 1.7376,
+    "hoithoai": 2.9089,
+    "dich": 2.0787,
+    "toan": 0.3434,
+    "laptrinh": 1.1551
+   }
+  },
+  {
+   "step": 1500,
+   "loss": 1.2898,
+   "val": {
+    "truyen": 1.7574,
+    "hoithoai": 2.9836,
+    "dich": 2.0896,
+    "toan": 0.3441,
+    "laptrinh": 1.1798
+   }
+  },
+  {
+   "step": 1999,
+   "loss": 1.5284,
+   "val": {
+    "truyen": 1.6835,
+    "hoithoai": 2.8707,
+    "dich": 2.0634,
+    "toan": 0.3398,
+    "laptrinh": 1.0979
+   }
+  }
+ ],
+ "route": {
+  "truyen": {
+   "truyen": 0.536,
+   "hoithoai": 0.108,
+   "dich": 0.288,
+   "toan": 0.068,
+   "laptrinh": 0.001
+  },
+  "hoithoai": {
+   "truyen": 0.011,
+   "hoithoai": 0.917,
+   "dich": 0.026,
+   "toan": 0.039,
+   "laptrinh": 0.006
+  },
+  "dich": {
+   "truyen": 0.1,
+   "hoithoai": 0.292,
+   "dich": 0.568,
+   "toan": 0.038,
+   "laptrinh": 0.002
+  },
+  "toan": {
+   "truyen": 0.0,
+   "hoithoai": 0.279,
+   "dich": 0.0,
+   "toan": 0.719,
+   "laptrinh": 0.001
+  },
+  "laptrinh": {
+   "truyen": 0.003,
+   "hoithoai": 0.182,
+   "dich": 0.009,
+   "toan": 0.11,
+   "laptrinh": 0.696
+  }
+ },
+ "final": {
+  "truyen": 1.6872,
+  "hoithoai": 2.9068,
+  "dich": 2.0917,
+  "toan": 0.3421,
+  "laptrinh": 1.1475
+ }
+}

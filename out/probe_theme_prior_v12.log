@@ -1,0 +1,32 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[50s] ✓ 430,447 cha
+  429,711 cha câu ứng viên
+  74 ca gold (phủ ≥0.9) — nhãn suy từ đồ thị, không chấm tay
+
+==================================================================
+prior          top1      MRR    Δ so pos   (n=74)
+==================================================================
+(tw=0)        0.095        —           —
+none          0.095    0.354      -0.027
+pos           0.122    0.330      +0.000
+content       0.189    0.363      +0.068
+clear         0.135    0.264      +0.014
+==================================================================
+
+BẤT ĐỒNG so với `pos` (ca mà top-1 đổi kết quả):
+  none     thắng   0 · thua   2 · bất đồng   2/74 = 2.7%
+  content  thắng   5 · thua   0 · bất đồng   5/74 = 6.8%
+  clear    thắng   3 · thua   2 · bất đồng   5/74 = 6.8%
+G1 bench lành (pos top-1 ≥0.50) : TRƯỢT (0.122)
+G2 prior có tác dụng?            : tw=0 → 0.095 ‖ pos → 0.122 (Δ +0.027)
+G3 thay thế hơn ≥+0.05          : ĐẠT (tốt nhất `content` 0.189, Δ +0.068)
+
+⇒ CHỐT ÂM TÍNH — không sửa prior theo hướng này
+
+CHẨN ĐOÁN ca 0 (focus `Lý`) — prior nào xếp câu ĐÚNG trên câu XẤU:
+  none     ĐÚNG=1.500  XẤU=1.500  ✗ không tách
+  pos      ĐÚNG=0.625  XẤU=0.611  ✓ tách
+  content  ĐÚNG=0.667  XẤU=0.625  ✓ tách
+  clear    ĐÚNG=0.500  XẤU=0.500  ✗ không tách
+
+[155s] → out/probe_theme_prior_v12.log

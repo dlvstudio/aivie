@@ -1,0 +1,67 @@
+lesson_id: vi_grade3_qa
+grade: 3
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Ví dụ là KIẾN THỨC THỰC (không phải câu mẫu đồ chơi). Pattern Hỏi/Đáp + bind
+# Q/A học qua fact thật để mạng tổng quát hoá cách trả lời, không thiên lệch tần suất.
+examples:
+  # Định nghĩa "X là Y"
+  - "Hỏi: Thủ đô Việt Nam là gì ? Đáp: Thủ đô Việt Nam là Hà Nội."
+  - "Hỏi: Thăng Long là gì ? Đáp: Thăng Long là Hà Nội ngày nay."
+  - "Hỏi: Huế là gì ? Đáp: Huế là cố đô."
+  - "Hỏi: Đà Nẵng là gì ? Đáp: Đà Nẵng là thành phố biển."
+  - "Hỏi: Hoa là gì của cây ? Đáp: Hoa là bộ phận sinh sản của cây."
+  - "Hỏi: Lao động là gì ? Đáp: Lao động là vinh quang."
+  # Vị trí "ở đâu"
+  - "Hỏi: Việt Nam nằm ở đâu ? Đáp: Việt Nam nằm ở Đông Nam Á."
+  - "Hỏi: Thành phố Hồ Chí Minh ở đâu ? Đáp: Thành phố Hồ Chí Minh ở miền Nam."
+  - "Hỏi: Cá sống ở đâu ? Đáp: Cá sống dưới nước."
+  - "Hỏi: Rễ cây hút nước ở đâu ? Đáp: Rễ cây hút nước dưới đất."
+  # Chức năng "làm gì / giúp ta"
+  - "Hỏi: Tim làm gì trong cơ thể ? Đáp: Tim bơm máu khắp cơ thể."
+  - "Hỏi: Phổi giúp ta làm gì ? Đáp: Phổi giúp ta thở."
+  - "Hỏi: Mắt giúp ta làm gì ? Đáp: Mắt giúp ta nhìn."
+  - "Hỏi: Xương làm gì trong cơ thể ? Đáp: Xương nâng đỡ cơ thể."
+  - "Hỏi: Mặt trời cung cấp gì ? Đáp: Mặt trời cung cấp ánh sáng và nhiệt."
+  # Sông ngòi / địa lý
+  - "Hỏi: Sông Hồng chảy qua thành phố nào ? Đáp: Sông Hồng chảy qua Hà Nội."
+  - "Hỏi: Lá cờ Việt Nam có màu gì ? Đáp: Lá cờ Việt Nam màu đỏ sao vàng."
+  - "Hỏi: Việt Nam có bao nhiêu tỉnh thành ? Đáp: Việt Nam có 63 tỉnh thành."
+  # Toán
+  - "Hỏi: 2 cộng 3 bằng mấy ? Đáp: 2 cộng 3 bằng 5."
+  - "Hỏi: 10 trừ 4 bằng mấy ? Đáp: 10 trừ 4 bằng 6."
+  - "Hỏi: 3 nhân 4 bằng mấy ? Đáp: 3 nhân 4 bằng 12."
+  - "Hỏi: 12 chia 3 bằng mấy ? Đáp: 12 chia 3 bằng 4."
+  - "Hỏi: Một tuần có mấy ngày ? Đáp: Một tuần có bảy ngày."
+  - "Hỏi: Một giờ có bao nhiêu phút ? Đáp: Một giờ có sáu mươi phút."
+  - "Hỏi: Hình tam giác có mấy cạnh ? Đáp: Hình tam giác có ba cạnh."
+  # Lịch sử
+  - "Hỏi: Ngày Quốc khánh Việt Nam là ngày nào ? Đáp: Ngày 2 tháng 9 là Quốc khánh Việt Nam."
+  - "Hỏi: Bác Hồ đọc Tuyên ngôn độc lập năm nào ? Đáp: Bác Hồ đọc Tuyên ngôn độc lập năm 1945."
+  - "Hỏi: Hai Bà Trưng chống ai ? Đáp: Hai Bà Trưng chống giặc Hán."
+  - "Hỏi: Lý Thái Tổ dời đô về đâu ? Đáp: Lý Thái Tổ dời đô về Thăng Long."
+  - "Hỏi: Quang Trung đại phá quân nào ? Đáp: Quang Trung đại phá quân Thanh."
+  - "Hỏi: Lê Lợi khởi nghĩa ở đâu ? Đáp: Lê Lợi khởi nghĩa Lam Sơn."
+  # Khoa học tự nhiên
+  - "Hỏi: Trái đất quay quanh gì ? Đáp: Trái đất quay quanh mặt trời."
+  - "Hỏi: Lá cây làm gì ? Đáp: Lá cây quang hợp."
+  - "Hỏi: Chim có gì ? Đáp: Chim có lông và cánh."
+  # Xã hội / công dân
+  - "Hỏi: Ai dạy em học ở trường ? Đáp: Thầy cô dạy em học."
+  - "Hỏi: Vì sao phân loại rác ? Đáp: Phân loại rác bảo vệ môi trường."
+  - "Hỏi: Qua đường em cần làm gì ? Đáp: Qua đường đi vạch kẻ đi bộ."
+  - "Hỏi: Ai chữa bệnh ? Đáp: Bác sĩ chữa bệnh."
+  - "Hỏi: Ai trồng lúa ? Đáp: Nông dân trồng lúa."

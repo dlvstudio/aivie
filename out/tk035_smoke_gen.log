@@ -1,0 +1,85 @@
+=== Load checkpoints/network_v9_histwiki_paragraph.pkl ===
+[     0.0s] === load_network_v9_histwiki_paragraph START (pid=5970) → out/logs/load_network_v9_histwiki_paragraph_20260709_104045.log ===
+[     0.0s] load checkpoint checkpoints/network_v9_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    56.2s] ✓ unpickle  (56.2s)
+[    56.2s] ▶ vocab (113260 token)
+[    56.8s] ✓ vocab (113260 token)  (0.6s)
+[    56.8s] ▶ adjacency
+[    76.7s] ✓ adjacency  (19.9s)
+[    76.7s] ▶ embedding
+[    78.3s] ✓ embedding  (1.6s)
+[    78.3s] ▶ parents
+[   358.7s] ✓ parents  (280.4s)
+[   358.7s] ✓ loaded: vocab=113260 parents=174627 E=(77464, 96)
+[   364.8s] sidecar có: network_v9_histwiki_paragraph.content.pkl
+[   364.9s] ✓ load_checkpoint XONG
+vocab=113260 parents=174627
+
+=== A) Sinh hybrid (generate) — gate ON vs OFF ===
+
+  ['Đọc sách giúp']
+    gate=0.5 (fb fire 9): 'Đọc sách giúp Đọc sách thánh hiền học được chuyện gì' (=)
+  ['Mùa hè em']
+    gate=0.5 (fb fire 8): 'Mùa hè em ấm Mùa mưa tập trung mùa hè'
+    gate=0.0 (fb fire 0): 'Mùa hè em . Mùa mưa tập trung mùa hè'
+  ['Trường học là']
+    gate=0.5 (fb fire 21): 'Trường học là Trường học đầu tiên về ngành báo chí Missouri School of Journalism thành lập năm 1908 tại Hoa Kỳ bởi Walter Williams' (=)
+  ['Hỏi: Việt Nam là gì Đáp:']
+    gate=0.5 (fb fire 7): 'Hỏi: Việt Nam là gì Đáp: Thủ đô Việt Nam là Hà Nội. . Miền Nam Việt Nam là một khái niệm để chỉ vùng địa lý ở phía nam nước Việt Nam . Từ năm 1945 , khái niệm miền Nam Việt Nam được dùng để chỉ vùng lãnh thổ phía nam vĩ tuyến 16 .' (=)
+  ['nếu trời mưa']
+    gate=0.5 (fb fire 9): 'nếu trời mưa Mặt trời cung cấp ánh sáng và nhiệt.' (=)
+  ['tuy vất vả']
+    gate=0.5 (fb fire 19): 'tuy vất vả , Lê Duẩn đã cố gắng chèo lái nước nhà không bị sụp đổ tuy có gian nan vất vả nhưng vẫn trụ vững' (=)
+  ['Nếu em học chăm']
+    gate=0.5 (fb fire 7): 'Nếu em học chăm . Thầy cô dạy em học.' (=)
+  ['Không chỉ giỏi']
+    gate=0.5 (fb fire 18): 'Không chỉ giỏi quán xuyến gia đình bà xã Hồng Đăng còn ngày càng chăm chút hơn đến vẻ ngoài' (=)
+  ['Napoléon là ai']
+    gate=0.5 (fb fire 13): 'Napoléon là ai . Lawrence và Napoléon là hai người có ảnh hưởng lớn nhất đến ông' (=)
+  ['Mèo là gì']
+    gate=0.5 (fb fire 16): "Mèo là gì . Sáo Mèo là loại nhạc cụ của người H'Mông miền Bắc Việt Nam và Trung Quốc" (=)
+
+=== B) So sánh v4 vs baseline (_t3_isg) — gate=0.5 ===
+
+[     0.0s] === load_network_v9_histwiki START (pid=5970) → out/logs/load_network_v9_histwiki_20260709_105306.log ===
+[     0.0s] load checkpoint checkpoints/network_v9_histwiki.pkl …
+[     0.0s] ▶ unpickle
+[   152.0s] ✓ unpickle  (152.0s)
+[   152.0s] ▶ vocab (113260 token)
+[   152.7s] ✓ vocab (113260 token)  (0.7s)
+[   152.7s] ▶ adjacency
+[   171.6s] ✓ adjacency  (18.9s)
+[   171.6s] ▶ embedding
+[   173.4s] ✓ embedding  (1.7s)
+[   173.4s] ▶ parents
+[   562.3s] ✓ parents  (388.9s)
+[   562.3s] ✓ loaded: vocab=113260 parents=149627 E=(77464, 96)
+[   571.6s] sidecar có: network_v9_histwiki.content.pkl
+[   571.7s] ✓ load_checkpoint XONG
+  'Đọc sách giúp' ✓
+    v4:       'Đọc sách giúp Đọc sách thánh hiền học được chuyện gì'
+    baseline: 'Đọc sách giúp Đọc sách thánh hiền học được chuyện gì'
+  'Mùa hè em' ✓
+    v4:       'Mùa hè em ấm Mùa mưa tập trung mùa hè'
+    baseline: 'Mùa hè em ấm Mùa mưa tập trung mùa hè'
+  'nếu trời mưa' ✓
+    v4:       'nếu trời mưa Mặt trời cung cấp ánh sáng và nhiệt.'
+    baseline: 'nếu trời mưa Mặt trời cung cấp ánh sáng và nhiệt.'
+  'tuy vất vả' ✓
+    v4:       'tuy vất vả , Lê Duẩn đã cố gắng chèo lái nước nhà không bị sụp đổ tuy có gian nan vất vả nhưng vẫn trụ vững'
+    baseline: 'tuy vất vả , Lê Duẩn đã cố gắng chèo lái nước nhà không bị sụp đổ tuy có gian nan vất vả nhưng vẫn trụ vững'
+  'Napoléon là ai' ✓
+    v4:       'Napoléon là ai . Lawrence và Napoléon là hai người có ảnh hưởng lớn nhất đến ông'
+    baseline: 'Napoléon là ai . Lawrence và Napoléon là hai người có ảnh hưởng lớn nhất đến ông'
+
+=== C) A3 thuần (W_seq + gate) — bracket prompts ===
+
+  'nếu trời mưa'
+    gate=0.5: 'nếu trời mưa Mặt trời cung cấp ánh sáng và nhiệt.'
+  'tuy vất vả'
+    gate=0.5: 'tuy vất vả , Lê Duẩn đã cố gắng chèo lái nước nhà không bị sụp đổ tuy có gian nan vất vả'
+  'Nếu em học chăm'
+    gate=0.5: 'Nếu em học chăm . Thầy cô dạy em học.'
+  'Không chỉ giỏi'
+    gate=0.5: 'Không chỉ giỏi , Không chỉ nói với đồng bào mình những điều muốn nói'

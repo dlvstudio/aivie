@@ -1,0 +1,28 @@
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[    8.9s RSS  0.84GB] nạp xong · vocab=32002 parents=5664
+[    8.9s RSS  0.84GB] dựng hub_spread index (W_skip + mine via-pivot) …
+[   11.4s RSS  0.84GB] kênh typed: 816 nguồn · 2141 cạnh
+[   11.4s RSS  0.84GB] nhãn mạnh nhất theo bậc-vào typed: một(96), phố(50), là(44), người(41), Nguyễn(31), nơi(21), các(21), con(21), lập(19), di(17), 1(17), vị(16), vùng(14), hành(14), Thăng(14)
+[   11.4s RSS  0.84GB] seed đóng băng: 150 (từ 816 chủ thể có cạnh typed)
+[   11.5s RSS  0.84GB] [typed_first] có hub 139/150 · nhãn 62.6% · thành viên mới 90.6% (0.1s)
+[   11.6s RSS  0.84GB] [mixed      ] có hub 139/150 · nhãn 56.8% · thành viên mới 92.8% (0.1s)
+[   11.7s RSS  0.84GB] [cooc       ] có hub 115/150 · nhãn 43.5% · thành viên mới 97.4% (0.1s)
+[   11.8s RSS  0.84GB]   ca 'mèo': hub=[] thành viên=[]
+[   11.8s RSS  0.84GB]   ca 'chó': hub=[] thành viên=[]
+[   11.9s RSS  0.84GB]   ca 'Trần': hub=['lập', 'triều', 'cháu'] thành viên=['độc', 'thành', 'sáng', 'Nam', 'ngôn', 'thức', 'nhà', 'Tuyên']
+[   12.0s RSS  0.84GB] CỔNG {'1_typed_edges': True, '2_label_rate': True, '3_lift_vs_cooc': False, '4_new_member': True, 'pass': False} · lift=1.44
+[   12.0s RSS  0.84GB] ghi /private/tmp/claude-501/-Users-dlv-Documents-code-nn-aivie/2635812a-9ff6-45e4-92bd-c6581966f41b/scratchpad/hub3_mini.json
+[    0.0s RSS  0.07GB] nạp checkpoints/mini_sent_ep_qa.pkl …
+[    7.3s RSS  1.01GB] nạp xong · vocab=32002 parents=5664
+[    7.3s RSS  1.01GB] dựng hub_spread index (W_skip + mine via-pivot) …
+[    9.0s RSS  1.01GB] kênh typed: 800 nguồn · 2231 cạnh
+[    9.0s RSS  1.01GB] nhãn mạnh nhất theo bậc-vào typed: di(17), phố(14), tinh(12), phần(11), tâm(11), Thăng(10), biểu(10), danh(10), lập(10), Nội(9), Chí(9), những(8), tiên(8), cuộc(7), tượng(7)
+[    9.0s RSS  1.01GB] seed đóng băng: 150 (từ 800 chủ thể có cạnh typed)
+[    9.3s RSS  1.01GB] [typed_first] có hub 148/150 · nhãn 43.2% · thành viên mới 88.5% (0.2s)
+[    9.5s RSS  1.01GB] [mixed      ] có hub 148/150 · nhãn 31.1% · thành viên mới 91.9% (0.2s)
+[    9.6s RSS  1.01GB] [cooc       ] có hub 116/150 · nhãn 16.4% · thành viên mới 97.4% (0.1s)
+[    9.7s RSS  1.01GB]   ca 'mèo': hub=[] thành viên=[]
+[    9.7s RSS  1.01GB]   ca 'chó': hub=[] thành viên=[]
+[    9.7s RSS  1.01GB]   ca 'Trần': hub=['ngôi', 'phong', 'lập'] thành viên=['Trời', 'Tông', 'nhường', 'ông', 'cướp', 'nối', 'Lê', 'Hoàn']
+[    9.8s RSS  1.01GB] CỔNG {'1_typed_edges': True, '2_label_rate': True, '3_lift_vs_cooc': True, '4_new_member': True, 'pass': True} · lift=2.64
+[    9.8s RSS  1.01GB] ghi out/hub_step3_mini_sent_ep_qa.json

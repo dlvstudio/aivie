@@ -1,0 +1,14 @@
+{
+ "id": "t01_weather",
+ "cat": "tool",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Bạn là trợ lý có thể gọi công cụ. Hôm nay là thứ Sáu, 06/11/2026. Các công cụ:\n- get_weather(city: str, date: str \"YYYY-MM-DD\")\n- search_flights(from_city: str, to_city: str, date: str \"YYYY-MM-DD\") → danh sách chuyến bay\n- send_email(to: str, subject: str, body: str)\n- run_sql(query: str) → chạy trên SQLite, bảng orders(id, customer, city, amount, created_at \"YYYY-MM-DD\")\nQuy tắc: nếu cần công cụ, CHỈ trả về một hoặc nhiều dòng JSON dạng {\"tool\": \"<tên>\", \"args\": {...}}, không viết gì khác. Nếu không cần công cụ thì trả lời bình thường. Nếu thiếu thông tin bắt buộc thì hỏi lại người dùng.\n\nYêu cầu: Ngày mai ở Đà Nẵng có mưa không?",
+   "text": "{\"tool\": \"get_weather\", \"args\": {\"city\": \"Đà Nẵng\", \"date\": \"2026-11-07\"}}",
+   "thinking": "*   Current date: Friday, 06/11/2026 (November 6, 2026).\n    *   User question: \"Ngày mai ở Đà Nẵng có mưa không?\" (Will it rain in Da Nang tomorrow?)\n    *   \"Tomorrow\" relative to Nov 6, 2026 is Nov 7, 2026.\n\n    *   `get_weather(city: str, date: str \"YYYY-MM-DD\")`\n    *   `search_flights(...)`\n    *   `send_email(...)`\n    *   `run_sql(...)`\n\n    *   The user is asking about the weather.\n    *   I need to use `get_weather`.\n    *   Parameters required: `city=\"Đà Nẵng\"`, `date=\"2026-11-07\"`.\n\n    *   Format must be JSON: `{\"tool\": \"get_weather\", \"args\": {\"city\": \"Đà Nẵng\", \"date\": \"2026-11-07\"}}`.",
+   "tokens": 284,
+   "sec": 4.5
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "id": "05_sql",
+ "cat": "sql",
+ "model": "gemma4:26b-a4b",
+ "turns": [
+  {
+   "user": "Có 2 bảng: customers(id, ten, thanh_pho) và orders(id, customer_id, ngay_dat, tong_tien). Viết câu SQL lấy 5 khách hàng chi tiêu nhiều nhất năm 2024, kèm tổng tiền và số đơn, chỉ tính khách ở Hà Nội.",
+   "text": "Dưới đây là câu lệnh SQL để giải quyết yêu cầu của bạn. Tôi sẽ sử dụng phép `JOIN` để kết nối hai bảng và các hàm gom nhóm (`GROUP BY`) để tính toán.\n\n```sql\nSELECT \n    c.ten AS ten_khach_hang, \n    SUM(o.tong_tien) AS tong_chi_tieu, \n    COUNT(o.id) AS so_don_hang\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nWHERE c.thanh_pho = 'Hà Nội' \n  AND o.ngay_dat >= '2024-01-01' AND o.ngay_dat <= '2024-12-31'\nGROUP BY c.id, c.ten\nORDER BY tong_chi_tieu DESC\nLIMIT 5;\n```\n\n### Giải thích chi tiết:\n\n1.  **`SELECT c.ten, SUM(o.tong_tien), COUNT(o.id)`**:\n    *   Lấy tên khách hàng từ bảng `customers`.\n    *   `SUM(o.tong_tien)`: Tính tổng số tiền khách hàng đã chi tiêu.\n    *   `COUNT(o.id)`: Đếm tổng số đơn hàng của mỗi khách hàng.\n2.  **`FROM customers c JOIN orders o ON c.id = o.customer_id`**:\n    *   Kết nối bảng `customers` (viết tắt là `c`) với bảng `orders` (viết tắt là `o`) thông qua cột ID chung để lấy được thông tin khách hàng đi kèm với đơn hàng của họ.\n3.  **`WHERE c.thanh_pho = 'Hà Nội'`**:\n    *   Lọc điều kiện chỉ lấy những khách hàng ở Hà Nội.\n4.  **`AND o.ngay_dat >= '2024-01-01' AND o.ngay_dat <= '2024-12-31'`**:\n    *   Lọc các đơn hàng phát sinh trong năm 2024 (Sử dụng cách so sánh khoảng ngày này sẽ giúp câu lệnh chạy nhanh hơn nếu cột `ngay_dat` có đánh Index).\n5.  **`GROUP BY c.id, c.ten`**:\n    *   Gom nhóm dữ liệu theo từng khách hàng để các hàm tính tổng (`SUM`) và đếm (`COUNT`) hoạt động chính xác cho mỗi người. (Lưu ý: Nên đưa `c.id` vào group by để tránh trường hợp 2 khách hàng trùng tên nhưng là 2 người khác nhau).\n6.  **`ORDER BY tong_chi_tieu DESC`**:\n    *   Sắp xếp kết quả theo tổng tiền chi tiêu từ cao xuống thấp.\n7.  **`LIMIT 5`**:\n    *   Chỉ lấy ra 5 dòng đầu tiên (tương ứng với 5 người chi tiêu nhiều nhất).",
+   "tokens": 1298,
+   "sec": 18.3
+  }
+ ]
+}

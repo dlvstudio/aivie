@@ -1,0 +1,24 @@
+# TK_052 vòng 4 — corpus SO SÁNH lấy từ CÂU THẬT (không tổng hợp).
+#
+# 23 105 câu chứa «<tính từ> như <danh từ>» rút từ conv_stories · viwiki ·
+# dictionary · paragraph_units · history · doc_add, cho 277 bộ có ≥2 vật mang
+# CÙNG MỘT LỚP — đúng điều kiện cần của bước ② (§66 đo 0,0% trên bách khoa).
+#
+# Trộn với 4 nguồn của classrich để có cạnh LỚP (`m là C`).
+#
+#   PYTHONPATH=src python scripts/train.py --manifest config/train_so_sanh.yaml \
+#     --out checkpoints/so_sanh.pkl --sentence-parents
+
+datasets:
+  - path: data/text_corpus/so_sanh_that.jsonl
+    priority: 1.0
+  - path: data/text_corpus/dinh_nghia.jsonl
+    priority: 1.0
+  - path: data/text_corpus/history_articles.jsonl
+    priority: 0.95
+  - path: data/text_corpus/grade_lessons.jsonl
+    priority: 0.95
+  - path: data/text_corpus/subject_articles.jsonl
+    priority: 0.95
+  - path: data/text_corpus/paragraph_units.jsonl
+    priority: 0.90

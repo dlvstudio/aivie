@@ -1,0 +1,11 @@
+
+§71 ÁT CHUỖI? — đổi hạt ① khi §71 TẮT thì đầu ra có đổi không
+
+  §71=16.0   aw=0.0 → ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'cùng', 'hắn', 'đối']
+              aw=2.5 → ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'cùng', 'hắn', 'đối']
+              ⇒ đổi hạt ① làm đổi đầu ra: False
+
+  §71=0.0    aw=0.0 → ['cùng', 'hắn', 'đối', 'chiến', 'hồ', 'ngươi', 'nói', 'ta']
+              aw=2.5 → ['cùng', 'hắn', 'đối', 'chiến', 'hồ', 'ngươi', 'nói', 'ta']
+              ⇒ đổi hạt ① làm đổi đầu ra: False
+

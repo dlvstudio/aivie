@@ -1,0 +1,61 @@
+  ▶ load_checkpoint …
+  ✓ load_checkpoint  (91.8s)
+Checkpoint: checkpoints/grade_v3_big_a2_t3_isg.pkl  vocab=34528  parents=44633  min_cov=0.6
+
+Bộ             retr  gen-hy  vb-hy  gen-ar  vb-ar
+--------------------------------------------------
+  ▶ retr[QA val] …
+  ✓ retr[QA val]  (5.2s)
+  ▶ gen-hy[QA val] …
+  ✓ gen-hy[QA val]  (5.4s)
+QA val         100%    100%   100%    skip      —
+  ▶ retr[Paraphrase] …
+  ✓ retr[Paraphrase]  (10.0s)
+  ▶ gen-hy[Paraphrase] …
+  ✓ gen-hy[Paraphrase]  (8.8s)
+Paraphrase      88%     88%   100%    skip      —
+  ▶ retr[Synonym] …
+  ✓ retr[Synonym]  (3.9s)
+  ▶ gen-hy[Synonym] …
+  ✓ gen-hy[Synonym]  (4.8s)
+Synonym         67%     67%   100%    skip      —
+
+--- FAIL (gen-hybrid), nghiêm IDF ---
+  [Paraphrase] Tam giác có bao nhiêu cạnh
+     gold='Hình tam giác có ba cạnh.'  ans='Tam giác có tổng ba góc bằng 180 độ.'  (cov 50%)
+  [Synonym] Người trị bệnh là ai
+     gold='Bác sĩ chữa bệnh.'  ans='Người khuyết tật cần hỗ trợ.'  (cov 0%)
+  [Synonym] Người dạy học là ai
+     gold='Giáo viên dạy học.'  ans='Người khuyết tật cần hỗ trợ.'  (cov 0%)
+  ▶ composition …
+  ✓ composition  (9.4s)
+
+--- Composition (n=5): coverage=80%  redundancy=0%  on_topic=90% ---
+  [cov 100% top 100%] Nhà Lý thế nào → Nhà Lý thành lập năm 1009 , họ mở nền văn hóa Thăng Long , Lý Thái Tổ dời đô về Thăng Long .
+  [cov 67% top 50%] Nhà Trần thế nào → Nhà Trần đánh thắng quân Nguyên ba lần , sau thay nhà Lý năm 1226 , Trần Quang Diệu (1760-1802) : danh tướng nhà Tây Sơn , bạn thuở bé với Thoại Ngọc Hầu .
+  [cov 100% top 100%] Hồ Chí Minh là ai → Thành phố Hồ Chí Minh ở miền Nam , Bảo tàng Hồ Chí Minh ở Hà Nội , Chủ tịch Hồ Chí Minh lãnh đạo cách mạng .
+  [cov 33% top 100%] Trái Đất là gì → Trái đất quay quanh mặt trời , Động đất do vỏ Trái đất dịch chuyển , Trục Trái đất nghiêng tạo bốn mùa .
+  [cov 100% top 100%] Nước là gì → Nước có ba thể: rắn lỏng khí , nó sôi ở 100 độ C , nó đông đá ở 0 độ C .
+  ▶ anaphor …
+  ✓ anaphor  (1.9s)
+
+--- Anaphor (n=6): valid=50% ---
+  [ok] Nhà Lý thế nào → họ
+  [BAD] Nhà Trần thế nào → sau
+  [ok] Hồ Chí Minh là ai → (giữ chủ ngữ)
+  [BAD] Trái Đất là gì → họ
+  [ok] Nước là gì → nó
+  [BAD] Việt Nam là gì → họ
+
+=== Perf summary (section → s) ===
+  retr[Paraphrase]          10.0s
+  composition                9.4s
+  gen-hy[Paraphrase]         8.8s
+  gen-hy[QA val]             5.4s
+  retr[QA val]               5.2s
+  gen-hy[Synonym]            4.8s
+  retr[Synonym]              3.9s
+  anaphor                    1.9s
+  TOTAL                     49.3s
+
+Đã ghi timing: out/eval_isg_t3.json

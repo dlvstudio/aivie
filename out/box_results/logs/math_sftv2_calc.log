@@ -1,0 +1,7 @@
+[hybrid_1p3b_sft_v2_calc] gsm8k_vi 0/250 · đúng 0
+[hybrid_1p3b_sft_v2_calc] gsm8k_vi 50/250 · đúng 2
+[hybrid_1p3b_sft_v2_calc] gsm8k_vi 100/250 · đúng 6
+[hybrid_1p3b_sft_v2_calc] gsm8k_vi 150/250 · đúng 9
+[hybrid_1p3b_sft_v2_calc] gsm8k_vi 200/250 · đúng 12
+[hybrid_1p3b_sft_v2_calc] eval_v1 0/18 · đúng 0
+{"ckpt": "ckpt/hybrid_1p3b_sft_v2.pt", "mode": "calc", "gsm8k_vi": 0.068, "gsm8k_vi_calc_per_bai": 2.26, "eval_v1": 0.167, "eval_v1_calc_per_bai": 1.83}

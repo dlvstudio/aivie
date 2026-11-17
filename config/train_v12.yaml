@@ -1,0 +1,37 @@
+# Train v12 (TK_042, sau BƯỚC 10c) = CulturaX vi (~500M) + v11, có SAMPLING WEIGHT (`repeat`).
+#
+#   huggingface-cli login   &&   python -u scripts/ingest_culturax.py --max-tokens 500000000
+#   bash out/run_culturax.sh
+#
+# ⚠️ `repeat` = trọng số lấy mẫu (train_neural_lm.load_corpus). Vòng train lấy cửa sổ NGẪU NHIÊN
+#    ĐỀU trên mảng nối ⇒ lặp N× = lấy mẫu N×. CulturaX ~500M sẽ NHẤN CHÌM QA 34k token (0.007%)
+#    nếu repeat=1 → base fluent nhưng QUÊN khung Hỏi/Đáp + tri thức giáo khoa. Nâng nguồn QA/grade.
+#    Con số repeat dưới là ƯỚC BAN ĐẦU — TUNE theo qa_heldout (10c decision table): QA tụt ⇒ tăng.
+#
+#   ước token sau repeat: culturax 500M + viwiki 160M + domain (qa/grade/hist nhân lên) ~90M ≈ 750M
+#   domain ≈ 12% mẫu — đủ giữ khung QA mà vẫn để CulturaX dạy fluent.
+
+datasets:
+  # --- nền web fluent (khối lượng chính) ---
+  - path: data/text_corpus/culturax_vi.jsonl
+    repeat: 1
+  - path: data/text_corpus/viwiki.jsonl
+    repeat: 1
+
+  # --- domain QA/giáo khoa: NÂNG trọng số để không bị chìm (tune theo qa_heldout) ---
+  - path: data/text_corpus/qa_supervised.jsonl      # 34k token — nhỏ nhất, khung Hỏi/Đáp
+    repeat: 15
+  - path: data/text_corpus/grade_lessons.jsonl
+    repeat: 10
+  - path: data/text_corpus/subject_articles.jsonl
+    repeat: 10
+  - path: data/text_corpus/history_articles.jsonl
+    repeat: 5
+  - path: data/text_corpus/conv_stories.jsonl       # 14M — đã lớn, nâng nhẹ
+    repeat: 2
+  - path: data/text_corpus/doc_add_articles.jsonl
+    repeat: 2
+  - path: data/text_corpus/paragraph_units.jsonl
+    repeat: 2
+  - path: data/text_corpus/dictionary.jsonl
+    repeat: 1

@@ -1,0 +1,130 @@
+[     0.0s] === tk036_spotcheck_phrase START (pid=14433) → out/logs/tk036_spotcheck_phrase_20260710_133832.log ===
+=== TK_036 token→cụm spot-check ===
+[     0.0s] ▶ load
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    17.6s] ✓ unpickle  (17.6s)
+[    17.6s] ▶ vocab (113572 token)
+[    18.4s] ✓ vocab (113572 token)  (0.8s)
+[    18.4s] ▶ adjacency
+[    34.3s] ✓ adjacency  (16.0s)
+[    34.3s] ▶ embedding
+[    35.4s] ✓ embedding  (1.1s)
+[    35.4s] ▶ parents
+[    35.4s] parents: deserialize 176430 records …
+[    35.7s] parents 5000/176430 (2.8%)
+[    36.1s] parents 10000/176430 (5.7%)
+[    36.4s] parents 15000/176430 (8.5%)
+[    36.7s] parents 20000/176430 (11.3%)
+[    37.0s] parents 25000/176430 (14.2%)
+[    37.4s] parents 30000/176430 (17.0%)
+[    37.7s] parents 35000/176430 (19.8%)
+[    38.0s] parents 40000/176430 (22.7%)
+[    38.4s] parents 45000/176430 (25.5%)
+[    38.8s] parents 50000/176430 (28.3%)
+[    39.2s] parents 55000/176430 (31.2%)
+[    39.7s] parents 60000/176430 (34.0%)
+[    40.1s] parents 65000/176430 (36.8%)
+[    40.5s] parents 70000/176430 (39.7%)
+[    40.9s] parents 75000/176430 (42.5%)
+[    59.1s] parents 80000/176430 (45.3%)
+[    59.5s] parents 85000/176430 (48.2%)
+[    59.9s] parents 90000/176430 (51.0%)
+[    60.2s] parents 95000/176430 (53.8%)
+[    60.5s] parents 100000/176430 (56.7%)
+[    60.9s] parents 105000/176430 (59.5%)
+[    61.2s] parents 110000/176430 (62.3%)
+[    61.5s] parents 115000/176430 (65.2%)
+[    61.8s] parents 120000/176430 (68.0%)
+[    62.2s] parents 125000/176430 (70.8%)
+[    62.5s] parents 130000/176430 (73.7%)
+[    62.8s] parents 135000/176430 (76.5%)
+[    63.2s] parents 140000/176430 (79.4%)
+[    63.5s] parents 145000/176430 (82.2%)
+[    63.8s] parents 150000/176430 (85.0%)
+[    64.5s] parents 155000/176430 (87.9%)
+[    65.2s] parents 160000/176430 (90.7%)
+[    65.9s] parents 165000/176430 (93.5%)
+[    86.1s] parents 170000/176430 (96.4%)
+[    87.0s] parents 175000/176430 (99.2%)
+[   247.3s] ▶ rebuild_hierarchical_index …
+[   249.8s] ✓ rebuild_hierarchical_index (2.5s)
+[   249.8s] ✓ parents  (214.3s)
+[   249.8s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   257.4s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   257.5s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   261.1s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   261.1s] ✓ load_checkpoint XONG
+[   261.1s] ✓ load  (261.1s)
+[   261.1s] ▶ mine
+[   388.9s] scan skip parents 20000/176430 (11.3%) — pairs=1362370
+[   537.3s] scan skip parents 40000/176430 (22.7%) — pairs=2741237
+[   616.6s] scan skip parents 60000/176430 (34.0%) — pairs=4712987
+[   888.9s] scan skip parents 80000/176430 (45.3%) — pairs=6100952
+[   994.9s] scan skip parents 100000/176430 (56.7%) — pairs=7326592
+[     0.0s] === tk036_spotcheck_phrase2 START (pid=3214) → out/logs/tk036_spotcheck_phrase2_20260710_142507.log ===
+
+=== TK_036 token→cụm spot-check (retry) ===
+[     0.0s] ▶ load
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    37.1s] ✓ unpickle  (37.1s)
+[    37.1s] ▶ vocab (113572 token)
+[    38.2s] ✓ vocab (113572 token)  (1.1s)
+[    38.2s] ▶ adjacency
+[    68.4s] ✓ adjacency  (30.2s)
+[    68.4s] ▶ embedding
+[    70.8s] ✓ embedding  (2.3s)
+[    70.8s] ▶ parents
+[    70.8s] parents: deserialize 176430 records …
+[    71.5s] parents 5000/176430 (2.8%)
+[    72.4s] parents 10000/176430 (5.7%)
+[    73.1s] parents 15000/176430 (8.5%)
+[    73.8s] parents 20000/176430 (11.3%)
+[    74.7s] parents 25000/176430 (14.2%)
+[    75.4s] parents 30000/176430 (17.0%)
+[    76.4s] parents 35000/176430 (19.8%)
+[    77.4s] parents 40000/176430 (22.7%)
+[    78.3s] parents 45000/176430 (25.5%)
+[    79.3s] parents 50000/176430 (28.3%)
+[    80.0s] parents 55000/176430 (31.2%)
+[    81.2s] parents 60000/176430 (34.0%)
+[    82.0s] parents 65000/176430 (36.8%)
+[    82.8s] parents 70000/176430 (39.7%)
+[    84.0s] parents 75000/176430 (42.5%)
+[   106.7s] parents 80000/176430 (45.3%)
+[   107.6s] parents 85000/176430 (48.2%)
+[   108.5s] parents 90000/176430 (51.0%)
+[   109.4s] parents 95000/176430 (53.8%)
+[   110.0s] parents 100000/176430 (56.7%)
+[   110.7s] parents 105000/176430 (59.5%)
+[   111.3s] parents 110000/176430 (62.3%)
+[   112.0s] parents 115000/176430 (65.2%)
+[   113.0s] parents 120000/176430 (68.0%)
+[   113.6s] parents 125000/176430 (70.8%)
+[   114.3s] parents 130000/176430 (73.7%)
+[   115.9s] parents 135000/176430 (76.5%)
+[   116.5s] parents 140000/176430 (79.4%)
+[   117.2s] parents 145000/176430 (82.2%)
+[   117.9s] parents 150000/176430 (85.0%)
+[   119.4s] parents 155000/176430 (87.9%)
+[   120.8s] parents 160000/176430 (90.7%)
+[   122.5s] parents 165000/176430 (93.5%)
+[   164.4s] parents 170000/176430 (96.4%)
+[   166.3s] parents 175000/176430 (99.2%)
+[   509.6s] ▶ rebuild_hierarchical_index …
+[   518.8s] ✓ rebuild_hierarchical_index (9.1s)
+[   518.8s] ✓ parents  (448.0s)
+[   518.8s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   529.1s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   529.2s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   537.7s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   537.7s] ✓ load_checkpoint XONG
+[   537.7s] ✓ load  (537.7s)
+[   537.7s] ▶ mine
+[   728.4s] scan skip parents 20000/176430 (11.3%) — pairs=1218701
+[  1158.8s] scan skip parents 40000/176430 (22.7%) — pairs=2468171
+[  1275.7s] scan skip parents 60000/176430 (34.0%) — pairs=4274588
+[  1602.9s] scan skip parents 80000/176430 (45.3%) — pairs=5552566
+[  1700.8s] scan skip parents 100000/176430 (56.7%) — pairs=6674698
+[  1783.5s] scan skip parents 120000/176430 (68.0%) — pairs=7767325

@@ -1,0 +1,12 @@
+{
+ "id": "01_phone",
+ "cat": "py_func",
+ "turns": [
+  {
+   "user": "Viết hàm Python kiểm tra số điện thoại di động Việt Nam có hợp lệ không: 10 chữ số, bắt đầu bằng 03, 05, 07, 08 hoặc 09; chấp nhận cả dạng +84 ở đầu (vd +84912345678). Cho vài ví dụ chạy thử.",
+   "text": "Đây là các bước kiểm tra số điện thoại di động:\n\n1. Kiểm tra độ dài: Số điện thoại phải có đúng 10 chữ số.\n2. Kiểm tra bắt đầu bằng 03, 05, 07, 08 hoặc 09: Kiểm tra xem có đúng 3, 5, 7, 8 hoặc 9 ở đầu hay không.\n3. Kiểm tra mã vùng (+84): Phải có đúng 4 chữ số.\n4. Kiểm tra định dạng: Số điện thoại phải là kiểu chuỗi (string).\n\nDưới đây là cách kiểm tra từng trường hợp:\n\n**Kiểm tra độ dài:**\n- Đúng 10 chữ số: `assert len(phone_number) == 10`\n- Đúng 3 ở đầu: `assert len(phone_number) == 3`\n- Sai 3 ở đầu: `assert len(phone_number) != 3`\n- Sai 5 ở đầu: `assert len(phone_number) != 5`\n- Sai 7 ở đầu: `assert len(phone_number) != 7`\n- Sai 8 ở đầu: `assert len(phone_number) != 8`\n\n**Kiểm tra bắt đầu bằng 03, 05, 07, 08 hoặc 09:**\n- Đúng 3 ở đầu: `assert phone_number.startswith('03')`\n- Đúng 5 ở đầu: `assert phone_number.startswith('05')`\n- Đúng 7 ở đầu: `assert phone_number.startswith('07')`\n- Sai 8 ở đầu: `assert phone_number.startswith('09')`\n\n**Kiểm tra mã vùng (+84):**\n- Đúng 4 chữ số: `assert len(phone_number) == 4`\n- Đúng 5 ở đầu: `assert len(phone_number) == 5`\n- Sai 8 ở đầu: `assert len(phone_number) != 8`\n\n**Kiểm tra định dạng:**\n- Là chuỗi (string): `assert isinstance(phone_number, str)`\n- Đúng kiểu string: `assert isinstance(phone_number, type(phone_number))`",
+   "tokens": 508,
+   "sec": 17.4
+  }
+ ]
+}

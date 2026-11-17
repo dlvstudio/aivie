@@ -1,0 +1,460 @@
+{
+  "prompts": [
+    {
+      "prompt": "Thủ đô của Việt Nam là thành phố",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "của",
+              "prob": 0.0158
+            },
+            {
+              "token": "này",
+              "prob": 0.0127
+            },
+            {
+              "token": "lớn",
+              "prob": 0.0124
+            },
+            {
+              "token": "Hồ",
+              "prob": 0.0102
+            },
+            {
+              "token": "Hà",
+              "prob": 0.0101
+            }
+          ],
+          "noi_tiep": "của thành phố Hồ Chí Minh, có vị trí cách khoảng"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "lớn",
+              "prob": 0.2219
+            },
+            {
+              "token": "của",
+              "prob": 0.0802
+            },
+            {
+              "token": "trực",
+              "prob": 0.0581
+            },
+            {
+              "token": "thuộc",
+              "prob": 0.0351
+            },
+            {
+              "token": "Sài",
+              "prob": 0.0243
+            }
+          ],
+          "noi_tiep": "lớn thứ hai của Việt Nam.\n\nLịch sử\nTheo"
+        }
+      ]
+    },
+    {
+      "prompt": "Hà Nội là thủ đô của nước",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "Pháp",
+              "prob": 0.3326
+            },
+            {
+              "token": "Đức",
+              "prob": 0.1174
+            },
+            {
+              "token": "ngoài",
+              "prob": 0.0624
+            },
+            {
+              "token": "này",
+              "prob": 0.0344
+            },
+            {
+              "token": "Cộng",
+              "prob": 0.0326
+            }
+          ],
+          "noi_tiep": "Pháp.\n\nNăm 1970, ông đã được"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "Cộng",
+              "prob": 0.3957
+            },
+            {
+              "token": "Việt",
+              "prob": 0.121
+            },
+            {
+              "token": "ngoài",
+              "prob": 0.1122
+            },
+            {
+              "token": "Pháp",
+              "prob": 0.0476
+            },
+            {
+              "token": "Đức",
+              "prob": 0.0464
+            }
+          ],
+          "noi_tiep": "Cộng hòa Xã hội chủ nghĩa Xô viết Ukraina.\n\nDân"
+        }
+      ]
+    },
+    {
+      "prompt": "Sông dài nhất Việt Nam là sông",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "sông",
+              "prob": 0.0142
+            },
+            {
+              "token": "Hà",
+              "prob": 0.0078
+            },
+            {
+              "token": "này",
+              "prob": 0.0058
+            },
+            {
+              "token": "P",
+              "prob": 0.0058
+            },
+            {
+              "token": "Long",
+              "prob": 0.0054
+            }
+          ],
+          "noi_tiep": "sông Hà Nội.\n\nCác khu vực có độ cao trung"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "này",
+              "prob": 0.0469
+            },
+            {
+              "token": "chảy",
+              "prob": 0.0337
+            },
+            {
+              "token": "Hồng",
+              "prob": 0.0282
+            },
+            {
+              "token": "Đà",
+              "prob": 0.0273
+            },
+            {
+              "token": "Cổ",
+              "prob": 0.02
+            }
+          ],
+          "noi_tiep": "chảy qua sông Hồng, và thực tế.\n\nDòng sông"
+        }
+      ]
+    },
+    {
+      "prompt": "Chủ tịch Hồ Chí Minh sinh năm",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "1",
+              "prob": 0.7759
+            },
+            {
+              "token": "2",
+              "prob": 0.1486
+            },
+            {
+              "token": "9",
+              "prob": 0.0139
+            },
+            {
+              "token": "3",
+              "prob": 0.0128
+            },
+            {
+              "token": "4",
+              "prob": 0.007
+            }
+          ],
+          "noi_tiep": "1957, ông được sử dụng trong số 1"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "1",
+              "prob": 0.7449
+            },
+            {
+              "token": "2",
+              "prob": 0.1803
+            },
+            {
+              "token": "Tân",
+              "prob": 0.0172
+            },
+            {
+              "token": "9",
+              "prob": 0.0085
+            },
+            {
+              "token": "Giáp",
+              "prob": 0.0068
+            }
+          ],
+          "noi_tiep": "1984 tại New York.\n\nSự nghiệp"
+        }
+      ]
+    },
+    {
+      "prompt": "Mặt Trời là một ngôi",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "sao",
+              "prob": 0.2297
+            },
+            {
+              "token": "mộ",
+              "prob": 0.0584
+            },
+            {
+              "token": "sách",
+              "prob": 0.0246
+            },
+            {
+              "token": "vị",
+              "prob": 0.0216
+            },
+            {
+              "token": "nhà",
+              "prob": 0.0195
+            }
+          ],
+          "noi_tiep": "sao của người ta.\n\nCác đơn vị hành chính"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "sao",
+              "prob": 0.8224
+            },
+            {
+              "token": "chùa",
+              "prob": 0.0949
+            },
+            {
+              "token": "đền",
+              "prob": 0.0329
+            },
+            {
+              "token": "nhà",
+              "prob": 0.0094
+            },
+            {
+              "token": "làng",
+              "prob": 0.0068
+            }
+          ],
+          "noi_tiep": "sao cho một ngôi sao của thế kỉ thứ 2."
+        }
+      ]
+    },
+    {
+      "prompt": "Nước có công thức hóa học là",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "một",
+              "prob": 0.0898
+            },
+            {
+              "token": "các",
+              "prob": 0.0387
+            },
+            {
+              "token": "\"",
+              "prob": 0.0379
+            },
+            {
+              "token": "người",
+              "prob": 0.0184
+            },
+            {
+              "token": "1",
+              "prob": 0.0147
+            }
+          ],
+          "noi_tiep": "một trong những tác phẩm khác biệt của họ.\n\nCác"
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "một",
+              "prob": 0.0679
+            },
+            {
+              "token": "người",
+              "prob": 0.051
+            },
+            {
+              "token": ":",
+              "prob": 0.0487
+            },
+            {
+              "token": "là",
+              "prob": 0.0398
+            },
+            {
+              "token": "các",
+              "prob": 0.0309
+            }
+          ],
+          "noi_tiep": "người học trò, hay là người sinh sống trong các tác"
+        }
+      ]
+    },
+    {
+      "prompt": "Truyện Kiều là tác phẩm của",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "ông",
+              "prob": 0.0465
+            },
+            {
+              "token": "người",
+              "prob": 0.0425
+            },
+            {
+              "token": "một",
+              "prob": 0.0319
+            },
+            {
+              "token": "các",
+              "prob": 0.0241
+            },
+            {
+              "token": "mình",
+              "prob": 0.0215
+            }
+          ],
+          "noi_tiep": "người Pháp, là một trong những vùng đất khác nhau."
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "triều",
+              "prob": 0.048
+            },
+            {
+              "token": "ông",
+              "prob": 0.0407
+            },
+            {
+              "token": "nhà",
+              "prob": 0.0382
+            },
+            {
+              "token": "văn",
+              "prob": 0.0361
+            },
+            {
+              "token": "nghệ",
+              "prob": 0.0313
+            }
+          ],
+          "noi_tiep": "nhà văn, nhạc sĩ, nhạc sĩ, nhạc sĩ,"
+        }
+      ]
+    },
+    {
+      "prompt": "Việt Nam nằm ở khu vực",
+      "configs": [
+        {
+          "label": "d256-goc",
+          "top5": [
+            {
+              "token": "có",
+              "prob": 0.8301
+            },
+            {
+              "token": "nằm",
+              "prob": 0.0075
+            },
+            {
+              "token": "thuộc",
+              "prob": 0.0056
+            },
+            {
+              "token": ",",
+              "prob": 0.0043
+            },
+            {
+              "token": ":",
+              "prob": 0.0041
+            }
+          ],
+          "noi_tiep": "có độ cao trung bình là 144 mét."
+        },
+        {
+          "label": "d512+RAG-8M",
+          "top5": [
+            {
+              "token": "có",
+              "prob": 0.3462
+            },
+            {
+              "token": "phía",
+              "prob": 0.0516
+            },
+            {
+              "token": "cao",
+              "prob": 0.0399
+            },
+            {
+              "token": "S",
+              "prob": 0.0356
+            },
+            {
+              "token": "Đông",
+              "prob": 0.0258
+            }
+          ],
+          "noi_tiep": "có độ cao từ 12-22 mét trên mực"
+        }
+      ]
+    }
+  ]
+}

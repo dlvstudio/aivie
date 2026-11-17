@@ -1,0 +1,21 @@
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:163: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/selective_scan_interface.py:239: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:985: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/layer_norm.py:1044: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:25: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/distributed/tensor_parallel.py:61: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:757: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd
+/usr/local/lib/python3.12/dist-packages/mamba_ssm/ops/triton/ssd_combined.py:835: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+[6s] L=1024 · loss theo vị trí {'0-1K': 2.229} · kim 21/24 (vd: 80816 → ' 80816.')
+[15s] L=2048 · loss theo vị trí {'0-1K': 2.669, '1-2K': 2.731} · kim 15/24 (vd: 26311 → ' 26311.')
+[31s] L=4096 · loss theo vị trí {'0-1K': 2.074, '1-2K': 1.944, '2-4K': 2.146} · kim 0/24 (vd: 20364 → ' gì? Trả lời: Mã')
+[60s] L=8192 · loss theo vị trí {'0-1K': 2.663, '1-2K': 2.502, '2-4K': 2.43, '4-8K': 3.662} · kim 0/24 (vd: 25584 → ' gì? Phật tử nên biết')
+### {"ckpt": "ckpt/hybrid_1p3b.pt", "tag": "", "layers": 48, "rope_base": 10000.0, "pos": {"1024": {"0-1K": 2.229}, "2048": {"0-1K": 2.669, "1-2K": 2.731}, "4096": {"0-1K": 2.074, "1-2K": 1.944, "2-4K": 2.146}, "8192": {"0-1K": 2.663, "1-2K": 2.502, "2-4K": 2.43, "4-8K": 3.662}}, "kim": {"1024": "21/24", "2048": "15/24", "4096": "0/24", "8192": "0/24"}}

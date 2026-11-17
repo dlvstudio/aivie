@@ -1,0 +1,26 @@
+lesson_id: vi_grade6_khi_post
+grade: 6
+repeat: 3
+eta_teach: 0.5
+w_init: 2.0
+
+pattern_id: vi_S_V_khi_S_V
+slots:
+  - var: S1
+  - var: V1
+  - const: "khi"
+  - var: S2
+  - var: V2
+
+bind:
+  S1: chủ ngữ
+  V1: động từ
+  S2: chủ ngữ
+  V2: động từ
+
+examples:
+  - "Em vui khi mẹ về"
+  - "Em khóc khi mẹ đi"
+  - "Lan cười khi thấy bạn"
+  - "Bé sợ khi nghe sấm"
+  - "Em nhớ khi xa nhà"

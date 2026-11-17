@@ -1,0 +1,141 @@
+[      0.0s] lấy tối đa 20000 câu nhiễu từ data/text_corpus/viwiki.jsonl …
+[      0.1s]   có 20000 câu
+[      0.3s] ── nhiễu=100: train …
+[     0.0s] === load_toy_noise_100 START (pid=1349) → out/logs/load_toy_noise_100_20260814_211506.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_100.pkl …
+[     0.0s] ▶ unpickle
+[     0.0s] ✓ unpickle  (0.0s)
+[     0.0s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.1s] ✓ embedding  (0.0s)
+[     0.1s] ▶ parents
+[     0.1s] parents: deserialize 105 records …
+[     0.1s] ▶ rebuild_hierarchical_index …
+[     0.1s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.1s]     resync match_ids: 105/105 cha (df dựng lại)
+[     0.1s] ✓ parents  (0.0s)
+[     0.1s] ✓ loaded: vocab=32002 parents=105 E=(32002, 96)
+[     0.1s] sidecar thiếu → migrate: toy_noise_100.content.pkl
+[     0.1s] ✓ load_checkpoint XONG
+[      1.5s]    cha=105 · nhãn='vật' · khỉ hạng=1 · ①=['loài', 'chó', 'mèo']  (1s train)
+[      1.5s] ── nhiễu=300: train …
+[     0.0s] === load_toy_noise_300 START (pid=1349) → out/logs/load_toy_noise_300_20260814_211508.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_300.pkl …
+[     0.0s] ▶ unpickle
+[     0.0s] ✓ unpickle  (0.0s)
+[     0.0s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.1s] ✓ embedding  (0.0s)
+[     0.1s] ▶ parents
+[     0.1s] parents: deserialize 305 records …
+[     0.2s] ▶ rebuild_hierarchical_index …
+[     0.2s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.2s]     resync match_ids: 305/305 cha (df dựng lại)
+[     0.2s] ✓ parents  (0.0s)
+[     0.2s] ✓ loaded: vocab=32002 parents=305 E=(32002, 96)
+[     0.2s] sidecar thiếu → migrate: toy_noise_300.content.pkl
+[     0.2s] ✓ load_checkpoint XONG
+[      3.0s]    cha=305 · nhãn='vật' · khỉ hạng=1 · ①=['loài', 'chó', 'mèo']  (1s train)
+[      3.0s] ── nhiễu=1000: train …
+[     0.0s] === load_toy_noise_1000 START (pid=1349) → out/logs/load_toy_noise_1000_20260814_211510.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_1000.pkl …
+[     0.0s] ▶ unpickle
+[     0.1s] ✓ unpickle  (0.1s)
+[     0.1s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.1s] ✓ adjacency  (0.0s)
+[     0.1s] ▶ embedding
+[     0.2s] ✓ embedding  (0.0s)
+[     0.2s] ▶ parents
+[     0.2s] parents: deserialize 1005 records …
+[     0.2s] ▶ rebuild_hierarchical_index …
+[     0.2s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.2s]     resync match_ids: 1005/1005 cha (df dựng lại)
+[     0.2s] ✓ parents  (0.1s)
+[     0.2s] ✓ loaded: vocab=32002 parents=1005 E=(32002, 96)
+[     0.3s] sidecar thiếu → migrate: toy_noise_1000.content.pkl
+[     0.3s] ✓ load_checkpoint XONG
+[      5.8s]    cha=1005 · nhãn='vật' · khỉ hạng=1 · ①=['loài', 'chó', 'mèo']  (2s train)
+[      5.8s] ── nhiễu=3000: train …
+[     0.0s] === load_toy_noise_3000 START (pid=1349) → out/logs/load_toy_noise_3000_20260814_211517.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_3000.pkl …
+[     0.0s] ▶ unpickle
+[     0.1s] ✓ unpickle  (0.1s)
+[     0.1s] ▶ vocab (32002 token)
+[     0.1s] ✓ vocab (32002 token)  (0.0s)
+[     0.1s] ▶ adjacency
+[     0.2s] ✓ adjacency  (0.1s)
+[     0.2s] ▶ embedding
+[     0.3s] ✓ embedding  (0.0s)
+[     0.3s] ▶ parents
+[     0.3s] parents: deserialize 3005 records …
+[     0.4s] ▶ rebuild_hierarchical_index …
+[     0.4s] ✓ rebuild_hierarchical_index (0.0s)
+[     0.5s]     resync match_ids: 3005/3005 cha (df dựng lại)
+[     0.5s] ✓ parents  (0.2s)
+[     0.5s] ✓ loaded: vocab=32002 parents=3005 E=(32002, 96)
+[     0.5s] sidecar thiếu → migrate: toy_noise_3000.content.pkl
+[     0.5s] ✓ load_checkpoint XONG
+[     13.3s]    cha=3005 · nhãn='sóc' · khỉ hạng=0 · ①=['loài', 'lý', 'bên', 'thay']  (6s train)
+[     13.3s] ── nhiễu=10000: train …
+[     0.0s] === load_toy_noise_10000 START (pid=1349) → out/logs/load_toy_noise_10000_20260814_211544.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_10000.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.2s] ✓ vocab (32002 token)  (0.0s)
+[     0.2s] ▶ adjacency
+[     0.5s] ✓ adjacency  (0.3s)
+[     0.5s] ▶ embedding
+[     0.6s] ✓ embedding  (0.0s)
+[     0.6s] ▶ parents
+[     0.6s] parents: deserialize 9983 records …
+[     0.6s] parents 5000/9983 (50.1%)
+[     1.0s] ▶ rebuild_hierarchical_index …
+[     1.0s] ✓ rebuild_hierarchical_index (0.0s)
+[     1.2s]     resync match_ids: 9983/9983 cha (df dựng lại)
+[     1.2s] ✓ parents  (0.6s)
+[     1.2s] ✓ loaded: vocab=32002 parents=9983 E=(32002, 96)
+[     1.3s] sidecar thiếu → migrate: toy_noise_10000.content.pkl
+[     1.3s] ✓ load_checkpoint XONG
+[     41.9s]    cha=9983 · nhãn='đảng' · khỉ hạng=0 · ①=['loài', 'lý', 'cánh', 'phạm']  (26s train)
+[     41.9s] ── nhiễu=20000: train …
+[     0.0s] === load_toy_noise_20000 START (pid=1349) → out/logs/load_toy_noise_20000_20260814_211651.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/out/noise_nho/toy_noise_20000.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.0s] ✓ adjacency  (0.7s)
+[     1.0s] ▶ embedding
+[     1.1s] ✓ embedding  (0.0s)
+[     1.1s] ▶ parents
+[     1.1s] parents: deserialize 19963 records …
+[     1.1s] parents 5000/19963 (25.0%)
+[     1.2s] parents 10000/19963 (50.1%)
+[     1.3s] parents 15000/19963 (75.1%)
+[     1.9s] ▶ rebuild_hierarchical_index …
+[     2.0s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.4s]     resync match_ids: 19963/19963 cha (df dựng lại)
+[     2.4s] ✓ parents  (1.3s)
+[     2.4s] ✓ loaded: vocab=32002 parents=19963 E=(32002, 96)
+[     2.4s] sidecar thiếu → migrate: toy_noise_20000.content.pkl
+[     2.4s] ✓ load_checkpoint XONG
+[    110.8s]    cha=19963 · nhãn='vô' · khỉ hạng=0 · ①=['loài', 'lý', 'cánh', 'căn']  (64s train)
+[    110.8s] ═══ ĐƯỜNG CONG ═══
+[    110.8s]     nhiễu     cha  nhãn          khỉ hạng   chó/mèo
+[    110.8s]       100     105  vật                  1  (True, True)
+[    110.8s]       300     305  vật                  1  (True, True)
+[    110.8s]      1000    1005  vật                  1  (True, True)
+[    110.8s]      3000    3005  sóc                  —  (False, False)
+[    110.8s]     10000    9983  đảng                 —  (False, False)
+[    110.8s]     20000   19963  vô                   —  (False, False)
+[    110.8s] ✓ → out/noise_nho.json

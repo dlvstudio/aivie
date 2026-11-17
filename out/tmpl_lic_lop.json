@@ -1,0 +1,42 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa_pos.pkl",
+ "n_parent": 491,
+ "khe": 7951,
+ "khe_thay_duoc": 1433,
+ "to_hop_moi_log10": 1.255272505103306,
+ "ket_qua": {
+  "duoc_phep": {
+   "n": 1433,
+   "hep": 0.0942079553384508,
+   "chu_de": 0.9685973482205164
+  },
+  "ngau_nhien_cung_loai": {
+   "n": 1433,
+   "hep": 0.020237264480111653,
+   "chu_de": 0.35938590369853457
+  }
+ },
+ "ty_so_chu_de": 2.6951456310679607,
+ "gate": {
+  "min_parent": 300,
+  "novel_min": 1.0,
+  "vs_random": 2.0,
+  "narrow_min": 0.5
+ },
+ "gate_pass": false,
+ "vi_du": [
+  "' bắt ông.'  →  thay ' ông' bằng ' cũng'",
+  "'Trần Nhân Tông'  →  thay ' Nhân' bằng ' Thái'",
+  "' của vua giữ'  →  thay ' vua' bằng ' tướng'",
+  "' với vua.'  →  thay ' vua' bằng ' Trần'",
+  "' quân Hoàng gia'  →  thay ' Hoàng' bằng ' hoàng'",
+  "' đồng bằng sông'  →  thay ' bằng' bằng ' cộng'",
+  "' lớn nhất cả'  →  thay ' nhất' bằng ' hai'",
+  "' cả nước.'  →  thay ' nước' bằng ' Huế'",
+  "' lấy Lê Quý'  →  thay ' Lê' bằng ' Hồ'",
+  "' chúa Nguyễn thường'  →  thay ' Nguyễn' bằng ' Hồ'",
+  "' một nước mạnh'  →  thay ' nước' bằng ' Huế'",
+  "' 178'  →  thay '7' bằng '1'"
+ ],
+ "seconds": 17.1
+}

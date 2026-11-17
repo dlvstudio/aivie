@@ -1,0 +1,12 @@
+{
+ "id": "11_lru",
+ "cat": "algo",
+ "turns": [
+  {
+   "user": "Cài đặt class LRUCache trong Python với get(key) và put(key, value) đều O(1), dung lượng cố định. Không dùng functools.lru_cache. Kèm ví dụ chạy.",
+   "text": "Để giải quyết bài toán LRU (Least Recently Used) trong thời gian O(1), bạn nên dùng `collections.OrderedDict` và `list`.\n\n```python\nfrom collections import OrderedDict\n\nclass LRUCache:\n    def __init__(self, capacity: int):\n        self.capacity = capacity\n        self.cache = OrderedDict()  # key: value: list of (key, value) pairs\n\n    def get(self, key: int) -> int:\n        if key not in self.cache:\n            return -1\n        \n        value = self.cache.pop(key)\n        self.cache[key] = [value, self.cache.get(key, [])]\n        return value\n\n    def put(self, key: int, value: int) -> None:\n        if key in self.cache:\n            self.cache.pop(key)\n        else:\n            if len(self.cache) == self.capacity:\n                self.cache.popitem(last=False)\n            self.cache[key] = [value, self.cache.get(key, [])]\n\n# Sử dụng\ncache = LRUCache(2)\ncache.put(1, 1)\ncache.put(2, 2)  # Sự kiện 1: key 1\ncache.put(3, 3)  # Sự kiện 2: key 2\nprint(cache.get(1)) # Kết quả: 1\ncache.put(4, 4)  # Sự kiện 3: key 4\nprint(cache.get(2)) # Kết quả: -1 (không tồn tại)\ncache.put(5, 5)  # Sự kiện 4: key 5\nprint(cache.get(1)) # Kết quả: -1 (không tồn tại)\nprint(cache.get(3)) # Kết quả: 3\nprint(cache.get(4)) # Kết quả: 4\nprint(cache.get(5)) # Kết quả: 5\n```\n\n**Lỗi hay gặp:**\n* **Quên kiểm tra key trong `pop()`:** Nếu dùng `list` (`self.cache[key] = [value, self.cache.get(key, [])]`), bạn sẽ bị mất dữ liệu nếu danh sách đầy mà không tìm thấy key.\n* **Sử dụng `list` thay vì `dict`:** Nếu bạn dùng `list`, Python sẽ tự động tạo một bản sao của danh sách trong bộ nhớ (`self.cache`), điều này gây tốn RAM nếu dữ liệu lớn.\n\n**Mẹo ghi nhớ:**\n* **LRU = Least Recently Used**: Luôn lấy ra dùng trước.\n* **OrderedDict** $\\approx$ **\"Thứ tự là quan trọng, nhưng không phải lúc nào cũng cần nhất\"**.",
+   "tokens": 725,
+   "sec": 24.9
+  }
+ ]
+}

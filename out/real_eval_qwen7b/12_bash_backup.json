@@ -1,0 +1,13 @@
+{
+ "id": "12_bash_backup",
+ "cat": "bash",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Viết script bash sao lưu thư mục /var/www thành file .tar.gz có ngày giờ trong tên, lưu vào /backup, và chỉ giữ lại 7 bản mới nhất. Giải thích ngắn từng bước.",
+   "text": "Dưới đây là một script bash thực hiện yêu cầu của bạn:\n\n```bash\n#!/bin/bash\n\n# Tạo tên file sao lưu với định dạng YYYY-MM-DD_HH-MM-SS\nTIMESTAMP=$(date +%F_%T)\nBACKUP_FILE=\"/backup/$(hostname)_www_$TIMESTAMP.tar.gz\"\n\n# Sao lưu thư mục /var/www và nén thành .tar.gz\ntar czf $BACKUP_FILE /var/www\n\n# Kiểm tra xem có quá 7 bản sao lưu không, nếu có thì xóa bản cũ nhất\nif [ $(ls -1 $BACKUP_FILE | wc -l) -gt 7 ]; then\n    OLDEST=$(ls -t $BACKUP_FILE | tail -n 1)\n    rm $OLDEST\nfi\n```\n\nGiải thích từng bước:\n\n1. `TIMESTAMP=$(date +%F_%T)`: Tạo một biến chứa thời gian hiện tại theo định dạng YYYY-MM-DD_HH-MM-SS.\n\n2. `BACKUP_FILE=\"/backup/$(hostname)_www_$TIMESTAMP.tar.gz\"`: Xây dựng tên file sao lưu, bao gồm tên máy chủ và thời gian tạo.\n\n3. `tar czf $BACKUP_FILE /var/www`: Sử dụng lệnh tar để nén thư mục `/var/www` thành một file .tar.gz, đặt tên là `$BACKUP_FILE`.\n\n4. Kiểm tra xem số lượng bản sao lưu hiện tại có vượt quá 7 hay không bằng cách đếm số dòng trong danh sách file:\n\n   - `ls -1 $BACKUP_FILE`: Liệt kê tất cả các file khớp với mẫu `$BACKUP_FILE`.\n   \n   - `wc -l`: Đếm số dòng, tương ứng với số lượng file.\n\n5. Nếu có quá 7 bản sao lưu, xóa file cũ nhất bằng cách lấy tên file được tạo trước nhất (`tail -n 1`) và sử dụng lệnh `rm` để xóa nó:\n\n   - `OLDEST=$(ls -t $BACKUP_FILE | tail -n 1)`: Lấy tên file cũ nhất.\n   \n   - `rm $OLDEST`: Xóa file cũ nhất.\n\nĐể chạy script này, hãy lưu nó vào một tệp có phần mở rộng `.sh`, ví dụ như `backup.sh`. Sau đó, bạn cần phải cấp quyền thực thi cho script bằng lệnh `chmod +x backup.sh`. Cuối cùng, bạn có thể chạy script bằng cách gõ tên của nó: `./backup.sh`.",
+   "tokens": 531,
+   "sec": 11.4
+  }
+ ]
+}

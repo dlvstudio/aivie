@@ -1,0 +1,31 @@
+  ensure_frame_brackets(state)
+
+«chó là»
+   qa_frame   = False
+   entity_ids = ['chó', ' là']
+   focus      = ['chó', ' là']
+
+«con chó là»
+   qa_frame   = False
+   entity_ids = [' con', ' chó', ' là']
+   focus      = [' con', ' chó']
+
+«mèo là»
+   qa_frame   = False
+   entity_ids = ['mèo', ' là']
+   focus      = ['mèo', ' là']
+
+«con mèo là»
+   qa_frame   = False
+   entity_ids = ['con', ' mèo', ' là']
+   focus      = ['con', ' mèo']
+
+«cái bàn là»
+   qa_frame   = False
+   entity_ids = [' bàn', 'cái', ' là']
+   focus      = [' bàn', 'cái']
+
+«bàn là»
+   qa_frame   = False
+   entity_ids = ['bàn', ' là']
+   focus      = ['bàn', ' là']

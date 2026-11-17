@@ -1,0 +1,84 @@
+Fri Oct  2 15:36:41 UTC 2026 PT bắt đầu
+Sat Oct  3 06:21:16 UTC 2026 PT xong
+Sat Oct  3 06:37:50 UTC 2026 cổng xong
+Sat Oct  3 09:00:59 UTC 2026 TẤT CẢ XONG
+Sat Oct  3 09:01:30 UTC 2026 ollama 32 luồng
+Sat Oct  3 09:02:20 UTC 2026 cầu nối tiếng Việt
+Sat Oct  3 09:02:29 UTC 2026 office pha 1 dừng · 15058 mẫu
+Sat Oct  3 09:33:46 UTC 2026 chấm MBPP-500 + eval_v1 + hỏi thử
+Sat Oct  3 09:58:17 UTC 2026 chấm lại (sau OOM)
+Sat Oct  3 11:13:35 UTC 2026 TK_105 đo trần Zamba2-7B
+Sat Oct  3 11:13:51 UTC 2026 ZCEIL XONG
+Sat Oct  3 11:23:28 UTC 2026 TK_105 đo trần Zamba2-7B (lần 2, đã vá)
+Sat Oct  3 12:58:13 UTC 2026 MBPP code_VI cổng mở xong
+Sat Oct  3 13:09:26 UTC 2026 ZCEIL XONG (thật)
+Sat Oct  3 13:14:27 UTC 2026 CẦU NỐI + CHẤM XONG
+Sat Oct  3 13:57:19 UTC 2026 DỪNG SINH · văn phòng 2411 · sách giáo khoa 472
+Sat Oct  3 13:58:34 UTC 2026 SINH TIẾP (không giờ dừng)
+Sat Oct  3 14:04:46 UTC 2026 train expert văn phòng v1 · tổng 16917 · đạt ≥4 2411 · khử trùng 2408 → train 2108 · val 150 · eval 150
+Sat Oct  3 14:30:07 UTC 2026 chấm expert văn phòng
+Sat Oct  3 15:30:30 UTC 2026 chia lại luồng: văn phòng 12 · sách giáo khoa 20
+Sat Oct  3 15:31:02 UTC 2026 văn phòng: prompt mới (chỉ dùng thông tin trong yêu cầu, Excel đúng cột) từ dòng 17615
+Sat Oct  3 16:18:11 UTC 2026 TK_105 gđ1: train cầu dịch-vào 3000 bước
+Sat Oct  3 16:37:49 UTC 2026 VĂN PHÒNG V1 XONG
+Sat Oct  3 17:17:43 UTC 2026 sinh câu kiến thức phổ thông (hiệu chỉnh trung thực) 400 lô
+Sat Oct  3 17:48:39 UTC 2026 TK_105 GĐ1 XONG
+Sat Oct  3 17:51:15 UTC 2026 TK_105 gđ2: train cầu dịch-ra 3000 bước
+Sat Oct  3 17:52:57 UTC 2026 Gemma chấm lọc văn phòng (6 luồng)
+Sat Oct  3 18:38:17 UTC 2026 TK_105 GĐ2 XONG
+Sat Oct  3 18:40:51 UTC 2026 TK_105 gđ3: chạy thử 3 bước OK
+Sat Oct  3 18:40:51 UTC 2026 TK_105 gđ1 v2: cầu dịch-vào BỔ SUNG (token mềm + câu Việt thô)
+Sat Oct  3 20:51:40 UTC 2026 TK_105 GĐ1 V2 XONG
+Sat Oct  3 20:52:09 UTC 2026 V3: dừng sinh dữ liệu
+Sat Oct  3 20:52:15 UTC 2026 V3: train code v2 · tổng 3106 · đạt 2492 · khử trùng 2473
+Sat Oct  3 21:46:32 UTC 2026 V3: train văn phòng v2 · tổng 4433 · đạt ≥4 4369 · khử trùng 4359 → train 3911 · val 300 · eval 0 · đáp 2677 · từ chối (thực thể bịa) 576 → data/calib/train.jsonl (3253) · bài kiểm tra data/eval_clean/easy20.jsonl
+Sat Oct  3 22:08:20 UTC 2026 V3: bộ chấm chuẩn
+Sat Oct  3 23:10:15 UTC 2026 V3 XONG
+Sat Oct  3 23:10:54 UTC 2026 TK_105 gđ3: ghép đầu-cuối (cầu dịch-vào: không, Zamba2 đọc câu Việt thô)
+Sat Oct  3 23:45:04 UTC 2026 TK_105 GĐ3 XONG
+Sat Oct  3 23:46:49 UTC 2026 TK_105 gđ3b: train tiếp 3000 bước + đo có phạt lặp
+Sun Oct  4 00:49:42 UTC 2026 TK_105 GĐ3B XONG
+Sun Oct  4 02:22:39 UTC 2026 V4: vLLM Gemma-4-31B sẵn sàng — sinh dữ liệu (tối đa 4 giờ)
+Sun Oct  4 03:06:38 UTC 2026 V4: sinh lại SGK + nhiều lượt với prompt trả lời đầy đủ + câu hỏi mở
+Sun Oct  4 03:51:35 UTC 2026 V4: ### xong · đã mở rộng 2677/2677
+Sun Oct  4 05:21:20 UTC 2026 V4: dừng sinh dữ liệu
+Sun Oct  4 05:21:31 UTC 2026 V4 dữ liệu: bài đạt 1264 → train 11331 mẫu {'sgk_bai': 1264, 'sgk_qa': 8803, 'sgk_hoithoai': 1264} · test 1264 câu | bài sinh đạt 11526 (khử trùng 7153) · train 14351 (sinh 6953 + Vi-GSM8K 7398) · test 500 | đạt 8925 → train 8865 · probe 60 · số lượt {5: 2293, 4: 3190, 3: 2832, 2: 483, 6: 122, 7: 4, 8: 1} | tổng 11524 · đạt 9910 · khử trùng 9240
+Sun Oct  4 05:49:05 UTC 2026 V4: train expert học thuật
+Sun Oct  4 06:28:45 UTC 2026 V4: bước cuối chat dài (3 expert)
+Sun Oct  4 06:48:14 UTC 2026 V4: chấm
+Sun Oct  4 11:13:31 UTC 2026 V4: chấm nốt (chat 5 lượt v4/v3 + eval_v1)
+Sun Oct  4 11:39:16 UTC 2026 V4 XONG
+Sun Oct  4 11:46:01 UTC 2026 V5: chạy thử OK · [v5] điểm TB theo lượt: {1: 4.75, 2: 1.5, 3: 1.25, 4: 0.5, 5: 0.25} · số lượt 20 · cần sửa (<8) 18
+Sun Oct  4 11:46:01 UTC 2026 V5 vòng r1: thầy chat 1000 hội thoại với v4c
+Sun Oct  4 12:04:35 UTC 2026 V5: M4 nhường máy cho người dùng thử UI — GPU tự làm đủ (không chờ M4)
+Sun Oct  4 13:11:26 UTC 2026 V5: vòng r1 tạm dừng vì hết bộ nhớ GPU (227 lần) — đã giữ 1205 lượt; chạy tiếp 3 tiến trình, lịch sử ≤1.400 token
+Sun Oct  4 13:11:26 UTC 2026 V5 vòng r1: thầy chat 1000 hội thoại với v4c
+Sun Oct  4 13:12:06 UTC 2026 V5 vòng r1 (GPU): [v5] điểm TB theo lượt: {1: 3.88, 2: 1.96, 3: 1.43, 4: 1.08, 5: 0.75, 6: 0.67} · số lượt 1205 · cần sửa (<8) 1150
+Sun Oct  4 13:12:08 UTC 2026 V5 vòng r1: [v5] 1205 lượt → SFT 1197 (sửa 1149, tốt 48) · DPO 1040 cặp
+Sun Oct  4 13:12:32 UTC 2026 LỖI V5 SFT r1
+Sun Oct  4 15:11:43 UTC 2026 V5: dừng 2 tiến trình con mồ côi (giữ 23GB GPU → bản chạy lại hết bộ nhớ) — chạy lại vòng r1
+Sun Oct  4 15:11:43 UTC 2026 V5 vòng r1: thầy chat 1000 hội thoại với v4c
+Sun Oct  4 15:23:44 UTC 2026 SO SÁNH: bắt đầu (Qwen2.5-1.5B, Gemma-4-E2B, Qwen3-1.7B)
+Sun Oct  4 15:23:58 UTC 2026 Dọn ổ GPU: xoá bản expert trung gian/cầu nối TK_105 (đã có trên M4)
+Sun Oct  4 15:38:45 UTC 2026 SO SÁNH qwen25_1p5b: vLLM không khởi động được (xem vllm_ext_qwen25_1p5b.log)
+Sun Oct  4 15:54:05 UTC 2026 SO SÁNH gemma4_e2b: vLLM không khởi động được (xem vllm_ext_gemma4_e2b.log)
+Sun Oct  4 16:09:26 UTC 2026 SO SÁNH qwen3_1p7b: vLLM không khởi động được (xem vllm_ext_qwen3_1p7b.log)
+Sun Oct  4 16:09:46 UTC 2026 SO SÁNH XONG
+Sun Oct  4 17:23:02 UTC 2026 SO SÁNH: lần trước chạy nhầm sớm (khớp dòng LỖI cũ, GPU đầy) — xếp lịch lại sau V5 XONG
+Sun Oct  4 17:23:02 UTC 2026 SO SÁNH: bắt đầu (Qwen2.5-1.5B, Gemma-4-E2B, Qwen3-1.7B)
+Sun Oct  4 17:38:02 UTC 2026 SO SÁNH qwen25_1p5b: vLLM không khởi động được (xem vllm_ext_qwen25_1p5b.log)
+Sun Oct  4 17:53:23 UTC 2026 SO SÁNH gemma4_e2b: vLLM không khởi động được (xem vllm_ext_gemma4_e2b.log)
+Sun Oct  4 18:08:43 UTC 2026 SO SÁNH qwen3_1p7b: vLLM không khởi động được (xem vllm_ext_qwen3_1p7b.log)
+Sun Oct  4 18:09:03 UTC 2026 SO SÁNH XONG
+Sun Oct  4 19:49:47 UTC 2026 V5 vòng r1 (GPU): [v5] điểm TB theo lượt: {1: 3.95, 2: 1.97, 3: 1.43, 4: 0.83, 5: 0.57, 6: 0.63} · số lượt 4496 · cần sửa (<8) 4309
+Sun Oct  4 19:49:49 UTC 2026 V5 vòng r1: [v5] 4496 lượt → SFT 4465 (sửa 4308, tốt 157) · DPO 3984 cặp
+Sun Oct  4 20:08:36 UTC 2026 LỖI V5 DPO r1
+Sun Oct  4 20:10:09 UTC 2026 V5: chạy tiếp từ DPO r1 (tắt vLLM khi train DPO)
+Sun Oct  4 20:18:29 UTC 2026 V5 vòng r1: SFT+DPO xong · [dpo] bước 299/300 · loss 0.101 · biên 8.63 · thắng 1.00 · 244s
+Sun Oct  4 20:20:39 UTC 2026 V5 vòng r2: thầy chat 1000 hội thoại với v5r1
+Mon Oct  5 02:16:14 UTC 2026 V5 vòng r2 (GPU): [v5] điểm TB theo lượt: {1: 6.06, 2: 2.81, 3: 1.99, 4: 1.43, 5: 1.08, 6: 0.92} · số lượt 4991 · cần sửa (<8) 4587
+Mon Oct  5 02:16:16 UTC 2026 V5 vòng r2: [v5] 4991 lượt → SFT 4916 (sửa 4587, tốt 329) · DPO 4125 cặp
+Mon Oct  5 02:39:38 UTC 2026 V5 vòng r2: SFT+DPO xong · [dpo] bước 299/300 · loss 0.174 · biên 3.70 · thắng 1.00 · 231s
+Mon Oct  5 03:58:55 UTC 2026 SO SÁNH: huỷ theo yêu cầu người dùng
+Mon Oct  5 04:41:11 UTC 2026 V5 đo r3: [v5] điểm TB theo lượt: {1: 6.46, 2: 3.49, 3: 2.41, 4: 1.73, 5: 1.47, 6: 0.92} · số lượt 1496 · cần sửa (<8) 1327
+Mon Oct  5 06:10:47 UTC 2026 V5 XONG

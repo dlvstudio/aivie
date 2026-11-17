@@ -1,0 +1,27 @@
+prompt='Ngô Quyền là vị vua sáng lập nhà Ngô, được'
+w0='Ġđược'
+pos_ppmi  [('ĠHiếu', 1.0), ('ĠQuyền', 0.881), ('Ġquận', 0.87), ('ĠĐình', 0.837), ('ĠXương', 0.829), ('ĠTội', 0.765), ('ĠBệnh', 0.757), ('ĠThì', 0.708)]
+varlm     [('Ġgọi', 1.0), ('Ġsử', 0.421), ('Ġphát', 0.325), ('Ġxem', 0.267), ('Ġthành', 0.267), ('Ġbiết', 0.25), ('Ġdùng', 0.244), ('Ġcoi', 0.236)]
+know_bi   [(',', 1.0), ('.', 0.919), ('ĠHiếu', 0.568), ('Ġsử', 0.463), ('Ġtức', 0.391), ('Ġmột', 0.361), ('Ġtạo', 0.264), ('Ġtrí', 0.206)]
+span_next [('Ġxem', 1.0)]
+blend     [('Ġxem', 2.531), ('ĠHiếu', 1.157), ('Ġsử', 1.119), ('Ġgọi', 1.04), (',', 0.915), ('.', 0.883), ('Ġtạo', 0.778), ('Ġtức', 0.764)]
+  rank Ġxem: span=1 blend=1
+  rank Ġđể: span=-1 blend=576
+
+--- no_agenda+know ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 1938, ông trở lại Trung Quốc.
+Hoàng Văn Thụ đề nghị ông về nước trực tiếp lãnh đạo cách mạng Việt Nam qua lối Cao Bằng.
+"Bác đã về đây, Tổ quốc ơi!
+Nhớ thương hòn đất ấm
+
+--- MZ ---
+Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ.
+Năm 938, Ngô Quyền lãnh đạo quân dân đánh bại quân Nam Hán trên sông Bạch Đằng.
+Ông cho đóng cọc nhọn xuống lòng sông Bạch Đằng để đánh chìm thuyền giặc.
+Chiến thắng Bạch Đằng năm 938 chấm dứt hơn một
+
+[1527s] → out/probe_w_know.log
+8 chấm dứt hơn một
+
+[311s] → out/probe_w_know.log

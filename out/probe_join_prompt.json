@@ -1,0 +1,42 @@
+{
+  "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+  "n_gold": 300,
+  "n_neg": 298,
+  "gate": {
+    "auc_min": 0.65
+  },
+  "rows": [
+    {
+      "signal": "S1_dang_chay",
+      "auc_vs_argmaxS1": 0.13569351230425056,
+      "auc_vs_argmaxS3": 0.4072259507829978,
+      "auc_min": 0.13569351230425056
+    },
+    {
+      "signal": "S3_pmi",
+      "auc_vs_argmaxS1": 0.7979194630872484,
+      "auc_vs_argmaxS3": 0.43767337807606266,
+      "auc_min": 0.43767337807606266
+    },
+    {
+      "signal": "S4_prompt",
+      "auc_vs_argmaxS1": 0.6912304250559285,
+      "auc_vs_argmaxS3": 0.6184787472035794,
+      "auc_min": 0.6184787472035794
+    },
+    {
+      "signal": "S6_khu_ban_le",
+      "auc_vs_argmaxS1": 0.4040156599552573,
+      "auc_vs_argmaxS3": 0.5487192393736018,
+      "auc_min": 0.4040156599552573
+    },
+    {
+      "signal": "S7_ket_hop",
+      "auc_vs_argmaxS1": 0.6557829977628635,
+      "auc_vs_argmaxS3": 0.6141722595078299,
+      "auc_min": 0.6141722595078299
+    }
+  ],
+  "gate_pass": false,
+  "seconds": 26.9
+}

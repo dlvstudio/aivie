@@ -1,0 +1,75 @@
+lesson_id: vi_grade4_qa
+grade: 4
+repeat: 3
+eta_teach: 0.25
+w_init: 2.0
+
+pattern_id: vi_QA_hoi_dap
+slots:
+  - const: "Hỏi:"
+  - var: Q
+  - const: "Đáp:"
+  - var: A
+
+bind:
+  Q: câu hỏi
+  A: câu trả lời
+
+# Tự sinh từ kiến thức CHÍNH lớp này (scripts/build_subject_knowledge.py).
+# Không dùng fact lớp khác → chống bleed chéo lớp. Đừng sửa tay.
+examples:
+  - "Hỏi: 15 nhân 6 bằng mấy ? Đáp: 15 nhân 6 bằng 90."
+  - "Hỏi: 72 chia 8 bằng mấy ? Đáp: 72 chia 8 bằng 9."
+  - "Hỏi: 1 kilô mét bằng bao nhiêu mét ? Đáp: 1 kilô mét bằng 1000 mét."
+  - "Hỏi: Góc vuông bằng bao nhiêu độ ? Đáp: Góc vuông bằng 90 độ."
+  - "Hỏi: Số nguyên tố nhỏ nhất là số nào ? Đáp: Số 2 là số nguyên tố nhỏ nhất."
+  - "Hỏi: 125 cộng 375 bằng mấy ? Đáp: 125 cộng 375 bằng 500."
+  - "Hỏi: 1000 trừ 250 bằng mấy ? Đáp: 1000 trừ 250 bằng 750."
+  - "Hỏi: 1 tấn bằng bao nhiêu kilô gam ? Đáp: 1 tấn bằng 1000 kilô gam."
+  - "Hỏi: Tam giác có tổng ba góc bằng bao nhiêu ? Đáp: Tam giác có tổng ba góc bằng 180 độ."
+  - "Hỏi: Năm nhuận có bao nhiêu ngày ? Đáp: Năm nhuận có 366 ngày."
+  - "Hỏi: Diện tích hình vuông tính thế nào ? Đáp: Diện tích hình vuông bằng cạnh nhân cạnh."
+  - "Hỏi: Vịnh Hạ Long thuộc loại di sản gì ? Đáp: Vịnh Hạ Long là di sản thiên nhiên."
+  - "Hỏi: Dãy núi nào chạy dọc Việt Nam ? Đáp: Dãy Trường Sơn chạy dọc Việt Nam."
+  - "Hỏi: Khí hậu Việt Nam thuộc loại gì ? Đáp: Khí hậu Việt Nam nhiệt đới gió mùa."
+  - "Hỏi: Hoàng Sa thuộc quyền ai ? Đáp: Hoàng Sa thuộc chủ quyền Việt Nam."
+  - "Hỏi: Cà Mau ở đâu trên bản đồ ? Đáp: Cà Mau là mũi đất cực Nam."
+  - "Hỏi: Việt Nam giáp nước nào phía Bắc ? Đáp: Việt Nam giáp Trung Quốc phía Bắc."
+  - "Hỏi: Đồng bằng nào màu mỡ ở miền Nam ? Đáp: Đồng bằng sông Cửu Long màu mỡ."
+  - "Hỏi: Hoàng Sa thuộc chủ quyền nước nào ? Đáp: Hoàng Sa thuộc chủ quyền Việt Nam."
+  - "Hỏi: Trường Sa thuộc chủ quyền nước nào ? Đáp: Trường Sa thuộc chủ quyền Việt Nam."
+  - "Hỏi: Phong Nha Kẻ Bàng có gì ? Đáp: Phong Nha Kẻ Bàng có hang động."
+  - "Hỏi: Đà Lạt có khí hậu thế nào ? Đáp: Đà Lạt có khí hậu cao nguyên mát."
+  - "Hỏi: Nhà Lý thành lập năm nào ? Đáp: Nhà Lý thành lập năm 1009."
+  - "Hỏi: Điện Biên Phủ thắng lợi năm nào ? Đáp: Điện Biên Phủ thắng lợi năm 1954."
+  - "Hỏi: Ngày giải phóng miền Nam là ngày nào ? Đáp: Ngày 30 tháng 4 là ngày giải phóng miền Nam."
+  - "Hỏi: Văn Miếu là gì ? Đáp: Văn Miếu là trường đại học đầu tiên Việt Nam."
+  - "Hỏi: Trần Hưng Đạo đánh thắng ai ? Đáp: Trần Hưng Đạo đánh thắng quân Nguyên."
+  - "Hỏi: Cả nước thống nhất năm nào ? Đáp: Cả nước thống nhất năm 1975."
+  - "Hỏi: Quốc ca Việt Nam sáng tác năm nào ? Đáp: Quốc ca Tiến quân ca sáng tác năm 1944."
+  - "Hỏi: Văn Miếu thờ ai ? Đáp: Văn Miếu thờ Khổng Tử và các bác học."
+  - "Hỏi: Các vua Hùng dựng nước gì ? Đáp: Các vua Hùng dựng nước Văn Lang."
+  - "Hỏi: Nhà Trần đánh thắng quân nào ? Đáp: Nhà Trần đánh thắng quân Nguyên ba lần."
+  - "Hỏi: Hiệp định Geneva làm gì ? Đáp: Hiệp định Geneva chia tạm Việt Nam."
+  - "Hỏi: Nước sôi ở bao nhiêu độ C ? Đáp: Nước sôi ở 100 độ C."
+  - "Hỏi: Vitamin A tốt cho bộ phận nào ? Đáp: Vitamin A tốt cho mắt."
+  - "Hỏi: Thực vật quang hợp tạo ra khí gì ? Đáp: Thực vật quang hợp tạo ô xi."
+  - "Hỏi: Vaccine giúp làm gì ? Đáp: Vaccine giúp phòng bệnh."
+  - "Hỏi: Nam châm hút kim loại nào ? Đáp: Nam châm hút sắt."
+  - "Hỏi: Nước đông đá ở bao nhiêu độ ? Đáp: Nước đông đá ở 0 độ C."
+  - "Hỏi: Nước có mấy thể ? Đáp: Nước có ba thể: rắn lỏng khí."
+  - "Hỏi: Canxi tốt cho bộ phận nào ? Đáp: Canxi tốt cho xương."
+  - "Hỏi: Sắt tốt cho gì ? Đáp: Sắt tốt cho máu."
+  - "Hỏi: Kim loại có tính gì ? Đáp: Kim loại dẫn điện tốt."
+  - "Hỏi: Ánh sáng đi như thế nào ? Đáp: Ánh sáng đi thẳng."
+  - "Hỏi: Hiến pháp là gì ? Đáp: Hiến pháp là luật cơ bản nhất."
+  - "Hỏi: Quốc hội là cơ quan gì ? Đáp: Quốc hội là cơ quan quyền lực nhà nước."
+  - "Hỏi: Trẻ em có quyền gì ? Đáp: Trẻ em có quyền học hành."
+  - "Hỏi: Tết lớn nhất Việt Nam là gì ? Đáp: Tết Nguyên đán là lễ lớn nhất."
+  - "Hỏi: Ai bảo vệ biên giới ? Đáp: Quân đội bảo vệ biên giới."
+  - "Hỏi: Chính phủ làm gì ? Đáp: Chính phủ điều hành đất nước."
+  - "Hỏi: Tòa án làm gì ? Đáp: Tòa án xét xử theo luật."
+  - "Hỏi: Công an làm gì ? Đáp: Công an điều tra tội phạm."
+  - "Hỏi: Trung thu là tết của ai ? Đáp: Trung thu là tết trẻ em."
+  - "Hỏi: Công dân có nghĩa vụ gì ? Đáp: Công dân có nghĩa vụ nộp thuế."
+  - "Hỏi: Người khuyết tật cần gì ? Đáp: Người khuyết tật cần hỗ trợ."

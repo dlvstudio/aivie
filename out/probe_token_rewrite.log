@@ -1,0 +1,52 @@
+[0s] load checkpoints/network_v11.pkl …
+[67s] ✓ parents 65,098
+    role: KEEP=giữ · ENT=viết-hoa · HOW=gidf cao thường · CTX=thường
+    u* = top-1 PPMI·C (KEEP → chính t_i)
+
+═══ 'So sánh Nhà Lý và Nhà Trần'  (N=7) ═══
+  [00] ENT  'So'             → 'Ġsánh'(16.84)  'Ġtoromiro'(13.22)  'phora'(9.77)
+  [01] HOW  'Ġsánh'          → 'Ġso'(30.21)  'ĠSo'(19.00)  'So'(17.29)
+  [02] ENT  'ĠNhà'           → 'Ġthờ'(15.62)  'ĠXuất'(15.10)  'Ġhát'(13.73)
+  [03] ENT  'ĠLý'            → 'ĠVượng'(27.73)  'ĠHỏa'(23.91)  'ĠKiệt'(16.56)
+  [04] KEEP 'Ġvà'            → KEEP
+  [05] ENT  'ĠNhà'           → 'Ġthờ'(15.62)  'ĠXuất'(15.10)  'Ġhát'(13.73)
+  [06] ENT  'ĠTrần'          → 'ĠNhược'(34.03)  'ĠTrương'(30.25)  'ĠLiễu'(16.25)
+  t : 'So sánh Nhà Lý và Nhà Trần'
+  u*: 'sánh so thờ Vượng và thờ Nhược'
+
+═══ 'Trần Hưng Đạo và trận Bạch Đằng'  (N=7) ═══
+  [00] ENT  'Trần'           → 'ĠTông'(8.76)  'ĠTrọng'(7.39)  'ĠHưng'(7.38)
+  [01] ENT  'ĠHưng'          → 'ĠĐạo'(19.33)  'ĠĐàm'(17.44)  'ĠYên'(16.21)
+  [02] ENT  'ĠĐạo'           → 'ĠViễn'(28.16)  'ĠHưng'(19.50)  'ĠVương'(17.91)
+  [03] KEEP 'Ġvà'            → KEEP
+  [04] CTX  'Ġtrận'          → 'Ġma'(18.56)  'Ġđấu'(17.83)  'Ġthắng'(14.67)
+  [05] ENT  'ĠBạch'          → 'ĠVũ'(19.29)  'ĠQuân'(16.42)  'ĠMiểu'(15.34)
+  [06] ENT  'ĠĐằng'          → 'ĠVương'(27.44)  'Vương'(13.55)  'ĠBạch'(12.77)
+  t : 'Trần Hưng Đạo và trận Bạch Đằng'
+  u*: 'Tông Đạo Viễn và ma Vũ Vương'
+
+═══ 'Viết một đoạn văn hài hước về Ngô Quyền'  (N=9) ═══
+  [00] ENT  'Viết'           → 'Hội'(16.45)  'Ġthoại'(15.70)  'Ġcâu'(13.32)
+  [01] KEEP 'Ġmột'           → KEEP
+  [02] CTX  'Ġđoạn'          → 'Ġgiai'(28.06)  'Ġgián'(21.01)  'ĠGiai'(17.22)
+  [03] CTX  'Ġvăn'           → 'Ġhóa'(17.14)  'cũ'(16.12)  'Ġchương'(16.07)
+  [04] HOW  'Ġhài'           → 'Ġhước'(30.31)  'Ġlòng'(19.73)  'Ġcốt'(12.06)
+  [05] HOW  'Ġhước'          → 'Ġhài'(29.61)  'Ġkhiếu'(8.23)  'hàm'(8.17)
+  [06] KEEP 'Ġvề'            → KEEP
+  [07] ENT  'ĠNgô'           → 'ĠHiếu'(30.66)  'ĠDiệm'(27.12)  'ĠĐình'(25.30)
+  [08] ENT  'ĠQuyền'         → 'ĠNgô'(18.13)  'ĠTôn'(16.44)  'ĠMC'(12.51)
+  t : 'Viết một đoạn văn hài hước về Ngô Quyền'
+  u*: 'Hội một giai hóa hước hài về Hiếu Ngô'
+
+═══ 'Kể buồn về mùa thu Hà Nội'  (N=7) ═══
+  [00] ENT  'Kể'             → 'Ġtên'(14.26)  'Hội'(11.45)  'Ġthoại'(10.10)
+  [01] HOW  'Ġbuồn'          → 'Ġbã'(21.69)  'Ġnôn'(19.12)  'Ġrầu'(16.68)
+  [02] KEEP 'Ġvề'            → KEEP
+  [03] HOW  'Ġmùa'           → 'Ġhè'(26.94)  'Ġxuân'(21.25)  'Ġđông'(19.18)
+  [04] CTX  'Ġthu'           → 'Ġhút'(24.52)  'Ġthập'(21.44)  'Ġnhập'(18.38)
+  [05] ENT  'ĠHà'            → 'ĠNội'(31.74)  'ĠLan'(23.07)  'ĠKý'(20.60)
+  [06] ENT  'ĠNội'           → 'ĠHà'(31.52)  'Hà'(19.63)  'Ġphố'(9.26)
+  t : 'Kể buồn về mùa thu Hà Nội'
+  u*: 'tên bã về hè hút Nội Hà'
+
+[127s] → đọc tay: u* có nghĩa hơn t? ENT→đúng entity? HOW→sắc-thái? Hub/salad → không wire rewrite cứng.

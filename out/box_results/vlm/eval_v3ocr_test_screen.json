@@ -1,0 +1,1413 @@
+{
+ "tag": "v3ocr",
+ "test": "data/vlm/test_screen.jsonl",
+ "rows": [
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 5\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 5\" có giá trị 26 sản phẩm.",
+   "ans": "\"Tháng 5\" có giá trị 880 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Vị trí địa lý, phạm vi lãnh thổ Việt Nam",
+   "ans": "Vị trí địa lý, điều kiện tự nhiên, dân cư và xã hội Liên bang Nga",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Đà Lạt\" với 840 triệu đồng.",
+   "ans": "Cột cao nhất là \"Quy Nhơn\" với 580 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Mở đầu về Vật lý\n\nVật lý là môn khoa học tự nhiên nghiên cứu về các quy luật cơ bản của thế giới vật chất, bao gồm các hiện tượng về vật chất, năng lượng và sự tương tác giữa chúng. Đối tượng nghiên cứu của Vật lý rất rộng, từ những hạt sơ cấp siêu nhỏ (vi mô) đến toàn bộ vũ trụ bao la (vĩ mô).\n\nMục tiêu của Vật lý là tìm ra các quy luật tổng quát để giải thích và dự đoán các hiện tượng tự nhiên. Quá trình phát triển của Vật lý thường đi từ quan sát, thực nghiệm đến xây dựng giả thuyết, thiết lập mô hình và cuối cùng là kiểm chứng bằng thực nghiệm để đưa ra định luật.\n\nMột nội dung quan trọng trong mở đầu Vật lý là an toàn trong phòng thí nghiệm. Học sinh cần tuân thủ nghiêm ngặt các quy tắc: không tự ý chạm vào thiết bị khi chưa có hướng dẫn, sử dụng đúng chức năng của dụng cụ, và biết cách xử lý tình huống khẩn cấp (như chập điện, cháy nổ).\n\nVí dụ minh hoạ:\n1. Hiện tượng rơi tự do của một quả táo hay chuyển động của các hành tinh trong hệ Mặt Trời đều được giải thích bằng các định luật Vật lý về lực hấp dẫn.\n2. Việc nghiên cứu về dòng điện và từ trường đã dẫn đến sự ra đời của động cơ điện và các thiết bị điện tử hiện đại ngày nay.",
+   "ans": "Tự hào về truyền thống gia đình\n\nTruyền thống gia đình là những giá trị tốt đẹp về vật chất và tinh thần được hình thành trong quá trình xây dựng, phát triển của một gia đình, được truyền từ thế hệ này sang thế hệ khác. Các thành viên trong gia đình luôn có thái độ trân trọng, tự hào về nguồn gốc, cha mẹ và ông bà, cùng nhau vượt qua khó khăn để xây dựng cuộc sống hạnh phúc, hòa thuận.\n\nViệc tự hào về truyền thống gia đình mang lại nhiều ý nghĩa quan trọng. Nó giúp mỗi cá nhân có thêm động lực, niềm tin để vươn lên, đồng thời góp phần bảo tồn bản sắc văn hóa dân tộc và thúc đẩy xã hội phát triển bền vững.\n\nNhững biểu hiện của lòng tự hào về truyền thống gia đình bao gồm:\n1. Trong lời nói: Sử dụng các từ ngữ chỉ quê hương, đất nước như: yêu quý, tự hào, hãnh diện, gắn bó...\n2. Trong hành động: \n- Trong học tập: Chăm chỉ học tập, rèn luyện đạo đức để cha mẹ, ông bà vui lòng.\n- Trong sinh hoạt: Quan tâm, chăm sóc ông bà khi ốm đau; giúp đỡ cha mẹ làm việc nhà, chăm sóc con cái.\n3. Trong tình cảm: Quan tâm, chăm sóc anh chị em khi đến tuổi trưởng thành và biết ơn ông bà, cha mẹ.\n\nVí dụ minh họa: \n- Ví dụ",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Đà Nẵng\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Đà Nẵng\" có giá trị 480 đơn hàng.",
+   "ans": "\"Đà Nẵng\" có giá trị 80 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 11 của đoạn code viết gì?",
+   "ref": "def thong_tin_diem(**details):",
+   "ans": "print(f\"Số điện thoại thứ {i}: Đang chờ...\")",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 12 dòng dữ liệu.",
+   "ans": "Bảng có 12 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Dòng nào có \"Tồn cuối\" lớn nhất?",
+   "ref": "Dòng STT 12 (Trà xanh) có \"Tồn cuối\" lớn nhất: 378.",
+   "ans": "Dòng STT 12 (Đồng hồ) có \"Tồn cuối\" lớn nhất: 303.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Sulfur dioxide và sulfur trioxide\n\nSulfur dioxide (SO2) là chất khí không màu, mùi hắc, nặng hơn không khí, tan nhiều trong nước. Trong phân tử, nguyên tử S ở trạng thái oxi hóa +4. SO2 là oxide acid, tác dụng với nước tạo thành acid sulfurous (H2SO3) yếu và không bền. SO2 thể hiện tính khử (do S +4 có thể lên +6) và tính oxi hóa (do S +4 có thể xuống 0 hoặc -2).\nVí dụ: Tính khử khi tác dụng với Cl2: SO2 + Cl2 + 2H2O -> H2SO4 + 2HCl.\nVí dụ: Tính oxi hóa khi tác dụng với H2S: SO2 + 2H2S -> 3S + 2H2O.\nSulfur trioxide (SO3) là chất khí không màu, mùi hắc, rất háo nước, tan trong nước tạo thành acid sulfuric (H2SO4) mạnh. Trong phân tử, nguyên tử S ở trạng thái oxi hóa +6. SO3 là oxide acid điển hình, thể hiện tính oxi hóa mạnh.\nQuá trình sản xuất H2SO4 trong công nghiệp diễn ra qua hai giai đoạn chính: oxi hóa SO2 thành SO3 (xúc tác V2O5, nhiệt độ 450 độ C) và hấp thụ SO3 bằng H2SO4 đặc để tạo oleum, sau đó pha loãng thành H2SO4.\nVề tác động môi trường, SO2 là tác nhân chính gây ra mưa acid khi kết hợp với hơi nước và oxygen trong khí quyển, gây hư hại công trình xây dựng và hệ sinh thái.",
+   "ans": "Sulfuric acid và muối sulfate\n\nSulfuric acid (H2SO4) là một acid mạnh, có tính oxi hóa mạnh và tính háo nước đặc trưng. Ở điều kiện thường, H2SO4 tinh khiết là chất lỏng không màu, sánh như dầu, tan vô hạn trong nước và tỏa nhiệt lượng rất lớn.\n\nTính chất hóa học của H2SO4 chia làm hai loại:\n1. H2SO4 loãng: Thể hiện tính chất điển hình của một acid mạnh. Tác dụng với base, oxide base và muối tạo thành muối sulfate và nước. Ví dụ: H2SO4 + BaCl2 -> BaSO4 (kết tủa trắng) + 2HCl.\n2. H2SO4 đặc: Có tính oxi hóa rất mạnh (do sự có mặt của S(+6)). Nó oxi hóa được hầu hết các kim loại (trừ Au, Pt), phi kim và nhiều hợp chất. Sản phẩm khử thường là SO2, H2S hoặc S. Đặc biệt, H2SO4 đặc có khả năng hút nước mạnh từ các hợp chất hữu cơ (ví dụ làm than hóa đường sucrose). Ví dụ: Cu + 2H2SO4 (đặc) -> CuSO4 + SO2 + 2H2O.\n\nMuối sulfate là muối của gốc SO4(2-). Đa số các muối sulfate tan trong nước, ngoại trừ",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô D11 trong bảng có giá trị gì?",
+   "ref": "Ô D11 có giá trị 6.",
+   "ans": "Ô D11 có giá trị 102.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 2504 triệu đồng.",
+   "ans": "Tổng các giá trị là 1306 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Phạm Quang Quân.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Hồ Bảo Long | Marketing | 24 | 18.000.000 | 16.615.000 |\n| 2 | Hoàng Gia Hùng | Hành chính | 19 | 7.000.000 | 5.115.000 |\n| 3 | Võ Ngọc Quân | Kinh doanh | 22 | 15.000.000 | 12.692.000 |\n| 4 | Phan Thị Linh | Hành chính | 19 | 10.000.000 | 7.308.000 |\n| 5 | Ngô Thu Long | Kế toán | 24 | 22.000.000 | 20.308.000 |\n| 6 | Ngô Thùy Châu | Kế toán | 20 | 7.000.000 | 5.385.000 |",
+   "ans": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Dương Thu Thảo | Nhân sự | 20 | 9.000.000 | 6.923.000 |\n| 2 | Huỳnh Thùy Nam | Hành chính | 25 | 18.000.000 | 17.308.000 |\n| 3 | Trần Thị Nga | Nhân sự | 21 | 18.000.000 | 14.538.000 |\n| 4 | Phạm Hữu Tâm | Marketing | 22 | 10.000.000 | 8.462.000 |\n| 5 | Đỗ Văn Nam | Kế toán | 21 | 9.000.000 | 7.269.000 |\n| 6 | Dương Thu Thảo | Hành chính | 23 | 15.000.000 | 13.269.000 |",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 824 sản phẩm.",
+   "ans": "Tổng các giá trị là 1289 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 7 dòng dữ liệu.",
+   "ans": "Bảng có 7 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô D3 trong bảng có giá trị gì?",
+   "ref": "Ô D3 có giá trị 55.",
+   "ans": "Ô D3 có giá trị 87.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện lượt khách quý iii (đơn vị: lượt khách) cho 6 mục: Kỹ thuật 6, Kinh doanh 160, Marketing 47, Hành chính 930, Kế toán 570, Nhân sự 33.",
+   "ans": "Biểu đồ cột thể hiện lượt khách quý iii (đơn vị: lượt khách) cho 6 mục: Nhân sự 50, Hành chính 710, Kỹ thuật 420, Kinh doanh 180, Kế toán 370, Marketing 85.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 1\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 1\" có giá trị 55 đơn hàng.",
+   "ans": "\"Tháng 1\" có giá trị 740 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô F9 trong bảng có giá trị gì?",
+   "ref": "Ô F9 có giá trị 625.000.",
+   "ans": "Ô F9 có giá trị 1.200.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Hoàng Văn An.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện chi phí theo khu vực (đơn vị: triệu đồng) cho 6 mục: Huế 67, Hà Nội 90, Đà Lạt 600, Vinh 930, Nha Trang 110, Quy Nhơn 35.",
+   "ans": "Biểu đồ cột thể hiện chi phí theo khu vực (đơn vị: triệu đồng) cho 6 mục: Huế 28, Hải Phòng 70, Đà Nẵng 520, TP.HCM 19, Nha Trang 470, Cần Thơ 360.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Đồng hồ | 148 | 125 | 51 | 222 |\n| 2 | Bánh quy | 42 | 187 | 99 | 130 |\n| 3 | Tai nghe | 60 | 113 | 84 | 89 |\n| 4 | Bàn phím | 276 | 90 | 104 | 262 |\n| 5 | Màn hình 24 inch | 231 | 98 | 56 | 273 |\n| 6 | Nước mắm | 108 | 6 | 34 | 80 |\n| 7 | Giày thể thao | 168 | 22 | 151 | 39 |\n| 8 | Quần jean | 113 | 186 | 215 | 84 |\n| 9 | Cà phê hạt | 271 | 147 | 283 | 135 |\n| 10 | Màn hình 24 inch | 251 | 46 | 159 | 138 |\n| 11 | Nước mắm | 131 | 55 | 117 | 69 |\n| 12 | Áo sơ mi | 143 | 184 | 6 | 321 |\n| 13 | Áo sơ mi | 33 | 100 | 5 | 128 |\n| 14 | Tai nghe | 66 | 75 | 47 | 94 |",
+   "ans": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Giày thể thao | 287 | 190 | 314 | 126 |\n| 2 | Cà phê hạt | 253 | 130 | 212 | 122 |\n| 3 | Gạo ST25 | 200 | 160 | 200 | 152 |\n| 4 | Sữa tươi | 287 | 190 | 314 | 126 |\n| 5 | Cà phê hạt | 235 | 117 | 219 | 112 |\n| 6 | Trà xanh | 170 | 117 | 169 | 112 |\n| 7 | Sữa tươi | 287 | 141 | 312 | 81 |\n| 8 | Cà phê hạt | 253 | 117 | 212 | 112 |\n| 9 | Trà xanh | 200 | 160 | 200 | 169 |\n| 10 | Sữa tươi | 248 | 117 | 312 | 59 |\n| 11 | Cà phê hạt | 253 | 117 | 212 | 1",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Đặc điểm chung của tự nhiên Việt Nam\n\nĐặc điểm chung của tự nhiên Việt Nam mang tính chất nhiệt đới ẩm gió mùa và có sự phân hóa đa dạng.\n\n1. Tính chất nhiệt đới ẩm gió mùa:\n- Nhiệt đới: Tổng bức xạ lớn, nhiệt độ trung bình năm cao (trên 20 độ C), cân bằng bức xạ dương.\n- Ẩm: Lượng mưa lớn (trung bình 1500 - 2000mm/năm), độ ẩm không khí cao (trên 80%).\n- Gió mùa: Có hai mùa gió chính là gió mùa đông (lạnh, khô) và gió mùa hạ (nóng, ẩm).\n\n2. Sự phân hóa đa dạng của tự nhiên:\n- Phân hóa Bắc - Nam: Miền Bắc có mùa đông lạnh, miền Nam nóng quanh năm.\n- Phân hóa Đông - Tây: Sự khác biệt giữa vùng biển, vùng đồng bằng và vùng núi; giữa Đông Bắc và Tây Bắc.\n- Phân hóa theo độ cao: Càng lên cao nhiệt độ càng giảm, hình thành các đai cao (đai nhiệt đới, đai cận nhiệt đới và đai ôn đới trên núi).\n\n3. Các thành phần tự nhiên:\n- Địa hình: Đồi núi chiếm 3/4 diện tích nhưng chủ yếu là đồi núi thấp; đồng bằng chiếm 1/4 diện tích.\n- Sông ngòi: Mạng lưới dày đặc, nhiều nước, giàu phù sa và chế độ nước theo mùa.\n- Đất và sinh vật: Đất feralit là đặc trưng của vùng đồi núi; hệ sinh thái rừng nhiệt đới ẩm là chủ đạo.\n\nVí dụ: Sự phân hóa Bắc - Nam thể hiện rõ nhất ở việc miền Bắc có mùa đông lạnh khiến cây trồng có thể phát triển các loại rau ôn đới, trong khi miền Nam nóng quanh năm phù hợp với cây ăn quả nhiệt đới.",
+   "ans": "Đặc điểm dân cư, xã hội và kinh tế Châu Phi\n\nChâu Phi là châu lục có những đặc điểm dân cư, xã hội và kinh tế mang tính đặc thù, chịu ảnh hưởng lớn từ điều kiện tự nhiên và lịch sử.\n\nVề dân cư và xã hội: Dân số châu Phi tăng nhanh, cơ cấu dân số trẻ. Thành phần chủng tộc chủ yếu là người đen (chiếm đa số) và người da trắng (tập trung nhiều ở Bắc Phi). Sự phân bố dân cư không đồng đều, tập trung đông ở các vùng ven biển, lưu vực sông (như sông Nin) và các vùng cao nguyên. Tuy nhiên, đây vẫn là châu lục nghèo nhất thế giới với chỉ số phát triển con người (HDI) thấp, tỉ lệ mù chữ cao và đời sống khó khăn.\n\nVề kinh tế: Nền kinh tế châu Phi chậm phát triển, chủ yếu dựa vào khai thác tài nguyên thiên nhiên và nông nghiệp.\n- Nông nghiệp: Phát triển đa dạng với trồng trọt (cà phê, ca cao, dầu cọ) và chăn nuôi (gia súc lớn ở vùng thảo nguyên). Ví dụ: Bờ Biển Ngà và Ghana là những quốc gia sản xuất ca cao hàng đầu.\n- Công nghiệp: Chủ yếu là công nghiệp khai khoáng. Châu Phi giàu khoáng sản, đặc biệt là kim cương và vàng (tập trung nhiều ở Nam Phi).\n- Dịch vụ: Đang phát triển nhưng còn hạn chế, chủ yếu là du lịch sinh",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nclass HinhChuNhat:\n    def __init__(self, chieu_dai, chieu_rong):\n        self.chieu_dai = chieu_dai\n        self.chieu_rong = chieu_rong\n\n    def tinh_dien_tich(self):\n        # Tính diện tích của một hình chữ nhật\n        return self.chieu_dai * self.chieu_rong\n\ndef tinh_tong_dien_tich(danh_sach_hcn):\n    tong = 0\n    for hcn in danh_sach_hcn:\n        # Gọi phương thức tính diện tích của từng đối tượng\n        tong += hcn.tinh_dien_tich()\n    return tong\n```",
+   "ans": "```python\nclass SanPham:\n    def __init__(self, ten, gia):\n        self.ten = ten\n        self.gia = gia\n\n    def __str__(self):\n        return f\"Tên: {self.ten}, Giá: {self.gia}\"\n\n    def __eq__(self, other):\n        if not isinstance(other, SanPham):\n            return False\n        return self.ten == other.ten and self.gia == other.gia\n\nclass HangTapHoa(SanPham):\n    def __init__(self, ten, gia, so_luong):\n        super().__init__(ten, gia)\n        self.so_luong = so_luong\n\n    def __str__(self):\n        return f\"Tên: {self.ten}, Giá: {self.gia}, Số lượng: {self.so_luong}\"\n\n    def __eq__(self, other):\n        # So sánh dựa trên SanPham (tên, giá) và thêm điều kiện số lượng\n        return super().__eq__(other) and self.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Hoàng Bảo Nam.",
+   "ans": "Người đó tên là Lê Thùy Lan.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 7\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 7\" có giá trị 89 lượt khách.",
+   "ans": "\"Tháng 7\" có giá trị 54 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F11, chứa công thức =C11+D11-E11.",
+   "ans": "Ô đang chọn là F10, chứa công thức =C10+D10-E10.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Tính tổng cột \"Số lượng\".",
+   "ref": "Tổng cột \"Số lượng\" là 512.",
+   "ans": "Tổng cột \"Số lượng\" là 886.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Nha Trang\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Nha Trang\" có giá trị 780 lượt khách.",
+   "ans": "\"Nha Trang\" có giá trị 560 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 24 của đoạn code viết gì?",
+   "ref": "return -1 # Không tìm thấy đường đi",
+   "ans": "# 2. Tìm tọa độ được ghé thăm nhiều nhất bằng phương thức most_common()",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu theo khu vực (đơn vị: triệu đồng) cho 3 mục: Kỹ thuật 380, Kinh doanh 810, Hành chính 74.",
+   "ans": "Biểu đồ cột thể hiện doanh thu theo khu vực (đơn vị: triệu đồng) cho 3 mục: Kỹ thuật 70, Hành chính 120, Kế toán 550.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 869 lượt khách.",
+   "ans": "Tổng các giá trị là 1149 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 3168 triệu đồng.",
+   "ans": "Tổng các giá trị là 3690 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Khí lý tưởng\n\nKhí lý tưởng là chất khí trong đó các phân tử được coi là chất điểm và chỉ tương tác với nhau khi va chạm. Trong thực tế, hầu hết các khí ở điều kiện áp suất thấp và nhiệt độ cao đều có thể coi là khí lý tưởng.\n\nCác thông số trạng thái của một khối khí bao gồm: áp suất (p), thể tích (V) và nhiệt độ tuyệt đối (T). Đơn vị của nhiệt độ tuyệt đối là Kelvin (K), với công thức chuyển đổi: T = t + 273,15 (trong đó t là nhiệt độ Celsius).\n\nPhương trình trạng thái của khí lý tưởng cho một lượng khí xác định được biểu diễn qua công thức: pV/T = hằng số.\nKhi so sánh hai trạng thái khác nhau của cùng một khối lượng khí, ta có: (p1 * V1) / T1 = (p2 * V2) / T2.\n\nNgoài ra, phương trình Clapeyron mô tả mối liên hệ giữa các thông số của một lượng khí bất kỳ: pV = nRT.\nTrong đó:\n- p: áp suất (Pa)\n- V: thể tích (m3)\n- n: số mol khí (mol)\n- R: hằng số khí lý tưởng, R = 8,31 J/(mol.K)\n- T: nhiệt độ tuyệt đối (K)\n\nVí dụ 1: Một bình kín chứa khí ở 27 độ C, nếu nén thể tích xuống còn một nửa trong khi giữ nhiệt độ không đổi thì áp suất của khí trong bình sẽ tăng gấp đôi.\nVí dụ 2: Khi hơ nóng một quả bóng bay, các phân tử khí chuyển động nhanh hơn, va chạm vào thành bóng mạnh hơn làm áp suất tăng, khiến quả bóng căng lên hoặc bị nổ.",
+   "ans": "Lực ma sát\n\nLực ma sát là lực xuất hiện ở mặt tiếp xúc giữa hai vật, có tác dụng cản trở xu hướng chuyển động tương đối giữa hai mặt tiếp xúc đó. Lực ma sát chia làm ba loại chính:\n\n1. Ma sát nghỉ: Xuất hiện khi vật chưa chuyển động. Nó cân bằng với lực tác dụng, giữ cho vật đứng yên. Giá trị cực đại của lực ma sát nghỉ gọi là lực ma sát nghỉ cực đại.\n2. Ma sát trượt: Xuất hiện khi một vật trượt trên bề mặt của vật khác. Độ lớn lực ma sát trượt được tính bằng công thức: Fms = mu * N. Trong đó: mu là hệ số ma sát trượt (phụ thuộc vào vật liệu và tình trạng bề mặt), N là áp lực (đơn vị Newton). Lực ma sát trượt không phụ thuộc vào diện tích tiếp xúc và tốc độ trượt.\n3. Ma sát lăn: Xuất hiện khi một vật lăn trên bề mặt vật khác. Lực ma sát lăn thường nhỏ hơn nhiều so với lực ma sát trượt cùng điều kiện.\n\nVí dụ minh hoạ:\n- Khi ta đẩy một chiếc tủ nặng nhưng tủ vẫn đứng yên, đó là do có lực ma sát nghỉ tác dụng ngược chiều với lực đẩy.\n- Khi phanh xe đạp, má phanh ép sát vào vành bánh xe tạo ra lực ma sát trượt, làm bánh xe quay chậm dần rồi dừng lại.\n\nLực ma sát có cả lợi ích (giúp con người",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nimport heapq\n\ndef tim_cau_thu_it_ban_nhat(danh_sach_ban_thang):\n    # Sử dụng nsmallest để lấy ra tối đa 3 phần tử nhỏ nhất\n    # Hàm này tự động trả về danh sách đã sắp xếp tăng dần\n    return heapq.nsmallest(3, danh_sach_ban_thang)\n```",
+   "ans": "```python\nimport heapq\n\ndef xu_ly_giao_dich(danh_sach_gd):\n    if not danh_sach_gd:\n        return None\n    \n    # Tạo một bản sao để tránh thay đổi dữ liệu gốc\n    heap = list(danh_sach_gd)\n    # Biến danh sách thành min-heap\n    heapq.heapify(heap)\n    \n    # Lấy ra phần tử có giá trị nhỏ nhất (ưu tiên cao nhất)\n    uu_tien, ten_giao_dich = heapq.heappop(heap)\n    return ten_giao_dich\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 7 mục: TP.HCM 90, Đà Nẵng 590, Hà Nội 650, Vinh 450, Nha Trang 20, Huế 45, Quy Nhơn 780.",
+   "ans": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 6 mục: Đà Lạt 80, TP.HCM 720, Vinh 380, Huế 540, Hải Phòng 91, Cần Thơ 470.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Vũ Hữu Vy (địa chỉ vy.v@congty.vn).",
+   "ans": "Người gửi là Nguyễn Quang Hùng (địa chỉ hng.nguyn@congty.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 12 dòng dữ liệu.",
+   "ans": "Bảng có 12 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là bản email đã được chỉnh sửa lại để chuyên nghiệp và trang trọng hơn:\n\n\nKính gửi Quý phụ huynh,\n\nTrung tâm Anh ngữ [Tên trung tâm] xin gửi lời chào trân trọng đến Quý phụ huynh.\n\nBằng email này, chúng tôi xin thông báo về việc điều chỉnh lịch học của lớp IELTS nhằm phục vụ công tác bảo trì hệ thống định kỳ của trung tâm. Cụ thể như sau:\n\n- **Lịch học cũ:** [Ngày/Tháng/Năm]\n- **Lịch học bù:** 09:00, Chủ Nhật, ngày [Ngày/Tháng/Năm]\n\nVì sự thay đổi đột xuất này, chúng tôi rất mong Quý phụ huynh thông cảm cho sự bất tiện nêu trên. Trung tâm sẽ nỗ lực hoàn tất việc bảo trì sớm nhất để đảm bảo chất lượng học tập tốt nhất cho các em học sinh.\n\nNếu có bất kỳ thắc mắc nào, Quý phụ huynh vui lòng phản hồi qua email này hoặc liên hệ trực tiếp qua hotline để được hỗ trợ kịp thời.\n\nTrân trọng,\n\n[Tên của bạn]\nBộ phận Học vụ - [Tên trung tâm]\n\n---\n**Hướng dẫn thao tác lưu bản thảo trên Gmail:**\n1. Truy cập vào tài khoản email công ty của bạn.\n2. Nhấn nút **Compose** (Soạn thư) ở góc trên bên trái màn hình.\n3. Dán đoạn văn bản đã chỉnh sửa ở trên vào khung nội dung.\n4. Điền thông tin vào các phần trong ngoặc vuông `[...]` cho chính xác với tình hình thực tế.\n5. Kiểm tra lại một lần nữa rồi nhấn **Send** (Gửi) hoặc **Schedule send** (Gửi theo lịch trình) nếu cần.\n\nBạn có muốn mình điều chỉnh văn phong theo hướng thân thiện hơn hay trang trọng hơn nữa không?",
+   "ans": "Dưới đây là mẫu email phản hồi chuyên nghiệp để bạn gửi cho đối tác:\n\n\nKính gửi chị Mai,\n\nLời đầu tiên, thay mặt trung tâm Anh ngữ [Tên trung tâm], xin cảm ơn chị và đội ngũ đã quan tâm đến chương trình đào tạo của chúng tôi.\n\nDựa trên trao đổi trước đó, chúng tôi xin phép được phản hồi về việc chấm dứt hợp tác với đối tác cung cấp giáo viên nước ngoài như đã trao đổi. Lý do là vì chất lượng giảng dạy của đội ngũ hiện tại không đáp ứng được nhu cầu học tập của học viên tại trung tâm.\n\nChúng tôi rất tiếc về sự thay đổi này và hy vọng sẽ có cơ hội hợp tác với chị trong những chương trình sắp tới phù hợp hơn. Một lần nữa, cảm ơn chị đã dành sự quan tâm cho [Tên trung tâm].\n\nTrân trọng,\n\n[Tên của bạn]\nThư ký Ban Giám đốc\n[Tên trung tâm tiếng Anh]",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 19/07/2026 08:45.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Trần Quang Long (địa chỉ long.trn@abc.com.vn).",
+   "ans": "Người gửi là Nguyễn Thùy Nga (địa chỉ nga.nguyn@congty.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Phạm Thu Long (địa chỉ long.phm@abc.com.vn).",
+   "ans": "Người gửi là Nguyễn Thùy Nga (địa chỉ nga.nguyn@truong.edu.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện lượt khách 6 tháng đầu năm (đơn vị: lượt khách) cho 11 mục: Tháng 1 46, Tháng 2 700, Tháng 3 80, Tháng 4 88, Tháng 5 860, Tháng 6 89, Tháng 7 27, Tháng 8 8, Tháng 9 59, Tháng 10 46, Tháng 11 740.",
+   "ans": "Biểu đồ cột thể hiện lượt khách 6 tháng đầu năm (đơn vị: lượt khách) cho 8 mục: Tháng 1 50, Tháng 2 420, Tháng 3 710, Tháng 4 93, Tháng 5 87, Tháng 6 890, Tháng 7 64, Tháng 8 860.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Dòng nào có \"Tồn cuối\" lớn nhất?",
+   "ref": "Dòng STT 4 (Chuột không dây) có \"Tồn cuối\" lớn nhất: 316.",
+   "ans": "Dòng STT 5 (Áo sơ mi) có \"Tồn cuối\" lớn nhất: 295.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 1 của đoạn code viết gì?",
+   "ref": "from collections import deque",
+   "ans": "from collections import deque",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Dòng nào có \"Tồn cuối\" lớn nhất?",
+   "ref": "Dòng STT 3 (Gạo ST25) có \"Tồn cuối\" lớn nhất: 337.",
+   "ans": "Dòng STT 5 (Bàn phím) có \"Tồn cuối\" lớn nhất: 295.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef lay_sach_tren_cung(chong_sach):\n    # Kiểm tra nếu ngăn xếp (list) rỗng\n    if not chong_sach:\n        return (None, [])\n    \n    # Tạo bản sao của danh sách để tránh thay đổi danh sách gốc ngoài hàm\n    temp_stack = chong_sach.copy()\n    # Lấy phần tử cuối cùng ra (đỉnh của ngăn xếp)\n    sach_lay_ra = temp_stack.pop()\n    \n    return (sach_lay_ra, temp_stack)\n```",
+   "ans": "```python\ndef kiem_tra_nhiet_do(func):\n    def wrapper(ten_tinh, gia_tri):\n        # Gọi hàm gốc để lấy giá trị nhiệt độ\n        ket_qua = func(ten_tinh, gia_tri)\n        # Nếu kết quả thỏa mãn điều kiện, trả về giá trị\n        return ket_qua\n    return wrapper\n\n@kiem_tra_nhiet_do\ndef lay_nhiet_do(ten_tinh, gia_tri):\n    # Trả về giá trị mặc định (nếu không có lỗi)\n    return f\"{ten_tinh} đóng vai trò là nhiệt độ trung bình\"\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 1\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 1\" có giá trị 290 đơn hàng.",
+   "ans": "\"Tháng 1\" có giá trị 54 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện chi phí 6 tháng đầu năm (đơn vị: triệu đồng) cho 8 mục: Tháng 1 55, Tháng 2 75, Tháng 3 900, Tháng 4 58, Tháng 5 13, Tháng 6 25, Tháng 7 64, Tháng 8 47.",
+   "ans": "Biểu đồ cột thể hiện chi phí 6 tháng đầu năm (đơn vị: triệu đồng) cho 8 mục: Tháng 1 50, Tháng 2 42, Tháng 3 71, Tháng 4 930, Tháng 5 77, Tháng 6 54, Tháng 7 59, Tháng 8 860.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu năm 2026 (đơn vị: triệu đồng) cho 10 mục: Tháng 1 77, Tháng 2 940, Tháng 3 50, Tháng 4 17, Tháng 5 16, Tháng 6 310, Tháng 7 930, Tháng 8 50, Tháng 9 20, Tháng 10 37.",
+   "ans": "Biểu đồ cột thể hiện doanh thu năm 2026 (đơn vị: triệu đồng) cho 9 mục: Tháng 1 51, Tháng 2 43, Tháng 3 850, Tháng 4 74, Tháng 5 67, Tháng 6 58, Tháng 7 50, Tháng 8 79, Tháng 9 330.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_code",
+   "q": "Hàm đầu tiên trong đoạn code tên là gì?",
+   "ref": "Hàm đầu tiên tên là `sieve_eratosthenes`.",
+   "ans": "Hàm đầu tiên tên là `find_lis`.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Tính tổng cột \"Thực lĩnh\".",
+   "ref": "Tổng cột \"Thực lĩnh\" là 74.385.000.",
+   "ans": "Tổng cột \"Thực lĩnh\" là 96.923.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 6\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 6\" có giá trị 29 lượt khách.",
+   "ans": "\"Tháng 6\" có giá trị 54 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là nội dung email đã được soạn sẵn trong Google Docs:\n\nKính gửi ông Nguyễn Văn A,\n\nChúng tôi đã nhận được hồ sơ tranh chấp đất đai của ông. Văn phòng sẽ phản hồi chi tiết sau khi xem xét kỹ các chứng cứ vào ngày [ngày].\n\nTrân trọng,\n\n[Tên văn phòng luật]\n\n**Hướng dẫn xuất file PDF:**\n1. Vào menu **File** trên thanh công cụ.\n2. Chọn mục **Download**.\n3. Chọn định dạng **PDF Document (.pdf)**.\n\nBạn có muốn tôi điều chỉnh câu chữ cho trang trọng hơn không?",
+   "ans": "Dưới đây là bản dịch tiếng Việt chuyên nghiệp cho email trên:\n\n**Tiêu đề: Cập nhật về Điều khoản Thanh toán và Lịch giao hàng cho Quý 4**\n\nKính gửi Đối tác,\n\nXin lưu ý rằng bắt đầu từ ngày 01 tháng 10, công ty chúng tôi sẽ áp dụng chính sách thanh toán mới. Tất cả các đơn hàng phải được thanh toán trong vòng 15 ngày kể từ ngày xuất hóa đơn, thay vì thời hạn 30 ngày như trước đây. Ngoài ra, do có sự điều chỉnh về hậu cần, thời gian giao hàng tiêu chuẩn sẽ được kéo dài lên 3-5 ngày làm việc. Vui lòng xem xét các thay đổi này và xác nhận sự đồng ý của bạn bằng cách phản hồi lại email này.\n\nTrân trọng cảm ơn sự hợp tác của bạn.\n\n---\n**Tóm tắt các ý chính để bạn lưu ý:**\n*   **Thời hạn thanh toán:** Rút ngắn từ 30 ngày xuống còn **15 ngày** kể từ ngày xuất hóa đơn (áp dụng từ 01/10).\n*   **Thời gian giao hàng:** Mất khoảng **3-5 ngày làm việc** mới nhận được hàng.\n*   **Việc cần làm:** Bạn cần trả lời email để xác nhận đồng ý với quy định mới này.\n\nNếu bạn cần soạn một bản phản hồi tiếng Anh để gửi lại cho",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô F11 trong bảng có giá trị gì?",
+   "ref": "Ô F11 có giá trị 9.231.000.",
+   "ans": "Ô F11 có giá trị 18.000.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện chi phí quý iii (đơn vị: triệu đồng) cho 4 mục: Hành chính 430, Kế toán 59, Kinh doanh 910, Nhân sự 730.",
+   "ans": "Biểu đồ cột thể hiện chi phí quý iii (đơn vị: triệu đồng) cho 4 mục: Kỹ thuật 70, Hành chính 520, Kinh doanh 180, Nhân sự 690.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nimport math\n\ndef tinh_phi_phu_thu(khoang_cach):\n    # Tính căn bậc hai của khoảng cách\n    can_bac_hai = math.sqrt(khoang_cach)\n    # Tính phí và làm tròn xuống số nguyên gần nhất bằng math.floor\n    phi = math.floor(can_bac_hai * 5000)\n    return float(phi)\n```",
+   "ans": "```python\nimport math\n\ndef tinh_khoang_cach(x, y):\n    # Sử dụng math.hypot để tính căn bậc hai của tổng bình phương hiệu tọa độ x và y\n    khoang_cach = math.hypot(x, y)\n    return khoang_cach\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Tính tổng cột \"Thực lĩnh\".",
+   "ref": "Tổng cột \"Thực lĩnh\" là 107.731.000.",
+   "ans": "Tổng cột \"Thực lĩnh\" là 95.962.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Vận hành và bảo dưỡng mạng điện\n\nVận hành và bảo dưỡng mạng điện trong nhà là quá trình theo dõi, điều khiển và chăm sóc hệ thống điện để đảm bảo thiết bị hoạt động an toàn, hiệu quả và bền bỉ.\n\n1. Vận hành mạng điện:\nLà việc điều khiển các thiết bị đóng cắt (cầu dao, aptomat, công tắc) để cấp điện hoặc ngắt điện cho các thiết bị tiêu thụ. Quy trình vận hành an toàn yêu cầu tuân thủ nghiêm ngặt các bước: kiểm tra tình trạng thiết bị, đóng/ngắt đúng trình tự và tuyệt đối không vận hành khi tay ướt hoặc không có đồ bảo hộ.\n\n2. Bảo dưỡng mạng điện:\nLà tập hợp các biện pháp nhằm ngăn ngừa sự cố, kéo dài tuổi thọ cho hệ thống điện. Các công việc chính bao gồm:\n- Kiểm tra định kỳ: Quan sát dấu hiệu bất thường như dây dẫn bị bong tróc, các đầu nối bị lỏng hoặc có vết cháy sém.\n- Vệ sinh: Loại bỏ bụi bẩn bám trên thiết bị điện để tránh gây nóng hoặc chập mạch.\n- Sửa chữa nhỏ: Siết chặt lại các ốc vít tại bảng điện, thay thế các đoạn dây bị hỏng.\n\nVí dụ minh họa:\n- Vận hành: Khi muốn thay bóng đèn bị hỏng, ta phải ngắt aptomat tổng hoặc công tắc đèn trước khi thực hiện để đảm bảo an toàn.\n- Bảo dưỡng: Định kỳ 6 tháng một lần, dùng khăn khô vệ sinh bụi bẩn ở mặt ngoài các ổ cắm và kiểm tra xem vỏ dây dẫn điện trong nhà có bị chuột cắn hay không.",
+   "ans": "Khái quát về lắp đặt mạng điện\n\nMạng điện trong nhà là hệ thống bao gồm các thiết bị điện, dây dẫn và thiết bị điều khiển được lắp đặt để cung cấp điện cho các thiết bị tiêu thụ điện trong gia đình. Mục đích của việc lắp đặt mạng điện là đảm bảo cung cấp điện an toàn, ổn định và thuận tiện cho sinh hoạt.\n\nMột mạng điện trong nhà cơ bản bao gồm các thành phần chính:\n1. Thiết bị bảo vệ: Cầu chì, Aptomat (CB) giúp ngắt mạch khi có sự cố quá tải hoặc ngắn mạch.\n2. Thiết bị điều khiển: Công tắc, nút nhấn dùng để đóng, ngắt mạch điện.\n3. Thiết bị tiêu thụ điện: Bóng đèn, quạt, nồi cơm điện, tivi...\n4. Dây dẫn điện: Truyền tải điện năng từ nguồn đến các thiết bị.\n\nQuy trình lắp đặt mạng điện trong nhà thường gồm 4 bước cơ bản:\n- Bước 1: Lập sơ đồ nguyên lý (Xác định vị trí lắp đặt và cách kết nối các thiết bị).\n- Bước 2: Lập sơ đồ lắp đặt (Xác định vị trí thực tế của thiết bị và đường đi của dây dẫn).\n- Bước 3: Lựa chọn thiết bị và vật liệu (Chọn dây dẫn, công tắc, ổ cắm phù hợp với công suất).\n- Bước 4: Thi công lắp đặt và kiểm tra (Lắp đặt thực tế, đo thông",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef tinh_tong_doanh_thu(danh_sach_don_hang):\n    # Khởi tạo biến tổng doanh thu bằng 0\n    tong = 0\n    # Duyệt qua từng từ điển (đơn hàng) trong danh sách\n    for don in danh_sach_don_hang:\n        # Tính tiền của đơn hàng hiện tại và cộng vào tổng\n        tong += don['so_luong'] * don['gia_tien']\n    return tong\n```",
+   "ans": "```python\ndef tinh_tong_tien(so_du, so_tien_moi):\n    # Điểm dừng: Nếu không còn phần tử nào\n    if so_du == 0:\n        return so_tien_moi\n    \n    # Bước đệ quy: Lấy phần tử đầu tiên cộng với tổng của phần còn lại\n    return so_tien_moi + tinh_tong_tien(so_du - 1)\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu năm 2026 (đơn vị: triệu đồng) cho 8 mục: Đà Nẵng 43, Nha Trang 420, Hải Phòng 870, Vinh 740, Đà Lạt 18, Huế 80, Quy Nhơn 840, Cần Thơ 47.",
+   "ans": "Biểu đồ cột thể hiện doanh thu năm 2026 (đơn vị: triệu đồng) cho 8 mục: Đà Lạt 78, TP.HCM 670, Huế 540, Vinh 39, Hải Phòng 450, Hà Nội 130, Nha Trang 91, Cần Thơ 500.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Tính tổng cột \"Thành tiền\".",
+   "ref": "Tổng cột \"Thành tiền\" là 196.801.000.",
+   "ans": "Tổng cột \"Thành tiền\" là 105.692.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 12 dòng dữ liệu.",
+   "ans": "Bảng có 12 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Dòng nào có \"Thực lĩnh\" lớn nhất?",
+   "ref": "Dòng STT 4 (Phạm Văn Yến) có \"Thực lĩnh\" lớn nhất: 18.000.000.",
+   "ans": "Dòng STT 11 (Dương Đức Long) có \"Thực lĩnh\" lớn nhất: 20.308.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Tháng 3\" với 740 triệu đồng.",
+   "ans": "Cột cao nhất là \"Tháng 1\" với 880 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Kỹ năng thuyết trình và tranh luận\n\nKỹ năng thuyết trình và tranh luận là những năng lực quan trọng giúp học sinh truyền đạt ý tưởng và bảo vệ quan điểm cá nhân một cách thuyết phục.\n\n1. Thuyết trình: Là hình thức trình bày ý kiến, nội dung một vấn đề trước một nhóm người nhằm cung cấp thông tin hoặc thuyết phục người nghe. \n- Quy trình thực hiện: \n+ Chuẩn bị: Xác định mục đích, đối tượng nghe, xây dựng dàn ý chi tiết và chuẩn bị phương tiện hỗ trợ (hình ảnh, video, slide).\n+ Trình bày: Kết hợp ngôn ngữ nói (âm lượng, tốc độ, ngữ điệu) và ngôn ngữ cơ thể (ánh mắt, cử chỉ, tư thế) để thu hút người nghe.\n+ Tương tác: Lắng nghe và trả lời câu hỏi của khán giả.\n\n2. Tranh luận: Là quá trình trao đổi ý kiến trái chiều về một vấn đề để tìm ra lẽ phải hoặc giải pháp tối ưu.\n- Yêu cầu cơ bản:\n+ Lập luận chặt chẽ: Ý kiến đưa ra phải có lý lẽ sắc bén và bằng chứng (số liệu, sự thật, ví dụ thực tế) cụ thể.\n+ Thái độ đúng mực: Tôn trọng đối phương, lắng nghe tích cực, không ngắt lời và không công kích cá nhân.\n+ Tập trung vào vấn đề: Tránh lạc đề hoặc dùng cảm xúc chi phối lập luận.\n\nVí dụ: Khi thuyết trình về \"Tác hại của rác thải nhựa\", học sinh cần chuẩn bị slide hình ảnh về ô nhiễm đại dương (phương tiện hỗ trợ), nói rõ ràng, tự tin (ngôn ngữ cơ thể). Khi có bạn tranh luận rằng \"nhựa tiện lợi hơn túi giấy\", học sinh cần đưa ra số liệu về thời gian phân hủy của nhựa (bằng chứng) để phản biện một cách lịch sự.",
+   "ans": "Kỹ năng thuyết trình với phần mềm\n\nKỹ năng thuyết trình với phần mềm là sự kết hợp giữa việc thiết kế bài trình chiếu khoa học và kỹ năng truyền đạt trước đám đông để truyền tải thông điệp hiệu quả. Một bài thuyết trình thành công cần đảm bảo sự thống nhất giữa nội dung (phần nhìn) và lời nói (phần nghe).\n\nVề thiết kế bài trình chiếu, cần tuân thủ các nguyên tắc:\n1. Nội dung ngắn gọn: Không viết toàn bộ lời nói lên slide, chỉ ghi các từ khóa, ý chính hoặc số liệu quan trọng.\n2. Bố cục rõ ràng: Sử dụng màu sắc tương phản giữa chữ và nền (ví dụ: chữ trắng trên nền xanh đậm) để dễ quan sát.\n3. Hình ảnh và đa phương tiện: Sử dụng hình ảnh, video, sơ đồ minh họa chất lượng cao, phù hợp với nội dung để tăng tính trực quan.\n4. Hiệu ứng vừa đủ: Chỉ sử dụng hiệu ứng chuyển trang và hiệu ứng đối tượng khi cần thiết để thu hút sự chú ý, tránh lạm dụng gây phân tâm.\n\nVề kỹ năng trình bày, người thuyết trình cần:\n- Chuẩn bị kỹ lưỡng: Nắm vững nội dung, tập luyện trước và kiểm tra thiết bị kỹ thuật.\n- Tương tác với khán giả: Duy trì giao tiếp bằng mắt (eye contact), sử dụng ngôn ngữ cơ thể tự nhiên và đặt câu hỏi gợi mở.\n- Quản lý thời gian",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 890 sản phẩm.",
+   "ans": "Tổng các giá trị là 1309 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Em ơi, soạn giúp anh cái thông báo họp khẩn cho phòng Kinh doanh vào 9h sáng mai ngày 25/10. Nội dung chính là chốt phương án giảm giá cho chiến dịch cuối năm, yêu cầu mọi người mang theo báo cáo doanh số quý 3.\nBùi Thị Thảo: Dạ, anh xem qua bản dự thảo này nhé:\n\n**THÔNG BÁO: HỌP KHẨN PHÒNG KINH DOANH**\n\n- **Thời gian:** 09:00, ngày 25/10.\n- **Địa điểm:** Phòng họp số 2.\n- **Nội dung:** Thống nhất phương án giảm giá cho chiến dịch cuối năm.\n- **Yêu cầu chuẩn bị:** Tất cả nhân viên mang theo báo cáo doanh số Quý 3 để đối chiếu.\n\nAnh thấy nội dung này đã đủ ý chưa hay cần bổ sung thêm lưu ý nào cho nhân viên không ạ?\nTôi: Hình như sai địa điểm rồi, họp ở phòng họp lớn tầng 5 cơ. Với lại sửa lại văn phong cho trang trọng hơn chút, đừng ghi gạch đầu dòng đơn giản thế.\nBùi Thị Thảo: Em xin lỗi anh, em đã cập nhật lại địa điểm và điều chỉnh văn phong cho chuyên nghiệp, trang trọng hơn như sau:\n\n**THÔNG BÁO**\n**(V/v: Họp khẩn thống nhất phương án giảm giá chiến dịch cuối năm)**\n\nKính gửi toàn thể nhân viên phòng Kinh doanh,\n\nBan lãnh đạo phòng yêu cầu các thành viên tham dự buổi họp khẩn để chốt phương án giảm giá cho chiến dịch cuối năm. Chi tiết cụ thể như sau:\nTôi: Ổn rồi. Giờ viết thêm cho anh một cái email gửi sếp Tổng báo cáo ngắn gọn là phòng đã chốt lịch họp này, dự kiến sau họp sẽ có bảng tính toán mức chiết khấu theo công thức: Giá mới = Giá cũ * (1 - % giảm giá).\nBùi Thị Thảo: Dạ, em gửi anh mẫu email ngắn gọn và súc tích để gửi sếp Tổng:\n\n**Tiêu đề:** [Báo cáo] Lịch họp chốt phương án giảm giá chiến dịch cuối năm - Phòng Kinh doanh\n\nKính gửi Sếp,\n\nPhòng Kinh doanh xin báo cáo Sếp về kế hoạch chuẩn bị cho chiến dịch cuối năm. Chúng em đã sắp xếp lịch họp khẩn vào 9h sáng mai (25/10) tại phòng họp lớn tầng 5 để thống nhất phương án chiết khấu.",
+   "ans": "Tôi: Chào bạn, mình cần viết một thông báo gửi toàn công ty về việc chuyển văn phòng sang địa chỉ mới tại 123 Đường ABC, Quận 1 vào ngày 01/11 tới. Bạn gợi ý cho mình 2 phương án: một cái trang trọng, một cái gần gũi nhé.\nPhạm Thùy Dũng: Chào bạn, tùy vào văn hóa công ty mà bạn có thể chọn một trong hai phong cách dưới đây:\n\n- Phương án 1 (Trang trọng): Tập trung vào sự chuyên nghiệp, sử dụng ngôn ngữ hành chính. Tiêu đề thường là \"Thông báo về việc thay đổi địa điểm trụ sở làm việc\", nội dung đi thẳng vào quyết định của Ban Giám đốc và yêu cầu phối hợp.\n- Phương án 2 (Gần gũi): Tạo sự hào hứng cho nhân viên.\nTôi: Viết chi tiết cái thứ hai đi, nhưng nhớ thêm lưu ý là mọi người phải tự đóng gói đồ cá nhân trước ngày 30/10.\nPhạm Thùy Dũng: Đây là mẫu thông báo theo phong cách gần gũi để bạn gửi qua email hoặc group chat công ty:\n\n```\nTiêu đề: 🏠 NHÀ MỚI CHỜ CHÚNG MÌNH - THÔNG BÁO CHUYỂN VĂN PHÒNG\n\nCả nhà ơi,\n\nTin cực hót là từ ngày 01/11, chúng mình sẽ chính thức \"dời đô\" sang văn phòng mới xịn xò hơn tại: 123",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Truy vấn dữ liệu\n\nTruy vấn dữ liệu là quá trình yêu cầu hệ quản trị cơ sở dữ liệu (CSDL) trích xuất một tập con các dữ liệu từ một hoặc nhiều bảng, thỏa mãn những điều kiện cụ thể mà người dùng đặt ra. Kết quả của một truy vấn là một bảng mới (gọi là bảng kết quả), không làm thay đổi dữ liệu trong các bảng gốc.\n\nĐể thực hiện truy vấn, người dùng sử dụng ngôn ngữ truy vấn. Phổ biến nhất hiện nay là SQL (Structured Query Language - Ngôn ngữ truy vấn có cấu trúc). Một câu lệnh truy vấn cơ bản trong SQL thường bao gồm các từ khóa chính:\n- SELECT: Chọn các trường (cột) muốn hiển thị.\n- FROM: Chỉ định bảng chứa dữ liệu.\n- WHERE: Thiết lập điều kiện để lọc các bản ghi.\n- ORDER BY: Sắp xếp kết quả theo thứ tự tăng dần (ASC) hoặc giảm dần (DESC).\n\nCấu trúc cơ bản: SELECT ten_cot FROM ten_bang WHERE dieu_kien;\n\nVí dụ 1: Để lấy danh sách tên các học sinh có điểm trung bình trên 8.0 từ bảng HOC_SINH, ta dùng câu lệnh: SELECT HoTen FROM HOC_SINH WHERE DiemTB > 8.0;\n\nVí dụ 2: Để liệt kê tất cả thông tin của các cuốn sách thuộc thể loại \"Toán học\" trong bảng SACH, ta dùng: SELECT * FROM SACH WHERE TheLoai = 'Toán học'; (Ký hiệu * đại diện cho tất cả các cột).\n\nTruy vấn dữ liệu giúp người dùng nhanh chóng tìm thấy thông tin cần thiết trong khối lượng dữ liệu lớn, hỗ trợ đắc lực cho việc thống kê và ra quyết định.",
+   "ans": "Ngôn ngữ thao tác dữ liệu\n\nNgôn ngữ thao tác dữ liệu (DML - Data Manipulation Language) là tập hợp các câu lệnh được sử dụng để quản lý và thao tác với dữ liệu bên trong các bảng của cơ sở dữ liệu quan hệ. Khác với ngôn ngữ định nghĩa dữ liệu (DDL) dùng để tạo cấu trúc, DML tập trung vào việc thay đổi nội dung dữ liệu.\n\nCó bốn thao tác cơ bản trong DML, thường được gọi là CRUD:\n1. Thêm dữ liệu (Create/Insert): Sử dụng câu lệnh INSERT INTO để chèn thêm một hoặc nhiều bản ghi mới vào bảng.\n2. Truy vấn dữ liệu (Read/Select): Sử dụng câu lệnh SELECT để lọc, tìm kiếm và lấy ra các bản ghi thỏa mãn điều kiện từ một hoặc nhiều bảng. Đây là thao tác phổ biến nhất trong DML.\n3. Cập nhật dữ liệu (Update): Sử dụng câu lệnh UPDATE để thay đổi giá trị của một hoặc nhiều trường trong các bản ghi đã tồn tại.\n4. Xóa dữ liệu (Delete): Sử dụng câu lệnh DELETE để loại bỏ một hoặc nhiều bản ghi ra khỏi bảng.\n\nCác câu lệnh DML thường đi kèm với mệnh đề WHERE để xác định chính xác những bản ghi nào sẽ bị tác động. Nếu thiếu WHERE trong lệnh UPDATE hoặc DELETE, toàn bộ dữ",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu theo khu vực (đơn vị: triệu đồng) cho 3 mục: Kinh doanh 220, Hành chính 89, Marketing 560.",
+   "ans": "Biểu đồ cột thể hiện doanh thu theo khu vực (đơn vị: triệu đồng) cho 3 mục: Marketing 50, Nhân sự 720, Kế toán 670.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Xác nhận đơn hàng\".",
+   "ans": "Tiêu đề email: \"Xác nhận đơn hàng\".",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Dạo này mình đang phân vân giữa việc đọc cuốn \"Nhà Giả Kim\" hoặc xem phim \"Interstellar\", bạn thấy cái nào đáng thử hơn?\nDương Hữu Vy: Tùy vào tâm trạng hiện tại của bạn mà lựa chọn sẽ khác nhau vì hai tác phẩm này mang lại cảm xúc rất riêng. Nếu bạn muốn tìm kiếm động lực sống và những bài học nhẹ nhàng về định mệnh, \"Nhà Giả Kim\" là lựa chọn tuyệt vời. Ngược lại, nếu bạn thích sự choáng ngợp về hình ảnh, khoa học vũ trụ và tình cha con sâu sắc, hãy chọn \"Interstellar\".\nTôi: Chắc mình chọn cái thứ hai cho hưng phấn. Mà phim đó nghe bảo có nhiều kiến thức vật lý khó hiểu lắm hả?\nDương Hữu Vy: Đúng là phim có cài cắm nhiều lý thuyết vật lý phức tạp, nhưng bạn không cần phải là chuyên gia mới cảm nhận được hay. Những khái niệm chính trong phim xoay quanh:\n- Thuyết tương đối: Thời gian trôi chậm hơn ở gần những thiên thể có khối lượng lớn (như hố đen).\n- Lỗ sâu (Wormhole): Một lối đi tắt trong không gian để di chuyển giữa các thiên hà.\nTôi: Thôi đừng, giải thích sâu quá lại mất hay. Mà như bạn nói ở trên về lỗ sâu, thì trong thực tế nó có thật không hay chỉ là tưởng tượng?\nDương Hữu Vy: Về mặt lý thuyết vật lý, lỗ sâu (cầu Einstein-Rosen) là có khả năng tồn tại, nhưng hiện tại nó vẫn chỉ nằm trên giấy tờ và toán học. Theo lý thuyết, nó giống như việc bạn gấp một tờ giấy lại và đục một lỗ xuyên qua để đi từ điểm A đến điểm B nhanh nhất thay vì đi đường vòng.",
+   "ans": "Tôi: Dạo này mình đang muốn tìm mấy bộ phim hoặc sách nào kiểu trinh thám, hack não một chút. Bạn gợi ý cho mình vài cái tên nổi tiếng đi.\nDương Thùy Dũng: Nếu bạn thích cảm giác bị \"xoắn não\", mình đề xuất hai tác phẩm cực kỳ chất lượng này:\n- Phim Inception: Một siêu phẩm về đánh cắp giấc mơ với cấu trúc tầng tầng lớp lớp, buộc bạn phải tập trung cao độ để không bị lạc.\n- Sách \"Sherlock Holmes\" (tập hợp các truyện ngắn): Dù không siêu thực nhưng cách suy luận logic và những cú twist bất ngờ sẽ khiến bạn phải suy nghĩ rất nhiều sau khi đọc xong.\nTôi: Mình xem hết rồi. Mà hình như Shutter Island là phim về một hòn đảo biệt lập đúng không?\nDương Thùy Dũng: Thực ra, Shutter Island không phải phim về đảo biệt lập theo kiểu truyền thống mà là một vụ án mạng trong gia đình với thủ phạm là một người phụ nữ. Điểm đặc biệt của phim này là mọi chi tiết đều tập trung vào sự phủ nhận và nỗi sợ hãi, khiến người xem phải tự đặt câu hỏi liệu hung thủ có thực sự gây ra tội ác không.\nTôi: À mình xem hết rồi. Mà nhắc đến vụ án mạng trong gia đình thì hình như bạn nhầm, Shutter Island là phim kinh dị chứ nhỉ?\nDương Thùy Dũng: Thực ra bộ phim này thuộc thể loại trinh",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 12/02/2026 12:05.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Trần Thùy An.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là bản rút gọn chuyên nghiệp để bạn gửi cho phụ huynh:\n\nKính gửi Quý phụ huynh,\n\nTrung tâm xin thông báo lớp tiếng Anh vào lúc 18:00 thứ Bảy ngày [ngày] tại cơ sở [tên cơ sở] sẽ tạm hoãn do giáo viên có việc đột xuất. Buổi học sẽ được dời sang 09:00 sáng Chủ nhật ngày [ngày] tại cùng phòng học cũ. Quý phụ huynh vui lòng phản hồi nếu cần sắp xếp lịch học khác hoặc hoàn phí. \n\nTrung tâm rất xin lỗi về sự bất tiện này và mong Quý phụ huynh thông cảm.\n\n---\n**Mẹo nhỏ:** Nếu bạn muốn gửi qua Zalo cho nhanh, bạn có thể dùng tính năng \"Ghi chú\" (Note) để lưu mẫu này, tránh việc phải gõ lại nhiều lần.\n\nBạn có muốn tôi điều chỉnh văn phong trang trọng hơn hoặc thân thiện hơn không?",
+   "ans": "Dưới đây là bản dịch tiếng Việt của email trên để bạn gửi cho phụ huynh:\n\n**Tiêu đề: Thông báo về việc thay đổi học phí trong tháng [Tháng/Năm]**\n\nKính gửi Quý phụ huynh,\n\nTrung tâm Anh ngữ [Tên trung tâm] xin gửi lời chào trân trọng đến Quý phụ huynh.\n\nTrong tháng vừa qua, trung tâm đã nhận được thông báo về việc điều chỉnh học phí nhằm phù hợp với tình hình tài chính của gia đình. Do biến động về chi phí nguyên liệu và dịch vụ giáo dục trong tháng này, trung tâm xin thông báo mức học phí mới sẽ tăng thêm 5.000.000 VNĐ so với tháng trước.\n\nChúng tôi rất lấy làm tiếc về sự thay đổi đột ngột này và mong Quý phụ huynh thông cảm cho những khó khăn mà trung tâm đang gặp phải. Trung tâm sẽ tiếp tục nỗ lực để cung cấp các khóa học chất lượng nhất cho các em học sinh trong tương lai.\n\nTrân trọng,\n\n[Tên của bạn]\nBộ phận Kế toán - [Tên trung tâm]\n\n---\n**Hướng dẫn thao tác lưu bản dịch:**\nNếu bạn muốn lưu một bản dịch tiếng Việt chuẩn của email trên để gửi cho phụ huynh, hãy làm theo các bước sau:\n1. Mở trình duyệt, truy cập vào **Google Translate**.\n2. Chọn ngôn ngữ gốc là Tiếng Việt và chuyển sang chế độ dịch (Trans",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Gạo ST25 | 283 | 21 | 166 | 138 |\n| 2 | Cà phê hạt | 262 | 82 | 204 | 140 |\n| 3 | Màn hình 24 inch | 178 | 193 | 246 | 125 |\n| 4 | Cà phê hạt | 39 | 81 | 34 | 86 |\n| 5 | Ổ cứng SSD | 230 | 131 | 267 | 94 |\n| 6 | Giày thể thao | 19 | 36 | 21 | 34 |",
+   "ans": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Đồng hồ | 287 | 132 | 319 | 54 |\n| 2 | Sữa tươi | 206 | 156 | 291 | 46 |\n| 3 | Gạo ST25 | 200 | 130 | 200 | 168 |\n| 4 | Trà xanh | 270 | 114 | 299 | 54 |\n| 5 | Sữa tươi | 200 | 100 | 168 | 118 |\n| 6 | Gạo ST25 | 236 | 110 | 318 | 54 |",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 25/02/2026 09:15.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 8\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 8\" có giá trị 640 triệu đồng.",
+   "ans": "\"Tháng 8\" có giá trị 680 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Tính tổng cột \"Tồn cuối\".",
+   "ref": "Tổng cột \"Tồn cuối\" là 927.",
+   "ans": "Tổng cột \"Tồn cuối\" là 891.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Hàm đầu tiên trong đoạn code tên là gì?",
+   "ref": "Hàm đầu tiên tên là `tinh_tong_gio_hoc`.",
+   "ans": "Hàm đầu tiên tên là `tinh_tong_diem`.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Thông báo nội bộ\".",
+   "ans": "Tiêu đề email: \"Thông báo nội bộ\".",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nfrom collections import deque\n\n# Bối cảnh: Danh sách các khoản chi tiêu cần thanh toán theo thứ tự\n# Cấu trúc: (Tên khoản chi, Số tiền)\npayment_queue = deque([(\"Tiền điện\", 500000), (\"Tiền nước\", 200000)])\n\n# 1. Thêm một khoản chi mới vào cuối hàng đợi (Enqueue)\npayment_queue.append((\"Tiền Internet\", 300000))\nprint(f\"Danh sách chờ thanh toán: {list(payment_queue)}\")\n\n# 2. Thanh toán khoản chi đầu tiên (Dequeue)\n# popleft() lấy ra phần tử ở đầu hàng đợi\nbill = payment_queue.popleft()\nprint(f\"Đang thanh toán: {bill[0]} - Số tiền: {bill[1]}\")\nprint(f\"Danh sách còn lại: {list(payment_queue)}\")\n\n# 3. Tiếp tục thanh toán cho đến khi hết hàng đợi\nwhile payment_queue:\n    current_bill = payment_queue.popleft()\n    print(f\"Đã thanh toán xong: {current_bill[0]}\")\n\nprint(\"Kết quả: Tất cả hóa đơn đã được xử lý!\")\n```",
+   "ans": "```python\nfrom collections import deque\n\n# 1. Khởi tạo và các thao tác cơ bản\ndq = deque([10, 20, 30])\n\n# Thêm vào cuối (Enqueue): Có thêm khách mới chơi thì phải đẩy ra phía sau\ndq.append(20) \nprint(f\"Khách mới đến: {list(dq)}\") \n# Kết quả: Khách mới đến: [10, 20, 30]\n\n# Lấy ra (Dequeue): Lấy khách ở đầu hàng ra là xong ngay, không cần đẩy ai ra\nkhach_duoc_di = dq.popleft() \nprint(f\"Khách được phục vụ: {khach_duoc_di}\") \n# Kết quả: Khách được phục vụ: [20, 30]\n\n# 2. Xử lý danh sách số điện thoại lớn (Dùng deque)\n# Khi danh sách có 1 triệu phần tử, việc dùng vòng lặp for truyền thống sẽ chậm\ndq = deque([f\"Khách A\", \"Khách B\", \"Khách C\"])\nfor a in dq:\n    print(f\"Khách hàng {a} -> Hàng đợi hiện tại: {list(dq)}\") \n# Kết quả: Khách hàng Khách B",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F7, chứa công thức =C7+D7-E7.",
+   "ans": "Ô đang chọn là F10, chứa công thức =C10+D10-E10.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F3, chứa công thức =D3*E3.",
+   "ans": "Ô đang chọn là F8, chứa công thức =D8*E8.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef merge_intervals(intervals):\n    if not intervals:\n        return []\n\n    # Bước 1: Sắp xếp các khoảng theo điểm bắt đầu (BẮT BUỘC)\n    intervals.sort(key=lambda x: x[0])\n    \n    merged = [intervals[0]]\n    \n    for current in intervals[1:]:\n        last_merged = merged[-1]\n        \n        # Nếu điểm bắt đầu của khoảng hiện tại <= điểm kết thúc của khoảng trước đó\n        if current[0] <= last_merged[1]:\n            # Gộp bằng cách cập nhật điểm kết thúc là giá trị lớn nhất\n            last_merged[1] = max(last_merged[1], current[1])\n        else:\n            # Không trùng, thêm khoảng mới vào danh sách\n            merged.append(current)\n            \n    return merged\n\n# --- Test Case 1: Kho hàng có các phân đoạn trùng nhau ---\n# Ca 1: kệ 1-4, Ca 2: kệ 3-6, Ca 3: kệ 8-10\nkho_hang_1 = [[1, 4], [3, 6], [8, 10]]\nprint(f\"Kết quả 1: {merge_intervals(kho_hang_1)}\") \n# Kỳ vọng: [[1, 6], [8, 10]]\n\n# --- Test Case 2: Một khoảng bao trùm hoàn toàn khoảng khác ---\n# Ca 1: kệ 1-10, Ca 2: kệ 2-5, Ca 3: kệ 6-7\nkho_hang_2 = [[1, 10], [2, 5], [6, 7]]\nprint(f\"Kết quả 2: {merge_intervals(kho_hang_2)}\") \n# Kỳ vọng: [[1, 10]]\n```",
+   "ans": "```python\ndef find_lis_length(sales):\n    n = len(sales)\n    if n == 0: return 0\n    \n    # dp[i] lưu độ dài dãy con tăng dài nhất kết thúc tại vị trí i\n    # Ban đầu, mỗi ngày tự thân nó là một dãy độ dài 1\n    dp = [1] * n\n    \n    for i in range(1, n):\n        for j in range(i):\n            # Nếu ngày i bán nhiều hơn ngày j, ta có thể nối i vào sau j\n            if sales[i] > sales[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n                \n    return max(dp)\n\n# Ví dụ 1: Doanh thu tăng giảm thất thường\n# Ngày: 01/01/2023 -> 05/05/2023\n# Hàng: 900\n# Cột: 1000\ndoanh_thu = [900, 900, 800, 800]\nprint(f\"Doanh thu tăng: {find_lis_length(doanh_thu)}\") # Kết quả: 1400\n\n# Ví dụ 2: Doanh thu giảm dần",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô B10 trong bảng có giá trị gì?",
+   "ref": "Ô B10 có giá trị Võ Thùy Quân.",
+   "ans": "Ô B10 có giá trị Trần Thị Linh.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef dinh_dang_so_dien_thoai(sdt):\n    # Cắt chuỗi để lấy 3 số đầu, 3 số giữa và 4 số cuối\n    ma_vung = sdt[0:3]\n    phan_giua = sdt[3:6]\n    phan_cuoi = sdt[6:]\n    \n    # Sử dụng f-string để nối và định dạng chuỗi theo mẫu\n    return f\"Số điện thoại của bạn là: ({ma_vung}) {phan_giua}-{phan_cuoi}\"\n```",
+   "ans": "```python\ndef tinh_tong_tien(so_du, so_tien_moi):\n    # Điểm dừng: Nếu không còn phần tử nào\n    if so_du == 0:\n        return so_tien_moi\n    \n    # Bước đệ quy: Lấy phần tử đầu tiên cộng với tổng của phần còn lại\n    return so_tien_moi + tinh_tong_tien(so_du - 1)\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Đơn vị đo thời gian\n\nTrong chương trình Toán lớp 4, đơn vị đo thời gian giúp chúng ta xác định độ dài của một khoảng thời gian hoặc thời điểm xảy ra sự việc. Các đơn vị đo thời gian phổ biến bao gồm: giây, phút, giờ, ngày, tuần, tháng, năm, thế kỷ.\n\nMối quan hệ giữa các đơn vị đo thời gian như sau:\n- 1 giờ = 60 phút\n- 1 phút = 60 giây\n- 1 ngày = 24 giờ\n- 1 tuần = 7 ngày\n- 1 năm thường có 12 tháng.\n- Một năm thường có 365 ngày, năm nhuận có 366 ngày.\n- 1 thế kỷ = 100 năm.\n\nCách tính thế kỷ: Thế kỷ là đơn vị đo thời gian lớn, dùng để chia lịch sử. Ví dụ: Từ năm 1 đến năm 100 là thế kỷ 1; từ năm 101 đến năm 200 là thế kỷ 2. Như vậy, năm 2024 thuộc thế kỷ 21.\n\nVí dụ minh hoạ:\nVí dụ 1: Đổi 3 giờ 15 phút sang phút.\nTa có: 3 giờ = 3 * 60 = 180 phút. Vậy 3 giờ 15 phút = 180 + 15 = 195 phút.\nVí dụ 2: Năm 1900 thuộc thế kỷ nào?\nVì năm 1900 là năm cuối cùng của chu kỳ 100 năm thứ 19, nên năm 1900 thuộc thế kỷ 19.",
+   "ans": "Số thập phân\n\nSố thập phân là số viết dưới dạng gồm hai phần: phần nguyên và phần thập phân, được phân cách bởi dấu phẩy. Phần nguyên nằm ở bên trái dấu phẩy, phần thập phân nằm ở bên phải dấu phẩy.\n\nSố thập phân được hình thành từ phân số thập phân (là các phân số có mẫu số là 10, 100, 1000,...). \n- Phân số thập phân 1/10 được viết thành số thập phân 0,1 (đọc là không phẩy một).\n- Phân số thập phân 1/100 được viết thành số thập phân 0,01 (đọc là không phẩy không một).\n- Phân số thập phân 1/1000 được viết thành số thập phân 0,001 (đọc là không phẩy không không một).\n\nGiá trị của mỗi chữ số trong số thập phân phụ thuộc vào vị trí của nó. \n- Ở phần nguyên: Các hàng được đọc từ phải sang trái là hàng đơn vị, hàng chục, hàng trăm...\n- Ở phần thập phân: Các hàng được đọc từ trái sang phải là hàng phần mười (chữ số đầu tiên sau dấu phẩy), hàng phần trăm (chữ số thứ hai), hàng phần nghìn (chữ số thứ ba)...\n\nVí dụ 1: Số 15,72 có phần nguyên là 15 và phần thập phân là 72",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 8 dòng dữ liệu.",
+   "ans": "Bảng có 8 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 23/09/2026 15:05.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Viết giúp mình hàm Python tính diện tích hình trụ khi biết bán kính r và chiều cao h nhé.\nNguyễn Thu Nam: Chào bạn, mình gửi bạn hàm tính diện tích toàn phần của hình trụ. Công thức mình sử dụng là S = 2 * π * r * (r + h).\n\n```python\nimport math\n\ndef tinh_dien_tich_hinh_tru(r, h):\n    return 2 * math.pi * r * (r + h)\n\n# Ví dụ sử dụng\nban_kinh = 5\nchieu_cao = 10\nprint(f\"Diện tích hình trụ là: {tinh_dien_tich_hinh_tru(ban_kinh, chieu_cao):.2f}\")\n```\nTôi: À mà mình chỉ cần tính diện tích xung quanh thôi, hàm trên đang tính cả hai đáy rồi.\nNguyễn Thu Nam: Ồ, mình xin lỗi vì đã nhầm sang diện tích toàn phần. Để tính diện tích xung quanh, chúng ta chỉ cần lấy chu vi đáy nhân với chiều cao theo công thức S = 2 * π * r * h.\n\n```python\nimport math\n\ndef tinh_dien_tich_xung_quanh_hinh_tru(r, h):\n    return 2 * math.pi * r * h\n\n# Ví dụ sử dụng với r=5, h=10\nprint(f\"Diện tích xung quanh là: {tinh_dien_tich_xung_quanh_hinh_tru(5, 10):.2f}\")\n```\nTôi: Ok rồi, nhưng nếu mình nhập số âm thì hàm vẫn chạy, như vậy không hợp lý lắm.\nNguyễn Thu Nam: Bạn nói rất đúng, về mặt vật lý thì bán kính và chiều cao không thể là số âm. Mình sẽ thêm một bước kiểm tra điều kiện (validation) bằng cách sử dụng `ValueError` để thông báo lỗi nếu người dùng nhập giá trị không hợp lệ.\n\n```python\nimport math\n\ndef tinh_dien_tich_xung_quanh_hinh_tru(r, h):\n    if r <= 0 or h <= 0:\n        raise ValueError(\"Bán kính và chiều cao phải là số dương!\")",
+   "ans": "Tôi: Anh xem giúp em đoạn code Python này chạy chậm quá, nó dùng để tính tổng bình phương các số từ 1 đến n. Em đang dùng vòng lặp for cơ bản thôi.\nVũ Thùy Dũng: Đoạn code của em hiện tại đang dùng vòng lặp for thuần để tính tổng bình phương của các số từ 1 đến n, nên khi n lớn thì thời gian chạy sẽ tăng tỉ lệ thuận (độ phức tạp O(n)). Để tối ưu, em nên sử dụng công thức toán học hoặc thư viện Pandas để tính toán vector hóa.\n\nNếu dùng công thức, em có thể dùng: Tổng = (n * (n + 1) * (2 * n + 1)) / 6. Cách này đưa độ phức tạp về O(1), nghĩa là kết quả trả về gần như tức thì bất kể n lớn bao nhiêu.\nTôi: Có chứ, viết lại giúp em đi.\nVũ Thùy Dũng: Đây là phiên bản tối ưu sử dụng công thức toán học để đạt hiệu suất cao nhất:\n\n```python\nimport math\n\ndef calculate_sum_squares(n):\n    return (n * (n + 1) * (2 * n + 1)) // 6\n```\n\nTrong đoạn code này, mình sử dụng toán tử `//` để đảm bảo kết quả trả về là số nguyên thay vì số thực. Việc dùng công thức toán học giúp máy",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Trạng ngữ",
+   "ans": "Từ chỉ hoạt động, trạng thái",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nimport math\n\ndef tinh_chu_ky_chung(a, b):\n    # Sử dụng hàm gcd từ thư viện math để tìm ƯCLN\n    ucln = math.gcd(a, b)\n    # Tính BCNN dựa trên công thức: (a * b) / ƯCLN\n    return abs(a * b) // ucln\n```",
+   "ans": "```python\nimport math\n\ndef tinh_khoang_cach(x, y):\n    # Sử dụng math.hypot để tính căn bậc hai của tổng bình phương hiệu tọa độ x và y\n    khoang_cach = math.hypot(x, y)\n    return khoang_cach\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nimport re\n\n# Định nghĩa mẫu Regex cho số điện thoại Việt Nam:\n# ^      : Bắt đầu chuỗi\n# 0      : Phải bắt đầu bằng số 0\n# \\d{9}  : Theo sau là đúng 9 chữ số (digit)\n# $      : Kết thúc chuỗi (để tránh trường hợp chuỗi dài hơn)\npattern = r'^0\\d{9}$'\n\ntest_cases = [\n    \"0912345678\",  # Hợp lệ\n    \"012345678\",   # Thiếu số\n    \"09123456789\", # Thừa số\n    \"A912345678\",  # Sai ký tự đầu\n    \"0912-345-678\" # Có ký tự đặc biệt\n]\n\nprint(f\"{'Số điện thoại':<15} | {'Kết quả'}\")\nprint(\"-\" * 30)\n\nfor phone in test_cases:\n    # re.fullmatch kiểm tra xem toàn bộ chuỗi có khớp hoàn toàn với mẫu không\n    if re.fullmatch(pattern, phone):\n        print(f\"{phone:<15} | Hợp lệ ✅\")\n    else:\n        print(f\"{phone:<15} | Không hợp lệ ❌\")\n```",
+   "ans": "```python\nimport re\n\n# Dữ liệu giả lập: Danh sách nhiệt độ các tỉnh với định dạng hỗn loạn\ndata = \"Hà Nội: 25°C, TP.HCM: 32 độ, Đà Nẵng: 28°C, Cần Thơ: 30 độ C, Lào Cai: -2°C\"\n\n# 1. Tìm tất cả các số (bao gồm số âm và số thập phân)\n# Mẫu r'\\d+\\.?\\d*' giải thích: \n# \\d+ (một hoặc nhiều chữ số), \\.? (có thể có dấu chấm), \\d* (có thể có thêm chữ số sau dấu chấm)\npattern_nhiet_do = r'\\d+\\.?\\d*'\nket_qua = re.findall(pattern_nhiet_do, data)\n\nprint(\"--- Các số nhiệt độ tìm thấy ---\")\nfor item in ket_qua:\n    print(f\"Nhiệt độ {item[0]}°C\")\n\n# 2. Tìm tất cả các chữ số (bao gồm cả số thập phân)\n# Mẫu r'\\d+\\.?\\d*' giải thích: \n# \\d+ (một hoặc nhiều chữ số), \\.? (có thể có dấu chấm), \\d* (có thể",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Giữ vệ sinh cơ thể",
+   "ans": "Giữ vệ sinh cơ thể",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Ngô Minh Vy.",
+   "ans": "Người đó tên là Huỳnh Minh An.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Trần Thanh Nam.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 6 dòng dữ liệu.",
+   "ans": "Bảng có 6 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 27/12/2026 12:05.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Vinh\" với 870 sản phẩm.",
+   "ans": "Cột cao nhất là \"Quy Nhơn\" với 580 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Chào bạn, mình sắp thi hình học, bạn ôn lại giúp mình công thức tính diện tích và thể tích hình trụ với.\nBùi Thị Lan: Chào bạn, mình sẽ giúp bạn hệ thống lại nhanh để ôn thi nhé. Với hình trụ có bán kính đáy là r và chiều cao là h, bạn cần nhớ hai công thức chính:\n- Diện tích xung quanh: Sxq = 2 * π * r * h\n- Thể tích: V = π * r² * h\nTrong đó π xấp xỉ 3.14. Bạn có muốn mình lấy một ví dụ cụ thể để áp dụng thử hai công thức này không?\nTôi: Có, cho mình ví dụ nào số liệu dễ tính một chút cho nhanh.\nBùi Thị Lan: Vậy mình lấy ví dụ một hình trụ có bán kính r = 3cm và chiều cao h = 5cm nhé. Cách tính sẽ như sau:\n- Diện tích xung quanh: Sxq = 2 * 3.14 * 3 * 5 = 94.2 (cm²)\n- Thể tích: V = 3.14 * 3² * 5 = 3.14 * 9 * 5 = 141.3 (cm³)\nBạn thấy cách tính này dễ hiểu chứ, hay có chỗ nào cần mình giải thích kỹ hơn không?\nTôi: Đoạn tính diện tích ấy, sao lại có số 2 ở đầu công thức Sxq nhỉ?\nBùi Thị Lan: Số 2 trong công thức Sxq = 2 * π * r * h xuất hiện vì diện tích xung quanh của hình trụ thực chất là một hình chữ nhật khi bạn \"trải phẳng\" nó ra. Chiều rộng của hình chữ nhật này chính là chiều cao h, còn chiều dài chính là chu vi của đường tròn đáy. Vì công thức tính chu vi hình tròn là C = 2 * π * r, nên khi nhân với chiều cao h, ta có số 2 ở phía trước.",
+   "ans": "Tôi: Chào bạn, mình đang bí bài toán này: Một hình trụ có bán kính đáy r = 3cm và chiều cao h = 5cm. Tính thể tích và diện tích toàn phần của nó giúp mình với.\nNgô Thị Vy: Chào bạn, mình sẽ giúp bạn giải bài này từng bước cho dễ hiểu nhé. Trước hết, chúng ta sẽ tính thể tích (V) của hình trụ trước.\n\nCông thức tính là: V = π * r² * h.\nThay số vào ta có: V = 3.14 * 3² * 5 = 3.14 * 9 * 5 = 141.3 cm³.\n\nBạn đã nắm rõ cách tính thể tích này chưa, hay muốn mình giải thích kỹ hơn về công thức trước khi sang phần diện tích?\nTôi: Ok rồi. Giờ tính tiếp diện tích toàn phần giúp mình.\nNgô Thị Vy: Tiếp theo, mình sẽ tính diện tích toàn phần (Stp) của hình trụ này. Diện tích toàn phần bao gồm diện tích xung quanh và diện tích của hai đáy.\n\nCông thức cụ thể như sau:\n- Diện tích xung quanh: Sxq = 2 * π * r * h = 2 * 3.14 * 3 * 5 = 94.2 cm².\n- Diện tích hai đáy: S2đáy = 2 * (π * r²) = 2 * 3.14 * 3² = 56.5",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 1812 đơn hàng.",
+   "ans": "Tổng các giá trị là 1806 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F4, chứa công thức =ROUND(E4*D4/26,-3).",
+   "ans": "Ô đang chọn là F5, chứa công thức =ROUND(E5*D5/26,-3).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Chào bạn, mình có bài toán hình trụ này: Một cái thùng hình trụ cao 2m, bán kính đáy 0.5m. Mình muốn tính thể tích rồi tính khối lượng nước nếu đổ đầy, biết khối lượng riêng của nước là 1000kg/m3. Giúp mình từng bước nhé.\nVũ Bảo Vy: Chào bạn, mình sẽ đồng hành cùng bạn giải bài này theo từng bước cho dễ theo dõi. Bước đầu tiên, chúng ta cần tính thể tích (V) của hình trụ trước. \n\nCông thức tính là: V = π * r² * h. \nThay số vào: V = 3.14 * (0.5)² * 2 = 1.57 m3.\n\nBạn kiểm tra xem con số này đã khớp với tính toán của bạn chưa để mình sang bước tiếp theo?\nTôi: Ok rồi, giờ tính cái khối lượng đi.\nVũ Bảo Vy: Để tính khối lượng (m) của nước, bạn chỉ cần lấy thể tích vừa tìm được nhân với khối lượng riêng (D) của nước.\n\nCông thức là: m = V * D.\nVới V = 1.57 m3 và D = 1000 kg/m3, ta có: m = 1.57 * 1000 = 1570 kg.\n\nVậy khối lượng nước khi đổ đầy thùng là 1570 kg. Bạn có muốn mình hướng dẫn cách đổi đơn vị này sang tấn cho gọn không?\nTôi: Thôi không cần, mà nếu mình chỉ đổ nước đầy 2/3 thùng thì cái khối lượng đó thay đổi thế nào?\nVũ Bảo Vy: Khi bạn chỉ đổ 2/3 thùng, khối lượng nước sẽ giảm tỉ lệ thuận theo thể tích, tức là bằng 2/3 khối lượng khi đầy thùng.\n\nCách tính nhanh: m_mới = 1570 * (2/3) ≈ 1046.67 kg.\n\nVì thể tích nước lúc này chỉ còn khoảng 1.047 m3 nên khối lượng giảm đi tương ứng. Bạn có muốn mình tính thử xem lượng nước còn thiếu để đầy thùng là bao nhiêu kg không?",
+   "ans": "Tôi: Chào bạn, mình có bài toán tính thể tích hình trụ này nhưng hơi rắc rối. Cho bán kính đáy r = 3cm và chiều cao h = 5cm. Bạn hướng dẫn mình làm từng bước nhé, đừng giải hết một lượt.\nNgô Thị Vy: Chào bạn, mình rất sẵn lòng đồng hành cùng bạn giải bài này. Bước đầu tiên, chúng ta cần xác định công thức tính thể tích hình trụ là V = π * r² * h. Trong đó, V là thể tích, r là bán kính đáy và h là chiều cao của hình trụ. Bạn hãy thử thay số đo bán kính r = 3cm vào công thức này xem kết quả ra bao nhiêu nhé?\nTôi: Mình tính ra V = 3.14 * 3² * 5 = 141.3 cm³. Đúng không bạn?\nNgô Thị Vy: Kết quả 141.3 cm³ của bạn hoàn toàn chính xác!\n\nBây giờ chúng ta sang bước cuối cùng để tìm thể tích V nhé. Bạn hãy áp dụng phép nhân với π và chiều cao h. Công thức là V = π * r² * h. Bạn tính thử xem kết quả ra bao nhiêu rồi nhắn mình kiểm tra giúp nhé?\nTôi: Kết quả là 141.3 cm³. Mà bạn viết lại lời giải ngắn gọn thôi, kiểu gạch đầu dòng cho dễ nhìn ấy.\nNgô Thị Vy: Đây là lời giải rút gọn để bạn dễ theo",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"[Ngày] – Thư đề xuất xem xét điều chỉnh lương – [Họ và tên của chị]\".",
+   "ans": "Tiêu đề email: \"Thông báo nội bộ\".",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Hành chính\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Hành chính\" có giá trị 900 triệu đồng.",
+   "ans": "\"Hành chính\" có giá trị 70 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Quy Nhơn\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Quy Nhơn\" có giá trị 160 sản phẩm.",
+   "ans": "\"Quy Nhơn\" có giá trị 36 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 19/10/2026 14:30.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Chép lại toàn bộ nội dung văn bản trong ảnh.",
+   "ref": "Đặc điểm dân cư, dân tộc\n\nViệt Nam là quốc gia đa dân tộc với 54 dân tộc anh em, trong đó dân tộc Kinh (Việt) chiếm đa số (khoảng 85%), còn lại là các dân tộc thiểu số. Các dân tộc có sự phân bố không đồng đều: người Kinh tập trung chủ yếu ở đồng bằng, ven biển và trung tâm các đô thị; các dân tộc thiểu số phân bố chủ yếu ở vùng miền núi và cao nguyên. Tuy nhiên, hiện nay sự phân bố này đang có sự thay đổi theo hướng đan xen nhau nhiều hơn.\n\nVề đặc điểm dân số, Việt Nam là nước đông dân, quy mô dân số lớn. Tỉ lệ gia tăng dân số đã giảm nhờ thực hiện tốt chính sách dân số và kế hoạch hóa gia đình, nhưng số dân tuyệt đối vẫn tiếp tục tăng. Cơ cấu dân số Việt Nam đang trong thời kỳ \"dân số vàng\" với lực lượng lao động dồi dào, nhưng đồng thời cũng bắt đầu đối mặt với xu hướng già hóa dân số.\n\nMật độ dân số của Việt Nam ở mức cao so với thế giới và không đồng đều giữa các vùng. Vùng đồng bằng sông Hồng có mật độ dân số cao nhất cả nước, trong khi vùng Tây Nguyên và miền núi phía Bắc có mật độ thấp hơn.\n\nVí dụ: Người Tày, Nùng, Thái tập trung nhiều ở vùng núi phía Bắc; người Ê-đê, Gia-rai tập trung nhiều ở Tây Nguyên. Sự phân bố dân cư không đều gây khó khăn cho việc quản lý và phát triển kinh tế - xã hội đồng bộ giữa các vùng miền.",
+   "ans": "Vùng Đồng bằng sông Cửu Long\n\nVùng Đồng bằng sông Cửu Long (ĐBSCL) là vùng nông nghiệp lớn nhất cả nước, nằm ở cực Nam Việt Nam. \n\nVề tự nhiên, vùng có địa hình thấp, bằng phẳng, mạng lưới sông ngòi, kênh rạch chằng chịt. Đất chính là đất phù sa (phân bố rộng) và đất phèn, đất mặn (chiếm diện tích lớn). Khí hậu cận xích đạo, nóng ẩm quanh năm, ít bão. Tuy nhiên, vùng đối mặt với thách thức lớn là tình trạng ngập lụt và xâm nhập mặn ngày càng nghiêm trọng.\n\nVề kinh tế, ĐBSCL là vùng trọng điểm lương thực, thực phẩm của cả nước. \n- Nông nghiệp: dẫn đầu cả nước về sản lượng lúa, trái cây và thủy sản. Chuyển dịch cơ cấu theo hướng tăng tỉ trọng cây ăn quả và nuôi trồng thủy sản.\n- Thủy sản: phát triển mạnh cả đánh bắt và nuôi trồng (đặc biệt là tôm và cá tra).\n- Công nghiệp: chủ yếu là công nghiệp chế biến nông, thủy sản.\n- Dịch vụ: phát triển vận tải đường thủy và du lịch sinh thái.\n\nVề dân cư, xã hội, đây là vùng đông dân, đa dân tộc (Kinh, Khmer, Hoa). Đời sống đang được cải thiện nhưng trình độ nguồn nhân lực còn thấp.\n\nVí dụ minh họa: \n1. Việc chuyển đổi từ độc canh cây lúa sang mô hình \"lúa",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 9 dòng dữ liệu.",
+   "ans": "Bảng có 9 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Hành chính\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Hành chính\" có giá trị 250 triệu đồng.",
+   "ans": "\"Hành chính\" có giá trị 50 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F12, chứa công thức =D12*E12.",
+   "ans": "Ô đang chọn là F12, chứa công thức =D12*E12.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Phản hồi đề xuất\".",
+   "ans": "Tiêu đề email: \"Xác nhận đơn hàng\".",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô F12 trong bảng có giá trị gì?",
+   "ref": "Ô F12 có giá trị 18.000.000.",
+   "ans": "Ô F12 có giá trị 18.000.000.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 3 của đoạn code viết gì?",
+   "ref": "def lay_nhiet_do_gan_nhat(danh_sach_tinh, n):",
+   "ans": "def thong_ke_nhiet_do(danh_sach_tinh, danh_sach_temp):",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là bản dịch tiếng Việt của email trên để chị gửi cho các thầy cô:\n\n**Tiêu đề: Khẩn cấp: Cập nhật về cuộc họp chương trình học và danh sách giáo trình cho [Tên công ty]**\n\nKính gửi Quản lý dự án,\n\nTiếp nối nội dung thảo luận trước đó, tôi xin thông báo về việc thay đổi lịch họp đánh giá chương trình học sắp tới. Do một số thay đổi về lịch trình, cuộc họp dự kiến vào ngày 25 tháng 10 sẽ được chuyển sang **10:00 sáng ngày 27 tháng 10** qua Microsoft Teams.\n\nNgoài ra, vui lòng xem danh sách các giáo trình cập nhật cho học kỳ tới được đính kèm dưới đây. Chúng tôi đề nghị đội ngũ giáo viên xem qua các thay đổi này trước buổi họp để đảm bảo quá trình chuyển đổi diễn ra thuận lợi.\n\nChúng tôi rất xin lỗi về sự bất tiện này và rất mong sớm được gặp quý vị.\n\nTrân trọng,\nSarah Jenkins\nCambridge Assessment English\n\n---\n**Hướng dẫn thao tác đính kèm file (nếu chị muốn gửi qua Outlook):**\n1. Mở cửa sổ soạn thảo email mới (New Email).\n2. Chọn thẻ **Insert** trên thanh công cụ.\n3. Nhấp vào biểu tượng **Attach File** (hình kẹp giấy).\n4. Chọn tệp danh sách giáo trình từ máy tính để đính kèm vào email.\n\nChị có muốn em điều chỉnh văn phong theo hướng thân thiện hơn hay trang trọng hơn nữa không ạ?",
+   "ans": "Dưới đây là bản dịch tiếng Việt chuyên nghiệp cho email trên:\n\n**Tiêu đề: Cập nhật về Điều khoản Thanh toán và Lịch giao hàng cho Quý 4**\n\nKính gửi Đối tác,\n\nXin lưu ý rằng bắt đầu từ ngày 01 tháng 10, công ty chúng tôi sẽ áp dụng chính sách thanh toán mới. Tất cả các đơn hàng phải được thanh toán trong vòng 15 ngày kể từ ngày xuất hóa đơn, thay vì thời hạn 30 ngày như trước đây. Ngoài ra, do có sự điều chỉnh về hậu cần, thời gian giao hàng tiêu chuẩn sẽ được kéo dài lên 3-5 ngày làm việc. Vui lòng xem xét các thay đổi này và xác nhận sự đồng ý của bạn bằng cách phản hồi lại email này.\n\nTrân trọng cảm ơn sự hợp tác của bạn.\n\n---\n**Tóm tắt nội dung:**\nĐể đảm bảo quyền lợi, tất cả đơn hàng phải được thanh toán trong vòng 15 ngày kể từ ngày xuất hóa đơn (áp dụng từ 01/10). Việc giao hàng tiêu chuẩn sẽ được kéo dài 3-5 ngày làm việc. Vui lòng xem xét các thay đổi này và xác nhận sự đồng ý của bạn bằng cách phản hồi lại email này.\n\nNếu cần điều chỉnh thêm về quy định hậu cần, vui lòng liên hệ với bộ phận Kế toán.\n\n---\n**Hướng dẫn thao tác lưu bản dịch vào Google Docs:**",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Về việc sắp xếp lịch họp\".",
+   "ans": "Tiêu đề email: \"Thông báo nội bộ\".",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 1196 triệu đồng.",
+   "ans": "Tổng các giá trị là 1209 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 08/10/2026 14:15.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện chi phí năm 2026 (đơn vị: triệu đồng) cho 7 mục: Nha Trang 70, Cần Thơ 660, Hà Nội 950, Huế 48, Quy Nhơn 55, Đà Nẵng 90, Hải Phòng 220.",
+   "ans": "Biểu đồ cột thể hiện chi phí năm 2026 (đơn vị: triệu đồng) cho 7 mục: Huế 55, TP.HCM 680, Đà Nẵng 470, Vinh 390, Hải Phòng 810, Nha Trang 140, Cần Thơ 900.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Nước mắm | 129 | 12 | 12 | 129 |\n| 2 | Túi xách | 225 | 47 | 141 | 131 |\n| 3 | Cà phê hạt | 261 | 25 | 209 | 77 |\n| 4 | Màn hình 24 inch | 196 | 41 | 112 | 125 |\n| 5 | Ổ cứng SSD | 286 | 22 | 104 | 204 |\n| 6 | Tai nghe | 18 | 98 | 116 | 0 |\n| 7 | Áo sơ mi | 30 | 2 | 25 | 7 |\n| 8 | Trà xanh | 78 | 186 | 129 | 135 |\n| 9 | Gạo ST25 | 31 | 23 | 5 | 49 |\n| 10 | Trà xanh | 282 | 40 | 81 | 241 |\n| 11 | Giày thể thao | 85 | 86 | 148 | 23 |\n| 12 | Cà phê hạt | 247 | 130 | 322 | 55 |\n| 13 | Gạo ST25 | 62 | 75 | 22 | 115 |\n| 14 | Giày thể thao | 245 | 149 | 280 | 114 |",
+   "ans": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Trà xanh | 287 | 130 | 312 | 59 |\n| 2 | Sữa tươi | 256 | 140 | 318 | 66 |\n| 3 | Cà phê hạt | 256 | 114 | 252 | 41 |\n| 4 | Trà xanh | 271 | 130 | 29 | 369 |\n| 5 | Sữa tươi | 256 | 114 | 282 | 62 |\n| 6 | Cà phê hạt | 256 | 114 | 252 | 41 |\n| 7 | Trà xanh | 271 | 130 | 29 | 369 |\n| 8 | Sữa tươi | 256 | 114 | 282 | 59 |\n| 9 | Cà phê hạt | 256 | 114 | 282 | 41 |\n| 10 | Trà xanh | 273 | 117 | 319 | 62 |\n| 11 | Sữa tươi | 236 | 117 | 291 | 59 |\n| 12 | Cà phê hạt | 2",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô D3 trong bảng có giá trị gì?",
+   "ref": "Ô D3 có giá trị 103.",
+   "ans": "Ô D3 có giá trị 39.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Nhân sự\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Nhân sự\" có giá trị 360 triệu đồng.",
+   "ans": "\"Nhân sự\" có giá trị 700 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Huỳnh Văn Hải (địa chỉ hi.hunh@truong.edu.vn).",
+   "ans": "Người gửi là Nguyễn Quang Hùng (địa chỉ hng.nguyn@congty.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Dòng nào có \"Thành tiền\" lớn nhất?",
+   "ref": "Dòng STT 3 (Bánh quy) có \"Thành tiền\" lớn nhất: 139.200.000.",
+   "ans": "Dòng STT 5 (Áo sơ mi) có \"Thành tiền\" lớn nhất: 120.000.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 5 dòng dữ liệu.",
+   "ans": "Bảng có 5 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Dòng nào có \"Thực lĩnh\" lớn nhất?",
+   "ref": "Dòng STT 4 (Hoàng Minh Nam) có \"Thực lĩnh\" lớn nhất: 19.462.000.",
+   "ans": "Dòng STT 5 (Dương Thu Thảo) có \"Thực lĩnh\" lớn nhất: 18.615.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef kiem_tra_ket_noi(do_thi, start_node):\n    # Tập hợp lưu trữ các nút đã được thăm\n    visited = set()\n\n    def dfs(node):\n        # Đánh dấu nút hiện tại đã thăm\n        visited.add(node)\n        # Duyệt tất cả các nút kề chưa được thăm\n        for neighbor in do_thi.get(node, []):\n            if neighbor not in visited:\n                dfs(neighbor)\n\n    # Bắt đầu duyệt từ nút khởi đầu\n    dfs(start_node)\n    \n    # Nếu số nút đã thăm bằng tổng số nút trong đồ thị thì kết nối toàn bộ\n    return len(visited) == len(do_thi)\n```",
+   "ans": "```python\ndef kiem_tra_nhiet_do(func):\n    def wrapper(temp, muc_tieu):\n        # Gọi hàm gốc để lấy giá trị nhiệt độ hiện tại\n        temp = func(temp, muc_tieu)\n        # Nếu thỏa mãn điều kiện, trả về giá trị đó\n        if temp >= muc_tieu:\n            return temp\n        return \"Lỗi: Nhiệt độ không hợp lệ\"\n    return wrapper\n\n@kiem_tra_nhiet_do\ndef lay_nhiet_do(temp):\n    # Trả về giá trị nhiệt độ thực tế (không tính phần âm)\n    return temp\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Hàm đầu tiên trong đoạn code tên là gì?",
+   "ref": "Hàm đầu tiên tên là `kiem_tra_lich_trong`.",
+   "ans": "Hàm đầu tiên tên là `kiem_tra_lich_hoc`.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Tháng 9\" với 860 sản phẩm.",
+   "ans": "Cột cao nhất là \"Tháng 1\" với 880 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Phương trình bậc hai một ẩn",
+   "ans": "Phép nhân và phép chia phân số",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Tính tổng cột \"Thành tiền\".",
+   "ref": "Tổng cột \"Thành tiền\" là 236.676.000.",
+   "ans": "Tổng cột \"Thành tiền\" là 105.691.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 07/05/2026 13:15.",
+   "ans": "Email được gửi lúc 07/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Võ Ngọc Linh.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Kinh doanh\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Kinh doanh\" có giá trị 460 lượt khách.",
+   "ans": "\"Kinh doanh\" có giá trị 860 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F14, chứa công thức =D14*E14.",
+   "ans": "Ô đang chọn là F12, chứa công thức =D12*E12.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Vũ Văn Tâm | Marketing | 19 | 8.000.000 | 5.846.000 |\n| 2 | Dương Hữu Yến | Hành chính | 26 | 8.000.000 | 8.000.000 |\n| 3 | Phạm Thu Hải | Kế toán | 21 | 18.000.000 | 14.538.000 |\n| 4 | Nguyễn Văn Trang | Nhân sự | 22 | 6.000.000 | 5.077.000 |\n| 5 | Võ Quang Châu | Kinh doanh | 18 | 22.000.000 | 15.231.000 |\n| 6 | Hoàng Văn Vy | Nhân sự | 25 | 6.000.000 | 5.769.000 |\n| 7 | Phan Bảo Nga | Kinh doanh | 20 | 18.000.000 | 13.846.000 |\n| 8 | Phạm Gia Nam | Hành chính | 22 | 22.000.000 | 18.615.000 |\n| 9 | Trần Ngọc Trang | Kỹ thuật | 24 | 12.000.000 | 11.077.000 |\n| 10 | Vũ Bảo Châu | Nhân sự | 20 | 15.000.000 | 11.538.000 |\n| 11 | Võ Minh Mai | Nhân sự | 20 | 7.000.000 | 5.385.000 |",
+   "ans": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Dương Thùy Long | Nhân sự | 20 | 9.000.000 | 6.923.000 |\n| 2 | Huỳnh Thị Vy | Hành chính | 25 | 18.000.000 | 17.308.000 |\n| 3 | Trần Quang Giang | Marketing | 21 | 9.000.000 | 7.269.000 |\n| 4 | Phan Thu Lan | Nhân sự | 25 | 18.000.000 | 17.308.000 |\n| 5 | Phạm Thùy Nam | Marketing | 21 | 9.000.000 | 7.269.000 |\n| 6 | Đặng Quang An | Nhân sự | 25 | 18.000.000 | 17.308.000 |\n| 7 | Phan Hữu Tâm | Marketing | 21 | 9.000.000 | 7.269.000 |\n| 8 | Hồ Thùy Nam | Hành chính | 25",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là bản dịch tiếng Anh chuyên nghiệp cho email của bạn:\n\n**Subject: Urgent: Update regarding your order #[Số đơn hàng] - [Tên shop của bạn]**\n\nDear Customer,\n\nI am writing to you on behalf of [Tên shop của bạn] regarding your recent order #[Số đơn hàng].\n\nUnfortunately, we regret to inform you that the maxi dress you ordered is currently out of stock due to unexpectedly high demand. We expect to have this item back in stock and ready for shipment by [Ngày dự kiến giao hàng].\n\nWe sincerely apologize for this inconvenience. If you are unable to wait for the restock, we can process a full refund for this item immediately.\n\nPlease let us know how you would like to proceed.\n\nBest regards,\n\n[Tên của bạn]\n[Tên shop của bạn]\n\n**Hướng dẫn cách gửi email qua Gmail:**\n1. Truy cập vào tài khoản Gmail của bạn.\n2. Nhấn vào nút **Compose** (Soạn thư) ở góc trên bên trái màn hình.\n3. Tại ô **To** (Tới): Nhập địa chỉ email của khách hàng.\n4. Tại ô **Subject** (Chủ đề): Dán dòng tiêu đề tiếng Anh tôi đã soạn ở trên.\n5. Tại phần nội dung chính: Dán toàn bộ đoạn văn tiếng Anh vào.\n6. Kiểm tra lại các thông tin trong ngoặc vuông `[...]` cho chính xác.\n7. Nhấn **Send** (Gửi) để hoàn tất.\n\nBạn có muốn tôi điều chỉnh văn phong sang kiểu thân thiện hơn hay trang trọng hơn nữa không?",
+   "ans": "Dưới đây là bản dịch tiếng Anh chuyên nghiệp cho email của bạn:\n\n\nDear [Tên đối tác],\n\nWe regret to inform you that there will be a delay in the delivery of your order from [Tên nhà cung cấp]. \n\nDue to some unexpected technical issues with our shipment, we require a confirmed arrival date at your warehouse. We will not be available for the shipment once it is found.\n\nWe sincerely apologize for this inconvenience and appreciate your understanding.\n\nBest regards,\n\n[Tên của bạn]\n[Chức vụ]\n[Tên công ty]\n\nNếu bạn muốn nhấn mạnh thêm về việc sẽ bù đắp bằng đơn hàng sau, hãy cho tôi biết để tôi điều chỉnh câu cuối nhé.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Tháng 5\" với 740 lượt khách.",
+   "ans": "Cột cao nhất là \"Tháng 1\" với 690 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 12/03/2026 09:45.",
+   "ans": "Email được gửi lúc 11/05/2026 09:45.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Dòng nào có \"Thực lĩnh\" lớn nhất?",
+   "ref": "Dòng STT 7 (Vũ Minh Hùng) có \"Thực lĩnh\" lớn nhất: 16.923.000.",
+   "ans": "Dòng STT 12 (Hoàng Đức Thảo) có \"Thực lĩnh\" lớn nhất: 20.308.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 3373 sản phẩm.",
+   "ans": "Tổng các giá trị là 2680 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Ô D13 trong bảng có giá trị gì?",
+   "ref": "Ô D13 có giá trị 114.",
+   "ans": "Ô D13 có giá trị 102.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Cần Thơ\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Cần Thơ\" có giá trị 800 triệu đồng.",
+   "ans": "\"Cần Thơ\" có giá trị 580 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Hàm đầu tiên trong đoạn code tên là gì?",
+   "ref": "Hàm đầu tiên tên là `tim_sach_nhi_phan`.",
+   "ans": "Hàm đầu tiên tên là `dem_xep_loai`.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Ô E4 trong bảng có giá trị gì?",
+   "ref": "Ô E4 có giá trị 101.",
+   "ans": "Ô E4 có giá trị 113.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Hàm đầu tiên trong đoạn code tên là gì?",
+   "ref": "Hàm đầu tiên tên là `tim_ngay_cao_nhat`.",
+   "ans": "Hàm đầu tiên tên là `tinh_tong_diem`.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Email được gửi lúc nào?",
+   "ref": "Email được gửi lúc 02/02/2026 10:45.",
+   "ans": "Email được gửi lúc 01/05/2026 14:30.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 4 mục: Nha Trang 83, TP.HCM 210, Huế 46, Cần Thơ 59.",
+   "ans": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 4 mục: Đà Nẵng 50, TP.HCM 72, Vinh 37, Huế 18.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 1270 lượt khách.",
+   "ans": "Tổng các giá trị là 1238 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Hoàng Thị Nga.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Huỳnh Minh Lan.",
+   "ans": "Người đó tên là Dương Hữu Phúc.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Dương Thanh Sơn | Nhân sự | 23 | 8.000.000 | 7.077.000 |\n| 2 | Bùi Văn Nga | Marketing | 22 | 12.000.000 | 10.154.000 |\n| 3 | Đặng Thùy Châu | Marketing | 18 | 6.000.000 | 4.154.000 |\n| 4 | Trần Quang Châu | Marketing | 25 | 8.000.000 | 7.692.000 |\n| 5 | Phạm Văn Long | Marketing | 25 | 22.000.000 | 21.154.000 |\n| 6 | Ngô Minh Lan | Kế toán | 22 | 8.000.000 | 6.769.000 |",
+   "ans": "| STT | Họ tên | Phòng ban | Ngày công | Lương cơ bản | Thực lĩnh |\n|---|---|---|---|---|---|\n| 1 | Dương Bảo Vy | Marketing | 22 | 18.000.000 | 15.231.000 |\n| 2 | Huỳnh Thị Dũng | Hành chính | 24 | 10.000.000 | 9.231.000 |\n| 3 | Dương Thanh An | Marketing | 26 | 18.000.000 | 18.000.000 |\n| 4 | Phan Thu Lan | Kinh doanh | 25 | 10.000.000 | 9.615.000 |\n| 5 | Huỳnh Thị Vy | Nhân sự | 23 | 7.000.000 | 6.192.000 |",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Tháng 3\" với 600 triệu đồng.",
+   "ans": "Cột cao nhất là \"Tháng 1\" với 890 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện lượt khách theo khu vực (đơn vị: lượt khách) cho 6 mục: Cần Thơ 100, Vinh 63, TP.HCM 870, Đà Nẵng 360, Quy Nhơn 120, Hải Phòng 95.",
+   "ans": "Biểu đồ cột thể hiện lượt khách theo khu vực (đơn vị: lượt khách) cho 6 mục: Huế 50, Hải Phòng 75, Đà Nẵng 180, TP.HCM 27, Nha Trang 420, Cần Thơ 360.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Xác nhận đơn hàng\".",
+   "ans": "Tiêu đề email: \"Notification of Price Adjustment - [Tên công ty]\".",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện số đơn hàng năm 2026 (đơn vị: đơn hàng) cho 8 mục: Tháng 1 40, Tháng 2 620, Tháng 3 770, Tháng 4 390, Tháng 5 13, Tháng 6 900, Tháng 7 60, Tháng 8 230.",
+   "ans": "Biểu đồ cột thể hiện số đơn hàng năm 2026 (đơn vị: đơn hàng) cho 8 mục: Tháng 1 510, Tháng 2 630, Tháng 3 440, Tháng 4 770, Tháng 5 950, Tháng 6 880, Tháng 7 69, Tháng 8 870.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Đà Nẵng\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Đà Nẵng\" có giá trị 61 lượt khách.",
+   "ans": "\"Đà Nẵng\" có giá trị 37 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô F5 trong bảng có giá trị gì?",
+   "ref": "Ô F5 có giá trị 11.538.000.",
+   "ans": "Ô F5 có giá trị 6.923.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Cách mạng công nghiệp thời hiện đại",
+   "ans": "Cách mạng công nghiệp thời hiện đại",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\n# Ví dụ 1: Đếm tần suất nhiệt độ các tỉnh\nnhiet_do = [30, 32, 30, 28, 32, 30, 35, 28]\ndem = {}\n\nfor x in nhiet_do:\n    if x in dem:\n        dem[x] += 1 # Đã tồn tại thì tăng thêm 1\n    else:\n        dem[x] = 1  # Chưa tồn tại thì khởi tạo là 1\n\nprint(\"Tần suất nhiệt độ:\", dem) \n# Kết quả: {30: 3, 32: 2, 28: 2, 35: 1}\n\n# Ví dụ 2: Đếm các mức đánh giá thời tiết (Dùng thư viện chuẩn Counter để viết nhanh hơn)\nfrom collections import Counter\n\nthoi_tiet = [\"Nóng\", \"Nóng\", \"Mát\", \"Lạnh\", \"Nóng\", \"Mát\"]\nket_qua = Counter(thoi_tiet)\n\nprint(\"Số lần xuất hiện mỗi loại:\", ket_qua)\n# Kết quả: Counter({'Nóng': 3, 'Mát': 2, 'Lạnh': 1})\nprint(\"Mức phổ biến nhất:\", ket_qua.most_common(1)) \n# Kết quả: [('Nóng', 3)]\n```",
+   "ans": "```python\n# Ví dụ 1: Sử dụng hàm zip() - Cách ngắn gọn và phổ biến nhất\n# Danh sách: (Tên khách, Số điện thoại)\nkhach_hang = [(\"An\", \"090123\"), (\"Bình\", \"090456\"), (\"Chi\", \"090789\")]\n\n# zip() sẽ giải nén các tuple thành các cặp (tên, số điện thoại)\nprint(\"Danh bạ đầy đủ:\", khach_hang)\nprint(f\"Khách hàng chi tiết: {khach_hang}\") \n# Kết quả: Khách hàng chi tiết: An, Bình, Chi\n\n# Ví dụ 2: Sử dụng vòng lặp for (Dành cho trường hợp lặp lại)\n# Danh sách: (Tên khách, Số điện thoại)\nkhach_hang = [(\"An\", \"090123\"), (\"Bình\", \"090456\"), (\"Chi\", \"090789\")]\n\nprint(\"Danh sách khách hàng theo số điện thoại:\", khach_hang)\nfor ten, so_dt in khach_hang:\n    print(f\"Khách hàng {ten} có số điện thoại: {so_dt}\")",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\nfrom datetime import datetime\n\n# Ví dụ 1: Tách ngày đơn hàng bằng split()\norder_date_str = \"25/12/2023\"\nparts = order_date_str.split(\"/\") # Chia chuỗi tại dấu '/'\nday = parts[0]\nmonth = parts[1]\nyear = parts[2]\nprint(f\"Cách 1: Ngày={day}, Tháng={month}, Năm={year}\") \n# Kết quả: Ngày=25, Tháng=12, Năm=2023\n\n# Ví dụ 2: Chuyển đổi sang đối tượng datetime để xử lý chuyên sâu\ndate_string = \"15/05/2024\"\n# %d: ngày, %m: tháng, %Y: năm 4 chữ số\ndate_object = datetime.strptime(date_string, \"%d/%m/%Y\")\n\nprint(f\"Cách 2: Năm của đơn hàng là: {date_object.year}\")\nprint(f\"Tháng của đơn hàng là: {date_object.month}\")\nprint(f\"Ngày của đơn hàng là: {date_object.day}\")\n# Kết quả: Năm=2024, Tháng=5, Ngày=15\n```",
+   "ans": "```python\nfrom datetime import date, timedelta\n\n# 1. Lấy ngày giờ hiện tại\nnow = date.today()\nprint(f\"Bây giờ là: {now}\") \n# Kết quả: Bây giờ là: 20/10/2023\n\n# 2. Tạo một mốc thời gian cụ thể (Năm, Tháng, Ngày, Giờ, Phút)\ndelta = timedelta(days=365, hours=10, minutes=5)\nprint(f\"Ngày hiện tại: {delta.strftime('%d/%m/%Y')}\")\n# Kết quả: Ngày hiện tại: 20/10/2023\n\n# 3. Cộng thêm thời gian (Ví dụ: 10 ngày sau kể từ bây giờ)\nfuture_date = date(2024, 10, 20)\ndelta_in_days = delta.days + delta_in_hours\nprint(f\"Sau 10 ngày: {delta_in_days} ngày\")\n# Kết quả: Sau 10 ngày: 20/10/2024\n\n# 4. Cộng thêm cả ngày giờ (Ví dụ: Ngày hiện tại + 2 ngày nữa)\nfuture_date",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F5, chứa công thức =C5+D5-E5.",
+   "ans": "Ô đang chọn là F8, chứa công thức =C8+D8-E8.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Dạo này anh hay bị mất ngủ, cứ nằm xuống là trằn trọc mãi không ngủ được. Em tư vấn giúp anh cách cải thiện với.\nDương Thu Lan: Anh nên thử thiết lập lại thói quen sinh hoạt và vệ sinh giấc ngủ để cơ thể dễ đi vào trạng thái nghỉ ngơi hơn. Cụ thể, anh có thể áp dụng các cách sau:\n- Duy trì giờ ngủ và thức dậy cố định mỗi ngày để tạo nhịp sinh học.\n- Hạn chế dùng điện thoại, máy tính ít nhất 30 phút trước khi ngủ vì ánh sáng xanh gây ức chế melatonin.\n- Tránh uống trà, cà phê vào buổi chiều muộn hoặc tối.\nTôi: Anh không bị stress lắm, chỉ là thói quen thôi. Mà cái danh sách trên dài quá, em tóm gọn lại thành mấy ý chính thật ngắn cho anh dễ nhớ được không?\nDương Thu Lan: Dạ, anh chỉ cần nhớ 3 từ khóa chính này để cải thiện giấc ngủ ạ:\n- Kỷ luật: Ngủ và thức đúng giờ mỗi ngày.\n- Cách ly: Tránh xa thiết bị điện tử trước khi ngủ.\n- Thư giãn: Ngâm chân hoặc nghe nhạc nhẹ để tâm trí thoải mái.\nAnh cứ thử áp dụng nghiêm túc trong khoảng 1 tuần xem có tiến triển không nhé.\nTôi: Ừ, để anh thử. À, anh định tập thể dục buổi tối để mau mệt cho dễ ngủ, liệu có ổn không em?\nDương Thu Lan: Anh không nên tập cường độ cao vào buổi tối vì điều này dễ gây phản tác dụng, khiến anh khó ngủ hơn. Khi tập nặng, nhịp tim tăng cao và cơ thể tiết ra adrenaline làm hệ thần kinh bị kích thích, khiến não bộ tỉnh táo thay vì thư giãn. Nếu anh vẫn muốn vận động, hãy chọn các bài tập nhẹ nhàng như yoga, giãn cơ hoặc đi bộ chậm trước khi ngủ khoảng 2-3 tiếng.",
+   "ans": "Tôi: Dạo này mình hay bị mất ngủ, cứ nằm trằn trọc mãi không ngủ được. Có cách nào cải thiện tự nhiên mà không dùng thuốc không bạn?\nDương Thùy An: Bạn nên thử thiết lập lại \"vệ sinh giấc ngủ\" bằng cách điều chỉnh thói quen sinh hoạt hàng ngày. Đầu tiên, hãy cố định giờ thức dậy và giờ đi ngủ kể cả cuối tuần để tạo nhịp sinh học ổn định. Bên cạnh đó, bạn nên hạn chế dùng điện thoại hoặc máy tính ít nhất 30 phút trước khi ngủ vì ánh sáng xanh gây ức chế melatonin (hormone gây buồn ngủ).\nTôi: Công việc hơi stress chút. Mà cái danh sách trên dài quá, tóm tắt lại ngắn gọn cho mình dễ nhớ với.\nDương Thùy An: Để dễ nhớ, bạn chỉ cần tập trung vào 3 nhóm chính sau:\n- Thói quen: Ngủ đúng giờ, tránh điện thoại trước khi ngủ.\n- Môi trường: Giữ phòng ngủ tối, thoáng mát và yên tĩnh.\n- Thư giãn: Ngâm chân nước ấm hoặc đọc sách.\nBạn thử áp dụng trong 1 tuần xem có cải thiện không nhé!\nTôi: À mà nhắc đến công việc mới nhớ, chỉ mình cách tính nhanh diện tích hình trụ để mình làm báo cáo cho khách với.\nDương Thùy An: Để tính diện tích toàn phần của hình trụ (bao gồm cả hai đáy và mặt xung quanh), bạn dùng công thức: S = 2 *",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 4\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 4\" có giá trị 54 đơn hàng.",
+   "ans": "\"Tháng 4\" có giá trị 880 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Quy Nhơn\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Quy Nhơn\" có giá trị 120 triệu đồng.",
+   "ans": "\"Quy Nhơn\" có giá trị 530 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Chào bạn, mình có bảng doanh thu nhân viên, muốn tính tổng doanh số của mỗi người dựa trên một danh sách tên cho trước. Giúp mình công thức với.\nDương Đức Mai: Bạn nên dùng hàm SUMIF cho trường hợp này vì nó chuyên dùng để tính tổng theo một điều kiện cụ thể. Công thức cơ bản sẽ là: =SUMIF(vùng_chứa_tên, tên_nhân_viên, vùng_tính_tổng). Ví dụ, nếu cột A chứa tên nhân viên và cột B chứa doanh số, bạn dùng =SUMIF(A:A, \"Nguyễn Văn A\", B:B). Bạn có thể thay tên cụ thể bằng một ô tham chiếu để dễ dàng kéo công thức xuống cho các nhân viên khác.\nTôi: Tên nhân viên mình để ở cột A, doanh số ở cột B, còn danh sách tên cần tổng hợp mình để ở cột E bắt đầu từ ô E2.\nDương Đức Mai: Với cấu trúc này, bạn nhập công thức tại ô F2 (ngay bên cạnh ô tên đầu tiên) rồi kéo xuống cho các ô còn lại:\n```excel\n=SUMIF(A:A, E2, B:B)\n```\nTrong đó: A:A là cột chứa toàn bộ tên nhân viên, E2 là tên nhân viên cụ thể bạn muốn tính tổng, và B:B là cột chứa số tiền doanh số. Khi bạn kéo xuống F3, F4... thì E2 sẽ tự động nhảy thành E3, E4 để tính cho những người tiếp theo.\nTôi: Có, giờ mình muốn tính tổng nhưng phải thỏa mãn 2 điều kiện: tên ở cột E và tháng ở cột C phải khớp với tháng mình chọn ở ô G1.\nDương Đức Mai: Khi có từ hai điều kiện trở lên, bạn cần chuyển sang dùng hàm SUMIFS (có chữ S ở cuối). Công thức tại ô F2 lúc này sẽ thay đổi như sau:\n```excel\n=SUMIFS(B:B, A:A, E2, C:C, G1)\n```\nThứ tự các thành phần trong SUMIFS sẽ khác với SUMIF: vùng tính tổng (B:B) được đưa lên đầu tiên, sau đó mới đến các cặp \"vùng điều kiện\" và \"điều kiện\" (A:A khớp E2 và C:C khớp G1).",
+   "ans": "Tôi: Chào bạn, mình có một bảng doanh thu theo tháng của 10 nhân viên. Mình muốn tính tổng doanh số cho những ai đạt trên 50 triệu, còn dưới 50 triệu thì để trống. Dùng hàm gì cho nhanh nhỉ?\nNguyễn Thu Vy: Trong trường hợp này, bạn nên dùng hàm SUMIF nếu muốn tính tổng chung, hoặc hàm IF kết hợp với SUM nếu muốn tính cho từng người. Để tính tổng doanh số cho từng nhân viên thỏa mãn điều kiện trên 50 triệu, bạn dùng công thức: =IF(SUM(vùng_doanh_số) > 50000000, SUM(vùng_doanh_số), \"\").\nTôi: À mà khoan, mình định tính thêm thuế VAT 10% sau khi đã giảm giá 15% cho mỗi đơn hàng để khách thấy khích lệ hơn. Bạn sửa lại công thức giúp mình với.\nNguyễn Thu Vy: Để tính thuế VAT, bạn chỉ cần lấy mức giảm giá nhân với 10%. Công thức mới sẽ là: =IF(SUM(vùng_doanh_số) > 10000000, IF(SUM(vùng_doanh_số) <= 50000000, 0)).\nTôi: Ok rồi. Giờ mình muốn thêm điều kiện: nếu doanh số trên 20 triệu thì được 8%, còn lại là",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu quý iii (đơn vị: triệu đồng) cho 5 mục: Đà Lạt 92, Hà Nội 900, Vinh 17, Huế 60, Đà Nẵng 160.",
+   "ans": "Biểu đồ cột thể hiện doanh thu quý iii (đơn vị: triệu đồng) cho 5 mục: Đà Lạt 70, Hải Phòng 87, Nha Trang 480, Vinh 36, Huế 19.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Bùi Thùy Nga (địa chỉ nga.bi@truong.edu.vn).",
+   "ans": "Người gửi là Nguyễn Quang Hùng (địa chỉ hng.nguyn@congty.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Tháng 2\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Tháng 2\" có giá trị 81 sản phẩm.",
+   "ans": "\"Tháng 2\" có giá trị 680 sản phẩm.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Người đang trò chuyện với tôi tên là gì?",
+   "ref": "Người đó tên là Dương Đức Hà.",
+   "ans": "Người đó tên là Bùi Minh Vy.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef dinh_dang_luong(so_tien):\n    # Sử dụng f-string với định dạng :, để tự động thêm dấu phẩy hàng nghìn\n    chuoi_dinh_dang = f\"{so_tien:,} VNĐ\"\n    return chuoi_dinh_dang\n```",
+   "ans": "```python\ndef dinh_dang_tien(so_tien):\n    # Sử dụng f-string với định dạng :, để tự động thêm dấu phẩy ngăn cách hàng nghìn\n    chuoi_dinh_dang = f\"{so_tien:,} VNĐ\"\n    return chuoi_dinh_dang\n```",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 28 của đoạn code viết gì?",
+   "ref": "# Kết quả: Tổng điểm hệ số: 1,234,567.89",
+   "ans": "print(f\"Học sinh: {ten_hoc_sinh} - Học phí: {gia_ve}đ\")",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 13 dòng dữ liệu.",
+   "ans": "Bảng có 13 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_email",
+   "q": "Tiêu đề của email là gì?",
+   "ref": "Tiêu đề email: \"Xác nhận đơn hàng\".",
+   "ans": "Tiêu đề email: \"Phản hồi đề xuất\".",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 1294 triệu đồng.",
+   "ans": "Tổng các giá trị là 1309 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Tính tổng cột \"Thực lĩnh\".",
+   "ref": "Tổng cột \"Thực lĩnh\" là 78.384.000.",
+   "ans": "Tổng cột \"Thực lĩnh\" là 86.922.000.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 5 dòng dữ liệu.",
+   "ans": "Bảng có 5 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_excel_luong",
+   "q": "Ô đang được chọn là ô nào và chứa công thức gì?",
+   "ref": "Ô đang chọn là F10, chứa công thức =ROUND(E10*D10/26,-3).",
+   "ans": "Ô đang chọn là F8, chứa công thức =ROUND(E8*D8/26,-3).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Ô E9 trong bảng có giá trị gì?",
+   "ref": "Ô E9 có giá trị 108.",
+   "ans": "Ô E9 có giá trị 11.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 11 của đoạn code viết gì?",
+   "ref": "# Giải thích: 12 là số lớn nhất chia hết cho cả 24 và 36.",
+   "ans": "# 3. Sử dụng hàm gcd (Greatest Common Divisor)",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_email",
+   "q": "Ai là người gửi email đang mở?",
+   "ref": "Người gửi là Phạm Đức Châu (địa chỉ chu.phm@congty.vn).",
+   "ans": "Người gửi là Nguyễn Thùy Nga (địa chỉ nga.nguyn@congty.vn).",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Giá trị của \"Kế toán\" trên biểu đồ là bao nhiêu?",
+   "ref": "\"Kế toán\" có giá trị 27 đơn hàng.",
+   "ans": "\"Kế toán\" có giá trị 310 đơn hàng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\ndef tinh_chi_phi_thuc_te(ngan_sach, danh_sach_chi):\n    # Tính tổng tất cả các khoản chi trong danh sách\n    tong_chi = sum(danh_sach_chi)\n    # Tính số tiền còn lại hoặc số tiền thâm hụt\n    con_lai = ngan_sach - tong_chi\n    return float(con_lai)\n```",
+   "ans": "```python\ndef kiem_tra_don_hang(ma1, ma2):\n    # Nếu độ dài khác nhau thì chắc chắn không phải anagram\n    if len(ma1) != len(ma2):\n        return False\n    \n    # Sắp xếp các ký tự trong chuỗi và so sánh hai danh sách kết quả\n    return sorted(ma1) == sorted(ma2)\n```",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chat",
+   "q": "Chép lại đoạn hội thoại trong ảnh.",
+   "ref": "Tôi: Ông xem lại đoạn code Python tính diện tích hình trụ hồi nãy, thêm cho tôi tính năng cho phép người dùng nhập dữ liệu từ bàn phím thay vì gán cứng biến nhé.\nBùi Bảo Mai: Được chứ, mình sẽ thay các dòng gán giá trị bằng hàm input(). Vì input() mặc định trả về kiểu chuỗi, nên mình cần ép kiểu sang float để tính toán được số thập phân.\n\nĐây là đoạn code đã cập nhật:\n```python\nimport math\n\ntry:\n    r = float(input(\"Nhập bán kính r: \"))\n    h = float(input(\"Nhập chiều cao h: \"))\n    \n    v = math.pi * r**2 * h\n    print(f\"Thể tích hình trụ là: {v:.2f}\")\nTôi: Đoạn try-except này hoạt động thế nào vậy? Tại sao lại dùng ValueError mà không phải cái khác?\nBùi Bảo Mai: Khối try-except hoạt động theo cơ chế \"thử và bắt lỗi\": chương trình sẽ thực thi các câu lệnh trong phần try, nếu có lỗi xảy ra, nó sẽ lập tức nhảy xuống phần except để xử lý thay vì dừng đột ngột. \n\nViệc dùng ValueError ở đây là vì hàm float() sẽ ném ra đúng loại lỗi này khi nó không thể chuyển đổi một chuỗi (ví dụ: \"abc\") sang số thực.",
+   "ans": "Tôi: Anh xem giúp em đoạn code Python này chạy chậm quá, nó dùng để tính tổng bình phương các số từ 1 đến n. Em đang dùng vòng lặp for cơ bản để duyệt qua từng phần tử:\n```python\ntotal = 0\nfor i in range(1, n + 1):\n    total += i**2\n```\nHoàng Thanh Giang: Đoạn code của em hiện đang dùng vòng lặp for thuần để tính tổng bình phương, nên khi n lớn (ví dụ hàng triệu), máy sẽ mất nhiều thời gian xử lý vì phải thực hiện n phép nhân và n phép cộng.\n\nĐể tối ưu, em nên sử dụng công thức toán học hoặc thư viện math để tính toán trực tiếp trên toàn bộ mảng. Công thức tính tổng bình phương từ 1 đến n là: S = (n * (n + 1) * (2 * n + 1)) / 6.\nTôi: Có chứ, viết lại giúp em đi.\nHoàng Thanh Giang: Đây là đoạn code đã tối ưu bằng công thức toán học để đạt độ phức tạp O(1), giúp kết quả trả về tức thì dù n có lớn đến đâu:\n\n```python\ndef calculate_sum_squares(n):\n    return (n * (n + 1) * (2 * n + 1)) // 6\n```\n\nCách viết này tận dụng",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện lượt khách năm 2026 (đơn vị: lượt khách) cho 4 mục: Marketing 71, Kinh doanh 65, Kế toán 9, Nhân sự 32.",
+   "ans": "Biểu đồ cột thể hiện lượt khách năm 2026 (đơn vị: lượt khách) cho 4 mục: Nhân sự 58, Hành chính 37, Kinh doanh 61, Marketing 75.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_email",
+   "q": "Chép lại nội dung email đang mở.",
+   "ref": "Dưới đây là nội dung lịch trình đã được soạn thảo lại theo định dạng chuyên nghiệp để bạn copy vào Google Docs:\n\n**CHƯƠNG TRÌNH DU LỊCH ĐÀ NẴNG - 3 NGÀY 2 ĐÊM**\n\n**1. Thông tin chung:**\n*   **Thời gian:** 3 ngày 2 đêm\n*   **Giá trọn gói:** 5.500.000 VNĐ / khách\n\n**2. Lịch trình chi tiết:**\n\n*   **Ngày 1: Đến Đà Nẵng - Check-in**\n    *   Đón khách tại sân bay quốc tế Cam Ranh.\n    *   Di chuyển về khách sạn làm thủ tục nhận phòng (Check-in).\n    *   Thưởng thức bữa tối với các món đặc sản địa phương.\n\n*   **Ngày 2: Khám phá Bà Nà Hills**\n    *   Tham quan Bà Nà Hills.\n    *   Ăn trưa buffet tại khu vực Bà Nà.\n    *   Buổi tối: Tự do khám phá chợ đêm.\n\n*   **Ngày 3: Mua sắm - Kết thúc hành trình**\n    *   Sáng: Tự do mua sắm quà lưu niệm.\n    *   Di chuyển ra sân bay, làm thủ tục về.\n\n**3. Dịch vụ bao gồm:**\n*   Vé máy bay khứ hồi.\n*   Khách sạn tiêu chuẩn 4 sao.\n*   Các bữa ăn theo chương trình đã nêu trên.\n\n---\n**Hướng dẫn xuất file PDF từ Google Docs:**\nSau khi bạn dán nội dung trên vào Google Docs và căn chỉnh xong, hãy làm theo các bước sau để xuất file:\n1. Vào menu **File** ở góc trên cùng bên trái.\n2. Chọn dòng **Download** (Tải xuống).\n3. Chọn định dạng **PDF Document (.pdf)**.\n4. File sẽ được tải về máy tính của bạn dưới dạng PDF để gửi cho khách.\n\nBạn có muốn tôi điều chỉnh thêm font chữ hay thêm phần lưu ý về hành lý cho khách không?",
+   "ans": "Dưới đây là mẫu email báo giá chuyên nghiệp dựa trên yêu cầu của bạn:\n\n**Tiêu đề:** [Tên Trường THPT] - Yêu cầu xác nhận báo giá và thời gian giao hàng\n\n**Kính gửi:** Ban Giám đốc/Bộ phận Kinh doanh - [Tên công ty cung cấp],\n\nLời đầu tiên, thay mặt [Tên trường THPT], tôi xin gửi lời chào trân trọng đến Quý công ty.\n\nDựa trên trao đổi trước đó, chúng tôi muốn xác nhận lại việc đặt hàng các mặt hàng văn phòng phẩm phục vụ nhu cầu của nhà trường, cụ thể như sau:\n\n1. **Giấy Double A (75gsm):** 10 thùng.\n2. **Mực in Canon 293:** 05 hộp.\n\nĐể thuận tiện cho việc quyết toán và chuẩn bị kho bãi, kính mong Quý công ty phản hồi giúp các nội dung sau:\n*   Xác nhận báo giá chính thức cho các mặt hàng trên (vui lòng áp dụng chính sách chiết khấu dành cho đơn vị trường học nếu có).\n*   Thời gian dự kiến giao hàng đến trường.\n\nNếu các thông tin trên đã hợp lý, xin vui lòng gửi bản báo giá chính thức qua email này để chúng tôi tiến hành các thủ tục thanh toán và nhận hóa đơn theo quy định.\n\nRất mong nhận được phản hồi sớm từ Quý công ty để kịp tiến độ công việc.\n\nTrân",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\n# Ví dụ 1: Kiểm tra xem có 4 chữ số giống hệt nhau liên tiếp trong số điện thoại không\ndef check_repeated_digits(phone_number, window_size=4):\n    # Trượt cửa sổ từ đầu đến cuối chuỗi\n    for i in range(len(phone_number) - window_size + 1):\n        # Lấy ra \"cửa sổ\" hiện tại\n        window = phone_number[i : i + window_size]\n        # Nếu tất cả ký tự trong cửa sổ giống ký tự đầu tiên\n        if window == window[0] * window_size:\n            return f\"Tìm thấy chuỗi lặp: {window} tại vị trí {i}\"\n    return \"Không tìm thấy\"\n\nphone1 = \"09123333456\" # Có 4 số 3 liên tiếp\nphone2 = \"0987654321\"   # Không có\nprint(f\"Số {phone1}: {check_repeated_digits(phone1)}\")\nprint(f\"Số {phone2}: {check_repeated_digits(phone2)}\")\n\n# Ví dụ 2: Tìm tổng lớn nhất của 3 chữ số liên tiếp trong một dãy số\ndef max_sum_window(digits, k=3):\n    # Tính tổng cửa sổ đầu tiên\n    current_sum = sum(digits[:k])\n    max_val = current_sum\n    \n    # Trượt cửa sổ: Trừ số bên trái, cộng số bên phải\n    for i in range(len(digits) - k):\n        current_sum = current_sum - digits[i] + digits[i + k]\n        max_val = max(max_val, current_sum)\n        \n    return max_val\n\nnumbers = [0, 9, 1, 2, 8, 8, 9, 3] # 8+8+9 = 25 là lớn nhất\nprint(f\"Tổng 3 số liên tiếp lớn nhất: {max_sum_window(numbers)}\")\n```",
+   "ans": "```python\n# Ví dụ 1: Sử dụng hàm zip() - Cách ngắn gọn và phổ biến nhất\n# Danh sách: (Tên khách, Số điện thoại)\ncustomers = [(\"An\", \"090123\"), (\"Bình\", \"090456\"), (\"Chi\", \"090789\")]\n\n# zip() sẽ giải nén các tuple thành các cặp (Tên, Số điện thoại)\nfull_customers = [(customer, \"An\", \"090123\"), (customer, \"Bình\", \"090456\"), (customer, \"Chi\", \"090789\")]\n\nprint(\"Khách hàng toàn diện:\", full_customers[:3])\n# Kết quả: [('An', '090123'), ('Bình', '090456'), ('Chi', '090789')]\n\n# Ví dụ 2: Sử dụng vòng lặp for (Dành cho các trường hợp đặc biệt)\n# Danh sách: (Tên khách, Số điện thoại)\ncustomers_with_phone = [(\"An\", \"090123\"",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\n# Ví dụ 1: Kiểm tra một số có phải số nguyên tố không (Cách cơ bản)\ndef is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n# Giả sử mã tỉnh A là 17, tỉnh B là 20\ntinh_A = 17\ntinh_B = 20\nprint(f\"Tỉnh A ({tinh_A}) là số nguyên tố: {is_prime(tinh_A)}\") # Kết quả: True\nprint(f\"Tỉnh B ({tinh_B}) là số nguyên tố: {is_prime(tinh_B)}\") # Kết quả: False\n\n# Ví dụ 2: Sàng Eratosthenes để lọc danh sách mã tỉnh từ 0 đến 50\ndef sieve_eratosthenes(limit):\n    primes = [True] * (limit + 1)\n    primes[0] = primes[1] = False # 0 và 1 không là số nguyên tố\n    \n    for p in range(2, int(limit**0.5) + 1):\n        if primes[p]:\n            # Đánh dấu tất cả bội của p là False\n            for i in range(p * p, limit + 1, p):\n                primes[i] = False\n    \n    # Trả về danh sách các số còn True\n    return [p for p in range(limit + 1) if primes[p]]\n\n# Bối cảnh: Lọc các mã tỉnh là số nguyên tố để theo dõi nhiệt độ\nma_tinh_max = 50\ndanh_sach_so_nguyen_to = sieve_eratosthenes(ma_tinh_max)\nprint(f\"Các mã tỉnh cần theo dõi nhiệt độ: {danh_sach_so_nguyen_to}\")\n# Kết quả: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]\n```",
+   "ans": "```python\n# Ví dụ 1: Kiểm tra một số đơn lẻ (Cách cơ bản)\ndef is_prime(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n# Giả sử mã tỉnh A là 120 và tỉnh B là 200\ntinh_A = 120 \ntinh_B = 200\nprint(f\"Tỉnh A ({tinh_A}) là số nguyên tố: {is_prime(tinh_A)}\") # Kết quả: True\nprint(f\"Tỉnh B ({tinh_B}) là số nguyên tố: {is_prime(tinh_B)}\") # Kết quả: False\n\n# Ví dụ 2: Sàng Eratosthenes để lọc danh sách mã tỉnh từ 0 đến 50\ndef sieve_eratosthenes(limit):\n    primes = [True] * (limit + 1)\n    primes[0] = primes[1] = False # 0 và 1 không là số nguyên tố\n    \n    for p in range(2, int(limit**0.5) + 1):\n        if pr",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 11 của đoạn code viết gì?",
+   "ref": "# Trượt cửa sổ: cộng phần tử mới vào bên phải, trừ phần tử cũ bên trái",
+   "ans": "# Nếu phần tử là số, cộng trực tiếp vào tổng",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Chép lại bảng trong ảnh dưới dạng bảng Markdown.",
+   "ref": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Gạo ST25 | 206 | 148 | 302 | 52 |\n| 2 | Bánh quy | 192 | 10 | 167 | 35 |\n| 3 | Nước mắm | 39 | 53 | 85 | 7 |\n| 4 | Ổ cứng SSD | 85 | 159 | 184 | 60 |\n| 5 | Bánh quy | 117 | 17 | 92 | 42 |\n| 6 | Cà phê hạt | 64 | 62 | 93 | 33 |",
+   "ans": "| STT | Mặt hàng | Tồn đầu | Nhập | Xuất | Tồn cuối |\n|---|---|---|---|---|---|\n| 1 | Đồng hồ | 287 | 130 | 314 | 59 |\n| 2 | Cà phê hạt | 162 | 150 | 206 | 112 |\n| 3 | Gạo ST25 | 200 | 160 | 208 | 168 |\n| 4 | Sữa tươi | 273 | 140 | 39 | 392 |\n| 5 | Cà phê hạt | 200 | 160 | 216 | 118 |\n| 6 | Nước mắm | 257 | 117 | 259 | 118 |",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_doc",
+   "q": "Tiêu đề văn bản trong ảnh là gì?",
+   "ref": "Phân thức đại số",
+   "ans": "Số thực",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_code",
+   "q": "Chép lại đoạn code trong ảnh.",
+   "ref": "```python\n# Ví dụ 1: Định dạng số tiền cơ bản\ndon_gia = 150000\nso_luong = 3\ntong_tien = don_gia * so_luong\n\n# Sử dụng {bien:,} để định dạng dấu phẩy\nprint(f\"Tổng tiền đơn hàng là: {tong_tien:,} VND\") \n# Kết quả: Tổng tiền đơn hàng là: 450,000 VND\n\n# Ví dụ 2: Quản lý danh sách sản phẩm trong shop\nshopping_cart = {\n    \"iPhone 15\": 22000000,\n    \"Ốp lưng\": 250000,\n    \"Củ sạc\": 500000\n}\n\nprint(\"--- CHI TIẾT ĐƠN HÀNG ---\")\nfor sp, gia in shopping_cart.items():\n    print(f\"{sp}: {gia:,} VND\")\n# Kết quả: \n# iPhone 15: 22,000,000 VND\n# Ốp lưng: 250,000 VND\n# Củ sạc: 500,000 VND\n```",
+   "ans": "```python\n# Ví dụ 1: Tính tổng tiền đơn hàng sau khi áp mã giảm giá\ntien_don_hang = 1250000\nma_giam_gia = \"GIAM10\"\n\n# Sử dụng f-string với định dạng :, để tự động thêm dấu phẩy phân cách hàng nghìn\ntong_tien = f\"{tien_don_hang:,}\".replace(\",\", \".\") \nprint(f\"Tổng tiền đơn hàng: {tong_tien:,} VNĐ\") \n# Kết quả: Tổng tiền đơn hàng: 1,250,000 VNĐ\n\n# Ví dụ 2: Tính số tiền được giảm dựa trên mã giảm giá\nso_tien_giam = 0\nfor i in range(len(tien_don_hang)): # Duyệt qua danh sách đơn hàng\n    if tien_don_hang[i] == \"GIAM10\":\n        so_tien_giam += tien_don_hang[i]\nprint(f\"Số tiền được giảm: {so_tien_giam} VNĐ\") \n# Kết quả: Số tiền được giảm: 1,250,000 VNĐ\n\n# Ví dụ 3: Tính tổng tiền cho nhiều đơn hàng trong một danh sách\ndanh_sach_don_hang =",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 943 triệu đồng.",
+   "ans": "Tổng các giá trị là 1207 triệu đồng.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Cột nào cao nhất và bằng bao nhiêu?",
+   "ref": "Cột cao nhất là \"Đà Lạt\" với 170 triệu đồng.",
+   "ans": "Cột cao nhất là \"Đà Lạt\" với 580 triệu đồng.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Tổng các giá trị trên biểu đồ là bao nhiêu?",
+   "ref": "Tổng các giá trị là 1209 lượt khách.",
+   "ans": "Tổng các giá trị là 1236 lượt khách.",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_excel_ban",
+   "q": "Bảng có bao nhiêu dòng dữ liệu (không tính dòng tiêu đề)?",
+   "ref": "Bảng có 14 dòng dữ liệu.",
+   "ans": "Bảng có 14 dòng dữ liệu.",
+   "judge": "dung"
+  },
+  {
+   "src": "screen_code",
+   "q": "Dòng 4 của đoạn code viết gì?",
+   "ref": "# Khởi tạo từ điển để lưu trữ tần suất",
+   "ans": "# Sử dụng lambda để lấy phần tử thứ 2 (index 1) của tuple làm khóa sắp xếp",
+   "judge": "sai"
+  },
+  {
+   "src": "screen_chart",
+   "q": "Biểu đồ này nói về điều gì?",
+   "ref": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 4 mục: Tháng 1 25, Tháng 2 46, Tháng 3 380, Tháng 4 470.",
+   "ans": "Biểu đồ cột thể hiện doanh thu 6 tháng đầu năm (đơn vị: triệu đồng) cho 5 mục: Tháng 1 21, Tháng 2 40, Tháng 3 720, Tháng 4 88, Tháng 5 94.",
+   "judge": "mot_phan"
+  },
+  {
+   "src": "screen_excel_kho",
+   "q": "Tính tổng cột \"Nhập\".",
+   "ref": "Tổng cột \"Nhập\" là 496.",
+   "ans": "Tổng cột \"Nhập\" là 586.",
+   "judge": "sai"
+  }
+ ],
+ "res": {
+  "n": 200,
+  "dung_%": 9.0,
+  "mot_phan_%": 7.5,
+  "khop_gia_tri_%": 12.9,
+  "chep_lai_giong": 0.178
+ }
+}

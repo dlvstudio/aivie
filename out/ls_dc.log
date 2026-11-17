@@ -1,0 +1,45 @@
+[     0.0s] === load_loai_suy START (pid=21132) → out/logs/load_loai_suy_20260815_194434.log ===
+[     0.0s] load checkpoint checkpoints/loai_suy.pkl …
+[     0.0s] ▶ unpickle
+[     0.2s] ✓ unpickle  (0.2s)
+[     0.2s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.2s] ✓ adjacency  (0.9s)
+[     1.2s] ▶ embedding
+[     1.2s] ✓ embedding  (0.0s)
+[     1.2s] ▶ parents
+[     1.2s] parents: deserialize 36482 records …
+[     1.2s] parents 5000/36482 (13.7%)
+[     1.3s] parents 10000/36482 (27.4%)
+[     1.3s] parents 15000/36482 (41.1%)
+[     1.4s] parents 20000/36482 (54.8%)
+[     1.4s] parents 25000/36482 (68.5%)
+[     1.5s] parents 30000/36482 (82.2%)
+[     1.5s] parents 35000/36482 (95.9%)
+[     2.1s] ▶ rebuild_hierarchical_index …
+[     2.2s] ✓ rebuild_hierarchical_index (0.1s)
+[     2.6s]     resync match_ids: 36482/36482 cha (df dựng lại)
+[     2.6s] ✓ parents  (1.4s)
+[     2.6s] ✓ loaded: vocab=32002 parents=36482 E=(32002, 96)
+[     2.6s] sidecar thiếu → migrate: loai_suy.content.pkl
+[     2.6s] ✓ load_checkpoint XONG
+
+### checkpoints/loai_suy.pkl · 36482 cha · 145 bộ · chuỗi THUẦN
+
+  145 bộ chấm được
+  THU HỒI m3:  top-1   0.7%  ·  top-5   2.8%  ·  top-10  18.6%
+  ĐỐI CHỨNG m3 của bộ KHÁC trong top-10: 1.4%
+  (đối chiếu) LỚP đúng trong top-10: 0.7%
+
+  8 bộ đầu:
+     «ngặt như loài ___» giữ lại='bóng' lớp='loại' → ['họ', 'sản', 'ước', 'chúng', 'tảng', 'Sa']
+     «sạch như loài ___» giữ lại='băng' lớp='loài' → ['chúng', 'tảng', 'lời', 'chữ', 'dây', 'hệ']
+     «thuận như loài ___» giữ lại='châu' lớp='phần' → ['Pháp', 'được', 'chữ', 'Anh', 'chúng', 'tảng']
+     «lành như loài ___» giữ lại='chiều' lớp='khoảng' → ['sản', 'ước', 'chúng', 'tảng', 'Sa', 'học']
+     «rách như loài ___» giữ lại='choá' lớp='bộ phận' → ['chúng', 'tảng', 'bia', 'họ', 'Jene', 'nam']
+     «nhanh như loài ___» giữ lại='bí' lớp='cây' → ['chúng', 'tảng', 'người', 'lời', 'chữ', 'dây']
+     «mèng như loài ___» giữ lại='bục' lớp='vật' → ['họ', 'chúng', 'tảng', 'Hùm', 'Thủ', 'Lan']
+     «chăm như loài ___» giữ lại='bô' lớp='đồ dùng' → ['lực', 'chúng', 'tảng', 'Lao', 'Di', 'lời']
+
+[14s] xong

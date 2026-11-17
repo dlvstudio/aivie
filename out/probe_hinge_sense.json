@@ -1,0 +1,56 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_prompt": 400,
+ "d": 8,
+ "gate": {
+  "gap_min": 0.15,
+  "zero_gap_min": 0.1
+ },
+ "sinh": {
+  "n": 738,
+  "trung_binh": 0.1433890010712918,
+  "trung_vi": 0.0,
+  "ty_le_bang_0": 0.5704607046070461,
+  "ty_le_tren_50pc": 0.12737127371273713
+ },
+ "that": {
+  "n": 469,
+  "trung_binh": 0.11107786365757372,
+  "trung_vi": 0.0,
+  "ty_le_bang_0": 0.6545842217484008,
+  "ty_le_tren_50pc": 0.09381663113006397
+ },
+ "gap": -0.03231113741371808,
+ "zero_gap": -0.08412351714135469,
+ "gate_pass": false,
+ "vi_du_vay_han": [
+  "' Ban Nha' ⇒ ' Nha biển'",
+  "' khai sinh' ⇒ ' sinh ra'",
+  "' sông Thần' ⇒ ' Thần đời'",
+  "' °C' ⇒ 'C cả'",
+  "' năm tới' ⇒ ' tới 2'",
+  "' 32' ⇒ '2 năm'",
+  "' hoặc sau' ⇒ ' sau này'",
+  "' vắn số' ⇒ ' số các'",
+  "' dũng cảm' ⇒ ' cảm nhận'",
+  "' quốc gia' ⇒ ' gia vị'",
+  "' trừ cho' ⇒ ' cho là'",
+  "' bằng 6' ⇒ ' 6 năm'"
+ ],
+ "doi_vai_sinh": 0.1070460704607046,
+ "doi_vai_that": 0.0,
+ "doi_vai_that_khong_tru": 0.0014388489208633094,
+ "vi_du_doi_vai": [
+  "' người Việt' ⇒ ' Việt Nam'  (trái 6% · phải 59%)",
+  "' một lần' ⇒ ' lần thứ'  (trái 9% · phải 7%)",
+  "' nhân dân' ⇒ ' dân số'  (trái 14% · phải 9%)",
+  "' tối đa' ⇒ ' đa số'  (trái 13% · phải 23%)",
+  "' vào rừng' ⇒ ' rừng núi'  (trái 13% · phải 11%)",
+  "' tư duy' ⇒ ' duy nhất'  (trái 17% · phải 36%)",
+  "' nhà Lý' ⇒ ' Lý Thái'  (trái 15% · phải 8%)",
+  "' dân tộc' ⇒ ' tộc Việt'  (trái 69% · phải 7%)",
+  "' Phạm Tầm' ⇒ ' Tầm lên'  (trái 50% · phải 25%)",
+  "' rất sớm' ⇒ ' sớm nhất'  (trái 11% · phải 9%)"
+ ],
+ "seconds": 10.4
+}

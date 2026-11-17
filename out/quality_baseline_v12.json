@@ -1,0 +1,116 @@
+{
+  "summary": {
+    "n": 8,
+    "pmi_mean": 2.0994,
+    "hub_ratio_mean": 0.0319,
+    "salad_after_period_rate": 0.0,
+    "eos_rate": 1.0,
+    "doi_do_ok_rate": 1.0,
+    "mz": false,
+    "elapsed_s": 250.1,
+    "gates": {
+      "pmi_ge_0_8": true,
+      "salad_le_0_4": true,
+      "doi_do_ge_0_6": true
+    },
+    "quality_pass": true
+  },
+  "rows": [
+    {
+      "prompt": "Năm 1010, vua Lý Thái Tổ",
+      "seed": 0,
+      "text": "Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long.",
+      "cont": "quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long.",
+      "pmi": 1.3443,
+      "hub_ratio": 0.0556,
+      "salad_after_period": false,
+      "doi_do_clause_ok": true,
+      "n_tok": 20,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Nhà Lý dời đô về",
+      "seed": 0,
+      "text": "Nhà Lý dời đô về Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô.",
+      "cont": "Thăng Long, đặt nền móng cho sự phát triển lâu dài của kinh đô.",
+      "pmi": 1.5389,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": true,
+      "n_tok": 17,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Ngô Quyền đánh bại quân Nam Hán năm",
+      "seed": 0,
+      "text": "Ngô Quyền đánh bại quân Nam Hán năm thắng quân Nam Hán.",
+      "cont": "thắng quân Nam Hán.",
+      "pmi": 3.4899,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": null,
+      "n_tok": 6,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Hỏi: Nhà Lý dời đô về đâu? Đáp:",
+      "seed": 0,
+      "text": "Hỏi: Nhà Lý dời đô về đâu? Đáp: Thăng Long.",
+      "cont": "Thăng Long.",
+      "pmi": 3.4386,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": true,
+      "n_tok": 4,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Việt Nam là một quốc gia nằm ở",
+      "seed": 0,
+      "text": "Việt Nam là một quốc gia nằm ở giáp Trung Quốc phía Bắc.",
+      "cont": "giáp Trung Quốc phía Bắc.",
+      "pmi": 2.4578,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": null,
+      "n_tok": 7,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Phở là món ăn",
+      "seed": 0,
+      "text": "Phở là món ăn bò nổi tiếng nhất ở miền Bắc đặc biệt trong Hà Nội nhất.",
+      "cont": "bò nổi tiếng nhất ở miền Bắc đặc biệt trong Hà Nội nhất.",
+      "pmi": 0.7948,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": null,
+      "n_tok": 15,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Trong thời kỳ Bắc thuộc, nhân dân ta",
+      "seed": 0,
+      "text": "Trong thời kỳ Bắc thuộc, nhân dân ta có",
+      "cont": "có",
+      "pmi": 0.5251,
+      "hub_ratio": 0.0,
+      "salad_after_period": false,
+      "doi_do_clause_ok": null,
+      "n_tok": 2,
+      "stopped_eos": true
+    },
+    {
+      "prompt": "Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi",
+      "seed": 0,
+      "text": "Thủ đô Hà Nội có lịch sử hơn nghìn năm, từ khi Việt Nam là Hà Nội.",
+      "cont": "Việt Nam là Hà Nội.",
+      "pmi": 3.206,
+      "hub_ratio": 0.2,
+      "salad_after_period": false,
+      "doi_do_clause_ok": null,
+      "n_tok": 7,
+      "stopped_eos": true
+    }
+  ]
+}

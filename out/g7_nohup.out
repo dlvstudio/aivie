@@ -1,0 +1,354 @@
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    2.1s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.8s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   21.4s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   22.6s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   22.7s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   23.0s] train: 19,696,660 token
+[   23.0s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   23.0s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   27.8s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   27.8s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   27.8s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   27.8s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   27.9s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   27.9s] 
+--- LM NƠ-RON ---
+[   28.5s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   28.8s]   sanity init: loss=10.36 nats (trần đều = ln(32,002) = 10.37)
+[   28.8s]   model: 11.4M tham số (d=256 L=4 ctx=256)
+[   28.8s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   28.8s]     THỪA tham số (embedding 32k×256 chiếm phần lớn) → dropout + early stop
+[   29.9s]     step      0/30000  loss 10.459 (15.088 bits/token)  0s · ETA 92m
+[   57.2s]     step    100/30000  loss 9.707 (14.004 bits/token)  27s · ETA 135m
+[   83.7s]     step    200/30000  loss 9.040 (13.043 bits/token)  54s · ETA 133m
+[  109.6s]     step    300/30000  loss 8.039 (11.598 bits/token)  80s · ETA 131m
+[  135.3s]     step    400/30000  loss 7.311 (10.548 bits/token)  106s · ETA 130m
+[  161.0s]     step    500/30000  loss 6.912 (9.972 bits/token)  131s · ETA 129m
+[  186.9s]     step    600/30000  loss 6.752 (9.741 bits/token)  157s · ETA 128m
+[  213.4s]     step    700/30000  loss 6.511 (9.393 bits/token)  184s · ETA 128m
+[  239.8s]     step    800/30000  loss 6.208 (8.956 bits/token)  210s · ETA 128m
+[  266.0s]     step    900/30000  loss 5.821 (8.398 bits/token)  236s · ETA 127m
+[  292.8s]     step   1000/30000  loss 5.672 (8.183 bits/token)  263s · ETA 127m
+[  319.6s]     step   1100/30000  loss 5.748 (8.292 bits/token)  290s · ETA 127m
+[  346.4s]     step   1200/30000  loss 5.560 (8.021 bits/token)  317s · ETA 127m
+[  373.4s]     step   1300/30000  loss 5.299 (7.645 bits/token)  344s · ETA 126m
+[  400.5s]     step   1400/30000  loss 5.243 (7.563 bits/token)  371s · ETA 126m
+[  427.6s]     step   1500/30000  loss 5.052 (7.288 bits/token)  398s · ETA 126m
+[  454.7s]     step   1600/30000  loss 5.084 (7.335 bits/token)  425s · ETA 126m
+[  482.3s]     step   1700/30000  loss 5.106 (7.367 bits/token)  453s · ETA 125m
+[  509.5s]     step   1800/30000  loss 4.805 (6.932 bits/token)  480s · ETA 125m
+[  536.3s]     step   1900/30000  loss 4.836 (6.977 bits/token)  507s · ETA 125m
+[  564.0s]       ↳ EVAL @2000: 7.209 bits/token · 1.298 bits/BYTE ★ tốt nhất
+[  564.3s]     step   2000/30000  loss 4.895 (7.062 bits/token)  535s · ETA 125m
+[  590.9s]     step   2100/30000  loss 4.701 (6.782 bits/token)  561s · ETA 124m
+[  618.0s]     step   2200/30000  loss 4.656 (6.717 bits/token)  588s · ETA 124m
+[  644.8s]     step   2300/30000  loss 4.421 (6.379 bits/token)  615s · ETA 123m
+[  671.6s]     step   2400/30000  loss 4.634 (6.685 bits/token)  642s · ETA 123m
+[  698.3s]     step   2500/30000  loss 4.862 (7.015 bits/token)  669s · ETA 123m
+[  725.0s]     step   2600/30000  loss 4.381 (6.320 bits/token)  695s · ETA 122m
+[  751.7s]     step   2700/30000  loss 4.681 (6.754 bits/token)  722s · ETA 122m
+[  778.5s]     step   2800/30000  loss 4.311 (6.219 bits/token)  749s · ETA 121m
+[  805.7s]     step   2900/30000  loss 4.643 (6.698 bits/token)  776s · ETA 121m
+[  832.7s]     step   3000/30000  loss 4.644 (6.700 bits/token)  803s · ETA 120m
+[  859.7s]     step   3100/30000  loss 4.521 (6.522 bits/token)  830s · ETA 120m
+[  886.8s]     step   3200/30000  loss 4.197 (6.055 bits/token)  857s · ETA 120m
+[  913.6s]     step   3300/30000  loss 4.489 (6.476 bits/token)  884s · ETA 119m
+[  940.5s]     step   3400/30000  loss 4.323 (6.237 bits/token)  911s · ETA 119m
+[  967.3s]     step   3500/30000  loss 4.270 (6.160 bits/token)  938s · ETA 118m
+[ 1415.9s]     step   3600/30000  loss 4.411 (6.363 bits/token)  1386s · ETA 169m
+[ 1442.2s]     step   3700/30000  loss 4.194 (6.051 bits/token)  1412s · ETA 167m
+[ 1467.8s]     step   3800/30000  loss 4.202 (6.062 bits/token)  1438s · ETA 165m
+[ 1493.1s]     step   3900/30000  loss 3.960 (5.713 bits/token)  1463s · ETA 163m
+[ 1519.0s]       ↳ EVAL @4000: 6.522 bits/token · 1.174 bits/BYTE ★ tốt nhất
+[ 1519.3s]     step   4000/30000  loss 4.023 (5.804 bits/token)  1490s · ETA 161m
+[ 1544.5s]     step   4100/30000  loss 4.111 (5.932 bits/token)  1515s · ETA 159m
+[ 1571.6s]     step   4200/30000  loss 4.171 (6.018 bits/token)  1542s · ETA 158m
+[ 1606.4s]     step   4300/30000  loss 4.434 (6.397 bits/token)  1577s · ETA 157m
+[ 1644.7s]     step   4400/30000  loss 3.879 (5.597 bits/token)  1615s · ETA 157m
+[ 1677.2s]     step   4500/30000  loss 3.950 (5.699 bits/token)  1647s · ETA 156m
+[ 1707.5s]     step   4600/30000  loss 3.940 (5.684 bits/token)  1678s · ETA 154m
+[ 1737.0s]     step   4700/30000  loss 3.841 (5.541 bits/token)  1707s · ETA 153m
+[ 1766.1s]     step   4800/30000  loss 3.829 (5.525 bits/token)  1736s · ETA 152m
+[ 1795.0s]     step   4900/30000  loss 3.640 (5.251 bits/token)  1765s · ETA 151m
+[ 1824.4s]     step   5000/30000  loss 3.948 (5.696 bits/token)  1795s · ETA 150m
+[ 1854.5s]     step   5100/30000  loss 3.823 (5.515 bits/token)  1825s · ETA 148m
+[ 1883.7s]     step   5200/30000  loss 3.882 (5.601 bits/token)  1854s · ETA 147m
+[ 1913.4s]     step   5300/30000  loss 4.011 (5.786 bits/token)  1884s · ETA 146m
+[ 1944.1s]     step   5400/30000  loss 3.789 (5.467 bits/token)  1914s · ETA 145m
+[ 1974.2s]     step   5500/30000  loss 3.782 (5.456 bits/token)  1944s · ETA 144m
+[ 2003.8s]     step   5600/30000  loss 3.724 (5.372 bits/token)  1974s · ETA 143m
+[ 2033.7s]     step   5700/30000  loss 3.875 (5.591 bits/token)  2004s · ETA 142m
+[ 2064.3s]     step   5800/30000  loss 3.604 (5.199 bits/token)  2035s · ETA 141m
+[ 2093.9s]     step   5900/30000  loss 3.842 (5.543 bits/token)  2064s · ETA 140m
+[ 2125.0s]       ↳ EVAL @6000: 6.256 bits/token · 1.126 bits/BYTE ★ tốt nhất
+[ 2125.3s]     step   6000/30000  loss 3.918 (5.652 bits/token)  2096s · ETA 140m
+[ 2155.3s]     step   6100/30000  loss 3.777 (5.450 bits/token)  2126s · ETA 139m
+[ 2184.8s]     step   6200/30000  loss 3.602 (5.196 bits/token)  2155s · ETA 138m
+[ 2213.8s]     step   6300/30000  loss 3.605 (5.200 bits/token)  2184s · ETA 137m
+[ 2242.8s]     step   6400/30000  loss 3.918 (5.652 bits/token)  2213s · ETA 136m
+[ 2272.4s]     step   6500/30000  loss 3.745 (5.402 bits/token)  2243s · ETA 135m
+[ 2301.4s]     step   6600/30000  loss 3.725 (5.373 bits/token)  2272s · ETA 134m
+[ 2330.3s]     step   6700/30000  loss 3.843 (5.544 bits/token)  2301s · ETA 133m
+[ 2359.1s]     step   6800/30000  loss 3.938 (5.681 bits/token)  2329s · ETA 132m
+[ 2387.9s]     step   6900/30000  loss 3.576 (5.159 bits/token)  2358s · ETA 132m
+[ 2417.3s]     step   7000/30000  loss 3.687 (5.320 bits/token)  2388s · ETA 131m
+[ 2446.4s]     step   7100/30000  loss 3.742 (5.398 bits/token)  2417s · ETA 130m
+[ 2475.3s]     step   7200/30000  loss 3.501 (5.050 bits/token)  2446s · ETA 129m
+[ 2504.2s]     step   7300/30000  loss 3.885 (5.605 bits/token)  2474s · ETA 128m
+[ 2533.1s]     step   7400/30000  loss 3.685 (5.317 bits/token)  2503s · ETA 127m
+[ 2561.9s]     step   7500/30000  loss 3.630 (5.237 bits/token)  2532s · ETA 127m
+[ 2592.5s]     step   7600/30000  loss 3.573 (5.155 bits/token)  2563s · ETA 126m
+[ 2622.5s]     step   7700/30000  loss 3.703 (5.342 bits/token)  2593s · ETA 125m
+[ 2653.0s]     step   7800/30000  loss 3.930 (5.670 bits/token)  2623s · ETA 124m
+[ 2683.6s]     step   7900/30000  loss 3.230 (4.660 bits/token)  2654s · ETA 124m
+[ 2714.0s]       ↳ EVAL @8000: 6.069 bits/token · 1.093 bits/BYTE ★ tốt nhất
+[ 2714.3s]     step   8000/30000  loss 3.645 (5.259 bits/token)  2685s · ETA 123m
+[ 2745.0s]     step   8100/30000  loss 3.717 (5.362 bits/token)  2715s · ETA 122m
+[ 2776.4s]     step   8200/30000  loss 3.822 (5.514 bits/token)  2747s · ETA 122m
+[ 2804.9s]     step   8300/30000  loss 3.449 (4.976 bits/token)  2775s · ETA 121m
+[ 2836.5s]     step   8400/30000  loss 3.472 (5.009 bits/token)  2807s · ETA 120m
+[ 2864.2s]     step   8500/30000  loss 3.805 (5.490 bits/token)  2835s · ETA 119m
+[ 2892.7s]     step   8600/30000  loss 3.858 (5.566 bits/token)  2863s · ETA 119m
+[ 2920.8s]     step   8700/30000  loss 3.322 (4.792 bits/token)  2891s · ETA 118m
+[ 2948.9s]     step   8800/30000  loss 3.445 (4.970 bits/token)  2919s · ETA 117m
+[ 2977.1s]     step   8900/30000  loss 3.510 (5.063 bits/token)  2947s · ETA 116m
+[ 3005.3s]     step   9000/30000  loss 3.602 (5.197 bits/token)  2976s · ETA 116m
+[ 3033.5s]     step   9100/30000  loss 3.696 (5.332 bits/token)  3004s · ETA 115m
+[ 3065.2s]     step   9200/30000  loss 3.505 (5.056 bits/token)  3035s · ETA 114m
+[ 3099.9s]     step   9300/30000  loss 3.307 (4.770 bits/token)  3070s · ETA 114m
+[ 3130.6s]     step   9400/30000  loss 3.602 (5.197 bits/token)  3101s · ETA 113m
+[ 3160.3s]     step   9500/30000  loss 3.547 (5.117 bits/token)  3131s · ETA 113m
+[ 3190.0s]     step   9600/30000  loss 3.590 (5.179 bits/token)  3160s · ETA 112m
+[ 3221.4s]     step   9700/30000  loss 3.573 (5.155 bits/token)  3192s · ETA 111m
+[ 3248.9s]     step   9800/30000  loss 3.632 (5.240 bits/token)  3219s · ETA 111m
+[ 3276.3s]     step   9900/30000  loss 3.789 (5.466 bits/token)  3247s · ETA 110m
+[ 3305.0s]       ↳ EVAL @10000: 5.889 bits/token · 1.060 bits/BYTE ★ tốt nhất
+[ 3305.3s]     step  10000/30000  loss 3.572 (5.153 bits/token)  3276s · ETA 109m
+[ 3333.2s]     step  10100/30000  loss 3.577 (5.161 bits/token)  3303s · ETA 108m
+[ 3361.6s]     step  10200/30000  loss 3.485 (5.028 bits/token)  3332s · ETA 108m
+[ 3389.7s]     step  10300/30000  loss 3.614 (5.214 bits/token)  3360s · ETA 107m
+[ 3417.6s]     step  10400/30000  loss 3.704 (5.344 bits/token)  3388s · ETA 106m
+[ 3445.0s]     step  10500/30000  loss 3.460 (4.992 bits/token)  3415s · ETA 106m
+[ 3472.6s]     step  10600/30000  loss 3.491 (5.037 bits/token)  3443s · ETA 105m
+[ 3500.1s]     step  10700/30000  loss 3.365 (4.854 bits/token)  3470s · ETA 104m
+[ 3527.7s]     step  10800/30000  loss 3.512 (5.067 bits/token)  3498s · ETA 104m
+[ 3555.5s]     step  10900/30000  loss 3.344 (4.825 bits/token)  3526s · ETA 103m
+[ 3584.1s]     step  11000/30000  loss 3.585 (5.173 bits/token)  3554s · ETA 102m
+[ 3613.3s]     step  11100/30000  loss 3.622 (5.226 bits/token)  3584s · ETA 102m
+[ 3642.3s]     step  11200/30000  loss 3.559 (5.134 bits/token)  3613s · ETA 101m
+[ 3670.2s]     step  11300/30000  loss 3.689 (5.323 bits/token)  3640s · ETA 100m
+[ 3697.7s]     step  11400/30000  loss 3.403 (4.909 bits/token)  3668s · ETA 100m
+[ 3725.2s]     step  11500/30000  loss 3.215 (4.638 bits/token)  3696s · ETA 99m
+[ 3753.2s]     step  11600/30000  loss 3.580 (5.164 bits/token)  3723s · ETA 98m
+[ 3781.0s]     step  11700/30000  loss 3.391 (4.891 bits/token)  3751s · ETA 98m
+[ 3808.9s]     step  11800/30000  loss 3.569 (5.148 bits/token)  3779s · ETA 97m
+[ 3837.0s]     step  11900/30000  loss 3.640 (5.252 bits/token)  3807s · ETA 97m
+[ 3866.1s]       ↳ EVAL @12000: 5.847 bits/token · 1.053 bits/BYTE ★ tốt nhất
+[ 3866.4s]     step  12000/30000  loss 3.741 (5.397 bits/token)  3837s · ETA 96m
+[ 3894.4s]     step  12100/30000  loss 3.811 (5.498 bits/token)  3865s · ETA 95m
+[ 3922.5s]     step  12200/30000  loss 3.545 (5.114 bits/token)  3893s · ETA 95m
+[ 3950.6s]     step  12300/30000  loss 3.456 (4.986 bits/token)  3921s · ETA 94m
+[ 3978.5s]     step  12400/30000  loss 3.563 (5.140 bits/token)  3949s · ETA 93m
+[ 4006.6s]     step  12500/30000  loss 3.327 (4.800 bits/token)  3977s · ETA 93m
+[ 4034.6s]     step  12600/30000  loss 3.593 (5.184 bits/token)  4005s · ETA 92m
+[ 4068.6s]     step  12700/30000  loss 3.672 (5.298 bits/token)  4039s · ETA 92m
+[ 4098.4s]     step  12800/30000  loss 3.527 (5.088 bits/token)  4069s · ETA 91m
+[ 4127.5s]     step  12900/30000  loss 3.445 (4.971 bits/token)  4098s · ETA 91m
+[ 4156.6s]     step  13000/30000  loss 3.492 (5.037 bits/token)  4127s · ETA 90m
+[ 4186.3s]     step  13100/30000  loss 3.382 (4.879 bits/token)  4157s · ETA 89m
+[ 4217.6s]     step  13200/30000  loss 3.164 (4.565 bits/token)  4188s · ETA 89m
+[ 4247.6s]     step  13300/30000  loss 3.406 (4.914 bits/token)  4218s · ETA 88m
+[ 4280.2s]     step  13400/30000  loss 3.459 (4.991 bits/token)  4250s · ETA 88m
+[ 4310.3s]     step  13500/30000  loss 3.316 (4.784 bits/token)  4281s · ETA 87m
+[ 4340.0s]     step  13600/30000  loss 3.605 (5.201 bits/token)  4310s · ETA 87m
+[ 4370.9s]     step  13700/30000  loss 3.252 (4.692 bits/token)  4341s · ETA 86m
+[ 4402.0s]     step  13800/30000  loss 3.733 (5.386 bits/token)  4372s · ETA 86m
+[ 4436.8s]     step  13900/30000  loss 3.353 (4.837 bits/token)  4407s · ETA 85m
+[ 4468.1s]       ↳ EVAL @14000: 5.778 bits/token · 1.040 bits/BYTE ★ tốt nhất
+[ 4468.4s]     step  14000/30000  loss 3.629 (5.235 bits/token)  4439s · ETA 85m
+[ 4498.9s]     step  14100/30000  loss 3.564 (5.142 bits/token)  4469s · ETA 84m
+[ 4530.6s]     step  14200/30000  loss 3.314 (4.781 bits/token)  4501s · ETA 83m
+[ 4560.7s]     step  14300/30000  loss 3.434 (4.954 bits/token)  4531s · ETA 83m
+[ 4591.4s]     step  14400/30000  loss 3.533 (5.097 bits/token)  4562s · ETA 82m
+[ 4621.6s]     step  14500/30000  loss 3.441 (4.965 bits/token)  4592s · ETA 82m
+[ 4653.6s]     step  14600/30000  loss 3.558 (5.133 bits/token)  4624s · ETA 81m
+[ 4685.2s]     step  14700/30000  loss 3.526 (5.087 bits/token)  4655s · ETA 81m
+[ 4718.0s]     step  14800/30000  loss 3.029 (4.370 bits/token)  4688s · ETA 80m
+[ 4749.1s]     step  14900/30000  loss 3.563 (5.141 bits/token)  4719s · ETA 80m
+[ 4780.3s]     step  15000/30000  loss 3.766 (5.434 bits/token)  4751s · ETA 79m
+[ 4811.3s]     step  15100/30000  loss 3.327 (4.799 bits/token)  4782s · ETA 79m
+[ 4842.3s]     step  15200/30000  loss 3.695 (5.330 bits/token)  4813s · ETA 78m
+[ 4873.1s]     step  15300/30000  loss 3.732 (5.383 bits/token)  4843s · ETA 78m
+[ 4903.4s]     step  15400/30000  loss 3.414 (4.925 bits/token)  4874s · ETA 77m
+[ 4933.8s]     step  15500/30000  loss 3.535 (5.101 bits/token)  4904s · ETA 76m
+[ 4964.4s]     step  15600/30000  loss 3.173 (4.578 bits/token)  4935s · ETA 76m
+[ 4993.9s]     step  15700/30000  loss 3.446 (4.972 bits/token)  4964s · ETA 75m
+[ 5024.3s]     step  15800/30000  loss 3.485 (5.028 bits/token)  4995s · ETA 75m
+[ 5054.3s]     step  15900/30000  loss 3.401 (4.907 bits/token)  5025s · ETA 74m
+[ 5084.9s]       ↳ EVAL @16000: 5.756 bits/token · 1.036 bits/BYTE ★ tốt nhất
+[ 5085.2s]     step  16000/30000  loss 3.379 (4.874 bits/token)  5055s · ETA 74m
+[ 5114.6s]     step  16100/30000  loss 3.530 (5.093 bits/token)  5085s · ETA 73m
+[ 5143.8s]     step  16200/30000  loss 3.321 (4.792 bits/token)  5114s · ETA 73m
+[ 5173.2s]     step  16300/30000  loss 3.301 (4.762 bits/token)  5143s · ETA 72m
+[ 5201.9s]     step  16400/30000  loss 3.288 (4.743 bits/token)  5172s · ETA 71m
+[ 5230.5s]     step  16500/30000  loss 3.773 (5.443 bits/token)  5201s · ETA 71m
+[ 5261.9s]     step  16600/30000  loss 3.659 (5.279 bits/token)  5232s · ETA 70m
+[ 5293.7s]     step  16700/30000  loss 3.302 (4.763 bits/token)  5264s · ETA 70m
+[ 5324.5s]     step  16800/30000  loss 3.539 (5.106 bits/token)  5295s · ETA 69m
+[ 5354.3s]     step  16900/30000  loss 3.349 (4.832 bits/token)  5325s · ETA 69m
+[ 5383.4s]     step  17000/30000  loss 3.302 (4.764 bits/token)  5354s · ETA 68m
+[ 5412.0s]     step  17100/30000  loss 3.430 (4.948 bits/token)  5382s · ETA 68m
+[ 5442.0s]     step  17200/30000  loss 3.475 (5.014 bits/token)  5412s · ETA 67m
+[ 5471.6s]     step  17300/30000  loss 3.271 (4.719 bits/token)  5442s · ETA 67m
+[ 5499.9s]     step  17400/30000  loss 3.301 (4.763 bits/token)  5470s · ETA 66m
+[ 5528.0s]     step  17500/30000  loss 3.418 (4.931 bits/token)  5498s · ETA 65m
+[ 5557.3s]     step  17600/30000  loss 3.463 (4.996 bits/token)  5528s · ETA 65m
+[ 5585.6s]     step  17700/30000  loss 3.603 (5.198 bits/token)  5556s · ETA 64m
+[ 5612.8s]     step  17800/30000  loss 3.562 (5.139 bits/token)  5583s · ETA 64m
+[ 5640.1s]     step  17900/30000  loss 3.170 (4.573 bits/token)  5610s · ETA 63m
+[ 5668.0s]       ↳ EVAL @18000: 5.680 bits/token · 1.023 bits/BYTE ★ tốt nhất
+[ 5668.2s]     step  18000/30000  loss 3.456 (4.986 bits/token)  5639s · ETA 63m
+[ 5695.3s]     step  18100/30000  loss 3.339 (4.818 bits/token)  5666s · ETA 62m
+[ 5722.5s]     step  18200/30000  loss 3.581 (5.167 bits/token)  5693s · ETA 62m
+[ 5749.7s]     step  18300/30000  loss 2.983 (4.303 bits/token)  5720s · ETA 61m
+[ 5777.0s]     step  18400/30000  loss 3.485 (5.028 bits/token)  5747s · ETA 60m
+[ 5804.2s]     step  18500/30000  loss 3.411 (4.920 bits/token)  5775s · ETA 60m
+[ 5831.4s]     step  18600/30000  loss 3.310 (4.775 bits/token)  5802s · ETA 59m
+[ 5858.5s]     step  18700/30000  loss 3.526 (5.087 bits/token)  5829s · ETA 59m
+[ 5885.9s]     step  18800/30000  loss 3.350 (4.833 bits/token)  5856s · ETA 58m
+[ 5913.0s]     step  18900/30000  loss 3.423 (4.939 bits/token)  5883s · ETA 58m
+[ 5940.3s]     step  19000/30000  loss 3.400 (4.906 bits/token)  5911s · ETA 57m
+[ 5967.5s]     step  19100/30000  loss 3.354 (4.839 bits/token)  5938s · ETA 56m
+[ 5995.3s]     step  19200/30000  loss 3.449 (4.976 bits/token)  5966s · ETA 56m
+[ 6022.7s]     step  19300/30000  loss 3.108 (4.484 bits/token)  5993s · ETA 55m
+[ 6051.3s]     step  19400/30000  loss 3.298 (4.758 bits/token)  6021s · ETA 55m
+[ 6079.6s]     step  19500/30000  loss 3.455 (4.984 bits/token)  6050s · ETA 54m
+[ 6106.9s]     step  19600/30000  loss 3.236 (4.668 bits/token)  6077s · ETA 54m
+[ 6133.9s]     step  19700/30000  loss 3.487 (5.030 bits/token)  6104s · ETA 53m
+[ 6161.0s]     step  19800/30000  loss 3.383 (4.880 bits/token)  6131s · ETA 53m
+[ 6188.0s]     step  19900/30000  loss 3.079 (4.442 bits/token)  6158s · ETA 52m
+[ 6215.6s]       ↳ EVAL @20000: 5.672 bits/token · 1.021 bits/BYTE ★ tốt nhất
+[ 6215.9s]     step  20000/30000  loss 3.456 (4.986 bits/token)  6186s · ETA 52m
+[ 6242.8s]     step  20100/30000  loss 3.374 (4.867 bits/token)  6213s · ETA 51m
+[ 6269.8s]     step  20200/30000  loss 3.306 (4.770 bits/token)  6240s · ETA 50m
+[ 6296.9s]     step  20300/30000  loss 3.648 (5.264 bits/token)  6267s · ETA 50m
+[ 6323.9s]     step  20400/30000  loss 3.548 (5.119 bits/token)  6294s · ETA 49m
+[ 6350.8s]     step  20500/30000  loss 3.587 (5.175 bits/token)  6321s · ETA 49m
+[ 6377.7s]     step  20600/30000  loss 3.294 (4.753 bits/token)  6348s · ETA 48m
+[ 6404.6s]     step  20700/30000  loss 3.255 (4.696 bits/token)  6375s · ETA 48m
+[ 6431.3s]     step  20800/30000  loss 3.363 (4.851 bits/token)  6402s · ETA 47m
+[ 6458.1s]     step  20900/30000  loss 3.385 (4.884 bits/token)  6428s · ETA 47m
+[ 6484.8s]     step  21000/30000  loss 3.336 (4.813 bits/token)  6455s · ETA 46m
+[ 6511.5s]     step  21100/30000  loss 3.415 (4.927 bits/token)  6482s · ETA 46m
+[ 6538.6s]     step  21200/30000  loss 3.110 (4.487 bits/token)  6509s · ETA 45m
+[ 6567.9s]     step  21300/30000  loss 3.317 (4.785 bits/token)  6538s · ETA 45m
+[ 6594.9s]     step  21400/30000  loss 3.085 (4.451 bits/token)  6565s · ETA 44m
+[ 6622.0s]     step  21500/30000  loss 3.303 (4.765 bits/token)  6592s · ETA 43m
+[ 6648.6s]     step  21600/30000  loss 3.413 (4.924 bits/token)  6619s · ETA 43m
+[ 6675.2s]     step  21700/30000  loss 3.220 (4.646 bits/token)  6646s · ETA 42m
+[ 6701.9s]     step  21800/30000  loss 3.342 (4.822 bits/token)  6672s · ETA 42m
+[ 6728.5s]     step  21900/30000  loss 3.248 (4.685 bits/token)  6699s · ETA 41m
+[ 6755.8s]       ↳ EVAL @22000: 5.664 bits/token · 1.020 bits/BYTE ★ tốt nhất
+[ 6756.1s]     step  22000/30000  loss 3.247 (4.684 bits/token)  6726s · ETA 41m
+[ 6782.5s]     step  22100/30000  loss 3.316 (4.784 bits/token)  6753s · ETA 40m
+[ 6809.1s]     step  22200/30000  loss 3.539 (5.106 bits/token)  6779s · ETA 40m
+[ 6835.7s]     step  22300/30000  loss 3.405 (4.912 bits/token)  6806s · ETA 39m
+[ 6862.2s]     step  22400/30000  loss 2.941 (4.244 bits/token)  6833s · ETA 39m
+[ 6888.8s]     step  22500/30000  loss 3.503 (5.053 bits/token)  6859s · ETA 38m
+[ 6915.3s]     step  22600/30000  loss 3.540 (5.107 bits/token)  6886s · ETA 38m
+[ 6941.8s]     step  22700/30000  loss 3.569 (5.149 bits/token)  6912s · ETA 37m
+[ 6968.3s]     step  22800/30000  loss 3.216 (4.639 bits/token)  6939s · ETA 37m
+[ 6994.8s]     step  22900/30000  loss 3.263 (4.707 bits/token)  6965s · ETA 36m
+[ 7021.3s]     step  23000/30000  loss 3.009 (4.341 bits/token)  6992s · ETA 35m
+[ 7047.7s]     step  23100/30000  loss 3.342 (4.822 bits/token)  7018s · ETA 35m
+[ 7074.3s]     step  23200/30000  loss 3.195 (4.609 bits/token)  7045s · ETA 34m
+[ 7100.8s]     step  23300/30000  loss 3.296 (4.754 bits/token)  7071s · ETA 34m
+[ 7127.3s]     step  23400/30000  loss 3.245 (4.682 bits/token)  7098s · ETA 33m
+[ 7153.8s]     step  23500/30000  loss 3.459 (4.990 bits/token)  7124s · ETA 33m
+[ 7180.3s]     step  23600/30000  loss 3.442 (4.966 bits/token)  7151s · ETA 32m
+[ 7207.3s]     step  23700/30000  loss 3.442 (4.966 bits/token)  7178s · ETA 32m
+[ 7234.3s]     step  23800/30000  loss 3.211 (4.632 bits/token)  7205s · ETA 31m
+[ 7261.3s]     step  23900/30000  loss 3.298 (4.758 bits/token)  7232s · ETA 31m
+[ 7288.9s]       ↳ EVAL @24000: 5.611 bits/token · 1.010 bits/BYTE ★ tốt nhất
+[ 7289.2s]     step  24000/30000  loss 3.279 (4.731 bits/token)  7259s · ETA 30m
+[ 7315.9s]     step  24100/30000  loss 3.332 (4.807 bits/token)  7286s · ETA 30m
+[ 7342.9s]     step  24200/30000  loss 3.402 (4.909 bits/token)  7313s · ETA 29m
+[ 7369.8s]     step  24300/30000  loss 3.352 (4.835 bits/token)  7340s · ETA 29m
+[ 7396.8s]     step  24400/30000  loss 3.313 (4.780 bits/token)  7367s · ETA 28m
+[ 7423.7s]     step  24500/30000  loss 3.181 (4.589 bits/token)  7394s · ETA 28m
+[ 7450.6s]     step  24600/30000  loss 3.583 (5.169 bits/token)  7421s · ETA 27m
+[ 7477.5s]     step  24700/30000  loss 3.378 (4.873 bits/token)  7448s · ETA 27m
+[ 7504.4s]     step  24800/30000  loss 3.396 (4.900 bits/token)  7475s · ETA 26m
+[ 7531.3s]     step  24900/30000  loss 3.197 (4.613 bits/token)  7502s · ETA 26m
+[ 7558.0s]     step  25000/30000  loss 2.993 (4.317 bits/token)  7528s · ETA 25m
+[ 7585.0s]     step  25100/30000  loss 3.324 (4.796 bits/token)  7555s · ETA 25m
+[ 7611.7s]     step  25200/30000  loss 3.183 (4.593 bits/token)  7582s · ETA 24m
+[ 7638.5s]     step  25300/30000  loss 3.294 (4.752 bits/token)  7609s · ETA 24m
+[ 7665.2s]     step  25400/30000  loss 3.244 (4.681 bits/token)  7635s · ETA 23m
+[ 7692.1s]     step  25500/30000  loss 3.458 (4.989 bits/token)  7662s · ETA 23m
+[ 7718.9s]     step  25600/30000  loss 3.406 (4.914 bits/token)  7689s · ETA 22m
+[ 7745.5s]     step  25700/30000  loss 3.286 (4.741 bits/token)  7716s · ETA 22m
+[ 7772.4s]     step  25800/30000  loss 2.921 (4.214 bits/token)  7743s · ETA 21m
+[ 7799.1s]     step  25900/30000  loss 3.428 (4.946 bits/token)  7769s · ETA 20m
+[ 7826.6s]       ↳ EVAL @26000: 5.606 bits/token · 1.009 bits/BYTE ★ tốt nhất
+[ 7826.8s]     step  26000/30000  loss 3.188 (4.599 bits/token)  7797s · ETA 20m
+[ 7853.4s]     step  26100/30000  loss 3.338 (4.815 bits/token)  7824s · ETA 19m
+[ 7880.1s]     step  26200/30000  loss 3.339 (4.818 bits/token)  7850s · ETA 19m
+[ 7906.8s]     step  26300/30000  loss 3.294 (4.752 bits/token)  7877s · ETA 18m
+[ 7933.5s]     step  26400/30000  loss 3.476 (5.014 bits/token)  7904s · ETA 18m
+[ 7960.2s]     step  26500/30000  loss 3.178 (4.584 bits/token)  7931s · ETA 17m
+[ 7987.0s]     step  26600/30000  loss 3.416 (4.928 bits/token)  7957s · ETA 17m
+[ 8013.7s]     step  26700/30000  loss 3.465 (4.999 bits/token)  7984s · ETA 16m
+[ 8040.5s]     step  26800/30000  loss 3.343 (4.824 bits/token)  8011s · ETA 16m
+[ 8067.2s]     step  26900/30000  loss 3.224 (4.651 bits/token)  8038s · ETA 15m
+[ 8093.9s]     step  27000/30000  loss 3.261 (4.704 bits/token)  8064s · ETA 15m
+[ 8120.6s]     step  27100/30000  loss 3.808 (5.494 bits/token)  8091s · ETA 14m
+[ 8147.4s]     step  27200/30000  loss 3.230 (4.660 bits/token)  8118s · ETA 14m
+[ 8174.1s]     step  27300/30000  loss 3.287 (4.742 bits/token)  8144s · ETA 13m
+[ 8200.7s]     step  27400/30000  loss 3.383 (4.881 bits/token)  8171s · ETA 13m
+[ 8227.4s]     step  27500/30000  loss 3.334 (4.811 bits/token)  8198s · ETA 12m
+[ 8254.1s]     step  27600/30000  loss 3.076 (4.437 bits/token)  8224s · ETA 12m
+[ 8280.9s]     step  27700/30000  loss 3.226 (4.654 bits/token)  8251s · ETA 11m
+[ 8307.5s]     step  27800/30000  loss 3.304 (4.767 bits/token)  8278s · ETA 11m
+[ 8334.2s]     step  27900/30000  loss 3.526 (5.087 bits/token)  8304s · ETA 10m
+[ 8361.6s]       ↳ EVAL @28000: 5.597 bits/token · 1.008 bits/BYTE ★ tốt nhất
+[ 8361.8s]     step  28000/30000  loss 3.436 (4.958 bits/token)  8332s · ETA 10m
+[ 8388.3s]     step  28100/30000  loss 3.347 (4.829 bits/token)  8359s · ETA 9m
+[ 8415.0s]     step  28200/30000  loss 3.264 (4.709 bits/token)  8385s · ETA 9m
+[ 8441.7s]     step  28300/30000  loss 3.621 (5.224 bits/token)  8412s · ETA 8m
+[ 8468.4s]     step  28400/30000  loss 3.011 (4.344 bits/token)  8439s · ETA 8m
+[ 8495.1s]     step  28500/30000  loss 3.444 (4.968 bits/token)  8465s · ETA 7m
+[ 8521.8s]     step  28600/30000  loss 3.264 (4.708 bits/token)  8492s · ETA 7m
+[ 8548.6s]     step  28700/30000  loss 3.112 (4.489 bits/token)  8519s · ETA 6m
+[ 8577.3s]     step  28800/30000  loss 3.406 (4.914 bits/token)  8548s · ETA 6m
+[ 8603.7s]     step  28900/30000  loss 3.260 (4.704 bits/token)  8574s · ETA 5m
+[ 8630.7s]     step  29000/30000  loss 3.120 (4.501 bits/token)  8601s · ETA 5m
+[ 8658.8s]     step  29100/30000  loss 3.541 (5.108 bits/token)  8629s · ETA 4m
+[ 8686.2s]     step  29200/30000  loss 3.359 (4.846 bits/token)  8657s · ETA 4m
+[ 8714.1s]     step  29300/30000  loss 3.579 (5.164 bits/token)  8684s · ETA 3m
+[ 8740.9s]     step  29400/30000  loss 3.013 (4.346 bits/token)  8711s · ETA 3m
+[ 8767.4s]     step  29500/30000  loss 3.306 (4.770 bits/token)  8738s · ETA 2m
+[ 8793.7s]     step  29600/30000  loss 3.217 (4.641 bits/token)  8764s · ETA 2m
+[ 8819.9s]     step  29700/30000  loss 3.198 (4.614 bits/token)  8790s · ETA 1m
+[ 8846.1s]     step  29800/30000  loss 3.300 (4.760 bits/token)  8816s · ETA 1m
+[ 8872.4s]     step  29900/30000  loss 3.556 (5.130 bits/token)  8843s · ETA 0m
+[ 8898.6s]     step  29999/30000  loss 3.468 (5.003 bits/token)  8869s · ETA 0m
+[ 8899.6s]       ↳ EVAL @30000: 5.594 bits/token · 1.007 bits/BYTE ★ tốt nhất
+[ 8900.4s]     nơ-ron (CUỐI): 5.594 bits/token · 1.007 bits/BYTE (3,702 vị trí)
+[ 8902.0s]     TRAIN 4.783 vs EVAL 5.594 bits/token · khoảng cách +0.811
+[ 8902.0s]     ✓ đã có khoảng cách train/eval ⇒ mô hình đã vắt được data; kết luận có nghĩa.
+[ 8902.1s]     → out/g7_best_model.pt
+[ 8902.1s] 
+================================================================
+[ 8902.1s]   ĐẾM     : 1.276 bits/byte
+[ 8902.1s]   NƠ-RON  : 1.007 bits/byte   (Δ -0.269)
+[ 8902.1s] ================================================================
+[ 8902.1s] 
+→ GAP THẬT. Đếm KHÔNG lấy được ngữ cảnh dài. Câu hỏi B vs C có nghĩa.

@@ -1,0 +1,27 @@
+[     0.0s] === load_mini_sent_ep_qa START (pid=29859) → out/logs/load_mini_sent_ep_qa_20260730_222956.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] ▶ unpickle
+[     0.5s] ✓ unpickle  (0.5s)
+[     0.5s] ▶ vocab (32002 token)
+[     0.7s] ✓ vocab (32002 token)  (0.3s)
+[     0.7s] ▶ adjacency
+[     2.4s] ✓ adjacency  (1.7s)
+[     2.4s] ▶ embedding
+[     2.9s] ✓ embedding  (0.4s)
+[     2.9s] ▶ parents
+[     2.9s] parents: deserialize 5664 records …
+[     3.2s] parents 5000/5664 (88.3%)
+[     4.1s] ▶ rebuild_hierarchical_index …
+[     4.1s] ✓ rebuild_hierarchical_index (0.1s)
+[     4.4s]     resync match_ids: 5664/5664 cha (df dựng lại)
+[     4.4s] ✓ parents  (1.5s)
+[     4.4s] ✓ loaded: vocab=32002 parents=5664 E=(32002, 96)
+[     4.5s] sidecar thiếu → migrate: mini_sent_ep_qa.content.pkl
+[     4.5s] ✓ load_checkpoint XONG
+[5s] loaded 5,664 cha
+/Users/dlv/Documents/code/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:2684: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 5664 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent_ep_qa.pkl --in-place
+  ensure_frame_brackets(state)
+[50s] xong base_max
+[92s] xong d4_sum
+[92s] dmax1 ≠ dmax4: 0/30 prompt
+[92s] → out/dir_samples.txt

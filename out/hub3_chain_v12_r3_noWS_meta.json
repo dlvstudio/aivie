@@ -1,0 +1,467 @@
+{
+ "checkpoint": "checkpoints/network_v12_subst_isg_pw.pkl",
+ "n_prop": 30,
+ "n_rows": 23,
+ "rows": {
+  "C000": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Chẳng",
+   "hat_giong": [
+    "hạn",
+    "bao",
+    "lâu",
+    "nợ",
+    "đời",
+    "chi"
+   ],
+   "nhan": "đời",
+   "n_bau": 2,
+   "moi": [
+    "cuộc",
+    "cả",
+    "suốt",
+    "bạn",
+    "dụ"
+   ]
+  },
+  "C001": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "khe",
+   "hat_giong": [
+    "cửa",
+    "lớn",
+    "cắm",
+    "thể",
+    "đầu",
+    "hướng"
+   ],
+   "nhan": "phố",
+   "n_bau": 3,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C002": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "m³",
+   "hat_giong": [
+    "nước",
+    "thải",
+    "sinh",
+    "hoạt",
+    "mỗi",
+    "ngày"
+   ],
+   "nhan": "phố",
+   "n_bau": 3,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C003": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "nối",
+   "hat_giong": [
+    "Internet",
+    "ngôi",
+    "khác",
+    "nghiệp",
+    "gia",
+    "thành"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "bạn",
+    "cơ",
+    "Bạn"
+   ]
+  },
+  "C004": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "ghẻ",
+   "hat_giong": [
+    "lạnh",
+    "chồng",
+    "tai",
+    "nghiệt",
+    "lở"
+   ],
+   "nhan": "hại",
+   "n_bau": 2,
+   "moi": [
+    "Bởi vì",
+    "Chính",
+    "Công",
+    "Công Dương",
+    "Dương"
+   ]
+  },
+  "C005": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "âm",
+   "hat_giong": [
+    "dương",
+    "thể",
+    "động",
+    "nói",
+    "chữ",
+    "nhau"
+   ],
+   "nhan": "phố",
+   "n_bau": 2,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C006": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Siri",
+   "hat_giong": [
+    "Google",
+    "Assistant",
+    "sử",
+    "dụng",
+    "thể"
+   ],
+   "nhan": "ảo",
+   "n_bau": 3,
+   "moi": [
+    "Siri",
+    "Alexa",
+    "mộng",
+    "tiên",
+    "bậc"
+   ]
+  },
+  "C007": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "róc",
+   "hat_giong": [
+    "khô",
+    "phơi",
+    "dành"
+   ],
+   "nhan": "khô",
+   "n_bau": 2,
+   "moi": [
+    "mùa",
+    "cỏ",
+    "da",
+    "Ví",
+    "dụ"
+   ]
+  },
+  "C008": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Phan",
+   "hat_giong": [
+    "Bội",
+    "Châu",
+    "Rang",
+    "Chàm"
+   ],
+   "nhan": "Châu",
+   "n_bau": 2,
+   "moi": [
+    "Dương",
+    "Linh",
+    "tại",
+    "Ngọc",
+    "Quảng"
+   ]
+  },
+  "C009": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "NBC",
+   "hat_giong": [
+    "CBS",
+    "ABC",
+    "Fox"
+   ],
+   "nhan": "Bốn",
+   "n_bau": 3,
+   "moi": [
+    "NBC",
+    "cành",
+    "cây",
+    "dấu",
+    "hạ"
+   ]
+  },
+  "C010": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "rap",
+   "hat_giong": [
+    "mình",
+    "vần",
+    "điệu",
+    "bạn"
+   ],
+   "nhan": "thể",
+   "n_bau": 2,
+   "moi": [
+    "Bạn",
+    "cụ",
+    "cơ",
+    "Bạn",
+    "thân"
+   ]
+  },
+  "C011": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Siri",
+   "hat_giong": [
+    "Google",
+    "Assistant",
+    "sử",
+    "dụng",
+    "thể"
+   ],
+   "nhan": "dụng",
+   "n_bau": 4,
+   "moi": [
+    "ứng",
+    "Sử",
+    "tác",
+    "áp",
+    "thường"
+   ]
+  },
+  "C012": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Trời",
+   "hat_giong": [
+    "nên",
+    "tối",
+    "thể",
+    "sao",
+    "đẹp",
+    "chiếu"
+   ],
+   "nhan": "phố",
+   "n_bau": 3,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C013": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "NBC",
+   "hat_giong": [
+    "CBS",
+    "ABC",
+    "Fox"
+   ],
+   "nhan": "Fox",
+   "n_bau": 2,
+   "moi": [
+    "Kỳ",
+    "NBC"
+   ]
+  },
+  "C014": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nối",
+   "hat_giong": [
+    "Internet",
+    "ngôi",
+    "khác",
+    "nghiệp",
+    "gia",
+    "thành"
+   ],
+   "nhan": "phố",
+   "n_bau": 5,
+   "moi": [
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris",
+    "nhà"
+   ]
+  },
+  "C015": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "ma",
+   "hat_giong": [
+    "tu",
+    "khí",
+    "diệt",
+    "lâm",
+    "quốc",
+    "hắn"
+   ],
+   "nhan": "vốn",
+   "n_bau": 2,
+   "moi": [
+    "quý",
+    "ba",
+    "công",
+    "công mĩ",
+    "mĩ"
+   ]
+  },
+  "C016": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nguồn",
+   "hat_giong": [
+    "tạo",
+    "tái",
+    "mở",
+    "điện",
+    "thể",
+    "vật"
+   ],
+   "nhan": "ngành",
+   "n_bau": 2,
+   "moi": [
+    "sản",
+    "tài",
+    "Deal",
+    "chăm",
+    "đồ"
+   ]
+  },
+  "C017": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Kết",
+   "hat_giong": [
+    "cấu",
+    "trình",
+    "chiến",
+    "Nhân"
+   ],
+   "nhan": "phố",
+   "n_bau": 2,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C018": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Trời",
+   "hat_giong": [
+    "nên",
+    "tối",
+    "thể",
+    "sao",
+    "đẹp",
+    "chiếu"
+   ],
+   "nhan": "hơn",
+   "n_bau": 2,
+   "moi": [
+    "cao",
+    "tốt",
+    "lớn",
+    "nhiều",
+    "nhỏ"
+   ]
+  },
+  "C019": {
+   "nhanh": "cooc",
+   "thuoc_tinh": "Ireland",
+   "hat_giong": [
+    "tập",
+    "trung",
+    "canh",
+    "tác",
+    "hỗn"
+   ],
+   "nhan": "hợp",
+   "n_bau": 2,
+   "moi": [
+    "phù",
+    "trường",
+    "kết",
+    "thích",
+    "tổng"
+   ]
+  },
+  "C020": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "tan",
+   "hat_giong": [
+    "khí",
+    "loại",
+    "nhà",
+    "kính",
+    "mạnh"
+   ],
+   "nhan": "phố",
+   "n_bau": 3,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C021": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "nhãn",
+   "hat_giong": [
+    "hàng",
+    "mác",
+    "thể",
+    "cảnh",
+    "phẩm",
+    "loại"
+   ],
+   "nhan": "phố",
+   "n_bau": 3,
+   "moi": [
+    "thành",
+    "phố",
+    "số",
+    "Các thành phố",
+    "Paris"
+   ]
+  },
+  "C022": {
+   "nhanh": "typed_first",
+   "thuoc_tinh": "Ánh",
+   "hat_giong": [
+    "hắn",
+    "Mặt",
+    "Trời",
+    "Nam",
+    "Hài",
+    "cùng"
+   ],
+   "nhan": "vùng",
+   "n_bau": 2,
+   "moi": [
+    "Huyện",
+    "số",
+    "Tiếp",
+    "Tiếp nối",
+    "dân"
+   ]
+  }
+ }
+}

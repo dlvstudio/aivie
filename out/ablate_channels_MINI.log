@@ -1,0 +1,16 @@
+[0s] load checkpoints/mini_sent_ep.pkl …
+[13s] ✓ 5,004 cha · chế độ=handoff
+  23 prompt (T2–T6 của eval_gen_broad)
+[661s] BASE  empty=0.17  digit_split=0.09  loop4=0.00  copy=0.67  n_facts=0.74  stop_clean=0.22  n_tok=6.17
+
+============================================================================================
+tắt kênh         Δempty  Δdigit⎵  Δloop4   Δcopy  Δn_facts   Δstop   Δn_tok
+============================================================================================
+readout            0.00     0.00    0.00    0.00      0.00    0.00      0.0   [1252s]
+qk                 0.00     0.00    0.00    0.00      0.04    0.00      0.1   [1479s]
+============================================================================================
+Ứng viên KÊNH CHẾT (mọi Δ = 0): ['readout']
+Δ=0 ở bộ prompt này KHÔNG chứng minh kênh vô dụng toàn cục — chỉ là ứng viên;
+trước khi bỏ phải chạy thêm `--mode no_agenda` và bộ T1/T7 của eval_gen_broad.
+
+[1479s] → out/_ablate_smoke.log

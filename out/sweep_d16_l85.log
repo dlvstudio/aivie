@@ -1,0 +1,128 @@
+[0s] load checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] === load_mini_sent_ep_qa START (pid=8742) → out/logs/load_mini_sent_ep_qa_20260730_122337.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent_ep_qa.pkl …
+[     0.0s] ▶ unpickle
+[     0.4s] ✓ unpickle  (0.4s)
+[     0.4s] ▶ vocab (32002 token)
+[     0.9s] ✓ vocab (32002 token)  (0.4s)
+[     0.9s] ▶ adjacency
+[     3.8s] ✓ adjacency  (3.0s)
+[     3.8s] ▶ embedding
+[     4.4s] ✓ embedding  (0.5s)
+[     4.4s] ▶ parents
+[     4.4s] parents: deserialize 5664 records …
+[     4.8s] parents 5000/5664 (88.3%)
+[     5.9s] ▶ rebuild_hierarchical_index …
+[     5.9s] ✓ rebuild_hierarchical_index (0.1s)
+[     6.2s]     resync match_ids: 5664/5664 cha (df dựng lại)
+[     6.2s] ✓ parents  (1.8s)
+[     6.2s] ✓ loaded: vocab=32002 parents=5664 E=(32002, 96)
+[     6.3s] sidecar thiếu → migrate: mini_sent_ep_qa.content.pkl
+[     6.3s] ✓ load_checkpoint XONG
+[10s] ✓ 5,664 cha · max_len=48 · extra={'ar_matrix_w_skip_decode_weight': 1.0, 'hybrid_temperature': 0.35, 'ar_sharp_gate': False, 'ar_matrix_w_skip_decode_dmax': 16, 'ar_matrix_w_skip_decode_lam': 0.85}
+/Users/dlv/Documents/code/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 5664 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent_ep_qa.pkl --in-place
+  ensure_frame_brackets(state)
+[39s]   xong no_agenda·T1 verbatim (20)
+[40s]   xong no_agenda·T2 paraphrase (5)
+[44s]   xong no_agenda·T3 ghép (10)
+[45s]   xong no_agenda·T4 qa (10)
+[46s]   xong no_agenda·T5 số (4)
+[48s]   xong no_agenda·T6 bịa (5)
+[50s]   xong no_agenda·T7 dài (5)
+[74s]   xong handoff·T1 verbatim (20)
+[78s]   xong handoff·T2 paraphrase (5)
+[82s]   xong handoff·T3 ghép (10)
+[83s]   xong handoff·T4 qa (10)
+[84s]   xong handoff·T5 số (4)
+[88s]   xong handoff·T6 bịa (5)
+[92s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen    lạc  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.15   0.82    0.05   0.00   0.67     0.65   1.00    8.1
+no_agenda T2 paraphrase     5    0.20   0.20   0.00    0.00   0.00   0.92     0.60   1.00    6.2
+no_agenda T3 ghép          10    0.10   0.40   0.33    0.00   0.00   0.64     0.50   1.00    7.8
+no_agenda T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   16.0
+no_agenda T5 số             4    0.00   0.00   0.00    0.00   0.00   0.91     0.75   1.00    8.2
+no_agenda T6 bịa            5    0.00   0.20   0.67    0.20   0.00   0.70     1.00   1.00   10.4
+no_agenda T7 dài            5    0.00   0.40   1.00    0.00   0.00   0.56     0.80   1.00    5.8
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.05   0.47    0.05   0.00   0.61     1.75   0.90   23.3
+handoff   T2 paraphrase     5    0.00   0.00   0.32    0.20   0.00   0.60     2.00   0.80   25.4
+handoff   T3 ghép          10    0.10   0.40   0.50    0.00   0.00   0.68     0.80   1.00   12.3
+handoff   T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   16.0
+handoff   T5 số             4    0.00   0.00   0.33    0.00   0.00   0.57     1.75   1.00   19.5
+handoff   T6 bịa            5    0.00   0.00   0.45    0.20   0.00   0.51     2.00   0.80   25.8
+handoff   T7 dài            5    0.00   0.40   0.55    0.40   0.00   0.57     1.20   0.80   19.0
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · **lạc↓** · digit⎵↓ · loop4↓ · stop↑
+`lạc` = tỉ lệ CÂU (từ câu 2 trở đi) KHÔNG chia fold nội dung nào với prompt — đo TRÔI ĐỀ.
+  Cột này thêm ở §12.73: mọi cột cũ đều mù với việc output nhảy sang tài liệu khác.
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── đếm ca (cổng §12.38) ──
+  no_agenda T3 ghép      readable(n_tok≥4&!degen)=5/10  · n_facts>1=1/10
+  no_agenda T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+  handoff   T3 ghép      readable(n_tok≥4&!degen)=5/10  · n_facts>1=3/10
+  handoff   T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+
+── mẫu đọc tay (mỗi ô tối đa 4) ──
+  [no_agenda·T1 verbatim] 'Việc các sông đổi dòng cũng tạo ra nhưng . đầm lầy và hồ'
+  [no_agenda·T1 verbatim] 'Diện tích hình vuông bằng cạnh nhân cạnh'
+  [no_agenda·T1 verbatim] 'Trong thời kỳ làm vua, Trần Nhân Tông vẫn sống thanh . tịnh . trên . , . tinh thần . Phật giáo'
+  [no_agenda·T1 verbatim] '100 chia 25 bằng 4'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê . Hoàn đánh . , . bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Lý Thái Vì , . , í , . Nha đều có một số nhà'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp:Đại thắng trên sông Bạch Đằng đã khắc họa mưu lược và khả năng đánh trận của ông.'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo nhà Trần là coi thường . đạo , vợ . chồng lại . thấy ở đây lần . nữa'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần . , Hưng , . Đạo là tiêu diệt . quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau không cần . đi , đường . qua Đại Việt , Mông Cổ vẫn đánh bại được xác định . tuy nhiên . nhà Ngô vẫn chưa đặt quốc hiệu'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1 . 2 5 . 1 . 2 8 , 8'
+  [no_agenda·T7 dài] 'Tên khai sinh là Nguyễn Sinh Cung, sinh tại Nghệ An. Trong hoạt động cách mạng, Người dùng nhiều tên gọi như Nguyễn Tất Thành, Nguyễn Ái Quốc. Tên Bác ca trang được gọi công người Việt'
+  [no_agenda·T7 dài] 'Khoảng 4,25 đến 3,56 tỉ năm trước từ trường Mặt Trăng có khả năng mạnh gần bằng từ trường . Trái Đất , . ngày nay'
+  [no_agenda·T7 dài] 'Mắm tôm phổ biến miền Bắc, đặc biệt trong bún riêu và bún chả. Mùi đậm, vị mặn umami. Người nước và'
+  [no_agenda·T7 dài] 'Bắt đầu từ trứng chiên, mì xào, canh rau — khó fail. Xem video ngắn và làm theo từng bước. Nấu cho con người . đã có được . con suối Cam Ly'
+  [handoff·T1 verbatim] 'Việc các sông đổi dòng cũng tạo ra nhưng . đầm lầy và hồ. Tạo ra thị trường có sức mua lớn.'
+  [handoff·T1 verbatim] 'Diện tích hình vuông bằng cạnh nhân cạnh. Hình chữ nhật có bốn góc vuông.'
+  [handoff·T1 verbatim] 'Trong thời kỳ làm vua, Trần Nhân Tông vẫn sống thanh . tịnh . trên . , . tinh thần Phật giáo'
+  [handoff·T1 verbatim] '100 chia 25 bằng 4'
+  [handoff·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm sông Bạch Đằng. Ngô Quyền đánh thắng quân Nam Hán.'
+  [handoff·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê . Hoàn đánh . , . bại quân Tống trên sông Bạch Đằng. Năm 1288, Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Trận Bạch Đằng năm 1 . 2 . 8 nhân . , 1 đánh mìn . , kho đạn Thị Nghè của . công nhân nhà máy đèn Chợ Quán nêu ở là một kho . mìn . trên là trận thứ hai. Còn trận đầu ngày 17 tháng 1'
+  [handoff·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: Trần'
+  [handoff·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Lý Thái Vì , Tổ dời đô về Thăng Long. Năm 1054, dưới thời Lý Thánh Tông, nhà Lý đặt quốc hiệu là Đại Việt.'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp:Đại thắng trên sông Bạch Đằng đã khắc họa mưu lược và khả năng đánh trận của ông.'
+  [handoff·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo nhà Trần là . coi . thường đạo , . vợ . chồng . lại thấy ở đây . lần . nữa'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  [handoff·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Năm 938, Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng.'
+  [handoff·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [handoff·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [handoff·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T5 số] 'Chiến thắng Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [handoff·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần . , Hưng , Đạo , tiêu diệt quân . , . Nguyên Mông . trên sông Bạch Đằng. Năm 1288, quân dân nhà Trần đánh tan quân Nguyên trên sông Bạch Đằng.'
+  [handoff·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau không cần . đi , đường . qua Đại Việt , Mông Cổ vẫn đánh bại được xác định . tuy nhiên . nhà Ngô vẫn chưa đặt quốc hiệu. Năm 970, vua Đinh Tiên Hoàng sai sứ thần sang nhà Tống để'
+  [handoff·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1 . 2 5 8 Trần . năm 1 2 5 . 8 năm 2 8 5 và 8 1 2 8 . , . 5 và 2 . 2 6'
+  [handoff·T7 dài] 'Tên khai sinh là Nguyễn Sinh Cung, sinh tại Nghệ An. Trong hoạt động cách mạng, Người dùng nhiều tên gọi như Nguyễn Tất Thành, Nguyễn Ái Quốc. Tên Bác ca trang được gọi công người Việt'
+  [handoff·T7 dài] 'Khoảng 4,25 đến 3,56 tỉ năm trước từ trường Mặt Trăng có khả năng mạnh gần bằng từ trường . Trái Đất , ngày nay. Dynamo duy trì đến cách đây 1,92 đến 0,80 tỷ năm nhờ các dòng đối lưu hoạt động khi lõi Mặt.'
+  [handoff·T7 dài] 'Mắm tôm phổ biến miền Bắc, đặc biệt trong bún riêu và bún chả. Mùi đậm, vị mặn umami. Người nước và'
+  [handoff·T7 dài] 'Bắt đầu từ trứng chiên, mì xào, canh rau — khó fail. Xem video ngắn và làm theo từng bước. Nấu cho con người . đã có được . con . của các từ , triệu người sống trên lưu vực của các . Himalaya dãy 7 5 0 triệu người . sống . trên lưu vực của các con sông bắt ngu'
+
+[92s] → out/eval_gen_broad.log

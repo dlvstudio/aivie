@@ -1,0 +1,100 @@
+[     0.0s] load checkpoint checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[     1.8s] ✓ unpickle  (1.8s)
+[     1.8s] ▶ vocab (113572 token)
+[     2.0s] ✓ vocab (113572 token)  (0.1s)
+[     2.0s] ▶ adjacency
+[     5.2s] ✓ adjacency  (3.3s)
+[     5.2s] ▶ embedding
+[     5.3s] ✓ embedding  (0.1s)
+[     5.3s] ▶ parents
+[     5.3s] parents: deserialize 176430 records …
+[     5.4s] parents 5000/176430 (2.8%)
+[     5.4s] parents 10000/176430 (5.7%)
+[     5.5s] parents 15000/176430 (8.5%)
+[     5.5s] parents 20000/176430 (11.3%)
+[     5.6s] parents 25000/176430 (14.2%)
+[     5.6s] parents 30000/176430 (17.0%)
+[     5.6s] parents 35000/176430 (19.8%)
+[     5.7s] parents 40000/176430 (22.7%)
+[     5.7s] parents 45000/176430 (25.5%)
+[     5.8s] parents 50000/176430 (28.3%)
+[     5.9s] parents 55000/176430 (31.2%)
+[     5.9s] parents 60000/176430 (34.0%)
+[     6.0s] parents 65000/176430 (36.8%)
+[     6.0s] parents 70000/176430 (39.7%)
+[     6.1s] parents 75000/176430 (42.5%)
+[     6.1s] parents 80000/176430 (45.3%)
+[     6.2s] parents 85000/176430 (48.2%)
+[     6.2s] parents 90000/176430 (51.0%)
+[     6.3s] parents 95000/176430 (53.8%)
+[     6.3s] parents 100000/176430 (56.7%)
+[     6.4s] parents 105000/176430 (59.5%)
+[     6.4s] parents 110000/176430 (62.3%)
+[     6.5s] parents 115000/176430 (65.2%)
+[     6.5s] parents 120000/176430 (68.0%)
+[     6.6s] parents 125000/176430 (70.8%)
+[     6.6s] parents 130000/176430 (73.7%)
+[     6.7s] parents 135000/176430 (76.5%)
+[     6.7s] parents 140000/176430 (79.4%)
+[     6.8s] parents 145000/176430 (82.2%)
+[     6.8s] parents 150000/176430 (85.0%)
+[     6.9s] parents 155000/176430 (87.9%)
+[     7.0s] parents 160000/176430 (90.7%)
+[     7.1s] parents 165000/176430 (93.5%)
+[     7.3s] parents 170000/176430 (96.4%)
+[     7.4s] parents 175000/176430 (99.2%)
+[    12.3s] ▶ rebuild_hierarchical_index …
+[    12.6s] ✓ rebuild_hierarchical_index (0.3s)
+[    14.4s]     resync match_ids: 176430/176430 cha (df dựng lại)
+[    14.4s] ✓ parents  (9.1s)
+[    14.4s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[    15.0s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[    15.0s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[    15.5s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[    15.5s] ✓ load_checkpoint XONG
+
+network_v10_histwiki_paragraph.pkl
+  cha=176,430 · dài>60tok=5,764 (3.3%) · median=20
+[    18.5s] dựng index 5-gram toàn corpus …
+[    22.3s]   n-gram index 20,000/176,430 · 274,489 5-gram
+[    22.4s]   n-gram index 40,000/176,430 · 556,629 5-gram
+[    22.5s]   n-gram index 60,000/176,430 · 957,778 5-gram
+[    22.6s]   n-gram index 80,000/176,430 · 1,247,981 5-gram
+[    22.6s]   n-gram index 100,000/176,430 · 1,508,519 5-gram
+[    22.7s]   n-gram index 120,000/176,430 · 1,761,790 5-gram
+[    22.8s]   n-gram index 140,000/176,430 · 2,003,175 5-gram
+[    22.9s]   n-gram index 160,000/176,430 · 2,159,539 5-gram
+[    23.0s] ✓ index: 2,203,615 5-gram phân biệt (4s)
+  index: 2,203,615 5-gram phân biệt trong toàn corpus
+[    23.0s] sinh 1/8: 'Nhà Trần là' …
+[    29.8s]   ✓ 1/8 (7s) cha=23tok đáp=15tok copy=13% MỚI=0/11 (0%)
+[    29.8s] sinh 2/8: 'Khúc Thừa Dụ' …
+[    34.0s]   ✓ 2/8 (4s) cha=6tok đáp=40tok copy=5% MỚI=0/36 (0%)
+[    34.0s] sinh 3/8: 'Ngô Quyền' …
+[    36.5s]   ✓ 3/8 (3s) cha=6tok đáp=28tok copy=4% MỚI=0/24 (0%)
+[    36.5s] sinh 4/8: 'Lý Thái Tổ' …
+[    41.6s]   ✓ 4/8 (5s) cha=8tok đáp=40tok copy=8% MỚI=0/36 (0%)
+[    41.6s] sinh 5/8: 'Hai Bà Trưng' …
+[    45.3s]   ✓ 5/8 (4s) cha=6tok đáp=40tok copy=0% MỚI=0/36 (0%)
+[    45.3s] sinh 6/8: 'Nhà Lý' …
+[    47.1s]   ✓ 6/8 (2s) cha=8tok đáp=24tok copy=0% MỚI=20/20 (100%)
+[    47.1s] sinh 7/8: 'Trần Hưng Đạo' …
+[    50.7s]   ✓ 7/8 (4s) cha=7tok đáp=40tok copy=2% MỚI=0/36 (0%)
+[    50.7s] sinh 8/8: 'Lê Lợi' …
+[    55.4s]   ✓ 8/8 (5s) cha=6tok đáp=40tok copy=2% MỚI=0/36 (0%)
+
+          prompt  cha(tok)  đáp(tok)   LCS  copy%   mới/5gram  MỚI%  text
+     Nhà Trần là        23        15     2    13%        0/11    0%  ' triều đại phong kiến Việt Nam tồn tại từ năm 1225 đến n'
+    Khúc Thừa Dụ         6        40     2     5%        0/36    0%  ' chết , con là Khúc Hạo lên thay . Khúc Hạo sai con là K'
+       Ngô Quyền         6        28     1     4%        0/24    0%  ' xưng vương , đóng đô ở Cổ Loa , lập ra nhà Ngô . Ngô Vư'
+      Lý Thái Tổ         8        40     3     8%        0/36    0%  ' quyết định dời đô về Đại La . Khu hoàng thành được xây '
+    Hai Bà Trưng         6        40     0     0%        0/36    0%  ' . Khuôn viên cổ kính của Viện Đại học Đông Dương thì ch'
+          Nhà Lý         8        24     0     0%       20/20  100%  ' ngự sử chứ , người ta đã muốn . trốn tránh , bà cũng kh'
+   Trần Hưng Đạo         7        40     1     2%        0/36    0%  ' từ Vạn Kiếp tới , Trần Quang Khải xuống thuyền chơi suố'
+          Lê Lợi         6        40     1     2%        0/36    0%  ' thành lập nhà Lê và Đông Đô cũng lấy lại vị thế kinh th'
+
+  TỔNG: đáp TB 33.4 tok · copy TB 4% · 5-gram MỚI 20/235 = 9%
+
+  ⇒ MỚI ≈ 0%  = mọi cụm 5 token đều CHÉP từ corpus (khảm) — không sinh gì mới
+    MỚI cao   = mạng ghép ra chuỗi CHƯA TỪNG CÓ ⇒ sinh thật (phải đọc tay xem có nghĩa)

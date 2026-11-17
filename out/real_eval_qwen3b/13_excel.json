@@ -1,0 +1,13 @@
+{
+ "id": "13_excel",
+ "cat": "excel",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Trong Excel, sheet DonHang có cột A = Mã SP, B = Số lượng; sheet BangGia có cột A = Mã SP, B = Đơn giá. Tôi cần (1) công thức cột C của DonHang lấy đơn giá theo mã, (2) cột D thành tiền, (3) ô tổng doanh thu chỉ của mã bắt đầu bằng 'SP0'. Cho công thức cụ thể.",
+   "text": "Dưới đây là các công thức để thực hiện yêu cầu trên:\n\n1. Công thức cột C của Sheet DonHang:\n\nĐể lấy đơn giá theo mã sản phẩm, bạn có thể sử dụng công thức `VLOOKUP`. Xem xét rằng bảng giá nằm trong Sheet BangGia.\n\nCông thức cho C2 (hoặc bất kỳ dòng đầu tiên khác) là:\n```excel\n=VLOOKUP(A2, [SheetBangGia]!A:B, 2, FALSE)\n```\n\nĐây sẽ tìm mã sản phẩm trong Sheet BangGia và trả về đơn giá tương ứng.\n\n2. Công thức cột D của Sheet DonHang:\n\nSau khi đã lấy được đơn giá từ Sheet BangGia, bạn có thể tính tiền bằng cách nhân số lượng với đơn giá.\n\nCông thức cho D2 là:\n```excel\n=C2 * B2\n```\n\nĐây sẽ tính toán tổng tiền theo từng dòng.\n\n3. Ô Tổng doanh thu chỉ của mã bắt đầu bằng 'SP0':\n\nĐể tính tổng doanh thu chỉ của mã bắt đầu bằng 'SP0', bạn có thể sử dụng hàm `SUMIF`.\n\nCông thức cho ô D2 (hoặc bất kỳ ô tổng mà bạn muốn) là:\n```excel\n=SUMIF(A:A, \"SP0*\", B:B)\n```\n\nĐây sẽ tính tổng tất cả các dòng trong cột A bắt đầu bằng 'SP0' và lấy tổng của giá trị tương ứng trong cột B.\n\nNhớ rằng vị trí Sheet BangGia và Sheet DonHang có thể khác với ví dụ trên. Bạn cần thay đổi tên sheet và chỉ mục cột phù hợp cho cấu trúc thực tế của mình.",
+   "tokens": 358,
+   "sec": 4.1
+  }
+ ]
+}

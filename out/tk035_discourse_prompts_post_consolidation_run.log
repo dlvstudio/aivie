@@ -1,0 +1,145 @@
+[     0.0s] === eval_discourse_prompts START (pid=64705) → out/logs/eval_discourse_prompts_20260709_211624.log ===
+[     0.0s] results → /Users/dlv/Documents/code/nn-aivie/out/tk035_discourse_prompts_post_consolidation.log
+[     0.0s] ▶ load_checkpoint
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/network_v10_histwiki_paragraph.pkl …
+[     0.0s] ▶ unpickle
+[    21.6s] ✓ unpickle  (21.6s)
+[    21.6s] ▶ vocab (113572 token)
+[    22.8s] ✓ vocab (113572 token)  (1.2s)
+[    22.8s] ▶ adjacency
+[    64.2s] ✓ adjacency  (41.4s)
+[    64.3s] ▶ embedding
+[    68.3s] ✓ embedding  (4.0s)
+[    68.3s] ▶ parents
+[    68.3s] parents: deserialize 176430 records …
+[    69.8s] parents 5000/176430 (2.8%)
+[    70.7s] parents 10000/176430 (5.7%)
+[    71.8s] parents 15000/176430 (8.5%)
+[    72.3s] parents 20000/176430 (11.3%)
+[    72.8s] parents 25000/176430 (14.2%)
+[    73.4s] parents 30000/176430 (17.0%)
+[    73.9s] parents 35000/176430 (19.8%)
+[    74.3s] parents 40000/176430 (22.7%)
+[    75.0s] parents 45000/176430 (25.5%)
+[    75.6s] parents 50000/176430 (28.3%)
+[    76.3s] parents 55000/176430 (31.2%)
+[    77.1s] parents 60000/176430 (34.0%)
+[    77.7s] parents 65000/176430 (36.8%)
+[    78.4s] parents 70000/176430 (39.7%)
+[    79.1s] parents 75000/176430 (42.5%)
+[   105.9s] parents 80000/176430 (45.3%)
+[   106.7s] parents 85000/176430 (48.2%)
+[   107.1s] parents 90000/176430 (51.0%)
+[   107.6s] parents 95000/176430 (53.8%)
+[   108.0s] parents 100000/176430 (56.7%)
+[   108.4s] parents 105000/176430 (59.5%)
+[   108.8s] parents 110000/176430 (62.3%)
+[   109.5s] parents 115000/176430 (65.2%)
+[   110.0s] parents 120000/176430 (68.0%)
+[   110.4s] parents 125000/176430 (70.8%)
+[   111.0s] parents 130000/176430 (73.7%)
+[   111.4s] parents 135000/176430 (76.5%)
+[   111.7s] parents 140000/176430 (79.4%)
+[   112.0s] parents 145000/176430 (82.2%)
+[   112.4s] parents 150000/176430 (85.0%)
+[   113.7s] parents 155000/176430 (87.9%)
+[   115.0s] parents 160000/176430 (90.7%)
+[   115.9s] parents 165000/176430 (93.5%)
+[   141.5s] parents 170000/176430 (96.4%)
+[   142.4s] parents 175000/176430 (99.2%)
+[   350.7s] ▶ rebuild_hierarchical_index …
+[   352.7s] ✓ rebuild_hierarchical_index (2.0s)
+[   352.7s] ✓ parents  (284.5s)
+[   352.7s] ✓ loaded: vocab=113572 parents=176430 E=(77464, 96)
+[   358.1s] sidecar có: network_v10_histwiki_paragraph.content.pkl
+[   358.2s] ▶ varlm sidecar: network_v10_histwiki_paragraph.varlm.pkl
+[   361.7s] ✓ varlm: k=1:214307, k=2:1013778, k=3:923581, k=4:919640
+[   361.7s] ✓ load_checkpoint XONG
+[   361.7s] ✓ load_checkpoint  (361.7s)
+[   361.7s] ▶ build_prompts
+[   367.7s] ✓ build_prompts  (5.9s)
+[   367.7s] eval: 43 prompts × 3 modes = 129 generations
+[   367.7s] ▶ eval_generate
+[   367.7s] prompt 1/43 [history_wiki_para] 'Khối trường tư thục phát triển năng'
+[   367.7s] ▶ gen 1/129 gen multi varlm=0
+[   567.4s] ✓ gen 1/129 (199.6s) overlap=1.00 chars=66
+[   567.5s] ▶ gen 2/129 gen multi varlm=0.35
+[   579.4s] ✓ gen 2/129 (11.9s) overlap=1.00 chars=66
+[   579.4s] ▶ gen 3/129 gen multi varlm=0.5
+[   587.4s] ✓ gen 3/129 (8.0s) overlap=1.00 chars=66
+[   587.4s] prompt 2/43 [history_wiki_para] 'Đinh Tiên Hoàng là người đầu tiên'
+[   587.4s] ▶ gen 4/129 gen multi varlm=0
+[   603.0s] ✓ gen 4/129 (15.6s) overlap=1.00 chars=86
+[   603.0s] ▶ gen 5/129 gen multi varlm=0.35
+[   613.7s] ✓ gen 5/129 (10.7s) overlap=1.00 chars=86
+[   613.8s] ▶ gen 6/129 gen multi varlm=0.5
+[   624.9s] ✓ gen 6/129 (11.2s) overlap=1.00 chars=86
+[   625.0s] prompt 3/43 [history_wiki_para] 'Người Minh dùng hỏa tiễn bắn voi'
+[   625.0s] ▶ gen 7/129 gen multi varlm=0
+[   636.9s] ✓ gen 7/129 (12.0s) overlap=1.00 chars=65
+[   636.9s] ▶ gen 8/129 gen multi varlm=0.35
+[   648.6s] ✓ gen 8/129 (11.7s) overlap=1.00 chars=65
+[   648.6s] ▶ gen 9/129 gen multi varlm=0.5
+[   660.7s] ✓ gen 9/129 (12.1s) overlap=1.00 chars=65
+[   660.7s] prompt 4/43 [history_wiki_para] 'Kiến văn tiểu lục (Chép vặt những'
+[   660.7s] ▶ gen 10/129 gen multi varlm=0
+[   672.5s] ✓ gen 10/129 (11.9s) overlap=1.00 chars=93
+[   672.6s] ▶ gen 11/129 gen multi varlm=0.35
+[   683.1s] ✓ gen 11/129 (10.6s) overlap=1.00 chars=93
+[   683.1s] ▶ gen 12/129 gen multi varlm=0.5
+[   692.0s] ✓ gen 12/129 (8.9s) overlap=1.00 chars=93
+[   692.0s] prompt 5/43 [history_wiki_para] 'Chúa gánh cái lo , ta hưởng'
+[   692.0s] ▶ gen 13/129 gen multi varlm=0
+[   700.7s] ✓ gen 13/129 (8.7s) overlap=1.00 chars=61
+[   700.7s] ▶ gen 14/129 gen multi varlm=0.35
+[   711.9s] ✓ gen 14/129 (11.3s) overlap=1.00 chars=61
+[   711.9s] ▶ gen 15/129 gen multi varlm=0.5
+[   724.6s] ✓ gen 15/129 (12.7s) overlap=1.00 chars=61
+[   724.6s] prompt 6/43 [history_wiki_para] 'Vì tưởng là Lê Lợi , người'
+[   724.6s] ▶ gen 16/129 gen multi varlm=0
+[   742.7s] ✓ gen 16/129 (18.1s) overlap=1.00 chars=100
+[   742.7s] ▶ gen 17/129 gen multi varlm=0.35
+[   764.6s] ✓ gen 17/129 (21.9s) overlap=1.00 chars=100
+[   764.6s] ▶ gen 18/129 gen multi varlm=0.5
+[   787.9s] ✓ gen 18/129 (23.3s) overlap=1.00 chars=100
+[   787.9s] prompt 7/43 [history_wiki_para] 'Nguyên quán của ông ở hương Trà'
+[   787.9s] ▶ gen 19/129 gen multi varlm=0
+[   800.5s] ✓ gen 19/129 (12.6s) overlap=1.00 chars=80
+[   800.5s] ▶ gen 20/129 gen multi varlm=0.35
+[   813.4s] ✓ gen 20/129 (12.9s) overlap=1.00 chars=80
+[   813.4s] ▶ gen 21/129 gen multi varlm=0.5
+[   825.1s] ✓ gen 21/129 (11.7s) overlap=1.00 chars=80
+[   825.1s] prompt 8/43 [history_wiki_para] 'Tuy nhiên , Tây Sơn vẫn còn'
+[   825.1s] ▶ gen 22/129 gen multi varlm=0
+[   837.6s] ✓ gen 22/129 (12.4s) overlap=1.00 chars=78
+[   837.6s] ▶ gen 23/129 gen multi varlm=0.35
+[   853.0s] ✓ gen 23/129 (15.4s) overlap=1.00 chars=78
+[   853.0s] ▶ gen 24/129 gen multi varlm=0.5
+[   866.7s] ✓ gen 24/129 (13.7s) overlap=1.00 chars=78
+[   866.7s] prompt 9/43 [history_wiki_para] 'Hồ Liêm làm con nuôi của Tuyên'
+[   866.7s] ▶ gen 25/129 gen multi varlm=0
+[   878.2s] ✓ gen 25/129 (11.5s) overlap=1.00 chars=71
+[   878.2s] ▶ gen 26/129 gen multi varlm=0.35
+[   890.0s] ✓ gen 26/129 (11.8s) overlap=1.00 chars=71
+[   890.0s] ▶ gen 27/129 gen multi varlm=0.5
+[   900.2s] ✓ gen 27/129 (10.1s) overlap=1.00 chars=71
+[   900.2s] prompt 10/43 [history_wiki_para] 'Tới năm 1901 Điện báo cục đã'
+[   900.2s] ▶ gen 28/129 gen multi varlm=0
+[   913.7s] ✓ gen 28/129 (13.5s) overlap=1.00 chars=94
+[   913.7s] ▶ gen 29/129 gen multi varlm=0.35
+[   924.3s] ✓ gen 29/129 (10.6s) overlap=1.00 chars=94
+[   924.3s] ▶ gen 30/129 gen multi varlm=0.5
+[   934.4s] ✓ gen 30/129 (10.1s) overlap=1.00 chars=94
+[   934.4s] prompt 11/43 [statements_doc] 'Tuy nhiên trong một số trường hợp'
+[   934.4s] ▶ gen 31/129 gen multi varlm=0
+[   948.9s] ✓ gen 31/129 (14.5s) overlap=1.00 chars=97
+[   948.9s] ▶ gen 32/129 gen multi varlm=0.35
+[   961.9s] ✓ gen 32/129 (13.1s) overlap=1.00 chars=97
+[   961.9s] ▶ gen 33/129 gen multi varlm=0.5
+[   978.4s] ✓ gen 33/129 (16.5s) overlap=1.00 chars=97
+[   978.4s] prompt 12/43 [statements_doc] 'Tiếng Việt là 1 ngôn ngữ đơn'
+[   978.4s] ▶ gen 34/129 gen multi varlm=0
+[  1004.8s] ✓ gen 34/129 (26.3s) overlap=1.00 chars=214
+[  1004.8s] ▶ gen 35/129 gen multi varlm=0.35
+[  1028.1s] ✓ gen 35/129 (23.3s) overlap=1.00 chars=214
+[  1028.1s] ▶ gen 36/129 gen multi varlm=0.5

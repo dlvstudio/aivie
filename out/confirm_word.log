@@ -1,0 +1,134 @@
+[1s] candidates: 8598 nguồn, 62398 cạnh
+[     0.0s] === load_net_ls_concept START (pid=68609) → out/logs/load_net_ls_concept_20260826_084809.log ===
+[     0.0s] load checkpoint checkpoints/net_ls_concept.pkl …
+[     0.0s] ▶ unpickle
+[     3.0s] ✓ unpickle  (3.0s)
+[     3.0s] ▶ vocab (32002 token)
+[     3.0s] ✓ vocab (32002 token)  (0.0s)
+[     3.0s] ▶ adjacency
+[    12.4s] ✓ adjacency  (9.4s)
+[    12.4s] ▶ embedding
+[    12.4s] ✓ embedding  (0.1s)
+[    12.4s] ▶ parents
+[    12.4s] parents: deserialize 450303 records …
+[    12.5s] parents 5000/450303 (1.1%)
+[    12.5s] parents 10000/450303 (2.2%)
+[    12.6s] parents 15000/450303 (3.3%)
+[    12.6s] parents 20000/450303 (4.4%)
+[    12.6s] parents 25000/450303 (5.6%)
+[    12.7s] parents 30000/450303 (6.7%)
+[    12.7s] parents 35000/450303 (7.8%)
+[    12.8s] parents 40000/450303 (8.9%)
+[    12.8s] parents 45000/450303 (10.0%)
+[    12.8s] parents 50000/450303 (11.1%)
+[    12.9s] parents 55000/450303 (12.2%)
+[    12.9s] parents 60000/450303 (13.3%)
+[    13.0s] parents 65000/450303 (14.4%)
+[    13.0s] parents 70000/450303 (15.5%)
+[    13.0s] parents 75000/450303 (16.7%)
+[    13.1s] parents 80000/450303 (17.8%)
+[    13.1s] parents 85000/450303 (18.9%)
+[    13.2s] parents 90000/450303 (20.0%)
+[    13.2s] parents 95000/450303 (21.1%)
+[    13.2s] parents 100000/450303 (22.2%)
+[    13.3s] parents 105000/450303 (23.3%)
+[    13.3s] parents 110000/450303 (24.4%)
+[    13.4s] parents 115000/450303 (25.5%)
+[    13.4s] parents 120000/450303 (26.6%)
+[    13.4s] parents 125000/450303 (27.8%)
+[    13.5s] parents 130000/450303 (28.9%)
+[    13.6s] parents 135000/450303 (30.0%)
+[    13.6s] parents 140000/450303 (31.1%)
+[    13.7s] parents 145000/450303 (32.2%)
+[    13.7s] parents 150000/450303 (33.3%)
+[    13.8s] parents 155000/450303 (34.4%)
+[    13.9s] parents 160000/450303 (35.5%)
+[    13.9s] parents 165000/450303 (36.6%)
+[    14.0s] parents 170000/450303 (37.8%)
+[    14.1s] parents 175000/450303 (38.9%)
+[    14.1s] parents 180000/450303 (40.0%)
+[    14.2s] parents 185000/450303 (41.1%)
+[    14.3s] parents 190000/450303 (42.2%)
+[    14.4s] parents 195000/450303 (43.3%)
+[    14.5s] parents 200000/450303 (44.4%)
+[    14.6s] parents 205000/450303 (45.5%)
+[    14.6s] parents 210000/450303 (46.6%)
+[    14.7s] parents 215000/450303 (47.7%)
+[    14.8s] parents 220000/450303 (48.9%)
+[    14.9s] parents 225000/450303 (50.0%)
+[    15.0s] parents 230000/450303 (51.1%)
+[    15.1s] parents 235000/450303 (52.2%)
+[    15.1s] parents 240000/450303 (53.3%)
+[    15.2s] parents 245000/450303 (54.4%)
+[    15.3s] parents 250000/450303 (55.5%)
+[    15.4s] parents 255000/450303 (56.6%)
+[    15.5s] parents 260000/450303 (57.7%)
+[    15.6s] parents 265000/450303 (58.8%)
+[    15.6s] parents 270000/450303 (60.0%)
+[    15.7s] parents 275000/450303 (61.1%)
+[    15.8s] parents 280000/450303 (62.2%)
+[    15.9s] parents 285000/450303 (63.3%)
+[    16.0s] parents 290000/450303 (64.4%)
+[    16.0s] parents 295000/450303 (65.5%)
+[    16.1s] parents 300000/450303 (66.6%)
+[    16.2s] parents 305000/450303 (67.7%)
+[    16.3s] parents 310000/450303 (68.8%)
+[    16.4s] parents 315000/450303 (70.0%)
+[    16.5s] parents 320000/450303 (71.1%)
+[    16.5s] parents 325000/450303 (72.2%)
+[    16.6s] parents 330000/450303 (73.3%)
+[    16.7s] parents 335000/450303 (74.4%)
+[    16.8s] parents 340000/450303 (75.5%)
+[    16.9s] parents 345000/450303 (76.6%)
+[    16.9s] parents 350000/450303 (77.7%)
+[    17.0s] parents 355000/450303 (78.8%)
+[    17.1s] parents 360000/450303 (79.9%)
+[    17.2s] parents 365000/450303 (81.1%)
+[    17.3s] parents 370000/450303 (82.2%)
+[    17.4s] parents 375000/450303 (83.3%)
+[    17.4s] parents 380000/450303 (84.4%)
+[    17.5s] parents 385000/450303 (85.5%)
+[    17.6s] parents 390000/450303 (86.6%)
+[    17.7s] parents 395000/450303 (87.7%)
+[    17.8s] parents 400000/450303 (88.8%)
+[    17.8s] parents 405000/450303 (89.9%)
+[    17.9s] parents 410000/450303 (91.0%)
+[    18.0s] parents 415000/450303 (92.2%)
+[    18.1s] parents 420000/450303 (93.3%)
+[    18.2s] parents 425000/450303 (94.4%)
+[    18.2s] parents 430000/450303 (95.5%)
+[    18.3s] parents 435000/450303 (96.6%)
+[    18.4s] parents 440000/450303 (97.7%)
+[    18.4s] parents 445000/450303 (98.8%)
+[    18.5s] parents 450000/450303 (99.9%)
+[    30.7s] ▶ rebuild_hierarchical_index …
+[    32.4s] ✓ rebuild_hierarchical_index (1.7s)
+[    38.3s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    38.3s] ✓ parents  (25.8s)
+[    38.3s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    40.1s] sidecar thiếu → migrate: net_ls_concept.content.pkl
+[    40.1s] ✓ load_checkpoint XONG
+[41s] load ckpt
+[86s] 10000 bài · 1,082,347 câu · 11,924 cạnh xn
+[112s] 20000 bài · 1,765,386 câu · 13,755 cạnh xn
+[135s] 2,365,628 câu · 15,019 cạnh XÁC NHẬN / 62398
+[154s] promote 38,738 cạnh REINFORCED → net_ls_concept_conf.pkl
+
+### xác nhận theo nguồn (concept nên nhiều, stopword nên ít):
+       sắt: xn 8/8 → [('thiếc', 49), ('sulfide', 24), ('chloride', 10), ('ni', 8), ('chậu', 4), ('dát', 3)]
+       kẽm: xn 6/8 → [('mỏ', 49), ('mangan', 27), ('sulfide', 23), ('pyrit', 6), ('cadmium', 6), ('mỏng', 1)]
+     natri: xn 5/8 → [('hydroxide', 38), ('amoni', 10), ('halide', 5), ('ca2', 3), ('bor', 1)]
+    mangan: xn 7/8 → [('sắt', 69), ('chất', 32), ('gồm', 16), ('quốc', 5), ('vi', 4), ('giúp', 3)]
+      nhôm: xn 6/8 → [('natri', 19), ('hydroxide', 9), ('su', 6), ('clo', 1), ('g', 1), ('nacl', 1)]
+     thiếc: xn 8/8 → [('của', 161), ('chì', 88), ('v', 7), ('hoàng', 4), ('vua', 3), ('đế', 2)]
+       chì: xn 5/8 → [('quặng', 31), ('natri', 20), ('thép', 8), ('tráng', 5), ('hydroxide', 2)]
+      đồng: xn 2/4 → [('pà', 6), ('inuit', 3)]
+       mèo: xn 1/8 → [('bulldog', 1)]
+       chó: xn 1/6 → [('hamster', 1)]
+        số: xn 2/3 → [('angela', 3), ('juliet', 3)]
+       học: xn 5/6 → [('archimedes', 57), ('angela', 7), ('juliet', 5), ('mus', 3), ('meson', 3)]
+      toán: xn 1/7 → [('thales', 7)]
+       lớp: xn 3/5 → [('chút', 25), ('cytokine', 4), ('pharaoh', 1)]
+       một: xn 4/5 → [('hobbit', 25), ('inuit', 16), ('pà', 11), ('baire', 9)]
+        có: xn 3/3 → [('metric', 37), ('profile', 9), ('baire', 4)]
+### hết

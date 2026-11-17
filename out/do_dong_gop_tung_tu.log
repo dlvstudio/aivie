@@ -1,0 +1,16 @@
+
+`như` có trong _FUNC không: True
+_FUNC có 75 mục · mẫu: ['<EOS>', 'EOS', 'ai', 'bị', 'bởi', 'cho', 'chỉ', 'coi', 'con', 'các', 'cách', 'cái']
+
+  «cứng như»  token=['c', 'ứng', 'như']
+        TỪ vào vòng lặp = ['ứng']  (dùng 4 từ cuối)
+  «khoẻ như»  token=['kho', 'ẻ', 'như']
+        TỪ vào vòng lặp = ['kho']  (dùng 4 từ cuối)
+  «chó là»  token=['chó', 'là']
+        TỪ vào vòng lặp = ['chó']  (dùng 4 từ cuối)
+
+ĐÓNG GÓP TÁCH THEO TỪ — chạy riêng từng từ
+
+  «cứng như » 32 đề cử · top-8 = ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'cùng', 'hắn', 'đối']
+  «cứng     » 32 đề cử · top-8 = ['bệnh', 'dấu', 'giấy', 'cốt', 'cảm', 'cùng', 'hắn', 'đối']
+  «như      » 0 đề cử · top-8 = []

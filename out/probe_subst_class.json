@@ -1,0 +1,222 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_token": 2680,
+ "n_boi_canh": 50010,
+ "min_share": 3,
+ "n_co_lang_gieng": 394,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "tức",
+    "Hậu",
+    "tướng",
+    "Đường",
+    "Tống",
+    "Trần",
+    "Lê",
+    "ông"
+   ],
+   "embedding": [
+    "Tông",
+    "ngôi",
+    "Lý",
+    "Thánh",
+    "Lê",
+    "vương",
+    "hoàng",
+    "Hoàn"
+   ],
+   "n_ctx": 166
+  },
+  "sông": {
+   "lop_thay_the": [
+    "biển",
+    "Nguyễn",
+    "nước"
+   ],
+   "embedding": [
+    "chảy",
+    "Sông",
+    "Hồng",
+    "bồi",
+    "ngòi",
+    "Cửu",
+    "đắp",
+    "dòng"
+   ],
+   "n_ctx": 161
+  },
+  "đánh": {
+   "lop_thay_the": [
+    "xâm",
+    "đường"
+   ],
+   "embedding": [
+    "đuổi",
+    "bại",
+    "trận",
+    "chặn",
+    "diệt",
+    "chém",
+    "vạn",
+    "Nguyên"
+   ],
+   "n_ctx": 175
+  },
+  "Nguyễn": {
+   "lop_thay_the": [
+    "Lý",
+    "Trần",
+    "Lê",
+    "Hồ",
+    "Tống",
+    "Triệu",
+    "Đinh",
+    "Minh"
+   ],
+   "embedding": [
+    "Nguyễn",
+    "Hữu",
+    "Huệ",
+    "Phúc",
+    "Đặng",
+    "Quang",
+    "Ánh",
+    "Nhạc"
+   ],
+   "n_ctx": 227
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "thấp",
+    "nữa",
+    "cao",
+    "nhỏ",
+    "tư",
+    "ấy",
+    "biển",
+    "khác"
+   ],
+   "embedding": [
+    "nhất",
+    "phần",
+    "nhiều",
+    "vùng",
+    "nhỏ",
+    "nằm",
+    "trung",
+    "rất"
+   ],
+   "n_ctx": 169
+  },
+  "nước": {
+   "lop_thay_the": [
+    "oxy",
+    "đá",
+    "thịt",
+    "Hậu",
+    "Đường",
+    "thuyền",
+    "Lê",
+    "nơi"
+   ],
+   "embedding": [
+    "ngọt",
+    "muối",
+    "chanh",
+    "mặn",
+    "đất",
+    "sôi",
+    "bọt",
+    "khô"
+   ],
+   "n_ctx": 342
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "Bình",
+   "lop": [
+    "Lan",
+    "Tổ",
+    "Tông"
+   ]
+  },
+  {
+   "token": "lý",
+   "lop": [
+    "tử"
+   ]
+  },
+  {
+   "token": "hành",
+   "lop": [
+    "vệ",
+    "lực",
+    "Huế"
+   ]
+  },
+  {
+   "token": "tục",
+   "lop": [
+    "ứng"
+   ]
+  },
+  {
+   "token": "hơn",
+   "lop": [
+    "nhất",
+    "khoảng",
+    "tháng",
+    "nước"
+   ]
+  },
+  {
+   "token": "nhiệt",
+   "lop": [
+    "tốc",
+    "mức"
+   ]
+  },
+  {
+   "token": "Giáp",
+   "lop": [
+    "Mông"
+   ]
+  },
+  {
+   "token": "lại",
+   "lop": [
+    "trọng",
+    "nước"
+   ]
+  },
+  {
+   "token": "bắt",
+   "lop": [
+    "mở"
+   ]
+  },
+  {
+   "token": "nữa",
+   "lop": [
+    "trước",
+    "lớn"
+   ]
+  },
+  {
+   "token": "tỷ",
+   "lop": [
+    "6",
+    "đến"
+   ]
+  },
+  {
+   "token": "tấn",
+   "lop": [
+    "3"
+   ]
+  }
+ ],
+ "seconds": 40.3
+}

@@ -1,0 +1,86 @@
+[     0.0s] START checkpoint=checkpoints/grade_v3_big_a2_t3.pkl min_freq=3
+[    19.5s] loaded parents=44633 (19.5s)
+[    19.5s] mode=ISG rebuild_seg_graph …
+[    19.5s] ISG batch ingest start parents=44633 min_freq=3
+[    19.9s] ingest 2000/44633 clusters=0 bigrams=14987
+[    20.9s] ingest 4000/44633 clusters=0 bigrams=33262
+[    21.6s] ingest 6000/44633 clusters=0 bigrams=48699
+[    22.4s] ingest 8000/44633 clusters=0 bigrams=62742
+[    23.3s] ingest 10000/44633 clusters=0 bigrams=76204
+[    23.7s] ingest 12000/44633 clusters=0 bigrams=88077
+[    24.5s] ingest 14000/44633 clusters=0 bigrams=100674
+[    24.8s] ingest 16000/44633 clusters=0 bigrams=112690
+[    25.8s] ingest 18000/44633 clusters=0 bigrams=125587
+[    26.2s] ingest 20000/44633 clusters=0 bigrams=136528
+[    27.8s] ingest 22000/44633 clusters=0 bigrams=146776
+[    28.2s] ingest 24000/44633 clusters=0 bigrams=158173
+[    28.7s] ingest 26000/44633 clusters=0 bigrams=168411
+[    30.6s] ingest 28000/44633 clusters=0 bigrams=178299
+[    31.3s] ingest 30000/44633 clusters=0 bigrams=188081
+[    31.7s] ingest 32000/44633 clusters=0 bigrams=197375
+[    32.2s] ingest 34000/44633 clusters=0 bigrams=206542
+[    33.8s] ingest 36000/44633 clusters=0 bigrams=216021
+[    34.4s] ingest 38000/44633 clusters=0 bigrams=225577
+[    35.1s] ingest 40000/44633 clusters=0 bigrams=236040
+[    35.5s] ingest 42000/44633 clusters=0 bigrams=245421
+[    35.8s] ingest 44000/44633 clusters=0 bigrams=255607
+[    37.5s] ingest done n=44633 bigrams=270863 — finalize promotions
+[     0.0s] START checkpoint=checkpoints/grade_v3_big_a2_t3.pkl min_freq=3
+[    15.3s] loaded parents=44633 (15.3s)
+[    15.4s] mode=ISG rebuild_seg_graph …
+[    15.4s] ISG batch ingest start parents=44633 min_freq=3
+[    15.8s] ingest 2000/44633 clusters=0 bigrams=14987
+[    16.6s] ingest 4000/44633 clusters=0 bigrams=33262
+[    17.2s] ingest 6000/44633 clusters=0 bigrams=48699
+[    17.8s] ingest 8000/44633 clusters=0 bigrams=62742
+[    18.6s] ingest 10000/44633 clusters=0 bigrams=76204
+[    19.1s] ingest 12000/44633 clusters=0 bigrams=88077
+[    19.9s] ingest 14000/44633 clusters=0 bigrams=100674
+[    20.2s] ingest 16000/44633 clusters=0 bigrams=112690
+[    21.0s] ingest 18000/44633 clusters=0 bigrams=125587
+[    21.3s] ingest 20000/44633 clusters=0 bigrams=136528
+[    22.1s] ingest 22000/44633 clusters=0 bigrams=146776
+[    22.5s] ingest 24000/44633 clusters=0 bigrams=158173
+[    22.7s] ingest 26000/44633 clusters=0 bigrams=168411
+[    23.8s] ingest 28000/44633 clusters=0 bigrams=178299
+[    24.1s] ingest 30000/44633 clusters=0 bigrams=188081
+[    24.4s] ingest 32000/44633 clusters=0 bigrams=197375
+[    24.7s] ingest 34000/44633 clusters=0 bigrams=206542
+[    26.1s] ingest 36000/44633 clusters=0 bigrams=216021
+[    26.6s] ingest 38000/44633 clusters=0 bigrams=225577
+[    27.2s] ingest 40000/44633 clusters=0 bigrams=236040
+[    27.6s] ingest 42000/44633 clusters=0 bigrams=245421
+[    28.0s] ingest 44000/44633 clusters=0 bigrams=255607
+[    29.7s] ingest done n=44633 bigrams=270863 — finalize promotions
+[   127.5s] promote 2000 clusters=2000 pair_count=45
+[   134.3s] promote 4000 clusters=4000 pair_count=26
+[   137.4s] promote 6000 clusters=6000 pair_count=19
+[   139.7s] promote 8000 clusters=8000 pair_count=15
+[   141.0s] promote 10000 clusters=10000 pair_count=12
+[   142.1s] promote 12000 clusters=12000 pair_count=10
+[   142.9s] promote 14000 clusters=14000 pair_count=9
+[   143.6s] promote 16000 clusters=16000 pair_count=8
+[   144.3s] promote 18000 clusters=18000 pair_count=7
+[   144.9s] promote 20000 clusters=20000 pair_count=6
+[   145.3s] promote 22000 clusters=22000 pair_count=6
+[   145.8s] promote 24000 clusters=24000 pair_count=5
+[   146.1s] promote 26000 clusters=26000 pair_count=5
+[   146.5s] promote 28000 clusters=28000 pair_count=4
+[   146.8s] promote 30000 clusters=30000 pair_count=4
+[   147.0s] promote 32000 clusters=32000 pair_count=4
+[   147.3s] promote 34000 clusters=34000 pair_count=4
+[   147.6s] promote 36000 clusters=36000 pair_count=3
+[   147.8s] promote 38000 clusters=38000 pair_count=3
+[   148.0s] promote 40000 clusters=40000 pair_count=3
+[   148.0s] promotions done clusters=40000 promoted=40000
+[   150.8s] sync derived 8000/44633
+[   151.3s] sync derived 16000/44633
+[   151.7s] sync derived 24000/44633
+[   152.2s] sync derived 32000/44633
+[   152.6s] sync derived 40000/44633
+[   155.7s] done parents=44633 clusters=40000 links=535627 promoted=40000
+[   155.8s] ISG rebuild done: {'parents': 44633, 'clusters': 40000, 'links': 535627, 'promoted': 40000} (140.4s)
+[   155.8s] cluster ở→đâu: {'idx': 5780, 'power': 19}
+[   155.8s] saving checkpoint → /Users/dlv/Documents/code/nn-aivie/checkpoints/grade_v3_big_a2_t3_isg.pkl …
+[   177.3s] saved (21.5s)
+[   177.3s] DONE summary → out/rebuild_isg_t3.summary.json

@@ -1,0 +1,45 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "k": 15,
+ "ket_qua": {
+  "tu_loai": {
+   "n_token": 3259,
+   "n_lop": 8,
+   "san_da_so": 0.5534051201597375,
+   "E_dung": 0.5670398630820794,
+   "du_thua": 0.03053045061156716,
+   "dang_xay": true
+  },
+  "phong_cach": {
+   "n_token": 1465,
+   "n_lop": 9,
+   "san_da_so": 0.5751481888035126,
+   "E_dung": 0.5623710208562019,
+   "du_thua": -0.03007441091360067,
+   "dang_xay": true
+  },
+  "ngau_nhien": {
+   "n_token": 3259,
+   "n_lop": 8,
+   "san_da_so": 0.49236254724381373,
+   "E_dung": 0.4307780075590102,
+   "du_thua": -0.12131598909898016,
+   "dang_xay": true
+  },
+  "tran_duong_ong": {
+   "n_token": 3259,
+   "n_lop": 8,
+   "san_da_so": 0.20059901590244597,
+   "E_dung": 0.7788632960136918,
+   "du_thua": 0.723371989295272,
+   "dang_xay": false
+  }
+ },
+ "gate": {
+  "min_tok": 500,
+  "control_max": 0.1,
+  "worth_max": 0.4
+ },
+ "doc_duoc": true,
+ "seconds": 24.8
+}

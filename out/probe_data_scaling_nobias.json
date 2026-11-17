@@ -1,0 +1,90 @@
+{
+  "checkpoint": "checkpoints/grade_v3_big_a2_t3_isg.pkl",
+  "pmi_cut": 0.0,
+  "gates": {
+    "nov_per_4x": 0.083,
+    "cross_min": 0.95
+  },
+  "rows": [
+    {
+      "n_parents": 1000,
+      "n_clauses": 2172,
+      "n_prompt_used": 60,
+      "mean_candidates": 1083.3081081081082,
+      "cross_parent_ratio": 0.995800744213299,
+      "novelty": 0.48294203744486347,
+      "attestation": 0.9499490630709446,
+      "lac": 0.0,
+      "n_scored": 47,
+      "mean_tokens": 37.340425531914896,
+      "mean_run": 15.617021276595745
+    },
+    {
+      "n_parents": 2500,
+      "n_clauses": 5422,
+      "n_prompt_used": 60,
+      "mean_candidates": 2594.1463414634145,
+      "cross_parent_ratio": 0.9982505311515706,
+      "novelty": 0.5229548351964804,
+      "attestation": 0.9635958048607097,
+      "lac": 0.0,
+      "n_scored": 48,
+      "mean_tokens": 37.895833333333336,
+      "mean_run": 13.458333333333334
+    },
+    {
+      "n_parents": 5000,
+      "n_clauses": 10731,
+      "n_prompt_used": 60,
+      "mean_candidates": 5139.718085106383,
+      "cross_parent_ratio": 0.9989343358623712,
+      "novelty": 0.46990318639288065,
+      "attestation": 0.9685162317698286,
+      "lac": 0.0,
+      "n_scored": 46,
+      "mean_tokens": 39.56521739130435,
+      "mean_run": 16.956521739130434
+    },
+    {
+      "n_parents": 11000,
+      "n_clauses": 23779,
+      "n_prompt_used": 60,
+      "mean_candidates": 11309.30104712042,
+      "cross_parent_ratio": 0.999720900380923,
+      "novelty": 0.6133912085343223,
+      "attestation": 0.9703426450880311,
+      "lac": 0.0,
+      "n_scored": 47,
+      "mean_tokens": 45.61702127659574,
+      "mean_run": 15.872340425531915
+    },
+    {
+      "n_parents": 22000,
+      "n_clauses": 47474,
+      "n_prompt_used": 60,
+      "mean_candidates": 22748.68181818182,
+      "cross_parent_ratio": 0.9998315304485569,
+      "novelty": 0.5365319590661374,
+      "attestation": 0.9756563666494685,
+      "lac": 0.0,
+      "n_scored": 51,
+      "mean_tokens": 42.90196078431372,
+      "mean_run": 16.352941176470587
+    },
+    {
+      "n_parents": 44633,
+      "n_clauses": 96409,
+      "n_prompt_used": 60,
+      "mean_candidates": 44939.84450402145,
+      "cross_parent_ratio": 0.9999113390219224,
+      "novelty": 0.5657910677282249,
+      "attestation": 0.9827352110661162,
+      "lac": 0.0,
+      "n_scored": 48,
+      "mean_tokens": 49.208333333333336,
+      "mean_run": 17.729166666666668
+    }
+  ],
+  "gate_pass": true,
+  "seconds": 194.7
+}

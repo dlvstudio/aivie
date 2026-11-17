@@ -1,0 +1,195 @@
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[    3.0s RSS  2.46GB] nạp xong · parents=37667 vocab=32002
+[    3.0s RSS  2.46GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    3.1s RSS  2.46GB] ws_spans 0/37667 · span=0 · bỏ=0
+[    5.2s RSS  2.46GB] ws_spans 20000/37667 · span=7678 · bỏ=13111
+[    7.7s RSS  2.46GB] 12181 span · 0.1 phút
+[    7.7s RSS  2.46GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.7s RSS  2.46GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.7s RSS  2.46GB]   mẫu[01] 'nh ậy'
+[    7.7s RSS  2.46GB]   mẫu[02] 'D áy'
+[    7.7s RSS  2.46GB]   mẫu[03] 'đại dương'
+[    7.7s RSS  2.46GB]   mẫu[04] 'bằng chứng'
+[    7.7s RSS  2.46GB]   mẫu[05] 'đánh bắt'
+[    7.7s RSS  2.46GB]   mẫu[06] 'tập quán'
+[    7.7s RSS  2.46GB]   mẫu[07] 'nhanh chóng'
+[    7.7s RSS  2.46GB]   mẫu[08] 'Y 1'
+[    7.7s RSS  2.46GB]   mẫu[09] 'bóng tối'
+[    7.7s RSS  2.46GB]   mẫu[10] 'phép toán'
+[    7.7s RSS  2.46GB]   mẫu[11] 'hoàng cung'
+[    7.7s RSS  2.46GB]   mẫu[12] 'Hồ dinh'
+[    7.7s RSS  2.46GB]   mẫu[13] 'kính Louvre'
+[    7.7s RSS  2.46GB]   mẫu[14] 'hàm ếch'
+[    7.7s RSS  2.46GB]   mẫu[15] 'Gia Lâm'
+[    7.7s RSS  2.46GB]   mẫu[16] 'tuyên thệ'
+[    7.7s RSS  2.46GB]   mẫu[17] 'Vi cảnh'
+[    7.7s RSS  2.46GB]   mẫu[18] 'Trước tiên'
+[    7.7s RSS  2.46GB]   mẫu[19] 'Canada Day'
+[    7.7s RSS  2.46GB]   mẫu[20] 'Tổng chi phí'
+[    7.7s RSS  2.46GB]   mẫu[21] 'El be'
+[    7.7s RSS  2.46GB]   mẫu[22] 'Giáo hội'
+[    7.7s RSS  2.46GB]   mẫu[23] 'Hạt nhân'
+[    7.7s RSS  2.46GB]   mẫu[24] 'Chuyển động'
+[    7.7s RSS  2.46GB]   mẫu[25] 'Ann ex Fox tro t'
+[    7.7s RSS  2.46GB]   mẫu[26] 'tam giác'
+[    7.7s RSS  2.46GB]   mẫu[27] 'Pasteur Nha Trang'
+[    7.7s RSS  2.46GB]   mẫu[28] 'Miguel Rodri go'
+[    7.7s RSS  2.46GB]   mẫu[29] 'Service Pro v ider'
+[    7.7s RSS  2.46GB] span nghi rác (tự động): 333/12181 = 2.7% (ISG: 57%)
+[    7.7s RSS  2.46GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[    3.0s RSS  2.43GB] nạp xong · parents=36482 vocab=32002
+[    3.0s RSS  2.43GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    3.0s RSS  2.43GB] ws_spans 0/36482 · span=0 · bỏ=0
+[    5.2s RSS  2.43GB] ws_spans 20000/36482 · span=7216 · bỏ=13826
+[    7.5s RSS  2.43GB] 11382 span · 0.1 phút
+[    7.6s RSS  2.43GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.6s RSS  2.43GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.6s RSS  2.43GB]   mẫu[01] 'gi oa'
+[    7.6s RSS  2.43GB]   mẫu[02] 'Giải phẫu'
+[    7.6s RSS  2.43GB]   mẫu[03] 'nước sạch'
+[    7.6s RSS  2.43GB]   mẫu[04] 'thủ công'
+[    7.6s RSS  2.43GB]   mẫu[05] 'phân phát'
+[    7.6s RSS  2.43GB]   mẫu[06] 'G ạch'
+[    7.6s RSS  2.43GB]   mẫu[07] 'anh trai'
+[    7.6s RSS  2.43GB]   mẫu[08] 'đứng yên'
+[    7.6s RSS  2.43GB]   mẫu[09] 'mạng Domain'
+[    7.6s RSS  2.43GB]   mẫu[10] 'o ctan'
+[    7.6s RSS  2.43GB]   mẫu[11] 'Bình Chánh'
+[    7.6s RSS  2.43GB]   mẫu[12] 'Văn Miếu'
+[    7.6s RSS  2.43GB]   mẫu[13] 'trụ sở'
+[    7.6s RSS  2.43GB]   mẫu[14] 'Cơ Tu'
+[    7.6s RSS  2.43GB]   mẫu[15] 'ig g'
+[    7.6s RSS  2.43GB]   mẫu[16] 'gợi ý'
+[    7.6s RSS  2.43GB]   mẫu[17] 'mãnh liệt'
+[    7.6s RSS  2.43GB]   mẫu[18] 'Huy Liệu'
+[    7.6s RSS  2.43GB]   mẫu[19] 'đền Thượng'
+[    7.6s RSS  2.43GB]   mẫu[20] 'Cùng với'
+[    7.6s RSS  2.43GB]   mẫu[21] 'Lịch Julius'
+[    7.6s RSS  2.43GB]   mẫu[22] 'eta Digital'
+[    7.6s RSS  2.43GB]   mẫu[23] 'Hỏa ngục'
+[    7.6s RSS  2.43GB]   mẫu[24] 'anda ean'
+[    7.6s RSS  2.43GB]   mẫu[25] 'ān l ún chē'
+[    7.6s RSS  2.43GB]   mẫu[26] 'Tạm binh'
+[    7.6s RSS  2.43GB]   mẫu[27] 'Camel ot'
+[    7.6s RSS  2.43GB]   mẫu[28] 'nhu ận'
+[    7.6s RSS  2.43GB]   mẫu[29] 'Gò mộ'
+[    7.6s RSS  2.43GB] span nghi rác (tự động): 315/11382 = 2.8% (ISG: 57%)
+[    7.6s RSS  2.43GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[    2.9s RSS  2.43GB] nạp xong · parents=36482 vocab=32002
+[    2.9s RSS  2.43GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.9s RSS  2.43GB] ws_spans 0/36482 · span=0 · bỏ=0
+[    5.0s RSS  2.43GB] ws_spans 20000/36482 · span=7218 · bỏ=13826
+[    7.3s RSS  2.43GB] 11384 span · 0.1 phút
+[    7.3s RSS  2.43GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.3s RSS  2.43GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.3s RSS  2.43GB]   mẫu[01] 'T oshiba'
+[    7.3s RSS  2.43GB]   mẫu[02] 'Giải tích'
+[    7.3s RSS  2.43GB]   mẫu[03] 'nước nặng'
+[    7.3s RSS  2.43GB]   mẫu[04] '3 m'
+[    7.3s RSS  2.43GB]   mẫu[05] 'ngoài Mặt Trời'
+[    7.3s RSS  2.43GB]   mẫu[06] 'G 8'
+[    7.3s RSS  2.43GB]   mẫu[07] 'anh em'
+[    7.3s RSS  2.43GB]   mẫu[08] 'đứng tên'
+[    7.3s RSS  2.43GB]   mẫu[09] 'mạng ARPANET'
+[    7.3s RSS  2.43GB]   mẫu[10] 'o cha'
+[    7.3s RSS  2.43GB]   mẫu[11] 'Bình Kình'
+[    7.3s RSS  2.43GB]   mẫu[12] 'Văn Phụng'
+[    7.3s RSS  2.43GB]   mẫu[13] 'kẻ thù'
+[    7.3s RSS  2.43GB]   mẫu[14] 'Cơ cấu'
+[    7.3s RSS  2.43GB]   mẫu[15] 'trốn tránh'
+[    7.3s RSS  2.43GB]   mẫu[16] 'Vì vậy'
+[    7.3s RSS  2.43GB]   mẫu[17] 'dinh dưỡng khoáng'
+[    7.3s RSS  2.43GB]   mẫu[18] 'Huy Sâm'
+[    7.3s RSS  2.43GB]   mẫu[19] 'luân hồi'
+[    7.3s RSS  2.43GB]   mẫu[20] 'rẻ tiền'
+[    7.3s RSS  2.43GB]   mẫu[21] 'Lịch Ireland'
+[    7.3s RSS  2.43GB]   mẫu[22] 'ling stone'
+[    7.3s RSS  2.43GB]   mẫu[23] 'Máy bay'
+[    7.3s RSS  2.43GB]   mẫu[24] 'Sóc Trăng'
+[    7.3s RSS  2.43GB]   mẫu[25] 'boson Higgs'
+[    7.3s RSS  2.43GB]   mẫu[26] 'Dal älven'
+[    7.3s RSS  2.43GB]   mẫu[27] 'Book er'
+[    7.3s RSS  2.43GB]   mẫu[28] 'Ag ain Shell'
+[    7.3s RSS  2.43GB]   mẫu[29] 'đô china'
+[    7.3s RSS  2.43GB] span nghi rác (tự động): 315/11384 = 2.8% (ISG: 57%)
+[    7.3s RSS  2.43GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[    2.9s RSS  2.44GB] nạp xong · parents=36482 vocab=32002
+[    2.9s RSS  2.44GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.9s RSS  2.44GB] ws_spans 0/36482 · span=0 · bỏ=0
+[    5.1s RSS  2.44GB] ws_spans 20000/36482 · span=7218 · bỏ=13826
+[    7.3s RSS  2.44GB] 11384 span · 0.1 phút
+[    7.3s RSS  2.44GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.3s RSS  2.44GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.3s RSS  2.44GB]   mẫu[01] 'T oshiba'
+[    7.3s RSS  2.44GB]   mẫu[02] 'Giải tích'
+[    7.3s RSS  2.44GB]   mẫu[03] 'nước nặng'
+[    7.3s RSS  2.44GB]   mẫu[04] '3 m'
+[    7.3s RSS  2.44GB]   mẫu[05] 'ngoài Mặt Trời'
+[    7.3s RSS  2.44GB]   mẫu[06] 'G 8'
+[    7.3s RSS  2.44GB]   mẫu[07] 'anh em'
+[    7.3s RSS  2.44GB]   mẫu[08] 'đứng tên'
+[    7.3s RSS  2.44GB]   mẫu[09] 'mạng ARPANET'
+[    7.3s RSS  2.44GB]   mẫu[10] 'o cha'
+[    7.3s RSS  2.44GB]   mẫu[11] 'Bình Kình'
+[    7.3s RSS  2.44GB]   mẫu[12] 'Văn Phụng'
+[    7.3s RSS  2.44GB]   mẫu[13] 'kẻ thù'
+[    7.3s RSS  2.44GB]   mẫu[14] 'Cơ cấu'
+[    7.3s RSS  2.44GB]   mẫu[15] 'trốn tránh'
+[    7.3s RSS  2.44GB]   mẫu[16] 'Vì vậy'
+[    7.3s RSS  2.44GB]   mẫu[17] 'dinh dưỡng khoáng'
+[    7.3s RSS  2.44GB]   mẫu[18] 'Huy Sâm'
+[    7.3s RSS  2.44GB]   mẫu[19] 'luân hồi'
+[    7.3s RSS  2.44GB]   mẫu[20] 'rẻ tiền'
+[    7.3s RSS  2.44GB]   mẫu[21] 'Lịch Ireland'
+[    7.3s RSS  2.44GB]   mẫu[22] 'ling stone'
+[    7.3s RSS  2.44GB]   mẫu[23] 'Máy bay'
+[    7.3s RSS  2.44GB]   mẫu[24] 'Sóc Trăng'
+[    7.3s RSS  2.44GB]   mẫu[25] 'boson Higgs'
+[    7.3s RSS  2.44GB]   mẫu[26] 'Dal älven'
+[    7.3s RSS  2.44GB]   mẫu[27] 'Book er'
+[    7.3s RSS  2.44GB]   mẫu[28] 'Ag ain Shell'
+[    7.3s RSS  2.44GB]   mẫu[29] 'đô china'
+[    7.3s RSS  2.44GB] span nghi rác (tự động): 315/11384 = 2.8% (ISG: 57%)
+[    7.3s RSS  2.44GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.
+[    0.0s RSS  0.08GB] nạp checkpoints/loai_suy.pkl …
+[    2.7s RSS  2.45GB] nạp xong · parents=36482 vocab=32002
+[    2.7s RSS  2.45GB] WS-CRF nạp xong (out/models/ws_crf_uts_full)
+[    2.8s RSS  2.45GB] ws_spans 0/36482 · span=0 · bỏ=0
+[    4.8s RSS  2.45GB] ws_spans 20000/36482 · span=7218 · bỏ=13826
+[    7.0s RSS  2.45GB] 11384 span · 0.1 phút
+[    7.0s RSS  2.45GB] ghi checkpoints/loai_suy.ws_spans.json (0.2 MB) · roundtrip OK
+[    7.0s RSS  2.45GB]   mẫu[00] '<0x8A> <0x80> <0xE5> <0xB8> <0x88>'
+[    7.0s RSS  2.45GB]   mẫu[01] 'T oshiba'
+[    7.0s RSS  2.45GB]   mẫu[02] 'Giải tích'
+[    7.0s RSS  2.45GB]   mẫu[03] 'nước nặng'
+[    7.0s RSS  2.45GB]   mẫu[04] '3 m'
+[    7.0s RSS  2.45GB]   mẫu[05] 'ngoài Mặt Trời'
+[    7.0s RSS  2.45GB]   mẫu[06] 'G 8'
+[    7.0s RSS  2.45GB]   mẫu[07] 'anh em'
+[    7.0s RSS  2.45GB]   mẫu[08] 'đứng tên'
+[    7.0s RSS  2.45GB]   mẫu[09] 'mạng ARPANET'
+[    7.0s RSS  2.45GB]   mẫu[10] 'o cha'
+[    7.0s RSS  2.45GB]   mẫu[11] 'Bình Kình'
+[    7.0s RSS  2.45GB]   mẫu[12] 'Văn Phụng'
+[    7.0s RSS  2.45GB]   mẫu[13] 'kẻ thù'
+[    7.0s RSS  2.45GB]   mẫu[14] 'Cơ cấu'
+[    7.0s RSS  2.45GB]   mẫu[15] 'trốn tránh'
+[    7.0s RSS  2.45GB]   mẫu[16] 'Vì vậy'
+[    7.0s RSS  2.45GB]   mẫu[17] 'dinh dưỡng khoáng'
+[    7.0s RSS  2.45GB]   mẫu[18] 'Huy Sâm'
+[    7.0s RSS  2.45GB]   mẫu[19] 'luân hồi'
+[    7.0s RSS  2.45GB]   mẫu[20] 'rẻ tiền'
+[    7.0s RSS  2.45GB]   mẫu[21] 'Lịch Ireland'
+[    7.0s RSS  2.45GB]   mẫu[22] 'ling stone'
+[    7.0s RSS  2.45GB]   mẫu[23] 'Máy bay'
+[    7.0s RSS  2.45GB]   mẫu[24] 'Sóc Trăng'
+[    7.0s RSS  2.45GB]   mẫu[25] 'boson Higgs'
+[    7.0s RSS  2.45GB]   mẫu[26] 'Dal älven'
+[    7.0s RSS  2.45GB]   mẫu[27] 'Book er'
+[    7.0s RSS  2.45GB]   mẫu[28] 'Ag ain Shell'
+[    7.0s RSS  2.45GB]   mẫu[29] 'đô china'
+[    7.1s RSS  2.45GB] span nghi rác (tự động): 315/11384 = 2.8% (ISG: 57%)
+[    7.1s RSS  2.45GB] ⚠️ thước tự động MÙ với mảnh BPE tên ngoại lai (`René Lac os te`, `Bat ư`) — PHẢI đọc tay mẫu bên dưới, đừng chỉ tin %.

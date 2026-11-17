@@ -1,0 +1,95 @@
+[      0.0s] nạp checkpoints/classrich2.pkl …
+[     0.0s] === load_classrich2 START (pid=14756) → out/logs/load_classrich2_20260816_192220.log ===
+[     0.0s] load checkpoint checkpoints/classrich2.pkl …
+[     0.0s] ▶ unpickle
+[     0.3s] ✓ unpickle  (0.3s)
+[     0.3s] ▶ vocab (32002 token)
+[     0.3s] ✓ vocab (32002 token)  (0.0s)
+[     0.3s] ▶ adjacency
+[     1.3s] ✓ adjacency  (1.0s)
+[     1.3s] ▶ embedding
+[     1.3s] ✓ embedding  (0.0s)
+[     1.3s] ▶ parents
+[     1.3s] parents: deserialize 55460 records …
+[     1.4s] parents 5000/55460 (9.0%)
+[     1.4s] parents 10000/55460 (18.0%)
+[     1.4s] parents 15000/55460 (27.0%)
+[     1.5s] parents 20000/55460 (36.1%)
+[     1.5s] parents 25000/55460 (45.1%)
+[     1.6s] parents 30000/55460 (54.1%)
+[     1.6s] parents 35000/55460 (63.1%)
+[     1.7s] parents 40000/55460 (72.1%)
+[     1.7s] parents 45000/55460 (81.1%)
+[     1.8s] parents 50000/55460 (90.2%)
+[     1.8s] parents 55000/55460 (99.2%)
+[     2.6s] ▶ rebuild_hierarchical_index …
+[     2.7s] ✓ rebuild_hierarchical_index (0.1s)
+[     3.2s]     resync match_ids: 55460/55460 cha (df dựng lại)
+[     3.2s] ✓ parents  (1.9s)
+[     3.2s] ✓ loaded: vocab=32002 parents=55460 E=(32002, 96)
+[     3.3s] sidecar thiếu → migrate: classrich2.content.pkl
+[     3.3s] ✓ load_checkpoint XONG
+[      3.3s] đào lớp + bảng đồng hiện …
+[      3.4s]   CHÂN LÝ v2: 716 lớp
+[      3.4s]   lớp ≥3 thành viên = 716
+[      3.4s] chọn ca §20 (P chạm ≥2 nhưng ≤½ thành viên) …
+[      3.8s]   ca đem đo = 25
+[      3.8s] ca 1/25: P='đoàn' lớp='loại'
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:2974: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 55460 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/classrich2.pkl --in-place
+  ensure_frame_brackets(state)
+[     16.5s]    khỉ=['1R', 'ATM', 'B41', 'B69'] tắt=[0, 0, 0, 0] bật=[0, 0, 0, 0]  lên=0 xuống=0 mới=0
+[     16.5s] ca 2/25: P='bán' lớp='loại'
+[     16.7s]    khỉ=['1R', 'ATM', 'B41', 'B69'] tắt=[0, 1279, 0, 0] bật=[0, 1279, 0, 0]  lên=0 xuống=0 mới=0
+[     16.7s] ca 3/25: P='trở' lớp='loài'
+[     17.0s]    khỉ=['Ai Cập', 'Bóng nước', 'Bạch quả', 'Bồ nông'] tắt=[8192, 6163, 5931, 8804] bật=[8192, 6163, 5931, 8804]  lên=0 xuống=0 mới=0
+[     17.0s] ca 4/25: P='thay' lớp='loài'
+[     17.3s]    khỉ=['Ai Cập', 'Bóng nước', 'Bạch quả', 'Bồ nông'] tắt=[4800, 3929, 5263, 1621] bật=[4800, 3929, 5263, 1621]  lên=0 xuống=0 mới=0
+[     17.3s] ca 5/25: P='lợn' lớp='phần'
+[     17.5s]    khỉ=['Bắc Bộ', 'Một', 'Nước dùng', 'OHRI'] tắt=[6618, 4688, 5299, 0] bật=[6618, 4688, 5299, 0]  lên=0 xuống=0 mới=0
+[     17.5s] ca 6/25: P='thịt' lớp='phần'
+[     17.7s]    khỉ=['Bắc Bộ', 'Một', 'Nước dùng', 'OHRI'] tắt=[405, 1750, 45, 0] bật=[405, 1750, 45, 0]  lên=0 xuống=0 mới=0
+[     17.7s] ca 7/25: P='trở' lớp='khoảng'
+[     18.0s]    khỉ=['Bắc Kỳ', 'ban ngày', 'buổi', 'bầu trời'] tắt=[6240, 6201, 6978, 5723] bật=[6240, 6201, 6978, 5723]  lên=0 xuống=0 mới=0
+[     18.0s] ca 8/25: P='thay' lớp='khoảng'
+[     18.2s]    khỉ=['Bắc Kỳ', 'ban ngày', 'bầu trời', 'chiều tà'] tắt=[3720, 3923, 5103, 5051] bật=[3720, 3923, 5103, 5051]  lên=0 xuống=0 mới=0
+[     18.2s] ca 9/25: P='thay' lớp='bộ phận'
+[     18.4s]    khỉ=['Sint Eustatius', 'bàn máy', 'bàn phím', 'bánh lái'] tắt=[0, 3564, 3564, 5262] bật=[0, 3564, 3564, 5262]  lên=0 xuống=0 mới=0
+[     18.4s] ca 10/25: P='kim' lớp='bộ phận'
+[     18.7s]    khỉ=['Sint Eustatius', 'bàn máy', 'bàn phím', 'bánh lái'] tắt=[0, 5250, 5250, 7419] bật=[0, 5250, 5250, 7419]  lên=0 xuống=0 mới=0
+[     18.7s] ca 11/25: P='trở' lớp='cây'
+[     18.8s]    khỉ=['Cà phê', 'Ngọc Linh', 'báng', 'bèo'] tắt=[7029, 5890, 0, 2392] bật=[7029, 5890, 0, 2392]  lên=0 xuống=0 mới=0
+[     18.8s] ca 12/25: P='thay' lớp='cây'
+[     19.0s]    khỉ=['Cà phê', 'Ngọc Linh', 'báng', 'bèo'] tắt=[4875, 5238, 0, 3212] bật=[4875, 5238, 0, 3212]  lên=0 xuống=0 mới=0
+[     19.0s] ca 13/25: P='lượng' lớp='vật'
+[     19.3s]    khỉ=['bao tay', 'bình phong', 'bùa', 'bản lề'] tắt=[8024, 7478, 9070, 7878] bật=[8024, 7478, 9070, 7878]  lên=0 xuống=0 mới=0
+[     19.3s] ca 14/25: P='đau' lớp='vật'
+[     19.5s]    khỉ=['bao tay', 'bình phong', 'bùa', 'bản lề'] tắt=[4102, 4141, 0, 3530] bật=[4102, 4141, 0, 3530]  lên=0 xuống=0 mới=0
+[     19.5s] ca 15/25: P='đong' lớp='đồ dùng'
+[     19.9s]    khỉ=['ang', 'bao bì', 'bàn chải', 'bàn tính'] tắt=[838, 435, 207, 207] bật=[838, 435, 207, 207]  lên=0 xuống=0 mới=0
+[     19.9s] ca 16/25: P='mắm' lớp='đồ dùng'
+[     20.1s]    khỉ=['ang', 'bao bì', 'bàn chải', 'bàn tính'] tắt=[7839, 6184, 99, 99] bật=[7839, 6184, 99, 99]  lên=0 xuống=0 mới=0
+[     20.1s] ca 17/25: P='phát' lớp='sự'
+[     20.4s]    khỉ=['Ca trù', 'Hát nói', 'Nho giáo', 'Switch'] tắt=[6456, 9705, 10029, 5065] bật=[6456, 9705, 10029, 5065]  lên=0 xuống=0 mới=0
+[     20.4s] ca 18/25: P='phần' lớp='sự'
+[     20.6s]    khỉ=['Ca trù', 'Hát nói', 'Nho giáo', 'Switch'] tắt=[10684, 8113, 9057, 5311] bật=[10684, 8113, 9057, 5311]  lên=0 xuống=0 mới=0
+[     20.6s] ca 19/25: P='chi' lớp='đồ'
+[     20.9s]    khỉ=['be', 'bi đông', 'bình toong', 'bịch'] tắt=[11478, 11607, 9403, 2620] bật=[11478, 11607, 9403, 2620]  lên=0 xuống=0 mới=0
+[     20.9s] ca 20/25: P='triều' lớp='đồ'
+[     21.1s]    khỉ=['bao', 'be', 'bi đông', 'bình toong'] tắt=[10356, 11982, 13652, 10382] bật=[10356, 11982, 13652, 10382]  lên=0 xuống=0 mới=0
+[     21.1s] ca 21/25: P='nhau' lớp='điều'
+[     21.4s]    khỉ=['Công giáo', 'cao vọng', 'cảm thức', 'dữ kiện'] tắt=[9155, 51, 8566, 9761] bật=[9155, 51, 8566, 9761]  lên=0 xuống=0 mới=0
+[     21.4s] ca 22/25: P='kim' lớp='điều'
+[     21.6s]    khỉ=['Công giáo', 'cao vọng', 'cảm thức', 'dữ kiện'] tắt=[40, 4679, 4696, 5085] bật=[40, 4679, 4696, 5085]  lên=0 xuống=0 mới=0
+[     21.6s] ca 23/25: P='bột' lớp='chất'
+[     21.8s]    khỉ=['Hợp chất', 'Rượu', 'bôi trơn', 'cholesterol'] tắt=[9981, 11448, 13322, 2344] bật=[9981, 11448, 13322, 2344]  lên=0 xuống=0 mới=0
+[     21.8s] ca 24/25: P='thay' lớp='chất'
+[     22.1s]    khỉ=['Hợp chất', 'Rượu', 'bôi trơn', 'cháy'] tắt=[3567, 4689, 813, 1210] bật=[3567, 4689, 813, 1210]  lên=0 xuống=0 mới=0
+[     22.1s] ca 25/25: P='chi' lớp='chỗ'
+[     22.3s]    khỉ=['ao', 'ao chuôm', 'bánh chè', 'bóng mát'] tắt=[9855, 9855, 6955, 9627] bật=[9855, 9855, 6955, 9627]  lên=0 xuống=0 mới=0
+[     22.3s] ═══ TỔNG ═══
+[     22.3s]   [② SAI] n=16  lên=0 xuống=0 mới=0  tỉ lệ=—
+[     22.3s]   [② ĐÚNG] n=9  lên=0 xuống=0 mới=0  tỉ lệ=—
+[     22.3s]   «con khỉ» LÊN hạng   : 0
+[     22.3s]   «con khỉ» XUỐNG hạng : 0
+[     22.3s]   vào phân bố lần đầu  : 0
+[     22.3s] ✓ → out/gen_boost_0.0.json

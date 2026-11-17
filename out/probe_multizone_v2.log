@@ -1,0 +1,96 @@
+[0s] load checkpoints/network_v11.pkl (gc.disable) …
+[70s] ✓ loaded · parents 65,098
+
+═══ Hỏi: So sánh Nhà Lý và Nhà Trần ═══
+  5 zone → 5 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'ĠTrần'  (gidf≤5.0 · top-cos=0.71)
+       cos=0.71 w=0.21 → 'Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Chu Văn'
+       cos=0.65 w=0.16 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+  ── zone [CONTENT] 'ĠSo' 'Ġsánh'  (gidf≤6.1 · top-cos=0.65)
+       cos=0.65 w=0.18 → ' Biểu đồ cột giúp so sánh số liệu giữa các nhóm. Cột cao hơn nghĩa là giá t'
+       cos=0.62 w=0.16 → ' So sánh từng cặp số liền kề và đổi chỗ nếu sai thứ tự. Lặp lại đến khi khô'
+  ── zone [CONTENT] 'Ġvà'  (gidf≤1.9 · top-cos=0.63)
+       cos=0.63 w=0.18 → ' Đồng và nhôm dẫn điện rất tốt nên thường dùng làm dây dẫn. Bạc dẫn điện tố'
+       cos=0.63 w=0.18 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 1:\nTiết'
+  ── zone [CONTENT] 'ĠNhà'  (gidf≤5.1 · top-cos=0.63)
+       cos=0.63 w=0.23 → ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đ'
+       cos=0.60 w=0.20 → ' Thành nhà Hồ ở tỉnh Thanh Hóa, xây thế kỷ 14. Kiến trúc đá độc đáo thể hiệ'
+  ── zone [CONTENT] 'ĠLý'  (gidf≤4.9 · top-cos=0.56)
+       cos=0.56 w=0.30 → ' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay'
+       cos=0.47 w=0.19 → ' Lý Thường Kiệt nổi tiếng với bài thơ Nam quốc sơn hà, khẳng định chủ quyền'
+  GHÉP-NAIVE (content zones): 'Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Ch  Biểu đồ cột giúp so sánh số liệu giữa các nhóm. Cột cao hơn nghĩa là   Đồng và nhôm dẫn điện rất tốt nên thường dùng làm dây dẫn. Bạc dẫn đi  Nhà Lý'
+
+═══ Hỏi: Kể về Trần Hưng Đạo và trận Bạch Đằng ═══
+  7 zone → 4 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġvề'  (gidf≤2.5 · top-cos=0.76)
+       cos=0.76 w=0.34 → ' Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư duy. Mỗ'
+       cos=0.66 w=0.20 → ' Nhẹ nhàng đuổi về, không đánh. Rào hoặc đóng cổng nếu cần. Nói với hàng xó'
+  ── zone [CONTENT] 'ĠTrần' 'ĠHưng'  (gidf≤6.1 · top-cos=0.70)
+       cos=0.70 w=0.19 → 'Lịch sử:\nTiêu đề: Nhà Lê trung hưng\n\nĐây là triều đại dài nhất so với các t'
+       cos=0.68 w=0.17 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+  ── zone [CONTENT] 'Ġvà'  (gidf≤1.9 · top-cos=0.63)
+       cos=0.63 w=0.18 → ' Đồng và nhôm dẫn điện rất tốt nên thường dùng làm dây dẫn. Bạc dẫn điện tố'
+       cos=0.63 w=0.18 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 1:\nTiết'
+  ── zone [CONTENT] 'ĠBạch'  (gidf≤5.5 · top-cos=0.51)
+       cos=0.51 w=0.26 → 'Lịch sử:\nTiêu đề: Chiến thắng Bạch Đằng\n\nSông Bạch Đằng là nơi diễn ra ba t'
+       cos=0.43 w=0.17 → 'Lịch sử:\nTiêu đề: Trận Bạch Đằng (1288)\n\nNgoài ra, có tới 400 chiến thuyền '
+  ── zone [bỏ (style/chức-năng)] 'Ġtrận'  (gidf≤4.1 · top-cos=0.46)
+       cos=0.46 w=0.15 → ' Ngô Quyền giành độc lập năm 938 sau trận Bạch Đằng lịch sử. Chiến thắng ch'
+       cos=0.44 w=0.14 → 'Lịch sử:\nTiêu đề: Trận Như Nguyệt\n\nHọ điều động cả bộ binh lẫn thủy binh nh'
+  ── zone [bỏ (style/chức-năng)] 'ĠKể'  (gidf≤6.6 · top-cos=0.45)
+       cos=0.45 w=0.20 → 'Kể từ sau năm 1976, dân số Sài Gòn gia tăng nhanh, nhất là dân nhập cư. Cứ '
+       cos=0.41 w=0.17 → ' Truyện kể về Thúy Kiều — người con gái tài sắc nhưng bất hạnh. Nguyễn Du d'
+  ── zone [bỏ (style/chức-năng)] 'ĠĐạo'  (gidf≤5.1 · top-cos=0.35)
+       cos=0.35 w=0.16 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 3:\nHội '
+       cos=0.35 w=0.16 → 'Đạo đức và Xã hội:\nLớp 4:\nTiết 1: Hiến pháp là luật cơ bản nhất\nBài 2:\nCông'
+  GHÉP-NAIVE (content zones): ' Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư du Lịch sử:\nTiêu đề: Nhà Lê trung hưng\n\nĐây là triều đại dài nhất so với   Đồng và nhôm dẫn điện rất tốt nên thường dùng làm dây dẫn. Bạc dẫn đi Lịch sử'
+
+═══ bằng văn phong hài hước, hãy miêu tả trận Bạch Đằng của Ngô Quyền ═══
+  6 zone → 5 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġhài' 'Ġhước'  (gidf≤6.9 · top-cos=0.82)
+       cos=0.82 w=0.35 → 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt no'
+       cos=0.64 w=0.14 → 'Hội thoại:\nTạo ra một câu nói hài hước.\nTiền không thể mua được hạnh phúc, '
+  ── zone [CONTENT] 'Ġvăn' 'Ġphong'  (gidf≤3.7 · top-cos=0.66)
+       cos=0.66 w=0.17 → ' Nam Cao nổi tiếng với các truyện ngắn về người nông dân nghèo như Lão Hạc,'
+       cos=0.65 w=0.17 → ' Phong trào Cần Vương cuối thế kỷ 19 là phong trào yêu nước chống thực dân '
+  ── zone [CONTENT] 'Ġhãy'  (gidf≤4.6 · top-cos=0.64)
+       cos=0.64 w=0.21 → ' Đừng so sánh để nản lòng. Hãy hỏi bạn cách học, lập thời gian biểu và ôn t'
+       cos=0.61 w=0.18 → ' Hãy dùng ít nhất 12 ký tự, trộn chữ hoa, chữ thường, số và ký hiệu. Không '
+  ── zone [CONTENT] 'Ġmiêu'  (gidf≤5.8 · top-cos=0.62)
+       cos=0.62 w=0.21 → 'Từ: miêu tả\nLoại từ: động từ\nGiải nghĩa: dùng một phương tiện nào đó làm ch'
+       cos=0.56 w=0.15 → 'Lịch sử:\nTiêu đề: Mặt Trời\n\nTrái Đất và các thiên thể khác như các hành tin'
+  ── zone [CONTENT] ','  (gidf≤1.3 · top-cos=0.51)
+       cos=0.51 w=0.26 → ' Nên, nếu tình bạn quan trọng với bạn. Nói rõ vì sao giận, lắng nghe phía b'
+       cos=0.47 w=0.21 → ' Ôi, kể mình nghe xem chuyện gì xảy ra. Xui một hôm thôi, mai có thể khá hơ'
+  ── zone [bỏ (style/chức-năng)] 'bằng'  (gidf≤7.9 · top-cos=0.35)
+       cos=0.35 w=0.20 → ' Delta bằng 0 thì phương trình có nghiệm kép.'
+       cos=0.34 w=0.19 → ' 2x bằng 10 thì x bằng 5.'
+  GHÉP-NAIVE (content zones): 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ m  Nam Cao nổi tiếng với các truyện ngắn về người nông dân nghèo như Lão  Đừng so sánh để nản lòng. Hãy hỏi bạn cách học, lập thời gian biểu và Từ: miê'
+
+═══ Viết một đoạn văn hài hước về Trần Quốc Toản bóp nát quả cam và thế hệ gen Z ═══
+  2 zone → 2 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Viết' 'Ġmột' 'Ġđoạn' 'Ġvăn' 'Ġhài' 'Ġhước' 'Ġvề'  (gidf≤6.9 · top-cos=0.73)
+       cos=0.73 w=0.27 → 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ mặt no'
+       cos=0.64 w=0.18 → 'Hội thoại:\nViết một đoạn văn hài hước về lợi ích của việc nuôi chó.\nCó một '
+  ── zone [CONTENT] 'ĠTrần'  (gidf≤5.0 · top-cos=0.71)
+       cos=0.71 w=0.21 → 'Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Chu Văn'
+       cos=0.65 w=0.16 → 'Lịch sử:\nTiêu đề: Trần Hưng Đạo\n\nTrần Hưng Đạo tên thật là Trần Quốc Tuấn, '
+  GHÉP-NAIVE (content zones): 'Từ: hài hước\nGiải nghĩa: vui đùa, gây cười: câu chuyện hài hước * vẻ m Trần Văn Thức chưa ra khỏi Bình Thuận đã bị quân Tây Sơn giết chết, Ch'
+
+═══ kể một câu chuyện buồn về mùa thu Hà Nội ═══
+  4 zone → 3 CONTENT (top-cos ≥ 0.5):
+  ── zone [CONTENT] 'Ġmột' 'Ġcâu' 'Ġchuyện' 'Ġbuồn'  (gidf≤4.9 · top-cos=0.81)
+       cos=0.81 w=0.22 → 'Truyện:\nTrong cuộc sống không phải ai lúc nào cũng toàn niềm vui và ngược l'
+       cos=0.78 w=0.18 → ' Buồn là có thật, nhưng im lặng không nhất thiết là ghét bạn. Đừng nhắn dồn'
+  ── zone [CONTENT] 'Ġvề'  (gidf≤2.5 · top-cos=0.76)
+       cos=0.76 w=0.34 → ' Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư duy. Mỗ'
+       cos=0.66 w=0.20 → ' Nhẹ nhàng đuổi về, không đánh. Rào hoặc đóng cổng nếu cần. Nói với hàng xó'
+  ── zone [CONTENT] 'Ġmùa' 'Ġthu'  (gidf≤4.6 · top-cos=0.67)
+       cos=0.67 w=0.26 → 'Khoa học:\nLớp 3:\nTiết 2: Muông thú sống trên cạn\nBài 1:\nTiết Khoa học giúp '
+       cos=0.66 w=0.24 → ' Xuân ấm áp, cây cối đâm chồi nảy lộc. Hạ nóng, mưa nhiều ở miền Bắc. Thu m'
+  ── zone [bỏ (style/chức-năng)] 'kể'  (gidf≤8.9 · top-cos=0.27)
+       cos=0.27 w=0.20 → 'Kể từ sau năm 1976, dân số Sài Gòn gia tăng nhanh, nhất là dân nhập cư. Cứ '
+       cos=0.22 w=0.16 → ' Hehe đúng là hài thật. Bạn kể thêm đi, mình nghe.'
+  GHÉP-NAIVE (content zones): 'Truyện:\nTrong cuộc sống không phải ai lúc nào cũng toàn niềm vui và ng  Đọc sách giúp em mở rộng vốn từ, hiểu thêm về thế giới và luyện tư du Khoa học:\nLớp 3:\nTiết 2: Muông thú sống trên cạn\nBài 1:\nTiết Khoa học '
+
+[156s] → zone CONTENT tách đúng + Hopfield chọn fact khớp? style-zone cos thấp (xác nhận HOW≠retrieve). Ghép-naive là input cho compose/LM. Dán log về.

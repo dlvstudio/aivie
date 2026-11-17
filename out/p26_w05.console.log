@@ -1,0 +1,213 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=39601) → out/logs/load_network_v12_sent_20260730_130341.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.3s] ✓ unpickle  (2.3s)
+[     2.3s] ▶ vocab (32002 token)
+[     2.3s] ✓ vocab (32002 token)  (0.0s)
+[     2.3s] ▶ adjacency
+[    10.5s] ✓ adjacency  (8.1s)
+[    10.5s] ▶ embedding
+[    10.5s] ✓ embedding  (0.0s)
+[    10.5s] ▶ parents
+[    10.5s] parents: deserialize 430447 records …
+[    10.6s] parents 5000/430447 (1.2%)
+[    10.6s] parents 10000/430447 (2.3%)
+[    10.6s] parents 15000/430447 (3.5%)
+[    10.7s] parents 20000/430447 (4.6%)
+[    10.7s] parents 25000/430447 (5.8%)
+[    10.8s] parents 30000/430447 (7.0%)
+[    10.8s] parents 35000/430447 (8.1%)
+[    10.8s] parents 40000/430447 (9.3%)
+[    10.9s] parents 45000/430447 (10.5%)
+[    10.9s] parents 50000/430447 (11.6%)
+[    10.9s] parents 55000/430447 (12.8%)
+[    11.0s] parents 60000/430447 (13.9%)
+[    11.0s] parents 65000/430447 (15.1%)
+[    11.1s] parents 70000/430447 (16.3%)
+[    11.1s] parents 75000/430447 (17.4%)
+[    11.1s] parents 80000/430447 (18.6%)
+[    11.2s] parents 85000/430447 (19.7%)
+[    11.2s] parents 90000/430447 (20.9%)
+[    11.2s] parents 95000/430447 (22.1%)
+[    11.3s] parents 100000/430447 (23.2%)
+[    11.3s] parents 105000/430447 (24.4%)
+[    11.4s] parents 110000/430447 (25.6%)
+[    11.4s] parents 115000/430447 (26.7%)
+[    11.5s] parents 120000/430447 (27.9%)
+[    11.5s] parents 125000/430447 (29.0%)
+[    11.6s] parents 130000/430447 (30.2%)
+[    11.6s] parents 135000/430447 (31.4%)
+[    11.7s] parents 140000/430447 (32.5%)
+[    11.7s] parents 145000/430447 (33.7%)
+[    11.8s] parents 150000/430447 (34.8%)
+[    11.9s] parents 155000/430447 (36.0%)
+[    11.9s] parents 160000/430447 (37.2%)
+[    12.0s] parents 165000/430447 (38.3%)
+[    12.1s] parents 170000/430447 (39.5%)
+[    12.2s] parents 175000/430447 (40.7%)
+[    12.2s] parents 180000/430447 (41.8%)
+[    12.3s] parents 185000/430447 (43.0%)
+[    12.4s] parents 190000/430447 (44.1%)
+[    12.4s] parents 195000/430447 (45.3%)
+[    12.5s] parents 200000/430447 (46.5%)
+[    12.6s] parents 205000/430447 (47.6%)
+[    12.7s] parents 210000/430447 (48.8%)
+[    12.7s] parents 215000/430447 (49.9%)
+[    12.8s] parents 220000/430447 (51.1%)
+[    12.9s] parents 225000/430447 (52.3%)
+[    13.0s] parents 230000/430447 (53.4%)
+[    13.0s] parents 235000/430447 (54.6%)
+[    13.1s] parents 240000/430447 (55.8%)
+[    13.2s] parents 245000/430447 (56.9%)
+[    13.3s] parents 250000/430447 (58.1%)
+[    13.3s] parents 255000/430447 (59.2%)
+[    13.4s] parents 260000/430447 (60.4%)
+[    13.5s] parents 265000/430447 (61.6%)
+[    13.6s] parents 270000/430447 (62.7%)
+[    13.6s] parents 275000/430447 (63.9%)
+[    13.7s] parents 280000/430447 (65.0%)
+[    13.8s] parents 285000/430447 (66.2%)
+[    13.9s] parents 290000/430447 (67.4%)
+[    13.9s] parents 295000/430447 (68.5%)
+[    14.0s] parents 300000/430447 (69.7%)
+[    14.1s] parents 305000/430447 (70.9%)
+[    14.2s] parents 310000/430447 (72.0%)
+[    14.2s] parents 315000/430447 (73.2%)
+[    14.3s] parents 320000/430447 (74.3%)
+[    14.4s] parents 325000/430447 (75.5%)
+[    14.5s] parents 330000/430447 (76.7%)
+[    14.5s] parents 335000/430447 (77.8%)
+[    14.6s] parents 340000/430447 (79.0%)
+[    14.7s] parents 345000/430447 (80.1%)
+[    14.8s] parents 350000/430447 (81.3%)
+[    14.8s] parents 355000/430447 (82.5%)
+[    14.9s] parents 360000/430447 (83.6%)
+[    15.0s] parents 365000/430447 (84.8%)
+[    15.1s] parents 370000/430447 (86.0%)
+[    15.1s] parents 375000/430447 (87.1%)
+[    15.2s] parents 380000/430447 (88.3%)
+[    15.3s] parents 385000/430447 (89.4%)
+[    15.4s] parents 390000/430447 (90.6%)
+[    15.5s] parents 395000/430447 (91.8%)
+[    15.5s] parents 400000/430447 (92.9%)
+[    15.6s] parents 405000/430447 (94.1%)
+[    15.7s] parents 410000/430447 (95.2%)
+[    15.7s] parents 415000/430447 (96.4%)
+[    15.8s] parents 420000/430447 (97.6%)
+[    15.8s] parents 425000/430447 (98.7%)
+[    15.9s] parents 430000/430447 (99.9%)
+[    27.8s] ▶ rebuild_hierarchical_index …
+[    29.0s] ✓ rebuild_hierarchical_index (1.2s)
+[    33.9s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    33.9s] ✓ parents  (23.4s)
+[    33.9s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    35.1s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    35.1s] ✓ load_checkpoint XONG
+[84s] ✓ 430,447 cha · max_len=96 · extra={'ar_matrix_w_skip_decode_weight': 0.5, 'hybrid_temperature': 0.3, 'ar_sharp_gate': False}
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+[221s]   xong no_agenda·T1 verbatim (20)
+[222s]   xong no_agenda·T2 paraphrase (5)
+[230s]   xong no_agenda·T3 ghép (10)
+[232s]   xong no_agenda·T4 qa (10)
+[233s]   xong no_agenda·T5 số (4)
+[237s]   xong no_agenda·T6 bịa (5)
+[249s]   xong no_agenda·T7 dài (5)
+[366s]   xong handoff·T1 verbatim (20)
+[368s]   xong handoff·T2 paraphrase (5)
+[378s]   xong handoff·T3 ghép (10)
+[379s]   xong handoff·T4 qa (10)
+[381s]   xong handoff·T5 số (4)
+[386s]   xong handoff·T6 bịa (5)
+[399s]   xong handoff·T7 dài (5)
+
+========================================================================================================
+chế độ    nhóm              n   empty  degen    lạc  digit⎵  loop4   copy  n_facts   stop  n_tok
+========================================================================================================
+no_agenda T1 verbatim      20    0.00   0.00   0.00    0.00   0.00   0.78     0.95   0.95   15.5
+no_agenda T2 paraphrase     5    0.20   0.20    nan    0.00   0.00   1.00     0.60   1.00    5.4
+no_agenda T3 ghép          10    0.00   0.60    nan    0.00   0.00   0.42     0.10   1.00   11.5
+no_agenda T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   16.3
+no_agenda T5 số             4    0.00   0.00    nan    0.00   0.00   1.00     0.75   1.00    6.8
+no_agenda T6 bịa            5    0.00   0.00   0.00    0.00   0.00   0.76     1.00   1.00   14.8
+no_agenda T7 dài            5    0.00   0.00   0.50    0.00   0.00   0.75     0.80   0.80   32.0
+--------------------------------------------------------------------------------------------------------
+handoff   T1 verbatim      20    0.00   0.00   0.32    0.05   0.00   0.64     1.75   0.95   34.6
+handoff   T2 paraphrase     5    0.00   0.00   0.40    0.00   0.00   0.67     1.80   1.00   19.6
+handoff   T3 ghép          10    0.00   0.20   0.43    0.00   0.00   0.75     0.90   1.00   29.9
+handoff   T4 qa            10    0.00   0.10   0.00    0.00   0.00   1.00     0.90   1.00   16.3
+handoff   T5 số             4    0.00   0.00   0.25    0.00   0.00   0.65     2.00   1.00   21.5
+handoff   T6 bịa            5    0.00   0.00   0.30    0.00   0.00   0.59     2.20   1.00   35.6
+handoff   T7 dài            5    0.00   0.00   0.20    0.00   0.00   0.58     1.60   0.80   52.6
+--------------------------------------------------------------------------------------------------------
+Hướng mong muốn: empty↓ (trừ T6 bịa ↑) · degen↓ · **lạc↓** · digit⎵↓ · loop4↓ · stop↑
+`lạc` = tỉ lệ CÂU (từ câu 2 trở đi) KHÔNG chia fold nội dung nào với prompt — đo TRÔI ĐỀ.
+  Cột này thêm ở §12.73: mọi cột cũ đều mù với việc output nhảy sang tài liệu khác.
+`copy` KHÔNG chấm khi phần sinh <4 token (NaN) — 1 token luôn khớp trọn một emit.
+
+── đếm ca (cổng §12.38) ──
+  no_agenda T3 ghép      readable(n_tok≥4&!degen)=2/10  · n_facts>1=0/10
+  no_agenda T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+  handoff   T3 ghép      readable(n_tok≥4&!degen)=7/10  · n_facts>1=2/10
+  handoff   T4 qa        readable(n_tok≥4&!degen)=9/10  · n_facts>1=0/10
+
+── mẫu đọc tay (mỗi ô tối đa 4) ──
+  [no_agenda·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list sample riêng list chương trình ưu đãi hấp dẫn dành riêng cho khách hàng'
+  [no_agenda·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười'
+  [no_agenda·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của họ Müritz'
+  [no_agenda·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là ra'
+  [no_agenda·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938'
+  [no_agenda·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng'
+  [no_agenda·T2 paraphrase] 'Trận Bạch Đằng năm 1288'
+  [no_agenda·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: không'
+  [no_agenda·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ thể cho kỳ thực đã hòa tan tiêu hao không muốn Đại một khối có ngày mùa hè tạo băng kỹ thuật tất cả khối một băng đều là Cổ Đại Hạ cùng Hoa Hạ Cổ không Đại một có mùa hè tạo và không băng kỹ thuật tất cả khối ít cũng biết'
+  [no_agenda·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: có'
+  [no_agenda·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo Lê Đạo Vương'
+  [no_agenda·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  [no_agenda·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Sau đó, ông chỉ huy trận Bạch Đằng, đánh bại quân Nam Hán, giết chết Hoằng Tháo.'
+  [no_agenda·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [no_agenda·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [no_agenda·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010'
+  [no_agenda·T5 số] 'Chiến thắng Bạch Đằng năm 1288'
+  [no_agenda·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968'
+  [no_agenda·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng'
+  [no_agenda·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010'
+  [no_agenda·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp chân ngươi bóp thoải mái'
+  [no_agenda·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm trước Sự phát triển của công nghiệp'
+  [no_agenda·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và có ba lần . đánh bại quân Nguyên Mông vào các năm 1258 Trần ba lần trong vào các năm mới đổi và gọi là Long Phượng'
+  [no_agenda·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế tác động đến đường hầm hư không một thôi diễn đánh giá tấm này lục giai Na D'
+  [no_agenda·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen'
+  [no_agenda·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là cái hối hả ngược xuôi bây giờ đã đại hoạch toàn '
+  [no_agenda·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát'
+  [handoff·T1 verbatim] 'Nhiều ứng dụng cũng có mailing list sample riêng list chương trình ưu đãi hấp dẫn dành riêng cho khách hàng. Dự án thesolcity là 1 khu đô thị kiểu mẫu mang hơi thở đầy năng lượng của một thành phố trẻ, thành phố vệ tinh đạt tiêu.'
+  [handoff·T1 verbatim] '" Long Hạo Thiên trên mặt lộ ra tuyệt xử phùng sinh cười. Chỉ cần còn có một cái mạng, liền có cơ hội đông sơn tái khởi.'
+  [handoff·T1 verbatim] 'Hồ lớn nhất hoàn toàn thuộc về lãnh thổ quốc gia của họ Müritz'
+  [handoff·T1 verbatim] 'Lúc này Ngao Ngọc hoàn toàn biến bộ dáng, biến thanh âm, Lãnh Bích khẳng định là ra. "Đi theo ta.'
+  [handoff·T2 paraphrase] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T2 paraphrase] 'Ngô Quyền đánh bại quân Nam Hán năm 938. Năm 981, Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng năm 981 Lê Hoàn đánh bại quân Tống trên sông Bạch Đằng. Năm 1288, Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng.'
+  [handoff·T2 paraphrase] 'Trận Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T3 ghép] 'Hỏi: so sánh nhà Lý và nhà Trần Đáp: không. Trương Nhược Trần cùng hiến Công Minh bọn người, bay khỏi điều thứ ba thần sông, đi vào Cửu Khúc Thiên Tinh bên trên một chỗ.'
+  [handoff·T3 ghép] 'Cả Hoa Lư và Thăng Long đều từng là Hạ thể cho kỳ thực đã hòa tan tiêu hao không muốn Đại một khối có ngày mùa hè tạo băng kỹ thuật tất cả khối một băng đều là Cổ Đại Hạ cùng Hoa Hạ Cổ không Đại một có mùa hè tạo và không băng kỹ thuật tất cả khối ít cũng biết'
+  [handoff·T3 ghép] 'Hỏi: Kể tên các trận thắng trên sông Bạch Đằng Đáp: có'
+  [handoff·T3 ghép] 'Ngô Quyền và Lê Hoàn đều đánh bại quân xâm lược trên sông Bạch Đằng, còn Trần Hưng Đạo Lê Đạo Vương'
+  [handoff·T4 qa] 'Hỏi: Nhà Lý dời đô về đâu? Đáp:Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  [handoff·T4 qa] 'Hỏi: Ai đánh bại quân Nam Hán trên sông Bạch Đằng? Đáp:Sau đó, ông chỉ huy trận Bạch Đằng, đánh bại quân Nam Hán, giết chết Hoằng Tháo.'
+  [handoff·T4 qa] 'Hỏi: Hoa Lư nằm ở tỉnh nào? Đáp:Hoa Lư nằm ở tỉnh Ninh Bình ngày nay.'
+  [handoff·T4 qa] 'Hỏi: Lê Lợi khởi nghĩa ở đâu? Đáp: Lê Lợi khởi nghĩa Lam Sơn năm 1418 chống quân Minh xâm lược. Sau gần hai thập kỷ, ông lên ngôi, mở đầu nhà Lê sơ'
+  [handoff·T5 số] 'Nhà Lý dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T5 số] 'Chiến thắng Bạch Đằng năm 1288. Hồ Quý Ly đổi tên nước thành Đại Ngu.'
+  [handoff·T5 số] 'Đinh Bộ Lĩnh chọn Hoa Lư làm kinh đô vào năm 968. Đinh Liễn quá tức giận nên giết chết Hạng Lang vào mùa xuân năm 979.'
+  [handoff·T5 số] 'Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng năm 1288 Trần Hưng Đạo tiêu diệt quân Nguyên Mông trên sông Bạch Đằng. Chiến thuật đóng cọc gỗ nhọn xuống lòng sông được dùng để phá thuyền giặc.'
+  [handoff·T6 bịa] 'Nhà Trần dời đô về Thăng Long năm 1010. Nhà Trần thay nhà Lý năm 1226.'
+  [handoff·T6 bịa] 'Ngô Quyền đánh bại quân Tống năm sau quân Tống đánh chậu nước lại tắm một cái sau đó cho ta bóp chân ngươi bóp thoải mái. " Ngô Hiếu Tổ lẽ đương nhiên, cầm lên bên cạnh sở thích ô mai cắn một cái, thuận miệng đem ô mai cái mông đưa.'
+  [handoff·T6 bịa] 'Lê Lợi dời đô về Thăng Long năm 1010 năm trước Sự phát triển của công nghiệp. Báo cáo tài chính của công ty Việc mua (đầu tư) cổ phiếu đồng nghĩa với việc gián tiếp đầu tư vào các công ty,.'
+  [handoff·T6 bịa] 'Nhà Lý đánh bại quân Nguyên Mông năm 1285 và có ba lần . đánh bại quân Nguyên Mông vào các năm 1258 Trần ba lần trong vào các năm mới đổi và gọi là Long Phượng. Cuối thời Trần, Hồ Quý Ly cho đặt tên là Đông Đô.'
+  [handoff·T7 dài] 'Chỉ có như vậy, mới có thể lặng yên không một tiếng động, mới có thể giết người ở vô hình, vì vậy kế tiếp thời điểm Hứa Thanh đem nghiên cứu phương hướng điều chỉnh tiếp tục luyện chế tác động đến đường hầm hư không một thôi diễn đánh giá tấm này lục giai Na D'
+  [handoff·T7 dài] 'Sử dụng từ trái nghĩa để tạo sự tương phản hoặc nhấn mạnh: Mặt trời rực rỡ là một cảnh tượng đáng hoan nghênh sau nhiều ngày mây đen. Dùng từ trái nghĩa để thể hiện sự thay đổi hoặc tiến triển: Cái cây nhỏ ngày càng cao lên, từ nhỏ chuyển sang lớn.'
+  [handoff·T7 dài] '" " Này ba tháng qua, chúng ta vì Lễ bộ thượng thư hối hả ngược xuôi, bây giờ đã đại hoạch toàn thắng, Vương tiên sinh không lâu liền muốn nhập các bái tướng, ấn đạo lý chúng ta lúc này ứng nên làm nhất chính là cái hối hả ngược xuôi bây giờ đã đại hoạch toàn '
+  [handoff·T7 dài] 'Anh thấy mình bị cuốn hút bởi nó, và chẳng mấy chốc anh đã bước xuống những con đường bỏ hoang và lén nhìn vào bên trong những tòa nhà đổ nát. Anh hoàn toàn bị mê hoặc, tận hưởng sự yên bình và tĩnh lặng của một nơi không có bóng người.'
+
+[399s] → out/p26_w05.log

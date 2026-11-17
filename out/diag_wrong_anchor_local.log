@@ -1,0 +1,47 @@
+[     0.0s] === load_mini_sent START (pid=74560) → out/logs/load_mini_sent_20260726_165032.log ===
+[     0.0s] load checkpoint /Users/dlv/Documents/code/nn-aivie/checkpoints/mini_sent.pkl …
+[     0.0s] ▶ unpickle
+[     0.5s] ✓ unpickle  (0.5s)
+[     0.5s] ▶ vocab (32002 token)
+[     0.7s] ✓ vocab (32002 token)  (0.3s)
+[     0.7s] ▶ adjacency
+[     2.8s] ✓ adjacency  (2.0s)
+[     2.8s] ▶ embedding
+[     3.6s] ✓ embedding  (0.8s)
+[     3.6s] ▶ parents
+[     3.6s] parents: deserialize 5004 records …
+[     3.9s] parents 5000/5004 (99.9%)
+[     4.6s] ▶ rebuild_hierarchical_index …
+[     4.7s] ✓ rebuild_hierarchical_index (0.1s)
+[     5.0s]     resync match_ids: 5004/5004 cha (df dựng lại)
+[     5.0s] ✓ parents  (1.4s)
+[     5.0s] ✓ loaded: vocab=32002 parents=5004 E=(32002, 96)
+[     5.1s] sidecar thiếu → migrate: mini_sent.content.pkl
+[     5.1s] ✓ load_checkpoint XONG
+[   5.1s] ✓ cache mini_sent.pkl · 5,004 parents
+[   5.7s] 
+═══ 'Nhà Lý dời đô về' ═══
+[   7.4s]   conf=0.305 · bag.max=5.187 · succ+path.max=0   ← H1 nếu succ≈0
+[   7.4s]     act=0.2633 pi=4083 'Nhà ĠLý Ġbắt Ġđược Ġhơn Ġ5 . <EOS>'
+[   7.4s]     act=0.2091 pi=4460 'Nhà ĠLý Ġthành Ġlập Ġnăm Ġ1 0 0 9 . <EOS>'
+[   7.4s]     act=0.182 pi=256 'Nhà ĠTrần Ġchính Ġthức Ġthay Ġnhà ĠLý . <EOS>'
+[   7.4s]     act=0.1424 pi=4772 'Nhà ĠTrần Ġthay Ġnhà ĠLý Ġnăm Ġ1 2 2 6 . <EOS>'
+[  80.1s]   cổng TẮT (pen=1.0): 'ĠLý'(1.52)  'Ġthành'(1.05)  'Ġđược'(0.79)  'Nhà'(0.79)  'Ġnhà'(0.75)
+[  80.9s]   cổng BẬT (pen=0.35): 'ĠLý'(1.52)  'Ġthành'(1.05)  'Ġđược'(0.79)  'Nhà'(0.79)  'Ġnhà'(0.75)
+[  80.9s] 
+═══ 'Trận Bạch Đằng năm' ═══
+[  81.0s]   conf=1.000 · bag.max=7.439 · succ+path.max=0   ← H1 nếu succ≈0
+[  81.0s]     act=1 pi=2249 'Trận ĠBạch ĠĐằng Ġcủa ĠNgô ĠQuyền Ġkết Ġthúc Ġhoàn Ġtoàn Ġthắng Ġlợi'
+[  81.7s]   cổng TẮT (pen=1.0): 'ĠĐằng'(2.88)  'Trận'(1.40)  'ĠBạch'(1.31)  'ĠNgô'(0.96)  'ĠQuyền'(0.84)
+[  82.4s]   cổng BẬT (pen=0.35): 'ĠĐằng'(2.88)  'Trận'(1.40)  'ĠBạch'(1.31)  'ĠNgô'(0.96)  'ĠQuyền'(0.84)
+[  82.4s] 
+═══ 'Ngô Quyền là vị vua sáng lập nhà Ngô, được' ═══
+[  82.4s]   conf=1.000 · bag.max=6.628 · succ+path.max=1952   ← H1 nếu succ≈0
+[  82.4s]     act=1 pi=1914 'Ngô ĠQuyền Ġlà Ġvị Ġvua Ġsáng Ġlập Ġnhà ĠNgô , Ġđược Ġxem'
+[  82.4s]     act=4.937e-06 pi=2247 'Ngô ĠQuyền Ġhạ Ġthành ĠĐại ĠLa , Ġgiết ĠCông ĠTiễn . <EOS>'
+[  82.4s]     act=4.605e-06 pi=1197 'Ngô ĠXương ĠNgập Ġ( con Ġtrưởng ĠNgô ĠQuyền ) Ġchạy Ġvề Ġnhà'
+[  82.4s]     act=3.557e-06 pi=3612 'Ngô ĠQuyền Ġra Ġlệnh Ġcho Ġquân Ġbỏ Ġchạy Ġlên Ġthượng Ġlưu .'
+[  83.2s]   cổng TẮT (pen=1.0): 'Ġxem'(6.13)  'Ġngười'(0.94)  'Ġlà'(0.58)  'Ġđầu'(0.56)  'Ġlập'(0.37)
+[  83.9s]   cổng BẬT (pen=0.35): 'Ġxem'(6.13)  'Ġngười'(0.87)  'Ġlà'(0.51)  'Ġđầu'(0.48)  'Ġthời'(0.28)
+[  83.9s] 
+→ succ≈0 ⇒ H1 (path không fire) → sửa act/act_floor/best_k, KHÔNG phải cổng bag.

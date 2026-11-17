@@ -1,0 +1,77 @@
+ckpt=checkpoints/network_v12_sent.pkl max_len=64
+
+########## MODE no_agenda ##########
+
+=== nq_def  (210.1s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ'
+
+=== nq_full  (11.0s) dots≈0 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+cont:   ''
+
+=== thd  (35.3s) dots≈0 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương
+cont:   'Hưng Đạo Vương'
+
+=== ly  (79.5s) dots≈0 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109
+cont:   'Nhà Lý thành lập năm 109'
+
+=== bach  (111.7s) dots≈0 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng nămTrận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi
+cont:   'Trận Bạch Đằng của Ngô Quyền kết thúc hoàn toàn thắng lợi'
+
+=== qa_nq  (76.9s) dots≈0 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là ai không còn chịu ách đô hộ phương Bắc
+cont:   'không còn chịu ách đô hộ phương Bắc'
+
+=== hung  (25.2s) dots≈0 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn
+cont:   'Lam Sơn'
+
+########## MODE agenda_handoff ##########
+
+=== nq_def  (12.3s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, đượcNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== nq_full  (4.0s) dots≈1 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== thd  (1.3s) dots≈1 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo làTrần Hưng Đạo đánh thắng quân Mông.
+cont:   'Trần Hưng Đạo đánh thắng quân Mông.'
+
+=== ly  (0.7s) dots≈1 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô về Thăng Long.
+cont:   'Thăng Long.'
+
+=== bach  (0.8s) dots≈1 bad=[] ===
+prompt: Trận Bạch Đằng năm
+out:    Trận Bạch Đằng nămBạch Đằng giang đánh thắng quân Nam Hán.
+cont:   'Bạch Đằng giang đánh thắng quân Nam Hán.'
+
+=== qa_nq  (0.7s) dots≈1 bad=[] ===
+prompt: Hỏi: Ngô Quyền là ai
+out:    Hỏi: Ngô Quyền là aiNgô Quyền đánh thắng quân Nam Hán.
+cont:   'Ngô Quyền đánh thắng quân Nam Hán.'
+
+=== hung  (0.9s) dots≈1 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ởLê Lợi khởi nghĩa Lam Sơn.
+cont:   'Lê Lợi khởi nghĩa Lam Sơn.'
+
+[628s] → out/probe_multi_prompt_long.log

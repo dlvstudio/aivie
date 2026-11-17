@@ -1,0 +1,50 @@
+[    0.0s] === TK_042 G7 — LM nơ-ron vs ĐẾM (cùng corpus/tokenizer/held-out/công thức) ===
+[    0.0s] tokenizer checkpoints/bpe_v1.json: 32,002 token · fingerprint 1582dad40906e69f
+[    0.0s] nạp corpus …
+[    0.1s]   grade_lessons.jsonl: +41,389 token (tổng 41,389)
+[    0.1s]   subject_articles.jsonl: +6,896 token (tổng 48,285)
+[    0.4s]   history_articles.jsonl: +357,300 token (tổng 405,585)
+[    2.0s]   dictionary.jsonl: +2,001,696 token (tổng 2,407,281)
+[    3.7s]   doc_add_articles.jsonl: +1,695,749 token (tổng 4,103,030)
+[   20.5s]   conv_stories.jsonl: +14,249,396 token (tổng 18,352,426)
+[   21.6s]   paragraph_units.jsonl: +1,310,445 token (tổng 19,662,871)
+[   21.6s]   qa_supervised.jsonl: +33,789 token (tổng 19,696,660)
+[   21.9s] train: 19,696,660 token
+[   21.9s] held-out: 200 đơn vị · 20,561 byte · 3,902 token
+[   21.9s] 
+--- BASELINE: ĐẾM (bigram+unigram) ---
+[   26.2s]     ĐẾM lam=0.50:   7.399 bits/token · 1.332 bits/BYTE
+[   26.2s]     ĐẾM lam=0.70:   7.179 bits/token · 1.293 bits/BYTE
+[   26.2s]     ĐẾM lam=0.85:   7.088 bits/token · 1.276 bits/BYTE
+[   26.2s]     ĐẾM lam=0.95:   7.102 bits/token · 1.279 bits/BYTE
+[   26.2s]   → ĐẾM tốt nhất: 1.276 bits/BYTE
+[   26.2s] 
+--- LM NƠ-RON ---
+[   27.0s]   device=mps  attn_dropout=0.0 (MPS: attention dropout buộc=0)
+[   28.2s]   sanity init: loss=10.57 nats (trần đều = ln(32,002) = 10.37)
+[   28.2s]   model: 42.1M tham số (d=512 L=8 ctx=512)
+[   28.2s]   ⚠ Chinchilla-optimal cho 19.7M token ≈ ~1M tham số → mô hình này
+[   28.2s]     THỪA tham số (embedding 32k×512 chiếm phần lớn) → dropout + early stop
+[   28.7s]   opt=MUON lai (LR ANNEAL cosine, fix §7.20a): 25.7M Muon (peak lr=0.02) + 16.4M AdamW (lr=0.0003)
+[   28.7s]   fp16 autocast: BẬT · batch=16
+[   30.6s]     step      0/200  loss 10.475 (15.112 bits/token)  2s · ETA 6m
+[  133.9s]     step    100/200  loss 6.351 (9.163 bits/token)  105s · ETA 2m
+[  236.5s]     step    199/200  loss 6.289 (9.073 bits/token)  208s · ETA 0m
+[  240.9s]     nơ-ron (CUỐI): 9.760 bits/token · 1.757 bits/BYTE (3,702 vị trí)
+[  245.3s]     TRAIN 9.117 vs EVAL 9.760 bits/token · khoảng cách +0.643
+[  245.3s]     ✓ đã có khoảng cách train/eval ⇒ mô hình đã vắt được data; kết luận có nghĩa.
+[  245.3s]     head-sim(Wq) L0: mean|cos|=0.0052
+[  245.3s]     head-sim(Wq) L1: mean|cos|=0.0046
+[  245.3s]     head-sim(Wq) L2: mean|cos|=0.0052
+[  245.4s]     head-sim(Wq) L3: mean|cos|=0.0043
+[  245.4s]     head-sim(Wq) L4: mean|cos|=0.0057
+[  245.4s]     head-sim(Wq) L5: mean|cos|=0.0044
+[  245.4s]     head-sim(Wq) L6: mean|cos|=0.0033
+[  245.4s]     head-sim(Wq) L7: mean|cos|=0.0041
+[  245.4s] 
+================================================================
+[  245.4s]   ĐẾM     : 1.276 bits/byte
+[  245.4s]   NƠ-RON  : 1.757 bits/byte   (Δ +0.481)
+[  245.4s] ================================================================
+[  245.4s] 
+⚠ CHƯA TRAIN ĐỦ (steps=200, 19.70M token) — KHÔNG kết luận gì từ số này. Đây là smoke test, không phải phép đo.

@@ -1,0 +1,70 @@
+model            | sự-kiện đúng/không-biết/sai |  bịa-thực-thể: nhận/bịa |  toán | mở: đúng
+sftv2            |         5% /  75% /  20% |           70% /  30% |    6% |     2.04
+chat13v2         |         2% /  88% /  10% |           75% /  25% |    6% |     1.70
+zamba7b_vi       |         8% /  28% /  65% |           50% /  50% |   50% |     0.00
+zamba7b_en       |        28% /  35% /  38% |           75% /  25% |  100% |     0.00
+
+VMLU validation (743 câu) · Zamba2-7B đọc tiếng Việt 38.0% · đọc bản Anh 55.5% · ngẫu-nhiên ≈25%
+VMLU 1.3B (sft, 743 câu): 24.6%
+môn lệch nhất (en−vi): [('06', '3/14→9/14'), ('10', '5/14→12/14'), ('31', '3/13→10/13'), ('07', '2/14→10/14'), ('12', '3/14→13/14')]
+
+tổng 743 câu · 1.3B 183 · Zamba2-vi 282 · Zamba2-en 412 · HỢP (1.3B đúng hoặc Zamba2-en đúng) 499
+môn (n) | 1.3B | Zamba2-vi | Zamba2-en
+  54 ( 7) |   2 |   1 |   0   Yêu cầu về nội dung giáo dục mầm non là.
+  37 ( 7) |   3 |   1 |   1   Các tổ chức xã hội
+  14 (12) |   4 |   4 |   3   Cho biết số phần tử của A\cup B\cup C nếu mỗi tập có 100 phầ
+  27 (13) |   2 |   3 |   2   Tìm một điểm nhầm lẫn trong đoạn viết sau đây: Một trong nhữ
+  11 (14) |   6 |   4 |   6   Chức năng chính của tập các thanh ghi (Registers) là:
+  04 (14) |   4 |   2 |   4   Một lượng lớn nước thải công nghiệp chưa qua xử lí đổ trực t
+  16 (13) |   4 |   4 |   4   Cho 3 dung dịch nước (dd) BaCl_2, Na_2CO_3, NaCl và nước ngu
+  40 (12) |   3 |   3 |   3   Căn cứ vào tính chất và mức độ nguy hiểm cho xã hội của hành
+  34 (13) |   8 |   5 |   8   Xét về cấu tạo ngữ pháp, câu:“Sau một hồi trống thúc vang dộ
+  49 (13) |   5 |   5 |   5   Truyền thống văn hóa lâu đời tốt đẹp:
+  46 (14) |   7 |   4 |   7   Chiếc xích lô của người Việt Nam là sản phẩm của:
+  01 (14) |   5 |   5 |   6   Một hình lập phương có cạnh 2dm thì diện tích toàn phần là:
+  50 (13) |   4 |   6 |   5   Khoản mục “ Tiền người mua trả trước “ thuộc về:
+  56 (13) |   4 |   3 |   5   Theo Nghị định 30/2020/NĐ-CP của Chính phủ ngày 5/3/2020 về 
+  47 (13) |   3 |   4 |   4   Nội hàm và ngoại diên của cùng một khái niệm giống với mối q
+  41 (12) |   4 |   3 |   5   Trường hợp nào hợp đồng dân sự được vô hiệu
+  42 (12) |   5 |   7 |   6   Theo Điều 26 Luật Giáo dục, học sinh vào lớp 6 phải?
+  09 (11) |   2 |   5 |   3   Khẳng định nào dưới đây đúng?
+  45 ( 9) |   3 |   3 |   4   Anh Minh có hành vi đi xe máy vượt đèn đỏ và không đội mũ bả
+  30 (14) |   3 |   3 |   5   Trong các câu nói sau đây đâu là cách diễn đạt mặt thứ nhất 
+  36 (14) |   4 |   4 |   6   Qua tác phẩm Chiếc thuyền ngoài xa, Nguyễn Minh Châu muốn gử
+  52 (13) |   2 |   5 |   4   Vận tốc lắng của hạt trong bể lắng bùn được xác định
+  21 (13) |   4 |   4 |   6   Hai công ty A và B cùng kinh doanh một mặt hàng một cách độc
+  15 (13) |   5 |   6 |   8   Trong một BJT, dòng base là . . . . . . . . . . . . . . . . 
+  25 (12) |   4 |   6 |   7   Căn cứ vào Atlat địa lí Việt Nam trang 19, cho biết tỉnh nào
+  05 ( 8) |   2 |   2 |   4   Tìm x để hai vectơ \vec{a}=(x;{-}2) và \vec{b}=(4;{-}5) có g
+  29 (14) |   2 |   8 |   6   Một người tiêu thụ dành một số tiền nhất định để chi tiêu ch
+  57 (13) |   4 |   4 |   8   Theo Hiến pháp năm 2013, quyền công dân được tổ chức nào côn
+  53 (13) |   1 |   5 |   5   Báng tự do gặp trong trường hợp: 9.1. Lao màng bụng. 9.2. Un
+  55 (13) |   1 |   5 |   5   Xuất quỹ tiền mặt để mua NVL sử dụng ngay trong sản xuất (th
+  38 (13) |   1 |   7 |   5   Đại hội đại biểu toàn quốc Đảng Cộng sản Việt Nam lần thứ VI
+  20 (14) |   4 |   8 |   9   Kernel của Hệ điều hành là gì?
+  48 (14) |   3 |   4 |   8   Tính chất của xã hội Việt Nam dưới sự thống trị của thực dân
+  39 (14) |   3 |   7 |   8   Hãy chỉ ra các nhận định sai?
+  26 (13) |   5 |   5 |  10   Ghép sao cho đúng giải thích về vai trò của quản trị doanh n
+  17 (13) |   2 |   3 |   7   Chọn câu sai:
+  19 (10) |   3 |   3 |   7   Nếu các thiết bị đo có cùng cấp chính xác, thì phép đo trực 
+  28 (14) |   1 |   4 |   7   Hoạt động nào sau đây của ngân hàng Trung Ương sẽ làm tăng c
+  51 (14) |   4 |   5 |  10   Khái niệm về DƯỢC ĐỘNG HỌC:
+  23 (11) |   0 |   4 |   5   Đông Nam Bộ KHÔNG giáp vùng kinh tế nào sau đây?
+  22 (13) |   1 |   5 |   7   Hoạt động nào sau đây là hoạt động kinh doanh.?
+  31 (13) |   4 |   3 |  10   Các loại chuẩn mực xã hội bất thành văn?
+  03 (13) |   4 |   6 |  10   Lấy kim chích nhẹ vào chân một người đang ngủ, chân người đó
+  32 (13) |   4 |   8 |  10   Thời gian, địa điểm thành lập Đảng Cộng sản Việt Nam là:
+  06 (14) |   2 |   3 |   9   Đồ thị tọa độ - thời gian của chất điểm chuyển động thẳng đề
+  08 (14) |   3 |   9 |  11   Polime nào sau đây thuộc loại polime bán tổng hợp?
+  10 (14) |   4 |   5 |  12   Một con lắc lò xo gồm vật nhỏ khối lượng m và lò xo nhẹ có đ
+  12 (14) |   5 |   3 |  13   Việc trao đổi dữ liệu giữa thiết bị ngoại vi và máy tính đượ
+  44 (14) |   2 |   7 |  10   Nội dung hoạt động nghiên cứu khoa học của Các Mác và Ph.Ăng
+  43 (14) |   3 |   7 |  11   Vua Akhenaton (1424-1388 tr.CN) tiến hành một cuộc cải cách 
+  33 (14) |   2 |   5 |  10   Một trong những chiến thắng vang dội của quân miền Nam trong
+  58 (13) |   4 |  11 |  12   Người lái xe được hiểu như thế nào trong các khái niệm dưới 
+  18 (13) |   3 |   6 |  11   Một biến được gọi là một biến địa phương nếu:
+  24 (14) |   3 |   9 |  12   Theo yêu cầu của quy luật giá trị, tổng giá cả hàng hóa sau 
+  07 (14) |   1 |   2 |  10   Theo lí thuyết, phép lai nào sau đây tạo ra đời con có kiểu 
+  35 (13) |   1 |   5 |  10   Trong cuộc khai thác thuộc địa lần thứ hai của thực dân Pháp
+  13 (13) |   1 |   8 |  11   Lớp nào trong mô hình OSI thực hiện việc chọn đường và chuyể
+  02 (14) |   0 |   6 |  12   Để phòng bệnh viêm gan A, phải làm gì ?

@@ -1,0 +1,13 @@
+{
+ "id": "14_py2js",
+ "cat": "convert",
+ "model": "qwen2.5-coder:7b",
+ "turns": [
+  {
+   "user": "Chuyển đoạn Python này sang JavaScript (Node.js) giữ nguyên logic:\n\n```python\nfrom collections import Counter\n\ndef top_tu(van_ban, k=3):\n    tu = [w.strip('.,!?').lower() for w in van_ban.split()]\n    dem = Counter(w for w in tu if w)\n    return dem.most_common(k)\n\nprint(top_tu('Mèo ăn cá. Mèo ngủ. Chó ăn xương, mèo chơi!'))\n```",
+   "text": "Dưới đây là đoạn mã JavaScript (Node.js) tương đương với đoạn Python bạn cung cấp:\n\n```javascript\nconst _ = require('lodash');\n\nfunction topTu(vanBan, k=3) {\n    let tu = vanBan.split(' ').map(w => w.replace(/[.,!?]/g, '').toLowerCase());\n    let dem = _.countBy(tu.filter(Boolean));\n    return Object.entries(dem).sort((a, b) => b[1] - a[1]).slice(0, k);\n}\n\nconsole.log(topTu('Mèo ăn cá. Mèo ngủ. Chó ăn xương, mèo chơi!'));\n```\n\nTrong đoạn mã JavaScript trên:\n\n- Chúng ta sử dụng `split(' ')` để tách văn bản thành các từ.\n- Sử dụng `map()` để loại bỏ các ký tự không mong muốn (.,!?).\n- Sử dụng `toLowerCase()` để chuyển tất cả các chữ về dạng viết thường.\n- Sử dụng `filter(Boolean)` để loại bỏ các từ rỗng.\n- Sử dụng `_.countBy()` từ thư viện Lodash để đếm số lần xuất hiện của từng từ.\n- Sử dụng `Object.entries(dem).sort((a, b) => b[1] - a[1]).slice(0, k)` để lấy ra `k` từ xuất hiện nhiều nhất.",
+   "tokens": 283,
+   "sec": 6.3
+  }
+ ]
+}

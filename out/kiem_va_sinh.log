@@ -1,0 +1,247 @@
+[     0.0s] === load_net_lop2 START (pid=39222) → out/logs/load_net_lop2_20260820_211231.log ===
+[     0.0s] load checkpoint checkpoints/net_lop2.pkl …
+[     0.0s] ▶ unpickle
+[     3.4s] ✓ unpickle  (3.4s)
+[     3.4s] ▶ vocab (32002 token)
+[     3.4s] ✓ vocab (32002 token)  (0.0s)
+[     3.4s] ▶ adjacency
+[    12.1s] ✓ adjacency  (8.6s)
+[    12.1s] ▶ embedding
+[    12.2s] ✓ embedding  (0.1s)
+[    12.2s] ▶ parents
+[    12.2s] parents: deserialize 453320 records …
+[    12.2s] parents 5000/453320 (1.1%)
+[    12.2s] parents 10000/453320 (2.2%)
+[    12.3s] parents 15000/453320 (3.3%)
+[    12.3s] parents 20000/453320 (4.4%)
+[    12.4s] parents 25000/453320 (5.5%)
+[    12.4s] parents 30000/453320 (6.6%)
+[    12.5s] parents 35000/453320 (7.7%)
+[    12.5s] parents 40000/453320 (8.8%)
+[    12.6s] parents 45000/453320 (9.9%)
+[    12.6s] parents 50000/453320 (11.0%)
+[    12.6s] parents 55000/453320 (12.1%)
+[    12.7s] parents 60000/453320 (13.2%)
+[    12.7s] parents 65000/453320 (14.3%)
+[    12.8s] parents 70000/453320 (15.4%)
+[    12.8s] parents 75000/453320 (16.5%)
+[    12.9s] parents 80000/453320 (17.6%)
+[    12.9s] parents 85000/453320 (18.8%)
+[    12.9s] parents 90000/453320 (19.9%)
+[    13.0s] parents 95000/453320 (21.0%)
+[    13.0s] parents 100000/453320 (22.1%)
+[    13.1s] parents 105000/453320 (23.2%)
+[    13.1s] parents 110000/453320 (24.3%)
+[    13.2s] parents 115000/453320 (25.4%)
+[    13.2s] parents 120000/453320 (26.5%)
+[    13.2s] parents 125000/453320 (27.6%)
+[    13.3s] parents 130000/453320 (28.7%)
+[    13.3s] parents 135000/453320 (29.8%)
+[    13.4s] parents 140000/453320 (30.9%)
+[    13.4s] parents 145000/453320 (32.0%)
+[    13.5s] parents 150000/453320 (33.1%)
+[    13.5s] parents 155000/453320 (34.2%)
+[    13.6s] parents 160000/453320 (35.3%)
+[    13.6s] parents 165000/453320 (36.4%)
+[    13.7s] parents 170000/453320 (37.5%)
+[    13.7s] parents 175000/453320 (38.6%)
+[    13.8s] parents 180000/453320 (39.7%)
+[    13.9s] parents 185000/453320 (40.8%)
+[    14.0s] parents 190000/453320 (41.9%)
+[    14.0s] parents 195000/453320 (43.0%)
+[    14.1s] parents 200000/453320 (44.1%)
+[    14.2s] parents 205000/453320 (45.2%)
+[    14.2s] parents 210000/453320 (46.3%)
+[    14.3s] parents 215000/453320 (47.4%)
+[    14.4s] parents 220000/453320 (48.5%)
+[    14.4s] parents 225000/453320 (49.6%)
+[    14.5s] parents 230000/453320 (50.7%)
+[    14.6s] parents 235000/453320 (51.8%)
+[    14.6s] parents 240000/453320 (52.9%)
+[    14.7s] parents 245000/453320 (54.0%)
+[    14.8s] parents 250000/453320 (55.1%)
+[    14.9s] parents 255000/453320 (56.3%)
+[    14.9s] parents 260000/453320 (57.4%)
+[    15.0s] parents 265000/453320 (58.5%)
+[    15.1s] parents 270000/453320 (59.6%)
+[    15.2s] parents 275000/453320 (60.7%)
+[    15.2s] parents 280000/453320 (61.8%)
+[    15.3s] parents 285000/453320 (62.9%)
+[    15.4s] parents 290000/453320 (64.0%)
+[    15.5s] parents 295000/453320 (65.1%)
+[    15.5s] parents 300000/453320 (66.2%)
+[    15.6s] parents 305000/453320 (67.3%)
+[    15.7s] parents 310000/453320 (68.4%)
+[    15.8s] parents 315000/453320 (69.5%)
+[    15.9s] parents 320000/453320 (70.6%)
+[    15.9s] parents 325000/453320 (71.7%)
+[    16.0s] parents 330000/453320 (72.8%)
+[    16.1s] parents 335000/453320 (73.9%)
+[    16.2s] parents 340000/453320 (75.0%)
+[    16.3s] parents 345000/453320 (76.1%)
+[    16.3s] parents 350000/453320 (77.2%)
+[    16.4s] parents 355000/453320 (78.3%)
+[    16.5s] parents 360000/453320 (79.4%)
+[    16.6s] parents 365000/453320 (80.5%)
+[    16.6s] parents 370000/453320 (81.6%)
+[    16.7s] parents 375000/453320 (82.7%)
+[    16.8s] parents 380000/453320 (83.8%)
+[    16.9s] parents 385000/453320 (84.9%)
+[    16.9s] parents 390000/453320 (86.0%)
+[    17.0s] parents 395000/453320 (87.1%)
+[    17.1s] parents 400000/453320 (88.2%)
+[    17.2s] parents 405000/453320 (89.3%)
+[    17.2s] parents 410000/453320 (90.4%)
+[    17.3s] parents 415000/453320 (91.5%)
+[    17.4s] parents 420000/453320 (92.6%)
+[    17.5s] parents 425000/453320 (93.8%)
+[    17.5s] parents 430000/453320 (94.9%)
+[    17.6s] parents 435000/453320 (96.0%)
+[    17.6s] parents 440000/453320 (97.1%)
+[    17.7s] parents 445000/453320 (98.2%)
+[    17.8s] parents 450000/453320 (99.3%)
+[    31.4s] ▶ rebuild_hierarchical_index …
+[    33.3s] ✓ rebuild_hierarchical_index (1.9s)
+[    38.2s]     resync match_ids: 453320/453320 cha (df dựng lại)
+[    38.2s] ✓ parents  (26.0s)
+[    38.2s] ✓ loaded: vocab=32002 parents=453320 E=(32002, 96)
+[    40.7s] sidecar thiếu → migrate: net_lop2.content.pkl
+[    40.7s] ✓ load_checkpoint XONG
+### TIỀN ĐỀ (so khớp BỀ MẶT, không dùng id):
+   sắt  +đồng   →   2 câu   vd: kẽm, nhôm, sắt, vàng và đồng đều là kim loại.
+   chó  +mèo    →   0 câu
+   kẽm  +vàng   →   2 câu   vd: kẽm, nhôm, sắt, vàng và đồng đều là kim loại.
+   bạc  +nhôm   →   2 câu   vd: bạc, chì, kim, kẽm, nhôm và sắt đều là kim loại.
+
+### SINH THỬ — cũ vs mới
+[     0.0s] === load_network_v12_sent_ls START (pid=39222) → out/logs/load_network_v12_sent_ls_20260820_211758.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent_ls.pkl …
+[     0.0s] ▶ unpickle
+[     3.1s] ✓ unpickle  (3.1s)
+[     3.1s] ▶ vocab (32002 token)
+[     3.1s] ✓ vocab (32002 token)  (0.0s)
+[     3.1s] ▶ adjacency
+[    12.5s] ✓ adjacency  (9.4s)
+[    12.5s] ▶ embedding
+[    12.7s] ✓ embedding  (0.3s)
+[    12.7s] ▶ parents
+[    12.7s] parents: deserialize 450303 records …
+[    12.8s] parents 5000/450303 (1.1%)
+[    12.8s] parents 10000/450303 (2.2%)
+[    12.9s] parents 15000/450303 (3.3%)
+[    12.9s] parents 20000/450303 (4.4%)
+[    13.0s] parents 25000/450303 (5.6%)
+[    13.1s] parents 30000/450303 (6.7%)
+[    13.1s] parents 35000/450303 (7.8%)
+[    13.2s] parents 40000/450303 (8.9%)
+[    13.2s] parents 45000/450303 (10.0%)
+[    13.3s] parents 50000/450303 (11.1%)
+[    13.3s] parents 55000/450303 (12.2%)
+[    13.4s] parents 60000/450303 (13.3%)
+[    13.4s] parents 65000/450303 (14.4%)
+[    13.5s] parents 70000/450303 (15.5%)
+[    13.5s] parents 75000/450303 (16.7%)
+[    13.6s] parents 80000/450303 (17.8%)
+[    13.6s] parents 85000/450303 (18.9%)
+[    13.6s] parents 90000/450303 (20.0%)
+[    13.7s] parents 95000/450303 (21.1%)
+[    13.7s] parents 100000/450303 (22.2%)
+[    13.8s] parents 105000/450303 (23.3%)
+[    13.8s] parents 110000/450303 (24.4%)
+[    13.9s] parents 115000/450303 (25.5%)
+[    13.9s] parents 120000/450303 (26.6%)
+[    14.0s] parents 125000/450303 (27.8%)
+[    14.0s] parents 130000/450303 (28.9%)
+[    14.1s] parents 135000/450303 (30.0%)
+[    14.2s] parents 140000/450303 (31.1%)
+[    14.2s] parents 145000/450303 (32.2%)
+[    14.3s] parents 150000/450303 (33.3%)
+[    14.4s] parents 155000/450303 (34.4%)
+[    14.4s] parents 160000/450303 (35.5%)
+[    14.5s] parents 165000/450303 (36.6%)
+[    14.6s] parents 170000/450303 (37.8%)
+[    14.6s] parents 175000/450303 (38.9%)
+[    14.7s] parents 180000/450303 (40.0%)
+[    14.8s] parents 185000/450303 (41.1%)
+[    14.9s] parents 190000/450303 (42.2%)
+[    15.0s] parents 195000/450303 (43.3%)
+[    15.1s] parents 200000/450303 (44.4%)
+[    15.2s] parents 205000/450303 (45.5%)
+[    15.3s] parents 210000/450303 (46.6%)
+[    15.3s] parents 215000/450303 (47.7%)
+[    15.4s] parents 220000/450303 (48.9%)
+[    15.5s] parents 225000/450303 (50.0%)
+[    15.6s] parents 230000/450303 (51.1%)
+[    15.7s] parents 235000/450303 (52.2%)
+[    15.8s] parents 240000/450303 (53.3%)
+[    15.9s] parents 245000/450303 (54.4%)
+[    15.9s] parents 250000/450303 (55.5%)
+[    16.0s] parents 255000/450303 (56.6%)
+[    16.1s] parents 260000/450303 (57.7%)
+[    16.2s] parents 265000/450303 (58.8%)
+[    16.3s] parents 270000/450303 (60.0%)
+[    16.4s] parents 275000/450303 (61.1%)
+[    16.4s] parents 280000/450303 (62.2%)
+[    16.5s] parents 285000/450303 (63.3%)
+[    16.6s] parents 290000/450303 (64.4%)
+[    16.7s] parents 295000/450303 (65.5%)
+[    16.8s] parents 300000/450303 (66.6%)
+[    16.9s] parents 305000/450303 (67.7%)
+[    16.9s] parents 310000/450303 (68.8%)
+[    17.0s] parents 315000/450303 (70.0%)
+[    17.1s] parents 320000/450303 (71.1%)
+[    17.2s] parents 325000/450303 (72.2%)
+[    17.3s] parents 330000/450303 (73.3%)
+[    17.3s] parents 335000/450303 (74.4%)
+[    17.4s] parents 340000/450303 (75.5%)
+[    17.5s] parents 345000/450303 (76.6%)
+[    17.6s] parents 350000/450303 (77.7%)
+[    17.7s] parents 355000/450303 (78.8%)
+[    17.7s] parents 360000/450303 (79.9%)
+[    17.8s] parents 365000/450303 (81.1%)
+[    17.9s] parents 370000/450303 (82.2%)
+[    18.0s] parents 375000/450303 (83.3%)
+[    18.1s] parents 380000/450303 (84.4%)
+[    18.1s] parents 385000/450303 (85.5%)
+[    18.2s] parents 390000/450303 (86.6%)
+[    18.3s] parents 395000/450303 (87.7%)
+[    18.4s] parents 400000/450303 (88.8%)
+[    18.4s] parents 405000/450303 (89.9%)
+[    18.5s] parents 410000/450303 (91.0%)
+[    18.6s] parents 415000/450303 (92.2%)
+[    18.7s] parents 420000/450303 (93.3%)
+[    18.7s] parents 425000/450303 (94.4%)
+[    18.8s] parents 430000/450303 (95.5%)
+[    18.9s] parents 435000/450303 (96.6%)
+[    18.9s] parents 440000/450303 (97.7%)
+[    19.0s] parents 445000/450303 (98.8%)
+[    19.1s] parents 450000/450303 (99.9%)
+[    30.4s] ▶ rebuild_hierarchical_index …
+[    32.5s] ✓ rebuild_hierarchical_index (2.2s)
+[    37.5s]     resync match_ids: 450303/450303 cha (df dựng lại)
+[    37.5s] ✓ parents  (24.8s)
+[    37.5s] ✓ loaded: vocab=32002 parents=450303 E=(32002, 96)
+[    39.9s] sidecar thiếu → migrate: network_v12_sent_ls.content.pkl
+[    39.9s] ✓ load_checkpoint XONG
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:976: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 450303 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent_ls.pkl --in-place
+  ensure_frame_brackets(state)
+«sắt và đồng đều là»   ← ĐỔI
+   CŨ  ▸ một trong có thể số nhất ở
+   MỚI ▸ kim loại.
+«kẽm và vàng đều là»   ← ĐỔI
+   CŨ  ▸ một cái
+   MỚI ▸ đối mặt
+«chó và mèo đều là»
+   CŨ  ▸ nhà có: công: chúng: chết tiếp
+«chó là»
+   CŨ  ▸ gia súc thuộc nhóm ăn thịt, nuôi để giữ nhà hay đi săn .
+«lúa là»
+   CŨ  ▸ cây lương thực, thân cỏ rỗng, hoa lưỡng tính, không có bao hoa, quả
+«sắt là»
+   CŨ  ▸ kim loại màu xám xanh, dễ dát mỏng và kéo sợi, dễ bị gỉ trong không
+«hổ là»
+   CŨ  ▸ một loài động vật có lãnh thổ hoạt động rất rộng, và các cá thể phân tán
+«khỉ là»
+   CŨ  ▸ loài linh trưởng cỡ nhỏ, leo trèo rất giỏi.
+
+### ĐỔI: 2/8

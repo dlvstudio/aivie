@@ -1,0 +1,86 @@
+# Graph checkpoints (generated)
+checkpoints/*.pkl
+checkpoints/*.json
+
+# TK_041 NGOẠI LỆ — merge table BPE là ARTIFACT NGUỒN, không phải checkpoint sinh ra.
+# Nó GHIM đáy của mạng: đổi file này = đổi mọi token-id = mọi checkpoint thành rác LẶNG LẼ
+# (không crash). Phải versioned để tái lập được. 488KB.
+!checkpoints/bpe_v1.json
+
+# HF write token — never commit (box: /workspace/.hf/token)
+.hf/
+**/.hf/token
+
+# Python
+__pycache__/
+*.egg-info/
+.pytest_cache/
+*.pyc
+
+# OS
+.DS_Store
+
+# Viz web
+viz/web/node_modules/
+viz/web/dist/
+
+# TK_011 run logs
+out/logs/
+
+# TK_042 — checkpoint LM torch: KHÔNG commit (365MB làm đứt fetch 2026-07-19)
+out/*.pt
+out/*.pt.resume
+out/*.pid
+
+# TK_042 §7.20b — corpus viwiki 687MB: KHÔNG commit (làm phình history vĩnh viễn 2026-07-19).
+# Tái tạo bằng: python scripts/ingest_viwiki.py. Corpus sinh ra, không phải nguồn.
+data/text_corpus/viwiki.jsonl
+checkpoints/mini_sent.pkl
+
+# TK_088 — dọn lịch sử (filter-repo 2026-09-02): >3GB binary/data đã bị đẩy vào history
+# làm PUSH FAIL. Chặn TẤT CẢ artifact sinh-ra để không tái diễn. Đều tái tạo được.
+out/noise_big/
+out/noise_nho/
+out/*.pkl
+out/*.jsonl
+checkpoints/*.npz
+checkpoints/*.pt
+data/text_corpus/
+data/conv/
+data/distill/
+data/lora_vi/
+data/lora_vi_div/
+data/fineweb2hq/
+adapters/
+*.tgz
+out/*.log
+out/*.marker
+checkpoints/*.npy
+checkpoints/tk036_scratch/
+checkpoints/*.index
+# §TK_100 M0 — shard pretrain (binary); giữ manifest.json (text) để tra provenance
+data/pretrain_vi/
+data/pretrain_vi_smoke/
+data/**/shard_*.npy
+data/sft_vi/
+data/sft_vi_smoke/
+data/**/sft_mix.jsonl
+data/*.pt
+data/*.tar.zst
+
+# adapter LoRA Zamba2 (pilot B, 469MB) — KHÔNG commit
+checkpoints/zamba2_vi_lora/
+
+# TK_104 curriculum: trọng-số thí-nghiệm — KHÔNG commit
+out/curriculum/*.pt
+out/curriculum/gt/*.pt
+data/giaotiep/train.jsonl
+data/giaotiep/dd_envi_v1_snapshot.jsonl
+
+# TK_108 C2 — dữ liệu lớn, không đưa lên git (README giữ lại)
+data/c2/*
+!data/c2/README.md
+data/c2b/*
+
+# sao lưu từ box Vast (dữ liệu/log, không đưa vào git)
+box_backup/

@@ -1,0 +1,26 @@
+[
+ {
+  "q": "Cho tôi đoạn code Python đệ quy tính giai thừa.",
+  "a": "``python\ndef pure_scalar(x):\n    return x*x\n\n# Example usage\nprint(pure_scalar(10))  # Output: 10*10 = 100\n```"
+ },
+ {
+  "q": "Viết hàm Python kiểm tra một chuỗi có phải là chuỗi đối xứng (palindrome) không, giải thích bằng tiếng Việt.",
+  "a": "```python\nimport re\n\ndef check_str(s):\n    # Check if string is a bigger string\n    if len(s) > 1:\n        return False\n    # Check if string has only one character\n    if s[0] != 'a':\n        return False\n    # Check if string has only one character\n    if s[0] == 's':\n        return False\n    # Check if string is a bigger string\n    if len(s) > 1:\n        return True\n\n# Test the function\nprint(check_str(\"AB\"))\n```\n\nThis Python code checks if the input string `s` is a bigger string (e.g., 'AB'), and returns False if it is. It uses regular expressions to check for strings with lengths that are larger than 1. The function then checks if the string has only one character ('a') or a bigger string ('ab'). If these conditions are met, it returns True; otherwise, it returns False."
+ },
+ {
+  "q": "Làm sao để đọc một file CSV trong Python và tính trung bình một cột?",
+  "a": "Để đọc file CSV, bạn có thể sử dụng the reader module in Python. The function `read_csv` takes two arguments: a file and a dictionary of column names. The file is opened in the default mode (compressed) mode, and the column names are stored in the dictionary until you choose to read it in the default mode.\n\nTo calculate the sum of a csv file, simply copy the values from the header row and paste them into the data rows in the dictionary:\n\n```python\nimport reader\n\ndef calculate_sum(file_path):\n    with open(file_path, 'r') as file:\n        for line in file:\n            line = line.strip()\n            if line.startswith('#'):\n                continue\n            column = line.split()[1]\n            value = line.split()[2]\n            with open(file_path, 'r') as file:\n                for line in file:\n                    line = line.strip()\n                    if line.startswith('#'):"
+ },
+ {
+  "q": "Viết hàm Python sắp xếp danh sách theo thuật toán sắp xếp nổi bọt.",
+  "a": "{\n    \"list_of_items\": sorted([]),\n    \"ordered_by\": sorted([]),\n    \"count\": count()\n}\n\n# Example\nimport pandas as pd\n\ndata = [\n    {\"item_id\": 1, \"price\": 25, \"quantity\": 3},\n    {\"item_id\": 2, \"price\": 40, \"quantity\": 5},\n    {\"item_id\": 3, \"price\": 60, \"quantity\": 7},\n    {\"item_id\": 4, \"price\": 80, \"quantity\": 9},\n    {\"item_id\": 5, \"price\": 100, \"quantity\": 11},\n    {\"item_id\": 6, \"price\": 120, \"quantity\": 13},\n    {\"item_id\": 7, \"price\": 140, \"quantity\": 15},\n    {\"item_id\": 8, \"price\": 160, \"quantity\": 17},\n    {\"item_"
+ },
+ {
+  "q": "Soạn giúp tôi email xin nghỉ phép 2 ngày gửi sếp vì việc gia đình.",
+  "a": "Đây là mẫu email bạn có thể dùng:\n\nTiêu đề: [Họ tên] - Xin nghỉ phép ngày [Ngày/Tháng]\n\nKính gửi Anh/Chị [Tên Sếp],\n\nEm viết email này để xin phép được nghỉ làm 02 ngày, vào ngày [Ngày/Tháng] tại công ty mình.\n\nLý do là em cần chuyển nhà gấp, và em đã sắp xếp được lịch làm việc mới vào ngày [Ngày/Tháng]. Em sẽ hoàn thành các công việc được giao trước khi nghỉ và sẽ không làm ảnh hưởng đến tiến độ chung của nhóm.\n\nEm rất mong Anh/Chị xem xét và tạo điều kiện giúp em.\n\nEm cảm ơn Anh/Chị.\n\nTrân trọng,\n[Tên của bạn]"
+ },
+ {
+  "q": "Thủ đô của Việt Nam là gì?",
+  "a": "Thủ đô của Việt Nam là Hà Nội."
+ }
+]

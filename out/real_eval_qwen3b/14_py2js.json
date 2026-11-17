@@ -1,0 +1,13 @@
+{
+ "id": "14_py2js",
+ "cat": "convert",
+ "model": "qwen2.5-coder:3b",
+ "turns": [
+  {
+   "user": "Chuyển đoạn Python này sang JavaScript (Node.js) giữ nguyên logic:\n\n```python\nfrom collections import Counter\n\ndef top_tu(van_ban, k=3):\n    tu = [w.strip('.,!?').lower() for w in van_ban.split()]\n    dem = Counter(w for w in tu if w)\n    return dem.most_common(k)\n\nprint(top_tu('Mèo ăn cá. Mèo ngủ. Chó ăn xương, mèo chơi!'))\n```",
+   "text": "Dưới đây là phiên bản của đoạn Python đã được chuyển sang JavaScript (Node.js) với logic tương tự:\n\n```javascript\nconst { countBy, sortBy, head } = require('lodash');\n\nfunction topTu(vanBan, k = 3) {\n    // Tách câu thành mảng từ và loại bỏ dấu chấm, phẩy, hỏi và感叹号\n    const tu = vanBan.toLowerCase().match(/\\b\\w+\\b/g);\n\n    // Đếm các từ trong mảng từ\n    const dem = countBy(tu || []);\n\n    // Sắp xếp theo số lần xuất hiện giảm dần\n    const topTen = sortBy(Object.keys(dem), k => -dem[k]).slice(0, k);\n\n    return topTen.map(key => ({ key, count: dem[key] }));\n}\n\nconsole.log(topTu('Mèo ăn cá. Mèo ngủ. Chó ăn xương, mèo chơi!'));\n```\n\nNote: Để chạy đoạn code trên, bạn cần cài đặt lodash trước bằng lệnh `npm install lodash` hoặc `yarn add lodash`.",
+   "tokens": 229,
+   "sec": 2.7
+  }
+ ]
+}

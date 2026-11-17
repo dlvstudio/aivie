@@ -1,0 +1,18 @@
+{
+  "model_file": "model.crfsuite",
+  "dictionary_file": "dictionary_lower.txt",
+  "window": 2,
+  "train_sentences": 95000,
+  "test_sentences": 2500,
+  "params": {
+    "c1": 1.0,
+    "c2": 0.001,
+    "max_iterations": 300
+  },
+  "eval": {
+    "token_accuracy": 0.9914,
+    "word_precision": 0.9832,
+    "word_recall": 0.9856,
+    "word_f1": 0.9844
+  }
+}

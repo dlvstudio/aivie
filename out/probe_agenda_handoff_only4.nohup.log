@@ -1,0 +1,135 @@
+[     0.0s] === load_network_v12_sent START (pid=86894) → out/logs/load_network_v12_sent_20260726_143620.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     4.8s] ✓ unpickle  (4.8s)
+[     4.8s] ▶ vocab (32002 token)
+[     6.5s] ✓ vocab (32002 token)  (1.6s)
+[     6.5s] ▶ adjacency
+[    21.4s] ✓ adjacency  (15.0s)
+[    21.4s] ▶ embedding
+[    21.5s] ✓ embedding  (0.1s)
+[    21.5s] ▶ parents
+[    21.5s] parents: deserialize 430447 records …
+[    21.6s] parents 5000/430447 (1.2%)
+[    21.6s] parents 10000/430447 (2.3%)
+[    21.7s] parents 15000/430447 (3.5%)
+[    21.7s] parents 20000/430447 (4.6%)
+[    21.8s] parents 25000/430447 (5.8%)
+[    21.8s] parents 30000/430447 (7.0%)
+[    21.9s] parents 35000/430447 (8.1%)
+[    21.9s] parents 40000/430447 (9.3%)
+[    22.0s] parents 45000/430447 (10.5%)
+[    22.0s] parents 50000/430447 (11.6%)
+[    22.1s] parents 55000/430447 (12.8%)
+[    22.1s] parents 60000/430447 (13.9%)
+[    22.2s] parents 65000/430447 (15.1%)
+[    22.2s] parents 70000/430447 (16.3%)
+[    22.3s] parents 75000/430447 (17.4%)
+[    22.3s] parents 80000/430447 (18.6%)
+[    22.4s] parents 85000/430447 (19.7%)
+[    22.4s] parents 90000/430447 (20.9%)
+[    22.5s] parents 95000/430447 (22.1%)
+[    22.6s] parents 100000/430447 (23.2%)
+[    22.6s] parents 105000/430447 (24.4%)
+[    22.7s] parents 110000/430447 (25.6%)
+[    22.7s] parents 115000/430447 (26.7%)
+[    22.8s] parents 120000/430447 (27.9%)
+[    22.9s] parents 125000/430447 (29.0%)
+[    23.0s] parents 130000/430447 (30.2%)
+[    23.0s] parents 135000/430447 (31.4%)
+[    23.1s] parents 140000/430447 (32.5%)
+[    23.2s] parents 145000/430447 (33.7%)
+[    23.3s] parents 150000/430447 (34.8%)
+[    23.3s] parents 155000/430447 (36.0%)
+[    23.4s] parents 160000/430447 (37.2%)
+[    23.5s] parents 165000/430447 (38.3%)
+[    23.6s] parents 170000/430447 (39.5%)
+[    23.7s] parents 175000/430447 (40.7%)
+[    23.8s] parents 180000/430447 (41.8%)
+[    23.9s] parents 185000/430447 (43.0%)
+[    24.0s] parents 190000/430447 (44.1%)
+[    24.1s] parents 195000/430447 (45.3%)
+[    24.2s] parents 200000/430447 (46.5%)
+[    24.3s] parents 205000/430447 (47.6%)
+[    24.4s] parents 210000/430447 (48.8%)
+[    24.5s] parents 215000/430447 (49.9%)
+[    24.6s] parents 220000/430447 (51.1%)
+[    24.7s] parents 225000/430447 (52.3%)
+[    24.8s] parents 230000/430447 (53.4%)
+[    24.9s] parents 235000/430447 (54.6%)
+[    25.0s] parents 240000/430447 (55.8%)
+[    25.1s] parents 245000/430447 (56.9%)
+[    25.2s] parents 250000/430447 (58.1%)
+[    25.3s] parents 255000/430447 (59.2%)
+[    25.4s] parents 260000/430447 (60.4%)
+[    25.5s] parents 265000/430447 (61.6%)
+[    25.6s] parents 270000/430447 (62.7%)
+[    25.7s] parents 275000/430447 (63.9%)
+[    25.8s] parents 280000/430447 (65.0%)
+[    35.3s] parents 285000/430447 (66.2%)
+[    35.4s] parents 290000/430447 (67.4%)
+[    35.5s] parents 295000/430447 (68.5%)
+[    35.6s] parents 300000/430447 (69.7%)
+[    35.7s] parents 305000/430447 (70.9%)
+[    35.8s] parents 310000/430447 (72.0%)
+[    35.9s] parents 315000/430447 (73.2%)
+[    36.0s] parents 320000/430447 (74.3%)
+[    36.1s] parents 325000/430447 (75.5%)
+[    36.2s] parents 330000/430447 (76.7%)
+[    36.3s] parents 335000/430447 (77.8%)
+[    36.4s] parents 340000/430447 (79.0%)
+[    36.5s] parents 345000/430447 (80.1%)
+[    36.6s] parents 350000/430447 (81.3%)
+[    36.7s] parents 355000/430447 (82.5%)
+[    36.8s] parents 360000/430447 (83.6%)
+[    36.9s] parents 365000/430447 (84.8%)
+[    37.0s] parents 370000/430447 (86.0%)
+[    37.1s] parents 375000/430447 (87.1%)
+[    37.2s] parents 380000/430447 (88.3%)
+[    37.2s] parents 385000/430447 (89.4%)
+[    37.3s] parents 390000/430447 (90.6%)
+[    37.4s] parents 395000/430447 (91.8%)
+[    37.5s] parents 400000/430447 (92.9%)
+[    37.6s] parents 405000/430447 (94.1%)
+[    37.7s] parents 410000/430447 (95.2%)
+[    37.7s] parents 415000/430447 (96.4%)
+[    37.8s] parents 420000/430447 (97.6%)
+[    37.9s] parents 425000/430447 (98.7%)
+[    38.0s] parents 430000/430447 (99.9%)
+[    96.5s] ▶ rebuild_hierarchical_index …
+[    98.1s] ✓ rebuild_hierarchical_index (1.7s)
+[   103.3s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[   103.3s] ✓ parents  (81.8s)
+[   103.3s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[   105.0s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[   105.0s] ✓ load_checkpoint XONG
+ckpt=checkpoints/network_v12_sent.pkl max_len=48 mode=agenda_handoff
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:106: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+
+=== nq_def  (557.9s) dots≈8 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm
+cont:   'xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm'
+
+=== nq_full  (459.1s) dots≈14 bad=[] ===
+prompt: Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ
+out:    Ngô Quyền là vị vua sáng lập nhà Ngô, được xem là người mở đầu thời kỳ độc lập tự chủ. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   '. NămNgô Quyền là vị vua sáng lập nhà Ngô được xem là người mở đầu thời kỳ độc lập tự chủ. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== thd  (466.7s) dots≈21 bad=[] ===
+prompt: Trần Hưng Đạo là
+out:    Trần Hưng Đạo là Hưng Đạo Vương. Nhà là Hưng Đạo Vương. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   'Hưng Đạo Vương. Nhà là Hưng Đạo Vương. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== ly  (474.1s) dots≈17 bad=[] ===
+prompt: Nhà Lý dời đô về
+out:    Nhà Lý dời đô vềNhà Lý thành lập năm 109. Năm. Năm 109. Năm. Năm năm 109. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.
+cont:   'Nhà Lý thành lập năm 109. Năm. Năm 109. Năm. Năm năm 109. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm. Năm.'
+
+=== hung  (444.7s) dots≈6 bad=[] ===
+prompt: Lê Lợi khởi nghĩa ở
+out:    Lê Lợi khởi nghĩa ở Lam Sơn. ÔngLê Lợi khởi nghĩa Lam Sơn. Ông người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc. Ông. Ông
+cont:   'Lam Sơn. ÔngLê Lợi khởi nghĩa Lam Sơn. Ông người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh. Ông là người lãnh đạo cuộc. Ông. Ông'
+
+[2507s] → out/probe_agenda_handoff_only4.log

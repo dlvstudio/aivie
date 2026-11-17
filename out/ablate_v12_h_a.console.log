@@ -1,0 +1,124 @@
+[0s] load checkpoints/network_v12_sent.pkl …
+[     0.0s] === load_network_v12_sent START (pid=80788) → out/logs/load_network_v12_sent_20260728_191138.log ===
+[     0.0s] load checkpoint ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.2s] ✓ unpickle  (2.2s)
+[     2.2s] ▶ vocab (32002 token)
+[     2.3s] ✓ vocab (32002 token)  (0.0s)
+[     2.3s] ▶ adjacency
+[    10.7s] ✓ adjacency  (8.4s)
+[    10.7s] ▶ embedding
+[    10.8s] ✓ embedding  (0.1s)
+[    10.8s] ▶ parents
+[    10.8s] parents: deserialize 430447 records …
+[    10.8s] parents 5000/430447 (1.2%)
+[    10.8s] parents 10000/430447 (2.3%)
+[    10.9s] parents 15000/430447 (3.5%)
+[    10.9s] parents 20000/430447 (4.6%)
+[    10.9s] parents 25000/430447 (5.8%)
+[    11.0s] parents 30000/430447 (7.0%)
+[    11.0s] parents 35000/430447 (8.1%)
+[    11.0s] parents 40000/430447 (9.3%)
+[    11.1s] parents 45000/430447 (10.5%)
+[    11.1s] parents 50000/430447 (11.6%)
+[    11.2s] parents 55000/430447 (12.8%)
+[    11.2s] parents 60000/430447 (13.9%)
+[    11.2s] parents 65000/430447 (15.1%)
+[    11.3s] parents 70000/430447 (16.3%)
+[    11.3s] parents 75000/430447 (17.4%)
+[    11.4s] parents 80000/430447 (18.6%)
+[    11.4s] parents 85000/430447 (19.7%)
+[    11.5s] parents 90000/430447 (20.9%)
+[    11.5s] parents 95000/430447 (22.1%)
+[    11.6s] parents 100000/430447 (23.2%)
+[    11.6s] parents 105000/430447 (24.4%)
+[    11.7s] parents 110000/430447 (25.6%)
+[    11.7s] parents 115000/430447 (26.7%)
+[    11.8s] parents 120000/430447 (27.9%)
+[    11.8s] parents 125000/430447 (29.0%)
+[    11.9s] parents 130000/430447 (30.2%)
+[    11.9s] parents 135000/430447 (31.4%)
+[    12.0s] parents 140000/430447 (32.5%)
+[    12.1s] parents 145000/430447 (33.7%)
+[    12.1s] parents 150000/430447 (34.8%)
+[    12.2s] parents 155000/430447 (36.0%)
+[    12.2s] parents 160000/430447 (37.2%)
+[    12.3s] parents 165000/430447 (38.3%)
+[    12.4s] parents 170000/430447 (39.5%)
+[    12.5s] parents 175000/430447 (40.7%)
+[    12.5s] parents 180000/430447 (41.8%)
+[    12.6s] parents 185000/430447 (43.0%)
+[    12.7s] parents 190000/430447 (44.1%)
+[    12.8s] parents 195000/430447 (45.3%)
+[    12.8s] parents 200000/430447 (46.5%)
+[    12.9s] parents 205000/430447 (47.6%)
+[    13.0s] parents 210000/430447 (48.8%)
+[    13.1s] parents 215000/430447 (49.9%)
+[    13.1s] parents 220000/430447 (51.1%)
+[    13.2s] parents 225000/430447 (52.3%)
+[    13.3s] parents 230000/430447 (53.4%)
+[    13.4s] parents 235000/430447 (54.6%)
+[    13.4s] parents 240000/430447 (55.8%)
+[    13.5s] parents 245000/430447 (56.9%)
+[    13.6s] parents 250000/430447 (58.1%)
+[    13.7s] parents 255000/430447 (59.2%)
+[    13.7s] parents 260000/430447 (60.4%)
+[    13.8s] parents 265000/430447 (61.6%)
+[    13.9s] parents 270000/430447 (62.7%)
+[    14.0s] parents 275000/430447 (63.9%)
+[    14.0s] parents 280000/430447 (65.0%)
+[    14.1s] parents 285000/430447 (66.2%)
+[    14.2s] parents 290000/430447 (67.4%)
+[    14.3s] parents 295000/430447 (68.5%)
+[    14.4s] parents 300000/430447 (69.7%)
+[    14.4s] parents 305000/430447 (70.9%)
+[    14.5s] parents 310000/430447 (72.0%)
+[    14.6s] parents 315000/430447 (73.2%)
+[    14.7s] parents 320000/430447 (74.3%)
+[    14.8s] parents 325000/430447 (75.5%)
+[    14.8s] parents 330000/430447 (76.7%)
+[    14.9s] parents 335000/430447 (77.8%)
+[    15.0s] parents 340000/430447 (79.0%)
+[    15.1s] parents 345000/430447 (80.1%)
+[    15.1s] parents 350000/430447 (81.3%)
+[    15.2s] parents 355000/430447 (82.5%)
+[    15.3s] parents 360000/430447 (83.6%)
+[    15.4s] parents 365000/430447 (84.8%)
+[    15.5s] parents 370000/430447 (86.0%)
+[    15.5s] parents 375000/430447 (87.1%)
+[    15.6s] parents 380000/430447 (88.3%)
+[    15.7s] parents 385000/430447 (89.4%)
+[    15.8s] parents 390000/430447 (90.6%)
+[    15.9s] parents 395000/430447 (91.8%)
+[    15.9s] parents 400000/430447 (92.9%)
+[    16.0s] parents 405000/430447 (94.1%)
+[    16.1s] parents 410000/430447 (95.2%)
+[    16.1s] parents 415000/430447 (96.4%)
+[    16.2s] parents 420000/430447 (97.6%)
+[    16.3s] parents 425000/430447 (98.7%)
+[    16.3s] parents 430000/430447 (99.9%)
+[    28.0s] ▶ rebuild_hierarchical_index …
+[    29.2s] ✓ rebuild_hierarchical_index (1.2s)
+[    33.8s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    33.9s] ✓ parents  (23.1s)
+[    33.9s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    35.2s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    35.2s] ✓ load_checkpoint XONG
+[84s] ✓ 430,447 cha · chế độ=handoff
+  23 prompt (T2–T6 của eval_gen_broad)
+~/Documents/learn/nn-aivie/src/nn_aivie/hca/generate_hebbian.py:123: RuntimeWarning: FRAME_BRACKET gate TẮT: checkpoint 430447 cha > cap 5000 nên bỏ mine lúc runtime, mà checkpoint chưa bake đủ (thiếu layer/hlink_meta/hlink_endpoints). Bracket gate (TK_017/TK_037) sẽ KHÔNG hoạt động. Sửa: PYTHONPATH=src python scripts/bake_checkpoint_indices.py ~/Documents/learn/nn-aivie/checkpoints/network_v12_sent.pkl --in-place
+  ensure_frame_brackets(state)
+[194s] BASE  empty=0.00  digit_split=0.09  loop4=0.00  copy=nan  n_facts=1.30  stop_clean=0.83  n_tok=18.30
+
+============================================================================================
+tắt kênh         Δempty  Δdigit⎵  Δloop4   Δcopy  Δn_facts   Δstop   Δn_tok
+============================================================================================
+bag(parent)        0.00    -0.04    0.00     nan      0.09    0.09      1.0   [295s]
+succ+path          0.00     0.09    0.09     nan     -0.13    0.09     -0.9   [398s]
+l2r                0.00    -0.04    0.00     nan     -0.04    0.04     -0.8   [405s]
+============================================================================================
+Ứng viên KÊNH CHẾT (mọi Δ = 0): (không có)
+Δ=0 ở bộ prompt này KHÔNG chứng minh kênh vô dụng toàn cục — chỉ là ứng viên;
+trước khi bỏ phải chạy thêm `--mode no_agenda` và bộ T1/T7 của eval_gen_broad.
+
+[405s] → out/ablate_v12_h_a.log

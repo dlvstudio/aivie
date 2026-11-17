@@ -1,0 +1,176 @@
+[     0.0s] === load_network_v12_sent START (pid=22430) → out/logs/load_network_v12_sent_20260726_174505.log ===
+[     0.0s] load checkpoint checkpoints/network_v12_sent.pkl …
+[     0.0s] ▶ unpickle
+[     2.1s] ✓ unpickle  (2.1s)
+[     2.1s] ▶ vocab (32002 token)
+[     2.2s] ✓ vocab (32002 token)  (0.0s)
+[     2.2s] ▶ adjacency
+[    10.5s] ✓ adjacency  (8.3s)
+[    10.5s] ▶ embedding
+[    10.5s] ✓ embedding  (0.0s)
+[    10.5s] ▶ parents
+[    10.5s] parents: deserialize 430447 records …
+[    10.5s] parents 5000/430447 (1.2%)
+[    10.6s] parents 10000/430447 (2.3%)
+[    10.6s] parents 15000/430447 (3.5%)
+[    10.6s] parents 20000/430447 (4.6%)
+[    10.7s] parents 25000/430447 (5.8%)
+[    10.7s] parents 30000/430447 (7.0%)
+[    10.7s] parents 35000/430447 (8.1%)
+[    10.8s] parents 40000/430447 (9.3%)
+[    10.8s] parents 45000/430447 (10.5%)
+[    10.9s] parents 50000/430447 (11.6%)
+[    10.9s] parents 55000/430447 (12.8%)
+[    10.9s] parents 60000/430447 (13.9%)
+[    11.0s] parents 65000/430447 (15.1%)
+[    11.0s] parents 70000/430447 (16.3%)
+[    11.0s] parents 75000/430447 (17.4%)
+[    11.1s] parents 80000/430447 (18.6%)
+[    11.1s] parents 85000/430447 (19.7%)
+[    11.1s] parents 90000/430447 (20.9%)
+[    11.2s] parents 95000/430447 (22.1%)
+[    11.2s] parents 100000/430447 (23.2%)
+[    11.2s] parents 105000/430447 (24.4%)
+[    11.3s] parents 110000/430447 (25.6%)
+[    11.3s] parents 115000/430447 (26.7%)
+[    11.4s] parents 120000/430447 (27.9%)
+[    11.4s] parents 125000/430447 (29.0%)
+[    11.5s] parents 130000/430447 (30.2%)
+[    11.5s] parents 135000/430447 (31.4%)
+[    11.6s] parents 140000/430447 (32.5%)
+[    11.7s] parents 145000/430447 (33.7%)
+[    11.7s] parents 150000/430447 (34.8%)
+[    11.8s] parents 155000/430447 (36.0%)
+[    11.8s] parents 160000/430447 (37.2%)
+[    11.9s] parents 165000/430447 (38.3%)
+[    12.0s] parents 170000/430447 (39.5%)
+[    12.0s] parents 175000/430447 (40.7%)
+[    12.1s] parents 180000/430447 (41.8%)
+[    12.2s] parents 185000/430447 (43.0%)
+[    12.2s] parents 190000/430447 (44.1%)
+[    12.3s] parents 195000/430447 (45.3%)
+[    12.4s] parents 200000/430447 (46.5%)
+[    12.5s] parents 205000/430447 (47.6%)
+[    12.5s] parents 210000/430447 (48.8%)
+[    12.6s] parents 215000/430447 (49.9%)
+[    12.7s] parents 220000/430447 (51.1%)
+[    12.8s] parents 225000/430447 (52.3%)
+[    12.8s] parents 230000/430447 (53.4%)
+[    12.9s] parents 235000/430447 (54.6%)
+[    13.0s] parents 240000/430447 (55.8%)
+[    13.0s] parents 245000/430447 (56.9%)
+[    13.1s] parents 250000/430447 (58.1%)
+[    13.2s] parents 255000/430447 (59.2%)
+[    13.3s] parents 260000/430447 (60.4%)
+[    13.3s] parents 265000/430447 (61.6%)
+[    13.4s] parents 270000/430447 (62.7%)
+[    13.5s] parents 275000/430447 (63.9%)
+[    13.6s] parents 280000/430447 (65.0%)
+[    13.6s] parents 285000/430447 (66.2%)
+[    13.7s] parents 290000/430447 (67.4%)
+[    13.8s] parents 295000/430447 (68.5%)
+[    13.9s] parents 300000/430447 (69.7%)
+[    14.0s] parents 305000/430447 (70.9%)
+[    14.1s] parents 310000/430447 (72.0%)
+[    14.1s] parents 315000/430447 (73.2%)
+[    14.2s] parents 320000/430447 (74.3%)
+[    14.3s] parents 325000/430447 (75.5%)
+[    14.4s] parents 330000/430447 (76.7%)
+[    14.5s] parents 335000/430447 (77.8%)
+[    14.6s] parents 340000/430447 (79.0%)
+[    14.6s] parents 345000/430447 (80.1%)
+[    14.7s] parents 350000/430447 (81.3%)
+[    14.8s] parents 355000/430447 (82.5%)
+[    14.9s] parents 360000/430447 (83.6%)
+[    14.9s] parents 365000/430447 (84.8%)
+[    15.0s] parents 370000/430447 (86.0%)
+[    15.1s] parents 375000/430447 (87.1%)
+[    15.2s] parents 380000/430447 (88.3%)
+[    15.2s] parents 385000/430447 (89.4%)
+[    15.3s] parents 390000/430447 (90.6%)
+[    15.4s] parents 395000/430447 (91.8%)
+[    15.5s] parents 400000/430447 (92.9%)
+[    15.5s] parents 405000/430447 (94.1%)
+[    15.6s] parents 410000/430447 (95.2%)
+[    15.7s] parents 415000/430447 (96.4%)
+[    15.7s] parents 420000/430447 (97.6%)
+[    15.8s] parents 425000/430447 (98.7%)
+[    15.9s] parents 430000/430447 (99.9%)
+[    27.3s] ▶ rebuild_hierarchical_index …
+[    28.4s] ✓ rebuild_hierarchical_index (1.1s)
+[    33.0s]     resync match_ids: 430447/430447 cha (df dựng lại)
+[    33.0s] ✓ parents  (22.5s)
+[    33.0s] ✓ loaded: vocab=32002 parents=430447 E=(32002, 96)
+[    33.9s] sidecar thiếu → migrate: network_v12_sent.content.pkl
+[    33.9s] ✓ load_checkpoint XONG
+hist tokens: ['Nhà', 'ĠLý', 'Ġdời', 'Ġđô', 'Ġvề']
+conf=0.272 succ.max=0 act.max=0.218
+hits dời/ThăngLong: 65
+  pi=1535 act=0.08695 match=['Nhà', 'ĠLý', 'Ġmở', 'Ġnền', 'Ġvăn', 'Ġhóa', 'ĠThăng', 'ĠLong', '.']
+    emit='Nhà Lý mở nền văn hóa Thăng Long.'
+  pi=4354 act=0.01787 match=['Nhà', 'ĠLý', 'Ġsùng', 'Ġđạo', 'ĠPhật', 'Ġvà', 'Ġcho', 'Ġxây', 'Ġdựng', 'Ġnhiều', 'Ġchùa', ',', 'Ġtrong', 'Ġđó']
+    emit='Nhà Lý sùng đạo Phật và cho xây dựng nhiều chùa, trong đó có chùa Một Cột ở Thăng Long.'
+  pi=99 act=0 match=['Lý', 'ĠThái', 'ĠTổ', 'Ġdời', 'Ġđô', 'Ġvề', 'ĠThăng', 'ĠLong', '.']
+    emit='Lý Thái Tổ dời đô về Thăng Long.'
+  pi=762 act=0 match=['Thăng', 'ĠLong', 'Ġlà', 'Ġtrung', 'Ġtâm', 'Ġquyền', 'Ġlực', 'Ġnhà', 'ĠLý', '.']
+    emit='Thăng Long là trung tâm quyền lực nhà Lý.'
+  pi=1322 act=0 match=['Lý', 'ĠThái', 'ĠTổ', 'Ġdời', 'Ġđô', 'Ġvề', 'ĠThăng', 'ĠLong', 'Ġnăm', 'Ġ1', '0', '1', '0', '.']
+    emit='Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  pi=1767 act=0 match=['ĠLý', 'ĠThái', 'ĠTổ', 'Ġdời', 'Ġđô', 'Ġvề', 'ĠThăng', 'ĠLong', '.']
+    emit=' Lý Thái Tổ dời đô về Thăng Long.'
+  pi=1864 act=0 match=['ĠThăng', 'ĠLong', 'Ġlà', 'Ġtrung', 'Ġtâm', 'Ġquyền', 'Ġlực', 'Ġnhà', 'ĠLý', '.']
+    emit=' Thăng Long là trung tâm quyền lực nhà Lý.'
+  pi=2091 act=0 match=['ĠLý', 'ĠThái', 'ĠTổ', 'Ġdời', 'Ġđô', 'Ġvề', 'ĠThăng', 'ĠLong', 'Ġnăm', 'Ġ1', '0', '1', '0', '.']
+    emit=' Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  pi=2203 act=0 match=['ĠNhà', 'ĠLý', 'Ġmở', 'Ġnền', 'Ġvăn', 'Ġhóa', 'ĠThăng', 'ĠLong', '.']
+    emit=' Nhà Lý mở nền văn hóa Thăng Long.'
+  pi=2609 act=0 match=['Chiếu', 'Ġdời', 'Ġđô', 'Ġlà', 'Ġbài', 'Ġchiếu', 'Ġdo', 'Ġvua', 'ĠLý', 'ĠThái', 'ĠTổ', 'Ġban', 'Ġhành', 'Ġnăm']
+    emit='Chiếu dời đô là bài chiếu do vua Lý Thái Tổ ban hành năm 1010.'
+  pi=2612 act=0 match=['Sau', 'Ġkhi', 'Ġdời', 'Ġđô', ',', 'ĠĐại', 'ĠLa', 'Ġđược', 'Ġđổi', 'Ġtên', 'Ġthành', 'ĠThăng', 'ĠLong', '.']
+    emit='Sau khi dời đô, Đại La được đổi tên thành Thăng Long.'
+  pi=2747 act=0 match=['Từ', 'Ġnăm', 'Ġ1', '3', '7', '1', 'Ġđến', 'Ġnăm', 'Ġ1', '3', '8', '9', ',', 'Ġông']
+    emit='Từ năm 1371 đến năm 1389, ông tổ chức nhiều cuộc tấn công ra Thăng Long kinh đô của Đại Việt.'
+  pi=2814 act=0 match=['Năm', 'Ġ1', '0', '1', '0', ',', 'Ġnhà', 'ĠLý', 'Ġdời', 'Ġđô', 'Ġtừ', 'ĠHoa', 'ĠLư', 'Ġvề']
+    emit='Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  pi=3066 act=0 match=['Hoàng', 'Ġthành', 'Ġđược', 'Ġxây', 'Ġdựng', 'Ġtừ', 'Ġthời', 'Ġnhà', 'ĠLý', 'Ġkhi', 'ĠLý', 'ĠThái', 'ĠTổ', 'Ġdời']
+    emit='Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  pi=3067 act=0 match=['Các', 'Ġtriều', 'Ġđại', 'ĠLý', ',', 'ĠTrần', ',', 'ĠLê', 'Ġđều', 'Ġđặt', 'Ġtrung', 'Ġtâm', 'Ġchính', 'Ġtrị']
+    emit='Các triều đại Lý, Trần, Lê đều đặt trung tâm chính trị tại Hoàng thành Thăng Long.'
+  pi=3077 act=0 match=['Lý', 'ĠThái', 'ĠTổ', 'Ġcùng', 'Ġcác', 'Ġquần', 'Ġthần', 'Ġđã', 'Ġgấp', 'Ġrút', 'Ġxây', 'Ġdựng', 'Ġnhững', 'Ġcông']
+    emit='Lý Thái Tổ cùng các quần thần đã gấp rút xây dựng những công trình cơ bản của Kinh thành Thăng Long.'
+  pi=3739 act=0 match=['Năm', 'Ġ1', '0', '1', '0', ',', 'ĠLý', 'ĠThái', 'ĠTổ', 'Ġban', 'ĠChiếu', 'Ġdời', 'Ġđô', ',']
+    emit='Năm 1010, Lý Thái Tổ ban Chiếu dời đô, quyết định dời kinh đô về Đại La.'
+  pi=3769 act=0 match=['Năm', 'Ġ1', '0', '7', '0', ',', 'ĠLý', 'ĠThánh', 'ĠTông', 'Ġcho', 'Ġxây', 'ĠVăn', 'ĠMiếu', 'Ġở']
+    emit='Năm 1070, Lý Thánh Tông cho xây Văn Miếu ở Thăng Long.'
+  pi=3774 act=0 match=['Ông', 'Ġsinh', 'Ġnăm', 'Ġ1', '0', '1', '9', 'Ġtại', 'ĠThăng', 'ĠLong', 'Ġvà', 'Ġphục', 'Ġvụ', 'Ġdưới']
+    emit='Ông sinh năm 1019 tại Thăng Long và phục vụ dưới ba đời vua nhà Lý.'
+  pi=4243 act=0 match=['Lê', 'ĠLợi', 'Ġlên', 'Ġngôi', 'Ġlấy', 'Ġhiệu', 'Ġlà', 'ĠLê', 'ĠThái', 'ĠTổ', 'Ġvà', 'Ġđặt', 'Ġkinh', 'Ġđô']
+    emit='Lê Lợi lên ngôi lấy hiệu là Lê Thái Tổ và đặt kinh đô ở Thăng Long.'
+hist folds ['dời', 'lý', 'nhà', 'về', 'đô']
+top overlap>=3:
+  ov=5 act=0 pi=2814 'Năm 1010, nhà Lý dời đô từ Hoa Lư về Thăng Long.'
+  ov=5 act=0 pi=3066 'Hoàng thành được xây dựng từ thời nhà Lý khi Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  ov=5 act=0 pi=429840 ' Năm 1010, vua Lý Thái Tổ quyết định dời đô từ Hoa Lư về Đại La và đặt tên kinh đô là Thăng Long. Đây là mốc'
+  ov=5 act=0 pi=429846 ' Nhà Lý tồn tại từ năm 1009 đến 1225, trải qua chín đời vua. Triều Lý dời đô về Thăng Long, đặt nền'
+  ov=5 act=0 pi=430059 ' Lý Thái Tổ dời kinh đô về Thăng Long năm 1010, tức khu vực Hà Nội ngày nay. Sự kiện mở ra thời kỳ phát triển lâu'
+  ov=4 act=0 pi=99 'Lý Thái Tổ dời đô về Thăng Long.'
+  ov=4 act=0 pi=1322 'Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  ov=4 act=0 pi=1767 ' Lý Thái Tổ dời đô về Thăng Long.'
+  ov=4 act=0 pi=2091 ' Lý Thái Tổ dời đô về Thăng Long năm 1010.'
+  ov=4 act=0 pi=2610 'Bài chiếu nêu lý do dời kinh đô từ Hoa Lư về thành Đại La.'
+  ov=4 act=0 pi=3739 'Năm 1010, Lý Thái Tổ ban Chiếu dời đô, quyết định dời kinh đô về Đại La.'
+  ov=4 act=0 pi=4254 'Nhà Hồ đổi quốc hiệu thành Đại Ngu và dời đô về Thành Tây Đô ở Thanh Hóa.'
+  ov=4 act=0 pi=4347 'Năm 1010, triều Lý dời đô từ Hoa Lư về thành Đại La và đổi tên kinh đô thành Thăng Long.'
+  ov=4 act=0 pi=4368 'Sử cũ không ghi chép chi tiết nhà Lý dời đô bằng đường nào.'
+  ov=4 act=0 pi=4369 'Các nhà nghiên cứu khẳng định Lý Thái Tổ dời đô cũng cần dùng tới đội thuyền.'
+raw act (pre-spec) for targets:
+  pi=1535 raw=99.69 final_act=0.08695
+  pi=4354 raw=95.95 final_act=0.01787
+  pi=99 raw=124.2 final_act=0
+  pi=762 raw=36.48 final_act=0
+  pi=1322 raw=124.2 final_act=0
+  pi=1767 raw=158.1 final_act=0
+  pi=1864 raw=35.89 final_act=0
+  pi=2091 raw=158.1 final_act=0
+  pi=2203 raw=35.89 final_act=0
+  pi=2609 raw=141.9 final_act=0

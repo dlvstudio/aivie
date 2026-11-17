@@ -1,0 +1,233 @@
+{
+ "checkpoint": "checkpoints/mini_sent_ep_qa.pkl",
+ "n_token": 1995,
+ "n_boi_canh": 27438,
+ "min_share": 3,
+ "n_co_lang_gieng": 113,
+ "vi_du_lang_gieng": {
+  "vua": {
+   "lop_thay_the": [
+    "tướng",
+    "Trần",
+    "ông"
+   ],
+   "embedding": [
+    "Tông",
+    "ngôi",
+    "Lý",
+    "Thánh",
+    "Lê",
+    "vương",
+    "hoàng",
+    "Hoàn"
+   ],
+   "n_ctx": 89
+  },
+  "sông": {
+   "lop_thay_the": [],
+   "embedding": [
+    "chảy",
+    "Sông",
+    "Hồng",
+    "bồi",
+    "Cửu",
+    "đắp",
+    "dòng",
+    "đê"
+   ],
+   "n_ctx": 75
+  },
+  "đánh": {
+   "lop_thay_the": [],
+   "embedding": [
+    "đuổi",
+    "bại",
+    "trận",
+    "diệt",
+    "chém",
+    "vạn",
+    "Nguyên",
+    "giặc"
+   ],
+   "n_ctx": 95
+  },
+  "Nguyễn": {
+   "lop_thay_the": [
+    "Tống",
+    "Minh",
+    "Trần",
+    "Mạc",
+    "Lý",
+    "Lê",
+    "Hồ",
+    "Hoàng"
+   ],
+   "embedding": [
+    "Nguyễn",
+    "Hữu",
+    "Huệ",
+    "Phúc",
+    "Quang",
+    "Ánh",
+    "Nhạc",
+    "Nhơn"
+   ],
+   "n_ctx": 124
+  },
+  "lớn": {
+   "lop_thay_the": [
+    "cao"
+   ],
+   "embedding": [
+    "nhất",
+    "phần",
+    "nhiều",
+    "vùng",
+    "nhỏ",
+    "nằm",
+    "trung",
+    "rất"
+   ],
+   "n_ctx": 92
+  },
+  "thành": {
+   "lop_thay_the": [],
+   "embedding": [
+    "Pa",
+    "p",
+    "Chăm",
+    "an",
+    "kh",
+    "Hội",
+    "quốc",
+    "luôn"
+   ],
+   "n_ctx": 3
+  },
+  "nước": {
+   "lop_thay_the": [
+    "Huế",
+    "đá",
+    "2",
+    "3"
+   ],
+   "embedding": [
+    "ngọt",
+    "muối",
+    "chanh",
+    "mặn",
+    "đất",
+    "sôi",
+    "khô",
+    "pha"
+   ],
+   "n_ctx": 178
+  }
+ },
+ "vi_du_vung": [
+  {
+   "token": "Huệ",
+   "lop": [
+    "Trãi",
+    "Kim",
+    "Thái"
+   ]
+  },
+  {
+   "token": "Trãi",
+   "lop": [
+    "Huệ"
+   ]
+  },
+  {
+   "token": "đông",
+   "lop": [
+    "nam",
+    "Bắc"
+   ]
+  },
+  {
+   "token": "ngày",
+   "lop": [
+    "hiện",
+    "3",
+    "7",
+    "1"
+   ]
+  },
+  {
+   "token": "Hán",
+   "lop": [
+    "Nguyên",
+    "Trần"
+   ]
+  },
+  {
+   "token": "hoàng",
+   "lop": [
+    "Hoàng"
+   ]
+  },
+  {
+   "token": "m",
+   "lop": [
+    "km",
+    "m",
+    "mét",
+    "6",
+    "3",
+    "7"
+   ]
+  },
+  {
+   "token": "tây",
+   "lop": [
+    "Bắc"
+   ]
+  },
+  {
+   "token": "nước",
+   "lop": [
+    "Huế",
+    "đá",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "token": "gian",
+   "lop": [
+    "kỳ"
+   ]
+  },
+  {
+   "token": "Lý",
+   "lop": [
+    "Trần",
+    "Tống",
+    "Mạc",
+    "Hồ",
+    "Minh",
+    "Nguyên"
+   ]
+  },
+  {
+   "token": "đại",
+   "lop": [
+    "đình"
+   ]
+  }
+ ],
+ "xac_nhan_B": {
+  "lop": {
+   "n": 204,
+   "ty_le": 0.8921568627450981
+  },
+  "ngau_nhien": {
+   "n": 204,
+   "ty_le": 0.04411764705882353
+  },
+  "ty_so": 20.22222222222222
+ },
+ "seconds": 7.8
+}
