@@ -2,7 +2,7 @@
 
 This page summarises how the aivie models were trained: the stages, what was done in each, which GPUs were used and roughly what it cost. Details and numbers for each stage are in the linked reports (Vietnamese originals in the root, English translations in [`en/`](en/)).
 
-**About the costs.** Hourly prices and run durations below were recorded at the time. Where a box's total bill was not logged, the cost is an **estimate** (price × wall-clock time, rounded) and marked with `~`. All boxes were rented on demand from FPT AI Factory (Hanoi) or Vast.ai. Teacher/judge models ran on the same rented GPUs or on the local Mac, so there was no API spending.
+**About the costs.** Hourly prices and run durations below were recorded at the time. Where a box's total bill was not logged, the cost is an **estimate** (price × wall-clock time, rounded) and marked with `~`. Apart from the FPT smoke test and the first ~11K pre-training steps, every box was rented on demand from Vast.ai. Teacher/judge models ran on the same rented GPUs or on the local Mac, so there was no API spending.
 
 ## Hardware used
 
@@ -11,7 +11,7 @@ This page summarises how the aivie models were trained: the stages, what was don
 | Apple Mac M4, 24 GB | local | Hebbian graph LM (TK_001–062), data building and tokenizer, smoke tests, MLX experiments, local evaluation and chat UI, Gemma 4 / Qwen reference runs (Ollama), Gemma 4 → Mamba experiments |
 | 1× H100 80 GB | FPT AI Factory, 78,592 VND/h (~$3.02/h) | GPU smoke test and the start of the 1.3B pre-training |
 | 1× H100 SXM 80 GB | Vast.ai, $1.83–2.28/h | 1.3B pre-training, SFT, curriculum research, experts, VLM, Zamba2 bridge, P3, TK_108 C1–C5 |
-| 4× H100 SXM 80 GB | rented box | P2: continued pre-training of the grown ~2.5B trunk at 8K context |
+| 4× H100 SXM 80 GB | Vast.ai | P2: continued pre-training of the grown ~2.5B trunk at 8K context |
 | 2× A100 SXM4 80 GB (500 W) | Vast.ai, $1.67/h | Large code expert cx3, C6 (whole trunk +10B tokens), SFT A/B, VLM on the new trunk, final teacher loop c6l1 |
 
 Measured throughput, for comparison: 1.3B on 1× H100 ~26K tok/s (MFU ~20%); 2.5B code expert on 1× H100 ~9.0K tok/s vs 2× A100 9.1K tok/s at $1.67/h vs 4× A100 17.9K tok/s at $6.4/h. Per token, the 2× A100 box was the cheapest option we found. Lesson: check `nvidia-smi -q -d POWER` right after renting. One Vast H100 host was power-capped at 500/700 W and only gave 15K tok/s.
@@ -27,7 +27,7 @@ Measured throughput, for comparison: 1.3B on 1× H100 ~26K tok/s (MFU ~20%); 2.5
 | 4 | Sep 29 | SFT + evaluation ([TK_103](en/TK_103_VAST_TRAIN_HANDOFF.md)) | Chat SFT, 2 epochs (~3 h); VMLU, RAG, long context, clean eval set eval_v1; Zamba2 pilot (~1.5 h) | 1× H100 (Vast) | ~5 h | ~$12 |
 | 5 | Sep 29 → Oct 6 | Curriculum, experts, assistant, bridge, vision ([TK_104](en/TK_104_CURRICULUM_RESEARCH.md), [TK_105](en/TK_105_CAU_NOI_ZAMBA2.md), [TK_106](en/TK_106_VLM_DOC_ANH.md)) | 19 curriculum runs (9–10 in parallel); gated experts (code 1.1B tokens); teacher loop with Gemma-4-31B FP8 on vLLM; DailyDialog translation (~10 GPU-h); 1.3B assistant v2 → v5; Zamba2-7B bridge; VLM v1 → v4 | 1× H100 (Vast) | ~1 week | ~$350 |
 | 6 | Oct 6 → 7 | P1: data for growing ([TK_107](en/TK_107_NUOI_LON_3B.md)) | 16.7B new tokens (86 shards): edu-scored Vietnamese web, code, math; published as HF datasets | 1× H100 box (≥500 GB disk, ≥32 CPU) | ~1 day | ~$50 |
-| 7 | Oct 7 → 11 | **P2: grow to ~2.5B + 8K context** ([TK_107](en/TK_107_NUOI_LON_3B.md)) | Identity-block insertion 48 → 96 blocks (84 Mamba + 12 attention), RoPE 1e6, 8K context. Three phases: A1 4B tokens (~54K tok/s), A2 6B (~42K), B 10B (~35K, grad-ckpt). Val bits 3.47 → 2.31 | 4× H100 SXM | ~4.8 days | ~$1,000 |
+| 7 | Oct 7 → 11 | **P2: grow to ~2.5B + 8K context** ([TK_107](en/TK_107_NUOI_LON_3B.md)) | Identity-block insertion 48 → 96 blocks (84 Mamba + 12 attention), RoPE 1e6, 8K context. Three phases: A1 4B tokens (~54K tok/s), A2 6B (~42K), B 10B (~35K, grad-ckpt). Val bits 3.47 → 2.31 | 4× H100 SXM (Vast) | ~4.8 days | ~$1,000 |
 | 8 | Oct 12 → 18 | P3 + TK_108 C1–C5 ([TK_107](en/TK_107_NUOI_LON_3B.md), [TK_108](en/TK_108_CODE_TOOL_USE.md)) | SFT chat, 3 gated experts at 12 points, VLM, teacher loop; code + tool use: sandboxed agent, verified data, teacher Gemma-4-31B (beat Qwen3-Coder 41/50 vs 28/50 as teacher), DPO, GRPO | 1× H100 (Vast) | ~6 days | ~$300 |
 | 9 | Oct 19 → 22 | Large code expert cx3 → cx3e ([TK_108](en/TK_108_CODE_TOOL_USE.md), [cx3b](en/TK_108_KIEN_TRUC_CX3B.md)) | cx3 pre-training 1.5B tokens (23K steps, 47 h, 9.1K tok/s), SFT, tool-use top-up → cx3b (tool 55 · HumanEval 13.4 · MBPP 23.3); C7 real-world task set (2 vLLM Gemma teachers); cx3c/d/e | 2× A100 (Vast) | ~4 days | ~$160 |
 | 10 | Oct 23 → Nov 2 | **C6: whole trunk +10B tokens** ([TK_108](en/TK_108_CODE_TOOL_USE.md)) | Continued pre-training of the whole 2.49B trunk from the 20B-token stable base. Code 45% · Vietnamese 30% · edu 12% · math 8%, ~38K steps, WSD | 2× A100 (Vast) | ~10 days | ~$400 |
