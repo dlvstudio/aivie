@@ -59,6 +59,10 @@ nn-aivie3/     the RMSH line of work and browser demos
 TK_*.md        research journal, one file per work package
 ```
 
+## Training process & cost
+
+Stages, tasks, GPU types (Mac M4, H100, 4× H100, 2× A100), durations and approximate rental cost (~$3,400 total): [`TRAINING.md`](TRAINING.md).
+
 ## Data & weights
 
 See [`DATA.md`](DATA.md) for the public source datasets and the project's Hugging Face repositories.
