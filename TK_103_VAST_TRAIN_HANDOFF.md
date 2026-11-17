@@ -93,7 +93,7 @@ PYTHONPATH=scripts:src .venv/bin/python scripts/download_hybrid_ckpt.py \
 
 - [x] Pretrain 143,433 step · [x] backup HF A/B · [x] SFT 2 epoch · [x] tải cả 2 bản về M4 · [x] eval prompt (§9).
 - [ ] **User: Destroy box Vast** (nếu mới Stop) — mọi thứ cần giữ đã ở HF + M4.
-- [ ] **User: REVOKE HF token WRITE** đã lộ trong chat (và token READ `hf_shSI…`): https://huggingface.co/settings/tokens.
+- [ ] **User: REVOKE HF token WRITE** đã lộ trong chat (và token READ): https://huggingface.co/settings/tokens.
 - [ ] Hướng cải thiện (chọn theo mục-tiêu, xem §9.4): code → continued-pretrain trên code; kiến-thức → RAG; dịch → thêm PhoMT/MTet vào SFT; đo định-lượng bằng `eval_vmlu.py`.
 
 ## 6. BẪY đã gặp & cách tránh (quan-trọng cho session sau)
