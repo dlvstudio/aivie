@@ -6,15 +6,14 @@ This GitHub repository contains **no training/eval data and no model weights** (
 
 | Repo | Type | Contents |
 |---|---|---|
-| [donaldluong/nn-aivie-hybrid-2p6b-stable](https://huggingface.co/donaldluong/nn-aivie-hybrid-2p6b-stable) | model | 2.6B hybrid Mamba + attention, stable continued-pre-training checkpoint |
-| [donaldluong/nn-aivie-2p6b-p3-snap](https://huggingface.co/donaldluong/nn-aivie-2p6b-p3-snap) | model | P3 snapshots of the 2.6B model (C4 / code-expert variants) |
-| [donaldluong/nn-aivie-cx3-ckpt](https://huggingface.co/donaldluong/nn-aivie-cx3-ckpt) | model | cx3 large code expert (pre-training checkpoint + logs) |
-| [donaldluong/nn-aivie-2p6b-p3](https://huggingface.co/donaldluong/nn-aivie-2p6b-p3) | model | P3/TK_108 backup: code experts (c4b, c4c, cx3b, cx3c, cx3e + LoRA), office/academic experts, vision part, C2/C2b/C3/C7 verified code + tool-use data, eval results |
-| [donaldluong/nn-aivie-c6-ckpt](https://huggingface.co/donaldluong/nn-aivie-c6-ckpt) | model | C6: whole 2.49B trunk after 10B tokens of continued training (code-heavy), bf16 |
-| [donaldluong/nn-aivie-c6-sft-a](https://huggingface.co/donaldluong/nn-aivie-c6-sft-a) | model | C6 + SFT recipe A (bf16) |
-| [donaldluong/nn-aivie-c6-sft-b](https://huggingface.co/donaldluong/nn-aivie-c6-sft-b) | model | C6 + SFT recipe B, plus image-reading versions; **`c6l1_vlm_bf16.pt` + `vision/c6l1_vision_bf16.pt` = the latest SFT checkpoint (c6l1, after the teacher loop)** — see [en/TK_108_DANH_GIA_C6L1_THUC_TE.md](en/TK_108_DANH_GIA_C6L1_THUC_TE.md) |
-| [donaldluong/nn-aivie-pretrain-vi](https://huggingface.co/datasets/donaldluong/nn-aivie-pretrain-vi) | dataset | Vietnamese pre-training corpus (packed) |
-| [donaldluong/nn-aivie-cpt-data](https://huggingface.co/datasets/donaldluong/nn-aivie-cpt-data) | dataset | Tokenized continued-pre-training shards (Vietnamese + code) |
+| **[donaldluong/nn-aivie-2p5b-c6l1](https://huggingface.co/donaldluong/nn-aivie-2p5b-c6l1)** | model | **Latest checkpoint.** `c6l1_vlm_bf16.pt` = 2.49B hybrid trunk after C6 + SFT-B + image reading + one teacher loop (self-contained); also `c6b_vlm_bf16.pt`, text-only `c6_sft_b_bf16.pt`, vision parts — see [en/TK_108_DANH_GIA_C6L1_THUC_TE.md](en/TK_108_DANH_GIA_C6L1_THUC_TE.md) |
+| [donaldluong/nn-aivie-2p6b-p3-snap](https://huggingface.co/donaldluong/nn-aivie-2p6b-p3-snap) | model | Outdated: P3 / TK_108 snapshots on the older 20B-token trunk (gated code experts c4*, cx*, cx3b…) |
+| [donaldluong/nn-aivie-pretrain-vi](https://huggingface.co/datasets/donaldluong/nn-aivie-pretrain-vi) | dataset | Vietnamese pre-training corpus, 18.8B tokens (packed) |
+| [donaldluong/nn-aivie-cpt-data](https://huggingface.co/datasets/donaldluong/nn-aivie-cpt-data) | dataset | Tokenized continued-pre-training shards (Vietnamese, English, maths, code) |
+| [donaldluong/nn-aivie-p3-data](https://huggingface.co/datasets/donaldluong/nn-aivie-p3-data) | dataset | SFT / expert / teacher-loop data of the P3 stage (some parts research-only) |
+| [donaldluong/nn-aivie-vlm-data](https://huggingface.co/datasets/donaldluong/nn-aivie-vlm-data) | dataset | Vietnamese image-reading data (screenshots, OCR, charts, photos) |
+
+Older checkpoints of the same architecture (20B-token stable base, C6 base, SFT-A, cx3 expert pre-training, P3 expert backup) are kept private for now.
 
 Checkpoints are PyTorch `.pt` files (`{"cfg", "state", …}`) for the project's own `HybridLM` code (`scripts/train_hybrid_scale.py`, `scripts/hybrid_infer.py`, UI `scripts/serve_hybrid_ui.py`), not `transformers` models. They are research artifacts: see the evaluation reports before relying on them.
 
