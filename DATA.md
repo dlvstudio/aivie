@@ -9,7 +9,7 @@ This GitHub repository contains **no training/eval data and no model weights** (
 | **[donaldluong/nn-aivie-2p5b-c6l1](https://huggingface.co/donaldluong/nn-aivie-2p5b-c6l1)** | model | **Latest checkpoint.** `c6l1_vlm_bf16.pt` = 2.49B hybrid trunk after C6 + SFT-B + image reading + one teacher loop (self-contained); also `c6b_vlm_bf16.pt`, text-only `c6_sft_b_bf16.pt`, vision parts — see [en/TK_108_DANH_GIA_C6L1_THUC_TE.md](en/TK_108_DANH_GIA_C6L1_THUC_TE.md) |
 | [donaldluong/nn-aivie-pretrain-vi](https://huggingface.co/datasets/donaldluong/nn-aivie-pretrain-vi) | dataset | Vietnamese pre-training corpus, 18.8B tokens (packed) |
 | [donaldluong/nn-aivie-cpt-data](https://huggingface.co/datasets/donaldluong/nn-aivie-cpt-data) | dataset | Tokenized continued-pre-training shards (Vietnamese, English, maths, code) |
-| [donaldluong/nn-aivie-vlm-data](https://huggingface.co/datasets/donaldluong/nn-aivie-vlm-data) | dataset | Vietnamese image-reading data (screenshots, OCR, charts, photos) — gated: access on request |
+| [donaldluong/nn-aivie-vlm-data](https://huggingface.co/datasets/donaldluong/nn-aivie-vlm-data) | dataset | Vietnamese image-reading data (screenshots, OCR, charts, photos) |
 
 Older checkpoints of the same architecture (20B-token stable base, C6 base, SFT-A, cx3 expert pre-training, P3 expert backup and snapshots) and the P3 SFT / teacher-loop data are kept private for now.
 
